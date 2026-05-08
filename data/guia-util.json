@@ -1,0 +1,173 @@
+[
+  {
+    "id": "farmacias",
+    "icono": "+",
+    "categoria": "Salud",
+    "titulo": "Farmacias de guardia y salud",
+    "descripcion": "Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse.",
+    "items": [
+      "Guardias: empiezan a las 9:30 y terminan a las 9:30 del día siguiente, según la web municipal.",
+      "Farmacias de guardia 2026 de Alhaurín el Grande.",
+      "Buscador oficial de farmacias de guardia del Consejo General de Colegios Farmacéuticos.",
+      "Emergencias generales: 112."
+    ],
+    "links": [
+      {
+        "texto": "Farmacias de guardia - Ayuntamiento",
+        "url": "https://alhaurinelgrande.es/farmacias/"
+      },
+      {
+        "texto": "Buscador oficial de farmacias de guardia",
+        "url": "https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29"
+      }
+    ],
+    "cta": "Abrir farmacias de guardia",
+    "enlace": "https://alhaurinelgrande.es/farmacias/"
+  },
+  {
+    "id": "telefonos",
+    "icono": "☎",
+    "categoria": "Emergencias",
+    "titulo": "Teléfonos útiles y emergencias",
+    "descripcion": "Números básicos para incidencias, atención municipal y emergencias locales. Útil para tener siempre a mano desde el móvil.",
+    "items": [
+      "Ayuntamiento / centralita: 952 49 00 00.",
+      "Policía Local: 952 49 10 74.",
+      "Protección Civil: 672 32 83 51.",
+      "Guardia Civil Alhaurín el Grande: 952 595 830.",
+      "Servicios Operativos: 952 49 09 13."
+    ],
+    "links": [
+      {
+        "texto": "Teléfonos de interés - Ayuntamiento",
+        "url": "https://alhaurinelgrande.es/telefonos-de-interes/"
+      },
+      {
+        "texto": "Contacto municipal",
+        "url": "https://alhaurinelgrande.es/contacto/"
+      }
+    ],
+    "cta": "Ver teléfonos oficiales",
+    "enlace": "https://alhaurinelgrande.es/telefonos-de-interes/"
+  },
+  {
+    "id": "tramites",
+    "icono": "i",
+    "categoria": "Administración",
+    "titulo": "Trámites, sede electrónica y padrón",
+    "descripcion": "Accesos directos para gestiones municipales frecuentes: sede electrónica, cita previa, pago de tributos y padrón de habitantes.",
+    "items": [
+      "Sede electrónica municipal para trámites online.",
+      "Cita previa disponible desde la sede electrónica.",
+      "Padrón: altas y cambios de domicilio requieren cita previa si se hacen presencialmente.",
+      "Contacto de padrón: 952 49 00 00 / padron2@alhaurinelgrande.es."
+    ],
+    "links": [
+      {
+        "texto": "Sede Electrónica",
+        "url": "https://alhaurinelgrande.sedelectronica.es/"
+      },
+      {
+        "texto": "Cita previa",
+        "url": "https://alhaurinelgrande.sedelectronica.es/citaprevia"
+      },
+      {
+        "texto": "Padrón de habitantes",
+        "url": "https://alhaurinelgrande.es/padron-de-habitantes/"
+      },
+      {
+        "texto": "Página municipal de sede electrónica",
+        "url": "https://alhaurinelgrande.es/sede-electronica/"
+      }
+    ],
+    "cta": "Abrir sede electrónica",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/"
+  },
+  {
+    "id": "movilidad",
+    "icono": "↗",
+    "categoria": "Movilidad",
+    "titulo": "Autobuses, horarios y movilidad",
+    "descripcion": "Enlaces útiles para consultar horarios actualizados de autobús entre Alhaurín el Grande, Málaga, Alhaurín de la Torre, Coín y el Hospital Guadalhorce.",
+    "items": [
+      "Línea M-132: Málaga - Alhaurín el Grande.",
+      "Línea M-167B: Coín - Alhaurín el Grande - Málaga por Cártama.",
+      "Línea M-159B: Alhaurín el Grande - Villa del Guadalhorce - Hospital Guadalhorce.",
+      "Revisar siempre el horario oficial antes de viajar."
+    ],
+    "links": [
+      {
+        "texto": "M-132 Málaga - Alhaurín el Grande",
+        "url": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas_tabla.php?linea=17"
+      },
+      {
+        "texto": "M-167B Coín - Alhaurín el Grande - Málaga",
+        "url": "https://ctmam.es/lineas/M-167B"
+      },
+      {
+        "texto": "Horarios por líneas - Consorcio Málaga",
+        "url": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas.php"
+      },
+      {
+        "texto": "Avanza Málaga - línea M-132",
+        "url": "https://malaga.avanzagrupo.com/es/itinerarios-y-horarios/lineas/132-m132-malaga-alhaurin-el-grande"
+      }
+    ],
+    "cta": "Consultar horarios",
+    "enlace": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas.php"
+  },
+  {
+    "id": "bibliotecas",
+    "icono": "B",
+    "categoria": "Cultura",
+    "titulo": "Bibliotecas municipales",
+    "descripcion": "Información de la red municipal de bibliotecas, con datos de contacto y enlaces a fuentes oficiales de la Junta de Andalucía y el Ayuntamiento.",
+    "items": [
+      "Biblioteca Pública Municipal Ildefonso Marzo: Avenida Gerald Brenan 21.",
+      "Teléfono Ildefonso Marzo: 952 490 143 / 669 967 977.",
+      "Biblioteca Mari Pepa Estrada, Villa del Guadalhorce: Plaza Mayor 3-5.",
+      "Teléfono Mari Pepa Estrada: 952 423 121."
+    ],
+    "links": [
+      {
+        "texto": "Bibliotecas - Ayuntamiento",
+        "url": "https://alhaurinelgrande.es/cultura/biblioteca-general/"
+      },
+      {
+        "texto": "Biblioteca Ildefonso Marzo - Junta de Andalucía",
+        "url": "https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/cultura/bibliotecas-documentacion/directorio-bibliotecas/detalle/628.html"
+      },
+      {
+        "texto": "Biblioteca Mari Pepa Estrada - Junta de Andalucía",
+        "url": "https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/cultura/bibliotecas-documentacion/directorio-bibliotecas/detalle/627.html"
+      }
+    ],
+    "cta": "Ver bibliotecas",
+    "enlace": "https://alhaurinelgrande.es/cultura/biblioteca-general/"
+  },
+  {
+    "id": "turismo",
+    "icono": "★",
+    "categoria": "Turismo",
+    "titulo": "Turismo, patrimonio y planes",
+    "descripcion": "Accesos para descubrir recursos turísticos, patrimonio, Casa Museo Antonio Gala, rutas, miradores y planes tranquilos por Alhaurín el Grande.",
+    "items": [
+      "Web municipal de turismo con información turística actualizada.",
+      "La web oficial municipal destaca Alhaurín el Grande como enclave del Valle del Guadalhorce.",
+      "Casa Museo Antonio Gala - La Baltasara.",
+      "Ideas para seguir ampliando: casco histórico, miradores, rutas naturales y patrimonio."
+    ],
+    "links": [
+      {
+        "texto": "Turismo Alhaurín el Grande",
+        "url": "https://visitalhaurinelgrande.es/"
+      },
+      {
+        "texto": "Web oficial del Ayuntamiento",
+        "url": "https://alhaurinelgrande.es/"
+      }
+    ],
+    "cta": "Ver turismo",
+    "enlace": "https://visitalhaurinelgrande.es/"
+  }
+]

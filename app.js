@@ -81,7 +81,7 @@ function renderFeaturedNews(noticia) {
     const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
     const fuente = escapeHTML(noticia.fuente || "");
-    const enlace = noticia.enlace || noticia.url || "#";
+    const enlace = noticia.pagina || noticia.enlace || noticia.url || "#";
     const imagen = noticia.imagen || "";
 
     featuredContainer.innerHTML = `
@@ -104,7 +104,7 @@ function renderFeaturedNews(noticia) {
                 </div>
                 <h2>${titulo}</h2>
                 <p>${descripcion}</p>
-                <a class="read-more" href="${escapeHTML(enlace)}" target="_blank" rel="noopener noreferrer">
+                <a class="read-more" href="${escapeHTML(enlace)}">
                     Leer noticia →
                 </a>
             </div>
@@ -117,7 +117,7 @@ function renderNewsCard(noticia) {
     const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
     const fuente = escapeHTML(noticia.fuente || "");
-    const enlace = noticia.enlace || noticia.url || "#";
+    const enlace = noticia.pagina || noticia.enlace || noticia.url || "#";
     const imagen = noticia.imagen || "";
 
     const card = document.createElement("article");
@@ -142,7 +142,7 @@ function renderNewsCard(noticia) {
 
         <div class="news-footer">
             ${fuente ? `<small>${fuente}</small>` : ""}
-            <a class="read-more" href="${escapeHTML(enlace)}" target="_blank" rel="noopener noreferrer">
+            <a class="read-more" href="${escapeHTML(enlace)}">
                 Leer noticia →
             </a>
         </div>

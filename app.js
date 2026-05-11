@@ -1,7 +1,11 @@
 const newsContainer = document.getElementById("news-container");
 const featuredContainer = document.getElementById("featured-news");
+const sourceFiltersContainer = document.getElementById("source-filters");
 const guideContainer = document.getElementById("guide-container");
 const guideSearch = document.getElementById("guide-search");
+
+let allNews = [];
+let activeSource = "Todas";
 
 function escapeHTML(value = "") {
     return String(value)
@@ -12,12 +16,71 @@ function escapeHTML(value = "") {
         .replaceAll("'", "&#039;");
 }
 
+function getSourceCounts(noticias) {
+    return noticias.reduce((counts, noticia) => {
+        const fuente = noticia.fuente || "Sin fuente";
+        counts[fuente] = (counts[fuente] || 0) + 1;
+        return counts;
+    }, {});
+}
+
+function getFilteredNews() {
+    if (activeSource === "Todas") {
+        return allNews;
+    }
+
+    return allNews.filter(noticia => (noticia.fuente || "Sin fuente") === activeSource);
+}
+
+function renderSourceFilters(noticias) {
+    if (!sourceFiltersContainer) return;
+
+    const counts = getSourceCounts(noticias);
+    const fuentes = Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
+    const opciones = [
+        { nombre: "Todas", total: noticias.length },
+        ...fuentes.map(fuente => ({ nombre: fuente, total: counts[fuente] }))
+    ];
+
+    sourceFiltersContainer.innerHTML = `
+        <div class="source-filters-header">
+            <span>Filtrar por fuente</span>
+            <small>${noticias.length} noticias disponibles</small>
+        </div>
+        <div class="source-filter-list" role="list" aria-label="Fuentes de noticias">
+            ${opciones.map(opcion => {
+                const isActive = opcion.nombre === activeSource;
+                return `
+                    <button
+                        type="button"
+                        class="source-filter ${isActive ? "active" : ""}"
+                        data-source="${escapeHTML(opcion.nombre)}"
+                        aria-pressed="${isActive ? "true" : "false"}"
+                    >
+                        <span>${escapeHTML(opcion.nombre)}</span>
+                        <strong>${opcion.total}</strong>
+                    </button>
+                `;
+            }).join("")}
+        </div>
+    `;
+
+    sourceFiltersContainer.querySelectorAll(".source-filter").forEach(button => {
+        button.addEventListener("click", () => {
+            activeSource = button.dataset.source || "Todas";
+            renderSourceFilters(allNews);
+            renderNewsList();
+        });
+    });
+}
+
 function renderFeaturedNews(noticia) {
     if (!featuredContainer || !noticia) return;
 
     const titulo = escapeHTML(noticia.titulo || "Noticia sin título");
     const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
+    const fuente = escapeHTML(noticia.fuente || "");
     const enlace = noticia.enlace || noticia.url || "#";
     const imagen = noticia.imagen || "";
 
@@ -35,7 +98,10 @@ function renderFeaturedNews(noticia) {
 
             <div class="featured-news-content">
                 <span class="featured-label">Noticia destacada</span>
-                <span class="tag">${categoria}</span>
+                <div class="featured-meta">
+                    <span class="tag">${categoria}</span>
+                    ${fuente ? `<span class="source-mini-tag">${fuente}</span>` : ""}
+                </div>
                 <h2>${titulo}</h2>
                 <p>${descripcion}</p>
                 <a class="read-more" href="${escapeHTML(enlace)}" target="_blank" rel="noopener noreferrer">
@@ -85,6 +151,26 @@ function renderNewsCard(noticia) {
     return card;
 }
 
+function renderNewsList() {
+    if (!newsContainer) return;
+
+    const filteredNews = getFilteredNews();
+
+    newsContainer.innerHTML = "";
+    if (featuredContainer) featuredContainer.innerHTML = "";
+
+    if (!filteredNews || filteredNews.length === 0) {
+        newsContainer.innerHTML = `<p class="empty-state">No hay noticias disponibles para esta fuente.</p>`;
+        return;
+    }
+
+    renderFeaturedNews(filteredNews[0]);
+
+    filteredNews.slice(1).forEach(noticia => {
+        newsContainer.appendChild(renderNewsCard(noticia));
+    });
+}
+
 function loadNews() {
     if (!newsContainer) return;
 
@@ -97,25 +183,28 @@ function loadNews() {
             return response.json();
         })
         .then(noticias => {
-            newsContainer.innerHTML = "";
-            if (featuredContainer) featuredContainer.innerHTML = "";
+            allNews = noticias || [];
+            activeSource = "Todas";
 
-            if (!noticias || noticias.length === 0) {
+            if (!allNews || allNews.length === 0) {
                 newsContainer.innerHTML = "<p>No hay noticias disponibles.</p>";
+                if (featuredContainer) featuredContainer.innerHTML = "";
+                if (sourceFiltersContainer) sourceFiltersContainer.innerHTML = "";
                 return;
             }
 
-            renderFeaturedNews(noticias[0]);
-
-            noticias.slice(1).forEach(noticia => {
-                newsContainer.appendChild(renderNewsCard(noticia));
-            });
+            renderSourceFilters(allNews);
+            renderNewsList();
         })
         .catch(error => {
             console.error("Error cargando noticias:", error);
 
             if (featuredContainer) {
                 featuredContainer.innerHTML = "";
+            }
+
+            if (sourceFiltersContainer) {
+                sourceFiltersContainer.innerHTML = "";
             }
 
             newsContainer.innerHTML = "<p>No se han podido cargar las noticias.</p>";

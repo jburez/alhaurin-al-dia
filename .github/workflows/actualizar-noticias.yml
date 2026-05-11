@@ -1,4 +1,3 @@
-```yaml
 name: Actualizar noticias
 
 on:
@@ -52,4 +51,4 @@ jobs:
           git add data/noticias.json
           git commit -m "Actualizar noticias automáticamente"
           git push
-```
+

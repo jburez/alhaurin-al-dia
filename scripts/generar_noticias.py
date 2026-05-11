@@ -1,3 +1,4 @@
+import html
 import json
 import re
 from datetime import datetime
@@ -17,6 +18,8 @@ from openai import OpenAI
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
+NOTICIAS_DIR = BASE_DIR / "noticias"
+SITE_URL = "https://alhaurinaldia.es"
 
 MAX_NOTICIAS_POR_FUENTE = 10
 MAX_NOTICIAS_TOTAL = 30
@@ -91,6 +94,28 @@ def limitar_texto(texto, max_caracteres=220):
     return texto[:max_caracteres].rsplit(" ", 1)[0] + "..."
 
 
+def escapar(texto):
+    return html.escape(str(texto or ""), quote=True)
+
+
+def slugify(texto, max_caracteres=90):
+    texto = limpiar_html(texto).lower()
+    reemplazos = {
+        "á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u",
+        "à": "a", "è": "e", "ì": "i", "ò": "o", "ù": "u",
+        "ä": "a", "ë": "e", "ï": "i", "ö": "o", "ü": "u",
+        "ñ": "n", "ç": "c",
+    }
+
+    for origen, destino in reemplazos.items():
+        texto = texto.replace(origen, destino)
+
+    texto = re.sub(r"[^a-z0-9]+", "-", texto)
+    texto = texto.strip("-")
+
+    return texto[:max_caracteres].strip("-") or "noticia"
+
+
 def es_noticia_relevante_local(titulo, texto, fuente):
     contenido = f"{titulo} {texto}".lower()
     fuente_lower = fuente.lower()
@@ -161,8 +186,15 @@ def fecha_para_ordenacion(fecha_iso):
         return datetime.min
 
 
-def calcular_score(noticia):
+def formatear_fecha(fecha_iso):
+    try:
+        fecha = datetime.fromisoformat(fecha_iso.replace("Z", "+00:00"))
+        return fecha.strftime("%d/%m/%Y")
+    except Exception:
+        return ""
 
+
+def calcular_score(noticia):
     prioridad = noticia["prioridad"]
 
     fecha = fecha_para_ordenacion(
@@ -186,17 +218,17 @@ def generar_id(url, titulo):
     return base.strip("-")[:80]
 
 
-def extraer_imagen(entry, imagen_feed=""):
+def generar_ruta_pagina(titulo):
+    return f"noticias/{slugify(titulo)}.html"
 
-    # 1. media_thumbnail
+
+def extraer_imagen(entry, imagen_feed=""):
     if hasattr(entry, "media_thumbnail") and entry.media_thumbnail:
         return entry.media_thumbnail[0].get("url", "")
 
-    # 2. media_content
     if hasattr(entry, "media_content") and entry.media_content:
         return entry.media_content[0].get("url", "")
 
-    # 3. imágenes dentro del summary/content HTML
     posibles_campos = [
         entry.get("summary", ""),
         entry.get("description", ""),
@@ -206,7 +238,6 @@ def extraer_imagen(entry, imagen_feed=""):
     ]
 
     for contenido in posibles_campos:
-
         coincidencia = re.search(
             r'<img[^>]+src=["\']([^"\']+)["\']',
             contenido
@@ -215,13 +246,11 @@ def extraer_imagen(entry, imagen_feed=""):
         if coincidencia:
             return coincidencia.group(1)
 
-    # 4. enlaces tipo image/*
     if "links" in entry:
         for link in entry.links:
             if link.get("type", "").startswith("image/"):
                 return link.get("href", "")
 
-    # 5. imagen general del canal RSS, por ejemplo <channel><image><url>...</url></image>
     return imagen_feed or ""
 
 
@@ -427,6 +456,254 @@ def leer_feed(url):
 
 
 # =========================================
+# PÁGINAS INDIVIDUALES DE NOTICIAS
+# =========================================
+
+def generar_html_noticia(noticia):
+    titulo = escapar(noticia.get("titulo", "Noticia local"))
+    descripcion = escapar(noticia.get("descripcion") or noticia.get("resumen") or "Actualidad de Alhaurín el Grande.")
+    categoria = escapar(noticia.get("categoria", "Actualidad"))
+    fuente = escapar(noticia.get("fuente", ""))
+    fecha = escapar(formatear_fecha(noticia.get("fecha", "")))
+    enlace_original = escapar(noticia.get("enlace") or noticia.get("url") or "#")
+    imagen = escapar(noticia.get("imagen", ""))
+    pagina = noticia.get("pagina", "")
+    canonical_url = f"{SITE_URL}/{pagina}"
+    canonical_url_esc = escapar(canonical_url)
+
+    imagen_html = ""
+    if imagen:
+        imagen_html = f'''
+            <figure class="article-image">
+                <img src="{imagen}" alt="{titulo}">
+            </figure>
+        '''
+
+    og_image = imagen or f"{SITE_URL}/favicon.ico"
+
+    return f'''<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{titulo} | Alhaurín al Día</title>
+    <meta name="description" content="{descripcion}">
+    <link rel="canonical" href="{canonical_url_esc}">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{titulo}">
+    <meta property="og:description" content="{descripcion}">
+    <meta property="og:url" content="{canonical_url_esc}">
+    <meta property="og:image" content="{escapar(og_image)}">
+    <meta property="og:site_name" content="Alhaurín al Día">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{titulo}">
+    <meta name="twitter:description" content="{descripcion}">
+    <meta name="twitter:image" content="{escapar(og_image)}">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .article-page {{
+            padding: 48px 0 64px;
+        }}
+
+        .breadcrumb {{
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 22px;
+        }}
+
+        .breadcrumb a {{
+            color: var(--brand);
+        }}
+
+        .article-shell {{
+            max-width: 900px;
+            margin: 0 auto;
+        }}
+
+        .article-card {{
+            background: rgba(255, 255, 255, .94);
+            border: 1px solid var(--line);
+            border-radius: 34px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }}
+
+        .article-content {{
+            padding: clamp(26px, 5vw, 54px);
+        }}
+
+        .article-meta {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 18px;
+        }}
+
+        .article-title {{
+            margin: 0;
+            color: var(--brand);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(38px, 6vw, 68px);
+            line-height: .98;
+            letter-spacing: -.055em;
+        }}
+
+        .article-summary {{
+            margin: 24px 0 0;
+            color: #475467;
+            font-size: 19px;
+            line-height: 1.8;
+        }}
+
+        .article-image {{
+            margin: 0;
+            background: var(--brand-soft);
+        }}
+
+        .article-image img {{
+            width: 100%;
+            max-height: 560px;
+            object-fit: cover;
+        }}
+
+        .article-actions {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line);
+        }}
+
+        .article-note {{
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.6;
+        }}
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <span>Agenda · Comercios · Avisos útiles · Planes</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="../index.html" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+                <div class="nav-links">
+                    <a href="../index.html#agenda">Noticias</a>
+                    <a href="../index.html#guia-util">Guía útil</a>
+                    <a href="../index.html#planes">Planes</a>
+                    <a href="../index.html#contacto" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container article-shell">
+            <div class="breadcrumb">
+                <a href="../index.html">Inicio</a>
+                <span>›</span>
+                <a href="../index.html#agenda">Noticias</a>
+                <span>›</span>
+                <span>{categoria}</span>
+            </div>
+
+            <article class="article-card">
+                {imagen_html}
+
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="tag">{categoria}</span>
+                        {f'<span class="source-mini-tag">{fuente}</span>' if fuente else ''}
+                        {f'<span class="source-mini-tag">{fecha}</span>' if fecha else ''}
+                    </div>
+
+                    <h1 class="article-title">{titulo}</h1>
+                    <p class="article-summary">{descripcion}</p>
+
+                    <div class="article-actions">
+                        <a class="btn btn-primary" href="{enlace_original}" target="_blank" rel="noopener noreferrer">
+                            Leer en la fuente original
+                        </a>
+                        <a class="btn btn-secondary" href="../index.html#agenda">
+                            Volver a noticias
+                        </a>
+                    </div>
+
+                    <p class="article-note">
+                        Esta página recoge una noticia enlazada desde su fuente original. Alhaurín al Día organiza y facilita el acceso a la actualidad local de Alhaurín el Grande.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="../index.html#agenda">Noticias</a>
+                <a href="../index.html#guia-util">Guía útil</a>
+                <a href="../index.html#contacto">Contacto</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+'''
+
+
+def generar_paginas_noticias(noticias):
+    NOTICIAS_DIR.mkdir(parents=True, exist_ok=True)
+
+    rutas_usadas = set()
+
+    for noticia in noticias:
+        ruta_base = generar_ruta_pagina(noticia.get("titulo", noticia.get("id", "noticia")))
+        ruta = ruta_base
+        contador = 2
+
+        while ruta in rutas_usadas:
+            nombre = Path(ruta_base).stem
+            ruta = f"noticias/{nombre}-{contador}.html"
+            contador += 1
+
+        rutas_usadas.add(ruta)
+        noticia["pagina"] = ruta
+
+        archivo = BASE_DIR / ruta
+        archivo.write_text(
+            generar_html_noticia(noticia),
+            encoding="utf-8"
+        )
+
+    print("Páginas individuales creadas:", len(noticias))
+    print("Carpeta:", NOTICIAS_DIR)
+
+
+# =========================================
 # GENERACIÓN DE NOTICIAS
 # =========================================
 
@@ -522,6 +799,8 @@ def obtener_noticias():
 
 
 def guardar_noticias(noticias):
+    generar_paginas_noticias(noticias)
+
     OUTPUT_FILE.parent.mkdir(
         parents=True,
         exist_ok=True

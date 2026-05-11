@@ -117,6 +117,81 @@
     "enlace": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas.php"
   },
   {
+    "id": "taxis",
+    "icono": "T",
+    "categoria": "Movilidad",
+    "titulo": "Taxi en Alhaurín el Grande",
+    "descripcion": "Información práctica sobre la parada oficial de taxi, reservas y traslados desde Alhaurín el Grande.",
+    "items": [
+      "Parada oficial: Avenida Gerald Brenan, 39.",
+      "Teléfono de contacto publicado por la web municipal: 952 491 010.",
+      "Servicio indicado como continuo, con reservas por teléfono.",
+      "El Ayuntamiento anunció en 2026 la ampliación del servicio con nuevas licencias adaptadas."
+    ],
+    "links": [
+      {
+        "texto": "Taxi - Ayuntamiento",
+        "url": "https://alhaurinelgrande.es/taxis/"
+      },
+      {
+        "texto": "Ampliación de licencias adaptadas",
+        "url": "https://alhaurinelgrande.es/alhaurin-el-grande-amplia-su-servicio-de-taxi-con-dos-nuevas-licencias-adaptadas/"
+      }
+    ],
+    "cta": "Ver taxi oficial",
+    "enlace": "https://alhaurinelgrande.es/taxis/"
+  },
+  {
+    "id": "educacion",
+    "icono": "E",
+    "categoria": "Familias y Educación",
+    "titulo": "Educación, campamentos y recursos para familias",
+    "descripcion": "Accesos a recursos educativos municipales, campamentos urbanos, actividades para familias y contacto del área de Educación.",
+    "items": [
+      "El área municipal de Educación gestiona campamentos, actividades educativas, Escuela de Familias y programas de conciliación.",
+      "Contacto de Educación publicado por el Ayuntamiento: 952 49 9079.",
+      "Correo de referencia: educacionalhaurin@gmail.com.",
+      "Ubicación indicada: Edificio municipal de formación y empleo, Polígono Industrial La Rosa."
+    ],
+    "links": [
+      {
+        "texto": "Educación - Ayuntamiento",
+        "url": "https://alhaurinelgrande.es/educacion"
+      },
+      {
+        "texto": "Concejalía de Educación",
+        "url": "https://alhaurinelgrande.es/concejalia-de-educacion/"
+      }
+    ],
+    "cta": "Ver Educación",
+    "enlace": "https://alhaurinelgrande.es/educacion"
+  },
+  {
+    "id": "campamentos",
+    "icono": "☀",
+    "categoria": "Familias y Educación",
+    "titulo": "Campamentos urbanos y conciliación familiar",
+    "descripcion": "Información de referencia para familias sobre campamentos municipales en periodos no lectivos y programas de conciliación.",
+    "items": [
+      "El Ayuntamiento organiza campamentos urbanos en periodos como verano, Navidad, Semana Blanca y Semana Santa.",
+      "Los campamentos municipales están orientados a niños y niñas y ayudan a la conciliación familiar.",
+      "Conviene consultar cada convocatoria concreta, fechas, edades admitidas, precio y plazo de inscripción.",
+      "Ejemplo reciente: Campamento de Semana Blanca 2026 anunciado para niños y niñas nacidos entre 2013 y 2022."
+    ],
+    "links": [
+      {
+        "texto": "Educación - Campamentos",
+        "url": "https://alhaurinelgrande.es/educacion"
+      },
+      {
+        "texto": "Noticia Campamento Semana Blanca 2026",
+        "url": "https://alhaurinelgrande.es/el-area-de-educacion-organiza-un-ano-mas-el-campamento-de-semana-blanca-2026-para-favorecer-la-conciliacion-familiar/"
+      }
+    ],
+    "cta": "Consultar campamentos",
+    "enlace": "https://alhaurinelgrande.es/educacion"
+  },
+  {
     "id": "bibliotecas",
     "icono": "B",
     "categoria": "Cultura",
@@ -146,6 +221,77 @@
     "enlace": "https://alhaurinelgrande.es/cultura/biblioteca-general/"
   },
   {
+    "id": "escuela-musica",
+    "icono": "♫",
+    "categoria": "Cultura",
+    "titulo": "Escuela Municipal de Música",
+    "descripcion": "Recurso cultural y formativo para consultar información sobre la Escuela Municipal de Música Paco el Guardamontes y actividades musicales.",
+    "items": [
+      "La web municipal indica como contacto de referencia el teléfono 952 49 9079.",
+      "Correo publicado: educacionalhaurin@gmail.com.",
+      "Ubicación indicada: Plaza de la Legión, Edificio Escuela de Música.",
+      "La escuela municipal ofrece formación musical en distintas especialidades instrumentales y vocales."
+    ],
+    "links": [
+      {
+        "texto": "Escuela de Música - Ayuntamiento",
+        "url": "https://alhaurinelgrande.es/escuela-de-musica/"
+      }
+    ],
+    "cta": "Ver Escuela de Música",
+    "enlace": "https://alhaurinelgrande.es/escuela-de-musica/"
+  },
+  {
+    "id": "deportes",
+    "icono": "⚽",
+    "categoria": "Deportes",
+    "titulo": "Instalaciones deportivas municipales",
+    "descripcion": "Acceso rápido a instalaciones deportivas, reservas, piscina, pistas y contacto del área municipal de Deportes.",
+    "items": [
+      "Instalaciones destacadas: piscina, pistas de tenis, pádel, fútbol 11, fútbol 7, baloncesto, pabellón y pistas polideportivas.",
+      "Teléfono del área de Deportes publicado por la web municipal: 952 49 12 16.",
+      "Piscina municipal: teléfono publicado 952 59 50 05.",
+      "La Concejalía de Deportes gestiona instalaciones, escuelas deportivas, competiciones y reservas."
+    ],
+    "links": [
+      {
+        "texto": "Instalaciones deportivas",
+        "url": "https://alhaurinelgrande.es/deportes/"
+      },
+      {
+        "texto": "Concejalía de Deportes",
+        "url": "https://alhaurinelgrande.es/concejalia-de-deporte/"
+      }
+    ],
+    "cta": "Ver instalaciones",
+    "enlace": "https://alhaurinelgrande.es/deportes/"
+  },
+  {
+    "id": "calistenia",
+    "icono": "M",
+    "categoria": "Deportes",
+    "titulo": "Calistenia y deporte al aire libre",
+    "descripcion": "Recurso para localizar novedades sobre instalaciones deportivas al aire libre y espacios como la pista de calistenia del Polideportivo Municipal.",
+    "items": [
+      "El Ayuntamiento anunció en 2026 una pista de calistenia en el Polideportivo Municipal.",
+      "La instalación fue presentada como un espacio de 225 m² orientado a la práctica de calistenia.",
+      "Conviene consultar la web municipal para horarios, normas de uso y novedades deportivas.",
+      "Recurso útil para jóvenes, deportistas y vecinos que buscan entrenamiento al aire libre."
+    ],
+    "links": [
+      {
+        "texto": "Noticia pista de calistenia",
+        "url": "https://alhaurinelgrande.es/alhaurin-el-grande-estrena-una-nueva-pista-de-calistenia-en-el-polideportivo-municipal-de-225-m%C2%B2/"
+      },
+      {
+        "texto": "Deportes Alhaurín",
+        "url": "https://alhaurinelgrande.es/deportes/"
+      }
+    ],
+    "cta": "Ver recurso deportivo",
+    "enlace": "https://alhaurinelgrande.es/deportes/"
+  },
+  {
     "id": "turismo",
     "icono": "★",
     "categoria": "Turismo",
@@ -169,5 +315,99 @@
     ],
     "cta": "Ver turismo",
     "enlace": "https://visitalhaurinelgrande.es/"
+  },
+  {
+    "id": "aparcamiento",
+    "icono": "P",
+    "categoria": "Movilidad",
+    "titulo": "Aparcamiento y moverse por el centro",
+    "descripcion": "Ficha preparada para ordenar información sobre aparcamientos, accesos, cortes de tráfico, zonas de parada y consejos para moverse por Alhaurín el Grande.",
+    "items": [
+      "Pendiente de completar con listado depurado de aparcamientos y zonas recomendadas.",
+      "Ideal para incluir avisos de cortes de tráfico durante feria, Semana Santa, Día de la Cruz y eventos locales.",
+      "Puede convertirse en una página clave para visitantes y vecinos que buscan aparcar rápido.",
+      "Se recomienda alimentar esta ficha con datos municipales y comprobación sobre el terreno."
+    ],
+    "links": [
+      {
+        "texto": "Web municipal",
+        "url": "https://alhaurinelgrande.es/"
+      }
+    ],
+    "cta": "Ver información municipal",
+    "enlace": "https://alhaurinelgrande.es/"
+  },
+  {
+    "id": "gasolineras",
+    "icono": "⛽",
+    "categoria": "Servicios",
+    "titulo": "Gasolineras y servicios en carretera",
+    "descripcion": "Ficha preparada para recoger gasolineras cercanas, servicios en ruta, horarios, lavaderos y puntos útiles para conductores.",
+    "items": [
+      "Pendiente de completar con gasolineras verificadas y enlaces de ubicación.",
+      "Puede incluir horarios, servicios disponibles, lavadero, tienda, aire para neumáticos y puntos de carga si existieran.",
+      "Muy útil para búsquedas recurrentes desde móvil.",
+      "Se recomienda verificar datos antes de publicar información comercial detallada."
+    ],
+    "links": [],
+    "cta": "Próximamente",
+    "enlace": "#"
+  },
+  {
+    "id": "veterinarios",
+    "icono": "🐾",
+    "categoria": "Servicios",
+    "titulo": "Veterinarios y cuidado de mascotas",
+    "descripcion": "Ficha preparada para reunir clínicas veterinarias, urgencias, peluquerías caninas, tiendas de animales y recursos para mascotas en Alhaurín el Grande.",
+    "items": [
+      "Pendiente de completar con negocios y servicios verificados.",
+      "Puede incluir clínicas, urgencias, peluquería canina, alimentación y protectoras cercanas.",
+      "Sección con alto potencial SEO local y oportunidad para publicidad de negocios.",
+      "Conviene validar horarios, teléfonos y direcciones antes de publicarlos."
+    ],
+    "links": [],
+    "cta": "Próximamente",
+    "enlace": "#"
+  },
+  {
+    "id": "restaurantes",
+    "icono": "R",
+    "categoria": "Comercios y Hostelería",
+    "titulo": "Restaurantes, bares y dónde comer",
+    "descripcion": "Ficha preparada para crear una guía gastronómica local con restaurantes, bares, cafeterías, menús, terrazas y recomendaciones por zona.",
+    "items": [
+      "Pendiente de completar con restaurantes y bares verificados.",
+      "Puede organizarse por desayuno, menú del día, tapas, terraza, familias, comida rápida y celebraciones.",
+      "Sección prioritaria para monetización con negocios locales destacados.",
+      "Ideal para crear fichas patrocinadas con foto, ubicación, horario y llamada directa."
+    ],
+    "links": [],
+    "cta": "Próximamente",
+    "enlace": "#"
+  },
+  {
+    "id": "vivir-en-alhaurin",
+    "icono": "⌂",
+    "categoria": "Vivir en Alhaurín",
+    "titulo": "Vivir en Alhaurín el Grande",
+    "descripcion": "Guía pensada para nuevos vecinos: trámites básicos, colegios, transporte, salud, zonas, servicios, vida diaria y recursos para instalarse en el municipio.",
+    "items": [
+      "Resumen práctico para personas que se mudan a Alhaurín el Grande.",
+      "Puede incluir padrón, suministros, colegios, transporte, salud, compra diaria y zonas residenciales.",
+      "Contenido evergreen con gran potencial SEO.",
+      "Recomendado convertirlo más adelante en página monográfica propia."
+    ],
+    "links": [
+      {
+        "texto": "Ayuntamiento de Alhaurín el Grande",
+        "url": "https://alhaurinelgrande.es/"
+      },
+      {
+        "texto": "Sede electrónica",
+        "url": "https://alhaurinelgrande.sedelectronica.es/"
+      }
+    ],
+    "cta": "Ver recursos básicos",
+    "enlace": "https://alhaurinelgrande.es/"
   }
 ]

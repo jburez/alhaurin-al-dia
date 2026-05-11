@@ -186,7 +186,7 @@ def generar_id(url, titulo):
     return base.strip("-")[:80]
 
 
-def extraer_imagen(entry):
+def extraer_imagen(entry, imagen_feed=""):
 
     # 1. media_thumbnail
     if hasattr(entry, "media_thumbnail") and entry.media_thumbnail:
@@ -196,7 +196,7 @@ def extraer_imagen(entry):
     if hasattr(entry, "media_content") and entry.media_content:
         return entry.media_content[0].get("url", "")
 
-    # 3. imágenes dentro del summary HTML
+    # 3. imágenes dentro del summary/content HTML
     posibles_campos = [
         entry.get("summary", ""),
         entry.get("description", ""),
@@ -208,7 +208,7 @@ def extraer_imagen(entry):
     for contenido in posibles_campos:
 
         coincidencia = re.search(
-            r'<img[^>]+src="([^">]+)"',
+            r'<img[^>]+src=["\']([^"\']+)["\']',
             contenido
         )
 
@@ -221,7 +221,20 @@ def extraer_imagen(entry):
             if link.get("type", "").startswith("image/"):
                 return link.get("href", "")
 
-    return ""
+    # 5. imagen general del canal RSS, por ejemplo <channel><image><url>...</url></image>
+    return imagen_feed or ""
+
+
+def extraer_imagen_feed(feed):
+    imagen = getattr(feed.feed, "image", None)
+
+    if not imagen:
+        return ""
+
+    if isinstance(imagen, dict):
+        return imagen.get("href") or imagen.get("url") or ""
+
+    return getattr(imagen, "href", "") or getattr(imagen, "url", "") or ""
 
 
 # =========================================
@@ -440,6 +453,8 @@ def obtener_noticias():
 
         print("Entradas encontradas:", len(feed.entries))
 
+        imagen_feed = extraer_imagen_feed(feed)
+
         for entry in feed.entries[:MAX_NOTICIAS_POR_FUENTE]:
             titulo = limpiar_html(entry.get("title", ""))
             url = entry.get("link", "")
@@ -490,7 +505,7 @@ def obtener_noticias():
                 "categoria": categoria,
                 "enlace": url,
                 "url": url,
-                "imagen": extraer_imagen(entry),
+                "imagen": extraer_imagen(entry, imagen_feed),
                 "prioridad": prioridad_fuente(fuente["nombre"]),
             }
 

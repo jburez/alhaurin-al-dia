@@ -84,7 +84,8 @@ def limitar_texto(texto, max_caracteres=220):
 
 
 def es_noticia_relevante_local(titulo, texto, fuente):
-    contenido = f"{titulo} {texto} {fuente}".lower()
+    contenido = f"{titulo} {texto}".lower()
+    fuente_lower = fuente.lower()
 
     fuentes_siempre_validas = [
         "rtv alhaurín el grande",
@@ -92,30 +93,36 @@ def es_noticia_relevante_local(titulo, texto, fuente):
     ]
 
     for fuente_valida in fuentes_siempre_validas:
-        if fuente_valida in fuente.lower():
+        if fuente_valida in fuente_lower:
             return True
 
-    palabras_locales = [
+    palabras_obligatorias_fuentes_externas = [
         "alhaurín el grande",
         "alhaurin el grande",
-        "alhaurín",
-        "alhaurin",
-        "villa del guadalhorce",
-        "guadalhorce",
-        "valle del guadalhorce",
-        "coín",
-        "coin",
-        "cártama",
-        "cartama",
-        "mijas",
-        "málaga",
-        "malaga",
-        "sierra de mijas",
-        "diputación de málaga",
-        "diputacion de malaga",
     ]
 
-    return any(palabra in contenido for palabra in palabras_locales)
+    return any(
+        palabra in contenido
+        for palabra in palabras_obligatorias_fuentes_externas
+    )
+
+
+def prioridad_fuente(fuente):
+    fuente = fuente.lower()
+
+    if "diario sur" in fuente:
+        return 100
+
+    if "rtv alhaurín" in fuente:
+        return 90
+
+    if "atv alhaurín" in fuente:
+        return 80
+
+    if "europa press" in fuente:
+        return 50
+
+    return 10
 
 
 def normalizar_fecha(fecha_raw):
@@ -426,7 +433,10 @@ def obtener_noticias():
             print(f"✓ {categoria} | {titulo}")
 
     noticias.sort(
-        key=lambda noticia: noticia["fecha"],
+        key=lambda noticia: (
+            prioridad_fuente(noticia["fuente"]),
+            noticia["fecha"]
+        ),
         reverse=True
     )
 

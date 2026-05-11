@@ -152,6 +152,32 @@ def normalizar_fecha(fecha_raw):
         return datetime.now().isoformat()
 
 
+def fecha_para_ordenacion(fecha_iso):
+    try:
+        return datetime.fromisoformat(
+            fecha_iso.replace("Z", "+00:00")
+        )
+    except Exception:
+        return datetime.min
+
+
+def calcular_score(noticia):
+
+    prioridad = noticia["prioridad"]
+
+    fecha = fecha_para_ordenacion(
+        noticia["fecha"]
+    )
+
+    horas = (
+        datetime.now(fecha.tzinfo) - fecha
+    ).total_seconds() / 3600
+
+    frescura = max(0, 48 - horas)
+
+    return prioridad + frescura
+
+
 def generar_id(url, titulo):
     base = url or titulo
     base = base.lower()
@@ -473,10 +499,7 @@ def obtener_noticias():
             print(f"✓ {categoria} | {titulo}")
 
     noticias.sort(
-        key=lambda noticia: (
-            noticia["prioridad"],
-            noticia["fecha"]
-        ),
+        key=calcular_score,
         reverse=True
     )
 

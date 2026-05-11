@@ -9,191 +9,37 @@
     <meta name="theme-color" content="#17324d">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://alhaurinaldia.es/guia-util/">
-
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Alhaurín al Día">
     <meta property="og:title" content="Guía útil de Alhaurín el Grande">
     <meta property="og:description" content="Servicios, teléfonos, trámites, movilidad, salud, cultura y recursos locales de Alhaurín el Grande.">
     <meta property="og:url" content="https://alhaurinaldia.es/guia-util/">
-
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <link rel="stylesheet" href="../styles.css">
-
     <style>
-        .guide-page-hero {
-            padding: 58px 0 28px;
-        }
-
-        .guide-page-card {
-            background: rgba(255, 255, 255, .9);
-            border: 1px solid var(--line);
-            border-radius: 36px;
-            padding: clamp(28px, 5vw, 56px);
-            box-shadow: var(--shadow);
-        }
-
-        .guide-page-card h1 {
-            max-width: 900px;
-        }
-
-        .guide-page-card .lead {
-            max-width: 780px;
-        }
-
-        .guide-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 14px;
-            margin-top: 30px;
-        }
-
-        .guide-stat {
-            background: var(--paper-soft);
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            padding: 16px;
-        }
-
-        .guide-stat strong {
-            display: block;
-            color: var(--brand);
-            font-size: 24px;
-        }
-
-        .guide-stat span {
-            color: var(--muted);
-            font-size: 13px;
-            font-weight: 800;
-        }
-
-        .guide-tools {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 16px;
-            align-items: center;
-            margin-bottom: 24px;
-            padding: 18px;
-            border: 1px solid var(--line);
-            border-radius: 28px;
-            background: rgba(255, 255, 255, .86);
-            box-shadow: var(--shadow-soft);
-        }
-
-        .guide-tools input {
-            width: 100%;
-            min-height: 50px;
-            border-radius: 999px;
-            border: 1px solid var(--line);
-            background: white;
-            color: var(--ink);
-            padding: 0 18px;
-            outline: none;
-            font-size: 15px;
-        }
-
-        .guide-pill-row {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .guide-pill {
-            border: 1px solid var(--line);
-            background: white;
-            color: var(--brand);
-            border-radius: 999px;
-            padding: 10px 13px;
-            font: inherit;
-            font-size: 13px;
-            font-weight: 900;
-            cursor: pointer;
-        }
-
-        .guide-pill.active {
-            background: var(--brand);
-            color: white;
-            border-color: var(--brand);
-        }
-
-        .guide-card.featured-guide-card {
-            border-radius: 28px;
-        }
-
-        .guide-card .read-more {
-            margin-top: 14px;
-        }
-
-        .guide-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 18px;
-        }
-
-        .guide-links a {
-            display: inline-flex;
-            padding: 9px 11px;
-            border-radius: 999px;
-            background: var(--brand-soft);
-            border: 1px solid #d9e6f0;
-            color: var(--brand);
-            font-size: 12px;
-            font-weight: 900;
-        }
-
-        .guide-cta-panel {
-            margin-top: 28px;
-            background: var(--brand);
-            color: white;
-            border-radius: 32px;
-            padding: clamp(26px, 4vw, 42px);
-            display: grid;
-            grid-template-columns: 1.2fr .8fr;
-            gap: 24px;
-            align-items: center;
-            box-shadow: var(--shadow);
-        }
-
-        .guide-cta-panel h2 {
-            margin: 0 0 10px;
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(30px, 4vw, 46px);
-            line-height: 1;
-            letter-spacing: -.045em;
-        }
-
-        .guide-cta-panel p {
-            margin: 0;
-            color: rgba(255,255,255,.78);
-            line-height: 1.65;
-        }
-
-        .guide-cta-panel .btn {
-            background: white;
-            color: var(--brand);
-            justify-self: end;
-        }
-
-        @media (max-width: 920px) {
-            .guide-tools,
-            .guide-cta-panel {
-                grid-template-columns: 1fr;
-            }
-
-            .guide-cta-panel .btn {
-                justify-self: start;
-            }
-
-            .guide-stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 720px) {
-            .guide-stats {
-                grid-template-columns: 1fr;
-            }
-        }
+        .guide-page-hero { padding: 58px 0 28px; }
+        .guide-page-card { background: rgba(255,255,255,.9); border: 1px solid var(--line); border-radius: 36px; padding: clamp(28px,5vw,56px); box-shadow: var(--shadow); }
+        .guide-page-card h1 { max-width: 900px; }
+        .guide-page-card .lead { max-width: 780px; }
+        .guide-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 30px; }
+        .guide-stat { background: var(--paper-soft); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+        .guide-stat strong { display: block; color: var(--brand); font-size: 24px; }
+        .guide-stat span { color: var(--muted); font-size: 13px; font-weight: 800; }
+        .guide-tools { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin-bottom: 24px; padding: 18px; border: 1px solid var(--line); border-radius: 28px; background: rgba(255,255,255,.86); box-shadow: var(--shadow-soft); }
+        .guide-tools input { width: 100%; min-height: 50px; border-radius: 999px; border: 1px solid var(--line); background: white; color: var(--ink); padding: 0 18px; outline: none; font-size: 15px; }
+        .guide-pill-row { display: flex; gap: 8px; flex-wrap: wrap; }
+        .guide-pill { border: 1px solid var(--line); background: white; color: var(--brand); border-radius: 999px; padding: 10px 13px; font: inherit; font-size: 13px; font-weight: 900; cursor: pointer; }
+        .guide-pill.active { background: var(--brand); color: white; border-color: var(--brand); }
+        .guide-card.featured-guide-card { border-radius: 28px; }
+        .guide-card .read-more { margin-top: 14px; }
+        .guide-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+        .guide-links a { display: inline-flex; padding: 9px 11px; border-radius: 999px; background: var(--brand-soft); border: 1px solid #d9e6f0; color: var(--brand); font-size: 12px; font-weight: 900; }
+        .guide-cta-panel { margin-top: 28px; background: var(--brand); color: white; border-radius: 32px; padding: clamp(26px,4vw,42px); display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; align-items: center; box-shadow: var(--shadow); }
+        .guide-cta-panel h2 { margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px,4vw,46px); line-height: 1; letter-spacing: -.045em; }
+        .guide-cta-panel p { margin: 0; color: rgba(255,255,255,.78); line-height: 1.65; }
+        .guide-cta-panel .btn { background: white; color: var(--brand); justify-self: end; }
+        @media (max-width: 920px) { .guide-tools, .guide-cta-panel { grid-template-columns: 1fr; } .guide-cta-panel .btn { justify-self: start; } .guide-stats { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 720px) { .guide-stats { grid-template-columns: 1fr; } }
     </style>
 </head>
 
@@ -208,17 +54,16 @@
     <header>
         <div class="container">
             <nav aria-label="Navegación principal">
-                <a class="logo" href="../index.html" aria-label="Alhaurín al Día">
+                <a class="logo" href="../" aria-label="Alhaurín al Día">
                     <span class="logo-mark">A</span>
                     <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
                 </a>
-
                 <div class="nav-links">
-                    <a href="../index.html#noticias">Noticias</a>
+                    <a href="../noticias/">Noticias</a>
                     <a href="./">Guía útil</a>
-                    <a href="../index.html#planes">Planes</a>
-                    <a href="../index.html#comercios">Comercios</a>
-                    <a href="../index.html#contacto" class="nav-cta">Anunciarse</a>
+                    <a href="../planes/">Planes</a>
+                    <a href="../comercios/">Comercios</a>
+                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
                 </div>
             </nav>
         </div>
@@ -233,9 +78,8 @@
                     <p class="lead">Un espacio pensado para encontrar rápido lo que de verdad se busca en el día a día: farmacias, teléfonos, trámites, transporte, bibliotecas, turismo, servicios municipales y recursos locales.</p>
                     <div class="actions">
                         <a class="btn btn-primary" href="#guia-listado">Consultar guía</a>
-                        <a class="btn btn-secondary" href="../index.html">Volver a portada</a>
+                        <a class="btn btn-secondary" href="../">Volver a portada</a>
                     </div>
-
                     <div class="guide-stats" aria-label="Resumen de la guía útil">
                         <div class="guide-stat"><strong id="total-recursos">—</strong><span>recursos iniciales</span></div>
                         <div class="guide-stat"><strong>24h</strong><span>emergencias y salud</span></div>
@@ -255,20 +99,17 @@
                     </div>
                     <p>Filtra por categoría o busca directamente lo que necesitas.</p>
                 </div>
-
                 <div class="guide-tools">
                     <input id="guide-page-search" type="search" placeholder="Buscar: farmacia, padrón, autobús, biblioteca, teléfono..." aria-label="Buscar en la guía útil">
                     <div class="guide-pill-row" id="guide-category-filters" aria-label="Filtrar por categoría"></div>
                 </div>
-
                 <div class="guide-grid" id="guide-page-container"></div>
-
                 <div class="guide-cta-panel">
                     <div>
                         <h2>¿Falta algún dato útil?</h2>
                         <p>La guía está pensada para crecer con información local verificada, comercios, servicios y recursos prácticos para vecinos y visitantes.</p>
                     </div>
-                    <a class="btn" href="../index.html#contacto">Sugerir información</a>
+                    <a class="btn" href="../anunciarse/">Sugerir información</a>
                 </div>
             </div>
         </section>
@@ -278,9 +119,11 @@
         <div class="container">
             <span>© 2026 Alhaurín al Día · Guía local independiente</span>
             <div class="footer-links">
-                <a href="../index.html#noticias">Noticias</a>
+                <a href="../noticias/">Noticias</a>
                 <a href="./">Guía útil</a>
-                <a href="../index.html#contacto">Contacto</a>
+                <a href="../planes/">Planes</a>
+                <a href="../comercios/">Comercios</a>
+                <a href="../anunciarse/">Anunciarse</a>
             </div>
         </div>
     </footer>
@@ -290,107 +133,34 @@
         const searchInput = document.getElementById("guide-page-search");
         const filtersContainer = document.getElementById("guide-category-filters");
         const totalRecursos = document.getElementById("total-recursos");
-
         let allItems = [];
         let activeCategory = "Todas";
-
-        function escapeHTML(value = "") {
-            return String(value)
-                .replaceAll("&", "&amp;")
-                .replaceAll("<", "&lt;")
-                .replaceAll(">", "&gt;")
-                .replaceAll('"', "&quot;")
-                .replaceAll("'", "&#039;");
-        }
-
+        function escapeHTML(value = "") { return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); }
         function renderFilters(items) {
             const categories = ["Todas", ...new Set(items.map(item => item.categoria || "Otros"))];
-            filtersContainer.innerHTML = categories.map(category => `
-                <button type="button" class="guide-pill ${category === activeCategory ? "active" : ""}" data-category="${escapeHTML(category)}">
-                    ${escapeHTML(category)}
-                </button>
-            `).join("");
-
+            filtersContainer.innerHTML = categories.map(category => `<button type="button" class="guide-pill ${category === activeCategory ? "active" : ""}" data-category="${escapeHTML(category)}">${escapeHTML(category)}</button>`).join("");
             filtersContainer.querySelectorAll(".guide-pill").forEach(button => {
-                button.addEventListener("click", () => {
-                    activeCategory = button.dataset.category || "Todas";
-                    renderFilters(allItems);
-                    renderItems();
-                });
+                button.addEventListener("click", () => { activeCategory = button.dataset.category || "Todas"; renderFilters(allItems); renderItems(); });
             });
         }
-
         function itemMatches(item, query) {
-            const content = [
-                item.categoria,
-                item.titulo,
-                item.descripcion,
-                ...(item.items || []),
-                ...((item.links || []).map(link => link.texto || ""))
-            ].join(" ").toLowerCase();
-
+            const content = [item.categoria, item.titulo, item.descripcion, ...(item.items || []), ...((item.links || []).map(link => link.texto || ""))].join(" ").toLowerCase();
             return content.includes(query);
         }
-
         function renderItems() {
             const query = searchInput.value.trim().toLowerCase();
-
-            const filtered = allItems.filter(item => {
-                const categoryOk = activeCategory === "Todas" || (item.categoria || "Otros") === activeCategory;
-                const searchOk = !query || itemMatches(item, query);
-                return categoryOk && searchOk;
-            });
-
-            if (!filtered.length) {
-                container.innerHTML = `<p class="empty-state">No se han encontrado recursos con ese criterio.</p>`;
-                return;
-            }
-
+            const filtered = allItems.filter(item => (activeCategory === "Todas" || (item.categoria || "Otros") === activeCategory) && (!query || itemMatches(item, query)));
+            if (!filtered.length) { container.innerHTML = `<p class="empty-state">No se han encontrado recursos con ese criterio.</p>`; return; }
             container.innerHTML = filtered.map(item => {
                 const listItems = (item.items || []).map(text => `<li>${escapeHTML(text)}</li>`).join("");
-                const links = (item.links || []).map(link => `
-                    <a href="${escapeHTML(link.url || "#")}" target="_blank" rel="noopener noreferrer">
-                        ${escapeHTML(link.texto || "Abrir enlace")}
-                    </a>
-                `).join("");
-
-                return `
-                    <article class="guide-card featured-guide-card" id="${escapeHTML(item.id || "")}">
-                        <div class="guide-card-top">
-                            <div class="guide-icon">${escapeHTML(item.icono || "•")}</div>
-                            <div>
-                                <span class="guide-category">${escapeHTML(item.categoria || "Guía útil")}</span>
-                                <h3>${escapeHTML(item.titulo || "Recurso local")}</h3>
-                            </div>
-                        </div>
-                        <p>${escapeHTML(item.descripcion || "Información práctica para consultar rápidamente.")}</p>
-                        <ul>${listItems}</ul>
-                        ${links ? `<div class="guide-links">${links}</div>` : ""}
-                        <a class="read-more" href="${escapeHTML(item.enlace || "#")}" target="_blank" rel="noopener noreferrer">
-                            ${escapeHTML(item.cta || "Ver más")} →
-                        </a>
-                    </article>
-                `;
+                const links = (item.links || []).map(link => `<a href="${escapeHTML(link.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHTML(link.texto || "Abrir enlace")}</a>`).join("");
+                return `<article class="guide-card featured-guide-card" id="${escapeHTML(item.id || "")}"><div class="guide-card-top"><div class="guide-icon">${escapeHTML(item.icono || "•")}</div><div><span class="guide-category">${escapeHTML(item.categoria || "Guía útil")}</span><h3>${escapeHTML(item.titulo || "Recurso local")}</h3></div></div><p>${escapeHTML(item.descripcion || "Información práctica para consultar rápidamente.")}</p><ul>${listItems}</ul>${links ? `<div class="guide-links">${links}</div>` : ""}<a class="read-more" href="${escapeHTML(item.enlace || "#")}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.cta || "Ver más")} →</a></article>`;
             }).join("");
         }
-
         fetch("../data/guia-util.json")
-            .then(response => {
-                if (!response.ok) throw new Error("No se pudo cargar la guía útil");
-                return response.json();
-            })
-            .then(items => {
-                allItems = items || [];
-                totalRecursos.textContent = allItems.length;
-                renderFilters(allItems);
-                renderItems();
-                searchInput.addEventListener("input", renderItems);
-            })
-            .catch(error => {
-                console.error(error);
-                container.innerHTML = `<p class="empty-state">No se ha podido cargar la guía útil.</p>`;
-            });
+            .then(response => { if (!response.ok) throw new Error("No se pudo cargar la guía útil"); return response.json(); })
+            .then(items => { allItems = items || []; totalRecursos.textContent = allItems.length; renderFilters(allItems); renderItems(); searchInput.addEventListener("input", renderItems); })
+            .catch(error => { console.error(error); container.innerHTML = `<p class="empty-state">No se ha podido cargar la guía útil.</p>`; });
     </script>
 </body>
-
 </html>

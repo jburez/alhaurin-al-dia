@@ -39,8 +39,14 @@ FUENTES = [
         "nombre": "Diario SUR Málaga",
         "url": "https://www.diariosur.es/rss/2.0/?section=malaga",
     },
-    {"nombre": "Ayuntamiento Alhaurín el Grande",
-        "url": "https://alhaurinelgrande.es/feed/", },
+    {
+        "nombre": "Ayuntamiento Alhaurín el Grande",
+        "url": "https://alhaurinelgrande.es/feed/",
+    },
+    {
+        "nombre": "Hermandad Nuestro Padre Jesús Nazareno",
+        "url": "https://www.nuestropadrejesusnazareno.com/feed/",
+    },
 ]
 
 
@@ -92,6 +98,8 @@ def es_noticia_relevante_local(titulo, texto, fuente):
     fuentes_siempre_validas = [
         "rtv alhaurín el grande",
         "atv alhaurín youtube",
+        "ayuntamiento alhaurín el grande",
+        "hermandad nuestro padre jesús nazareno",
     ]
 
     for fuente_valida in fuentes_siempre_validas:
@@ -117,6 +125,9 @@ def prioridad_fuente(fuente):
 
     if "diario sur" in fuente:
         return 100
+
+    if "hermandad nuestro padre jesús nazareno" in fuente:
+        return 95
 
     if "rtv alhaurín" in fuente:
         return 90

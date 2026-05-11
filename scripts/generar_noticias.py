@@ -112,6 +112,9 @@ def es_noticia_relevante_local(titulo, texto, fuente):
 def prioridad_fuente(fuente):
     fuente = fuente.lower()
 
+    if "ayuntamiento alhaurín" in fuente:
+        return 120
+
     if "diario sur" in fuente:
         return 100
 
@@ -428,6 +431,7 @@ def obtener_noticias():
                 "enlace": url,
                 "url": url,
                 "imagen": extraer_imagen(entry),
+                "prioridad": prioridad_fuente(fuente["nombre"]),
             }
 
             noticias.append(noticia)
@@ -436,7 +440,7 @@ def obtener_noticias():
 
     noticias.sort(
         key=lambda noticia: (
-            prioridad_fuente(noticia["fuente"]),
+            noticia["prioridad"],
             noticia["fecha"]
         ),
         reverse=True

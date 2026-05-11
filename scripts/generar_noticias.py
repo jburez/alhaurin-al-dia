@@ -39,6 +39,8 @@ FUENTES = [
         "nombre": "Diario SUR Málaga",
         "url": "https://www.diariosur.es/rss/2.0/?section=malaga",
     },
+    {"nombre": "Ayuntamiento Alhaurín el Grande",
+        "url": "https://alhaurinelgrande.es/feed/", },
 ]
 
 

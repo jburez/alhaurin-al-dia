@@ -20,31 +20,23 @@
 
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./home.css">
 </head>
 
-<body class="home-page">
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
+<body>
     <div class="topbar">
         <div class="container">
-            <span>Alhaurín el Grande · Información local útil</span>
-            <span>Noticias · Servicios · Comercios · Planes</span>
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <span>Noticias · Guía útil · Comercios · Planes</span>
         </div>
     </div>
 
-    <header class="site-header">
+    <header>
         <div class="container">
-            <nav class="main-nav" aria-label="Navegación principal">
+            <nav aria-label="Navegación principal">
                 <a class="logo" href="./" aria-label="Alhaurín al Día">
                     <span class="logo-mark">A</span>
-                    <span><strong>Alhaurín al Día</strong><span>Diario local y guía útil</span></span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
                 </a>
-
-                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
-                    <span>Menú</span>
-                    <i aria-hidden="true"></i>
-                </button>
 
                 <div class="nav-links" id="main-menu">
                     <a href="./noticias/">Noticias</a>
@@ -57,64 +49,53 @@
         </div>
     </header>
 
-    <main id="contenido">
-        <section class="home-masthead" aria-labelledby="home-title">
-            <div class="container">
-                <div class="masthead-kicker">
-                    <span>Portada local</span>
-                    <time id="today-label" datetime="2026-05-11">Actualizado hoy</time>
-                </div>
-
-                <div class="masthead-grid">
-                    <div>
-                        <h1 id="home-title">Lo último de Alhaurín, claro y a mano.</h1>
-                        <p>Noticias recientes, servicios esenciales, planes y comercios en una portada más rápida,
-                            limpia y pensada para consultarla desde el móvil.</p>
-                    </div>
-
-                    <div class="masthead-actions" aria-label="Accesos rápidos principales">
-                        <a href="./guia-util/#farmacias">Farmacias</a>
-                        <a href="./guia-util/#telefonos">Teléfonos útiles</a>
-                        <a href="./guia-util/#tramites">Trámites</a>
-                        <a href="./anunciarse/">Anunciarse</a>
+    <main id="inicio">
+        <section class="hero home-hero-clean">
+            <div class="container hero-grid">
+                <div class="hero-card">
+                    <span class="eyebrow">Actualidad local clara y sin ruido</span>
+                    <h1>Todo lo útil de Alhaurín el Grande en un solo lugar.</h1>
+                    <p class="lead">Noticias, avisos, servicios, trámites, comercios y planes cercanos. Una web local
+                        sencilla, elegante y pensada para consultarse rápido desde el móvil.</p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="./guia-util/">Abrir guía útil</a>
+                        <a class="btn btn-secondary" href="./noticias/">Ver noticias</a>
                     </div>
                 </div>
+
+                <aside class="side-panel" aria-label="Resumen local">
+                    <div class="info-card today-card">
+                        <span class="mini-label">Acceso rápido</span>
+                        <h2>Lo más consultado</h2>
+                        <p>Servicios y enlaces prácticos para vecinos, familias, visitantes y negocios.</p>
+
+                        <div class="quick-links">
+                            <a href="./guia-util/#farmacias">Farmacias</a>
+                            <a href="./guia-util/#telefonos">Teléfonos</a>
+                            <a href="./guia-util/#tramites">Trámites</a>
+                            <a href="./guia-util/#movilidad">Movilidad</a>
+                        </div>
+                    </div>
+
+                    <div class="ad-slot">
+                        Espacio publicitario superior<br />728x90 / responsive
+                    </div>
+                </aside>
             </div>
         </section>
 
-        <section id="noticias" class="home-news" aria-labelledby="news-title">
+        <section id="noticias" class="home-news-clean">
             <div class="container">
-                <div class="section-title compact-title">
+                <div class="section-title">
                     <div>
                         <span class="section-kicker">Actualidad</span>
-                        <h2 id="news-title">Últimas noticias</h2>
+                        <h2>Últimas noticias</h2>
                     </div>
-                    <p>Una selección editorial de la actualidad local, con acceso a todas las noticias.</p>
+                    <p>La noticia principal del día y tres titulares recientes para seguir la actualidad local sin ruido.</p>
                 </div>
 
-                <div class="home-news-layout">
-                    <div class="featured-news" id="featured-news"></div>
-
-                    <aside class="home-aside" aria-label="Titulares y accesos útiles">
-                        <div class="headline-panel">
-                            <div class="panel-title">
-                                <span>También es noticia</span>
-                                <a href="./noticias/">Ver todo</a>
-                            </div>
-                            <div id="top-stories" class="top-stories"></div>
-                        </div>
-
-                        <div class="local-tools-panel">
-                            <span>Guía rápida</span>
-                            <a href="./guia-util/#farmacias">Farmacias de guardia</a>
-                            <a href="./guia-util/#movilidad">Movilidad y transporte</a>
-                            <a href="./planes/">Planes para hoy</a>
-                        </div>
-                    </aside>
-                </div>
-
-                <div class="source-filters" id="source-filters" aria-label="Filtrar noticias por fuente"></div>
-                <div class="grid-3 home-card-grid" id="news-container"></div>
+                <div class="featured-news" id="featured-news"></div>
+                <div class="grid-3 home-latest-grid" id="news-container"></div>
 
                 <div class="actions centered">
                     <a class="btn btn-primary" href="./noticias/">Ver todas las noticias</a>
@@ -122,87 +103,117 @@
             </div>
         </section>
 
-        <section class="home-strip" aria-label="Accesos destacados">
-            <div class="container strip-grid">
-                <a href="./guia-util/">
-                    <strong>Guía útil</strong>
-                    <span>Servicios, teléfonos, trámites y recursos locales.</span>
-                </a>
-                <a href="./planes/">
-                    <strong>Planes y rincones</strong>
-                    <span>Ideas para familias, visitantes y vecinos.</span>
-                </a>
-                <a href="./comercios/">
-                    <strong>Comercios</strong>
-                    <span>Escaparate local para negocios de confianza.</span>
-                </a>
-            </div>
-        </section>
-
-        <div class="container ad-container">
+        <div class="container">
             <div class="ad-slot">Espacio publicitario responsive · Patrocinador local o AdSense</div>
         </div>
 
-        <section id="guia-util" class="guide-section home-light-section">
+        <section id="guia-util" class="guide-section">
             <div class="container">
-                <div class="section-title compact-title">
+                <div class="section-title guide-title">
                     <div>
                         <span class="section-kicker">Guía local</span>
-                        <h2>Información útil</h2>
+                        <h2>Guía útil de Alhaurín</h2>
                     </div>
-                    <p>Los recursos que más se consultan, preparados para ampliar la guía local.</p>
+                    <p>Información práctica que la gente busca a diario: farmacias, teléfonos, trámites, transporte,
+                        horarios, rutas y recursos locales.</p>
                 </div>
 
-                <div class="guide-grid home-guide-grid" id="guide-container"></div>
+                <div class="guide-hero-card">
+                    <div>
+                        <span class="mini-label">Para consultar rápido</span>
+                        <h3>Servicios esenciales, ordenados y fáciles de encontrar.</h3>
+                        <p>La guía completa vive en una sección propia, preparada para posicionar búsquedas útiles de
+                            Alhaurín el Grande.</p>
+                        <div class="actions">
+                            <a class="btn btn-primary" href="./guia-util/">Ver Guía Útil completa</a>
+                        </div>
+                    </div>
+                    <div class="guide-search-box">
+                        <label>Accesos rápidos</label>
+                        <div class="quick-links">
+                            <a href="./guia-util/#farmacias">Farmacias</a>
+                            <a href="./guia-util/#telefonos">Teléfonos</a>
+                            <a href="./guia-util/#tramites">Trámites</a>
+                            <a href="./guia-util/#movilidad">Movilidad</a>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="actions centered">
-                    <a class="btn btn-primary" href="./guia-util/">Abrir Guía Útil completa</a>
+                <div class="guide-content">
+                    <div class="guide-grid" id="guide-container"></div>
                 </div>
             </div>
         </section>
 
-        <section id="planes" class="plans-section home-light-section">
+        <section id="planes" class="plans-section">
             <div class="container">
-                <div class="section-title compact-title">
+                <div class="section-title">
                     <div>
                         <span class="section-kicker">Para disfrutar</span>
                         <h2>Planes y rincones</h2>
                     </div>
-                    <p>Contenido evergreen para atraer búsquedas locales durante todo el año.</p>
+                    <p>Ideas pensadas para familias, visitantes y vecinos que quieren redescubrir el municipio.</p>
                 </div>
 
-                <div class="grid-3 home-plan-grid">
+                <div class="grid-3">
                     <article class="plan-card">
                         <span>01</span>
                         <h3>Paseo por el casco histórico</h3>
-                        <p>Calles con encanto, plazas, miradores y paradas recomendadas.</p>
+                        <p>Una ruta sencilla para descubrir calles con encanto, plazas, miradores y bares donde hacer parada.</p>
                     </article>
                     <article class="plan-card">
                         <span>02</span>
                         <h3>Ruta familiar por el entorno natural</h3>
-                        <p>Ideas sencillas para caminar y disfrutar sin complicarse.</p>
+                        <p>Ideas para caminar sin complicarse, con recomendaciones pensadas para ir con niños.</p>
                     </article>
                     <article class="plan-card">
                         <span>03</span>
                         <h3>Agenda de fin de semana</h3>
-                        <p>Eventos, fiestas, cultura y ocio en formato claro y consultable.</p>
+                        <p>Una futura sección para destacar eventos, fiestas, actividades culturales y propuestas de ocio.</p>
                     </article>
                 </div>
-            </div>
-        </section>
 
-        <section id="comercios" class="home-business-section">
-            <div class="container business-cta">
-                <div>
-                    <span class="section-kicker">Escaparate local</span>
-                    <h2>Comercios destacados</h2>
-                    <p>Un espacio sobrio para restaurantes, tiendas, profesionales y servicios de confianza.</p>
+                <div class="actions centered">
+                    <a class="btn btn-primary" href="./planes/">Ver todos los planes</a>
                 </div>
-                <a class="btn btn-primary" href="./comercios/">Ver comercios</a>
             </div>
         </section>
 
-        <section id="contacto" class="home-contact-section">
+        <section id="comercios">
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <span class="section-kicker">Escaparate local</span>
+                        <h2>Comercios destacados</h2>
+                    </div>
+                    <p>Un espacio pensado para restaurantes, tiendas, profesionales y servicios de confianza.</p>
+                </div>
+
+                <div class="grid-3">
+                    <article class="business-card">
+                        <div class="business-top"><div class="business-logo">C</div><div><small>Destacado</small><h3>Cafetería local</h3></div></div>
+                        <p>Desayunos, meriendas y terraza. Espacio reservado para negocio patrocinado.</p>
+                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
+                    </article>
+                    <article class="business-card">
+                        <div class="business-top"><div class="business-logo">T</div><div><small>Servicio</small><h3>Taller recomendado</h3></div></div>
+                        <p>Mecánica, revisiones y mantenimiento. Ficha preparada para contacto y ubicación.</p>
+                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
+                    </article>
+                    <article class="business-card">
+                        <div class="business-top"><div class="business-logo">R</div><div><small>Comer</small><h3>Restaurante destacado</h3></div></div>
+                        <p>Menú, reservas y especialidades. Ideal para negocios de hostelería local.</p>
+                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
+                    </article>
+                </div>
+
+                <div class="actions centered">
+                    <a class="btn btn-primary" href="./comercios/">Ver comercios</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
             <div class="container">
                 <div class="newsletter">
                     <div>

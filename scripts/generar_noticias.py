@@ -41,8 +41,14 @@ def limpiar_html(texto):
         return ""
     texto = re.sub(r"<[^>]+>", "", str(texto))
     reemplazos = {
-        "&nbsp;": " ", "&amp;": "&", "&quot;": '"', "&#8217;": "'",
-        "&#8220;": '"', "&#8221;": '"', "&#8211;": "-", "&#8230;": "...",
+        "&nbsp;": " ",
+        "&amp;": "&",
+        "&quot;": '"',
+        "&#8217;": "'",
+        "&#8220;": '"',
+        "&#8221;": '"',
+        "&#8211;": "-",
+        "&#8230;": "...",
     }
     for origen, destino in reemplazos.items():
         texto = texto.replace(origen, destino)
@@ -138,8 +144,10 @@ def calcular_score(noticia):
 def es_noticia_relevante_local(titulo, texto, fuente):
     fuente_lower = fuente.lower()
     fuentes_validas = [
-        "rtv alhaurín el grande", "atv alhaurín youtube",
-        "ayuntamiento alhaurín el grande", "hermandad nuestro padre jesús nazareno",
+        "rtv alhaurín el grande",
+        "atv alhaurín youtube",
+        "ayuntamiento alhaurín el grande",
+        "hermandad nuestro padre jesús nazareno",
     ]
     if any(f in fuente_lower for f in fuentes_validas):
         return True
@@ -244,7 +252,7 @@ def schema_news_article(noticia, canonical_url):
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
-def html_header(title, description, canonical, image=""):
+def html_header(title, description, canonical, image="", css_prefix=".."):
     image = image or f"{SITE_URL}/favicon.ico"
     return f'''<head>
     <meta charset="utf-8">
@@ -257,19 +265,19 @@ def html_header(title, description, canonical, image=""):
     <meta property="og:url" content="{escapar(canonical)}">
     <meta property="og:image" content="{escapar(image)}">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="{css_prefix}/styles.css">
 </head>'''
 
 
 def site_chrome(content, prefix=".."):
     return f'''<body>
-    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>Agenda · Comercios · Avisos útiles · Planes</span></div></div>
+    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>Noticias · Guía útil · Comercios · Planes</span></div></div>
     <header><div class="container"><nav aria-label="Navegación principal">
-        <a class="logo" href="{prefix}/index.html" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
-        <div class="nav-links"><a href="{prefix}/index.html#agenda">Noticias</a><a href="{prefix}/index.html#guia-util">Guía útil</a><a href="{prefix}/index.html#planes">Planes</a><a href="{prefix}/index.html#contacto" class="nav-cta">Anunciarse</a></div>
+        <a class="logo" href="{prefix}/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
+        <div class="nav-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
     {content}
-    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/index.html#agenda">Noticias</a><a href="{prefix}/index.html#guia-util">Guía útil</a><a href="{prefix}/index.html#contacto">Contacto</a></div></div></footer>
+    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a></div></div></footer>
 </body>'''
 
 
@@ -286,18 +294,18 @@ def generar_html_noticia(noticia):
     imagen_html = f'<figure class="article-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"></figure>' if imagen else ""
     body = f'''
     <main class="article-page"><div class="container article-shell">
-        <div class="breadcrumb"><a href="../index.html">Inicio</a><span>›</span><a href="../index.html#agenda">Noticias</a><span>›</span><a href="../categoria/{slugify(categoria)}/index.html">{escapar(categoria)}</a></div>
+        <div class="breadcrumb"><a href="../">Inicio</a><span>›</span><a href="../noticias/">Noticias</a><span>›</span><a href="../categoria/{slugify(categoria)}/">{escapar(categoria)}</a></div>
         <article class="article-card">{imagen_html}<div class="article-content">
             <div class="article-meta"><span class="tag">{escapar(categoria)}</span>{f'<span class="source-mini-tag">{escapar(fuente)}</span>' if fuente else ''}{f'<span class="source-mini-tag">{escapar(fecha)}</span>' if fecha else ''}</div>
             <h1 class="article-title">{escapar(titulo)}</h1>
             <p class="article-summary">{escapar(descripcion)}</p>
-            <div class="article-actions"><a class="btn btn-primary" href="{escapar(enlace_original)}" target="_blank" rel="noopener noreferrer">Leer en la fuente original</a><a class="btn btn-secondary" href="../index.html#agenda">Volver a noticias</a></div>
+            <div class="article-actions"><a class="btn btn-primary" href="{escapar(enlace_original)}" target="_blank" rel="noopener noreferrer">Leer en la fuente original</a><a class="btn btn-secondary" href="../noticias/">Volver a noticias</a></div>
             <p class="article-note">Esta página recoge una noticia enlazada desde su fuente original. Alhaurín al Día organiza y facilita el acceso a la actualidad local de Alhaurín el Grande.</p>
         </div></article>
     </div></main>
     <script type="application/ld+json">{schema_news_article(noticia, canonical)}</script>
     '''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen)}\n{site_chrome(body, "..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen, "..")}\n{site_chrome(body, "..")}\n</html>'
 
 
 def generar_html_categoria(categoria, noticias):
@@ -320,7 +328,7 @@ def generar_html_categoria(categoria, noticias):
         <section><div class="container"><div class="section-title"><h2>Últimas noticias</h2><p>{len(noticias)} noticias disponibles en esta categoría.</p></div><div class="grid-3">{''.join(cards)}</div></div></section>
     </main>
     '''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " | Alhaurín al Día", descripcion, canonical)}\n{site_chrome(body, "../..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " | Alhaurín al Día", descripcion, canonical, "", "../..")}\n{site_chrome(body, "../..")}\n</html>'
 
 
 def generar_paginas_noticias(noticias):

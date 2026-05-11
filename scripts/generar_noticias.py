@@ -31,6 +31,14 @@ FUENTES = [
         "nombre": "ATV Alhaurín YouTube",
         "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UClgnTGIKzuISyUK8F3v1BFA",
     },
+    {
+        "nombre": "Europa Press Andalucía",
+        "url": "https://www.europapress.es/rss/rss.aspx?ch=00111",
+    },
+    {
+        "nombre": "Diario SUR Málaga",
+        "url": "https://www.diariosur.es/rss/2.0/?section=malaga",
+    },
 ]
 
 
@@ -73,6 +81,41 @@ def limitar_texto(texto, max_caracteres=220):
         return texto
 
     return texto[:max_caracteres].rsplit(" ", 1)[0] + "..."
+
+
+def es_noticia_relevante_local(titulo, texto, fuente):
+    contenido = f"{titulo} {texto} {fuente}".lower()
+
+    fuentes_siempre_validas = [
+        "rtv alhaurín el grande",
+        "atv alhaurín youtube",
+    ]
+
+    for fuente_valida in fuentes_siempre_validas:
+        if fuente_valida in fuente.lower():
+            return True
+
+    palabras_locales = [
+        "alhaurín el grande",
+        "alhaurin el grande",
+        "alhaurín",
+        "alhaurin",
+        "villa del guadalhorce",
+        "guadalhorce",
+        "valle del guadalhorce",
+        "coín",
+        "coin",
+        "cártama",
+        "cartama",
+        "mijas",
+        "málaga",
+        "malaga",
+        "sierra de mijas",
+        "diputación de málaga",
+        "diputacion de malaga",
+    ]
+
+    return any(palabra in contenido for palabra in palabras_locales)
 
 
 def normalizar_fecha(fecha_raw):
@@ -120,201 +163,91 @@ def detectar_categoria(titulo, texto, fuente):
         "Fiestas y Tradiciones": {
             "peso": 90,
             "palabras": [
-                "feria",
-                "romería",
-                "verbena",
-                "fiesta",
-                "fiestas",
-                "cruz",
-                "día de la cruz",
-                "semana santa",
-                "procesión",
-                "navidad",
-                "cabalgata",
-                "carnaval",
-                "san juan",
-                "caseta",
-                "real de la feria",
-                "pregón",
+                "feria", "romería", "verbena", "fiesta", "fiestas",
+                "cruz", "día de la cruz", "semana santa", "procesión",
+                "navidad", "cabalgata", "carnaval", "san juan",
+                "caseta", "real de la feria", "pregón",
             ],
         },
-
         "Agenda Cultural": {
             "peso": 80,
             "palabras": [
-                "teatro",
-                "concierto",
-                "música",
-                "exposición",
-                "libro",
-                "biblioteca",
-                "arte",
-                "danza",
-                "flamenco",
-                "festival",
-                "certamen",
-                "poesía",
-                "literario",
-                "presentación",
-                "auditorio",
-                "casa de la cultura",
+                "teatro", "concierto", "música", "exposición", "libro",
+                "biblioteca", "arte", "danza", "flamenco", "festival",
+                "certamen", "poesía", "literario", "presentación",
+                "auditorio", "casa de la cultura",
             ],
         },
-
         "Deportes": {
             "peso": 75,
             "palabras": [
-                "deporte",
-                "deportes",
-                "fútbol",
-                "baloncesto",
-                "carrera",
-                "trail",
-                "torneo",
-                "club",
-                "partido",
-                "pedal",
-                "senderismo",
-                "ciclista",
-                "atletismo",
-                "liga",
+                "deporte", "deportes", "fútbol", "baloncesto", "carrera",
+                "trail", "torneo", "club", "partido", "pedal",
+                "senderismo", "ciclista", "atletismo", "liga",
             ],
         },
-
         "Municipal": {
             "peso": 65,
             "palabras": [
-                "ayuntamiento",
-                "alcalde",
-                "alcaldesa",
-                "pleno",
-                "concejal",
-                "concejalía",
-                "municipal",
-                "presupuesto",
-                "subvención",
-                "diputación",
-                "junta de andalucía",
+                "ayuntamiento", "alcalde", "alcaldesa", "pleno",
+                "concejal", "concejalía", "municipal", "presupuesto",
+                "subvención", "diputación", "junta de andalucía",
                 "equipo de gobierno",
             ],
         },
-
         "Obras y Servicios": {
             "peso": 70,
             "palabras": [
-                "obra",
-                "obras",
-                "reforma",
-                "mejora",
-                "urbanización",
-                "calle",
-                "infraestructura",
-                "asfaltado",
-                "remodelación",
-                "limpieza",
-                "jardinería",
-                "alumbrado",
-                "agua",
-                "saneamiento",
-                "servicios operativos",
+                "obra", "obras", "reforma", "mejora", "urbanización",
+                "calle", "infraestructura", "asfaltado", "remodelación",
+                "limpieza", "jardinería", "alumbrado", "agua",
+                "saneamiento", "servicios operativos",
             ],
         },
-
         "Tráfico y Movilidad": {
             "peso": 85,
             "palabras": [
-                "tráfico",
-                "carretera",
-                "corte",
-                "desvío",
-                "aparcamiento",
-                "circulación",
-                "retención",
-                "vía",
-                "acceso",
-                "transporte",
-                "autobús",
-                "movilidad",
+                "tráfico", "carretera", "corte", "desvío", "aparcamiento",
+                "circulación", "retención", "vía", "acceso", "transporte",
+                "autobús", "movilidad",
             ],
         },
-
         "Educación": {
             "peso": 70,
             "palabras": [
-                "colegio",
-                "instituto",
-                "escuela",
-                "alumnado",
-                "educación",
-                "guardería",
-                "formación",
-                "curso",
-                "taller",
-                "estudiantes",
-                "profesorado",
-                "ampa",
+                "colegio", "instituto", "escuela", "alumnado", "educación",
+                "guardería", "formación", "curso", "taller", "estudiantes",
+                "profesorado", "ampa",
             ],
         },
-
         "Comercio y Empresa": {
             "peso": 70,
             "palabras": [
-                "comercio",
-                "comercios",
-                "mercado",
-                "hostelería",
-                "empresa",
-                "negocio",
-                "emprendedores",
-                "campaña comercial",
-                "autónomos",
-                "feria de muestras",
+                "comercio", "comercios", "mercado", "hostelería",
+                "empresa", "negocio", "emprendedores", "campaña comercial",
+                "autónomos", "feria de muestras",
             ],
         },
-
         "Turismo y Patrimonio": {
             "peso": 70,
             "palabras": [
-                "turismo",
-                "visitantes",
-                "ruta",
-                "mirador",
-                "sendero",
-                "patrimonio",
-                "visita guiada",
-                "turístico",
-                "monumento",
-                "historia",
-                "entorno natural",
+                "turismo", "visitantes", "ruta", "mirador", "sendero",
+                "patrimonio", "visita guiada", "turístico", "monumento",
+                "historia", "entorno natural",
             ],
         },
-
         "Sucesos": {
             "peso": 95,
             "palabras": [
-                "suceso",
-                "detenido",
-                "detenida",
-                "incendio",
-                "accidente",
-                "policía",
-                "guardia civil",
-                "emergencia",
-                "rescate",
-                "herido",
-                "fallecido",
-                "investigación",
+                "suceso", "detenido", "detenida", "incendio", "accidente",
+                "policía", "guardia civil", "emergencia", "rescate",
+                "herido", "fallecido", "investigación",
             ],
         },
-
         "Vídeos": {
             "peso": 40,
             "palabras": [
-                "youtube",
-                "vídeo",
-                "video",
-                "entrevista",
-                "atv",
+                "youtube", "vídeo", "video", "entrevista", "atv",
             ],
         },
     }
@@ -322,16 +255,12 @@ def detectar_categoria(titulo, texto, fuente):
     puntuaciones = {}
 
     for categoria, config in categorias.items():
-
         puntuacion = 0
 
         for palabra in config["palabras"]:
-
             if palabra in contenido:
-
                 puntuacion += config["peso"]
 
-                # Si aparece en el título, suma más
                 if palabra in titulo.lower():
                     puntuacion += 40
 
@@ -341,12 +270,7 @@ def detectar_categoria(titulo, texto, fuente):
     if not puntuaciones:
         return "Actualidad"
 
-    categoria_ganadora = max(
-        puntuaciones,
-        key=puntuaciones.get
-    )
-
-    return categoria_ganadora
+    return max(puntuaciones, key=puntuaciones.get)
 
 
 # =========================================
@@ -464,6 +388,14 @@ def obtener_noticias():
 
             texto_limpio = limpiar_html(texto_original)
 
+            if not es_noticia_relevante_local(
+                titulo=titulo,
+                texto=texto_limpio,
+                fuente=fuente["nombre"]
+            ):
+                print(f"✗ Descartada por no ser local: {titulo}")
+                continue
+
             resumen = resumir_con_ia(
                 titulo=titulo,
                 texto=texto_limpio,
@@ -478,20 +410,14 @@ def obtener_noticias():
 
             noticia = {
                 "id": generar_id(url, titulo),
-
                 "titulo": titulo,
-
                 "descripcion": resumen,
                 "resumen": resumen,
-
                 "fecha": normalizar_fecha(entry.get("published", "")),
-
                 "fuente": fuente["nombre"],
                 "categoria": categoria,
-
                 "enlace": url,
                 "url": url,
-
                 "imagen": extraer_imagen(entry),
             }
 

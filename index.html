@@ -32,17 +32,17 @@
     <header>
         <div class="container">
             <nav aria-label="Navegación principal">
-                <a class="logo" href="#inicio" aria-label="Alhaurín al Día">
+                <a class="logo" href="./" aria-label="Alhaurín al Día">
                     <span class="logo-mark">A</span>
                     <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
                 </a>
 
                 <div class="nav-links">
-                    <a href="#noticias">Noticias</a>
-                    <a href="#guia-util">Guía útil</a>
-                    <a href="#planes">Planes</a>
-                    <a href="#comercios">Comercios</a>
-                    <a href="#contacto" class="nav-cta">Anunciarse</a>
+                    <a href="./noticias/">Noticias</a>
+                    <a href="./guia-util/">Guía útil</a>
+                    <a href="./planes/">Planes</a>
+                    <a href="./comercios/">Comercios</a>
+                    <a href="./anunciarse/" class="nav-cta">Anunciarse</a>
                 </div>
             </nav>
         </div>
@@ -57,8 +57,8 @@
                     <p class="lead">Noticias, avisos, servicios, trámites, comercios y planes cercanos. Una web local
                         sencilla, elegante y pensada para consultarse rápido desde el móvil.</p>
                     <div class="actions">
-                        <a class="btn btn-primary" href="#guia-util">Abrir guía útil</a>
-                        <a class="btn btn-secondary" href="#noticias">Ver noticias</a>
+                        <a class="btn btn-primary" href="./guia-util/">Abrir guía útil</a>
+                        <a class="btn btn-secondary" href="./noticias/">Ver noticias</a>
                     </div>
                 </div>
 
@@ -69,10 +69,10 @@
                         <p>Servicios y enlaces prácticos para vecinos, familias, visitantes y negocios.</p>
 
                         <div class="quick-links">
-                            <a href="#farmacias">Farmacias</a>
-                            <a href="#telefonos">Teléfonos</a>
-                            <a href="#tramites">Trámites</a>
-                            <a href="#movilidad">Movilidad</a>
+                            <a href="./guia-util/#farmacias">Farmacias</a>
+                            <a href="./guia-util/#telefonos">Teléfonos</a>
+                            <a href="./guia-util/#tramites">Trámites</a>
+                            <a href="./guia-util/#movilidad">Movilidad</a>
                         </div>
                     </div>
 
@@ -97,6 +97,10 @@
                 <div class="featured-news" id="featured-news"></div>
                 <div class="source-filters" id="source-filters" aria-label="Filtrar noticias por fuente"></div>
                 <div class="grid-3" id="news-container"></div>
+
+                <div class="actions" style="justify-content:center;margin-top:30px;">
+                    <a class="btn btn-primary" href="./noticias/">Ver todas las noticias</a>
+                </div>
             </div>
         </section>
 
@@ -121,29 +125,24 @@
                     <div>
                         <span class="mini-label">Para consultar rápido</span>
                         <h3>Servicios esenciales, ordenados y fáciles de encontrar.</h3>
-                        <p>Esta sección queda preparada para crecer con datos reales, enlaces oficiales, comercios
-                            recomendados y páginas internas específicas para posicionar en Google.</p>
+                        <p>La guía completa vive ahora en una sección propia, preparada para posicionar búsquedas útiles de Alhaurín el Grande.</p>
+                        <div class="actions">
+                            <a class="btn btn-primary" href="./guia-util/">Ver Guía Útil completa</a>
+                        </div>
                     </div>
                     <div class="guide-search-box">
-                        <label for="guide-search">Buscar en la guía</label>
-                        <input id="guide-search" type="search" placeholder="Ej. farmacia, padrón, autobús..." />
+                        <label>Accesos rápidos</label>
+                        <div class="quick-links">
+                            <a href="./guia-util/#farmacias">Farmacias</a>
+                            <a href="./guia-util/#telefonos">Teléfonos</a>
+                            <a href="./guia-util/#tramites">Trámites</a>
+                            <a href="./guia-util/#movilidad">Movilidad</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="guide-layout">
-                    <aside class="guide-index" aria-label="Índice de la guía útil">
-                        <strong>Índice rápido</strong>
-                        <a href="#farmacias">Farmacias y salud</a>
-                        <a href="#telefonos">Teléfonos útiles</a>
-                        <a href="#tramites">Trámites frecuentes</a>
-                        <a href="#movilidad">Movilidad y aparcamiento</a>
-                        <a href="#familias">Familias y educación</a>
-                        <a href="#planes">Planes y rutas</a>
-                    </aside>
-
-                    <div class="guide-content">
-                        <div class="guide-grid" id="guide-container"></div>
-                    </div>
+                <div class="guide-content">
+                    <div class="guide-grid" id="guide-container"></div>
                 </div>
             </div>
         </section>
@@ -177,6 +176,10 @@
                             ocio.</p>
                     </article>
                 </div>
+
+                <div class="actions" style="justify-content:center;margin-top:30px;">
+                    <a class="btn btn-primary" href="./planes/">Ver todos los planes</a>
+                </div>
             </div>
         </section>
 
@@ -192,40 +195,24 @@
 
                 <div class="grid-3">
                     <article class="business-card">
-                        <div class="business-top">
-                            <div class="business-logo">C</div>
-                            <div>
-                                <small>Destacado</small>
-                                <h3>Cafetería local</h3>
-                            </div>
-                        </div>
+                        <div class="business-top"><div class="business-logo">C</div><div><small>Destacado</small><h3>Cafetería local</h3></div></div>
                         <p>Desayunos, meriendas y terraza. Espacio reservado para negocio patrocinado.</p>
-                        <a class="read-more" href="#contacto">Anunciar aquí →</a>
+                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
                     </article>
-
                     <article class="business-card">
-                        <div class="business-top">
-                            <div class="business-logo">T</div>
-                            <div>
-                                <small>Servicio</small>
-                                <h3>Taller recomendado</h3>
-                            </div>
-                        </div>
+                        <div class="business-top"><div class="business-logo">T</div><div><small>Servicio</small><h3>Taller recomendado</h3></div></div>
                         <p>Mecánica, revisiones y mantenimiento. Ficha preparada para contacto y ubicación.</p>
-                        <a class="read-more" href="#contacto">Anunciar aquí →</a>
+                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
                     </article>
-
                     <article class="business-card">
-                        <div class="business-top">
-                            <div class="business-logo">R</div>
-                            <div>
-                                <small>Comer</small>
-                                <h3>Restaurante destacado</h3>
-                            </div>
-                        </div>
+                        <div class="business-top"><div class="business-logo">R</div><div><small>Comer</small><h3>Restaurante destacado</h3></div></div>
                         <p>Menú, reservas y especialidades. Ideal para negocios de hostelería local.</p>
-                        <a class="read-more" href="#contacto">Anunciar aquí →</a>
+                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
                     </article>
+                </div>
+
+                <div class="actions" style="justify-content:center;margin-top:30px;">
+                    <a class="btn btn-primary" href="./comercios/">Ver comercios</a>
                 </div>
             </div>
         </section>
@@ -235,14 +222,9 @@
                 <div class="newsletter">
                     <div>
                         <h2>¿Tienes un negocio en Alhaurín?</h2>
-                        <p>Aparece como comercio destacado, publica una promoción o patrocina una sección local. Esta
-                            zona puede conectarse más adelante con un formulario real.</p>
+                        <p>Aparece como comercio destacado, publica una promoción o patrocina una sección local.</p>
                     </div>
-                    <form
-                        onsubmit="event.preventDefault(); alert('Formulario de ejemplo. Aquí puedes conectar tu email o formulario real.');">
-                        <input type="email" required placeholder="tu@email.com" aria-label="Correo electrónico" />
-                        <button class="btn" type="submit">Solicitar información</button>
-                    </form>
+                    <a class="btn" href="./anunciarse/">Ver opciones para anunciarse</a>
                 </div>
             </div>
         </section>
@@ -252,9 +234,11 @@
         <div class="container">
             <span>© 2026 Alhaurín al Día · Guía local independiente</span>
             <div class="footer-links">
-                <a href="#">Aviso legal</a>
-                <a href="#">Privacidad</a>
-                <a href="#contacto">Contacto</a>
+                <a href="./noticias/">Noticias</a>
+                <a href="./guia-util/">Guía útil</a>
+                <a href="./planes/">Planes</a>
+                <a href="./comercios/">Comercios</a>
+                <a href="./anunciarse/">Anunciarse</a>
             </div>
         </div>
     </footer>

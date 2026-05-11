@@ -150,12 +150,35 @@ def generar_id(url, titulo):
 
 
 def extraer_imagen(entry):
+
+    # 1. media_thumbnail
     if hasattr(entry, "media_thumbnail") and entry.media_thumbnail:
         return entry.media_thumbnail[0].get("url", "")
 
+    # 2. media_content
     if hasattr(entry, "media_content") and entry.media_content:
         return entry.media_content[0].get("url", "")
 
+    # 3. imágenes dentro del summary HTML
+    posibles_campos = [
+        entry.get("summary", ""),
+        entry.get("description", ""),
+        getattr(entry, "content", [{}])[0].get("value", "")
+        if hasattr(entry, "content")
+        else "",
+    ]
+
+    for contenido in posibles_campos:
+
+        coincidencia = re.search(
+            r'<img[^>]+src="([^">]+)"',
+            contenido
+        )
+
+        if coincidencia:
+            return coincidencia.group(1)
+
+    # 4. enlaces tipo image/*
     if "links" in entry:
         for link in entry.links:
             if link.get("type", "").startswith("image/"):

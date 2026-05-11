@@ -4,6 +4,9 @@ const sourceFiltersContainer = document.getElementById("source-filters");
 const guideContainer = document.getElementById("guide-container");
 const guideSearch = document.getElementById("guide-search");
 
+const IS_HOME = document.body && document.body.contains(featuredContainer) && document.getElementById("inicio");
+const HOME_SECONDARY_NEWS_LIMIT = 3;
+
 let allNews = [];
 let activeSource = "Todas";
 
@@ -166,7 +169,11 @@ function renderNewsList() {
 
     renderFeaturedNews(filteredNews[0]);
 
-    filteredNews.slice(1).forEach(noticia => {
+    const secondaryNews = IS_HOME
+        ? filteredNews.slice(1, 1 + HOME_SECONDARY_NEWS_LIMIT)
+        : filteredNews.slice(1);
+
+    secondaryNews.forEach(noticia => {
         newsContainer.appendChild(renderNewsCard(noticia));
     });
 }

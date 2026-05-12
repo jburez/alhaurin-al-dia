@@ -1,0 +1,9 @@
+[
+  {"id":"farmacia-brenan","nombre":"Farmacia Brenan","url":"/guia-util/farmacias/farmacia-brenan/","telefono":"952 49 02 41","telefonoHref":"+34952490241","direccion":"Avda. Gerald Brenan nº 2"},
+  {"id":"farmacia-del-centro","nombre":"Farmacia del Centro","url":"/guia-util/farmacias/farmacia-del-centro/","telefono":"952 59 60 22","telefonoHref":"+34952596022","direccion":"Avda. de la Constitución nº 11"},
+  {"id":"maria-teresa-quintela","nombre":"Mª Teresa Quintela","url":"/guia-util/farmacias/maria-teresa-quintela/","telefono":"952 59 62 07","telefonoHref":"+34952596207","direccion":"C/ Virgen de Gracia nº 4"},
+  {"id":"farmacia-la-variante","nombre":"Farmacia La Variante","url":"/guia-util/farmacias/farmacia-la-variante/","telefono":"952 59 45 56","telefonoHref":"+34952594556","direccion":"Avda. Blas Infante nº 25"},
+  {"id":"jose-luis-quintela","nombre":"José Luis Quintela","url":"/guia-util/farmacias/jose-luis-quintela/","telefono":"952 59 62 07","telefonoHref":"+34952596207","direccion":"Avenida de la Libertad nº 89"},
+  {"id":"farmacia-lourdes-quintela","nombre":"Farmacia Lourdes Quintela","url":"/guia-util/farmacias/farmacia-lourdes-quintela/","telefono":"952 49 00 13","telefonoHref":"+34952490013","direccion":"Ctra. Cártama"},
+  {"id":"farmacia-camino-de-malaga","nombre":"Farmacia Camino de Málaga","url":"/guia-util/farmacias/farmacia-camino-de-malaga/","telefono":"952 49 00 34","telefonoHref":"+34952490034","direccion":"Camino de Málaga"}
+]

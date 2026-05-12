@@ -3,6 +3,9 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://alhaurinaldia.es';
+const NEWS_PUBLICATION_NAME = 'Alhaurín al Día';
+const NEWS_LANGUAGE = 'es';
+const NEWS_MAX_AGE_MS = 48 * 60 * 60 * 1000;
 
 const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets']);
 const IGNORE_FILES = new Set(['404.html']);
@@ -31,6 +34,10 @@ function fileDate(file) {
   return fs.statSync(file).mtime.toISOString().slice(0, 10);
 }
 
+function fileIsoDate(file) {
+  return fs.statSync(file).mtime.toISOString();
+}
+
 function meta(url) {
   if (url === '/') return { changefreq: 'hourly', priority: '1.0' };
   if (url === '/noticias/') return { changefreq: 'hourly', priority: '0.95' };
@@ -54,10 +61,36 @@ function xmlEscape(value) {
     .replace(/"/g, '&quot;');
 }
 
+function extractTitle(file) {
+  const html = fs.readFileSync(file, 'utf8');
+  const og = html.match(/<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i);
+  if (og) return cleanTitle(og[1]);
+  const h1 = html.match(/<h1[^>]*>(.*?)<\/h1>/is);
+  if (h1) return cleanTitle(h1[1]);
+  const title = html.match(/<title[^>]*>(.*?)<\/title>/is);
+  if (title) return cleanTitle(title[1]);
+  return path.basename(file, '.html').replace(/-/g, ' ');
+}
+
+function cleanTitle(value) {
+  return String(value)
+    .replace(/<[^>]+>/g, '')
+    .replace(/\s+\|\s+Alhaurín al Día$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function renderUrlset(entries) {
   return '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     entries.map(entry => `  <url>\n    <loc>${xmlEscape(SITE_URL + entry.url)}</loc>\n    <lastmod>${entry.lastmod}</lastmod>\n    <changefreq>${entry.changefreq}</changefreq>\n    <priority>${entry.priority}</priority>\n  </url>`).join('\n') +
+    '\n</urlset>\n';
+}
+
+function renderNewsUrlset(entries) {
+  return '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' +
+    entries.map(entry => `  <url>\n    <loc>${xmlEscape(SITE_URL + entry.url)}</loc>\n    <news:news>\n      <news:publication>\n        <news:name>${xmlEscape(NEWS_PUBLICATION_NAME)}</news:name>\n        <news:language>${NEWS_LANGUAGE}</news:language>\n      </news:publication>\n      <news:publication_date>${entry.publicationDate}</news:publication_date>\n      <news:title>${xmlEscape(entry.title)}</news:title>\n    </news:news>\n  </url>`).join('\n') +
     '\n</urlset>\n';
 }
 
@@ -82,7 +115,7 @@ const htmlFiles = walk(ROOT);
 
 const entries = uniqueSorted(htmlFiles.map(file => {
   const url = toUrl(file);
-  return { url, lastmod: fileDate(file), ...meta(url) };
+  return { url, file, lastmod: fileDate(file), ...meta(url) };
 }));
 
 const pharmacyEntries = entries.filter(entry =>
@@ -93,9 +126,20 @@ const newsEntries = entries.filter(entry =>
   entry.url === '/noticias/' || entry.url.startsWith('/noticias/') || entry.url.startsWith('/categoria/')
 );
 
+const now = Date.now();
+const googleNewsEntries = entries
+  .filter(entry => entry.url.startsWith('/noticias/') && entry.url !== '/noticias/' && entry.url.endsWith('.html'))
+  .filter(entry => now - fs.statSync(entry.file).mtime.getTime() <= NEWS_MAX_AGE_MS)
+  .map(entry => ({
+    url: entry.url,
+    publicationDate: fileIsoDate(entry.file),
+    title: extractTitle(entry.file)
+  }));
+
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), renderUrlset(entries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-farmacias.xml'), renderUrlset(pharmacyEntries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-noticias.xml'), renderUrlset(newsEntries));
+fs.writeFileSync(path.join(ROOT, 'sitemap-news.xml'), renderNewsUrlset(googleNewsEntries));
 
 const sitemapFiles = fs.readdirSync(ROOT)
   .filter(file => /^sitemap.*\.xml$/.test(file))
@@ -107,4 +151,5 @@ fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitema
 console.log(`Sitemap principal generado: ${entries.length} URLs`);
 console.log(`Sitemap farmacias generado: ${pharmacyEntries.length} URLs`);
 console.log(`Sitemap noticias generado: ${newsEntries.length} URLs`);
+console.log(`Google News sitemap generado: ${googleNewsEntries.length} noticias recientes`);
 console.log(`Sitemap index generado: ${sitemapFiles.length} sitemaps`);

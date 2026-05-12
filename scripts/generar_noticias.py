@@ -48,28 +48,44 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 def limpiar_html(texto):
     if not texto:
         return ""
-    texto = re.sub(r"<[^>]+>", "", str(texto))
-    reemplazos = {
-        "&nbsp;": " ",
-        "&amp;": "&",
-        "&quot;": '"',
-        "&#8217;": "'",
-        "&#8220;": '"',
-        "&#8221;": '"',
-        "&#8211;": "-",
-        "&#8230;": "...",
-    }
-    for origen, destino in reemplazos.items():
-        texto = texto.replace(origen, destino)
+    texto = html.unescape(str(texto))
+    texto = re.sub(r"<[^>]+>", "", texto)
     texto = re.sub(r"The post .*", "", texto, flags=re.IGNORECASE).strip()
+    texto = re.sub(r"\[\s*(?:\.{3}|…)\s*\]", "", texto)
+    texto = texto.replace("…", "...")
     return re.sub(r"\s+", " ", texto).strip()
 
 
-def limitar_texto(texto, max_caracteres=220):
+def limpiar_resumen_editorial(texto, max_caracteres=220):
     texto = limpiar_html(texto)
+    texto = re.sub(r"\s*\[\s*(?:\.{3}|…)\s*\]\s*", " ", texto)
+    texto = re.sub(r"\s+", " ", texto).strip(" -–—")
+
+    texto = re.sub(
+        r"^Noticias de Alhaurín el Grande\.?\s*Actualidad del .*? en el Informativo de ATV\.?\s*",
+        "",
+        texto,
+        flags=re.IGNORECASE,
+    )
+
+    match = re.search(r"(?:^|\s)1\.\s*([^\.]+(?:\.[^0-9]+)?)", texto)
+    if match:
+        candidato = match.group(1).strip()
+        if len(candidato) >= 35:
+            texto = candidato
+
+    texto = texto.strip(" -–—")
+    if not texto:
+        return "Actualidad local de Alhaurín el Grande."
+
     if len(texto) <= max_caracteres:
         return texto
-    return texto[:max_caracteres].rsplit(" ", 1)[0] + "..."
+
+    return texto[:max_caracteres].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
+
+
+def limitar_texto(texto, max_caracteres=220):
+    return limpiar_resumen_editorial(texto, max_caracteres=max_caracteres)
 
 
 def escapar(texto):
@@ -170,6 +186,65 @@ def calcular_score(noticia):
     return noticia["prioridad"] + max(0, 48 - horas)
 
 
+def es_titulo_generico(titulo):
+    patrones = [
+        r"^noticias\s+atv\s+\d{1,2}\s+\w+\s+\d{4}",
+        r"^actualidad\s+de\s+alhaurín",
+        r"^informativo\s+atv",
+    ]
+    titulo_lower = limpiar_html(titulo).lower()
+    return any(re.search(patron, titulo_lower, flags=re.IGNORECASE) for patron in patrones)
+
+
+def extraer_primer_tema_informativo(texto):
+    texto = limpiar_html(texto)
+    patrones = [
+        r"(?:^|\s)1\.\s*([A-ZÁÉÍÓÚÑ0-9][^\.]{25,180})",
+        r"(?:^|\s)1\s*[-–]\s*([A-ZÁÉÍÓÚÑ0-9][^\.]{25,180})",
+    ]
+    for patron in patrones:
+        match = re.search(patron, texto)
+        if match:
+            tema = match.group(1)
+            tema = re.sub(r"\s+", " ", tema).strip(" .:-–—")
+            if len(tema) >= 25:
+                return tema
+    return ""
+
+
+def titular_desde_tema(tema):
+    tema = limpiar_html(tema).strip(" .:-–—")
+    if not tema:
+        return ""
+
+    tema = tema.lower()
+    tema = tema[0].upper() + tema[1:] if tema else tema
+
+    if "alhaurín" not in tema.lower() and "alhaurin" not in tema.lower():
+        tema = f"{tema} en Alhaurín el Grande"
+
+    return tema[:90].rsplit(" ", 1)[0].rstrip(".,;:")
+
+
+def generar_titulo_seo(titulo, texto, fuente):
+    titulo_limpio = limpiar_html(titulo)
+    texto_limpio = limpiar_html(texto)
+
+    if es_titulo_generico(titulo_limpio):
+        tema = extraer_primer_tema_informativo(texto_limpio)
+        titulo_seo = titular_desde_tema(tema)
+        if titulo_seo:
+            return titulo_seo
+
+    titulo_limpio = re.sub(r"\s*\|\s*.*$", "", titulo_limpio).strip()
+    titulo_limpio = re.sub(r"\s+", " ", titulo_limpio)
+
+    if len(titulo_limpio) > 95:
+        titulo_limpio = titulo_limpio[:95].rsplit(" ", 1)[0].rstrip(".,;:")
+
+    return titulo_limpio or "Actualidad local de Alhaurín el Grande"
+
+
 def es_noticia_relevante_local(titulo, texto, fuente):
     fuente_lower = fuente.lower()
     fuentes_validas = [
@@ -247,7 +322,7 @@ def detectar_categoria(titulo, texto, fuente):
 
 def resumir_con_ia(titulo, texto, fuente):
     if not USAR_IA:
-        return limitar_texto(texto)
+        return limpiar_resumen_editorial(texto)
     try:
         from openai import OpenAI
         client = OpenAI()
@@ -255,10 +330,10 @@ def resumir_con_ia(titulo, texto, fuente):
             model="gpt-4.1-mini",
             input=f"Resume esta noticia local en español, máximo 2 frases, sin inventar datos.\nTítulo: {titulo}\nFuente: {fuente}\nTexto: {texto}"
         )
-        return response.output_text.strip() or limitar_texto(texto)
+        return limpiar_resumen_editorial(response.output_text.strip() or texto)
     except Exception as e:
         print("Error IA:", e)
-        return limitar_texto(texto)
+        return limpiar_resumen_editorial(texto)
 
 
 def leer_feed(url):
@@ -291,7 +366,22 @@ def schema_news_article(noticia, canonical_url):
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
-def html_header(title, description, canonical, image="", css_prefix=".."):
+def schema_breadcrumb_list(noticia, canonical_url):
+    categoria = noticia.get("categoria", "Actualidad")
+    data = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": f"{SITE_URL}/"},
+            {"@type": "ListItem", "position": 2, "name": "Noticias", "item": f"{SITE_URL}/noticias/"},
+            {"@type": "ListItem", "position": 3, "name": categoria, "item": f"{SITE_URL}/categoria/{slugify(categoria)}/"},
+            {"@type": "ListItem", "position": 4, "name": noticia.get("titulo", "Noticia local"), "item": canonical_url},
+        ],
+    }
+    return json.dumps(data, ensure_ascii=False, indent=2)
+
+
+def html_header(title, description, canonical, image="", css_prefix="..", og_type="article"):
     image = image or f"{SITE_URL}/assets/favicon.svg"
     return f'''<head>
     <meta charset="utf-8">
@@ -300,7 +390,7 @@ def html_header(title, description, canonical, image="", css_prefix=".."):
     <meta name="description" content="{escapar(description)}">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="{escapar(canonical)}">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="{escapar(og_type)}">
     <meta property="og:site_name" content="Alhaurín al Día">
     <meta property="og:title" content="{escapar(title)}">
     <meta property="og:description" content="{escapar(description)}">
@@ -364,6 +454,7 @@ def generar_html_noticia(noticia, noticias):
 
     imagen_html = f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>' if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
     relacionadas = bloque_relacionadas(noticia, noticias)
+    breadcrumb_schema = schema_breadcrumb_list(noticia, canonical)
 
     body = f'''
     <main class="article-page">
@@ -415,8 +506,9 @@ def generar_html_noticia(noticia, noticias):
         </div>
     </main>
     <script type="application/ld+json">{schema_news_article(noticia, canonical)}</script>
+    <script type="application/ld+json">{breadcrumb_schema}</script>
     '''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen, "..")}\n{site_chrome(body, "..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen, "..", "article")}\n{site_chrome(body, "..")}\n</html>'
 
 
 def generar_html_categoria(categoria, noticias):
@@ -439,7 +531,7 @@ def generar_html_categoria(categoria, noticias):
         <section><div class="container"><div class="section-title"><h2>Últimas noticias</h2><p>{len(noticias)} noticias disponibles en esta categoría.</p></div><div class="grid-3">{''.join(cards)}</div></div></section>
     </main>
     '''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " | Alhaurín al Día", descripcion, canonical, "", "../..")}\n{site_chrome(body, "../..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " | Alhaurín al Día", descripcion, canonical, "", "../..", "website")}\n{site_chrome(body, "../..")}\n</html>'
 
 
 def generar_paginas_noticias(noticias):
@@ -514,20 +606,23 @@ def obtener_noticias():
         imagen_feed = extraer_imagen_feed(feed)
 
         for entry in feed.entries[:MAX_NOTICIAS_POR_FUENTE]:
-            titulo = limpiar_html(entry.get("title", ""))
+            titulo_original = limpiar_html(entry.get("title", ""))
             url = entry.get("link", "")
-            if not titulo or not url or url in urls_vistas:
+            if not titulo_original or not url or url in urls_vistas:
                 continue
             urls_vistas.add(url)
-            texto_limpio = limpiar_html(entry.get("summary", "") or entry.get("description", "") or titulo)
-            if not es_noticia_relevante_local(titulo, texto_limpio, fuente["nombre"]):
-                print(f"✗ Descartada por no ser local: {titulo}")
+            texto_limpio = limpiar_html(entry.get("summary", "") or entry.get("description", "") or titulo_original)
+            if not es_noticia_relevante_local(titulo_original, texto_limpio, fuente["nombre"]):
+                print(f"✗ Descartada por no ser local: {titulo_original}")
                 continue
+
+            titulo = generar_titulo_seo(titulo_original, texto_limpio, fuente["nombre"])
             resumen = resumir_con_ia(titulo, texto_limpio, fuente["nombre"])
             categoria = detectar_categoria(titulo, texto_limpio, fuente["nombre"])
             noticia = {
-                "id": generar_id(url, titulo),
+                "id": generar_id(url, titulo_original),
                 "titulo": titulo,
+                "titulo_original": titulo_original,
                 "descripcion": resumen,
                 "resumen": resumen,
                 "fecha": normalizar_fecha(entry.get("published", "")),

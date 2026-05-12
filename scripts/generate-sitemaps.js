@@ -3,7 +3,6 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://alhaurinaldia.es';
-const TODAY = new Date().toISOString().slice(0, 10);
 
 const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets']);
 const IGNORE_FILES = new Set(['404.html']);
@@ -48,7 +47,11 @@ function meta(url) {
 }
 
 function xmlEscape(value) {
-  return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 function renderUrlset(entries) {
@@ -56,6 +59,13 @@ function renderUrlset(entries) {
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     entries.map(entry => `  <url>\n    <loc>${xmlEscape(SITE_URL + entry.url)}</loc>\n    <lastmod>${entry.lastmod}</lastmod>\n    <changefreq>${entry.changefreq}</changefreq>\n    <priority>${entry.priority}</priority>\n  </url>`).join('\n') +
     '\n</urlset>\n';
+}
+
+function renderSitemapIndex(sitemaps) {
+  return '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    sitemaps.map(name => `  <sitemap>\n    <loc>${SITE_URL}/${name}</loc>\n    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>\n  </sitemap>`).join('\n') +
+    '\n</sitemapindex>\n';
 }
 
 function uniqueSorted(entries) {
@@ -69,15 +79,34 @@ function uniqueSorted(entries) {
 }
 
 const htmlFiles = walk(ROOT);
+
 const entries = uniqueSorted(htmlFiles.map(file => {
   const url = toUrl(file);
-  return { url, lastmod: fileDate(file), ...meta(url) };
+  return {
+    url,
+    lastmod: fileDate(file),
+    ...meta(url)
+  };
 }));
 
-const pharmacyEntries = entries.filter(entry => entry.url === '/guia-util/farmacias/' || entry.url.startsWith('/guia-util/farmacias/'));
+const pharmacyEntries = entries.filter(entry =>
+  entry.url === '/guia-util/farmacias/' ||
+  entry.url.startsWith('/guia-util/farmacias/')
+);
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), renderUrlset(entries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-farmacias.xml'), renderUrlset(pharmacyEntries));
 
+const sitemapFiles = fs.readdirSync(ROOT)
+  .filter(file => /^sitemap.*\.xml$/.test(file))
+  .filter(file => file !== 'sitemap-index.xml')
+  .sort();
+
+fs.writeFileSync(
+  path.join(ROOT, 'sitemap-index.xml'),
+  renderSitemapIndex(sitemapFiles)
+);
+
 console.log(`Sitemap principal generado: ${entries.length} URLs`);
 console.log(`Sitemap farmacias generado: ${pharmacyEntries.length} URLs`);
+console.log(`Sitemap index generado: ${sitemapFiles.length} sitemaps`);

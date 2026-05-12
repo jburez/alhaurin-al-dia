@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "fuente": "https://alhaurinelgrande.es/farmacias/",
+    "descripcion": "Calendario de guardias de farmacias de Alhaurín el Grande. Horario habitual de 9:30 a 9:30.",
+    "timezone": "Europe/Madrid"
+  },
+  "guardias": {
+    "2026-05-12": "farmacia-brenan",
+    "2026-05-13": "farmacia-del-centro",
+    "2026-05-14": "maria-teresa-quintela"
+  }
+}

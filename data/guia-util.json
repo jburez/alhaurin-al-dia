@@ -22,7 +22,8 @@
       }
     ],
     "cta": "Abrir farmacias de guardia",
-    "enlace": "https://alhaurinelgrande.es/farmacias/"
+    "enlace": "guia-util/farmacias/",
+    "pagina": "guia-util/farmacias/"
   },
   {
     "id": "telefonos",
@@ -48,7 +49,8 @@
       }
     ],
     "cta": "Ver teléfonos oficiales",
-    "enlace": "https://alhaurinelgrande.es/telefonos-de-interes/"
+    "enlace": "guia-util/telefonos/",
+    "pagina": "guia-util/telefonos/"
   },
   {
     "id": "tramites",
@@ -81,7 +83,8 @@
       }
     ],
     "cta": "Abrir sede electrónica",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/"
+    "enlace": "guia-util/tramites/",
+    "pagina": "guia-util/tramites/"
   },
   {
     "id": "movilidad",
@@ -114,7 +117,8 @@
       }
     ],
     "cta": "Consultar horarios",
-    "enlace": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas.php"
+    "enlace": "guia-util/movilidad/",
+    "pagina": "guia-util/movilidad/"
   },
   {
     "id": "taxis",
@@ -139,7 +143,8 @@
       }
     ],
     "cta": "Ver taxi oficial",
-    "enlace": "https://alhaurinelgrande.es/taxis/"
+    "enlace": "guia-util/taxis/",
+    "pagina": "guia-util/taxis/"
   },
   {
     "id": "educacion",
@@ -164,7 +169,8 @@
       }
     ],
     "cta": "Ver Educación",
-    "enlace": "https://alhaurinelgrande.es/educacion"
+    "enlace": "guia-util/educacion/",
+    "pagina": "guia-util/educacion/"
   },
   {
     "id": "campamentos",
@@ -189,7 +195,8 @@
       }
     ],
     "cta": "Consultar campamentos",
-    "enlace": "https://alhaurinelgrande.es/educacion"
+    "enlace": "guia-util/campamentos/",
+    "pagina": "guia-util/campamentos/"
   },
   {
     "id": "bibliotecas",
@@ -218,7 +225,8 @@
       }
     ],
     "cta": "Ver bibliotecas",
-    "enlace": "https://alhaurinelgrande.es/cultura/biblioteca-general/"
+    "enlace": "guia-util/bibliotecas/",
+    "pagina": "guia-util/bibliotecas/"
   },
   {
     "id": "escuela-musica",
@@ -239,7 +247,8 @@
       }
     ],
     "cta": "Ver Escuela de Música",
-    "enlace": "https://alhaurinelgrande.es/escuela-de-musica/"
+    "enlace": "guia-util/escuela-musica/",
+    "pagina": "guia-util/escuela-musica/"
   },
   {
     "id": "deportes",
@@ -264,7 +273,8 @@
       }
     ],
     "cta": "Ver instalaciones",
-    "enlace": "https://alhaurinelgrande.es/deportes/"
+    "enlace": "guia-util/deportes/",
+    "pagina": "guia-util/deportes/"
   },
   {
     "id": "calistenia",
@@ -289,7 +299,8 @@
       }
     ],
     "cta": "Ver recurso deportivo",
-    "enlace": "https://alhaurinelgrande.es/deportes/"
+    "enlace": "guia-util/calistenia/",
+    "pagina": "guia-util/calistenia/"
   },
   {
     "id": "turismo",
@@ -314,7 +325,8 @@
       }
     ],
     "cta": "Ver turismo",
-    "enlace": "https://visitalhaurinelgrande.es/"
+    "enlace": "guia-util/turismo/",
+    "pagina": "guia-util/turismo/"
   },
   {
     "id": "aparcamiento",
@@ -335,7 +347,8 @@
       }
     ],
     "cta": "Ver información municipal",
-    "enlace": "https://alhaurinelgrande.es/"
+    "enlace": "guia-util/aparcamiento/",
+    "pagina": "guia-util/aparcamiento/"
   },
   {
     "id": "gasolineras",
@@ -351,7 +364,8 @@
     ],
     "links": [],
     "cta": "Próximamente",
-    "enlace": "#"
+    "enlace": "guia-util/gasolineras/",
+    "pagina": "guia-util/gasolineras/"
   },
   {
     "id": "veterinarios",
@@ -367,7 +381,8 @@
     ],
     "links": [],
     "cta": "Próximamente",
-    "enlace": "#"
+    "enlace": "guia-util/veterinarios/",
+    "pagina": "guia-util/veterinarios/"
   },
   {
     "id": "restaurantes",
@@ -383,7 +398,8 @@
     ],
     "links": [],
     "cta": "Próximamente",
-    "enlace": "#"
+    "enlace": "guia-util/restaurantes/",
+    "pagina": "guia-util/restaurantes/"
   },
   {
     "id": "vivir-en-alhaurin",
@@ -408,6 +424,7 @@
       }
     ],
     "cta": "Ver recursos básicos",
-    "enlace": "https://alhaurinelgrande.es/"
+    "enlace": "guia-util/vivir-en-alhaurin/",
+    "pagina": "guia-util/vivir-en-alhaurin/"
   }
 ]

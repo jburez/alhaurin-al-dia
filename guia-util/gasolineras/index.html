@@ -12,20 +12,21 @@
     <meta property="og:title" content="Gasolineras y servicios en carretera">
     <meta property="og:description" content="Ficha preparada para recoger gasolineras cercanas, servicios en ruta, horarios, lavaderos y puntos útiles para conductores.">
     <meta property="og:url" content="https://alhaurinaldia.es/guia-util/gasolineras/">
-    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="../../mobile.css">
-    <link rel="stylesheet" href="../../ads.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/mobile.css">
+    <link rel="stylesheet" href="/ads.css">
     <style>
         .resource-hero { padding:58px 0 28px; }
         .resource-card { background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:36px; padding:clamp(28px,5vw,56px); box-shadow:var(--shadow); }
-        .resource-layout { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:start; }
+        .resource-layout { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:start; margin-bottom:56px; }
         .resource-box { background:white; border:1px solid var(--line); border-radius:26px; padding:24px; box-shadow:var(--shadow-soft); }
-        .resource-list { display:grid; gap:12px; padding-left:0; list-style:none; }
-        .resource-list li { background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:14px; }
+        .resource-list { display:grid; gap:12px; padding-left:0; list-style:none; margin:22px 0 0; }
+        .resource-list li { background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:14px; color:var(--ink); line-height:1.55; }
         .official-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
         .official-links a { display:inline-flex; padding:10px 13px; border-radius:999px; background:var(--brand-soft); border:1px solid #d9e6f0; color:var(--brand); font-size:13px; font-weight:900; }
         .resource-note { margin-top:18px; background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:16px; color:var(--muted); }
+        .resource-note p { margin:8px 0 0; }
         @media(max-width:900px) { .resource-layout { grid-template-columns:1fr; } }
     </style>
     <script type="application/ld+json">{
@@ -99,15 +100,16 @@
 <body>
     <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>Servicios · Recurso útil</span></div></div>
     <header><div class="container"><nav aria-label="Navegación principal">
-        <a class="logo" href="../../" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
-        <div class="nav-links"><a href="../../noticias/">Noticias</a><a href="../">Guía útil</a><a href="../../planes/">Planes</a><a href="../../comercios/">Comercios</a><a href="../../anunciarse/" class="nav-cta">Anunciarse</a></div>
+        <a class="logo" href="/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
+        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
     <main>
         <section class="resource-hero"><div class="container"><div class="resource-card">
             <span class="eyebrow">Servicios</span>
             <h1>Gasolineras y servicios en carretera</h1>
             <p class="lead">Ficha preparada para recoger gasolineras cercanas, servicios en ruta, horarios, lavaderos y puntos útiles para conductores.</p>
-            <div class="actions"><a class="btn btn-primary" href="#informacion">Consultar información</a><a class="btn btn-secondary" href="../">Volver a Guía útil</a></div>
+            <div class="actions"><a class="btn btn-primary" href="#informacion">Consultar información</a><a class="btn btn-secondary" href="/guia-util/">Volver a Guía útil</a></div>
         </div></div></section>
         <section id="informacion"><div class="container resource-layout">
             <article class="resource-box">
@@ -124,6 +126,7 @@
             </aside>
         </div></section>
     </main>
-    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="../../noticias/">Noticias</a><a href="../">Guía útil</a><a href="../../planes/">Planes</a><a href="../../comercios/">Comercios</a></div></div></footer>
+    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a></div></div></footer>
+    <script src="/app.js"></script>
 </body>
 </html>

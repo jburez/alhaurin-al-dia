@@ -22,8 +22,8 @@
       }
     ],
     "cta": "Abrir farmacias de guardia",
-    "enlace": "guia-util/farmacias/",
-    "pagina": "guia-util/farmacias/"
+    "enlace": "/guia-util/farmacias/",
+    "pagina": "/guia-util/farmacias/"
   },
   {
     "id": "telefonos",
@@ -49,8 +49,8 @@
       }
     ],
     "cta": "Ver teléfonos oficiales",
-    "enlace": "guia-util/telefonos/",
-    "pagina": "guia-util/telefonos/"
+    "enlace": "/guia-util/telefonos/",
+    "pagina": "/guia-util/telefonos/"
   },
   {
     "id": "tramites",
@@ -83,8 +83,8 @@
       }
     ],
     "cta": "Abrir sede electrónica",
-    "enlace": "guia-util/tramites/",
-    "pagina": "guia-util/tramites/"
+    "enlace": "/guia-util/tramites/",
+    "pagina": "/guia-util/tramites/"
   },
   {
     "id": "movilidad",
@@ -117,8 +117,8 @@
       }
     ],
     "cta": "Consultar horarios",
-    "enlace": "guia-util/movilidad/",
-    "pagina": "guia-util/movilidad/"
+    "enlace": "/guia-util/movilidad/",
+    "pagina": "/guia-util/movilidad/"
   },
   {
     "id": "taxis",
@@ -143,8 +143,8 @@
       }
     ],
     "cta": "Ver taxi oficial",
-    "enlace": "guia-util/taxis/",
-    "pagina": "guia-util/taxis/"
+    "enlace": "/guia-util/taxis/",
+    "pagina": "/guia-util/taxis/"
   },
   {
     "id": "educacion",
@@ -169,8 +169,8 @@
       }
     ],
     "cta": "Ver Educación",
-    "enlace": "guia-util/educacion/",
-    "pagina": "guia-util/educacion/"
+    "enlace": "/guia-util/educacion/",
+    "pagina": "/guia-util/educacion/"
   },
   {
     "id": "campamentos",
@@ -195,8 +195,8 @@
       }
     ],
     "cta": "Consultar campamentos",
-    "enlace": "guia-util/campamentos/",
-    "pagina": "guia-util/campamentos/"
+    "enlace": "/guia-util/campamentos/",
+    "pagina": "/guia-util/campamentos/"
   },
   {
     "id": "bibliotecas",
@@ -225,8 +225,8 @@
       }
     ],
     "cta": "Ver bibliotecas",
-    "enlace": "guia-util/bibliotecas/",
-    "pagina": "guia-util/bibliotecas/"
+    "enlace": "/guia-util/bibliotecas/",
+    "pagina": "/guia-util/bibliotecas/"
   },
   {
     "id": "escuela-musica",
@@ -247,8 +247,8 @@
       }
     ],
     "cta": "Ver Escuela de Música",
-    "enlace": "guia-util/escuela-musica/",
-    "pagina": "guia-util/escuela-musica/"
+    "enlace": "/guia-util/escuela-musica/",
+    "pagina": "/guia-util/escuela-musica/"
   },
   {
     "id": "deportes",
@@ -273,8 +273,8 @@
       }
     ],
     "cta": "Ver instalaciones",
-    "enlace": "guia-util/deportes/",
-    "pagina": "guia-util/deportes/"
+    "enlace": "/guia-util/deportes/",
+    "pagina": "/guia-util/deportes/"
   },
   {
     "id": "calistenia",
@@ -299,8 +299,8 @@
       }
     ],
     "cta": "Ver recurso deportivo",
-    "enlace": "guia-util/calistenia/",
-    "pagina": "guia-util/calistenia/"
+    "enlace": "/guia-util/calistenia/",
+    "pagina": "/guia-util/calistenia/"
   },
   {
     "id": "turismo",
@@ -325,8 +325,8 @@
       }
     ],
     "cta": "Ver turismo",
-    "enlace": "guia-util/turismo/",
-    "pagina": "guia-util/turismo/"
+    "enlace": "/guia-util/turismo/",
+    "pagina": "/guia-util/turismo/"
   },
   {
     "id": "aparcamiento",
@@ -347,8 +347,8 @@
       }
     ],
     "cta": "Ver información municipal",
-    "enlace": "guia-util/aparcamiento/",
-    "pagina": "guia-util/aparcamiento/"
+    "enlace": "/guia-util/aparcamiento/",
+    "pagina": "/guia-util/aparcamiento/"
   },
   {
     "id": "gasolineras",
@@ -364,8 +364,8 @@
     ],
     "links": [],
     "cta": "Próximamente",
-    "enlace": "guia-util/gasolineras/",
-    "pagina": "guia-util/gasolineras/"
+    "enlace": "/guia-util/gasolineras/",
+    "pagina": "/guia-util/gasolineras/"
   },
   {
     "id": "veterinarios",
@@ -381,8 +381,8 @@
     ],
     "links": [],
     "cta": "Próximamente",
-    "enlace": "guia-util/veterinarios/",
-    "pagina": "guia-util/veterinarios/"
+    "enlace": "/guia-util/veterinarios/",
+    "pagina": "/guia-util/veterinarios/"
   },
   {
     "id": "restaurantes",
@@ -398,8 +398,8 @@
     ],
     "links": [],
     "cta": "Próximamente",
-    "enlace": "guia-util/restaurantes/",
-    "pagina": "guia-util/restaurantes/"
+    "enlace": "/guia-util/restaurantes/",
+    "pagina": "/guia-util/restaurantes/"
   },
   {
     "id": "vivir-en-alhaurin",
@@ -424,7 +424,7 @@
       }
     ],
     "cta": "Ver recursos básicos",
-    "enlace": "guia-util/vivir-en-alhaurin/",
-    "pagina": "guia-util/vivir-en-alhaurin/"
+    "enlace": "/guia-util/vivir-en-alhaurin/",
+    "pagina": "/guia-util/vivir-en-alhaurin/"
   }
 ]

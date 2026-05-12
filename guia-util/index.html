@@ -16,6 +16,8 @@
     <meta property="og:url" content="https://alhaurinaldia.es/guia-util/">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../mobile.css">
+    <link rel="stylesheet" href="../ads.css">
     <style>
         .guide-page-hero { padding: 58px 0 28px; }
         .guide-page-card { background: rgba(255,255,255,.9); border: 1px solid var(--line); border-radius: 36px; padding: clamp(28px,5vw,56px); box-shadow: var(--shadow); }
@@ -39,7 +41,7 @@
         .guide-cta-panel p { margin: 0; color: rgba(255,255,255,.78); line-height: 1.65; }
         .guide-cta-panel .btn { background: white; color: var(--brand); justify-self: end; }
         @media (max-width: 920px) { .guide-tools, .guide-cta-panel { grid-template-columns: 1fr; } .guide-cta-panel .btn { justify-self: start; } .guide-stats { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 720px) { .guide-stats { grid-template-columns: 1fr; } }
+        @media (max-width: 720px) { .guide-page-hero { padding-top: 28px; } .guide-stats { grid-template-columns: 1fr; } .guide-tools { border-radius: 24px; } }
     </style>
 </head>
 
@@ -58,7 +60,14 @@
                     <span class="logo-mark">A</span>
                     <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
                 </a>
-                <div class="nav-links">
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
                     <a href="../noticias/">Noticias</a>
                     <a href="./">Guía útil</a>
                     <a href="../planes/">Planes</a>
@@ -75,7 +84,7 @@
                 <div class="guide-page-card">
                     <span class="eyebrow">La herramienta práctica de Alhaurín</span>
                     <h1>Guía útil de Alhaurín el Grande.</h1>
-                    <p class="lead">Un espacio pensado para encontrar rápido lo que de verdad se busca en el día a día: farmacias, teléfonos, trámites, transporte, bibliotecas, turismo, servicios municipales y recursos locales.</p>
+                    <p class="lead">Un espacio pensado para encontrar rápido lo que se busca en el día a día: farmacias, teléfonos, trámites, transporte, turismo, servicios municipales y recursos locales.</p>
                     <div class="actions">
                         <a class="btn btn-primary" href="#guia-listado">Consultar guía</a>
                         <a class="btn btn-secondary" href="../">Volver a portada</a>
@@ -83,7 +92,7 @@
                     <div class="guide-stats" aria-label="Resumen de la guía útil">
                         <div class="guide-stat"><strong id="total-recursos">—</strong><span>recursos iniciales</span></div>
                         <div class="guide-stat"><strong>24h</strong><span>emergencias y salud</span></div>
-                        <div class="guide-stat"><strong>100%</strong><span>enlaces revisables</span></div>
+                        <div class="guide-stat"><strong>Oficial</strong><span>enlaces de referencia</span></div>
                         <div class="guide-stat"><strong>Local</strong><span>Alhaurín el Grande</span></div>
                     </div>
                 </div>
@@ -136,6 +145,7 @@
         let allItems = [];
         let activeCategory = "Todas";
         function escapeHTML(value = "") { return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); }
+        function normalizeGuideLink(link = "#") { if (!link || link === "#") return "#"; if (/^(https?:|mailto:|tel:)/i.test(link)) return link; return `../${String(link).replace(/^\//, "")}`; }
         function renderFilters(items) {
             const categories = ["Todas", ...new Set(items.map(item => item.categoria || "Otros"))];
             filtersContainer.innerHTML = categories.map(category => `<button type="button" class="guide-pill ${category === activeCategory ? "active" : ""}" data-category="${escapeHTML(category)}">${escapeHTML(category)}</button>`).join("");
@@ -153,10 +163,29 @@
             if (!filtered.length) { container.innerHTML = `<p class="empty-state">No se han encontrado recursos con ese criterio.</p>`; return; }
             container.innerHTML = filtered.map(item => {
                 const listItems = (item.items || []).map(text => `<li>${escapeHTML(text)}</li>`).join("");
-                const links = (item.links || []).map(link => `<a href="${escapeHTML(link.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHTML(link.texto || "Abrir enlace")}</a>`).join("");
-                return `<article class="guide-card featured-guide-card" id="${escapeHTML(item.id || "")}"><div class="guide-card-top"><div class="guide-icon">${escapeHTML(item.icono || "•")}</div><div><span class="guide-category">${escapeHTML(item.categoria || "Guía útil")}</span><h3>${escapeHTML(item.titulo || "Recurso local")}</h3></div></div><p>${escapeHTML(item.descripcion || "Información práctica para consultar rápidamente.")}</p><ul>${listItems}</ul>${links ? `<div class="guide-links">${links}</div>` : ""}<a class="read-more" href="${escapeHTML(item.enlace || "#")}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.cta || "Ver más")} →</a></article>`;
+                const links = (item.links || []).map(link => `<a href="${escapeHTML(normalizeGuideLink(link.url || "#"))}" target="_blank" rel="noopener noreferrer">${escapeHTML(link.texto || "Abrir enlace")}</a>`).join("");
+                const detailLink = normalizeGuideLink(item.pagina || item.enlace || `guia-util/${item.id || ""}/`);
+                return `<article class="guide-card featured-guide-card" id="${escapeHTML(item.id || "")}"><div class="guide-card-top"><div class="guide-icon">${escapeHTML(item.icono || "•")}</div><div><span class="guide-category">${escapeHTML(item.categoria || "Guía útil")}</span><h3>${escapeHTML(item.titulo || "Recurso local")}</h3></div></div><p>${escapeHTML(item.descripcion || "Información práctica para consultar rápidamente.")}</p><ul>${listItems}</ul>${links ? `<div class="guide-links">${links}</div>` : ""}<a class="read-more" href="${escapeHTML(detailLink)}">${escapeHTML(item.cta || "Ver ficha completa")} →</a></article>`;
             }).join("");
         }
+        function initMobileMenu() {
+            const menu = document.getElementById("main-menu");
+            const button = document.querySelector(".menu-toggle");
+            if (!menu || !button) return;
+            button.addEventListener("click", () => {
+                const isOpen = menu.classList.toggle("open");
+                button.classList.toggle("open", isOpen);
+                button.setAttribute("aria-expanded", String(isOpen));
+                document.body.classList.toggle("menu-open", isOpen);
+            });
+            menu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+                menu.classList.remove("open");
+                button.classList.remove("open");
+                button.setAttribute("aria-expanded", "false");
+                document.body.classList.remove("menu-open");
+            }));
+        }
+        initMobileMenu();
         fetch("../data/guia-util.json")
             .then(response => { if (!response.ok) throw new Error("No se pudo cargar la guía útil"); return response.json(); })
             .then(items => { allItems = items || []; totalRecursos.textContent = allItems.length; renderFilters(allItems); renderItems(); searchInput.addEventListener("input", renderItems); })

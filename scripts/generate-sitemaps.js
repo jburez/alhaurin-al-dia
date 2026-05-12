@@ -82,31 +82,29 @@ const htmlFiles = walk(ROOT);
 
 const entries = uniqueSorted(htmlFiles.map(file => {
   const url = toUrl(file);
-  return {
-    url,
-    lastmod: fileDate(file),
-    ...meta(url)
-  };
+  return { url, lastmod: fileDate(file), ...meta(url) };
 }));
 
 const pharmacyEntries = entries.filter(entry =>
-  entry.url === '/guia-util/farmacias/' ||
-  entry.url.startsWith('/guia-util/farmacias/')
+  entry.url === '/guia-util/farmacias/' || entry.url.startsWith('/guia-util/farmacias/')
+);
+
+const newsEntries = entries.filter(entry =>
+  entry.url === '/noticias/' || entry.url.startsWith('/noticias/') || entry.url.startsWith('/categoria/')
 );
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), renderUrlset(entries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-farmacias.xml'), renderUrlset(pharmacyEntries));
+fs.writeFileSync(path.join(ROOT, 'sitemap-noticias.xml'), renderUrlset(newsEntries));
 
 const sitemapFiles = fs.readdirSync(ROOT)
   .filter(file => /^sitemap.*\.xml$/.test(file))
   .filter(file => file !== 'sitemap-index.xml')
   .sort();
 
-fs.writeFileSync(
-  path.join(ROOT, 'sitemap-index.xml'),
-  renderSitemapIndex(sitemapFiles)
-);
+fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitemapFiles));
 
 console.log(`Sitemap principal generado: ${entries.length} URLs`);
 console.log(`Sitemap farmacias generado: ${pharmacyEntries.length} URLs`);
+console.log(`Sitemap noticias generado: ${newsEntries.length} URLs`);
 console.log(`Sitemap index generado: ${sitemapFiles.length} sitemaps`);

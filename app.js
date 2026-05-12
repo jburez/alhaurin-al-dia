@@ -4,6 +4,9 @@ const sourceFiltersContainer = document.getElementById("source-filters");
 const guideContainer = document.getElementById("guide-container");
 const guideSearch = document.getElementById("guide-search");
 
+const appScript = document.currentScript || document.querySelector('script[src$="app.js"]');
+const APP_ROOT = appScript ? new URL("./", appScript.src) : new URL("/", window.location.origin);
+
 const IS_HOME = document.body && document.body.contains(featuredContainer) && document.getElementById("inicio");
 const HOME_SECONDARY_NEWS_LIMIT = 3;
 
@@ -17,6 +20,51 @@ function escapeHTML(value = "") {
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+}
+
+function getAssetPath(path) {
+    return new URL(path.replace(/^\/+/, ""), APP_ROOT).href;
+}
+
+function normalizeLink(link = "#") {
+    if (!link || link === "#") return "#";
+
+    const value = String(link).trim();
+
+    if (
+        value.startsWith("#") ||
+        value.startsWith("http://") ||
+        value.startsWith("https://") ||
+        value.startsWith("mailto:") ||
+        value.startsWith("tel:")
+    ) {
+        return value;
+    }
+
+    return new URL(value.replace(/^\/+/, ""), APP_ROOT).href;
+}
+
+function initMobileMenu() {
+    const menu = document.getElementById("main-menu");
+    const button = document.querySelector(".menu-toggle");
+
+    if (!menu || !button) return;
+
+    button.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("open");
+        button.classList.toggle("open", isOpen);
+        button.setAttribute("aria-expanded", String(isOpen));
+        document.body.classList.toggle("menu-open", isOpen);
+    });
+
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("open");
+            button.classList.remove("open");
+            button.setAttribute("aria-expanded", "false");
+            document.body.classList.remove("menu-open");
+        });
+    });
 }
 
 function getSourceCounts(noticias) {
@@ -84,7 +132,7 @@ function renderFeaturedNews(noticia) {
     const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
     const fuente = escapeHTML(noticia.fuente || "");
-    const enlace = noticia.pagina || noticia.enlace || noticia.url || "#";
+    const enlace = normalizeLink(noticia.pagina || noticia.enlace || noticia.url || "#");
     const imagen = noticia.imagen || "";
 
     featuredContainer.innerHTML = `
@@ -120,7 +168,7 @@ function renderNewsCard(noticia) {
     const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
     const fuente = escapeHTML(noticia.fuente || "");
-    const enlace = noticia.pagina || noticia.enlace || noticia.url || "#";
+    const enlace = normalizeLink(noticia.pagina || noticia.enlace || noticia.url || "#");
     const imagen = noticia.imagen || "";
 
     const card = document.createElement("article");
@@ -181,7 +229,7 @@ function renderNewsList() {
 function loadNews() {
     if (!newsContainer) return;
 
-    fetch("data/noticias.json")
+    fetch(getAssetPath("data/noticias.json"))
         .then(response => {
             if (!response.ok) {
                 throw new Error("No se pudo cargar noticias.json");
@@ -239,7 +287,7 @@ function renderGuide(items) {
 
         const linkItems = (item.links || [])
             .map(link => `
-                <a href="${escapeHTML(link.url || "#")}" target="_blank" rel="noopener noreferrer">
+                <a href="${escapeHTML(normalizeLink(link.url || "#"))}" target="_blank" rel="noopener noreferrer">
                     ${escapeHTML(link.texto || "Abrir enlace")}
                 </a>
             `)
@@ -260,7 +308,7 @@ function renderGuide(items) {
 
             ${linkItems ? `<div class="guide-links">${linkItems}</div>` : ""}
 
-            <a class="read-more" href="${escapeHTML(item.enlace || "#guia-util")}" target="_blank" rel="noopener noreferrer">
+            <a class="read-more" href="${escapeHTML(normalizeLink(item.enlace || "#guia-util"))}" target="_blank" rel="noopener noreferrer">
                 ${escapeHTML(item.cta || "Ver más")} →
             </a>
         `;
@@ -272,7 +320,7 @@ function renderGuide(items) {
 function loadGuide() {
     if (!guideContainer) return;
 
-    fetch("data/guia-util.json")
+    fetch(getAssetPath("data/guia-util.json"))
         .then(response => {
             if (!response.ok) {
                 throw new Error("No se pudo cargar guia-util.json");
@@ -312,5 +360,6 @@ function loadGuide() {
         });
 }
 
+initMobileMenu();
 loadNews();
 loadGuide();

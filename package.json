@@ -1,0 +1,7 @@
+{
+  "name": "alhaurin-al-dia",
+  "private": true,
+  "scripts": {
+    "sitemap": "node scripts/generate-sitemaps.js"
+  }
+}

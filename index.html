@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./mobile.css">
     <link rel="stylesheet" href="./ads.css">
+
+    <style>
+        .home-guard-wrap{padding:8px 0 24px}.home-guard-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;background:linear-gradient(135deg,#8f1d1d,#17324d);color:#fff;border-radius:34px;padding:clamp(22px,4vw,38px);box-shadow:0 24px 60px rgba(24,33,47,.18);position:relative;overflow:hidden}.home-guard-card:before{content:"";position:absolute;right:-90px;top:-120px;width:260px;height:260px;border-radius:999px;background:rgba(255,255,255,.08)}.home-guard-card>*{position:relative;z-index:1}.home-guard-card .section-kicker{color:rgba(255,255,255,.72)}.home-guard-card h2{margin:8px 0 10px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.05em}.home-guard-card p{margin:0;max-width:760px;color:rgba(255,255,255,.84);line-height:1.7}.home-guard-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.home-guard-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 16px;border-radius:999px;background:#fff;color:#17324d;font-weight:950;font-size:14px;box-shadow:0 12px 24px rgba(0,0,0,.12)}.home-guard-actions a.secondary{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);color:#fff;box-shadow:none}@media(max-width:860px){.home-guard-card{grid-template-columns:1fr}.home-guard-actions{justify-content:flex-start}.home-guard-actions a{width:100%}}
+    </style>
 </head>
 
 <body>
@@ -79,7 +83,7 @@
                         <p>Servicios y enlaces prácticos para vecinos, familias, visitantes y negocios.</p>
 
                         <div class="quick-links">
-                            <a href="./guia-util/#farmacias">Farmacias</a>
+                            <a href="./guia-util/farmacias/">Farmacias</a>
                             <a href="./guia-util/#telefonos">Teléfonos</a>
                             <a href="./guia-util/#tramites">Trámites</a>
                             <a href="./guia-util/#movilidad">Movilidad</a>
@@ -96,6 +100,18 @@
         <div class="container ad-wrap ad-wrap-top">
             <div class="ad-slot ad-slot-leaderboard">Publicidad horizontal responsive</div>
         </div>
+
+        <section class="home-guard-wrap">
+            <div class="container">
+                <article class="home-guard-card" id="home-pharmacy-guard">
+                    <div>
+                        <span class="section-kicker">Farmacia de guardia hoy</span>
+                        <h2>Cargando guardia...</h2>
+                        <p>Consultando calendario local de farmacias de guardia.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <section id="noticias" class="home-news-clean">
             <div class="container">
@@ -149,7 +165,7 @@
                     <div class="guide-search-box">
                         <label>Accesos rápidos</label>
                         <div class="quick-links">
-                            <a href="./guia-util/#farmacias">Farmacias</a>
+                            <a href="./guia-util/farmacias/">Farmacias</a>
                             <a href="./guia-util/#telefonos">Teléfonos</a>
                             <a href="./guia-util/#tramites">Trámites</a>
                             <a href="./guia-util/#movilidad">Movilidad</a>
@@ -163,89 +179,6 @@
             </div>
         </section>
 
-        <section id="planes" class="plans-section">
-            <div class="container">
-                <div class="section-title">
-                    <div>
-                        <span class="section-kicker">Para disfrutar</span>
-                        <h2>Planes y rincones</h2>
-                    </div>
-                    <p>Ideas pensadas para familias, visitantes y vecinos que quieren redescubrir el municipio.</p>
-                </div>
-
-                <div class="grid-3">
-                    <article class="plan-card">
-                        <span>01</span>
-                        <h3>Paseo por el casco histórico</h3>
-                        <p>Una ruta sencilla para descubrir calles con encanto, plazas, miradores y bares donde hacer parada.</p>
-                    </article>
-                    <article class="plan-card">
-                        <span>02</span>
-                        <h3>Ruta familiar por el entorno natural</h3>
-                        <p>Ideas para caminar sin complicarse, con recomendaciones pensadas para ir con niños.</p>
-                    </article>
-                    <article class="plan-card">
-                        <span>03</span>
-                        <h3>Agenda de fin de semana</h3>
-                        <p>Una futura sección para destacar eventos, fiestas, actividades culturales y propuestas de ocio.</p>
-                    </article>
-                </div>
-
-                <div class="actions centered">
-                    <a class="btn btn-primary" href="./planes/">Ver todos los planes</a>
-                </div>
-            </div>
-        </section>
-
-        <div class="container ad-wrap ad-wrap-section">
-            <div class="ad-slot ad-slot-leaderboard">Publicidad antes de comercios destacados</div>
-        </div>
-
-        <section id="comercios">
-            <div class="container">
-                <div class="section-title">
-                    <div>
-                        <span class="section-kicker">Escaparate local</span>
-                        <h2>Comercios destacados</h2>
-                    </div>
-                    <p>Un espacio pensado para restaurantes, tiendas, profesionales y servicios de confianza.</p>
-                </div>
-
-                <div class="grid-3">
-                    <article class="business-card">
-                        <div class="business-top"><div class="business-logo">C</div><div><small>Destacado</small><h3>Cafetería local</h3></div></div>
-                        <p>Desayunos, meriendas y terraza. Espacio reservado para negocio patrocinado.</p>
-                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
-                    </article>
-                    <article class="business-card">
-                        <div class="business-top"><div class="business-logo">T</div><div><small>Servicio</small><h3>Taller recomendado</h3></div></div>
-                        <p>Mecánica, revisiones y mantenimiento. Ficha preparada para contacto y ubicación.</p>
-                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
-                    </article>
-                    <article class="business-card">
-                        <div class="business-top"><div class="business-logo">R</div><div><small>Comer</small><h3>Restaurante destacado</h3></div></div>
-                        <p>Menú, reservas y especialidades. Ideal para negocios de hostelería local.</p>
-                        <a class="read-more" href="./anunciarse/">Anunciar aquí →</a>
-                    </article>
-                </div>
-
-                <div class="actions centered">
-                    <a class="btn btn-primary" href="./comercios/">Ver comercios</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto">
-            <div class="container">
-                <div class="newsletter">
-                    <div>
-                        <h2>¿Tienes un negocio en Alhaurín?</h2>
-                        <p>Aparece como comercio destacado, publica una promoción o patrocina una sección local.</p>
-                    </div>
-                    <a class="btn" href="./anunciarse/">Ver opciones para anunciarse</a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
@@ -262,6 +195,7 @@
     </footer>
 
     <script src="./app.js"></script>
+    <script src="./home-guardia.js"></script>
 </body>
 
 </html>

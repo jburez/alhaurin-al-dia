@@ -3,3 +3,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://alhaurinaldia.es/sitemap.xml
+Sitemap: https://alhaurinaldia.es/sitemap-farmacias.xml

@@ -24,6 +24,21 @@ MAX_NOTICIAS_POR_FUENTE = 10
 MAX_NOTICIAS_TOTAL = 30
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 
+CATEGORIAS_VALIDAS = [
+    "Actualidad",
+    "Fiestas y Tradiciones",
+    "Agenda Cultural",
+    "Deportes",
+    "Municipal",
+    "Obras y Servicios",
+    "Tráfico y Movilidad",
+    "Educación",
+    "Comercio y Empresa",
+    "Turismo y Patrimonio",
+    "Sucesos",
+    "Vídeos",
+]
+
 FUENTES = [
     {"nombre": "RTV Alhaurín el Grande",
         "url": "https://rtvalhaurinelgrande.com/feed/"},
@@ -53,8 +68,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def ia_activada():
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
-    return bool(api_key)
+    return bool(os.getenv("OPENAI_API_KEY", "").strip())
 
 
 def limpiar_html(texto):
@@ -80,12 +94,6 @@ def limpiar_resumen_editorial(texto, max_caracteres=220):
         flags=re.IGNORECASE,
     )
 
-    match = re.search(r"(?:^|\s)1\.\s*([^\.]+(?:\.[^0-9]+)?)", texto)
-    if match:
-        candidato = match.group(1).strip()
-        if len(candidato) >= 35:
-            texto = candidato
-
     texto = texto.strip(" -–—")
     if not texto:
         return "Actualidad local de Alhaurín el Grande."
@@ -96,8 +104,51 @@ def limpiar_resumen_editorial(texto, max_caracteres=220):
     return texto[:max_caracteres].rsplit(" ", 1)[0].rstrip(".,;:") + "..."
 
 
-def limitar_texto(texto, max_caracteres=220):
-    return limpiar_resumen_editorial(texto, max_caracteres=max_caracteres)
+def normalizar_frase_completa(texto, fallback="", max_caracteres=260):
+    texto = limpiar_html(texto).strip()
+    texto = texto.replace("...", ".")
+    texto = re.sub(r"\s+", " ", texto).strip(" -–—")
+
+    if not texto:
+        return fallback
+
+    if len(texto) > max_caracteres:
+        recorte = texto[:max_caracteres].rsplit(" ", 1)[0]
+        frases = re.split(r"(?<=[.!?])\s+", recorte)
+        completas = [f.strip()
+                     for f in frases if re.search(r"[.!?]$", f.strip())]
+        texto = " ".join(
+            completas) if completas else recorte.rstrip(".,;:") + "."
+
+    if texto and not re.search(r"[.!?]$", texto):
+        texto += "."
+
+    return texto
+
+
+def dividir_parrafos(texto):
+    texto = limpiar_html(texto)
+    partes = [p.strip() for p in re.split(
+        r"\n+|(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ])", texto) if p.strip()]
+    if not partes:
+        return []
+
+    parrafos = []
+    actual = ""
+
+    for parte in partes:
+        if not actual:
+            actual = parte
+        elif len(actual) < 220:
+            actual += " " + parte
+        else:
+            parrafos.append(actual)
+            actual = parte
+
+    if actual:
+        parrafos.append(actual)
+
+    return [normalizar_frase_completa(p, max_caracteres=420) for p in parrafos[:3]]
 
 
 def escapar(texto):
@@ -199,12 +250,12 @@ def calcular_score(noticia):
 
 
 def es_titulo_generico(titulo):
+    titulo_lower = limpiar_html(titulo).lower()
     patrones = [
         r"^noticias\s+atv\s+\d{1,2}\s+\w+\s+\d{4}",
         r"^actualidad\s+de\s+alhaurín",
         r"^informativo\s+atv",
     ]
-    titulo_lower = limpiar_html(titulo).lower()
     return any(re.search(patron, titulo_lower, flags=re.IGNORECASE) for patron in patrones)
 
 
@@ -217,8 +268,7 @@ def extraer_primer_tema_informativo(texto):
     for patron in patrones:
         match = re.search(patron, texto)
         if match:
-            tema = match.group(1)
-            tema = re.sub(r"\s+", " ", tema).strip(" .:-–—")
+            tema = re.sub(r"\s+", " ", match.group(1)).strip(" .:-–—")
             if len(tema) >= 25:
                 return tema
     return ""
@@ -240,11 +290,9 @@ def titular_desde_tema(tema):
 
 def generar_titulo_seo(titulo, texto, fuente):
     titulo_limpio = limpiar_html(titulo)
-    texto_limpio = limpiar_html(texto)
 
     if es_titulo_generico(titulo_limpio):
-        tema = extraer_primer_tema_informativo(texto_limpio)
-        titulo_seo = titular_desde_tema(tema)
+        titulo_seo = titular_desde_tema(extraer_primer_tema_informativo(texto))
         if titulo_seo:
             return titulo_seo
 
@@ -265,8 +313,10 @@ def es_noticia_relevante_local(titulo, texto, fuente):
         "ayuntamiento alhaurín el grande",
         "hermandad nuestro padre jesús nazareno",
     ]
+
     if any(f in fuente_lower for f in fuentes_validas):
         return True
+
     contenido = f"{titulo} {texto}".lower()
     return "alhaurín el grande" in contenido or "alhaurin el grande" in contenido
 
@@ -283,6 +333,7 @@ def extraer_imagen_feed(feed):
 def extraer_imagen(entry, imagen_feed=""):
     if hasattr(entry, "media_thumbnail") and entry.media_thumbnail:
         return entry.media_thumbnail[0].get("url", "")
+
     if hasattr(entry, "media_content") and entry.media_content:
         return entry.media_content[0].get("url", "")
 
@@ -292,6 +343,7 @@ def extraer_imagen(entry, imagen_feed=""):
         getattr(entry, "content", [{}])[0].get(
             "value", "") if hasattr(entry, "content") else "",
     ]
+
     for contenido in campos:
         match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', contenido)
         if match:
@@ -301,6 +353,7 @@ def extraer_imagen(entry, imagen_feed=""):
         for link in entry.links:
             if link.get("type", "").startswith("image/"):
                 return link.get("href", "")
+
     return imagen_feed or ""
 
 
@@ -319,8 +372,10 @@ def detectar_categoria(titulo, texto, fuente):
         "Sucesos": ["suceso", "detenido", "incendio", "accidente", "policía", "guardia civil", "emergencia", "rescate", "herido"],
         "Vídeos": ["youtube", "vídeo", "video", "entrevista", "atv"],
     }
+
     puntuaciones = {}
     titulo_lower = titulo.lower()
+
     for categoria, palabras in categorias.items():
         score = 0
         for palabra in palabras:
@@ -330,31 +385,52 @@ def detectar_categoria(titulo, texto, fuente):
                     score += 8
         if score:
             puntuaciones[categoria] = score
+
     return max(puntuaciones, key=puntuaciones.get) if puntuaciones else "Actualidad"
 
 
+def parsear_json_ia(contenido):
+    contenido = contenido.strip()
+    contenido = re.sub(r"^```(?:json)?", "", contenido,
+                       flags=re.IGNORECASE).strip()
+    contenido = re.sub(r"```$", "", contenido).strip()
+
+    match = re.search(r"\{.*\}", contenido, flags=re.DOTALL)
+    if match:
+        contenido = match.group(0)
+
+    return json.loads(contenido)
+
+
+def fallback_editorial(titulo_original, texto, fuente):
+    titulo = generar_titulo_seo(titulo_original, texto, fuente)
+    descripcion = normalizar_frase_completa(
+        limpiar_resumen_editorial(texto, 230),
+        fallback="Actualidad local de Alhaurín el Grande.",
+        max_caracteres=230,
+    )
+
+    parrafos = dividir_parrafos(texto)
+    if not parrafos:
+        parrafos = [descripcion]
+
+    cuerpo = "\n\n".join(parrafos[:3])
+    categoria = detectar_categoria(titulo, texto, fuente)
+
+    return {
+        "titulo": titulo,
+        "descripcion": descripcion,
+        "cuerpo": cuerpo,
+        "categoria": categoria,
+        "seo_keywords": [],
+    }
+
+
 def mejorar_noticia_con_ia(titulo_original, texto, fuente):
-
-    titulo_fallback = generar_titulo_seo(
-        titulo_original,
-        texto,
-        fuente
-    )
-
-    resumen_fallback = limpiar_resumen_editorial(texto)
-
-    categoria_fallback = detectar_categoria(
-        titulo_fallback,
-        texto,
-        fuente
-    )
+    fallback = fallback_editorial(titulo_original, texto, fuente)
 
     if not ia_activada():
-        return {
-            "titulo": titulo_fallback,
-            "descripcion": resumen_fallback,
-            "categoria": categoria_fallback,
-        }
+        return fallback
 
     try:
         from openai import OpenAI
@@ -362,30 +438,33 @@ def mejorar_noticia_con_ia(titulo_original, texto, fuente):
         client = OpenAI()
 
         prompt = f"""
-Eres editor SEO de un periódico digital local.
+Eres editor jefe SEO de un medio digital hiperlocal llamado Alhaurín al Día.
 
-Debes:
-- mejorar el titular
-- generar un resumen periodístico
-- clasificar la noticia
+Debes mejorar esta noticia para publicarla de forma clara, útil y profesional.
 
-NO inventes datos.
+Devuelve SOLO JSON válido con estas claves:
+{{
+  "titulo": "Titular SEO natural, máximo 90 caracteres",
+  "descripcion": "Entradilla completa de 1 frase, máximo 230 caracteres",
+  "cuerpo": "Texto desarrollado en 2 o 3 párrafos breves, sin repetir literalmente la entradilla",
+  "categoria": "Una categoría válida",
+  "seo_keywords": ["keyword 1", "keyword 2", "keyword 3"]
+}}
 
-Devuelve SOLO JSON válido.
+Categorías válidas:
+{json.dumps(CATEGORIAS_VALIDAS, ensure_ascii=False)}
 
-Categorías posibles:
-- Actualidad
-- Fiestas y Tradiciones
-- Agenda Cultural
-- Deportes
-- Municipal
-- Obras y Servicios
-- Tráfico y Movilidad
-- Educación
-- Comercio y Empresa
-- Turismo y Patrimonio
-- Sucesos
-- Vídeos
+Reglas obligatorias:
+- No inventes datos, nombres, fechas, lugares, horarios ni cifras.
+- No termines frases a medias.
+- No uses puntos suspensivos.
+- No empieces con frases vagas tipo "Durante el..." si no se completa bien.
+- La descripcion debe ser distinta al cuerpo.
+- El cuerpo debe ampliar y ordenar la información, no repetir la entradilla.
+- Mantén foco local en Alhaurín el Grande cuando proceda.
+- Si el título original es genérico tipo "NOTICIAS ATV", crea un titular basado en el tema principal real.
+- No incluyas la nota de Alhaurín al Día dentro del cuerpo.
+- No menciones a la IA.
 
 Título original:
 {titulo_original}
@@ -393,8 +472,8 @@ Título original:
 Fuente:
 {fuente}
 
-Texto:
-{texto[:3000]}
+Texto disponible:
+{texto[:4000]}
 """
 
         response = client.responses.create(
@@ -403,32 +482,42 @@ Texto:
             temperature=0.2,
         )
 
-        contenido = response.output_text.strip()
+        data = parsear_json_ia(response.output_text)
 
-        contenido = re.sub(r"^```json", "", contenido)
-        contenido = re.sub(r"```$", "", contenido)
+        titulo = limpiar_html(data.get("titulo") or fallback["titulo"])
+        descripcion = normalizar_frase_completa(
+            data.get("descripcion") or fallback["descripcion"],
+            fallback=fallback["descripcion"],
+            max_caracteres=230,
+        )
 
-        data = json.loads(contenido)
+        cuerpo_raw = data.get("cuerpo") or fallback["cuerpo"]
+        parrafos = dividir_parrafos(cuerpo_raw)
+        cuerpo = "\n\n".join(parrafos[:3]) if parrafos else fallback["cuerpo"]
+
+        if cuerpo.strip() == descripcion.strip():
+            cuerpo = fallback["cuerpo"]
+
+        categoria = data.get("categoria") or fallback["categoria"]
+        if categoria not in CATEGORIAS_VALIDAS:
+            categoria = fallback["categoria"]
+
+        keywords = data.get("seo_keywords") or []
+        if not isinstance(keywords, list):
+            keywords = []
+        keywords = [limpiar_html(k) for k in keywords[:6] if limpiar_html(k)]
 
         return {
-            "titulo": limpiar_html(data.get("titulo", titulo_fallback)),
-            "descripcion": limpiar_resumen_editorial(
-                data.get("descripcion", resumen_fallback)
-            ),
-            "categoria": data.get(
-                "categoria",
-                categoria_fallback
-            ),
+            "titulo": titulo[:95].rsplit(" ", 1)[0].rstrip(".,;:") if len(titulo) > 95 else titulo,
+            "descripcion": descripcion,
+            "cuerpo": cuerpo,
+            "categoria": categoria,
+            "seo_keywords": keywords,
         }
 
     except Exception as e:
         print("Error IA:", e)
-
-        return {
-            "titulo": titulo_fallback,
-            "descripcion": resumen_fallback,
-            "categoria": categoria_fallback,
-        }
+        return fallback
 
 
 def leer_feed(url):
@@ -445,12 +534,15 @@ def schema_news_article(noticia, canonical_url):
         "@type": "NewsArticle",
         "headline": noticia.get("titulo", ""),
         "description": noticia.get("descripcion") or noticia.get("resumen") or "",
+        "articleBody": noticia.get("cuerpo", ""),
         "datePublished": noticia.get("fecha", ""),
         "dateModified": noticia.get("fecha", ""),
         "mainEntityOfPage": {"@type": "WebPage", "@id": canonical_url},
         "image": [imagen],
         "inLanguage": "es-ES",
         "isAccessibleForFree": True,
+        "articleSection": noticia.get("categoria", "Actualidad"),
+        "keywords": noticia.get("seo_keywords", []),
         "author": {"@type": "Organization", "name": noticia.get("fuente") or "Alhaurín al Día"},
         "publisher": {
             "@type": "Organization",
@@ -523,11 +615,14 @@ def bloque_relacionadas(noticia, noticias):
     categoria = noticia.get("categoria", "Actualidad")
     relacionadas = [n for n in noticias if n.get("id") != noticia.get(
         "id") and n.get("categoria") == categoria][:3]
+
     if len(relacionadas) < 3:
         relacionadas += [n for n in noticias if n.get("id") != noticia.get(
             "id") and n not in relacionadas][:3 - len(relacionadas)]
+
     if not relacionadas:
         return ""
+
     cards = "".join(
         f'''<a class="related-card" href="../{escapar(item.get('pagina', '#'))}">
             <span>{escapar(item.get('categoria', 'Actualidad'))}</span>
@@ -535,27 +630,41 @@ def bloque_relacionadas(noticia, noticias):
         </a>'''
         for item in relacionadas
     )
+
     return f'''<section class="related-news" aria-label="Noticias relacionadas">
         <div class="section-title compact"><div><span class="section-kicker">Sigue leyendo</span><h2>Noticias relacionadas</h2></div></div>
         <div class="related-grid">{cards}</div>
     </section>'''
 
 
+def renderizar_parrafos_cuerpo(cuerpo):
+    parrafos = dividir_parrafos(cuerpo)
+    if not parrafos:
+        return ""
+    return "\n".join(f"<p>{escapar(parrafo)}</p>" for parrafo in parrafos)
+
+
 def generar_html_noticia(noticia, noticias):
     titulo = noticia.get("titulo", "Noticia local")
     descripcion = noticia.get("descripcion") or noticia.get(
         "resumen") or "Actualidad de Alhaurín el Grande."
+    cuerpo = noticia.get("cuerpo") or descripcion
     canonical = f"{SITE_URL}/{noticia.get('pagina', '')}"
     imagen = noticia.get("imagen", "")
     categoria = noticia.get("categoria", "Actualidad")
     fuente = noticia.get("fuente", "")
     fecha = formatear_fecha(noticia.get("fecha", ""))
     enlace_original = noticia.get("enlace") or noticia.get("url") or "#"
-    lectura = tiempo_lectura(f"{titulo} {descripcion}")
+    lectura = tiempo_lectura(f"{titulo} {descripcion} {cuerpo}")
     share_text = quote(f"{titulo} {canonical}")
     share_url = quote(canonical, safe="")
 
-    imagen_html = f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>' if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
+    imagen_html = (
+        f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>'
+        if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
+    )
+
+    cuerpo_html = renderizar_parrafos_cuerpo(cuerpo)
     relacionadas = bloque_relacionadas(noticia, noticias)
     breadcrumb_schema = schema_breadcrumb_list(noticia, canonical)
 
@@ -575,13 +684,16 @@ def generar_html_noticia(noticia, noticias):
                     {imagen_html}
 
                     <div class="article-content premium-article-content">
-                        <p>{escapar(descripcion)}</p>
+                        {cuerpo_html}
 
                         <div class="article-inline-ad">
                             <div class="ad-slot ad-slot-native">Publicidad integrada en la noticia</div>
                         </div>
 
-                        <p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a la actualidad local de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p>
+                        <aside class="article-editorial-note">
+                            <strong>Nota de Alhaurín al Día</strong>
+                            <p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a la actualidad local de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p>
+                        </aside>
 
                         <div class="article-source-box">
                             <div><span>Fuente original</span><strong>{escapar(fuente or "Fuente externa")}</strong></div>
@@ -611,6 +723,7 @@ def generar_html_noticia(noticia, noticias):
     <script type="application/ld+json">{schema_news_article(noticia, canonical)}</script>
     <script type="application/ld+json">{breadcrumb_schema}</script>
     '''
+
     return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen, "..", "article")}\n{site_chrome(body, "..")}\n</html>'
 
 
@@ -618,6 +731,7 @@ def generar_html_categoria(categoria, noticias):
     slug = slugify(categoria)
     canonical = f"{SITE_URL}/categoria/{slug}/"
     descripcion = f"Últimas noticias de {categoria} en Alhaurín el Grande. Actualidad local, avisos y novedades recopiladas por Alhaurín al Día."
+
     cards = []
     for noticia in noticias:
         img = noticia.get("imagen", "")
@@ -628,43 +742,53 @@ def generar_html_categoria(categoria, noticias):
             <div class="news-footer"><small>{escapar(noticia.get("fuente", ""))}</small><a class="read-more" href="../../{escapar(noticia.get("pagina", "#"))}">Leer noticia →</a></div>
         </article>
         ''')
+
     body = f'''
     <main>
         <section class="hero"><div class="container"><div class="hero-card"><span class="eyebrow">Categoría</span><h1>{escapar(categoria)}</h1><p class="lead">{escapar(descripcion)}</p></div></div></section>
         <section><div class="container"><div class="section-title"><h2>Últimas noticias</h2><p>{len(noticias)} noticias disponibles en esta categoría.</p></div><div class="grid-3">{''.join(cards)}</div></div></section>
     </main>
     '''
+
     return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " | Alhaurín al Día", descripcion, canonical, "", "../..", "website")}\n{site_chrome(body, "../..")}\n</html>'
 
 
 def generar_paginas_noticias(noticias):
     NOTICIAS_DIR.mkdir(parents=True, exist_ok=True)
     rutas_usadas = set()
+
     for noticia in noticias:
         ruta_base = generar_ruta_pagina(noticia.get(
             "titulo", noticia.get("id", "noticia")))
         ruta = ruta_base
         contador = 2
+
         while ruta in rutas_usadas:
             ruta = f"noticias/{Path(ruta_base).stem}-{contador}.html"
             contador += 1
+
         rutas_usadas.add(ruta)
         noticia["pagina"] = ruta
+
     for noticia in noticias:
         (BASE_DIR / noticia["pagina"]).write_text(
             generar_html_noticia(noticia, noticias), encoding="utf-8")
+
     print("Páginas individuales creadas:", len(noticias))
 
 
 def generar_paginas_categorias(noticias):
     por_categoria = defaultdict(list)
+
     for noticia in noticias:
         por_categoria[noticia.get("categoria", "Actualidad")].append(noticia)
+
     for categoria, items in por_categoria.items():
         ruta = BASE_DIR / generar_ruta_categoria(categoria)
         ruta.parent.mkdir(parents=True, exist_ok=True)
         ruta.write_text(generar_html_categoria(
             categoria, items), encoding="utf-8")
+
     print("Páginas de categoría creadas:", len(por_categoria))
     return sorted(por_categoria.keys())
 
@@ -672,18 +796,36 @@ def generar_paginas_categorias(noticias):
 def generar_sitemap(noticias, categorias):
     today = datetime.now(timezone.utc).date().isoformat()
     urls = []
-    for item in STATIC_URLS:
-        urls.append({"loc": f"{SITE_URL}{item['loc']}", "lastmod": today,
-                    "changefreq": item["changefreq"], "priority": item["priority"]})
-    for categoria in categorias:
-        urls.append({"loc": f"{SITE_URL}/categoria/{slugify(categoria)}/",
-                    "lastmod": today, "changefreq": "daily", "priority": "0.8"})
-    for noticia in noticias:
-        urls.append({"loc": f"{SITE_URL}/{noticia.get('pagina', '')}", "lastmod": fecha_sitemap(
-            noticia.get("fecha", "")), "changefreq": "weekly", "priority": "0.8"})
 
-    xml = ['<?xml version="1.0" encoding="UTF-8"?>',
-           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for item in STATIC_URLS:
+        urls.append({
+            "loc": f"{SITE_URL}{item['loc']}",
+            "lastmod": today,
+            "changefreq": item["changefreq"],
+            "priority": item["priority"],
+        })
+
+    for categoria in categorias:
+        urls.append({
+            "loc": f"{SITE_URL}/categoria/{slugify(categoria)}/",
+            "lastmod": today,
+            "changefreq": "daily",
+            "priority": "0.8",
+        })
+
+    for noticia in noticias:
+        urls.append({
+            "loc": f"{SITE_URL}/{noticia.get('pagina', '')}",
+            "lastmod": fecha_sitemap(noticia.get("fecha", "")),
+            "changefreq": "weekly",
+            "priority": "0.8",
+        })
+
+    xml = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+
     for item in urls:
         xml.append("    <url>")
         xml.append(f"        <loc>{escapar(item['loc'])}</loc>")
@@ -691,6 +833,7 @@ def generar_sitemap(noticias, categorias):
         xml.append(f"        <changefreq>{item['changefreq']}</changefreq>")
         xml.append(f"        <priority>{item['priority']}</priority>")
         xml.append("    </url>")
+
     xml.append("</urlset>")
     SITEMAP_FILE.write_text("\n".join(xml) + "\n", encoding="utf-8")
     print("Sitemap actualizado:", SITEMAP_FILE)
@@ -699,13 +842,16 @@ def generar_sitemap(noticias, categorias):
 def obtener_noticias():
     noticias = []
     urls_vistas = set()
+
     print("\nGenerando noticias para Alhaurín al Día")
     print("Archivo destino:", OUTPUT_FILE)
+    print("IA editorial:", "activada" if ia_activada() else "desactivada")
 
     for fuente in FUENTES:
         print("\n====================================")
         print("Leyendo:", fuente["nombre"])
         print("====================================")
+
         try:
             feed = leer_feed(fuente["url"])
         except Exception as e:
@@ -718,41 +864,45 @@ def obtener_noticias():
         for entry in feed.entries[:MAX_NOTICIAS_POR_FUENTE]:
             titulo_original = limpiar_html(entry.get("title", ""))
             url = entry.get("link", "")
+
             if not titulo_original or not url or url in urls_vistas:
                 continue
+
             urls_vistas.add(url)
-            texto_limpio = limpiar_html(entry.get("summary", "") or entry.get(
-                "description", "") or titulo_original)
+
+            texto_limpio = limpiar_html(
+                entry.get("summary", "")
+                or entry.get("description", "")
+                or titulo_original
+            )
+
             if not es_noticia_relevante_local(titulo_original, texto_limpio, fuente["nombre"]):
                 print(f"✗ Descartada por no ser local: {titulo_original}")
                 continue
 
             mejora = mejorar_noticia_con_ia(
-                titulo_original,
-                texto_limpio,
-                fuente["nombre"]
-            )
+                titulo_original, texto_limpio, fuente["nombre"])
 
-            titulo = mejora["titulo"]
-            resumen = mejora["descripcion"]
-            categoria = mejora["categoria"]
             noticia = {
                 "id": generar_id(url, titulo_original),
-                "titulo": titulo,
+                "titulo": mejora["titulo"],
                 "titulo_original": titulo_original,
-                "descripcion": resumen,
-                "resumen": resumen,
+                "descripcion": mejora["descripcion"],
+                "resumen": mejora["descripcion"],
+                "cuerpo": mejora["cuerpo"],
                 "fecha": normalizar_fecha(entry.get("published", "")),
                 "fuente": fuente["nombre"],
-                "categoria": categoria,
-                "categoria_url": f"categoria/{slugify(categoria)}/",
+                "categoria": mejora["categoria"],
+                "categoria_url": f"categoria/{slugify(mejora['categoria'])}/",
+                "seo_keywords": mejora.get("seo_keywords", []),
                 "enlace": url,
                 "url": url,
                 "imagen": extraer_imagen(entry, imagen_feed),
                 "prioridad": prioridad_fuente(fuente["nombre"]),
             }
+
             noticias.append(noticia)
-            print(f"✓ {categoria} | {titulo}")
+            print(f"✓ {noticia['categoria']} | {noticia['titulo']}")
 
     noticias.sort(key=calcular_score, reverse=True)
     return noticias[:MAX_NOTICIAS_TOTAL]
@@ -762,9 +912,12 @@ def guardar_noticias(noticias):
     generar_paginas_noticias(noticias)
     categorias = generar_paginas_categorias(noticias)
     generar_sitemap(noticias, categorias)
+
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(noticias, f, ensure_ascii=False, indent=2)
+
     print("\n====================================")
     print("Noticias generadas:", len(noticias))
     print("Archivo creado:", OUTPUT_FILE)

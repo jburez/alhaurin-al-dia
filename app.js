@@ -13,6 +13,63 @@ const HOME_SECONDARY_NEWS_LIMIT = 3;
 let allNews = [];
 let activeSource = "Todas";
 
+const HUBS_UTILES = [
+    {
+        title: "Farmacias de guardia",
+        description: "Consulta farmacias, teléfonos y fuentes oficiales antes de desplazarte.",
+        url: "guia-util/farmacias/",
+        keywords: ["farmacia", "farmacias", "guardia", "salud", "emergencia", "urgencias"]
+    },
+    {
+        title: "Teléfonos útiles",
+        description: "Emergencias, atención municipal y contactos básicos de Alhaurín el Grande.",
+        url: "guia-util/telefonos/",
+        keywords: ["teléfono", "telefonos", "emergencia", "policía", "protección civil", "guardia civil", "ayuntamiento"]
+    },
+    {
+        title: "Trámites y sede electrónica",
+        description: "Accesos a sede electrónica, cita previa, padrón y gestiones municipales.",
+        url: "guia-util/tramites/",
+        keywords: ["trámite", "tramites", "sede", "padrón", "padron", "cita previa", "tributos"]
+    },
+    {
+        title: "Autobuses y movilidad",
+        description: "Horarios, líneas y recursos para moverse desde y hacia Alhaurín el Grande.",
+        url: "guia-util/movilidad/",
+        keywords: ["autobús", "autobus", "movilidad", "transporte", "horario", "málaga", "coin", "cártama"]
+    },
+    {
+        title: "Taxi en Alhaurín el Grande",
+        description: "Parada, teléfono y recursos de taxi del municipio.",
+        url: "guia-util/taxis/",
+        keywords: ["taxi", "taxis", "traslado"]
+    },
+    {
+        title: "Deportes e instalaciones",
+        description: "Instalaciones deportivas, piscina, pistas y recursos municipales.",
+        url: "guia-util/deportes/",
+        keywords: ["deporte", "deportes", "calistenia", "polideportivo", "piscina", "fútbol", "baloncesto", "pádel"]
+    },
+    {
+        title: "Campamentos y familias",
+        description: "Recursos educativos, campamentos urbanos y conciliación familiar.",
+        url: "guia-util/campamentos/",
+        keywords: ["campamento", "campamentos", "educación", "educacion", "familias", "niños", "conciliación"]
+    },
+    {
+        title: "Turismo y patrimonio",
+        description: "Planes, patrimonio, rutas y recursos turísticos de Alhaurín el Grande.",
+        url: "guia-util/turismo/",
+        keywords: ["turismo", "patrimonio", "ruta", "rutas", "mirador", "antonio gala", "visita"]
+    },
+    {
+        title: "Restaurantes y dónde comer",
+        description: "Guía gastronómica local en construcción para vecinos y visitantes.",
+        url: "guia-util/restaurantes/",
+        keywords: ["restaurante", "restaurantes", "bar", "bares", "comer", "cafetería", "tapas"]
+    }
+];
+
 function escapeHTML(value = "") {
     return String(value)
         .replaceAll("&", "&amp;")
@@ -42,6 +99,10 @@ function normalizeLink(link = "#") {
     }
 
     return new URL(value.replace(/^\/+/, ""), APP_ROOT).href;
+}
+
+function isExternalLink(link = "") {
+    return /^https?:\/\//i.test(link) && !link.startsWith(window.location.origin);
 }
 
 function initMobileMenu() {
@@ -282,10 +343,13 @@ function renderGuide(items) {
         card.id = item.id || "";
 
         const listItems = (item.items || [])
+            .slice(0, 4)
             .map(text => `<li>${escapeHTML(text)}</li>`)
             .join("");
 
-        const linkItems = (item.links || [])
+        const pageLink = normalizeLink(item.pagina || item.enlace || `guia-util/${item.id || ""}/`);
+        const externalLinks = (item.links || [])
+            .slice(0, 2)
             .map(link => `
                 <a href="${escapeHTML(normalizeLink(link.url || "#"))}" target="_blank" rel="noopener noreferrer">
                     ${escapeHTML(link.texto || "Abrir enlace")}
@@ -306,10 +370,10 @@ function renderGuide(items) {
 
             <ul>${listItems}</ul>
 
-            ${linkItems ? `<div class="guide-links">${linkItems}</div>` : ""}
+            ${externalLinks ? `<div class="guide-links">${externalLinks}</div>` : ""}
 
-            <a class="read-more" href="${escapeHTML(normalizeLink(item.enlace || "#guia-util"))}" target="_blank" rel="noopener noreferrer">
-                ${escapeHTML(item.cta || "Ver más")} →
+            <a class="read-more" href="${escapeHTML(pageLink)}">
+                ${escapeHTML(item.cta || "Ver ficha completa")} →
             </a>
         `;
 
@@ -360,6 +424,50 @@ function loadGuide() {
         });
 }
 
+function scoreHubForText(hub, text) {
+    return hub.keywords.reduce((score, keyword) => {
+        return text.includes(keyword.toLowerCase()) ? score + 1 : score;
+    }, 0);
+}
+
+function insertUsefulHubSuggestions() {
+    const articleContent = document.querySelector(".premium-article-content");
+    const articleTitle = document.querySelector(".article-title");
+
+    if (!articleContent || !articleTitle || document.querySelector(".useful-hubs-inline")) return;
+
+    const text = `${articleTitle.textContent || ""} ${articleContent.textContent || ""}`.toLowerCase();
+    const selected = HUBS_UTILES
+        .map(hub => ({ ...hub, score: scoreHubForText(hub, text) }))
+        .filter(hub => hub.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 3);
+
+    const hubs = selected.length ? selected : HUBS_UTILES.slice(0, 3);
+
+    const block = document.createElement("aside");
+    block.className = "useful-hubs-inline article-editorial-note";
+    block.setAttribute("aria-label", "También te puede servir");
+    block.innerHTML = `
+        <strong>También te puede servir</strong>
+        <div class="guide-links" style="margin-top:12px;">
+            ${hubs.map(hub => `
+                <a href="${escapeHTML(normalizeLink(hub.url))}">
+                    ${escapeHTML(hub.title)}
+                </a>
+            `).join("")}
+        </div>
+    `;
+
+    const sourceBox = articleContent.querySelector(".article-source-box");
+    if (sourceBox) {
+        articleContent.insertBefore(block, sourceBox);
+    } else {
+        articleContent.appendChild(block);
+    }
+}
+
 initMobileMenu();
 loadNews();
 loadGuide();
+insertUsefulHubSuggestions();

@@ -2,20 +2,21 @@ import html
 import json
 import re
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from urllib.parse import quote
 
 import feedparser
 import requests
 import urllib3
 from dotenv import load_dotenv
-from openai import OpenAI
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
 NOTICIAS_DIR = BASE_DIR / "noticias"
 CATEGORIAS_DIR = BASE_DIR / "categoria"
+SITEMAP_FILE = BASE_DIR / "sitemap.xml"
 SITE_URL = "https://alhaurinaldia.es"
 
 MAX_NOTICIAS_POR_FUENTE = 10
@@ -31,8 +32,16 @@ FUENTES = [
     {"nombre": "Hermandad Nuestro Padre Jesús Nazareno", "url": "https://www.nuestropadrejesusnazareno.com/feed/"},
 ]
 
+STATIC_URLS = [
+    {"loc": "/", "changefreq": "hourly", "priority": "1.0"},
+    {"loc": "/noticias/", "changefreq": "hourly", "priority": "0.9"},
+    {"loc": "/guia-util/", "changefreq": "weekly", "priority": "0.9"},
+    {"loc": "/planes/", "changefreq": "weekly", "priority": "0.7"},
+    {"loc": "/comercios/", "changefreq": "weekly", "priority": "0.7"},
+    {"loc": "/anunciarse/", "changefreq": "monthly", "priority": "0.6"},
+]
+
 load_dotenv()
-client = OpenAI()
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
@@ -52,6 +61,7 @@ def limpiar_html(texto):
     }
     for origen, destino in reemplazos.items():
         texto = texto.replace(origen, destino)
+    texto = re.sub(r"The post .*", "", texto, flags=re.IGNORECASE).strip()
     return re.sub(r"\s+", " ", texto).strip()
 
 
@@ -82,18 +92,24 @@ def slugify(texto, max_caracteres=90):
 
 def normalizar_fecha(fecha_raw):
     if not fecha_raw:
-        return datetime.now().isoformat()
+        return datetime.now(timezone.utc).isoformat()
     try:
-        return parsedate_to_datetime(fecha_raw).isoformat()
+        fecha = parsedate_to_datetime(fecha_raw)
+        if fecha.tzinfo is None:
+            fecha = fecha.replace(tzinfo=timezone.utc)
+        return fecha.isoformat()
     except Exception:
-        return datetime.now().isoformat()
+        return datetime.now(timezone.utc).isoformat()
 
 
 def fecha_para_ordenacion(fecha_iso):
     try:
-        return datetime.fromisoformat(fecha_iso.replace("Z", "+00:00"))
+        fecha = datetime.fromisoformat(fecha_iso.replace("Z", "+00:00"))
+        if fecha.tzinfo is None:
+            fecha = fecha.replace(tzinfo=timezone.utc)
+        return fecha
     except Exception:
-        return datetime.min
+        return datetime.min.replace(tzinfo=timezone.utc)
 
 
 def formatear_fecha(fecha_iso):
@@ -101,6 +117,19 @@ def formatear_fecha(fecha_iso):
         return datetime.fromisoformat(fecha_iso.replace("Z", "+00:00")).strftime("%d/%m/%Y")
     except Exception:
         return ""
+
+
+def fecha_sitemap(fecha_iso=""):
+    try:
+        return datetime.fromisoformat(fecha_iso.replace("Z", "+00:00")).date().isoformat()
+    except Exception:
+        return datetime.now(timezone.utc).date().isoformat()
+
+
+def tiempo_lectura(texto):
+    palabras = len(limpiar_html(texto).split())
+    minutos = max(1, round(palabras / 220))
+    return f"{minutos} min de lectura"
 
 
 def generar_id(url, titulo):
@@ -220,6 +249,8 @@ def resumir_con_ia(titulo, texto, fuente):
     if not USAR_IA:
         return limitar_texto(texto)
     try:
+        from openai import OpenAI
+        client = OpenAI()
         response = client.responses.create(
             model="gpt-4.1-mini",
             input=f"Resume esta noticia local en español, máximo 2 frases, sin inventar datos.\nTítulo: {titulo}\nFuente: {fuente}\nTexto: {texto}"
@@ -232,11 +263,12 @@ def resumir_con_ia(titulo, texto, fuente):
 
 def leer_feed(url):
     response = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0"}, verify=False)
+    response.raise_for_status()
     return feedparser.parse(response.text)
 
 
 def schema_news_article(noticia, canonical_url):
-    imagen = noticia.get("imagen") or f"{SITE_URL}/favicon.ico"
+    imagen = noticia.get("imagen") or f"{SITE_URL}/assets/favicon.svg"
     data = {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
@@ -244,28 +276,42 @@ def schema_news_article(noticia, canonical_url):
         "description": noticia.get("descripcion") or noticia.get("resumen") or "",
         "datePublished": noticia.get("fecha", ""),
         "dateModified": noticia.get("fecha", ""),
-        "mainEntityOfPage": canonical_url,
+        "mainEntityOfPage": {"@type": "WebPage", "@id": canonical_url},
         "image": [imagen],
-        "author": {"@type": "Organization", "name": "Alhaurín al Día"},
-        "publisher": {"@type": "Organization", "name": "Alhaurín al Día"},
+        "inLanguage": "es-ES",
+        "isAccessibleForFree": True,
+        "author": {"@type": "Organization", "name": noticia.get("fuente") or "Alhaurín al Día"},
+        "publisher": {
+            "@type": "Organization",
+            "name": "Alhaurín al Día",
+            "url": SITE_URL,
+            "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/assets/favicon.svg"},
+        },
     }
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
 def html_header(title, description, canonical, image="", css_prefix=".."):
-    image = image or f"{SITE_URL}/favicon.ico"
+    image = image or f"{SITE_URL}/assets/favicon.svg"
     return f'''<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{escapar(title)}</title>
     <meta name="description" content="{escapar(description)}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="{escapar(canonical)}">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Alhaurín al Día">
     <meta property="og:title" content="{escapar(title)}">
     <meta property="og:description" content="{escapar(description)}">
     <meta property="og:url" content="{escapar(canonical)}">
     <meta property="og:image" content="{escapar(image)}">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="{css_prefix}/assets/favicon.svg">
     <link rel="stylesheet" href="{css_prefix}/styles.css">
+    <link rel="stylesheet" href="{css_prefix}/mobile.css">
+    <link rel="stylesheet" href="{css_prefix}/ads.css">
+    <link rel="stylesheet" href="{css_prefix}/article.css">
 </head>'''
 
 
@@ -274,14 +320,36 @@ def site_chrome(content, prefix=".."):
     <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>Noticias · Guía útil · Comercios · Planes</span></div></div>
     <header><div class="container"><nav aria-label="Navegación principal">
         <a class="logo" href="{prefix}/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
-        <div class="nav-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
+        <div class="nav-links" id="main-menu"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
     {content}
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a></div></div></footer>
+    <script src="{prefix}/app.js"></script>
 </body>'''
 
 
-def generar_html_noticia(noticia):
+def bloque_relacionadas(noticia, noticias):
+    categoria = noticia.get("categoria", "Actualidad")
+    relacionadas = [n for n in noticias if n.get("id") != noticia.get("id") and n.get("categoria") == categoria][:3]
+    if len(relacionadas) < 3:
+        relacionadas += [n for n in noticias if n.get("id") != noticia.get("id") and n not in relacionadas][:3 - len(relacionadas)]
+    if not relacionadas:
+        return ""
+    cards = "".join(
+        f'''<a class="related-card" href="../{escapar(item.get('pagina', '#'))}">
+            <span>{escapar(item.get('categoria', 'Actualidad'))}</span>
+            <strong>{escapar(item.get('titulo', 'Noticia local'))}</strong>
+        </a>'''
+        for item in relacionadas
+    )
+    return f'''<section class="related-news" aria-label="Noticias relacionadas">
+        <div class="section-title compact"><div><span class="section-kicker">Sigue leyendo</span><h2>Noticias relacionadas</h2></div></div>
+        <div class="related-grid">{cards}</div>
+    </section>'''
+
+
+def generar_html_noticia(noticia, noticias):
     titulo = noticia.get("titulo", "Noticia local")
     descripcion = noticia.get("descripcion") or noticia.get("resumen") or "Actualidad de Alhaurín el Grande."
     canonical = f"{SITE_URL}/{noticia.get('pagina', '')}"
@@ -290,19 +358,62 @@ def generar_html_noticia(noticia):
     fuente = noticia.get("fuente", "")
     fecha = formatear_fecha(noticia.get("fecha", ""))
     enlace_original = noticia.get("enlace") or noticia.get("url") or "#"
+    lectura = tiempo_lectura(f"{titulo} {descripcion}")
+    share_text = quote(f"{titulo} {canonical}")
+    share_url = quote(canonical, safe="")
 
-    imagen_html = f'<figure class="article-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"></figure>' if imagen else ""
+    imagen_html = f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>' if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
+    relacionadas = bloque_relacionadas(noticia, noticias)
+
     body = f'''
-    <main class="article-page"><div class="container article-shell">
-        <div class="breadcrumb"><a href="../">Inicio</a><span>›</span><a href="../noticias/">Noticias</a><span>›</span><a href="../categoria/{slugify(categoria)}/">{escapar(categoria)}</a></div>
-        <article class="article-card">{imagen_html}<div class="article-content">
-            <div class="article-meta"><span class="tag">{escapar(categoria)}</span>{f'<span class="source-mini-tag">{escapar(fuente)}</span>' if fuente else ''}{f'<span class="source-mini-tag">{escapar(fecha)}</span>' if fecha else ''}</div>
-            <h1 class="article-title">{escapar(titulo)}</h1>
-            <p class="article-summary">{escapar(descripcion)}</p>
-            <div class="article-actions"><a class="btn btn-primary" href="{escapar(enlace_original)}" target="_blank" rel="noopener noreferrer">Leer en la fuente original</a><a class="btn btn-secondary" href="../noticias/">Volver a noticias</a></div>
-            <p class="article-note">Esta página recoge una noticia enlazada desde su fuente original. Alhaurín al Día organiza y facilita el acceso a la actualidad local de Alhaurín el Grande.</p>
-        </div></article>
-    </div></main>
+    <main class="article-page">
+        <div class="container article-shell">
+            <div class="breadcrumb"><a href="../">Inicio</a><span>›</span><a href="../noticias/">Noticias</a><span>›</span><a href="../categoria/{slugify(categoria)}/">{escapar(categoria)}</a></div>
+
+            <div class="article-layout premium-article-layout">
+                <article class="article-card premium-article-card">
+                    <header class="article-hero">
+                        <div class="article-meta"><span class="tag">{escapar(categoria)}</span>{f'<span class="source-mini-tag">{escapar(fuente)}</span>' if fuente else ''}{f'<span class="source-mini-tag">{escapar(fecha)}</span>' if fecha else ''}<span class="source-mini-tag">{escapar(lectura)}</span></div>
+                        <h1 class="article-title">{escapar(titulo)}</h1>
+                        <p class="article-summary">{escapar(descripcion)}</p>
+                    </header>
+
+                    {imagen_html}
+
+                    <div class="article-content premium-article-content">
+                        <p>{escapar(descripcion)}</p>
+
+                        <div class="article-inline-ad">
+                            <div class="ad-slot ad-slot-native">Publicidad integrada en la noticia</div>
+                        </div>
+
+                        <p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a la actualidad local de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p>
+
+                        <div class="article-source-box">
+                            <div><span>Fuente original</span><strong>{escapar(fuente or "Fuente externa")}</strong></div>
+                            <a class="btn btn-primary" href="{escapar(enlace_original)}" target="_blank" rel="noopener noreferrer">Leer en la fuente original</a>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="article-sidebar premium-article-sidebar" aria-label="Opciones de la noticia">
+                    <div class="share-card">
+                        <span class="mini-label">Compartir</span>
+                        <h2>Comparte esta noticia</h2>
+                        <div class="share-actions">
+                            <a href="https://api.whatsapp.com/send?text={share_text}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={share_url}" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <a href="https://twitter.com/intent/tweet?url={share_url}&text={quote(titulo)}" target="_blank" rel="noopener noreferrer">X</a>
+                        </div>
+                    </div>
+
+                    <div class="ad-slot ad-slot-sidebar ad-slot-sticky">Publicidad lateral</div>
+                </aside>
+            </div>
+
+            {relacionadas}
+        </div>
+    </main>
     <script type="application/ld+json">{schema_news_article(noticia, canonical)}</script>
     '''
     return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen, "..")}\n{site_chrome(body, "..")}\n</html>'
@@ -343,7 +454,8 @@ def generar_paginas_noticias(noticias):
             contador += 1
         rutas_usadas.add(ruta)
         noticia["pagina"] = ruta
-        (BASE_DIR / ruta).write_text(generar_html_noticia(noticia), encoding="utf-8")
+    for noticia in noticias:
+        (BASE_DIR / noticia["pagina"]).write_text(generar_html_noticia(noticia, noticias), encoding="utf-8")
     print("Páginas individuales creadas:", len(noticias))
 
 
@@ -356,6 +468,30 @@ def generar_paginas_categorias(noticias):
         ruta.parent.mkdir(parents=True, exist_ok=True)
         ruta.write_text(generar_html_categoria(categoria, items), encoding="utf-8")
     print("Páginas de categoría creadas:", len(por_categoria))
+    return sorted(por_categoria.keys())
+
+
+def generar_sitemap(noticias, categorias):
+    today = datetime.now(timezone.utc).date().isoformat()
+    urls = []
+    for item in STATIC_URLS:
+        urls.append({"loc": f"{SITE_URL}{item['loc']}", "lastmod": today, "changefreq": item["changefreq"], "priority": item["priority"]})
+    for categoria in categorias:
+        urls.append({"loc": f"{SITE_URL}/categoria/{slugify(categoria)}/", "lastmod": today, "changefreq": "daily", "priority": "0.8"})
+    for noticia in noticias:
+        urls.append({"loc": f"{SITE_URL}/{noticia.get('pagina', '')}", "lastmod": fecha_sitemap(noticia.get("fecha", "")), "changefreq": "weekly", "priority": "0.8"})
+
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for item in urls:
+        xml.append("    <url>")
+        xml.append(f"        <loc>{escapar(item['loc'])}</loc>")
+        xml.append(f"        <lastmod>{item['lastmod']}</lastmod>")
+        xml.append(f"        <changefreq>{item['changefreq']}</changefreq>")
+        xml.append(f"        <priority>{item['priority']}</priority>")
+        xml.append("    </url>")
+    xml.append("</urlset>")
+    SITEMAP_FILE.write_text("\n".join(xml) + "\n", encoding="utf-8")
+    print("Sitemap actualizado:", SITEMAP_FILE)
 
 
 def obtener_noticias():
@@ -412,7 +548,8 @@ def obtener_noticias():
 
 def guardar_noticias(noticias):
     generar_paginas_noticias(noticias)
-    generar_paginas_categorias(noticias)
+    categorias = generar_paginas_categorias(noticias)
+    generar_sitemap(noticias, categorias)
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(noticias, f, ensure_ascii=False, indent=2)

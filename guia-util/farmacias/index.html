@@ -1,132 +1,646 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farmacias de guardia y salud | Alhaurín al Día</title>
-    <meta name="description" content="Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse.">
+    <title>Farmacias de guardia en Alhaurín el Grande | Alhaurín al Día</title>
+    <meta name="description" content="Consulta farmacias de guardia en Alhaurín el Grande, teléfonos, direcciones, enlaces oficiales y recursos sanitarios útiles. Verifica siempre la guardia actual antes de desplazarte.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://alhaurinaldia.es/guia-util/farmacias/">
+
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Alhaurín al Día">
-    <meta property="og:title" content="Farmacias de guardia y salud">
-    <meta property="og:description" content="Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse.">
+    <meta property="og:title" content="Farmacias de guardia en Alhaurín el Grande">
+    <meta property="og:description" content="Guardias, farmacias, teléfonos y enlaces oficiales para consultar información sanitaria útil en Alhaurín el Grande.">
     <meta property="og:url" content="https://alhaurinaldia.es/guia-util/farmacias/">
+
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/mobile.css">
     <link rel="stylesheet" href="/ads.css">
+
     <style>
-        .resource-hero { padding:58px 0 28px; }
-        .resource-card { background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:36px; padding:clamp(28px,5vw,56px); box-shadow:var(--shadow); }
-        .resource-layout { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:start; margin-bottom:56px; }
-        .resource-box { background:white; border:1px solid var(--line); border-radius:26px; padding:24px; box-shadow:var(--shadow-soft); }
-        .resource-list { display:grid; gap:12px; padding-left:0; list-style:none; margin:22px 0 0; }
-        .resource-list li { background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:14px; color:var(--ink); line-height:1.55; }
-        .official-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
-        .official-links a { display:inline-flex; padding:10px 13px; border-radius:999px; background:var(--brand-soft); border:1px solid #d9e6f0; color:var(--brand); font-size:13px; font-weight:900; }
-        .resource-note { margin-top:18px; background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:16px; color:var(--muted); }
-        .resource-note p { margin:8px 0 0; }
-        @media(max-width:900px) { .resource-layout { grid-template-columns:1fr; } }
+        .pharmacy-page {
+            --health: #2f6f5e;
+            --health-soft: #eef8f4;
+            --warning-soft: #fff7e8;
+        }
+
+        .pharmacy-hero {
+            padding: 54px 0 24px;
+        }
+
+        .pharmacy-hero-card {
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
+            gap: clamp(24px, 4vw, 44px);
+            align-items: stretch;
+            background:
+                radial-gradient(circle at 88% 8%, rgba(63, 111, 87, .22), transparent 22rem),
+                radial-gradient(circle at 6% 0%, rgba(184, 135, 70, .18), transparent 20rem),
+                rgba(255, 255, 255, .92);
+            border: 1px solid var(--line);
+            border-radius: 38px;
+            padding: clamp(28px, 5vw, 58px);
+            box-shadow: var(--shadow);
+        }
+
+        .pharmacy-hero-card h1 {
+            max-width: 840px;
+            font-size: clamp(42px, 6.3vw, 78px);
+        }
+
+        .hero-trust-panel {
+            background: rgba(255, 255, 255, .82);
+            border: 1px solid rgba(230, 222, 210, .95);
+            border-radius: 28px;
+            padding: 22px;
+            box-shadow: var(--shadow-soft);
+            display: grid;
+            gap: 14px;
+            align-content: start;
+        }
+
+        .trust-item {
+            display: grid;
+            grid-template-columns: 42px 1fr;
+            gap: 12px;
+            align-items: start;
+            padding: 14px;
+            border-radius: 20px;
+            background: var(--paper-soft);
+            border: 1px solid var(--line);
+        }
+
+        .trust-icon,
+        .pharmacy-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, var(--health-soft), #fff4df);
+            color: var(--health);
+            border: 1px solid #d9eadf;
+            font-weight: 950;
+        }
+
+        .trust-item strong {
+            display: block;
+            color: var(--brand);
+            margin-bottom: 3px;
+        }
+
+        .trust-item span {
+            color: var(--muted);
+            line-height: 1.45;
+            font-size: 14px;
+        }
+
+        .urgent-strip {
+            margin: 22px 0 0;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 16px;
+            align-items: center;
+            background: var(--brand);
+            color: white;
+            border-radius: 28px;
+            padding: 20px clamp(20px, 4vw, 30px);
+            box-shadow: 0 18px 42px rgba(23, 50, 77, .18);
+        }
+
+        .urgent-strip strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 18px;
+        }
+
+        .urgent-strip span {
+            color: rgba(255, 255, 255, .78);
+            line-height: 1.5;
+        }
+
+        .urgent-strip a {
+            background: white;
+            color: var(--brand);
+            border-radius: 999px;
+            padding: 12px 16px;
+            font-weight: 950;
+            white-space: nowrap;
+        }
+
+        .pharmacy-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 340px;
+            gap: 24px;
+            align-items: start;
+        }
+
+        .content-panel,
+        .sticky-panel,
+        .pharmacy-card,
+        .tip-card {
+            background: rgba(255, 255, 255, .92);
+            border: 1px solid var(--line);
+            border-radius: 28px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .content-panel {
+            padding: clamp(22px, 4vw, 34px);
+        }
+
+        .content-panel + .content-panel {
+            margin-top: 22px;
+        }
+
+        .panel-heading {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            align-items: end;
+            margin-bottom: 20px;
+        }
+
+        .panel-heading h2 {
+            margin: 0;
+            color: var(--brand);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(30px, 4vw, 46px);
+            line-height: 1;
+            letter-spacing: -.045em;
+        }
+
+        .panel-heading p,
+        .content-panel p {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .quick-action-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .quick-action {
+            padding: 18px;
+            border-radius: 22px;
+            border: 1px solid var(--line);
+            background: var(--paper-soft);
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+
+        .quick-action:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 34px rgba(24, 33, 47, .09);
+        }
+
+        .quick-action span {
+            display: inline-flex;
+            margin-bottom: 12px;
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 950;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+        }
+
+        .quick-action strong {
+            display: block;
+            color: var(--brand);
+            font-size: 18px;
+            letter-spacing: -.025em;
+            margin-bottom: 7px;
+        }
+
+        .quick-action small {
+            color: var(--muted);
+            line-height: 1.45;
+        }
+
+        .pharmacy-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .pharmacy-card {
+            padding: 20px;
+            display: grid;
+            gap: 14px;
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+
+        .pharmacy-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 44px rgba(24, 33, 47, .11);
+        }
+
+        .pharmacy-card-top {
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            gap: 13px;
+            align-items: start;
+        }
+
+        .pharmacy-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 17px;
+        }
+
+        .pharmacy-card h3 {
+            margin: 0 0 5px;
+            color: var(--brand);
+            letter-spacing: -.025em;
+            line-height: 1.15;
+        }
+
+        .pharmacy-card p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.55;
+            font-size: 14px;
+        }
+
+        .phone-link {
+            display: inline-flex;
+            width: fit-content;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 13px;
+            border-radius: 999px;
+            background: var(--health-soft);
+            color: var(--health);
+            border: 1px solid #d9eadf;
+            font-weight: 950;
+            font-size: 14px;
+        }
+
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .tip-card {
+            padding: 20px;
+        }
+
+        .tip-card strong {
+            display: block;
+            color: var(--brand);
+            margin-bottom: 8px;
+            letter-spacing: -.02em;
+        }
+
+        .tip-card p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .sticky-panel {
+            position: sticky;
+            top: 98px;
+            padding: 20px;
+            display: grid;
+            gap: 16px;
+        }
+
+        .sticky-panel h2 {
+            margin: 0;
+            color: var(--brand);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 32px;
+            letter-spacing: -.04em;
+            line-height: 1;
+        }
+
+        .official-link-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .official-link-list a {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: center;
+            padding: 13px 14px;
+            border-radius: 17px;
+            background: var(--paper-soft);
+            border: 1px solid var(--line);
+            color: var(--brand);
+            font-size: 14px;
+            font-weight: 950;
+        }
+
+        .source-note {
+            background: var(--warning-soft);
+            border: 1px solid #efd9b9;
+            color: #7a5a2b;
+            border-radius: 20px;
+            padding: 15px;
+            line-height: 1.55;
+            font-size: 14px;
+        }
+
+        .breadcrumb-mini {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .breadcrumb-mini a {
+            color: var(--brand);
+        }
+
+        @media (max-width: 980px) {
+            .pharmacy-hero-card,
+            .pharmacy-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sticky-panel {
+                position: static;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .pharmacy-hero {
+                padding-top: 34px;
+            }
+
+            .pharmacy-hero-card {
+                border-radius: 30px;
+            }
+
+            .urgent-strip,
+            .quick-action-grid,
+            .pharmacy-grid,
+            .tip-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .urgent-strip a {
+                text-align: center;
+            }
+
+            .panel-heading {
+                display: block;
+            }
+        }
     </style>
+
     <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Farmacias de guardia y salud",
-  "url": "https://alhaurinaldia.es/guia-util/farmacias/",
-  "description": "Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse.",
-  "inLanguage": "es-ES",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Alhaurín al Día",
-    "url": "https://alhaurinaldia.es"
-  },
-  "about": {
-    "@type": "Thing",
-    "name": "Farmacias de guardia y salud"
-  },
-  "contentLocation": {
-    "@type": "Place",
-    "name": "Alhaurín el Grande"
-  }
-}</script>
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Farmacias de guardia en Alhaurín el Grande",
+        "url": "https://alhaurinaldia.es/guia-util/farmacias/",
+        "description": "Consulta farmacias de guardia en Alhaurín el Grande, teléfonos, direcciones, enlaces oficiales y recursos sanitarios útiles.",
+        "inLanguage": "es-ES",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Alhaurín al Día",
+            "url": "https://alhaurinaldia.es"
+        },
+        "about": {
+            "@type": "MedicalOrganization",
+            "name": "Farmacias de Alhaurín el Grande"
+        },
+        "contentLocation": {
+            "@type": "Place",
+            "name": "Alhaurín el Grande"
+        }
+    }</script>
     <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://alhaurinaldia.es/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Guía útil",
-      "item": "https://alhaurinaldia.es/guia-util/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Farmacias de guardia y salud",
-      "item": "https://alhaurinaldia.es/guia-util/farmacias/"
-    }
-  ]
-}</script>
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://alhaurinaldia.es/"},
+            {"@type": "ListItem", "position": 2, "name": "Guía útil", "item": "https://alhaurinaldia.es/guia-util/"},
+            {"@type": "ListItem", "position": 3, "name": "Farmacias", "item": "https://alhaurinaldia.es/guia-util/farmacias/"}
+        ]
+    }</script>
     <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Qué información ofrece Farmacias de guardia y salud?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿La información sustituye a la fuente oficial?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Alhaurín al Día organiza la información y enlaza a fuentes oficiales o de referencia para verificar los datos actualizados."
-      }
-    }
-  ]
-}</script>
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Dónde puedo consultar la farmacia de guardia en Alhaurín el Grande?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Puedes consultar el calendario municipal y el buscador oficial del Consejo General de Colegios Farmacéuticos desde los enlaces de esta página. Alhaurín al Día recomienda verificar siempre la guardia antes de desplazarte."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿A qué hora cambian las guardias de farmacia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Según la información municipal, las guardias empiezan a las 9:30 del día señalado y terminan a las 9:30 del día siguiente."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Esta página sustituye a la fuente oficial?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Esta página organiza información práctica y enlaza a fuentes oficiales o de referencia para que puedas comprobar los datos actualizados."
+                }
+            }
+        ]
+    }</script>
 </head>
-<body>
-    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>Salud · Recurso útil</span></div></div>
-    <header><div class="container"><nav aria-label="Navegación principal">
-        <a class="logo" href="/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
-    </nav></div></header>
+
+<body class="pharmacy-page">
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <span>Salud · Farmacias · Guardias</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="/" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
+                <div class="nav-links" id="main-menu">
+                    <a href="/noticias/">Noticias</a>
+                    <a href="/guia-util/">Guía útil</a>
+                    <a href="/planes/">Planes</a>
+                    <a href="/comercios/">Comercios</a>
+                    <a href="/anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <main>
-        <section class="resource-hero"><div class="container"><div class="resource-card">
-            <span class="eyebrow">Salud</span>
-            <h1>Farmacias de guardia y salud</h1>
-            <p class="lead">Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse.</p>
-            <div class="actions"><a class="btn btn-primary" href="#informacion">Consultar información</a><a class="btn btn-secondary" href="/guia-util/">Volver a Guía útil</a></div>
-        </div></div></section>
-        <section id="informacion"><div class="container resource-layout">
-            <article class="resource-box">
-                <div class="guide-card-top"><div class="guide-icon">+</div><div><span class="guide-category">Salud</span><h2>Información práctica</h2></div></div>
-                <ul class="resource-list"><li>Guardias: empiezan a las 9:30 y terminan a las 9:30 del día siguiente, según la web municipal.</li><li>Farmacias de guardia 2026 de Alhaurín el Grande.</li><li>Buscador oficial de farmacias de guardia del Consejo General de Colegios Farmacéuticos.</li><li>Emergencias generales: 112.</li></ul>
-                <div class="resource-note"><strong>Nota de Alhaurín al Día</strong><p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a recursos útiles de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p></div>
-            </article>
-            <aside class="resource-box">
-                <span class="section-kicker">Fuentes y enlaces</span>
-                <h2>Enlaces de referencia</h2>
-                <p>Consulta las fuentes oficiales o recursos externos antes de realizar gestiones, desplazamientos o reservas.</p>
-                <div class="official-links"><a href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer">Farmacias de guardia - Ayuntamiento</a><a href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer">Buscador oficial de farmacias de guardia</a></div>
-                <div class="ad-slot ad-slot-sidebar" style="margin-top:22px;">Publicidad local</div>
-            </aside>
-        </div></section>
+        <section class="pharmacy-hero">
+            <div class="container">
+                <div class="pharmacy-hero-card">
+                    <div>
+                        <div class="breadcrumb-mini"><a href="/">Inicio</a> / <a href="/guia-util/">Guía útil</a> / Farmacias</div>
+                        <span class="eyebrow">Salud en Alhaurín el Grande</span>
+                        <h1>Farmacias de guardia y teléfonos útiles.</h1>
+                        <p class="lead">Consulta de forma rápida las farmacias del municipio, teléfonos, direcciones y enlaces oficiales para comprobar la guardia del día antes de desplazarte.</p>
+                        <div class="actions">
+                            <a class="btn btn-primary" href="#consulta-rapida">Ver consulta rápida</a>
+                            <a class="btn btn-secondary" href="#farmacias">Listado de farmacias</a>
+                        </div>
+                    </div>
+
+                    <aside class="hero-trust-panel" aria-label="Información importante">
+                        <div class="trust-item">
+                            <span class="trust-icon">24h</span>
+                            <div><strong>Guardias 9:30 a 9:30</strong><span>El turno comienza por la mañana y termina al día siguiente, según la información municipal.</span></div>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">✓</span>
+                            <div><strong>Comprueba la fuente oficial</strong><span>La guardia puede cambiar. Usa siempre el enlace oficial antes de salir.</span></div>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">112</span>
+                            <div><strong>Emergencias</strong><span>Para urgencias sanitarias o situaciones graves, llama al 112.</span></div>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="urgent-strip" id="consulta-rapida">
+                    <div>
+                        <strong>¿Necesitas saber qué farmacia está de guardia ahora?</strong>
+                        <span>Abre la consulta oficial y confirma el turno vigente para Alhaurín el Grande antes de desplazarte.</span>
+                    </div>
+                    <a href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer">Consultar guardia oficial</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container pharmacy-layout">
+                <div>
+                    <article class="content-panel">
+                        <div class="panel-heading">
+                            <div>
+                                <span class="section-kicker">Consulta rápida</span>
+                                <h2>Lo esencial, en tres pasos</h2>
+                            </div>
+                            <p>Una página pensada para resolver una búsqueda muy concreta desde móvil: guardia, teléfono y ubicación.</p>
+                        </div>
+
+                        <div class="quick-action-grid">
+                            <a class="quick-action" href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer">
+                                <span>01</span>
+                                <strong>Calendario municipal</strong>
+                                <small>Consulta el recurso publicado por el Ayuntamiento.</small>
+                            </a>
+                            <a class="quick-action" href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer">
+                                <span>02</span>
+                                <strong>Buscador oficial</strong>
+                                <small>Comprueba la farmacia de guardia en la fuente farmacéutica.</small>
+                            </a>
+                            <a class="quick-action" href="tel:112">
+                                <span>03</span>
+                                <strong>Emergencias: 112</strong>
+                                <small>Para urgencias reales, contacta con emergencias.</small>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="content-panel" id="farmacias">
+                        <div class="panel-heading">
+                            <div>
+                                <span class="section-kicker">Directorio local</span>
+                                <h2>Farmacias de Alhaurín el Grande</h2>
+                            </div>
+                            <p>Listado orientativo basado en la información municipal disponible. Verifica siempre guardias, horarios y datos antes de desplazarte.</p>
+                        </div>
+
+                        <div class="pharmacy-grid">
+                            <article class="pharmacy-card">
+                                <div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia Brenan</h3><p>Avda. Gerald Brenan nº 2</p></div></div>
+                                <a class="phone-link" href="tel:+34952490241">952 49 02 41</a>
+                            </article>
+                            <article class="pharmacy-card">
+                                <div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia del Centro</h3><p>Avda. de la Constitución nº 11, junto al Centro de Salud</p></div></div>
+                                <a class="phone-link" href="tel:+34952596022">952 59 60 22</a>
+                            </article>
+                            <article class="pharmacy-card">
+                                <div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Mª Teresa Quintela</h3><p>C/ Virgen de Gracia nº 4, Pisos Guardiola</p></div></div>
+                                <a class="phone-link" href="tel:+34952596207">952 59 62 07</a>
+                            </article>
+                            <article class="pharmacy-card">
+                                <div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia La Variante</h3><p>Avda. Blas Infante nº 25</p></div></div>
+                                <a class="phone-link" href="tel:+34952594556">952 59 45 56</a>
+                            </article>
+                            <article class="pharmacy-card">
+                                <div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>José Luis Quintela</h3><p>Avenida de la Libertad nº 89</p></div></div>
+                                <a class="phone-link" href="tel:+34952596207">952 59 62 07</a>
+                            </article>
+                            <article class="pharmacy-card">
+                                <div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia Lourdes Quintela</h3><p>Ctra. Cártama</p></div></div>
+                                <a class="phone-link" href="tel:+34952490013">952 49 00 13</a>
+                            </article>
+                            <article class="pharmacy-card">
+                                <div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia Camino de Málaga</h3><p>Camino de Málaga</p></div></div>
+                                <a class="phone-link" href="tel:+34952490034">952 49 00 34</a>
+                            </article>
+                        </div>
+                    </article>
+
+                    <article class="content-panel">
+                        <div class="panel-heading">
+                            <div>
+                                <span class="section-kicker">Antes de salir</span>
+                                <h2>Consejos útiles</h2>
+                            </div>
+                        </div>
+                        <div class="tip-grid">
+                            <div class="tip-card"><strong>Confirma la guardia</strong><p>Consulta el enlace oficial el mismo día, especialmente de noche, festivos o fines de semana.</p></div>
+                            <div class="tip-card"><strong>Llama si tienes dudas</strong><p>Ante tratamientos urgentes o disponibilidad de medicamentos, contacta por teléfono antes de desplazarte.</p></div>
+                            <div class="tip-card"><strong>Emergencias reales</strong><p>Si hay síntomas graves o una situación urgente, no esperes: llama al 112 o acude al servicio sanitario correspondiente.</p></div>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="sticky-panel" aria-label="Fuentes oficiales y publicidad">
+                    <span class="section-kicker">Fuentes</span>
+                    <h2>Enlaces oficiales</h2>
+                    <p>Alhaurín al Día ordena la información para consulta rápida, pero la verificación debe hacerse en fuentes oficiales.</p>
+                    <div class="official-link-list">
+                        <a href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer"><span>Ayuntamiento</span><span>↗</span></a>
+                        <a href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer"><span>Buscador oficial</span><span>↗</span></a>
+                    </div>
+                    <div class="source-note"><strong>Importante:</strong> los datos pueden cambiar. Esta página no sustituye al calendario oficial ni a la atención sanitaria profesional.</div>
+                    <div class="ad-slot ad-slot-sidebar">Publicidad local<br>Farmacia, clínica, salud o comercio cercano</div>
+                </aside>
+            </div>
+        </section>
     </main>
-    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a></div></div></footer>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a></div>
+        </div>
+    </footer>
+
     <script src="/app.js"></script>
 </body>
+
 </html>

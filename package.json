@@ -8,9 +8,10 @@
     "seo:home": "node scripts/apply-home-seo.js",
     "seo:clean-searchaction": "node scripts/remove-searchaction.js",
     "seo": "npm run seo:home && npm run seo:clean-searchaction",
+    "home:static": "node scripts/render-home-static.js",
     "sitemap": "node scripts/generate-sitemaps.js",
     "seo:audit": "node scripts/audit-seo.js --warn-only",
     "seo:audit:strict": "node scripts/audit-seo.js",
-    "build": "npm run news && npm run news:dedupe && npm run seo && npm run sitemap && npm run seo:audit"
+    "build": "npm run news && npm run news:dedupe && npm run seo && npm run home:static && npm run sitemap && npm run seo:audit"
   }
 }

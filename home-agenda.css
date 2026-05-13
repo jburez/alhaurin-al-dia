@@ -1,0 +1,205 @@
+/* =========================
+   HOME UPCOMING AGENDA
+========================= */
+
+.home-agenda-section {
+    padding: 26px 0;
+}
+
+.home-agenda-shell {
+    background:
+        radial-gradient(circle at top left, rgba(184, 135, 70, .12), transparent 18rem),
+        rgba(255, 255, 255, .86);
+    border: 1px solid var(--line);
+    border-radius: 32px;
+    box-shadow: var(--shadow-soft);
+    padding: clamp(22px, 4vw, 34px);
+}
+
+.home-agenda-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.home-agenda-header h2 {
+    margin: 0;
+    color: var(--brand);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1;
+    letter-spacing: -.05em;
+}
+
+.home-agenda-header p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.home-agenda-updated {
+    flex: 0 0 auto;
+    padding: 9px 12px;
+    border-radius: 999px;
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 850;
+}
+
+.home-agenda-list {
+    display: grid;
+    gap: 12px;
+}
+
+.home-agenda-card,
+.home-agenda-empty {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) auto;
+    gap: 16px;
+    align-items: center;
+    background: rgba(255, 255, 255, .92);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--brand);
+    border-radius: 22px;
+    padding: 16px;
+    box-shadow: var(--shadow-soft);
+}
+
+.home-agenda-card.warning {
+    border-left-color: var(--gold);
+    background: #fff8ed;
+}
+
+.home-agenda-card.alert {
+    border-left-color: #8f1d1d;
+    background: var(--red-soft);
+}
+
+.home-agenda-date {
+    display: grid;
+    gap: 6px;
+    padding: 12px;
+    border-radius: 18px;
+    background: var(--brand-soft);
+    border: 1px solid #d9e6f0;
+    color: var(--brand);
+    text-transform: capitalize;
+}
+
+.home-agenda-date strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: -.035em;
+}
+
+.home-agenda-date span {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.home-agenda-type {
+    display: inline-flex;
+    width: fit-content;
+    margin-bottom: 7px;
+    padding: 5px 9px;
+    border-radius: 999px;
+    color: var(--gold);
+    background: #fff6e8;
+    border: 1px solid #efd9b9;
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.home-agenda-content h3,
+.home-agenda-empty h3 {
+    margin: 0 0 6px;
+    color: var(--brand);
+    letter-spacing: -.025em;
+}
+
+.home-agenda-content p,
+.home-agenda-empty p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.home-agenda-content small {
+    display: inline-flex;
+    margin-top: 8px;
+    color: #475467;
+    font-weight: 850;
+}
+
+.home-agenda-link,
+.home-agenda-empty a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 42px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: var(--brand);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 950;
+    white-space: nowrap;
+}
+
+.home-agenda-empty {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    border-left-color: var(--gold);
+}
+
+.home-agenda-empty-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: #fff6e8;
+    border: 1px solid #efd9b9;
+    font-size: 21px;
+}
+
+@media (max-width: 860px) {
+    .home-agenda-header {
+        display: block;
+    }
+
+    .home-agenda-updated {
+        display: inline-flex;
+        margin-top: 12px;
+    }
+
+    .home-agenda-card,
+    .home-agenda-empty {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .home-agenda-date {
+        width: fit-content;
+    }
+
+    .home-agenda-link,
+    .home-agenda-empty a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .home-agenda-shell {
+        border-radius: 26px;
+        padding: 18px;
+    }
+}

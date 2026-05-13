@@ -2,6 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://alhaurinaldia.es/sitemap.xml
-Sitemap: https://alhaurinaldia.es/sitemap-farmacias.xml
-Sitemap: https://alhaurinaldia.es/sitemap-servicios.xml
+Sitemap: https://alhaurinaldia.es/sitemap-index.xml

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>El tiempo en Alhaurín el Grande | Alhaurín al Día</title>
+    <meta name="description"
+        content="Consulta el tiempo en Alhaurín el Grande con resumen automático de AEMET, previsión ampliada de Andalmet y enlaces meteorológicos útiles." />
+    <meta name="theme-color" content="#17324d" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="El tiempo en Alhaurín el Grande" />
+    <meta property="og:description" content="Previsión meteorológica para Alhaurín el Grande con AEMET y Andalmet." />
+    <meta property="og:url" content="https://alhaurinaldia.es/tiempo/" />
+
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../mobile.css">
+    <link rel="stylesheet" href="../ads.css">
+    <link rel="stylesheet" href="../home-live.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <span>Tiempo · AEMET · Andalmet · Avisos</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="../" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
+                    <a href="../noticias/">Noticias</a>
+                    <a href="../guia-util/">Guía útil</a>
+                    <a href="../planes/">Planes</a>
+                    <a href="../comercios/">Comercios</a>
+                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-card">
+                    <span class="eyebrow">Meteorología local</span>
+                    <h1>El tiempo en Alhaurín el Grande.</h1>
+                    <p class="lead">Resumen rápido con AEMET y previsión ampliada de Andalmet para consultar antes de
+                        salir, planificar el día o preparar actividades al aire libre.</p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="#andalmet">Ver previsión Andalmet</a>
+                        <a class="btn btn-secondary" href="https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008" target="_blank" rel="noopener noreferrer">Ver AEMET</a>
+                    </div>
+                </div>
+
+                <aside class="side-panel" aria-label="Widget meteorológico Andalmet">
+                    <div class="andalmet-widget-card compact-widget-card">
+                        <span class="mini-label">Andalmet</span>
+                        <h2>Previsión local</h2>
+                        <div class="andalmet-widget-frame">
+                            <iframe
+                                src="https://andalmet.es/widget/alhaurin-el-grande?size=full"
+                                width="320"
+                                height="150"
+                                frameborder="0"
+                                loading="lazy"
+                                title="Tiempo en Alhaurín el Grande - Andalmet"></iframe>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="weather-detail-section" id="andalmet">
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <span class="section-kicker">Previsión ampliada</span>
+                        <h2>Andalmet para Alhaurín</h2>
+                    </div>
+                    <p>Widget oficial generado por Andalmet para consultar la previsión local de Alhaurín el Grande.</p>
+                </div>
+
+                <div class="weather-widget-layout">
+                    <article class="andalmet-widget-card">
+                        <div class="andalmet-widget-header">
+                            <div>
+                                <span class="mini-label">Hoy</span>
+                                <h3>Tiempo local</h3>
+                            </div>
+                            <a class="read-more" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande" target="_blank" rel="noopener noreferrer">Abrir en Andalmet →</a>
+                        </div>
+                        <div class="andalmet-widget-frame">
+                            <iframe
+                                src="https://andalmet.es/widget/alhaurin-el-grande?size=full"
+                                width="320"
+                                height="150"
+                                frameborder="0"
+                                loading="lazy"
+                                title="Tiempo en Alhaurín el Grande - Andalmet"></iframe>
+                        </div>
+                    </article>
+
+                    <article class="andalmet-widget-card">
+                        <div class="andalmet-widget-header">
+                            <div>
+                                <span class="mini-label">Semana</span>
+                                <h3>Próximos días</h3>
+                            </div>
+                            <a class="read-more" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande" target="_blank" rel="noopener noreferrer">Ver detalle →</a>
+                        </div>
+                        <div class="andalmet-widget-frame weekly-widget-frame">
+                            <iframe
+                                src="https://andalmet.es/widget/alhaurin-el-grande?size=weekly"
+                                width="480"
+                                height="140"
+                                frameborder="0"
+                                loading="lazy"
+                                title="Previsión semanal en Alhaurín el Grande - Andalmet"></iframe>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="guide-hero-card">
+                    <div>
+                        <span class="mini-label">Fuentes meteorológicas</span>
+                        <h3>AEMET como dato oficial automático y Andalmet como previsión ampliada local.</h3>
+                        <p>La portada usa AEMET para alimentar el panel diario y Andalmet para ampliar la información
+                            meteorológica específica de Alhaurín el Grande.</p>
+                    </div>
+                    <div class="guide-search-box">
+                        <label>Enlaces útiles</label>
+                        <div class="quick-links">
+                            <a href="https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008" target="_blank" rel="noopener noreferrer">AEMET</a>
+                            <a href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande" target="_blank" rel="noopener noreferrer">Andalmet</a>
+                            <a href="../avisos/">Avisos locales</a>
+                            <a href="../guia-util/">Guía útil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="../noticias/">Noticias</a>
+                <a href="../guia-util/">Guía útil</a>
+                <a href="../planes/">Planes</a>
+                <a href="../comercios/">Comercios</a>
+                <a href="../anunciarse/">Anunciarse</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+
+</html>

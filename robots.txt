@@ -4,3 +4,4 @@ Allow: /
 
 Sitemap: https://alhaurinaldia.es/sitemap.xml
 Sitemap: https://alhaurinaldia.es/sitemap-farmacias.xml
+Sitemap: https://alhaurinaldia.es/sitemap-servicios.xml

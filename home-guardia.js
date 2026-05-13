@@ -40,24 +40,34 @@
         return new URL(value.replace(/^\/+/, ""), root).href;
     }
 
+    function formatTodayLabel() {
+        return new Date().toLocaleDateString("es-ES", {
+            weekday: "long",
+            day: "numeric",
+            month: "long"
+        });
+    }
+
     var today = key(new Date());
     var calendarUrl = normalizeLink("guia-util/farmacias/calendario/");
     var officialUrl = "https://alhaurinelgrande.es/farmacias/";
+    var todayLabel = formatTodayLabel();
 
     function renderPendingGuard() {
-        box.innerHTML = "\n            <div>\n                <span class=\"section-kicker\">Farmacia de guardia hoy</span>\n                <h2>Guardia pendiente de completar</h2>\n                <p>Cuando rellenes el JSON de guardias, la farmacia de hoy aparecerá aquí automáticamente.</p>\n            </div>\n            <div class=\"home-guard-actions\">\n                <a href=\"" + escapeHTML(calendarUrl) + "\">Ver calendario</a>\n                <a class=\"secondary\" href=\"" + escapeHTML(officialUrl) + "\" target=\"_blank\" rel=\"noopener noreferrer\">Fuente oficial</a>\n            </div>\n        ";
+        box.innerHTML = "\n            <div class=\"home-guard-main\">\n                <span class=\"section-kicker\">Farmacia de guardia hoy</span>\n                <div class=\"home-guard-date\">" + escapeHTML(todayLabel) + "</div>\n                <h2>Guardia pendiente de completar</h2>\n                <p class=\"home-guard-summary\">Cuando rellenes el JSON de guardias, la farmacia de hoy aparecerá aquí automáticamente.</p>\n                <p class=\"home-guard-note\">Confirma siempre la guardia en la fuente oficial antes de desplazarte.</p>\n            </div>\n            <div class=\"home-guard-actions\">\n                <a href=\"" + escapeHTML(calendarUrl) + "\">Ver calendario</a>\n                <a class=\"secondary\" href=\"" + escapeHTML(officialUrl) + "\" target=\"_blank\" rel=\"noopener noreferrer\">Fuente oficial</a>\n            </div>\n        ";
     }
 
     function renderPharmacyGuard(farmacia) {
         var phoneHref = farmacia.telefonoHref ? "tel:" + farmacia.telefonoHref : "#";
         var phoneText = farmacia.telefono || "Llamar";
         var pharmacyUrl = normalizeLink(farmacia.url || farmacia.pagina || "guia-util/farmacias/");
+        var address = farmacia.direccion || "Consulta la dirección en la ficha de la farmacia.";
 
-        box.innerHTML = "\n            <div>\n                <span class=\"section-kicker\">Farmacia de guardia hoy</span>\n                <h2>" + escapeHTML(farmacia.nombre || "Farmacia de guardia") + "</h2>\n                <p>" + escapeHTML(farmacia.direccion || "Consulta la dirección en la ficha de la farmacia.") + " · Guardia orientativa de 9:30 a 9:30. Confirma siempre en la fuente oficial antes de desplazarte.</p>\n            </div>\n            <div class=\"home-guard-actions\">\n                <a href=\"" + escapeHTML(pharmacyUrl) + "\">Ver ficha</a>\n                <a class=\"secondary\" href=\"" + escapeHTML(phoneHref) + "\">" + escapeHTML(phoneText) + "</a>\n                <a class=\"secondary\" href=\"" + escapeHTML(calendarUrl) + "\">Calendario</a>\n            </div>\n        ";
+        box.innerHTML = "\n            <div class=\"home-guard-main\">\n                <span class=\"section-kicker\">Farmacia de guardia hoy</span>\n                <div class=\"home-guard-date\">" + escapeHTML(todayLabel) + "</div>\n                <h2>" + escapeHTML(farmacia.nombre || "Farmacia de guardia") + "</h2>\n                <div class=\"home-guard-facts\" aria-label=\"Datos de la farmacia de guardia\">\n                    <div>\n                        <span>Dirección</span>\n                        <strong>" + escapeHTML(address) + "</strong>\n                    </div>\n                    <div>\n                        <span>Horario de guardia</span>\n                        <strong>9:30 a 9:30</strong>\n                    </div>\n                </div>\n                <p class=\"home-guard-note\">Guardia orientativa. Confirma siempre en la fuente oficial antes de desplazarte.</p>\n            </div>\n            <div class=\"home-guard-actions\" aria-label=\"Acciones de farmacia de guardia\">\n                <a href=\"" + escapeHTML(pharmacyUrl) + "\">Ver ficha</a>\n                <a class=\"secondary\" href=\"" + escapeHTML(phoneHref) + "\">" + escapeHTML(phoneText) + "</a>\n                <a class=\"secondary\" href=\"" + escapeHTML(calendarUrl) + "\">Calendario</a>\n                <a class=\"ghost\" href=\"" + escapeHTML(officialUrl) + "\" target=\"_blank\" rel=\"noopener noreferrer\">Fuente oficial</a>\n            </div>\n        ";
     }
 
     function renderError() {
-        box.innerHTML = "\n            <div>\n                <span class=\"section-kicker\">Farmacia de guardia hoy</span>\n                <h2>No disponible</h2>\n                <p>No se pudo cargar el calendario de guardias.</p>\n            </div>\n            <div class=\"home-guard-actions\">\n                <a href=\"" + escapeHTML(calendarUrl) + "\">Ver calendario</a>\n            </div>\n        ";
+        box.innerHTML = "\n            <div class=\"home-guard-main\">\n                <span class=\"section-kicker\">Farmacia de guardia hoy</span>\n                <div class=\"home-guard-date\">" + escapeHTML(todayLabel) + "</div>\n                <h2>No disponible</h2>\n                <p class=\"home-guard-summary\">No se pudo cargar el calendario de guardias.</p>\n                <p class=\"home-guard-note\">Puedes consultar el calendario o la fuente oficial para confirmar la guardia.</p>\n            </div>\n            <div class=\"home-guard-actions\">\n                <a href=\"" + escapeHTML(calendarUrl) + "\">Ver calendario</a>\n                <a class=\"secondary\" href=\"" + escapeHTML(officialUrl) + "\" target=\"_blank\" rel=\"noopener noreferrer\">Fuente oficial</a>\n            </div>\n        ";
     }
 
     Promise.all([

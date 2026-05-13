@@ -21,6 +21,56 @@
     <link rel="stylesheet" href="../mobile.css">
     <link rel="stylesheet" href="../ads.css">
     <link rel="stylesheet" href="../news-meta.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://alhaurinaldia.es/noticias/#collection",
+          "url": "https://alhaurinaldia.es/noticias/",
+          "name": "Noticias de Alhaurín el Grande",
+          "description": "Últimas noticias de Alhaurín el Grande: actualidad local, avisos, cultura, fiestas, deportes y fuentes oficiales reunidas en un solo lugar.",
+          "inLanguage": "es-ES",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "Alhaurín al Día",
+            "url": "https://alhaurinaldia.es/"
+          },
+          "about": {
+            "@type": "Place",
+            "name": "Alhaurín el Grande"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://alhaurinaldia.es/noticias/#listado-noticias",
+          "name": "Listado de noticias de Alhaurín el Grande",
+          "itemListOrder": "https://schema.org/ItemListOrderDescending",
+          "numberOfItems": 0,
+          "url": "https://alhaurinaldia.es/noticias/"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://alhaurinaldia.es/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Noticias",
+              "item": "https://alhaurinaldia.es/noticias/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>

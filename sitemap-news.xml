@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://alhaurinaldia.es/noticias/a-pie-de-campo-programa-33-2-temporada.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.071Z</news:publication_date>
-      <news:title>A pie de campo - Programa 33 (2ª Temporada)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/a-pie-de-campo-programa-33-con-analisis-y-noticias-del-cd-alhaurino.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.140Z</news:publication_date>
-      <news:title>A pie de campo: Programa 33 con análisis y noticias del CD Alhaurino</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/a-pie-de-campo-programa-33-con-analisis-y-noticias-del-club-deportivo-alhaurino.html</loc>
     <news:news>
       <news:publication>
@@ -31,28 +9,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:41:21.565Z</news:publication_date>
       <news:title>A pie de campo: Programa 33 con análisis y noticias del Club Deportivo Alhaurino</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/abierto-el-plazo-para-el-campamento-de-junio-y-concierto-de-ruben-simeo-en-alhaurin-el-gra.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.140Z</news:publication_date>
-      <news:title>Abierto el plazo para el campamento de junio y concierto de Rubén Simeó en Alhaurín el Grande</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-del-3-de-mayo-en-alhaurin-el-grande-con-funcion-religiosa-y-desfile-de-bandas.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.140Z</news:publication_date>
-      <news:title>Actos del 3 de mayo en Alhaurín el Grande con función religiosa y desfile de bandas</news:title>
     </news:news>
   </url>
   <url>
@@ -67,50 +23,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-del-3-de-mayo-en-alhaurin-el-grande-misa-y-desfile-de-bandas-en-honor-al-cristo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:41:21.566Z</news:publication_date>
-      <news:title>Actos del 3 de mayo en Alhaurín el Grande: misa y desfile de bandas en honor al Cristo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-del-3-de-mayo-en-alhaurin-el-grande-misa-y-desfile-de-bandas-en-honor-al-stmo-cristo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.072Z</news:publication_date>
-      <news:title>Actos del 3 de mayo en Alhaurín el Grande: misa y desfile de bandas en honor al Stmo. Cristo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-religiosos-y-desfile-de-bandas-en-alhaurin-el-grande-por-el-3-de-mayo-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.141Z</news:publication_date>
-      <news:title>Actos religiosos y desfile de bandas en Alhaurín el Grande por el 3 de mayo 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-cultura-turismo-y-deporte-el-11-de-mayo-de-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.141Z</news:publication_date>
-      <news:title>Actualidad en Alhaurín el Grande: Cultura, turismo y deporte el 11 de mayo de 2026</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-cultura-turismo-y-deporte-en-mayo-2026.html</loc>
     <news:news>
       <news:publication>
@@ -119,28 +31,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:03:01.141Z</news:publication_date>
       <news:title>Actualidad en Alhaurín el Grande: Cultura, Turismo y Deporte en mayo 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-cultura-turismo-y-deporte-en-mayo-de-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:41:21.567Z</news:publication_date>
-      <news:title>Actualidad en Alhaurín el Grande: Cultura, turismo y deporte en mayo de 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-reunion-metropolitana-ascensor-y-eventos-deportivos.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.142Z</news:publication_date>
-      <news:title>Actualidad en Alhaurín el Grande: Reunión metropolitana, ascensor y eventos deportivos</news:title>
     </news:news>
   </url>
   <url>
@@ -155,17 +45,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados-en-planeatv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.142Z</news:publication_date>
-      <news:title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados en PlaneATV</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-final-profesional-de-la-vi-copa-diputacion-de-malaga-de-calist.html</loc>
     <news:news>
       <news:publication>
@@ -177,28 +56,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aplaza-fiesta-de-la-cachorrena-y-alhaurin-flamenca-al-26-de-marzo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.143Z</news:publication_date>
-      <news:title>Alhaurín el Grande aplaza Fiesta de la Cachorreña y Alhaurín Flamenca al 26 de marzo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aplaza-fiesta-de-la-cachorrena-y-alhaurin-flamenca-al-26-por-lluvia.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:41:21.570Z</news:publication_date>
-      <news:title>Alhaurín el Grande aplaza Fiesta de la Cachorreña y Alhaurín Flamenca al 26 por lluvia</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aplaza-fiesta-de-la-cachorrena-y-alhaurin-flamenca-al-domingo-26.html</loc>
     <news:news>
       <news:publication>
@@ -207,28 +64,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:03:01.143Z</news:publication_date>
       <news:title>Alhaurín el Grande aplaza Fiesta de la Cachorreña y Alhaurín Flamenca al domingo 26</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aplaza-la-fiesta-de-la-cachorrena-y-alhaurin-flamenca-al-domingo-26-por-prevision-de-lluvias.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.841Z</news:publication_date>
-      <news:title>Alhaurín el Grande aplaza la Fiesta de la Cachorreña y Alhaurín Flamenca al domingo 26 por previsión de lluvias</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aplaza-la-fiesta-de-la-cachorrena-y-alhaurin-flamenca-al-domingo-26-por.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.074Z</news:publication_date>
-      <news:title>Alhaurín el Grande aplaza la Fiesta de la Cachorreña y Alhaurín Flamenca al domingo 26 por</news:title>
     </news:news>
   </url>
   <url>
@@ -265,39 +100,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-del-libro-con-la-firme-apuesta-por-la-cultura-como-motor-social.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.841Z</news:publication_date>
-      <news:title>Alhaurín el Grande celebra el Día del Libro con la firme apuesta por la Cultura como motor social</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-del-libro-con-la-firme-apuesta-por-la-cultura-como-motor.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.074Z</news:publication_date>
-      <news:title>Alhaurín el Grande celebra el Día del Libro con la firme apuesta por la Cultura como motor</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-la-emotiva-representacion-de-la-resurreccion-en-sabado-santo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:41:21.574Z</news:publication_date>
-      <news:title>Alhaurín el Grande celebra la emotiva representación de la Resurrección en Sábado Santo</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-la-emotiva-representacion-de-la-resurreccion-en-semana-santa.html</loc>
     <news:news>
       <news:publication>
@@ -306,72 +108,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:03:01.144Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra la emotiva representación de la Resurrección en Semana Santa</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-consolida-su-papel-como-epicentro-de-la-moda-flamenca-malaguena.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.075Z</news:publication_date>
-      <news:title>Alhaurín el Grande consolida su papel como epicentro de la moda flamenca malagueña</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-da-la-bienvenida-a-estudiantes-franceses-en-el-marco-de-su-programa-de-hermanamiento-europeo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.840Z</news:publication_date>
-      <news:title>Alhaurín el Grande da la bienvenida a estudiantes franceses en el marco de su programa de hermanamiento europeo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-da-la-bienvenida-a-estudiantes-franceses-en-el-marco-de-su-programa-de.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.075Z</news:publication_date>
-      <news:title>Alhaurín el Grande da la bienvenida a estudiantes franceses en el marco de su programa de</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-firma-acuerdo-con-comerciantes-y-hosteleros-para-impulsar-turismo-y-lim.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.075Z</news:publication_date>
-      <news:title>Alhaurín el Grande firma acuerdo con comerciantes y hosteleros para impulsar turismo y limpieza</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-fortalece-su-influencia-en-el-area-metropolitana-de-malaga.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.145Z</news:publication_date>
-      <news:title>Alhaurín el Grande fortalece su influencia en el Área Metropolitana de Málaga</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-fortalece-su-papel-en-decisiones-del-area-metropolitana-de-malaga.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.076Z</news:publication_date>
-      <news:title>Alhaurín el Grande fortalece su papel en decisiones del Área Metropolitana de Málaga</news:title>
     </news:news>
   </url>
   <url>
@@ -408,28 +144,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-la-reforestacion-en-villa-del-guadalhorce-con-nuevas-plantaciones-en-espacios-publicos.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.840Z</news:publication_date>
-      <news:title>Alhaurín el Grande impulsa la reforestación en Villa del Guadalhorce con nuevas plantaciones en espacios públicos</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-reforestacion-en-villa-del-guadalhorce-con-nuevas-plantaciones.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.146Z</news:publication_date>
-      <news:title>Alhaurín el Grande impulsa reforestación en Villa del Guadalhorce con nuevas plantaciones</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-lanza-el-premio-alejo-garcia-para-documental-sonoro-en-periodismo.html</loc>
     <news:news>
       <news:publication>
@@ -438,17 +152,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:03:01.146Z</news:publication_date>
       <news:title>Alhaurín el Grande lanza el premio ‘Alejo García’ para documental sonoro en periodismo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-feria-del-dia-almuerzo-de-mayores-y-mayo-solidario.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.147Z</news:publication_date>
-      <news:title>Alhaurín el Grande presenta feria del día, almuerzo de mayores y mayo solidario</news:title>
     </news:news>
   </url>
   <url>
@@ -463,50 +166,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-situa-el-documental-sonoro-en-la-vanguardia-del-periodismo-nacional-con-la-creacion-del-premio-alejo-garcia.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.841Z</news:publication_date>
-      <news:title>Alhaurín el Grande sitúa el documental sonoro en la vanguardia del periodismo nacional con la creación del premio ‘Alejo García’</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-situa-el-documental-sonoro-en-la-vanguardia-del-periodismo-nacional-con.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.077Z</news:publication_date>
-      <news:title>Alhaurín el Grande sitúa el documental sonoro en la vanguardia del periodismo nacional con la</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivi-con-natalia-rodriguez-la-naty-fashion-i-programa-28.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.078Z</news:publication_date>
-      <news:title>Así lo viví con Natalia Rodríguez (La Naty Fashion) I Programa 28</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/campamento-de-junio-2026-el-area-de-educacion-abre-el-plazo-de-inscripciones-para-el.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.078Z</news:publication_date>
-      <news:title>Campamento de junio 2026 el área de educación abre el plazo de inscripciones para el</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/cd-alhaurino-recibe-al-atletico-mancha-real-en-la-jornada-34-de-tercera-rfef-grupo-9.html</loc>
     <news:news>
       <news:publication>
@@ -515,72 +174,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:41:21.579Z</news:publication_date>
       <news:title>CD Alhaurino recibe al Atlético Mancha Real en la jornada 34 de Tercera RFEF Grupo 9</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/cd-alhaurino-recibe-al-atletico-mancha-real-en-la-jornada-34-de-tercera-rfef.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.148Z</news:publication_date>
-      <news:title>CD Alhaurino recibe al Atlético Mancha Real en la jornada 34 de Tercera RFEF</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/celebrado-el-lxxxv-aniversario-de-la-bendicion-de-nuestro-padre-jesus-nazareno.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.079Z</news:publication_date>
-      <news:title>Celebrado el LXXXV Aniversario de la Bendición de Nuestro Padre Jesús Nazareno.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/clara-montes-pondra-voz-a-antonio-gala-en-alhaurin-el-grande-con-el-concierto-volveras-en-primavera.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.840Z</news:publication_date>
-      <news:title>Clara Montes pondrá voz a Antonio Gala en Alhaurín el Grande con el concierto “Volverás en primavera”</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/clara-montes-pondra-voz-a-antonio-gala-en-alhaurin-el-grande-con-el-concierto-volveras-en.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.079Z</news:publication_date>
-      <news:title>Clara Montes pondrá voz a Antonio Gala en Alhaurín el Grande con el concierto “Volverás en</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/clara-montes-pone-musica-y-poesia-a-la-campana-turistica-volveras-en-primavera-en-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.836Z</news:publication_date>
-      <news:title>Clara Montes pone música y poesía a la campaña turística “Volverás en primavera” en Alhaurín el Grande</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/clara-montes-pone-musica-y-poesia-a-la-campana-turistica-volveras-en-primavera-en-alhaurin.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.079Z</news:publication_date>
-      <news:title>Clara Montes pone música y poesía a la campaña turística “Volverás en primavera” en Alhaurín</news:title>
     </news:news>
   </url>
   <url>
@@ -595,17 +188,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/clara-montes-protagoniza-en-alhaurin-el-grande-el-concierto-volveras-en-primavera.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.080Z</news:publication_date>
-      <news:title>Clara Montes protagoniza en Alhaurín el Grande el concierto &amp;#x27;Volverás en primavera&amp;#x27;</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/clara-montes-protagoniza-recital-poetico-en-alhaurin-el-grande-para-campana-turistica.html</loc>
     <news:news>
       <news:publication>
@@ -614,39 +196,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:41:21.582Z</news:publication_date>
       <news:title>Clara Montes protagoniza recital poético en Alhaurín el Grande para campaña turística</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/clara-montes-protagoniza-recital-poetico-musical-en-alhaurin-el-grande-para-campana-turist.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.149Z</news:publication_date>
-      <news:title>Clara Montes protagoniza recital poético-musical en Alhaurín el Grande para campaña turística</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/clara-montes-protagoniza-recital-poetico-musical-en-alhaurin-el-grande-por-campana-turisti.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.149Z</news:publication_date>
-      <news:title>Clara Montes protagoniza recital poético-musical en Alhaurín el Grande por campaña turística</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-con-funcion-religiosa-y-desfile-de-bandas.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.150Z</news:publication_date>
-      <news:title>Día de la Cruz 2026 en Alhaurín el Grande con función religiosa y desfile de bandas</news:title>
     </news:news>
   </url>
   <url>
@@ -661,94 +210,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-guardia-traslado-y-entrada-de-bandas.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.150Z</news:publication_date>
-      <news:title>Día de la Cruz 2026 en Alhaurín el Grande: Guardia, traslado y entrada de bandas</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-guardia-y-traslado-del-cristo-y-entrada-de-banda.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.150Z</news:publication_date>
-      <news:title>Día de la Cruz 2026 en Alhaurín el Grande: Guardia y Traslado del Cristo y Entrada de Bandas</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-recogida-de-romero-y-conciertos-tradicionales.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.151Z</news:publication_date>
-      <news:title>Día de la Cruz 2026 en Alhaurín el Grande: recogida de romero y conciertos tradicionales</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-romero-retreta-y-concierto-coral.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.151Z</news:publication_date>
-      <news:title>Día de la Cruz 2026 en Alhaurín el Grande: romero, retreta y concierto coral</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-funcion-religiosa-y-desfile-de-bandas.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.082Z</news:publication_date>
-      <news:title>Día de la Cruz 2026 Función religiosa y desfile de bandas</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-solemne-salida-procesional-del-2-de-mayo-del-santisimo-cristo-de-la-ve.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.082Z</news:publication_date>
-      <news:title>Día de la Cruz 2026. Solemne salida procesional del 2 de mayo del Santísimo Cristo de la Vera</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-solemne-salida-procesional-del-2-de-mayo-del-santisimo-cristo-de-la-vera-cruz.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.837Z</news:publication_date>
-      <news:title>Día de la Cruz 2026. Solemne salida procesional del 2 de mayo del Santísimo Cristo de la Vera Cruz.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/domingo-de-resurreccion-en-alhaurin-el-grande-celebracion-y-tradicion-religiosa.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:41:21.583Z</news:publication_date>
-      <news:title>Domingo de Resurrección en Alhaurín el Grande: Celebración y Tradición Religiosa</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/domingo-de-resurreccion-en-alhaurin-el-grande-celebracion-y-tradicion.html</loc>
     <news:news>
       <news:publication>
@@ -757,50 +218,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:03:01.151Z</news:publication_date>
       <news:title>Domingo de Resurrección en Alhaurín el Grande: Celebración y Tradición</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-firma-un-acuerdo-de-colaboracion-con-la-asociacion-d.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.082Z</news:publication_date>
-      <news:title>El Ayuntamiento de Alhaurín el Grande firma un acuerdo de colaboración con la Asociación de</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-firma-un-acuerdo-de-colaboracion-con-la-asociacion-de-comerciantes-y-hosteleros-camino-de-malaga.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.841Z</news:publication_date>
-      <news:title>El Ayuntamiento de Alhaurín el Grande firma un acuerdo de colaboración con la Asociación de Comerciantes y Hosteleros “Camino de Málaga”</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-mejora-la-seguridad-vial-con-el-reacondicionamiento-de-los-pasos-de-peaton.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.083Z</news:publication_date>
-      <news:title>El Ayuntamiento mejora la seguridad vial con el reacondicionamiento de los pasos de peatones</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-mejora-la-seguridad-vial-con-el-reacondicionamiento-de-los-pasos-de-peatones-en-calle-san-sebastian.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.842Z</news:publication_date>
-      <news:title>El Ayuntamiento mejora la seguridad vial con el reacondicionamiento de los pasos de peatones en calle San Sebastián</news:title>
     </news:news>
   </url>
   <url>
@@ -815,39 +232,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/entrevista-a-natalia-rodriguez-la-naty-fashion-en-el-programa-28-de-atv-alhaurin.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.152Z</news:publication_date>
-      <news:title>Entrevista a Natalia Rodríguez, La Naty Fashion, en el Programa 28 de ATV Alhaurín</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/entrevista-exclusiva-con-natalia-rodriguez-la-naty-fashion-en-alhaurin-al-dia.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.152Z</news:publication_date>
-      <news:title>Entrevista exclusiva con Natalia Rodríguez, &amp;#x27;La Naty Fashion&amp;#x27;, en Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/entrevista-exclusiva-con-natalia-rodriguez-la-naty-fashion-en-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.083Z</news:publication_date>
-      <news:title>Entrevista exclusiva con Natalia Rodríguez, &amp;#x27;La Naty Fashion&amp;#x27;, en Alhaurín el Grande</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/feria-de-alhaurin-el-grande-2026-cartel-programa-y-novedades-del-evento.html</loc>
     <news:news>
       <news:publication>
@@ -856,160 +240,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:03:01.152Z</news:publication_date>
       <news:title>Feria de Alhaurín el Grande 2026: cartel, programa y novedades del evento</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/feria-de-alhaurin-el-grande-2026-cartel-programa-y-novedades-hasta-el-domingo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:41:21.585Z</news:publication_date>
-      <news:title>Feria de Alhaurín el Grande 2026: cartel, programa y novedades hasta el domingo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/feria-del-dia-almuerzo-de-mayores-y-festival-primavera-en-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.153Z</news:publication_date>
-      <news:title>Feria del Día, Almuerzo de Mayores y Festival Primavera en Alhaurín el Grande</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/feria-del-dia-el-domingo-este-ano-habra-feria-del-dia-el-domingo-en-el-real-en-alhaurin.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.084Z</news:publication_date>
-      <news:title>Feria del día el domingo este año habrá feria del día el domingo, en el real en Alhaurín</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/funcion-religiosa-en-honor-al-stmo-cristo-y-desfile-de-bandas-del-3-de-mayo-dia-de-la-cruz-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.839Z</news:publication_date>
-      <news:title>Función Religiosa en honor al Stmo. Cristo y desfile de bandas del 3 de mayo | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/funcion-religiosa-en-honor-al-stmo-cristo-y-desfile-de-bandas-del-3-de-mayo-dia-de-la-cruz.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.084Z</news:publication_date>
-      <news:title>Función Religiosa en honor al Stmo. Cristo y desfile de bandas del 3 de mayo | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/funcion-religiosa-en-honor-al-stmo-cristo-y-desfile-de-bandas-del-3-de-mayo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.084Z</news:publication_date>
-      <news:title>Función Religiosa en honor al Stmo. Cristo y desfile de bandas del 3 de mayo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/futbol-cd-alhaurino-atletico-mancha-real-j-34-grupo-9-tercera-rfef-25-26.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.085Z</news:publication_date>
-      <news:title>Fútbol. CD Alhaurino - Atlético Mancha Real | J.34 - Grupo 9 Tercera RFEF (25/26)</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/futbol-cd-alhaurino-atletico-mancha-real.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.085Z</news:publication_date>
-      <news:title>Fútbol. CD Alhaurino - Atlético Mancha Real</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-1-mayo-diana-y-entrada-de-bandas-2-de-mayo-2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.085Z</news:publication_date>
-      <news:title>Guardia y Traslado del Cristo -1 mayo-, diana y entrada de bandas -2 de mayo-</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-1-mayo-diana-y-entrada-de-bandas-2-de-mayo-dia-de-la-cruz-20-2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.085Z</news:publication_date>
-      <news:title>Guardia y Traslado del Cristo -1 mayo-, diana y entrada de bandas -2 de mayo- | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-1-mayo-diana-y-entrada-de-bandas-2-de-mayo-dia-de-la-cruz-20.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.086Z</news:publication_date>
-      <news:title>Guardia y Traslado del Cristo -1 mayo-, diana y entrada de bandas -2 de mayo- | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-1-mayo-diana-y-entrada-de-bandas-2-de-mayo-dia-de-la-cruz-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.838Z</news:publication_date>
-      <news:title>Guardia y Traslado del Cristo -1 mayo-, diana y entrada de bandas -2 de mayo- | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-1-mayo-diana-y-entrada-de-bandas-2-de-mayo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.086Z</news:publication_date>
-      <news:title>Guardia y Traslado del Cristo -1 mayo-, diana y entrada de bandas -2 de mayo-</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-y-actos-musicales-en-dia-de-la-cruz-2026-en-alhaurin-el-gran.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.086Z</news:publication_date>
-      <news:title>Guardia y traslado del Cristo y actos musicales en Día de la Cruz 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
@@ -1035,50 +265,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/noticias-atv-11-mayo-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.087Z</news:publication_date>
-      <news:title>NOTICIAS ATV 11 MAYO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/noticias-atv-7-mayo-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.087Z</news:publication_date>
-      <news:title>NOTICIAS ATV 7 MAYO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/noticias-atv-8-mayo-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.087Z</news:publication_date>
-      <news:title>NOTICIAS ATV 8 MAYO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/nuestro-hermano-mayor-d-miguel-angel-serrano-gomez-nombrado-legionario-de-honor.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.088Z</news:publication_date>
-      <news:title>Nuestro Hermano Mayor D. Miguel Ángel Serrano Gómez, nombrado legionario de honor</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/pleno-ordinario-de-mayo-2026-en-el-ayuntamiento-de-alhaurin-el-grande.html</loc>
     <news:news>
       <news:publication>
@@ -1090,17 +276,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentacion-del-cartel-anunciador-del-dia-de-jesus-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.088Z</news:publication_date>
-      <news:title>Presentación del cartel anunciador del Día de Jesús 2026</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-del-dia-de-jesus-2026-en-la-ermita-de-san-sebastian.html</loc>
     <news:news>
       <news:publication>
@@ -1109,61 +284,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:41:21.586Z</news:publication_date>
       <news:title>Presentan el cartel oficial del Día de Jesús 2026 en la Ermita de San Sebastián</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/recogida-del-romero-retreta-y-concierto-del-coro-aromas-de-mayo-y-la-coral-dia-de-la-cruz-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.837Z</news:publication_date>
-      <news:title>Recogida del romero, retreta y concierto del coro Aromas de Mayo y la Coral | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/recogida-del-romero-retreta-y-concierto-del-coro-aromas-de-mayo-y-la-coral-dia-de-la-cruz.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.088Z</news:publication_date>
-      <news:title>Recogida del romero, retreta y concierto del coro Aromas de Mayo y la Coral | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/recogida-del-romero-retreta-y-concierto-del-coro-aromas-de-mayo-y-la-coral.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.089Z</news:publication_date>
-      <news:title>Recogida del romero, retreta y concierto del coro Aromas de Mayo y la Coral</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/romeria-de-villa-del-guadalhorce-en-honor-a-maria-auxiliadora.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.089Z</news:publication_date>
-      <news:title>Romería de Villa del Guadalhorce en honor a María Auxiliadora</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-procesion-del-cristo-de-la-vera-cruz-en-alhaurin-el-grande-el-2-de-mayo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.154Z</news:publication_date>
-      <news:title>Solemne Procesión del Cristo de la Vera Cruz en Alhaurín el Grande el 2 de mayo</news:title>
     </news:news>
   </url>
   <url>
@@ -1189,17 +309,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-procesion-del-santisimo-cristo-de-la-vera-cruz-en-alhaurin-el-grande-el-3-de-mayo-2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.090Z</news:publication_date>
-      <news:title>Solemne procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande el 3 de mayo</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/solemne-procesion-del-santisimo-cristo-de-la-vera-cruz-en-alhaurin-el-grande-el-3-de-mayo.html</loc>
     <news:news>
       <news:publication>
@@ -1211,160 +320,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-procesion-del-santisimo-cristo-de-la-vera-cruz-en-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.155Z</news:publication_date>
-      <news:title>Solemne procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-2-de-mayo-del-santisimo-cristo-de-la-vera-cruz-dia-de-la-cr.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.091Z</news:publication_date>
-      <news:title>Solemne salida procesional del 2 de mayo del Santísimo Cristo de la Vera Cruz | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-2-de-mayo-del-santisimo-cristo-de-la-vera-cruz-dia-de-la-cruz-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.839Z</news:publication_date>
-      <news:title>Solemne salida procesional del 2 de mayo del Santísimo Cristo de la Vera Cruz | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-2-de-mayo-del-santisimo-cristo-de-la-vera-cruz.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.091Z</news:publication_date>
-      <news:title>Solemne salida procesional del 2 de mayo del Santísimo Cristo de la Vera Cruz</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-3-de-mayo-del-santisimo-cristo-de-la-vera-cruz-2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.091Z</news:publication_date>
-      <news:title>Solemne salida procesional del 3 de mayo del Santísimo Cristo de la Vera Cruz</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-3-de-mayo-del-santisimo-cristo-de-la-vera-cruz-dia-de-la-cr-2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.091Z</news:publication_date>
-      <news:title>Solemne salida procesional del 3 de mayo del Santísimo Cristo de la Vera Cruz | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-3-de-mayo-del-santisimo-cristo-de-la-vera-cruz-dia-de-la-cr.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.092Z</news:publication_date>
-      <news:title>Solemne salida procesional del 3 de mayo del Santísimo Cristo de la Vera Cruz | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-3-de-mayo-del-santisimo-cristo-de-la-vera-cruz-dia-de-la-cruz-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.839Z</news:publication_date>
-      <news:title>Solemne salida procesional del 3 de mayo del Santísimo Cristo de la Vera Cruz | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/solemne-salida-procesional-del-3-de-mayo-del-santisimo-cristo-de-la-vera-cruz.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.092Z</news:publication_date>
-      <news:title>Solemne salida procesional del 3 de mayo del Santísimo Cristo de la Vera Cruz</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/tercera-misa-de-triduo-en-honor-al-cristo-de-la-vera-cruz-y-actos-del-dia-30-dia-de-la-cru.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.092Z</news:publication_date>
-      <news:title>Tercera misa de Triduo en honor al Cristo de la Vera Cruz y actos del día 30 | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/tercera-misa-de-triduo-en-honor-al-cristo-de-la-vera-cruz-y-actos-del-dia-30-dia-de-la-cruz-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-11T14:54:01.837Z</news:publication_date>
-      <news:title>Tercera misa de Triduo en honor al Cristo de la Vera Cruz y actos del día 30 | Día de la Cruz 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/tercera-misa-de-triduo-en-honor-al-cristo-de-la-vera-cruz-y-actos-del-dia-30.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.092Z</news:publication_date>
-      <news:title>Tercera misa de Triduo en honor al Cristo de la Vera Cruz y actos del día 30</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/tercera-misa-del-triduo-al-cristo-de-la-vera-cruz-y-actos-del-dia-de-la-cruz-en-alhaurin-e.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.155Z</news:publication_date>
-      <news:title>Tercera misa del Triduo al Cristo de la Vera Cruz y actos del Día de la Cruz en Alhaurín el</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/tercera-misa-del-triduo-y-actos-del-dia-de-la-cruz-en-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.155Z</news:publication_date>
-      <news:title>Tercera misa del Triduo y actos del Día de la Cruz en Alhaurín el Grande</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/viernes-santo-en-alhaurin-el-grande-fe-y-sentimiento-en-la-hermandad-de-jesus-nazareno.html</loc>
     <news:news>
       <news:publication>
@@ -1373,28 +328,6 @@
       </news:publication>
       <news:publication_date>2026-05-13T11:03:01.156Z</news:publication_date>
       <news:title>Viernes Santo en Alhaurín el Grande: Fe y sentimiento en la Hermandad de Jesús Nazareno</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-celebra-la-romeria-en-honor-a-maria-auxiliadora-el-1-de-mayo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-13T11:03:01.156Z</news:publication_date>
-      <news:title>Villa del Guadalhorce celebra la Romería en honor a María Auxiliadora el 1 de mayo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-celebra-la-tradicional-romeria-en-honor-a-maria-auxiliadora.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-12T12:11:43.093Z</news:publication_date>
-      <news:title>Villa del Guadalhorce celebra la tradicional Romería en honor a María Auxiliadora</news:title>
     </news:news>
   </url>
 </urlset>

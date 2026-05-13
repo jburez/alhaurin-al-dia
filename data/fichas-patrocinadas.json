@@ -1,5 +1,96 @@
 {
   "actualizado": "2026-05-13T00:00:00+02:00",
   "resumen": "Fichas patrocinadas verificadas para comercios, restaurantes, profesionales y servicios locales de Alhaurín el Grande.",
+  "_instrucciones": {
+    "uso": "Añade fichas reales dentro del array fichas. No publiques negocios sin verificar datos básicos.",
+    "publicacion": "Una ficha aparece si activo es true o si no se informa activo. Para preparar una ficha sin mostrarla, usa activo: false.",
+    "ubicaciones": [
+      "comercios",
+      "restaurantes",
+      "veterinarios",
+      "farmacias",
+      "todos"
+    ],
+    "campos_recomendados": [
+      "nombre",
+      "descripcion",
+      "categoria",
+      "zona",
+      "telefonoHref",
+      "url",
+      "cta",
+      "destacados",
+      "ubicaciones",
+      "activo"
+    ],
+    "notas": [
+      "telefonoHref debe ir sin espacios y con prefijo internacional, por ejemplo +34952123456.",
+      "url puede ser interna, por ejemplo comercios/nombre-del-negocio/, o externa con https://.",
+      "imagen puede ser una ruta interna, por ejemplo assets/comercios/negocio.jpg, o una URL externa permitida.",
+      "destacados debe tener frases cortas, idealmente 2 o 3 puntos.",
+      "Evita claims no verificables como 'el mejor', 'número uno' o 'garantizado'."
+    ]
+  },
+  "_plantilla_ficha": {
+    "nombre": "Nombre del negocio",
+    "descripcion": "Descripción breve, clara y verificable del negocio o servicio.",
+    "categoria": "Restaurante / Clínica / Tienda / Servicio profesional",
+    "zona": "Centro / Zona aproximada / Alhaurín el Grande",
+    "telefonoHref": "+34952123456",
+    "url": "comercios/nombre-del-negocio/",
+    "cta": "Ver ficha",
+    "etiqueta": "Ficha patrocinada",
+    "imagen": "assets/comercios/nombre-del-negocio.jpg",
+    "destacados": [
+      "Reserva por teléfono",
+      "Servicio local",
+      "Atención cercana"
+    ],
+    "ubicaciones": [
+      "comercios"
+    ],
+    "activo": false
+  },
+  "_ejemplos_inactivos": [
+    {
+      "nombre": "Ejemplo Restaurante Local",
+      "descripcion": "Restaurante de ejemplo para validar cómo se vería una ficha gastronómica patrocinada.",
+      "categoria": "Restaurante",
+      "zona": "Centro",
+      "telefonoHref": "+34952000000",
+      "url": "guia-util/restaurantes/",
+      "cta": "Ver restaurante",
+      "etiqueta": "Ficha patrocinada",
+      "destacados": [
+        "Menú del día",
+        "Terraza",
+        "Reservas"
+      ],
+      "ubicaciones": [
+        "comercios",
+        "restaurantes"
+      ],
+      "activo": false
+    },
+    {
+      "nombre": "Ejemplo Servicio Mascotas",
+      "descripcion": "Servicio de ejemplo para validar fichas patrocinadas en veterinarios y mascotas.",
+      "categoria": "Mascotas",
+      "zona": "Alhaurín el Grande",
+      "telefonoHref": "+34952000000",
+      "url": "guia-util/veterinarios/",
+      "cta": "Ver servicio",
+      "etiqueta": "Ficha patrocinada",
+      "destacados": [
+        "Cita previa",
+        "Atención local",
+        "Servicios para mascotas"
+      ],
+      "ubicaciones": [
+        "veterinarios"
+      ],
+      "activo": false
+    }
+  ],
   "fichas": []
 }

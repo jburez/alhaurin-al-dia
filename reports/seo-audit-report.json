@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-13T11:13:02.470Z",
+  "site": "https://alhaurinaldia.es",
+  "summary": {
+    "criticalCount": 3,
+    "warningsCount": 0,
+    "status": "fail"
+  },
+  "html": {
+    "totalHtml": 174,
+    "missingCanonical": [
+      "/avisos/",
+      "/tiempo/",
+      "/tmp/alhaurin_fase1/"
+    ],
+    "searchAction": [],
+    "missingTitle": [],
+    "missingDescription": []
+  },
+  "sitemaps": {
+    "issues": []
+  },
+  "news": {
+    "totalNews": 30,
+    "duplicatePages": [],
+    "duplicateSourceUrls": [],
+    "possibleDuplicateTitles": []
+  }
+}

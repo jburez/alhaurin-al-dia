@@ -6,7 +6,7 @@ const SITE_URL = 'https://alhaurinaldia.es';
 const WARN_ONLY = process.argv.includes('--warn-only');
 const REPORT_DIR = path.join(ROOT, 'reports');
 const REPORT_FILE = path.join(REPORT_DIR, 'seo-audit-report.json');
-const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'reports']);
+const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'reports', 'tmp']);
 const IGNORE_FILES = new Set(['404.html', 'index_old.html']);
 
 function walk(dir, files = []) {

@@ -7,7 +7,7 @@ const NEWS_PUBLICATION_NAME = 'Alhaurín al Día';
 const NEWS_LANGUAGE = 'es';
 const NEWS_MAX_AGE_MS = 48 * 60 * 60 * 1000;
 
-const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets']);
+const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'tmp', 'reports']);
 const IGNORE_FILES = new Set(['404.html', 'index_old.html']);
 
 function walk(dir, files = []) {

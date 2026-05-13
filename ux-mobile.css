@@ -1,0 +1,383 @@
+/* =========================
+   UX MOBILE AUDIT REFINEMENTS
+   Ajustes finos para lectura, navegación táctil y ritmo vertical
+========================= */
+
+@media (max-width: 720px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        padding-bottom: env(safe-area-inset-bottom, 0);
+    }
+
+    .skip-link {
+        left: 12px;
+        right: 12px;
+        width: auto;
+        text-align: center;
+    }
+
+    header {
+        top: 0;
+    }
+
+    nav {
+        height: 64px;
+    }
+
+    .logo-mark {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo strong {
+        font-size: 16px;
+    }
+
+    .logo span:last-child {
+        max-width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .menu-toggle {
+        width: 44px;
+        height: 44px;
+        border-radius: 15px;
+        touch-action: manipulation;
+    }
+
+    .nav-links {
+        top: 72px;
+        max-height: min(calc(100dvh - 92px), 560px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+    .nav-links a {
+        min-height: 48px;
+        touch-action: manipulation;
+    }
+
+    .home-hero-clean {
+        padding-top: 18px;
+    }
+
+    .home-hero-clean .hero-card {
+        padding: 24px 19px 21px;
+    }
+
+    .home-hero-clean h1 {
+        font-size: clamp(33px, 10.4vw, 45px);
+        letter-spacing: -.055em;
+    }
+
+    .home-hero-clean .lead {
+        font-size: 15px;
+        line-height: 1.56;
+    }
+
+    .actions {
+        gap: 9px;
+    }
+
+    .btn,
+    .home-guard-actions a,
+    .home-agenda-link,
+    .home-agenda-empty a,
+    .featured-commerce-actions a,
+    .featured-commerce-empty a {
+        min-height: 48px;
+        touch-action: manipulation;
+    }
+
+    .side-panel .ad-slot-medium {
+        min-height: 92px;
+    }
+
+    .ad-slot {
+        padding: 16px 14px;
+        font-size: 12px;
+        line-height: 1.35;
+    }
+
+    .ad-slot::before {
+        font-size: 9px;
+    }
+
+    .ad-wrap-top,
+    .listing-ad-after-featured,
+    .ad-wrap-section {
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+
+    .daily-dashboard {
+        padding: 18px 0 10px;
+    }
+
+    .daily-dashboard-shell,
+    .home-agenda-shell,
+    .featured-commerce-shell {
+        padding: 17px;
+        border-radius: 24px;
+    }
+
+    .daily-dashboard-header,
+    .home-agenda-header,
+    .featured-commerce-header {
+        margin-bottom: 14px;
+    }
+
+    .daily-dashboard-header h2,
+    .home-agenda-header h2,
+    .featured-commerce-header h2,
+    .section-title h2 {
+        font-size: clamp(29px, 8.6vw, 38px);
+        line-height: 1.02;
+    }
+
+    .daily-dashboard-header p,
+    .home-agenda-header p,
+    .featured-commerce-header p {
+        font-size: 14px;
+        line-height: 1.52;
+    }
+
+    .daily-card {
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .daily-card-top {
+        margin-bottom: 10px;
+    }
+
+    .daily-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 14px;
+    }
+
+    .daily-value {
+        font-size: clamp(24px, 7vw, 30px);
+    }
+
+    .weather-widget-section,
+    .weather-detail-section {
+        padding: 18px 0;
+    }
+
+    .andalmet-widget-card {
+        padding: 17px;
+        border-radius: 24px;
+    }
+
+    .andalmet-widget-frame iframe {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .home-guard-wrap {
+        padding: 8px 0 18px;
+    }
+
+    .home-guard-card {
+        border-radius: 24px;
+        padding: 21px 17px;
+    }
+
+    .home-guard-card::after {
+        right: 10px;
+        bottom: 6px;
+        font-size: 82px;
+    }
+
+    .home-guard-card h2 {
+        font-size: clamp(29px, 8.8vw, 40px);
+    }
+
+    .home-guard-summary,
+    .home-guard-card p {
+        line-height: 1.55;
+        font-size: 14px;
+    }
+
+    .home-agenda-card,
+    .home-agenda-empty,
+    .featured-commerce-card,
+    .featured-commerce-empty {
+        border-radius: 20px;
+        padding: 14px;
+    }
+
+    .home-agenda-empty-icon,
+    .featured-commerce-empty-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 15px;
+    }
+
+    .featured-commerce-media {
+        min-height: 164px;
+        border-radius: 18px;
+    }
+
+    .featured-commerce-content h3,
+    .featured-commerce-empty h3,
+    .home-agenda-content h3,
+    .home-agenda-empty h3 {
+        font-size: 20px;
+        line-height: 1.12;
+    }
+
+    .featured-commerce-meta span {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .home-news-clean {
+        padding-top: 18px;
+    }
+
+    .home-news-clean .featured-news-card {
+        border-radius: 24px;
+    }
+
+    .home-news-clean .featured-news-image {
+        min-height: 0;
+        height: 196px;
+    }
+
+    .featured-news-content {
+        padding: 20px;
+    }
+
+    .featured-news-content h2 {
+        font-size: clamp(26px, 7.8vw, 34px);
+    }
+
+    .featured-news-content p {
+        font-size: 14px;
+        line-height: 1.52;
+    }
+
+    .home-latest-grid.editorial-news-grid {
+        gap: 12px;
+    }
+
+    .home-latest-grid .news-card,
+    .news-card {
+        grid-template-columns: 104px 1fr;
+        border-radius: 20px;
+    }
+
+    .home-latest-grid .news-image,
+    .home-latest-grid .news-placeholder,
+    .news-image,
+    .news-placeholder {
+        width: 104px;
+        height: auto;
+        min-height: 158px;
+    }
+
+    .news-body {
+        padding: 14px 14px 5px;
+    }
+
+    .news-footer {
+        padding: 0 14px 14px;
+    }
+
+    .news-card h3 {
+        font-size: 15px;
+        line-height: 1.22;
+    }
+
+    .news-card p {
+        font-size: 12.5px;
+        line-height: 1.42;
+        -webkit-line-clamp: 2;
+    }
+
+    .guide-section {
+        padding-top: 18px;
+    }
+
+    .guide-hero-card {
+        padding: 18px;
+        border-radius: 24px;
+    }
+
+    .guide-hero-card h3 {
+        font-size: clamp(26px, 7.6vw, 34px);
+    }
+
+    .guide-card {
+        border-radius: 20px;
+        padding: 17px;
+    }
+
+    footer {
+        padding-bottom: calc(30px + env(safe-area-inset-bottom, 0));
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: min(100% - 22px, var(--max));
+    }
+
+    .logo span:last-child {
+        display: none;
+    }
+
+    .quick-links {
+        gap: 8px;
+    }
+
+    .quick-links a {
+        font-size: 12.5px;
+        min-height: 46px;
+        padding-inline: 8px;
+    }
+
+    .home-latest-grid .news-card,
+    .news-card {
+        grid-template-columns: 94px 1fr;
+    }
+
+    .home-latest-grid .news-image,
+    .home-latest-grid .news-placeholder,
+    .news-image,
+    .news-placeholder {
+        width: 94px;
+        min-height: 154px;
+    }
+}
+
+@media (max-width: 340px) {
+    .home-latest-grid .news-card,
+    .news-card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "body"
+            "footer";
+    }
+
+    .home-latest-grid .news-image,
+    .home-latest-grid .news-placeholder,
+    .news-image,
+    .news-placeholder {
+        width: 100%;
+        height: 176px;
+        min-height: 176px;
+    }
+}

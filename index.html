@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#17324d" />
     <meta name="author" content="Alhaurín al Día" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/">
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Alhaurín al Día" />
@@ -23,6 +24,61 @@
     <link rel="stylesheet" href="./mobile.css">
     <link rel="stylesheet" href="./ads.css">
     <link rel="stylesheet" href="./home-live.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://alhaurinaldia.es/#website",
+          "name": "Alhaurín al Día",
+          "url": "https://alhaurinaldia.es/",
+          "inLanguage": "es-ES",
+          "publisher": {
+            "@id": "https://alhaurinaldia.es/#organization"
+          }
+        },
+        {
+          "@type": "NewsMediaOrganization",
+          "@id": "https://alhaurinaldia.es/#organization",
+          "name": "Alhaurín al Día",
+          "url": "https://alhaurinaldia.es/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://alhaurinaldia.es/assets/favicon.svg"
+          },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Alhaurín el Grande"
+          },
+          "foundingDate": "2026",
+          "description": "Medio digital hiperlocal y guía útil independiente de Alhaurín el Grande.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Información, correcciones y publicidad local",
+            "url": "https://alhaurinaldia.es/contacto/",
+            "availableLanguage": "es"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://alhaurinaldia.es/#webpage",
+          "url": "https://alhaurinaldia.es/",
+          "name": "Alhaurín al Día | Noticias, guía útil y comercios de Alhaurín el Grande",
+          "description": "Noticias, agenda, farmacias, teléfonos útiles, trámites, comercios, rutas y planes en Alhaurín el Grande.",
+          "isPartOf": {
+            "@id": "https://alhaurinaldia.es/#website"
+          },
+          "about": {
+            "@type": "Place",
+            "name": "Alhaurín el Grande"
+          },
+          "inLanguage": "es-ES"
+        }
+      ]
+    }
+    </script>
 
     <style>
         .home-guard-wrap {

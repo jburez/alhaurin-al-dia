@@ -74,12 +74,18 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/videos/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/comercios/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/contacto/</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -260,7 +266,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/a-pie-de-campo-programa-33-con-analisis-y-noticias-del-cd-alhaurino.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -272,7 +278,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/abierto-el-plazo-para-el-campamento-de-junio-y-concierto-de-ruben-simeo-en-alhaurin-el-gra.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -290,7 +296,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actos-del-3-de-mayo-en-alhaurin-el-grande-misa-y-desfile-de-bandas-en-honor-al-cristo.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -308,7 +314,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-cultura-turismo-y-deporte-el-11-de-mayo-de-2026.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -350,7 +356,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aplaza-fiesta-de-la-cachorrena-y-alhaurin-flamenca-al-26-de-marzo.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -446,7 +452,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-fortalece-su-influencia-en-el-area-metropolitana-de-malaga.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -482,7 +488,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-reforestacion-en-villa-del-guadalhorce-con-nuevas-plantaciones.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -494,7 +500,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-feria-del-dia-almuerzo-de-mayores-y-mayo-solidario.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -536,7 +542,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/cd-alhaurino-recibe-al-atletico-mancha-real-en-la-jornada-34-de-tercera-rfef.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -590,7 +596,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/clara-montes-protagoniza-recital-poetico-musical-en-alhaurin-el-grande-para-campana-turist.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -602,7 +608,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-con-funcion-religiosa-y-desfile-de-bandas.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -614,25 +620,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-guardia-traslado-y-entrada-de-bandas.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-guardia-y-traslado-del-cristo-y-entrada-de-banda.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-recogida-de-romero-y-conciertos-tradicionales.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-romero-retreta-y-concierto-coral.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -698,13 +704,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/entrevista-a-natalia-rodriguez-la-naty-fashion-en-el-programa-28-de-atv-alhaurin.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/entrevista-exclusiva-con-natalia-rodriguez-la-naty-fashion-en-alhaurin-al-dia.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -728,7 +734,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/feria-del-dia-almuerzo-de-mayores-y-festival-primavera-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -986,13 +992,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tercera-misa-del-triduo-al-cristo-de-la-vera-cruz-y-actos-del-dia-de-la-cruz-en-alhaurin-e.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tercera-misa-del-triduo-y-actos-del-dia-de-la-cruz-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1004,7 +1010,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-celebra-la-romeria-en-honor-a-maria-auxiliadora-el-1-de-mayo.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1016,6 +1022,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/planes/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/sobre-nosotros/</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

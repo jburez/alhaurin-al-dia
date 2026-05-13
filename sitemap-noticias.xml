@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/comercio-y-empresa/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -92,6 +92,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-cultura-turismo-y-deporte-en-mayo-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-reunion-metropolitana-ascensor-y-eventos-deportivos.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -193,7 +199,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-mejora-gestion-de-residuos-y-celebra-exitos-deportivos-locales.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-a-estudiantes-franceses-en-programa-de-intercambio-europeo.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-refuerza-su-papel-en-el-area-metropolitana-de-malaga.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -223,7 +241,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2025-en-alhaurin-el-grande-tradicion-y-homenaje-en-la-ermita-del-convento.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2026-en-alhaurin-el-grande-funcion-religiosa-y-desfile-de-bandas.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/domingo-de-resurreccion-en-alhaurin-el-grande-celebracion-y-tradicion-religiosa.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -271,6 +301,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/pleno-ordinario-de-mayo-2026-en-el-ayuntamiento-de-alhaurin-el-grande-2.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/pleno-ordinario-de-mayo-2026-en-el-ayuntamiento-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -295,6 +331,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-y-programa-de-la-feria-de-alhaurin-el-grande-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/resumen-del-pleno-ordinario-de-mayo-2026-en-el-ayuntamiento-de-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -314,6 +356,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/solemne-procesion-del-santisimo-cristo-de-la-vera-cruz-en-alhaurin-el-grande-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/solemne-procesion-del-santisimo-cristo-de-la-vera-cruz-en-alhaurin-el-grande-el-3-de-mayo-2.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

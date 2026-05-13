@@ -9,6 +9,14 @@ const NEWS_MAX_AGE_MS = 48 * 60 * 60 * 1000;
 
 const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'tmp', 'reports']);
 const IGNORE_FILES = new Set(['404.html', 'index_old.html']);
+const SERVICE_URLS = new Set([
+  '/avisos/',
+  '/tiempo/',
+  '/planes/',
+  '/comercios/',
+  '/anunciarse/',
+  '/contacto/',
+]);
 
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -44,6 +52,9 @@ function meta(url) {
   if (url === '/guia-util/') return { changefreq: 'weekly', priority: '0.95' };
   if (url === '/guia-util/farmacias/') return { changefreq: 'daily', priority: '0.95' };
   if (url === '/guia-util/farmacias/calendario/') return { changefreq: 'daily', priority: '0.95' };
+  if (url === '/avisos/' || url === '/tiempo/') return { changefreq: 'daily', priority: '0.9' };
+  if (url === '/planes/' || url === '/comercios/') return { changefreq: 'weekly', priority: '0.8' };
+  if (url === '/contacto/') return { changefreq: 'monthly', priority: '0.6' };
   if (url.startsWith('/guia-util/farmacias/')) return { changefreq: 'weekly', priority: '0.85' };
   if (url.startsWith('/guia-util/')) return { changefreq: 'monthly', priority: '0.8' };
   if (url.startsWith('/noticias/')) return { changefreq: 'weekly', priority: '0.75' };
@@ -122,6 +133,8 @@ const pharmacyEntries = entries.filter(entry =>
   entry.url === '/guia-util/farmacias/' || entry.url.startsWith('/guia-util/farmacias/')
 );
 
+const serviceEntries = entries.filter(entry => SERVICE_URLS.has(entry.url));
+
 const newsEntries = entries.filter(entry =>
   entry.url === '/noticias/' || entry.url.startsWith('/noticias/') || entry.url.startsWith('/categoria/')
 );
@@ -138,6 +151,7 @@ const googleNewsEntries = entries
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), renderUrlset(entries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-farmacias.xml'), renderUrlset(pharmacyEntries));
+fs.writeFileSync(path.join(ROOT, 'sitemap-servicios.xml'), renderUrlset(serviceEntries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-noticias.xml'), renderUrlset(newsEntries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-news.xml'), renderNewsUrlset(googleNewsEntries));
 
@@ -150,6 +164,7 @@ fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitema
 
 console.log(`Sitemap principal generado: ${entries.length} URLs`);
 console.log(`Sitemap farmacias generado: ${pharmacyEntries.length} URLs`);
+console.log(`Sitemap servicios generado: ${serviceEntries.length} URLs`);
 console.log(`Sitemap noticias generado: ${newsEntries.length} URLs`);
 console.log(`Google News sitemap generado: ${googleNewsEntries.length} noticias recientes`);
 console.log(`Sitemap index generado: ${sitemapFiles.length} sitemaps`);

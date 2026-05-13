@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./mobile.css">
     <link rel="stylesheet" href="./ads.css">
+    <link rel="stylesheet" href="./home-live.css">
 
     <style>
         .home-guard-wrap {
@@ -208,6 +209,29 @@
             </div>
         </section>
 
+        <section class="daily-dashboard" aria-labelledby="daily-dashboard-title">
+            <div class="container">
+                <div class="daily-dashboard-shell">
+                    <div class="daily-dashboard-header">
+                        <div>
+                            <span class="section-kicker">Hoy en Alhaurín</span>
+                            <h2 id="daily-dashboard-title">Estado local de hoy, de un vistazo.</h2>
+                            <p>Tiempo, tráfico, avisos, agenda y servicios esenciales para consultar antes de salir.</p>
+                        </div>
+                        <span class="daily-updated" id="daily-updated">Actualizando estado local...</span>
+                    </div>
+
+                    <div class="daily-grid" id="daily-status" aria-live="polite">
+                        <article class="daily-card neutral daily-card-wide">
+                            <strong>Estado local</strong>
+                            <div class="daily-value">Cargando...</div>
+                            <p>Consultando información diaria de Alhaurín el Grande.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container ad-wrap ad-wrap-top">
             <div class="ad-slot ad-slot-leaderboard">Publicidad horizontal responsive</div>
         </div>
@@ -304,6 +328,7 @@
     </footer>
 
     <script src="./app.js"></script>
+    <script src="./home-live.js"></script>
     <script src="./home-guardia.js"></script>
 </body>
 

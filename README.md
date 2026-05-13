@@ -2,6 +2,11 @@
 
 Web local independiente para recopilar noticias, guia util, servicios, comercios y planes de Alhaurin el Grande.
 
+## Documentación
+
+- [Arquitectura de la web](docs/ARQUITECTURA.md): visión técnica completa del frontend, datos, scripts, generación de páginas, SEO, sitemaps y despliegue.
+- [Manual de administración](docs/MANUAL_ADMINISTRACION.md): guía operativa para actualizar noticias, avisos, agenda, farmacias, comercios, guía útil, SEO y publicación.
+
 ## Estructura del proyecto
 
 - index.html: estructura principal de la web.

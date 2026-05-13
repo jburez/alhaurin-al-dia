@@ -1,0 +1,56 @@
+{
+  "actualizado": "2026-05-13T09:00:00+02:00",
+  "resumen": "Información diaria orientativa para consultar antes de salir. Los avisos críticos deben confirmarse siempre en fuentes oficiales.",
+  "items": [
+    {
+      "id": "tiempo",
+      "icono": "☀️",
+      "titulo": "Tiempo",
+      "valor": "Consultar",
+      "detalle": "Previsión local de Alhaurín el Grande disponible en AEMET.",
+      "estado": "ok",
+      "cta": "Ver AEMET",
+      "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
+    },
+    {
+      "id": "trafico",
+      "icono": "🚗",
+      "titulo": "Tráfico",
+      "valor": "Normal",
+      "detalle": "Sin incidencias destacadas comunicadas en accesos principales.",
+      "estado": "ok",
+      "cta": "Consultar DGT",
+      "url": "https://www.dgt.es/conoce-el-estado-del-trafico/"
+    },
+    {
+      "id": "avisos",
+      "icono": "📢",
+      "titulo": "Avisos",
+      "valor": "Sin avisos",
+      "detalle": "No constan cortes activos de agua, luz o tráfico local en este panel.",
+      "estado": "ok",
+      "cta": "Guía útil",
+      "url": "./guia-util/"
+    },
+    {
+      "id": "agenda",
+      "icono": "📅",
+      "titulo": "Agenda",
+      "valor": "Sin cortes",
+      "detalle": "No constan procesiones o eventos con afección al tráfico local.",
+      "estado": "ok",
+      "cta": "Ver planes",
+      "url": "./planes/"
+    },
+    {
+      "id": "servicios",
+      "icono": "☎️",
+      "titulo": "Servicios",
+      "valor": "A mano",
+      "detalle": "Farmacias, teléfonos, trámites, movilidad y recursos esenciales.",
+      "estado": "neutral",
+      "cta": "Abrir guía",
+      "url": "./guia-util/"
+    }
+  ]
+}

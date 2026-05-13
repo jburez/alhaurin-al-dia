@@ -41,8 +41,8 @@
       "valor": "Sin avisos",
       "detalle": "No constan cortes activos de agua, luz o tráfico local en este panel.",
       "estado": "ok",
-      "cta": "Guía útil",
-      "url": "./guia-util/"
+      "cta": "Ver avisos",
+      "url": "./avisos/"
     },
     {
       "id": "agenda",

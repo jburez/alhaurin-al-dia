@@ -5,6 +5,8 @@
     "news": "python3 scripts/generar_noticias.py",
     "news:dedupe": "node scripts/dedupe-news.js --write",
     "news:dedupe:dry": "node scripts/dedupe-news.js",
+    "news:orphans:dry": "node scripts/clean-orphan-news.js",
+    "news:orphans:clean": "node scripts/clean-orphan-news.js --delete",
     "seo:home": "node scripts/apply-home-seo.js",
     "seo:clean-searchaction": "node scripts/remove-searchaction.js",
     "seo": "npm run seo:home && npm run seo:clean-searchaction",

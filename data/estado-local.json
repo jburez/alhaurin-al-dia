@@ -18,11 +18,11 @@
       "icono": "🌦️",
       "titulo": "Andalmet",
       "valor": "Previsión local",
-      "detalle": "Consulta la previsión ampliada de Andalmet para Alhaurín el Grande.",
+      "detalle": "Previsión ampliada de Andalmet para Alhaurín el Grande dentro de nuestra página del tiempo.",
       "estado": "neutral",
       "fuente": "Andalmet",
-      "cta": "Ver Andalmet",
-      "url": "https://andalmet.es/el-tiempo-en/alhaurin-el-grande"
+      "cta": "Ver tiempo",
+      "url": "./tiempo/"
     },
     {
       "id": "trafico",

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../mobile.css">
     <link rel="stylesheet" href="../ads.css">
+    <link rel="stylesheet" href="../sponsored-cards.css">
 
     <script type="application/ld+json">
     {
@@ -107,6 +108,30 @@
             </div>
         </section>
 
+        <section class="sponsored-section" aria-labelledby="sponsored-commerce-title">
+            <div class="container">
+                <div class="sponsored-shell">
+                    <div class="sponsored-header">
+                        <div>
+                            <span class="section-kicker">Fichas patrocinadas</span>
+                            <h2 id="sponsored-commerce-title">Negocios locales destacados.</h2>
+                            <p>Espacio reservado para comercios, restaurantes, profesionales y servicios verificados que quieran tener una presencia más visible dentro de Alhaurín al Día.</p>
+                        </div>
+                    </div>
+                    <div class="sponsored-grid" data-sponsored-cards="comercios" data-sponsored-limit="3" aria-live="polite">
+                        <article class="sponsored-empty-card">
+                            <div class="sponsored-empty-icon">★</div>
+                            <div>
+                                <span class="sponsored-label">Ficha patrocinada</span>
+                                <h3>Cargando fichas destacadas...</h3>
+                                <p>Consultando espacios disponibles para negocios locales.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="directorio-local">
             <div class="container">
                 <div class="section-title">
@@ -165,6 +190,7 @@
     </footer>
 
     <script src="../app.js"></script>
+    <script src="../sponsored-cards.js"></script>
 </body>
 
 </html>

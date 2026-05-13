@@ -1,0 +1,119 @@
+/* =========================
+   HOME EDITORIAL NEWS
+========================= */
+
+.home-news-clean {
+    padding-top: 30px;
+}
+
+.home-news-clean .section-title {
+    margin-bottom: 18px;
+}
+
+.home-news-clean .featured-news {
+    margin-bottom: 18px;
+}
+
+.home-news-clean .featured-news-card {
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    border-radius: 34px;
+    box-shadow: 0 24px 70px rgba(24, 33, 47, .12);
+}
+
+.home-news-clean .featured-news-image {
+    min-height: 340px;
+}
+
+.home-news-clean .featured-news-content {
+    padding: clamp(26px, 4vw, 44px);
+}
+
+.home-news-clean .featured-news-content h2 {
+    font-size: clamp(32px, 4vw, 50px);
+}
+
+.home-news-clean .featured-news-content p {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.home-latest-grid.editorial-news-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.home-latest-grid .news-card {
+    min-height: 0;
+    border-radius: 22px;
+}
+
+.home-latest-grid .news-image,
+.home-latest-grid .news-placeholder {
+    height: 172px;
+}
+
+.home-latest-grid .news-body {
+    padding: 18px 18px 8px;
+}
+
+.home-latest-grid .news-card h3 {
+    min-height: 0;
+    margin-bottom: 9px;
+    font-size: 17px;
+    line-height: 1.22;
+}
+
+.home-latest-grid .news-card p {
+    min-height: 0;
+    font-size: 14px;
+    line-height: 1.52;
+}
+
+.home-latest-grid .news-footer {
+    padding: 10px 18px 18px;
+}
+
+.home-latest-grid .tag {
+    margin-bottom: 11px;
+}
+
+.home-news-clean .actions.centered {
+    justify-content: center;
+}
+
+@media (max-width: 920px) {
+    .home-news-clean .featured-news-card {
+        grid-template-columns: 1fr;
+    }
+
+    .home-news-clean .featured-news-image {
+        min-height: 260px;
+    }
+
+    .home-latest-grid.editorial-news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .home-news-clean {
+        padding-top: 22px;
+    }
+
+    .home-news-clean .featured-news-card {
+        border-radius: 26px;
+    }
+
+    .home-news-clean .featured-news-image {
+        min-height: 220px;
+    }
+
+    .home-latest-grid.editorial-news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-latest-grid .news-image,
+    .home-latest-grid .news-placeholder {
+        height: 210px;
+    }
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página no encontrada | Alhaurín al Día</title>
+    <meta name="description" content="La página que buscas no existe o se ha movido. Vuelve a la portada, consulta las noticias o abre la guía útil de Alhaurín el Grande.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#17324d">
+    <link rel="canonical" href="https://alhaurinaldia.es/404.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/mobile.css">
+    <style>
+        .not-found-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .not-found-main {
+            flex: 1;
+            display: grid;
+            place-items: center;
+            padding: clamp(34px, 8vw, 86px) 0;
+        }
+
+        .not-found-card {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: clamp(30px, 6vw, 64px);
+            border: 1px solid var(--line);
+            border-radius: 38px;
+            background: radial-gradient(circle at 90% 0%, rgba(184, 135, 70, .18), transparent 20rem), rgba(255, 255, 255, .92);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .not-found-code {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 88px;
+            height: 88px;
+            margin-bottom: 18px;
+            border-radius: 28px;
+            background: var(--brand);
+            color: white;
+            font-weight: 950;
+            font-size: 28px;
+            letter-spacing: -.04em;
+        }
+
+        .not-found-card h1 {
+            margin-bottom: 14px;
+        }
+
+        .not-found-card .lead {
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .not-found-actions {
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .not-found-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 26px;
+        }
+
+        .not-found-links a {
+            display: inline-flex;
+            padding: 10px 13px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: var(--paper-soft);
+            color: var(--brand);
+            font-size: 13px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body class="not-found-page">
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="/" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+                <div class="nav-links">
+                    <a href="/noticias/">Noticias</a>
+                    <a href="/guia-util/">Guía útil</a>
+                    <a href="/planes/">Planes</a>
+                    <a href="/comercios/">Comercios</a>
+                    <a href="/anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="not-found-main">
+        <div class="container">
+            <section class="not-found-card" aria-labelledby="not-found-title">
+                <span class="not-found-code">404</span>
+                <span class="eyebrow">Página no encontrada</span>
+                <h1 id="not-found-title">Esta página no está disponible.</h1>
+                <p class="lead">Puede que el enlace haya cambiado o que la noticia ya no exista. Puedes volver a la portada, consultar las últimas noticias o abrir la guía útil de Alhaurín el Grande.</p>
+                <div class="actions not-found-actions">
+                    <a class="btn btn-primary" href="/">Volver a portada</a>
+                    <a class="btn btn-secondary" href="/noticias/">Ver noticias</a>
+                </div>
+                <div class="not-found-links" aria-label="Accesos rápidos">
+                    <a href="/guia-util/">Guía útil</a>
+                    <a href="/guia-util/farmacias/">Farmacias</a>
+                    <a href="/guia-util/telefonos/">Teléfonos útiles</a>
+                    <a href="/comercios/">Comercios</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="/noticias/">Noticias</a>
+                <a href="/guia-util/">Guía útil</a>
+                <a href="/planes/">Planes</a>
+                <a href="/comercios/">Comercios</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

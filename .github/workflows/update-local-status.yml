@@ -1,0 +1,42 @@
+name: Actualizar estado local
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 6,10,15 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-local-status:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Actualizar tiempo desde AEMET
+        env:
+          AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
+        run: python3 scripts/actualizar_estado_local.py
+
+      - name: Commit cambios si hay actualización
+        run: |
+          if git diff --quiet data/estado-local.json; then
+            echo "Sin cambios en data/estado-local.json"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/estado-local.json
+          git commit -m "Actualiza estado local desde AEMET"
+          git push origin develop

@@ -32,6 +32,68 @@
         return `Actualizado ${date.toLocaleDateString("es-ES", { day: "2-digit", month: "long" })} a las ${date.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" })}`;
     }
 
+    function getSeverityWeight(estado = "") {
+        return {
+            alert: 4,
+            warning: 3,
+            ok: 2,
+            neutral: 1
+        }[estado] || 1;
+    }
+
+    function isActiveNotice(notice) {
+        if (!notice || notice.activo === false) return false;
+
+        const now = new Date();
+        const starts = notice.inicio ? new Date(notice.inicio) : null;
+        const ends = notice.fin ? new Date(notice.fin) : null;
+
+        if (starts && !Number.isNaN(starts.getTime()) && starts > now) return false;
+        if (ends && !Number.isNaN(ends.getTime()) && ends < now) return false;
+
+        return true;
+    }
+
+    function buildNoticeCard(notices = []) {
+        const activeNotices = notices
+            .filter(isActiveNotice)
+            .sort((a, b) => getSeverityWeight(b.estado) - getSeverityWeight(a.estado));
+
+        if (!activeNotices.length) return null;
+
+        const mainNotice = activeNotices[0];
+        const countSuffix = activeNotices.length > 1 ? ` · ${activeNotices.length} avisos activos` : "";
+
+        return {
+            id: "avisos",
+            icono: mainNotice.icono || "📢",
+            titulo: "Avisos locales",
+            valor: mainNotice.valor || mainNotice.titulo || "Aviso activo",
+            detalle: `${mainNotice.detalle || "Hay un aviso local activo."}${countSuffix}`,
+            estado: mainNotice.estado || "warning",
+            fuente: mainNotice.fuente || "Alhaurín al Día",
+            cta: mainNotice.cta || "Ver aviso",
+            url: mainNotice.url || "./guia-util/"
+        };
+    }
+
+    function mergeLocalNotices(items, noticesData) {
+        const noticeCard = buildNoticeCard(Array.isArray(noticesData?.avisos) ? noticesData.avisos : []);
+        if (!noticeCard) return items;
+
+        let replaced = false;
+        const merged = items.map(item => {
+            if (item.id === "avisos") {
+                replaced = true;
+                return noticeCard;
+            }
+            return item;
+        });
+
+        if (!replaced) merged.push(noticeCard);
+        return merged;
+    }
+
     function renderItem(item) {
         const estado = item.estado || "neutral";
         const url = normalizeLink(item.url || "#");
@@ -55,16 +117,25 @@
         `;
     }
 
-    fetch(new URL("data/estado-local.json", root).href)
-        .then(response => {
+    Promise.all([
+        fetch(new URL("data/estado-local.json", root).href).then(response => {
             if (!response.ok) throw new Error("No se pudo cargar estado-local.json");
             return response.json();
-        })
-        .then(data => {
-            const items = Array.isArray(data.items) ? data.items : [];
+        }),
+        fetch(new URL("data/avisos-locales.json", root).href).then(response => {
+            if (!response.ok) return { avisos: [] };
+            return response.json();
+        }).catch(() => ({ avisos: [] }))
+    ])
+        .then(([data, noticesData]) => {
+            const baseItems = Array.isArray(data.items) ? data.items : [];
+            const items = mergeLocalNotices(baseItems, noticesData);
+            const updated = noticesData?.actualizado && Array.isArray(noticesData.avisos) && noticesData.avisos.some(isActiveNotice)
+                ? noticesData.actualizado
+                : data.actualizado;
 
             if (updatedBox) {
-                updatedBox.textContent = formatUpdated(data.actualizado);
+                updatedBox.textContent = formatUpdated(updated);
             }
 
             if (!items.length) {

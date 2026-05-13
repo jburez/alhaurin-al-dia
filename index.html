@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./home-live.css">
     <link rel="stylesheet" href="./home-guardia.css">
     <link rel="stylesheet" href="./home-agenda.css">
+    <link rel="stylesheet" href="./home-commerce.css">
     <link rel="stylesheet" href="./home-news.css">
 
     <script type="application/ld+json">
@@ -215,6 +216,31 @@
             </div>
         </section>
 
+        <section class="featured-commerce-section" aria-labelledby="featured-commerce-title">
+            <div class="container">
+                <div class="featured-commerce-shell">
+                    <div class="featured-commerce-header">
+                        <div>
+                            <span class="section-kicker">Comercio destacado</span>
+                            <h2 id="featured-commerce-title">Negocios locales con visibilidad.</h2>
+                            <p>Un espacio para restaurantes, tiendas, profesionales y servicios de Alhaurín el Grande que quieran aparecer en un entorno local útil.</p>
+                        </div>
+                        <span class="featured-commerce-updated" id="featured-commerce-updated">Espacio comercial disponible</span>
+                    </div>
+                    <div class="featured-commerce-list" id="featured-commerce-list" aria-live="polite">
+                        <article class="featured-commerce-empty">
+                            <div class="featured-commerce-empty-icon">★</div>
+                            <div>
+                                <span class="sponsored-label">Espacio patrocinado</span>
+                                <h3>Cargando comercio destacado...</h3>
+                                <p>Consultando espacios comerciales disponibles.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="noticias" class="home-news-clean">
             <div class="container">
                 <div class="section-title">
@@ -297,6 +323,7 @@
     <script src="./home-live.js"></script>
     <script src="./home-guardia.js"></script>
     <script src="./home-agenda.js"></script>
+    <script src="./home-commerce.js"></script>
 </body>
 
 </html>

@@ -1,2 +1,4 @@
 .env
-.env
+
+# Informes locales generados por auditorías SEO
+reports/*.json

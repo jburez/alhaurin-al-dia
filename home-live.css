@@ -181,9 +181,93 @@
     min-height: auto;
 }
 
+/* =========================
+   ANDALMET WIDGETS
+========================= */
+
+.weather-widget-section,
+.weather-detail-section {
+    padding: 28px 0;
+}
+
+.andalmet-widget-card {
+    background:
+        radial-gradient(circle at top right, rgba(184, 135, 70, .12), transparent 16rem),
+        rgba(255, 255, 255, .92);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    box-shadow: var(--shadow-soft);
+    padding: clamp(18px, 3vw, 26px);
+    overflow: hidden;
+}
+
+.andalmet-home-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 22px;
+    align-items: center;
+}
+
+.andalmet-widget-card h2,
+.andalmet-widget-card h3 {
+    margin: 10px 0 8px;
+    color: var(--brand);
+    letter-spacing: -.035em;
+}
+
+.andalmet-widget-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.andalmet-widget-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.andalmet-widget-frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.andalmet-widget-frame iframe {
+    max-width: 100%;
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .12);
+}
+
+.weather-widget-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: 18px;
+    align-items: stretch;
+}
+
+.compact-widget-card {
+    min-height: 100%;
+}
+
 @media (max-width: 1080px) {
     .daily-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .andalmet-home-card,
+    .weather-widget-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .andalmet-widget-header {
+        display: block;
     }
 }
 
@@ -219,5 +303,9 @@
 
     .daily-card {
         min-height: auto;
+    }
+
+    .andalmet-widget-card {
+        border-radius: 24px;
     }
 }

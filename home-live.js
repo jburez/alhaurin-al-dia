@@ -37,6 +37,7 @@
         const url = normalizeLink(item.url || "#");
         const isExternal = /^https?:\/\//i.test(url) && !url.startsWith(window.location.origin);
         const cta = item.cta || "Ver más";
+        const source = item.fuente ? `<span class="daily-source">Fuente: ${escapeHTML(item.fuente)}</span>` : "";
 
         return `
             <article class="daily-card ${escapeHTML(estado)}">
@@ -46,6 +47,7 @@
                 </div>
                 <div class="daily-value">${escapeHTML(item.valor || "Consultar")}</div>
                 <p>${escapeHTML(item.detalle || "Información pendiente de actualización.")}</p>
+                ${source}
                 <a class="daily-link" href="${escapeHTML(url)}" ${isExternal ? 'target="_blank" rel="noopener noreferrer"' : ""}>
                     ${escapeHTML(cta)} →
                 </a>

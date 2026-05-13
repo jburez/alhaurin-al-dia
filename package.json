@@ -13,6 +13,8 @@
     "sitemap": "node scripts/generate-sitemaps.js",
     "seo:audit": "node scripts/audit-seo.js --warn-only",
     "seo:audit:strict": "node scripts/audit-seo.js",
-    "build": "npm run news && npm run news:dedupe && npm run seo && npm run home:static && npm run guide:pages && npm run sitemap && npm run seo:audit"
+    "seo:orphans": "node scripts/audit-orphan-pages.js --warn-only",
+    "seo:orphans:strict": "node scripts/audit-orphan-pages.js",
+    "build": "npm run news && npm run news:dedupe && npm run seo && npm run home:static && npm run guide:pages && npm run sitemap && npm run seo:audit && npm run seo:orphans"
   }
 }

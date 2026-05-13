@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./home-hero.css">
     <link rel="stylesheet" href="./home-live.css">
     <link rel="stylesheet" href="./home-guardia.css">
+    <link rel="stylesheet" href="./home-agenda.css">
 
     <script type="application/ld+json">
     {
@@ -189,6 +190,30 @@
             </div>
         </section>
 
+        <section class="home-agenda-section" aria-labelledby="home-agenda-title">
+            <div class="container">
+                <div class="home-agenda-shell">
+                    <div class="home-agenda-header">
+                        <div>
+                            <span class="section-kicker">Agenda próxima</span>
+                            <h2 id="home-agenda-title">Próximos días en Alhaurín.</h2>
+                            <p>Eventos, actividades, cortes previstos, procesiones o avisos programados que conviene tener presentes.</p>
+                        </div>
+                        <span class="home-agenda-updated" id="home-agenda-updated">Agenda pendiente de actualización</span>
+                    </div>
+                    <div class="home-agenda-list" id="home-agenda-list" aria-live="polite">
+                        <article class="home-agenda-empty">
+                            <div class="home-agenda-empty-icon">📅</div>
+                            <div>
+                                <h3>Cargando agenda...</h3>
+                                <p>Consultando próximos eventos locales.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="noticias" class="home-news-clean">
             <div class="container">
                 <div class="section-title">
@@ -270,6 +295,7 @@
     <script src="./app.js"></script>
     <script src="./home-live.js"></script>
     <script src="./home-guardia.js"></script>
+    <script src="./home-agenda.js"></script>
 </body>
 
 </html>

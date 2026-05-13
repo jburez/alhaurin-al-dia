@@ -54,43 +54,75 @@
         return true;
     }
 
-    function buildNoticeCard(notices = []) {
-        const activeNotices = notices
+    function getNoticeTarget(notice) {
+        const type = String(notice.tipo || "").toLowerCase();
+        const title = String(notice.titulo || "").toLowerCase();
+        const text = `${type} ${title}`;
+
+        if (text.includes("tráfico") || text.includes("trafico") || text.includes("calle") || text.includes("carretera") || text.includes("desvío") || text.includes("desvio")) {
+            return "trafico";
+        }
+
+        if (text.includes("procesión") || text.includes("procesion") || text.includes("evento") || text.includes("agenda") || text.includes("feria") || text.includes("romería") || text.includes("romeria")) {
+            return "agenda";
+        }
+
+        return "avisos";
+    }
+
+    function buildCardForTarget(target, notices = []) {
+        const targetNotices = notices
             .filter(isActiveNotice)
+            .filter(notice => getNoticeTarget(notice) === target)
             .sort((a, b) => getSeverityWeight(b.estado) - getSeverityWeight(a.estado));
 
-        if (!activeNotices.length) return null;
+        if (!targetNotices.length) return null;
 
-        const mainNotice = activeNotices[0];
-        const countSuffix = activeNotices.length > 1 ? ` · ${activeNotices.length} avisos activos` : "";
+        const mainNotice = targetNotices[0];
+        const countSuffix = targetNotices.length > 1 ? ` · ${targetNotices.length} avisos activos` : "";
+        const titles = {
+            avisos: "Avisos locales",
+            trafico: "Tráfico",
+            agenda: "Agenda"
+        };
 
         return {
-            id: "avisos",
+            id: target,
             icono: mainNotice.icono || "📢",
-            titulo: "Avisos locales",
+            titulo: titles[target] || "Avisos locales",
             valor: mainNotice.valor || mainNotice.titulo || "Aviso activo",
             detalle: `${mainNotice.detalle || "Hay un aviso local activo."}${countSuffix}`,
             estado: mainNotice.estado || "warning",
             fuente: mainNotice.fuente || "Alhaurín al Día",
-            cta: mainNotice.cta || "Ver aviso",
-            url: mainNotice.url || "./guia-util/"
+            cta: mainNotice.cta || "Ver avisos",
+            url: mainNotice.url || "./avisos/"
         };
     }
 
     function mergeLocalNotices(items, noticesData) {
-        const noticeCard = buildNoticeCard(Array.isArray(noticesData?.avisos) ? noticesData.avisos : []);
-        if (!noticeCard) return items;
+        const notices = Array.isArray(noticesData?.avisos) ? noticesData.avisos : [];
+        const cardsByTarget = {
+            avisos: buildCardForTarget("avisos", notices),
+            trafico: buildCardForTarget("trafico", notices),
+            agenda: buildCardForTarget("agenda", notices)
+        };
 
-        let replaced = false;
+        const replacedTargets = new Set();
         const merged = items.map(item => {
-            if (item.id === "avisos") {
-                replaced = true;
-                return noticeCard;
+            const replacement = cardsByTarget[item.id];
+            if (replacement) {
+                replacedTargets.add(item.id);
+                return replacement;
             }
             return item;
         });
 
-        if (!replaced) merged.push(noticeCard);
+        Object.entries(cardsByTarget).forEach(([target, card]) => {
+            if (card && !replacedTargets.has(target)) {
+                merged.push(card);
+            }
+        });
+
         return merged;
     }
 

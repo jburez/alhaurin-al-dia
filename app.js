@@ -9,6 +9,8 @@ const APP_ROOT = appScript ? new URL("./", appScript.src) : new URL("/", window.
 
 const IS_HOME = document.body && document.body.contains(featuredContainer) && document.getElementById("inicio");
 const HOME_SECONDARY_NEWS_LIMIT = 3;
+const HOME_FEATURED_SUMMARY_LENGTH = 220;
+const HOME_CARD_SUMMARY_LENGTH = 130;
 
 let allNews = [];
 let activeSource = "Todas";
@@ -77,6 +79,15 @@ function escapeHTML(value = "") {
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+}
+
+function truncateText(value = "", maxLength = 160) {
+    const text = String(value || "").trim();
+    if (text.length <= maxLength) return text;
+
+    const truncated = text.slice(0, maxLength + 1);
+    const lastSpace = truncated.lastIndexOf(" ");
+    return `${truncated.slice(0, lastSpace > 80 ? lastSpace : maxLength).trim()}…`;
 }
 
 function getAssetPath(path) {
@@ -248,7 +259,8 @@ function renderFeaturedNews(noticia) {
     if (!featuredContainer || !noticia) return;
 
     const titulo = escapeHTML(noticia.titulo || "Noticia sin título");
-    const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
+    const rawDescripcion = noticia.descripcion || noticia.resumen || "Sin descripción disponible.";
+    const descripcion = escapeHTML(IS_HOME ? truncateText(rawDescripcion, HOME_FEATURED_SUMMARY_LENGTH) : rawDescripcion);
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
     const fuente = noticia.fuente || "";
     const enlace = normalizeLink(noticia.pagina || noticia.enlace || noticia.url || "#");
@@ -285,7 +297,8 @@ function renderFeaturedNews(noticia) {
 
 function renderNewsCard(noticia) {
     const titulo = escapeHTML(noticia.titulo || "Noticia sin título");
-    const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
+    const rawDescripcion = noticia.descripcion || noticia.resumen || "Sin descripción disponible.";
+    const descripcion = escapeHTML(IS_HOME ? truncateText(rawDescripcion, HOME_CARD_SUMMARY_LENGTH) : rawDescripcion);
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
     const fuente = noticia.fuente || "";
     const enlace = normalizeLink(noticia.pagina || noticia.enlace || noticia.url || "#");

@@ -105,6 +105,36 @@ function isExternalLink(link = "") {
     return /^https?:\/\//i.test(link) && !link.startsWith(window.location.origin);
 }
 
+function formatNewsDate(value) {
+    if (!value) return "";
+
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+
+    return date.toLocaleDateString("es-ES", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    });
+}
+
+function renderNewsMeta(fuente = "", fecha = "", className = "news-meta-line") {
+    const formattedDate = formatNewsDate(fecha);
+    const safeSource = escapeHTML(fuente || "");
+    const safeDate = escapeHTML(formattedDate);
+    const safeDatetime = escapeHTML(fecha || "");
+
+    if (!safeSource && !safeDate) return "";
+
+    return `
+        <div class="${className}">
+            ${safeDate ? `<time datetime="${safeDatetime}">${safeDate}</time>` : ""}
+            ${safeDate && safeSource ? `<span class="news-meta-separator">·</span>` : ""}
+            ${safeSource ? `<span>${safeSource}</span>` : ""}
+        </div>
+    `;
+}
+
 function cleanupHomeStaticArtifacts() {
     if (!IS_HOME) return;
 
@@ -220,9 +250,10 @@ function renderFeaturedNews(noticia) {
     const titulo = escapeHTML(noticia.titulo || "Noticia sin título");
     const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
-    const fuente = escapeHTML(noticia.fuente || "");
+    const fuente = noticia.fuente || "";
     const enlace = normalizeLink(noticia.pagina || noticia.enlace || noticia.url || "#");
     const imagen = noticia.imagen || "";
+    const meta = renderNewsMeta(fuente, noticia.fecha, "featured-date-line");
 
     featuredContainer.innerHTML = `
         <article class="featured-news-card">
@@ -240,8 +271,8 @@ function renderFeaturedNews(noticia) {
                 <span class="featured-label">Noticia destacada</span>
                 <div class="featured-meta">
                     <span class="tag">${categoria}</span>
-                    ${fuente ? `<span class="source-mini-tag">${fuente}</span>` : ""}
                 </div>
+                ${meta}
                 <h2>${titulo}</h2>
                 <p>${descripcion}</p>
                 <a class="read-more" href="${escapeHTML(enlace)}">
@@ -256,9 +287,10 @@ function renderNewsCard(noticia) {
     const titulo = escapeHTML(noticia.titulo || "Noticia sin título");
     const descripcion = escapeHTML(noticia.descripcion || noticia.resumen || "Sin descripción disponible.");
     const categoria = escapeHTML(noticia.categoria || "Actualidad");
-    const fuente = escapeHTML(noticia.fuente || "");
+    const fuente = noticia.fuente || "";
     const enlace = normalizeLink(noticia.pagina || noticia.enlace || noticia.url || "#");
     const imagen = noticia.imagen || "";
+    const meta = renderNewsMeta(fuente, noticia.fecha);
 
     const card = document.createElement("article");
     card.className = "content-card news-card";
@@ -281,7 +313,7 @@ function renderNewsCard(noticia) {
         </div>
 
         <div class="news-footer">
-            ${fuente ? `<small>${fuente}</small>` : ""}
+            ${meta}
             <a class="read-more" href="${escapeHTML(enlace)}">
                 Leer noticia →
             </a>

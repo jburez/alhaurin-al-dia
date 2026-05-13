@@ -542,8 +542,102 @@ function insertUsefulHubSuggestions() {
     }
 }
 
+function ensureStylesheet(path) {
+    const href = getAssetPath(path);
+    if (document.querySelector(`link[href="${href}"]`)) return;
+
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+}
+
+function ensureScript(path, id) {
+    if (id && document.getElementById(id)) return;
+
+    const script = document.createElement("script");
+    if (id) script.id = id;
+    script.src = getAssetPath(path);
+    script.defer = true;
+    document.body.appendChild(script);
+}
+
+function getCommercialPageConfig() {
+    const pathname = window.location.pathname.replace(/\/+$/, "/");
+
+    if (pathname === "/guia-util/restaurantes/") {
+        return {
+            placement: "restaurantes",
+            title: "Restaurantes destacados de Alhaurín.",
+            description: "Espacio para bares, restaurantes, cafeterías y terrazas que quieran aparecer con ficha destacada en la guía gastronómica local."
+        };
+    }
+
+    if (pathname === "/guia-util/veterinarios/") {
+        return {
+            placement: "veterinarios",
+            title: "Servicios destacados para mascotas.",
+            description: "Espacio para clínicas veterinarias, peluquerías caninas, tiendas de animales y servicios para mascotas verificados."
+        };
+    }
+
+    if (pathname === "/guia-util/farmacias/") {
+        return {
+            placement: "farmacias",
+            title: "Publicidad local en salud y proximidad.",
+            description: "Espacio pensado para servicios de salud, bienestar, farmacias, clínicas o comercios cercanos, siempre separado de la información de guardias."
+        };
+    }
+
+    return null;
+}
+
+function insertCommercialCtas() {
+    if (document.querySelector(".commercial-sponsored-injected")) return;
+
+    const config = getCommercialPageConfig();
+    if (!config) return;
+
+    const main = document.querySelector("main");
+    const firstSection = main ? main.querySelector("section") : null;
+    if (!main || !firstSection) return;
+
+    ensureStylesheet("sponsored-cards.css");
+
+    const section = document.createElement("section");
+    section.className = "sponsored-section commercial-sponsored-injected";
+    section.setAttribute("aria-labelledby", "commercial-sponsored-title");
+    section.innerHTML = `
+        <div class="container">
+            <div class="sponsored-shell">
+                <div class="sponsored-header">
+                    <div>
+                        <span class="section-kicker">Fichas patrocinadas</span>
+                        <h2 id="commercial-sponsored-title">${escapeHTML(config.title)}</h2>
+                        <p>${escapeHTML(config.description)}</p>
+                    </div>
+                </div>
+                <div class="sponsored-grid" data-sponsored-cards="${escapeHTML(config.placement)}" data-sponsored-limit="3" aria-live="polite">
+                    <article class="sponsored-empty-card">
+                        <div class="sponsored-empty-icon">★</div>
+                        <div>
+                            <span class="sponsored-label">Ficha patrocinada</span>
+                            <h3>Cargando espacios destacados...</h3>
+                            <p>Consultando fichas patrocinadas disponibles para esta sección.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    `;
+
+    firstSection.insertAdjacentElement("afterend", section);
+    ensureScript("sponsored-cards.js", "sponsored-cards-loader");
+}
+
 cleanupHomeStaticArtifacts();
 initMobileMenu();
 loadNews();
 loadGuide();
 insertUsefulHubSuggestions();
+insertCommercialCtas();

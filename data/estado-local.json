@@ -14,6 +14,17 @@
       "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
     },
     {
+      "id": "andalmet",
+      "icono": "🌦️",
+      "titulo": "Andalmet",
+      "valor": "Previsión local",
+      "detalle": "Consulta la previsión ampliada de Andalmet para Alhaurín el Grande.",
+      "estado": "neutral",
+      "fuente": "Andalmet",
+      "cta": "Ver Andalmet",
+      "url": "https://andalmet.es/el-tiempo-en/alhaurin-el-grande"
+    },
+    {
       "id": "trafico",
       "icono": "🚗",
       "titulo": "Tráfico",

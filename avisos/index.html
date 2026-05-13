@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Avisos locales | Alhaurín al Día</title>
+    <meta name="description"
+        content="Avisos locales de Alhaurín el Grande: cortes de agua, luz, tráfico, procesiones, obras, incidencias y comunicaciones útiles." />
+    <meta name="theme-color" content="#17324d" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../mobile.css">
+    <link rel="stylesheet" href="../ads.css">
+    <link rel="stylesheet" href="../home-live.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <span>Avisos · Tráfico · Cortes · Agenda local</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="../" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
+                    <a href="../noticias/">Noticias</a>
+                    <a href="../guia-util/">Guía útil</a>
+                    <a href="../planes/">Planes</a>
+                    <a href="../comercios/">Comercios</a>
+                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-card">
+                    <span class="eyebrow">Avisos locales</span>
+                    <h1>Cortes, incidencias y avisos útiles de Alhaurín.</h1>
+                    <p class="lead">Información práctica sobre cortes de agua, luz, tráfico, procesiones, obras y avisos
+                        que pueden afectar al día a día en Alhaurín el Grande.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <span class="section-kicker">Estado actual</span>
+                        <h2>Avisos activos</h2>
+                    </div>
+                    <p id="notices-updated">Consultando avisos locales...</p>
+                </div>
+
+                <div class="grid-2" id="local-notices-list">
+                    <article class="notice-card">
+                        <div class="notice-icon">📢</div>
+                        <div>
+                            <h3>Cargando avisos...</h3>
+                            <p>Consultando información local actualizada.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="../noticias/">Noticias</a>
+                <a href="../guia-util/">Guía útil</a>
+                <a href="../planes/">Planes</a>
+                <a href="../comercios/">Comercios</a>
+                <a href="../anunciarse/">Anunciarse</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+    <script src="./avisos.js"></script>
+</body>
+
+</html>

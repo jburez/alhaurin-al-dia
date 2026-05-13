@@ -1,0 +1,48 @@
+/* =========================
+   NEWS METADATA
+========================= */
+
+.news-meta-line,
+.featured-date-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 850;
+    line-height: 1.35;
+}
+
+.news-meta-line {
+    margin-bottom: 10px;
+}
+
+.featured-date-line {
+    margin: 0 0 16px;
+}
+
+.news-meta-line time,
+.featured-date-line time {
+    color: var(--brand);
+}
+
+.news-meta-separator {
+    color: rgba(102, 112, 133, .58);
+}
+
+.news-footer .news-meta-line {
+    margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+    .news-meta-line,
+    .featured-date-line {
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .news-footer .news-meta-line {
+        line-height: 1.25;
+    }
+}

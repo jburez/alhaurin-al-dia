@@ -13,6 +13,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/avisos/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/categoria/actualidad/</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -241,12 +247,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/index_old.html</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>hourly</changefreq>
@@ -278,7 +278,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actos-del-3-de-mayo-en-alhaurin-el-grande-con-funcion-religiosa-y-desfile-de-bandas.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -477,6 +477,12 @@
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-la-reforestacion-en-villa-del-guadalhorce-con-nuevas-plantaciones-en-espacios-publicos.html</loc>
     <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-movilidad-reforestacion-y-eventos-deportivos-en-mayo-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -799,6 +805,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-en-alhaurin-el-grande-para-el-dia-de-la-cruz-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-y-actos-musicales-en-dia-de-la-cruz-2026-en-alhaurin-el-gran.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -853,7 +865,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-del-dia-de-jesus-2026-en-la-ermita-de-san-sebastian.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/procesion-del-cristo-de-la-vera-cruz-recorre-el-casco-antiguo-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -873,6 +897,12 @@
   <url>
     <loc>https://alhaurinaldia.es/noticias/recogida-del-romero-retreta-y-concierto-del-coro-aromas-de-mayo-y-la-coral.html</loc>
     <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/resumen-del-pleno-ordinario-de-mayo-2026-en-el-ayuntamiento-de-alhaurin-el-grande.html</loc>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -997,6 +1027,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/venta-de-camisetas-y-articulos-oficiales-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/viernes-santo-en-alhaurin-el-grande-fe-y-sentimiento-en-la-hermandad-de-jesus-nazareno.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1021,13 +1057,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/tmp/alhaurin_fase1/</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://alhaurinaldia.es/tiempo/</loc>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/tmp/alhaurin_fase1/index_old.html</loc>
+    <loc>https://alhaurinaldia.es/tmp/alhaurin_fase1/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

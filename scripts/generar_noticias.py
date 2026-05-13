@@ -17,7 +17,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
 NOTICIAS_DIR = BASE_DIR / "noticias"
 CATEGORIAS_DIR = BASE_DIR / "categoria"
-SITEMAP_FILE = BASE_DIR / "sitemap.xml"
 SITE_URL = "https://alhaurinaldia.es"
 
 MAX_NOTICIAS_POR_FUENTE = 10
@@ -45,23 +44,6 @@ FUENTES = [
         "url": "https://www.nuestropadrejesusnazareno.com/feed/"},
 ]
 
-STATIC_URLS = [
-    {"loc": "/", "changefreq": "hourly", "priority": "1.0"},
-    {"loc": "/noticias/", "changefreq": "hourly", "priority": "0.9"},
-    {"loc": "/guia-util/", "changefreq": "weekly", "priority": "0.9"},
-    {"loc": "/planes/", "changefreq": "weekly", "priority": "0.7"},
-    {"loc": "/comercios/", "changefreq": "weekly", "priority": "0.7"},
-    {"loc": "/anunciarse/", "changefreq": "monthly", "priority": "0.6"},
-    {"loc": "/farmacias-de-guardia-alhaurin-grande/",
-        "changefreq": "daily", "priority": "0.95"},
-    {"loc": "/telefonos-utiles-alhaurin-grande/",
-        "changefreq": "monthly", "priority": "0.85"},
-    {"loc": "/feria-mayo-alhaurin-grande/",
-        "changefreq": "weekly", "priority": "0.9"},
-    {"loc": "/eventos-alhaurin-grande/", "changefreq": "daily", "priority": "0.9"},
-    {"loc": "/restaurantes-alhaurin-grande/",
-        "changefreq": "weekly", "priority": "0.85"},
-]
 
 load_dotenv()
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -181,13 +163,6 @@ def formatear_fecha(fecha_iso):
         return datetime.fromisoformat(fecha_iso.replace("Z", "+00:00")).strftime("%d/%m/%Y")
     except Exception:
         return ""
-
-
-def fecha_sitemap(fecha_iso=""):
-    try:
-        return datetime.fromisoformat(fecha_iso.replace("Z", "+00:00")).date().isoformat()
-    except Exception:
-        return datetime.now(timezone.utc).date().isoformat()
 
 
 def tiempo_lectura(texto):
@@ -667,32 +642,6 @@ def generar_paginas_categorias(noticias):
     return sorted(por_categoria.keys())
 
 
-def generar_sitemap(noticias, categorias):
-    today = datetime.now(timezone.utc).date().isoformat()
-    urls = []
-    for item in STATIC_URLS:
-        urls.append({"loc": f"{SITE_URL}{item['loc']}", "lastmod": today,
-                    "changefreq": item["changefreq"], "priority": item["priority"]})
-    for categoria in categorias:
-        urls.append({"loc": f"{SITE_URL}/categoria/{slugify(categoria)}/",
-                    "lastmod": today, "changefreq": "daily", "priority": "0.8"})
-    for noticia in noticias:
-        urls.append({"loc": f"{SITE_URL}/{noticia.get('pagina', '')}", "lastmod": fecha_sitemap(
-            noticia.get("fecha", "")), "changefreq": "weekly", "priority": "0.8"})
-    xml = ['<?xml version="1.0" encoding="UTF-8"?>',
-           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for item in urls:
-        xml.append("    <url>")
-        xml.append(f"        <loc>{escapar(item['loc'])}</loc>")
-        xml.append(f"        <lastmod>{item['lastmod']}</lastmod>")
-        xml.append(f"        <changefreq>{item['changefreq']}</changefreq>")
-        xml.append(f"        <priority>{item['priority']}</priority>")
-        xml.append("    </url>")
-    xml.append("</urlset>")
-    SITEMAP_FILE.write_text("\n".join(xml) + "\n", encoding="utf-8")
-    print("Sitemap actualizado:", SITEMAP_FILE)
-
-
 def obtener_noticias():
     noticias = []
     urls_vistas = set()
@@ -739,15 +688,13 @@ def obtener_noticias():
 
 def guardar_noticias(noticias):
     generar_paginas_noticias(noticias)
-    categorias = generar_paginas_categorias(noticias)
-    generar_sitemap(noticias, categorias)
+    generar_paginas_categorias(noticias)
+
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(noticias, f, ensure_ascii=False, indent=2)
-    print("\n====================================")
-    print("Noticias generadas:", len(noticias))
-    print("Archivo creado:", OUTPUT_FILE)
-    print("====================================")
+
+    print("Noticias guardadas:", OUTPUT_FILE)
 
 
 if __name__ == "__main__":

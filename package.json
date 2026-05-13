@@ -2,6 +2,8 @@
   "name": "alhaurin-al-dia",
   "private": true,
   "scripts": {
-    "sitemap": "node scripts/generate-sitemaps.js"
+    "news": "python3 scripts/generar_noticias.py",
+    "sitemap": "node scripts/generate-sitemaps.js",
+    "build": "npm run news && npm run sitemap"
   }
 }

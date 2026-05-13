@@ -1,0 +1,176 @@
+/* =========================
+   UX DESKTOP AUDIT REFINEMENTS
+   Capa de mejora visual sin alterar la estructura base
+========================= */
+
+.skip-link {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 999;
+    transform: translateY(-140%);
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: var(--brand);
+    color: #fff;
+    font-weight: 900;
+    box-shadow: 0 14px 34px rgba(23, 50, 77, .24);
+    transition: transform .18s ease;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+    outline: 3px solid rgba(184, 135, 70, .55);
+    outline-offset: 3px;
+}
+
+:where(a, button, input, textarea, select):focus-visible {
+    outline: 3px solid rgba(184, 135, 70, .42);
+    outline-offset: 4px;
+    border-radius: 14px;
+}
+
+@media (min-width: 981px) {
+    header {
+        box-shadow: 0 10px 28px rgba(24, 33, 47, .045);
+    }
+
+    nav {
+        height: 72px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        font-size: 13px;
+    }
+
+    .nav-links a:not(.nav-cta) {
+        padding: 9px 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:not(.nav-cta):hover {
+        border-bottom-color: rgba(184, 135, 70, .42);
+    }
+
+    .nav-cta {
+        padding: 10px 14px;
+    }
+
+    .home-hero-clean {
+        padding-top: 28px;
+    }
+
+    .home-hero-clean .hero-card,
+    .daily-dashboard-shell,
+    .featured-news-card,
+    .guide-hero-card {
+        backdrop-filter: blur(10px);
+    }
+
+    .home-hero-clean .hero-card {
+        min-height: 388px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-hero-clean .side-panel {
+        min-height: 388px;
+    }
+
+    .home-hero-clean .today-card {
+        min-height: 238px;
+    }
+
+    .home-hero-clean .ad-slot-medium {
+        min-height: 138px;
+    }
+
+    .daily-grid {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    .daily-card {
+        min-height: 176px;
+    }
+
+    .home-latest-grid.editorial-news-grid {
+        align-items: stretch;
+    }
+
+    .home-latest-grid .news-card {
+        border-radius: 24px;
+    }
+
+    .guide-section {
+        padding-top: 24px;
+    }
+}
+
+@media (min-width: 1181px) {
+    .home-hero-clean .hero-grid {
+        grid-template-columns: minmax(0, 1.15fr) minmax(320px, .65fr);
+    }
+
+    .home-news-clean .featured-news-image {
+        min-height: 360px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1120px) {
+    .logo span:last-child {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .nav-cta {
+        padding-inline: 12px;
+    }
+}
+
+.ad-slot {
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, .78), rgba(251, 248, 242, .88));
+    border-style: solid;
+    border-color: rgba(230, 222, 210, .95);
+    color: #8a7b68;
+}
+
+.ad-slot::before {
+    color: rgba(138, 123, 104, .78);
+}
+
+.ad-slot-leaderboard,
+.ad-slot-native,
+.ad-slot-medium {
+    box-shadow: 0 8px 24px rgba(24, 33, 47, .045);
+}
+
+@media (min-width: 981px) {
+    .ad-wrap-top {
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+
+    .listing-ad-after-featured {
+        margin-bottom: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skip-link,
+    .nav-links a,
+    .btn,
+    .daily-card,
+    .news-card,
+    .guide-card,
+    .business-card,
+    .plan-card {
+        transition: none !important;
+    }
+}

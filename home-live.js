@@ -32,6 +32,15 @@
         return `Actualizado ${date.toLocaleDateString("es-ES", { day: "2-digit", month: "long" })} a las ${date.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" })}`;
     }
 
+    function getStatusLabel(estado = "neutral") {
+        return {
+            ok: "Normal",
+            warning: "Aviso",
+            alert: "Atención",
+            neutral: "Info"
+        }[estado] || "Info";
+    }
+
     function insertAndalmetWidget() {
         if (document.getElementById("home-andalmet-widget")) return;
 
@@ -173,12 +182,16 @@
         const isExternal = /^https?:\/\//i.test(url) && !url.startsWith(window.location.origin);
         const cta = item.cta || "Ver más";
         const source = item.fuente ? `<span class="daily-source">Fuente: ${escapeHTML(item.fuente)}</span>` : "";
+        const statusLabel = getStatusLabel(estado);
 
         return `
             <article class="daily-card ${escapeHTML(estado)}">
                 <div class="daily-card-top">
                     <span class="daily-icon" aria-hidden="true">${escapeHTML(item.icono || "•")}</span>
-                    <strong>${escapeHTML(item.titulo || "Estado")}</strong>
+                    <div>
+                        <strong>${escapeHTML(item.titulo || "Estado")}</strong>
+                        <span class="daily-status-badge">${escapeHTML(statusLabel)}</span>
+                    </div>
                 </div>
                 <div class="daily-value">${escapeHTML(item.valor || "Consultar")}</div>
                 <p>${escapeHTML(item.detalle || "Información pendiente de actualización.")}</p>

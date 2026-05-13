@@ -31,7 +31,7 @@ function listNewsHtmlFiles() {
   if (!fs.existsSync(NEWS_DIR)) return [];
 
   return fs.readdirSync(NEWS_DIR, { withFileTypes: true })
-    .filter(entry => entry.isFile() && entry.name.endsWith('.html'))
+    .filter(entry => entry.isFile() && entry.name.endsWith('.html') && entry.name !== 'index.html')
     .map(entry => path.join(NEWS_DIR, entry.name));
 }
 

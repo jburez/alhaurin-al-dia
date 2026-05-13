@@ -5,7 +5,13 @@ const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://alhaurinaldia.es';
 const GUIDE_FILE = path.join(ROOT, 'data', 'guia-util.json');
 const GUIDE_DIR = path.join(ROOT, 'guia-util');
-const SKIP_IDS = new Set(['farmacias']);
+const SKIP_IDS = new Set([
+  'farmacias',
+  'vivir-en-alhaurin',
+  'aparcamiento',
+  'restaurantes',
+  'veterinarios',
+]);
 
 function readJson(file, fallback) {
   try {
@@ -169,7 +175,7 @@ function renderPage(item) {
     <header><div class="container"><nav aria-label="Navegación principal">
         <a class="logo" href="/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
+        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
     <main>
         <section class="resource-hero"><div class="container"><div class="resource-card">
@@ -193,7 +199,7 @@ function renderPage(item) {
             </aside>
         </div></section>
     </main>
-    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/contacto/">Contacto</a></div></div></footer>
+    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/">Anunciarse</a></div></div></footer>
     <script src="/app.js"></script>
 </body>
 </html>
@@ -208,9 +214,14 @@ function main() {
   }
 
   let count = 0;
+  let skipped = 0;
 
   for (const item of items) {
-    if (!item.id || SKIP_IDS.has(item.id)) continue;
+    if (!item.id) continue;
+    if (SKIP_IDS.has(item.id)) {
+      skipped += 1;
+      continue;
+    }
 
     const dir = path.join(GUIDE_DIR, item.id);
     const file = path.join(dir, 'index.html');
@@ -220,6 +231,7 @@ function main() {
   }
 
   console.log(`Páginas de guía útil renderizadas: ${count}`);
+  console.log(`Páginas de guía útil protegidas: ${skipped}`);
 }
 
 main();

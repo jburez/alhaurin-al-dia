@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-05-14T09:17:06+02:00",
+  "actualizado": "2026-05-14T14:05:53+02:00",
   "resumen": "Información diaria orientativa para consultar antes de salir. Los avisos críticos deben confirmarse siempre en fuentes oficiales.",
   "items": [
     {
       "id": "tiempo",
       "icono": "☀️",
       "titulo": "Tiempo",
-      "valor": "22º",
-      "detalle": "Poco nuboso · Máx. 26º / Mín. 12º",
+      "valor": "26º",
+      "detalle": "Poco nuboso · Máx. 28º / Mín. 14º",
       "estado": "ok",
       "fuente": "AEMET",
       "cta": "Ver AEMET",

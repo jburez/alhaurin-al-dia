@@ -7,7 +7,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.171Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.302Z</news:publication_date>
       <news:title>A pie de campo: Programa 33 con análisis y noticias del Club Deportivo Alhaurino</news:title>
     </news:news>
   </url>
@@ -18,8 +18,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.495Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.727Z</news:publication_date>
       <news:title>Abierto el plazo de inscripción para los Campamentos de Verano 2026 en Alhaurín el Grande</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/actos-del-3-de-mayo-en-alhaurin-el-grande-con-funcion-religiosa-y-desfile-de-bandas.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.727Z</news:publication_date>
+      <news:title>Actos del 3 de mayo en Alhaurín el Grande con función religiosa y desfile de bandas</news:title>
     </news:news>
   </url>
   <url>
@@ -29,7 +40,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.302Z</news:publication_date>
       <news:title>Actos del 3 de mayo en Alhaurín el Grande con misa y desfile de bandas</news:title>
     </news:news>
   </url>
@@ -40,7 +51,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.495Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.302Z</news:publication_date>
       <news:title>Actos del 3 de mayo en Alhaurín el Grande: misa y desfile de bandas en honor al Cristo</news:title>
     </news:news>
   </url>
@@ -51,8 +62,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.302Z</news:publication_date>
       <news:title>Actos del 3 de mayo en Alhaurín el Grande: misa y desfile de bandas en honor al Stmo. Cristo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-cultura-turismo-y-deporte-el-11-de-mayo-de-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.727Z</news:publication_date>
+      <news:title>Actualidad en Alhaurín el Grande: Cultura, Turismo y Deporte el 11 de mayo de 2026</news:title>
     </news:news>
   </url>
   <url>
@@ -62,7 +84,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.302Z</news:publication_date>
       <news:title>Actualidad en Alhaurín el Grande: Cultura, turismo y deporte en mayo 2026</news:title>
     </news:news>
   </url>
@@ -73,7 +95,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.495Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.302Z</news:publication_date>
       <news:title>Actualidad en Alhaurín el Grande: Cultura, turismo y deporte en mayo de 2026</news:title>
     </news:news>
   </url>
@@ -84,7 +106,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.302Z</news:publication_date>
       <news:title>Actualidad en Alhaurín el Grande: Reunión metropolitana, ascensor y eventos deportivos</news:title>
     </news:news>
   </url>
@@ -95,7 +117,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.495Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Agenda cultural de Alhaurín el Grande: eventos destacados para los próximos días</news:title>
     </news:news>
   </url>
@@ -106,7 +128,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.728Z</news:publication_date>
       <news:title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados</news:title>
     </news:news>
   </url>
@@ -117,7 +139,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.495Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.728Z</news:publication_date>
       <news:title>Alhaurín el Grande acoge la final profesional de la VI Copa Diputación de Málaga de calistenia</news:title>
     </news:news>
   </url>
@@ -128,7 +150,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.495Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande aplaza Fiesta de la Cachorreña y Alhaurín Flamenca al 26 por lluvia</news:title>
     </news:news>
   </url>
@@ -139,7 +161,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande aplaza Fiesta de la Cachorreña y Alhaurín Flamenca al domingo 26</news:title>
     </news:news>
   </url>
@@ -150,7 +172,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.496Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande avanza en movilidad, reforestación y eventos deportivos en mayo 2026</news:title>
     </news:news>
   </url>
@@ -161,7 +183,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.496Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.728Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra el 85º aniversario de la Bendición de Nuestro Padre Jesús Nazareno</news:title>
     </news:news>
   </url>
@@ -172,7 +194,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.496Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra el Día de la Cruz 2025 con misa y altares tradicionales</news:title>
     </news:news>
   </url>
@@ -183,7 +205,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.496Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra el Día del Libro con actividades para jóvenes y niños</news:title>
     </news:news>
   </url>
@@ -194,7 +216,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra la emotiva representación de la Resurrección en Sábado Santo</news:title>
     </news:news>
   </url>
@@ -205,7 +227,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.497Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.729Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra la emotiva representación de la Resurrección en Semana Santa</news:title>
     </news:news>
   </url>
@@ -216,7 +238,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra recital, feria del libro y cierre de temporada deportiva</news:title>
     </news:news>
   </url>
@@ -227,7 +249,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.497Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.729Z</news:publication_date>
       <news:title>Alhaurín el Grande fortalece su papel en el Área Metropolitana de Málaga</news:title>
     </news:news>
   </url>
@@ -238,7 +260,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.497Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.303Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa la moda flamenca con la IV edición de Alhaurín Flamenca</news:title>
     </news:news>
   </url>
@@ -249,7 +271,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa la moda flamenca en su IV edición de Alhaurín Flamenca</news:title>
     </news:news>
   </url>
@@ -260,7 +282,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.729Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa la reforestación en Villa del Guadalhorce con nuevas plantaciones</news:title>
     </news:news>
   </url>
@@ -271,7 +293,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.729Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa movilidad, reforestación y eventos deportivos en mayo 2026</news:title>
     </news:news>
   </url>
@@ -282,8 +304,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.497Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa reforestación en Villa del Guadalhorce con nuevas plantaciones</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-instala-la-segunda-rotocompactadora-movil-de-espana-en-su-punto-limpio.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.729Z</news:publication_date>
+      <news:title>Alhaurín el Grande instala la segunda rotocompactadora móvil de España en su punto limpio</news:title>
     </news:news>
   </url>
   <url>
@@ -293,7 +326,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.497Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande instala rotocompactadora y celebra eventos deportivos y sociales</news:title>
     </news:news>
   </url>
@@ -304,7 +337,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande lanza el premio ‘Alejo García’ para documental sonoro en periodismo</news:title>
     </news:news>
   </url>
@@ -315,7 +348,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.729Z</news:publication_date>
       <news:title>Alhaurín el Grande mejora gestión de residuos y celebra eventos deportivos y sociales</news:title>
     </news:news>
   </url>
@@ -326,7 +359,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande mejora gestión de residuos y celebra éxitos deportivos locales</news:title>
     </news:news>
   </url>
@@ -337,8 +370,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande mejora gestión de residuos y celebra éxitos deportivos y sociales</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-participa-en-la-asamblea-nacional-de-la-red-de-pueblos-gastronomicos.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.730Z</news:publication_date>
+      <news:title>Alhaurín el Grande participa en la Asamblea Nacional de la Red de Pueblos Gastronómicos</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-participa-por-tercer-ano-en-la-feria-del-libro-de-malaga.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.730Z</news:publication_date>
+      <news:title>Alhaurín el Grande participa por tercer año en la Feria del Libro de Málaga</news:title>
     </news:news>
   </url>
   <url>
@@ -348,7 +403,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.498Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande recibe a estudiantes franceses en programa de intercambio europeo</news:title>
     </news:news>
   </url>
@@ -359,8 +414,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Alhaurín el Grande refuerza su papel en el Área Metropolitana de Málaga</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/cartel-y-programacion-oficial-de-la-feria-de-mayo-2026-en-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.730Z</news:publication_date>
+      <news:title>Cartel y programación oficial de la Feria de Mayo 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
@@ -370,7 +436,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.172Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.730Z</news:publication_date>
       <news:title>CD Alhaurino recibe al Atlético Mancha Real en la jornada 34 de Tercera RFEF Grupo 9</news:title>
     </news:news>
   </url>
@@ -381,7 +447,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.498Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>CD Alhaurino recibe al Atlético Mancha Real en la jornada 34 de Tercera RFEF</news:title>
     </news:news>
   </url>
@@ -392,7 +458,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.498Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Clara Montes protagoniza el concierto &amp;#x27;Volverás en primavera&amp;#x27; en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -403,7 +469,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.498Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.304Z</news:publication_date>
       <news:title>Clara Montes protagoniza recital poético en Alhaurín el Grande para campaña turística</news:title>
     </news:news>
   </url>
@@ -414,8 +480,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.730Z</news:publication_date>
       <news:title>Clara Montes protagoniza recital poético-musical en Alhaurín el Grande por campaña turística</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/dia-de-la-cruz-2025-en-alhaurin-el-grande-tradicion-y-homenaje-en-comunidad.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.730Z</news:publication_date>
+      <news:title>Día de la Cruz 2025 en Alhaurín el Grande: tradición y homenaje en comunidad</news:title>
     </news:news>
   </url>
   <url>
@@ -425,7 +502,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Día de la Cruz 2025 en Alhaurín el Grande: tradición y homenaje en la Ermita del Convento</news:title>
     </news:news>
   </url>
@@ -436,7 +513,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Día de la Cruz 2025 en Alhaurín el Grande: tradición y homenaje en la fiesta local</news:title>
     </news:news>
   </url>
@@ -447,7 +524,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Día de la Cruz 2025 en Alhaurín el Grande: tradición y homenaje en la jornada festiva</news:title>
     </news:news>
   </url>
@@ -458,7 +535,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.498Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.731Z</news:publication_date>
       <news:title>Día de la Cruz 2026 en Alhaurín el Grande: Función religiosa y desfile de bandas</news:title>
     </news:news>
   </url>
@@ -469,7 +546,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Día de la Cruz 2026 en Alhaurín el Grande: romero, retreta y concierto coral</news:title>
     </news:news>
   </url>
@@ -480,7 +557,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.498Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.731Z</news:publication_date>
       <news:title>Domingo de Resurrección en Alhaurín el Grande: Celebración y Tradición Religiosa</news:title>
     </news:news>
   </url>
@@ -491,7 +568,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Domingo de Resurrección en Alhaurín el Grande: Celebración y Tradición Viva</news:title>
     </news:news>
   </url>
@@ -502,8 +579,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Domingo de Resurrección en Alhaurín el Grande: Celebración y Tradición</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-impulsa-el-nuevo-ascensor-en-el-aparcamiento-del-centro-de-salud.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.731Z</news:publication_date>
+      <news:title>El Ayuntamiento impulsa el nuevo ascensor en el aparcamiento del Centro de Salud</news:title>
     </news:news>
   </url>
   <url>
@@ -513,7 +601,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Emotiva procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande 2026</news:title>
     </news:news>
   </url>
@@ -524,7 +612,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.731Z</news:publication_date>
       <news:title>Emotiva procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande el 3 de mayo</news:title>
     </news:news>
   </url>
@@ -535,7 +623,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.305Z</news:publication_date>
       <news:title>Feria de Alhaurín el Grande 2026: cartel, programa y novedades del evento</news:title>
     </news:news>
   </url>
@@ -546,7 +634,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.499Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Feria de Alhaurín el Grande 2026: cartel, programa y novedades hasta el domingo</news:title>
     </news:news>
   </url>
@@ -557,7 +645,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Feria de Alhaurín el Grande 2026: cartel y programa con novedades hasta el domingo</news:title>
     </news:news>
   </url>
@@ -568,7 +656,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.173Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Guardia y traslado del Cristo y actos musicales en el Día de la Cruz 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -579,7 +667,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.499Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.732Z</news:publication_date>
       <news:title>Miguel Ángel Serrano Gómez, nombrado Caballero Legionario de Honor en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -590,7 +678,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Pleno ordinario de mayo 2026 en el Ayuntamiento de Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -601,8 +689,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.732Z</news:publication_date>
       <news:title>Pleno ordinario de mayo 2026 en el Ayuntamiento de Alhaurín el Grande</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/presentan-cartel-y-programa-de-la-feria-de-alhaurin-el-grande-2026-con-novedades.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-14T12:00:49.732Z</news:publication_date>
+      <news:title>Presentan cartel y programa de la Feria de Alhaurín el Grande 2026 con novedades</news:title>
     </news:news>
   </url>
   <url>
@@ -612,7 +711,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Presentan el cartel oficial de la Feria de Alhaurín el Grande 2026 con protagonista local</news:title>
     </news:news>
   </url>
@@ -623,7 +722,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.732Z</news:publication_date>
       <news:title>Presentan el cartel oficial del Día de Jesús 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -634,7 +733,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.499Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Presentan el cartel oficial del Día de Jesús 2026 en la Ermita de San Sebastián</news:title>
     </news:news>
   </url>
@@ -645,7 +744,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.499Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.732Z</news:publication_date>
       <news:title>Presentan el cartel oficial y programa de la Feria de Alhaurín el Grande 2026</news:title>
     </news:news>
   </url>
@@ -656,7 +755,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Programa y cartel oficial de la Feria de Mayo 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -667,7 +766,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.500Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.732Z</news:publication_date>
       <news:title>Resumen del Pleno Ordinario de Mayo 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -678,7 +777,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.306Z</news:publication_date>
       <news:title>Resumen del Pleno Ordinario de Mayo 2026 en el Ayuntamiento de Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -689,7 +788,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.500Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Resumen del pleno ordinario de mayo 2026 en el Ayuntamiento de Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -700,7 +799,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Solemne procesión del Cristo de la Vera Cruz recorre Alhaurín el Grande el 2 de mayo</news:title>
     </news:news>
   </url>
@@ -711,7 +810,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Solemne Procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande 2026</news:title>
     </news:news>
   </url>
@@ -722,7 +821,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.500Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Solemne procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande el 3 de mayo</news:title>
     </news:news>
   </url>
@@ -733,7 +832,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.500Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Solemne procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande el 3 de mayo</news:title>
     </news:news>
   </url>
@@ -744,7 +843,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.733Z</news:publication_date>
       <news:title>Solemne procesión del Santísimo Cristo de la Vera Cruz en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -755,7 +854,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Tercera misa del Triduo al Cristo de la Vera Cruz y actos del Día de la Cruz 2026</news:title>
     </news:news>
   </url>
@@ -766,7 +865,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:50:14.500Z</news:publication_date>
+      <news:publication_date>2026-05-14T12:00:49.733Z</news:publication_date>
       <news:title>Venta de camisetas y artículos oficiales para el Día de Jesús 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -777,7 +876,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Viernes Santo en Alhaurín el Grande: Fe y sentimiento en la Hermandad de Jesús Nazareno</news:title>
     </news:news>
   </url>
@@ -788,7 +887,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Villa del Guadalhorce celebra la Romería en honor a María Auxiliadora el 1 de mayo</news:title>
     </news:news>
   </url>
@@ -799,7 +898,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-05-14T08:46:49.174Z</news:publication_date>
+      <news:publication_date>2026-05-14T11:57:35.307Z</news:publication_date>
       <news:title>Ya a la venta las camisetas oficiales para el Día de Jesús 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>

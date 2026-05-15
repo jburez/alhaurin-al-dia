@@ -1,0 +1,16 @@
+{
+  "actualizado": "2026-05-13T19:24:29+02:00",
+  "fuente": "AEMET",
+  "municipio": "Alhaurín el Grande",
+  "item": {
+    "id": "tiempo",
+    "icono": "☀️",
+    "titulo": "Tiempo",
+    "valor": "24º",
+    "detalle": "Poco nuboso · Máx. 26º / Mín. 12º",
+    "estado": "ok",
+    "fuente": "AEMET",
+    "cta": "Ver AEMET",
+    "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
+  }
+}

@@ -3,28 +3,6 @@
   "resumen": "Información diaria orientativa para consultar antes de salir. Los avisos críticos deben confirmarse siempre en fuentes oficiales.",
   "items": [
     {
-      "id": "tiempo",
-      "icono": "☀️",
-      "titulo": "Tiempo",
-      "valor": "26º",
-      "detalle": "Poco nuboso · Máx. 28º / Mín. 14º",
-      "estado": "ok",
-      "fuente": "AEMET",
-      "cta": "Ver AEMET",
-      "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
-    },
-    {
-      "id": "andalmet",
-      "icono": "🌦️",
-      "titulo": "Andalmet",
-      "valor": "Previsión local",
-      "detalle": "Previsión ampliada de Andalmet para Alhaurín el Grande dentro de nuestra página del tiempo.",
-      "estado": "neutral",
-      "fuente": "Andalmet",
-      "cta": "Ver tiempo",
-      "url": "./tiempo/"
-    },
-    {
       "id": "trafico",
       "icono": "🚗",
       "titulo": "Tráfico",

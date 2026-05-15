@@ -176,6 +176,14 @@
         return merged;
     }
 
+    function mergeWeather(items, weatherData) {
+        const weatherItem = weatherData?.item;
+        if (!weatherItem || typeof weatherItem !== "object") return items;
+
+        const cleaned = items.filter(item => item.id !== "tiempo" && item.id !== "andalmet");
+        return [weatherItem, ...cleaned];
+    }
+
     function renderItem(item) {
         const estado = item.estado || "neutral";
         const url = normalizeLink(item.url || "#");
@@ -213,11 +221,16 @@
         fetch(new URL("data/avisos-locales.json", root).href).then(response => {
             if (!response.ok) return { avisos: [] };
             return response.json();
-        }).catch(() => ({ avisos: [] }))
+        }).catch(() => ({ avisos: [] })),
+        fetch(new URL("data/tiempo-aemet.json", root).href).then(response => {
+            if (!response.ok) return null;
+            return response.json();
+        }).catch(() => null)
     ])
-        .then(([data, noticesData]) => {
+        .then(([data, noticesData, weatherData]) => {
             const baseItems = Array.isArray(data.items) ? data.items : [];
-            const items = mergeLocalNotices(baseItems, noticesData);
+            const withWeather = mergeWeather(baseItems, weatherData);
+            const items = mergeLocalNotices(withWeather, noticesData);
             const updated = noticesData?.actualizado && Array.isArray(noticesData.avisos) && noticesData.avisos.some(isActiveNotice)
                 ? noticesData.actualizado
                 : data.actualizado;

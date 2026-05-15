@@ -1,4 +1,4 @@
-name: Actualizar estado local
+name: Actualizar tiempo AEMET
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  update-local-status:
+  update-weather-aemet:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,17 +26,17 @@ jobs:
       - name: Actualizar tiempo desde AEMET
         env:
           AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
-        run: python3 scripts/actualizar_estado_local.py
+        run: python3 scripts/actualizar_tiempo_aemet.py
 
       - name: Commit cambios si hay actualización
         run: |
-          if git diff --quiet data/estado-local.json; then
-            echo "Sin cambios en data/estado-local.json"
+          if git diff --quiet data/tiempo-aemet.json; then
+            echo "Sin cambios en data/tiempo-aemet.json"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/estado-local.json
-          git commit -m "Actualiza estado local desde AEMET"
+          git add data/tiempo-aemet.json
+          git commit -m "Actualiza tiempo desde AEMET"
           git push origin develop

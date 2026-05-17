@@ -67,6 +67,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/a-pie-de-campo-analisis-y-entrevista-al-cd-alhaurino-en-el-programa-34.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/a-pie-de-campo-analisis-y-entrevista-al-director-deportivo-del-cd-alhaurino.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -302,6 +308,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-mejoras-en-el-bujeo-y-presenta-actividades-culturales-y-sociale.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-mejoras-en-el-bujeo-y-presenta-novedades-culturales-y-sociales.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -775,6 +787,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-impulsa-el-nuevo-ascensor-del-aparcamiento-del-centro-de-salud-en-alhaurin.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-impulsa-el-nuevo-ascensor-del-aparcamiento-del-centro-de-salud.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -794,6 +812,18 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-impulsa-nuevo-ascensor-en-el-aparcamiento-del-centro-de-salud-de-alhaurin.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-pp-consolida-su-mayoria-en-alhaurin-el-grande-con-mas-del-50-de-votos.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-pp-sigue-lider-en-malaga-pero-pierde-votos-vox-crece-en-alhaurin-el-grande-y-otros.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

@@ -847,6 +847,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-flamenca-2026-desfile-y-homenaje-al-disenador-florencio-perez.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/cartel-y-programacion-oficial-de-la-feria-de-mayo-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -961,6 +967,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/domingo-de-resurreccion-2026-de-la-hermandad-de-nuestro-padre-jesus-nazareno-en-alhaurin-e.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/domingo-de-resurreccion-en-alhaurin-el-grande-celebracion-y-tradicion-religiosa.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1039,6 +1051,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/elecciones-andaluzas-y-eventos-locales-destacan-en-alhaurin-el-grande-esta-semana.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/emotiva-procesion-del-santisimo-cristo-de-la-vera-cruz-en-alhaurin-el-grande-2026.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1099,6 +1117,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/finaliza-el-vi-programa-de-empleo-y-formacion-en-jardineria-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-en-alhaurin-el-grande-para-el-dia-de-la-cruz-2026.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1130,6 +1154,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-fiesta-de-la-cachorrena-2026-reune-a-vecinos-en-alhaurin-el-grande-con-gastronomia-y-cu.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/la-fiesta-de-la-cachorrena-2026-reune-a-vecinos-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1225,6 +1255,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/presentan-el-viii-cartel-de-la-juventud-para-la-semana-santa-2026-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/presentan-en-alhaurin-el-ensayo-cleopatra-vii-mas-alla-del-mito-de-alfredo-tajan.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1238,6 +1274,24 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentan-en-alhaurin-el-grande-el-libro-cleopatra-vii-mas-alla-del-mito-de-alfredo-tajan.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-del-viernes-de-dolores-2026-de-la-hermandad-de-nuestro-padre-jesus-nazareno.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-del-viernes-santo-2026-de-la-hermandad-de-nuestro-padre-jesus-nazareno.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-especial-de-la-hermandad-de-nuestro-padre-jesus-nazareno-en-jueves-santo-2026.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1292,6 +1346,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/romeria-de-villa-del-guadalhorce-en-honor-a-maria-auxiliadora-el-1-de-mayo.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/semana-santa-2026-en-alhaurin-el-grande-sabado-santo-y-resurreccion-con-la-hermandad-de-je.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

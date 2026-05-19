@@ -289,6 +289,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-mejoras-en-camino-rural-y-presenta-novedades-culturales.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-mejoras-en-el-bujeo-y-celebra-actividades-culturales-y-sociales.html</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1165,7 +1171,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-del-domingo-de-resurreccion-de-la-hermandad-de-jesus-nazareno-en-semana-santa-202.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/programa-del-domingo-de-resurreccion-de-la-hermandad-jesus-nazareno-en-semana-santa-2026.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-del-viernes-de-dolores-2026-de-la-hermandad-de-jesus-nazareno-en-alhaurin-el-gran.html</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1208,6 +1226,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-especial-del-jueves-santo-de-la-hermandad-de-nuestro-padre-jesus-nazareno-2026.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-especial-del-viernes-santo-2026-de-la-hermandad-de-jesus-nazareno-en-alhaurin-el.html</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

@@ -631,6 +631,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-el-nuevo-ascensor-del-aparcamiento-del-centro-de-salud.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-movilidad-reforestacion-y-eventos-deportivos-en-mayo-2026.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -2030,6 +2036,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-especial-del-jueves-santo-2026-de-la-hermandad-de-jesus-nazareno-en-alhaurin-el-g.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-especial-del-jueves-santo-2026-de-la-hermandad-de-nuestro-padre-jesus-nazareno.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

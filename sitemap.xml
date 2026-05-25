@@ -1105,6 +1105,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-295-000-para-mejorar-arroyos-y-anuncia-servicios-moviles-en-juni.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-295-000-para-mejorar-arroyos-y-servicios-locales-en-mayo-2026.html</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1748,6 +1754,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/hermandad-de-nuestro-padre-jesus-nazareno-presenta-el-cartel-del-dia-de-jesus-2026-en-alha.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-nuestro-padre-jesus-nazareno-presenta-cartel-del-dia-de-jesus-2026-en-alhaurin-e.html</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

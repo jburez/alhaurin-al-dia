@@ -1501,6 +1501,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/el-jardin-de-pepa-un-oasis-floral-en-el-corazon-de-alhaurin-el-grande.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-jardin-de-pepa-un-rincon-de-color-y-vida-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -2228,6 +2234,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-especial-del-jueves-santo-de-la-hermandad-de-nuestro-padre-jesus-nazareno-2026.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-especial-del-viernes-de-feria-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

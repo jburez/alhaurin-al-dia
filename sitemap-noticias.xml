@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/categoria/sucesos/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/categoria/turismo-y-patrimonio/</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>daily</changefreq>
@@ -727,6 +733,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-jesus-2026.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-debuta-en-la-asamblea-nacional-de-la-red-de-pueblos-gastronomicos.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -1190,6 +1202,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-en-malaga-el-cierre-de-volveras-en-primavera-para-impulsar.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-en-malaga-el-cierre-de-volveras-en-primavera-y-lanza-estrategi.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1843,6 +1861,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/el-centro-ocupacional-fahala-celebra-su-feria-de-mayo-con-musica-y-baile-en-2026.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-centro-ocupacional-fahala-celebra-su-feria-de-mayo-con-musica-y-baile-en-alhaurin-el-gr.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -2203,6 +2227,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/guardia-civil-desmantela-red-de-petaqueo-en-alhaurin-el-grande-en-operacion-barlovento.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/guardia-y-traslado-del-cristo-en-alhaurin-el-grande-para-el-dia-de-la-cruz-2026.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -2258,6 +2288,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala-con-acta-de.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/jose-cardenas-alhaurino-con-83-anos-y-amplia-trayectoria-en-defensa-y-otan.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -2354,6 +2390,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-presenta-el-cartel-oficial-del-dia-de-jesus-2026-en-alhauri.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-presenta-nueva-tunica-procesional-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

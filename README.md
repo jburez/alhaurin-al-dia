@@ -17,12 +17,20 @@ Web local independiente para recopilar noticias, guia util, servicios, comercios
 - data/noticias.json: noticias publicadas.
 - data/guia-util.json: recursos de la guia local.
 - data/tiempo-aemet.json: resumen del tiempo usado en portada.
-- scripts/generar_noticias.py: generador de noticias desde feeds.
+- scripts/generar_noticias.py: generador base de noticias desde feeds.
+- scripts/generar_noticias_seguro.py: generador recomendado, con saneado final y deduplicación editorial.
 - scripts/validar_contenido.py: validación editorial y técnica antes de publicar.
 
-## Validación
+## Generación y validación
 
-Antes de pasar cambios a main, ejecutar:
+Para actualizar noticias de forma segura:
+
+```bash
+python scripts/generar_noticias_seguro.py
+python scripts/validar_contenido.py
+```
+
+Antes de pasar cambios a main, ejecutar al menos:
 
 ```bash
 python scripts/validar_contenido.py
@@ -42,7 +50,7 @@ También existe un workflow de GitHub Actions en `.github/workflows/validar-cont
 
 ## Proximos pasos
 
-- Endurecer el generador para rechazar titulares cortados.
+- Migrar cualquier automatización existente para que use `scripts/generar_noticias_seguro.py`.
 - Mejorar deduplicación editorial entre fuentes.
 - Automatizar la actualización de `data/tiempo-aemet.json`.
 - Crear paginas internas SEO para farmacias, tramites, telefonos, transporte y restaurantes.

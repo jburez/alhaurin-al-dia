@@ -23,5 +23,8 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Comprobar sintaxis de scripts
+        run: python -m py_compile scripts/generar_noticias.py scripts/generar_noticias_seguro.py scripts/validar_contenido.py
+
       - name: Validar noticias, páginas y sitemap
         run: python scripts/validar_contenido.py

@@ -14,10 +14,12 @@ Objetivo:
 from __future__ import annotations
 
 import re
+from datetime import date
 import sys
 import unicodedata
 from pathlib import Path
 from typing import Iterable
+from xml.sax.saxutils import escape
 
 # Permite ejecutar el script tanto desde la raíz como desde scripts/.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -137,12 +139,57 @@ def construir_titulo_rescate(noticia: dict) -> str:
     return ""
 
 
+
+TERMINALES_TITULAR_INCOMPLETO = {
+    "a", "al", "ante", "bajo", "con", "contra", "de", "del", "desde", "durante",
+    "el", "en", "entre", "hacia", "hasta", "la", "las", "los", "para", "por",
+    "que", "según", "sin", "sobre", "tras", "un", "una", "y", "o",
+    "impulsar", "presentar", "celebrar", "organizar", "convocar", "abrir",
+}
+
+
+def titulo_incompleto(titulo: str) -> bool:
+    titulo = limpiar_html(titulo).strip()
+    if not titulo:
+        return True
+
+    if "..." in titulo or "…" in titulo:
+        return True
+
+    # Comillas abiertas
+    if titulo.count("‘") != titulo.count("’"):
+        return True
+    if titulo.count("“") != titulo.count("”"):
+        return True
+    if titulo.count('"') % 2 != 0:
+        return True
+
+    # Final raro o claramente truncado
+    normalizado = normalizar_para_comparar(titulo)
+    if not normalizado:
+        return True
+
+    ultima = normalizado.split()[-1]
+    if ultima in TERMINALES_TITULAR_INCOMPLETO:
+        return True
+
+    # Si termina sin puntuación no siempre es error en titulares, pero sí si queda una comilla abierta o preposición
+    if titulo[-1] in {"‘", "“", ",", ";", ":"}:
+        return True
+
+    return termina_a_medias(titulo)
+
+
 def sanear_titulo(noticia: dict) -> str:
     titulo = limpiar_titulo_basico(noticia.get("titulo", ""))
-    if titulo and not titulo_generico(titulo) and not termina_a_medias(titulo):
+    if titulo and not titulo_generico(titulo) and not titulo_incompleto(titulo):
         return titulo
-    return construir_titulo_rescate(noticia)
 
+    rescate = construir_titulo_rescate(noticia)
+    if rescate and not titulo_incompleto(rescate):
+        return rescate
+
+    return ""
 
 def sanear_descripcion(noticia: dict) -> str:
     descripcion = noticia.get("descripcion") or noticia.get("resumen") or ""
@@ -251,6 +298,62 @@ def generar_noticias_seguras() -> list[dict]:
     return deduplicar_noticias(saneadas)
 
 
+
+def generar_sitemap() -> None:
+    """Regenera sitemap.xml con todas las páginas HTML publicables."""
+    site_url = "https://alhaurinaldia.es"
+    today = date.today().isoformat()
+    sitemap = BASE_DIR / "sitemap.xml"
+
+    exclude_dirs = {".git", ".github", "__pycache__", "node_modules"}
+    urls: list[tuple[str, str, str]] = []
+
+    for html in sorted(BASE_DIR.rglob("*.html")):
+        rel_path = html.relative_to(BASE_DIR)
+        rel = rel_path.as_posix()
+
+        if any(part in exclude_dirs for part in rel_path.parts):
+            continue
+
+        if rel == "index.html":
+            loc = f"{site_url}/"
+            changefreq = "hourly"
+            priority = "1.0"
+        elif rel.endswith("/index.html"):
+            path = rel[:-len("index.html")]
+            loc = f"{site_url}/{path}"
+            changefreq = "daily"
+            priority = "0.8"
+        else:
+            loc = f"{site_url}/{rel}"
+            if rel.startswith("noticias/"):
+                changefreq = "weekly"
+                priority = "0.9"
+            elif rel.startswith("categoria/"):
+                changefreq = "daily"
+                priority = "0.8"
+            else:
+                changefreq = "monthly"
+                priority = "0.7"
+
+        urls.append((loc, changefreq, priority))
+
+    content = ['<?xml version="1.0" encoding="UTF-8"?>']
+    content.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+
+    for loc, changefreq, priority in urls:
+        content.append("  <url>")
+        content.append(f"    <loc>{escape(loc)}</loc>")
+        content.append(f"    <lastmod>{today}</lastmod>")
+        content.append(f"    <changefreq>{changefreq}</changefreq>")
+        content.append(f"    <priority>{priority}</priority>")
+        content.append("  </url>")
+
+    content.append("</urlset>")
+    sitemap.write_text("\n".join(content) + "\n", encoding="utf-8")
+    print(f"Sitemap regenerado: {sitemap} ({len(urls)} URLs)")
+
+
 def main() -> int:
     noticias = generar_noticias_seguras()
     if not noticias:
@@ -258,6 +361,7 @@ def main() -> int:
         return 1
 
     guardar_noticias(noticias)
+    generar_sitemap()
     print(f"Noticias seguras publicadas: {len(noticias)}")
     return 0
 

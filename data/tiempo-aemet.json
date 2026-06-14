@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-06-13T18:46:26+02:00",
+  "actualizado": "2026-06-14T11:56:26+02:00",
   "fuente": "AEMET",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
     "icono": "☀️",
     "titulo": "Tiempo",
-    "valor": "26º",
-    "detalle": "Poco nuboso · Máx. 27º / Mín. 18º",
+    "valor": "25º",
+    "detalle": "Intervalos nubosos · Máx. 30º / Mín. 18º",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",

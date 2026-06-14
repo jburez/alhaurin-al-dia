@@ -5,15 +5,15 @@
         "titulo_original": "Charla de Cáritas en la Casa de la Cultura. Presentación del informe FOESSA",
         "descripcion": "Cáritas Parroquial de Alhaurín el Grande organiza una charla sobre exclusión social en Andalucía basada en el informe FOESSA, con datos y retos para las familias vulnerables.",
         "resumen": "Cáritas Parroquial de Alhaurín el Grande organiza una charla sobre exclusión social en Andalucía basada en el informe FOESSA, con datos y retos para las familias vulnerables.",
-        "cuerpo": "La Casa de la Cultura de Alhaurín el Grande acogió una charla titulada “Exclusión y desarrollo social en Andalucía. Una mirada desde el informe FOESSA”, organizada por Cáritas Parroquial con el apoyo del Ayuntamiento.\n\nDurante el encuentro, se analizaron las dificultades que enfrentan numerosas familias y colectivos vulnerables en la región, así como los desafíos que afrontan las instituciones y entidades sociales para atender estas necesidades.\n\nLa charla también tuvo un marcado objetivo de concienciación, buscando sensibilizar a los asistentes sobre la realidad social y fomentar la colaboración ciudadana para apoyar a las personas en situación de vulnerabilidad en Alhaurín el Grande y Andalucía.",
-        "fecha": "2026-06-14T12:06:06.999402+00:00",
+        "cuerpo": "La Casa de la Cultura de Alhaurín el Grande acogió una charla titulada “Exclusión y desarrollo social en Andalucía. Una mirada desde el informe FOESSA”, organizada por Cáritas Parroquial con la colaboración del Ayuntamiento.\n\nFrancisco Javier Jiménez, trabajador social de Cáritas Diocesana de Málaga, expuso los principales datos del informe, destacando que Andalucía presenta niveles de exclusión social superiores a la media nacional.\n\nLa charla también tuvo un marcado objetivo de sensibilización, buscando fomentar la participación ciudadana y la colaboración con Cáritas para fortalecer la ayuda a las personas en situación de vulnerabilidad en Alhaurín el Grande y Andalucía.",
+        "fecha": "2026-06-14T15:53:13.133981+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
-            "informe FOESSA",
-            "exclusión social Andalucía",
-            "Cáritas Alhaurín el Grande"
+            "Cáritas Alhaurín el Grande",
+            "informe FOESSA Andalucía",
+            "exclusión social Andalucía"
         ],
         "enlace": "https://www.youtube.com/watch?v=KovLJpnFLFc",
         "url": "https://www.youtube.com/watch?v=KovLJpnFLFc",
@@ -23,25 +23,25 @@
     },
     {
         "id": "https-www-youtube-com-watch-v-o40-bgvx84",
-        "titulo": "Abierto el plazo para la campaña de natación y eventos destacados en Alhaurín el Grande",
+        "titulo": "Abierto el plazo para la campaña de natación y actividades en Alhaurín el Grande",
         "titulo_original": "NOTICIAS ATV 9 JUNIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "Alhaurín el Grande inicia inscripciones para la campaña de natación y celebra eventos culturales y deportivos relevantes esta semana.",
-        "resumen": "Alhaurín el Grande inicia inscripciones para la campaña de natación y celebra eventos culturales y deportivos relevantes esta semana.",
-        "cuerpo": "El Área de Deportes de Alhaurín el Grande ha abierto el plazo de inscripciones para la campaña de natación de verano y para el curso 2026-27, ofreciendo a vecinos y vecinas la oportunidad de participar en estas actividades acuáticas.\n\nParalelamente, el teatro municipal acogió la representación de la comedia “Asesina bien y no mires a quién”, organizada por Teatro Scena en beneficio de la asociación Alhmer, que contribuye a causas sociales locales.\n\nAdemás, ocho jóvenes del CD Fuente del Acebuche participaron con la selección andaluza en el Campeonato de España de Carreras por Montaña en edad escolar, logrando el equipo infantil el título nacional y el cadete el subcampeonato, destacando el tercer puesto individual de Pablo Pérez.",
-        "fecha": "2026-06-14T12:06:03.762446+00:00",
+        "descripcion": "Alhaurín el Grande inicia inscripciones para la campaña de natación y celebra eventos culturales y deportivos destacados esta semana.",
+        "resumen": "Alhaurín el Grande inicia inscripciones para la campaña de natación y celebra eventos culturales y deportivos destacados esta semana.",
+        "cuerpo": "El Área de Deportes de Alhaurín el Grande ha abierto el plazo de inscripciones para la campaña de natación de verano y para el curso 2026-27, ofreciendo a vecinos y vecinas la oportunidad de participar en estas actividades acuáticas.\n\nParalelamente, el teatro municipal acogió una comedia benéfica a favor de la asociación Alhmer, que reunió a numerosos asistentes en apoyo a esta causa local. Además, el municipio se prepara para las celebraciones del Día de Jesús con la publicación de un bando municipal que regula las actividades.\n\nEl Triduo comenzó en la iglesia de San Sebastián con una misa oficiada por el reverendo Manuel Jesús Otero, bajo el lema “Jesús, enséñame a mirar como tú”.",
+        "fecha": "2026-06-14T15:53:09.322606+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
             "campaña de natación Alhaurín el Grande",
-            "eventos culturales Alhaurín el Grande",
+            "Día de Jesús Alhaurín el Grande",
             "Campeonato de España de Carreras por Montaña"
         ],
         "enlace": "https://www.youtube.com/watch?v=o40_-BgVx84",
         "url": "https://www.youtube.com/watch?v=o40_-BgVx84",
         "imagen": "https://i4.ytimg.com/vi/o40_-BgVx84/hqdefault.jpg",
         "prioridad": 80,
-        "pagina": "noticias/abierto-el-plazo-para-la-campana-de-natacion-y-eventos-destacados-en-alhaurin-el-grande.html"
+        "pagina": "noticias/abierto-el-plazo-para-la-campana-de-natacion-y-actividades-en-alhaurin-el-grande.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-wzxvpn9gpn8",
@@ -49,15 +49,15 @@
         "titulo_original": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días | PGM 135",
         "descripcion": "Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel en PlaneATV.",
         "resumen": "Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel en PlaneATV.",
-        "cuerpo": "PlaneATV presenta la agenda cultural de Alhaurín el Grande para los próximos días, ofreciendo un repaso detallado de las actividades y eventos que tendrán lugar en la localidad. Esta iniciativa cuenta con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel, quien aporta información relevante sobre las citas más destacadas.\n\nLos vecinos y visitantes podrán conocer las propuestas culturales que enriquecen la vida local, desde exposiciones hasta actividades participativas organizadas por entidades culturales del municipio. PlaneATV se consolida como un espacio de referencia para mantenerse informado sobre la oferta cultural en Alhaurín el Grande.",
-        "fecha": "2026-06-14T12:05:59.155388+00:00",
+        "cuerpo": "PlaneATV presenta la agenda cultural de Alhaurín el Grande para los próximos días, ofreciendo un repaso detallado de los eventos más relevantes en la localidad. La programación incluye diversas actividades organizadas con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel, que promueve la cultura local.\n\nEsta iniciativa busca fomentar la participación ciudadana y dar visibilidad a las propuestas culturales que enriquecen la vida social de Alhaurín el Grande. Los interesados pueden seguir PlaneATV para mantenerse informados sobre las novedades y detalles de cada evento.",
+        "fecha": "2026-06-14T15:53:05.347714+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Agenda Cultural",
         "categoria_url": "categoria/agenda-cultural/",
         "seo_keywords": [
             "agenda cultural Alhaurín el Grande",
             "eventos culturales Alhaurín",
-            "PlaneATV Alhaurín el Grande"
+            "PlaneATV Alhaurín"
         ],
         "enlace": "https://www.youtube.com/watch?v=WzXvPn9GPN8",
         "url": "https://www.youtube.com/watch?v=WzXvPn9GPN8",
@@ -67,37 +67,37 @@
     },
     {
         "id": "https-www-youtube-com-watch-v-qeiatt76ryw",
-        "titulo": "Alhaurín el Grande alerta sobre SMS fraudulentos y promueve campaña de comercio local",
+        "titulo": "Alhaurín el Grande alerta sobre SMS fraudulentos y promueve comercio local este verano",
         "titulo_original": "NOTICIAS ATV 10 JUNIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande advierte sobre SMS falsos y presenta la campaña 'Sella tu sueño' para impulsar el comercio local este verano.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande advierte sobre SMS falsos y presenta la campaña 'Sella tu sueño' para impulsar el comercio local este verano.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha emitido una alerta para informar a la ciudadanía sobre una campaña de SMS fraudulentos que suplantan a organismos oficiales, con el objetivo de robar datos personales y bancarios.\n\nSe recomienda extremar las precauciones y no facilitar información sensible a través de estos mensajes. Por otro lado, Fedelhorce y el Ayuntamiento han presentado la campaña 'Sella tu sueño', una iniciativa destinada a fomentar el consumo en el comercio local durante la temporada estival.\n\nEsta acción busca apoyar a los negocios del municipio y dinamizar la economía local. Además, continúan las actividades del Mes del Medio Ambiente en los centros educativos, con el CEIP El Chorro como escenario reciente de estas iniciativas que promueven hábitos sostenibles entre los más jóvenes.",
-        "fecha": "2026-06-14T12:05:56.176367+00:00",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande advierte sobre una campaña de SMS fraudulentos y presenta la campaña 'Sella tu sueño' para impulsar el comercio local durante el verano.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande advierte sobre una campaña de SMS fraudulentos y presenta la campaña 'Sella tu sueño' para impulsar el comercio local durante el verano.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha emitido una alerta por una campaña de SMS fraudulentos que suplantan a organismos oficiales, recomendando a los vecinos extremar precauciones para proteger sus datos personales y bancarios.\n\nEsta medida busca evitar posibles estafas y garantizar la seguridad de la ciudadanía. Por otro lado, Fedelhorce y el Ayuntamiento han presentado la campaña 'Sella tu sueño', una iniciativa destinada a fomentar el consumo en el comercio local durante la temporada estival.\n\nEsta acción pretende apoyar a los negocios del municipio y dinamizar la economía local. Además, continúan las actividades del Mes del Medio Ambiente en los centros educativos, con el CEIP El Chorro como escenario reciente de estas iniciativas que promueven hábitos sostenibles entre los más jóvenes.",
+        "fecha": "2026-06-14T15:53:03.113274+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Municipal",
         "categoria_url": "categoria/municipal/",
         "seo_keywords": [
             "Alhaurín el Grande",
             "SMS fraudulentos",
-            "campaña comercio local"
+            "comercio local verano"
         ],
         "enlace": "https://www.youtube.com/watch?v=qEIATt76ryw",
         "url": "https://www.youtube.com/watch?v=qEIATt76ryw",
         "imagen": "https://i2.ytimg.com/vi/qEIATt76ryw/hqdefault.jpg",
         "prioridad": 80,
-        "pagina": "noticias/alhaurin-el-grande-alerta-sobre-sms-fraudulentos-y-promueve-campana-de-comercio-local.html"
+        "pagina": "noticias/alhaurin-el-grande-alerta-sobre-sms-fraudulentos-y-promueve-comercio-local-este-verano.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-omhlkpw-nmc",
-        "titulo": "Presentan el cartel de la XLIII Noche Flamenca Villa de Alhaurín el Grande 2026",
+        "titulo": "Presentan cartel y artistas de la XLIII Noche Flamenca Villa de Alhaurín el Grande",
         "titulo_original": "Presentación de la XLIII Noche Flamenca 2026",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial de la 43ª Noche Flamenca con artistas destacados y la participación de peñas locales en un acto en la Plaza del Ayuntamiento.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial de la 43ª Noche Flamenca con artistas destacados y la participación de peñas locales en un acto en la Plaza del Ayuntamiento.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, a través de la Concejalía de Cultura, ha dado a conocer el cartel oficial de la XLIII Noche Flamenca Villa del Alhaurín el Grande en un acto celebrado en la Plaza del Ayuntamiento.\n\nEl festival flamenco contará con la participación de destacados artistas como la cantaora granadina Marina Heredia, acompañada por el guitarrista José Quevedo “Bolita”, el cantaor Manuel Moreno “El Pele” junto a Niño Seve, y el cuadro de baile de La Lupi, una figura representativa del flamenco malagueño.\n\nLa periodista Lourdes Gálvez del Postigo repetirá como presentadora del evento, acompañada por el guitarrista Andrés Cansino. Las entradas están ya a la venta por 15 euros en giglon.com, en la biblioteca municipal y el día del festival.",
-        "fecha": "2026-06-14T12:05:51.381724+00:00",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial y confirma artistas destacados para la XLIII Noche Flamenca, con entradas ya a la venta.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial y confirma artistas destacados para la XLIII Noche Flamenca, con entradas ya a la venta.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha dado a conocer el cartel oficial de la XLIII Noche Flamenca Villa del Alhaurín el Grande en un acto celebrado en la Plaza del Ayuntamiento, organizado por la Concejalía de Cultura.\n\nLa imagen del cartel es obra del artista local Juan Pablo Rueda y el evento contó con la presencia de numerosas peñas flamencas y vecinos que resaltaron la importancia y tradición del festival.\n\nLa periodista Lourdes Gálvez del Postigo repetirá como presentadora, acompañada por el guitarrista Andrés Cansino. Las entradas para la XLIII Noche Flamenca están disponibles por 15 euros a través de giglon.com, en la biblioteca municipal y el mismo día del festival, facilitando así el acceso a este evento cultural de gran relevancia en Alhaurín el Grande.",
+        "fecha": "2026-06-14T15:52:59.589090+00:00",
         "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "categoria": "Agenda Cultural",
+        "categoria_url": "categoria/agenda-cultural/",
         "seo_keywords": [
             "Noche Flamenca Alhaurín el Grande",
             "festival flamenco Málaga",
@@ -107,23 +107,23 @@
         "url": "https://www.youtube.com/watch?v=OmhLKpW-NMc",
         "imagen": "https://i4.ytimg.com/vi/OmhLKpW-NMc/hqdefault.jpg",
         "prioridad": 80,
-        "pagina": "noticias/presentan-el-cartel-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande-2026.html"
+        "pagina": "noticias/presentan-cartel-y-artistas-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-scib7wk-v8c",
         "titulo": "Presentan el XIX boletín ‘Nazareno’ y entregan el galardón ‘Nazareno del Año 2026’ en Alhaurín",
         "titulo_original": "Presentación del XIX boletín ‘Nazareno’ y entrega del galardón ‘Nazareno del año 2026’",
-        "descripcion": "La ermita de San Sebastián acogió la presentación del boletín ‘Nazareno’ y la entrega del premio ‘Nazareno del Año 2026’ a la Fundación Lágrimas y Favores de Málaga.",
-        "resumen": "La ermita de San Sebastián acogió la presentación del boletín ‘Nazareno’ y la entrega del premio ‘Nazareno del Año 2026’ a la Fundación Lágrimas y Favores de Málaga.",
-        "cuerpo": "El jueves 4 de junio, la ermita de San Sebastián fue el escenario de uno de los actos previos más importantes del Día de Jesús 2026 en Alhaurín el Grande. La hermana Mari Carmen Aragón, del Consejo de Redacción, presentó la XIX edición del boletín anual ‘Nazareno’, publicación emblemática de la Hermandad.\n\nPosteriormente, se entregó el galardón ‘Nazareno del Año 2026’ a la Fundación Lágrimas y Favores de Málaga, en reconocimiento a su destacada labor social y asistencial. El hermano mayor, Miguel Ángel Serrano, clausuró el evento con la presentación oficial del programa de actos y cultos para la celebración del Día de Jesús 2026.\n\nEntre las novedades, destacó la participación del coro de Julio Pardo en la procesión del domingo, que se suma a las formaciones musicales confirmadas: el Tercio “Gran Capitán” 1º de La Legión, la Agrupación Musical Virgen de los Reyes de Sevilla y la banda de Cornetas y Tambores de Nuestra Señora del Rosario de Linares de Jaén.",
-        "fecha": "2026-06-14T12:05:36.667441+00:00",
+        "descripcion": "La ermita de San Sebastián acogió la presentación del boletín anual ‘Nazareno’ y la entrega del galardón ‘Nazareno del Año 2026’ a la Fundación Lágrimas y Favores de Málaga.",
+        "resumen": "La ermita de San Sebastián acogió la presentación del boletín anual ‘Nazareno’ y la entrega del galardón ‘Nazareno del Año 2026’ a la Fundación Lágrimas y Favores de Málaga.",
+        "cuerpo": "El pasado jueves 4 de junio, la ermita de San Sebastián fue el escenario de uno de los actos previos más relevantes al Día de Jesús 2026 en Alhaurín el Grande. La presentación del XIX boletín ‘Nazareno’ estuvo a cargo de Mari Carmen Aragón, miembro del Consejo de Redacción, tras la introducción del secretario de la Hermandad, Diego Jesús Bonilla.\n\nPosteriormente, se entregó el galardón ‘Nazareno del Año 2026’ a la Fundación Lágrimas y Favores de Málaga, en reconocimiento a su destacada labor social y asistencial. El hermano mayor, Miguel Ángel Serrano, cerró el acto con la presentación oficial del programa de cultos y actividades para el Día de Jesús 2026.\n\nEntre las novedades, destacó la participación de formaciones musicales como el Tercio “Gran Capitán” 1º de La Legión, la Agrupación Musical Virgen de los Reyes de Sevilla y la banda de Cornetas y Tambores de Nuestra Señora del Rosario de Linares.",
+        "fecha": "2026-06-14T15:52:56.466417+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
-            "Día de Jesús 2026",
-            "boletín Nazareno Alhaurín el Grande",
-            "Nazareno del Año 2026"
+            "boletín Nazareno 2026",
+            "Nazareno del Año Alhaurín el Grande",
+            "Día de Jesús 2026"
         ],
         "enlace": "https://www.youtube.com/watch?v=SCIB7Wk_V8c",
         "url": "https://www.youtube.com/watch?v=SCIB7Wk_V8c",
@@ -137,15 +137,15 @@
         "titulo_original": "Celebración del Corpus Christi 2026 en Alhaurín el Grande",
         "descripcion": "Alhaurín el Grande conmemoró el Corpus Christi con una eucaristía en la parroquia de la Encarnación y una procesión que recorrió las calles con altares y música local.",
         "resumen": "Alhaurín el Grande conmemoró el Corpus Christi con una eucaristía en la parroquia de la Encarnación y una procesión que recorrió las calles con altares y música local.",
-        "cuerpo": "El domingo 7 de junio, Alhaurín el Grande vivió la festividad del Corpus Christi con una misa solemne en la parroquia de la Encarnación. Posteriormente, se realizó la tradicional procesión en la que el Santísimo Sacramento fue llevado por las calles del municipio, haciendo paradas en los altares decorados para la ocasión y bendecidos por el párroco local.\n\nLa procesión contó con la participación especial de los niños y niñas que este año recibieron la Primera Comunión, quienes acompañaron el recorrido junto a los fieles. Además, la banda de la Hermandad de Nuestro Padre Jesús Nazareno puso música a este acto religioso, que mantiene viva una tradición muy arraigada en la comunidad de Alhaurín el Grande.",
-        "fecha": "2026-06-14T12:05:30.945326+00:00",
+        "cuerpo": "El domingo 7 de junio, Alhaurín el Grande vivió la festividad del Corpus Christi con una misa solemne en la parroquia de la Encarnación. Posteriormente, el Santísimo Sacramento fue llevado en procesión por las calles del municipio, haciendo paradas en los altares tradicionales preparados para la ocasión.\n\nEstos altares fueron bendecidos por el párroco local, manteniendo viva la tradición religiosa del pueblo. La procesión contó con la participación especial de los niños y niñas que este año recibieron la Primera Comunión, quienes acompañaron el recorrido junto a los fieles.\n\nAdemás, la banda de la Hermandad de Nuestro Padre Jesús Nazareno amenizó el evento con su música, aportando un ambiente solemne y festivo a esta celebración tan arraigada en la comunidad de Alhaurín el Grande.",
+        "fecha": "2026-06-14T15:52:50.478539+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
             "Corpus Christi Alhaurín el Grande",
             "procesión Corpus Christi",
-            "fiestas religiosas Alhaurín"
+            "altares tradicionales Alhaurín"
         ],
         "enlace": "https://www.youtube.com/watch?v=znu7ypbVWjo",
         "url": "https://www.youtube.com/watch?v=znu7ypbVWjo",
@@ -155,77 +155,77 @@
     },
     {
         "id": "https-www-youtube-com-watch-v-wv0u4x95qya",
-        "titulo": "Actualidad en Alhaurín el Grande: Unidad de Orientación y actividades culturales en junio 2026",
+        "titulo": "Actualidad en Alhaurín el Grande: Unidad de Orientación, actividades y eventos locales",
         "titulo_original": "NOTICIAS ATV 11 JUNIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "La Unidad de Orientación Profesional se traslada a la Casa de la Cultura y se anuncian actividades culturales y normativas para terrazas en Alhaurín el Grande este junio.",
-        "resumen": "La Unidad de Orientación Profesional se traslada a la Casa de la Cultura y se anuncian actividades culturales y normativas para terrazas en Alhaurín el Grande este junio.",
-        "cuerpo": "La Unidad de Orientación Profesional ha cambiado su ubicación a la Casa de la Cultura, donde ofrece servicios para apoyar la inserción laboral y el desarrollo profesional de los vecinos. El concejal de Empleo, Luis Miguel Molina, ha explicado las razones del traslado y los recursos disponibles en esta nueva sede.\n\nPor otro lado, la concejala de Fiestas y Participación Ciudadana, Ana Belén Ordóñez, ha detallado el decreto que regula las actividades en las terrazas durante el verano, ya publicado en la sede electrónica del Ayuntamiento.\n\nAdemás, la Escuela de Baile de Pepa Manzanares prepara la gala benéfica \"Siguiendo tus pasos\" en el teatro municipal, con fines solidarios para Colonias Infantiles del Rocío.",
-        "fecha": "2026-06-14T12:05:26.336836+00:00",
+        "descripcion": "La Unidad de Orientación Profesional se traslada a la Casa de la Cultura y se anuncian nuevas regulaciones para terrazas y eventos benéficos en Alhaurín el Grande.",
+        "resumen": "La Unidad de Orientación Profesional se traslada a la Casa de la Cultura y se anuncian nuevas regulaciones para terrazas y eventos benéficos en Alhaurín el Grande.",
+        "cuerpo": "La Unidad de Orientación Profesional ha cambiado su ubicación a la Casa de la Cultura, donde ofrece servicios para apoyar la inserción laboral y el desarrollo profesional, según informó el concejal de Empleo, Luis Miguel Molina.\n\nEste traslado busca mejorar la accesibilidad y la atención a los vecinos. Por otro lado, la concejala de Fiestas y Participación Ciudadana, Ana Belén Ordóñez, detalló el decreto que regula las actividades en las terrazas durante el verano, ya disponible en la sede electrónica del Ayuntamiento.\n\nAdemás, la Escuela de Baile de Pepa Manzanares prepara la gala benéfica “Siguiendo tus pasos” en el teatro municipal, destinada a apoyar a las Colonias Infantiles del Rocío. En el ámbito cultural y agrícola, la Denominación de Origen celebra la 25ª Jornada Técnica de la Aceituna Aloreña el próximo jueves en Cerralba.",
+        "fecha": "2026-06-14T15:52:46.359787+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
-            "Unidad de Orientación Profesional Alhaurín",
-            "actividades culturales Alhaurín el Grande",
-            "decreto terrazas verano Alhaurín"
+            "Alhaurín el Grande",
+            "Unidad de Orientación Profesional",
+            "actividades terrazas verano"
         ],
         "enlace": "https://www.youtube.com/watch?v=Wv0U4x95QYA",
         "url": "https://www.youtube.com/watch?v=Wv0U4x95QYA",
         "imagen": "https://i4.ytimg.com/vi/Wv0U4x95QYA/hqdefault.jpg",
         "prioridad": 80,
-        "pagina": "noticias/actualidad-en-alhaurin-el-grande-unidad-de-orientacion-y-actividades-culturales-en-junio-2.html"
+        "pagina": "noticias/actualidad-en-alhaurin-el-grande-unidad-de-orientacion-actividades-y-eventos-locales.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-wamjvkubh2g",
-        "titulo": "Pleno de junio en Alhaurín el Grande aprueba festivos y destaca ayudas LEADER",
+        "titulo": "Pleno de Alhaurín el Grande aprueba festivos 2027 y destaca ayudas LEADER para el Valle",
         "titulo_original": "NOTICIAS ATV 12 JUNIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El pleno ordinario de junio en Alhaurín el Grande aprueba los festivos locales de 2027 y destaca 2,3 millones en ayudas LEADER para el desarrollo rural del Valle del Guadalhorce.",
-        "resumen": "El pleno ordinario de junio en Alhaurín el Grande aprueba los festivos locales de 2027 y destaca 2,3 millones en ayudas LEADER para el desarrollo rural del Valle del Guadalhorce.",
-        "cuerpo": "El pleno ordinario celebrado en junio en Alhaurín el Grande aprobó oficialmente los festivos locales para el año 2027 y una moción institucional que reconoce la solidaridad del municipio. Durante la sesión también se debatió y rechazó una propuesta sobre inmigración presentada por Vox.\n\nPor otro lado, el Valle del Guadalhorce recibirá 2,3 millones de euros en ayudas LEADER destinadas a impulsar proyectos de desarrollo rural, y Alhaurín el Grande ya está trabajando en iniciativas para optar a esta convocatoria.\n\nEn el ámbito cultural, la Delegación de Cultura ha invitado a la ciudadanía a asistir a la entrega del Premio Antonio Gala, que se celebrará el 20 de junio a las 21:00 horas, con invitaciones disponibles en la Biblioteca Municipal.",
-        "fecha": "2026-06-14T12:05:21.960463+00:00",
+        "descripcion": "El pleno ordinario de junio en Alhaurín el Grande aprueba los festivos locales de 2027 y destaca 2,3 millones en ayudas LEADER para proyectos rurales en el Valle del Guadalhorce.",
+        "resumen": "El pleno ordinario de junio en Alhaurín el Grande aprueba los festivos locales de 2027 y destaca 2,3 millones en ayudas LEADER para proyectos rurales en el Valle del Guadalhorce.",
+        "cuerpo": "El pleno ordinario celebrado en junio en Alhaurín el Grande aprobó oficialmente los festivos locales para el año 2027 y respaldó una moción institucional que reconoce la solidaridad de la ciudadanía local. Durante la sesión también se debatió una propuesta sobre inmigración presentada por Vox, que finalmente fue rechazada.\n\nPor otro lado, el Valle del Guadalhorce recibirá 2,3 millones de euros en ayudas LEADER destinadas a impulsar proyectos de desarrollo rural. Alhaurín el Grande ya está trabajando en iniciativas para optar a esta convocatoria, que busca fomentar el crecimiento económico y social en la comarca.\n\nAdemás, la Delegación de Cultura ha anunciado la entrega del Premio Antonio Gala el próximo 20 de junio, y el Ayuntamiento prepara la presentación oficial de la Feria de Villa del Guadalhorce 2026 para el 18 de junio en la Plaza Mayor.",
+        "fecha": "2026-06-14T15:52:34.799020+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Municipal",
         "categoria_url": "categoria/municipal/",
         "seo_keywords": [
-            "pleno Alhaurín el Grande",
-            "ayudas LEADER Valle del Guadalhorce",
-            "feria Villa del Guadalhorce 2026"
+            "Alhaurín el Grande",
+            "pleno municipal junio 2026",
+            "ayudas LEADER Valle del Guadalhorce"
         ],
         "enlace": "https://www.youtube.com/watch?v=WAmJVKUbH2g",
         "url": "https://www.youtube.com/watch?v=WAmJVKUbH2g",
         "imagen": "https://i4.ytimg.com/vi/WAmJVKUbH2g/hqdefault.jpg",
         "prioridad": 80,
-        "pagina": "noticias/pleno-de-junio-en-alhaurin-el-grande-aprueba-festivos-y-destaca-ayudas-leader.html"
+        "pagina": "noticias/pleno-de-alhaurin-el-grande-aprueba-festivos-2027-y-destaca-ayudas-leader-para-el-valle.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-tb5c0yh3ywg",
-        "titulo": "Newco Travel y Fedelhorce impulsan el turismo en Alhaurín el Grande en jornada especial",
+        "titulo": "Newco Travel y Fedelhorce impulsan el turismo en Alhaurín el Grande en jornada clave",
         "titulo_original": "Jornada en clave turística – Newco Travel y Fedelhorce",
         "descripcion": "Newco Travel y Fedelhorce organizaron un evento en la Biblioteca Municipal para fortalecer la promoción turística y destacar el papel de Alhaurín el Grande en el sector.",
         "resumen": "Newco Travel y Fedelhorce organizaron un evento en la Biblioteca Municipal para fortalecer la promoción turística y destacar el papel de Alhaurín el Grande en el sector.",
-        "cuerpo": "El pasado jueves 14 de mayo, la Biblioteca Municipal de Alhaurín el Grande acogió una jornada dedicada al turismo organizada por Newco Travel junto a Fedelhorce. El evento reunió a representantes institucionales, asociaciones y colectivos locales para analizar y promover el trabajo que realiza la agencia en el sector turístico.\n\nFrancisco Serón, cofundador de Newco Travel, abrió la sesión con una presentación sobre la trayectoria y los inicios de la agencia. Posteriormente, Sergio Pérez e Isaí Marmolejo expusieron las diferentes líneas de trabajo que desarrollan para adaptarse a las nuevas demandas del mercado.\n\nPor su parte, Fedelhorce valoró los esfuerzos para fortalecer la oferta turística local. La Diputación Provincial mostró su apoyo a la labor de Newco Travel, destacando la visibilidad que aporta a Alhaurín el Grande como referente en turismo.",
-        "fecha": "2026-06-14T12:05:17.320308+00:00",
+        "cuerpo": "El pasado jueves 14 de mayo, la Biblioteca Municipal de Alhaurín el Grande acogió una jornada dedicada al turismo, organizada por Newco Travel en colaboración con Fedelhorce. El evento reunió a representantes institucionales, asociaciones y colectivos locales para analizar y promover el trabajo que desarrolla la agencia en el sector turístico.\n\nFrancisco Serón, cofundador de Newco Travel, abrió la sesión con una presentación sobre la trayectoria y los inicios de la agencia. Posteriormente, Sergio Pérez e Isaí Marmolejo expusieron las diferentes líneas de trabajo que llevan a cabo para adaptarse a las nuevas demandas del mercado.\n\nFedelhorce valoró positivamente los esfuerzos realizados para fortalecer la oferta turística local. La Diputación Provincial mostró su apoyo a la iniciativa, destacando la visibilidad que Newco Travel aporta a Alhaurín el Grande como referente en el sector turístico.",
+        "fecha": "2026-06-14T15:52:30.861005+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Turismo y Patrimonio",
         "categoria_url": "categoria/turismo-y-patrimonio/",
         "seo_keywords": [
             "Newco Travel Alhaurín el Grande",
-            "promoción turística Alhaurín",
-            "Fedelhorce turismo local"
+            "evento turismo Alhaurín",
+            "promoción turística Fedelhorce"
         ],
         "enlace": "https://www.youtube.com/watch?v=TB5c0yh3yWg",
         "url": "https://www.youtube.com/watch?v=TB5c0yh3yWg",
         "imagen": "https://i1.ytimg.com/vi/TB5c0yh3yWg/hqdefault.jpg",
         "prioridad": 80,
-        "pagina": "noticias/newco-travel-y-fedelhorce-impulsan-el-turismo-en-alhaurin-el-grande-en-jornada-especial.html"
+        "pagina": "noticias/newco-travel-y-fedelhorce-impulsan-el-turismo-en-alhaurin-el-grande-en-jornada-clave.html"
     },
     {
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-abre-una-nueva-convocatoria-de-ayudas",
         "titulo": "Ayuntamiento de Alhaurín el Grande lanza ayudas para material escolar 2024",
         "titulo_original": "El Ayuntamiento abre una nueva convocatoria de ayudas para la adquisición de material escolar",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande abre una nueva convocatoria de ayudas para material escolar dirigida a familias vulnerables con menores de 3 a 16 años.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande abre una nueva convocatoria de ayudas para material escolar dirigida a familias vulnerables con menores de 3 a 16 años.",
-        "cuerpo": "La Concejalía de Bienestar Social del Ayuntamiento de Alhaurín el Grande ha puesto en marcha una nueva convocatoria de ayudas para la adquisición de material escolar. Esta iniciativa está destinada a apoyar a las familias en situación de vulnerabilidad que tengan hijos o hijas en edad escolar comprendida entre los 3 y 16 años.\n\nEl objetivo principal es facilitar el acceso a los recursos educativos necesarios para el desarrollo académico de los menores. Las ayudas buscan aliviar la carga económica que supone la compra de material escolar al inicio del curso, contribuyendo así a la igualdad de oportunidades en el ámbito educativo.\n\nLas familias interesadas deben cumplir con los requisitos establecidos por el Ayuntamiento y presentar la documentación requerida para optar a esta subvención. Más información y detalles sobre el proceso de solicitud estarán disponibles en las oficinas municipales y en los canales oficiales del Ayuntamiento.",
+        "descripcion": "La Concejalía de Bienestar Social de Alhaurín el Grande abre convocatoria de ayudas para material escolar destinadas a familias vulnerables con menores de 3 a 16 años.",
+        "resumen": "La Concejalía de Bienestar Social de Alhaurín el Grande abre convocatoria de ayudas para material escolar destinadas a familias vulnerables con menores de 3 a 16 años.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, a través de la Concejalía de Bienestar Social, ha puesto en marcha una nueva convocatoria de ayudas para la adquisición de material escolar. Esta iniciativa está dirigida a familias con menores de entre 3 y 16 años que se encuentren en situación de vulnerabilidad, con el fin de facilitar el acceso a los recursos educativos necesarios para el curso escolar.\n\nLas ayudas buscan apoyar a los hogares con dificultades económicas para que sus hijos puedan contar con el material adecuado para su formación. Los interesados pueden informarse sobre los requisitos y el proceso de solicitud en las oficinas municipales o en la página web oficial del Ayuntamiento de Alhaurín el Grande.",
         "fecha": "2026-06-12T10:19:23+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -247,7 +247,7 @@
         "titulo_original": "El Pleno aprueba los festivos locales de Alhaurín el Grande para 2027",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande ha confirmado los días 3 y 28 de mayo como festivos locales para el año 2027 tras la aprobación en el Pleno Ordinario.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande ha confirmado los días 3 y 28 de mayo como festivos locales para el año 2027 tras la aprobación en el Pleno Ordinario.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha oficializado los días 3 y 28 de mayo como festivos locales para el año 2027. Esta decisión fue tomada durante la sesión del Pleno Ordinario, donde se debatieron y aprobaron las fechas propuestas para las jornadas no laborables en el municipio.\n\nLa designación de estos días como festivos locales permitirá a los vecinos de Alhaurín el Grande disfrutar de jornadas de descanso y actividades especiales en el calendario del próximo año. La medida responde a la planificación anual del Ayuntamiento para organizar el calendario laboral y festivo del municipio.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha oficializado los días 3 y 28 de mayo como festivos locales para el año 2027. Esta decisión fue tomada durante la sesión del Pleno Ordinario, donde se debatieron y aprobaron las fechas propuestas para el calendario laboral local.\n\nLa elección de estas jornadas busca facilitar la organización de actividades y celebraciones propias del municipio. Con esta aprobación, los vecinos y empresas de Alhaurín el Grande podrán planificar con antelación sus actividades para el próximo año, respetando los días de descanso establecidos por el consistorio.",
         "fecha": "2026-06-12T10:05:39+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -255,7 +255,7 @@
         "seo_keywords": [
             "festivos locales Alhaurín el Grande 2027",
             "días festivos Alhaurín el Grande",
-            "calendario festivo Alhaurín el Grande"
+            "calendario laboral Alhaurín el Grande"
         ],
         "enlace": "https://alhaurinelgrande.es/el-pleno-aprueba-los-festivos-locales-de-alhaurin-el-grande-para-2027/",
         "url": "https://alhaurinelgrande.es/el-pleno-aprueba-los-festivos-locales-de-alhaurin-el-grande-para-2027/",
@@ -269,7 +269,7 @@
         "titulo_original": "Alhaurín el Grande prepara nuevos proyectos para optar a las ayudas LEADER 2023-2027 dotadas con 2,3 millones de euros",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande prepara iniciativas para optar a las ayudas LEADER 2023-2027, que destinan 2,3 millones de euros al desarrollo económico y social del Valle del Guadalhorce.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande prepara iniciativas para optar a las ayudas LEADER 2023-2027, que destinan 2,3 millones de euros al desarrollo económico y social del Valle del Guadalhorce.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande está desarrollando varios proyectos con el objetivo de presentarse a la convocatoria de ayudas LEADER 2023-2027. Estas subvenciones, que cuentan con una dotación total de 2,3 millones de euros, buscan fomentar el desarrollo económico y social en el Valle del Guadalhorce.\n\nLas iniciativas locales se centran en potenciar sectores clave para el municipio, promoviendo la innovación, la sostenibilidad y la mejora de la calidad de vida de sus habitantes. La participación en esta convocatoria permitirá a Alhaurín el Grande acceder a recursos que impulsen el crecimiento y la diversificación económica en la comarca.\n\nEl Ayuntamiento continúa trabajando en la definición y consolidación de estos proyectos para garantizar una candidatura sólida y competitiva que contribuya al progreso del territorio y al bienestar de su población.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande está trabajando en la elaboración de varios proyectos con el objetivo de presentarse a la convocatoria de ayudas LEADER 2023-2027. Estas subvenciones, dotadas con un total de 2,3 millones de euros, están destinadas a fomentar el desarrollo económico y social en el Valle del Guadalhorce.\n\nLas iniciativas que se preparan buscan aprovechar esta oportunidad para impulsar el crecimiento local, mejorar infraestructuras y apoyar a sectores clave del municipio. La participación en esta convocatoria refleja el compromiso del Ayuntamiento con el progreso sostenible y la mejora de la calidad de vida de sus habitantes.",
         "fecha": "2026-06-12T09:29:29+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -291,7 +291,7 @@
         "titulo_original": "El Ayuntamiento publica el decreto que regula las actuaciones en terrazas y veladores durante el verano",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande publica un decreto que simplifica los trámites para terrazas y veladores, vigente hasta el 6 de septiembre.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande publica un decreto que simplifica los trámites para terrazas y veladores, vigente hasta el 6 de septiembre.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha publicado un decreto que regula las actuaciones en terrazas y veladores durante la temporada de verano. Esta normativa estará vigente hasta el próximo 6 de septiembre y busca facilitar la gestión de los espacios al aire libre destinados a la hostelería.\n\nUna de las principales novedades del decreto es la simplificación de los trámites administrativos para los establecimientos hosteleros, lo que permitirá una mayor agilidad en la instalación y uso de terrazas. La medida pretende apoyar al sector y mejorar la experiencia de los clientes durante los meses estivales en el municipio.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha publicado un decreto que regula las actuaciones en terrazas y veladores durante la temporada de verano. Esta normativa estará vigente hasta el próximo 6 de septiembre y busca facilitar la gestión administrativa para los establecimientos hosteleros del municipio.\n\nLa principal novedad del decreto es la simplificación de los trámites, lo que permitirá a los negocios de hostelería adaptar sus espacios exteriores de manera más ágil y eficiente. Esta medida responde a la necesidad de apoyar al sector y mejorar la experiencia de los clientes durante los meses estivales en Alhaurín el Grande.",
         "fecha": "2026-06-11T11:54:07+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -311,9 +311,9 @@
         "id": "https-rtvalhaurinelgrande-com-corpus-christi-2",
         "titulo": "Alhaurín el Grande celebra el Corpus Christi con misa y procesión solemne",
         "titulo_original": "CORPUS CHRISTI",
-        "descripcion": "La festividad del Corpus Christi en Alhaurín el Grande contó con una misa en la Parroquia de la Encarnación y una procesión con niños de Primera Comunión y la banda de la Hermandad de Jesús Nazareno.",
-        "resumen": "La festividad del Corpus Christi en Alhaurín el Grande contó con una misa en la Parroquia de la Encarnación y una procesión con niños de Primera Comunión y la banda de la Hermandad de Jesús Nazareno.",
-        "cuerpo": "Alhaurín el Grande conmemoró el Corpus Christi con una misa solemne en la Parroquia de la Encarnación, que reunió a numerosos fieles del municipio. Tras la ceremonia religiosa, se llevó a cabo la tradicional procesión del Santísimo Sacramento bajo palio, un momento de gran devoción para la comunidad local.\n\nLa procesión estuvo acompañada por los niños y niñas que este año han recibido su Primera Comunión, quienes participaron activamente en el recorrido. Además, la banda de la Hermandad de Nuestro Padre Jesús Nazareno puso música a este acto religioso, que recorrió las calles del centro del pueblo, fortaleciendo las tradiciones y la identidad cultural de Alhaurín el Grande.",
+        "descripcion": "La festividad del Corpus Christi en Alhaurín el Grande contó con una misa en la Parroquia de la Encarnación y una procesión con la participación de niños de Primera Comunión y la banda local.",
+        "resumen": "La festividad del Corpus Christi en Alhaurín el Grande contó con una misa en la Parroquia de la Encarnación y una procesión con la participación de niños de Primera Comunión y la banda local.",
+        "cuerpo": "Alhaurín el Grande conmemoró la festividad del Corpus Christi con una misa solemne en la Parroquia de la Encarnación. Posteriormente, se llevó a cabo la tradicional procesión del Santísimo Sacramento bajo palio, que recorrió las calles del municipio.\n\nLa comitiva estuvo acompañada por los niños y niñas que este año recibieron su Primera Comunión, así como por la banda de la Hermandad de Nuestro Padre Jesús Nazareno. Esta celebración religiosa es una de las más importantes para la comunidad local y refleja la devoción y participación activa de los vecinos en las tradiciones religiosas del pueblo.",
         "fecha": "2026-06-11T11:32:50+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Fiestas y Tradiciones",
@@ -331,17 +331,17 @@
     },
     {
         "id": "https-rtvalhaurinelgrande-com-presentacion-del-xix-boletin-nazareno-y-entrega-de",
-        "titulo": "Presentan el XIX boletín ‘Nazareno’ y entregan el galardón ‘Nazareno del Año 2026’ en Alhaurín",
+        "titulo": "Presentan el XIX boletín ‘Nazareno’ y entregan el galardón ‘Nazareno del Año 2026’",
         "titulo_original": "Presentación del XIX boletín ‘Nazareno’ y entrega del galardón ‘Nazareno del año 2026’",
-        "descripcion": "La ermita de San Sebastián acogió la presentación del XIX boletín ‘Nazareno’ y la entrega del premio ‘Nazareno del Año 2026’, en un acto previo al Día de Jesús 2026 en Alhaurín el Grande.",
-        "resumen": "La ermita de San Sebastián acogió la presentación del XIX boletín ‘Nazareno’ y la entrega del premio ‘Nazareno del Año 2026’, en un acto previo al Día de Jesús 2026 en Alhaurín el Grande.",
-        "cuerpo": "El jueves 4 de junio, la ermita de San Sebastián fue el escenario de uno de los eventos más destacados previos al Día de Jesús 2026 en Alhaurín el Grande. El acto comenzó con la intervención de Diego Jesús Bonilla, secretario de la Hermandad, quien condujo la presentación del XIX boletín ‘Nazareno’.\n\nPosteriormente, la hermana Mari Carmen Aragón, miembro del Consejo de Redacción de la revista, tomó la palabra para presentar oficialmente el boletín. Durante la ceremonia también se entregó el galardón ‘Nazareno del Año 2026’, reconociendo la dedicación y compromiso de un destacado miembro de la comunidad.\n\nEste evento refuerza la tradición y el espíritu de la Hermandad en la localidad.",
+        "descripcion": "La ermita de San Sebastián acogió la presentación del boletín ‘Nazareno’ y la entrega del galardón ‘Nazareno del Año 2026’, actos previos al Día de Jesús 2026 en Alhaurín el Grande.",
+        "resumen": "La ermita de San Sebastián acogió la presentación del boletín ‘Nazareno’ y la entrega del galardón ‘Nazareno del Año 2026’, actos previos al Día de Jesús 2026 en Alhaurín el Grande.",
+        "cuerpo": "El jueves 4 de junio, la ermita de San Sebastián fue el escenario de uno de los eventos más destacados previos al Día de Jesús 2026 en Alhaurín el Grande. La ceremonia comenzó con la intervención de Diego Jesús Bonilla, secretario de la Hermandad, quien cedió la palabra a Mari Carmen Aragón, miembro del Consejo de Redacción de la revista ‘Nazareno’.\n\nDurante el acto, se presentó oficialmente el XIX boletín ‘Nazareno’, una publicación que recoge la historia y actividades de la Hermandad. Además, se hizo entrega del galardón ‘Nazareno del Año 2026’, reconocimiento que destaca la labor y compromiso con la comunidad y la tradición local.",
         "fecha": "2026-06-11T11:27:08+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
-            "boletín Nazareno Alhaurín el Grande",
+            "boletín Nazareno",
             "Nazareno del Año 2026",
             "Día de Jesús Alhaurín el Grande"
         ],
@@ -349,15 +349,15 @@
         "url": "https://rtvalhaurinelgrande.com/presentacion-del-xix-boletin-nazareno-y-entrega-del-galardon-nazareno-del-ano-2026/",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/06/nazareno-del-ano-300x158.jpg",
         "prioridad": 90,
-        "pagina": "noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026-en-alhaurin-2.html"
+        "pagina": "noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026.html"
     },
     {
         "id": "https-rtvalhaurinelgrande-com-presentacion-de-la-xliii-noche-flamenca-2026",
-        "titulo": "Presentan el cartel oficial de la XLIII Noche Flamenca Villa de Alhaurín el Grande 2026",
+        "titulo": "Presentan el cartel oficial de la XLIII Noche Flamenca Villa de Alhaurín el Grande",
         "titulo_original": "Presentación de la XLIII Noche Flamenca 2026",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha presentado el cartel oficial de la 43ª edición de la Noche Flamenca, con una imagen del artista local Juan Pablo Rueda en un acto en la Plaza del Ayuntamiento.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande ha presentado el cartel oficial de la 43ª edición de la Noche Flamenca, con una imagen del artista local Juan Pablo Rueda en un acto en la Plaza del Ayuntamiento.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, a través de la Concejalía de Cultura, organizó la presentación del cartel oficial de la XLIII Noche Flamenca Villa de Alhaurín el Grande 2026. El evento tuvo lugar en la Plaza del Ayuntamiento y contó con la asistencia de numerosos vecinos y amantes del flamenco.\n\nEl cartel, que representa la esencia de esta tradicional cita cultural, es obra del artista local Juan Pablo Rueda. Esta imagen refleja el compromiso del municipio con la promoción del flamenco y el apoyo a los creadores de la localidad, consolidando la Noche Flamenca como una de las celebraciones más destacadas del calendario cultural de Alhaurín el Grande.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande presenta el cartel de la 43ª Noche Flamenca, obra del artista local Juan Pablo Rueda, en un acto celebrado en la Plaza del Ayuntamiento.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande presenta el cartel de la 43ª Noche Flamenca, obra del artista local Juan Pablo Rueda, en un acto celebrado en la Plaza del Ayuntamiento.",
+        "cuerpo": "La Concejalía de Cultura del Ayuntamiento de Alhaurín el Grande organizó la presentación oficial del cartel de la XLIII Noche Flamenca Villa del Alhaurín el Grande. El evento tuvo lugar en la Plaza del Ayuntamiento y contó con la asistencia de numerosos vecinos y amantes del flamenco.\n\nEl cartel de esta edición es una fotografía creada por el artista local Juan Pablo Rueda, que refleja la esencia y tradición del flamenco en la localidad. La Noche Flamenca es una cita cultural destacada en Alhaurín el Grande, que cada año reúne a artistas y público para celebrar este género musical tan arraigado en la región.",
         "fecha": "2026-06-11T11:21:47+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Agenda Cultural",
@@ -371,7 +371,7 @@
         "url": "https://rtvalhaurinelgrande.com/presentacion-de-la-xliii-noche-flamenca-2026/",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/06/flamenco-300x138.jpg",
         "prioridad": 90,
-        "pagina": "noticias/presentan-el-cartel-oficial-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande-2026.html"
+        "pagina": "noticias/presentan-el-cartel-oficial-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande.html"
     },
     {
         "id": "https-rtvalhaurinelgrande-com-presentacion-de-la-nueva-tunica-procesional-y-otra",
@@ -379,7 +379,7 @@
         "titulo_original": "Presentación de la nueva túnica procesional y otras piezas. | Hdad. Ntro Padre Jesús Nazareno",
         "descripcion": "La Hermandad de Nuestro Padre Jesús Nazareno de San Sebastián presentó su nueva túnica procesional bordada en oro sobre terciopelo morado, diseñada y confeccionada por el taller de la Hermandad.",
         "resumen": "La Hermandad de Nuestro Padre Jesús Nazareno de San Sebastián presentó su nueva túnica procesional bordada en oro sobre terciopelo morado, diseñada y confeccionada por el taller de la Hermandad.",
-        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno de San Sebastián de Alhaurín el Grande ha dado a conocer su nueva túnica procesional, una pieza elaborada con terciopelo morado y bordada en oro. Esta prenda ha sido diseñada por Javier Nieto y confeccionada en el taller propio de la Hermandad, con financiación íntegra de sus integrantes.\n\nAdemás de la túnica, durante el acto de presentación se mostraron otras piezas relacionadas con la cofradía, reforzando el compromiso y la tradición de esta institución local. La iniciativa refleja el esfuerzo y la dedicación de los miembros de la Hermandad para mantener viva la devoción y el patrimonio cultural de Alhaurín el Grande.",
+        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno de San Sebastián celebró la presentación oficial de su nueva túnica procesional el pasado sábado. Esta pieza destaca por su bordado en oro sobre terciopelo morado y ha sido confeccionada íntegramente en el taller propio de la Hermandad, bajo el diseño del artista Javier Nieto.\n\nLa creación de esta túnica ha sido posible gracias a la financiación de los propios integrantes de la Hermandad. Durante el acto, además de la túnica, se dieron a conocer otras piezas relacionadas con la vestimenta procesional, reforzando así el compromiso de la Hermandad con la tradición y el cuidado de sus símbolos.\n\nEste evento supone un paso importante para la Hermandad en la preparación de sus próximas celebraciones religiosas en Alhaurín el Grande.",
         "fecha": "2026-06-11T11:16:54+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Fiestas y Tradiciones",
@@ -399,9 +399,9 @@
         "id": "https-alhaurinelgrande-es-la-unidad-de-orientacion-profesional-traslada-la-atenc",
         "titulo": "La Unidad de Orientación Profesional se traslada a la Casa de la Cultura en Alhaurín el Grande",
         "titulo_original": "La Unidad de Orientación Profesional traslada la atención al público a la Casa de la Cultura para mejorar la accesibilidad del servicio",
-        "descripcion": "La Concejalía de Empleo de Alhaurín el Grande traslada la atención al público de la Unidad de Orientación Profesional a la Casa de la Cultura para mejorar la accesibilidad del servicio.",
-        "resumen": "La Concejalía de Empleo de Alhaurín el Grande traslada la atención al público de la Unidad de Orientación Profesional a la Casa de la Cultura para mejorar la accesibilidad del servicio.",
-        "cuerpo": "La Concejalía de Empleo de Alhaurín el Grande ha anunciado el traslado de la Unidad de Orientación Profesional a la Casa de la Cultura, respondiendo a las solicitudes de la ciudadanía para facilitar el acceso a este servicio.\n\nEste cambio busca ofrecer un espacio más accesible y cómodo para los usuarios que requieren asesoramiento laboral y profesional. Además, desde la Concejalía recuerdan que las sesiones de atención gratuita continuarán realizándose en esta nueva ubicación durante los meses de junio y julio.\n\nLos interesados pueden acudir en las fechas previstas para recibir orientación personalizada que les ayude en su desarrollo profesional y búsqueda de empleo.",
+        "descripcion": "La Concejalía de Empleo de Alhaurín el Grande traslada la atención al público de la Unidad de Orientación Profesional a la Casa de la Cultura para mejorar la accesibilidad.",
+        "resumen": "La Concejalía de Empleo de Alhaurín el Grande traslada la atención al público de la Unidad de Orientación Profesional a la Casa de la Cultura para mejorar la accesibilidad.",
+        "cuerpo": "La Concejalía de Empleo de Alhaurín el Grande ha anunciado el cambio de ubicación de la Unidad de Orientación Profesional, que a partir de ahora atenderá al público en la Casa de la Cultura. Esta decisión responde a una solicitud ciudadana para facilitar el acceso a este servicio esencial.\n\nAdemás, se recuerdan las fechas previstas para las sesiones gratuitas de orientación durante los meses de junio y julio. Este traslado busca ofrecer un espacio más accesible y cómodo para los usuarios, mejorando la experiencia y la calidad de la atención profesional en el municipio.",
         "fecha": "2026-06-11T11:03:13+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -409,7 +409,7 @@
         "seo_keywords": [
             "Unidad de Orientación Profesional",
             "Casa de la Cultura Alhaurín el Grande",
-            "servicio de empleo Alhaurín"
+            "Concejalía de Empleo Alhaurín"
         ],
         "enlace": "https://alhaurinelgrande.es/la-unidad-de-orientacion-profesional-traslada-la-atencion-al-publico-a-la-casa-de-la-cultura-para-mejorar-la-accesibilidad-del-servicio/",
         "url": "https://alhaurinelgrande.es/la-unidad-de-orientacion-profesional-traslada-la-atencion-al-publico-a-la-casa-de-la-cultura-para-mejorar-la-accesibilidad-del-servicio/",
@@ -421,9 +421,9 @@
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-y-fedelhorce-presentan-la-campana-de-v",
         "titulo": "Alhaurín el Grande lanza campaña 'Sella tu sueño' para impulsar el comercio local en verano",
         "titulo_original": "El Ayuntamiento y Fedelhorce presentan la campaña de verano 2026 “sella tu sueño” para impulsar el comercio local y premiar la fidelidad de los clientes",
-        "descripcion": "El Ayuntamiento y Fedelhorce presentan 'Sella tu sueño', una campaña de verano que premiará la fidelidad de los clientes con sorteos y descuentos en el comercio local.",
-        "resumen": "El Ayuntamiento y Fedelhorce presentan 'Sella tu sueño', una campaña de verano que premiará la fidelidad de los clientes con sorteos y descuentos en el comercio local.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, en colaboración con Fedelhorce y el área de Desarrollo Económico, ha puesto en marcha la campaña de verano 2026 denominada 'Sella tu sueño'. Esta iniciativa busca fomentar las compras en los comercios locales mediante un sistema de fidelización que ofrece atractivos premios a los clientes que participen.\n\nEntre los incentivos que se sortearán destacan tarjetas monedero para gastar en establecimientos del municipio, cenas para cuatro personas en restaurantes locales y un viaje familiar al parque temático Puy du Fou. La campaña pretende dinamizar la economía local durante la temporada estival y fortalecer la relación entre comerciantes y consumidores en Alhaurín el Grande.",
+        "descripcion": "El Ayuntamiento y Fedelhorce presentan 'Sella tu sueño', una campaña que premiará la fidelidad de los clientes con sorteos de tarjetas monedero, cenas y un viaje familiar.",
+        "resumen": "El Ayuntamiento y Fedelhorce presentan 'Sella tu sueño', una campaña que premiará la fidelidad de los clientes con sorteos de tarjetas monedero, cenas y un viaje familiar.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, en colaboración con Fedelhorce y el área de Desarrollo Económico, ha puesto en marcha la campaña de verano 2026 'Sella tu sueño' para fomentar el comercio local. Esta iniciativa busca incentivar las compras en los establecimientos del municipio mediante un sistema de fidelización que premiará a los clientes.\n\nLos participantes que realicen sus compras en los comercios adheridos podrán optar a diversos premios, entre los que se incluyen tarjetas monedero, cenas para cuatro personas y un viaje familiar a Puy du Fou. La campaña pretende dinamizar la economía local y fortalecer la relación entre comerciantes y consumidores durante la temporada estival.",
         "fecha": "2026-06-11T10:11:51+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Comercio y Empresa",
@@ -431,7 +431,7 @@
         "seo_keywords": [
             "campaña verano 2026 Alhaurín el Grande",
             "comercio local Alhaurín el Grande",
-            "Sella tu sueño Fedelhorce"
+            "premios fidelidad clientes"
         ],
         "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-y-fedelhorce-presentan-la-campana-de-verano-2026-sella-tu-sueno-para-impulsar-el-comercio-local-y-premiar-la-fidelidad-de-los-clientes/",
         "url": "https://alhaurinelgrande.es/el-ayuntamiento-y-fedelhorce-presentan-la-campana-de-verano-2026-sella-tu-sueno-para-impulsar-el-comercio-local-y-premiar-la-fidelidad-de-los-clientes/",
@@ -445,15 +445,15 @@
         "titulo_original": "La Casa Museo Antonio Gala registra su mejor mes histórico de visitas en mayo",
         "descripcion": "La Casa Museo Antonio Gala en Alhaurín el Grande registra su mejor mes de visitas, consolidándose como un referente cultural con más de 300 reseñas y valoración excelente.",
         "resumen": "La Casa Museo Antonio Gala en Alhaurín el Grande registra su mejor mes de visitas, consolidándose como un referente cultural con más de 300 reseñas y valoración excelente.",
-        "cuerpo": "La Casa Museo Antonio Gala – La Baltasara ha experimentado un crecimiento notable en el número de visitantes durante el mes de mayo, alcanzando su récord histórico. Este aumento refleja el interés creciente por la cultura y el legado del escritor en Alhaurín el Grande.\n\nAdemás, la Casa Museo ha recibido más de 300 reseñas en plataformas digitales, donde mantiene una valoración de 'excelente', lo que destaca la calidad de la experiencia ofrecida a los visitantes. Este éxito posiciona a La Baltasara como un punto de referencia cultural en la comarca, impulsando el turismo local y promoviendo el patrimonio literario.\n\nLa valoración positiva y el incremento de visitas evidencian el compromiso del Ayuntamiento de Alhaurín el Grande con la promoción cultural y la conservación del legado de Antonio Gala.",
+        "cuerpo": "La Casa Museo Antonio Gala – La Baltasara ha experimentado un crecimiento notable en el número de visitantes durante el mes de mayo, alcanzando su récord histórico. Este aumento refleja el interés creciente por la cultura y el patrimonio local en Alhaurín el Grande.\n\nAdemás, la casa museo ha superado las 300 reseñas en plataformas digitales, donde mantiene una valoración de 'excelente', lo que destaca la calidad de la experiencia ofrecida a los visitantes. Este éxito contribuye a posicionar a La Baltasara como un punto de referencia cultural en la región, impulsando el turismo y la difusión del legado del escritor Antonio Gala.",
         "fecha": "2026-06-09T11:11:10+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Turismo y Patrimonio",
         "categoria_url": "categoria/turismo-y-patrimonio/",
         "seo_keywords": [
             "Casa Museo Antonio Gala",
-            "visitas mayo récord",
-            "Alhaurín el Grande turismo"
+            "La Baltasara Alhaurín el Grande",
+            "visitas museo mayo"
         ],
         "enlace": "https://alhaurinelgrande.es/la-casa-museo-antonio-gala-registra-su-mejor-mes-historico-de-visitas-en-mayo/",
         "url": "https://alhaurinelgrande.es/la-casa-museo-antonio-gala-registra-su-mejor-mes-historico-de-visitas-en-mayo/",
@@ -463,11 +463,11 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-32642-presentacion-de-la-xix-edicion-del",
-        "titulo": "Presentan el XIX Boletín Nazareno y entregan el Nazareno del Año 2026 en Alhaurín el Grande",
+        "titulo": "Presentan la XIX Edición del Boletín Nazareno y entregan el Nazareno del Año 2026 en Alhaurín",
         "titulo_original": "PRESENTACIÓN DE LA XIX EDICIÓN DEL BOLETÍN NAZARENO Y ENTREGA DEL NAZARENO DEL AÑO 2026",
-        "descripcion": "La Ermita de San Sebastián acogió la presentación del Boletín Nazareno, la entrega del Nazareno del Año 2026 y la programación del Día de Jesús 2026 en Alhaurín el Grande.",
-        "resumen": "La Ermita de San Sebastián acogió la presentación del Boletín Nazareno, la entrega del Nazareno del Año 2026 y la programación del Día de Jesús 2026 en Alhaurín el Grande.",
-        "cuerpo": "El pasado jueves 4 de junio, la Ermita de San Sebastián en Alhaurín el Grande fue el escenario de la presentación de la XIX edición del Boletín Nazareno, una publicación que recoge la historia y actividades de la Hermandad Nuestro Padre Jesús Nazareno.\n\nDurante el acto también se entregó el galardón “Nazareno del Año 2026”, un reconocimiento a la dedicación y compromiso con la Hermandad y la Semana Santa local. Además, se dio a conocer la programación oficial del Día de Jesús 2026, que incluye diversas actividades y eventos religiosos y culturales que se celebrarán en el municipio.\n\nEstos actos forman parte de los preparativos previos a la Semana de Gloria, una de las festividades más importantes para la comunidad de Alhaurín el Grande.",
+        "descripcion": "La Ermita de San Sebastián acogió la presentación del Boletín Nazareno, la entrega del galardón Nazareno del Año 2026 y la programación del Día de Jesús 2026 en Alhaurín el Grande.",
+        "resumen": "La Ermita de San Sebastián acogió la presentación del Boletín Nazareno, la entrega del galardón Nazareno del Año 2026 y la programación del Día de Jesús 2026 en Alhaurín el Grande.",
+        "cuerpo": "El pasado jueves 4 de junio, la Ermita de San Sebastián en Alhaurín el Grande fue el escenario de la presentación de la XIX Edición del Boletín Nazareno, una publicación que recoge las actividades y tradiciones de la Hermandad Nuestro Padre Jesús Nazareno.\n\nDurante el acto, también se entregó el galardón Nazareno del Año 2026, un reconocimiento especial que destaca la dedicación y compromiso con la Hermandad y sus valores. Además, se dio a conocer la programación oficial del Día de Jesús 2026, evento central en la agenda religiosa y cultural del municipio.\n\nEstas actividades forman parte de los preparativos previos a la Semana de Gloria, que congrega a numerosos vecinos y visitantes en torno a las tradiciones nazarenas de Alhaurín el Grande.",
         "fecha": "2026-06-09T08:22:07+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
@@ -475,13 +475,13 @@
         "seo_keywords": [
             "Boletín Nazareno Alhaurín el Grande",
             "Nazareno del Año 2026",
-            "Semana Santa Alhaurín el Grande"
+            "Día de Jesús 2026"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/32642/presentacion-de-la-xix-edicion-del-boletin-nazareno-y-entrega-del-nazareno-del-ano-2026/",
         "url": "https://www.nuestropadrejesusnazareno.com/32642/presentacion-de-la-xix-edicion-del-boletin-nazareno-y-entrega-del-nazareno-del-ano-2026/",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/ARB2470.jpg",
         "prioridad": 95,
-        "pagina": "noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026-en-alhaurin-el-grand.html"
+        "pagina": "noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026-en-alhau.html"
     },
     {
         "id": "https-alhaurinelgrande-es-bando-de-alcaldia-celebraciones-dia-de-jesus-2026",
@@ -489,15 +489,15 @@
         "titulo_original": "BANDO DE ALCALDÍA – CELEBRACIONES DÍA DE JESÚS 2026",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande invita a la comunidad a participar en los actos y cultos solemnes en honor al Día de Jesús 2026, fomentando la unión y tradición local.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande invita a la comunidad a participar en los actos y cultos solemnes en honor al Día de Jesús 2026, fomentando la unión y tradición local.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha emitido un bando de alcaldía para informar y convocar a todos los vecinos a las celebraciones del Día de Jesús 2026. Estas actividades incluyen actos religiosos y culturales que buscan mantener viva la tradición y fortalecer el sentido de comunidad en el municipio.\n\nSe hace un llamamiento especial a la participación activa de los ciudadanos en los cultos solemnes y eventos organizados, con el fin de honrar esta fecha tan significativa para el pueblo. La colaboración y el respeto durante las celebraciones son fundamentales para el éxito de estas jornadas festivas.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha emitido un bando de alcaldía para informar y convocar a todos los vecinos a las celebraciones del Día de Jesús 2026. Estas actividades incluyen actos religiosos y culturales que buscan mantener viva la tradición y fortalecer el sentido de comunidad en el municipio.\n\nSe hace un llamamiento especial a los participantes para que colaboren en el buen desarrollo de los eventos, respetando las normas establecidas y mostrando el compromiso con las costumbres locales. La programación completa y detalles adicionales serán comunicados próximamente para garantizar la máxima participación y organización.",
         "fecha": "2026-06-08T12:10:37+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
             "Día de Jesús Alhaurín el Grande",
-            "celebraciones religiosas 2026",
-            "fiestas tradicionales Alhaurín"
+            "celebraciones religiosas Alhaurín",
+            "fiestas tradicionales Alhaurín el Grande"
         ],
         "enlace": "https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-jesus-2026/",
         "url": "https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-jesus-2026/",
@@ -509,9 +509,9 @@
         "id": "https-www-nuestropadrejesusnazareno-com-32562-la-voz-de-los-boinas-moradas-a-tra",
         "titulo": "Los Boinas Moradas celebran su 30 aniversario en la VI Tertulia de la Hermandad en Alhaurín el",
         "titulo_original": "LA VOZ DE LOS «BOINAS MORADAS» A TRAVÉS DE LA DEVOCIÓN Y LA HISTORIA",
-        "descripcion": "El Grupo Joven de la Hermandad Nuestro Padre Jesús Nazareno organizó la VI Tertulia en la ermita de San Sebastián, destacando la participación de los Boinas Moradas por su 30 aniversario.",
-        "resumen": "El Grupo Joven de la Hermandad Nuestro Padre Jesús Nazareno organizó la VI Tertulia en la ermita de San Sebastián, destacando la participación de los Boinas Moradas por su 30 aniversario.",
-        "cuerpo": "El pasado 3 de junio, la ermita de San Sebastián acogió la VI Tertulia organizada por el Grupo Joven de la Real Hermandad Nuestro Padre Jesús Nazareno. Este evento contó con la destacada participación de los integrantes de los Boinas Moradas, quienes celebraron su 30 aniversario.\n\nLa tertulia, moderada por la hermana Irene Pérez, permitió a los asistentes dialogar sobre la historia y la devoción que caracteriza a este grupo emblemático de Alhaurín el Grande. Durante la reunión, los tertulianos compartieron experiencias y anécdotas que reflejan la importancia de los Boinas Moradas en la tradición local y su papel dentro de la Hermandad.\n\nEsta iniciativa busca fortalecer los lazos entre los jóvenes y mantener viva la memoria histórica y espiritual de la comunidad, fomentando la participación activa en las actividades religiosas y culturales del municipio.",
+        "descripcion": "El Grupo Joven de la Hermandad Nuestro Padre Jesús Nazareno organizó la VI Tertulia en la ermita de San Sebastián, con la participación especial de los Boinas Moradas por su 30 aniversario.",
+        "resumen": "El Grupo Joven de la Hermandad Nuestro Padre Jesús Nazareno organizó la VI Tertulia en la ermita de San Sebastián, con la participación especial de los Boinas Moradas por su 30 aniversario.",
+        "cuerpo": "El pasado 3 de junio, la ermita de San Sebastián acogió la VI Tertulia organizada por el Grupo Joven de la Real Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande. Este encuentro estuvo dedicado a los Boinas Moradas, que celebran su 30 aniversario, y contó con la participación activa de sus miembros.\n\nModerada por la hermana Irene Pérez, la tertulia permitió a los asistentes dialogar sobre la devoción y la historia que envuelve a este grupo emblemático dentro de la hermandad. La actividad reforzó los lazos entre los jóvenes y destacó la importancia de mantener vivas las tradiciones locales en el municipio.",
         "fecha": "2026-06-05T11:05:01+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
@@ -529,11 +529,11 @@
     },
     {
         "id": "https-alhaurinelgrande-es-marina-heredia-el-pele-y-la-lupi-protagonistas-en-la-x",
-        "titulo": "Marina Heredia, El Pele y La Lupi brillan en la XLIII Noche Flamenca de Alhaurín el Grande",
+        "titulo": "XLIII Noche Flamenca en Alhaurín el Grande con Marina Heredia, El Pele y La Lupi",
         "titulo_original": "Marina Heredia, el Pele y la Lupi, protagonistas en la XLIII Noche Flamenca de Alhaurín el Grande",
-        "descripcion": "Alhaurín el Grande acoge el 25 de julio la XLIII Noche Flamenca con actuaciones destacadas de Marina Heredia, El Pele y La Lupi, consolidándose como referente del flamenco andaluz.",
-        "resumen": "Alhaurín el Grande acoge el 25 de julio la XLIII Noche Flamenca con actuaciones destacadas de Marina Heredia, El Pele y La Lupi, consolidándose como referente del flamenco andaluz.",
-        "cuerpo": "El próximo 25 de julio, Alhaurín el Grande se convertirá en un escenario imprescindible para los amantes del flamenco con la celebración de la XLIII Noche Flamenca. Este evento reunirá a artistas de renombre como Marina Heredia, El Pele y La Lupi, quienes ofrecerán un espectáculo que promete emocionar al público con lo mejor del flamenco andaluz.\n\nLa Noche Flamenca es una cita tradicional que destaca por su calidad artística y su capacidad para atraer a aficionados y profesionales del género. La participación de estos destacados artistas reafirma el compromiso del municipio con la cultura y la promoción del flamenco como patrimonio vivo y esencial de Andalucía.",
+        "descripcion": "Alhaurín el Grande acoge el 25 de julio la XLIII Noche Flamenca con actuaciones de Marina Heredia, El Pele y La Lupi, un evento destacado del flamenco andaluz.",
+        "resumen": "Alhaurín el Grande acoge el 25 de julio la XLIII Noche Flamenca con actuaciones de Marina Heredia, El Pele y La Lupi, un evento destacado del flamenco andaluz.",
+        "cuerpo": "El próximo 25 de julio, Alhaurín el Grande se convertirá en un escenario destacado del flamenco andaluz con la celebración de la XLIII Noche Flamenca. Este evento reunirá a artistas de renombre como Marina Heredia, El Pele y La Lupi, quienes ofrecerán un espectáculo único para los amantes del género.\n\nLa Noche Flamenca es una cita tradicional que cada año atrae a numerosos aficionados y visitantes, consolidando a Alhaurín el Grande como un referente cultural en la provincia. La programación de este año promete una velada llena de arte y pasión, destacando la importancia de mantener viva esta expresión cultural en la localidad.",
         "fecha": "2026-06-05T10:40:23+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Fiestas y Tradiciones",
@@ -541,29 +541,29 @@
         "seo_keywords": [
             "Noche Flamenca Alhaurín el Grande",
             "Marina Heredia concierto",
-            "flamenco Andalucía"
+            "flamenco Andalucía 2024"
         ],
         "enlace": "https://alhaurinelgrande.es/marina-heredia-el-pele-y-la-lupi-protagonistas-en-la-xliii-noche-flamenca-de-alhaurin-el-grande/",
         "url": "https://alhaurinelgrande.es/marina-heredia-el-pele-y-la-lupi-protagonistas-en-la-xliii-noche-flamenca-de-alhaurin-el-grande/",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/06/Cartel-Noche-Flamenca-724x1024.jpg",
         "prioridad": 120,
-        "pagina": "noticias/marina-heredia-el-pele-y-la-lupi-brillan-en-la-xliii-noche-flamenca-de-alhaurin-el-grande.html"
+        "pagina": "noticias/xliii-noche-flamenca-en-alhaurin-el-grande-con-marina-heredia-el-pele-y-la-lupi.html"
     },
     {
         "id": "https-alhaurinelgrande-es-iker-andres-escudero-gana-el-xx-premio-internacional-d",
         "titulo": "Iker Andrés Escudero gana el XX Premio Internacional de Poesía Antonio Gala con ‘Acta de",
         "titulo_original": "Iker Andrés Escudero gana el XX Premio Internacional de Poesía Antonio Gala con ‘Acta de Retirada’",
-        "descripcion": "Iker Andrés Escudero ha sido galardonado con el XX Premio Internacional de Poesía Antonio Gala por su obra ‘Acta de Retirada’, en una edición récord con 238 poemarios presentados.",
-        "resumen": "Iker Andrés Escudero ha sido galardonado con el XX Premio Internacional de Poesía Antonio Gala por su obra ‘Acta de Retirada’, en una edición récord con 238 poemarios presentados.",
-        "cuerpo": "El XX Premio Internacional de Poesía Antonio Gala ha alcanzado un nuevo récord de participación con 238 poemarios inscritos, consolidándose como una de las citas más importantes para jóvenes poetas en lengua castellana. Iker Andrés Escudero ha resultado ganador gracias a su obra titulada ‘Acta de Retirada’.\n\nEste certamen, promovido por el Ayuntamiento de Alhaurín el Grande, continúa fomentando la creación literaria y apoyando a nuevos talentos en el ámbito de la poesía contemporánea. La entrega del premio y la difusión de las obras seleccionadas contribuyen a enriquecer la cultura local y a posicionar a Alhaurín el Grande como un referente en el panorama literario.",
+        "descripcion": "Iker Andrés Escudero ha sido galardonado con el XX Premio Internacional de Poesía Antonio Gala por su obra ‘Acta de Retirada’, en una edición con récord de 238 poemarios presentados.",
+        "resumen": "Iker Andrés Escudero ha sido galardonado con el XX Premio Internacional de Poesía Antonio Gala por su obra ‘Acta de Retirada’, en una edición con récord de 238 poemarios presentados.",
+        "cuerpo": "El XX Premio Internacional de Poesía Antonio Gala ha alcanzado un nuevo récord de participación con 238 poemarios presentados, consolidándose como una de las citas más importantes para jóvenes poetas en lengua castellana.\n\nEn esta edición, el jurado ha otorgado el premio a Iker Andrés Escudero por su obra ‘Acta de Retirada’. Este galardón, promovido por el Ayuntamiento de Alhaurín el Grande, destaca el talento emergente en la poesía contemporánea y refuerza el compromiso del municipio con la cultura y las artes literarias.\n\nLa entrega oficial del premio se realizará próximamente en un acto que reunirá a destacados representantes del mundo literario y cultural.",
         "fecha": "2026-06-05T10:19:44+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
+        "categoria": "Agenda Cultural",
+        "categoria_url": "categoria/agenda-cultural/",
         "seo_keywords": [
             "Premio Antonio Gala",
             "Iker Andrés Escudero",
-            "poesía joven Alhaurín el Grande"
+            "poesía joven"
         ],
         "enlace": "https://alhaurinelgrande.es/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala-con-acta-de-retirada/",
         "url": "https://alhaurinelgrande.es/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala-con-acta-de-retirada/",
@@ -577,7 +577,7 @@
         "titulo_original": "Verbenas día de Jesús 2026",
         "descripcion": "La Hermandad de Nuestro Padre Jesús Nazareno organiza verbenas y jornadas de convivencia el 6 de junio en el Patio de la Antigua Casa de Correos.",
         "resumen": "La Hermandad de Nuestro Padre Jesús Nazareno organiza verbenas y jornadas de convivencia el 6 de junio en el Patio de la Antigua Casa de Correos.",
-        "cuerpo": "La Hermandad de Nuestro Padre Jesús Nazareno ha anunciado la celebración de sus tradicionales verbenas y jornadas de convivencia para conmemorar los actos y cultos en honor a la imagen titular. Estas actividades tendrán lugar el sábado 6 de junio a partir de las 20:00 horas en el Patio de la Antigua Casa de Correos.\n\nEste evento busca fomentar la unión y el espíritu de hermandad entre sus miembros, ofreciendo un espacio de encuentro y celebración en un ambiente festivo y de respeto. La jornada incluirá diversas actividades que permitirán a los participantes compartir momentos de fraternidad y devoción en un entorno emblemático para la comunidad local.",
+        "cuerpo": "La Hermandad de Nuestro Padre Jesús Nazareno ha anunciado la celebración de sus tradicionales verbenas y jornadas de convivencia para honrar a su titular. Estas actividades tendrán lugar el sábado 6 de junio a partir de las 20:00 horas en el Patio de la Antigua Casa de Correos, un espacio emblemático para los actos de la Hermandad.\n\nEste evento busca fomentar la unión y el compañerismo entre los hermanos, ofreciendo un ambiente festivo y de encuentro. La jornada incluirá diversas actividades que permitirán a los asistentes compartir momentos de fraternidad en un entorno histórico y significativo para la Hermandad y la comunidad local.",
         "fecha": "2026-06-03T11:58:28+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
@@ -595,25 +595,25 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-32556-presentacion-del-xix-boletin-nazar",
-        "titulo": "Presentan el XIX Boletín Nazareno y el programa del Día de Jesús 2026 en Alhaurín el Grande",
+        "titulo": "Presentan XIX Boletín Nazareno y programa del Día de Jesús 2026 en Alhaurín el Grande",
         "titulo_original": "Presentación del XIX Boletín Nazareno, entrega «Nazareno del Año» y presentación del programa del Día de Jesús 2026",
-        "descripcion": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande presenta el XIX Boletín Nazareno, entrega el premio Nazareno del Año y anuncia el programa del Día de Jesús 2026.",
-        "resumen": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande presenta el XIX Boletín Nazareno, entrega el premio Nazareno del Año y anuncia el programa del Día de Jesús 2026.",
-        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande organiza un acto especial el jueves 4 de junio a las 21:00 horas en la Ermita de San Sebastián. En este evento se presentará la XIX edición del Boletín Nazareno, una publicación anual que recoge la actualidad y actividades de la corporación.\n\nAdemás, durante la ceremonia se entregará el reconocimiento Nazareno del Año, un galardón que destaca la dedicación y compromiso de un miembro destacado de la hermandad. También se dará a conocer el programa oficial para la celebración del Día de Jesús 2026, que incluye diversas actividades religiosas y culturales para la comunidad local.\n\nEste evento representa una oportunidad para que los vecinos de Alhaurín el Grande se involucren y conozcan de cerca las iniciativas de la Hermandad, reafirmando la importancia de esta tradición en el municipio.",
+        "descripcion": "La Hermandad Nuestro Padre Jesús Nazareno presenta el jueves 4 de junio el XIX Boletín Nazareno, entrega del premio Nazareno del Año y el programa del Día de Jesús 2026 en la Ermita de San Sebastián.",
+        "resumen": "La Hermandad Nuestro Padre Jesús Nazareno presenta el jueves 4 de junio el XIX Boletín Nazareno, entrega del premio Nazareno del Año y el programa del Día de Jesús 2026 en la Ermita de San Sebastián.",
+        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande organiza un acto especial el jueves 4 de junio a las 21:00 horas en la Ermita de San Sebastián. En esta cita se presentará la XIX edición del Boletín Nazareno, una publicación anual que recoge la historia y actividades de la corporación.\n\nAdemás, durante el evento se hará entrega del galardón Nazareno del Año, un reconocimiento que destaca la labor y compromiso de personas vinculadas a la Hermandad. También se dará a conocer el programa oficial para la celebración del Día de Jesús 2026, que incluye las actividades previstas para esta importante festividad local.\n\nEste acto representa un momento clave para la comunidad nazarena y los vecinos de Alhaurín el Grande, que podrán conocer de primera mano las novedades y preparativos de la Hermandad para los próximos años.",
         "fecha": "2026-06-03T07:15:01+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
             "Boletín Nazareno Alhaurín el Grande",
-            "Nazareno del Año",
-            "Día de Jesús 2026"
+            "Día de Jesús 2026",
+            "Hermandad Nuestro Padre Jesús Nazareno"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/32556/presentacion-del-xix-boletin-nazareno-entrega-nazareno-del-ano-y-presentacion-del-programa-del-dia-de-jesus-2026/",
         "url": "https://www.nuestropadrejesusnazareno.com/32556/presentacion-del-xix-boletin-nazareno-entrega-nazareno-del-ano-y-presentacion-del-programa-del-dia-de-jesus-2026/",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/cropped-favicon-ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO-32x32.png",
         "prioridad": 95,
-        "pagina": "noticias/presentan-el-xix-boletin-nazareno-y-el-programa-del-dia-de-jesus-2026-en-alhaurin-el-grand.html"
+        "pagina": "noticias/presentan-xix-boletin-nazareno-y-programa-del-dia-de-jesus-2026-en-alhaurin-el-grande.html"
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-32552-nazareno-del-ano-2026-fundacion-la",
@@ -621,11 +621,11 @@
         "titulo_original": "Nazareno del año 2026. Fundación Lágrimas y Favores",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno otorga el galardón Nazareno del Año 2026 a la Fundación Lágrimas y Favores por su compromiso social y solidaridad.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno otorga el galardón Nazareno del Año 2026 a la Fundación Lágrimas y Favores por su compromiso social y solidaridad.",
-        "cuerpo": "La Junta de Gobierno de la Real Hermandad de Nuestro Padre Jesús Nazareno ha decidido otorgar el galardón Nazareno del Año 2026 a la Fundación Lágrimas y Favores, una organización malagueña presidida por Antonio Banderas.\n\nEste reconocimiento destaca la labor solidaria y el compromiso social que la fundación mantiene con las personas más vulnerables. La Fundación Lágrimas y Favores es conocida por su trayectoria ejemplar en la ayuda constante a colectivos en situación de necesidad, consolidándose como un referente en la provincia de Málaga.\n\nEste galardón refleja el apoyo y la admiración que la Hermandad tiene hacia las iniciativas que fomentan la solidaridad y el bienestar social en la comunidad.",
+        "cuerpo": "La Junta de Gobierno de la Real Hermandad de Nuestro Padre Jesús Nazareno ha decidido reconocer a la Fundación Lágrimas y Favores con el galardón Nazareno del Año 2026. Esta distinción destaca la labor solidaria y el compromiso social que la fundación, presidida por Antonio Banderas, ha mantenido a lo largo de su trayectoria.\n\nLa Fundación Lágrimas y Favores es conocida por su apoyo constante a las personas más vulnerables, consolidándose como un referente en la ayuda social en la provincia de Málaga. Este reconocimiento refleja el valor que la Hermandad otorga a las iniciativas que promueven la solidaridad y el bienestar comunitario.\n\nLa entrega del galardón se enmarca en las actividades que la Hermandad realiza en Alhaurín el Grande, reforzando así los lazos entre la entidad religiosa y las organizaciones sociales que trabajan por mejorar la calidad de vida de los ciudadanos.",
         "fecha": "2026-06-01T17:45:01+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
         "seo_keywords": [
             "Nazareno del Año 2026",
             "Fundación Lágrimas y Favores",
@@ -639,19 +639,19 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-32549-proyeccion-solidaria-del-docu-film",
-        "titulo": "Proyección solidaria en Alhaurín el Grande del docu-film 'Heridos con Zarpas de Fiera'",
+        "titulo": "Proyección solidaria en Alhaurín el Grande del docu-film “Heridos con Zarpas de Fiera”",
         "titulo_original": "PROYECCIÓN SOLIDARIA DEL DOCU-FILM “HERIDOS CON ZARPAS DE FIERA”",
-        "descripcion": "La Hermandad Nuestro Padre Jesús Nazareno organiza la proyección solidaria del docu-film 'Heridos con Zarpas de Fiera' en el Teatro Antonio Gala el viernes 5 de junio a las 21:15 horas.",
-        "resumen": "La Hermandad Nuestro Padre Jesús Nazareno organiza la proyección solidaria del docu-film 'Heridos con Zarpas de Fiera' en el Teatro Antonio Gala el viernes 5 de junio a las 21:15 horas.",
-        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno de Alhaurín el Grande invita a vecinos y visitantes a asistir a la proyección solidaria del docu-film “Heridos con Zarpas de Fiera”. Esta obra audiovisual, basada en hechos reales, rinde homenaje a los orígenes y al legado histórico de la Legión Española.\n\nLa cita tendrá lugar el viernes 5 de junio a las 21:15 horas en el Teatro Antonio Gala. Este evento cultural y solidario busca acercar a la comunidad la historia y valores de una institución emblemática, a la vez que fomenta la participación ciudadana en actividades de interés local.\n\nLa Hermandad anima a todos a sumarse a esta iniciativa que combina memoria histórica y compromiso social en un espacio emblemático de Alhaurín el Grande.",
+        "descripcion": "La Hermandad Nuestro Padre Jesús Nazareno organiza la proyección solidaria del docu-film “Heridos con Zarpas de Fiera” en el Teatro Antonio Gala el viernes 5 de junio a las 21:15 horas.",
+        "resumen": "La Hermandad Nuestro Padre Jesús Nazareno organiza la proyección solidaria del docu-film “Heridos con Zarpas de Fiera” en el Teatro Antonio Gala el viernes 5 de junio a las 21:15 horas.",
+        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno de Alhaurín el Grande ha convocado una proyección solidaria del docu-film “Heridos con Zarpas de Fiera”, que se celebrará el viernes 5 de junio a las 21:15 horas en el Teatro Antonio Gala.\n\nEsta obra audiovisual está basada en hechos reales y rinde homenaje a los orígenes y legado histórico de la Legión Española. La iniciativa busca combinar cultura y solidaridad, invitando a los vecinos a conocer más sobre esta parte importante de la historia militar española a través de un documental emotivo y riguroso.\n\nLa entrada será en el propio teatro, donde se espera una buena acogida por parte de la comunidad local.",
         "fecha": "2026-06-01T10:46:31+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Agenda Cultural",
         "categoria_url": "categoria/agenda-cultural/",
         "seo_keywords": [
             "proyección solidaria Alhaurín el Grande",
-            "docu-film Heridos con Zarpas de Fiera",
-            "Legión Española homenaje"
+            "Heridos con Zarpas de Fiera",
+            "docu-film Legión Española"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/32549/proyeccion-solidaria-del-docu-film-heridos-con-zarpas-de-fiera/",
         "url": "https://www.nuestropadrejesusnazareno.com/32549/proyeccion-solidaria-del-docu-film-heridos-con-zarpas-de-fiera/",

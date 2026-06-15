@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://alhaurinaldia.es/noticias/abiertas-inscripciones-para-la-campana-de-natacion-y-eventos-destacados-en-alhaurin-el-gra.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/abierto-el-plazo-para-la-campana-de-natacion-y-actividades-culturales-en-alhaurin-el-grand.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.758Z</news:publication_date>
-      <news:title>Abiertas inscripciones para la campaña de natación y eventos destacados en Alhaurín el Grande</news:title>
+      <news:publication_date>2026-06-15T12:36:14.315Z</news:publication_date>
+      <news:title>Abierto el plazo para la campaña de natación y actividades culturales en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-orientacion-profesional-actividades-y-eventos-locales.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/abierto-el-proceso-para-elegir-juez-a-de-paz-titular-y-sustituto-en-alhaurin-el-grande.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.758Z</news:publication_date>
-      <news:title>Actualidad en Alhaurín el Grande: orientación profesional, actividades y eventos locales</news:title>
+      <news:publication_date>2026-06-15T12:36:14.315Z</news:publication_date>
+      <news:title>Abierto el proceso para elegir Juez/a de Paz titular y sustituto en Alhaurín el Grande</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-unidad-de-orientacion-y-actividades-culturales-en-junio-2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-15T12:36:14.315Z</news:publication_date>
+      <news:title>Actualidad en Alhaurín el Grande: Unidad de Orientación y actividades culturales en junio 2026</news:title>
     </news:news>
   </url>
   <url>
@@ -29,19 +40,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.758Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.315Z</news:publication_date>
       <news:title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-alerta-sobre-sms-fraudulentos-y-promueve-campana-de-comercio-local.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-alerta-por-sms-fraudulentos-y-promueve-campana-sella-tu-sueno-este-vera.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.758Z</news:publication_date>
-      <news:title>Alhaurín el Grande alerta sobre SMS fraudulentos y promueve campaña de comercio local</news:title>
+      <news:publication_date>2026-06-15T12:36:14.315Z</news:publication_date>
+      <news:title>Alhaurín el Grande alerta por SMS fraudulentos y promueve campaña &amp;#x27;Sella tu sueño&amp;#x27; este verano</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-anuncia-actos-y-cultos-para-el-dia-de-jesus-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-15T12:36:14.315Z</news:publication_date>
+      <news:title>Alhaurín el Grande anuncia actos y cultos para el Día de Jesús 2026</news:title>
     </news:news>
   </url>
   <url>
@@ -51,7 +73,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.758Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.316Z</news:publication_date>
       <news:title>Alhaurín el Grande aprueba los festivos locales para 2027: 3 y 28 de mayo</news:title>
     </news:news>
   </url>
@@ -62,7 +84,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.759Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.316Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra el Corpus Christi con misa y procesión solemne</news:title>
     </news:news>
   </url>
@@ -73,19 +95,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.759Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.316Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra el Corpus Christi con procesión y altares tradicionales</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-jesus-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.759Z</news:publication_date>
-      <news:title>Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de Jesús 2026</news:title>
     </news:news>
   </url>
   <url>
@@ -95,7 +106,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.759Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.316Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa proyectos para ayudas LEADER 2023-2027 en el Valle del Guadalhorce</news:title>
     </news:news>
   </url>
@@ -106,19 +117,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.759Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.316Z</news:publication_date>
       <news:title>Alhaurín el Grande lanza campaña &amp;#x27;Sella tu sueño&amp;#x27; para impulsar el comercio local en verano</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/ayuntamiento-de-alhaurin-el-grande-lanza-ayudas-para-material-escolar-2024.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/ayudas-municipales-para-material-escolar-en-alhaurin-el-grande-para-familias-vulnerables.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.759Z</news:publication_date>
-      <news:title>Ayuntamiento de Alhaurín el Grande lanza ayudas para material escolar 2024</news:title>
+      <news:publication_date>2026-06-15T12:36:14.316Z</news:publication_date>
+      <news:title>Ayudas municipales para material escolar en Alhaurín el Grande para familias vulnerables</news:title>
     </news:news>
   </url>
   <url>
@@ -128,7 +139,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.760Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.316Z</news:publication_date>
       <news:title>Cáritas Alhaurín el Grande presenta informe FOESSA sobre exclusión social en Andalucía</news:title>
     </news:news>
   </url>
@@ -139,19 +150,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.760Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.317Z</news:publication_date>
       <news:title>El Ayuntamiento de Alhaurín el Grande regula terrazas y veladores para el verano</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala-con-acta-de.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.760Z</news:publication_date>
-      <news:title>Iker Andrés Escudero gana el XX Premio Internacional de Poesía Antonio Gala con ‘Acta de</news:title>
     </news:news>
   </url>
   <url>
@@ -161,7 +161,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.760Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.317Z</news:publication_date>
       <news:title>La Casa Museo Antonio Gala logra récord histórico de visitas en mayo</news:title>
     </news:news>
   </url>
@@ -172,30 +172,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.760Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.317Z</news:publication_date>
       <news:title>La Fundación Lágrimas y Favores, Nazareno del Año 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-celebra-30-anos-de-los-boinas-moradas-en-su-vi-tertulia.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-presenta-nueva-tunica-procesional-bordada-en-oro.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.760Z</news:publication_date>
-      <news:title>La Hermandad de Jesús Nazareno celebra 30 años de los Boinas Moradas en su VI Tertulia</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-presenta-nueva-tunica-procesional-en-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.761Z</news:publication_date>
-      <news:title>La Hermandad de Jesús Nazareno presenta nueva túnica procesional en Alhaurín el Grande</news:title>
+      <news:publication_date>2026-06-15T12:36:14.317Z</news:publication_date>
+      <news:title>La Hermandad de Jesús Nazareno presenta nueva túnica procesional bordada en oro</news:title>
     </news:news>
   </url>
   <url>
@@ -205,63 +194,74 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.761Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
       <news:title>La Unidad de Orientación Profesional se traslada a la Casa de la Cultura en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/newco-travel-y-fedelhorce-impulsan-el-turismo-en-alhaurin-el-grande-en-jornada-especial.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/los-boinas-moradas-celebran-30-anos-en-la-vi-tertulia-de-la-hermandad-en-alhaurin-el-grand.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.761Z</news:publication_date>
-      <news:title>Newco Travel y Fedelhorce impulsan el turismo en Alhaurín el Grande en jornada especial</news:title>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
+      <news:title>Los Boinas Moradas celebran 30 años en la VI Tertulia de la Hermandad en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/pleno-de-junio-en-alhaurin-el-grande-aprueba-festivos-2027-y-destaca-ayudas-leader.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/newco-travel-y-fedelhorce-impulsan-el-turismo-en-alhaurin-el-grande-en-jornada-clave.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.761Z</news:publication_date>
-      <news:title>Pleno de junio en Alhaurín el Grande aprueba festivos 2027 y destaca ayudas LEADER</news:title>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
+      <news:title>Newco Travel y Fedelhorce impulsan el turismo en Alhaurín el Grande en jornada clave</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/pleno-de-junio-en-alhaurin-el-grande-aprueba-festivos-y-destaca-ayudas-leader.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.761Z</news:publication_date>
-      <news:title>Presentan el cartel de la XLIII Noche Flamenca Villa de Alhaurín el Grande 2026</news:title>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
+      <news:title>Pleno de junio en Alhaurín el Grande aprueba festivos y destaca ayudas LEADER</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-cartel-y-artistas-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.761Z</news:publication_date>
-      <news:title>Presentan el cartel oficial de la XLIII Noche Flamenca Villa de Alhaurín el Grande</news:title>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
+      <news:title>Presentan cartel y artistas de la XLIII Noche Flamenca Villa de Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande-2026.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.762Z</news:publication_date>
-      <news:title>Presentan el XIX boletín ‘Nazareno’ y entregan el galardón ‘Nazareno del Año 2026’</news:title>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
+      <news:title>Presentan el cartel oficial de la XLIII Noche Flamenca Villa de Alhaurín el Grande 2026</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026-en-alhaurin.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
+      <news:title>Presentan el XIX boletín ‘Nazareno’ y entregan el galardón ‘Nazareno del Año 2026’ en Alhaurín</news:title>
     </news:news>
   </url>
   <url>
@@ -271,19 +271,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.762Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.318Z</news:publication_date>
       <news:title>Presentan el XIX boletín ‘Nazareno’ y entregan galardón en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026-en-alhau.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.762Z</news:publication_date>
-      <news:title>Presentan la XIX Edición del Boletín Nazareno y entregan el Nazareno del Año 2026 en Alhaurín</news:title>
+      <news:publication_date>2026-06-15T12:36:14.319Z</news:publication_date>
+      <news:title>Presentan la XIX Edición del Boletín Nazareno y entregan el Nazareno del Año 2026</news:title>
     </news:news>
   </url>
   <url>
@@ -293,7 +293,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.762Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.319Z</news:publication_date>
       <news:title>Presentan XIX Boletín Nazareno y programa del Día de Jesús 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -304,19 +304,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.762Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.319Z</news:publication_date>
       <news:title>Proyección solidaria en Alhaurín el Grande del docu-film “Heridos con Zarpas de Fiera”</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/verbenas-y-convivencia-en-honor-a-nuestro-padre-jesus-nazareno-en-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/verbenas-y-jornadas-de-convivencia-por-el-dia-de-jesus-en-alhaurin-el-grande-2026.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.762Z</news:publication_date>
-      <news:title>Verbenas y convivencia en honor a Nuestro Padre Jesús Nazareno en 2026</news:title>
+      <news:publication_date>2026-06-15T12:36:14.319Z</news:publication_date>
+      <news:title>Verbenas y jornadas de convivencia por el Día de Jesús en Alhaurín el Grande 2026</news:title>
     </news:news>
   </url>
   <url>
@@ -326,7 +326,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-06-15T09:10:09.763Z</news:publication_date>
+      <news:publication_date>2026-06-15T12:36:14.319Z</news:publication_date>
       <news:title>XLIII Noche Flamenca en Alhaurín el Grande con Marina Heredia, El Pele y La Lupi</news:title>
     </news:news>
   </url>

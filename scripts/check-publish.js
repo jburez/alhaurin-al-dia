@@ -12,9 +12,7 @@ const REQUIRED_FILES = [
   'robots.txt',
   'sitemap.xml',
   'sitemap-index.xml',
-  'sitemap-noticias.xml',
   'sitemap-news.xml',
-  'sitemap-farmacias.xml',
   'data/noticias.json',
   'data/guia-util.json',
 ];
@@ -114,12 +112,16 @@ function checkHome(errors) {
   }
 
   if (!/id=["']featured-news["']/i.test(html)) {
-  errors.push('index.html no contiene el contenedor #featured-news para renderizado dinámico');
-}
+    errors.push('index.html no contiene el contenedor #featured-news para renderizado dinámico');
+  }
 
-if (!/id=["']news-container["']/i.test(html)) {
-  errors.push('index.html no contiene el contenedor #news-container para renderizado dinámico');
-}
+  if (!/id=["']news-container["']/i.test(html)) {
+    errors.push('index.html no contiene el contenedor #news-container para renderizado dinámico');
+  }
+
+  if (!/id=["']guide-container["']/i.test(html)) {
+    errors.push('index.html no contiene el contenedor #guide-container para renderizado dinámico');
+  }
 }
 
 function checkData(errors, warnings) {

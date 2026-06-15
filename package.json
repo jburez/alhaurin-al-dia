@@ -19,6 +19,7 @@
     "seo:orphans:strict": "node scripts/audit-orphan-pages.js",
     "publish:check": "node scripts/check-publish.js",
     "daily": "npm run build && npm run publish:check",
-    "build": "npm run news && npm run news:dedupe && npm run seo && npm run home:static && npm run guide:pages && npm run sitemap && npm run seo:audit && npm run seo:orphans"
+    "build": "npm run news && npm run news:dedupe && npm run news:orphans:clean && npm run seo && npm run home:static && npm run guide:pages && npm run sitemap && npm run seo:audit && npm run seo:orphans",
+    "build:publish": "npm run build && npm run publish:check"
   }
 }

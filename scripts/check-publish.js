@@ -13,6 +13,8 @@ const REQUIRED_FILES = [
   'sitemap.xml',
   'sitemap-index.xml',
   'sitemap-news.xml',
+  '_headers',
+  '_redirects',
   'data/noticias.json',
   'data/guia-util.json',
 ];
@@ -91,6 +93,23 @@ function checkRobots(errors) {
   if (/sitemap-servicios\.xml/i.test(robots)) errors.push('robots.txt declara sitemap-servicios.xml, que no se genera');
 }
 
+function checkCloudflareFiles(errors) {
+  if (fileExists('_headers')) {
+    const headers = read('_headers');
+    if (!/X-Content-Type-Options:\s*nosniff/i.test(headers)) errors.push('_headers no define X-Content-Type-Options: nosniff');
+    if (!/Referrer-Policy:/i.test(headers)) errors.push('_headers no define Referrer-Policy');
+    if (!/Cache-Control:/i.test(headers)) errors.push('_headers no define reglas Cache-Control');
+  }
+
+  if (fileExists('_redirects')) {
+    const redirects = read('_redirects');
+    if (!/https:\/\/alhaurinaldia\.com\/\*/i.test(redirects)) errors.push('_redirects no redirige alhaurinaldia.com');
+    if (!/https:\/\/www\.alhaurinaldia\.com\/\*/i.test(redirects)) errors.push('_redirects no redirige www.alhaurinaldia.com');
+    if (!/https:\/\/www\.alhaurinaldia\.es\/\*/i.test(redirects)) errors.push('_redirects no redirige www.alhaurinaldia.es');
+    if (!/https:\/\/alhaurinaldia\.es\/:splat\s+301!/i.test(redirects)) errors.push('_redirects no fuerza el dominio canónico alhaurinaldia.es');
+  }
+}
+
 function checkNewsIndex(errors) {
   if (!fileExists('noticias/index.html')) return;
   const html = read('noticias/index.html');
@@ -131,6 +150,7 @@ function checkData(errors, warnings) {
   if (!Array.isArray(noticias)) errors.push('data/noticias.json no es un array válido');
   else if (noticias.length === 0) errors.push('data/noticias.json no contiene noticias');
   else if (noticias.length < 10) warnings.push(`data/noticias.json contiene pocas noticias: ${noticias.length}`);
+  else if (noticias.length > 30) warnings.push(`data/noticias.json contiene más noticias de las previstas: ${noticias.length}`);
 
   if (!Array.isArray(guia)) errors.push('data/guia-util.json no es un array válido');
   else if (guia.length < 5) warnings.push(`data/guia-util.json contiene pocos recursos: ${guia.length}`);
@@ -167,6 +187,7 @@ function main() {
   checkReportsIgnored(errors, warnings);
   checkSitemap(errors);
   checkRobots(errors);
+  checkCloudflareFiles(errors);
   checkNewsIndex(errors);
   checkHome(errors);
   checkData(errors, warnings);

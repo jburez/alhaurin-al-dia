@@ -155,10 +155,10 @@ fs.writeFileSync(path.join(ROOT, 'sitemap-servicios.xml'), renderUrlset(serviceE
 fs.writeFileSync(path.join(ROOT, 'sitemap-noticias.xml'), renderUrlset(newsEntries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-news.xml'), renderNewsUrlset(googleNewsEntries));
 
-const sitemapFiles = fs.readdirSync(ROOT)
-  .filter(file => /^sitemap.*\.xml$/.test(file))
-  .filter(file => file !== 'sitemap-index.xml')
-  .sort();
+const sitemapFiles = [
+  'sitemap.xml',
+  'sitemap-news.xml',
+].filter(file => fs.existsSync(path.join(ROOT, file)));
 
 fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitemapFiles));
 

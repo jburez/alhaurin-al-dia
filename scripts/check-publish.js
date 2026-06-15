@@ -113,9 +113,13 @@ function checkHome(errors) {
     errors.push('index.html no contiene JSON-LD NewsMediaOrganization');
   }
 
-  if (!/id=["']featured-news["'][^>]*>[\s\S]*?<article/i.test(html)) {
-    errors.push('index.html no contiene noticia destacada renderizada en HTML');
-  }
+  if (!/id=["']featured-news["']/i.test(html)) {
+  errors.push('index.html no contiene el contenedor #featured-news para renderizado dinámico');
+}
+
+if (!/id=["']news-container["']/i.test(html)) {
+  errors.push('index.html no contiene el contenedor #news-container para renderizado dinámico');
+}
 }
 
 function checkData(errors, warnings) {

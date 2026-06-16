@@ -265,7 +265,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-unidad-de-orientacion-y-actividades-culturales-en-junio-2.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-unidad-de-orientacion-actividades-y-eventos-locales.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -313,7 +313,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-proyectos-para-ayudas-leader-2023-2027-con-2-3-millones.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-proyectos-para-ayudas-leader-2023-2027-en-el-valle-del-guadalho.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -349,13 +349,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-celebra-el-30-aniversario-de-los-boinas-moradas-en-alhaurin.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-unidad-de-orientacion-profesional-se-traslada-a-la-casa-de-la-cultura-en-alhaurin-el-gr.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-unidad-de-orientacion-profesional-se-traslada-a-la-casa-de-la-cultura-en-alhaurin-el-gr.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/los-boinas-moradas-celebran-su-30-aniversario-en-la-vi-tertulia-de-la-hermandad-en-alhauri.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/newco-travel-y-fedelhorce-impulsan-el-turismo-en-alhaurin-el-grande-en-jornada-clave.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -367,19 +373,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/newco-travel-y-fedelhorce-impulsan-el-turismo-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/pleno-aprueba-festivos-2027-y-alhaurin-el-grande-recibe-ayudas-leader-por-2-3-millones.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/pleno-de-junio-en-alhaurin-el-grande-aprueba-festivos-2027-y-ayudas-leader.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-cartel-y-artistas-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -391,13 +391,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026-en-alhaurin-2.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026-en-alhaurin.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-el-xix-boletin-nazareno-y-programa-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -409,31 +415,25 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-xix-boletin-nazareno-y-programa-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/proyeccion-solidaria-en-alhaurin-el-grande-del-docu-film-heridos-con-zarpas-de-fiera.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/triduo-en-honor-al-dia-de-jesus-en-la-ermita-de-san-sebastian-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/triduo-en-honor-al-dia-de-jesus-en-la-ermita-de-san-sebastian-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/verbenas-y-convivencia-en-honor-a-nuestro-padre-jesus-nazareno-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/verbenas-y-actos-en-honor-a-nuestro-padre-jesus-nazareno-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-con-marina-heredia-el-pele-y-la-lupi.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-de-alhaurin-el-grande-con-marina-heredia-el-pele-y-la-lupi.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

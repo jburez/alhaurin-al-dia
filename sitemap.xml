@@ -265,7 +265,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-el-campeonato-andaluz-de-carrera-por-montana-escolar.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-unidad-de-orientacion-y-actividades-de-verano.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -283,7 +283,25 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-corpus-christi-con-procesion-y-altares-tradicionales.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-de-jesus-y-abre-renovacion-de-escuelas-deportivas.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-jesus-2026.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-en-salud-ocio-medioambiente-y-cultura-local-en-junio-2026.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -307,19 +325,25 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/domingo-de-feria-2026-en-alhaurin-el-grande-con-actos-de-la-pena-caballista.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/comienzan-las-misas-del-triduo-por-el-dia-de-jesus-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-regula-terrazas-y-veladores-para-el-verano-2024.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-regula-terrazas-y-veladores-para-el-verano.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-centro-ocupacional-fahala-celebra-su-feria-de-mayo-con-musica-y-baile-en-alhaurin-el-gr.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-cierra-triduo-con-misa-y-homenaje-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-clausura-triduo-con-homenaje-a-banda-los-boinas-moras.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -343,13 +367,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-presenta-nueva-tunica-procesional-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-unidad-de-orientacion-profesional-se-traslada-a-la-casa-de-la-cultura-en-alhaurin-el-gr.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-unidad-de-orientacion-profesional-se-traslada-a-la-casa-de-la-cultura-en-alhaurin-el-gr.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/marina-heredia-el-pele-y-la-lupi-brillan-en-la-xliii-noche-flamenca-de-alhaurin-el-grande.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/newco-travel-y-fedelhorce-impulsan-el-turismo-en-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -361,7 +391,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/pleno-de-junio-en-alhaurin-el-grande-aprueba-festivos-2027-y-ayudas-leader-para-el-valle.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/presentan-cartel-y-artistas-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -373,7 +409,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026-en-alhau.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -391,25 +427,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/torneos-deportivos-de-feria-2026-en-alhaurin-el-grande-reunen-a-decenas-de-participantes.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/triduo-por-el-dia-de-jesus-en-alhaurin-el-grande-con-dos-primeras-misas-en-san-sebastian.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/verbenas-y-convivencia-en-honor-a-nuestro-padre-jesus-nazareno-en-2026.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-con-marina-heredia-el-pele-y-la-lupi.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/xx-torneo-de-golf-de-feria-2026-reune-a-96-jugadores-en-alhaurin-golf.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/verbenas-y-actos-en-honor-a-nuestro-padre-jesus-nazareno-en-junio-2026.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

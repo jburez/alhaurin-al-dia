@@ -265,12 +265,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-con-la-legion-y-la-hermandad.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/actos-del-dia-de-jesus-en-alhaurin-el-grande-con-la-hermandad-de-nuestro-padre-jesus-nazar.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -278,6 +272,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actos-del-jueves-en-la-semana-del-dia-de-jesus-en-alhaurin-el-grande-2026.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/actos-destacados-del-dia-de-jesus-2026-en-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -295,7 +295,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-en-nutrichef-seguridad-vial-y-eventos-culturales-locales.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-en-nutrichef-seguridad-vial-y-eventos-culturales-en-junio-2026.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -319,13 +319,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-10-1-millones-para-infraestructuras-y-presenta-actividades-de-ve.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-mas-de-10-millones-para-mejorar-infraestructuras-tras-temporales.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-10-1-millones-para-mejorar-infraestructuras-tras-temporales.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibira-10-1-millones-para-reparar-infraestructuras-tras-temporales.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -361,13 +361,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-cierra-triduo-con-misa-y-homenaje-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-cierra-triduo-con-misa-y-homenaje-en-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-clausura-triduo-con-homenaje-a-banda-los-boinas-moras.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-cierra-triduo-con-misa-y-homenaje-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -379,7 +379,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-fundacion-lagrimas-y-favores-recibe-el-nazareno-del-ano-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-fundacion-lagrimas-y-favores-nazareno-del-ano-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -415,7 +415,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/proyeccion-solidaria-del-docu-film-heridos-con-zarpas-de-fiera-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/proyeccion-solidaria-en-alhaurin-el-grande-del-docu-film-heridos-con-zarpas-de-fiera.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -433,7 +433,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/verbenas-y-jornadas-de-convivencia-por-jesus-nazareno-en-alhaurin-el-grande-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/verbenas-y-actos-en-honor-a-nuestro-padre-jesus-nazareno-en-alhaurin-el-grande-2026.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

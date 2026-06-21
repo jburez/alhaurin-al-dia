@@ -265,19 +265,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-del-dia-de-jesus-en-alhaurin-el-grande-con-la-hermandad-y-la-legion.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/actos-del-dia-de-jesus-en-alhaurin-el-grande-con-la-hermandad-de-nuestro-padre-jesus-nazar.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/actos-del-jueves-en-la-semana-del-dia-de-jesus-en-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actos-del-jueves-en-la-semana-del-dia-de-jesus-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-destacados-del-dia-de-jesus-2026-en-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -295,6 +295,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-arte-cultura-y-deporte-con-nuevos-murales-y-eventos-locales.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-proyectos-para-ayudas-leader-2023-2027-en-el-valle-del-guadalho.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -307,19 +313,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-nuevos-murales-y-eventos-culturales-en-junio-2026.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-10-1-millones-para-infraestructuras-y-presenta-actividades-de-ve.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-10-1-millones-para-mejorar-infraestructuras-tras-temporales.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibira-10-1-millones-para-reparar-infraestructuras-tras-temporales.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -331,7 +331,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-y-gualdo-tadino-sellan-hermanamiento-y-avanzan-proyectos-locales.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-y-gualdo-tadino-sellan-hermanamiento-y-avanzan-en-proyectos-locales.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -355,13 +355,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-cierra-triduo-con-misa-y-homenaje-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-cierra-triduo-con-misa-y-homenaje-en-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-clausura-triduo-con-homenaje-a-banda-los-boinas-moras.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-cierra-triduo-con-misa-y-homenaje-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -385,7 +385,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-celebra-el-30-aniversario-de-los-boinas-moradas-en-alhaurin.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-jesus-nazareno-celebra-30-anos-de-los-boinas-moradas-en-su-vi-tertulia.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -397,7 +397,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026-en-alhau.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

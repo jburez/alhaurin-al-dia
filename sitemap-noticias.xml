@@ -109,12 +109,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-arte-cultura-y-deporte-con-nuevos-murales-y-eventos-locales.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-proyectos-para-ayudas-leader-2023-2027-en-el-valle-del-guadalho.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -122,6 +116,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-lanza-campana-sella-tu-sueno-para-impulsar-el-comercio-local-en-verano.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-nuevos-murales-y-eventos-culturales-en-junio-2026.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -145,7 +145,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-y-gualdo-tadino-sellan-hermanamiento-y-avanzan-en-proyectos-locales.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-y-gualdo-tadino-sellan-hermanamiento-y-avanzan-proyectos-locales.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -211,7 +211,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-la-xix-edicion-del-boletin-nazareno-y-entregan-el-nazareno-del-ano-2026-en-alhau.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentada-la-xix-edicion-del-boletin-nazareno-y-el-nazareno-del-ano-2026-en-alhaurin-el-g.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -235,7 +235,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/proyeccion-solidaria-en-alhaurin-el-grande-del-docu-film-heridos-con-zarpas-de-fiera.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/proyeccion-solidaria-del-docu-film-heridos-con-zarpas-de-fiera-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -247,7 +247,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/verbenas-y-convivencia-en-honor-a-nuestro-padre-jesus-nazareno-en-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/verbenas-y-jornadas-de-convivencia-por-el-dia-de-jesus-nazareno-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

@@ -79,12 +79,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-guardia-misa-y-retreta.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/actos-del-sabado-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -103,7 +97,25 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-ayudas-y-refuerza-transporte-en-pleno-de-junio-2026.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-los-festivos-locales-para-2027-3-y-28-de-mayo.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-viernes-del-sagrado-corazon-con-fervor-y-devocion.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-la-funcion-religiosa-y-desfile-procesional-del-dia-de-jesus-202.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -115,7 +127,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-piscina-y-prepara-eventos-deportivos-y-culturales-en-verano.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-piscina-exterior-y-anuncia-eventos-de-verano-2026.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -133,7 +145,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-y-gualdo-tadino-sellan-hermanamiento-y-avanzan-en-proyectos-locales.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-y-gualdo-tadino-sellan-hermanamiento-y-avanzan-proyectos-locales.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -145,25 +157,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/boinas-moradas-celebran-30-anos-en-la-vi-tertulia-de-la-hermandad-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/celebracion-del-dia-de-jesus-2026-en-alhaurin-el-grande-con-funcion-y-procesion.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-regula-terrazas-y-veladores-para-el-verano.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/hermandad-de-nuestro-padre-jesus-nazareno-celebra-funcion-y-desfile-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/exito-solidario-en-alhaurin-el-grande-con-la-obra-erasmus-pocos-del-ies-antonio-gala.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/funcion-religiosa-y-desfile-procesional-en-honor-a-nuestro-padre-jesus-nazareno-en-alhauri.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -193,7 +199,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/nuestro-padre-jesus-nazareno-desciende-para-encontrarse-con-sus-devotos-en-alhaurin-el-gra.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/los-boinas-moradas-celebran-su-30-aniversario-en-la-vi-tertulia-de-la-hermandad-de-jesus.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/nuestro-padre-jesus-nazareno-desciende-en-la-ermita-de-san-sebastian-en-jueves-de-jesus.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/premio-antonio-gala-y-actividades-del-orgullo-destacan-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -205,19 +223,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-xix-boletin-nazareno-y-programa-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/procesion-y-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/resumen-del-pleno-ordinario-de-junio-2026-en-el-ayuntamiento-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/procesion-y-encierro-de-nuestro-padre-jesus-nazareno-en-alhaurin-el-grande-2026.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -235,19 +241,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/verbenas-y-convivencia-en-honor-a-nuestro-padre-jesus-nazareno-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/verbenas-y-convivencia-en-honor-a-nuestro-padre-jesus-nazareno-en-2026.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-mayores-y-ninos.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/xx-premio-antonio-gala-y-actividades-del-orgullo-lgtbiq-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-presenta-la-feria-2026-con-novedades-para-todas-las-edades.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

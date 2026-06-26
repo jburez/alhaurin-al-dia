@@ -85,12 +85,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-final-de-la-vi-copa-provincial-de-calistenia-malaga-2.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-final-de-la-vi-copa-provincial-de-calistenia-malaga.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -109,13 +103,25 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-cierra-en-malaga-la-campana-turistica-volveras-en-primavera.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-proyectos-para-ayudas-leader-2023-2027-con-2-3-millones.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-clausura-en-malaga-la-campana-turistica-volveras-en-primavera-2.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-clausura-en-malaga-la-campana-turistica-volveras-en-primavera.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-proyectos-para-ayudas-leader-2023-2027-en-el-valle-del-guadalho.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -151,13 +157,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/celebracion-del-dia-de-jesus-2026-en-alhaurin-el-grande-con-funcion-y-desfile-procesional.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-en-alhaurin-el-grande-tercera-misa-de-triduo.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-tercera-misa-de-triduo-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-ies-antonio-gala-representa-erasmus-pocos-en-el-teatro-municipal-de-alhaurin-el-grande.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-xx-premio-internacional-de-poesia-antonio-gala-premia-al-joven-poeta-iker-andres-escude.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -175,31 +187,25 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/hermandad-de-jesus-nazareno-presenta-nueva-tunica-procesional-y-piezas-en-alhaurin-el-gran.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/la-comparsa-de-fatima-recibe-el-xxvi-galardon-alhaurino-del-ano-de-alifara.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-comparsa-de-fatima-recibe-el-xxvi-galardon-alhaurino-del-ano-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezu.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/premio-antonio-gala-y-actividades-del-orgullo-destacan-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/premio-antonio-gala-y-actividades-del-orgullo-lgtbiq-destacan-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/presentacion-del-poemario-un-puente-en-la-madrugada-de-maria-cabrillana-en-alhaurin-el-gra-2.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -211,25 +217,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-el-cartel-oficial-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/presentan-el-xix-boletin-nazareno-y-entregan-el-galardon-nazareno-del-ano-2026.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/procesion-de-nuestro-padre-jesus-nazareno-en-alhaurin-el-grande-2026.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -241,13 +235,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/ruben-simeo-y-la-asociacion-musical-manuel-amador-brillan-en-concierto-en-alhaurin-el-gran.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/ruben-simeo-y-la-asociacion-musical-manuel-amador-ofrecen-concierto-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-mayores-y-ninos.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-todas-las-edades.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

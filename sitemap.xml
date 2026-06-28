@@ -259,7 +259,7 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/abierto-el-proceso-para-elegir-juez-de-paz-titular-y-sustituto-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/abierto-el-proceso-para-elegir-juez-a-de-paz-titular-y-sustituto-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -277,7 +277,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-obras-ayudas-al-emprendimiento-y-refuerza-transporte-en-junio-2.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-aprueba-obras-lanza-ayudas-y-refuerza-transporte-en-junio-2026.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -289,7 +289,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-cierra-en-malaga-la-campana-turistica-volveras-en-primavera.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-clausura-en-malaga-la-campana-turistica-volveras-en-primavera-2.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -301,7 +301,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-piscina-exterior-y-anuncia-eventos-de-verano-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-piscina-y-anuncia-eventos-deportivos-y-culturales-en-verano.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -337,25 +337,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/ayudas-municipales-para-material-escolar-en-alhaurin-el-grande-para-familias-vulnerables.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/ayuntamiento-de-alhaurin-el-grande-lanza-ayudas-para-material-escolar-2024.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/caritas-alhaurin-el-grande-presenta-su-balance-anual-y-reconoce-a-voluntaria-destacada.html</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/concierto-en-alhaurin-el-grande-con-ruben-simeo-y-la-asociacion-musical-manuel-amador.html</loc>
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-tercera-misa-de-triduo-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/caritas-alhaurin-el-grande-presenta-su-balance-anual-y-reconoce-a-voluntarios.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -415,7 +403,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -427,7 +415,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/ruben-simeo-y-la-asociacion-musical-manuel-amador-brillan-en-concierto-en-alhaurin-el-gran.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/ruben-simeo-y-la-asociacion-musical-manuel-amador-ofrecen-concierto-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/tercera-misa-de-triduo-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

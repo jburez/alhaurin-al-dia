@@ -265,7 +265,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -289,12 +289,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-mes-del-medio-ambiente-2026-con-actividades-educativas-y.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inicia-limpieza-de-cauces-con-inversion-de-300-000-euros.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -313,13 +307,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-calle-alozaina-y-celebra-talleres-de-igualdad-y-eventos-cultura.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-calle-alozaina-y-celebra-talleres-de-igualdad-y-feria-local.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-y-gualdo-tadino-oficializan-su-hermanamiento-para-fortalecer-la-coopera.html</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivi-con-manuel-beltran-programa-31-de-atv-alhaurin.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -343,19 +343,25 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/cuarta-gala-solidaria-siguiendo-tus-pasos-de-pepa-manzanares-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-ies-antonio-gala-celebra-su-50-aniversario-en-alhaurin-el-grande-2.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-en-jornada-sobre-patrimonio-liter.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-ies-antonio-gala-celebra-su-50-aniversario-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/exito-de-la-cuarta-gala-solidaria-siguiendo-tus-pasos-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-para-conocer-su-legado-literario.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -379,7 +385,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-chaparra-celebra-el-fin-de-curso-de-los-talleres-de-gimnasia-y-memoria-de-lucia-ortega.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-chaparra-celebra-el-fin-de-curso-de-los-talleres-de-lucia-ortega-con-exhibiciones-y-dip.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -415,13 +421,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-31-de-asi-lo-vivi-con-manuel-beltran-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-feria-2026-con-jornada-para-mayores-y-fuegos-silenciosos.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-todas-las-edades.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

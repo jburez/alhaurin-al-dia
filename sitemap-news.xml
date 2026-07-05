@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://alhaurinaldia.es/noticias/abierto-el-proceso-para-elegir-juez-de-paz-titular-y-sustituto-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/abierto-el-proceso-para-elegir-juez-a-de-paz-titular-y-sustituto-en-alhaurin-el-grande.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.854Z</news:publication_date>
-      <news:title>Abierto el proceso para elegir Juez de Paz titular y sustituto en Alhaurín el Grande</news:title>
+      <news:publication_date>2026-07-05T19:37:31.775Z</news:publication_date>
+      <news:title>Abierto el proceso para elegir Juez/a de Paz titular y sustituto en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
@@ -18,7 +18,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.854Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.775Z</news:publication_date>
       <news:title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados</news:title>
     </news:news>
   </url>
@@ -29,30 +29,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.854Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.775Z</news:publication_date>
       <news:title>Alhaurín el Grande aprueba los festivos locales para 2027: 3 y 28 de mayo</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-tradicion-y-fervor.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.854Z</news:publication_date>
-      <news:title>Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-mes-del-medio-ambiente-2026-con-actividades-educativas-y-2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.854Z</news:publication_date>
-      <news:title>Alhaurín el Grande celebra el Mes del Medio Ambiente 2026 con actividades educativas y</news:title>
+      <news:publication_date>2026-07-05T19:37:31.775Z</news:publication_date>
+      <news:title>Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con tradición y fervor</news:title>
     </news:news>
   </url>
   <url>
@@ -62,8 +51,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.854Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.775Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra el Mes del Medio Ambiente 2026 con actividades educativas y</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-mes-del-medio-ambiente-2026-con-actividades-educativas.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-05T19:37:31.775Z</news:publication_date>
+      <news:title>Alhaurín el Grande celebra el Mes del Medio Ambiente 2026 con actividades educativas</news:title>
     </news:news>
   </url>
   <url>
@@ -73,7 +73,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.775Z</news:publication_date>
       <news:title>Alhaurín el Grande inicia feria con Cena de Mayores y reforma de parques infantiles</news:title>
     </news:news>
   </url>
@@ -84,7 +84,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.776Z</news:publication_date>
       <news:title>Alhaurín el Grande inicia limpieza de cauces con inversión de 300.000 euros</news:title>
     </news:news>
   </url>
@@ -95,7 +95,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.776Z</news:publication_date>
       <news:title>Alhaurín el Grande lanza ayudas de hasta 700 € para jóvenes emprendedores</news:title>
     </news:news>
   </url>
@@ -106,7 +106,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.776Z</news:publication_date>
       <news:title>Alhaurín el Grande recibe 10,1 millones para mejorar infraestructuras tras temporales</news:title>
     </news:news>
   </url>
@@ -117,7 +117,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.776Z</news:publication_date>
       <news:title>Alhaurín el Grande renueva calle Alozaina y celebra talleres de igualdad y feria local</news:title>
     </news:news>
   </url>
@@ -128,7 +128,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.776Z</news:publication_date>
       <news:title>Alhaurín el Grande y Gualdo Tadino oficializan su hermanamiento para fortalecer la cooperación</news:title>
     </news:news>
   </url>
@@ -139,19 +139,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.776Z</news:publication_date>
       <news:title>Así lo viví con Manuel Beltrán: Programa 31 de ATV Alhaurín</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/ayudas-municipales-para-material-escolar-en-alhaurin-el-grande-para-familias-vulnerables.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/ayuntamiento-de-alhaurin-el-grande-lanza-ayudas-para-material-escolar-2024.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.855Z</news:publication_date>
-      <news:title>Ayudas municipales para material escolar en Alhaurín el Grande para familias vulnerables</news:title>
+      <news:publication_date>2026-07-05T19:37:31.776Z</news:publication_date>
+      <news:title>Ayuntamiento de Alhaurín el Grande lanza ayudas para material escolar 2024</news:title>
     </news:news>
   </url>
   <url>
@@ -161,52 +161,41 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.777Z</news:publication_date>
       <news:title>Día de Jesús 2026: Tercera Misa de Triduo en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-xx-premio-antonio-gala-destaca-el-talento-joven-con-iker-andres-escudero-ganador.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-para-conocer-su-legado-literario.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
-      <news:title>El XX Premio Antonio Gala destaca el talento joven con Iker Andrés Escudero ganador</news:title>
+      <news:publication_date>2026-07-05T19:37:31.777Z</news:publication_date>
+      <news:title>Estudiantes de la UMA visitan la Casa Museo Antonio Gala para conocer su legado literario</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-en-jornada-sobre-patrimonio-liter.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/exito-de-la-iv-gala-solidaria-siguiendo-tus-pasos-en-alhaurin-el-grande.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
-      <news:title>Estudiantes de la UMA visitan la Casa Museo Antonio Gala en jornada sobre patrimonio literario</news:title>
+      <news:publication_date>2026-07-05T19:37:31.777Z</news:publication_date>
+      <news:title>Éxito de la IV Gala Solidaria &amp;#x27;Siguiendo tus pasos&amp;#x27; en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/exito-de-la-cuarta-gala-solidaria-siguiendo-tus-pasos-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
-      <news:title>Éxito de la cuarta gala solidaria &amp;#x27;Siguiendo tus pasos&amp;#x27; en Alhaurín el Grande</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguran-nueva-piscina-exterior-y-arranca-campana-del-tomate-en-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
-      <news:title>Inauguran nueva piscina exterior y arranca campaña del tomate en Alhaurín el Grande</news:title>
+      <news:publication_date>2026-07-05T19:37:31.777Z</news:publication_date>
+      <news:title>Iker Andrés Escudero gana el XX Premio Internacional de Poesía Antonio Gala</news:title>
     </news:news>
   </url>
   <url>
@@ -216,19 +205,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.777Z</news:publication_date>
       <news:title>Inauguran nueva piscina municipal exterior en Alhaurín el Grande con 281 m² de lámina de agua</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-chaparra-celebra-el-fin-de-curso-de-los-talleres-de-lucia-ortega-con-exhibiciones-y-dip.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-chaparra-celebra-el-fin-de-curso-de-los-talleres-de-gimnasia-y-memoria-de-lucia-ortega.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
-      <news:title>La Chaparra celebra el fin de curso de los talleres de Lucía Ortega con exhibiciones y diplomas</news:title>
+      <news:publication_date>2026-07-05T19:37:31.777Z</news:publication_date>
+      <news:title>La Chaparra celebra el fin de curso de los talleres de gimnasia y memoria de Lucía Ortega</news:title>
     </news:news>
   </url>
   <url>
@@ -238,30 +227,41 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
       <news:title>La Chaparra celebra el fin de curso de los talleres de Lucía Ortega en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-danos-por-terremotos-en-venezuela.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-muestra-condolencias-por-terremotos-en-venezu.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.856Z</news:publication_date>
-      <news:title>La Hermandad de Nuestro Padre Jesús Nazareno lamenta los daños por terremotos en Venezuela</news:title>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
+      <news:title>La Hermandad de Nuestro Padre Jesús Nazareno muestra condolencias por terremotos en Venezuela</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/nuestra-senora-de-gracia-regresa-a-la-ermita-de-san-sebastian-tras-11-anos-en-alhaurin-el.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/nuestra-senora-de-gracia-vuelve-a-la-ermita-de-san-sebastian-tras-11-anos-en-alhaurin-el-g.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.857Z</news:publication_date>
-      <news:title>Nuestra Señora de Gracia regresa a la ermita de San Sebastián tras 11 años en Alhaurín el</news:title>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
+      <news:title>Nuestra Señora de Gracia vuelve a la ermita de San Sebastián tras 11 años en Alhaurín el Grande</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/nueva-piscina-exterior-abre-en-alhaurin-el-grande-y-arranca-campana-del-tomate-huevo-toro.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
+      <news:title>Nueva piscina exterior abre en Alhaurín el Grande y arranca campaña del tomate huevo toro</news:title>
     </news:news>
   </url>
   <url>
@@ -271,19 +271,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.857Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
       <news:title>Pablo Torres, alhaurino, forma pilotos militares en Bremen, Alemania</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentan-feria-villa-del-guadalhorce-2026-e-inauguran-centro-juvenil-en-alhaurin-el-grand.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/presentan-la-feria-villa-del-guadalhorce-2026-e-inauguran-centro-juvenil-en-alhaurin-el-gr-2.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.857Z</news:publication_date>
-      <news:title>Presentan Feria Villa del Guadalhorce 2026 e inauguran centro juvenil en Alhaurín el Grande</news:title>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
+      <news:title>Presentan la Feria Villa del Guadalhorce 2026 e inauguran centro juvenil en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
@@ -293,7 +293,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.857Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
       <news:title>Presentan la Feria Villa del Guadalhorce 2026 e inauguran centro juvenil en Alhaurín el Grande</news:title>
     </news:news>
   </url>
@@ -304,30 +304,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.857Z</news:publication_date>
+      <news:publication_date>2026-07-05T19:37:31.778Z</news:publication_date>
       <news:title>Programa de actos del Día de Jesús 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-oficial-del-dia-de-jesus-2026-primera-y-segunda-misa-de-triduo-en-alhaurin-el-gra.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-las-primeras-misas-del-triduo-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.857Z</news:publication_date>
-      <news:title>Programa oficial del Día de Jesús 2026: Primera y Segunda Misa de Triduo en Alhaurín el Grande</news:title>
+      <news:publication_date>2026-07-05T19:37:31.779Z</news:publication_date>
+      <news:title>Programa de las Primeras Misas del Triduo en el Día de Jesús 2026 en Alhaurín el Grande</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-todas-las-edades.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-mayores-y-ninos.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-05T17:22:19.857Z</news:publication_date>
-      <news:title>Villa del Guadalhorce anuncia la Feria 2026 con novedades para todas las edades</news:title>
+      <news:publication_date>2026-07-05T19:37:31.779Z</news:publication_date>
+      <news:title>Villa del Guadalhorce anuncia la Feria 2026 con novedades para mayores y niños</news:title>
     </news:news>
   </url>
 </urlset>

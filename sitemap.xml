@@ -277,13 +277,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-tradicion-y-fervor.html</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-mes-del-medio-ambiente-2026-con-actividades-educativas-y-2.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -295,7 +289,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inicia-feria-con-cena-de-mayores-y-reformas-en-parques-infantiles.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-mes-del-medio-ambiente-2026-con-actividades-educativas.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-parques-infantiles-y-abre-inscripciones-para-campamento-de-agos.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -313,7 +313,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-mas-de-10-millones-para-mejorar-infraestructuras-tras-temporales.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-recibe-10-1-millones-para-mejorar-infraestructuras-tras-temporales.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -343,13 +343,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-tercera-misa-de-triduo-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-en-jornada-sobre-patrimonio-liter.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-para-conocer-su-legado-literario.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -362,12 +356,6 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala.html</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguran-nueva-piscina-exterior-y-arranca-campana-del-tomate-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -397,13 +385,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/nuestra-senora-de-gracia-regresa-a-la-ermita-de-san-sebastian-tras-11-anos-en-alhaurin-el.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/nuestra-senora-de-gracia-vuelve-a-la-ermita-de-san-sebastian-tras-11-anos-en-alhaurin-el-g.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/pablo-torres-alhaurino-forma-pilotos-militares-en-bremen-alemania.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/nueva-piscina-exterior-y-campana-del-tomate-huevo-toro-destacan-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/pablo-torres-alhaurino-destaca-en-la-formacion-de-pilotos-en-bremen-alemania.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -421,7 +415,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -433,7 +427,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-todas-las-edades.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/tercera-misa-de-triduo-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-presenta-la-feria-2026-con-novedades-para-todas-las-edades.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

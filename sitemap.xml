@@ -271,12 +271,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-adquiere-la-casa-de-labradores-y-cierra-la-feria-villa-del-guadalhorce.html</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -301,7 +295,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inicia-feria-con-cena-de-mayores-y-reforma-de-parques-infantiles.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-nueva-piscina-municipal-exterior-con-281-m-de-lamina-de-agua.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inicia-la-feria-con-cena-de-mayores-y-reformas-en-parques-infantiles.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -331,31 +331,37 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivi-con-manuel-beltran-programa-31-de-atv-alhaurin.html</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-tercera-misa-de-triduo-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-en-jornada-sobre-patrimonio-liter.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-adquiere-la-casa-de-labradores-por-189-000.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/exposicion-en-alhaurin-el-grande-une-el-tango-y-el-flamenco-con-50-fotografias-y-carteles.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-xx-premio-internacional-de-poesia-antonio-gala-premia-al-joven-poeta-iker-andres-escude.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-2-de-bachillerato-en-ies-fuente-lucena-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-para-conocer-su-legado-literario.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/exposicion-en-alhaurin-el-grande-une-el-tango-y-el-flamenco-en-50-fotografias.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/graduacion-2-de-bachillerato-del-ies-fuente-lucena-en-el-teatro-antonio-gala.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -367,13 +373,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-nuestro-padre-jesus-nazareno-muestra-condolencias-por-terremotos-en-venezuela.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala-2026.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -385,19 +391,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguran-la-nueva-piscina-municipal-exterior-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/la-chaparra-celebra-el-fin-de-curso-de-los-talleres-de-lucia-ortega-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-muestra-condolencias-por-terremotos-en-venezu.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/jovenes-de-alhaurin-el-grande-participaran-en-la-visita-del-papa-leon-en-madrid-2026.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -415,6 +409,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-31-de-asi-lo-vivi-con-manuel-beltran-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -427,7 +427,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-presenta-la-feria-2026-con-novedades-para-todas-las-edades.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-anuncia-la-feria-2026-con-novedades-para-mayores-y-ninos.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

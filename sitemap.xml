@@ -271,7 +271,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -319,19 +319,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-flota-municipal-y-destaca-en-eventos-culturales-y-deportivos.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-flota-municipal-y-celebra-eventos-culturales-y-deportivos.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/artistas-residentes-en-la-baltasara-protagonizan-alhaurin-te-visita-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-tercera-misa-de-triduo-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-en-alhaurin-el-grande-tercera-misa-de-triduo.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -343,13 +337,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-xx-premio-antonio-gala-destaca-el-talento-joven-con-iker-andres-escudero-ganador.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-en-jornada-sobre-patrimonio-liter.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/estudiantes-de-la-uma-visitan-la-casa-museo-antonio-gala-para-conocer-su-legado-literario.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/exposicion-de-artistas-residentes-en-la-baltasara-llega-a-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -385,6 +379,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/iker-andres-escudero-gana-el-xx-premio-internacional-de-poesia-antonio-gala.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/inauguran-la-nueva-piscina-exterior-municipal-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -403,7 +403,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-muestra-condolencias-por-terremotos-en-venezu.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -421,7 +421,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

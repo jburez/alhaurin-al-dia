@@ -271,7 +271,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados-en-planeatv.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -301,7 +301,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-guarda-un-minuto-de-silencio-por-victimas-del-incendio-de-los-gallardos.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-guarda-un-minuto-de-silencio-por-las-victimas-del-incendio-de-los-galla.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -319,7 +319,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-cuatro-ejes-estrategicos-y-destaca-a-su-juventud-en-pleno-local.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-cuatro-ejes-estrategicos-y-presenta-lorquiana-en-rtv-alhaurin.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -337,7 +337,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-exposicion-tango-flamenco-y-lanza-noches-de-cine-en-verano.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-exposicion-tango-flamenco-y-lanza-noches-de-cine-en-barrios.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -349,13 +349,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-moderniza-servicios-y-promueve-cultura-y-seguridad-vial-en-julio-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-flota-y-promueve-educacion-vial-y-cultura-local-en-julio-2026.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/cena-de-mayores-inaugura-la-feria-de-villa-del-guadalhorce-2026-con-gran-participacion.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/artistas-residentes-en-la-baltasara-protagonizan-alhaurin-te-visita-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/cena-de-mayores-da-inicio-a-la-feria-de-villa-del-guadalhorce-2026.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -367,19 +373,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-tercera-misa-de-triduo-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-en-alhaurin-el-grande-tercera-misa-de-triduo.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-consejo-local-de-infancia-y-adolescencia-de-alhaurin-el-grande-cierra-su-mandato-con-nu.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/exposicion-de-artistas-residentes-en-la-baltasara-llega-a-alhaurin-el-grande-2.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-consejo-local-de-infancia-y-adolescencia-de-alhaurin-el-grande-cierra-su-mandato-con.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -391,7 +391,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/exposicion-en-alhaurin-el-grande-une-tango-y-flamenco-con-50-fotografias-y-carteles-histor.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/exposicion-en-alhaurin-el-grande-une-el-tango-y-el-flamenco-en-50-fotografias.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -409,13 +409,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/jovenes-de-alhaurin-el-grande-participaran-en-encuentro-con-el-papa-leon-en-madrid-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/jovenes-de-alhaurin-el-grande-participaran-en-evento-con-el-papa-leon-en-madrid-2026.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezu.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-muestra-condolencias-por-terremotos-en-venezu.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -433,7 +433,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

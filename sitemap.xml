@@ -277,19 +277,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-adquiere-dos-dumpers-para-mejorar-servicios-y-emergencias.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-compra-la-antigua-camara-agraria-para-ampliar-servicios-publicos.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-compra-la-casa-de-labradores-para-ampliar-servicios-publicos.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -319,7 +313,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-cuatro-ejes-estrategicos-y-presenta-lorquiana-en-rtv.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-cuatro-ejes-estrategicos-y-presenta-lorquiana-en-rtv-alhaurin.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -349,7 +343,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-flota-municipal-y-celebra-eventos-culturales-y-deportivos.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-refuerza-servicios-con-dos-nuevos-dumpers-para-emergencias.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-flota-y-promueve-educacion-vial-y-cultura-local.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -367,7 +367,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/clausura-de-los-talleres-de-igualdad-en-alhaurin-el-grande-con-gran-participacion-femenina.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/clausura-de-los-talleres-de-igualdad-en-alhaurin-el-grande-con-cerca-de-400-participantes.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -379,7 +379,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-consejo-local-de-la-infancia-y-adolescencia-de-alhaurin-el-grande-cierra-su-etapa-con.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-consejo-local-de-infancia-y-adolescencia-de-alhaurin-el-grande-cierra-su-ultimo-pleno.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -397,19 +397,19 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/jovenes-de-alhaurin-el-grande-participan-en-la-visita-del-papa-leon-en-madrid-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/jovenes-de-alhaurin-el-grande-participaran-en-encuentro-con-el-papa-leon-en-madrid-2026.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/jovenes-de-alhaurin-el-grande-participaran-en-la-visita-del-papa-leon-en-madrid-2026.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -427,7 +427,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/nuestra-senora-de-gracia-regresa-a-la-ermita-de-san-sebastian-tras-11-anos-en-alhaurin-el.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/nuestra-senora-de-gracia-vuelve-a-la-ermita-de-san-sebastian-tras-11-anos-en-alhaurin-el-g.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

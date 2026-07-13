@@ -492,7 +492,7 @@ def schema_item_list(noticias):
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
-def html_header(title, description, canonical, image="", css_prefix="..", og_type="article"):
+def html_header(title, description, canonical, image="", css_prefix="..", og_type="article", incluir_article_css=True):
     image = image or f"{SITE_URL}/assets/favicon.svg"
     return f'''<head>
     <meta charset="utf-8">
@@ -514,8 +514,9 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
     <link rel="icon" type="image/svg+xml" href="{css_prefix}/assets/favicon.svg">
     <link rel="stylesheet" href="{css_prefix}/css/styles.css">
     <link rel="stylesheet" href="{css_prefix}/css/mobile.css">
-    <link rel="stylesheet" href="{css_prefix}/css/ads.css">
+    <link rel="stylesheet" href="{css_prefix}/css/ads.css">{f'''
     <link rel="stylesheet" href="{css_prefix}/css/article.css">
+    <link rel="stylesheet" href="{css_prefix}/css/article-share.css">''' if incluir_article_css else ''}
 </head>'''
 
 
@@ -614,7 +615,7 @@ def generar_html_categoria(categoria, noticias):
     <script type="application/ld+json">{schema_breadcrumb_categoria(categoria, canonical)}</script>
     <script type="application/ld+json">{schema_organization()}</script>
     <script type="application/ld+json">{schema_website()}</script>'''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " — Alhaurín al Día", descripcion, canonical, "", "../..", "website")}\n{site_chrome(body, "../..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " — Alhaurín al Día", descripcion, canonical, "", "../..", "website", incluir_article_css=False)}\n{site_chrome(body, "../..")}\n</html>'
 
 
 def escribir_si_cambia(ruta, contenido):

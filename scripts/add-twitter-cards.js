@@ -32,11 +32,15 @@ function addTwitterCard(html) {
   const ogTypeMatch = /<meta\s+property=["']og:type["']/i.exec(html);
   if (!ogTypeMatch) return html; // sin OG, no es el caso que cubre este script
 
-  const ogTitle = extract(html, /<meta property="og:title" content="([^"]*)">/i);
-  const ogDescription = extract(html, /<meta property="og:description" content="([^"]*)">/i);
-  const ogImage = extract(html, /<meta property="og:image" content="([^"]*)">/i);
+  // \s+ (no solo un espacio literal) para soportar etiquetas multilínea, y
+  // content=["'] con cierre opcional " />" para soportar meta autocerradas
+  // al estilo XHTML — ambos formatos conviven en el repo (generadores vs.
+  // HTML manual como index.html).
+  const ogTitle = extract(html, /<meta\s+property=["']og:title["']\s+content=["']([^"']*)["']/i);
+  const ogDescription = extract(html, /<meta\s+property=["']og:description["']\s+content=["']([^"']*)["']/i);
+  const ogImage = extract(html, /<meta\s+property=["']og:image["']\s+content=["']([^"']*)["']/i);
   const plainTitle = extract(html, /<title>([^<]*)<\/title>/i);
-  const plainDescription = extract(html, /<meta name="description" content="([^"]*)">/i);
+  const plainDescription = extract(html, /<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i);
 
   const title = ogTitle || plainTitle;
   const description = ogDescription || plainDescription;

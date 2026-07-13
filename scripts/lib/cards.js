@@ -87,7 +87,7 @@ function renderFeaturedNewsHTML(noticia, { isHome = false } = {}) {
                 ${meta}
                 <h2>${titulo}</h2>
                 <p>${descripcion}</p>
-                <a class="read-more" href="${escapeHTML(enlace)}">
+                <a class="read-more" href="${escapeHTML(enlace)}" aria-label="Leer: ${titulo}">
                     Leer noticia →
                 </a>
             </div>
@@ -125,7 +125,7 @@ function renderNewsCardHTML(noticia, { isHome = false } = {}) {
 
         <div class="news-footer">
             ${meta}
-            <a class="read-more" href="${escapeHTML(enlace)}">
+            <a class="read-more" href="${escapeHTML(enlace)}" aria-label="Leer: ${titulo}">
                 Leer noticia →
             </a>
         </div>

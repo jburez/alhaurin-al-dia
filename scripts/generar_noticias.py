@@ -602,10 +602,13 @@ def generar_html_categoria(categoria, noticias):
     cards = []
     for noticia in noticias:
         img = noticia.get("imagen", "")
-        cards.append(f'''<article class="content-card news-card">{f'<div class="news-image"><img src="{escapar(img)}" alt="{escapar(noticia.get("titulo", ""))}" loading="lazy"></div>' if img else '<div class="news-image news-placeholder"><span>Alhaurín al Día</span></div>'}<div class="news-body"><span class="tag">{escapar(categoria)}</span><h3>{
-                     escapar(noticia.get("titulo", "Noticia"))}</h3><p>{escapar(noticia.get("descripcion") or noticia.get("resumen") or "")}</p></div><div class="news-footer"><small>{escapar(noticia.get("fuente", ""))}</small><a class="read-more" href="../../{escapar(noticia.get("pagina", "#"))}">Leer noticia →</a></div></article>''')
+        titulo_noticia = noticia.get("titulo", "Noticia")
+        cards.append(f'''<article class="content-card news-card">{f'<div class="news-image"><img src="{escapar(img)}" alt="{escapar(titulo_noticia)}" loading="lazy"></div>' if img else '<div class="news-image news-placeholder"><span>Alhaurín al Día</span></div>'}<div class="news-body"><span class="tag">{escapar(categoria)}</span><h3>{
+                     escapar(titulo_noticia)}</h3><p>{escapar(noticia.get("descripcion") or noticia.get("resumen") or "")}</p></div><div class="news-footer"><small>{escapar(noticia.get("fuente", ""))}</small><a class="read-more" href="../../{escapar(noticia.get("pagina", "#"))}" aria-label="Leer: {escapar(titulo_noticia)}">Leer noticia →</a></div></article>''')
+    listado = ''.join(cards) if cards else '<p class="empty-state">No hay noticias publicadas en esta categoría por ahora. Consulta <a href="../../noticias/">todas las noticias</a>.</p>'
+    resumen_cantidad = f"{len(noticias)} noticias disponibles en esta categoría." if noticias else "Sin noticias publicadas por ahora en esta categoría."
     body = f'''
-    <main><section class="hero"><div class="container"><div class="hero-card"><span class="eyebrow">Categoría</span><h1>{escapar(categoria)}</h1><p class="lead">{escapar(descripcion)}</p></div></div></section><section><div class="container"><div class="section-title"><h2>Últimas noticias</h2><p>{len(noticias)} noticias disponibles en esta categoría.</p></div><div class="grid-3">{''.join(cards)}</div></div></section></main>
+    <main><section class="hero"><div class="container"><div class="hero-card"><span class="eyebrow">Categoría</span><h1>{escapar(categoria)}</h1><p class="lead">{escapar(descripcion)}</p></div></div></section><section><div class="container"><div class="section-title"><h2>Últimas noticias</h2><p>{escapar(resumen_cantidad)}</p></div><div class="grid-3">{listado}</div></div></section></main>
     <script type="application/ld+json">{schema_collection_page(categoria, canonical, descripcion)}</script>
     <script type="application/ld+json">{schema_item_list(noticias)}</script>
     <script type="application/ld+json">{schema_breadcrumb_categoria(categoria, canonical)}</script>
@@ -648,14 +651,21 @@ def generar_paginas_categorias(noticias):
     por_categoria = defaultdict(list)
     for noticia in noticias:
         por_categoria[noticia.get("categoria", "Actualidad")].append(noticia)
+    # Regenera SIEMPRE las categorías conocidas, no solo las que tienen
+    # noticias en este momento: si una categoría se queda sin artículos
+    # (por dedupe/limpieza de huérfanas) su página debe quedar con un
+    # estado vacío correcto en vez de conservar enlaces a noticias ya
+    # borradas.
+    todas_las_categorias = set(CATEGORIAS_VALIDAS) | set(por_categoria.keys())
     escritas = 0
-    for categoria, items in por_categoria.items():
+    for categoria in sorted(todas_las_categorias):
+        items = por_categoria.get(categoria, [])
         ruta = BASE_DIR / generar_ruta_categoria(categoria)
         ruta.parent.mkdir(parents=True, exist_ok=True)
         if escribir_si_cambia(ruta, generar_html_categoria(categoria, items)):
             escritas += 1
-    print("Páginas de categoría creadas/actualizadas:", escritas, "de", len(por_categoria))
-    return sorted(por_categoria.keys())
+    print("Páginas de categoría creadas/actualizadas:", escritas, "de", len(todas_las_categorias))
+    return sorted(todas_las_categorias)
 
 
 def obtener_noticias():

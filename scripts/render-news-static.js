@@ -3,15 +3,12 @@ const path = require('path');
 const {
   renderFeaturedNewsHTML,
   renderNewsCardHTML,
-  renderGuideCardHTML,
+  renderSourceFiltersHTML,
 } = require('./lib/cards');
 
 const ROOT = path.resolve(__dirname, '..');
-const HOME_FILE = path.join(ROOT, 'index.html');
+const NEWS_INDEX_FILE = path.join(ROOT, 'noticias', 'index.html');
 const NEWS_FILE = path.join(ROOT, 'data', 'noticias.json');
-const GUIDE_FILE = path.join(ROOT, 'data', 'guia-util.json');
-
-const HOME_SECONDARY_NEWS_LIMIT = 3;
 
 function setContainerInnerHTML(html, elementId, innerHTML) {
   const openTagPattern = new RegExp(`<div([^>]*\\bid=["']${elementId}["'][^>]*)>`, 'i');
@@ -49,33 +46,34 @@ function setContainerInnerHTML(html, elementId, innerHTML) {
 }
 
 function main() {
-  let html = fs.readFileSync(HOME_FILE, 'utf8');
-
+  let html = fs.readFileSync(NEWS_INDEX_FILE, 'utf8');
   const noticias = JSON.parse(fs.readFileSync(NEWS_FILE, 'utf8')) || [];
-  const guia = JSON.parse(fs.readFileSync(GUIDE_FILE, 'utf8')) || [];
 
   if (noticias.length === 0) {
     html = setContainerInnerHTML(html, 'featured-news', '');
+    html = setContainerInnerHTML(html, 'source-filters', '');
     html = setContainerInnerHTML(html, 'news-container', '<p>No hay noticias disponibles.</p>');
   } else {
-    const featured = renderFeaturedNewsHTML(noticias[0], { isHome: true });
+    const featured = renderFeaturedNewsHTML(noticias[0], { isHome: false });
     const secondary = noticias
-      .slice(1, 1 + HOME_SECONDARY_NEWS_LIMIT)
-      .map(noticia => renderNewsCardHTML(noticia, { isHome: true }))
+      .slice(1)
+      .map(noticia => renderNewsCardHTML(noticia, { isHome: false }))
       .join('\n');
+    const filters = renderSourceFiltersHTML(noticias, 'Todas');
 
     html = setContainerInnerHTML(html, 'featured-news', featured);
+    html = setContainerInnerHTML(html, 'source-filters', filters);
     html = setContainerInnerHTML(html, 'news-container', secondary);
   }
 
-  const guideCards = guia.map(item => renderGuideCardHTML(item)).join('\n');
-  html = setContainerInnerHTML(html, 'guide-container', guideCards);
+  // El listado ya existe en el HTML servido: refleja el número real de artículos
+  // en vez del placeholder "numberOfItems": 0 del JSON-LD.
+  html = html.replace(/"numberOfItems":\s*0/, `"numberOfItems": ${noticias.length}`);
 
-  fs.writeFileSync(HOME_FILE, html);
+  fs.writeFileSync(NEWS_INDEX_FILE, html);
 
-  console.log('Home regenerada con contenido estático real.');
-  console.log(`#featured-news / #news-container: ${Math.min(1 + HOME_SECONDARY_NEWS_LIMIT, noticias.length)} de ${noticias.length} noticias.`);
-  console.log(`#guide-container: ${guia.length} recursos de guía útil.`);
+  console.log('noticias/index.html regenerado con contenido estático real.');
+  console.log(`${noticias.length} noticias listadas de forma estática.`);
 }
 
 main();

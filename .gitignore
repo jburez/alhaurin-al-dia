@@ -1,4 +1,5 @@
 .env
+.DS_Store
 
 # Informes locales generados por auditorías SEO
 reports/*.json

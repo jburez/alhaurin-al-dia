@@ -149,9 +149,9 @@ function renderPage(item) {
     <meta property="og:image" content="${SITE_URL}/assets/favicon.svg">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/mobile.css">
-    <link rel="stylesheet" href="/ads.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/ads.css">
     <style>
         .resource-hero { padding:58px 0 28px; }
         .resource-card { background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:36px; padding:clamp(28px,5vw,56px); box-shadow:var(--shadow); }
@@ -200,7 +200,7 @@ function renderPage(item) {
         </div></section>
     </main>
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/">Anunciarse</a></div></div></footer>
-    <script src="/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
 `;

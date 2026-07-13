@@ -508,10 +508,10 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
     <meta property="og:image" content="{escapar(image)}">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/svg+xml" href="{css_prefix}/assets/favicon.svg">
-    <link rel="stylesheet" href="{css_prefix}/styles.css">
-    <link rel="stylesheet" href="{css_prefix}/mobile.css">
-    <link rel="stylesheet" href="{css_prefix}/ads.css">
-    <link rel="stylesheet" href="{css_prefix}/article.css">
+    <link rel="stylesheet" href="{css_prefix}/css/styles.css">
+    <link rel="stylesheet" href="{css_prefix}/css/mobile.css">
+    <link rel="stylesheet" href="{css_prefix}/css/ads.css">
+    <link rel="stylesheet" href="{css_prefix}/css/article.css">
 </head>'''
 
 
@@ -525,7 +525,7 @@ def site_chrome(content, prefix=".."):
     </nav></div></header>
     {content}
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a></div></div></footer>
-    <script src="{prefix}/app.js"></script>
+    <script src="{prefix}/js/app.js"></script>
 </body>'''
 
 

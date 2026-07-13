@@ -74,7 +74,7 @@ if (!html.includes('"@type": "NewsMediaOrganization"')) {
     </script>
 `;
 
-  html = html.replace('    <link rel="stylesheet" href="./home-live.css">\n', `    <link rel="stylesheet" href="./home-live.css">\n${jsonLd}`);
+  html = html.replace('    <link rel="stylesheet" href="./css/home-live.css">\n', `    <link rel="stylesheet" href="./css/home-live.css">\n${jsonLd}`);
   updated = true;
 }
 

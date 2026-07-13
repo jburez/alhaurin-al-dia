@@ -125,11 +125,59 @@ Como está definido en el brief; el trabajo de Fase B/C deja una base limpia (HT
 
 ## 7. Checklist SEO para verificar tras cada fase
 
-- [ ] `/`, `/noticias/`, `/guia-util/` tienen enlaces `<a href>` reales a contenido en el HTML servido (curl/view-source, sin ejecutar JS)
-- [ ] Las 30+ páginas de noticia tienen JSON-LD `NewsArticle` válido (validar con el test de resultados enriquecidos de Google)
-- [ ] `sitemap-index.xml` referencia los 5 sitemaps existentes
-- [ ] 0 enlaces internos rotos (repetir el script de verificación de enlaces usado en esta auditoría)
-- [ ] Twitter Card completa (title+description+image) en páginas de noticia y hubs principales
-- [ ] Contraste AA en `.section-kicker` y cualquier uso de `--muted`
-- [ ] Foco visible en los 2 inputs corregidos
-- [ ] Menú móvil funcional en `404.html`
+- [x] `/`, `/noticias/`, `/guia-util/` tienen enlaces `<a href>` reales a contenido en el HTML servido (curl/view-source, sin ejecutar JS)
+- [x] Las 30+ páginas de noticia tienen JSON-LD `NewsArticle` válido (validar con el test de resultados enriquecidos de Google)
+- [x] `sitemap-index.xml` referencia los 5 sitemaps existentes
+- [x] 0 enlaces internos rotos (repetir el script de verificación de enlaces usado en esta auditoría)
+- [x] Twitter Card completa (title+description+image) en páginas de noticia y hubs principales
+- [x] Contraste AA en `.section-kicker` y cualquier uso de `--muted`
+- [x] Foco visible en los 2 inputs corregidos
+- [x] Menú móvil funcional en `404.html`
+
+---
+
+## 8. Ejecutado en Fase B — SEO técnico
+
+6 commits (`07267d32` → `b350f317`). Resumen:
+
+- **C1 resuelto**: portada, `/noticias/` y `/guia-util/` ahora renderizan su listado principal como HTML estático real (`scripts/lib/cards.js` + `render-home-static.js`/`render-news-static.js`/`render-guide-static.js`, nuevos pasos `news:static`/`guide:static` en el build). `app.js` sigue re-renderizando en cliente sin cambio de comportamiento visible.
+- **C2 resuelto**: JSON-LD `NewsArticle`+`BreadcrumbList` activo en las 30 noticias; `CollectionPage`+`ItemList`+`BreadcrumbList` en categorías. El código ya existía en `generar_noticias.py` pero nunca se había usado para regenerar los HTML publicados (`scripts/regenerar_paginas_noticias.py`, nuevo, re-renderiza desde `data/noticias.json` sin red y sin tocar el JSON).
+- **LocalBusiness**: listo en `js/sponsored-cards.js`, sin efecto visible porque hay 0 fichas patrocinadas activas todavía.
+- **I3/I6 resueltos**: 8 fichas de farmacia unificadas (header/nav/footer/menú móvil + OG/Twitter); 6 no tenían navegación funcional en absoluto.
+- **I1/I2 resueltos**: Twitter Card completa en todo el sitio (`scripts/add-twitter-cards.js`, backstop permanente en el build); OG añadido a 5 páginas que no tenían ninguno; título unificado a "Titular — Alhaurín al Día" salvo 4 páginas de guía con subtítulo propio más informativo.
+- **I4/I5 resueltos**: `sitemap-index.xml` enlaza los 5 sitemaps; los generadores ya no reescriben páginas sin cambios reales (`escribir_si_cambia` en Python, comparación de contenido en los renderers Node), así que `lastmod` reflejará fechas reales a partir de ahora en vez de la fecha del último build.
+- **Bug propio detectado y corregido**: `schema_website()` generaba `SearchAction` (apunta a `/buscar/`, que no existe) y dependía de `remove-searchaction.js` para limpiarlo después; ese doble paso generar-y-limpiar rompía la detección de "sin cambios". Se eliminó en la fuente.
+
+## 9. Ejecutado en Fase C — Rendimiento y bugs
+
+4 commits (`ff69a922` → `16507062`). Resumen:
+
+- **C3 resuelto**: `generar_paginas_categorias` regenera siempre las 12 categorías conocidas (no solo las que tienen noticias activas), con estado vacío correcto cuando no hay artículos. Elimina los 6 enlaces rotos de categoría→noticia-borrada.
+- **C4 resuelto**: `404.html` ahora carga `app.js` y tiene botón de menú — antes era inaccesible en móvil.
+- **C6 resuelto**: contraste de `.section-kicker` subido de ~2,97:1 a ~5:1 (`--gold` de `#b88746` a `#8f6128`).
+- **C5 resuelto**: quitados los 2 únicos `outline: none` del sitio; el foco de teclado global vuelve a funcionar en el buscador de guía útil y el input de email.
+- **C7 resuelto**: la tarjeta de noticia completa es el área de toque real (antes solo "Leer noticia →", <44px), vía enlace expandido en CSS sin tocar el marcado. Aprovechado para añadir `aria-label` con el titular completo (I15).
+- **I7/I13 resueltos**: categorías ya no cargan `article.css` (~11,8 KB × 12 páginas); `article-share.css` (huérfano) se enlaza en la plantilla de noticia — la funcionalidad de compartir es real y ahora tiene estilos.
+- **I8 resuelto**: `width`/`height` en todas las `<img>` del sitio. El hero de noticia (único caso sin altura reservada en CSS, más allá de los atributos HTML) tiene ahora `aspect-ratio: 16/9`.
+- **I10 resuelto**: `defer` en los 11 patrones de `<script src>` del sitio, verificado que ningún script depende del orden de ejecución de otro.
+- **I12 resuelto**: `--muted` oscurecido de `#667085` a `#5f6b81` (4,42:1 → 4,78:1 sobre `--bg`), para que pase AA independientemente de si el texto cae sobre una tarjeta blanca o el fondo crema directo.
+- **Bug propio detectado y corregido**: `scripts/add-twitter-cards.js` (del bloque de Fase B) no soportaba metas autocerradas estilo XHTML ni multilínea, usadas en `index.html` y `tiempo/index.html` — dejó `twitter:description` vacío y `twitter:title` con un valor obsoleto en esos 2 archivos. Corregido el extractor y regenerados ambos.
+
+### No abordado en Fase C (decisiones explícitas, no pendientes silenciosos)
+
+- **WebP/AVIF (I11)**: las imágenes son 100% hotlinked de dominios externos (ytimg.com, medios locales). Convertir formato implicaría descargar, transformar y re-alojar cada imagen — un cambio de arquitectura (almacenamiento, CDN, actualizar el pipeline de noticias) que excede el alcance de esta fase. Recomendado como mejora futura si se quiere reducir el peso de imágenes.
+- **Minificación CSS/JS y consolidación de ficheros**: el workflow `.github/workflows/generar-noticias.yml` ejecuta `npm run build` cada 2h sin `npm install` previo y commitea los archivos generados directamente al repo (no hay build separado en la plataforma de hosting). Minificar con una dependencia nueva (terser/clean-css) requeriría añadir `npm ci` al workflow; generar `.min.css`/`.min.js` y cambiar las 78+ referencias sin also actualizar qué commitea el workflow arriesgaba dejar el sitio sirviendo assets rotos o desatualizados tras el próximo cron. La portada pesa ~165 KB (33% del objetivo de 500 KB) sin minificar, así que no es urgente. La consolidación de los 16 CSS en pocos ficheros por plantilla se hará en Fase D junto con los tokens de diseño nuevos, para no reescribir el CSS dos veces.
+- **Fuentes**: ya eran 100% de sistema (`Inter, ui-sans-serif, system-ui...` + `Georgia`/`Arial`), sin `@font-face` externo. Nada que optimizar — el máximo de 2 familias y el coste de red cero ya se cumplían antes de esta fase.
+- **I14 (deuda técnica menor)**: `guia-util/index.html` sigue duplicando `initMobileMenu()` inline en vez de reusar `js/app.js`. No se tocó: `app.js` intentaría poblar `#featured-news`/`#news-container`/`#guide-container`, que no existen en esa página (usa IDs propios `#guide-page-container`), así que el riesgo de tocarlo no compensaba el beneficio de deduplicar código en este bloque.
+
+## 10. Peso antes/después
+
+| Página | Antes (Fase A) | Después (Fase C) | Objetivo |
+|---|---|---|---|
+| Portada (HTML+CSS+JS) | 134,7 KB | 164,6 KB* | < 500 KB ✅ |
+| Noticia (HTML+CSS+JS) | 77,9 KB | 84,5 KB* | — |
+| Categoría (HTML+CSS+JS) | — | 70,0 KB | — |
+
+\* El aumento es esperado y deseado: portada y noticia ahora incluyen contenido HTML real (tarjetas de noticia/guía estáticas, JSON-LD, Twitter Card completa, `article-share.css`) que antes no existía o vivía solo en JS. Sigue muy por debajo del objetivo de 500 KB.
+
+Verificado tras cada bloque de Fase B y C: 0 problemas de balance HTML, 0 JSON-LD inválido, 0 enlaces internos rotos nuevos, 0 referencias CSS/JS rotas — en los 78 archivos HTML del sitio.

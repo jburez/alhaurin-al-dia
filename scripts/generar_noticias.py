@@ -507,6 +507,9 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
     <meta property="og:url" content="{escapar(canonical)}">
     <meta property="og:image" content="{escapar(image)}">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{escapar(title)}">
+    <meta name="twitter:description" content="{escapar(description)}">
+    <meta name="twitter:image" content="{escapar(image)}">
     <link rel="icon" type="image/svg+xml" href="{css_prefix}/assets/favicon.svg">
     <link rel="stylesheet" href="{css_prefix}/css/styles.css">
     <link rel="stylesheet" href="{css_prefix}/css/mobile.css">
@@ -588,7 +591,7 @@ def generar_html_noticia(noticia, noticias):
     <script type="application/ld+json">{breadcrumb_schema}</script>
     <script type="application/ld+json">{schema_organization()}</script>
     <script type="application/ld+json">{schema_website()}</script>'''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen, "..", "article")}\n{site_chrome(body, "..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " — Alhaurín al Día", descripcion, canonical, imagen, "..", "article")}\n{site_chrome(body, "..")}\n</html>'
 
 
 def generar_html_categoria(categoria, noticias):
@@ -607,7 +610,7 @@ def generar_html_categoria(categoria, noticias):
     <script type="application/ld+json">{schema_breadcrumb_categoria(categoria, canonical)}</script>
     <script type="application/ld+json">{schema_organization()}</script>
     <script type="application/ld+json">{schema_website()}</script>'''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " | Alhaurín al Día", descripcion, canonical, "", "../..", "website")}\n{site_chrome(body, "../..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " — Alhaurín al Día", descripcion, canonical, "", "../..", "website")}\n{site_chrome(body, "../..")}\n</html>'
 
 
 def generar_paginas_noticias(noticias):

@@ -137,7 +137,7 @@ function renderPage(item) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${escapeHtml(title)} | Alhaurín al Día</title>
+    <title>${escapeHtml(title)} — Alhaurín al Día</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="${escapeHtml(canonical)}">
@@ -148,6 +148,9 @@ function renderPage(item) {
     <meta property="og:url" content="${escapeHtml(canonical)}">
     <meta property="og:image" content="${SITE_URL}/assets/favicon.svg">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${SITE_URL}/assets/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/mobile.css">

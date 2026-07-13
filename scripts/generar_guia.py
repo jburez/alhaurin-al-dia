@@ -102,7 +102,7 @@ def html_head(item):
     return f'''<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{escapar(titulo)} | Alhaurín al Día</title>
+    <title>{escapar(titulo)} — Alhaurín al Día</title>
     <meta name="description" content="{escapar(descripcion)}">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="{escapar(canonical)}">
@@ -111,6 +111,11 @@ def html_head(item):
     <meta property="og:title" content="{escapar(titulo)}">
     <meta property="og:description" content="{escapar(descripcion)}">
     <meta property="og:url" content="{escapar(canonical)}">
+    <meta property="og:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{escapar(titulo)}">
+    <meta name="twitter:description" content="{escapar(descripcion)}">
+    <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/mobile.css">

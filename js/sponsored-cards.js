@@ -58,6 +58,32 @@
                     ) + "\n                </div>\n                <div class=\"sponsored-card-body\">\n                    <span class=\"sponsored-label\">" + escapeHTML(item.etiqueta || "Ficha patrocinada") + "</span>\n                    <h3>" + escapeHTML(item.nombre || "Negocio local") + "</h3>\n                    <p>" + escapeHTML(item.descripcion || "Negocio local verificado de Alhaurín el Grande.") + "</p>\n                    <div class=\"sponsored-card-meta\">\n                        " + (item.categoria ? "<span>" + escapeHTML(item.categoria) + "</span>" : "") + "\n                        " + (item.zona ? "<span>" + escapeHTML(item.zona) + "</span>" : "") + "\n                    </div>\n                    " + (features.length ? "<ul class=\"sponsored-card-features\">" + features.map(function (feature) { return "<li>" + escapeHTML(feature) + "</li>"; }).join("") + "</ul>" : "") + "\n                    <div class=\"sponsored-card-actions\">\n                        <a href=\"" + escapeHTML(url) + "\" " + (isExternal ? "target=\"_blank\" rel=\"noopener noreferrer sponsored\"" : "") + ">" + escapeHTML(item.cta || "Ver ficha") + "</a>\n                        " + (phoneUrl ? "<a class=\"secondary\" href=\"" + escapeHTML(phoneUrl) + "\">Llamar</a>" : "") + "\n                    </div>\n                </div>\n            </article>\n        ";
     }
 
+    function renderBusinessSchema(item) {
+        var data = {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": item.nombre || "Negocio local",
+            "description": item.descripcion || "Negocio local de Alhaurín el Grande.",
+            "url": normalizeLink(item.url || "comercios/"),
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Alhaurín el Grande",
+                "addressRegion": "Málaga",
+                "addressCountry": "ES"
+            },
+            "areaServed": { "@type": "Place", "name": "Alhaurín el Grande" }
+        };
+        if (item.zona) data.address.addressRegion = item.zona + ", Málaga";
+        if (item.telefonoHref) data.telephone = item.telefonoHref;
+        if (item.categoria) data.knowsAbout = item.categoria;
+        if (item.imagen) data.image = normalizeLink(item.imagen);
+
+        var scriptTag = document.createElement("script");
+        scriptTag.type = "application/ld+json";
+        scriptTag.textContent = JSON.stringify(data);
+        return scriptTag;
+    }
+
     fetch(new URL("data/fichas-patrocinadas.json", root).href)
         .then(function (response) {
             if (!response.ok) throw new Error("No se pudo cargar fichas-patrocinadas.json");
@@ -77,6 +103,9 @@
                 }
 
                 container.innerHTML = filtered.map(renderCard).join("");
+                filtered.forEach(function (item) {
+                    container.appendChild(renderBusinessSchema(item));
+                });
             });
         })
         .catch(function (error) {

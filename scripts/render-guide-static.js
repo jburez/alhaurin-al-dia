@@ -58,7 +58,8 @@ function main() {
     `$1${items.length}$2`
   );
 
-  fs.writeFileSync(GUIDE_INDEX_FILE, html);
+  const previo = fs.existsSync(GUIDE_INDEX_FILE) ? fs.readFileSync(GUIDE_INDEX_FILE, 'utf8') : null;
+  if (html !== previo) fs.writeFileSync(GUIDE_INDEX_FILE, html);
 
   console.log('guia-util/index.html regenerado con contenido estático real.');
   console.log(`${items.length} recursos listados de forma estática.`);

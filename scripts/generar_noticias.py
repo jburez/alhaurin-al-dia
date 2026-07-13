@@ -431,8 +431,9 @@ def schema_organization():
 
 
 def schema_website():
-    data = {"@context": "https://schema.org", "@type": "WebSite", "name": "Alhaurín al Día", "url": SITE_URL, "inLanguage": "es-ES",
-            "potentialAction": {"@type": "SearchAction", "target": f"{SITE_URL}/buscar/?q={{search_term_string}}", "query-input": "required name=search_term_string"}}
+    # Sin potentialAction/SearchAction: /buscar/ no existe en el sitio.
+    # scripts/audit-seo.js falla el build si detecta ese bloque.
+    data = {"@context": "https://schema.org", "@type": "WebSite", "name": "Alhaurín al Día", "url": SITE_URL, "inLanguage": "es-ES"}
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
@@ -613,6 +614,16 @@ def generar_html_categoria(categoria, noticias):
     return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " — Alhaurín al Día", descripcion, canonical, "", "../..", "website")}\n{site_chrome(body, "../..")}\n</html>'
 
 
+def escribir_si_cambia(ruta, contenido):
+    """No reescribe si el contenido es idéntico, para que el mtime del
+    archivo (usado como lastmod real en el sitemap) refleje la última
+    modificación de verdad y no la fecha del último build."""
+    if ruta.exists() and ruta.read_text(encoding="utf-8") == contenido:
+        return False
+    ruta.write_text(contenido, encoding="utf-8")
+    return True
+
+
 def generar_paginas_noticias(noticias):
     NOTICIAS_DIR.mkdir(parents=True, exist_ok=True)
     rutas_usadas = set()
@@ -626,22 +637,24 @@ def generar_paginas_noticias(noticias):
             contador += 1
         rutas_usadas.add(ruta)
         noticia["pagina"] = ruta
+    escritas = 0
     for noticia in noticias:
-        (BASE_DIR / noticia["pagina"]).write_text(
-            generar_html_noticia(noticia, noticias), encoding="utf-8")
-    print("Páginas individuales creadas:", len(noticias))
+        if escribir_si_cambia(BASE_DIR / noticia["pagina"], generar_html_noticia(noticia, noticias)):
+            escritas += 1
+    print("Páginas individuales creadas/actualizadas:", escritas, "de", len(noticias))
 
 
 def generar_paginas_categorias(noticias):
     por_categoria = defaultdict(list)
     for noticia in noticias:
         por_categoria[noticia.get("categoria", "Actualidad")].append(noticia)
+    escritas = 0
     for categoria, items in por_categoria.items():
         ruta = BASE_DIR / generar_ruta_categoria(categoria)
         ruta.parent.mkdir(parents=True, exist_ok=True)
-        ruta.write_text(generar_html_categoria(
-            categoria, items), encoding="utf-8")
-    print("Páginas de categoría creadas:", len(por_categoria))
+        if escribir_si_cambia(ruta, generar_html_categoria(categoria, items)):
+            escritas += 1
+    print("Páginas de categoría creadas/actualizadas:", escritas, "de", len(por_categoria))
     return sorted(por_categoria.keys())
 
 

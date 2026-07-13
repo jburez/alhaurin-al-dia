@@ -70,7 +70,8 @@ function main() {
   // en vez del placeholder "numberOfItems": 0 del JSON-LD.
   html = html.replace(/"numberOfItems":\s*0/, `"numberOfItems": ${noticias.length}`);
 
-  fs.writeFileSync(NEWS_INDEX_FILE, html);
+  const previo = fs.existsSync(NEWS_INDEX_FILE) ? fs.readFileSync(NEWS_INDEX_FILE, 'utf8') : null;
+  if (html !== previo) fs.writeFileSync(NEWS_INDEX_FILE, html);
 
   console.log('noticias/index.html regenerado con contenido estático real.');
   console.log(`${noticias.length} noticias listadas de forma estática.`);

@@ -218,6 +218,7 @@ function main() {
 
   let count = 0;
   let skipped = 0;
+  let unchanged = 0;
 
   for (const item of items) {
     if (!item.id) continue;
@@ -228,12 +229,21 @@ function main() {
 
     const dir = path.join(GUIDE_DIR, item.id);
     const file = path.join(dir, 'index.html');
+    const rendered = renderPage(item);
+    // No reescribe si el contenido no cambió, para que el mtime del archivo
+    // (usado como lastmod real en el sitemap) refleje la última modificación
+    // de verdad y no la fecha del último build.
+    if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === rendered) {
+      unchanged += 1;
+      continue;
+    }
     fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(file, renderPage(item));
+    fs.writeFileSync(file, rendered);
     count += 1;
   }
 
   console.log(`Páginas de guía útil renderizadas: ${count}`);
+  console.log(`Páginas de guía útil sin cambios: ${unchanged}`);
   console.log(`Páginas de guía útil protegidas: ${skipped}`);
 }
 

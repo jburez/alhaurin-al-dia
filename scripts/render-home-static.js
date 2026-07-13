@@ -71,7 +71,8 @@ function main() {
   const guideCards = guia.map(item => renderGuideCardHTML(item)).join('\n');
   html = setContainerInnerHTML(html, 'guide-container', guideCards);
 
-  fs.writeFileSync(HOME_FILE, html);
+  const previo = fs.existsSync(HOME_FILE) ? fs.readFileSync(HOME_FILE, 'utf8') : null;
+  if (html !== previo) fs.writeFileSync(HOME_FILE, html);
 
   console.log('Home regenerada con contenido estático real.');
   console.log(`#featured-news / #news-container: ${Math.min(1 + HOME_SECONDARY_NEWS_LIMIT, noticias.length)} de ${noticias.length} noticias.`);

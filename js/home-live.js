@@ -5,7 +5,7 @@
     if (!container) return;
 
     const script = document.currentScript || document.querySelector('script[src$="home-live.js"]');
-    const root = script ? new URL("./", script.src) : new URL("/", window.location.origin);
+    const root = script ? new URL("../", script.src) : new URL("/", window.location.origin);
 
     function escapeHTML(value = "") {
         return String(value)

@@ -5,7 +5,7 @@ const guideContainer = document.getElementById("guide-container");
 const guideSearch = document.getElementById("guide-search");
 
 const appScript = document.currentScript || document.querySelector('script[src$="app.js"]');
-const APP_ROOT = appScript ? new URL("./", appScript.src) : new URL("/", window.location.origin);
+const APP_ROOT = appScript ? new URL("../", appScript.src) : new URL("/", window.location.origin);
 
 const IS_HOME = document.body && document.body.contains(featuredContainer) && document.getElementById("inicio");
 const HOME_SECONDARY_NEWS_LIMIT = 3;

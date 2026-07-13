@@ -3,7 +3,7 @@
     if (!containers.length) return;
 
     var script = document.currentScript || document.querySelector('script[src$="sponsored-cards.js"]');
-    var root = script ? new URL("./", script.src) : new URL("/", window.location.origin);
+    var root = script ? new URL("../", script.src) : new URL("/", window.location.origin);
 
     function escapeHTML(value) {
         return String(value || "")

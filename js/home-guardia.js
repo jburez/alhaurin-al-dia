@@ -3,7 +3,7 @@
     if (!box) return;
 
     var script = document.currentScript || document.querySelector('script[src$="home-guardia.js"]');
-    var root = script ? new URL("./", script.src) : new URL("/", window.location.origin);
+    var root = script ? new URL("../", script.src) : new URL("/", window.location.origin);
 
     function pad(value) {
         return String(value).padStart(2, "0");

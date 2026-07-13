@@ -5,7 +5,7 @@
     if (!container) return;
 
     var script = document.currentScript || document.querySelector('script[src$="home-agenda.js"]');
-    var root = script ? new URL("./", script.src) : new URL("/", window.location.origin);
+    var root = script ? new URL("../", script.src) : new URL("/", window.location.origin);
 
     function escapeHTML(value) {
         return String(value || "")

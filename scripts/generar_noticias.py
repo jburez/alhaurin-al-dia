@@ -568,7 +568,7 @@ def generar_html_noticia(noticia, noticias):
     lectura = tiempo_lectura(f"{titulo} {descripcion} {cuerpo}")
     share_text = quote(f"{titulo} {canonical}")
     share_url = quote(canonical, safe="")
-    imagen_html = f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>' if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
+    imagen_html = f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}" width="800" height="450"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>' if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
     cuerpo_html = renderizar_parrafos_cuerpo(cuerpo)
     relacionadas = bloque_relacionadas(noticia, noticias)
     breadcrumb_schema = schema_breadcrumb_list(noticia, canonical)
@@ -603,7 +603,7 @@ def generar_html_categoria(categoria, noticias):
     for noticia in noticias:
         img = noticia.get("imagen", "")
         titulo_noticia = noticia.get("titulo", "Noticia")
-        cards.append(f'''<article class="content-card news-card">{f'<div class="news-image"><img src="{escapar(img)}" alt="{escapar(titulo_noticia)}" loading="lazy"></div>' if img else '<div class="news-image news-placeholder"><span>Alhaurín al Día</span></div>'}<div class="news-body"><span class="tag">{escapar(categoria)}</span><h3>{
+        cards.append(f'''<article class="content-card news-card">{f'<div class="news-image"><img src="{escapar(img)}" alt="{escapar(titulo_noticia)}" loading="lazy" width="400" height="230"></div>' if img else '<div class="news-image news-placeholder"><span>Alhaurín al Día</span></div>'}<div class="news-body"><span class="tag">{escapar(categoria)}</span><h3>{
                      escapar(titulo_noticia)}</h3><p>{escapar(noticia.get("descripcion") or noticia.get("resumen") or "")}</p></div><div class="news-footer"><small>{escapar(noticia.get("fuente", ""))}</small><a class="read-more" href="../../{escapar(noticia.get("pagina", "#"))}" aria-label="Leer: {escapar(titulo_noticia)}">Leer noticia →</a></div></article>''')
     listado = ''.join(cards) if cards else '<p class="empty-state">No hay noticias publicadas en esta categoría por ahora. Consulta <a href="../../noticias/">todas las noticias</a>.</p>'
     resumen_cantidad = f"{len(noticias)} noticias disponibles en esta categoría." if noticias else "Sin noticias publicadas por ahora en esta categoría."

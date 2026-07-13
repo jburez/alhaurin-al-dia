@@ -271,7 +271,7 @@ function renderFeaturedNews(noticia) {
         <article class="featured-news-card">
             <div class="featured-news-image">
                 ${imagen ? `
-                    <img src="${escapeHTML(imagen)}" alt="${titulo}">
+                    <img src="${escapeHTML(imagen)}" alt="${titulo}" width="600" height="390">
                 ` : `
                     <div class="news-placeholder">
                         <span>Alhaurín al Día</span>
@@ -311,7 +311,7 @@ function renderNewsCard(noticia) {
     card.innerHTML = `
         ${imagen ? `
             <div class="news-image">
-                <img src="${escapeHTML(imagen)}" alt="${titulo}" loading="lazy">
+                <img src="${escapeHTML(imagen)}" alt="${titulo}" loading="lazy" width="400" height="230">
             </div>
         ` : `
             <div class="news-image news-placeholder">

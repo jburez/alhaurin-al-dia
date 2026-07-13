@@ -87,6 +87,7 @@
 
 .article-hero-image img {
     width: 100%;
+    aspect-ratio: 16 / 9;
     max-height: 520px;
     object-fit: cover;
 }

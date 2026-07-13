@@ -530,7 +530,7 @@ def site_chrome(content, prefix=".."):
     </nav></div></header>
     {content}
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a></div></div></footer>
-    <script src="{prefix}/js/app.js"></script>
+    <script src="{prefix}/js/app.js" defer></script>
 </body>'''
 
 

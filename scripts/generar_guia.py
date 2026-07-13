@@ -183,7 +183,7 @@ def html_item(item):
         </div></section>
     </main>
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a></div></div></footer>
-    <script src="/js/app.js"></script>
+    <script src="/js/app.js" defer></script>
 </body>
 </html>'''
 

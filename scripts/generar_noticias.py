@@ -512,6 +512,9 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
     <meta name="twitter:description" content="{escapar(description)}">
     <meta name="twitter:image" content="{escapar(image)}">
     <link rel="icon" type="image/svg+xml" href="{css_prefix}/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
     <link rel="stylesheet" href="{css_prefix}/css/styles.css">
     <link rel="stylesheet" href="{css_prefix}/css/mobile.css">
     <link rel="stylesheet" href="{css_prefix}/css/ads.css">{f'''

@@ -152,6 +152,9 @@ function renderPage(item) {
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <meta name="twitter:image" content="${SITE_URL}/assets/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/ads.css">

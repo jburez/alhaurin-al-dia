@@ -181,3 +181,40 @@ Como está definido en el brief; el trabajo de Fase B/C deja una base limpia (HT
 \* El aumento es esperado y deseado: portada y noticia ahora incluyen contenido HTML real (tarjetas de noticia/guía estáticas, JSON-LD, Twitter Card completa, `article-share.css`) que antes no existía o vivía solo en JS. Sigue muy por debajo del objetivo de 500 KB.
 
 Verificado tras cada bloque de Fase B y C: 0 problemas de balance HTML, 0 JSON-LD inválido, 0 enlaces internos rotos nuevos, 0 referencias CSS/JS rotas — en los 78 archivos HTML del sitio.
+
+---
+
+## 11. Fase D — Plan de diseño (aprobado)
+
+### Concepto
+Periódico digital de pueblo con nivel de medio nacional: editorial, limpio, jerarquía tipográfica fuerte. La portada responde en 5 segundos a "¿qué pasa hoy en Alhaurín?" — noticia principal grande + franja de utilidad inmediata visible sin scroll en móvil.
+
+### Paleta — "sierra y olivar"
+Acento único en oliva: raíz local directa (Alhaurín el Grande a los pies de la Sierra de Mijas, paisaje de olivar) y neutral respecto a las dos hermandades locales.
+
+```css
+--bg: #faf7f2;   --paper: #ffffff;   --ink: #1c1f1b;   --muted: #5b6058;   --line: #e4e0d5;
+--accent: #455c36;   --accent-dark: #34462a;   --accent-soft: #eaeee1;
+```
+
+Contraste verificado (WCAG): `ink/bg` 15,6:1 · `accent/bg` 6,9:1 · `accent/accent-soft` 6,3:1 · `white/accent-dark` 10,2:1 · `muted/bg` 6,0:1.
+
+### Tipografía
+- Display (titulares): **Fraunces** (Google Fonts, pesos 600/700, `font-display: swap`, `preconnect`) — serif editorial con carácter, evita Inter/Roboto para display.
+- Cuerpo: pila de sistema existente (ya muy legible, coste de red cero).
+- Base móvil 17px (ya cumplía desde una fase SEO anterior).
+
+### Firma visual: "la franja de hoy"
+Franja bajo la cabecera con fecha+santoral · tiempo · farmacia de guardia, fondo `--accent-soft`. Versión completa en portada, reducida en el resto del sitio. Resto del sitio disciplinado: sin colores por categoría.
+
+### Wireframes
+Ver detalle completo en la conversación de diseño; portada móvil = franja de hoy + noticia principal + ads reservados + listado + comercios + guía; portada desktop = misma jerarquía a 2 columnas con sidebar de publicidad.
+
+### Ejecutado — Bloque "tokens y base común"
+- `css/styles.css`: `:root` reescrito con la paleta y escala tipográfica nuevas (tokens `--text-*`), con `--brand`/`--brand-soft`/`--gold` mantenidos como **alias heredados** hacia los tokens nuevos para que el resto de CSS (aún no migrado) siga renderizando coherente hasta que se toque en los siguientes bloques (portada/noticia/secciones).
+- Reemplazados los `rgba()`/hex hardcodeados del navy y dorado antiguos por los del nuevo acento en las reglas compartidas de `styles.css` (header, logo, botones, `.section-kicker`, `.featured-label`, `.source-mini-tag`, etc.).
+- `font-family: Georgia, "Times New Roman", serif` → `var(--font-display)` en las 6 reglas de `styles.css` que ya usaban Georgia como serif editorial.
+- Fraunces cargada en las 78 páginas del sitio (generadores + páginas manuales), con `preconnect` a `fonts.googleapis.com`/`fonts.gstatic.com`.
+- `theme-color` de las 16 páginas manuales actualizado de `#17324d` (navy) a `#1c1f1b` (ink).
+
+Pendiente (siguientes commits, uno por plantilla): migrar `home-*.css` (portada), `article.css`/`article-share.css` (noticia), y el resto de CSS de sección (`sponsored-cards.css`, `ux-*.css`, etc.) de los nombres de variable heredados a los tokens nuevos, y aplicar la "franja de hoy" como firma visual real en el HTML de portada.

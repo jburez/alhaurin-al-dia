@@ -8,8 +8,8 @@
 
 .daily-dashboard-shell {
     background:
-        radial-gradient(circle at top right, rgba(184, 135, 70, .18), transparent 22rem),
-        radial-gradient(circle at bottom left, rgba(23, 50, 77, .10), transparent 20rem),
+        radial-gradient(circle at top right, rgba(69, 92, 54, .18), transparent 22rem),
+        radial-gradient(circle at bottom left, rgba(28, 31, 27, .10), transparent 20rem),
         linear-gradient(135deg, rgba(255, 255, 255, .96), rgba(251, 248, 242, .94));
     border: 1px solid var(--line);
     border-radius: 34px;
@@ -27,7 +27,7 @@
     right: -120px;
     top: -120px;
     border-radius: 999px;
-    background: rgba(23, 50, 77, .08);
+    background: rgba(28, 31, 27, .08);
 }
 
 .daily-dashboard-header {
@@ -42,8 +42,8 @@
 
 .daily-dashboard-header h2 {
     margin: 0;
-    color: var(--brand);
-    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    font-family: var(--font-display);
     font-size: clamp(32px, 4.4vw, 52px);
     line-height: .98;
     letter-spacing: -.055em;
@@ -82,7 +82,7 @@
     flex-direction: column;
     background: rgba(255, 255, 255, .94);
     border: 1px solid var(--line);
-    border-left: 5px solid #d9e6f0;
+    border-left: 5px solid #d7ddc7;
     border-radius: 22px;
     padding: 16px;
     box-shadow: var(--shadow-soft);
@@ -115,7 +115,7 @@
 
 .daily-card strong {
     display: block;
-    color: var(--brand);
+    color: var(--ink);
     font-size: 14px;
     line-height: 1.1;
     margin-bottom: 6px;
@@ -126,9 +126,9 @@
     width: fit-content;
     padding: 4px 8px;
     border-radius: 999px;
-    background: var(--brand-soft);
-    border: 1px solid #d9e6f0;
-    color: var(--brand);
+    background: var(--accent-soft);
+    border: 1px solid #d7ddc7;
+    color: var(--ink);
     font-size: 10px;
     font-weight: 950;
     letter-spacing: .06em;
@@ -136,8 +136,8 @@
 }
 
 .daily-value {
-    color: var(--brand);
-    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    font-family: var(--font-display);
     font-size: clamp(24px, 2.6vw, 31px);
     font-weight: 800;
     line-height: 1;
@@ -156,9 +156,9 @@
     margin-top: 10px;
     padding: 6px 10px;
     border-radius: 999px;
-    background: var(--brand-soft);
-    border: 1px solid #d9e6f0;
-    color: var(--brand);
+    background: var(--accent-soft);
+    border: 1px solid #d7ddc7;
+    color: var(--ink);
     font-size: 11px;
     font-weight: 950;
 }
@@ -166,7 +166,7 @@
 .daily-link {
     margin-top: auto;
     padding-top: 14px;
-    color: var(--brand);
+    color: var(--ink);
     font-size: 13px;
     font-weight: 950;
 }
@@ -186,7 +186,7 @@
 .daily-card.warning {
     background: #fff8ed;
     border-color: #efd9b9;
-    border-left-color: var(--gold);
+    border-left-color: #c8912f;
 }
 
 .daily-card.warning .daily-icon,
@@ -210,13 +210,13 @@
 }
 
 .daily-card.neutral {
-    border-left-color: var(--brand);
+    border-left-color: var(--ink);
 }
 
 .daily-card.neutral .daily-icon,
 .daily-card.neutral .daily-status-badge {
-    background: var(--brand-soft);
-    border-color: #d9e6f0;
+    background: var(--accent-soft);
+    border-color: #d7ddc7;
 }
 
 .daily-card-wide {
@@ -235,7 +235,7 @@
 
 .andalmet-widget-card {
     background:
-        radial-gradient(circle at top right, rgba(184, 135, 70, .12), transparent 16rem),
+        radial-gradient(circle at top right, rgba(69, 92, 54, .12), transparent 16rem),
         rgba(255, 255, 255, .92);
     border: 1px solid var(--line);
     border-radius: 28px;
@@ -254,7 +254,7 @@
 .andalmet-widget-card h2,
 .andalmet-widget-card h3 {
     margin: 10px 0 8px;
-    color: var(--brand);
+    color: var(--ink);
     letter-spacing: -.035em;
 }
 

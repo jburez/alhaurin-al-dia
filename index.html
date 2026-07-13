@@ -129,6 +129,25 @@
         </div>
     </header>
 
+    <div class="today-strip" aria-label="Alhaurín hoy">
+        <div class="container today-strip-inner">
+            <span class="today-strip-date" id="today-strip-date">Hoy en Alhaurín</span>
+            <a class="today-strip-link" href="#daily-dashboard-title"><span aria-hidden="true">☀</span> Tiempo</a>
+            <a class="today-strip-link" href="#home-pharmacy-guard"><span aria-hidden="true">💊</span> Farmacia de guardia</a>
+            <a class="today-strip-link" href="#home-agenda-title"><span aria-hidden="true">📅</span> Agenda</a>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var el = document.getElementById("today-strip-date");
+            if (!el) return;
+            try {
+                var formatted = new Date().toLocaleDateString("es-ES", { day: "numeric", month: "long" });
+                el.textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
+            } catch (e) { /* se queda el texto por defecto */ }
+        })();
+    </script>
+
     <main id="inicio">
         <section class="hero home-hero-clean">
             <div class="container hero-grid">

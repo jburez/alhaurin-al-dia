@@ -1,4 +1,55 @@
 /* =========================
+   FRANJA DE HOY — firma visual del sitio
+========================= */
+
+.today-strip {
+    background: var(--accent-soft);
+    border-bottom: 1px solid var(--line);
+}
+
+.today-strip-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 18px;
+    padding: 10px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.today-strip-date {
+    flex: 0 0 auto;
+    color: var(--ink);
+    font-weight: 850;
+    font-size: 13px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.today-strip-link {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    gap: 6px;
+    color: var(--accent-dark);
+    font-weight: 800;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.today-strip-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .today-strip-inner {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+/* =========================
    HOME COMPACT HERO
 ========================= */
 

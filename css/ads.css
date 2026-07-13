@@ -20,6 +20,16 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 28px 16px 12px;
+    background: var(--paper-soft);
+    border: 1px dashed var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 .ad-slot::before {
@@ -27,7 +37,7 @@
     position: absolute;
     top: 8px;
     left: 12px;
-    color: #9a8872;
+    color: var(--muted);
     font-size: 10px;
     font-weight: 900;
     letter-spacing: .08em;

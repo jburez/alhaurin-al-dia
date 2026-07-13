@@ -521,9 +521,8 @@ section {
     min-height: 76px;
     margin: 0 0 12px;
     color: var(--brand);
-    font-size: 18px;
-    line-height: 1.18;
-    letter-spacing: -.035em;
+    font: var(--text-headline-list);
+    letter-spacing: -.02em;
 }
 
 .news-card p {

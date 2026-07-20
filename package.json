@@ -2,7 +2,7 @@
   "name": "alhaurin-al-dia",
   "private": true,
   "scripts": {
-    "news": "python3 scripts/generar_noticias.py",
+    "news": "python3 scripts/generar_noticias_seguro.py",
     "news:dedupe": "node scripts/dedupe-news.js --write",
     "news:dedupe:dry": "node scripts/dedupe-news.js",
     "news:orphans:dry": "node scripts/clean-orphan-news.js",

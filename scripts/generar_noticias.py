@@ -3,6 +3,7 @@ import html
 import json
 import os
 import re
+import unicodedata
 from collections import defaultdict
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -18,6 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
 NOTICIAS_DIR = BASE_DIR / "noticias"
 CATEGORIAS_DIR = BASE_DIR / "categoria"
+FUENTES_FILE = BASE_DIR / "data" / "fuentes.json"
+GEOGRAFIA_FILE = BASE_DIR / "data" / "geografia.json"
 SITE_URL = "https://alhaurinaldia.es"
 
 MAX_NOTICIAS_POR_FUENTE = 10
@@ -30,20 +33,14 @@ CATEGORIAS_VALIDAS = [
     "Turismo y Patrimonio", "Sucesos", "Vídeos",
 ]
 
-FUENTES = [
-    {"nombre": "RTV Alhaurín el Grande",
-        "url": "https://rtvalhaurinelgrande.com/feed/"},
-    {"nombre": "ATV Alhaurín YouTube",
-        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UClgnTGIKzuISyUK8F3v1BFA"},
-    {"nombre": "Europa Press Andalucía",
-        "url": "https://www.europapress.es/rss/rss.aspx?ch=00111"},
-    {"nombre": "Diario SUR Málaga",
-        "url": "https://www.diariosur.es/rss/2.0/?section=malaga"},
-    {"nombre": "Ayuntamiento Alhaurín el Grande",
-        "url": "https://alhaurinelgrande.es/feed/"},
-    {"nombre": "Hermandad Nuestro Padre Jesús Nazareno",
-        "url": "https://www.nuestropadrejesusnazareno.com/feed/"},
-]
+
+def cargar_fuentes():
+    """Lee el registro de fuentes (data/fuentes.json) y devuelve solo las activas."""
+    try:
+        fuentes = json.loads(FUENTES_FILE.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+    return [f for f in fuentes if f.get("activa", True)]
 
 
 load_dotenv()
@@ -187,19 +184,10 @@ def generar_ruta_categoria(categoria):
 
 
 def prioridad_fuente(fuente):
-    fuente = fuente.lower()
-    if "ayuntamiento alhaurín" in fuente:
-        return 120
-    if "diario sur" in fuente:
-        return 100
-    if "hermandad nuestro padre jesús nazareno" in fuente:
-        return 95
-    if "rtv alhaurín" in fuente:
-        return 90
-    if "atv alhaurín" in fuente:
-        return 80
-    if "europa press" in fuente:
-        return 50
+    """Prioridad editorial de una fuente por nombre, según data/fuentes.json."""
+    for registro in cargar_fuentes():
+        if registro.get("nombre", "").strip().lower() == fuente.strip().lower():
+            return registro.get("prioridad", 10)
     return 10
 
 
@@ -256,14 +244,57 @@ def generar_titulo_seo(titulo, texto, fuente):
     return titulo_limpio or "Actualidad local de Alhaurín el Grande"
 
 
-def es_noticia_relevante_local(titulo, texto, fuente):
-    fuente_lower = fuente.lower()
-    fuentes_validas = ["rtv alhaurín el grande", "atv alhaurín youtube",
-                       "ayuntamiento alhaurín el grande", "hermandad nuestro padre jesús nazareno"]
-    if any(f in fuente_lower for f in fuentes_validas):
-        return True
-    contenido = f"{titulo} {texto}".lower()
-    return "alhaurín el grande" in contenido or "alhaurin el grande" in contenido
+def _sin_acentos(texto):
+    texto = unicodedata.normalize("NFD", texto or "")
+    return "".join(c for c in texto if not unicodedata.combining(c))
+
+
+def cargar_geografia():
+    try:
+        return json.loads(GEOGRAFIA_FILE.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def evaluar_relevancia_geografica(titulo, texto, fuente):
+    """Filtro geográfico de 3 capas (data/geografia.json):
+
+    - exclusión: menciona una entidad de exclusión sin el municipio principal -> descarta.
+    - inclusión: no menciona el municipio ni ninguna entidad de inclusión -> descarta.
+    - revisión manual: menciona el municipio junto a un municipio limítrofe (p. ej.
+      Alhaurín de la Torre) -> se mantiene pero se marca para revisión, en vez de
+      publicarse sin más o descartarse (evita el riesgo de confundir ambos municipios).
+
+    Devuelve (incluir: bool, requiere_revision: bool).
+    """
+    geografia = cargar_geografia()
+    municipio = geografia.get("municipio_principal", "Alhaurín el Grande")
+    inclusion = geografia.get("entidades_inclusion", [municipio])
+    revision = geografia.get("entidades_revision_manual", [])
+    exclusion = geografia.get("entidades_exclusion_si_solas", [])
+
+    fuente_lower = _sin_acentos(fuente.lower())
+    fuentes_locales = ["rtv alhaurin el grande", "atv alhaurin youtube",
+                       "ayuntamiento alhaurin el grande", "hermandad nuestro padre jesus nazareno"]
+    if any(f in fuente_lower for f in fuentes_locales):
+        return True, False
+
+    contenido = _sin_acentos(f"{titulo} {texto}".lower())
+    menciona_municipio = _sin_acentos(municipio.lower()) in contenido
+    menciona_inclusion = menciona_municipio or any(
+        _sin_acentos(e.lower()) in contenido for e in inclusion)
+    menciona_exclusion = any(_sin_acentos(e.lower())
+                              in contenido for e in exclusion)
+    menciona_revision = any(_sin_acentos(e.lower())
+                             in contenido for e in revision)
+
+    if menciona_exclusion and not menciona_municipio:
+        return False, False
+    if not menciona_inclusion:
+        return False, False
+    if menciona_revision:
+        return True, True
+    return True, False
 
 
 def extraer_imagen_feed(feed):
@@ -678,10 +709,12 @@ def generar_paginas_categorias(noticias):
 def obtener_noticias():
     noticias = []
     urls_vistas = set()
+    fuentes = cargar_fuentes()
     print("\nGenerando noticias para Alhaurín al Día")
     print("Archivo destino:", OUTPUT_FILE)
+    print("Fuentes activas:", len(fuentes), "de", FUENTES_FILE.relative_to(BASE_DIR))
     print("IA editorial:", "activada" if ia_activada() else "desactivada")
-    for fuente in FUENTES:
+    for fuente in fuentes:
         print("\n====================================")
         print("Leyendo:", fuente["nombre"])
         print("====================================")
@@ -700,7 +733,9 @@ def obtener_noticias():
             urls_vistas.add(url)
             texto_limpio = limpiar_html(entry.get("summary", "") or entry.get(
                 "description", "") or titulo_original)
-            if not es_noticia_relevante_local(titulo_original, texto_limpio, fuente["nombre"]):
+            incluir, requiere_revision = evaluar_relevancia_geografica(
+                titulo_original, texto_limpio, fuente["nombre"])
+            if not incluir:
                 print(f"✗ Descartada por no ser local: {titulo_original}")
                 continue
             mejora = mejorar_noticia_con_ia(
@@ -712,9 +747,11 @@ def obtener_noticias():
                 "categoria": mejora["categoria"], "categoria_url": f"categoria/{slugify(mejora['categoria'])}/",
                 "seo_keywords": mejora.get("seo_keywords", []), "enlace": url, "url": url,
                 "imagen": extraer_imagen(entry, imagen_feed), "prioridad": prioridad_fuente(fuente["nombre"]),
+                "requiere_revision_geografica": requiere_revision,
             }
             noticias.append(noticia)
-            print(f"✓ {noticia['categoria']} | {noticia['titulo']}")
+            aviso_geo = " ⚠ revisar geografía" if requiere_revision else ""
+            print(f"✓ {noticia['categoria']} | {noticia['titulo']}{aviso_geo}")
     noticias.sort(key=calcular_score, reverse=True)
     return noticias[:MAX_NOTICIAS_TOTAL]
 

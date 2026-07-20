@@ -18,8 +18,13 @@ from urllib.parse import urlparse
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 NEWS_FILE = BASE_DIR / "data" / "noticias.json"
+FUENTES_FILE = BASE_DIR / "data" / "fuentes.json"
+GEOGRAFIA_FILE = BASE_DIR / "data" / "geografia.json"
 SITEMAP_FILE = BASE_DIR / "sitemap.xml"
 SITE_URL = "https://alhaurinaldia.es"
+
+NIVELES_CONFIANZA_VALIDOS = {"A", "B", "C", "D"}
+CAMPOS_FUENTE_OBLIGATORIOS = ["id", "nombre", "url", "nivel_confianza"]
 
 CATEGORIAS_VALIDAS = {
     "Actualidad",
@@ -200,6 +205,68 @@ def validar_duplicados(noticias: list[dict]) -> tuple[list[str], list[str]]:
     return errores, avisos
 
 
+def validar_fuentes() -> tuple[list[str], list[str]]:
+    errores: list[str] = []
+    avisos: list[str] = []
+
+    if not FUENTES_FILE.exists():
+        errores.append("Falta data/fuentes.json (registro de fuentes)")
+        return errores, avisos
+
+    try:
+        fuentes = json.loads(FUENTES_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        errores.append(f"JSON inválido en data/fuentes.json: {exc}")
+        return errores, avisos
+
+    if not isinstance(fuentes, list):
+        errores.append("data/fuentes.json debe ser una lista")
+        return errores, avisos
+
+    ids_vistos: set[str] = set()
+    for index, fuente in enumerate(fuentes):
+        etiqueta = fuente.get("id") or fuente.get(
+            "nombre") or f"fuente #{index + 1}"
+
+        for campo in CAMPOS_FUENTE_OBLIGATORIOS:
+            if not str(fuente.get(campo, "")).strip():
+                errores.append(
+                    f"{etiqueta}: falta el campo obligatorio '{campo}' en data/fuentes.json")
+
+        nivel = fuente.get("nivel_confianza")
+        if nivel and nivel not in NIVELES_CONFIANZA_VALIDOS:
+            errores.append(
+                f"{etiqueta}: nivel_confianza no válido '{nivel}' (debe ser A, B, C o D)")
+
+        fuente_id = str(fuente.get("id", "")).strip()
+        if fuente_id:
+            if fuente_id in ids_vistos:
+                errores.append(f"Id de fuente duplicado en data/fuentes.json: {fuente_id}")
+            ids_vistos.add(fuente_id)
+
+    if not any(f.get("activa", True) for f in fuentes):
+        avisos.append("data/fuentes.json no tiene ninguna fuente activa")
+
+    return errores, avisos
+
+
+def validar_geografia() -> list[str]:
+    if not GEOGRAFIA_FILE.exists():
+        return ["Falta data/geografia.json (filtro geográfico compartido)"]
+
+    try:
+        geografia = json.loads(GEOGRAFIA_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        return [f"JSON inválido en data/geografia.json: {exc}"]
+
+    if not isinstance(geografia, dict):
+        return ["data/geografia.json debe ser un objeto"]
+    if not str(geografia.get("municipio_principal", "")).strip():
+        return ["data/geografia.json no define 'municipio_principal'"]
+
+    return []
+
+
 def main() -> int:
     errores: list[str] = []
     avisos: list[str] = []
@@ -237,6 +304,18 @@ def main() -> int:
     e, a = validar_duplicados(noticias)
     errores.extend(e)
     avisos.extend(a)
+
+    for noticia in noticias:
+        if isinstance(noticia, dict) and noticia.get("requiere_revision_geografica"):
+            etiqueta = noticia.get("id") or noticia.get("titulo") or "noticia"
+            avisos.append(
+                f"{etiqueta}: requiere revisión geográfica (menciona un municipio limítrofe junto al principal)")
+
+    e, a = validar_fuentes()
+    errores.extend(e)
+    avisos.extend(a)
+
+    errores.extend(validar_geografia())
 
     print(f"Noticias revisadas: {len(noticias)}")
     print(f"Errores: {len(errores)}")

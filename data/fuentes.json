@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ayuntamiento-alhaurin-el-grande",
+    "nombre": "Ayuntamiento Alhaurín el Grande",
+    "url": "https://alhaurinelgrande.es/feed/",
+    "metodo": "rss",
+    "nivel_confianza": "A",
+    "prioridad": 120,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Fuente oficial municipal; imagen destacada reutilizable como fuente oficial.",
+    "notas": ""
+  },
+  {
+    "id": "diario-sur-malaga",
+    "nombre": "Diario SUR Málaga",
+    "url": "https://www.diariosur.es/rss/2.0/?section=malaga",
+    "metodo": "rss",
+    "nivel_confianza": "C",
+    "prioridad": 100,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Medio periodístico: no copiar artículo completo, resumen propio, cita y enlace obligatorios. No reutilizar fotografía sin licencia.",
+    "notas": "Bajo rendimiento editorial hoy por el filtro geográfico de texto plano (ver docs/AUDITORIA-2026-07.md y auditoría de fuentes 2026-07-20)."
+  },
+  {
+    "id": "hermandad-nuestro-padre-jesus-nazareno",
+    "nombre": "Hermandad Nuestro Padre Jesús Nazareno",
+    "url": "https://www.nuestropadrejesusnazareno.com/feed/",
+    "metodo": "rss",
+    "nivel_confianza": "B",
+    "prioridad": 95,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Entidad local verificada; comprobar que el feed sigue siendo el canal oficial de la hermandad.",
+    "notas": ""
+  },
+  {
+    "id": "rtv-alhaurin-el-grande",
+    "nombre": "RTV Alhaurín el Grande",
+    "url": "https://rtvalhaurinelgrande.com/feed/",
+    "metodo": "rss",
+    "nivel_confianza": "B",
+    "prioridad": 90,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Medio local verificado; resumen propio, cita y enlace.",
+    "notas": ""
+  },
+  {
+    "id": "atv-alhaurin-youtube",
+    "nombre": "ATV Alhaurín YouTube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UClgnTGIKzuISyUK8F3v1BFA",
+    "metodo": "atom",
+    "nivel_confianza": "B",
+    "prioridad": 80,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Canal local verificado; usar miniatura del vídeo, enlazar siempre al vídeo original.",
+    "notas": ""
+  },
+  {
+    "id": "europa-press-andalucia",
+    "nombre": "Europa Press Andalucía",
+    "url": "https://www.europapress.es/rss/rss.aspx?ch=00111",
+    "metodo": "rss",
+    "nivel_confianza": "C",
+    "prioridad": 50,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Agencia de noticias: no copiar artículo completo, resumen propio, cita y enlace obligatorios.",
+    "notas": "Bajo rendimiento editorial hoy por el filtro geográfico de texto plano (cobertura regional amplia, rara vez menciona el municipio)."
+  }
+]

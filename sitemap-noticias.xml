@@ -79,7 +79,13 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-te-visita-nuevos-murales-en-villa-del-guadalhorce.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivieron-alhaurin-el-grande-y-villa-del-guadalhorce.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/ayuntamiento-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -116,18 +122,6 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-municipio-primero-del-valle-del-guadalhorce-en-lograr-esta-distincion-podra-acceder.html</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/espana-campeona-del-mundo-alhaurin-el-grande-celebra-el-titulo-de-campeona-del-mundo.html</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-bachillerato-y-ciclos-formativos-2026.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

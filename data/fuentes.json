@@ -84,6 +84,18 @@
     "notas": "Único club deportivo local con RSS activo de los 9 investigados en D.8; el resto (CB Alhaurín el Grande, Club Ciclista La Algarbía, Club de Ajedrez Olduwai, Club Voleibol Alhaurín, Temple of Monkeys, CD Fuente del Acebuche, FADMES, Federación Andaluza de Baloncesto) no tienen canal automatizable hoy (solo redes sociales, RSS muerto desde 2010, contenido de relleno, o solo PDFs/bases de resultados sin API). Feed sin publicaciones nuevas desde julio de 2025 (verificado 2026-07-20): pasa el filtro geográfico pero, al no tener freshness, no gana el corte de calcular_score() frente a fuentes con contenido reciente. Aparecerá en el noticiero cuando el club vuelva a publicar."
   },
   {
+    "id": "malaga-hoy",
+    "nombre": "Málaga Hoy",
+    "url": "https://www.malagahoy.es/rss/",
+    "metodo": "rss",
+    "nivel_confianza": "C",
+    "prioridad": 95,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Medio periodístico (Grupo Joly): no copiar artículo completo, resumen propio, cita y enlace obligatorios. No reutilizar fotografía sin licencia. En sucesos, confirmar con fuente oficial antes de publicar. Verificado en vivo el 2026-07-20 (auditoría de fuentes, D.7); confirmado por el usuario.",
+    "notas": "Feed de portada general de Málaga (no filtrado por municipio); mismo perfil de bajo rendimiento editorial esperado que Diario SUR/Europa Press por el filtro geográfico de texto plano. Cadena SER Málaga se investigó en paralelo (decisión #8) pero no tiene ningún feed accesible (403/404 en todas las rutas probadas, sin <link rel=\"alternate\"> en su portada) — descartada por ahora."
+  },
+  {
     "id": "europa-press-andalucia",
     "nombre": "Europa Press Andalucía",
     "url": "https://www.europapress.es/rss/rss.aspx?ch=00111",

@@ -79,7 +79,7 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -91,7 +91,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-el-desarrollo-urbanistico-con-nuevo-plan-de-ordenacion-urbana.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-el-nuevo-plan-de-ordenacion-urbana-para-su-desarrollo.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-urbanismo-y-actividades-de-verano-para-jovenes-y-familias.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -103,7 +109,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-implanta-pulseras-nfc-para-reforzar-la-proteccion-a-mujeres.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-implanta-pulseras-nfc-para-mejorar-la-proteccion-de-mujeres.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -121,12 +127,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-pulseras-de-seguridad-y-prepara-veladas-de-blanco-2026.html</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-inaugura-su-centro-comercial-abierto-con-apoyo-de-la-junta-de-andalucia.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -139,7 +139,25 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/ayudas-leader-2023-2027-charla-informativa-en-alhaurin-el-grande-sobre-2-3-millones.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-invertira-350-000-en-la-reforma-integral-de-la-calle-alozaina.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-pulseras-de-seguridad-y-prepara-veladas-de-blanco-2026.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/charla-informativa-sobre-ayudas-leader-2023-2027-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/convocatoria-de-ayudas-leader-2023-2027-en-alhaurin-el-grande-con-2-3-millones-de-euros.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -151,19 +169,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-ha-participado-en-un-minuto-de-silencio-convocado.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-ha-participado-en-la-convocatoria-de-la-federacion.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-consejo-local-de-la-infancia-y-la-adolescencia-celebra-su-ultimo-pleno-y-traslada-sus.html</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/exposicion-de-pintura-al-oleo-infantil-en-alhaurin-el-grande-destaca-talento-local.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -181,13 +193,25 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-2026-del-ies-antonio-gala-en-el-teatro-municipal-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/graduacion-2026-en-el-ies-antonio-gala-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-de-4-eso-2026-en-el-ies-antonio-gala-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/inaugurada-en-alhaurin-el-grande-la-exposicion-infantil-de-pintura-al-oleo.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/inaugurada-la-exposicion-de-pintura-al-oleo-infantil-en-la-casa-de-la-cultura-de-alhaurin.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -199,25 +223,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-con-venezuela.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-recacha-inauguracion-exposicion-pintura-al-oleo-infantil-14-de-julio-de-2026.html</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/noticias-atv-14-julio-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/nuevos-murales-de-guillermo-paz-nesui-embellecen-villa-del-guadalhorce.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/nuevos-murales-de-guillermo-paz-nesui-embellecen-villa-del-guadalhorce-en-alhaurin.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -229,7 +241,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-para-el-jueves.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

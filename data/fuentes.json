@@ -60,6 +60,18 @@
     "notas": ""
   },
   {
+    "id": "fedelhorce",
+    "nombre": "Fedelhorce",
+    "url": "https://fedelhorce.es/feed/",
+    "metodo": "rss",
+    "nivel_confianza": "B",
+    "prioridad": 85,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Entidad local verificada (Federación de Empresarios del Guadalhorce); resumen propio, cita y enlace. Verificado en vivo el 2026-07-20 (auditoría de fuentes, D.6); confirmado como fuente oficial por el usuario.",
+    "notas": "Valor estratégico añadido para directorio comercial/patrocinios (ver data/fichas-patrocinadas.json, data/comercios-destacados.json)."
+  },
+  {
     "id": "europa-press-andalucia",
     "nombre": "Europa Press Andalucía",
     "url": "https://www.europapress.es/rss/rss.aspx?ch=00111",

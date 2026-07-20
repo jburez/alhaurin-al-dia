@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.612Z</news:publication_date>
-      <news:title>Agenda cultural de Alhaurín el Grande: eventos destacados para los próximos días — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.700Z</news:publication_date>
+      <news:title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -18,19 +18,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.621Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.712Z</news:publication_date>
       <news:title>Alhaurín el Grande adquiere dos dumpers para mejorar servicios y emergencias — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-el-desarrollo-urbanistico-con-nuevo-plan-de-ordenacion-urbana.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-el-nuevo-plan-de-ordenacion-urbana-para-su-desarrollo.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.618Z</news:publication_date>
-      <news:title>Alhaurín el Grande avanza en el desarrollo urbanístico con nuevo Plan de Ordenación Urbana — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.707Z</news:publication_date>
+      <news:title>Alhaurín el Grande avanza en el nuevo Plan de Ordenación Urbana para su desarrollo — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-urbanismo-y-actividades-de-verano-para-jovenes-y-familias.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-20T10:39:51.699Z</news:publication_date>
+      <news:title>Alhaurín el Grande avanza en urbanismo y actividades de verano para jóvenes y familias — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -40,19 +51,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.624Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.715Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-implanta-pulseras-nfc-para-reforzar-la-proteccion-a-mujeres.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-implanta-pulseras-nfc-para-mejorar-la-proteccion-de-mujeres.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.617Z</news:publication_date>
-      <news:title>Alhaurín el Grande implanta pulseras NFC para reforzar la protección a mujeres — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.705Z</news:publication_date>
+      <news:title>Alhaurín el Grande implanta pulseras NFC para mejorar la protección de mujeres — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -62,7 +73,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.613Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.701Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa el Eje Verde y actividades deportivas este verano — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -73,19 +84,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.617Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.706Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa obras del Eje Verde para un corredor urbano sostenible — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-pulseras-de-seguridad-y-prepara-veladas-de-blanco-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.614Z</news:publication_date>
-      <news:title>Alhaurín el Grande impulsa pulseras de seguridad y prepara Veladas de Blanco 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -95,7 +95,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.618Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.709Z</news:publication_date>
       <news:title>Alhaurín el Grande inaugura su Centro Comercial Abierto con apoyo de la Junta de Andalucía — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -106,19 +106,52 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.620Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.711Z</news:publication_date>
       <news:title>Alhaurín el Grande inicia programa de empleo y formación en ofimática y jardinería — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/ayudas-leader-2023-2027-charla-informativa-en-alhaurin-el-grande-sobre-2-3-millones.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-invertira-350-000-en-la-reforma-integral-de-la-calle-alozaina.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.616Z</news:publication_date>
-      <news:title>Ayudas LEADER 2023-2027: Charla informativa en Alhaurín el Grande sobre 2,3 millones € — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.708Z</news:publication_date>
+      <news:title>Alhaurín el Grande invertirá 350.000 € en la reforma integral de la calle Alozaina — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-presenta-pulseras-de-seguridad-y-prepara-veladas-de-blanco-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-20T10:39:51.703Z</news:publication_date>
+      <news:title>Alhaurín el Grande presenta pulseras de seguridad y prepara Veladas de Blanco 2026 — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/charla-informativa-sobre-ayudas-leader-2023-2027-en-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-20T10:39:51.696Z</news:publication_date>
+      <news:title>Charla informativa sobre ayudas LEADER 2023-2027 en Alhaurín el Grande — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/convocatoria-de-ayudas-leader-2023-2027-en-alhaurin-el-grande-con-2-3-millones-de-euros.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-20T10:39:51.704Z</news:publication_date>
+      <news:title>Convocatoria de ayudas LEADER 2023-2027 en Alhaurín el Grande con 2,3 millones de euros — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -128,19 +161,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.619Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.709Z</news:publication_date>
       <news:title>Diputación impulsa subvención de 1,4 millones para la carretera de Villa del Guadalhorce — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-ha-participado-en-un-minuto-de-silencio-convocado.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-ha-participado-en-la-convocatoria-de-la-federacion.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.619Z</news:publication_date>
-      <news:title>El Ayuntamiento de Alhaurín el Grande ha participado en un minuto de silencio convocado — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.710Z</news:publication_date>
+      <news:title>El Ayuntamiento de Alhaurín el Grande ha participado en la convocatoria de la Federación — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -150,19 +183,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.620Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.712Z</news:publication_date>
       <news:title>El Consejo Local de la Infancia y la Adolescencia celebra su último pleno y traslada sus — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/exposicion-de-pintura-al-oleo-infantil-en-alhaurin-el-grande-destaca-talento-local.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.613Z</news:publication_date>
-      <news:title>Exposición de pintura al óleo infantil en Alhaurín el Grande destaca talento local — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -172,7 +194,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.615Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.704Z</news:publication_date>
       <news:title>Exposición &amp;#x27;Tango Flamenco. Identidad de dos almas&amp;#x27; en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -183,30 +205,52 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.609Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.697Z</news:publication_date>
       <news:title>Exposición &amp;#x27;Tango Flamenco. Identidad de dos almas&amp;#x27; en la Biblioteca de Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-2026-del-ies-antonio-gala-en-el-teatro-municipal-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/graduacion-2026-en-el-ies-antonio-gala-de-alhaurin-el-grande.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.625Z</news:publication_date>
-      <news:title>Graduación 2026 del IES Antonio Gala en el Teatro Municipal de Alhaurín el Grande — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.716Z</news:publication_date>
+      <news:title>Graduación 2026 en el IES Antonio Gala de Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-de-4-eso-2026-en-el-ies-antonio-gala-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.625Z</news:publication_date>
-      <news:title>Graduación de 4º ESO 2026 en el IES Antonio Gala de Alhaurín el Grande — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.713Z</news:publication_date>
+      <news:title>Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/inaugurada-en-alhaurin-el-grande-la-exposicion-infantil-de-pintura-al-oleo.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-20T10:39:51.702Z</news:publication_date>
+      <news:title>Inaugurada en Alhaurín el Grande la exposición infantil de pintura al óleo — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/inaugurada-la-exposicion-de-pintura-al-oleo-infantil-en-la-casa-de-la-cultura-de-alhaurin.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-20T10:39:51.698Z</news:publication_date>
+      <news:title>Inaugurada la exposición de pintura al óleo infantil en la Casa de la Cultura de Alhaurín — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -216,52 +260,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.612Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.701Z</news:publication_date>
       <news:title>Incendio en La Campiñuela y mejoras en infraestructuras de Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-con-venezuela.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.622Z</news:publication_date>
-      <news:title>La Real Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.714Z</news:publication_date>
+      <news:title>La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-recacha-inauguracion-exposicion-pintura-al-oleo-infantil-14-de-julio-de-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/nuevos-murales-de-guillermo-paz-nesui-embellecen-villa-del-guadalhorce-en-alhaurin.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.610Z</news:publication_date>
-      <news:title>La Recacha | INAUGURACION EXPOSICION PINTURA AL OLEO INFANTIL 14 de julio de 2026 — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/noticias-atv-14-julio-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.611Z</news:publication_date>
-      <news:title>NOTICIAS ATV 14 JULIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/nuevos-murales-de-guillermo-paz-nesui-embellecen-villa-del-guadalhorce.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.611Z</news:publication_date>
-      <news:title>Nuevos murales de Guillermo Paz &amp;#x27;Nesui&amp;#x27; embellecen Villa del Guadalhorce — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.700Z</news:publication_date>
+      <news:title>Nuevos murales de Guillermo Paz &amp;#x27;Nesui&amp;#x27; embellecen Villa del Guadalhorce en Alhaurín — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -271,19 +293,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.622Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.713Z</news:publication_date>
       <news:title>Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-para-el-jueves.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.625Z</news:publication_date>
-      <news:title>Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-20T10:39:51.715Z</news:publication_date>
+      <news:title>Programa de actos del Día de Jesús 2026 en Alhaurín el Grande para el jueves — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -293,7 +315,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.616Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.705Z</news:publication_date>
       <news:title>Resumen del Pleno Ordinario de Julio en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -304,7 +326,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-20T09:51:16.623Z</news:publication_date>
+      <news:publication_date>2026-07-20T10:39:51.714Z</news:publication_date>
       <news:title>San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia — Alhaurín al Día</news:title>
     </news:news>
   </url>

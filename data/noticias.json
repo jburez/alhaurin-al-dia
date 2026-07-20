@@ -1,27 +1,5 @@
 [
     {
-        "id": "https-www-youtube-com-watch-v-pqkixisnwho",
-        "titulo": "Exposición de artistas residentes en La Baltasara llega a Alhaurín el Grande",
-        "titulo_original": "Alhaurín te visita... Artistas residentes en La Baltasara",
-        "descripcion": "La muestra 'Alhaurín te visita' presenta obras de artistas residentes en La Baltasara, acercando el arte contemporáneo a la comunidad local.",
-        "resumen": "La muestra 'Alhaurín te visita' presenta obras de artistas residentes en La Baltasara, acercando el arte contemporáneo a la comunidad local.",
-        "cuerpo": "La iniciativa 'Alhaurín te visita' reúne a destacados artistas residentes en La Baltasara, un espacio creativo reconocido en la región. Esta exposición ofrece una oportunidad única para que los vecinos de Alhaurín el Grande disfruten de una variedad de obras contemporáneas que reflejan la diversidad y el talento local.\n\nEl proyecto busca fomentar la cultura y el arte en el municipio, promoviendo el intercambio entre creadores y público. La muestra incluye diferentes disciplinas artísticas, consolidando a La Baltasara como un referente cultural en la zona y acercando el arte a nuevos públicos en Alhaurín el Grande.",
-        "fecha": "2026-07-13T11:22:32.152421+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Agenda Cultural",
-        "categoria_url": "categoria/agenda-cultural/",
-        "seo_keywords": [
-            "artistas La Baltasara",
-            "exposición Alhaurín el Grande",
-            "arte contemporáneo Alhaurín"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=pQKIxISNWHo",
-        "url": "https://www.youtube.com/watch?v=pQKIxISNWHo",
-        "imagen": "https://i1.ytimg.com/vi/pQKIxISNWHo/hqdefault.jpg",
-        "prioridad": 80,
-        "pagina": "noticias/exposicion-de-artistas-residentes-en-la-baltasara-llega-a-alhaurin-el-grande.html"
-    },
-    {
         "id": "https-www-youtube-com-watch-v-aova4yoecwm",
         "titulo": "Alhaurín el Grande inaugura exposición Tango Flamenco y lanza 'Noches de cine' en verano",
         "titulo_original": "NOTICIAS ATV 7 JULIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
@@ -265,7 +243,7 @@
     },
     {
         "id": "https-alhaurinelgrande-es-el-consejo-local-de-la-infancia-y-la-adolescencia-cele",
-        "titulo": "El Consejo Local de la Infancia y Adolescencia de Alhaurín el Grande cierra su mandato con",
+        "titulo": "El Consejo Local de la Infancia y Adolescencia de Alhaurín el Grande cierra su mandato",
         "titulo_original": "El Consejo Local de la Infancia y la Adolescencia celebra su último pleno y traslada sus propuestas al equipo de gobierno",
         "descripcion": "El Consejo Local de la Infancia y Adolescencia de Alhaurín el Grande celebra su último pleno y presenta sus propuestas al equipo de gobierno municipal.",
         "resumen": "El Consejo Local de la Infancia y Adolescencia de Alhaurín el Grande celebra su último pleno y presenta sus propuestas al equipo de gobierno municipal.",
@@ -484,8 +462,8 @@
         "pagina": "noticias/exposicion-en-alhaurin-el-grande-une-tango-y-flamenco-con-50-fotografias-y-carteles-histor.html"
     },
     {
-        "id": "https-alhaurinelgrande-es-abierto-el-plazo-de-inscripcion-para-el-campamento-de",
-        "titulo": "Abierto el plazo de inscripción para el Campamento de Verano 2026 en Alhaurín el Grande",
+        "id": "https-alhaurinelgrande-es-abierto-el-plazo-de-inscripcion-para-el-camp-a4f0d10a",
+        "titulo": "Abierto el plazo de inscripción para el Campamento de Verano 2026 en el CEIP Carmen Arévalo",
         "titulo_original": "Abierto el plazo de inscripción para el Campamento de Verano 2026 en el CEIP Carmen Arévalo",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la inscripción para el Campamento de Verano 2026 en el CEIP Carmen Arévalo, dirigido a menores de la localidad.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la inscripción para el Campamento de Verano 2026 en el CEIP Carmen Arévalo, dirigido a menores de la localidad.",
@@ -506,8 +484,8 @@
         "pagina": "noticias/abierto-el-plazo-de-inscripcion-para-el-campamento-de-verano-2026-en-alhaurin-el-grande.html"
     },
     {
-        "id": "https-alhaurinelgrande-es-abierto-el-plazo-de-inscripcion-para-el-campamento-de",
-        "titulo": "Abierto el plazo de inscripción para el Campamento de Verano 2026 en Alhaurín el Grande",
+        "id": "https-alhaurinelgrande-es-abierto-el-plazo-de-inscripcion-para-el-camp-99b39e7a",
+        "titulo": "Abierto el plazo de inscripción para el Campamento de Verano 2026 en el CEIP Pablo Ruiz Picasso",
         "titulo_original": "Abierto el plazo de inscripción para el Campamento de Verano 2026 en el CEIP Pablo Ruiz Picasso",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande anuncia la apertura de inscripciones para el Campamento de Verano 2026 en el CEIP Pablo Ruiz Picasso, dirigido a niños y niñas del municipio.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande anuncia la apertura de inscripciones para el Campamento de Verano 2026 en el CEIP Pablo Ruiz Picasso, dirigido a niños y niñas del municipio.",
@@ -529,7 +507,7 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33978-san-sebastian-acogera-de-nuevo-a-n",
-        "titulo": "Nuestra Señora de Gracia regresa a la ermita de San Sebastián tras 11 años en Alhaurín el",
+        "titulo": "Nuestra Señora de Gracia regresa a la ermita de San Sebastián tras 11 años de ausencia",
         "titulo_original": "San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia",
         "descripcion": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián el 12 de agosto tras una ausencia de once años, en el marco de las celebraciones del Día de la Virgen.",
         "resumen": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián el 12 de agosto tras una ausencia de once años, en el marco de las celebraciones del Día de la Virgen.",

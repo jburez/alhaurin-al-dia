@@ -1,3 +1,4 @@
+import hashlib
 import html
 import json
 import os
@@ -172,7 +173,9 @@ def tiempo_lectura(texto):
 
 
 def generar_id(url, titulo):
-    return slugify(url or titulo, 80)
+    base = url or titulo or ""
+    sufijo = hashlib.sha1(base.encode("utf-8")).hexdigest()[:8]
+    return f"{slugify(base, 70)}-{sufijo}"
 
 
 def generar_ruta_pagina(titulo):

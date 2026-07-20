@@ -283,12 +283,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-actos-del-jueves.html</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/eje-verde-variante-sur-el-ayuntamiento-de-alhaurin-el-grande-presenta-el-proyecto-del-eje.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -338,6 +332,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-diputacion-inicia-los-tramites-para-conceder-una-subvencion-de-1-4-millones-de-euros.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/malaga-afronta-la-semana-mas-calurosa-en-lo-que-va-del-verano-con-mas-de-40-grados.html</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

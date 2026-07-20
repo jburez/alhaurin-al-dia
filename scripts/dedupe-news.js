@@ -86,10 +86,12 @@ function qualityScore(noticia) {
   return priority + imageBonus + pageBonus + keywordBonus + Math.min(titleLength, 95) / 10 + Math.min(descriptionLength, 230) / 20 + Math.min(bodyLength, 900) / 100;
 }
 
-function isSameDay(a, b) {
-  const da = parseDate(a.fecha).toISOString().slice(0, 10);
-  const db = parseDate(b.fecha).toISOString().slice(0, 10);
-  return da === db;
+const DUPLICATE_WINDOW_DAYS = 14;
+
+function isWithinDuplicateWindow(a, b) {
+  const msPerDay = 24 * 60 * 60 * 1000;
+  const diffDays = Math.abs(parseDate(a.fecha) - parseDate(b.fecha)) / msPerDay;
+  return diffDays <= DUPLICATE_WINDOW_DAYS;
 }
 
 function jaccard(a, b) {
@@ -114,7 +116,7 @@ function arePotentialDuplicates(a, b) {
   const textB = `${b.titulo || ''} ${b.descripcion || b.resumen || ''}`;
   const similarity = jaccard(textA, textB);
 
-  return similarity >= 0.72 && isSameDay(a, b);
+  return similarity >= 0.72 && isWithinDuplicateWindow(a, b);
 }
 
 function summarize(noticia) {

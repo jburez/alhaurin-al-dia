@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   update-weather-aemet:
@@ -29,9 +30,11 @@ jobs:
         run: python3 scripts/actualizar_tiempo_aemet.py
 
       - name: Commit cambios si hay actualización
+        id: commit
         run: |
           if git diff --quiet data/tiempo-aemet.json; then
             echo "Sin cambios en data/tiempo-aemet.json"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
@@ -40,3 +43,10 @@ jobs:
           git add data/tiempo-aemet.json
           git commit -m "Actualiza tiempo desde AEMET"
           git push origin develop
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Disparar publicación en main
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run publicar-produccion.yml --ref develop

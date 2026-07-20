@@ -14,12 +14,10 @@ Objetivo:
 from __future__ import annotations
 
 import re
-from datetime import date
 import sys
 import unicodedata
 from pathlib import Path
 from typing import Iterable
-from xml.sax.saxutils import escape
 
 # Permite ejecutar el script tanto desde la raíz como desde scripts/.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,13 +39,6 @@ from validar_contenido import termina_a_medias  # noqa: E402
 
 MAX_TITULO = 90
 MAX_DESCRIPCION = 230
-SIMILITUD_DUPLICADO = 0.78
-
-STOPWORDS = {
-    "alhaurin", "alhaurín", "grande", "actualidad", "noticias", "noticia", "local",
-    "el", "la", "los", "las", "de", "del", "y", "en", "con", "por", "para", "un",
-    "una", "sobre", "tras", "al", "2026",
-}
 
 
 def normalizar_para_comparar(texto: str) -> str:
@@ -56,22 +47,6 @@ def normalizar_para_comparar(texto: str) -> str:
     texto = texto.lower()
     texto = re.sub(r"[^a-z0-9áéíóúñ]+", " ", texto)
     return re.sub(r"\s+", " ", texto).strip()
-
-
-def tokens_significativos(texto: str) -> set[str]:
-    return {
-        token
-        for token in normalizar_para_comparar(texto).split()
-        if len(token) > 3 and token not in STOPWORDS
-    }
-
-
-def similitud_titulos(a: str, b: str) -> float:
-    ta = tokens_significativos(a)
-    tb = tokens_significativos(b)
-    if not ta or not tb:
-        return 0.0
-    return len(ta & tb) / len(ta | tb)
 
 
 def recortar_en_palabra(texto: str, limite: int) -> str:
@@ -251,6 +226,13 @@ def deduplicar_noticias(noticias: list[dict]) -> list[dict]:
     urls_vistas: set[str] = set()
     ids_vistos: set[str] = set()
 
+    # Solo descarta duplicado exacto por URL/ID. La deduplicación fina por
+    # similitud editorial (con ventana de fecha) vive únicamente en
+    # scripts/dedupe-news.js (npm run news:dedupe), que se ejecuta justo
+    # después de este generador en `npm run build` — mantenerla aquí también,
+    # sin ventana de fecha, arriesgaba fusionar por error noticias distintas
+    # que solo comparten vocabulario (p. ej. el mismo evento anual en años
+    # distintos, ya que "2026" se trataba como stopword).
     for noticia in noticias:
         url = str(noticia.get("url") or noticia.get("enlace") or "").strip()
         noticia_id = str(noticia.get("id") or "").strip()
@@ -261,20 +243,6 @@ def deduplicar_noticias(noticias: list[dict]) -> list[dict]:
             continue
         if noticia_id and noticia_id in ids_vistos:
             print(f"✗ Duplicada por ID: {titulo}")
-            continue
-
-        duplicada = False
-        for existente in resultado:
-            similitud = similitud_titulos(titulo, existente.get("titulo", ""))
-            if similitud >= SIMILITUD_DUPLICADO:
-                print(
-                    "⚠ Posible duplicado descartado: "
-                    f"{titulo} / {existente.get('titulo')} ({similitud:.0%})"
-                )
-                duplicada = True
-                break
-
-        if duplicada:
             continue
 
         if url:
@@ -299,61 +267,6 @@ def generar_noticias_seguras() -> list[dict]:
 
 
 
-def generar_sitemap() -> None:
-    """Regenera sitemap.xml con todas las páginas HTML publicables."""
-    site_url = "https://alhaurinaldia.es"
-    today = date.today().isoformat()
-    sitemap = BASE_DIR / "sitemap.xml"
-
-    exclude_dirs = {".git", ".github", "__pycache__", "node_modules"}
-    urls: list[tuple[str, str, str]] = []
-
-    for html in sorted(BASE_DIR.rglob("*.html")):
-        rel_path = html.relative_to(BASE_DIR)
-        rel = rel_path.as_posix()
-
-        if any(part in exclude_dirs for part in rel_path.parts):
-            continue
-
-        if rel == "index.html":
-            loc = f"{site_url}/"
-            changefreq = "hourly"
-            priority = "1.0"
-        elif rel.endswith("/index.html"):
-            path = rel[:-len("index.html")]
-            loc = f"{site_url}/{path}"
-            changefreq = "daily"
-            priority = "0.8"
-        else:
-            loc = f"{site_url}/{rel}"
-            if rel.startswith("noticias/"):
-                changefreq = "weekly"
-                priority = "0.9"
-            elif rel.startswith("categoria/"):
-                changefreq = "daily"
-                priority = "0.8"
-            else:
-                changefreq = "monthly"
-                priority = "0.7"
-
-        urls.append((loc, changefreq, priority))
-
-    content = ['<?xml version="1.0" encoding="UTF-8"?>']
-    content.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
-
-    for loc, changefreq, priority in urls:
-        content.append("  <url>")
-        content.append(f"    <loc>{escape(loc)}</loc>")
-        content.append(f"    <lastmod>{today}</lastmod>")
-        content.append(f"    <changefreq>{changefreq}</changefreq>")
-        content.append(f"    <priority>{priority}</priority>")
-        content.append("  </url>")
-
-    content.append("</urlset>")
-    sitemap.write_text("\n".join(content) + "\n", encoding="utf-8")
-    print(f"Sitemap regenerado: {sitemap} ({len(urls)} URLs)")
-
-
 def main() -> int:
     noticias = generar_noticias_seguras()
     if not noticias:
@@ -361,7 +274,8 @@ def main() -> int:
         return 1
 
     guardar_noticias(noticias)
-    generar_sitemap()
+    # El sitemap real (multi-sección: noticias, farmacias, servicios, Google News)
+    # lo genera scripts/generate-sitemaps.js más adelante en `npm run build`.
     print(f"Noticias seguras publicadas: {len(noticias)}")
     return 0
 

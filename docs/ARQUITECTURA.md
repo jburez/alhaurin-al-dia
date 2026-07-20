@@ -51,6 +51,8 @@ Scripts de generación ejecutados en local o CI
 ├── article.css
 ├── data/
 │   ├── noticias.json
+│   ├── fuentes.json
+│   ├── geografia.json
 │   ├── guia-util.json
 │   ├── estado-local.json
 │   ├── avisos-locales.json
@@ -67,6 +69,7 @@ Scripts de generación ejecutados en local o CI
 │   └── */index.html
 ├── scripts/
 │   ├── generar_noticias.py
+│   ├── generar_noticias_seguro.py
 │   ├── dedupe-news.js
 │   ├── clean-orphan-news.js
 │   ├── render-home-static.js
@@ -189,7 +192,7 @@ La carpeta `data/` es el centro editorial de la web.
 
 ### 5.1 `data/noticias.json`
 
-Contiene las noticias publicadas. Lo genera `scripts/generar_noticias.py`.
+Contiene las noticias publicadas. Lo genera `scripts/generar_noticias_seguro.py` (envuelve a `scripts/generar_noticias.py`, ver sección 6).
 
 Campos habituales por noticia:
 
@@ -205,9 +208,12 @@ Campos habituales por noticia:
   "enlace": "https://fuente-original/",
   "pagina": "noticias/titular.html",
   "imagen": "https://...",
-  "seo_keywords": ["alhaurín", "noticias"]
+  "seo_keywords": ["alhaurín", "noticias"],
+  "requiere_revision_geografica": false
 }
 ```
+
+`requiere_revision_geografica` lo añade el filtro geográfico de `data/geografia.json` (ver 5.9) cuando el texto menciona el municipio principal junto a un municipio limítrofe (p. ej. Alhaurín de la Torre). No bloquea la publicación por sí solo — queda como aviso no bloqueante en `scripts/validar_contenido.py`, a la espera del panel de revisión editorial previsto para cuando se conecten fuentes de nivel de confianza C/D.
 
 ### 5.2 `data/guia-util.json`
 
@@ -323,30 +329,73 @@ Campos habituales:
 }
 ```
 
+### 5.8 `data/fuentes.json`
+
+Registro de fuentes de noticias (sustituye a la constante `FUENTES` que antes vivía dentro de `scripts/generar_noticias.py`). Cada entrada es una fuente RSS/Atom con su nivel de confianza editorial.
+
+```json
+{
+  "id": "ayuntamiento-alhaurin-el-grande",
+  "nombre": "Ayuntamiento Alhaurín el Grande",
+  "url": "https://alhaurinelgrande.es/feed/",
+  "metodo": "rss",
+  "nivel_confianza": "A",
+  "prioridad": 120,
+  "activa": true,
+  "categoria_contenido": "noticia",
+  "condiciones_reutilizacion": "Fuente oficial municipal; imagen destacada reutilizable como fuente oficial.",
+  "notas": ""
+}
+```
+
+Niveles de confianza (A–D, ver el informe de auditoría de fuentes 2026-07-20, sección G.2):
+
+- **A — oficial**: Ayuntamiento y organismos públicos.
+- **B — entidad local verificada**: hermandades, medios locales, clubes, asociaciones.
+- **C — medio periodístico**: agencias y prensa provincial/regional.
+- **D — redes sociales / ciudadanía**: no automatizable, siempre revisión manual (aún sin fuentes activas de este nivel).
+
+Añadir una fuente RSS/Atom nueva ya no requiere tocar código: basta con añadir una entrada con `activa: true` a este fichero. `scripts/generar_noticias.py` la carga en `obtener_noticias()` vía `cargar_fuentes()`, y `prioridad_fuente()` consulta el campo `prioridad` de esta misma lista en vez de un `if/elif` fijo en el código.
+
+### 5.9 `data/geografia.json`
+
+Filtro geográfico compartido, sustituye a la comprobación de texto plano que antes vivía solo dentro de `es_noticia_relevante_local()`.
+
+```json
+{
+  "municipio_principal": "Alhaurín el Grande",
+  "codigo_ine": "29008",
+  "codigo_postal": "29120",
+  "entidades_inclusion": ["Alhaurín el Grande", "Sierra de Alhaurín", "Valle del Guadalhorce", "A-404", "A-355"],
+  "entidades_revision_manual": ["Alhaurín de la Torre", "Coín", "Cártama", "Mijas", "Málaga capital"],
+  "entidades_exclusion_si_solas": ["Alhaurín de la Torre"]
+}
+```
+
+`evaluar_relevancia_geografica()` en `scripts/generar_noticias.py` usa tres capas:
+
+1. **Exclusión**: menciona una entidad de `entidades_exclusion_si_solas` sin el municipio principal → se descarta.
+2. **Inclusión**: no menciona el municipio ni ninguna `entidades_inclusion` → se descarta.
+3. **Revisión manual**: menciona el municipio junto a una entidad de `entidades_revision_manual` (riesgo de confundir Alhaurín el Grande con un municipio limítrofe) → se mantiene, pero se marca `requiere_revision_geografica: true` en la noticia en vez de publicarse sin más.
+
 ## 6. Generación de noticias
 
-El script principal es `scripts/generar_noticias.py`.
+El punto de entrada del pipeline es `scripts/generar_noticias_seguro.py` (`npm run news`). Envuelve a `scripts/generar_noticias.py`, que sigue conteniendo la lógica base de extracción, filtrado y generación de páginas.
 
 Flujo:
 
-1. Lee feeds RSS/Atom configurados en `FUENTES`.
-2. Filtra noticias relevantes para Alhaurín el Grande.
+1. `generar_noticias.py` lee las fuentes activas de `data/fuentes.json` (ver 5.8).
+2. Filtra noticias relevantes con el filtro geográfico de 3 capas de `data/geografia.json` (ver 5.9).
 3. Limpia HTML y normaliza texto.
-4. Calcula prioridad por fuente y fecha.
+4. Calcula prioridad por fuente (desde `data/fuentes.json`) y fecha.
 5. Detecta categoría automáticamente.
 6. Si existe `OPENAI_API_KEY`, mejora titular, entradilla, cuerpo y keywords con IA.
-7. Genera `data/noticias.json`.
-8. Genera páginas HTML individuales en `noticias/`.
-9. Genera páginas de categoría en `categoria/`.
+7. `generar_noticias_seguro.py` sanea los titulares (rescata o descarta los cortados/incompletos) y deduplica por URL/ID exacto — la deduplicación fina por similitud editorial vive en `scripts/dedupe-news.js` (`npm run news:dedupe`, paso siguiente del pipeline), no aquí.
+8. Genera `data/noticias.json`.
+9. Genera páginas HTML individuales en `noticias/`.
+10. Genera páginas de categoría en `categoria/`.
 
-Fuentes actuales:
-
-- RTV Alhaurín el Grande.
-- ATV Alhaurín YouTube.
-- Europa Press Andalucía.
-- Diario SUR Málaga.
-- Ayuntamiento Alhaurín el Grande.
-- Hermandad Nuestro Padre Jesús Nazareno.
+Fuentes actuales: ver `data/fuentes.json` (5.8) — ya no se documentan aquí como lista fija, para evitar que este documento y el dato real diverjan.
 
 Variables de entorno relevantes:
 
@@ -510,3 +559,34 @@ git push origin main
 - Confirmar farmacias, avisos y datos sensibles con fuentes oficiales.
 - Mantener sitemaps regenerados tras cambios de páginas.
 - Evitar duplicar lógica: si un bloque se usa en varias páginas, convertirlo en dato JSON o función JS.
+
+## 14. Modelo de contenido — tipos
+
+El modelo de datos histórico solo representaba un tipo de contenido: **noticia** (`data/noticias.json`). El informe de auditoría de fuentes (2026-07-20, sección E.2/G.1) identificó esto como una carencia de fondo — forzar avisos, eventos o convocatorias al esquema de noticia fue la causa directa de titulares duplicados detectados y corregidos esa misma sesión.
+
+Como parte de la Fase 0 del roadmap de esa auditoría, se documenta aquí el esquema de la primera entidad nueva, **aviso**, que necesitará la Fase 1 (AEMET-avisos, ver el informe). No se crea todavía ningún fichero de datos real ni renderizado HTML para este tipo — no hay ninguna fuente conectada aún que lo alimente; queda preparado para cuando exista.
+
+```json
+{
+  "id": "aemet-avi-2026-...",
+  "tipo": "meteorologico",
+  "nivel": "amarillo",
+  "titulo": "",
+  "descripcion": "",
+  "fenomeno": "",
+  "zona": "",
+  "inicio": "",
+  "fin": "",
+  "fuente": "AEMET",
+  "fuente_url": "",
+  "estado_ciclo_vida": "creado",
+  "actualizado_en": "",
+  "historial": []
+}
+```
+
+Puntos de diseño:
+
+- **No es lo mismo que `data/avisos-locales.json`**: ese fichero sigue siendo el panel manual de tráfico/obras/incidencias de portada (ver 5.4). `aviso` es una entidad estructurada con ciclo de vida propio, pensada para fuentes oficiales automatizadas (AEMET, y en el futuro 112/INFOCA si llegan a tener un canal de datos público).
+- **Ciclo de vida, no republicación**: un aviso que sube de nivel (amarillo → naranja) o se cancela debe **actualizar el mismo registro** (`estado_ciclo_vida`, `actualizado_en`, y un `historial` con los estados previos para trazabilidad), no generar una noticia nueva cada vez. Ver la sección G.5 del informe de auditoría para el resto de dominios con el mismo problema (incendios, contratación, eventos).
+- **`historial`** existe para no repetir el problema ya observado en el modelo de noticia (sección E.8 del informe): cuando se fusiona o cierra un registro, hoy no queda ningún rastro de que existió ni de qué lo sustituye.

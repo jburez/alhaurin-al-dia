@@ -1,0 +1,23 @@
+{
+  "_nota": "Filtro geográfico compartido (Fase 0, auditoría de fuentes 2026-07-20, sección G.6). codigo_postal verificado por búsqueda externa el 2026-07-20 (coincide en múltiples fuentes independientes); pedanías y vías secundarias de la Sierra de Alhaurín no verificadas, se dejan fuera hasta confirmarlas.",
+  "municipio_principal": "Alhaurín el Grande",
+  "codigo_ine": "29008",
+  "codigo_postal": "29120",
+  "entidades_inclusion": [
+    "Alhaurín el Grande",
+    "Sierra de Alhaurín",
+    "Valle del Guadalhorce",
+    "A-404",
+    "A-355"
+  ],
+  "entidades_revision_manual": [
+    "Alhaurín de la Torre",
+    "Coín",
+    "Cártama",
+    "Mijas",
+    "Málaga capital"
+  ],
+  "entidades_exclusion_si_solas": [
+    "Alhaurín de la Torre"
+  ]
+}

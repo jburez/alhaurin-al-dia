@@ -158,6 +158,9 @@ fs.writeFileSync(path.join(ROOT, 'sitemap-news.xml'), renderNewsUrlset(googleNew
 const sitemapFiles = [
   'sitemap.xml',
   'sitemap-news.xml',
+  'sitemap-noticias.xml',
+  'sitemap-farmacias.xml',
+  'sitemap-servicios.xml',
 ].filter(file => fs.existsSync(path.join(ROOT, file)));
 
 fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitemapFiles));

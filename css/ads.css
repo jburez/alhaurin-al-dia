@@ -1,0 +1,144 @@
+/* =========================
+   PUBLICIDAD / PATROCINIOS
+   Slots discretos y responsive
+========================= */
+
+.ad-wrap {
+    margin: 22px auto;
+}
+
+.ad-wrap-top {
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.ad-wrap-section {
+    margin: 34px auto;
+}
+
+.ad-slot {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 28px 16px 12px;
+    background: var(--paper-soft);
+    border: 1px dashed var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.ad-slot::before {
+    content: "Publicidad";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.ad-slot-leaderboard {
+    min-height: 96px;
+    border-radius: 22px;
+}
+
+.ad-slot-medium {
+    min-height: 180px;
+    border-radius: 24px;
+}
+
+.ad-slot-sidebar {
+    min-height: 300px;
+    border-radius: 24px;
+}
+
+.ad-slot-native {
+    min-height: 130px;
+    border-radius: 24px;
+}
+
+.ad-slot-sticky {
+    position: sticky;
+    top: 104px;
+}
+
+.ad-label-text {
+    display: block;
+    padding-top: 12px;
+}
+
+.home-latest-grid + .ad-wrap,
+.featured-news + .ad-wrap {
+    margin-top: 26px;
+}
+
+.article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 28px;
+    align-items: start;
+}
+
+.article-main-column {
+    min-width: 0;
+}
+
+.article-sidebar {
+    display: grid;
+    gap: 18px;
+}
+
+.article-inline-ad {
+    margin: 24px 0;
+}
+
+.category-ad-after-hero,
+.listing-ad-after-featured {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 980px) {
+    .article-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .article-sidebar {
+        order: -1;
+    }
+
+    .ad-slot-sticky {
+        position: relative;
+        top: auto;
+    }
+
+    .ad-slot-sidebar {
+        min-height: 140px;
+    }
+}
+
+@media (max-width: 720px) {
+    .ad-wrap {
+        margin: 18px auto;
+    }
+
+    .ad-slot-leaderboard,
+    .ad-slot-medium,
+    .ad-slot-native,
+    .ad-slot-sidebar {
+        min-height: 120px;
+        border-radius: 18px;
+    }
+
+    .ad-slot::before {
+        top: 7px;
+        left: 10px;
+    }
+}

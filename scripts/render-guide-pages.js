@@ -137,7 +137,7 @@ function renderPage(item) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${escapeHtml(title)} | Alhaurín al Día</title>
+    <title>${escapeHtml(title)} — Alhaurín al Día</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="${escapeHtml(canonical)}">
@@ -148,10 +148,16 @@ function renderPage(item) {
     <meta property="og:url" content="${escapeHtml(canonical)}">
     <meta property="og:image" content="${SITE_URL}/assets/favicon.svg">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${SITE_URL}/assets/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/mobile.css">
-    <link rel="stylesheet" href="/ads.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/ads.css">
     <style>
         .resource-hero { padding:58px 0 28px; }
         .resource-card { background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:36px; padding:clamp(28px,5vw,56px); box-shadow:var(--shadow); }
@@ -200,7 +206,7 @@ function renderPage(item) {
         </div></section>
     </main>
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/">Anunciarse</a></div></div></footer>
-    <script src="/app.js"></script>
+    <script src="/js/app.js" defer></script>
 </body>
 </html>
 `;
@@ -215,6 +221,7 @@ function main() {
 
   let count = 0;
   let skipped = 0;
+  let unchanged = 0;
 
   for (const item of items) {
     if (!item.id) continue;
@@ -225,12 +232,21 @@ function main() {
 
     const dir = path.join(GUIDE_DIR, item.id);
     const file = path.join(dir, 'index.html');
+    const rendered = renderPage(item);
+    // No reescribe si el contenido no cambió, para que el mtime del archivo
+    // (usado como lastmod real en el sitemap) refleje la última modificación
+    // de verdad y no la fecha del último build.
+    if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === rendered) {
+      unchanged += 1;
+      continue;
+    }
     fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(file, renderPage(item));
+    fs.writeFileSync(file, rendered);
     count += 1;
   }
 
   console.log(`Páginas de guía útil renderizadas: ${count}`);
+  console.log(`Páginas de guía útil sin cambios: ${unchanged}`);
   console.log(`Páginas de guía útil protegidas: ${skipped}`);
 }
 

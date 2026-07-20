@@ -431,8 +431,9 @@ def schema_organization():
 
 
 def schema_website():
-    data = {"@context": "https://schema.org", "@type": "WebSite", "name": "Alhaurín al Día", "url": SITE_URL, "inLanguage": "es-ES",
-            "potentialAction": {"@type": "SearchAction", "target": f"{SITE_URL}/buscar/?q={{search_term_string}}", "query-input": "required name=search_term_string"}}
+    # Sin potentialAction/SearchAction: /buscar/ no existe en el sitio.
+    # scripts/audit-seo.js falla el build si detecta ese bloque.
+    data = {"@context": "https://schema.org", "@type": "WebSite", "name": "Alhaurín al Día", "url": SITE_URL, "inLanguage": "es-ES"}
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
@@ -491,7 +492,7 @@ def schema_item_list(noticias):
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
-def html_header(title, description, canonical, image="", css_prefix="..", og_type="article"):
+def html_header(title, description, canonical, image="", css_prefix="..", og_type="article", incluir_article_css=True):
     image = image or f"{SITE_URL}/assets/favicon.svg"
     return f'''<head>
     <meta charset="utf-8">
@@ -507,11 +508,18 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
     <meta property="og:url" content="{escapar(canonical)}">
     <meta property="og:image" content="{escapar(image)}">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{escapar(title)}">
+    <meta name="twitter:description" content="{escapar(description)}">
+    <meta name="twitter:image" content="{escapar(image)}">
     <link rel="icon" type="image/svg+xml" href="{css_prefix}/assets/favicon.svg">
-    <link rel="stylesheet" href="{css_prefix}/styles.css">
-    <link rel="stylesheet" href="{css_prefix}/mobile.css">
-    <link rel="stylesheet" href="{css_prefix}/ads.css">
-    <link rel="stylesheet" href="{css_prefix}/article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="{css_prefix}/css/styles.css">
+    <link rel="stylesheet" href="{css_prefix}/css/mobile.css">
+    <link rel="stylesheet" href="{css_prefix}/css/ads.css">{f'''
+    <link rel="stylesheet" href="{css_prefix}/css/article.css">
+    <link rel="stylesheet" href="{css_prefix}/css/article-share.css">''' if incluir_article_css else ''}
 </head>'''
 
 
@@ -525,7 +533,7 @@ def site_chrome(content, prefix=".."):
     </nav></div></header>
     {content}
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a></div></div></footer>
-    <script src="{prefix}/app.js"></script>
+    <script src="{prefix}/js/app.js" defer></script>
 </body>'''
 
 
@@ -564,7 +572,7 @@ def generar_html_noticia(noticia, noticias):
     lectura = tiempo_lectura(f"{titulo} {descripcion} {cuerpo}")
     share_text = quote(f"{titulo} {canonical}")
     share_url = quote(canonical, safe="")
-    imagen_html = f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>' if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
+    imagen_html = f'<figure class="article-hero-image"><img src="{escapar(imagen)}" alt="{escapar(titulo)}" width="800" height="450"><figcaption>{escapar(fuente or "Alhaurín al Día")}</figcaption></figure>' if imagen else '<div class="article-hero-placeholder">Alhaurín al Día</div>'
     cuerpo_html = renderizar_parrafos_cuerpo(cuerpo)
     relacionadas = bloque_relacionadas(noticia, noticias)
     breadcrumb_schema = schema_breadcrumb_list(noticia, canonical)
@@ -588,7 +596,7 @@ def generar_html_noticia(noticia, noticias):
     <script type="application/ld+json">{breadcrumb_schema}</script>
     <script type="application/ld+json">{schema_organization()}</script>
     <script type="application/ld+json">{schema_website()}</script>'''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " | Alhaurín al Día", descripcion, canonical, imagen, "..", "article")}\n{site_chrome(body, "..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " — Alhaurín al Día", descripcion, canonical, imagen, "..", "article")}\n{site_chrome(body, "..")}\n</html>'
 
 
 def generar_html_categoria(categoria, noticias):
@@ -598,16 +606,29 @@ def generar_html_categoria(categoria, noticias):
     cards = []
     for noticia in noticias:
         img = noticia.get("imagen", "")
-        cards.append(f'''<article class="content-card news-card">{f'<div class="news-image"><img src="{escapar(img)}" alt="{escapar(noticia.get("titulo", ""))}" loading="lazy"></div>' if img else '<div class="news-image news-placeholder"><span>Alhaurín al Día</span></div>'}<div class="news-body"><span class="tag">{escapar(categoria)}</span><h3>{
-                     escapar(noticia.get("titulo", "Noticia"))}</h3><p>{escapar(noticia.get("descripcion") or noticia.get("resumen") or "")}</p></div><div class="news-footer"><small>{escapar(noticia.get("fuente", ""))}</small><a class="read-more" href="../../{escapar(noticia.get("pagina", "#"))}">Leer noticia →</a></div></article>''')
+        titulo_noticia = noticia.get("titulo", "Noticia")
+        cards.append(f'''<article class="content-card news-card">{f'<div class="news-image"><img src="{escapar(img)}" alt="{escapar(titulo_noticia)}" loading="lazy" width="400" height="230"></div>' if img else '<div class="news-image news-placeholder"><span>Alhaurín al Día</span></div>'}<div class="news-body"><span class="tag">{escapar(categoria)}</span><h3>{
+                     escapar(titulo_noticia)}</h3><p>{escapar(noticia.get("descripcion") or noticia.get("resumen") or "")}</p></div><div class="news-footer"><small>{escapar(noticia.get("fuente", ""))}</small><a class="read-more" href="../../{escapar(noticia.get("pagina", "#"))}" aria-label="Leer: {escapar(titulo_noticia)}">Leer noticia →</a></div></article>''')
+    listado = ''.join(cards) if cards else '<p class="empty-state">No hay noticias publicadas en esta categoría por ahora. Consulta <a href="../../noticias/">todas las noticias</a>.</p>'
+    resumen_cantidad = f"{len(noticias)} noticias disponibles en esta categoría." if noticias else "Sin noticias publicadas por ahora en esta categoría."
     body = f'''
-    <main><section class="hero"><div class="container"><div class="hero-card"><span class="eyebrow">Categoría</span><h1>{escapar(categoria)}</h1><p class="lead">{escapar(descripcion)}</p></div></div></section><section><div class="container"><div class="section-title"><h2>Últimas noticias</h2><p>{len(noticias)} noticias disponibles en esta categoría.</p></div><div class="grid-3">{''.join(cards)}</div></div></section></main>
+    <main><section class="hero"><div class="container"><div class="hero-card"><span class="eyebrow">Categoría</span><h1>{escapar(categoria)}</h1><p class="lead">{escapar(descripcion)}</p></div></div></section><section><div class="container"><div class="section-title"><h2>Últimas noticias</h2><p>{escapar(resumen_cantidad)}</p></div><div class="grid-3">{listado}</div></div></section></main>
     <script type="application/ld+json">{schema_collection_page(categoria, canonical, descripcion)}</script>
     <script type="application/ld+json">{schema_item_list(noticias)}</script>
     <script type="application/ld+json">{schema_breadcrumb_categoria(categoria, canonical)}</script>
     <script type="application/ld+json">{schema_organization()}</script>
     <script type="application/ld+json">{schema_website()}</script>'''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " | Alhaurín al Día", descripcion, canonical, "", "../..", "website")}\n{site_chrome(body, "../..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " — Alhaurín al Día", descripcion, canonical, "", "../..", "website", incluir_article_css=False)}\n{site_chrome(body, "../..")}\n</html>'
+
+
+def escribir_si_cambia(ruta, contenido):
+    """No reescribe si el contenido es idéntico, para que el mtime del
+    archivo (usado como lastmod real en el sitemap) refleje la última
+    modificación de verdad y no la fecha del último build."""
+    if ruta.exists() and ruta.read_text(encoding="utf-8") == contenido:
+        return False
+    ruta.write_text(contenido, encoding="utf-8")
+    return True
 
 
 def generar_paginas_noticias(noticias):
@@ -623,23 +644,32 @@ def generar_paginas_noticias(noticias):
             contador += 1
         rutas_usadas.add(ruta)
         noticia["pagina"] = ruta
+    escritas = 0
     for noticia in noticias:
-        (BASE_DIR / noticia["pagina"]).write_text(
-            generar_html_noticia(noticia, noticias), encoding="utf-8")
-    print("Páginas individuales creadas:", len(noticias))
+        if escribir_si_cambia(BASE_DIR / noticia["pagina"], generar_html_noticia(noticia, noticias)):
+            escritas += 1
+    print("Páginas individuales creadas/actualizadas:", escritas, "de", len(noticias))
 
 
 def generar_paginas_categorias(noticias):
     por_categoria = defaultdict(list)
     for noticia in noticias:
         por_categoria[noticia.get("categoria", "Actualidad")].append(noticia)
-    for categoria, items in por_categoria.items():
+    # Regenera SIEMPRE las categorías conocidas, no solo las que tienen
+    # noticias en este momento: si una categoría se queda sin artículos
+    # (por dedupe/limpieza de huérfanas) su página debe quedar con un
+    # estado vacío correcto en vez de conservar enlaces a noticias ya
+    # borradas.
+    todas_las_categorias = set(CATEGORIAS_VALIDAS) | set(por_categoria.keys())
+    escritas = 0
+    for categoria in sorted(todas_las_categorias):
+        items = por_categoria.get(categoria, [])
         ruta = BASE_DIR / generar_ruta_categoria(categoria)
         ruta.parent.mkdir(parents=True, exist_ok=True)
-        ruta.write_text(generar_html_categoria(
-            categoria, items), encoding="utf-8")
-    print("Páginas de categoría creadas:", len(por_categoria))
-    return sorted(por_categoria.keys())
+        if escribir_si_cambia(ruta, generar_html_categoria(categoria, items)):
+            escritas += 1
+    print("Páginas de categoría creadas/actualizadas:", escritas, "de", len(todas_las_categorias))
+    return sorted(todas_las_categorias)
 
 
 def obtener_noticias():

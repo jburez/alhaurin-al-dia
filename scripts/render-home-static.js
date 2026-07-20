@@ -1,16 +1,19 @@
 const fs = require('fs');
 const path = require('path');
+const {
+  renderFeaturedNewsHTML,
+  renderNewsCardHTML,
+  renderGuideCardHTML,
+} = require('./lib/cards');
 
 const ROOT = path.resolve(__dirname, '..');
 const HOME_FILE = path.join(ROOT, 'index.html');
+const NEWS_FILE = path.join(ROOT, 'data', 'noticias.json');
+const GUIDE_FILE = path.join(ROOT, 'data', 'guia-util.json');
 
-const CLEAN_CONTAINERS = [
-  'featured-news',
-  'news-container',
-  'guide-container',
-];
+const HOME_SECONDARY_NEWS_LIMIT = 3;
 
-function clearContainer(html, elementId) {
+function setContainerInnerHTML(html, elementId, innerHTML) {
   const openTagPattern = new RegExp(`<div([^>]*\\bid=["']${elementId}["'][^>]*)>`, 'i');
   const match = openTagPattern.exec(html);
 
@@ -42,38 +45,38 @@ function clearContainer(html, elementId) {
 
   const before = html.slice(0, openTagEnd);
   const after = html.slice(cursor);
-  return `${before}</div>${after.slice('</div>'.length)}`;
-}
-
-function assertClean(html) {
-  const forbiddenInside = [
-    ['featured-news', 'featured-news-card'],
-    ['news-container', 'news-card'],
-    ['guide-container', 'guide-card'],
-  ];
-
-  forbiddenInside.forEach(([containerId, forbiddenClass]) => {
-    const containerPattern = new RegExp(`<div[^>]*\\bid=["']${containerId}["'][^>]*>([\\s\\S]*?)<\\/div>`, 'i');
-    const match = containerPattern.exec(html);
-    if (match && match[1].includes(forbiddenClass)) {
-      throw new Error(`#${containerId} contiene HTML estático no esperado: ${forbiddenClass}`);
-    }
-  });
+  return `${before}${innerHTML}${after}`;
 }
 
 function main() {
   let html = fs.readFileSync(HOME_FILE, 'utf8');
 
-  CLEAN_CONTAINERS.forEach((containerId) => {
-    html = clearContainer(html, containerId);
-  });
+  const noticias = JSON.parse(fs.readFileSync(NEWS_FILE, 'utf8')) || [];
+  const guia = JSON.parse(fs.readFileSync(GUIDE_FILE, 'utf8')) || [];
 
-  assertClean(html);
-  fs.writeFileSync(HOME_FILE, html);
+  if (noticias.length === 0) {
+    html = setContainerInnerHTML(html, 'featured-news', '');
+    html = setContainerInnerHTML(html, 'news-container', '<p>No hay noticias disponibles.</p>');
+  } else {
+    const featured = renderFeaturedNewsHTML(noticias[0], { isHome: true });
+    const secondary = noticias
+      .slice(1, 1 + HOME_SECONDARY_NEWS_LIMIT)
+      .map(noticia => renderNewsCardHTML(noticia, { isHome: true }))
+      .join('\n');
 
-  console.log('Home preparada como plantilla limpia');
-  console.log('Los bloques #featured-news, #news-container y #guide-container quedan vacíos.');
-  console.log('El contenido dinámico lo renderiza app.js en cliente.');
+    html = setContainerInnerHTML(html, 'featured-news', featured);
+    html = setContainerInnerHTML(html, 'news-container', secondary);
+  }
+
+  const guideCards = guia.map(item => renderGuideCardHTML(item)).join('\n');
+  html = setContainerInnerHTML(html, 'guide-container', guideCards);
+
+  const previo = fs.existsSync(HOME_FILE) ? fs.readFileSync(HOME_FILE, 'utf8') : null;
+  if (html !== previo) fs.writeFileSync(HOME_FILE, html);
+
+  console.log('Home regenerada con contenido estático real.');
+  console.log(`#featured-news / #news-container: ${Math.min(1 + HOME_SECONDARY_NEWS_LIMIT, noticias.length)} de ${noticias.length} noticias.`);
+  console.log(`#guide-container: ${guia.length} recursos de guía útil.`);
 }
 
 main();

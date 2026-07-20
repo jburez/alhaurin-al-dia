@@ -7,11 +7,14 @@
     "news:dedupe:dry": "node scripts/dedupe-news.js",
     "news:orphans:dry": "node scripts/clean-orphan-news.js",
     "news:orphans:clean": "node scripts/clean-orphan-news.js --delete",
+    "news:static": "node scripts/render-news-static.js",
     "seo:home": "node scripts/apply-home-seo.js",
     "seo:clean-searchaction": "node scripts/remove-searchaction.js",
+    "seo:twitter-cards": "node scripts/add-twitter-cards.js",
     "seo": "npm run seo:home && npm run seo:clean-searchaction",
     "home:static": "node scripts/render-home-static.js",
     "guide:pages": "node scripts/render-guide-pages.js",
+    "guide:static": "node scripts/render-guide-static.js",
     "sitemap": "node scripts/generate-sitemaps.js",
     "seo:audit": "node scripts/audit-seo.js --warn-only",
     "seo:audit:strict": "node scripts/audit-seo.js",
@@ -19,7 +22,7 @@
     "seo:orphans:strict": "node scripts/audit-orphan-pages.js",
     "publish:check": "node scripts/check-publish.js",
     "daily": "npm run build && npm run publish:check",
-    "build": "npm run news && npm run news:dedupe && npm run news:orphans:clean && npm run seo && npm run home:static && npm run guide:pages && npm run sitemap && npm run seo:audit && npm run seo:orphans",
+    "build": "npm run news && npm run news:dedupe && npm run news:orphans:clean && npm run news:static && npm run seo && npm run home:static && npm run guide:pages && npm run guide:static && npm run seo:twitter-cards && npm run sitemap && npm run seo:audit && npm run seo:orphans",
     "build:publish": "npm run build && npm run publish:check"
   }
 }

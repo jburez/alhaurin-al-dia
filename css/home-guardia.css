@@ -1,0 +1,203 @@
+/* =========================
+   HOME PHARMACY GUARD
+========================= */
+
+.home-guard-wrap {
+    padding: 6px 0 24px;
+}
+
+.home-guard-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, auto);
+    gap: 22px;
+    align-items: center;
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, .14), transparent 18rem),
+        linear-gradient(135deg, #8f1d1d, var(--ink) 68%);
+    color: #fff;
+    border-radius: 34px;
+    padding: clamp(22px, 4vw, 38px);
+    box-shadow: 0 24px 60px rgba(24, 33, 47, .18);
+    position: relative;
+    overflow: hidden;
+}
+
+.home-guard-card::before {
+    content: "";
+    position: absolute;
+    right: -90px;
+    top: -120px;
+    width: 260px;
+    height: 260px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.home-guard-card::after {
+    content: "✚";
+    position: absolute;
+    right: 28px;
+    bottom: 16px;
+    color: rgba(255, 255, 255, .10);
+    font-size: 118px;
+    font-weight: 950;
+    line-height: 1;
+}
+
+.home-guard-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.home-guard-main {
+    min-width: 0;
+}
+
+.home-guard-card .section-kicker {
+    background: rgba(255, 255, 255, .96);
+    color: #8f1d1d;
+    border-color: rgba(255, 255, 255, .7);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .12);
+}
+
+.home-guard-date {
+    margin-top: 2px;
+    color: rgba(255, 255, 255, .78);
+    font-size: 13px;
+    font-weight: 850;
+    text-transform: capitalize;
+}
+
+.home-guard-card h2 {
+    margin: 8px 0 14px;
+    font-family: var(--font-display);
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: .95;
+    letter-spacing: -.05em;
+}
+
+.home-guard-summary,
+.home-guard-card p {
+    margin: 0;
+    max-width: 760px;
+    color: rgba(255, 255, 255, .9);
+    line-height: 1.7;
+}
+
+.home-guard-facts {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(150px, .85fr);
+    gap: 10px;
+    max-width: 760px;
+    margin-top: 8px;
+}
+
+.home-guard-facts div {
+    padding: 13px 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .22);
+    backdrop-filter: blur(10px);
+}
+
+.home-guard-facts span {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, .68);
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.home-guard-facts strong {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.home-guard-note {
+    margin-top: 12px !important;
+    color: rgba(255, 255, 255, .76) !important;
+    font-size: 13px;
+    line-height: 1.5 !important;
+}
+
+.home-guard-actions {
+    display: grid;
+    gap: 10px;
+    justify-content: stretch;
+    min-width: 210px;
+}
+
+.home-guard-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--ink);
+    font-weight: 950;
+    font-size: 14px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .12);
+    transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    text-align: center;
+}
+
+.home-guard-actions a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, .16);
+}
+
+.home-guard-actions a.secondary,
+.home-guard-actions a.ghost {
+    background: rgba(255, 255, 255, .18);
+    border: 1px solid rgba(255, 255, 255, .34);
+    color: #fff;
+    box-shadow: none;
+}
+
+.home-guard-actions a.ghost {
+    background: transparent;
+    color: rgba(255, 255, 255, .88);
+}
+
+.home-guard-actions a.secondary:hover,
+.home-guard-actions a.ghost:hover {
+    background: rgba(255, 255, 255, .24);
+}
+
+@media (max-width: 900px) {
+    .home-guard-card {
+        grid-template-columns: 1fr;
+    }
+
+    .home-guard-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        min-width: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-guard-card {
+        border-radius: 26px;
+        padding: 22px 18px;
+    }
+
+    .home-guard-card h2 {
+        font-size: clamp(30px, 9vw, 44px);
+        line-height: 1;
+    }
+
+    .home-guard-facts,
+    .home-guard-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .home-guard-actions a {
+        width: 100%;
+    }
+}

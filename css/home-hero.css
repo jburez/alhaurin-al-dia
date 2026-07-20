@@ -1,0 +1,146 @@
+/* =========================
+   FRANJA DE HOY — firma visual del sitio
+========================= */
+
+.today-strip {
+    background: var(--accent-soft);
+    border-bottom: 1px solid var(--line);
+}
+
+.today-strip-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 18px;
+    padding: 10px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.today-strip-date {
+    flex: 0 0 auto;
+    color: var(--ink);
+    font-weight: 850;
+    font-size: 13px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.today-strip-link {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    gap: 6px;
+    color: var(--accent-dark);
+    font-weight: 800;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.today-strip-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .today-strip-inner {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+/* =========================
+   HOME COMPACT HERO
+========================= */
+
+.home-hero-clean {
+    padding: 34px 0 20px;
+}
+
+.home-hero-clean .hero-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, .72fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.home-hero-clean .hero-card {
+    padding: clamp(26px, 4vw, 44px);
+    border-radius: 32px;
+}
+
+.home-hero-clean .eyebrow {
+    margin-bottom: 16px;
+}
+
+.home-hero-clean h1 {
+    max-width: 780px;
+    font-size: clamp(38px, 5.6vw, 64px);
+    line-height: .98;
+}
+
+.home-hero-clean .lead {
+    max-width: 720px;
+    margin-top: 18px;
+    font-size: 17px;
+    line-height: 1.62;
+}
+
+.home-hero-clean .actions {
+    margin-top: 22px;
+}
+
+.home-hero-clean .side-panel {
+    gap: 12px;
+}
+
+.home-hero-clean .today-card {
+    padding: 22px;
+}
+
+.home-hero-clean .today-card h2 {
+    font-size: 25px;
+    line-height: 1.05;
+}
+
+.home-hero-clean .today-card p {
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.home-hero-clean .quick-links {
+    margin-top: 16px;
+}
+
+.home-hero-clean .ad-slot-medium {
+    min-height: 116px;
+}
+
+@media (max-width: 920px) {
+    .home-hero-clean {
+        padding-top: 26px;
+    }
+
+    .home-hero-clean .hero-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .home-hero-clean {
+        padding: 22px 0 12px;
+    }
+
+    .home-hero-clean .hero-card {
+        padding: 24px 20px;
+        border-radius: 26px;
+    }
+
+    .home-hero-clean h1 {
+        font-size: clamp(34px, 10.6vw, 46px);
+    }
+
+    .home-hero-clean .lead {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+}

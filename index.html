@@ -8,30 +8,36 @@
     <title>Alhaurín al Día | Noticias, guía útil y comercios de Alhaurín el Grande</title>
     <meta name="description"
         content="Noticias, agenda, farmacias, teléfonos útiles, trámites, comercios, rutas y planes en Alhaurín el Grande. Información local clara, práctica y actualizada." />
-    <meta name="theme-color" content="#17324d" />
+    <meta name="theme-color" content="#1c1f1b" />
     <meta name="author" content="Alhaurín al Día" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://alhaurinaldia.es/">
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Alhaurín al Día" />
-    <meta property="og:title" content="Alhaurín al Día | Información local útil" />
+    <meta property="og:title" content="Alhaurín al Día | Noticias, guía útil y comercios de Alhaurín el Grande" />
     <meta property="og:description" content="Noticias, guía útil, comercios y planes de Alhaurín el Grande." />
     <meta property="og:url" content="https://alhaurinaldia.es/" />
-
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./mobile.css">
-    <link rel="stylesheet" href="./ads.css">
-    <link rel="stylesheet" href="./news-meta.css">
-    <link rel="stylesheet" href="./home-hero.css">
-    <link rel="stylesheet" href="./home-live.css">
-    <link rel="stylesheet" href="./home-guardia.css">
-    <link rel="stylesheet" href="./home-agenda.css">
-    <link rel="stylesheet" href="./home-commerce.css">
-    <link rel="stylesheet" href="./home-news.css">
-    <link rel="stylesheet" href="./ux-desktop.css">
-    <link rel="stylesheet" href="./ux-mobile.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alhaurín al Día | Noticias, guía útil y comercios de Alhaurín el Grande">
+    <meta name="twitter:description" content="Noticias, guía útil, comercios y planes de Alhaurín el Grande.">
+    <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/ads.css">
+    <link rel="stylesheet" href="./css/news-meta.css">
+    <link rel="stylesheet" href="./css/home-hero.css">
+    <link rel="stylesheet" href="./css/home-live.css">
+    <link rel="stylesheet" href="./css/home-guardia.css">
+    <link rel="stylesheet" href="./css/home-agenda.css">
+    <link rel="stylesheet" href="./css/home-commerce.css">
+    <link rel="stylesheet" href="./css/home-news.css">
+    <link rel="stylesheet" href="./css/ux-desktop.css">
+    <link rel="stylesheet" href="./css/ux-mobile.css">
 
     <script type="application/ld+json">
     {
@@ -122,6 +128,25 @@
             </nav>
         </div>
     </header>
+
+    <div class="today-strip" aria-label="Alhaurín hoy">
+        <div class="container today-strip-inner">
+            <span class="today-strip-date" id="today-strip-date">Hoy en Alhaurín</span>
+            <a class="today-strip-link" href="#daily-dashboard-title"><span aria-hidden="true">☀</span> Tiempo</a>
+            <a class="today-strip-link" href="#home-pharmacy-guard"><span aria-hidden="true">💊</span> Farmacia de guardia</a>
+            <a class="today-strip-link" href="#home-agenda-title"><span aria-hidden="true">📅</span> Agenda</a>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var el = document.getElementById("today-strip-date");
+            if (!el) return;
+            try {
+                var formatted = new Date().toLocaleDateString("es-ES", { day: "numeric", month: "long" });
+                el.textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
+            } catch (e) { /* se queda el texto por defecto */ }
+        })();
+    </script>
 
     <main id="inicio">
         <section class="hero home-hero-clean">
@@ -254,13 +279,123 @@
                     </div>
                 </div>
 
-                <div class="featured-news" id="featured-news"></div>
+                <div class="featured-news" id="featured-news">
+        <article class="featured-news-card">
+            <div class="featured-news-image">
+                
+                    <img src="https://i1.ytimg.com/vi/pQKIxISNWHo/hqdefault.jpg" alt="Exposición de artistas residentes en La Baltasara llega a Alhaurín el Grande" width="600" height="390">
+                
+            </div>
+
+            <div class="featured-news-content">
+                <span class="featured-label">Noticia destacada</span>
+                <div class="featured-meta">
+                    <span class="tag">Agenda Cultural</span>
+                </div>
+                
+        <div class="featured-date-line">
+            <time datetime="2026-07-13T11:22:32.152421+00:00">13 de julio de 2026</time>
+            <span class="news-meta-separator">·</span>
+            <span>ATV Alhaurín YouTube</span>
+        </div>
+    
+                <h2>Exposición de artistas residentes en La Baltasara llega a Alhaurín el Grande</h2>
+                <p>La muestra &#039;Alhaurín te visita&#039; presenta obras de artistas residentes en La Baltasara, acercando el arte contemporáneo a la comunidad local.</p>
+                <a class="read-more" href="/noticias/exposicion-de-artistas-residentes-en-la-baltasara-llega-a-alhaurin-el-grande.html" aria-label="Leer: Exposición de artistas residentes en La Baltasara llega a Alhaurín el Grande">
+                    Leer noticia →
+                </a>
+            </div>
+        </article>
+    </div>
 
                 <div class="ad-wrap listing-ad-after-featured">
                     <div class="ad-slot ad-slot-native">Publicidad integrada entre noticias</div>
                 </div>
 
-                <div class="grid-3 home-latest-grid editorial-news-grid" id="news-container"></div>
+                <div class="grid-3 home-latest-grid editorial-news-grid" id="news-container">
+        <article class="content-card news-card">
+        
+            <div class="news-image">
+                <img src="https://i2.ytimg.com/vi/aOVA4YoEcwM/hqdefault.jpg" alt="Alhaurín el Grande inaugura exposición Tango Flamenco y lanza &#039;Noches de cine&#039; en verano" loading="lazy" width="400" height="230">
+            </div>
+        
+
+        <div class="news-body">
+            <span class="tag">Actualidad</span>
+            <h3>Alhaurín el Grande inaugura exposición Tango Flamenco y lanza &#039;Noches de cine&#039; en verano</h3>
+            <p>Alhaurín el Grande presenta la exposición &#039;Tango Flamenco&#039; en la Biblioteca y la iniciativa gratuita &#039;Noches de cine&#039; que…</p>
+        </div>
+
+        <div class="news-footer">
+            
+        <div class="news-meta-line">
+            <time datetime="2026-07-13T11:22:28.986154+00:00">13 de julio de 2026</time>
+            <span class="news-meta-separator">·</span>
+            <span>ATV Alhaurín YouTube</span>
+        </div>
+    
+            <a class="read-more" href="/noticias/alhaurin-el-grande-inaugura-exposicion-tango-flamenco-y-lanza-noches-de-cine-en-verano.html" aria-label="Leer: Alhaurín el Grande inaugura exposición Tango Flamenco y lanza &#039;Noches de cine&#039; en verano">
+                Leer noticia →
+            </a>
+        </div>
+        </article>
+    
+
+        <article class="content-card news-card">
+        
+            <div class="news-image">
+                <img src="https://i4.ytimg.com/vi/kwQvCXSdjLg/hqdefault.jpg" alt="Jóvenes de Alhaurín el Grande participarán en la visita a Madrid 2026 con el Papa León" loading="lazy" width="400" height="230">
+            </div>
+        
+
+        <div class="news-body">
+            <span class="tag">Actualidad</span>
+            <h3>Jóvenes de Alhaurín el Grande participarán en la visita a Madrid 2026 con el Papa León</h3>
+            <p>Un grupo de jóvenes de Alhaurín el Grande se prepara para asistir a la visita del Papa León en Madrid 2026, una experiencia única…</p>
+        </div>
+
+        <div class="news-footer">
+            
+        <div class="news-meta-line">
+            <time datetime="2026-07-13T11:22:24.102149+00:00">13 de julio de 2026</time>
+            <span class="news-meta-separator">·</span>
+            <span>ATV Alhaurín YouTube</span>
+        </div>
+    
+            <a class="read-more" href="/noticias/jovenes-de-alhaurin-el-grande-participaran-en-la-visita-a-madrid-2026-con-el-papa-leon.html" aria-label="Leer: Jóvenes de Alhaurín el Grande participarán en la visita a Madrid 2026 con el Papa León">
+                Leer noticia →
+            </a>
+        </div>
+        </article>
+    
+
+        <article class="content-card news-card">
+        
+            <div class="news-image">
+                <img src="https://i1.ytimg.com/vi/tvcjgT9aFSI/hqdefault.jpg" alt="Agenda cultural de Alhaurín el Grande: próximos eventos destacados" loading="lazy" width="400" height="230">
+            </div>
+        
+
+        <div class="news-body">
+            <span class="tag">Agenda Cultural</span>
+            <h3>Agenda cultural de Alhaurín el Grande: próximos eventos destacados</h3>
+            <p>Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel.</p>
+        </div>
+
+        <div class="news-footer">
+            
+        <div class="news-meta-line">
+            <time datetime="2026-07-13T11:22:19.530882+00:00">13 de julio de 2026</time>
+            <span class="news-meta-separator">·</span>
+            <span>ATV Alhaurín YouTube</span>
+        </div>
+    
+            <a class="read-more" href="/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html" aria-label="Leer: Agenda cultural de Alhaurín el Grande: próximos eventos destacados">
+                Leer noticia →
+            </a>
+        </div>
+        </article>
+    </div>
 
                 <div class="actions centered">
                     <a class="btn btn-primary" href="./noticias/">Ver todas las noticias</a>
@@ -302,7 +437,453 @@
                 </div>
 
                 <div class="guide-content">
-                    <div class="guide-grid" id="guide-container"></div>
+                    <div class="guide-grid" id="guide-container"><article class="guide-card" id="farmacias">
+            <div class="guide-card-top">
+                <div class="guide-icon">+</div>
+                <div>
+                    <span class="guide-category">Salud</span>
+                    <h3>Farmacias de guardia y salud</h3>
+                </div>
+            </div>
+
+            <p>Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse.</p>
+
+            <ul><li>Guardias: empiezan a las 9:30 y terminan a las 9:30 del día siguiente, según la web municipal.</li><li>Farmacias de guardia 2026 de Alhaurín el Grande.</li><li>Buscador oficial de farmacias de guardia del Consejo General de Colegios Farmacéuticos.</li><li>Emergencias generales: 112.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer">
+                    Farmacias de guardia - Ayuntamiento
+                </a>
+            
+                <a href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer">
+                    Buscador oficial de farmacias de guardia
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/farmacias/">
+                Abrir farmacias de guardia →
+            </a>
+        </article>
+<article class="guide-card" id="telefonos">
+            <div class="guide-card-top">
+                <div class="guide-icon">☎</div>
+                <div>
+                    <span class="guide-category">Emergencias</span>
+                    <h3>Teléfonos útiles y emergencias</h3>
+                </div>
+            </div>
+
+            <p>Números básicos para incidencias, atención municipal y emergencias locales. Útil para tener siempre a mano desde el móvil.</p>
+
+            <ul><li>Ayuntamiento / centralita: 952 49 00 00.</li><li>Policía Local: 952 49 10 74.</li><li>Protección Civil: 672 32 83 51.</li><li>Guardia Civil Alhaurín el Grande: 952 595 830.</li><li>Servicios Operativos: 952 49 09 13.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/telefonos-de-interes/" target="_blank" rel="noopener noreferrer">
+                    Teléfonos de interés - Ayuntamiento
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/contacto/" target="_blank" rel="noopener noreferrer">
+                    Contacto municipal
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/telefonos/">
+                Ver teléfonos oficiales →
+            </a>
+        </article>
+<article class="guide-card" id="tramites">
+            <div class="guide-card-top">
+                <div class="guide-icon">i</div>
+                <div>
+                    <span class="guide-category">Administración</span>
+                    <h3>Trámites, sede electrónica y padrón</h3>
+                </div>
+            </div>
+
+            <p>Accesos directos para gestiones municipales frecuentes: sede electrónica, cita previa, pago de tributos y padrón de habitantes.</p>
+
+            <ul><li>Sede electrónica municipal para trámites online.</li><li>Cita previa disponible desde la sede electrónica.</li><li>Padrón: altas y cambios de domicilio requieren cita previa si se hacen presencialmente.</li><li>Contacto de padrón: 952 49 00 00 / padron2@alhaurinelgrande.es.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.sedelectronica.es/" target="_blank" rel="noopener noreferrer">
+                    Sede Electrónica
+                </a>
+            
+                <a href="https://alhaurinelgrande.sedelectronica.es/citaprevia" target="_blank" rel="noopener noreferrer">
+                    Cita previa
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/padron-de-habitantes/" target="_blank" rel="noopener noreferrer">
+                    Padrón de habitantes
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/sede-electronica/" target="_blank" rel="noopener noreferrer">
+                    Página municipal de sede electrónica
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/tramites/">
+                Abrir sede electrónica →
+            </a>
+        </article>
+<article class="guide-card" id="movilidad">
+            <div class="guide-card-top">
+                <div class="guide-icon">↗</div>
+                <div>
+                    <span class="guide-category">Movilidad</span>
+                    <h3>Autobuses, horarios y movilidad</h3>
+                </div>
+            </div>
+
+            <p>Enlaces útiles para consultar horarios actualizados de autobús entre Alhaurín el Grande, Málaga, Alhaurín de la Torre, Coín y el Hospital Guadalhorce.</p>
+
+            <ul><li>Línea M-132: Málaga - Alhaurín el Grande.</li><li>Línea M-167B: Coín - Alhaurín el Grande - Málaga por Cártama.</li><li>Línea M-159B: Alhaurín el Grande - Villa del Guadalhorce - Hospital Guadalhorce.</li><li>Revisar siempre el horario oficial antes de viajar.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://siu.ctmam.ctan.es/es/movil/horarios_lineas_tabla.php?linea=17" target="_blank" rel="noopener noreferrer">
+                    M-132 Málaga - Alhaurín el Grande
+                </a>
+            
+                <a href="https://ctmam.es/lineas/M-167B" target="_blank" rel="noopener noreferrer">
+                    M-167B Coín - Alhaurín el Grande - Málaga
+                </a>
+            
+                <a href="https://siu.ctmam.ctan.es/es/movil/horarios_lineas.php" target="_blank" rel="noopener noreferrer">
+                    Horarios por líneas - Consorcio Málaga
+                </a>
+            
+                <a href="https://malaga.avanzagrupo.com/es/itinerarios-y-horarios/lineas/132-m132-malaga-alhaurin-el-grande" target="_blank" rel="noopener noreferrer">
+                    Avanza Málaga - línea M-132
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/movilidad/">
+                Consultar horarios →
+            </a>
+        </article>
+<article class="guide-card" id="taxis">
+            <div class="guide-card-top">
+                <div class="guide-icon">T</div>
+                <div>
+                    <span class="guide-category">Movilidad</span>
+                    <h3>Taxi en Alhaurín el Grande</h3>
+                </div>
+            </div>
+
+            <p>Información práctica sobre la parada oficial de taxi, reservas y traslados desde Alhaurín el Grande.</p>
+
+            <ul><li>Parada oficial: Avenida Gerald Brenan, 39.</li><li>Teléfono de contacto publicado por la web municipal: 952 491 010.</li><li>Servicio indicado como continuo, con reservas por teléfono.</li><li>El Ayuntamiento anunció en 2026 la ampliación del servicio con nuevas licencias adaptadas.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/taxis/" target="_blank" rel="noopener noreferrer">
+                    Taxi - Ayuntamiento
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/alhaurin-el-grande-amplia-su-servicio-de-taxi-con-dos-nuevas-licencias-adaptadas/" target="_blank" rel="noopener noreferrer">
+                    Ampliación de licencias adaptadas
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/taxis/">
+                Ver taxi oficial →
+            </a>
+        </article>
+<article class="guide-card" id="educacion">
+            <div class="guide-card-top">
+                <div class="guide-icon">E</div>
+                <div>
+                    <span class="guide-category">Familias y Educación</span>
+                    <h3>Educación, campamentos y recursos para familias</h3>
+                </div>
+            </div>
+
+            <p>Accesos a recursos educativos municipales, campamentos urbanos, actividades para familias y contacto del área de Educación.</p>
+
+            <ul><li>El área municipal de Educación gestiona campamentos, actividades educativas, Escuela de Familias y programas de conciliación.</li><li>Contacto de Educación publicado por el Ayuntamiento: 952 49 9079.</li><li>Correo de referencia: educacionalhaurin@gmail.com.</li><li>Ubicación indicada: Edificio municipal de formación y empleo, Polígono Industrial La Rosa.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/educacion" target="_blank" rel="noopener noreferrer">
+                    Educación - Ayuntamiento
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/concejalia-de-educacion/" target="_blank" rel="noopener noreferrer">
+                    Concejalía de Educación
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/educacion/">
+                Ver Educación →
+            </a>
+        </article>
+<article class="guide-card" id="campamentos">
+            <div class="guide-card-top">
+                <div class="guide-icon">☀</div>
+                <div>
+                    <span class="guide-category">Familias y Educación</span>
+                    <h3>Campamentos urbanos y conciliación familiar</h3>
+                </div>
+            </div>
+
+            <p>Información de referencia para familias sobre campamentos municipales en periodos no lectivos y programas de conciliación.</p>
+
+            <ul><li>El Ayuntamiento organiza campamentos urbanos en periodos como verano, Navidad, Semana Blanca y Semana Santa.</li><li>Los campamentos municipales están orientados a niños y niñas y ayudan a la conciliación familiar.</li><li>Conviene consultar cada convocatoria concreta, fechas, edades admitidas, precio y plazo de inscripción.</li><li>Ejemplo reciente: Campamento de Semana Blanca 2026 anunciado para niños y niñas nacidos entre 2013 y 2022.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/educacion" target="_blank" rel="noopener noreferrer">
+                    Educación - Campamentos
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/el-area-de-educacion-organiza-un-ano-mas-el-campamento-de-semana-blanca-2026-para-favorecer-la-conciliacion-familiar/" target="_blank" rel="noopener noreferrer">
+                    Noticia Campamento Semana Blanca 2026
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/campamentos/">
+                Consultar campamentos →
+            </a>
+        </article>
+<article class="guide-card" id="bibliotecas">
+            <div class="guide-card-top">
+                <div class="guide-icon">B</div>
+                <div>
+                    <span class="guide-category">Cultura</span>
+                    <h3>Bibliotecas municipales</h3>
+                </div>
+            </div>
+
+            <p>Información de la red municipal de bibliotecas, con datos de contacto y enlaces a fuentes oficiales de la Junta de Andalucía y el Ayuntamiento.</p>
+
+            <ul><li>Biblioteca Pública Municipal Ildefonso Marzo: Avenida Gerald Brenan 21.</li><li>Teléfono Ildefonso Marzo: 952 490 143 / 669 967 977.</li><li>Biblioteca Mari Pepa Estrada, Villa del Guadalhorce: Plaza Mayor 3-5.</li><li>Teléfono Mari Pepa Estrada: 952 423 121.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/cultura/biblioteca-general/" target="_blank" rel="noopener noreferrer">
+                    Bibliotecas - Ayuntamiento
+                </a>
+            
+                <a href="https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/cultura/bibliotecas-documentacion/directorio-bibliotecas/detalle/628.html" target="_blank" rel="noopener noreferrer">
+                    Biblioteca Ildefonso Marzo - Junta de Andalucía
+                </a>
+            
+                <a href="https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/cultura/bibliotecas-documentacion/directorio-bibliotecas/detalle/627.html" target="_blank" rel="noopener noreferrer">
+                    Biblioteca Mari Pepa Estrada - Junta de Andalucía
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/bibliotecas/">
+                Ver bibliotecas →
+            </a>
+        </article>
+<article class="guide-card" id="escuela-musica">
+            <div class="guide-card-top">
+                <div class="guide-icon">♫</div>
+                <div>
+                    <span class="guide-category">Cultura</span>
+                    <h3>Escuela Municipal de Música</h3>
+                </div>
+            </div>
+
+            <p>Recurso cultural y formativo para consultar información sobre la Escuela Municipal de Música Paco el Guardamontes y actividades musicales.</p>
+
+            <ul><li>La web municipal indica como contacto de referencia el teléfono 952 49 9079.</li><li>Correo publicado: educacionalhaurin@gmail.com.</li><li>Ubicación indicada: Plaza de la Legión, Edificio Escuela de Música.</li><li>La escuela municipal ofrece formación musical en distintas especialidades instrumentales y vocales.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/escuela-de-musica/" target="_blank" rel="noopener noreferrer">
+                    Escuela de Música - Ayuntamiento
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/escuela-musica/">
+                Ver Escuela de Música →
+            </a>
+        </article>
+<article class="guide-card" id="deportes">
+            <div class="guide-card-top">
+                <div class="guide-icon">⚽</div>
+                <div>
+                    <span class="guide-category">Deportes</span>
+                    <h3>Instalaciones deportivas municipales</h3>
+                </div>
+            </div>
+
+            <p>Acceso rápido a instalaciones deportivas, reservas, piscina, pistas y contacto del área municipal de Deportes.</p>
+
+            <ul><li>Instalaciones destacadas: piscina, pistas de tenis, pádel, fútbol 11, fútbol 7, baloncesto, pabellón y pistas polideportivas.</li><li>Teléfono del área de Deportes publicado por la web municipal: 952 49 12 16.</li><li>Piscina municipal: teléfono publicado 952 59 50 05.</li><li>La Concejalía de Deportes gestiona instalaciones, escuelas deportivas, competiciones y reservas.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/deportes/" target="_blank" rel="noopener noreferrer">
+                    Instalaciones deportivas
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/concejalia-de-deporte/" target="_blank" rel="noopener noreferrer">
+                    Concejalía de Deportes
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/deportes/">
+                Ver instalaciones →
+            </a>
+        </article>
+<article class="guide-card" id="calistenia">
+            <div class="guide-card-top">
+                <div class="guide-icon">M</div>
+                <div>
+                    <span class="guide-category">Deportes</span>
+                    <h3>Calistenia y deporte al aire libre</h3>
+                </div>
+            </div>
+
+            <p>Recurso para localizar novedades sobre instalaciones deportivas al aire libre y espacios como la pista de calistenia del Polideportivo Municipal.</p>
+
+            <ul><li>El Ayuntamiento anunció en 2026 una pista de calistenia en el Polideportivo Municipal.</li><li>La instalación fue presentada como un espacio de 225 m² orientado a la práctica de calistenia.</li><li>Conviene consultar la web municipal para horarios, normas de uso y novedades deportivas.</li><li>Recurso útil para jóvenes, deportistas y vecinos que buscan entrenamiento al aire libre.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/alhaurin-el-grande-estrena-una-nueva-pista-de-calistenia-en-el-polideportivo-municipal-de-225-m%C2%B2/" target="_blank" rel="noopener noreferrer">
+                    Noticia pista de calistenia
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/deportes/" target="_blank" rel="noopener noreferrer">
+                    Deportes Alhaurín
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/calistenia/">
+                Ver recurso deportivo →
+            </a>
+        </article>
+<article class="guide-card" id="turismo">
+            <div class="guide-card-top">
+                <div class="guide-icon">★</div>
+                <div>
+                    <span class="guide-category">Turismo</span>
+                    <h3>Turismo, patrimonio y planes</h3>
+                </div>
+            </div>
+
+            <p>Accesos para descubrir recursos turísticos, patrimonio, Casa Museo Antonio Gala, rutas, miradores y planes tranquilos por Alhaurín el Grande.</p>
+
+            <ul><li>Web municipal de turismo con información turística actualizada.</li><li>La web oficial municipal destaca Alhaurín el Grande como enclave del Valle del Guadalhorce.</li><li>Casa Museo Antonio Gala - La Baltasara.</li><li>Ideas para seguir ampliando: casco histórico, miradores, rutas naturales y patrimonio.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://visitalhaurinelgrande.es/" target="_blank" rel="noopener noreferrer">
+                    Turismo Alhaurín el Grande
+                </a>
+            
+                <a href="https://alhaurinelgrande.es/" target="_blank" rel="noopener noreferrer">
+                    Web oficial del Ayuntamiento
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/turismo/">
+                Ver turismo →
+            </a>
+        </article>
+<article class="guide-card" id="aparcamiento">
+            <div class="guide-card-top">
+                <div class="guide-icon">P</div>
+                <div>
+                    <span class="guide-category">Movilidad</span>
+                    <h3>Aparcamiento y moverse por el centro</h3>
+                </div>
+            </div>
+
+            <p>Ficha preparada para ordenar información sobre aparcamientos, accesos, cortes de tráfico, zonas de parada y consejos para moverse por Alhaurín el Grande.</p>
+
+            <ul><li>Pendiente de completar con listado depurado de aparcamientos y zonas recomendadas.</li><li>Ideal para incluir avisos de cortes de tráfico durante feria, Semana Santa, Día de la Cruz y eventos locales.</li><li>Puede convertirse en una página clave para visitantes y vecinos que buscan aparcar rápido.</li><li>Se recomienda alimentar esta ficha con datos municipales y comprobación sobre el terreno.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/" target="_blank" rel="noopener noreferrer">
+                    Web municipal
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/aparcamiento/">
+                Ver información municipal →
+            </a>
+        </article>
+<article class="guide-card" id="gasolineras">
+            <div class="guide-card-top">
+                <div class="guide-icon">⛽</div>
+                <div>
+                    <span class="guide-category">Servicios</span>
+                    <h3>Gasolineras y servicios en carretera</h3>
+                </div>
+            </div>
+
+            <p>Ficha preparada para recoger gasolineras cercanas, servicios en ruta, horarios, lavaderos y puntos útiles para conductores.</p>
+
+            <ul><li>Pendiente de completar con gasolineras verificadas y enlaces de ubicación.</li><li>Puede incluir horarios, servicios disponibles, lavadero, tienda, aire para neumáticos y puntos de carga si existieran.</li><li>Muy útil para búsquedas recurrentes desde móvil.</li><li>Se recomienda verificar datos antes de publicar información comercial detallada.</li></ul>
+
+            
+
+            <a class="read-more" href="/guia-util/gasolineras/">
+                Próximamente →
+            </a>
+        </article>
+<article class="guide-card" id="veterinarios">
+            <div class="guide-card-top">
+                <div class="guide-icon">🐾</div>
+                <div>
+                    <span class="guide-category">Servicios</span>
+                    <h3>Veterinarios y cuidado de mascotas</h3>
+                </div>
+            </div>
+
+            <p>Ficha preparada para reunir clínicas veterinarias, urgencias, peluquerías caninas, tiendas de animales y recursos para mascotas en Alhaurín el Grande.</p>
+
+            <ul><li>Pendiente de completar con negocios y servicios verificados.</li><li>Puede incluir clínicas, urgencias, peluquería canina, alimentación y protectoras cercanas.</li><li>Sección con alto potencial SEO local y oportunidad para publicidad de negocios.</li><li>Conviene validar horarios, teléfonos y direcciones antes de publicarlos.</li></ul>
+
+            
+
+            <a class="read-more" href="/guia-util/veterinarios/">
+                Próximamente →
+            </a>
+        </article>
+<article class="guide-card" id="restaurantes">
+            <div class="guide-card-top">
+                <div class="guide-icon">R</div>
+                <div>
+                    <span class="guide-category">Comercios y Hostelería</span>
+                    <h3>Restaurantes, bares y dónde comer</h3>
+                </div>
+            </div>
+
+            <p>Ficha preparada para crear una guía gastronómica local con restaurantes, bares, cafeterías, menús, terrazas y recomendaciones por zona.</p>
+
+            <ul><li>Pendiente de completar con restaurantes y bares verificados.</li><li>Puede organizarse por desayuno, menú del día, tapas, terraza, familias, comida rápida y celebraciones.</li><li>Sección prioritaria para monetización con negocios locales destacados.</li><li>Ideal para crear fichas patrocinadas con foto, ubicación, horario y llamada directa.</li></ul>
+
+            
+
+            <a class="read-more" href="/guia-util/restaurantes/">
+                Próximamente →
+            </a>
+        </article>
+<article class="guide-card" id="vivir-en-alhaurin">
+            <div class="guide-card-top">
+                <div class="guide-icon">⌂</div>
+                <div>
+                    <span class="guide-category">Vivir en Alhaurín</span>
+                    <h3>Vivir en Alhaurín el Grande</h3>
+                </div>
+            </div>
+
+            <p>Guía pensada para nuevos vecinos: trámites básicos, colegios, transporte, salud, zonas, servicios, vida diaria y recursos para instalarse en el municipio.</p>
+
+            <ul><li>Resumen práctico para personas que se mudan a Alhaurín el Grande.</li><li>Puede incluir padrón, suministros, colegios, transporte, salud, compra diaria y zonas residenciales.</li><li>Contenido evergreen con gran potencial SEO.</li><li>Recomendado convertirlo más adelante en página monográfica propia.</li></ul>
+
+            <div class="guide-links">
+                <a href="https://alhaurinelgrande.es/" target="_blank" rel="noopener noreferrer">
+                    Ayuntamiento de Alhaurín el Grande
+                </a>
+            
+                <a href="https://alhaurinelgrande.sedelectronica.es/" target="_blank" rel="noopener noreferrer">
+                    Sede electrónica
+                </a>
+            </div>
+
+            <a class="read-more" href="/guia-util/vivir-en-alhaurin/">
+                Ver recursos básicos →
+            </a>
+        </article></div>
                 </div>
             </div>
         </section>
@@ -323,11 +904,11 @@
         </div>
     </footer>
 
-    <script src="./app.js"></script>
-    <script src="./home-live.js"></script>
-    <script src="./home-guardia.js"></script>
-    <script src="./home-agenda.js"></script>
-    <script src="./home-commerce.js"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/home-live.js" defer></script>
+    <script src="./js/home-guardia.js" defer></script>
+    <script src="./js/home-agenda.js" defer></script>
+    <script src="./js/home-commerce.js" defer></script>
 </body>
 
 </html>

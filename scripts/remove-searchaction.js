@@ -19,9 +19,12 @@ function walk(dir, files = []) {
 }
 
 function removeSearchActionFromJsonLd(html) {
+  // Cada bloque se acota a su propio <script>...</script> (sin cruzar a otros
+  // bloques JSON-LD adyacentes) y solo se borra si ESE bloque contiene tanto
+  // "WebSite" como "SearchAction".
   return html.replace(
-    /<script\s+type=["']application\/ld\+json["']>\s*\{[\s\S]*?"@type"\s*:\s*"WebSite"[\s\S]*?"SearchAction"[\s\S]*?\}\s*<\/script>\s*/gi,
-    ''
+    /<script\s+type=["']application\/ld\+json["']>[\s\S]*?<\/script>\s*/gi,
+    (block) => (block.includes('"WebSite"') && block.includes('SearchAction') ? '' : block)
   );
 }
 

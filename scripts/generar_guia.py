@@ -102,7 +102,7 @@ def html_head(item):
     return f'''<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{escapar(titulo)} | Alhaurín al Día</title>
+    <title>{escapar(titulo)} — Alhaurín al Día</title>
     <meta name="description" content="{escapar(descripcion)}">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="{escapar(canonical)}">
@@ -111,10 +111,18 @@ def html_head(item):
     <meta property="og:title" content="{escapar(titulo)}">
     <meta property="og:description" content="{escapar(descripcion)}">
     <meta property="og:url" content="{escapar(canonical)}">
+    <meta property="og:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{escapar(titulo)}">
+    <meta name="twitter:description" content="{escapar(descripcion)}">
+    <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/mobile.css">
-    <link rel="stylesheet" href="/ads.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/ads.css">
     <style>
         .resource-hero {{ padding:58px 0 28px; }}
         .resource-card {{ background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:36px; padding:clamp(28px,5vw,56px); box-shadow:var(--shadow); }}
@@ -178,7 +186,7 @@ def html_item(item):
         </div></section>
     </main>
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a></div></div></footer>
-    <script src="/app.js"></script>
+    <script src="/js/app.js" defer></script>
 </body>
 </html>'''
 

@@ -176,6 +176,47 @@
         return merged;
     }
 
+    function isActiveAvisoOficial(aviso) {
+        return Boolean(aviso) && aviso.estado_ciclo_vida !== "finalizado" && isActiveNotice(aviso);
+    }
+
+    function nivelToEstado(nivel) {
+        const value = String(nivel || "").toLowerCase();
+        if (value === "naranja" || value === "rojo") return "alert";
+        return "warning";
+    }
+
+    function buildCardFromAvisoOficial(aviso) {
+        const nivel = aviso.nivel ? ` (nivel ${aviso.nivel})` : "";
+        return {
+            id: "avisos",
+            icono: "⚠️",
+            titulo: "Avisos",
+            valor: `${aviso.fenomeno || aviso.titulo || "Aviso activo"}${nivel}`,
+            detalle: aviso.descripcion || "Aviso meteorológico oficial activo.",
+            estado: nivelToEstado(aviso.nivel),
+            fuente: aviso.fuente || "AEMET",
+            cta: "Ver aviso oficial",
+            url: aviso.fuente_url || "./avisos/"
+        };
+    }
+
+    function mergeAvisosOficiales(items, avisosOficialesData) {
+        const avisos = Array.isArray(avisosOficialesData) ? avisosOficialesData : [];
+        const activos = avisos
+            .filter(isActiveAvisoOficial)
+            .sort((a, b) => getSeverityWeight(nivelToEstado(b.nivel)) - getSeverityWeight(nivelToEstado(a.nivel)));
+
+        if (!activos.length) return items;
+
+        // Un aviso oficial activo tiene prioridad sobre un aviso manual de
+        // data/avisos-locales.json en el mismo hueco de portada.
+        const card = buildCardFromAvisoOficial(activos[0]);
+        const replaced = items.some(item => item.id === "avisos");
+        const merged = items.map(item => (item.id === "avisos" ? card : item));
+        return replaced ? merged : [...merged, card];
+    }
+
     function mergeWeather(items, weatherData) {
         const weatherItem = weatherData?.item;
         if (!weatherItem || typeof weatherItem !== "object") return items;
@@ -225,12 +266,17 @@
         fetch(new URL("data/tiempo-aemet.json", root).href).then(response => {
             if (!response.ok) return null;
             return response.json();
-        }).catch(() => null)
+        }).catch(() => null),
+        fetch(new URL("data/avisos-oficiales.json", root).href).then(response => {
+            if (!response.ok) return [];
+            return response.json();
+        }).catch(() => [])
     ])
-        .then(([data, noticesData, weatherData]) => {
+        .then(([data, noticesData, weatherData, avisosOficialesData]) => {
             const baseItems = Array.isArray(data.items) ? data.items : [];
             const withWeather = mergeWeather(baseItems, weatherData);
-            const items = mergeLocalNotices(withWeather, noticesData);
+            const withLocalNotices = mergeLocalNotices(withWeather, noticesData);
+            const items = mergeAvisosOficiales(withLocalNotices, avisosOficialesData);
             const updated = noticesData?.actualizado && Array.isArray(noticesData.avisos) && noticesData.avisos.some(isActiveNotice)
                 ? noticesData.actualizado
                 : data.actualizado;

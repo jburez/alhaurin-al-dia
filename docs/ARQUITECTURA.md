@@ -53,6 +53,7 @@ Scripts de generación ejecutados en local o CI
 │   ├── noticias.json
 │   ├── fuentes.json
 │   ├── geografia.json
+│   ├── avisos-oficiales.json
 │   ├── guia-util.json
 │   ├── estado-local.json
 │   ├── avisos-locales.json
@@ -378,6 +379,10 @@ Filtro geográfico compartido, sustituye a la comprobación de texto plano que a
 2. **Inclusión**: no menciona el municipio ni ninguna `entidades_inclusion` → se descarta.
 3. **Revisión manual**: menciona el municipio junto a una entidad de `entidades_revision_manual` (riesgo de confundir Alhaurín el Grande con un municipio limítrofe) → se mantiene, pero se marca `requiere_revision_geografica: true` en la noticia en vez de publicarse sin más.
 
+### 5.10 `data/avisos-oficiales.json`
+
+Avisos oficiales con ciclo de vida, generado por `scripts/actualizar_avisos_aemet.py`. Ver la sección 14 (Modelo de contenido — tipos) para el esquema completo y el detalle de la fuente AEMET conectada.
+
 ## 6. Generación de noticias
 
 El punto de entrada del pipeline es `scripts/generar_noticias_seguro.py` (`npm run news`). Envuelve a `scripts/generar_noticias.py`, que sigue conteniendo la lógica base de extracción, filtrado y generación de páginas.
@@ -564,23 +569,23 @@ git push origin main
 
 El modelo de datos histórico solo representaba un tipo de contenido: **noticia** (`data/noticias.json`). El informe de auditoría de fuentes (2026-07-20, sección E.2/G.1) identificó esto como una carencia de fondo — forzar avisos, eventos o convocatorias al esquema de noticia fue la causa directa de titulares duplicados detectados y corregidos esa misma sesión.
 
-Como parte de la Fase 0 del roadmap de esa auditoría, se documenta aquí el esquema de la primera entidad nueva, **aviso**, que necesitará la Fase 1 (AEMET-avisos, ver el informe). No se crea todavía ningún fichero de datos real ni renderizado HTML para este tipo — no hay ninguna fuente conectada aún que lo alimente; queda preparado para cuando exista.
+Desde la Fase 1a de ese roadmap, la entidad **aviso** ya tiene una fuente real conectada: `scripts/actualizar_avisos_aemet.py` alimenta `data/avisos-oficiales.json` con los avisos activos de AEMET para la zona **Sol y Guadalhorce** (incluye Alhaurín el Grande), vía el feed RSS público de esa zona — no requiere `AEMET_API_KEY`. Se ejecuta cada hora (`.github/workflows/actualizar-avisos-aemet.yml`), con el mismo patrón defensivo que `actualizar_tiempo_aemet.py`: si AEMET no responde, conserva el último fichero válido.
 
 ```json
 {
-  "id": "aemet-avi-2026-...",
+  "id": "aemet-AFAZ612903ATTA2219",
   "tipo": "meteorologico",
   "nivel": "amarillo",
-  "titulo": "",
-  "descripcion": "",
-  "fenomeno": "",
-  "zona": "",
-  "inicio": "",
-  "fin": "",
+  "titulo": "Aviso. Nivel amarillo. Temperaturas máximas. Sol y Guadalhorce",
+  "descripcion": "Aviso de temperatura máxima de nivel amarillo de 13:00 22-07-2026 CEST (UTC+2) a 20:59 22-07-2026 CEST (UTC+2).",
+  "fenomeno": "Temperaturas máximas",
+  "zona": "Sol y Guadalhorce",
+  "inicio": "2026-07-22T13:00:00+02:00",
+  "fin": "2026-07-22T20:59:00+02:00",
   "fuente": "AEMET",
-  "fuente_url": "",
+  "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/...",
   "estado_ciclo_vida": "creado",
-  "actualizado_en": "",
+  "actualizado_en": "2026-07-20T10:15:25+00:00",
   "historial": []
 }
 ```
@@ -588,5 +593,6 @@ Como parte de la Fase 0 del roadmap de esa auditoría, se documenta aquí el esq
 Puntos de diseño:
 
 - **No es lo mismo que `data/avisos-locales.json`**: ese fichero sigue siendo el panel manual de tráfico/obras/incidencias de portada (ver 5.4). `aviso` es una entidad estructurada con ciclo de vida propio, pensada para fuentes oficiales automatizadas (AEMET, y en el futuro 112/INFOCA si llegan a tener un canal de datos público).
-- **Ciclo de vida, no republicación**: un aviso que sube de nivel (amarillo → naranja) o se cancela debe **actualizar el mismo registro** (`estado_ciclo_vida`, `actualizado_en`, y un `historial` con los estados previos para trazabilidad), no generar una noticia nueva cada vez. Ver la sección G.5 del informe de auditoría para el resto de dominios con el mismo problema (incendios, contratación, eventos).
+- **Ciclo de vida, no republicación**: `scripts/actualizar_avisos_aemet.py` identifica cada aviso por un id estable (extraído del `guid` del feed, independiente de la marca de tiempo de regeneración) y actualiza el mismo registro cuando cambia de nivel o vigencia (`estado_ciclo_vida: "actualizado"`, estado anterior movido a `historial`), en vez de crear uno nuevo. Cuando un aviso deja de aparecer en el feed se marca `estado_ciclo_vida: "finalizado"` — no desaparece sin dejar rastro — y se poda pasados 30 días. Ver la sección G.5 del informe de auditoría para el resto de dominios con el mismo problema (incendios, contratación, eventos), aún sin implementar.
 - **`historial`** existe para no repetir el problema ya observado en el modelo de noticia (sección E.8 del informe): cuando se fusiona o cierra un registro, hoy no queda ningún rastro de que existió ni de qué lo sustituye.
+- **Presentación**: `js/home-live.js` (`mergeAvisosOficiales()`) lee `data/avisos-oficiales.json` en la home, filtra los avisos activos (no finalizados y dentro de la ventana `inicio`/`fin`, reutilizando `isActiveNotice()`) y los muestra en el panel diario con prioridad sobre un aviso manual de `data/avisos-locales.json` en el mismo hueco.

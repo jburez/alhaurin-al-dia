@@ -72,6 +72,18 @@
     "notas": "Valor estratégico añadido para directorio comercial/patrocinios (ver data/fichas-patrocinadas.json, data/comercios-destacados.json)."
   },
   {
+    "id": "cd-alhaurino",
+    "nombre": "CD Alhaurino",
+    "url": "https://clubdeportivoalhaurino.com/feed/",
+    "metodo": "rss",
+    "nivel_confianza": "B",
+    "prioridad": 85,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Entidad local verificada (club decano del fútbol malagueño, Tercera RFEF); resumen propio, cita y enlace. Verificado en vivo el 2026-07-20 (auditoría de fuentes, D.8); confirmado como fuente oficial por el usuario.",
+    "notas": "Único club deportivo local con RSS activo de los 9 investigados en D.8; el resto (CB Alhaurín el Grande, Club Ciclista La Algarbía, Club de Ajedrez Olduwai, Club Voleibol Alhaurín, Temple of Monkeys, CD Fuente del Acebuche, FADMES, Federación Andaluza de Baloncesto) no tienen canal automatizable hoy (solo redes sociales, RSS muerto desde 2010, contenido de relleno, o solo PDFs/bases de resultados sin API). Feed sin publicaciones nuevas desde julio de 2025 (verificado 2026-07-20): pasa el filtro geográfico pero, al no tener freshness, no gana el corte de calcular_score() frente a fuentes con contenido reciente. Aparecerá en el noticiero cuando el club vuelva a publicar."
+  },
+  {
     "id": "europa-press-andalucia",
     "nombre": "Europa Press Andalucía",
     "url": "https://www.europapress.es/rss/rss.aspx?ch=00111",

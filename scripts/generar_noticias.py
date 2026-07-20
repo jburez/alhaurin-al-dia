@@ -191,6 +191,14 @@ def prioridad_fuente(fuente):
     return 10
 
 
+def nivel_confianza_fuente(fuente):
+    """Nivel de confianza (A-D) de una fuente por nombre, según data/fuentes.json."""
+    for registro in cargar_fuentes():
+        if registro.get("nombre", "").strip().lower() == fuente.strip().lower():
+            return registro.get("nivel_confianza")
+    return None
+
+
 def calcular_score(noticia):
     fecha = fecha_para_ordenacion(noticia["fecha"])
     try:
@@ -220,6 +228,13 @@ def extraer_primer_tema_informativo(texto):
     return ""
 
 
+TERMINALES_TITULO_INCOMPLETO = {
+    "a", "al", "ante", "bajo", "con", "contra", "de", "del", "desde", "durante",
+    "el", "en", "entre", "hacia", "hasta", "la", "las", "los", "para", "por",
+    "que", "según", "sin", "sobre", "tras", "un", "una", "y", "o",
+}
+
+
 def titular_desde_tema(tema):
     tema = limpiar_html(tema).strip(" .:-–—")
     if not tema:
@@ -228,7 +243,13 @@ def titular_desde_tema(tema):
     tema = tema[0].upper() + tema[1:] if tema else tema
     if "alhaurín" not in tema.lower() and "alhaurin" not in tema.lower():
         tema = f"{tema} en Alhaurín el Grande"
-    return tema[:90].rsplit(" ", 1)[0].rstrip(".,;:")
+    tema = tema[:90].rsplit(" ", 1)[0].rstrip(".,;:")
+    # Si el recorte a 90 caracteres deja el titular colgando en una
+    # preposición/conjunción (p. ej. "...del estado de"), seguir recortando
+    # palabra a palabra en vez de publicar un titular que termina a medias.
+    while tema and tema.rsplit(" ", 1)[-1].lower() in TERMINALES_TITULO_INCOMPLETO:
+        tema = tema.rsplit(" ", 1)[0].rstrip(".,;:")
+    return tema
 
 
 def generar_titulo_seo(titulo, texto, fuente):
@@ -237,7 +258,13 @@ def generar_titulo_seo(titulo, texto, fuente):
         titulo_seo = titular_desde_tema(extraer_primer_tema_informativo(texto))
         if titulo_seo:
             return titulo_seo
-    titulo_limpio = re.sub(r"\s*\|\s*.*$", "", titulo_limpio).strip()
+    if "|" in titulo_limpio:
+        # No asumir que lo real va antes de la barra: algunas fuentes (p. ej.
+        # RTV, con su sección "La Recacha | Titular real") ponen antes una
+        # etiqueta de sección corta. Se queda con el fragmento más largo.
+        partes = [p.strip() for p in titulo_limpio.split("|") if p.strip()]
+        if partes:
+            titulo_limpio = max(partes, key=len)
     titulo_limpio = re.sub(r"\s+", " ", titulo_limpio)
     if len(titulo_limpio) > 95:
         titulo_limpio = titulo_limpio[:95].rsplit(" ", 1)[0].rstrip(".,;:")
@@ -273,10 +300,11 @@ def evaluar_relevancia_geografica(titulo, texto, fuente):
     revision = geografia.get("entidades_revision_manual", [])
     exclusion = geografia.get("entidades_exclusion_si_solas", [])
 
-    fuente_lower = _sin_acentos(fuente.lower())
-    fuentes_locales = ["rtv alhaurin el grande", "atv alhaurin youtube",
-                       "ayuntamiento alhaurin el grande", "hermandad nuestro padre jesus nazareno"]
-    if any(f in fuente_lower for f in fuentes_locales):
+    # Las fuentes ya vetadas como oficiales (A) o entidades locales verificadas
+    # (B) en data/fuentes.json se dan por relevantes sin exigir que el texto
+    # mencione literalmente el municipio: p. ej. una noticia de fichajes de
+    # CD Alhaurino es local por naturaleza aunque no diga "Alhaurín el Grande".
+    if nivel_confianza_fuente(fuente) in ("A", "B"):
         return True, False
 
     contenido = _sin_acentos(f"{titulo} {texto}".lower())

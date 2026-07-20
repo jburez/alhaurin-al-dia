@@ -1,5 +1,21 @@
 [
   {
+    "id": "aemet-AFAZ612903ATTA2319",
+    "tipo": "meteorologico",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Temperaturas máximas. Sol y Guadalhorce",
+    "descripcion": "Aviso de temperatura máxima de nivel amarillo de 13:00 23-07-2026 CEST (UTC+2) a 20:59 23-07-2026 CEST (UTC+2).",
+    "fenomeno": "Temperaturas máximas",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-07-23T13:00:00+02:00",
+    "fin": "2026-07-23T20:59:00+02:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260720215001_AFAZ612903ATTA2319.xml",
+    "estado_ciclo_vida": "creado",
+    "actualizado_en": "2026-07-20T22:05:34+00:00",
+    "historial": []
+  },
+  {
     "id": "aemet-AFAZ612903ATTA2219",
     "tipo": "meteorologico",
     "nivel": "amarillo",

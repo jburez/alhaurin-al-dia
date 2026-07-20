@@ -39,6 +39,7 @@ from validar_contenido import termina_a_medias  # noqa: E402
 
 MAX_TITULO = 90
 MAX_DESCRIPCION = 230
+MIN_DESCRIPCION = 40  # mismo umbral que exige scripts/audit-seo.js para la meta description
 
 
 def normalizar_para_comparar(texto: str) -> str:
@@ -71,6 +72,7 @@ def titulo_generico(titulo: str) -> bool:
         r"^informativo atv",
         r"^actualidad de alhaurin",
         r"^actualidad alhaurin",
+        r"^noticias de alhaurin",
     ]
     return any(re.search(patron, normalizado) for patron in patrones)
 
@@ -191,7 +193,14 @@ def sanear_cuerpo(noticia: dict, descripcion: str) -> str:
 
 def noticia_publicable(noticia: dict) -> bool:
     campos_minimos = ["id", "titulo", "descripcion", "cuerpo", "fecha", "fuente", "categoria", "url"]
-    return all(str(noticia.get(campo, "")).strip() for campo in campos_minimos)
+    if not all(str(noticia.get(campo, "")).strip() for campo in campos_minimos):
+        return False
+    # Fuentes sin descripción real de origen (p. ej. vídeos de YouTube sin
+    # texto asociado) producen entradillas del tipo "Título." que pasan el
+    # resto de comprobaciones pero no aportan valor editorial ni SEO.
+    if len(str(noticia.get("descripcion", "")).strip()) < MIN_DESCRIPCION:
+        return False
+    return True
 
 
 def sanear_noticia(noticia: dict) -> dict | None:

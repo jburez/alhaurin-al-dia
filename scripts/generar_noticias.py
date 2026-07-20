@@ -520,9 +520,9 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
     <link rel="stylesheet" href="{css_prefix}/css/styles.css">
     <link rel="stylesheet" href="{css_prefix}/css/mobile.css">
-    <link rel="stylesheet" href="{css_prefix}/css/ads.css">{f'''
+    <link rel="stylesheet" href="{css_prefix}/css/ads.css">{f"""
     <link rel="stylesheet" href="{css_prefix}/css/article.css">
-    <link rel="stylesheet" href="{css_prefix}/css/article-share.css">''' if incluir_article_css else ''}
+    <link rel="stylesheet" href="{css_prefix}/css/article-share.css">""" if incluir_article_css else ''}
 </head>'''
 
 

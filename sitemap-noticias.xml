@@ -79,6 +79,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/20-millones-para-alhaurin-el-ayuntamiento-dispondra-en-los-proximos-meses-de-20-millones.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/asi-lo-vivieron-alhaurin-el-grande-y-villa-del-guadalhorce-2.html</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -121,7 +127,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-pintura-al-oleo-infantil-14-de-julio-de-2026-2.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-pintura-al-oleo-infantil-14-de-julio-de-2026.html</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -151,19 +157,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/malaga-afronta-la-semana-mas-calurosa-en-lo-que-va-del-verano-con-mas-de-40-grados.html</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion.html</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -188,6 +182,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno.html</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

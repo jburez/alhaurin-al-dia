@@ -85,6 +85,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-gestionara-cerca-de-20-millones-de-euros-para-impulsar-proyectos.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/asi-lo-vivieron-alhaurin-el-grande-y-villa-del-guadalhorce-2.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -97,19 +103,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/charla-informativa-leader-gdr-valle-del-guadalhorce-14-de-julio-de-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/charla-informativa-leader-gdr-valle-del-guadalhorce.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-actos-del-jueves.html</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/eje-verde-variante-sur-el-ayuntamiento-de-alhaurin-el-grande-presenta-el-proyecto-del-eje.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -151,12 +151,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/incendio-en-la-campinuela-el-incendio-declarado-ayer-en-la-campinuela-el-entorno-del-rio.html</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/la-actuacion-con-una-inversion-de-1-2-millones-de-euros-financiada-con-fondos-europeos.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -170,6 +164,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -193,13 +193,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/talleres-juventud-agosto-el-area-de-juventud-presenta-la-programacion-de-talleres.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/un-nuevo-episodio-de-terral-podria-disparar-los-termometros-en-malaga-hasta-los-45-grados.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

@@ -265,7 +265,13 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/20-millones-para-alhaurin-el-ayuntamiento-dispondra-en-los-proximos-meses-de-20-millones.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/abc-solutions-y-fedelhorce-impulsan-un-convenio-para-ayudar-a-las-empresas-a-reducir-sus.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/acto-hermanamiento-alhaurin-el-grande-es-y-gualdo-tadino-it-18-de-junio-de-2026.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -277,13 +283,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivieron-alhaurin-el-grande-y-villa-del-guadalhorce-2.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-te-visita-nuevos-murales-en-villa-del-guadalhorce.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/ayuntamiento-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivieron-alhaurin-el-grande-y-villa-del-guadalhorce.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -325,13 +331,37 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-oleo-infantil-con-la-misma-ilusion-14-julio-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/fedelhorce-presente-en-el-inicio-de-la-mejora-de-la-conexion-malaga-guadalhorce-ronda.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-tango-flamenco-identidad-de-dos-almas-14-de-julio-de-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/fiesta-de-fin-de-curso-de-la-asociacion-espanola-estudio-de-la-danza-2025-26.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/graduacion-4-eso-2026.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/graduacion-bachillerato-y-ciclos-formativos-2026.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-pintura-al-oleo-infantil-14-de-julio-de-2026.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-tango-flamenco-identidad-de-dos-almas.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -355,19 +385,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/pulseras-seguridad-niu-clic-el-centro-municipal-de-informacion-a-la-mujer-implanta.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -379,13 +397,13 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/talleres-juventud-agosto-el-area-de-juventud-presenta-la-programacion-de-talleres.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/visita-institucional-al-cca-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

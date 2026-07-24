@@ -277,13 +277,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivieron-alhaurin-el-grande-y-villa-del-guadalhorce-2.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/ayuntamiento-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/charla-informativa-leader-gdr-valle-del-guadalhorce-14-de-julio-de-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/charla-informativa-leader-gdr-valle-del-guadalhorce.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -307,19 +313,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/espana-campeona-del-mundo-alhaurin-el-grande-celebra-el-titulo-de-campeona-del-mundo.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/gala-de-fin-de-curso-de-la-escuela-gold-dance-2026.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-tango-flamenco-identidad-de-dos-almas-14-de-julio-de-2026.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -337,19 +331,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-ola-de-calor-pone-a-malaga-al-borde-del-record-historico-de-consumo-electrico.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/los-invitados-al-jardin-residentes-de-la-baltasara-eva-fernandez-y-pablo-igartua.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/meteorologia-activa-el-aviso-naranja-este-viernes-en-malaga-capital-que-superara-los-40.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -386,6 +368,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/tertulia-tomate-huevo-toro-la-baltasara-ha-acogido-una-nueva-edicion-de-la-tertulia.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

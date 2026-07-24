@@ -7,7 +7,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.000Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.855Z</news:publication_date>
       <news:title>20 millones para alhaurín el ayuntamiento dispondrá en los próximos meses de 20 millones — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -18,8 +18,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.003Z</news:publication_date>
+      <news:publication_date>2026-07-24T13:59:54.360Z</news:publication_date>
       <news:title>Alhaurín el Grande gestionará cerca de 20 millones de euros para impulsar proyectos — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/asi-lo-vivieron-alhaurin-el-grande-y-villa-del-guadalhorce-2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-24T14:16:56.861Z</news:publication_date>
+      <news:title>Así lo vivieron Alhaurín el Grande y Villa del Guadalhorce — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -29,19 +40,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:20.998Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.853Z</news:publication_date>
       <news:title>Ayuntamiento de Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/charla-informativa-leader-gdr-valle-del-guadalhorce-14-de-julio-de-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/charla-informativa-leader-gdr-valle-del-guadalhorce.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:20.998Z</news:publication_date>
-      <news:title>Charla informativa Leader GDR Valle del Guadalhorce - 14 de Julio de 2026 — Alhaurín al Día</news:title>
+      <news:publication_date>2026-07-24T14:16:56.862Z</news:publication_date>
+      <news:title>Charla Informativa LEADER GDR Valle del Guadalhorce — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -51,7 +62,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.008Z</news:publication_date>
+      <news:publication_date>2026-07-24T13:59:54.360Z</news:publication_date>
       <news:title>Día de Jesús 2026 – Actos del jueves — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -62,7 +73,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.004Z</news:publication_date>
+      <news:publication_date>2026-07-24T13:59:54.360Z</news:publication_date>
       <news:title>El municipio, primero del Valle del Guadalhorce en lograr esta distinción, podrá acceder — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -73,19 +84,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.008Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.861Z</news:publication_date>
       <news:title>Escuela de Danza de Lourdes Rodríguez — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/espana-campeona-del-mundo-alhaurin-el-grande-celebra-el-titulo-de-campeona-del-mundo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-24T10:43:20.999Z</news:publication_date>
-      <news:title>España, campeona del mundo alhaurín el grande celebra el título de campeona del mundo — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -95,19 +95,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.004Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.858Z</news:publication_date>
       <news:title>Gala de fin de curso de la escuela Gold Dance 2026 — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/inauguracion-exposicion-tango-flamenco-identidad-de-dos-almas-14-de-julio-de-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-24T10:43:20.998Z</news:publication_date>
-      <news:title>Inauguración exposición “Tango flamenco. Identidad de dos almas” 14 de julio de 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -117,7 +106,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.003Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.858Z</news:publication_date>
       <news:title>La actuación, con una inversión de 1,2 millones de euros financiada con Fondos Europeos — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -128,19 +117,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.004Z</news:publication_date>
+      <news:publication_date>2026-07-24T13:59:54.360Z</news:publication_date>
       <news:title>La Diputación inicia los trámites para conceder una subvención de 1,4 millones de euros — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/la-ola-de-calor-pone-a-malaga-al-borde-del-record-historico-de-consumo-electrico.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-24T10:43:20.996Z</news:publication_date>
-      <news:title>La ola de calor pone a Málaga al borde del récord histórico de consumo eléctrico — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -150,19 +128,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.002Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.857Z</news:publication_date>
       <news:title>Los invitados al Jardín. Residentes de la Baltasara: Eva Fernández y Pablo Igartua — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/meteorologia-activa-el-aviso-naranja-este-viernes-en-malaga-capital-que-superara-los-40.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-24T10:43:20.997Z</news:publication_date>
-      <news:title>Meteorología activa el aviso naranja este viernes en Málaga capital, que superará los 40 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -172,7 +139,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.006Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.859Z</news:publication_date>
       <news:title>Nuestra Real Hermandad presente en el curso de verano sobre La Legión — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -183,7 +150,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.001Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.855Z</news:publication_date>
       <news:title>PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -194,7 +161,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.005Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.859Z</news:publication_date>
       <news:title>Primera misa del sacerdote Rvd. Padre D. José Francisco Fernández Fuentes — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -205,7 +172,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.006Z</news:publication_date>
+      <news:publication_date>2026-07-24T13:59:54.360Z</news:publication_date>
       <news:title>San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -216,7 +183,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.001Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.856Z</news:publication_date>
       <news:title>Talleres juventud agosto el área de juventud presenta la programación de talleres — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -227,8 +194,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.007Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.860Z</news:publication_date>
       <news:title>Terremoto en Venezuela — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/tertulia-tomate-huevo-toro-la-baltasara-ha-acogido-una-nueva-edicion-de-la-tertulia.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-24T14:16:56.857Z</news:publication_date>
+      <news:title>Tertulia tomate huevo toro la baltasara ha acogido una nueva edición de la tertulia — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -238,7 +216,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.002Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.856Z</news:publication_date>
       <news:title>Xliii noche flamenca desde el ayuntamiento se invita a los vecinos y amantes del flamenco — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -249,7 +227,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-07-24T10:43:21.007Z</news:publication_date>
+      <news:publication_date>2026-07-24T14:16:56.860Z</news:publication_date>
       <news:title>Y EL DÍA DE LA FUNCIÓN VOLVIMOS A ALZAR LA MIRADA HACIA NUESTRO PADRE JESÚS NAZARENO — Alhaurín al Día</news:title>
     </news:news>
   </url>

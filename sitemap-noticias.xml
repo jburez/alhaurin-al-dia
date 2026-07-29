@@ -103,12 +103,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/intervenidos-26-gallos-de-pelea-en-alhaurin-el-grande-tenian-lesiones-y-mutilaciones.html</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/la-actuacion-con-una-inversion-de-1-2-millones-de-euros-financiada-con-fondos-europeos.html</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -122,12 +116,6 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-escuela-infantil-municipal-celebra-la-graduacion-de-su-alumnado-de-2-a-3-anos.html</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/la-nueva-entidad-sin-animo-de-lucro-y-con-sede-en-alhaurin-el-grande-apoyara-con-becas.html</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -176,6 +164,18 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/reformas-en-el-colegio-el-area-de-educacion-del-ayuntamiento-realiza-trabajos-de-mejora.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

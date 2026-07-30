@@ -79,6 +79,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/adquisicion-camion-electrico-el-ayuntamiento-ha-incorporado-un-camion-100-electrico.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-gestionara-cerca-de-20-millones-de-euros-para-impulsar-proyectos.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -97,12 +103,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-escuela-infantil-de-villa-del-guadalhorce-2026.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/la-actuacion-con-una-inversion-de-1-2-millones-de-euros-financiada-con-fondos-europeos.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -115,19 +115,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/la-escuela-infantil-municipal-celebra-la-graduacion-de-su-alumnado-de-2-a-3-anos.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-consagra-a-alhaurin-el-grande-como-capital-del-arte-jondo.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/los-invitados-al-jardin-residentes-de-la-baltasara-eva-fernandez-y-pablo-igartua.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -187,7 +175,7 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/tertulia-tomate-huevo-toro-la-baltasara-ha-acogido-una-nueva-edicion-de-la-tertulia.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/toda-una-vida-al-servicio-de-la-hosteleria-gracias-casa-pena.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -200,6 +188,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-el-sabado-25-el-baile-el-cante-y-la-guitarra-fueron.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

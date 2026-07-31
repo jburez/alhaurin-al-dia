@@ -325,11 +325,23 @@ Campos habituales:
 
 ```json
 {
+  "meta": {
+    "fuente": "https://alhaurinelgrande.es/farmacias/",
+    "descripcion": "Calendario de guardias de farmacias de Alhaurín el Grande. Horario habitual de 9:30 a 9:30.",
+    "timezone": "Europe/Madrid",
+    "huecos_sin_dato": ["2026-03-01", "2026-09-11", "2026-09-12", "2026-09-13"]
+  },
   "guardias": {
     "2026-05-13": "farmacia-ejemplo"
   }
 }
 ```
+
+**Fuente y extracción (`scripts/extraer_calendario_farmacias.py`, 2026-07-31)**: el Ayuntamiento no publica el calendario de guardias en texto, tabla ni API — publica 12 imágenes (una por mes) en su galería de WordPress, cada una un gráfico con una cuadrícula de días coloreada según una leyenda de 7 colores (uno por farmacia). En vez de OCR (poco fiable para decidir qué farmacia abre de noche), el script calcula matemáticamente en qué celda de la cuadrícula cae cada día (módulo `calendar` de Python) y clasifica el color de esa celda por distancia RGB a los 7 colores de la leyenda, muestreados de la propia imagen. Verificado visualmente mes a mes contra las 12 imágenes reales de 2026.
+
+- **Herramienta manual, no un workflow programado**: la fuente solo cambia cuando el Ayuntamiento publica un calendario nuevo (una vez al año), así que no tiene cron en GitHub Actions. Se re-ejecuta a mano cuando haya un calendario nuevo, revisando visualmente antes de confiar en el resultado (recalibrar `GRID_COL_BOUNDS`/`GRID_ROW_BOUNDS`/`LEGEND_2026` si cambia el diseño).
+- **`huecos_sin_dato`**: la propia imagen del Ayuntamiento tiene huecos reales (celdas sin colorear) para el 1 de marzo y el 11-13 de septiembre de 2026 — verificado visualmente, no es un fallo de extracción. Esos días no tienen entrada en `guardias`; la interfaz ya está preparada para mostrar "Sin dato"/"Guardia pendiente de completar" en vez de asumir una farmacia.
+- **Celdas fusionadas**: cuando el último día del mes desborda la cuadrícula de 5 filas, la imagen del Ayuntamiento lo fusiona visualmente con el día anterior en la misma celda de color (visto en el 31 de agosto y el 30 de noviembre de 2026); el script reutiliza el color del día anterior en ese caso concreto, no de forma genérica.
 
 ### 5.8 `data/fuentes.json`
 

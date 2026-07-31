@@ -19,8 +19,14 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/categoria/actualidad/</loc>
+    <loc>https://alhaurinaldia.es/boletin-oficial/</loc>
     <lastmod>2026-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/categoria/actualidad/</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -38,7 +44,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/deportes/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -50,7 +56,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/fiestas-y-tradiciones/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,13 +74,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/sucesos/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/trafico-y-movilidad/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -110,151 +116,151 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/aparcamiento/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/bibliotecas/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/calistenia/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/campamentos/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/deportes/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/educacion/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/escuela-musica/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/calendario/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-brenan/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-camino-de-malaga/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-del-centro/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-la-variante/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-lourdes-quintela/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/jose-luis-quintela/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/maria-teresa-quintela/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/gasolineras/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/movilidad/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/restaurantes/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/taxis/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/telefonos/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/tramites/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/turismo/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/veterinarios/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/vivir-en-alhaurin/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -404,7 +410,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/sobre-nosotros/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

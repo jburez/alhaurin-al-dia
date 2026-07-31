@@ -13,6 +13,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/boletin-oficial/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/comercios/</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>

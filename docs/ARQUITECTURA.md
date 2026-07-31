@@ -54,6 +54,7 @@ Scripts de generación ejecutados en local o CI
 │   ├── fuentes.json
 │   ├── geografia.json
 │   ├── avisos-oficiales.json
+│   ├── boletin-oficial.json
 │   ├── guia-util.json
 │   ├── estado-local.json
 │   ├── avisos-locales.json
@@ -596,3 +597,31 @@ Puntos de diseño:
 - **Ciclo de vida, no republicación**: `scripts/actualizar_avisos_aemet.py` identifica cada aviso por un id estable (extraído del `guid` del feed, independiente de la marca de tiempo de regeneración) y actualiza el mismo registro cuando cambia de nivel o vigencia (`estado_ciclo_vida: "actualizado"`, estado anterior movido a `historial`), en vez de crear uno nuevo. Cuando un aviso deja de aparecer en el feed se marca `estado_ciclo_vida: "finalizado"` — no desaparece sin dejar rastro — y se poda pasados 30 días. Ver la sección G.5 del informe de auditoría para el resto de dominios con el mismo problema (incendios, contratación, eventos), aún sin implementar.
 - **`historial`** existe para no repetir el problema ya observado en el modelo de noticia (sección E.8 del informe): cuando se fusiona o cierra un registro, hoy no queda ningún rastro de que existió ni de qué lo sustituye.
 - **Presentación**: `js/home-live.js` (`mergeAvisosOficiales()`) lee `data/avisos-oficiales.json` en la home, filtra los avisos activos (no finalizados y dentro de la ventana `inicio`/`fin`, reutilizando `isActiveNotice()`) y los muestra en el panel diario con prioridad sobre un aviso manual de `data/avisos-locales.json` en el mismo hueco.
+
+### 14.1 Entidad `edicto` — BOP Málaga
+
+BOP Málaga (BOPMA) no tiene RSS ni API pública (investigado en la auditoría de fuentes 2026-07-20; ver `docs/AUDITORIA-2026-07.md`). El dato llega empujado por su servicio de "Lista de Correo Personalizada": una búsqueda guardada en bopmalaga.es (configurada para Alhaurín el Grande) envía por correo los edictos nuevos. `scripts/actualizar_bop_malaga.py` lee ese correo por **IMAP contra la cuenta personal de Gmail del usuario** (`BOP_EMAIL_USER`/`BOP_EMAIL_APP_PASSWORD`, secrets de GitHub Actions), restringido a la etiqueta `BOP-Malaga` que un filtro de Gmail aplica a los correos de `listacorreo@bopmalaga.es` — el script solo lee esa etiqueta, nunca el resto de la bandeja. Decisión consciente del usuario (2026-07-31): usar el correo personal en vez de una casilla dedicada; la contraseña de aplicación da acceso IMAP a toda la cuenta (Gmail no permite restringir el alcance a una etiqueta), riesgo asumido a cambio de no crear una cuenta nueva.
+
+```json
+{
+  "id": "bop-20260729-02625-2026",
+  "numero_edicto": "2625/2026",
+  "organismo": "Ayuntamiento",
+  "criterio_busqueda": "Búsqueda 1",
+  "expediente": "20696/2026",
+  "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio MRA/GESTIÓN TRIBUTARIA ...",
+  "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20260729-02625-2026&control=4273624367",
+  "fuente": "BOP Málaga",
+  "fecha_alerta": "2026-07-29",
+  "detectado_en": "2026-07-29T08:00:00+00:00"
+}
+```
+
+Puntos de diseño:
+
+- **No es la entidad `aviso`**: un edicto no caduca ni tiene niveles de vigencia como una alerta meteorológica — es un registro administrativo permanente (padrón, expediente de crédito, notificación...). Por eso `data/boletin-oficial.json` es una lista simple, deduplicada por `id`, sin ciclo de vida (`estado_ciclo_vida`/`historial`) ni ventana `inicio`/`fin`.
+- **Sin filtro geográfico propio**: a diferencia de las fuentes RSS de `data/fuentes.json`, el filtrado por municipio ya lo hace la búsqueda guardada en bopmalaga.es, no `evaluar_relevancia_geografica()`. Si en el futuro se añaden más criterios de búsqueda que no estén acotados a Alhaurín el Grande, este punto habría que revisarlo.
+- **`id` estable**: se extrae del parámetro `edicto=YYYYMMDD-NNNNN-YYYY` del enlace a bopmalaga.es (no del número de edicto NNNN/YYYY visible, que por sí solo no es único entre organismos).
+- **Lectura no destructiva del correo**: el script solo procesa mensajes `UNSEEN` de la etiqueta `BOP-Malaga` y los marca `\Seen` tras un parseo correcto; si el HTML no produce ningún edicto (posible cambio de formato de BOPMA) el mensaje se deja sin marcar para poder diagnosticarlo en la siguiente ejecución, en vez de perder el aviso silenciosamente.
+- **Patrón defensivo**: si faltan credenciales, falla IMAP o no hay mensajes nuevos, conserva el último `data/boletin-oficial.json` válido y sale con código 0 — mismo criterio que `actualizar_avisos_aemet.py`.
+- **Presentación**: página propia `boletin-oficial/` (listado simple, sin panel de portada) — no comparte hueco con `avisos-oficiales.json` en `home-live.js`.

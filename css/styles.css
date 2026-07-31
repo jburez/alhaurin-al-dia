@@ -306,7 +306,8 @@ h1 {
 .guide-card,
 .plan-card,
 .guide-hero-card,
-.guide-index {
+.guide-index,
+.edicto-card {
     background: rgba(255, 255, 255, .86);
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -323,7 +324,8 @@ h1 {
 .notice-card h3,
 .guide-card h3,
 .plan-card h3,
-.guide-hero-card h3 {
+.guide-hero-card h3,
+.edicto-card h3 {
     margin: 0 0 10px;
     color: var(--brand);
     letter-spacing: -.025em;
@@ -335,7 +337,8 @@ h1 {
 .notice-card p,
 .guide-card p,
 .plan-card p,
-.guide-hero-card p {
+.guide-hero-card p,
+.edicto-card p {
     margin: 0;
     color: var(--muted);
     line-height: 1.65;
@@ -940,6 +943,25 @@ section {
     background: var(--brand-soft);
     color: var(--brand);
     font-weight: 900;
+}
+
+/* BOLETÍN OFICIAL */
+
+.edicto-list {
+    display: grid;
+    gap: 14px;
+}
+
+.edicto-card {
+    padding: 20px;
+}
+
+.edicto-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 /* COMERCIOS */

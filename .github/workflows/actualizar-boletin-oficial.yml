@@ -1,0 +1,53 @@
+name: Actualizar boletín oficial (BOP Málaga)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  update-boletin-oficial:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Actualizar edictos desde el correo BOPMA
+        env:
+          BOP_EMAIL_USER: ${{ secrets.BOP_EMAIL_USER }}
+          BOP_EMAIL_APP_PASSWORD: ${{ secrets.BOP_EMAIL_APP_PASSWORD }}
+        run: python3 scripts/actualizar_bop_malaga.py
+
+      - name: Commit cambios si hay actualización
+        id: commit
+        run: |
+          if git diff --quiet data/boletin-oficial.json; then
+            echo "Sin cambios en data/boletin-oficial.json"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/boletin-oficial.json
+          git commit -m "Actualiza boletín oficial (BOP Málaga)"
+          git push origin develop
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Disparar publicación en main
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run publicar-produccion.yml --ref develop

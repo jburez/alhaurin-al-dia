@@ -11,6 +11,7 @@ const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'tmp',
 const IGNORE_FILES = new Set(['404.html', 'index_old.html']);
 const SERVICE_URLS = new Set([
   '/avisos/',
+  '/boletin-oficial/',
   '/tiempo/',
   '/planes/',
   '/comercios/',
@@ -52,7 +53,7 @@ function meta(url) {
   if (url === '/guia-util/') return { changefreq: 'weekly', priority: '0.95' };
   if (url === '/guia-util/farmacias/') return { changefreq: 'daily', priority: '0.95' };
   if (url === '/guia-util/farmacias/calendario/') return { changefreq: 'daily', priority: '0.95' };
-  if (url === '/avisos/' || url === '/tiempo/') return { changefreq: 'daily', priority: '0.9' };
+  if (url === '/avisos/' || url === '/tiempo/' || url === '/boletin-oficial/') return { changefreq: 'daily', priority: '0.9' };
   if (url === '/planes/' || url === '/comercios/') return { changefreq: 'weekly', priority: '0.8' };
   if (url === '/contacto/') return { changefreq: 'monthly', priority: '0.6' };
   if (url.startsWith('/guia-util/farmacias/')) return { changefreq: 'weekly', priority: '0.85' };

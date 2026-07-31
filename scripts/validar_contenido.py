@@ -21,6 +21,7 @@ NEWS_FILE = BASE_DIR / "data" / "noticias.json"
 FUENTES_FILE = BASE_DIR / "data" / "fuentes.json"
 GEOGRAFIA_FILE = BASE_DIR / "data" / "geografia.json"
 AVISOS_OFICIALES_FILE = BASE_DIR / "data" / "avisos-oficiales.json"
+BOLETIN_OFICIAL_FILE = BASE_DIR / "data" / "boletin-oficial.json"
 SITEMAP_FILE = BASE_DIR / "sitemap.xml"
 SITE_URL = "https://alhaurinaldia.es"
 
@@ -285,6 +286,24 @@ def validar_avisos_oficiales() -> list[str]:
     return []
 
 
+def validar_boletin_oficial() -> list[str]:
+    """Validación ligera: solo estructura (JSON válido, lista). Igual criterio
+    que validar_avisos_oficiales(): una única fuente de este tipo no
+    justifica todavía una validación campo a campo."""
+    if not BOLETIN_OFICIAL_FILE.exists():
+        return []
+
+    try:
+        edictos = json.loads(BOLETIN_OFICIAL_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        return [f"JSON inválido en data/boletin-oficial.json: {exc}"]
+
+    if not isinstance(edictos, list):
+        return ["data/boletin-oficial.json debe ser una lista"]
+
+    return []
+
+
 def main() -> int:
     errores: list[str] = []
     avisos: list[str] = []
@@ -335,6 +354,7 @@ def main() -> int:
 
     errores.extend(validar_geografia())
     errores.extend(validar_avisos_oficiales())
+    errores.extend(validar_boletin_oficial())
 
     print(f"Noticias revisadas: {len(noticias)}")
     print(f"Errores: {len(errores)}")

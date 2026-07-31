@@ -5,22 +5,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Avisos locales — Alhaurín al Día</title>
-    <meta name="description" content="Avisos locales de Alhaurín el Grande: cortes de suministro, incidencias de tráfico y comunicados oficiales verificados.">
+    <title>Boletín oficial (BOP Málaga) — Alhaurín al Día</title>
     <meta name="description"
-        content="Avisos locales de Alhaurín el Grande: cortes de agua, luz, tráfico, procesiones, obras, incidencias y comunicaciones útiles." />
+        content="Edictos del Boletín Oficial de la Provincia de Málaga (BOPMA) que afectan a Alhaurín el Grande: anuncios municipales, padrones, expedientes y notificaciones oficiales." />
     <meta name="theme-color" content="#1c1f1b" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://alhaurinaldia.es/avisos/">
+    <link rel="canonical" href="https://alhaurinaldia.es/boletin-oficial/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Alhaurín al Día">
-    <meta property="og:title" content="Avisos locales">
-    <meta property="og:description" content="Avisos locales de Alhaurín el Grande: cortes de suministro, incidencias de tráfico y comunicados oficiales verificados.">
-    <meta property="og:url" content="https://alhaurinaldia.es/avisos/">
+    <meta property="og:title" content="Boletín oficial (BOP Málaga)">
+    <meta property="og:description" content="Edictos del Boletín Oficial de la Provincia de Málaga (BOPMA) que afectan a Alhaurín el Grande.">
+    <meta property="og:url" content="https://alhaurinaldia.es/boletin-oficial/">
     <meta property="og:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Avisos locales">
-    <meta name="twitter:description" content="Avisos locales de Alhaurín el Grande: cortes de suministro, incidencias de tráfico y comunicados oficiales verificados.">
+    <meta name="twitter:title" content="Boletín oficial (BOP Málaga)">
+    <meta name="twitter:description" content="Edictos del Boletín Oficial de la Provincia de Málaga (BOPMA) que afectan a Alhaurín el Grande.">
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
 
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
@@ -30,14 +29,13 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/ads.css">
-    <link rel="stylesheet" href="../css/home-live.css">
 </head>
 
 <body>
     <div class="topbar">
         <div class="container">
             <span>Guía local independiente de Alhaurín el Grande</span>
-            <span>Avisos · Tráfico · Cortes · Agenda local</span>
+            <span>Edictos · Anuncios municipales · BOP Málaga</span>
         </div>
     </div>
 
@@ -59,8 +57,8 @@
                 <div class="nav-links" id="main-menu">
                     <a href="../noticias/">Noticias</a>
                     <a href="../guia-util/">Guía útil</a>
-                    <a href="./">Avisos</a>
-                    <a href="../boletin-oficial/">Boletín oficial</a>
+                    <a href="../avisos/">Avisos</a>
+                    <a href="./">Boletín oficial</a>
                     <a href="../tiempo/">Tiempo</a>
                     <a href="../planes/">Planes</a>
                     <a href="../comercios/">Comercios</a>
@@ -74,10 +72,11 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-card">
-                    <span class="eyebrow">Avisos locales</span>
-                    <h1>Cortes, incidencias y avisos útiles de Alhaurín.</h1>
-                    <p class="lead">Información práctica sobre cortes de agua, luz, tráfico, procesiones, obras y avisos
-                        que pueden afectar al día a día en Alhaurín el Grande.</p>
+                    <span class="eyebrow">Boletín oficial</span>
+                    <h1>Edictos del BOP Málaga que afectan a Alhaurín el Grande.</h1>
+                    <p class="lead">Anuncios municipales, padrones, expedientes y notificaciones oficiales
+                        publicados en el Boletín Oficial de la Provincia de Málaga (BOPMA) recibidos mediante su
+                        servicio de búsqueda guardada.</p>
                 </div>
             </div>
         </section>
@@ -86,19 +85,16 @@
             <div class="container">
                 <div class="section-title">
                     <div>
-                        <span class="section-kicker">Estado actual</span>
-                        <h2>Avisos activos</h2>
+                        <span class="section-kicker">Registro público</span>
+                        <h2>Últimos edictos</h2>
                     </div>
-                    <p id="notices-updated">Consultando avisos locales...</p>
+                    <p id="edictos-updated">Consultando el boletín oficial...</p>
                 </div>
 
-                <div class="grid-2" id="local-notices-list">
-                    <article class="notice-card">
-                        <div class="notice-icon">📢</div>
-                        <div>
-                            <h3>Cargando avisos...</h3>
-                            <p>Consultando información local actualizada.</p>
-                        </div>
+                <div class="edicto-list" id="edictos-list">
+                    <article class="edicto-card">
+                        <h3>Cargando edictos...</h3>
+                        <p>Consultando el boletín oficial de la provincia de Málaga.</p>
                     </article>
                 </div>
             </div>
@@ -111,8 +107,8 @@
             <div class="footer-links">
                 <a href="../noticias/">Noticias</a>
                 <a href="../guia-util/">Guía útil</a>
-                <a href="./">Avisos</a>
-                <a href="../boletin-oficial/">Boletín oficial</a>
+                <a href="../avisos/">Avisos</a>
+                <a href="./">Boletín oficial</a>
                 <a href="../tiempo/">Tiempo</a>
                 <a href="../planes/">Planes</a>
                 <a href="../comercios/">Comercios</a>
@@ -122,7 +118,7 @@
     </footer>
 
     <script src="../js/app.js" defer></script>
-    <script src="./avisos.js" defer></script>
+    <script src="./boletin-oficial.js" defer></script>
 </body>
 
 </html>

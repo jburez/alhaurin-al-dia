@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://alhaurinaldia.es/noticias/adquisicion-camion-electrico-el-ayuntamiento-ha-incorporado-un-camion-100-electrico.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-01T10:22:00.308Z</news:publication_date>
+      <news:title>Adquisición camión eléctrico el ayuntamiento ha incorporado un camión 100 % eléctrico — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-gestionara-cerca-de-20-millones-de-euros-para-impulsar-proyectos.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.595Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.311Z</news:publication_date>
       <news:title>Alhaurín el Grande gestionará cerca de 20 millones de euros para impulsar proyectos — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -18,85 +29,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.594Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.304Z</news:publication_date>
       <news:title>Alhaurín el Grande reconoce a Sete Fernández por representar al municipio en la histórica — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/cd-alhaurino-y-clinicas-guadalhorce-firman-una-alianza-estrategica-para-potenciar-la-salud.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-a-m-manuel-amador.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.603Z</news:publication_date>
-      <news:title>CD Alhaurino y Clínicas Guadalhorce firman una alianza estratégica para potenciar la salud — Alhaurín al Día</news:title>
+      <news:publication_date>2026-08-01T10:22:00.305Z</news:publication_date>
+      <news:title>Concierto de Verano A.M. Manuel Amador — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-asociacion-musical-manuel-amador.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/fedelhorce-presente-en-el-inicio-de-la-mejora-de-la-conexion-malaga-guadalhorce-ronda.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.601Z</news:publication_date>
-      <news:title>Concierto de Verano Asociación Musical Manuel Amador — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-actos-del-jueves.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.600Z</news:publication_date>
-      <news:title>Día de Jesús 2026 – Actos del jueves — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/escuela-de-danza-de-lourdes-rodriguez.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.603Z</news:publication_date>
-      <news:title>Escuela de Danza de Lourdes Rodríguez — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/gala-de-fin-de-curso-de-la-escuela-gold-dance-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.602Z</news:publication_date>
-      <news:title>Gala de fin de curso de la escuela Gold Dance 2026 — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/graduacion-escuela-infantil-de-villa-del-guadalhorce-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.602Z</news:publication_date>
-      <news:title>Graduación Escuela Infantil de Villa del Guadalhorce 2026 — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/hatim-sexta-renovacion-del-cd-alhaurino.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.604Z</news:publication_date>
-      <news:title>Hatim, sexta renovación del CD Alhaurino — Alhaurín al Día</news:title>
+      <news:publication_date>2026-08-01T10:22:00.313Z</news:publication_date>
+      <news:title>Fedelhorce, presente en el inicio de la mejora de la conexión Málaga-Guadalhorce-Ronda — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -106,19 +62,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.594Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.310Z</news:publication_date>
       <news:title>La Baltasara reunió a expertos, instituciones, agricultores y amantes de la gastronomía — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/la-escuela-infantil-municipal-celebra-la-graduacion-de-su-alumnado-de-2-a-3-anos.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.601Z</news:publication_date>
-      <news:title>La Escuela Infantil Municipal celebra la graduación de su alumnado de 2 a 3 años — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -128,7 +73,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.595Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.310Z</news:publication_date>
       <news:title>La XLIII Noche Flamenca consagra a Alhaurín el Grande como capital del arte jondo — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -139,19 +84,41 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.594Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.303Z</news:publication_date>
       <news:title>Las instalaciones acuáticas municipales amplían su aforo diario ante la elevada demanda — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/los-invitados-al-jardin-residentes-de-la-baltasara-eva-fernandez-y-pablo-igartua.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/mari-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.602Z</news:publication_date>
-      <news:title>Los invitados al Jardín. Residentes de la Baltasara: Eva Fernández y Pablo Igartua — Alhaurín al Día</news:title>
+      <news:publication_date>2026-08-01T10:22:00.310Z</news:publication_date>
+      <news:title>Mari Carmen Plaza pronuncia el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/noche-de-comercio-abierto.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-01T10:22:00.312Z</news:publication_date>
+      <news:title>Noche de comercio abierto — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/noticias-atv-29-de-julio-2026-actualidad-de-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-01T10:22:00.307Z</news:publication_date>
+      <news:title>NOTICIAS ATV 29 DE JULIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -161,19 +128,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.599Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.314Z</news:publication_date>
       <news:title>Nuestra Real Hermandad presente en el curso de verano sobre La Legión — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/presentacion-cartel-nuestra-senora-de-gracia-2026.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.601Z</news:publication_date>
-      <news:title>Presentación Cartel Nuestra Señora de Gracia 2026 — Alhaurín al Día</news:title>
+      <news:publication_date>2026-08-01T10:22:00.306Z</news:publication_date>
+      <news:title>PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/presentacion-cartel-virgen-de-gracia-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-01T10:22:00.306Z</news:publication_date>
+      <news:title>PRESENTACIÓN CARTEL VIRGEN DE GRACIA 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -183,8 +161,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.599Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.313Z</news:publication_date>
       <news:title>Primera misa del sacerdote Rvd. Padre D. José Francisco Fernández Fuentes — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/reformas-en-el-colegio-el-area-de-educacion-del-ayuntamiento-realiza-trabajos-de-mejora.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-01T10:22:00.305Z</news:publication_date>
+      <news:title>Reformas en el colegio el área de educación del ayuntamiento realiza trabajos de mejora — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -194,19 +183,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.600Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.314Z</news:publication_date>
       <news:title>San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/segunda-vez-que-el-alhaurino-no-tendra-rival-almeriense.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/somos-fedelhorce.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.603Z</news:publication_date>
-      <news:title>Segunda vez que el Alhaurino no tendrá rival almeriense — Alhaurín al Día</news:title>
+      <news:publication_date>2026-08-01T10:22:00.313Z</news:publication_date>
+      <news:title>Somos Fedelhorce — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/subvenciones-alha-boca-el-ayuntamiento-destina-6-en-alhaurin.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-01T10:22:00.309Z</news:publication_date>
+      <news:title>Subvenciones alha‿boca el ayuntamiento destina 6 en Alhaurín — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -216,7 +216,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.600Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.315Z</news:publication_date>
       <news:title>Terremoto en Venezuela — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -227,29 +227,29 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.601Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.307Z</news:publication_date>
       <news:title>Tertulia gastronómica Tomate Huevo Toro 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/x-carrera-solidaria-nocturna-alhaurin-a-la-luz-de-la-luna-un-si-por-la-vida.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/toda-una-vida-al-servicio-de-la-hosteleria-gracias-casa-pena.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.602Z</news:publication_date>
-      <news:title>X Carrera Solidaria Nocturna «Alhaurín a la luz de la luna» Un sí por la Vida — Alhaurín al Día</news:title>
+      <news:publication_date>2026-08-01T10:22:00.312Z</news:publication_date>
+      <news:title>Toda una vida al servicio de la hostelería: gracias, Casa Peña — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-2.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.599Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.311Z</news:publication_date>
       <news:title>XLIII Noche Flamenca Villa de Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -260,19 +260,8 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.600Z</news:publication_date>
+      <news:publication_date>2026-08-01T10:22:00.315Z</news:publication_date>
       <news:title>Y EL DÍA DE LA FUNCIÓN VOLVIMOS A ALZAR LA MIRADA HACIA NUESTRO PADRE JESÚS NAZARENO — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/zalea-septima-renovacion-del-cd-alhaurino.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-01T06:46:44.603Z</news:publication_date>
-      <news:title>Zalea, séptima renovación del CD Alhaurino — Alhaurín al Día</news:title>
     </news:news>
   </url>
 </urlset>

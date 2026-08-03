@@ -79,6 +79,12 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/96-golfistas-compiten-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/96-golfistas-participan-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -110,6 +116,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-plazo-para-alegaciones-al-nuevo-plan-de-ordenacion-urbana.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -151,7 +163,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-el-tomate-huevo-toro-como-simbolo-de-identidad-y-sostenibilidad.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-el-tomate-huevo-toro-como-simbolo-local-y-sostenible.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destina-6-000-para-impulsar-hosteleria-con-productos-locales.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -307,6 +331,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/exito-en-la-tertulia-gastronomica-del-tomate-huevo-toro-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/finaliza-con-exito-el-proyecto-eco-rural-para-restaurar-ecosistemas-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -379,6 +409,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/los-vecinos-interesados-pueden-acceder-a-la-documentacion-oficial-y-enviar-sus.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/mari-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -386,6 +422,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-protagonizo-el-xiv-pregon-de-gloria-en-alhaurin-el-grande-dando.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -463,6 +505,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/reformas-en-el-colegio-el-area-de-educacion-del-ayuntamiento-realiza-trabajos-de-mejora.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -512,6 +560,18 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-aficionados-en-una-velada-unica.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada-unica.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-el-pele-marina-heredia-y-la-lupi.html</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

@@ -602,7 +602,7 @@ function insertCommercialCtas() {
     const firstSection = main ? main.querySelector("section") : null;
     if (!main || !firstSection) return;
 
-    ensureStylesheet("sponsored-cards.css");
+    ensureStylesheet("css/sponsored-cards.css");
 
     const section = document.createElement("section");
     section.className = "sponsored-section commercial-sponsored-injected";
@@ -632,7 +632,7 @@ function insertCommercialCtas() {
     `;
 
     firstSection.insertAdjacentElement("afterend", section);
-    ensureScript("sponsored-cards.js", "sponsored-cards-loader");
+    ensureScript("js/sponsored-cards.js", "sponsored-cards-loader");
 }
 
 cleanupHomeStaticArtifacts();

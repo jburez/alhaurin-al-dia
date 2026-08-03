@@ -232,6 +232,13 @@ function metaDescripcionFarmacias(farmaciaHoy, fechaCorta) {
   return `Hoy, ${fechaCorta}, la farmacia de guardia en Alhaurín el Grande es ${farmaciaHoy.nombre} (${farmaciaHoy.direccion}). Teléfono y calendario completo.`;
 }
 
+function metaDescripcionCalendario(farmaciaHoy, fechaCorta) {
+  if (!farmaciaHoy) {
+    return 'Calendario de farmacias de guardia en Alhaurín el Grande. Hoy no consta farmacia asignada; consulta cada mes con nombre, teléfono y ficha.';
+  }
+  return `Hoy, ${fechaCorta}, la farmacia de guardia es ${farmaciaHoy.nombre}. Consulta el calendario completo de guardias 2026 en Alhaurín el Grande.`;
+}
+
 function renderFarmaciasCallToAction(html, farmaciaHoy, fechaLarga) {
   let strong;
   let span;
@@ -413,7 +420,18 @@ function main() {
   {
     const original = fs.readFileSync(CALENDARIO_FILE, 'utf8');
     let actualizado = renderCalendario(original, farmaciaHoy);
+    const descripcionCalendario = metaDescripcionCalendario(farmaciaHoy, fechaMeta);
     const graph = [
+      {
+        '@type': 'WebPage',
+        '@id': `${SITE_URL}/guia-util/farmacias/calendario/#webpage`,
+        url: `${SITE_URL}/guia-util/farmacias/calendario/`,
+        name: 'Calendario de farmacias de guardia en Alhaurín el Grande 2026',
+        description: descripcionCalendario,
+        inLanguage: 'es-ES',
+        isPartOf: { '@type': 'WebSite', name: 'Alhaurín al Día', url: `${SITE_URL}/` },
+        about: { '@type': 'Place', name: 'Alhaurín el Grande' },
+      },
       breadcrumbList([
         { name: 'Inicio', url: `${SITE_URL}/` },
         { name: 'Guía útil', url: `${SITE_URL}/guia-util/` },
@@ -426,6 +444,9 @@ function main() {
       '@context': 'https://schema.org',
       '@graph': graph,
     });
+    actualizado = setMetaContent(actualizado, 'description', descripcionCalendario);
+    actualizado = setMetaContent(actualizado, 'og:description', descripcionCalendario);
+    actualizado = setMetaContent(actualizado, 'twitter:description', descripcionCalendario);
     if (actualizado !== original) {
       fs.writeFileSync(CALENDARIO_FILE, actualizado);
       cambios += 1;

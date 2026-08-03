@@ -1,10 +1,11 @@
 // Pre-renderiza la farmacia de guardia de hoy como HTML estático en portada,
-// /guia-util/farmacias/ y /guia-util/farmacias/calendario/, y añade/actualiza
-// Schema.org (BreadcrumbList, Pharmacy, FAQPage) en las dos páginas de
-// farmacias. Sin esto, la respuesta solo existía inyectada por JavaScript
-// (home-guardia.js, guardia-status.js, guardias-calendar.js), lo que retrasa
-// e incertidumbre su indexación para una búsqueda tan sensible al día como
-// "farmacia de guardia Alhaurín el Grande".
+// /guia-util/farmacias/, /guia-util/farmacias/calendario/ y en cada ficha
+// individual de farmacia, y añade/actualiza Schema.org (BreadcrumbList,
+// Pharmacy, FAQPage) en esas páginas. Sin esto, la respuesta solo existía
+// inyectada por JavaScript (home-guardia.js, guardia-status.js,
+// guardias-calendar.js), lo que retrasa e incertidumbre su indexación para
+// una búsqueda tan sensible al día como "farmacia de guardia Alhaurín el
+// Grande".
 //
 // Debe ejecutarse a diario como mínimo porque la farmacia de hoy cambia
 // cada día; se ejecuta como parte de `npm run build` (workflow
@@ -34,7 +35,7 @@ function escapeHTML(value = '') {
     .replaceAll("'", '&#039;');
 }
 
-function setContainerInnerHTML(html, elementId, innerHTML) {
+function locateContainer(html, elementId) {
   const openTagPattern = new RegExp(`<(div|section|article)([^>]*\\bid=["']${elementId}["'][^>]*)>`, 'i');
   const match = openTagPattern.exec(html);
 
@@ -60,7 +61,26 @@ function setContainerInnerHTML(html, elementId, innerHTML) {
     cursor = tagMatch.index;
   }
 
-  return html.slice(0, openTagEnd) + innerHTML + html.slice(cursor);
+  const closeTagEnd = html.indexOf('>', cursor) + 1;
+  return { openTagEnd, closeStart: cursor, closeTagEnd };
+}
+
+function setContainerInnerHTML(html, elementId, innerHTML) {
+  const { openTagEnd, closeStart } = locateContainer(html, elementId);
+  return html.slice(0, openTagEnd) + innerHTML + html.slice(closeStart);
+}
+
+function insertAfterContainer(html, elementId, insertHTML) {
+  const { closeTagEnd } = locateContainer(html, elementId);
+  return html.slice(0, closeTagEnd) + insertHTML + html.slice(closeTagEnd);
+}
+
+function replaceOrInsertAfter(html, markerId, markerTagPattern, newHTML, afterContainerId) {
+  const pattern = new RegExp(`<${markerTagPattern}[^>]*\\bid=["']${markerId}["'][^>]*>.*?<\\/${markerTagPattern}>`, 's');
+  if (pattern.test(html)) {
+    return html.replace(pattern, newHTML);
+  }
+  return insertAfterContainer(html, afterContainerId, newHTML);
 }
 
 function setJsonLd(html, scriptId, dataObject) {
@@ -228,6 +248,65 @@ function renderFarmaciasCallToAction(html, farmaciaHoy, fechaLarga) {
   return setContainerInnerHTML(html, 'today-guard-strip', inner);
 }
 
+// Réplica estática de lo que guardia-status.js inyecta por JS en cada ficha
+// individual de farmacia. Debe producir el mismo HTML que su función
+// render(), para que la hidratación en el navegador no cause saltos visuales.
+function guardStatusCardInnerHTML(esGuardiaHoy) {
+  if (esGuardiaHoy) {
+    return '<span class="status-badge">DE GUARDIA HOY</span><p>Esta farmacia figura como guardia para hoy en el calendario local. Verifica siempre en la fuente oficial.</p>';
+  }
+  return '<span class="status-badge">No está de guardia hoy</span><p>Esta farmacia no figura como guardia para hoy en el calendario local. Consulta el calendario para próximas guardias.</p>';
+}
+
+function mapsUrlFicha(farmacia) {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${farmacia.nombre || 'Farmacia'} ${farmacia.direccion || ''} Alhaurín el Grande`)}`;
+}
+
+function liveGuardBadgeHTML(farmacia, esGuardiaHoy) {
+  const estado = esGuardiaHoy ? 'De guardia hoy' : 'No está de guardia hoy';
+  const detalle = esGuardiaHoy
+    ? 'Guardia orientativa de 9:30 a 9:30. Confirma siempre en la fuente oficial antes de desplazarte.'
+    : 'Consulta el calendario para ver próximas guardias y la farmacia disponible hoy.';
+  const claseEstado = esGuardiaHoy ? 'is-on-duty' : 'is-not-on-duty';
+  return `<section class="live-guard-badge ${claseEstado}" id="live-guard-badge"><div><span>${estado}</span><strong>${escapeHTML(farmacia.nombre)}</strong><p>${detalle}</p></div><div class="live-guard-actions"><a href="/guia-util/farmacias/calendario/">Ver calendario</a><a class="secondary" href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer">Fuente oficial</a></div></section>`;
+}
+
+function renderFicha(html, farmacia, esGuardiaHoy) {
+  let actualizado = setContainerInnerHTML(html, 'guard-status-card', guardStatusCardInnerHTML(esGuardiaHoy));
+  actualizado = replaceOrInsertAfter(
+    actualizado,
+    'live-guard-badge',
+    'section',
+    liveGuardBadgeHTML(farmacia, esGuardiaHoy),
+    'detail-hero-card',
+  );
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Pharmacy',
+    '@id': `${SITE_URL}${farmacia.url}#farmacia`,
+    name: farmacia.nombre,
+    url: `${SITE_URL}${farmacia.url}`,
+    telephone: farmacia.telefonoHref,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: farmacia.direccion,
+      addressLocality: 'Alhaurín el Grande',
+      addressRegion: 'Málaga',
+      addressCountry: 'ES',
+    },
+    areaServed: { '@type': 'City', name: 'Alhaurín el Grande' },
+    hasMap: mapsUrlFicha(farmacia),
+    sameAs: ['https://alhaurinelgrande.es/farmacias/'],
+    mainEntityOfPage: `${SITE_URL}${farmacia.url}`,
+    additionalProperty: [
+      { '@type': 'PropertyValue', name: 'Calendario de guardias', value: `${SITE_URL}/guia-util/farmacias/calendario/` },
+      { '@type': 'PropertyValue', name: 'Estado de guardia hoy', value: esGuardiaHoy ? 'De guardia hoy' : 'No está de guardia hoy' },
+      { '@type': 'PropertyValue', name: 'Fuente oficial de contraste', value: 'https://alhaurinelgrande.es/farmacias/' },
+    ],
+  };
+  return setJsonLd(actualizado, 'advanced-pharmacy-schema', schema);
+}
+
 function breadcrumbList(items) {
   return {
     '@type': 'BreadcrumbList',
@@ -353,9 +432,21 @@ function main() {
     }
   }
 
+  // Fichas individuales de cada farmacia
+  let fichasActualizadas = 0;
+  farmacias.forEach((farmacia) => {
+    const fichaFile = path.join(ROOT, ...farmacia.url.split('/').filter(Boolean), 'index.html');
+    const original = fs.readFileSync(fichaFile, 'utf8');
+    const actualizado = renderFicha(original, farmacia, farmacia.id === idHoy);
+    if (actualizado !== original) {
+      fs.writeFileSync(fichaFile, actualizado);
+      fichasActualizadas += 1;
+    }
+  });
+
   console.log(`[farmacia-guardia-static] Fecha (Europe/Madrid): ${hoyKey}`);
   console.log(`[farmacia-guardia-static] Farmacia de guardia hoy: ${farmaciaHoy ? farmaciaHoy.nombre : 'sin dato'}`);
-  console.log(`[farmacia-guardia-static] Ficheros actualizados: ${cambios} de 3`);
+  console.log(`[farmacia-guardia-static] Ficheros actualizados: ${cambios} de 3 + ${fichasActualizadas} fichas de ${farmacias.length}`);
 }
 
 main();

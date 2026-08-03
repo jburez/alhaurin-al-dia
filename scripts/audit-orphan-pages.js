@@ -16,6 +16,7 @@ const IGNORE_FILES = new Set(['404.html', 'index_old.html']);
 const STRUCTURAL_URLS = new Set([
   '/',
   '/noticias/',
+  '/noticias/archivo/',
   '/guia-util/',
   '/guia-util/farmacias/',
   '/guia-util/farmacias/calendario/',

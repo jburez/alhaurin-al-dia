@@ -235,7 +235,11 @@ Aplicar cambios:
 npm run news:dedupe
 ```
 
-### 6.6 Limpiar noticias huérfanas
+### 6.6 Archivar noticias huérfanas
+
+Cuando una noticia sale del listado activo (por el límite de `MAX_NOTICIAS_TOTAL` en `dedupe-news.js`), su página HTML ya no se borra: se conserva en `noticias/` y queda listada en `/noticias/archivo/` a partir de `data/noticias-archivo.json`. Esto evita que Google indexe una URL y luego se encuentre un 404 cuando la noticia caduca del listado principal.
+
+`dedupe-news.js` archiva automáticamente las noticias que recorta por límite. `archive-orphan-news.js` es la red de seguridad para huérfanas que aparecieran por otra vía (edición manual, migraciones): detecta HTML sin entrada activa y, si aún no está en el archivo, la da de alta extrayendo sus metadatos del propio HTML.
 
 Simulación:
 
@@ -243,13 +247,17 @@ Simulación:
 npm run news:orphans:dry
 ```
 
-Borrado real:
+Escritura real (da de alta en el archivo las huérfanas que falten):
 
 ```bash
-npm run news:orphans:clean
+npm run news:orphans:archive
 ```
 
-Usa el borrado real solo después de revisar el resultado de la simulación.
+Después de archivar, regenera la página de listado:
+
+```bash
+npm run news:archive:page
+```
 
 ## 7. Administración de portada diaria
 

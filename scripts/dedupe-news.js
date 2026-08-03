@@ -3,6 +3,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA_FILE = path.join(ROOT, 'data', 'noticias.json');
+const ARCHIVE_FILE = path.join(ROOT, 'data', 'noticias-archivo.json');
 const REPORT_DIR = path.join(ROOT, 'reports');
 const REPORT_FILE = path.join(REPORT_DIR, 'news-dedupe-report.json');
 const WRITE = process.argv.includes('--write');
@@ -171,11 +172,29 @@ function dedupeNews(noticias) {
 
   kept.sort((a, b) => parseDate(b.fecha) - parseDate(a.fecha));
 
+  const droppedByLimit = kept.slice(MAX_NEWS);
+
   return {
     kept: kept.slice(0, MAX_NEWS),
     duplicateGroups,
-    removedByLimit: kept.slice(MAX_NEWS).map(summarize),
+    removedByLimit: droppedByLimit,
   };
+}
+
+function archiveDropped(dropped) {
+  if (!dropped.length) return 0;
+
+  const archivo = readJson(ARCHIVE_FILE, []);
+  const known = new Set(archivo.map(item => normalize(item.pagina || '')));
+  const nuevas = dropped.filter(item => !known.has(normalize(item.pagina || '')));
+
+  if (!nuevas.length) return 0;
+
+  const actualizado = [...nuevas, ...archivo]
+    .sort((a, b) => parseDate(b.fecha) - parseDate(a.fecha));
+
+  writeJson(ARCHIVE_FILE, actualizado);
+  return nuevas.length;
 }
 
 function main() {
@@ -187,6 +206,7 @@ function main() {
   }
 
   const result = dedupeNews(noticias);
+  const archivedCount = WRITE ? archiveDropped(result.removedByLimit) : 0;
   const report = {
     generatedAt: new Date().toISOString(),
     mode: WRITE ? 'write' : 'dry-run',
@@ -194,8 +214,9 @@ function main() {
     outputCount: result.kept.length,
     duplicateGroupsCount: result.duplicateGroups.length,
     removedByLimitCount: result.removedByLimit.length,
+    archivedCount,
     duplicateGroups: result.duplicateGroups,
-    removedByLimit: result.removedByLimit,
+    removedByLimit: result.removedByLimit.map(summarize),
   };
 
   fs.mkdirSync(REPORT_DIR, { recursive: true });
@@ -210,6 +231,7 @@ function main() {
   console.log(`Salida: ${report.outputCount}`);
   console.log(`Grupos duplicados: ${report.duplicateGroupsCount}`);
   console.log(`Recortadas por límite: ${report.removedByLimitCount}`);
+  console.log(`Archivadas (nuevas): ${archivedCount}`);
   console.log(`Informe: ${path.relative(ROOT, REPORT_FILE)}`);
 }
 

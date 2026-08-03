@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://alhaurinaldia.es/noticias/96-golfistas-compiten-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.880Z</news:publication_date>
+      <news:title>96 golfistas compiten en el V Torneo de Golf Tomate Huevo Toro en Alhaurín Golf — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/96-golfistas-participan-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.219Z</news:publication_date>
+      <news:title>96 golfistas participan en el V Torneo de Golf Tomate Huevo Toro en Alhaurín Golf — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/a-traves-de-un-comunicado-la-hermandad-ha-expresado-su-solidaridad-con-las-familias.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
+      <news:title>A través de un comunicado, la Hermandad ha expresado su solidaridad con las familias — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-reformas-concierto-y-actividades-de-verano.html</loc>
     <news:news>
       <news:publication>
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.553Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Actualidad en Alhaurín el Grande: reformas, concierto y actividades de verano — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -18,7 +51,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.023Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Adquisición camión eléctrico el ayuntamiento ha incorporado un camión 100 % eléctrico — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -29,7 +62,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.023Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados en PlaneATV — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -40,8 +73,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.555Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.877Z</news:publication_date>
       <news:title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-plazo-para-alegaciones-al-nuevo-plan-de-ordenacion-urbana.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.880Z</news:publication_date>
+      <news:title>Alhaurín el Grande abre plazo para alegaciones al nuevo Plan de Ordenación Urbana — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-plazo-para-el-nuevo-plan-de-ordenacion-urbana-y-celebra-eventos.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
+      <news:title>Alhaurín el Grande abre plazo para el nuevo Plan de Ordenación Urbana y celebra eventos — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -51,8 +106,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.563Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Alhaurín el Grande acoge la XLIII Noche Flamenca con artistas de primer nivel — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-xliii-noche-flamenca-con-grandes-artistas-del-genero.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
+      <news:title>Alhaurín el Grande acoge la XLIII Noche Flamenca con grandes artistas del género — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -62,7 +128,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.558Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.879Z</news:publication_date>
       <news:title>Alhaurín el Grande amplía aforo en piscina y apoya productos locales con subvenciones — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -73,7 +139,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.567Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.885Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -84,8 +150,41 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.556Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.886Z</news:publication_date>
       <news:title>Alhaurín el Grande celebra la tertulia gastronómica del tomate Huevo Toro 2026 — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-el-tomate-huevo-toro-como-simbolo-de-identidad-y-sostenibilidad.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.882Z</news:publication_date>
+      <news:title>Alhaurín el Grande destaca el tomate Huevo Toro como símbolo de identidad y sostenibilidad — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-el-tomate-huevo-toro-como-simbolo-local-y-sostenible.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
+      <news:title>Alhaurín el Grande destaca el tomate Huevo Toro como símbolo local y sostenible — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destina-6-000-para-impulsar-hosteleria-con-productos-locales.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.876Z</news:publication_date>
+      <news:title>Alhaurín el Grande destina 6.000 € para impulsar hostelería con productos locales — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -95,7 +194,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.564Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Alhaurín el Grande gestionará 19 millones para proyectos y reparaciones tras temporal — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -106,7 +205,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.023Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Alhaurín el Grande gestionará casi 20 millones para proyectos y reparaciones tras temporal — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -117,7 +216,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.023Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Alhaurín el Grande gestionará cerca de 20 millones de euros para impulsar proyectos — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -128,8 +227,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.560Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Alhaurín el Grande homenajea a Sete Fernández por su papel en la conquista del Mundial — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-por-su-papel-en-la-copa-mundial-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
+      <news:title>Alhaurín el Grande homenajea a Sete Fernández por su papel en la Copa Mundial 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -139,7 +249,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.562Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.883Z</news:publication_date>
       <news:title>Alhaurín el Grande impulsa el Tomate Huevo Toro con el V Torneo de Golf — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -150,7 +260,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.023Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.220Z</news:publication_date>
       <news:title>Alhaurín el Grande incorpora camión eléctrico y celebra eventos culturales en julio 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -161,7 +271,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.023Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.881Z</news:publication_date>
       <news:title>Alhaurín el Grande reconoce a Sete Fernández por representar al municipio en la histórica — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -172,7 +282,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.557Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.878Z</news:publication_date>
       <news:title>Alhaurín el Grande refuerza gestión de residuos y celebra eventos culturales en julio 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -183,8 +293,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.561Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>Alhaurín el Grande reivindica el tomate Huevo Toro como símbolo local y sostenible — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/aumenta-el-aforo-diario-en-las-piscinas-municipales-de-alhaurin-el-grande-por-alta-demanda.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.881Z</news:publication_date>
+      <news:title>Aumenta el aforo diario en las piscinas municipales de Alhaurín el Grande por alta demanda — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -194,7 +315,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>Concierto de Verano Asociación Musical Manuel Amador — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -205,7 +326,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>Concierto de verano de la A.M. Manuel Amador en Alhaurín el Grande reúne a vecinos — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -216,7 +337,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.553Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>Concierto de verano de la A.M. Manuel Amador reúne a vecinos en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -227,7 +348,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.570Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.887Z</news:publication_date>
       <news:title>Concierto de Verano de la Asociación Musical Manuel Amador en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -238,7 +359,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>Día de Jesús 2026 – Actos del jueves — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -249,7 +370,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.552Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>El Ayuntamiento de Alhaurín el Grande ha iniciado el periodo de participación ciudadana — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -260,7 +381,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>El Ayuntamiento de Alhaurín el Grande invita a los vecinos a presentar sus sugerencias — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -271,8 +392,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>El Barrio actuará en Alhaurín el Grande el 15 de mayo en su gira 30 aniversario — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-barrio-actuara-en-alhaurin-el-grande-en-su-gira-30-aniversario-el-15-de-mayo-de-2027.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.882Z</news:publication_date>
+      <news:title>El Barrio actuará en Alhaurín el Grande en su gira 30 aniversario el 15 de mayo de 2027 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -282,7 +414,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.561Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>El Barrio actuará en Alhaurín el Grande en su gira 30 aniversario el 15 de mayo — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -293,8 +425,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.555Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.878Z</news:publication_date>
       <news:title>El Barrio actuará en la preferia 2027 de Alhaurín el Grande el 15 de mayo — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-objetivo-es-fomentar-la-creacion-de-nuevos-platos-y-bebidas-que-utilicen-productos.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
+      <news:title>El objetivo es fomentar la creación de nuevos platos y bebidas que utilicen productos — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -304,8 +447,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>Éxito de la tertulia gastronómica sobre el tomate Huevo Toro en Alhaurín el Grande — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/exito-en-la-tertulia-gastronomica-del-tomate-huevo-toro-en-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.878Z</news:publication_date>
+      <news:title>Éxito en la tertulia gastronómica del tomate Huevo Toro en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -315,7 +469,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.221Z</news:publication_date>
       <news:title>Finaliza con éxito el proyecto eco-rural para restaurar ecosistemas en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -326,8 +480,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.560Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.882Z</news:publication_date>
       <news:title>Finaliza el proyecto eco-rural para restaurar ecosistemas en Alhaurín el Grande — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/finaliza-el-proyecto-eco-rural-que-impulsa-la-restauracion-ambiental-en-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
+      <news:title>Finaliza el proyecto eco-rural que impulsa la restauración ambiental en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -337,7 +502,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.024Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -348,7 +513,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.565Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.884Z</news:publication_date>
       <news:title>Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -359,7 +524,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>La Baltasara reunió a expertos, instituciones, agricultores y amantes de la gastronomía — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -370,7 +535,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -381,7 +546,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>La piscina municipal de Alhaurín el Grande amplía su aforo diario a 280 plazas — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -392,7 +557,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.566Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.885Z</news:publication_date>
       <news:title>La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -403,7 +568,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>La XLIII Noche Flamenca consagra a Alhaurín el Grande como capital del arte jondo — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -414,7 +579,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.562Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.883Z</news:publication_date>
       <news:title>La XLIII Noche Flamenca reafirma a Alhaurín el Grande como capital del arte jondo — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -425,8 +590,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Las instalaciones acuáticas municipales amplían su aforo diario ante la elevada demanda — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/los-vecinos-interesados-pueden-acceder-a-la-documentacion-oficial-y-enviar-sus.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.877Z</news:publication_date>
+      <news:title>Los vecinos interesados pueden acceder a la documentación oficial y enviar sus — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -436,8 +612,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.558Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Mari Carmen Plaza pronuncia el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
+      <news:title>María del Carmen Plaza pronuncia el XIV Pregón de Gloria en Alhaurín el Grande — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-protagonizo-el-xiv-pregon-de-gloria-en-alhaurin-el-grande-dando.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.880Z</news:publication_date>
+      <news:title>María del Carmen Plaza protagonizó el XIV Pregón de Gloria en Alhaurín el Grande, dando — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -447,7 +645,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>NOTICIAS ATV 29 DE JULIO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -458,7 +656,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Nuestra Real Hermandad presente en el curso de verano sobre La Legión — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -469,7 +667,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.559Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Piscinas municipales de Alhaurín el Grande amplían aforo diario por alta demanda — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -480,7 +678,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -491,7 +689,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.569Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Presentación Cartel Nuestra Señora de Gracia 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -502,7 +700,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.887Z</news:publication_date>
       <news:title>Presentado el cartel oficial de las fiestas de Nuestra Señora de Gracia 2026 en Alhaurín — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -513,7 +711,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.554Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Presentado el cartel oficial de las fiestas en honor a la Virgen de Gracia 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -524,7 +722,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.884Z</news:publication_date>
       <news:title>Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -535,7 +733,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.564Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.222Z</news:publication_date>
       <news:title>Primera misa del Rvdo. Padre José Francisco Fernández Fuentes en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -546,7 +744,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.025Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Primera misa del sacerdote Rvd. Padre D. José Francisco Fernández Fuentes — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -557,8 +755,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.567Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Programa de actos del Día de Jesús 2026 en Alhaurín el Grande — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
+      <news:title>Programa de actos del jueves en el Día de Jesús 2026 en Alhaurín el Grande — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.885Z</news:publication_date>
+      <news:title>Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -568,8 +788,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Reformas en el colegio el área de educación del ayuntamiento realiza trabajos de mejora — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/ruta-gastronomica-tomate-huevo-toro-2026-en-alhaurin-el-grande-y-malaga.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.881Z</news:publication_date>
+      <news:title>Ruta Gastronómica Tomate Huevo Toro 2026 en Alhaurín el Grande y Málaga — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -579,7 +810,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.565Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.884Z</news:publication_date>
       <news:title>San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -590,7 +821,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Subvenciones alha‿boca el ayuntamiento destina 6 en Alhaurín — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -601,7 +832,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Terremoto en Venezuela — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -612,7 +843,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.568Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Tertulia gastronómica en Alhaurín el Grande destaca el tomate Huevo Toro 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -623,7 +854,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Tertulia gastronómica Tomate Huevo Toro 2026 — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -634,7 +865,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>XLIII Noche Flamenca en Alhaurín el Grande reúne a 430 aficionados con grandes artistas — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -645,8 +876,30 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.568Z</news:publication_date>
+      <news:publication_date>2026-08-03T18:02:33.886Z</news:publication_date>
       <news:title>XLIII Noche Flamenca en Alhaurín el Grande reúne a 430 aficionados en una velada única — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada-unica.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.879Z</news:publication_date>
+      <news:title>XLIII Noche Flamenca en Alhaurín el Grande reúne a 430 espectadores en una velada única — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-el-pele-marina-heredia-y-la-lupi.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T18:02:33.883Z</news:publication_date>
+      <news:title>XLIII Noche Flamenca en Alhaurín el Grande reúne a El Pele, Marina Heredia y La Lupi — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -656,7 +909,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>XLIII Noche Flamenca reafirma a Alhaurín el Grande como capital del arte jondo — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -667,8 +920,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>XLIII Noche Flamenca Villa de Alhaurín el Grande — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada-2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
+      <news:title>XLIII Noche Flamenca Villa de Alhaurín el Grande reúne a 430 espectadores en una velada — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -678,7 +942,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:39:16.557Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>XLIII Noche Flamenca Villa de Alhaurín el Grande reúne a 430 espectadores en una velada — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -689,7 +953,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-08-03T11:34:27.026Z</news:publication_date>
+      <news:publication_date>2026-08-03T17:57:29.223Z</news:publication_date>
       <news:title>Y EL DÍA DE LA FUNCIÓN VOLVIMOS A ALZAR LA MIRADA HACIA NUESTRO PADRE JESÚS NAZARENO — Alhaurín al Día</news:title>
     </news:news>
   </url>

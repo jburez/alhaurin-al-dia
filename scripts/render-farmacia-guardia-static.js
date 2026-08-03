@@ -77,6 +77,26 @@ function setJsonLd(html, scriptId, dataObject) {
   return html.replace('</head>', `${tag}</head>`);
 }
 
+function setMetaContent(html, attrValue, newContent) {
+  const pattern = new RegExp(`(<meta[^>]*\\b(?:name|property)=["']${attrValue}["'][^>]*\\bcontent=)["'][^"']*["']`, 'i');
+
+  if (!pattern.test(html)) {
+    throw new Error(`No se encontró <meta name/property="${attrValue}">`);
+  }
+
+  return html.replace(pattern, (_, prefix) => `${prefix}"${escapeHTML(newContent)}"`);
+}
+
+function setFirstJsonLdDescription(html, newValue) {
+  const pattern = /"description":\s*"[^"]*"/;
+
+  if (!pattern.test(html)) {
+    throw new Error('No se encontró el campo "description" en el JSON-LD estático');
+  }
+
+  return html.replace(pattern, `"description": ${JSON.stringify(newValue)}`);
+}
+
 function todayKeyMadrid() {
   // yyyy-mm-dd en zona Europe/Madrid, independiente de en qué UTC corra el runner.
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());
@@ -86,6 +106,16 @@ function todayLabelMadrid() {
   const formatter = new Intl.DateTimeFormat('es-ES', {
     timeZone: 'Europe/Madrid',
     weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+  });
+  return formatter.format(new Date());
+}
+
+function todayLabelCorto() {
+  // Sin año ni día de la semana, para meta description (cada carácter cuenta).
+  const formatter = new Intl.DateTimeFormat('es-ES', {
+    timeZone: 'Europe/Madrid',
     day: 'numeric',
     month: 'long',
   });
@@ -175,6 +205,13 @@ function textoRespuestaHoy(farmaciaHoy, fechaLarga) {
   return `Hoy, ${fechaLarga}, la farmacia de guardia en Alhaurín el Grande es ${farmaciaHoy.nombre}, en ${farmaciaHoy.direccion} (teléfono ${farmaciaHoy.telefono}). La guardia es orientativa, de 9:30 a 9:30 del día siguiente; confirma siempre en la fuente oficial antes de desplazarte, especialmente de noche, fines de semana o festivos.`;
 }
 
+function metaDescripcionFarmacias(farmaciaHoy, fechaCorta) {
+  if (!farmaciaHoy) {
+    return 'Hoy no consta farmacia de guardia asignada en Alhaurín el Grande. Consulta el calendario completo y la fuente oficial.';
+  }
+  return `Hoy, ${fechaCorta}, la farmacia de guardia en Alhaurín el Grande es ${farmaciaHoy.nombre} (${farmaciaHoy.direccion}). Teléfono y calendario completo.`;
+}
+
 function renderFarmaciasCallToAction(html, farmaciaHoy, fechaLarga) {
   let strong;
   let span;
@@ -240,6 +277,7 @@ function main() {
   const hoyKey = todayKeyMadrid();
   const fechaCorta = todayLabelMadrid();
   const fechaLarga = todayLabelLargo();
+  const fechaMeta = todayLabelCorto();
   const idHoy = guardias[hoyKey];
   const farmaciaHoy = idHoy ? porId[idHoy] : null;
   const respuesta = textoRespuestaHoy(farmaciaHoy, fechaLarga);
@@ -281,6 +319,11 @@ function main() {
       '@context': 'https://schema.org',
       '@graph': graph,
     });
+    const descripcion = metaDescripcionFarmacias(farmaciaHoy, fechaMeta);
+    actualizado = setMetaContent(actualizado, 'description', descripcion);
+    actualizado = setMetaContent(actualizado, 'og:description', descripcion);
+    actualizado = setMetaContent(actualizado, 'twitter:description', descripcion);
+    actualizado = setFirstJsonLdDescription(actualizado, descripcion);
     if (actualizado !== original) {
       fs.writeFileSync(FARMACIAS_FILE, actualizado);
       cambios += 1;

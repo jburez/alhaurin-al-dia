@@ -53,8 +53,8 @@
     "fin": "2026-08-03T20:59:00+02:00",
     "fuente": "AEMET",
     "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260802090946_AFAZ612903ATTA0319.xml",
-    "estado_ciclo_vida": "actualizado",
-    "actualizado_en": "2026-08-02T10:02:46+00:00",
+    "estado_ciclo_vida": "finalizado",
+    "actualizado_en": "2026-08-03T23:08:47+00:00",
     "historial": [
       {
         "nivel": "amarillo",
@@ -64,6 +64,15 @@
         "fin": "2026-08-03T20:59:00+02:00",
         "estado_ciclo_vida": "creado",
         "actualizado_en": "2026-08-01T10:04:18+00:00"
+      },
+      {
+        "nivel": "naranja",
+        "titulo": "Aviso. Nivel naranja. Temperaturas máximas. Sol y Guadalhorce",
+        "descripcion": "Aviso de temperatura máxima de nivel naranja de 13:00 03-08-2026 CEST (UTC+2) a 20:59 03-08-2026 CEST (UTC+2).",
+        "inicio": "2026-08-03T13:00:00+02:00",
+        "fin": "2026-08-03T20:59:00+02:00",
+        "estado_ciclo_vida": "actualizado",
+        "actualizado_en": "2026-08-02T10:02:46+00:00"
       }
     ]
   },

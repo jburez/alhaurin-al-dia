@@ -51,6 +51,7 @@ Scripts de generación ejecutados en local o CI
 ├── article.css
 ├── data/
 │   ├── noticias.json
+│   ├── noticias-archivo.json
 │   ├── fuentes.json
 │   ├── geografia.json
 │   ├── avisos-oficiales.json
@@ -64,6 +65,8 @@ Scripts de generación ejecutados en local o CI
 │   └── guardias-farmacias-2026.json
 ├── noticias/
 │   ├── index.html
+│   ├── archivo/
+│   │   └── index.html
 │   └── *.html
 ├── categoria/
 │   └── */index.html
@@ -73,7 +76,8 @@ Scripts de generación ejecutados en local o CI
 │   ├── generar_noticias.py
 │   ├── generar_noticias_seguro.py
 │   ├── dedupe-news.js
-│   ├── clean-orphan-news.js
+│   ├── archive-orphan-news.js
+│   ├── render-news-archive.js
 │   ├── render-home-static.js
 │   ├── render-guide-pages.js
 │   ├── generate-sitemaps.js
@@ -216,6 +220,14 @@ Campos habituales por noticia:
 ```
 
 `requiere_revision_geografica` lo añade el filtro geográfico de `data/geografia.json` (ver 5.9) cuando el texto menciona el municipio principal junto a un municipio limítrofe (p. ej. Alhaurín de la Torre). No bloquea la publicación por sí solo — queda como aviso no bloqueante en `scripts/validar_contenido.py`, a la espera del panel de revisión editorial previsto para cuando se conecten fuentes de nivel de confianza C/D.
+
+`scripts/dedupe-news.js` (`npm run news:dedupe`) limita este fichero a `MAX_NOTICIAS_TOTAL` (variable de entorno, por defecto 30) noticias activas, ordenadas por fecha descendente. Las que superan el límite no se pierden: se archivan en `data/noticias-archivo.json` (ver 5.1.1).
+
+#### 5.1.1 `data/noticias-archivo.json`
+
+Histórico de noticias que salieron de `data/noticias.json` por el límite de `MAX_NOTICIAS_TOTAL`, con el mismo esquema de campos que 5.1. No tiene límite de tamaño ni fecha de expiración. Alimenta `/noticias/archivo/` (`scripts/render-news-archive.js`, `npm run news:archive:page`).
+
+Antes de esta hemeroteca, la limpieza de huérfanas (`scripts/clean-orphan-news.js`, ya eliminado) borraba directamente el HTML de las noticias que salían del listado activo. Eso generaba cientos de URLs que Google había indexado y que luego devolvían 404 al desaparecer del disco. Ahora ese HTML se conserva sin más — el archivo JSON solo existe para poder listarlo en `/noticias/archivo/` — y `scripts/archive-orphan-news.js` (`npm run news:orphans:archive`) actúa como red de seguridad para huérfanas que aparezcan por otra vía, dándolas de alta a partir de los metadatos del propio HTML si aún no están archivadas.
 
 ### 5.2 `data/guia-util.json`
 
@@ -487,8 +499,9 @@ Definidos en `package.json`:
 npm run news                # Genera noticias desde feeds
 npm run news:dedupe         # Deduplica noticias escribiendo cambios
 npm run news:dedupe:dry     # Deduplica en modo simulación
-npm run news:orphans:dry    # Detecta páginas huérfanas de noticias
-npm run news:orphans:clean  # Borra páginas huérfanas
+npm run news:orphans:dry     # Detecta páginas huérfanas de noticias
+npm run news:orphans:archive # Archiva huérfanas que aún no estén en noticias-archivo.json
+npm run news:archive:page    # Regenera /noticias/archivo/ desde noticias-archivo.json
 npm run seo                 # Aplica ajustes SEO de home y limpia SearchAction
 npm run home:static         # Limpia contenedores dinámicos de home
 npm run guide:pages         # Genera páginas internas de guía útil

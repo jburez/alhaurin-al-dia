@@ -1,5 +1,95 @@
 [
     {
+        "titulo": "XLIII Noche Flamenca Villa de Alhaurín el Grande reúne a 430 aficionados en una velada",
+        "descripcion": "La XLIII Noche Flamenca Villa de Alhaurín el Grande celebró una noche inolvidable con actuaciones de Manuel Moreno, La Lupi y Marina Heredia en el Patio Diego Pérez.",
+        "resumen": "La XLIII Noche Flamenca Villa de Alhaurín el Grande celebró una noche inolvidable con actuaciones de Manuel Moreno, La Lupi y Marina Heredia en el Patio Diego Pérez.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.302Z",
+        "imagen": "https://i1.ytimg.com/vi/4etxF7U1Y9M/hqdefault.jpg",
+        "pagina": "noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-aficionados-en-una-velada.html"
+    },
+    {
+        "titulo": "Ruta Gastronómica Tomate Huevo Toro 2026 impulsa la gastronomía local en Málaga",
+        "descripcion": "Del 31 de julio al 31 de agosto, cerca de 50 restaurantes de Málaga, incluido Alhaurín el Grande, participan en la Ruta Gastronómica Tomate Huevo Toro 2026 con platos elaborados con este tomate de kilómetro cero.",
+        "resumen": "Del 31 de julio al 31 de agosto, cerca de 50 restaurantes de Málaga, incluido Alhaurín el Grande, participan en la Ruta Gastronómica Tomate Huevo Toro 2026 con platos elaborados con este tomate de kilómetro cero.",
+        "categoria": "Vídeos",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.301Z",
+        "imagen": "https://i1.ytimg.com/vi/Pm-XCzga_es/hqdefault.jpg",
+        "pagina": "noticias/ruta-gastronomica-tomate-huevo-toro-2026-impulsa-la-gastronomia-local-en-malaga.html"
+    },
+    {
+        "titulo": "NOTICIAS ATV 4 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande avanza en el mantenimiento deportivo, prepara las fiestas patronales y destaca actividades culturales y de ocio para este mes de agosto.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande avanza en el mantenimiento deportivo, prepara las fiestas patronales y destaca actividades culturales y de ocio para este mes de agosto.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.300Z",
+        "imagen": "https://i2.ytimg.com/vi/mHpWlYNP-ko/hqdefault.jpg",
+        "pagina": "noticias/noticias-atv-4-agosto-2026-actualidad-de-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "Aumenta el aforo diario en las piscinas municipales de Alhaurín el Grande por alta demanda",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande amplía el aforo diario de sus instalaciones acuáticas tras superar las expectativas en el primer mes de la temporada.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande amplía el aforo diario de sus instalaciones acuáticas tras superar las expectativas en el primer mes de la temporada.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.296Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Nueva-piscina-municipal-exterior_junio-2026-1024x768.png",
+        "pagina": "noticias/aumenta-el-aforo-diario-en-las-piscinas-municipales-de-alhaurin-el-grande-por-alta-demanda.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande rinde homenaje a Sete Fernández tras la victoria en el Mundial 2026",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande reconoce a Sete Fernández por su papel en la histórica conquista de la Copa Mundial de la FIFA 2026 con la Selección Española.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande reconoce a Sete Fernández por su papel en la histórica conquista de la Copa Mundial de la FIFA 2026 con la Selección Española.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.295Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Alhaurin-el-Grande-reconoce-a-Sete-Fernandez-por-llevar-el-orgullo-del-municipio-hasta-lo-mas-alto-del-futbol-mundial_2-1024x768.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-rinde-homenaje-a-sete-fernandez-tras-la-victoria-en-el-mundial-2026.html"
+    },
+    {
+        "titulo": "A través de un comunicado, la Hermandad ha trasladado sus condolencias a las familias",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y dolor.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y dolor.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.293Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/cropped-favicon-ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO-32x32.png",
+        "pagina": "noticias/a-traves-de-un-comunicado-la-hermandad-ha-trasladado-sus-condolencias-a-las-familias.html"
+    },
+    {
+        "titulo": "Abierto el plazo para alegaciones al nuevo Plan de Ordenación Urbana en Alhaurín el Grande",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande abre hasta el 15 de septiembre la participación pública para el Avance del Plan de Ordenación Urbana, junto a actividades locales como Veladas de Blanco y clausura de campamentos.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande abre hasta el 15 de septiembre la participación pública para el Avance del Plan de Ordenación Urbana, junto a actividades locales como Veladas de Blanco y clausura de campamentos.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.293Z",
+        "imagen": "https://i2.ytimg.com/vi/iN7biPHyCW0/hqdefault.jpg",
+        "pagina": "noticias/abierto-el-plazo-para-alegaciones-al-nuevo-plan-de-ordenacion-urbana-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande amplía aforo en piscina y concede ayudas a establecimientos locales",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande destina 6.000 euros en subvenciones para negocios que usen productos locales y amplía el aforo de la piscina municipal a 280 plazas.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande destina 6.000 euros en subvenciones para negocios que usen productos locales y amplía el aforo de la piscina municipal a 280 plazas.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.293Z",
+        "imagen": "https://i1.ytimg.com/vi/tQNWgc68aLY/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-concede-ayudas-a-establecimientos-locales.html"
+    },
+    {
+        "titulo": "96 golfistas compiten en el V Torneo de Golf Tomate Huevo Toro en Alhaurín Golf",
+        "descripcion": "La quinta edición del Torneo de Golf Tomate Huevo Toro reunió a 96 participantes en Alhaurín Golf para promocionar este producto agrícola local con una jornada deportiva y de convivencia.",
+        "resumen": "La quinta edición del Torneo de Golf Tomate Huevo Toro reunió a 96 participantes en Alhaurín Golf para promocionar este producto agrícola local con una jornada deportiva y de convivencia.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-04T17:55:26.292Z",
+        "imagen": "https://i4.ytimg.com/vi/3RZfkKgoUs4/hqdefault.jpg",
+        "pagina": "noticias/96-golfistas-compiten-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf-2.html"
+    },
+    {
         "titulo": "María del Carmen Plaza pronuncia el XIV Pregón de Gloria en Alhaurín el Grande",
         "descripcion": "María del Carmen Plaza protagonizó el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia en Alhaurín el Grande, marcando el inicio de las celebraciones de agosto.",
         "resumen": "María del Carmen Plaza protagonizó el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia en Alhaurín el Grande, marcando el inicio de las celebraciones de agosto.",

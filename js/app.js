@@ -635,8 +635,21 @@ function insertCommercialCtas() {
     ensureScript("js/sponsored-cards.js", "sponsored-cards-loader");
 }
 
+function initMobileBottomNav() {
+    const bottomNavItems = document.querySelectorAll(".mobile-bottom-nav .mobile-nav-item");
+    if (!bottomNavItems.length) return;
+
+    bottomNavItems.forEach(item => {
+        item.addEventListener("click", function () {
+            bottomNavItems.forEach(el => el.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+}
+
 cleanupHomeStaticArtifacts();
 initMobileMenu();
+initMobileBottomNav();
 loadNews();
 loadGuide();
 insertUsefulHubSuggestions();

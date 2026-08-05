@@ -1,0 +1,137 @@
+/* ==========================================
+   ALHAURÍN AL DÍA — Mobile App-like View & Navigation
+   ========================================== */
+
+/* Ajustes de espacio para la barra de navegación inferior en dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: calc(68px + env(safe-area-inset-bottom, 12px));
+    }
+
+    footer {
+        margin-bottom: calc(68px + env(safe-area-inset-bottom, 12px));
+    }
+
+    /* Ocultar elementos secundarios pesados en barra superior para dar prioridad a la experiencia limpia */
+    .topbar {
+        display: none;
+    }
+}
+
+/* BARRA DE NAVEGACIÓN INFERIOR FIJA (ESTILO NATIVE APP) */
+.mobile-bottom-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        height: calc(64px + env(safe-area-inset-bottom, 0px));
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        background: rgba(255, 253, 248, 0.94);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        backdrop-filter: blur(20px) saturate(180%);
+        border-top: 1px solid rgba(228, 224, 213, 0.85);
+        box-shadow: 0 -4px 20px rgba(28, 31, 27, 0.07);
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-nav-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: #5b6058;
+        font-size: 11px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.2s ease, transform 0.15s ease;
+        position: relative;
+        padding: 4px 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile-nav-item .nav-icon {
+        font-size: 19px;
+        line-height: 1;
+        margin-bottom: 3px;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .mobile-nav-item:active {
+        transform: scale(0.92);
+    }
+
+    .mobile-nav-item.active {
+        color: #455c36;
+        font-weight: 700;
+    }
+
+    .mobile-nav-item.active .nav-icon {
+        transform: translateY(-2px) scale(1.1);
+        color: #455c36;
+    }
+
+    .mobile-nav-item.active::after {
+        content: "";
+        position: absolute;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + 3px);
+        width: 18px;
+        height: 3px;
+        background: #455c36;
+        border-radius: 3px;
+    }
+
+    /* Indicador especial de urgencia para Farmacia de Guardia */
+    .mobile-nav-item.highlight {
+        color: #34462a;
+    }
+
+    .mobile-nav-item.highlight .nav-icon-badge {
+        position: relative;
+        display: inline-block;
+    }
+
+    .mobile-nav-item.highlight .nav-icon-badge::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -3px;
+        width: 7px;
+        height: 7px;
+        background: #2e7d32;
+        border-radius: 50%;
+        border: 1.5px solid #fff;
+        animation: pulse-dot 2s infinite;
+    }
+}
+
+@keyframes pulse-dot {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.7); }
+    70% { transform: scale(1.1); box-shadow: 0 0 0 5px rgba(46, 125, 50, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 125, 50, 0); }
+}
+
+/* Glassmorphism & elevación en tarjetas táctiles */
+@media (max-width: 768px) {
+    .daily-card,
+    .home-guard-card,
+    .featured-news-card,
+    .content-card {
+        border-radius: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .daily-card:active,
+    .home-guard-card:active {
+        transform: scale(0.985);
+    }
+}

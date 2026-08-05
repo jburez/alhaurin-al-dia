@@ -1,5 +1,65 @@
 [
     {
+        "titulo": "Finalizan los campamentos de verano de educación y deportes en Alhaurín el Grande y Villa",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande despide en julio los campamentos de verano que fomentan la conciliación familiar y el desarrollo de niños y niñas en Alhaurín y Villa del Guadalhorce.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande despide en julio los campamentos de verano que fomentan la conciliación familiar y el desarrollo de niños y niñas en Alhaurín y Villa del Guadalhorce.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T06:34:16.353Z",
+        "imagen": "https://i2.ytimg.com/vi/M-eHL8IehQY/hqdefault.jpg",
+        "pagina": "noticias/finalizan-los-campamentos-de-verano-de-educacion-y-deportes-en-alhaurin-el-grande-y-villa.html"
+    },
+    {
+        "titulo": "El terral se despide en Málaga tras varios días de calor extremo y mínimas de 30º",
+        "descripcion": "La Costa del Sol y el Valle del Guadalhorce continúan en aviso amarillo por temperaturas que alcanzan los 36 grados, mientras el terral se retira este miércoles.",
+        "resumen": "La Costa del Sol y el Valle del Guadalhorce continúan en aviso amarillo por temperaturas que alcanzan los 36 grados, mientras el terral se retira este miércoles.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T06:34:16.352Z",
+        "imagen": "https://static.grupojoly.com/clip/2c78136b-0625-4683-ab6f-6b08e72f56e5_source-aspect-ratio_default_0.jpg",
+        "pagina": "noticias/el-terral-se-despide-en-malaga-tras-varios-dias-de-calor-extremo-y-minimas-de-30.html"
+    },
+    {
+        "titulo": "Finaliza con éxito el proyecto de agentes eco-rurales en Alhaurín el Grande",
+        "descripcion": "El proyecto “Agentes eco-rurales para la restauración de ecosistemas” concluye en Alhaurín el Grande, impulsando empleo verde y restauración ambiental con la formación de quince personas.",
+        "resumen": "El proyecto “Agentes eco-rurales para la restauración de ecosistemas” concluye en Alhaurín el Grande, impulsando empleo verde y restauración ambiental con la formación de quince personas.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T06:34:16.352Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Finaliza-con-exito-el-proyecto-Agentes-eco-rurales-para-la-restauracion-de-ecosistemas-en-Alhaurin-el-Grande_03-771x1024.jpeg",
+        "pagina": "noticias/finaliza-con-exito-el-proyecto-de-agentes-eco-rurales-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "El acto de presentación del XIV Pregón de Gloria en honor a Nuestra Señora de Gracia",
+        "descripcion": "María del Carmen Plaza protagonizó el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia, en un acto que reunió a cofradías, asociaciones y vecinos en la biblioteca municipal de Alhaurín el Grande.",
+        "resumen": "María del Carmen Plaza protagonizó el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia, en un acto que reunió a cofradías, asociaciones y vecinos en la biblioteca municipal de Alhaurín el Grande.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T06:34:16.350Z",
+        "imagen": "https://i2.ytimg.com/vi/uNNpzWigYHg/hqdefault.jpg",
+        "pagina": "noticias/el-acto-de-presentacion-del-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande destina 6.000 euros para impulsar la hostelería local y de temporada",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para bares y restaurantes que apuesten por productos locales y de temporada, fomentando la innovación gastronómica en la localidad.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para bares y restaurantes que apuesten por productos locales y de temporada, fomentando la innovación gastronómica en la localidad.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T06:34:16.346Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Ayudas-dirigida-a-los-establecimientos-adheridos-a-la-marca-Alhaurin-Alha‿Boca-1024x576.jpg",
+        "pagina": "noticias/alhaurin-el-grande-destina-6-000-euros-para-impulsar-la-hosteleria-local-y-de-temporada.html"
+    },
+    {
+        "titulo": "Actualidad en Alhaurín el Grande: mantenimiento, cultura y actividades de verano",
+        "descripcion": "El área de Deportes realiza mantenimiento en campos municipales y Servicios Operativos prepara los barrios para los traslados de la Virgen de Gracia en Alhaurín el Grande.",
+        "resumen": "El área de Deportes realiza mantenimiento en campos municipales y Servicios Operativos prepara los barrios para los traslados de la Virgen de Gracia en Alhaurín el Grande.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T06:34:16.344Z",
+        "imagen": "https://i2.ytimg.com/vi/mHpWlYNP-ko/hqdefault.jpg",
+        "pagina": "noticias/actualidad-en-alhaurin-el-grande-mantenimiento-cultura-y-actividades-de-verano.html"
+    },
+    {
         "titulo": "La XLIII Noche Flamenca convierte a Alhaurín el Grande en capital del arte jondo",
         "descripcion": "Más de 400 personas disfrutaron en Alhaurín el Grande de la XLIII Noche Flamenca con actuaciones de Marina Heredia, El Pele y La Lupi.",
         "resumen": "Más de 400 personas disfrutaron en Alhaurín el Grande de la XLIII Noche Flamenca con actuaciones de Marina Heredia, El Pele y La Lupi.",

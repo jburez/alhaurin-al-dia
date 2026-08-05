@@ -1,5 +1,65 @@
 [
     {
+        "titulo": "El Ayuntamiento de Alhaurín el Grande lanza ayudas de 6.000 euros para establecimientos",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza ayudas de 6.000 euros para establecimientos que promuevan platos y bebidas con productos locales y de temporada.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza ayudas de 6.000 euros para establecimientos que promuevan platos y bebidas con productos locales y de temporada.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T19:44:43.785Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Ayudas-dirigida-a-los-establecimientos-adheridos-a-la-marca-Alhaurin-Alha‿Boca-1024x576.jpg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-lanza-ayudas-de-6-000-euros-para-establecimientos.html"
+    },
+    {
+        "titulo": "El Ayuntamiento de Alhaurín el Grande licita reparación de cubierta del Polideportivo",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del pabellón 2 del Polideportivo Municipal, con una inversión de 282.000 euros financiada por el Gobierno de España.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del pabellón 2 del Polideportivo Municipal, con una inversión de 282.000 euros financiada por el Gobierno de España.",
+        "categoria": "Obras y Servicios",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T19:44:43.785Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/El-Ayuntamiento-licita-las-obras-de-reparacion-de-la-cubierta-del-pabellon-2-del-Polideportivo_01-1024x767.jpeg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-licita-reparacion-de-cubierta-del-polideportivo.html"
+    },
+    {
+        "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande clausura los campamentos de educación y deporte en Alhaurín y Villa del Guadalhorce, promoviendo conciliación familiar y hábitos saludables para niños.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande clausura los campamentos de educación y deporte en Alhaurín y Villa del Guadalhorce, promoviendo conciliación familiar y hábitos saludables para niños.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T19:44:43.783Z",
+        "imagen": "https://i2.ytimg.com/vi/M-eHL8IehQY/hqdefault.jpg",
+        "pagina": "noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio-2.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande impulsa el Parque de la Arquilla del Agua con inversión de 1,5 millones",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para diseñar el Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y urbana.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para diseñar el Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y urbana.",
+        "categoria": "Obras y Servicios",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T19:44:43.781Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Logos-para-noticias-Fondos-Edil_junio-2026_1920x1080-1-1024x78.png",
+        "pagina": "noticias/alhaurin-el-grande-impulsa-el-parque-de-la-arquilla-del-agua-con-inversion-de-1-5-millones.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande avanza en obras, eventos y limpieza de arroyos este agosto 2026",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande impulsa proyectos como el Parque Arquilla del Agua, limpieza de arroyos y eventos culturales destacados en agosto de 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande impulsa proyectos como el Parque Arquilla del Agua, limpieza de arroyos y eventos culturales destacados en agosto de 2026.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T19:44:43.780Z",
+        "imagen": "https://i3.ytimg.com/vi/bzD0oFxH3gU/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-avanza-en-obras-eventos-y-limpieza-de-arroyos-este-agosto-2026.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande amplía aforo en piscina y concede ayudas a hostelería local",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande destina 6.000 euros en subvenciones para establecimientos que usen productos locales y amplía el aforo de la piscina municipal a 280 plazas.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande destina 6.000 euros en subvenciones para establecimientos que usen productos locales y amplía el aforo de la piscina municipal a 280 plazas.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-05T19:44:43.779Z",
+        "imagen": "https://i1.ytimg.com/vi/tQNWgc68aLY/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-concede-ayudas-a-hosteleria-local.html"
+    },
+    {
         "titulo": "María del Carmen Plaza, pregonera de este año, fue presentada por el pregonero anterior",
         "descripcion": "María del Carmen Plaza protagonizó el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia, en un acto que reunió a cofradías, asociaciones y vecinos en la biblioteca municipal de Alhaurín el Grande.",
         "resumen": "María del Carmen Plaza protagonizó el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia, en un acto que reunió a cofradías, asociaciones y vecinos en la biblioteca municipal de Alhaurín el Grande.",

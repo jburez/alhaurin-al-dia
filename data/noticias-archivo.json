@@ -1,5 +1,75 @@
 [
     {
+        "titulo": "Podcast &#x27;Así lo viví&#x27; con Javier Gallego: Programa 32 ya disponible",
+        "descripcion": "Escucha el programa 32 de &#x27;Así lo viví&#x27; con Javier Gallego, donde se abordan temas de interés local y actualidad en Alhaurín el Grande.",
+        "resumen": "Escucha el programa 32 de &#x27;Así lo viví&#x27; con Javier Gallego, donde se abordan temas de interés local y actualidad en Alhaurín el Grande.",
+        "categoria": "Vídeos",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-07T04:29:53.707Z",
+        "imagen": "https://i1.ytimg.com/vi/tpilXfTBkn4/hqdefault.jpg",
+        "pagina": "noticias/podcast-asi-lo-vivi-con-javier-gallego-programa-32-ya-disponible.html"
+    },
+    {
+        "titulo": "Cristóbal Sánchez comparte su experiencia en el programa 33 de Así lo viví",
+        "descripcion": "El programa 33 de Así lo viví presenta a Cristóbal Sánchez, quien relata sus vivencias y experiencias personales en una entrevista cercana y amena.",
+        "resumen": "El programa 33 de Así lo viví presenta a Cristóbal Sánchez, quien relata sus vivencias y experiencias personales en una entrevista cercana y amena.",
+        "categoria": "Vídeos",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-07T04:29:53.700Z",
+        "imagen": "https://i3.ytimg.com/vi/23Kk4YEgJVc/hqdefault.jpg",
+        "pagina": "noticias/cristobal-sanchez-comparte-su-experiencia-en-el-programa-33-de-asi-lo-vivi.html"
+    },
+    {
+        "titulo": "Clausuras de los campamentos de verano en Alhaurín y Villa del Guadalhorce 2026",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande finaliza los campamentos de verano con una fiesta de despedida tras un mes de actividades para niños y apoyo a la conciliación familiar.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande finaliza los campamentos de verano con una fiesta de despedida tras un mes de actividades para niños y apoyo a la conciliación familiar.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-07T04:29:53.699Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986-300x142.jpg",
+        "pagina": "noticias/clausuras-de-los-campamentos-de-verano-en-alhaurin-y-villa-del-guadalhorce-2026.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande crea el Parque de la Arquilla del Agua con inversión de 1,5 millones",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande licita el proyecto del Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y el ocio local.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande licita el proyecto del Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y el ocio local.",
+        "categoria": "Obras y Servicios",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-07T04:29:53.694Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Logos-para-noticias-Fondos-Edil_junio-2026_1920x1080-1-1024x78.png",
+        "pagina": "noticias/alhaurin-el-grande-crea-el-parque-de-la-arquilla-del-agua-con-inversion-de-1-5-millones.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande declara luto oficial por el fallecimiento de Diego Solano López",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lamenta la pérdida de Diego Solano López, Juez de Paz, y decreta dos días de luto oficial con un minuto de silencio en su memoria.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lamenta la pérdida de Diego Solano López, Juez de Paz, y decreta dos días de luto oficial con un minuto de silencio en su memoria.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-07T04:29:53.694Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Juzgado-de-paz_bandera-media-asta-768x1024.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-declara-luto-oficial-por-el-fallecimiento-de-diego-solano-lopez.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande despide a Diego Solano y avanza en obras y eventos locales",
+        "descripcion": "El municipio lamenta la pérdida del histórico juez de paz Diego Solano y anuncia la licitación para reparar el pabellón 2, además de preparar eventos culturales y deportivos en agosto.",
+        "resumen": "El municipio lamenta la pérdida del histórico juez de paz Diego Solano y anuncia la licitación para reparar el pabellón 2, además de preparar eventos culturales y deportivos en agosto.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-07T04:29:53.694Z",
+        "imagen": "https://i2.ytimg.com/vi/uKvNLwsXWio/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-en-obras-y-eventos-locales.html"
+    },
+    {
+        "titulo": "07 08 26 VELADAS DE BLANCO",
+        "descripcion": "El Camino de Málaga en Alhaurín el Grande acogió una nueva edición de las Veladas de Blanco con 22 establecimientos, música en vivo, animación y actividades para todas las edades.",
+        "resumen": "El Camino de Málaga en Alhaurín el Grande acogió una nueva edición de las Veladas de Blanco con 22 establecimientos, música en vivo, animación y actividades para todas las edades.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-07T04:29:53.689Z",
+        "imagen": "https://i4.ytimg.com/vi/SiFlTXzwd-U/hqdefault.jpg",
+        "pagina": "noticias/07-08-26-veladas-de-blanco.html"
+    },
+    {
         "titulo": "Programa 32 de &#x27;Así lo viví&#x27; con Javier Gallego ya disponible en ATV Alhaurín",
         "descripcion": "El programa 32 de &#x27;Así lo viví&#x27; con Javier Gallego se estrena en ATV Alhaurín, ofreciendo contenido local y entrevistas de interés para Alhaurín el Grande.",
         "resumen": "El programa 32 de &#x27;Así lo viví&#x27; con Javier Gallego se estrena en ATV Alhaurín, ofreciendo contenido local y entrevistas de interés para Alhaurín el Grande.",

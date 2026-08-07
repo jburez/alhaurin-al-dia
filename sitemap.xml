@@ -559,7 +559,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-declara-luto-por-el-fallecimiento-de-diego-solano-lopez-juez-de-paz.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-declara-luto-por-el-fallecimiento-del-juez-de-paz-diego-solano-lopez.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-con-proyectos-municipales-clave.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1327,6 +1339,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-otros-municipios.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-con-50-restaurantes-en-malaga.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -1556,6 +1574,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-en-alhaurin-al-dia.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

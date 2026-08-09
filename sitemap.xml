@@ -379,6 +379,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-en-los-proximos-dias.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -860,6 +866,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-rinde-homenaje-a-sete-fernandez-por-su-papel-en-la-victoria-mundialista.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-rinde-homenaje-a-sete-fernandez-tras-ganar-el-mundial-con-espana.html</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

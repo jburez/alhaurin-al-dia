@@ -1,5 +1,35 @@
 [
     {
+        "titulo": "La piscina de Alhaurín el Grande amplía su aforo tras superar las 6.000 reservas en julio",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande aumenta el aforo diario de la piscina municipal de 250 a 280 plazas debido a la alta demanda registrada en julio.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande aumenta el aforo diario de la piscina municipal de 250 a 280 plazas debido a la alta demanda registrada en julio.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-09T02:12:35.027Z",
+        "imagen": "https://s3.ppllstatics.com/diariosur/www/multimedia/local/2026/08/07/Nueva%20piscina%20municipal%20exterior_junio%202026-Rt7DElxfPmjtd8AblNJhjmL-1200x840@Diario%20Sur.png",
+        "pagina": "noticias/la-piscina-de-alhaurin-el-grande-amplia-su-aforo-tras-superar-las-6-000-reservas-en-julio.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande lamenta el fallecimiento de Diego Solano López, Juez de Paz",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande declara dos días de luto oficial y convoca un minuto de silencio por la muerte de Diego Solano López, Juez de Paz del municipio.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande declara dos días de luto oficial y convoca un minuto de silencio por la muerte de Diego Solano López, Juez de Paz del municipio.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-09T02:12:35.013Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Juzgado-de-paz_bandera-media-asta-768x1024.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-lamenta-el-fallecimiento-de-diego-solano-lopez-juez-de-paz.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande licita reparación de cubierta en pabellón 2 del Polideportivo Municipal",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del pabellón 2 del Polideportivo Municipal con una inversión de 282.000 euros financiada por el Gobierno de España.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del pabellón 2 del Polideportivo Municipal con una inversión de 282.000 euros financiada por el Gobierno de España.",
+        "categoria": "Obras y Servicios",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-09T02:12:35.013Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/El-Ayuntamiento-licita-las-obras-de-reparacion-de-la-cubierta-del-pabellon-2-del-Polideportivo_01-1024x767.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-licita-reparacion-de-cubierta-en-pabellon-2-del-polideportivo-municipal.html"
+    },
+    {
         "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han provocado pérdidas humanas y sufrimiento.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han provocado pérdidas humanas y sufrimiento.",

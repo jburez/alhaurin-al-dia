@@ -19,6 +19,7 @@
     "farmacia:static": "node scripts/render-farmacia-guardia-static.js",
     "home:widgets": "node scripts/render-home-widgets-static.js",
     "news:rss": "node scripts/generate-news-rss.js",
+    "whatsapp:today": "node scripts/generate-whatsapp-summary.js",
     "sitemap": "node scripts/generate-sitemaps.js && npm run news:rss",
     "seo:audit": "node scripts/audit-seo.js --warn-only",
     "seo:audit:strict": "node scripts/audit-seo.js",

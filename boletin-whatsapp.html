@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boletín Diario WhatsApp — Alhaurín al Día</title>
+    <meta name="description" content="Herramienta interna para generar y compartir el boletín diario de noticias de Alhaurín el Grande en el Canal Oficial de WhatsApp.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://alhaurinaldia.es/boletin-whatsapp.html">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body { background: #f4f0e8; padding: 40px 20px; font-family: system-ui, sans-serif; }
+        .boletin-card { max-width: 600px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 32px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border: 1px solid #e0d8c8; }
+        h1 { font-family: var(--font-display, serif); color: #181d17; font-size: 24px; margin-top: 0; }
+        pre { background: #f8f6f0; border: 1px solid #e4decb; padding: 20px; border-radius: 16px; font-family: inherit; font-size: 14px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #222; }
+        .btn-group { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+        .btn-copy { background: #455c36; color: #fff; border: none; padding: 12px 24px; border-radius: 999px; font-weight: 800; cursor: pointer; font-size: 14px; }
+        .btn-copy:hover { background: #354829; }
+        .btn-send { background: #25D366; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 999px; font-weight: 800; font-size: 14px; display: inline-block; }
+        .btn-send:hover { background: #1da851; }
+        .toast { display: none; margin-top: 10px; color: #2e6930; font-weight: 700; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="boletin-card">
+        <h1>📱 Boletín Diario para WhatsApp</h1>
+        <p>Este es el mensaje generado automáticamente con las noticias más recientes y enlaces oficiales a la web.</p>
+        <pre id="texto-boletin">☀️ *ALHAURÍN AL DÍA | BOLETÍN LOCAL*
+🗓️ Lunes, 10 de agosto de 2026
+
+💊 *Farmacia de guardia:* Consulta la farmacia activa de hoy en la web.
+📢 *Avisos y Servicios:* Consulta estado de tráfico y tiempo en tiempo real.
+
+📰 *ÚLTIMAS NOTICIAS DESTACADAS DE ALHAURÍN:*
+
+📌 *Agenda cultural de Alhaurín el Grande: próximos eventos destacados en PlaneATV*
+Consulta la agenda cultural de Alhaurín el Grande con las próximas actividades y eventos gracias a PlaneATV y la Asociación Cultural El Laurel.
+👇 *Leer noticia:*
+https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados-en-planeatv.html
+
+📌 *Alhaurín el Grande impulsa nuevo parque y mejora arroyos tras lluvias de verano*
+El Ayuntamiento de Alhaurín el Grande licita el proyecto del Parque Arquilla del Agua y realiza limpieza en siete arroyos para prevenir daños tras las lluvias estivales.
+👇 *Leer noticia:*
+https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-nuevo-parque-y-mejora-arroyos-tras-lluvias-de-verano.html
+
+📌 *Alhaurín el Grande despide a Diego Solano y avanza en obras y eventos locales*
+El municipio lamenta la pérdida del juez de paz Diego Solano y anuncia la licitación para reparar el pabellón 2, además de impulsar el comercio y preparar actividades culturales y deportivas.
+👇 *Leer noticia:*
+https://alhaurinaldia.es/noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-en-obras-y-eventos-locales.html
+
+----------------------------------------
+📲 *Toda la información y servicios de Alhaurín el Grande:*
+👉 https://alhaurinaldia.es/</pre>
+        <div class="btn-group">
+            <button class="btn-copy" onclick="copiarTexto()">📋 Copiar Texto</button>
+            <a href="https://api.whatsapp.com/send?text=%E2%98%80%EF%B8%8F%20*ALHAUR%C3%8DN%20AL%20D%C3%8DA%20%7C%20BOLET%C3%8DN%20LOCAL*%0A%F0%9F%97%93%EF%B8%8F%20Lunes%2C%2010%20de%20agosto%20de%202026%0A%0A%F0%9F%92%8A%20*Farmacia%20de%20guardia%3A*%20Consulta%20la%20farmacia%20activa%20de%20hoy%20en%20la%20web.%0A%F0%9F%93%A2%20*Avisos%20y%20Servicios%3A*%20Consulta%20estado%20de%20tr%C3%A1fico%20y%20tiempo%20en%20tiempo%20real.%0A%0A%F0%9F%93%B0%20*%C3%9ALTIMAS%20NOTICIAS%20DESTACADAS%20DE%20ALHAUR%C3%8DN%3A*%0A%0A%F0%9F%93%8C%20*Agenda%20cultural%20de%20Alhaur%C3%ADn%20el%20Grande%3A%20pr%C3%B3ximos%20eventos%20destacados%20en%20PlaneATV*%0AConsulta%20la%20agenda%20cultural%20de%20Alhaur%C3%ADn%20el%20Grande%20con%20las%20pr%C3%B3ximas%20actividades%20y%20eventos%20gracias%20a%20PlaneATV%20y%20la%20Asociaci%C3%B3n%20Cultural%20El%20Laurel.%0A%F0%9F%91%87%20*Leer%20noticia%3A*%0Ahttps%3A%2F%2Falhaurinaldia.es%2Fnoticias%2Fagenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados-en-planeatv.html%0A%0A%F0%9F%93%8C%20*Alhaur%C3%ADn%20el%20Grande%20impulsa%20nuevo%20parque%20y%20mejora%20arroyos%20tras%20lluvias%20de%20verano*%0AEl%20Ayuntamiento%20de%20Alhaur%C3%ADn%20el%20Grande%20licita%20el%20proyecto%20del%20Parque%20Arquilla%20del%20Agua%20y%20realiza%20limpieza%20en%20siete%20arroyos%20para%20prevenir%20da%C3%B1os%20tras%20las%20lluvias%20estivales.%0A%F0%9F%91%87%20*Leer%20noticia%3A*%0Ahttps%3A%2F%2Falhaurinaldia.es%2Fnoticias%2Falhaurin-el-grande-impulsa-nuevo-parque-y-mejora-arroyos-tras-lluvias-de-verano.html%0A%0A%F0%9F%93%8C%20*Alhaur%C3%ADn%20el%20Grande%20despide%20a%20Diego%20Solano%20y%20avanza%20en%20obras%20y%20eventos%20locales*%0AEl%20municipio%20lamenta%20la%20p%C3%A9rdida%20del%20juez%20de%20paz%20Diego%20Solano%20y%20anuncia%20la%20licitaci%C3%B3n%20para%20reparar%20el%20pabell%C3%B3n%202%2C%20adem%C3%A1s%20de%20impulsar%20el%20comercio%20y%20preparar%20actividades%20culturales%20y%20deportivas.%0A%F0%9F%91%87%20*Leer%20noticia%3A*%0Ahttps%3A%2F%2Falhaurinaldia.es%2Fnoticias%2Falhaurin-el-grande-despide-a-diego-solano-y-avanza-en-obras-y-eventos-locales.html%0A%0A----------------------------------------%0A%F0%9F%93%B2%20*Toda%20la%20informaci%C3%B3n%20y%20servicios%20de%20Alhaur%C3%ADn%20el%20Grande%3A*%0A%F0%9F%91%89%20https%3A%2F%2Falhaurinaldia.es%2F" target="_blank" rel="noopener noreferrer" class="btn-send">💬 Abrir en WhatsApp →</a>
+        </div>
+        <div id="toast" class="toast">✓ ¡Texto copiado al portapapeles!</div>
+    </div>
+    <script>
+        function copiarTexto() {
+            var texto = document.getElementById("texto-boletin").innerText;
+            navigator.clipboard.writeText(texto).then(function() {
+                var toast = document.getElementById("toast");
+                toast.style.display = "block";
+                setTimeout(function() { toast.style.display = "none"; }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>

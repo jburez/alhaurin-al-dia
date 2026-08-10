@@ -693,6 +693,157 @@ function initMobileBottomNav() {
     });
 }
 
+function initLiveSearchOverlay() {
+    // Si ya existe el modal, evitamos duplicados
+    if (document.getElementById("search-modal")) return;
+
+    // Inyectar HTML del Modal de Búsqueda
+    const modal = document.createElement("div");
+    modal.className = "search-modal";
+    modal.id = "search-modal";
+    modal.setAttribute("aria-hidden", "true");
+    modal.innerHTML = `
+        <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+        <div class="search-modal-box">
+            <div class="search-modal-header">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <input type="search" id="global-search-input" placeholder="Buscar noticias, farmacias, trámites, movilidad, avisos..." autocomplete="off" />
+                <button type="button" class="search-modal-close" id="search-modal-close" aria-label="Cerrar búsqueda">✕</button>
+            </div>
+            <div class="search-modal-results" id="search-modal-results">
+                <div class="search-modal-hint">
+                    <p>💡 Escribe para buscar noticias, farmacias, teléfonos de urgencia, trámites o servicios de Alhaurín el Grande.</p>
+                </div>
+            </div>
+            <div class="search-modal-footer">
+                <span>Pulsa <kbd>ESC</kbd> para cerrar</span>
+                <span>Navegación instantánea de Alhaurín al Día</span>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    const input = document.getElementById("global-search-input");
+    const resultsContainer = document.getElementById("search-modal-results");
+    const closeBtn = document.getElementById("search-modal-close");
+    const backdrop = document.getElementById("search-modal-backdrop");
+
+    function openSearchModal() {
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+        setTimeout(() => input.focus(), 50);
+    }
+
+    function closeSearchModal() {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("modal-open");
+        input.value = "";
+        renderDefaultHint();
+    }
+
+    function renderDefaultHint() {
+        resultsContainer.innerHTML = `
+            <div class="search-modal-hint">
+                <p>💡 Escribe para buscar noticias, farmacias, teléfonos de urgencia, trámites o servicios de Alhaurín el Grande.</p>
+            </div>
+        `;
+    }
+
+    function performSearch(query) {
+        const q = String(query || "").trim().toLowerCase();
+        if (!q) {
+            renderDefaultHint();
+            return;
+        }
+
+        // Buscar en Hubs Útiles
+        const matchedHubs = HUBS_UTILES.filter(hub => {
+            const str = `${hub.title} ${hub.description} ${(hub.keywords || []).join(" ")}`.toLowerCase();
+            return str.includes(q);
+        });
+
+        // Buscar en Noticias
+        const matchedNews = (allNews || []).filter(item => {
+            const str = `${item.titulo || ""} ${item.resumen || ""} ${item.categoria || ""} ${item.fuente || ""}`.toLowerCase();
+            return str.includes(q);
+        }).slice(0, 5);
+
+        if (matchedHubs.length === 0 && matchedNews.length === 0) {
+            resultsContainer.innerHTML = `
+                <div class="search-modal-empty">
+                    <p>No se han encontrado resultados para "<strong>${escapeHTML(q)}</strong>".</p>
+                </div>
+            `;
+            return;
+        }
+
+        let html = "";
+
+        if (matchedHubs.length > 0) {
+            html += `
+                <div class="search-section-group">
+                    <span class="search-section-title">Guía Útil y Servicios</span>
+                    ${matchedHubs.map(hub => `
+                        <a href="${escapeHTML(normalizeLink(hub.url))}" class="search-result-item">
+                            <span class="search-badge">Guía Útil</span>
+                            <div>
+                                <strong>${escapeHTML(hub.title)}</strong>
+                                <p>${escapeHTML(hub.description)}</p>
+                            </div>
+                        </a>
+                    `).join("")}
+                </div>
+            `;
+        }
+
+        if (matchedNews.length > 0) {
+            html += `
+                <div class="search-section-group">
+                    <span class="search-section-title">Noticias Recientes</span>
+                    ${matchedNews.map(item => `
+                        <a href="${escapeHTML(normalizeLink(item.pagina || item.url || "#"))}" class="search-result-item">
+                            <span class="search-badge news">${escapeHTML(item.categoria || "Noticia")}</span>
+                            <div>
+                                <strong>${escapeHTML(item.titulo || "Noticia local")}</strong>
+                                <p>${escapeHTML(truncateText(item.resumen || item.descripcion || "", 90))}</p>
+                            </div>
+                        </a>
+                    `).join("")}
+                </div>
+            `;
+        }
+
+        resultsContainer.innerHTML = html;
+    }
+
+    // Event Listeners
+    document.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+            e.preventDefault();
+            if (modal.classList.contains("open")) {
+                closeSearchModal();
+            } else {
+                openSearchModal();
+            }
+        } else if (e.key === "Escape" && modal.classList.contains("open")) {
+            closeSearchModal();
+        }
+    });
+
+    document.querySelectorAll(".search-toggle").forEach(btn => {
+        btn.addEventListener("click", openSearchModal);
+    });
+
+    closeBtn.addEventListener("click", closeSearchModal);
+    backdrop.addEventListener("click", closeSearchModal);
+
+    input.addEventListener("input", (e) => {
+        performSearch(e.target.value);
+    });
+}
+
 cleanupHomeStaticArtifacts();
 initMobileMenu();
 initMobileBottomNav();
@@ -700,3 +851,5 @@ loadNews();
 loadGuide();
 insertUsefulHubSuggestions();
 insertCommercialCtas();
+initLiveSearchOverlay();
+

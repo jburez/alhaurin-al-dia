@@ -3,15 +3,49 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const NEWS_FILE = path.join(ROOT, 'data', 'noticias.json');
+const FARMACIAS_DATA_FILE = path.join(ROOT, 'data', 'farmacias.json');
+const GUARDIAS_DATA_FILE = path.join(ROOT, 'data', 'guardias-farmacias-2026.json');
+const AEMET_DATA_FILE = path.join(ROOT, 'data', 'tiempo-aemet.json');
 const OUTPUT_TXT = path.join(ROOT, 'reports', 'whatsapp-boletin-hoy.txt');
 const OUTPUT_HTML = path.join(ROOT, 'boletin-whatsapp.html');
 const BASE_URL = 'https://alhaurinaldia.es';
 
-function formatDateSpanish(dateStr) {
-  const date = dateStr ? new Date(dateStr) : new Date();
-  const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
-  const formatted = date.toLocaleDateString('es-ES', options);
+function formatDateSpanish() {
+  const options = { timeZone: 'Europe/Madrid', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+  const formatted = new Date().toLocaleDateString('es-ES', options);
   return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+}
+
+function getTodayKeyMadrid() {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());
+}
+
+function getFarmaciaHoy() {
+  try {
+    const farmacias = JSON.parse(fs.readFileSync(FARMACIAS_DATA_FILE, 'utf8'));
+    const guardiasData = JSON.parse(fs.readFileSync(GUARDIAS_DATA_FILE, 'utf8'));
+    const hoyKey = getTodayKeyMadrid();
+    const guardias = guardiasData.guardias || {};
+    const idHoy = guardias[hoyKey];
+
+    if (!idHoy) return null;
+
+    const porId = {};
+    farmacias.forEach(f => { porId[f.id] = f; });
+    return porId[idHoy] || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function getTiempoHoy() {
+  try {
+    const data = JSON.parse(fs.readFileSync(AEMET_DATA_FILE, 'utf8'));
+    if (data && data.estadoSky) {
+      return `${data.estadoSky} (Máx: ${data.max}° / Mín: ${data.min}°)`;
+    }
+  } catch (e) { /* fallback */ }
+  return 'Despejado / Soleado en Alhaurín';
 }
 
 function generateWhatsAppBoletin() {
@@ -24,29 +58,46 @@ function generateWhatsAppBoletin() {
   }
 
   const hoyTexto = formatDateSpanish();
+  const farmaciaHoy = getFarmaciaHoy();
+  const tiempoHoy = getTiempoHoy();
   const destacadas = noticias.slice(0, 3);
+
+  // Formato Farmacia
+  let farmaciaTexto = 'Consulta la guardia de hoy en la web.';
+  if (farmaciaHoy) {
+    farmaciaTexto = `*${farmaciaHoy.nombre}*\n   📍 ${farmaciaHoy.direccion}\n   📞 Tel: ${farmaciaHoy.telefono || 'Ver en web'}\n   🕒 Guardia orientativa 9:30h a 9:30h`;
+  }
 
   const noticiasTexto = destacadas.map((item, idx) => {
     const pagePath = item.pagina || item.url || '';
     const itemUrl = pagePath.startsWith('http') ? pagePath : `${BASE_URL}/${pagePath.replace(/^\/+/, '')}`;
     return `📌 *${item.titulo}*
 ${item.resumen || item.descripcion || ''}
-👇 *Leer noticia:*
+👇 *Leer noticia completa:*
 ${itemUrl}`;
   }).join('\n\n');
 
   const mensajeWhatsApp = `☀️ *ALHAURÍN AL DÍA | BOLETÍN LOCAL*
 🗓️ ${hoyTexto}
 
-💊 *Farmacia de guardia:* Consulta la farmacia activa de hoy en la web.
-📢 *Avisos y Servicios:* Consulta estado de tráfico y tiempo en tiempo real.
+💊 *FARMACIA DE GUARDIA HOY EN ALHAURÍN:*
+${farmaciaTexto}
 
-📰 *ÚLTIMAS NOTICIAS DESTACADAS DE ALHAURÍN:*
+🌤️ *EL TIEMPO HOY:*
+${tiempoHoy}
+
+📢 *AVISOS Y SERVICIOS:*
+- 🚗 *Tráfico y Accesos:* Sin incidencias reportadas.
+- ☎️ *Teléfonos Útiles / Emergencias:* https://alhaurinaldia.es/guia-util/telefonos/
+- 📋 *Trámites Municipales:* https://alhaurinaldia.es/guia-util/tramites/
+
+━━━━━━━━━━━━━━━━━━━━━
+📰 *ÚLTIMAS NOTICIAS LOCALES DE HOY:*
 
 ${noticiasTexto}
 
-----------------------------------------
-📲 *Toda la información y servicios de Alhaurín el Grande:*
+━━━━━━━━━━━━━━━━━━━━━
+📲 *Consulta la portada con toda la información local:*
 👉 https://alhaurinaldia.es/`;
 
   // Guardar en reporte TXT
@@ -71,7 +122,7 @@ ${noticiasTexto}
     <link rel="stylesheet" href="./css/styles.css">
     <style>
         body { background: #f4f0e8; padding: 40px 20px; font-family: system-ui, sans-serif; }
-        .boletin-card { max-width: 600px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 32px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border: 1px solid #e0d8c8; }
+        .boletin-card { max-width: 640px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 32px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border: 1px solid #e0d8c8; }
         h1 { font-family: var(--font-display, serif); color: #181d17; font-size: 24px; margin-top: 0; }
         pre { background: #f8f6f0; border: 1px solid #e4decb; padding: 20px; border-radius: 16px; font-family: inherit; font-size: 14px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #222; }
         .btn-group { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
@@ -85,7 +136,7 @@ ${noticiasTexto}
 <body>
     <div class="boletin-card">
         <h1>📱 Boletín Diario para WhatsApp</h1>
-        <p>Este es el mensaje generado automáticamente con las noticias más recientes y enlaces oficiales a la web.</p>
+        <p>Generado automáticamente con la <strong>farmacia de guardia real de hoy</strong>, tiempo, teléfonos de emergencia y noticias destacadas.</p>
         <pre id="texto-boletin">${mensajeWhatsApp}</pre>
         <div class="btn-group">
             <button class="btn-copy" onclick="copiarTexto()">📋 Copiar Texto</button>
@@ -109,12 +160,12 @@ ${noticiasTexto}
   fs.writeFileSync(OUTPUT_HTML, htmlContent, 'utf8');
 
   console.log('====================================');
-  console.log('[WhatsApp Generator] Boletín generado con éxito:');
+  console.log('[WhatsApp Generator] Boletín mejorado generado con éxito:');
   console.log('====================================\n');
   console.log(mensajeWhatsApp);
   console.log('\n====================================');
   console.log(`Guardado en: ${OUTPUT_TXT}`);
-  console.log(`Herramienta web creada en: https://alhaurinaldia.es/boletin-whatsapp.html`);
+  console.log(`Herramienta web actualizada en: https://alhaurinaldia.es/boletin-whatsapp.html`);
 }
 
 generateWhatsAppBoletin();

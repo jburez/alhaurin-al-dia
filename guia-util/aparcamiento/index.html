@@ -25,34 +25,45 @@
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/ads.css">
     <style>
-        .guide-detail-page { padding: 40px 0 60px; background: #faf8f5; }
-        .guide-breadcrumbs { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); margin-bottom: 20px; }
-        .guide-breadcrumbs a { color: var(--accent); font-weight: 700; text-decoration: none; }
-        .guide-header-shell { background: #ffffff; border-radius: 24px; padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line); box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 32px; }
-        .guide-header-badge { display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; border-radius: 999px; background: rgba(69, 92, 54, 0.08); color: var(--accent); font-size: 12px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; }
-        .guide-header-shell h1 { font-family: var(--font-display); font-size: clamp(26px, 4vw, 38px); color: var(--ink); margin: 0 0 12px; line-height: 1.2; }
-        .guide-header-shell p.lead { font-size: 16px; color: var(--muted); line-height: 1.6; margin: 0 0 24px; max-width: 800px; }
-        .action-hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
-        .btn-action-pill { display: inline-flex; align-items: center; gap: 6px; padding: 12px 20px; border-radius: 999px; background: var(--accent); color: #ffffff; font-size: 14px; font-weight: 800; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
-        .btn-action-pill:hover { background: #354829; transform: translateY(-2px); color: #ffffff; }
+        .editorial-page-wrap { padding: 32px 0 60px; background: #fbf9f5; }
+        .editorial-container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
 
-        /* Stream / Timeline fluido */
-        .guide-stream-container { background: #ffffff; border-radius: 24px; padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line); box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
-        .stream-title { font-family: var(--font-display); font-size: 22px; color: var(--ink); margin: 0 0 24px; display: flex; align-items: center; gap: 10px; }
-        .stream-list { display: flex; flex-direction: column; gap: 20px; }
-        .stream-item { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 20px; border-radius: 16px; background: #fdfbf7; border: 1px solid #e8e2d4; transition: border-color 0.2s ease; }
-        .stream-item:hover { border-color: rgba(69, 92, 54, 0.4); }
-        .stream-number { width: 44px; height: 44px; border-radius: 12px; background: rgba(69, 92, 54, 0.1); color: var(--accent); font-weight: 900; font-size: 15px; display: grid; place-items: center; flex-shrink: 0; }
-        .stream-body { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
-        .stream-content { font-size: 15px; color: #2d3748; line-height: 1.6; font-weight: 600; }
-        .stream-link-wrapper { margin-top: 4px; }
-        .stream-action-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 8px; background: rgba(69, 92, 54, 0.08); color: var(--accent); font-size: 13px; font-weight: 800; text-decoration: none; transition: background 0.2s ease; }
-        .stream-action-btn:hover { background: rgba(69, 92, 54, 0.18); text-decoration: none; }
+        /* Breadcrumbs compactos sin estiramiento */
+        .editorial-breadcrumbs { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #666666; margin-bottom: 24px; flex-wrap: wrap; justify-content: flex-start; width: auto; }
+        .editorial-breadcrumbs a { color: #455c36; font-weight: 700; text-decoration: none; }
+        .editorial-breadcrumbs a:hover { text-decoration: underline; }
+        .editorial-breadcrumbs span.sep { color: #999999; font-size: 11px; }
 
-        @media(max-width: 640px) {
-            .stream-item { grid-template-columns: 1fr; }
-            .stream-number { display: none; }
-        }
+        /* Shell principal unificado */
+        .editorial-main-card { background: #ffffff; border: 1px solid #e2dacd; border-radius: 24px; padding: clamp(24px, 4vw, 40px); box-shadow: 0 8px 30px rgba(0,0,0,0.04); }
+
+        .editorial-header-tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; background: rgba(69, 92, 54, 0.08); color: #455c36; font-size: 12px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 14px; }
+        .editorial-main-card h1 { font-family: 'Fraunces', Georgia, serif; font-size: clamp(26px, 4vw, 36px); color: #181d17; margin: 0 0 12px; line-height: 1.25; font-weight: 700; }
+        .editorial-lead { font-size: 16px; color: #555555; line-height: 1.6; margin: 0 0 28px; }
+
+        /* Botones de acción principales */
+        .editorial-buttons-group { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid #efe9de; }
+        .editorial-btn-link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; background: #455c36; color: #ffffff; font-size: 13.5px; font-weight: 800; text-decoration: none; transition: background 0.18s ease, transform 0.18s ease; }
+        .editorial-btn-link:hover { background: #354829; color: #ffffff; transform: translateY(-1px); }
+        .editorial-btn-link .btn-arrow { font-size: 12px; opacity: 0.9; }
+
+        /* Lista limpia de pasos */
+        .editorial-section-heading { font-family: 'Fraunces', Georgia, serif; font-size: 20px; color: #181d17; margin: 0 0 18px; font-weight: 700; }
+        .editorial-steps-wrapper { display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
+        .editorial-step-card { display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; border-radius: 14px; background: #fbf9f5; border: 1px solid #eae3d5; }
+        .editorial-step-bullet { width: 24px; height: 24px; border-radius: 50%; background: rgba(69, 92, 54, 0.12); color: #455c36; font-weight: 900; font-size: 12px; display: grid; place-items: center; flex-shrink: 0; margin-top: 2px; }
+        .editorial-step-content { flex: 1; font-size: 14.5px; color: #2c3529; line-height: 1.55; }
+        .editorial-step-content p { margin: 0; font-weight: 600; }
+        .editorial-inline-action { display: inline-flex; align-items: center; gap: 4px; margin-top: 6px; color: #455c36; font-size: 13px; font-weight: 800; text-decoration: none; }
+        .editorial-inline-action:hover { text-decoration: underline; }
+
+        /* Nota editorial */
+        .editorial-disclaimer { background: rgba(69, 92, 54, 0.05); border-left: 4px solid #455c36; border-radius: 0 12px 12px 0; padding: 16px 18px; margin-top: 10px; }
+        .editorial-disclaimer strong { display: block; color: #455c36; font-size: 12px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+        .editorial-disclaimer p { margin: 0; color: #666666; font-size: 13px; line-height: 1.5; }
+
+        .editorial-back-link { display: inline-block; margin-top: 24px; color: #455c36; font-size: 14px; font-weight: 800; text-decoration: none; }
+        .editorial-back-link:hover { text-decoration: underline; }
     </style>
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -129,87 +140,82 @@
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
         <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
-    <main class="guide-detail-page">
-        <div class="container">
-            <nav class="guide-breadcrumbs" aria-label="Migas de pan">
-                <a href="/">Inicio</a> <span>›</span>
-                <a href="/guia-util/">Guía útil</a> <span>›</span>
+    <main class="editorial-page-wrap">
+        <div class="editorial-container">
+            <nav class="editorial-breadcrumbs" aria-label="Migas de pan">
+                <a href="/">Inicio</a> <span class="sep">›</span>
+                <a href="/guia-util/">Guía útil</a> <span class="sep">›</span>
                 <span>Zonas de aparcamiento y parking</span>
             </nav>
 
-            <header class="guide-header-shell">
-                <div class="guide-header-badge"><span>🅿️</span> <span>Movilidad y Transporte</span></div>
+            <article class="editorial-main-card">
+                <div class="editorial-header-tag"><span>🅿️</span> <span>Movilidad y Transporte</span></div>
                 <h1>Zonas de aparcamiento y parking</h1>
-                <p class="lead">Guía práctica de zonas de estacionamiento en el centro histórico, parkings públicos y recomendaciones en días festivos o eventos.</p>
-                <div class="action-hero-buttons">
+                <p class="editorial-lead">Guía práctica de zonas de estacionamiento en el centro histórico, parkings públicos y recomendaciones en días festivos o eventos.</p>
+
+                
+                <div class="editorial-buttons-group">
                     
-    <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="btn-action-pill">
-      <span>Ubicación Parking Huerta de la Compañía</span> ↗
+    <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="editorial-btn-link">
+      <span>Ubicación Parking Huerta de la Compañía</span>
+      <span class="btn-arrow">↗</span>
     </a>
   
-                    <a href="/guia-util/" class="btn-action-pill" style="background: transparent; color: var(--accent); border: 1px solid var(--accent);">← Volver a Guía útil</a>
                 </div>
-            </header>
+                
 
-            <section class="guide-stream-container">
-                <h2 class="stream-title">📌 Pasos clave y enlaces verificados</h2>
-                <div class="stream-list">
+                <h2 class="editorial-section-heading">Información práctica y accesos</h2>
+                <div class="editorial-steps-wrapper">
                     
-      <div class="stream-item">
-        <div class="stream-number">01</div>
-        <div class="stream-body">
-          <div class="stream-content">Parking Subterráneo Huerta de la Compañía (Plaza Baja / Ayuntamiento): ideal para gestiones en el centro.</div>
-          <div class="stream-link-wrapper">
-           <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="stream-action-btn">
-             <span>Ubicación Parking Huerta de la Compañía</span> →
-           </a>
-         </div>
+      <div class="editorial-step-card">
+        <div class="editorial-step-bullet">✓</div>
+        <div class="editorial-step-content">
+          <p>Parking Subterráneo Huerta de la Compañía (Plaza Baja / Ayuntamiento): ideal para gestiones en el centro.</p>
+          <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="editorial-inline-action">
+           Ubicación Parking Huerta de la Compañía →
+         </a>
         </div>
       </div>
     
-      <div class="stream-item">
-        <div class="stream-number">02</div>
-        <div class="stream-body">
-          <div class="stream-content">Aparcamiento del Recinto Ferial (Avda. de la Libertad): explanada amplia y gratuita a 5 min del centro.</div>
-          <div class="stream-link-wrapper">
-           <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="stream-action-btn">
-             <span>Ubicación Parking Huerta de la Compañía</span> →
-           </a>
-         </div>
+      <div class="editorial-step-card">
+        <div class="editorial-step-bullet">✓</div>
+        <div class="editorial-step-content">
+          <p>Aparcamiento del Recinto Ferial (Avda. de la Libertad): explanada amplia y gratuita a 5 min del centro.</p>
+          <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="editorial-inline-action">
+           Ubicación Parking Huerta de la Compañía →
+         </a>
         </div>
       </div>
     
-      <div class="stream-item">
-        <div class="stream-number">03</div>
-        <div class="stream-body">
-          <div class="stream-content">Avenida Gerald Brenan y Calle Cruz: estacionamiento para compras rápidas de comercio local.</div>
-          <div class="stream-link-wrapper">
-           <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="stream-action-btn">
-             <span>Ubicación Parking Huerta de la Compañía</span> →
-           </a>
-         </div>
+      <div class="editorial-step-card">
+        <div class="editorial-step-bullet">✓</div>
+        <div class="editorial-step-content">
+          <p>Avenida Gerald Brenan y Calle Cruz: estacionamiento para compras rápidas de comercio local.</p>
+          <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="editorial-inline-action">
+           Ubicación Parking Huerta de la Compañía →
+         </a>
         </div>
       </div>
     
-      <div class="stream-item">
-        <div class="stream-number">04</div>
-        <div class="stream-body">
-          <div class="stream-content">Polígono Industrial La Rosa: idóneo para vehículos comerciales y de gran volumen.</div>
-          <div class="stream-link-wrapper">
-           <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="stream-action-btn">
-             <span>Ubicación Parking Huerta de la Compañía</span> →
-           </a>
-         </div>
+      <div class="editorial-step-card">
+        <div class="editorial-step-bullet">✓</div>
+        <div class="editorial-step-content">
+          <p>Polígono Industrial La Rosa: idóneo para vehículos comerciales y de gran volumen.</p>
+          <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer" class="editorial-inline-action">
+           Ubicación Parking Huerta de la Compañía →
+         </a>
         </div>
       </div>
     
                 </div>
 
-                <div class="resource-note">
+                <div class="editorial-disclaimer">
                     <strong>Nota de Alhaurín al Día</strong>
                     <p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a recursos útiles de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p>
                 </div>
-            </section>
+            </article>
+
+            <a href="/guia-util/" class="editorial-back-link">← Volver a la Guía útil</a>
         </div>
     </main>
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/">Anunciarse</a></div></div></footer>

@@ -74,20 +74,34 @@
         })
         .then(function (data) {
             var items = Array.isArray(data.comercios) ? data.comercios.filter(isActiveCommerce).slice(0, 2) : [];
+            var section = container.closest(".featured-commerce-section");
 
             if (updatedBox) {
                 updatedBox.textContent = formatUpdated(data.actualizado);
             }
 
             if (!items.length) {
-                renderEmpty();
+                if (section) {
+                    section.style.display = "none";
+                } else {
+                    renderEmpty();
+                }
                 return;
+            }
+
+            if (section) {
+                section.style.display = "";
             }
 
             container.innerHTML = items.map(renderCommerce).join("");
         })
         .catch(function (error) {
             console.error("Error cargando comercios destacados:", error);
-            renderEmpty();
+            var section = container.closest(".featured-commerce-section");
+            if (section) {
+                section.style.display = "none";
+            } else {
+                renderEmpty();
+            }
         });
 })();

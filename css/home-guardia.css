@@ -152,6 +152,21 @@
     box-shadow: 0 16px 30px rgba(0, 0, 0, .16);
 }
 
+.home-guard-actions a[href^="tel:"] {
+    background: #ffffff !important;
+    color: #8f1d1d !important;
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    min-height: 48px !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22) !important;
+    border: none !important;
+}
+
+.home-guard-actions a[href^="tel:"]::before {
+    content: "📞 ";
+    margin-right: 4px;
+}
+
 .home-guard-actions a.secondary,
 .home-guard-actions a.ghost {
     background: rgba(255, 255, 255, .18);

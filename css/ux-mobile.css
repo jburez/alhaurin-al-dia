@@ -66,25 +66,30 @@
     }
 
     .home-hero-clean {
-        padding-top: 18px;
+        padding-top: 12px;
     }
 
     .home-hero-clean .hero-card {
-        padding: 24px 19px 21px;
+        padding: 16px 16px 14px;
     }
 
     .home-hero-clean h1 {
-        font-size: clamp(33px, 10.4vw, 45px);
-        letter-spacing: -.055em;
+        font-size: clamp(24px, 7vw, 32px);
+        letter-spacing: -.04em;
+        line-height: 1.08;
     }
 
     .home-hero-clean .lead {
-        font-size: 15px;
-        line-height: 1.56;
+        display: none;
+    }
+
+    .side-panel .info-card.today-card {
+        display: none;
     }
 
     .actions {
         gap: 9px;
+        margin-top: 12px;
     }
 
     .btn,

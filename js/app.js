@@ -180,19 +180,65 @@ function initMobileMenu() {
 
     if (!menu || !button) return;
 
+    let previousActiveElement = null;
+
+    function closeMenu() {
+        menu.classList.remove("open");
+        button.classList.remove("open");
+        button.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("menu-open");
+        document.removeEventListener("keydown", handleKeydown);
+
+        if (previousActiveElement && typeof previousActiveElement.focus === "function") {
+            previousActiveElement.focus();
+        }
+    }
+
+    function openMenu() {
+        previousActiveElement = document.activeElement;
+        menu.classList.add("open");
+        button.classList.add("open");
+        button.setAttribute("aria-expanded", "true");
+        document.body.classList.add("menu-open");
+        document.addEventListener("keydown", handleKeydown);
+
+        const firstNavFocus = menu.querySelector("a, button");
+        if (firstNavFocus) firstNavFocus.focus();
+    }
+
+    function handleKeydown(e) {
+        if (e.key === "Escape") {
+            closeMenu();
+            return;
+        }
+
+        if (e.key === "Tab") {
+            const focusables = [button, ...menu.querySelectorAll("a[href], button:not([disabled])")];
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        }
+    }
+
     button.addEventListener("click", () => {
-        const isOpen = menu.classList.toggle("open");
-        button.classList.toggle("open", isOpen);
-        button.setAttribute("aria-expanded", String(isOpen));
-        document.body.classList.toggle("menu-open", isOpen);
+        const isOpen = menu.classList.contains("open");
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
     });
 
     menu.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", () => {
-            menu.classList.remove("open");
-            button.classList.remove("open");
-            button.setAttribute("aria-expanded", "false");
-            document.body.classList.remove("menu-open");
+            closeMenu();
         });
     });
 }

@@ -325,6 +325,33 @@ h1 {
     border-color: rgba(69, 92, 54, 0.35);
 }
 
+/* Stretched Link: Clickabilidad total de tarjetas */
+.content-card.news-card,
+.featured-news-card,
+.guide-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.content-card.news-card .read-more::after,
+.featured-news-card .read-more::after,
+.guide-card .read-more::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.content-card.news-card a:not(.read-more),
+.featured-news-card a:not(.read-more),
+.guide-card a:not(.read-more) {
+    position: relative;
+    z-index: 2;
+}
+
 .info-card {
     padding: 24px;
 }

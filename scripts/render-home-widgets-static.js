@@ -237,9 +237,10 @@ function renderDailyStatus(html) {
   const withLocalNotices = mergeLocalNotices(withWeather, avisosLocales);
   const items = mergeAvisosOficiales(withLocalNotices, avisosOficiales);
 
-  const updated = avisosLocales?.actualizado && Array.isArray(avisosLocales.avisos) && avisosLocales.avisos.some(isActiveNotice)
+  const nowIso = new Date().toISOString();
+  const updated = (avisosLocales?.actualizado && Array.isArray(avisosLocales.avisos) && avisosLocales.avisos.some(isActiveNotice))
     ? avisosLocales.actualizado
-    : estadoLocal.actualizado;
+    : (estadoLocal.actualizado || nowIso);
 
   let actualizado = setContainerInnerHTML(html, 'daily-updated', escapeHTML(formatUpdatedLong(updated)));
 
@@ -299,7 +300,8 @@ function renderAgenda(html) {
     })
     .slice(0, 4);
 
-  let actualizado = setContainerInnerHTML(html, 'home-agenda-updated', escapeHTML(formatUpdatedShort(data.actualizado, 'Agenda pendiente de actualización')));
+  const updatedDate = data.actualizado || new Date().toISOString();
+  let actualizado = setContainerInnerHTML(html, 'home-agenda-updated', escapeHTML(formatUpdatedShort(updatedDate, 'Agenda pendiente de actualización')));
   const inner = upcoming.length ? upcoming.map(renderAgendaEvent).join('') : renderAgendaEmpty();
   return setContainerInnerHTML(actualizado, 'home-agenda-list', inner);
 }
@@ -330,7 +332,15 @@ function renderCommerce(html) {
   const data = readJSON(DATA.comercios, { comercios: [] });
   const items = Array.isArray(data.comercios) ? data.comercios.filter(isActiveCommerce).slice(0, 2) : [];
 
-  let actualizado = setContainerInnerHTML(html, 'featured-commerce-updated', escapeHTML(formatUpdatedShort(data.actualizado, 'Espacio comercial disponible')));
+  const updatedDate = data.actualizado || new Date().toISOString();
+  let actualizado = setContainerInnerHTML(html, 'featured-commerce-updated', escapeHTML(formatUpdatedShort(updatedDate, 'Espacio comercial disponible')));
+
+  if (!items.length) {
+    actualizado = actualizado.replace(/<section class="featured-commerce-section"/g, '<section class="featured-commerce-section" style="display:none;"');
+  } else {
+    actualizado = actualizado.replace(/<section class="featured-commerce-section" style="display:none;"/g, '<section class="featured-commerce-section"');
+  }
+
   const inner = items.length ? items.map(renderCommerceItem).join('') : renderCommerceEmpty();
   return setContainerInnerHTML(actualizado, 'featured-commerce-list', inner);
 }

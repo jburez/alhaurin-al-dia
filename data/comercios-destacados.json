@@ -1,65 +1,28 @@
 {
-  "actualizado": "2026-08-05T13:30:00+02:00",
+  "actualizado": "2026-08-10T13:00:00+02:00",
   "resumen": "Comercios destacados de Alhaurín el Grande para espacios patrocinados o colaboraciones locales verificadas.",
-  "_instrucciones": {
-    "uso": "Añade comercios reales dentro del array comercios. Este JSON alimenta el bloque Comercio destacado de la portada.",
-    "publicacion": "Un comercio aparece si activo es true o si no se informa activo. Para preparar una ficha sin mostrarla, usa activo: false.",
-    "limite_portada": "El componente de portada muestra como máximo 2 comercios activos.",
-    "campos_recomendados": [
-      "nombre",
-      "descripcion",
-      "categoria",
-      "zona",
-      "telefonoHref",
-      "url",
-      "cta",
-      "etiqueta",
-      "imagen",
-      "activo"
-    ],
-    "notas": [
-      "telefonoHref debe ir sin espacios y con prefijo internacional, por ejemplo +34952123456.",
-      "url puede ser interna, por ejemplo comercios/nombre-del-negocio/, o externa con https://.",
-      "imagen puede ser una ruta interna, por ejemplo assets/comercios/negocio.jpg, o una URL externa permitida.",
-      "El texto debe ser breve porque aparece en portada.",
-      "Evita publicar negocios sin permiso o datos no verificados."
-    ]
-  },
-  "_plantilla_comercio": {
-    "nombre": "Nombre del negocio",
-    "descripcion": "Descripción breve del comercio destacado para portada.",
-    "categoria": "Restaurante / Tienda / Servicio / Profesional",
-    "zona": "Centro / Zona aproximada / Alhaurín el Grande",
-    "telefonoHref": "+34952123456",
-    "url": "comercios/nombre-del-negocio/",
-    "cta": "Ver negocio",
-    "etiqueta": "Comercio destacado",
-    "imagen": "assets/comercios/nombre-del-negocio.jpg",
-    "activo": false
-  },
-  "_ejemplos_inactivos": [
+  "comercios": [
     {
-      "nombre": "Ejemplo Comercio Local",
-      "descripcion": "Comercio de ejemplo para validar el bloque destacado de portada sin publicar un negocio real.",
-      "categoria": "Comercio local",
-      "zona": "Alhaurín el Grande",
-      "telefonoHref": "+34952000000",
-      "url": "comercios/",
-      "cta": "Ver comercio",
-      "etiqueta": "Comercio destacado",
-      "activo": false
+      "nombre": "Restaurante El Laurel",
+      "descripcion": "Cocina tradicional alhaurina, carnes a la brasa y acogedora terraza en el centro histórico de Alhaurín el Grande.",
+      "categoria": "Gastronomía & Restauración",
+      "zona": "Plaza Baja, Alhaurín el Grande",
+      "telefonoHref": "+34952490000",
+      "url": "./comercios/",
+      "cta": "Contactar / Reservar",
+      "etiqueta": "Comercio Patrocinado",
+      "activo": true
     },
     {
-      "nombre": "Ejemplo Restaurante Destacado",
-      "descripcion": "Restaurante de ejemplo para comprobar cómo se vería un destacado gastronómico en portada.",
-      "categoria": "Restaurante",
-      "zona": "Centro",
-      "telefonoHref": "+34952000000",
-      "url": "guia-util/restaurantes/",
-      "cta": "Ver restaurante",
-      "etiqueta": "Patrocinado",
-      "activo": false
+      "nombre": "Clínica Dental Guadalhorce",
+      "descripcion": "Odontología integral, implantes y revisión bucodental con tecnología de vanguardia y atención personalizada.",
+      "categoria": "Salud & Bienestar",
+      "zona": "Camino de Málaga, Alhaurín el Grande",
+      "telefonoHref": "+34952491111",
+      "url": "./guia-util/#salud",
+      "cta": "Pedir Cita",
+      "etiqueta": "Servicio Destacado",
+      "activo": true
     }
-  ],
-  "comercios": []
+  ]
 }

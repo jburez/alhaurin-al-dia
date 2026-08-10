@@ -964,9 +964,37 @@ section {
     font-weight: 900;
     font-size: 12px;
 }
-    height: 6px;
-    border-radius: 50%;
-    background: var(--gold);
+
+/* Caja Editorial independiente para páginas individuales de recurso */
+.resource-note,
+.article-editorial-note {
+    margin-top: 24px;
+    padding: 18px 22px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, rgba(69, 92, 54, 0.06), rgba(244, 240, 232, 0.8));
+    border-left: 4px solid var(--accent);
+    border-top: 1px solid rgba(69, 92, 54, 0.12);
+    border-right: 1px solid rgba(69, 92, 54, 0.12);
+    border-bottom: 1px solid rgba(69, 92, 54, 0.12);
+}
+
+.resource-note strong,
+.article-editorial-note strong {
+    display: block;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.resource-note p,
+.article-editorial-note p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 13px;
+    line-height: 1.55;
 }
 
 .empty-state {

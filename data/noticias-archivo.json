@@ -1,5 +1,75 @@
 [
     {
+        "titulo": "Villa del Guadalhorce despide a las hermanas doroteas Lupe y Teresa",
+        "descripcion": "La comunidad de Villa del Guadalhorce despide a las hermanas Lupe y Teresa con un emotivo acto en la iglesia María Auxiliadora, reconociendo su dedicación y legado tras más de cuatro décadas.",
+        "resumen": "La comunidad de Villa del Guadalhorce despide a las hermanas Lupe y Teresa con un emotivo acto en la iglesia María Auxiliadora, reconociendo su dedicación y legado tras más de cuatro décadas.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-10T11:25:32.208Z",
+        "imagen": "https://i4.ytimg.com/vi/go79MC8djfA/hqdefault.jpg",
+        "pagina": "noticias/villa-del-guadalhorce-despide-a-las-hermanas-doroteas-lupe-y-teresa-2.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande renueva su parque móvil con tres motos scooter de 125cc",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande incorpora tres motos scooter de 125cc para mejorar la movilidad y eficiencia de los servicios municipales de Aguas y Notificaciones.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande incorpora tres motos scooter de 125cc para mejorar la movilidad y eficiencia de los servicios municipales de Aguas y Notificaciones.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-10T11:25:06.999Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/766723890_2022534198629879_923177038924852758_n-1024x683.jpg",
+        "pagina": "noticias/alhaurin-el-grande-renueva-su-parque-movil-con-tres-motos-scooter-de-125cc.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande declara luto oficial por el fallecimiento del Juez de Paz Diego Solano",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lamenta la pérdida de Diego Solano López, Juez de Paz, y decreta dos días de luto oficial junto a un minuto de silencio en su memoria.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lamenta la pérdida de Diego Solano López, Juez de Paz, y decreta dos días de luto oficial junto a un minuto de silencio en su memoria.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-10T11:25:06.997Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Juzgado-de-paz_bandera-media-asta-768x1024.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-declara-luto-oficial-por-el-fallecimiento-del-juez-de-paz-diego-solano.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande despide a Diego Solano y avanza con obras y eventos locales",
+        "descripcion": "El municipio lamenta la pérdida del juez de paz Diego Solano y anuncia licitación para reparar el pabellón 2, entrega premios al comercio y abre inscripciones para el campamento de septiembre.",
+        "resumen": "El municipio lamenta la pérdida del juez de paz Diego Solano y anuncia licitación para reparar el pabellón 2, entrega premios al comercio y abre inscripciones para el campamento de septiembre.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-10T11:25:06.997Z",
+        "imagen": "https://i2.ytimg.com/vi/uKvNLwsXWio/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-con-obras-y-eventos-locales.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande destina 6.000 € para impulsar la hostelería con productos locales",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para hosteleros que utilicen productos locales y de temporada en sus cartas, promoviendo la marca Alhaurín Alha‿Boca.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para hosteleros que utilicen productos locales y de temporada en sus cartas, promoviendo la marca Alhaurín Alha‿Boca.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-10T11:25:06.997Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Ayudas-dirigida-a-los-establecimientos-adheridos-a-la-marca-Alhaurin-Alha‿Boca-1024x576.jpg",
+        "pagina": "noticias/alhaurin-el-grande-destina-6-000-para-impulsar-la-hosteleria-con-productos-locales.html"
+    },
+    {
+        "titulo": "A través de un comunicado, la Hermandad ha expresado sus más sinceras condolencias y se",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-10T11:25:06.996Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/cropped-favicon-ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO-32x32.png",
+        "pagina": "noticias/a-traves-de-un-comunicado-la-hermandad-ha-expresado-sus-mas-sinceras-condolencias-y-se.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con fervor y tradición",
+        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial dedicada a Nuestro Padre Jesús Nazareno, con actos religiosos y culturales que reunieron a la comunidad local.",
+        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial dedicada a Nuestro Padre Jesús Nazareno, con actos religiosos y culturales que reunieron a la comunidad local.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-10T11:25:06.996Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419-683x1024.jpg",
+        "pagina": "noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-fervor-y-tradicion.html"
+    },
+    {
         "titulo": "XLIII Noche Flamenca Villa de Alhaurín el Grande",
         "descripcion": "La XLIII Noche Flamenca Villa de Alhaurín el Grande volvió a demostrar por qué es una de las grandes citas del verano cultural andaluz. Un total de 430 personas disfrutaron de una velada inolvidable en el Patio Diego Pérez del.",
         "resumen": "La XLIII Noche Flamenca Villa de Alhaurín el Grande volvió a demostrar por qué es una de las grandes citas del verano cultural andaluz. Un total de 430 personas disfrutaron de una velada inolvidable en el Patio Diego Pérez del.",

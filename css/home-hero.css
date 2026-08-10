@@ -65,7 +65,7 @@
 
 .home-hero-clean .hero-card {
     padding: clamp(26px, 4vw, 44px);
-    border-radius: 32px;
+    border-radius: 20px;
 }
 
 .home-hero-clean .eyebrow {

@@ -39,16 +39,16 @@
 
 .premium-article-card {
     overflow: hidden;
-    border-radius: 36px;
-    border: 1px solid rgba(230, 222, 210, .95);
-    background: rgba(255, 255, 255, .94);
-    box-shadow: 0 24px 70px rgba(24, 33, 47, .10);
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, .95);
+    box-shadow: var(--shadow-card);
 }
 
 .article-hero {
-    padding: clamp(30px, 5vw, 58px) clamp(24px, 5vw, 62px) 24px;
+    padding: clamp(30px, 5vw, 52px) clamp(24px, 5vw, 56px) 24px;
     background:
-        radial-gradient(circle at top right, rgba(184, 135, 70, .16), transparent 20rem),
+        radial-gradient(circle at top right, rgba(69, 92, 54, .08), transparent 20rem),
         linear-gradient(180deg, rgba(255, 255, 255, .96), rgba(251, 248, 242, .92));
 }
 
@@ -64,18 +64,18 @@
     max-width: 980px;
     margin: 0;
     color: var(--brand);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 6vw, 72px);
-    line-height: .98;
-    letter-spacing: -.058em;
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.15;
+    letter-spacing: -.03em;
 }
 
 .article-summary {
-    max-width: 760px;
-    margin: 22px 0 0;
+    max-width: 68ch;
+    margin: 20px 0 0;
     color: #475467;
-    font-size: clamp(18px, 2vw, 22px);
-    line-height: 1.65;
+    font-size: clamp(18px, 2vw, 21px);
+    line-height: 1.62;
 }
 
 .article-hero-image {
@@ -106,23 +106,23 @@
     place-items: center;
     color: #fff;
     background: linear-gradient(135deg, rgba(23, 50, 77, .96), rgba(184, 135, 70, .82));
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-display);
     font-size: clamp(30px, 5vw, 52px);
     font-weight: 850;
-    letter-spacing: -.045em;
+    letter-spacing: -.03em;
 }
 
 .premium-article-content {
-    padding: clamp(28px, 5vw, 58px) clamp(24px, 5vw, 62px);
+    padding: clamp(28px, 5vw, 52px) clamp(24px, 5vw, 56px);
 }
 
 .premium-article-content p {
-    max-width: 760px;
+    max-width: 68ch;
     margin: 0 auto 22px;
     color: #344054;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(18px, 2vw, 21px);
-    line-height: 1.82;
+    line-height: 1.8;
 }
 
 .premium-article-content p:first-child::first-letter {

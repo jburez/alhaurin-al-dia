@@ -1,7 +1,5 @@
 :root {
-    /* Fase D — identidad "sierra y olivar": fondo claro, tinta casi negra,
-       un único acento (oliva). Ratios de contraste verificados con la
-       fórmula WCAG antes de fijar estos valores, no a ojo. */
+    /* Design System Tokens — alhaurinaldia.es (Paleta Sierra y Olivar) */
     --bg: #faf7f2;
     --paper: #ffffff;
     --paper-soft: #fbf8f2;
@@ -12,14 +10,22 @@
     --accent-dark: #34462a;
     --accent-soft: #eaeee1;
     --red-soft: #fff1ed;
-    --shadow: 0 18px 50px rgba(24, 33, 47, .09);
-    --shadow-soft: 0 8px 28px rgba(24, 33, 47, .06);
-    --radius: 24px;
-    --radius-sm: 16px;
+
+    /* Sombras Sutiles Editoriales */
+    --shadow: 0 10px 30px rgba(28, 31, 27, 0.08);
+    --shadow-soft: 0 4px 16px rgba(28, 31, 27, 0.04);
+    --shadow-card: 0 4px 16px rgba(28, 31, 27, 0.04);
+    --shadow-float: 0 10px 28px rgba(28, 31, 27, 0.09);
+
+    /* Radios Unificados (Estilo Editorial Pulido) */
+    --radius: 16px;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    --radius-pill: 999px;
     --max: 1180px;
 
-    /* Tipografía: Fraunces para titulares (carácter editorial), pila de
-       sistema para cuerpo (ya era muy legible y de coste de red cero). */
+    /* Tipografía: Fraunces para titulares, pila de sistema para cuerpo */
     --font-display: "Fraunces", Georgia, "Times New Roman", serif;
     --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
     --text-label: 800 12px/1.2 var(--font-body);
@@ -28,11 +34,7 @@
     --text-body: 400 17px/1.6 var(--font-body);
     --text-caption: 500 13px/1.4 var(--font-body);
 
-    /* Alias heredados: el resto de CSS (home-*.css, article.css,
-       sponsored-cards.css...) todavía referencia estos nombres. Se migran
-       archivo a archivo en los siguientes bloques de Fase D (portada,
-       noticia, secciones); hasta entonces, apuntar aquí evita un sitio a
-       medio migrar visualmente inconsistente. */
+    /* Alias heredados de compatibilidad */
     --brand: var(--ink);
     --brand-soft: var(--accent-soft);
     --gold: var(--accent);
@@ -1094,24 +1096,77 @@ input::placeholder {
 /* FOOTER */
 
 footer {
-    margin-top: 34px;
+    margin-top: 40px;
     border-top: 1px solid var(--line);
-    padding: 34px 0;
+    padding: 40px 0 28px;
+    background: rgba(244, 240, 232, 0.4);
     color: var(--muted);
     font-size: 14px;
 }
 
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    margin-bottom: 28px;
 }
 
-.footer-links {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+.footer-brand-info strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 8px;
+}
+
+.footer-brand-info p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 320px;
+}
+
+.footer-col h4 {
+    margin: 0 0 12px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 13.5px;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.footer-col a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid rgba(228, 224, 213, 0.6);
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+}
+
+@media (max-width: 840px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .footer-brand-info {
+        grid-column: 1 / -1;
+    }
 }
 
 /* RESPONSIVE */

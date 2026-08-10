@@ -68,7 +68,8 @@ function main() {
     html = setContainerInnerHTML(html, 'news-container', secondary);
   }
 
-  const guideCards = guia.map(item => renderGuideCardHTML(item)).join('\n');
+  const HOME_GUIDE_LIMIT = 4;
+  const guideCards = guia.slice(0, HOME_GUIDE_LIMIT).map(item => renderGuideCardHTML(item)).join('\n');
   html = setContainerInnerHTML(html, 'guide-container', guideCards);
 
   const previo = fs.existsSync(HOME_FILE) ? fs.readFileSync(HOME_FILE, 'utf8') : null;
@@ -76,7 +77,7 @@ function main() {
 
   console.log('Home regenerada con contenido estático real.');
   console.log(`#featured-news / #news-container: ${Math.min(1 + HOME_SECONDARY_NEWS_LIMIT, noticias.length)} de ${noticias.length} noticias.`);
-  console.log(`#guide-container: ${guia.length} recursos de guía útil.`);
+  console.log(`#guide-container: ${Math.min(HOME_GUIDE_LIMIT, guia.length)} de ${guia.length} recursos de guía útil.`);
 }
 
 main();

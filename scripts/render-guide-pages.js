@@ -7,10 +7,6 @@ const GUIDE_FILE = path.join(ROOT, 'data', 'guia-util.json');
 const GUIDE_DIR = path.join(ROOT, 'guia-util');
 const SKIP_IDS = new Set([
   'farmacias',
-  'vivir-en-alhaurin',
-  'aparcamiento',
-  'restaurantes',
-  'veterinarios',
 ]);
 
 function readJson(file, fallback) {
@@ -44,22 +40,40 @@ function renderJsonLd(data) {
   return `<script type="application/ld+json">${JSON.stringify(data, null, 2)}</script>`;
 }
 
-function renderLinks(links = []) {
-  if (!links.length) {
-    return '<p class="resource-muted">Esta ficha se irá completando con fuentes y enlaces verificados.</p>';
-  }
-
+function renderActionHeroButtons(links = []) {
+  if (!links.length) return '';
   return links.map(link => `
-                    <a href="${escapeHtml(link.url || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.texto || 'Abrir enlace')}</a>
-  `.trim()).join('');
+    <a href="${escapeHtml(link.url || '#')}" target="_blank" rel="noopener noreferrer" class="btn-action-pill">
+      <span>${escapeHtml(link.texto || 'Abrir enlace oficial')}</span> ↗
+    </a>
+  `).join('');
 }
 
-function renderItems(items = []) {
+function renderStreamItems(items = [], links = []) {
   if (!items.length) {
-    return '<li>Información pendiente de ampliar con datos verificados.</li>';
+    return '<p class="resource-muted">Información pendiente de ampliar con datos verificados.</p>';
   }
 
-  return items.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+  return items.map((text, idx) => {
+    const link = links[idx] || (links.length === 1 ? links[0] : null);
+    const actionHTML = link
+      ? `<div class="stream-link-wrapper">
+           <a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer" class="stream-action-btn">
+             <span>${escapeHtml(link.texto || 'Abrir enlace oficial')}</span> →
+           </a>
+         </div>`
+      : '';
+
+    return `
+      <div class="stream-item">
+        <div class="stream-number">${String(idx + 1).padStart(2, '0')}</div>
+        <div class="stream-body">
+          <div class="stream-content">${escapeHtml(text)}</div>
+          ${actionHTML}
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 
 function renderFaq(item) {
@@ -96,9 +110,8 @@ function renderPage(item) {
   const category = item.categoria || 'Guía útil';
   const icon = item.icono || '•';
   const canonical = pageUrl(item);
-  const id = item.id || 'recurso';
-  const officialLinks = renderLinks(item.links || []);
-  const items = renderItems(item.items || []);
+  const heroButtons = renderActionHeroButtons(item.links || []);
+  const streamItems = renderStreamItems(item.items || [], item.links || []);
 
   const webPage = {
     '@context': 'https://schema.org',
@@ -159,18 +172,34 @@ function renderPage(item) {
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/ads.css">
     <style>
-        .resource-hero { padding:58px 0 28px; }
-        .resource-card { background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:36px; padding:clamp(28px,5vw,56px); box-shadow:var(--shadow); }
-        .resource-layout { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:start; margin-bottom:56px; }
-        .resource-box { background:white; border:1px solid var(--line); border-radius:26px; padding:24px; box-shadow:var(--shadow-soft); }
-        .resource-list { display:grid; gap:12px; padding-left:0; list-style:none; margin:22px 0 0; }
-        .resource-list li { background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:14px; color:var(--ink); line-height:1.55; }
-        .official-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
-        .official-links a { display:inline-flex; padding:10px 13px; border-radius:999px; background:var(--brand-soft); border:1px solid #d9e6f0; color:var(--brand); font-size:13px; font-weight:900; }
-        .resource-muted { color:var(--muted); line-height:1.7; }
-        .resource-note { margin-top:18px; background:var(--paper-soft); border:1px solid var(--line); border-radius:18px; padding:16px; color:var(--muted); }
-        .resource-note p { margin:8px 0 0; }
-        @media(max-width:900px) { .resource-layout { grid-template-columns:1fr; } }
+        .guide-detail-page { padding: 40px 0 60px; background: #faf8f5; }
+        .guide-breadcrumbs { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+        .guide-breadcrumbs a { color: var(--accent); font-weight: 700; text-decoration: none; }
+        .guide-header-shell { background: #ffffff; border-radius: 24px; padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line); box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 32px; }
+        .guide-header-badge { display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; border-radius: 999px; background: rgba(69, 92, 54, 0.08); color: var(--accent); font-size: 12px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; }
+        .guide-header-shell h1 { font-family: var(--font-display); font-size: clamp(26px, 4vw, 38px); color: var(--ink); margin: 0 0 12px; line-height: 1.2; }
+        .guide-header-shell p.lead { font-size: 16px; color: var(--muted); line-height: 1.6; margin: 0 0 24px; max-width: 800px; }
+        .action-hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+        .btn-action-pill { display: inline-flex; align-items: center; gap: 6px; padding: 12px 20px; border-radius: 999px; background: var(--accent); color: #ffffff; font-size: 14px; font-weight: 800; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+        .btn-action-pill:hover { background: #354829; transform: translateY(-2px); color: #ffffff; }
+
+        /* Stream / Timeline fluido */
+        .guide-stream-container { background: #ffffff; border-radius: 24px; padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line); box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        .stream-title { font-family: var(--font-display); font-size: 22px; color: var(--ink); margin: 0 0 24px; display: flex; align-items: center; gap: 10px; }
+        .stream-list { display: flex; flex-direction: column; gap: 20px; }
+        .stream-item { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 20px; border-radius: 16px; background: #fdfbf7; border: 1px solid #e8e2d4; transition: border-color 0.2s ease; }
+        .stream-item:hover { border-color: rgba(69, 92, 54, 0.4); }
+        .stream-number { width: 44px; height: 44px; border-radius: 12px; background: rgba(69, 92, 54, 0.1); color: var(--accent); font-weight: 900; font-size: 15px; display: grid; place-items: center; flex-shrink: 0; }
+        .stream-body { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+        .stream-content { font-size: 15px; color: #2d3748; line-height: 1.6; font-weight: 600; }
+        .stream-link-wrapper { margin-top: 4px; }
+        .stream-action-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 8px; background: rgba(69, 92, 54, 0.08); color: var(--accent); font-size: 13px; font-weight: 800; text-decoration: none; transition: background 0.2s ease; }
+        .stream-action-btn:hover { background: rgba(69, 92, 54, 0.18); text-decoration: none; }
+
+        @media(max-width: 640px) {
+            .stream-item { grid-template-columns: 1fr; }
+            .stream-number { display: none; }
+        }
     </style>
     ${renderJsonLd(webPage)}
     ${renderJsonLd(breadcrumb)}
@@ -183,27 +212,36 @@ function renderPage(item) {
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
         <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
-    <main>
-        <section class="resource-hero"><div class="container"><div class="resource-card">
-            <span class="eyebrow">${escapeHtml(category)}</span>
-            <h1>${escapeHtml(title)}</h1>
-            <p class="lead">${escapeHtml(description)}</p>
-            <div class="actions"><a class="btn btn-primary" href="#informacion">Consultar información</a><a class="btn btn-secondary" href="/guia-util/">Volver a Guía útil</a></div>
-        </div></div></section>
-        <section id="informacion"><div class="container resource-layout">
-            <article class="resource-box">
-                <div class="guide-card-top"><div class="guide-icon">${escapeHtml(icon)}</div><div><span class="guide-category">${escapeHtml(category)}</span><h2>Información práctica</h2></div></div>
-                <ul class="resource-list">${items}</ul>
-                <div class="resource-note"><strong>Nota de Alhaurín al Día</strong><p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a recursos útiles de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p></div>
-            </article>
-            <aside class="resource-box">
-                <span class="section-kicker">Fuentes y enlaces</span>
-                <h2>Enlaces de referencia</h2>
-                <p class="resource-muted">Consulta las fuentes oficiales o recursos externos antes de realizar gestiones, desplazamientos o reservas.</p>
-                <div class="official-links">${officialLinks}</div>
-                <div class="ad-slot ad-slot-sidebar" style="margin-top:22px;">Publicidad local</div>
-            </aside>
-        </div></section>
+    <main class="guide-detail-page">
+        <div class="container">
+            <nav class="guide-breadcrumbs" aria-label="Migas de pan">
+                <a href="/">Inicio</a> <span>›</span>
+                <a href="/guia-util/">Guía útil</a> <span>›</span>
+                <span>${escapeHtml(title)}</span>
+            </nav>
+
+            <header class="guide-header-shell">
+                <div class="guide-header-badge"><span>${escapeHtml(icon)}</span> <span>${escapeHtml(category)}</span></div>
+                <h1>${escapeHtml(title)}</h1>
+                <p class="lead">${escapeHtml(description)}</p>
+                <div class="action-hero-buttons">
+                    ${heroButtons}
+                    <a href="/guia-util/" class="btn-action-pill" style="background: transparent; color: var(--accent); border: 1px solid var(--accent);">← Volver a Guía útil</a>
+                </div>
+            </header>
+
+            <section class="guide-stream-container">
+                <h2 class="stream-title">📌 Pasos clave y enlaces verificados</h2>
+                <div class="stream-list">
+                    ${streamItems}
+                </div>
+
+                <div class="resource-note">
+                    <strong>Nota de Alhaurín al Día</strong>
+                    <p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a recursos útiles de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/">Anunciarse</a></div></div></footer>
     <script src="/js/app.js" defer></script>
@@ -233,9 +271,6 @@ function main() {
     const dir = path.join(GUIDE_DIR, item.id);
     const file = path.join(dir, 'index.html');
     const rendered = renderPage(item);
-    // No reescribe si el contenido no cambió, para que el mtime del archivo
-    // (usado como lastmod real en el sitemap) refleje la última modificación
-    // de verdad y no la fecha del último build.
     if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === rendered) {
       unchanged += 1;
       continue;

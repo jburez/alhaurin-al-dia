@@ -1,46 +1,45 @@
 [
   {
     "id": "farmacias",
-    "icono": "+",
-    "categoria": "Salud",
+    "icono": "💊",
+    "categoria": "Salud y Emergencias",
     "titulo": "Farmacias de guardia y salud",
-    "descripcion": "Consulta de guardias, farmacias del municipio y acceso rápido a recursos sanitarios. Conviene verificar siempre la guardia del día en la fuente oficial antes de desplazarse.",
+    "descripcion": "Consulta de guardias activas las 24h, mapa de farmacias del municipio y teléfonos sanitarios. Confirma siempre en la fuente oficial antes de desplazarte.",
     "items": [
-      "Guardias: empiezan a las 9:30 y terminan a las 9:30 del día siguiente, según la web municipal.",
-      "Farmacias de guardia 2026 de Alhaurín el Grande.",
-      "Buscador oficial de farmacias de guardia del Consejo General de Colegios Farmacéuticos.",
-      "Emergencias generales: 112."
+      "Guardias diarias: de 9:30 h a 9:30 h del día siguiente.",
+      "Fichas individuales con teléfono, mapa GPS y dirección de cada farmacia.",
+      "Urgencias sanitarias generales: 112 / Centro de Salud Alhaurín: 951 55 00 00."
     ],
     "links": [
       {
-        "texto": "Farmacias de guardia - Ayuntamiento",
+        "texto": "Farmacias de guardia (Ayuntamiento)",
         "url": "https://alhaurinelgrande.es/farmacias/"
       },
       {
-        "texto": "Buscador oficial de farmacias de guardia",
+        "texto": "Buscador de Colegio de Farmacéuticos",
         "url": "https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29"
       }
     ],
-    "cta": "Abrir farmacias de guardia",
+    "cta": "Ver farmacias de guardia",
     "enlace": "/guia-util/farmacias/",
     "pagina": "/guia-util/farmacias/"
   },
   {
     "id": "telefonos",
-    "icono": "☎",
-    "categoria": "Emergencias",
+    "icono": "☎️",
+    "categoria": "Emergencias y Seguridad",
     "titulo": "Teléfonos útiles y emergencias",
-    "descripcion": "Números básicos para incidencias, atención municipal y emergencias locales. Útil para tener siempre a mano desde el móvil.",
+    "descripcion": "Directorio de números de teléfono esenciales para incidencias, seguridad ciudadana, ayuntamiento y servicios de guardia.",
     "items": [
-      "Ayuntamiento / centralita: 952 49 00 00.",
-      "Policía Local: 952 49 10 74.",
-      "Protección Civil: 672 32 83 51.",
-      "Guardia Civil Alhaurín el Grande: 952 595 830.",
-      "Servicios Operativos: 952 49 09 13."
+      "Emergencias Generales: 112 (Gratuito 24h).",
+      "Policía Local de Alhaurín: 952 49 10 74 / 670 94 94 94.",
+      "Guardia Civil Alhaurín: 952 59 58 30 / Urgencias: 062.",
+      "Centralita Ayuntamiento: 952 49 00 00 / Protección Civil: 672 32 83 51.",
+      "Servicios Operativos e Incidencias en vía pública: 952 49 09 13."
     ],
     "links": [
       {
-        "texto": "Teléfonos de interés - Ayuntamiento",
+        "texto": "Teléfonos de interés (Ayuntamiento)",
         "url": "https://alhaurinelgrande.es/telefonos-de-interes/"
       },
       {
@@ -48,38 +47,34 @@
         "url": "https://alhaurinelgrande.es/contacto/"
       }
     ],
-    "cta": "Ver teléfonos oficiales",
+    "cta": "Ver teléfonos de urgencia",
     "enlace": "/guia-util/telefonos/",
     "pagina": "/guia-util/telefonos/"
   },
   {
     "id": "tramites",
-    "icono": "i",
-    "categoria": "Administración",
-    "titulo": "Trámites, sede electrónica y padrón",
-    "descripcion": "Accesos directos para gestiones municipales frecuentes: sede electrónica, cita previa, pago de tributos y padrón de habitantes.",
+    "icono": "📋",
+    "categoria": "Administración y Sede",
+    "titulo": "Trámites municipales y cita previa",
+    "descripcion": "Accesos directos para tramitar el empadronamiento, solicitar cita previa, pagar impuestos y realizar gestiones con la Sede Electrónica.",
     "items": [
-      "Sede electrónica municipal para trámites online.",
-      "Cita previa disponible desde la sede electrónica.",
-      "Padrón: altas y cambios de domicilio requieren cita previa si se hacen presencialmente.",
-      "Contacto de padrón: 952 49 00 00 / padron2@alhaurinelgrande.es."
+      "Sede Electrónica 24/7 para solicitudes y certificados con Certificado Digital / Cl@ve.",
+      "Sistema de Cita Previa presencial para Padrón y Atención Ciudadana.",
+      "Atención de Padrón: 952 49 00 00 / padron2@alhaurinelgrande.es.",
+      "Pago de tributos locales y tasas municipales."
     ],
     "links": [
       {
-        "texto": "Sede Electrónica",
+        "texto": "Sede Electrónica Municipal",
         "url": "https://alhaurinelgrande.sedelectronica.es/"
       },
       {
-        "texto": "Cita previa",
+        "texto": "Solicitar Cita Previa",
         "url": "https://alhaurinelgrande.sedelectronica.es/citaprevia"
       },
       {
-        "texto": "Padrón de habitantes",
+        "texto": "Información de Padrón",
         "url": "https://alhaurinelgrande.es/padron-de-habitantes/"
-      },
-      {
-        "texto": "Página municipal de sede electrónica",
-        "url": "https://alhaurinelgrande.es/sede-electronica/"
       }
     ],
     "cta": "Abrir sede electrónica",
@@ -88,15 +83,15 @@
   },
   {
     "id": "movilidad",
-    "icono": "↗",
-    "categoria": "Movilidad",
-    "titulo": "Autobuses, horarios y movilidad",
-    "descripcion": "Enlaces útiles para consultar horarios actualizados de autobús entre Alhaurín el Grande, Málaga, Alhaurín de la Torre, Coín y el Hospital Guadalhorce.",
+    "icono": "🚌",
+    "categoria": "Movilidad y Transporte",
+    "titulo": "Líneas de autobús y horarios",
+    "descripcion": "Horarios y líneas del Consorcio de Transportes para desplazarte entre Alhaurín el Grande, Málaga, Cártama, Coín y el Hospital del Guadalhorce.",
     "items": [
-      "Línea M-132: Málaga - Alhaurín el Grande.",
-      "Línea M-167B: Coín - Alhaurín el Grande - Málaga por Cártama.",
-      "Línea M-159B: Alhaurín el Grande - Villa del Guadalhorce - Hospital Guadalhorce.",
-      "Revisar siempre el horario oficial antes de viajar."
+      "Línea M-132: Conexión directa Málaga (Estación de Autobuses) - Alhaurín el Grande.",
+      "Línea M-167B: Ruta Coín - Alhaurín el Grande - Málaga por Cártama.",
+      "Línea M-159B: Enlace rápido con el Hospital Comarcal del Guadalhorce.",
+      "Consultar siempre horarios en la web del Consorcio de Transporte Metropolitano."
     ],
     "links": [
       {
@@ -104,94 +99,100 @@
         "url": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas_tabla.php?linea=17"
       },
       {
-        "texto": "M-167B Coín - Alhaurín el Grande - Málaga",
+        "texto": "M-167B Coín - Alhaurín - Málaga",
         "url": "https://ctmam.es/lineas/M-167B"
       },
       {
-        "texto": "Horarios por líneas - Consorcio Málaga",
+        "texto": "Consorcio de Transporte Málaga",
         "url": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas.php"
-      },
-      {
-        "texto": "Avanza Málaga - línea M-132",
-        "url": "https://malaga.avanzagrupo.com/es/itinerarios-y-horarios/lineas/132-m132-malaga-alhaurin-el-grande"
       }
     ],
-    "cta": "Consultar horarios",
+    "cta": "Consultar horarios autobús",
     "enlace": "/guia-util/movilidad/",
     "pagina": "/guia-util/movilidad/"
   },
   {
-    "id": "taxis",
-    "icono": "T",
-    "categoria": "Movilidad",
-    "titulo": "Taxi en Alhaurín el Grande",
-    "descripcion": "Información práctica sobre la parada oficial de taxi, reservas y traslados desde Alhaurín el Grande.",
+    "id": "aparcamiento",
+    "icono": "🅿️",
+    "categoria": "Movilidad y Transporte",
+    "titulo": "Zonas de aparcamiento y parking",
+    "descripcion": "Guía práctica de zonas de estacionamiento en el centro histórico, parkings públicos y recomendaciones en días festivos o eventos.",
     "items": [
-      "Parada oficial: Avenida Gerald Brenan, 39.",
-      "Teléfono de contacto publicado por la web municipal: 952 491 010.",
-      "Servicio indicado como continuo, con reservas por teléfono.",
-      "El Ayuntamiento anunció en 2026 la ampliación del servicio con nuevas licencias adaptadas."
+      "Parking Subterráneo Huerta de la Compañía (Plaza Baja / Ayuntamiento): ideal para gestiones en el centro.",
+      "Aparcamiento del Recinto Ferial (Avda. de la Libertad): explanada amplia y gratuita a 5 min del centro.",
+      "Avenida Gerald Brenan y Calle Cruz: estacionamiento para compras rápidas de comercio local.",
+      "Polígono Industrial La Rosa: idóneo para vehículos comerciales y de gran volumen."
     ],
     "links": [
       {
-        "texto": "Taxi - Ayuntamiento",
-        "url": "https://alhaurinelgrande.es/taxis/"
-      },
-      {
-        "texto": "Ampliación de licencias adaptadas",
-        "url": "https://alhaurinelgrande.es/alhaurin-el-grande-amplia-su-servicio-de-taxi-con-dos-nuevas-licencias-adaptadas/"
+        "texto": "Ubicación Parking Huerta de la Compañía",
+        "url": "https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande"
       }
     ],
-    "cta": "Ver taxi oficial",
+    "cta": "Ver mapa de aparcamientos",
+    "enlace": "/guia-util/aparcamiento/",
+    "pagina": "/guia-util/aparcamiento/"
+  },
+  {
+    "id": "taxis",
+    "icono": "🚖",
+    "categoria": "Movilidad y Transporte",
+    "titulo": "Servicio de taxi 24 horas",
+    "descripcion": "Ubicación de la parada oficial de taxis de Alhaurín el Grande, teléfono directo para reservas y traslados al aeropuerto o estación.",
+    "items": [
+      "Parada oficial de taxi: Avenida Gerald Brenan, 39.",
+      "Teléfono de reserva directa: 952 49 10 10.",
+      "Servicio continuo con atención para traslados urbanos e interurbanos.",
+      "Vehículos eurotaxi adaptados para personas con movilidad reducida (PMR)."
+    ],
+    "links": [
+      {
+        "texto": "Taxi (Información Municipal)",
+        "url": "https://alhaurinelgrande.es/taxis/"
+      }
+    ],
+    "cta": "Llamar a parada de taxi",
     "enlace": "/guia-util/taxis/",
     "pagina": "/guia-util/taxis/"
   },
   {
     "id": "educacion",
-    "icono": "E",
-    "categoria": "Familias y Educación",
-    "titulo": "Educación, campamentos y recursos para familias",
-    "descripcion": "Accesos a recursos educativos municipales, campamentos urbanos, actividades para familias y contacto del área de Educación.",
+    "icono": "🎓",
+    "categoria": "Educación y Familias",
+    "titulo": "Centros educativos e institutos",
+    "descripcion": "Directorio de colegios de educación infantil y primaria, institutos de secundaria, ciclos formativos y Área Municipal de Educación.",
     "items": [
-      "El área municipal de Educación gestiona campamentos, actividades educativas, Escuela de Familias y programas de conciliación.",
-      "Contacto de Educación publicado por el Ayuntamiento: 952 49 9079.",
-      "Correo de referencia: educacionalhaurin@gmail.com.",
-      "Ubicación indicada: Edificio municipal de formación y empleo, Polígono Industrial La Rosa."
+      "Colegios CEIP: Emilia Olivares, Jorge Guillén, El Chorro, Félix Plaza Ramos, Pablo Ruiz Picasso.",
+      "Institutos IES: IES Antonio Gala e IES Fuente Lucena (Secundaria, Bachillerato y FP).",
+      "Oficina de Educación: Edificio Formación y Empleo (Polígono La Rosa) / Tel: 952 49 90 79.",
+      "Escuela de Familias y programas de acompañamiento escolar."
     ],
     "links": [
       {
-        "texto": "Educación - Ayuntamiento",
+        "texto": "Área de Educación Municipal",
         "url": "https://alhaurinelgrande.es/educacion"
-      },
-      {
-        "texto": "Concejalía de Educación",
-        "url": "https://alhaurinelgrande.es/concejalia-de-educacion/"
       }
     ],
-    "cta": "Ver Educación",
+    "cta": "Ver centros educativos",
     "enlace": "/guia-util/educacion/",
     "pagina": "/guia-util/educacion/"
   },
   {
     "id": "campamentos",
-    "icono": "☀",
-    "categoria": "Familias y Educación",
-    "titulo": "Campamentos urbanos y conciliación familiar",
-    "descripcion": "Información de referencia para familias sobre campamentos municipales en periodos no lectivos y programas de conciliación.",
+    "icono": "☀️",
+    "categoria": "Educación y Familias",
+    "titulo": "Campamentos urbanos y conciliación",
+    "descripcion": "Programas municipales de conciliación familiar durante las vacaciones escolares: verano, Navidad, Semana Blanca y Semana Santa.",
     "items": [
-      "El Ayuntamiento organiza campamentos urbanos en periodos como verano, Navidad, Semana Blanca y Semana Santa.",
-      "Los campamentos municipales están orientados a niños y niñas y ayudan a la conciliación familiar.",
-      "Conviene consultar cada convocatoria concreta, fechas, edades admitidas, precio y plazo de inscripción.",
-      "Ejemplo reciente: Campamento de Semana Blanca 2026 anunciado para niños y niñas nacidos entre 2013 y 2022."
+      "Campamentos urbanos con actividades deportivas, talleres de manualidades y agua.",
+      "Turnos adaptados para edades comprendidas entre 3 y 12 años.",
+      "Inscripción telemática mediante Sede Electrónica y presencial en Educación.",
+      "Precios públicos bonificados para familias empadronadas."
     ],
     "links": [
       {
-        "texto": "Educación - Campamentos",
+        "texto": "Campamentos y Conciliación",
         "url": "https://alhaurinelgrande.es/educacion"
-      },
-      {
-        "texto": "Noticia Campamento Semana Blanca 2026",
-        "url": "https://alhaurinelgrande.es/el-area-de-educacion-organiza-un-ano-mas-el-campamento-de-semana-blanca-2026-para-favorecer-la-conciliacion-familiar/"
       }
     ],
     "cta": "Consultar campamentos",
@@ -199,68 +200,16 @@
     "pagina": "/guia-util/campamentos/"
   },
   {
-    "id": "bibliotecas",
-    "icono": "B",
-    "categoria": "Cultura",
-    "titulo": "Bibliotecas municipales",
-    "descripcion": "Información de la red municipal de bibliotecas, con datos de contacto y enlaces a fuentes oficiales de la Junta de Andalucía y el Ayuntamiento.",
-    "items": [
-      "Biblioteca Pública Municipal Ildefonso Marzo: Avenida Gerald Brenan 21.",
-      "Teléfono Ildefonso Marzo: 952 490 143 / 669 967 977.",
-      "Biblioteca Mari Pepa Estrada, Villa del Guadalhorce: Plaza Mayor 3-5.",
-      "Teléfono Mari Pepa Estrada: 952 423 121."
-    ],
-    "links": [
-      {
-        "texto": "Bibliotecas - Ayuntamiento",
-        "url": "https://alhaurinelgrande.es/cultura/biblioteca-general/"
-      },
-      {
-        "texto": "Biblioteca Ildefonso Marzo - Junta de Andalucía",
-        "url": "https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/cultura/bibliotecas-documentacion/directorio-bibliotecas/detalle/628.html"
-      },
-      {
-        "texto": "Biblioteca Mari Pepa Estrada - Junta de Andalucía",
-        "url": "https://www.juntadeandalucia.es/organismos/culturaydeporte/areas/cultura/bibliotecas-documentacion/directorio-bibliotecas/detalle/627.html"
-      }
-    ],
-    "cta": "Ver bibliotecas",
-    "enlace": "/guia-util/bibliotecas/",
-    "pagina": "/guia-util/bibliotecas/"
-  },
-  {
-    "id": "escuela-musica",
-    "icono": "♫",
-    "categoria": "Cultura",
-    "titulo": "Escuela Municipal de Música",
-    "descripcion": "Recurso cultural y formativo para consultar información sobre la Escuela Municipal de Música Paco el Guardamontes y actividades musicales.",
-    "items": [
-      "La web municipal indica como contacto de referencia el teléfono 952 49 9079.",
-      "Correo publicado: educacionalhaurin@gmail.com.",
-      "Ubicación indicada: Plaza de la Legión, Edificio Escuela de Música.",
-      "La escuela municipal ofrece formación musical en distintas especialidades instrumentales y vocales."
-    ],
-    "links": [
-      {
-        "texto": "Escuela de Música - Ayuntamiento",
-        "url": "https://alhaurinelgrande.es/escuela-de-musica/"
-      }
-    ],
-    "cta": "Ver Escuela de Música",
-    "enlace": "/guia-util/escuela-musica/",
-    "pagina": "/guia-util/escuela-musica/"
-  },
-  {
     "id": "deportes",
     "icono": "⚽",
-    "categoria": "Deportes",
-    "titulo": "Instalaciones deportivas municipales",
-    "descripcion": "Acceso rápido a instalaciones deportivas, reservas, piscina, pistas y contacto del área municipal de Deportes.",
+    "categoria": "Deportes y Salud",
+    "titulo": "Polideportivo e instalaciones deportivas",
+    "descripcion": "Instalaciones deportivas del municipio: piscina municipal, campos de fútbol, pabellones cubiertos, pistas de pádel, tenis y calistenia.",
     "items": [
-      "Instalaciones destacadas: piscina, pistas de tenis, pádel, fútbol 11, fútbol 7, baloncesto, pabellón y pistas polideportivas.",
-      "Teléfono del área de Deportes publicado por la web municipal: 952 49 12 16.",
-      "Piscina municipal: teléfono publicado 952 59 50 05.",
-      "La Concejalía de Deportes gestiona instalaciones, escuelas deportivas, competiciones y reservas."
+      "Polideportivo Municipal: Pabellones cubiertos 1 y 2, campo de fútbol 11 y atletismo.",
+      "Piscina Municipal: cursos de natación, nado libre y abonos de verano (Tel: 952 59 50 05).",
+      "Pistas de Calistenia (225 m² al aire libre), Pádel y Tenis.",
+      "Concejalía de Deportes (Reserva de pistas y escuelas): 952 49 12 16."
     ],
     "links": [
       {
@@ -272,153 +221,136 @@
         "url": "https://alhaurinelgrande.es/concejalia-de-deporte/"
       }
     ],
-    "cta": "Ver instalaciones",
+    "cta": "Ver instalaciones deportivas",
     "enlace": "/guia-util/deportes/",
     "pagina": "/guia-util/deportes/"
   },
   {
-    "id": "calistenia",
-    "icono": "M",
-    "categoria": "Deportes",
-    "titulo": "Calistenia y deporte al aire libre",
-    "descripcion": "Recurso para localizar novedades sobre instalaciones deportivas al aire libre y espacios como la pista de calistenia del Polideportivo Municipal.",
+    "id": "bibliotecas",
+    "icono": "📚",
+    "categoria": "Cultura y Patrimonio",
+    "titulo": "Red de bibliotecas municipales",
+    "descripcion": "Espacios de lectura, salas de estudio, préstamo de libros y acceso a Internet en las bibliotecas de Alhaurín el Grande y Villa del Guadalhorce.",
     "items": [
-      "El Ayuntamiento anunció en 2026 una pista de calistenia en el Polideportivo Municipal.",
-      "La instalación fue presentada como un espacio de 225 m² orientado a la práctica de calistenia.",
-      "Conviene consultar la web municipal para horarios, normas de uso y novedades deportivas.",
-      "Recurso útil para jóvenes, deportistas y vecinos que buscan entrenamiento al aire libre."
+      "Biblioteca Ildefonso Marzo: Avda. Gerald Brenan 21 (Tel: 952 49 01 43 / 669 967 977).",
+      "Biblioteca Mari Pepa Estrada (Villa del Guadalhorce): Plaza Mayor 3-5 (Tel: 952 42 31 21).",
+      "Salas de estudio climatizadas con conexión Wi-Fi gratuita para estudiantes.",
+      "Clubes de lectura, cuentacuentos infantiles y fondo bibliográfico local."
     ],
     "links": [
       {
-        "texto": "Noticia pista de calistenia",
-        "url": "https://alhaurinelgrande.es/alhaurin-el-grande-estrena-una-nueva-pista-de-calistenia-en-el-polideportivo-municipal-de-225-m%C2%B2/"
-      },
-      {
-        "texto": "Deportes Alhaurín",
-        "url": "https://alhaurinelgrande.es/deportes/"
+        "texto": "Bibliotecas Municipales",
+        "url": "https://alhaurinelgrande.es/cultura/biblioteca-general/"
       }
     ],
-    "cta": "Ver recurso deportivo",
-    "enlace": "/guia-util/calistenia/",
-    "pagina": "/guia-util/calistenia/"
+    "cta": "Ver bibliotecas y salas de estudio",
+    "enlace": "/guia-util/bibliotecas/",
+    "pagina": "/guia-util/bibliotecas/"
   },
   {
     "id": "turismo",
-    "icono": "★",
-    "categoria": "Turismo",
-    "titulo": "Turismo, patrimonio y planes",
-    "descripcion": "Accesos para descubrir recursos turísticos, patrimonio, Casa Museo Antonio Gala, rutas, miradores y planes tranquilos por Alhaurín el Grande.",
+    "icono": "🏛️",
+    "categoria": "Turismo y Ocio",
+    "titulo": "Turismo, patrimonio y rutas",
+    "descripcion": "Lugares imperdibles de Alhaurín el Grande: Casa Museo Antonio Gala (La Baltasara), Arcos de Coín, Arco del Cobertizo, miradores y rutas por la Sierra de Mijas.",
     "items": [
-      "Web municipal de turismo con información turística actualizada.",
-      "La web oficial municipal destaca Alhaurín el Grande como enclave del Valle del Guadalhorce.",
-      "Casa Museo Antonio Gala - La Baltasara.",
-      "Ideas para seguir ampliando: casco histórico, miradores, rutas naturales y patrimonio."
+      "La Baltasara (Casa Museo Antonio Gala): residencia del célebre escritor rodeada de jardines.",
+      "Patrimonio histórico: Arco del Cobertizo, Molino de la Cruz y Ermita de San Sebastián.",
+      "Rutas de senderismo: Ruta del agua, Sendero de la Fuente del Acebuche y Pinar de la Sierra.",
+      "Oficina de Turismo y Portal Visitalhaurinelgrande.es."
     ],
     "links": [
       {
-        "texto": "Turismo Alhaurín el Grande",
+        "texto": "Portal Oficial de Turismo",
         "url": "https://visitalhaurinelgrande.es/"
-      },
-      {
-        "texto": "Web oficial del Ayuntamiento",
-        "url": "https://alhaurinelgrande.es/"
       }
     ],
-    "cta": "Ver turismo",
+    "cta": "Descubrir rutas y patrimonio",
     "enlace": "/guia-util/turismo/",
     "pagina": "/guia-util/turismo/"
   },
   {
-    "id": "aparcamiento",
-    "icono": "P",
-    "categoria": "Movilidad",
-    "titulo": "Aparcamiento y moverte por el centro",
-    "descripcion": "Guía práctica de zonas de aparcamiento libre, parking subterráneo, accesos principales y recomendaciones para aparcar en Alhaurín el Grande.",
+    "id": "mercados-y-compras",
+    "icono": "🛍️",
+    "categoria": "Comercio Local",
+    "titulo": "Mercadillos y comercio de proximidad",
+    "descripcion": "Días de mercadillo semanal, comercio local del centro e información sobre productos típicos del Guadalhorce.",
     "items": [
-      "Parking subterráneo Huerta de la Compañía (Plaza Baja / Centro): idóneo para gestiones en el Ayuntamiento, compras y restaurantes.",
-      "Aparcamiento del Recinto Ferial (Avenida de la Libertad): amplia explanada gratuita a 5 minutos a pie del casco histórico.",
-      "Avenida Gerald Brenan y Calle Cruz: zonas de estacionamiento en línea y batería para compras rápidas de proximidad.",
-      "Polígono Industrial La Rosa: zona idónea para vehículos comerciales, camiones y compras de gran volumen.",
-      "Consejo en festivos: en días de Feria, Semana Santa o mercado local, se recomienda acceder por A-404 y usar la zona del Recinto Ferial."
+      "Mercadillo semanal: los jueves por la mañana en el Recinto Ferial.",
+      "Comercio Centro Abierto: tiendas tradicionales, moda y servicios en Avda. Gerald Brenan y Calle Cruz.",
+      "Productos locales: Tomate Huevo de Toro, aceite de oliva virgen extra y pan de Alhaurín.",
+      "Asociación de Comerciantes y Hosteleros (Fedelhorce)."
     ],
     "links": [
       {
-        "texto": "Ubicación Parking Huerta de la Compañía",
-        "url": "https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande"
-      },
-      {
-        "texto": "Web municipal - Movilidad",
-        "url": "https://alhaurinelgrande.es/"
+        "texto": "Comercios Destacados de Alhaurín",
+        "url": "/comercios/"
       }
     ],
-    "cta": "Ver aparcamientos",
-    "enlace": "/guia-util/aparcamiento/",
-    "pagina": "/guia-util/aparcamiento/"
-  },
-  {
-    "id": "gasolineras",
-    "icono": "⛽",
-    "categoria": "Servicios",
-    "titulo": "Gasolineras y servicios de carretera",
-    "descripcion": "Estaciones de servicio, puntos de repostaje 24h, lavaderos a presión, tienda y aire para neumáticos en Alhaurín el Grande.",
-    "items": [
-      "Estación de servicio Repsol (Ctra. Coín - Alhaurín A-355): combustible de calidad, lavadero automático, tienda y atención en ruta.",
-      "Estación de servicio BP (Avenida Gerald Brenan / Salida Cártama): repostaje urbano, lavadero a presión y conveniencia.",
-      "Gasolinera Plenoil / Low Cost (Polígono La Rosa): repostaje autoservicio 24 horas con tarifas competitivas.",
-      "Servicios adicionales: comprobación de aire/agua y zonas de aspirado disponibles en estaciones de A-404 y A-355."
-    ],
-    "links": [
-      {
-        "texto": "Gasolineras en Alhaurín el Grande (Maps)",
-        "url": "https://www.google.com/maps/search/gasolineras+en+Alhaurin+el+Grande"
-      }
-    ],
-    "cta": "Ver gasolineras",
-    "enlace": "/guia-util/gasolineras/",
-    "pagina": "/guia-util/gasolineras/"
+    "cta": "Ver guía comercial",
+    "enlace": "/comercios/",
+    "pagina": "/comercios/"
   },
   {
     "id": "veterinarios",
     "icono": "🐾",
-    "categoria": "Servicios",
-    "titulo": "Veterinarios y cuidado de mascotas",
-    "descripcion": "Clínicas veterinarias, medicina preventiva, urgencias, peluquería canina y nutrición para mascotas en Alhaurín el Grande.",
+    "categoria": "Servicios y Mascotas",
+    "titulo": "Clínicas veterinarias y mascotas",
+    "descripcion": "Centros veterinarios, urgencias para animales de compañía, medicina preventiva y peluquerías caninas en Alhaurín el Grande.",
     "items": [
-      "Clínica Veterinaria Alhaurín: consultas de medicina general, cirugía, vacunación, identificación por microchip y desparasitación.",
-      "Centro Veterinario Guadalhorce: diagnóstico por imagen, analíticas clínicas, urgencias y asesoramiento nutricional.",
-      "Peluquerías caninas y felinas: servicios de baño, corte comercial y estética en zona centro y Polígono Industrial La Rosa.",
-      "Urgencias 24h: se recomienda telefonear con antelación al número de guardia de la clínica de referencia antes del desplazamiento."
+      "Clínicas de medicina general, vacunación, microchip y cirugías preventivas.",
+      "Servicio de urgencias veterinarias bajo localización telefónica.",
+      "Peluquería canina y felina en zona centro y Polígono Industrial La Rosa.",
+      "Parques caninos habilitados en el municipio."
     ],
     "links": [
       {
-        "texto": "Clínicas veterinarias en Alhaurín (Maps)",
+        "texto": "Veterinarios en Alhaurín (Google Maps)",
         "url": "https://www.google.com/maps/search/veterinarios+en+Alhaurin+el+Grande"
       }
     ],
-    "cta": "Ver veterinarios",
+    "cta": "Ver servicio veterinario",
     "enlace": "/guia-util/veterinarios/",
     "pagina": "/guia-util/veterinarios/"
   },
   {
+    "id": "gasolineras",
+    "icono": "⛽",
+    "categoria": "Servicios y Carretera",
+    "titulo": "Estaciones de servicio y gasolineras",
+    "descripcion": "Puntos de repostaje 24h, lavaderos a presión, aire para neumáticos y conveniencia en carretera.",
+    "items": [
+      "Estación Repsol (Ctra. Coín - Alhaurín A-355): combustible premium, lavadero y tienda.",
+      "Estación BP (Avda. Gerald Brenan / Salida Cártama): repostaje urbano y lavadero.",
+      "Gasolineras Low Cost 24h (Polígono Industrial La Rosa).",
+      "Puntos de aire/agua de acceso libre."
+    ],
+    "links": [
+      {
+        "texto": "Gasolineras en Alhaurín (Google Maps)",
+        "url": "https://www.google.com/maps/search/gasolineras+en+Alhaurin+el+Grande"
+      }
+    ],
+    "cta": "Ver estaciones de servicio",
+    "enlace": "/guia-util/gasolineras/",
+    "pagina": "/guia-util/gasolineras/"
+  },
+  {
     "id": "restaurantes",
-    "icono": "R",
+    "icono": "🍽️",
     "categoria": "Comercios y Hostelería",
     "titulo": "Restaurantes, bares y dónde comer",
-    "descripcion": "Guía gastronómica de Alhaurín el Grande: bares de tapas tradicionales, ventas del Guadalhorce, terrazas, menús del día y repostería.",
+    "descripcion": "Guía gastronómica de Alhaurín el Grande: de la sopa cachorreña a las carnes a la brasa y las terrazas del centro.",
     "items": [
-      "Tapas en el centro: Plaza Baja, Calle Cruz y entorno del Ayuntamiento con cañas, tapas tradicionales y raciones de cocina local.",
-      "Ventas y cocina tradicional: especialidades del Valle del Guadalhorce (sopa cachorreña, gazpachuelo, chivo lechal y Tomate Huevo Toro).",
-      "Terrazas y cafeterías: Avenida Gerald Brenan y Plaza del Convento para desayunos, meriendas y aperitivos al aire libre.",
-      "Menú del día y comida para llevar: amplio abanico de mesones y casas de comidas con menú diario de calidad para trabajadores y familias."
+      "Tapas en el centro: Plaza Baja, Plaza del Convento y Calle Cruz.",
+      "Platos tradicionales del Guadalhorce: sopa cachorreña, gazpachuelo y pan de Alhaurín.",
+      "Ventas y mesones de carretera en la A-355 y A-404.",
+      "Participantes en la Ruta Gastronómica del Tomate Huevo de Toro."
     ],
     "links": [
       {
         "texto": "Restaurantes en Alhaurín (Google Maps)",
         "url": "https://www.google.com/maps/search/restaurantes+en+Alhaurin+el+Grande"
-      },
-      {
-        "texto": "Ruta Gastronómica Tomate Huevo Toro",
-        "url": "/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-18-municipios-mas.html"
       }
     ],
     "cta": "Ver dónde comer",
@@ -427,31 +359,23 @@
   },
   {
     "id": "vivir-en-alhaurin",
-    "icono": "⌂",
+    "icono": "🏡",
     "categoria": "Vivir en Alhaurín",
-    "titulo": "Vivir en Alhaurín el Grande",
-    "descripcion": "Guía básica para nuevos residentes: empadronamiento, suministros de agua y electricidad, oferta educativa, salud y servicios de barrio.",
+    "titulo": "Guía para nuevos residentes",
+    "descripcion": "Pasos clave al mudarte a Alhaurín el Grande: empadronamiento, altas de suministros, centros de salud y servicios de barrio.",
     "items": [
-      "Padrón municipal: trámite de alta o cambio de domicilio con cita previa presencial en el Ayuntamiento o por Sede Electrónica.",
-      "Suministros de agua y luz: gestiones con Aqualia / Ayuntamiento para el agua potable y distribuidoras eléctricas principales.",
-      "Mapa educativo: CEIP Emilia Olivares, CEIP Jorge Guillén, CEIP El Chorro, IES Antonio Gala e IES Fuente Lucena.",
-      "Salud y urgencias: Centro de Salud de Alhaurín el Grande (SAS) y Hospital Comarcal del Guadalhorce en Cártama."
+      "Empadronamiento en el Ayuntamiento (presencial con cita previa o en Sede Electrónica).",
+      "Alta de suministro de agua potable con Aqualia / Gestión municipal.",
+      "Asignación de médico de cabecera en el Centro de Salud del SAS.",
+      "Red de transporte escolar y líneas de autobús para trabajadores."
     ],
     "links": [
       {
-        "texto": "Ayuntamiento de Alhaurín el Grande",
-        "url": "https://alhaurinelgrande.es/"
-      },
-      {
         "texto": "Sede Electrónica del Ayuntamiento",
         "url": "https://alhaurinelgrande.sedelectronica.es/"
-      },
-      {
-        "texto": "Servicio Andaluz de Salud (SAS)",
-        "url": "https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/"
       }
     ],
-    "cta": "Ver guía de residencia",
+    "cta": "Ver guía para nuevos residentes",
     "enlace": "/guia-util/vivir-en-alhaurin/",
     "pagina": "/guia-util/vivir-en-alhaurin/"
   }

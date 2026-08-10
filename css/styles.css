@@ -871,63 +871,99 @@ section {
 }
 
 .guide-card {
-    padding: 22px;
-    transition: transform .18s ease, box-shadow .18s ease;
-    background: rgba(255, 255, 255, .94);
+    position: relative;
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    background: #ffffff;
+    border: 1px solid var(--line);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    border-color: rgba(69, 92, 54, 0.3);
 }
 
 .guide-card-top {
     display: flex;
     gap: 14px;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 14px;
 }
 
 .guide-icon {
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     flex: 0 0 auto;
     border-radius: 16px;
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, var(--brand-soft), #fff3df);
-    color: var(--brand);
-    font-weight: 950;
-    border: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(69, 92, 54, 0.1), rgba(244, 240, 232, 0.8));
+    color: var(--accent);
+    font-size: 24px;
+    border: 1px solid rgba(69, 92, 54, 0.15);
 }
 
 .guide-category {
     display: inline-flex;
-    margin-bottom: 7px;
-    color: var(--gold);
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: rgba(69, 92, 54, 0.08);
+    color: var(--accent);
     font-size: 11px;
-    font-weight: 950;
-    letter-spacing: .06em;
+    font-weight: 900;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.guide-card h3 {
+    margin: 0;
+    font-size: 19px;
+    font-family: var(--font-display);
+    color: var(--ink);
+    line-height: 1.25;
+}
+
+.guide-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.55;
 }
 
 .guide-card ul {
     list-style: none;
     padding: 0;
-    margin: 18px 0 0;
-    display: grid;
-    gap: 8px;
+    margin: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
 }
 
 .guide-card li {
     position: relative;
-    padding-left: 18px;
-    color: #475467;
-    font-size: 14px;
-    line-height: 1.45;
+    padding-left: 20px;
+    color: #374151;
+    font-size: 13.5px;
+    line-height: 1.5;
+    font-weight: 600;
 }
 
 .guide-card li::before {
-    content: "";
+    content: "✓";
     position: absolute;
     left: 0;
-    top: .58em;
-    width: 6px;
+    top: 0;
+    color: var(--accent);
+    font-weight: 900;
+    font-size: 12px;
+}
     height: 6px;
     border-radius: 50%;
     background: var(--gold);

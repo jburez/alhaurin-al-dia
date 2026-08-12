@@ -1,65 +1,42 @@
 [
     {
-        "id": "https-www-youtube-com-watch-v-ukvnlwsxwio-46902b82",
-        "titulo": "Alhaurín el Grande despide a Diego Solano y avanza en obras y eventos locales",
-        "titulo_original": "NOTICIAS ATV 6 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El municipio lamenta la pérdida del juez de paz Diego Solano y anuncia la licitación para reparar el pabellón 2, además de premiar el comercio local y preparar eventos culturales y deportivos.",
-        "resumen": "El municipio lamenta la pérdida del juez de paz Diego Solano y anuncia la licitación para reparar el pabellón 2, además de premiar el comercio local y preparar eventos culturales y deportivos.",
-        "cuerpo": "Alhaurín el Grande ha declarado dos días de luto oficial tras el fallecimiento de Diego Solano, histórico juez de paz del municipio, con numerosas muestras de condolencia de instituciones, colectivos y vecinos.\n\nAdemás, el área de Educación ha abierto el plazo de inscripción para el campamento de verano que se celebrará en septiembre en el polideportivo municipal. Por último, el barrio San Isidro se prepara para recibir a la Virgen de Gracia, mientras el CD Alhaurino continúa su pretemporada con buenos resultados y se alista para disputar el 33.º Trofeo Virgen de Gracia.",
-        "fecha": "2026-08-12T09:20:26.250030+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
-        "seo_keywords": [
-            "Diego Solano Alhaurín el Grande",
-            "reparación pabellón polideportivo",
-            "premios comercio local Alhaurín"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=uKvNLwsXWio",
-        "url": "https://www.youtube.com/watch?v=uKvNLwsXWio",
-        "imagen": "https://i2.ytimg.com/vi/uKvNLwsXWio/hqdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-en-obras-y-eventos-locales.html"
-    },
-    {
         "id": "https-www-youtube-com-watch-v-tpilxftbkn4-b6d8848e",
-        "titulo": "Programa 32 de 'Así lo viví' con Javier Gallego en Alhaurín al Día",
+        "titulo": "Podcast 'Así lo viví' con Javier Gallego: Programa 32 ya disponible",
         "titulo_original": "Así lo viví con Javier Gallego I Programa 32",
-        "descripcion": "Descubre el contenido del programa 32 de 'Así lo viví' con Javier Gallego, una propuesta audiovisual que recoge experiencias y testimonios locales.",
-        "resumen": "Descubre el contenido del programa 32 de 'Así lo viví' con Javier Gallego, una propuesta audiovisual que recoge experiencias y testimonios locales.",
-        "cuerpo": "El programa 32 de 'Así lo viví', presentado por Javier Gallego, ofrece una recopilación de relatos y vivencias que reflejan la realidad y el sentir de la comunidad local. Esta edición continúa con la línea de acercar historias personales y momentos significativos a los espectadores.\n\nA través de este espacio, se busca fomentar la conexión con el público de Alhaurín al Grande y sus alrededores, destacando la importancia de compartir experiencias que enriquecen el tejido social y cultural del municipio.\n\nEl programa está disponible para su visualización en la plataforma de ATV Alhaurín YouTube.",
-        "fecha": "2026-08-12T09:20:20.098227+00:00",
+        "descripcion": "El programa 32 de 'Así lo viví' con Javier Gallego ofrece una nueva entrega con contenidos de interés para la audiencia local y seguidores del podcast.",
+        "resumen": "El programa 32 de 'Así lo viví' con Javier Gallego ofrece una nueva entrega con contenidos de interés para la audiencia local y seguidores del podcast.",
+        "cuerpo": "El programa 32 de 'Así lo viví' con Javier Gallego ya está disponible para su escucha. Esta edición continúa con la línea de entrevistas y relatos personales que caracterizan el espacio, ofreciendo una experiencia cercana y enriquecedora para los oyentes.\n\nJavier Gallego aborda temas actuales y vivencias que conectan con la comunidad local y más allá. Los seguidores del podcast pueden acceder al contenido a través del canal oficial de ATV Alhaurín en YouTube, donde se publica cada nueva entrega.\n\nEsta iniciativa contribuye a fomentar la cultura y el diálogo en Alhaurín el Grande, consolidándose como un referente en la comunicación local.",
+        "fecha": "2026-08-12T11:07:03.699235+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Vídeos",
         "categoria_url": "categoria/videos/",
         "seo_keywords": [
             "Así lo viví",
             "Javier Gallego",
-            "programa 32 Alhaurín"
+            "programa 32 podcast"
         ],
         "enlace": "https://www.youtube.com/watch?v=tpilXfTBkn4",
         "url": "https://www.youtube.com/watch?v=tpilXfTBkn4",
         "imagen": "https://i1.ytimg.com/vi/tpilXfTBkn4/hqdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-en-alhaurin-al-dia.html"
+        "pagina": "noticias/podcast-asi-lo-vivi-con-javier-gallego-programa-32-ya-disponible.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-23kk4yegjvc-d1d98e33",
         "titulo": "Cristóbal Sánchez comparte su experiencia en el programa 33 de Así lo viví",
         "titulo_original": "Así lo viví con Cristóbal Sánchez I Programa 33",
-        "descripcion": "El programa 33 de Así lo viví presenta a Cristóbal Sánchez, quien relata sus vivencias y reflexiones en una entrevista cercana y personal.",
-        "resumen": "El programa 33 de Así lo viví presenta a Cristóbal Sánchez, quien relata sus vivencias y reflexiones en una entrevista cercana y personal.",
-        "cuerpo": "En el episodio 33 de Así lo viví, Cristóbal Sánchez ofrece una entrevista en la que comparte detalles de su trayectoria y experiencias personales. A través de un diálogo ameno, el programa profundiza en aspectos relevantes de su vida y su visión sobre diversos temas.\n\nEste espacio audiovisual busca acercar a los espectadores historias locales y testimonios que reflejan la realidad y el sentir de la comunidad. La participación de Cristóbal Sánchez en este capítulo aporta una perspectiva única y enriquecedora para los seguidores del programa.",
-        "fecha": "2026-08-12T09:20:16.330114+00:00",
+        "descripcion": "El programa 33 de Así lo viví presenta a Cristóbal Sánchez, quien relata sus vivencias y experiencias personales en una entrevista cercana y amena.",
+        "resumen": "El programa 33 de Así lo viví presenta a Cristóbal Sánchez, quien relata sus vivencias y experiencias personales en una entrevista cercana y amena.",
+        "cuerpo": "En el programa número 33 de Así lo viví, Cristóbal Sánchez ofrece una entrevista en la que comparte detalles sobre su trayectoria y momentos significativos de su vida. La conversación se desarrolla en un ambiente cercano, permitiendo conocer aspectos personales y profesionales del invitado.\n\nEste espacio audiovisual busca acercar a los espectadores historias locales que inspiran y aportan valor a la comunidad. La emisión está disponible en el canal de YouTube de ATV Alhaurín, facilitando el acceso a todos los interesados en conocer más sobre figuras relevantes de la zona.",
+        "fecha": "2026-08-12T11:06:59.572561+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Vídeos",
         "categoria_url": "categoria/videos/",
         "seo_keywords": [
             "Cristóbal Sánchez",
             "Así lo viví programa 33",
-            "entrevista Alhaurín el Grande"
+            "entrevista Alhaurín"
         ],
         "enlace": "https://www.youtube.com/watch?v=23Kk4YEgJVc",
         "url": "https://www.youtube.com/watch?v=23Kk4YEgJVc",
@@ -72,17 +49,17 @@
         "id": "https-www-youtube-com-watch-v-ib-9vulfmka-decf70f4",
         "titulo": "Las Veladas de Blanco regresaron con éxito al Camino de Málaga en Alhaurín el Grande",
         "titulo_original": "Veladas de Blanco 2026",
-        "descripcion": "El Camino de Málaga en Alhaurín el Grande vibró con música, animación y tradición en las Veladas de Blanco, con 22 establecimientos participantes y actividades para toda la familia.",
-        "resumen": "El Camino de Málaga en Alhaurín el Grande vibró con música, animación y tradición en las Veladas de Blanco, con 22 establecimientos participantes y actividades para toda la familia.",
-        "cuerpo": "Las Veladas de Blanco regresaron con éxito al Camino de Málaga en Alhaurín el Grande, reuniendo a vecinos y visitantes en una noche llena de ambiente festivo y tradición. La jornada estuvo animada con charangas, conciertos, espectáculos de magia y actividades infantiles, creando un entorno ideal para el disfrute de todas las edades.\n\nLa tradición de vestir de blanco fue el hilo conductor de la velada, que combinó ocio y cultura para impulsar el comercio y la hostelería de la zona, consolidando esta cita como un referente estival en Alhaurín el Grande.",
-        "fecha": "2026-08-12T09:20:12.923706+00:00",
+        "descripcion": "La iniciativa de la Asociación de Hosteleros y Comerciantes del Camino de Málaga reunió a 22 establecimientos en una noche de música, animación y tradición para dinamizar la economía local.",
+        "resumen": "La iniciativa de la Asociación de Hosteleros y Comerciantes del Camino de Málaga reunió a 22 establecimientos en una noche de música, animación y tradición para dinamizar la economía local.",
+        "cuerpo": "Las Veladas de Blanco regresaron con éxito al Camino de Málaga en Alhaurín el Grande, congregando a vecinos y visitantes en una noche llena de música, diversión y tradición. Durante el evento, los asistentes disfrutaron de charangas, conciertos, magia, animación y actividades infantiles, todo ello en un ambiente festivo donde no faltó la tradición de vestir de blanco.\n\nEsta cita veraniega busca impulsar la actividad económica local y fortalecer el comercio y la hostelería de la zona, consolidándose como una de las propuestas más esperadas del verano en Alhaurín el Grande.",
+        "fecha": "2026-08-12T11:06:56.234638+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
             "Veladas de Blanco Alhaurín el Grande",
             "Camino de Málaga eventos",
-            "fiesta verano Alhaurín el Grande"
+            "hostelería y comercio Alhaurín"
         ],
         "enlace": "https://www.youtube.com/watch?v=iB-9VUlFMKA",
         "url": "https://www.youtube.com/watch?v=iB-9VUlFMKA",
@@ -95,10 +72,10 @@
         "id": "https-www-youtube-com-watch-v-piuei9ttcus-5fdf3604",
         "titulo": "Alhaurín el Grande renueva motos municipales y amplía subvenciones para jóvenes",
         "titulo_original": "NOTICIAS ATV 7 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande incorpora tres nuevas motos para Servicios Operativos y amplía hasta octubre el plazo para solicitar subvenciones de hasta 700 euros para jóvenes emprendedores.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande incorpora tres nuevas motos para Servicios Operativos y amplía hasta octubre el plazo para solicitar subvenciones de hasta 700 euros para jóvenes emprendedores.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande continúa con su plan de modernización y ha adquirido tres nuevas motos escúteres para el Área de Servicios Operativos, mejorando así la movilidad y eficiencia del personal municipal.\n\nAdemás, se ha ampliado el plazo para la presentación de solicitudes de subvenciones destinadas a jóvenes emprendedores, que ahora podrán optar a ayudas de hasta 700 euros hasta el próximo 1 de octubre. Por otro lado, el CEIP Pablo Ruiz Picasso está realizando obras de mejora durante las vacaciones de verano para garantizar unas instalaciones más seguras y accesibles para el alumnado.\n\nEn el ámbito cultural, el barrio de San Sebastián se prepara para recibir a la Virgen de Gracia en la última etapa de su recorrido, con la colaboración de vecinos y la Hermandad de Nuestro Padre Jesús Nazareno. Finalmente, el Área de Juventud mantiene su programación de talleres durante agosto, ofreciendo actividades como defensa personal, customización de ropa, pintura creativa y podcast para jóvenes.",
-        "fecha": "2026-08-12T09:20:08.038506+00:00",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande incorpora tres nuevas motos para Servicios Operativos y amplía hasta octubre las ayudas de hasta 700 euros para jóvenes emprendedores.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande incorpora tres nuevas motos para Servicios Operativos y amplía hasta octubre las ayudas de hasta 700 euros para jóvenes emprendedores.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande continúa con su plan de modernización y ha adquirido tres nuevas motos escúteres para el Área de Servicios Operativos, mejorando así la movilidad y eficiencia del personal municipal.\n\nAdemás, se ha ampliado el plazo para solicitar subvenciones destinadas a jóvenes emprendedores, que podrán acceder a ayudas de hasta 700 euros para impulsar sus proyectos empresariales hasta el 1 de octubre. Por otro lado, el CEIP Pablo Ruiz Picasso está realizando obras de mejora durante las vacaciones de verano para ofrecer un entorno más seguro y accesible a sus alumnos.\n\nEn el barrio de San Sebastián, los vecinos y la Hermandad de Nuestro Padre Jesús Nazareno ultiman los preparativos para la llegada de la Virgen de Gracia, que realizará su última parada antes de regresar a la parroquia. Finalmente, el Área de Juventud mantiene su programación de talleres en agosto, con actividades como defensa personal, customización de ropa, pintura creativa y podcast para jóvenes.",
+        "fecha": "2026-08-12T11:06:51.964236+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Municipal",
         "categoria_url": "categoria/municipal/",
@@ -118,17 +95,17 @@
         "id": "https-www-youtube-com-watch-v-t7epcjzrj-m-f3797b0a",
         "titulo": "Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande",
         "titulo_original": "Audiciones de la Escuela de Música “La Pepa”",
-        "descripcion": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos y un concierto final del grupo Alejados.",
-        "resumen": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos y un concierto final del grupo Alejados.",
-        "cuerpo": "La Plaza del Convento de Alhaurín el Grande fue el escenario elegido para las audiciones de fin de curso de la Escuela de Música La Pepa, donde 42 alumnos mostraron sus avances musicales ante familiares y vecinos. Este evento, organizado por la Agrupación Músico-Cultural de la Santa Vera Cruz en colaboración con el Ayuntamiento local, fomentó la convivencia y el disfrute de la música en la comunidad.\n\nLa jornada culminó con un concierto a cargo del grupo Alejados, que puso el broche final a un año lleno de aprendizaje y dedicación por parte de los estudiantes.",
-        "fecha": "2026-08-12T09:19:59.703272+00:00",
+        "descripcion": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento, con la participación de 42 alumnos y un concierto final del grupo Alejados.",
+        "resumen": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento, con la participación de 42 alumnos y un concierto final del grupo Alejados.",
+        "cuerpo": "El pasado 31 de julio, la Plaza del Convento de Alhaurín el Grande fue el escenario de las audiciones de fin de curso de la Escuela de Música La Pepa. Un total de 42 alumnos mostraron el progreso y las habilidades adquiridas durante el año académico, en un evento organizado por la Agrupación Músico-Cultural de la Santa Vera Cruz y el Ayuntamiento local.\n\nLa cita reunió a familiares, vecinos y amantes de la música en una tarde de convivencia y cultura. La jornada musical concluyó con un concierto a cargo del grupo Alejados, que puso el broche final a una temporada llena de aprendizaje y dedicación.\n\nEsta actividad refuerza el compromiso del municipio con la promoción de la música y la cultura entre sus habitantes.",
+        "fecha": "2026-08-12T11:06:32.474437+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Agenda Cultural",
         "categoria_url": "categoria/agenda-cultural/",
         "seo_keywords": [
             "Escuela de Música La Pepa",
-            "audiciones fin de curso",
-            "Alhaurín el Grande música"
+            "audiciones fin de curso Alhaurín el Grande",
+            "concierto grupo Alejados"
         ],
         "enlace": "https://www.youtube.com/watch?v=t7ePcjZrJ_M",
         "url": "https://www.youtube.com/watch?v=t7ePcjZrJ_M",
@@ -139,35 +116,35 @@
     },
     {
         "id": "https-www-youtube-com-watch-v-4u-qmnemgwc-642a1ab4",
-        "titulo": "Actualidad en Alhaurín el Grande: subvenciones, nueva iluminación y homenaje a Diego",
+        "titulo": "Alhaurín el Grande permite aparcar en zonas de recarga y abre subvenciones 2026",
         "titulo_original": "NOTICIAS ATV 10 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande anuncia subvenciones para asociaciones, nueva iluminación en el estadio y un minuto de silencio en memoria de Diego Solano.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande anuncia subvenciones para asociaciones, nueva iluminación en el estadio y un minuto de silencio en memoria de Diego Solano.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha informado que las asociaciones y colectivos locales pueden consultar las bases para solicitar las subvenciones de 2026, cuyo plazo estará abierto hasta el 15 de septiembre. Además, se permitirá aparcar temporalmente en las zonas reservadas para la recarga eléctrica mientras se espera la instalación definitiva de los puntos de conexión por parte de Endesa.\n\nEn otro orden de noticias, el alcalde Anthony Bermúdez inauguró la nueva iluminación del estadio municipal Miguel Fijones, una mejora que ha supuesto una inversión de 50.000 euros. Por su parte, el municipio rindió homenaje a Diego Solano con un minuto de silencio convocado a las puertas del Juzgado de Paz.\n\nTambién destaca la participación del joven alhaurino Javier Aragón, que llevará su diseño de sonda para estudiar el eclipse desde la estratosfera en Toledo.",
-        "fecha": "2026-08-12T09:19:55.445257+00:00",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande autoriza el aparcamiento en zonas de recarga eléctrica y abre el plazo para solicitar subvenciones a asociaciones hasta el 15 de septiembre.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande autoriza el aparcamiento en zonas de recarga eléctrica y abre el plazo para solicitar subvenciones a asociaciones hasta el 15 de septiembre.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha anunciado que se permitirá aparcar en las zonas reservadas para la recarga eléctrica de vehículos mientras se completa la instalación definitiva de los puntos de conexión, a la espera de la compañía Endesa.\n\nEsta medida busca facilitar la movilidad y el uso de vehículos eléctricos en el municipio. Por otro lado, el Área de Participación Ciudadana ha publicado las bases para las subvenciones destinadas a asociaciones y colectivos locales, cuyo plazo de solicitud estará abierto hasta el 15 de septiembre.\n\nEsta iniciativa pretende apoyar el desarrollo de actividades y proyectos comunitarios en Alhaurín el Grande. Además, el municipio ha rendido homenaje al juez de paz Diego Solano con un minuto de silencio, y el joven alhaurino Javier Aragón partirá próximamente a Toledo con su sonda diseñada para estudiar el eclipse desde la estratosfera.",
+        "fecha": "2026-08-12T11:06:27.972728+00:00",
         "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
-            "subvenciones Alhaurín el Grande",
-            "iluminación estadio Miguel Fijones",
-            "minuto de silencio Diego Solano"
+            "Alhaurín el Grande",
+            "subvenciones asociaciones 2026",
+            "aparcamiento recarga eléctrica"
         ],
         "enlace": "https://www.youtube.com/watch?v=4u_qmNemGWc",
         "url": "https://www.youtube.com/watch?v=4u_qmNemGWc",
         "imagen": "https://i1.ytimg.com/vi/4u_qmNemGWc/hqdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/actualidad-en-alhaurin-el-grande-subvenciones-nueva-iluminacion-y-homenaje-a-diego.html"
+        "pagina": "noticias/alhaurin-el-grande-permite-aparcar-en-zonas-de-recarga-y-abre-subvenciones-2026.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-l0zs-32pyr4-5550defa",
-        "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia 2026",
+        "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
         "titulo_original": "XXXIII Trofeo Virgen de Gracia: CD Alhaurino - Atlético Malagueño (2026)",
-        "descripcion": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado partido de fútbol en Alhaurín el Grande.",
-        "resumen": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado partido de fútbol en Alhaurín el Grande.",
-        "cuerpo": "El XXXIII Trofeo Virgen de Gracia reúne a dos destacados equipos de la región: el CD Alhaurino y el Atlético Malagueño. Este encuentro deportivo se celebra en Alhaurín el Grande, ofreciendo a los aficionados una oportunidad para disfrutar de un partido competitivo y de calidad.\n\nEl trofeo, que ya cuenta con más de tres décadas de historia, es un evento tradicional que fomenta el deporte local y la convivencia entre clubes. La edición de 2026 promete ser especialmente emocionante, con ambos equipos mostrando un alto nivel de juego y preparación para la temporada.",
-        "fecha": "2026-08-12T09:19:51.443067+00:00",
+        "descripcion": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
+        "resumen": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
+        "cuerpo": "El XXXIII Trofeo Virgen de Gracia es uno de los eventos deportivos más destacados en Alhaurín el Grande, donde el CD Alhaurino recibe al Atlético Malagueño en un partido que promete emoción y buen fútbol. Este trofeo, con una larga tradición, reúne a equipos locales y regionales para celebrar el deporte y la competición sana.\n\nEl encuentro es una oportunidad para que los aficionados disfruten de un espectáculo deportivo de calidad, además de apoyar a sus equipos favoritos. La competición forma parte de las actividades deportivas que fomentan la participación y el desarrollo del fútbol en la comarca, consolidando la importancia del CD Alhaurino en el ámbito local.",
+        "fecha": "2026-08-12T11:06:23.216670+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Deportes",
         "categoria_url": "categoria/deportes/",
@@ -181,7 +158,7 @@
         "imagen": "https://i1.ytimg.com/vi/L0zs-32pyR4/hqdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia-2026.html"
+        "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-i4xzpopj9xm-a395a406",
@@ -189,15 +166,15 @@
         "titulo_original": "NOTICIAS ATV 11 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande anuncia nuevas rutas saludables, la presentación de la romería en honor al Cristo de las Agonías y el inicio de los traslados de la Virgen de Gracia.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande anuncia nuevas rutas saludables, la presentación de la romería en honor al Cristo de las Agonías y el inicio de los traslados de la Virgen de Gracia.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande está desarrollando dos rutas saludables de 12 kilómetros que recorrerán distintas zonas del municipio. Estas rutas serán señalizadas físicamente en septiembre y contarán con una aplicación digital que ofrecerá información detallada para los usuarios.\n\nPor otro lado, la concejalía de fiestas ha confirmado que la presentación oficial de la romería 2026 en honor al Cristo de las Agonías se celebrará el 20 de agosto a las 20:00 horas en la terraza del Teatro Municipal. Además, ya han comenzado los traslados de la Virgen de Gracia, con el primero realizado recientemente hasta la Plaza Alta.\n\nEn el ámbito deportivo, el torneo de tenis de mesa en honor a la Virgen de Gracia coronó a Miguel Jurado y Enzo Quero como campeones en sus respectivas categorías durante la competición celebrada en el polideportivo local.",
-        "fecha": "2026-08-12T09:19:48.014692+00:00",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande está desarrollando dos rutas saludables de 12 kilómetros que recorrerán diferentes zonas del municipio. Estas rutas serán señalizadas físicamente en septiembre y contarán con una aplicación digital que ofrecerá información detallada para los usuarios.\n\nPor otro lado, la Concejalía de Fiestas ha confirmado que la presentación oficial de la romería 2026 en honor al Cristo de las Agonías se celebrará el 20 de agosto a las 20:00 horas en la terraza del Teatro Municipal. Además, ya han comenzado los traslados de la Virgen de Gracia, con el primero realizado hasta la Plaza Alta.\n\nEn el ámbito deportivo, el torneo de tenis de mesa en honor a la Virgen de Gracia destacó a Miguel Jurado y Enzo Quero como campeones en sus respectivas categorías, en un evento celebrado en el polideportivo local.",
+        "fecha": "2026-08-12T11:06:17.256983+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
             "rutas saludables Alhaurín el Grande",
-            "romería Cristo de las Agonías",
-            "traslados Virgen de Gracia"
+            "romería Cristo de las Agonías 2026",
+            "torneo tenis de mesa Alhaurín"
         ],
         "enlace": "https://www.youtube.com/watch?v=I4xzpopj9xM",
         "url": "https://www.youtube.com/watch?v=I4xzpopj9xM",
@@ -207,12 +184,35 @@
         "pagina": "noticias/alhaurin-el-grande-impulsa-rutas-saludables-y-prepara-la-romeria-2026.html"
     },
     {
+        "id": "https-www-youtube-com-watch-v-z90bz5mg7i0-0044f441",
+        "titulo": "Antonio Mateo, barbero alhaurino, triunfa con Duplex Barbería en Barcelona",
+        "titulo_original": "31. Antonio Mateo – Badalona | Pódcast Alhaurinos en el mundo",
+        "descripcion": "Antonio Mateo, natural de Alhaurín el Grande, ha consolidado su barbería en Barcelona tras años de experiencia en España y Holanda, liderando un equipo profesional cerca del Spotify Camp Nou.",
+        "resumen": "Antonio Mateo, natural de Alhaurín el Grande, ha consolidado su barbería en Barcelona tras años de experiencia en España y Holanda, liderando un equipo profesional cerca del Spotify Camp Nou.",
+        "cuerpo": "Antonio Mateo llegó a Barcelona con la intención de quedarse solo tres meses, pero su pasión por la barbería y el emprendimiento le han llevado a establecerse definitivamente en la ciudad. Tras recorrer varias ciudades españolas y trabajar en Holanda para formarse en barberías reconocidas, fundó Duplex Barbería, un negocio que dirige desde hace casi seis años.\n\nSu establecimiento, ubicado cerca del Spotify Camp Nou, cuenta con un equipo de cinco profesionales que ofrecen servicios de alta calidad. Este alhaurino ha sabido combinar su experiencia internacional con su visión empresarial para crear un espacio de referencia en el sector de la barbería en Barcelona.\n\nSu historia es un ejemplo de superación y dedicación, destacando en el podcast \"Alhaurinos en el mundo\" de Alhaurín Radio, donde comparte su trayectoria y proyectos futuros desde Badalona.",
+        "fecha": "2026-08-12T11:06:12.464375+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Comercio y Empresa",
+        "categoria_url": "categoria/comercio-y-empresa/",
+        "seo_keywords": [
+            "Antonio Mateo barbero",
+            "Duplex Barbería Barcelona",
+            "barbería alhaurín el grande"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=z90BZ5Mg7i0",
+        "url": "https://www.youtube.com/watch?v=z90BZ5Mg7i0",
+        "imagen": "https://i3.ytimg.com/vi/z90BZ5Mg7i0/hqdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/antonio-mateo-barbero-alhaurino-triunfa-con-duplex-barberia-en-barcelona.html"
+    },
+    {
         "id": "https-rtvalhaurinelgrande-com-25-aniversario-del-coro-rociero-nuestra-d5f6aa0d",
         "titulo": "25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)",
         "titulo_original": "25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)",
-        "descripcion": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
-        "resumen": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
-        "cuerpo": "El Coro Rociero de la Hermandad de Nuestra Señora de Gracia celebró su 25 aniversario con un emotivo certamen de coros en el llano situado detrás de la parroquia de Alhaurín el Grande. La velada estuvo marcada por la música, el baile y la tradición, reuniendo a vecinos y amantes del folclore local.\n\nEl evento contó con la participación del Coro Rociero Trébol de Agua, que aportó su voz y ritmo al encuentro, así como con las academias de baile dirigidas por Lourdes Rodríguez “La La”, que ofrecieron espectáculos de danza que complementaron la celebración.\n\nEsta cita cultural reafirma el compromiso del coro con la promoción de las raíces y la cultura rociera en la localidad.",
+        "descripcion": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemoró su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
+        "resumen": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemoró su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
+        "cuerpo": "El Coro Rociero de la Hermandad de Nuestra Señora de Gracia celebró su 25 aniversario con un emotivo certamen de coros en el llano ubicado detrás de la parroquia de Alhaurín el Grande. La velada estuvo marcada por la música, el baile y la tradición, reuniendo a numerosos vecinos y amantes del folclore local.\n\nEl evento contó con la participación destacada del Coro Rociero Trébol de Agua, así como de las academias de baile dirigidas por Lourdes Rodríguez “La La”. Esta celebración reafirma el compromiso del coro con la promoción de la cultura rociera y el fortalecimiento de las tradiciones en la comunidad local.",
         "fecha": "2026-08-12T06:01:07+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Fiestas y Tradiciones",
@@ -233,9 +233,9 @@
         "id": "https-rtvalhaurinelgrande-com-xxxiii-trofeo-virgen-de-gracia-cd-alhaur-a4487e5d",
         "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
         "titulo_original": "XXXIII Trofeo Virgen de Gracia: CD Alhaurino – Atlético Malagueño (2026)",
-        "descripcion": "El CD Alhaurino y el Atlético Malagueño disputan el XXXIII Trofeo Virgen de Gracia, un clásico del fútbol local en Alhaurín el Grande que reúne a aficionados y equipos de la región.",
-        "resumen": "El CD Alhaurino y el Atlético Malagueño disputan el XXXIII Trofeo Virgen de Gracia, un clásico del fútbol local en Alhaurín el Grande que reúne a aficionados y equipos de la región.",
-        "cuerpo": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y al Atlético Malagueño en un encuentro que se ha consolidado como una cita destacada en el calendario deportivo de Alhaurín el Grande. Este torneo tradicional reúne a equipos locales y regionales, fomentando la rivalidad deportiva y el apoyo de la afición.\n\nEl partido promete ser un espectáculo para los seguidores del fútbol en la comarca, con ambos equipos mostrando su mejor nivel en busca del trofeo. La competición no solo destaca por el juego, sino también por su importancia en la promoción del deporte y la convivencia en la comunidad local.",
+        "descripcion": "El CD Alhaurino y el Atlético Malagueño disputan el XXXIII Trofeo Virgen de Gracia, un clásico del fútbol local que reúne a aficionados en Alhaurín el Grande.",
+        "resumen": "El CD Alhaurino y el Atlético Malagueño disputan el XXXIII Trofeo Virgen de Gracia, un clásico del fútbol local que reúne a aficionados en Alhaurín el Grande.",
+        "cuerpo": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino contra el Atlético Malagueño en un encuentro que destaca en el calendario deportivo de Alhaurín el Grande. Este torneo anual es una cita esperada por los seguidores del fútbol local, que acuden para apoyar a sus equipos y disfrutar de un ambiente deportivo y festivo.\n\nAmbos equipos llegan con la intención de ofrecer un buen espectáculo y luchar por el trofeo que representa un símbolo de la tradición futbolística en la localidad. La competición refuerza el compromiso con el deporte base y la promoción del talento local, consolidándose como un evento clave en la agenda deportiva de la zona.",
         "fecha": "2026-08-11T07:33:01+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Deportes",
@@ -250,23 +250,23 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Captura-300x142.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia.html"
+        "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia-2.html"
     },
     {
         "id": "https-rtvalhaurinelgrande-com-villa-del-guadalhorce-despide-a-las-herm-5ce83b6f",
         "titulo": "Villa del Guadalhorce despide a las hermanas doroteas Lupe y Teresa",
         "titulo_original": "Villa del Guadalhorce despide a las hermanas doroteas Lupe y Teresa",
-        "descripcion": "La comunidad de Villa del Guadalhorce despide a las hermanas Lupe y Teresa con un emotivo acto en la iglesia María Auxiliadora tras cuatro décadas de dedicación.",
-        "resumen": "La comunidad de Villa del Guadalhorce despide a las hermanas Lupe y Teresa con un emotivo acto en la iglesia María Auxiliadora tras cuatro décadas de dedicación.",
-        "cuerpo": "Las hermanas doroteas Lupe y Teresa han dejado una profunda huella en Villa del Guadalhorce tras más de 40 años de entrega y servicio a la comunidad. Su labor fue reconocida en un emotivo homenaje celebrado en la iglesia María Auxiliadora, donde vecinos, representantes municipales y miembros de la parroquia se reunieron para expresar su gratitud.\n\nDurante el acto, se destacó la dedicación constante de Lupe y Teresa en diversas actividades sociales y religiosas que han contribuido al bienestar y la cohesión del municipio. Su legado perdurará como ejemplo de compromiso y solidaridad en Villa del Guadalhorce.",
+        "descripcion": "La comunidad de Villa del Guadalhorce despide a las hermanas doroteas Lupe y Teresa con un emotivo acto en la iglesia María Auxiliadora tras cuatro décadas de dedicación.",
+        "resumen": "La comunidad de Villa del Guadalhorce despide a las hermanas doroteas Lupe y Teresa con un emotivo acto en la iglesia María Auxiliadora tras cuatro décadas de dedicación.",
+        "cuerpo": "Las hermanas doroteas Lupe y Teresa han dejado una profunda huella en Villa del Guadalhorce tras más de 40 años dedicados al servicio de la comunidad. Su compromiso y entrega fueron reconocidos en un emotivo homenaje celebrado en la iglesia María Auxiliadora, donde vecinos, representantes municipales y miembros de la parroquia se reunieron para expresar su gratitud.\n\nDurante el acto, se destacó la labor incansable de ambas hermanas en diferentes ámbitos sociales y religiosos, que ha contribuido al bienestar y la cohesión del municipio. Su legado perdurará como ejemplo de entrega y solidaridad en Villa del Guadalhorce.",
         "fecha": "2026-08-10T10:16:29+00:00",
         "fuente": "RTV Alhaurín el Grande",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
         "seo_keywords": [
-            "hermanas doroteas Villa del Guadalhorce",
-            "homenaje Lupe y Teresa",
-            "servicio comunitario Villa del Guadalhorce"
+            "hermanas doroteas",
+            "Villa del Guadalhorce",
+            "homenaje comunitario"
         ],
         "enlace": "https://rtvalhaurinelgrande.com/villa-del-guadalhorce-despide-a-las-hermanas-doroteas-lupe-y-teresa/",
         "url": "https://rtvalhaurinelgrande.com/villa-del-guadalhorce-despide-a-las-hermanas-doroteas-lupe-y-teresa/",
@@ -281,7 +281,7 @@
         "titulo_original": "Audiciones de la Escuela de Música “La Pepa”",
         "descripcion": "La Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa, con la participación de 42 alumnos mostrando su progreso musical.",
         "resumen": "La Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa, con la participación de 42 alumnos mostrando su progreso musical.",
-        "cuerpo": "El pasado 31 de julio, la Plaza del Convento se convirtió en escenario para las audiciones de fin de curso de la Escuela de Música La Pepa. Un total de 42 alumnos demostraron sus habilidades y avances musicales ante familiares y vecinos, en un evento organizado por la Agrupación Músico-Cultural de la Santa Vera Cruz.\n\nEsta actividad contó con la colaboración del Ayuntamiento de Alhaurín el Grande, que apoya iniciativas culturales que fomentan el aprendizaje y la difusión de la música en la localidad. Las audiciones reflejaron el esfuerzo y dedicación de los estudiantes durante el año académico, consolidando a la Escuela La Pepa como un referente en la formación musical local.",
+        "cuerpo": "El pasado 31 de julio, la Plaza del Convento se convirtió en el escenario de las audiciones de fin de curso de la Escuela de Música La Pepa, donde 42 alumnos demostraron sus avances y habilidades adquiridas durante el año académico.\n\nEsta actividad musical permitió a los estudiantes interpretar diversas piezas ante el público local, fomentando su desarrollo artístico y la cultura musical en Alhaurín el Grande. La Agrupación Músico-Cultural de la Santa Vera Cruz fue la encargada de organizar el evento, contando con la colaboración del Ayuntamiento de Alhaurín el Grande para su realización.",
         "fecha": "2026-08-10T10:08:11+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Agenda Cultural",
@@ -289,7 +289,7 @@
         "seo_keywords": [
             "Escuela de Música La Pepa",
             "audiciones Alhaurín el Grande",
-            "cultura musical local"
+            "eventos culturales Alhaurín"
         ],
         "enlace": "https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/",
         "url": "https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/",
@@ -300,11 +300,11 @@
     },
     {
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-de-alhaurin-el-grande-contin-47e315bb",
-        "titulo": "Alhaurín el Grande renueva su parque móvil con tres motos scooter de 125cc",
+        "titulo": "Alhaurín el Grande renueva su parque móvil con tres nuevas motos scooter de 125cc",
         "titulo_original": "El Ayuntamiento de Alhaurín el Grande continúa modernizando y renovando su parque móvil municipal con tres nuevas motos scooter",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande incorpora tres motos scooter para mejorar la movilidad y eficiencia en los servicios municipales de Aguas y Notificaciones.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande incorpora tres motos scooter para mejorar la movilidad y eficiencia en los servicios municipales de Aguas y Notificaciones.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha adquirido tres nuevas motos scooter de 125cc que se integran en el parque móvil municipal. Estos vehículos están destinados a los servicios de Aguas y Notificaciones, con el objetivo de facilitar la movilidad de los trabajadores y optimizar la atención a las necesidades del municipio.\n\nEsta renovación forma parte del compromiso del Ayuntamiento por modernizar sus recursos y mejorar la eficiencia en la gestión municipal. Las motos permitirán una mayor agilidad en los desplazamientos dentro del término municipal, contribuyendo a una respuesta más rápida y eficaz en las tareas diarias de los servicios públicos.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande incorpora tres motos scooter de 125cc para mejorar la movilidad y eficiencia de los servicios municipales de Aguas y Notificaciones.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande incorpora tres motos scooter de 125cc para mejorar la movilidad y eficiencia de los servicios municipales de Aguas y Notificaciones.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande continúa con la modernización de su parque móvil municipal mediante la incorporación de tres nuevas motos scooter de 125cc. Estos vehículos están destinados a los servicios de Aguas y Notificaciones, con el objetivo de optimizar la movilidad de los trabajadores y agilizar la atención a las necesidades del municipio.\n\nLa renovación del parque móvil responde a la apuesta del consistorio por mejorar la eficiencia en la gestión municipal y facilitar el trabajo diario de los empleados públicos. Las motos scooter permiten una mayor rapidez y flexibilidad en desplazamientos dentro del término municipal, contribuyendo a un servicio más ágil y cercano para los vecinos de Alhaurín el Grande.",
         "fecha": "2026-08-10T09:50:02+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -312,22 +312,22 @@
         "seo_keywords": [
             "motos scooter Alhaurín el Grande",
             "parque móvil municipal",
-            "servicios municipales Alhaurín"
+            "modernización vehículos municipales"
         ],
         "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-continua-modernizando-y-renovando-su-parque-movil-municipal-con-tres-nuevas-motos-scooter/",
         "url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-continua-modernizando-y-renovando-su-parque-movil-municipal-con-tres-nuevas-motos-scooter/",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/766723890_2022534198629879_923177038924852758_n-1024x683.jpg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-renueva-su-parque-movil-con-tres-motos-scooter-de-125cc.html"
+        "pagina": "noticias/alhaurin-el-grande-renueva-su-parque-movil-con-tres-nuevas-motos-scooter-de-125cc.html"
     },
     {
         "id": "https-alhaurinelgrande-es-alhaurin-el-grande-lamenta-la-perdida-diego-f863c7dd",
-        "titulo": "Alhaurín el Grande declara luto oficial por el fallecimiento de Diego Solano López",
+        "titulo": "Alhaurín el Grande lamenta la pérdida de Diego Solano López, Juez de Paz",
         "titulo_original": "Alhaurín el Grande lamenta la pérdida Diego Solano López, Juez de Paz de la localidad",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande lamenta la pérdida de Diego Solano López, Juez de Paz, y decreta dos días de luto oficial junto a un minuto de silencio en su honor.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande lamenta la pérdida de Diego Solano López, Juez de Paz, y decreta dos días de luto oficial junto a un minuto de silencio en su honor.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha anunciado dos días de luto oficial tras el fallecimiento de Diego Solano López, quien desempeñó el cargo de Juez de Paz en la localidad. En señal de respeto y duelo, se ha convocado un minuto de silencio para honrar su memoria.\n\nLa institución municipal ha expresado sus condolencias a los familiares y seres queridos de Diego Solano López, destacando su compromiso y trayectoria al servicio de la comunidad. Su labor como Juez de Paz fue fundamental para la convivencia y la justicia local en Alhaurín el Grande.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande decreta dos días de luto oficial y convoca un minuto de silencio por el fallecimiento de Diego Solano López, Juez de Paz del municipio.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande decreta dos días de luto oficial y convoca un minuto de silencio por el fallecimiento de Diego Solano López, Juez de Paz del municipio.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha manifestado su profundo pesar por el fallecimiento de Diego Solano López, quien desempeñó el cargo de Juez de Paz en la localidad. En reconocimiento a su labor y compromiso con la comunidad, se han decretado dos días de luto oficial.\n\nAdemás, se ha convocado un minuto de silencio para honrar su memoria y mostrar respeto hacia su figura. La institución municipal ha expresado sus condolencias a los familiares y seres queridos de Diego Solano López, destacando su trayectoria y dedicación al servicio público en Alhaurín el Grande.\n\nSu legado permanecerá como ejemplo de entrega y responsabilidad en la administración de justicia local.",
         "fecha": "2026-08-06T10:04:21+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -342,7 +342,7 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Juzgado-de-paz_bandera-media-asta-768x1024.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-declara-luto-oficial-por-el-fallecimiento-de-diego-solano-lopez.html"
+        "pagina": "noticias/alhaurin-el-grande-lamenta-la-perdida-de-diego-solano-lopez-juez-de-paz.html"
     },
     {
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-licita-las-obras-de-reparaci-a9896286",
@@ -350,7 +350,7 @@
         "titulo_original": "El Ayuntamiento licita las obras de reparación de la cubierta del pabellón 2 del Polideportivo Municipal con una inversión de 282.000 euros financiada por el Gobierno de España",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del pabellón 2 del Polideportivo Municipal con una inversión de 282.000 euros financiada por el Gobierno de España.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del pabellón 2 del Polideportivo Municipal con una inversión de 282.000 euros financiada por el Gobierno de España.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha puesto en marcha la licitación para las obras de reparación de la cubierta del pabellón 2 del Polideportivo Municipal. Esta intervención tiene como objetivo principal solucionar las filtraciones causadas por episodios de lluvias intensas y DANAS, que han afectado el uso y conservación de la instalación deportiva.\n\nLa actuación permitirá garantizar el uso seguro y adecuado del pabellón durante todo el año, mejorando las condiciones para los usuarios y evitando futuros daños. La inversión destinada a estas obras asciende a 282.000 euros y está financiada por el Gobierno de España, lo que refleja el compromiso con la mejora de las infraestructuras deportivas locales.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha puesto en marcha la licitación para las obras de reparación de la cubierta del pabellón 2 del Polideportivo Municipal. Esta actuación responde a la necesidad de solucionar las filtraciones provocadas por episodios de lluvias intensas y DANAS, que han afectado el uso y conservación de la instalación deportiva.\n\nLa inversión destinada a este proyecto asciende a 282.000 euros, financiados íntegramente por el Gobierno de España. La reparación garantizará la funcionalidad y seguridad del pabellón durante todo el año, mejorando las condiciones para los usuarios y facilitando la práctica deportiva en el municipio.",
         "fecha": "2026-08-05T09:42:42+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Obras y Servicios",
@@ -358,7 +358,7 @@
         "seo_keywords": [
             "reparación cubierta polideportivo",
             "obras pabellón 2 Alhaurín el Grande",
-            "financiación Gobierno España deportes"
+            "financiación Gobierno España"
         ],
         "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-licita-las-obras-de-reparacion-de-la-cubierta-del-pabellon-2-del-polideportivo-municipal-con-una-inversion-de-282-000-euros-financiada-por-el-gobierno-de-espana/",
         "url": "https://alhaurinelgrande.es/el-ayuntamiento-licita-las-obras-de-reparacion-de-la-cubierta-del-pabellon-2-del-polideportivo-municipal-con-una-inversion-de-282-000-euros-financiada-por-el-gobierno-de-espana/",
@@ -369,11 +369,11 @@
     },
     {
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-impulsa-la-creacion-del-futu-cb9b693b",
-        "titulo": "Alhaurín el Grande impulsa el Parque de la Arquilla del Agua con inversión de 1,5 millones",
+        "titulo": "Alhaurín el Grande prepara el Parque de la Arquilla del Agua con inversión de 1,5 millones",
         "titulo_original": "El Ayuntamiento impulsa la creación del futuro Parque de la Arquilla del Agua, un nuevo pulmón verde que transformará Alhaurín el Grande",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para diseñar el Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y urbana.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para diseñar el Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y urbana.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha dado el primer paso para la creación del Parque de la Arquilla del Agua, un proyecto que transformará un área de más de 6.400 metros cuadrados en un pulmón verde para la localidad.\n\nEsta iniciativa cuenta con una inversión inicial de 1,5 millones de euros destinada a la redacción del proyecto y su posterior ejecución. El nuevo parque ofrecerá un espacio natural y de ocio para los vecinos, contribuyendo a mejorar la calidad ambiental y la sostenibilidad urbana del municipio.\n\nLa licitación para la elaboración del proyecto ya está en marcha, marcando el inicio de una obra que se espera sea un referente en la mejora del entorno y la calidad de vida en Alhaurín el Grande.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande licita el proyecto para crear un nuevo parque de más de 6.400 m² que será un pulmón verde para la localidad con una inversión inicial de 1,5 millones de euros.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande licita el proyecto para crear un nuevo parque de más de 6.400 m² que será un pulmón verde para la localidad con una inversión inicial de 1,5 millones de euros.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha iniciado el proceso de licitación para la redacción del proyecto del Parque de la Arquilla del Agua, un nuevo espacio verde que ocupará más de 6.400 metros cuadrados. Esta iniciativa busca transformar la zona en un pulmón natural que mejore la calidad de vida de los vecinos y fomente el disfrute de áreas al aire libre.\n\nLa inversión inicial destinada a este proyecto asciende a 1,5 millones de euros, lo que permitirá desarrollar un parque moderno y sostenible, con zonas de esparcimiento y elementos que respeten el entorno natural. El Consistorio apuesta por esta actuación como parte de su compromiso con el medio ambiente y el bienestar de la comunidad local.",
         "fecha": "2026-08-05T08:22:32+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Obras y Servicios",
@@ -381,29 +381,29 @@
         "seo_keywords": [
             "Parque de la Arquilla del Agua",
             "Alhaurín el Grande espacios verdes",
-            "inversión parque urbano"
+            "inversión parque municipal"
         ],
         "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-impulsa-la-creacion-del-futuro-parque-de-la-arquilla-del-agua-un-nuevo-pulmon-verde-que-transformara-alhaurin-el-grande/",
         "url": "https://alhaurinelgrande.es/el-ayuntamiento-impulsa-la-creacion-del-futuro-parque-de-la-arquilla-del-agua-un-nuevo-pulmon-verde-que-transformara-alhaurin-el-grande/",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Logos-para-noticias-Fondos-Edil_junio-2026_1920x1080-1-1024x78.png",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-impulsa-el-parque-de-la-arquilla-del-agua-con-inversion-de-1-5-millones.html"
+        "pagina": "noticias/alhaurin-el-grande-prepara-el-parque-de-la-arquilla-del-agua-con-inversion-de-1-5-millones.html"
     },
     {
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-de-alhaurin-el-grande-destin-c790a629",
-        "titulo": "Alhaurín el Grande destina 6.000 € para impulsar hostelería con productos locales",
+        "titulo": "El objetivo es fomentar la creación de nuevos platos y bebidas elaborados con productos",
         "titulo_original": "El Ayuntamiento de Alhaurín el Grande destina 6.000 euros a impulsar la hostelería que apueste por los productos locales y de temporada",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para bares y restaurantes que apuesten por productos locales y de temporada en sus cartas.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para bares y restaurantes que apuesten por productos locales y de temporada en sus cartas.",
-        "cuerpo": "El Área de Desarrollo Económico del Ayuntamiento de Alhaurín el Grande ha abierto una convocatoria de ayudas por valor de 6.000 euros destinada a los establecimientos hosteleros adheridos a la marca Alhaurín Alha‿Boca. El objetivo es fomentar la creación de nuevos platos y bebidas que utilicen productos locales y de temporada, impulsando así la economía local y la sostenibilidad.\n\nEsta iniciativa busca apoyar a bares y restaurantes que apuesten por la calidad y la identidad gastronómica del municipio, promoviendo el consumo de ingredientes frescos y de proximidad. Los interesados pueden acceder a estas ayudas para innovar en sus cartas y atraer a un público que valora la oferta culinaria local.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para establecimientos que apuesten por productos locales y de temporada en sus cartas, con una inversión de 6.000 euros.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para establecimientos que apuesten por productos locales y de temporada en sus cartas, con una inversión de 6.000 euros.",
+        "cuerpo": "El Área de Desarrollo Económico del Ayuntamiento de Alhaurín el Grande ha abierto una convocatoria de ayudas dirigida a los establecimientos hosteleros adheridos a la marca Alhaurín Alha‿Boca. El objetivo es fomentar la creación de nuevos platos y bebidas elaborados con productos locales y de temporada, impulsando así la economía y la gastronomía del municipio.\n\nCon una dotación total de 6.000 euros, esta iniciativa busca incentivar la innovación y la calidad en la oferta gastronómica local, promoviendo el consumo de productos frescos y de proximidad. Los beneficiarios podrán presentar propuestas que contribuyan a fortalecer la identidad culinaria de Alhaurín el Grande y atraer a más visitantes interesados en la gastronomía sostenible y tradicional.",
         "fecha": "2026-08-03T12:58:15+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Comercio y Empresa",
         "categoria_url": "categoria/comercio-y-empresa/",
         "seo_keywords": [
             "hostelería Alhaurín el Grande",
-            "productos locales",
+            "productos locales temporada",
             "ayudas hostelería Alhaurín"
         ],
         "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-destina-6-000-euros-a-impulsar-la-hosteleria-que-apueste-por-los-productos-locales-y-de-temporada/",
@@ -411,15 +411,15 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Ayudas-dirigida-a-los-establecimientos-adheridos-a-la-marca-Alhaurin-Alha‿Boca-1024x576.jpg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-destina-6-000-para-impulsar-hosteleria-con-productos-locales.html"
+        "pagina": "noticias/el-objetivo-es-fomentar-la-creacion-de-nuevos-platos-y-bebidas-elaborados-con-productos.html"
     },
     {
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-de-alhaurin-el-grande-abre-e-c3cb3635",
-        "titulo": "El Ayuntamiento de Alhaurín el Grande invita a la ciudadanía a presentar sugerencias",
+        "titulo": "El Ayuntamiento de Alhaurín el Grande invita a los vecinos a presentar sus sugerencias",
         "titulo_original": "El Ayuntamiento de Alhaurín el Grande abre el plazo de participación ciudadana sobre el Avance del Plan de Ordenación Urbana",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande invita a la ciudadanía a presentar sugerencias sobre el Avance del Plan de Ordenación Urbana hasta el 15 de septiembre.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande invita a la ciudadanía a presentar sugerencias sobre el Avance del Plan de Ordenación Urbana hasta el 15 de septiembre.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha abierto el periodo de participación ciudadana para el Avance del Plan de Ordenación Urbana (POU). Los vecinos interesados pueden consultar la documentación y enviar sus aportaciones hasta el 15 de septiembre a través de la página web municipal.\n\nEl alcalde, Anthony Bermúdez, ha destacado la importancia de esta fase para recoger las opiniones de la población y mejorar el desarrollo urbanístico del municipio. Esta iniciativa busca fomentar la transparencia y la colaboración ciudadana en la planificación territorial de Alhaurín el Grande.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande invita a los vecinos a presentar sus sugerencias sobre el Avance del Plan de Ordenación Urbana hasta el 15 de septiembre.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande invita a los vecinos a presentar sus sugerencias sobre el Avance del Plan de Ordenación Urbana hasta el 15 de septiembre.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha iniciado el periodo de participación ciudadana para el Avance del Plan de Ordenación Urbana (POU). Los vecinos interesados pueden consultar la documentación oficial y enviar sus aportaciones a través de la página web municipal.\n\nEsta iniciativa busca fomentar la implicación de la comunidad en el desarrollo urbanístico del municipio. El alcalde, Anthony Bermúdez, ha destacado la importancia de la colaboración ciudadana para garantizar que el plan responda a las necesidades y expectativas locales.\n\nEl plazo para presentar sugerencias estará abierto hasta el 15 de septiembre, facilitando así la participación activa de todos los residentes en la planificación del futuro urbanístico de Alhaurín el Grande.",
         "fecha": "2026-08-03T10:01:08+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
@@ -427,22 +427,22 @@
         "seo_keywords": [
             "Plan de Ordenación Urbana Alhaurín el Grande",
             "participación ciudadana Alhaurín el Grande",
-            "urbanismo Alhaurín el Grande"
+            "Avance POU Alhaurín el Grande"
         ],
         "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-abre-el-plazo-de-participacion-ciudadana-sobre-el-avance-del-plan-de-ordenacion-urbana/",
         "url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-abre-el-plazo-de-participacion-ciudadana-sobre-el-avance-del-plan-de-ordenacion-urbana/",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/El-Ayuntamiento-de-Alhaurin-el-Grande-abre-el-plazo-de-participacion-ciudadana-sobre-el-Avance-del-Plan-de-Ordenacion-Urbana_02-1024x768.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-invita-a-la-ciudadania-a-presentar-sugerencias.html"
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-invita-a-los-vecinos-a-presentar-sus-sugerencias.html"
     },
     {
         "id": "https-alhaurinelgrande-es-las-instalaciones-acuaticas-municipales-ampl-3490329a",
-        "titulo": "Las piscinas municipales de Alhaurín el Grande amplían su aforo diario a 280 plazas",
+        "titulo": "Aumenta el aforo diario en las piscinas municipales de Alhaurín el Grande por alta demanda",
         "titulo_original": "Las instalaciones acuáticas municipales amplían su aforo diario ante la elevada demanda registrada durante el primer mes de la temporada",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande aumenta el aforo diario de sus instalaciones acuáticas ante la alta demanda registrada en el primer mes de la temporada.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande aumenta el aforo diario de sus instalaciones acuáticas ante la alta demanda registrada en el primer mes de la temporada.",
-        "cuerpo": "El Área de Deportes del Ayuntamiento de Alhaurín el Grande ha decidido ampliar el aforo diario de las instalaciones acuáticas municipales, incrementando las plazas disponibles de 250 a 280. Esta medida responde a la elevada demanda registrada durante el primer mes de la temporada en la nueva piscina exterior y el Parque del Agua.\n\nLa ampliación permitirá que más vecinos y visitantes puedan disfrutar de estos espacios de ocio y deporte, garantizando al mismo tiempo la seguridad y comodidad de los usuarios. El Ayuntamiento continúa monitorizando la evolución de la afluencia para adaptar los servicios a las necesidades de la población.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande amplía el aforo diario en las piscinas municipales de 250 a 280 plazas ante la gran afluencia registrada en el primer mes de la temporada.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande amplía el aforo diario en las piscinas municipales de 250 a 280 plazas ante la gran afluencia registrada en el primer mes de la temporada.",
+        "cuerpo": "El Área de Deportes del Ayuntamiento de Alhaurín el Grande ha decidido incrementar el aforo diario en las instalaciones acuáticas municipales debido a la elevada demanda durante el inicio de la temporada. La capacidad ha pasado de 250 a 280 plazas diarias, tanto en la nueva piscina exterior municipal como en el Parque del Agua.\n\nEsta medida busca mejorar la experiencia de los usuarios y garantizar el acceso a las instalaciones durante los días de mayor afluencia. El Ayuntamiento continúa monitorizando la situación para ajustar los recursos y mantener la calidad del servicio en las piscinas municipales.",
         "fecha": "2026-07-31T12:50:45+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Deportes",
@@ -450,22 +450,22 @@
         "seo_keywords": [
             "piscinas municipales Alhaurín el Grande",
             "aforo piscinas Alhaurín",
-            "instalaciones acuáticas Alhaurín el Grande"
+            "instalaciones deportivas Alhaurín el Grande"
         ],
         "enlace": "https://alhaurinelgrande.es/las-instalaciones-acuaticas-municipales-amplian-su-aforo-diario-ante-la-elevada-demanda-registrada-durante-el-primer-mes-de-la-temporada/",
         "url": "https://alhaurinelgrande.es/las-instalaciones-acuaticas-municipales-amplian-su-aforo-diario-ante-la-elevada-demanda-registrada-durante-el-primer-mes-de-la-temporada/",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Nueva-piscina-municipal-exterior_junio-2026-1024x768.png",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/las-piscinas-municipales-de-alhaurin-el-grande-amplian-su-aforo-diario-a-280-plazas.html"
+        "pagina": "noticias/aumenta-el-aforo-diario-en-las-piscinas-municipales-de-alhaurin-el-grande-por-alta-demanda.html"
     },
     {
         "id": "https-alhaurinelgrande-es-alhaurin-el-grande-reconoce-a-sete-fernandez-e755cdd9",
-        "titulo": "Alhaurín el Grande homenajea a Sete Fernández por su papel en la conquista del Mundial",
+        "titulo": "Alhaurín el Grande homenajea a Sete Fernández por su papel en la victoria del Mundial 2026",
         "titulo_original": "Alhaurín el Grande reconoce a Sete Fernández por representar al municipio en la histórica conquista del Mundial",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande reconoce a Sete Fernández por su contribución en la histórica victoria de España en la Copa Mundial de la FIFA 2026.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande reconoce a Sete Fernández por su contribución en la histórica victoria de España en la Copa Mundial de la FIFA 2026.",
-        "cuerpo": "Sete Fernández, vecino de Alhaurín el Grande, ha sido homenajeado por el Ayuntamiento local tras su destacada participación en la Copa Mundial de la FIFA 2026. Fernández acompañó a la Selección Española durante el torneo, que culminó con la histórica conquista del título mundial por parte del combinado nacional.\n\nEste reconocimiento pone en valor el esfuerzo y la dedicación de Sete Fernández, quien representó a Alhaurín el Grande en un evento deportivo de gran relevancia internacional. El Ayuntamiento ha destacado la importancia de su papel en este logro que llena de orgullo a toda la comunidad local.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande reconoce a Sete Fernández por su contribución en la histórica conquista de la Selección Española en la Copa Mundial de la FIFA 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande reconoce a Sete Fernández por su contribución en la histórica conquista de la Selección Española en la Copa Mundial de la FIFA 2026.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha rendido un merecido homenaje a Sete Fernández, vecino del municipio, tras su destacada participación junto a la Selección Española durante la Copa Mundial de la FIFA 2026. La selección nacional logró proclamarse campeona del torneo, un hito histórico que ha llenado de orgullo a toda la localidad.\n\nEste reconocimiento refleja la importancia del papel de Sete Fernández en el éxito del equipo y su compromiso con el deporte y la representación de Alhaurín el Grande a nivel internacional. La ceremonia contó con la presencia de autoridades locales y vecinos que celebraron este logro que pone en valor el talento y la dedicación de los deportistas locales.",
         "fecha": "2026-07-31T12:12:32+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Deportes",
@@ -480,38 +480,38 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Alhaurin-el-Grande-reconoce-a-Sete-Fernandez-por-llevar-el-orgullo-del-municipio-hasta-lo-mas-alto-del-futbol-mundial_2-1024x768.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-por-su-papel-en-la-conquista-del-mundial.html"
+        "pagina": "noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-por-su-papel-en-la-victoria-del-mundial-2026.html"
     },
     {
         "id": "https-alhaurinelgrande-es-finaliza-con-exito-el-proyecto-agentes-eco-r-07d17592",
-        "titulo": "Finaliza con éxito el proyecto de agentes eco-rurales en Alhaurín el Grande",
+        "titulo": "Finaliza el proyecto eco-rural para restaurar ecosistemas en Alhaurín el Grande",
         "titulo_original": "Finaliza con éxito el proyecto “Agentes eco-rurales para la restauración de ecosistemas” en Alhaurín el Grande",
-        "descripcion": "El proyecto “Agentes eco-rurales para la restauración de ecosistemas” concluye en Alhaurín el Grande, impulsando empleo verde y restauración ambiental con la formación de quince personas.",
-        "resumen": "El proyecto “Agentes eco-rurales para la restauración de ecosistemas” concluye en Alhaurín el Grande, impulsando empleo verde y restauración ambiental con la formación de quince personas.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, en colaboración con Ecoherencia SCA, ha finalizado el proyecto “Agentes eco-rurales para la restauración de ecosistemas”, una iniciativa que ha contribuido a la recuperación ambiental del municipio.\n\nDurante el desarrollo del programa, quince personas han recibido formación especializada para fomentar el empleo verde y la sensibilización ciudadana en materia ambiental. Este proyecto ha permitido avanzar en la restauración de ecosistemas locales, promoviendo prácticas sostenibles y el cuidado del entorno natural.\n\nAdemás, ha generado oportunidades laborales vinculadas a la conservación ambiental, fortaleciendo el compromiso de la comunidad con la protección del medio ambiente en Alhaurín el Grande.",
+        "descripcion": "El proyecto 'Agentes eco-rurales' concluye en Alhaurín el Grande, impulsando la restauración ambiental, el empleo verde y la formación de quince participantes locales.",
+        "resumen": "El proyecto 'Agentes eco-rurales' concluye en Alhaurín el Grande, impulsando la restauración ambiental, el empleo verde y la formación de quince participantes locales.",
+        "cuerpo": "El proyecto “Agentes eco-rurales para la restauración de ecosistemas” ha finalizado con éxito en Alhaurín el Grande, tras una colaboración entre Ecoherencia SCA y el Ayuntamiento local. Esta iniciativa ha contribuido a la recuperación ambiental de la zona mediante acciones directas de restauración y conservación.\n\nAdemás de los beneficios ecológicos, el programa ha promovido el empleo verde y la sensibilización ciudadana, formando a quince personas en técnicas de restauración de ecosistemas. Esta formación ha permitido dotar a los participantes de herramientas para continuar trabajando en la protección del entorno natural de Alhaurín el Grande.",
         "fecha": "2026-07-30T09:03:27+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Municipal",
         "categoria_url": "categoria/municipal/",
         "seo_keywords": [
-            "Agentes eco-rurales Alhaurín el Grande",
-            "restauración ecosistemas",
-            "empleo verde Alhaurín"
+            "restauración ecosistemas Alhaurín el Grande",
+            "empleo verde Alhaurín",
+            "proyecto eco-rural Alhaurín"
         ],
         "enlace": "https://alhaurinelgrande.es/finaliza-con-exito-el-proyecto-agentes-eco-rurales-para-la-restauracion-de-ecosistemas-en-alhaurin-el-grande/",
         "url": "https://alhaurinelgrande.es/finaliza-con-exito-el-proyecto-agentes-eco-rurales-para-la-restauracion-de-ecosistemas-en-alhaurin-el-grande/",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Finaliza-con-exito-el-proyecto-Agentes-eco-rurales-para-la-restauracion-de-ecosistemas-en-Alhaurin-el-Grande_03-771x1024.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/finaliza-con-exito-el-proyecto-de-agentes-eco-rurales-en-alhaurin-el-grande.html"
+        "pagina": "noticias/finaliza-el-proyecto-eco-rural-para-restaurar-ecosistemas-en-alhaurin-el-grande.html"
     },
     {
         "id": "https-alhaurinelgrande-es-alhaurin-el-grande-acogera-el-concierto-de-e-2ee2469c",
         "titulo": "El Barrio actuará en Alhaurín el Grande en su gira 30 aniversario el 15 de mayo de 2027",
         "titulo_original": "Alhaurín el Grande acogerá el concierto de El Barrio dentro de su gira 30 aniversario el próximo 15 de mayo de 2027",
-        "descripcion": "Alhaurín el Grande acogerá el concierto de El Barrio el 15 de mayo de 2027, con un 10% de descuento en entradas para vecinos, como antesala a la Feria de Mayo.",
-        "resumen": "Alhaurín el Grande acogerá el concierto de El Barrio el 15 de mayo de 2027, con un 10% de descuento en entradas para vecinos, como antesala a la Feria de Mayo.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha organizado un concierto especial de El Barrio dentro de su gira por el 30 aniversario, que tendrá lugar el 15 de mayo de 2027. Este evento se presenta como un nuevo formato cultural que servirá de antesala a la tradicional Feria de Mayo del municipio.\n\nPara fomentar la participación local, el consistorio ofrecerá un descuento del 10% en las entradas a las personas empadronadas en Alhaurín el Grande. Esta iniciativa busca acercar la cultura y la música a los vecinos, consolidando la oferta cultural previa a las celebraciones festivas del municipio.",
+        "descripcion": "Alhaurín el Grande acogerá el concierto de El Barrio el 15 de mayo de 2027, con un 10% de descuento en entradas para vecinos empadronados, como antesala de la Feria de Mayo.",
+        "resumen": "Alhaurín el Grande acogerá el concierto de El Barrio el 15 de mayo de 2027, con un 10% de descuento en entradas para vecinos empadronados, como antesala de la Feria de Mayo.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha organizado un nuevo evento cultural que servirá como antesala a la Feria de Mayo. El próximo 15 de mayo de 2027, el reconocido artista El Barrio ofrecerá un concierto en la localidad dentro de su gira por el 30 aniversario de su carrera musical.\n\nEsta iniciativa busca dinamizar la agenda cultural y ofrecer una experiencia única a los vecinos y visitantes. Además, el Ayuntamiento ha anunciado que las personas empadronadas en Alhaurín el Grande podrán beneficiarse de un descuento del 10% en la compra de entradas para este concierto.\n\nEsta medida pretende facilitar el acceso a la cultura y fomentar la participación local en eventos de relevancia. El concierto promete ser uno de los momentos destacados del calendario cultural del municipio en 2027.",
         "fecha": "2026-07-28T23:30:00+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Agenda Cultural",
@@ -519,7 +519,7 @@
         "seo_keywords": [
             "El Barrio concierto Alhaurín el Grande",
             "gira 30 aniversario El Barrio",
-            "Feria de Mayo Alhaurín el Grande"
+            "concierto Feria de Mayo Alhaurín"
         ],
         "enlace": "https://alhaurinelgrande.es/alhaurin-el-grande-acogera-el-concierto-de-el-barrio-dentro-de-su-gira-30-aniversario-el-proximo-15-de-mayo-de-2027/",
         "url": "https://alhaurinelgrande.es/alhaurin-el-grande-acogera-el-concierto-de-el-barrio-dentro-de-su-gira-30-aniversario-el-proximo-15-de-mayo-de-2027/",
@@ -532,13 +532,13 @@
         "id": "https-www-nuestropadrejesusnazareno-com-33991-primera-misa-del-sacerdo-bd7e81d9",
         "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande",
         "titulo_original": "Primera misa del sacerdote Rvd. Padre D. José Francisco Fernández Fuentes",
-        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, en un acto especial organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, en un acto especial organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "cuerpo": "El pasado sábado 11 de julio, el Rvdo. Padre José Francisco Fernández Fuentes ofició su primera Eucaristía en Alhaurín el Grande, en la Parroquia de Nuestra Señora de la Encarnación. Este evento marcó un momento significativo para la comunidad local y para la Hermandad Nuestro Padre Jesús Nazareno, que estuvo presente durante la celebración.\n\nEn reconocimiento a esta ocasión especial, la Hermandad entregó al sacerdote un paño de hombros como símbolo de respeto y apoyo. La ceremonia destacó por su emotividad y la participación activa de los fieles, reafirmando el compromiso espiritual del nuevo sacerdote con el municipio.",
+        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
+        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
+        "cuerpo": "El sábado 11 de julio, el Rvdo. Padre José Francisco Fernández Fuentes ofició su primera Eucaristía en Alhaurín el Grande, un evento significativo para la comunidad local. La ceremonia tuvo lugar en la Parroquia de Nuestra Señora de la Encarnación, donde numerosos fieles se congregaron para acompañar al sacerdote en este momento especial.\n\nLa Real Hermandad Nuestro Padre Jesús Nazareno estuvo presente durante la celebración y entregó al Rvdo. Padre un paño de hombros como muestra de reconocimiento y apoyo. Este acto simboliza la bienvenida y el compromiso de la Hermandad con el nuevo sacerdote, que inicia su labor pastoral en el municipio.",
         "fecha": "2026-07-15T10:27:32+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
         "seo_keywords": [
             "primera misa Alhaurín el Grande",
             "José Francisco Fernández Fuentes",
@@ -553,34 +553,34 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33982-nuestra-real-hermandad-p-933bd6ec",
-        "titulo": "Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda",
+        "titulo": "La Real Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
         "titulo_original": "Nuestra Real Hermandad presente en el curso de verano sobre La Legión",
-        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda los días 7 y 8 de julio.",
-        "resumen": "El Hermano Mayor y miembros de la Real Hermandad asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda los días 7 y 8 de julio.",
-        "cuerpo": "El Hermano Mayor de la Real Hermandad Nuestro Padre Jesús Nazareno, junto a varios hermanos, participaron en el curso de verano titulado «Ejército y sociedad: el papel de La Legión en operaciones internacionales». Este evento, organizado por la Fundación General de la Universidad de Málaga, se celebró en la ciudad de Ronda los días 7 y 8 de julio.\n\nDurante las jornadas, los asistentes analizaron en profundidad el papel de La Legión en diferentes misiones internacionales, abordando su impacto social y militar. La participación de la Hermandad en este curso refleja su interés por temas relacionados con la historia y la sociedad, fortaleciendo su vínculo con la comunidad y la cultura local.",
+        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "cuerpo": "El Hermano Mayor de la Real Hermandad de Nuestro Padre Jesús Nazareno, junto a varios hermanos, participaron los días 7 y 8 de julio en el curso de verano titulado «Ejército y sociedad: el papel de La Legión en operaciones internacionales».\n\nEste evento fue organizado por la Fundación General de la Universidad de Málaga y tuvo lugar en la ciudad de Ronda. Durante las jornadas, los asistentes analizaron en profundidad el papel histórico y actual de La Legión en diferentes misiones internacionales, así como su influencia en la sociedad española.\n\nLa asistencia de la Real Hermandad a este curso refleja su interés por mantener un vínculo activo con la historia y las tradiciones militares que forman parte del patrimonio cultural y social de Andalucía. Además, esta formación contribuye a fortalecer el conocimiento y la participación de sus miembros en actividades que enriquecen su compromiso con la comunidad local y regional.",
         "fecha": "2026-07-09T10:33:08+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
-            "Hermandad Nuestro Padre Jesús Nazareno",
+            "Real Hermandad Alhaurín el Grande",
             "curso sobre La Legión",
-            "Universidad de Málaga"
+            "Universidad de Málaga Ronda"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/",
         "url": "https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10-1024x768.jpeg",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
+        "pagina": "noticias/la-real-hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33978-san-sebastian-acogera-de-ac179017",
         "titulo": "San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia",
         "titulo_original": "San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia",
-        "descripcion": "La patrona de Alhaurín el Grande pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto, tras un recorrido por los barrios con motivo del Día de la Virgen.",
-        "resumen": "La patrona de Alhaurín el Grande pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto, tras un recorrido por los barrios con motivo del Día de la Virgen.",
-        "cuerpo": "Nuestra Señora de Gracia, patrona y alcaldesa perpetua de Alhaurín el Grande, volverá a pernoctar en la ermita de San Sebastián después de once años de ausencia. Esta visita especial tendrá lugar la noche del miércoles 12 al jueves 13 de agosto, como parte de las celebraciones del Día de la Virgen.\n\nLa imagen recorrerá diversos barrios del municipio, culminando su itinerario en la ermita, donde permanecerá durante la noche. Este acto representa un momento significativo para los vecinos, que podrán rendir homenaje a su patrona en un lugar emblemático para la localidad.",
+        "descripcion": "La patrona de Alhaurín el Grande pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto, cerrando su recorrido por los barrios con motivo del Día de la Virgen.",
+        "resumen": "La patrona de Alhaurín el Grande pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto, cerrando su recorrido por los barrios con motivo del Día de la Virgen.",
+        "cuerpo": "Nuestra Señora de Gracia, patrona y alcaldesa perpetua de Alhaurín el Grande, volverá a pernoctar en la ermita de San Sebastián tras once años de ausencia. Esta estancia tendrá lugar la noche del miércoles 12 al jueves 13 de agosto, como parte de la celebración del Día de la Virgen.\n\nEste acto culmina el recorrido que la imagen realiza por los distintos barrios del municipio, fortaleciendo la tradición y la devoción local. La Hermandad Nuestro Padre Jesús Nazareno organiza esta visita que simboliza la unión de la comunidad en torno a su patrona y refuerza el arraigo cultural y religioso en Alhaurín el Grande.",
         "fecha": "2026-07-02T09:57:44+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
@@ -599,42 +599,42 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33975-terremoto-en-venezuela-149f72b0",
-        "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno ha emitido un mensaje de solidaridad",
+        "titulo": "Además, se encomiendan a la protección y consuelo divino para todos los damnificados",
         "titulo_original": "Terremoto en Venezuela",
-        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno ha emitido un mensaje de solidaridad hacia el pueblo de Venezuela tras los devastadores terremotos que han provocado dolor y pérdidas humanas. La hermandad manifiesta su profundo pesar y se une en oración por el descanso eterno de las víctimas.\n\nAdemás, solicitan la protección y consuelo divino para las familias afectadas por esta tragedia natural. Este gesto refleja el compromiso de la hermandad con causas humanitarias y su cercanía con comunidades que atraviesan momentos difíciles.",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno ha manifestado su profundo pesar por las consecuencias de los terremotos que han afectado a Venezuela, causando dolor y pérdidas humanas. Desde Alhaurín el Grande, la Hermandad se une en oración por el descanso eterno de las víctimas y muestra su solidaridad con las familias afectadas.\n\nAdemás, se encomiendan a la protección y consuelo divino para todos los damnificados, reafirmando su compromiso con los valores de apoyo y fraternidad en momentos de crisis.",
         "fecha": "2026-06-26T09:09:18+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
-            "terremoto en Venezuela",
+            "terremotos en Venezuela",
             "Hermandad Nuestro Padre Jesús Nazareno",
-            "condolencias por terremotos"
+            "solidaridad con Venezuela"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/",
         "url": "https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/cropped-favicon-ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO-32x32.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-ha-emitido-un-mensaje-de-solidaridad.html"
+        "pagina": "noticias/ademas-se-encomiendan-a-la-proteccion-y-consuelo-divino-para-todos-los-damnificados.html"
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33973-y-el-dia-de-la-funcion-v-a3cea052",
         "titulo": "Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno",
         "titulo_original": "Y EL DÍA DE LA FUNCIÓN VOLVIMOS A ALZAR LA MIRADA HACIA NUESTRO PADRE JESÚS NAZARENO, PARA CELEBRAR, VIVIR Y ANUNCIAR EL DÍA DE JESÚS",
-        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la celebración del Día de Nuestro Padre Jesús Nazareno, con actos religiosos y tradiciones que unieron a la comunidad.",
-        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la celebración del Día de Nuestro Padre Jesús Nazareno, con actos religiosos y tradiciones que unieron a la comunidad.",
-        "cuerpo": "La jornada comenzó temprano en Alhaurín el Grande con el toque de diana a las 8:00 horas, a cargo del Tercio “Gran Capitán”, Hermano Mayor Honorario, que despertó al pueblo acompañado por el estruendo de cohetes. Este acto marcó el inicio de un día dedicado a honrar a Nuestro Padre Jesús Nazareno, una tradición muy arraigada en la localidad.\n\nDurante el día, los hermanos y vecinos participaron en diversas actividades religiosas y culturales que reforzaron el sentimiento de comunidad y devoción. La celebración incluyó momentos de oración, procesiones y encuentros que permitieron vivir y anunciar el significado profundo de esta festividad para Alhaurín el Grande.\n\nEl Día de Jesús Nazareno es una fecha especial que refleja la identidad y la fe del pueblo, manteniendo viva una tradición que se transmite de generación en generación, fortaleciendo los lazos entre los habitantes y su patrimonio espiritual.",
+        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la festividad de Nuestro Padre Jesús Nazareno, marcada por actos tradicionales y la participación de la Hermandad local.",
+        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la festividad de Nuestro Padre Jesús Nazareno, marcada por actos tradicionales y la participación de la Hermandad local.",
+        "cuerpo": "La jornada del 14 de junio en Alhaurín el Grande comenzó temprano con el toque de diana a las 8:00 horas, a cargo del Tercio “Gran Capitán”, Hermano Mayor Honorario, que despertó al pueblo acompañado por el estruendo de cohetes.\n\nEsta tradición marcó el inicio de un día especial para los hermanos de la Hermandad de Nuestro Padre Jesús Nazareno. Durante la celebración, los participantes se reunieron para honrar y anunciar la festividad, manteniendo viva la devoción y el compromiso con esta emblemática figura religiosa.\n\nLa festividad fue un momento de encuentro y reafirmación de la fe en la comunidad local, que se volcó en la conmemoración con respeto y entusiasmo.",
         "fecha": "2026-06-26T08:35:11+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
-            "Día de Jesús Nazareno",
-            "Alhaurín el Grande",
-            "Hermandad Nuestro Padre Jesús Nazareno"
+            "Día de Jesús Nazareno Alhaurín el Grande",
+            "Hermandad Nuestro Padre Jesús Nazareno",
+            "fiestas religiosas Alhaurín el Grande"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/",
         "url": "https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/",
@@ -645,11 +645,11 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33600-dia-de-jesus-2026-actos-eb54e957",
-        "titulo": "Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande",
+        "titulo": "Programa de actos del jueves en el Día de Jesús 2026 en Alhaurín el Grande",
         "titulo_original": "Día de Jesús 2026 – Actos del jueves.",
         "descripcion": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
         "resumen": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno ha presentado el programa especial de actos para el jueves dentro de la celebración del Día de Jesús 2026 en Alhaurín el Grande. Esta jornada incluye diversas actividades religiosas y culturales que forman parte de la tradición local y que congregan a vecinos y visitantes.\n\nEl evento, difundido por ATV, televisión de Alhaurín el Grande, busca mantener viva la devoción y el patrimonio cultural del municipio. Los actos del jueves son una parte fundamental de esta festividad que destaca por su arraigo y participación comunitaria.",
+        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno ha dado a conocer el programa especial de actos para el jueves dentro de la celebración del Día de Jesús 2026 en Alhaurín el Grande. Esta jornada incluye diversas actividades religiosas y culturales que forman parte de esta tradición local.\n\nEl evento, retransmitido por ATV, televisión de Alhaurín el Grande, busca mantener viva la devoción y fomentar la participación de vecinos y visitantes en las distintas ceremonias y encuentros organizados. Se espera una amplia asistencia para disfrutar de esta cita anual tan significativa para la comunidad.\n\nLos detalles específicos de horarios y lugares se pueden consultar a través de los canales oficiales de la Hermandad y de ATV, que ofrece cobertura especial para que nadie se pierda ninguna de las actividades programadas durante esta jornada.",
         "fecha": "2026-06-25T12:40:14+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
@@ -664,6 +664,6 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/cropped-favicon-ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO-32x32.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
+        "pagina": "noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
     }
 ]

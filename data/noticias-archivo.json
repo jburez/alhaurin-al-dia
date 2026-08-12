@@ -1,5 +1,65 @@
 [
     {
+        "titulo": "Éxito de la XLIII Noche Flamenca Villa de Alhaurín el Grande con gran afluencia",
+        "descripcion": "La XLIII Noche Flamenca Villa de Alhaurín el Grande reunió a 430 asistentes en una velada llena de cante, baile y guitarra en el Patio Diego Pérez del Colegio Emilia Olivares.",
+        "resumen": "La XLIII Noche Flamenca Villa de Alhaurín el Grande reunió a 430 asistentes en una velada llena de cante, baile y guitarra en el Patio Diego Pérez del Colegio Emilia Olivares.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-12T07:41:35.279Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/07/IMG_6061-300x200.jpg",
+        "pagina": "noticias/exito-de-la-xliii-noche-flamenca-villa-de-alhaurin-el-grande-con-gran-afluencia.html"
+    },
+    {
+        "titulo": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para establecimientos que promuevan",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para establecimientos que promuevan platos y bebidas con productos locales y de temporada, apoyando la marca Alhaurín Alha‿Boca.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza ayudas para establecimientos que promuevan platos y bebidas con productos locales y de temporada, apoyando la marca Alhaurín Alha‿Boca.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-12T07:41:35.277Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Ayudas-dirigida-a-los-establecimientos-adheridos-a-la-marca-Alhaurin-Alha‿Boca-1024x576.jpg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-lanza-ayudas-para-establecimientos-que-promuevan.html"
+    },
+    {
+        "titulo": "Campaña de verano 2026 en el Valle del Guadalhorce: compra local y gana con FEDELAPP",
+        "descripcion": "La campaña &#x27;Sella tu sueño&#x27; anima a comprar en el comercio local del Valle del Guadalhorce este verano y ofrece premios a los participantes a través de FEDELAPP.",
+        "resumen": "La campaña &#x27;Sella tu sueño&#x27; anima a comprar en el comercio local del Valle del Guadalhorce este verano y ofrece premios a los participantes a través de FEDELAPP.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-12T07:41:35.274Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/05/Mesa-de-trabajo-5.png",
+        "pagina": "noticias/campana-de-verano-2026-en-el-valle-del-guadalhorce-compra-local-y-gana-con-fedelapp.html"
+    },
+    {
+        "titulo": "Casa Peña recibe homenaje tras más de 40 años en la hostelería de Alhaurín el Grande",
+        "descripcion": "El Restaurante Casa Peña ha sido reconocido por Fedelhorce tras más de cuatro décadas dedicadas a la hostelería en Alhaurín el Grande, celebrando la jubilación de sus propietarios.",
+        "resumen": "El Restaurante Casa Peña ha sido reconocido por Fedelhorce tras más de cuatro décadas dedicadas a la hostelería en Alhaurín el Grande, celebrando la jubilación de sus propietarios.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-12T07:41:35.274Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/destacada.png",
+        "pagina": "noticias/casa-pena-recibe-homenaje-tras-mas-de-40-anos-en-la-hosteleria-de-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande, reconocido como Centro Comercial Abierto de Andalucía",
+        "descripcion": "Alhaurín el Grande ha sido oficialmente designado como Centro Comercial Abierto de Andalucía para potenciar la competitividad del comercio local.",
+        "resumen": "Alhaurín el Grande ha sido oficialmente designado como Centro Comercial Abierto de Andalucía para potenciar la competitividad del comercio local.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-12T07:41:35.265Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3-1.png",
+        "pagina": "noticias/alhaurin-el-grande-reconocido-como-centro-comercial-abierto-de-andalucia.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande creará el Parque de la Arquilla del Agua con 1,5 millones de inversión",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza la licitación para diseñar el Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y urbana.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza la licitación para diseñar el Parque de la Arquilla del Agua, un nuevo espacio verde de más de 6.400 m² que mejorará la calidad ambiental y urbana.",
+        "categoria": "Obras y Servicios",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-12T07:41:35.261Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Logos-para-noticias-Fondos-Edil_junio-2026_1920x1080-1-1024x78.png",
+        "pagina": "noticias/alhaurin-el-grande-creara-el-parque-de-la-arquilla-del-agua-con-1-5-millones-de-inversion.html"
+    },
+    {
         "titulo": "La institución se une en oración por el descanso eterno de las víctimas y ofrece su",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas y sufrimiento.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas y sufrimiento.",

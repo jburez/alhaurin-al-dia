@@ -28,8 +28,9 @@
     <link rel="stylesheet" href="../css/ads.css">
     <style>
         .guide-tools { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: white; }
-        .guide-tools input { width: 100%; min-height: 44px; border-radius: 6px; border: 1px solid var(--line); background: var(--paper-soft); color: var(--ink); padding: 0 14px; outline: none; font-size: 14px; transition: border-color .15s; }
-        .guide-tools input:focus { border-color: var(--accent); }
+        .guide-tools input { width: 100%; min-height: 44px; border-radius: 6px; border: 1px solid var(--line); background: white; color: var(--ink); padding: 0 14px; outline: none; font-size: 14px; transition: border-color .15s; }
+        .guide-tools input::placeholder { color: var(--muted); opacity: 1; }
+        .guide-tools input:focus { border-color: var(--accent); background: white; }
         .guide-pill-row { display: flex; gap: 6px; flex-wrap: wrap; }
         .guide-pill { border: 1px solid var(--line); background: white; color: var(--muted); border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; transition: all .15s; }
         .guide-pill:hover { border-color: var(--accent); color: var(--accent); }
@@ -131,7 +132,6 @@
             <div class="container">
                 <div class="page-header-shell">
                     <div>
-                        <span class="section-kicker">Herramienta práctica</span>
                         <h1>Guía útil de Alhaurín el Grande</h1>
                     </div>
                 </div>
@@ -140,13 +140,6 @@
 
         <section id="guia-listado">
             <div class="container">
-                <div class="section-title">
-                    <div>
-                        <span class="section-kicker">Consulta rápida</span>
-                        <h2>Todos los recursos</h2>
-                    </div>
-                    <p>Filtra por categoría o busca directamente lo que necesitas.</p>
-                </div>
                 <div class="guide-tools">
                     <input id="guide-page-search" type="search" placeholder="Buscar: farmacia, padrón, autobús, biblioteca, teléfono..." aria-label="Buscar en la guía útil">
                     <div class="guide-pill-row" id="guide-category-filters" aria-label="Filtrar por categoría"><button type="button" class="guide-pill active" data-category="Todas">Todas</button><button type="button" class="guide-pill " data-category="Salud y Emergencias">Salud y Emergencias</button><button type="button" class="guide-pill " data-category="Emergencias y Seguridad">Emergencias y Seguridad</button><button type="button" class="guide-pill " data-category="Administración y Sede">Administración y Sede</button><button type="button" class="guide-pill " data-category="Movilidad y Transporte">Movilidad y Transporte</button><button type="button" class="guide-pill " data-category="Educación y Familias">Educación y Familias</button><button type="button" class="guide-pill " data-category="Deportes y Salud">Deportes y Salud</button><button type="button" class="guide-pill " data-category="Cultura y Patrimonio">Cultura y Patrimonio</button><button type="button" class="guide-pill " data-category="Turismo y Ocio">Turismo y Ocio</button><button type="button" class="guide-pill " data-category="Comercio Local">Comercio Local</button><button type="button" class="guide-pill " data-category="Servicios y Mascotas">Servicios y Mascotas</button><button type="button" class="guide-pill " data-category="Servicios y Carretera">Servicios y Carretera</button><button type="button" class="guide-pill " data-category="Comercios y Hostelería">Comercios y Hostelería</button><button type="button" class="guide-pill " data-category="Vivir en Alhaurín">Vivir en Alhaurín</button></div>

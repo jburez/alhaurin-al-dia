@@ -283,14 +283,274 @@
             font-size: 14px;
         }
 
+        /* ===== EDUCATIONAL SECTIONS ===== */
+        .edu-section {
+            padding: 40px 0;
+            border-top: 1px solid var(--line);
+        }
+        .edu-section-title {
+            font-size: clamp(18px, 2.5vw, 24px);
+            font-weight: 700;
+            margin: 0 0 8px;
+            letter-spacing: -0.01em;
+        }
+        .edu-section-intro {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 720px;
+            margin: 0 0 24px;
+        }
+
+        /* Model educational cards */
+        .model-edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+        }
+        .model-edu-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 18px;
+        }
+        .model-edu-header {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 14px;
+        }
+        .model-edu-flag {
+            font-size: 28px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+        .model-edu-header h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .model-edu-org {
+            font-size: 11px;
+            color: var(--muted);
+            display: block;
+            margin-top: 2px;
+        }
+        .model-edu-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: var(--paper-soft);
+            border-radius: 4px;
+        }
+        .spec-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .spec-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .spec-val {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--ink);
+        }
+        .model-edu-desc {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #475569;
+            margin: 0 0 12px;
+        }
+        .model-edu-strengths {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .strength-tag {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+        .strength-tag.good {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .strength-tag.neutral {
+            background: #f1f5f9;
+            color: #64748b;
+        }
+
+        /* Interpretation cards */
+        .interpret-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .interpret-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 18px;
+        }
+        .interpret-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .interpret-card h3 {
+            margin: 0 0 8px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .interpret-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #475569;
+            margin: 0;
+        }
+        .interpret-levels-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 18px;
+        }
+        .interpret-levels-card h3 {
+            margin: 0 0 12px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        /* Practice scenario cards */
+        .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .practice-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 18px;
+        }
+        .practice-header {
+            margin-bottom: 12px;
+        }
+        .practice-scenario {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .practice-scenario.green { background: #dcfce7; color: #166534; }
+        .practice-scenario.yellow { background: #fef9c3; color: #854d0e; }
+        .practice-scenario.red { background: #fee2e2; color: #991b1b; }
+        .practice-header h3 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .practice-example {
+            background: var(--paper-soft);
+            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 12px;
+        }
+        .practice-data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        .practice-result {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .practice-result.green { background: #dcfce7; color: #166534; }
+        .practice-result.yellow { background: #fef9c3; color: #854d0e; }
+        .practice-result.red { background: #fee2e2; color: #991b1b; }
+        .practice-meaning, .practice-action {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #475569;
+            margin: 0 0 8px;
+        }
+        .practice-action { margin-bottom: 0; }
+
+        /* Tips card */
+        .practice-tips-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 18px;
+        }
+        .practice-tips-card h3 {
+            margin: 0 0 16px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .tips-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .tip-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .tip-num {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--ink);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 4px;
+        }
+        .tip-item strong {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        .tip-item p {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #475569;
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .consensus-bar { grid-template-columns: repeat(3, 1fr); }
             .charts-grid { grid-template-columns: 1fr; }
             .consensus-indicator .ci-value { font-size: 22px; }
+            .model-edu-grid { grid-template-columns: 1fr; }
+            .interpret-grid { grid-template-columns: 1fr; }
+            .practice-grid { grid-template-columns: 1fr; }
+            .practice-data { grid-template-columns: 1fr; }
         }
         @media (max-width: 480px) {
             .consensus-bar { grid-template-columns: repeat(2, 1fr); }
+            .model-edu-specs { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -464,6 +724,287 @@
                     </div>
                     <div id="muni-comparison-results">
                         <div class="loading-msg">Selecciona un municipio para comparar.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 3: MODEL DESCRIPTIONS ===== -->
+        <section class="edu-section">
+            <div class="container">
+                <h2 class="edu-section-title">Los modelos meteorológicos</h2>
+                <p class="edu-section-intro">Los modelos numéricos de predicción del tiempo son programas informáticos que resuelven las ecuaciones de la dinámica atmosférica sobre una cuadrícula tridimensional del planeta. Cada modelo tiene sus propias fortalezas, resolución espacial y esquemas de parametrización física, lo que produce predicciones ligeramente distintas para la misma localidad.</p>
+
+                <div class="model-edu-grid">
+                    <div class="model-edu-card">
+                        <div class="model-edu-header">
+                            <span class="model-edu-flag">🇪🇺</span>
+                            <div>
+                                <h3>ECMWF IFS</h3>
+                                <span class="model-edu-org">Centro Europeo de Predicción a Medio Plazo · Reading, Reino Unido</span>
+                            </div>
+                        </div>
+                        <div class="model-edu-specs">
+                            <div class="spec-item"><span class="spec-label">Resolución</span><span class="spec-val">9 km (0.1°)</span></div>
+                            <div class="spec-item"><span class="spec-label">Horizonte</span><span class="spec-val">10 días (alta res.) / 15 días</span></div>
+                            <div class="spec-item"><span class="spec-label">Ciclos diarios</span><span class="spec-val">00 UTC y 12 UTC</span></div>
+                            <div class="spec-item"><span class="spec-label">Variables</span><span class="spec-val">+150 parámetros atmosféricos</span></div>
+                        </div>
+                        <p class="model-edu-desc">Considerado el modelo global más preciso del mundo. Su resolución de 9 km es la más alta entre los modelos globales y su sistema de asimilación de datos 4D-Var incorpora millones de observaciones por ciclo. Captura muy bien los patrones sinópticos que afectan al Valle del Guadalhorce y a Alhaurín el Grande.</p>
+                        <div class="model-edu-strengths">
+                            <span class="strength-tag good">Mejor modelo global a medio plazo</span>
+                            <span class="strength-tag good">Precipitación bien calibrada</span>
+                            <span class="strength-tag neutral">Coste computacional muy elevado</span>
+                        </div>
+                    </div>
+
+                    <div class="model-edu-card">
+                        <div class="model-edu-header">
+                            <span class="model-edu-flag">🇺🇸</span>
+                            <div>
+                                <h3>GFS</h3>
+                                <span class="model-edu-org">NOAA / National Weather Service · Washington, EE.UU.</span>
+                            </div>
+                        </div>
+                        <div class="model-edu-specs">
+                            <div class="spec-item"><span class="spec-label">Resolución</span><span class="spec-val">13 km (0.25°)</span></div>
+                            <div class="spec-item"><span class="spec-label">Horizonte</span><span class="spec-val">16 días</span></div>
+                            <div class="spec-item"><span class="spec-label">Ciclos diarios</span><span class="spec-val">00, 06, 12, 18 UTC</span></div>
+                            <div class="spec-item"><span class="spec-label">Variables</span><span class="spec-val">+100 parámetros atmosféricos</span></div>
+                        </div>
+                        <p class="model-edu-desc">El modelo operativo del servicio meteorológico de EE.UU. y uno de los más consultados a nivel mundial. Sus 4 ciclos diarios proporcionan actualizaciones frecuentes. Para el sur de España, tiende a sobreestimar ligeramente las temperaturas máximas estivales en zonas de interior como Alhaurín el Grande.</p>
+                        <div class="model-edu-strengths">
+                            <span class="strength-tag good">Datos públicos y gratuitos</span>
+                            <span class="strength-tag good">4 actualizaciones diarias</span>
+                            <span class="strength-tag neutral">Resolución menor que ECMWF</span>
+                        </div>
+                    </div>
+
+                    <div class="model-edu-card">
+                        <div class="model-edu-header">
+                            <span class="model-edu-flag">🇩🇪</span>
+                            <div>
+                                <h3>ICON</h3>
+                                <span class="model-edu-org">Deutscher Wetterdienst (DWD) · Offenbach, Alemania</span>
+                            </div>
+                        </div>
+                        <div class="model-edu-specs">
+                            <div class="spec-item"><span class="spec-label">Resolución</span><span class="spec-val">7 km (Europa), 13 km (global)</span></div>
+                            <div class="spec-item"><span class="spec-label">Horizonte</span><span class="spec-val">7 días (EU) / 7.5 días (global)</span></div>
+                            <div class="spec-item"><span class="spec-label">Ciclos diarios</span><span class="spec-val">00, 06, 12, 18 UTC</span></div>
+                            <div class="spec-item"><span class="spec-label">Variables</span><span class="spec-val">+80 parámetros atmosféricos</span></div>
+                        </div>
+                        <p class="model-edu-desc">El modelo alemán destaca por su malla icosaédrica triangular (de ahí su nombre: ICOsahedral Non-hydrostatic), que evita las distorsiones de los modelos de malla rectangular en los polos. Su nido europeo de 7 km captura bien la orografía del Valle del Guadalhorce y la influencia de la Sierra de Mijas sobre Alhaurín.</p>
+                        <div class="model-edu-strengths">
+                            <span class="strength-tag good">Mejor resolución en Europa (7 km)</span>
+                            <span class="strength-tag good">Buena orografía local</span>
+                            <span class="strength-tag neutral">Horizonte más corto (7 días)</span>
+                        </div>
+                    </div>
+
+                    <div class="model-edu-card">
+                        <div class="model-edu-header">
+                            <span class="model-edu-flag">🇨🇦</span>
+                            <div>
+                                <h3>GEM</h3>
+                                <span class="model-edu-org">ECCC · Environment and Climate Change Canada · Montreal</span>
+                            </div>
+                        </div>
+                        <div class="model-edu-specs">
+                            <div class="spec-item"><span class="spec-label">Resolución</span><span class="spec-val">15 km (0.15°)</span></div>
+                            <div class="spec-item"><span class="spec-label">Horizonte</span><span class="spec-val">10 días</span></div>
+                            <div class="spec-item"><span class="spec-label">Ciclos diarios</span><span class="spec-val">00 y 12 UTC</span></div>
+                            <div class="spec-item"><span class="spec-label">Variables</span><span class="spec-val">+70 parámetros atmosféricos</span></div>
+                        </div>
+                        <p class="model-edu-desc">El modelo canadiense aporta una perspectiva complementaria especialmente valiosa en situaciones atlánticas. Cuando las borrascas entran por el oeste peninsular, GEM suele anticipar bien la llegada de frentes al Guadalhorce. Su resolución de 15 km es la más baja del comparador, lo que puede suavizar los contrastes térmicos locales.</p>
+                        <div class="model-edu-strengths">
+                            <span class="strength-tag good">Buen modelado de situaciones atlánticas</span>
+                            <span class="strength-tag neutral">Resolución más baja (15 km)</span>
+                            <span class="strength-tag neutral">Menos conocido en Europa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 4: HOW TO INTERPRET ===== -->
+        <section class="edu-section">
+            <div class="container">
+                <h2 class="edu-section-title">¿Cómo interpretar el comparador?</h2>
+                <p class="edu-section-intro">El comparador cruza las predicciones de 4 modelos numéricos globales para un mismo punto geográfico: Alhaurín el Grande (36.6439°N, 4.6892°W, 252 m de altitud). El objetivo es evaluar el grado de acuerdo entre modelos independientes para estimar la fiabilidad de la predicción.</p>
+
+                <div class="interpret-grid">
+                    <div class="interpret-card">
+                        <div class="interpret-icon">📐</div>
+                        <h3>Coeficiente de Variación (CV)</h3>
+                        <p>Para cada variable y cada día, se calcula el <strong>CV = σ / |x̄| × 100</strong>, donde σ es la desviación estándar y x̄ la media de los valores de los modelos. El CV mide la dispersión relativa: un CV bajo significa que los modelos predicen valores similares.</p>
+                    </div>
+                    <div class="interpret-card">
+                        <div class="interpret-icon">🎯</div>
+                        <h3>Índice de Consenso (IC)</h3>
+                        <p>El IC se calcula normalizando el CV en una escala de <strong>0 a 100</strong>, con umbrales específicos por variable. Cada variable tiene umbrales diferentes porque la predictibilidad varía: la temperatura es más predecible que la precipitación, y el CV refleja esto.</p>
+                    </div>
+                    <div class="interpret-card">
+                        <div class="interpret-icon">📊</div>
+                        <h3>Desviación Estándar (σ)</h3>
+                        <p>La σ te dice en unidades absolutas cuánto difieren los modelos. Una σ de 1.5°C en temperatura máxima indica que los modelos varían ±1.5°C alrededor de la media. Una σ de 3 mm en precipitación indica alta incertidumbre sobre si lloverá significativamente.</p>
+                    </div>
+                </div>
+
+                <div class="interpret-levels-card">
+                    <h3>Niveles del Índice de Consenso</h3>
+                    <div class="table-scroll">
+                        <table class="comp-table">
+                            <thead>
+                                <tr>
+                                    <th>IC</th>
+                                    <th>Nivel</th>
+                                    <th>Significado práctico</th>
+                                    <th>Umbrales CV (Temp.)</th>
+                                    <th>Umbrales CV (Precip.)</th>
+                                    <th>Umbrales CV (Viento)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="tag-status green">90–100</span></td>
+                                    <td><strong>Muy alto</strong></td>
+                                    <td>Todos los modelos coinciden. Predicción muy fiable.</td>
+                                    <td>CV &lt; 3%</td>
+                                    <td>CV &lt; 30%</td>
+                                    <td>CV &lt; 15%</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag-status yellow">70–89</span></td>
+                                    <td><strong>Alto</strong></td>
+                                    <td>Buena concordancia con ligeras discrepancias. Predicción fiable.</td>
+                                    <td>CV 3–8%</td>
+                                    <td>CV 30–60%</td>
+                                    <td>CV 15–30%</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag-status orange">40–69</span></td>
+                                    <td><strong>Moderado</strong></td>
+                                    <td>Discrepancias notables entre modelos. Predicción incierta.</td>
+                                    <td>CV 8–15%</td>
+                                    <td>CV 60–100%</td>
+                                    <td>CV 30–50%</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tag-status red">0–39</span></td>
+                                    <td><strong>Bajo</strong></td>
+                                    <td>Los modelos no se ponen de acuerdo. Predicción poco fiable.</td>
+                                    <td>CV &gt; 15%</td>
+                                    <td>CV &gt; 100%</td>
+                                    <td>CV &gt; 50%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 5: PRACTICAL GUIDE ===== -->
+        <section class="edu-section">
+            <div class="container">
+                <h2 class="edu-section-title">El comparador en la práctica</h2>
+                <p class="edu-section-intro">Estos son los escenarios más comunes que encontrarás al usar el comparador para planificar tu día en Alhaurín el Grande.</p>
+
+                <div class="practice-grid">
+                    <div class="practice-card">
+                        <div class="practice-header">
+                            <span class="practice-scenario green">Escenario 1</span>
+                            <h3>Todos los modelos coinciden</h3>
+                        </div>
+                        <div class="practice-example">
+                            <div class="practice-data">
+                                <span>🇪🇺 ECMWF: <strong>32°C</strong></span>
+                                <span>🇺🇸 GFS: <strong>33°C</strong></span>
+                                <span>🇩🇪 ICON: <strong>32°C</strong></span>
+                                <span>🇨🇦 GEM: <strong>31°C</strong></span>
+                            </div>
+                            <div class="practice-result green">IC 95 · Muy alto · σ = 0.8°C</div>
+                        </div>
+                        <p class="practice-meaning"><strong>Interpretación:</strong> Los 4 modelos predicen temperaturas máximas en un rango de apenas 2°C. Puedes confiar en que hará alrededor de 32°C con un margen de ±1°C. Típico de situaciones anticiclónicas estables en verano sobre Alhaurín.</p>
+                        <p class="practice-action"><strong>¿Qué hacer?</strong> Planifica con confianza. Si sales al campo, lleva protección solar. Si tienes un evento al aire libre, no hay sorpresas meteorológicas previstas.</p>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-header">
+                            <span class="practice-scenario yellow">Escenario 2</span>
+                            <h3>Discrepancia en precipitación</h3>
+                        </div>
+                        <div class="practice-example">
+                            <div class="practice-data">
+                                <span>🇪🇺 ECMWF: <strong>4.2 mm</strong></span>
+                                <span>🇺🇸 GFS: <strong>0.0 mm</strong></span>
+                                <span>🇩🇪 ICON: <strong>2.8 mm</strong></span>
+                                <span>🇨🇦 GEM: <strong>0.5 mm</strong></span>
+                            </div>
+                            <div class="practice-result yellow">IC 52 · Moderado · σ = 1.9 mm</div>
+                        </div>
+                        <p class="practice-meaning"><strong>Interpretación:</strong> ECMWF e ICON detectan una perturbación que podría dejar lluvia en el Guadalhorce, pero GFS y GEM apenas la ven. Esto es habitual en otoño cuando una DANA se acerca y los modelos no coinciden en su trayectoria exacta.</p>
+                        <p class="practice-action"><strong>¿Qué hacer?</strong> Lleva paraguas por precaución. Si tienes un evento al aire libre, ten un plan B. Vigila las actualizaciones del comparador en las próximas horas porque el consenso puede cambiar.</p>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-header">
+                            <span class="practice-scenario red">Escenario 3</span>
+                            <h3>Desacuerdo total</h3>
+                        </div>
+                        <div class="practice-example">
+                            <div class="practice-data">
+                                <span>🇪🇺 ECMWF: <strong>22 mm</strong></span>
+                                <span>🇺🇸 GFS: <strong>2 mm</strong></span>
+                                <span>🇩🇪 ICON: <strong>35 mm</strong></span>
+                                <span>🇨🇦 GEM: <strong>8 mm</strong></span>
+                            </div>
+                            <div class="practice-result red">IC 18 · Bajo · σ = 14.3 mm</div>
+                        </div>
+                        <p class="practice-meaning"><strong>Interpretación:</strong> Los modelos difieren enormemente. ICON predice lluvias intensas mientras GFS apenas ve precipitación. Esto ocurre con DANAs y gotas frías donde pequeños cambios en la posición del mínimo alteran completamente la predicción para el Valle del Guadalhorce.</p>
+                        <p class="practice-action"><strong>¿Qué hacer?</strong> Máxima precaución. No confíes en ningún modelo individual. Mantente atento a las alertas de AEMET y a las actualizaciones del Radar Social de Alhaurín al Día. Aplaza actividades al aire libre si es posible.</p>
+                    </div>
+                </div>
+
+                <div class="practice-tips-card">
+                    <h3>Consejos para usar el comparador</h3>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <span class="tip-num">1</span>
+                            <div>
+                                <strong>Consulta a primera hora de la mañana</strong>
+                                <p>Los modelos ECMWF y GFS se actualizan entre las 6:00 y las 8:00 (hora española). Los datos de primera hora son los más frescos.</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-num">2</span>
+                            <div>
+                                <strong>Fíjate en la tendencia, no en un día concreto</strong>
+                                <p>Si 3 de 4 modelos anticipan lluvia entre el jueves y el viernes, probablemente lloverá en ese rango aunque no coincidan en el día exacto.</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-num">3</span>
+                            <div>
+                                <strong>La precipitación siempre tiene más incertidumbre</strong>
+                                <p>Un IC de 70 en precipitación es equivalente a un IC de 90 en temperatura. Los umbrales del comparador ya reflejan esto, pero tenlo en cuenta al tomar decisiones.</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-num">4</span>
+                            <div>
+                                <strong>ECMWF suele ser el más fiable, pero no siempre</strong>
+                                <p>En estudios de verificación globales, ECMWF obtiene los mejores resultados. Sin embargo, ICON puede ser más preciso para Alhaurín gracias a su mejor resolución europea (7 km vs 9 km).</p>
+                            </div>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-num">5</span>
+                            <div>
+                                <strong>Más allá de 5 días, reduce tu confianza</strong>
+                                <p>La atmósfera es un sistema caótico. A partir del día 5, el consenso tiende a bajar naturalmente. Los valores de IC en los días 6 y 7 deben interpretarse con cautela.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

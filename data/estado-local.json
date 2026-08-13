@@ -14,12 +14,12 @@
     },
     {
       "id": "avisos",
-      "icono": "💧",
-      "titulo": "Avisos",
-      "valor": "Corte de Agua en Urique",
-      "detalle": "Partido de Urique de 08:00 a 13:00 h por trabajos de mejora en la red municipal.",
-      "estado": "alert",
-      "cta": "Ver aviso completo",
+      "icono": "✅",
+      "titulo": "Avisos locales",
+      "valor": "Sin avisos",
+      "detalle": "No constan cortes de agua, luz, tráfico ni incidencias activas en este momento.",
+      "estado": "ok",
+      "cta": "Ver historial de avisos",
       "url": "./avisos/"
     },
     {

@@ -190,10 +190,50 @@ nav {
     border-radius: 6px;
 }
 
-/* HERO */
+/* COMPACT PAGE HEADER (patrón Tiempo/Seguimiento) */
+
+.page-compact-header {
+    padding: 20px 0 8px;
+}
+
+.page-header-shell {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.page-header-shell h1 {
+    font-size: clamp(22px, 3.5vw, 30px);
+    margin: 4px 0 0;
+}
+
+.page-header-subtitle {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: var(--muted);
+    max-width: 600px;
+}
+
+.breadcrumb-mini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.breadcrumb-mini a {
+    color: var(--ink);
+}
+
+/* HERO (legacy — pages migrating to compact header) */
 
 .hero {
-    padding: 40px 0 24px;
+    padding: 24px 0 16px;
 }
 
 .hero-grid {

@@ -1,5 +1,75 @@
 [
     {
+        "titulo": "Torremolinos alcanza la cifra de desempleo más baja desde 2007 en julio",
+        "descripcion": "El paro en Torremolinos baja un 12,2% interanual en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, y un aumento del 3,3% en contratos respecto a 2025.",
+        "resumen": "El paro en Torremolinos baja un 12,2% interanual en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, y un aumento del 3,3% en contratos respecto a 2025.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T22:51:02.179Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/torremolinos-alcanza-la-cifra-de-desempleo-mas-baja-desde-2007-en-julio.html"
+    },
+    {
+        "titulo": "Las Veladas de Blanco regresaron al Camino de Málaga en Alhaurín el Grande con una gran",
+        "descripcion": "El Camino de Málaga en Alhaurín el Grande se llenó de música, animación y tradición en las Veladas de Blanco, con 22 establecimientos participantes y actividades para toda la familia.",
+        "resumen": "El Camino de Málaga en Alhaurín el Grande se llenó de música, animación y tradición en las Veladas de Blanco, con 22 establecimientos participantes y actividades para toda la familia.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T22:51:02.172Z",
+        "imagen": "https://i2.ytimg.com/vi/iB-9VUlFMKA/hqdefault.jpg",
+        "pagina": "noticias/las-veladas-de-blanco-regresaron-al-camino-de-malaga-en-alhaurin-el-grande-con-una-gran.html"
+    },
+    {
+        "titulo": "Fuengirola invierte 828.910 euros en modernizar su parque de bomberos",
+        "descripcion": "El Ayuntamiento de Fuengirola destina más de 800.000 euros para mejorar la operatividad y las condiciones laborales del parque de bomberos local.",
+        "resumen": "El Ayuntamiento de Fuengirola destina más de 800.000 euros para mejorar la operatividad y las condiciones laborales del parque de bomberos local.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T22:51:02.166Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/fuengirola-invierte-828-910-euros-en-modernizar-su-parque-de-bomberos.html"
+    },
+    {
+        "titulo": "Antonio Mateo, barbero de Alhaurín el Grande, triunfa con Duplex Barbería en Barcelona",
+        "descripcion": "Antonio Mateo, natural de Alhaurín el Grande, ha consolidado su barbería Duplex Barbería en Barcelona tras más de una década de experiencia en España y Europa.",
+        "resumen": "Antonio Mateo, natural de Alhaurín el Grande, ha consolidado su barbería Duplex Barbería en Barcelona tras más de una década de experiencia en España y Europa.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T22:51:02.152Z",
+        "imagen": "https://i3.ytimg.com/vi/z90BZ5Mg7i0/hqdefault.jpg",
+        "pagina": "noticias/antonio-mateo-barbero-de-alhaurin-el-grande-triunfa-con-duplex-barberia-en-barcelona.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande prepara verbena y programa juvenil Next Step en septiembre",
+        "descripcion": "Villa del Guadalhorce acogerá la verbena anual el 5 de septiembre y el área de Juventud lanza talleres para jóvenes con el programa Next Step.",
+        "resumen": "Villa del Guadalhorce acogerá la verbena anual el 5 de septiembre y el área de Juventud lanza talleres para jóvenes con el programa Next Step.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T22:51:02.151Z",
+        "imagen": "https://i4.ytimg.com/vi/K2HxiwfRDVk/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-prepara-verbena-y-programa-juvenil-next-step-en-septiembre.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande estrena dos rutas saludables para descubrir patrimonio y naturaleza",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que conectan patrimonio, naturaleza y turismo local, con financiación estatal y municipal.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que conectan patrimonio, naturaleza y turismo local, con financiación estatal y municipal.",
+        "categoria": "Turismo y Patrimonio",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T22:51:02.147Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande-1024x683.jpg",
+        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-descubrir-patrimonio-y-naturaleza.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande avanza en obras, deportes y comercio local en agosto 2026",
+        "descripcion": "El Ayuntamiento inicia la demolición en el colegio Emilia Olivares y continúa la campaña de premios para fomentar el comercio local hasta septiembre.",
+        "resumen": "El Ayuntamiento inicia la demolición en el colegio Emilia Olivares y continúa la campaña de premios para fomentar el comercio local hasta septiembre.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T22:51:02.142Z",
+        "imagen": "https://i1.ytimg.com/vi/DGucw_PdqrM/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-avanza-en-obras-deportes-y-comercio-local-en-agosto-2026.html"
+    },
+    {
         "titulo": "Torremolinos alcanza la cifra más baja de desempleo desde 2007 en julio de 2026",
         "descripcion": "El paro en Torremolinos descendió un 12,2% interanual en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3%.",
         "resumen": "El paro en Torremolinos descendió un 12,2% interanual en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3%.",

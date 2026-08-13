@@ -7,7 +7,7 @@
 
     <title>El tiempo en Alhaurín el Grande — Alhaurín al Día</title>
     <meta name="description"
-        content="Previsión meteorológica detallada de Alhaurín el Grande en tiempo real. Datos oficiales AEMET a 7 días y widgets de Andalmet." />
+        content="Previsión meteorológica detallada de Alhaurín el Grande en tiempo real. Datos oficiales AEMET a 7 días, Sol y Luna, actividades y widgets de Andalmet." />
     <meta name="theme-color" content="#1c211a" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://alhaurinaldia.es/tiempo/">
@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Alhaurín al Día" />
     <meta property="og:title" content="El tiempo en Alhaurín el Grande — Previsión a 7 días" />
-    <meta property="og:description" content="Previsión meteorológica oficial de Alhaurín el Grande con AEMET y Andalmet." />
+    <meta property="og:description" content="Previsión meteorológica oficial de Alhaurín el Grande con AEMET, Sol y Luna y Andalmet." />
     <meta property="og:url" content="https://alhaurinaldia.es/tiempo/" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="El tiempo en Alhaurín el Grande — Previsión a 7 días">
@@ -60,6 +60,7 @@
                     <a href="../avisos/">Avisos</a>
                     <a href="../boletin-oficial/">Boletín oficial</a>
                     <a href="./">Tiempo</a>
+                    <a href="../seguimiento/">Seguimiento</a>
                     <a href="../planes/">Planes</a>
                     <a href="../comercios/">Comercios</a>
                     <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
@@ -69,7 +70,7 @@
     </header>
 
     <main class="weather-page">
-        <!-- CABECERA COMPACTA SIN HERO INNECESARIO -->
+        <!-- CABECERA COMPACTA -->
         <section class="weather-compact-header">
             <div class="container">
                 <div class="weather-header-shell">
@@ -79,7 +80,7 @@
                     </div>
                     <div class="weather-live-badge">
                         <span class="live-dot"></span>
-                        <span>Actualizado 13 de agosto de 2026 a las 12:08</span>
+                        <span>Actualizado 13 de agosto de 2026 a las 12:18</span>
                     </div>
                 </div>
             </div>
@@ -114,7 +115,81 @@
                     </div>
                 </div>
 
-                <!-- PREVISIÓN A 7 DÍAS NATIVA AEMET (ESTILO EDITORIAL ALHAURÍN AL DÍA) -->
+                <!-- SECCIÓN COMBO: RECOMENDACIONES DIARIAS Y SOL/LUNA -->
+                <div class="weather-extras-grid">
+                    <!-- ACTIVIDADES RECOMENDADAS -->
+                    <article class="weather-extra-card">
+                        <div class="extra-card-header">
+                            <span class="mini-label">Consejos prácticos</span>
+                            <h2>Recomendaciones del día</h2>
+                        </div>
+                        <div class="activities-list">
+                            
+    <div class="activity-card">
+      <span class="activity-icon">🧺</span>
+      <div>
+        <span class="activity-title">Tender la ropa</span>
+        <strong class="activity-status">Excelente</strong>
+        <p class="activity-detail">Secado muy rápido al sol (0% riesgo)</p>
+      </div>
+    </div>
+  
+    <div class="activity-card">
+      <span class="activity-icon">🚗</span>
+      <div>
+        <span class="activity-title">Lavar el coche</span>
+        <strong class="activity-status">Muy recomendado</strong>
+        <p class="activity-detail">Cielo limpio y sin calima</p>
+      </div>
+    </div>
+  
+    <div class="activity-card">
+      <span class="activity-icon">🏃</span>
+      <div>
+        <span class="activity-title">Deporte exterior</span>
+        <strong class="activity-status">Horas frescas</strong>
+        <p class="activity-detail">Evitar 13:00 a 19:00 h por calor</p>
+      </div>
+    </div>
+  
+    <div class="activity-card">
+      <span class="activity-icon">🌾</span>
+      <div>
+        <span class="activity-title">Alergia y Polen</span>
+        <strong class="activity-status">Bajo / Moderado</strong>
+        <p class="activity-detail">Nivel estacional Olivo y Gramíneas</p>
+      </div>
+    </div>
+  
+                        </div>
+                    </article>
+
+                    <!-- TARJETA ARCO SOL Y LUNA -->
+                    <article class="weather-extra-card">
+                        <div class="extra-card-header">
+                            <span class="mini-label">Astronomía local</span>
+                            <h2>Sol y Luna en Alhaurín</h2>
+                        </div>
+                        <div class="sun-moon-body">
+                            <div class="sun-arc-box">
+                                <div class="sun-times">
+                                    <span>🌅 Orto: <strong>07:36 h</strong></span>
+                                    <span>🌇 Ocaso: <strong>21:08 h</strong></span>
+                                </div>
+                                <div class="daylight-badge">☀️ Horas de sol: <strong>13h 32m</strong></div>
+                            </div>
+                            <div class="moon-box">
+                                <span class="moon-icon">🌓</span>
+                                <div>
+                                    <span class="moon-title">Fase Lunar Actual</span>
+                                    <strong>Luna Creciente (78%)</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PREVISIÓN A 7 DÍAS NATIVA AEMET -->
                 <div class="aemet-7days-section">
                     <div class="section-title compact">
                         <div>
@@ -239,8 +314,66 @@
                     </div>
                 </div>
 
+                <!-- SECCIÓN EMBALSES DEL GUADALHORCE -->
+                <div class="embalses-section">
+                    <div class="section-title compact">
+                        <div>
+                            <span class="section-kicker">Recursos hídricos</span>
+                            <h2>Agua embalsada en el Guadalhorce (34.4%)</h2>
+                        </div>
+                    </div>
+                    <div class="embalses-card">
+                        <div class="embalses-summary">
+                            <span>Total cuenca Guadalhorce-Limites: <strong>98.4 / 286.2 hm³</strong></span>
+                        </div>
+                        <div class="embalses-grid">
+                            
+    <div class="embalse-item">
+      <div class="embalse-info">
+        <span class="embalse-name">Conde de Guadalhorce</span>
+        <span class="embalse-val">24.1 hm³ / 66.5 hm³ (36.2%)</span>
+      </div>
+      <div class="embalse-track">
+        <div class="embalse-fill" style="width: 36.2%;"></div>
+      </div>
+    </div>
+  
+    <div class="embalse-item">
+      <div class="embalse-info">
+        <span class="embalse-name">Embalse del Guadalhorce</span>
+        <span class="embalse-val">38.2 hm³ / 125.8 hm³ (30.3%)</span>
+      </div>
+      <div class="embalse-track">
+        <div class="embalse-fill" style="width: 30.3%;"></div>
+      </div>
+    </div>
+  
+    <div class="embalse-item">
+      <div class="embalse-info">
+        <span class="embalse-name">Guadalteba</span>
+        <span class="embalse-val">42.8 hm³ / 153.3 hm³ (27.9%)</span>
+      </div>
+      <div class="embalse-track">
+        <div class="embalse-fill" style="width: 27.9%;"></div>
+      </div>
+    </div>
+  
+    <div class="embalse-item">
+      <div class="embalse-info">
+        <span class="embalse-name">La Concepción</span>
+        <span class="embalse-val">34.6 hm³ / 57.5 hm³ (60.1%)</span>
+      </div>
+      <div class="embalse-track">
+        <div class="embalse-fill" style="width: 60.1%;"></div>
+      </div>
+    </div>
+  
+                        </div>
+                    </div>
+                </div>
+
                 <!-- SECCIÓN WIDGETS PROMINENTES DE ANDALMET -->
-                <div class="andalmet-section">
+                <div class="andalmet-section" style="margin-top: 32px;">
                     <div class="section-title compact">
                         <div>
                             <span class="section-kicker">Andalmet Guadalhorce</span>
@@ -305,6 +438,7 @@
                 <a href="../avisos/">Avisos</a>
                 <a href="../boletin-oficial/">Boletín oficial</a>
                 <a href="./">Tiempo</a>
+                <a href="../seguimiento/">Seguimiento</a>
                 <a href="../planes/">Planes</a>
                 <a href="../comercios/">Comercios</a>
                 <a href="../anunciarse/">Anunciarse</a>

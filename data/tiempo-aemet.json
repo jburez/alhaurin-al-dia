@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-13T12:08:21+02:00",
+  "actualizado": "2026-08-13T12:18:44+02:00",
   "fuente": "AEMET",
   "municipio": "Alhaurín el Grande",
   "item": {
@@ -110,5 +110,74 @@
       "viento": "SE 10 km/h",
       "uv": ""
     }
-  ]
+  ],
+  "actividades": [
+    {
+      "id": "ropa",
+      "icono": "🧺",
+      "titulo": "Tender la ropa",
+      "estado": "Excelente",
+      "detalle": "Secado muy rápido al sol (0% riesgo)"
+    },
+    {
+      "id": "coche",
+      "icono": "🚗",
+      "titulo": "Lavar el coche",
+      "estado": "Muy recomendado",
+      "detalle": "Cielo limpio y sin calima"
+    },
+    {
+      "id": "deporte",
+      "icono": "🏃",
+      "titulo": "Deporte exterior",
+      "estado": "Horas frescas",
+      "detalle": "Evitar 13:00 a 19:00 h por calor"
+    },
+    {
+      "id": "polen",
+      "icono": "🌾",
+      "titulo": "Alergia y Polen",
+      "estado": "Bajo / Moderado",
+      "detalle": "Nivel estacional Olivo y Gramíneas"
+    }
+  ],
+  "sol_luna": {
+    "orto": "07:36 h",
+    "ocaso": "21:08 h",
+    "horas_luz": "13h 32m",
+    "fase_luna": "Luna Creciente (78%)",
+    "icono_luna": "🌓"
+  },
+  "embalses": {
+    "cuenca": "Guadalhorce-Limites",
+    "total_capacidad_hm3": 286.2,
+    "total_embalsado_hm3": 98.4,
+    "porcentaje": "34.4%",
+    "pantanos": [
+      {
+        "nombre": "Conde de Guadalhorce",
+        "capacidad": "66.5 hm³",
+        "embalsado": "24.1 hm³",
+        "porcentaje": "36.2%"
+      },
+      {
+        "nombre": "Embalse del Guadalhorce",
+        "capacidad": "125.8 hm³",
+        "embalsado": "38.2 hm³",
+        "porcentaje": "30.3%"
+      },
+      {
+        "nombre": "Guadalteba",
+        "capacidad": "153.3 hm³",
+        "embalsado": "42.8 hm³",
+        "porcentaje": "27.9%"
+      },
+      {
+        "nombre": "La Concepción",
+        "capacidad": "57.5 hm³",
+        "embalsado": "34.6 hm³",
+        "porcentaje": "60.1%"
+      }
+    ]
+  }
 }

@@ -85,8 +85,32 @@ img {
 .topbar .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 16px;
     flex-wrap: wrap;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.topbar-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    transition: opacity 0.18s ease;
+}
+
+.topbar-link:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.topbar-link.highlight {
+    color: #ffd700;
 }
 
 /* HEADER */
@@ -145,13 +169,14 @@ nav {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 16px;
     color: #475467;
     font-size: 14px;
     font-weight: 800;
 }
 
 .nav-links a {
+    white-space: nowrap;
     transition: color .18s ease, transform .18s ease;
 }
 

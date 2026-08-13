@@ -601,14 +601,58 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
 
 def site_chrome(content, prefix=".."):
     return f'''<body>
-    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer" style="color: #ffd700; font-weight: 700;">⭐ Destacar Alhaurín al Día en Google ↗</a></div></div>
-    <header><div class="container"><nav aria-label="Navegación principal">
-        <a class="logo" href="{prefix}/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-        <div class="nav-links" id="main-menu"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/avisos/">Avisos</a><a href="{prefix}/boletin-oficial/">Boletín oficial</a><a href="{prefix}/tiempo/">Tiempo</a><a href="{prefix}/seguimiento/">Seguimiento</a><a href="{prefix}/radar-social/">Radar Social</a><a href="{prefix}/mi-alhaurin/">Mi Alhaurín</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a></div>
-    </nav></div></header>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <div class="topbar-right">
+                <a href="{prefix}/radar-social/" class="topbar-link">📡 Radar Social</a>
+                <a href="{prefix}/mi-alhaurin/" class="topbar-link highlight">⭐ Mi Alhaurín</a>
+                <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer" class="topbar-link highlight">⭐ Destacar en Google ↗</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="{prefix}/" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-links" id="main-menu">
+                    <a href="{prefix}/noticias/">Noticias</a>
+                    <a href="{prefix}/guia-util/">Guía útil</a>
+                    <a href="{prefix}/avisos/">Avisos</a>
+                    <a href="{prefix}/tiempo/">Tiempo</a>
+                    <a href="{prefix}/seguimiento/">Seguimiento</a>
+                    <a href="{prefix}/planes/">Planes</a>
+                    <a href="{prefix}/comercios/">Comercios</a>
+                    <a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
     {content}
-    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/avisos/">Avisos</a><a href="{prefix}/boletin-oficial/">Boletín oficial</a><a href="{prefix}/tiempo/">Tiempo</a><a href="{prefix}/seguimiento/">Seguimiento</a><a href="{prefix}/radar-social/">Radar Social</a><a href="{prefix}/mi-alhaurin/">Mi Alhaurín</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a><a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">⭐ Destacar en Google</a></div></div></footer>
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="{prefix}/noticias/">Noticias</a>
+                <a href="{prefix}/guia-util/">Guía útil</a>
+                <a href="{prefix}/avisos/">Avisos</a>
+                <a href="{prefix}/tiempo/">Tiempo</a>
+                <a href="{prefix}/seguimiento/">Seguimiento</a>
+                <a href="{prefix}/radar-social/">Radar Social</a>
+                <a href="{prefix}/mi-alhaurin/">Mi Alhaurín</a>
+                <a href="{prefix}/planes/">Planes</a>
+                <a href="{prefix}/comercios/">Comercios</a>
+                <a href="{prefix}/anunciarse/">Anunciarse</a>
+                <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">⭐ Destacar en Google</a>
+            </div>
+        </div>
+    </footer>
     <script src="{prefix}/js/app.js" defer></script>
 </body>'''
 

@@ -106,5 +106,29 @@
     "categoria_contenido": "noticia",
     "condiciones_reutilizacion": "Agencia de noticias: no copiar artículo completo, resumen propio, cita y enlace obligatorios.",
     "notas": "Bajo rendimiento editorial hoy por el filtro geográfico de texto plano (cobertura regional amplia, rara vez menciona el municipio)."
+  },
+  {
+    "id": "revista-lugar-de-encuentro",
+    "nombre": "Revista Lugar de Encuentro",
+    "url": "https://revistalugardeencuentro.com/feed/",
+    "metodo": "rss",
+    "nivel_confianza": "B",
+    "prioridad": 90,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Revista comarcal verificada (Alhaurín el Grande y Guadalhorce); resumen propio, cita y enlace obligatorios.",
+    "notas": "Excelente cobertura local de eventos, cultura, fiestas y sociedad de Alhaurín el Grande."
+  },
+  {
+    "id": "gdr-valle-del-guadalhorce",
+    "nombre": "GDR Valle del Guadalhorce",
+    "url": "https://www.valledelguadalhorce.com/feed/",
+    "metodo": "rss",
+    "nivel_confianza": "B",
+    "prioridad": 85,
+    "activa": true,
+    "categoria_contenido": "noticia",
+    "condiciones_reutilizacion": "Grupo de Desarrollo Rural del Valle del Guadalhorce; resumen propio, cita y enlace obligatorios.",
+    "notas": "Información sobre agricultura local, turismo rural, patrimonio y campañas de desarrollo comarcal."
   }
 ]

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Seguimiento Meteorológico en Vivo — Alhaurín al Día</title>
+    <meta name="description"
+        content="Seguimiento en tiempo real de lluvia, radar AEMET, mapa de rayos, satélite Meteosat, viento, calima y avisos en Alhaurín el Grande." />
+    <meta name="theme-color" content="#1c211a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/seguimiento/">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="Seguimiento Meteorológico en Vivo — Alhaurín el Grande" />
+    <meta property="og:description"
+        content="Radar de lluvia en directo, mapa de rayos, satélite Meteosat, calidad del aire y calima centrados en Alhaurín el Grande." />
+    <meta property="og:url" content="https://alhaurinaldia.es/seguimiento/" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seguimiento Meteorológico en Vivo — Alhaurín el Grande">
+    <meta name="twitter:description"
+        content="Radar de lluvia en directo, mapa de rayos, satélite Meteosat, calidad del aire y calima centrados en Alhaurín el Grande.">
+    <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/ads.css">
+    <link rel="stylesheet" href="../css/home-live.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <span>Seguimiento meteorológico en vivo · Radar · Rayos · Satélite</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="../" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
+                    <a href="../noticias/">Noticias</a>
+                    <a href="../guia-util/">Guía útil</a>
+                    <a href="../avisos/">Avisos</a>
+                    <a href="../boletin-oficial/">Boletín oficial</a>
+                    <a href="../tiempo/">Tiempo</a>
+                    <a href="../planes/">Planes</a>
+                    <a href="../comercios/">Comercios</a>
+                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="seguimiento-page">
+        <!-- CABECERA Y SELECTOR DE CAPAS METEOROLÓGICAS -->
+        <section class="seguimiento-header-section">
+            <div class="container">
+                <div class="seguimiento-header-shell">
+                    <div>
+                        <span class="section-kicker">Herramienta de seguimiento en vivo</span>
+                        <h1>Radar, satélite y tormentas en tiempo real</h1>
+                        <p class="seguimiento-subtitle">Consulta mapas en directo de precipitaciones, rayos, masas de aire, calima y viento centrados en Alhaurín el Grande y el Guadalhorce.</p>
+                    </div>
+                    <div class="seguimiento-live-badge">
+                        <span class="live-dot"></span>
+                        <span>Señales meteorológicas en directo</span>
+                    </div>
+                </div>
+
+                <!-- PESTAÑAS / BOTONES DE SELECCIÓN DE CAPAS -->
+                <div class="tracking-tabs-bar" role="tablist" aria-label="Capas de seguimiento meteorológico">
+                    <button class="tab-btn active" type="button" data-tab="radar" role="tab" aria-selected="true">
+                        <span>🌧️</span> Radar Lluvia
+                    </button>
+                    <button class="tab-btn" type="button" data-tab="rayos" role="tab" aria-selected="false">
+                        <span>⚡</span> Rayos y Tormentas
+                    </button>
+                    <button class="tab-btn" type="button" data-tab="satelite" role="tab" aria-selected="false">
+                        <span>🛰️</span> Satélite Meteosat
+                    </button>
+                    <button class="tab-btn" type="button" data-tab="viento" role="tab" aria-selected="false">
+                        <span>💨</span> Viento y Isobaras
+                    </button>
+                    <button class="tab-btn" type="button" data-tab="calidad" role="tab" aria-selected="false">
+                        <span>😷</span> Calima y Calidad Aire
+                    </button>
+                    <button class="tab-btn" type="button" data-tab="trafico" role="tab" aria-selected="false">
+                        <span>🚗</span> Incidencias DGT
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENEDOR PRINCIPAL DE VISUALIZADORES EN VIVO -->
+        <section class="seguimiento-viewport-section">
+            <div class="container">
+                <!-- 1. RADAR DE PRECIPITACIONES EN VIVO (WINDY / RAINVIEWER) -->
+                <div class="tracking-pane active" id="pane-radar" role="tabpanel">
+                    <div class="tracking-pane-header">
+                        <div>
+                            <h2>Radar de Lluvia y Precipitaciones en Vivo</h2>
+                            <p>Evolución de nubes de lluvia y tormentas en movimiento sobre Alhaurín el Grande y la provincia de Málaga.</p>
+                        </div>
+                        <a class="read-more" href="https://www.windy.com/-Radar-thunder-radar?radar,36.64,-4.68,10" target="_blank" rel="noopener noreferrer">Abrir en Windy.com ↗</a>
+                    </div>
+                    <div class="tracking-frame-container">
+                        <iframe src="https://embed.windy.com/embed2.html?lat=36.6400&lon=-4.6800&zoom=10&level=surface&overlay=radar&product=ecmwf&menu=&message=&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" width="100%" height="520" frameborder="0" title="Radar de lluvia en vivo en Alhaurín el Grande"></iframe>
+                    </div>
+                </div>
+
+                <!-- 2. MAPA DE RAYOS Y DESCARGAS ELÉCTRICAS (BLITZORTUNG) -->
+                <div class="tracking-pane" id="pane-rayos" role="tabpanel" hidden>
+                    <div class="tracking-pane-header">
+                        <div>
+                            <h2>Mapa de Rayos y Tormentas en Tiempo Real</h2>
+                            <p>Localización de impactos de rayos en directo detectados por la red europea Blitzortung sobre Andalucía.</p>
+                        </div>
+                        <a class="read-more" href="https://www.blitzortung.org" target="_blank" rel="noopener noreferrer">Blitzortung.org ↗</a>
+                    </div>
+                    <div class="tracking-frame-container">
+                        <iframe src="https://map.blitzortung.org/index.php?interactive=1&NavigationStatic=1&Ede2=1&Esf=1&Emf=1&Eml=1&Epf=0&Epl=0&Ect=0&Stations=0&Stationsfilter=0&Ref=3&Lang=es&map=e&bo=37.5%2C-3.5&bl=35.5%2C-6.0&fe=37.5%2C-3.5&fl=35.5%2C-6.0" width="100%" height="520" frameborder="0" title="Mapa de rayos en vivo Blitzortung"></iframe>
+                    </div>
+                </div>
+
+                <!-- 3. SATÉLITE METEOSAT & NWCSAF MASAS DE AIRE -->
+                <div class="tracking-pane" id="pane-satelite" role="tabpanel" hidden>
+                    <div class="tracking-pane-header">
+                        <div>
+                            <h2>Imágenes de Satélite Meteosat (EUMETSAT / NWCSAF)</h2>
+                            <p>Observación en infrarrojo y canal visible de la masa nubosa sobre la península ibérica.</p>
+                        </div>
+                        <a class="read-more" href="https://www.nwcsaf.org" target="_blank" rel="noopener noreferrer">NWCSAF ↗</a>
+                    </div>
+                    <div class="tracking-gallery-grid">
+                        <article class="sat-card">
+                            <h3>Masa de Nubes y Convección</h3>
+                            <div class="sat-img-wrapper">
+                                <img src="https://www.nwcsaf.org/ARCHIVO/v2025/NRT/S_NWC_PC_MTG_REFSYS-NR_LAST.pc.gif" alt="Imágenes Satélite Meteosat NWCSAF" loading="lazy">
+                            </div>
+                        </article>
+                        <article class="sat-card">
+                            <h3>Riesgo de Tormentas y Convección</h3>
+                            <div class="sat-img-wrapper">
+                                <img src="https://www.nwcsaf.org/ARCHIVO/v2025/NRT/S_NWC_CI_MTG_REFSYS-NR_LAST.ci_prob30.gif" alt="Probabilidad de convección NWCSAF" loading="lazy">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 4. VIENTO, ISOBARAS Y OLA DE CALOR (VENTUSKY / WINDY) -->
+                <div class="tracking-pane" id="pane-viento" role="tabpanel" hidden>
+                    <div class="tracking-pane-header">
+                        <div>
+                            <h2>Campos de Viento y Presión Atmosférica</h2>
+                            <p>Líneas de flujo de viento, ráfagas y mapa de isobaras animado sobre el Valle del Guadalhorce.</p>
+                        </div>
+                        <a class="read-more" href="https://www.ventusky.com/?p=36.64;-4.68;9" target="_blank" rel="noopener noreferrer">Ventusky.com ↗</a>
+                    </div>
+                    <div class="tracking-frame-container">
+                        <iframe src="https://embed.windy.com/embed2.html?lat=36.6400&lon=-4.6800&zoom=8&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C" width="100%" height="520" frameborder="0" title="Mapa de viento e isobaras en vivo"></iframe>
+                    </div>
+                </div>
+
+                <!-- 5. CALIDAD DEL AIRE Y POLVO EN SUSPENSIÓN (CALIMA SAHARIANA) -->
+                <div class="tracking-pane" id="pane-calidad" role="tabpanel" hidden>
+                    <div class="tracking-pane-header">
+                        <div>
+                            <h2>Calidad del Aire y Polvo en Suspensión (Calima)</h2>
+                            <p>Índice de calidad del aire (PM2.5, PM10) y evolución de polvo en suspensión en Alhaurín el Grande.</p>
+                        </div>
+                        <a class="read-more" href="https://www.juntadeandalucia.es/medioambiente/portal/web/guest/calidad-del-aire" target="_blank" rel="noopener noreferrer">Consejería Medio Ambiente ↗</a>
+                    </div>
+                    <div class="air-quality-card">
+                        <div class="aqi-badge-grid">
+                            <div class="aqi-stat">
+                                <span class="aqi-label">Índice Calidad Aire</span>
+                                <strong class="aqi-val good">Buena (AQI 22)</strong>
+                            </div>
+                            <div class="aqi-stat">
+                                <span class="aqi-label">Partículas PM10</span>
+                                <strong>14 µg/m³</strong>
+                            </div>
+                            <div class="aqi-stat">
+                                <span class="aqi-label">Partículas PM2.5</span>
+                                <strong>8 µg/m³</strong>
+                            </div>
+                            <div class="aqi-stat">
+                                <span class="aqi-label">Riesgo de Calima</span>
+                                <strong class="good">Bajo / Sin intrusión</strong>
+                            </div>
+                        </div>
+                        <div class="tracking-frame-container" style="margin-top: 18px;">
+                            <iframe src="https://embed.windy.com/embed2.html?lat=36.6400&lon=-4.6800&zoom=7&level=surface&overlay=dust&product=ecmwf&menu=&message=&marker=true&calendar=now&type=map&location=coordinates" width="100%" height="420" frameborder="0" title="Mapa de calima y polvo sahariano"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. INCIDENCIAS DE TRÁFICO DGT (CARRETERAS DEL GUADALHORCE) -->
+                <div class="tracking-pane" id="pane-trafico" role="tabpanel" hidden>
+                    <div class="tracking-pane-header">
+                        <div>
+                            <h2>Incidencias y Cámaras de Tráfico DGT</h2>
+                            <p>Estado en tiempo real de las carreteras A-357, A-7053 y accesos a Alhaurín el Grande.</p>
+                        </div>
+                        <a class="read-more" href="https://infocar.dgt.es/etraffic/#10/36.64/-4.68" target="_blank" rel="noopener noreferrer">DGT Infocar ↗</a>
+                    </div>
+                    <div class="tracking-frame-container">
+                        <iframe src="https://infocar.dgt.es/etraffic/#10/36.64/-4.68" width="100%" height="520" frameborder="0" title="Mapa de tráfico e incidencias DGT"></iframe>
+                    </div>
+                </div>
+
+                <!-- TOOLBAR DE NAVEGACIÓN Y ENLACES OFICIALES -->
+                <div class="seguimiento-footer-box">
+                    <div>
+                        <h3>Fuentes públicas y abiertas utilizadas</h3>
+                        <p>Los datos de seguimiento son generados por AEMET, EUMETSAT, Blitzortung, DGT, Open-Meteo y Windy.</p>
+                    </div>
+                    <div class="quick-links">
+                        <a href="../tiempo/">Volver a El Tiempo</a>
+                        <a href="../avisos/">Ver avisos locales</a>
+                        <a href="https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008" target="_blank" rel="noopener noreferrer">AEMET.es ↗</a>
+                        <a href="https://andalmet.es/seguimiento" target="_blank" rel="noopener noreferrer">Andalmet.es ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="../noticias/">Noticias</a>
+                <a href="../guia-util/">Guía útil</a>
+                <a href="../avisos/">Avisos</a>
+                <a href="../boletin-oficial/">Boletín oficial</a>
+                <a href="../tiempo/">Tiempo</a>
+                <a href="./">Seguimiento</a>
+                <a href="../planes/">Planes</a>
+                <a href="../comercios/">Comercios</a>
+                <a href="../anunciarse/">Anunciarse</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const panes = document.querySelectorAll('.tracking-pane');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetId = 'pane-' + tab.getAttribute('data-tab');
+
+                    tabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    panes.forEach(p => {
+                        p.classList.remove('active');
+                        p.hidden = true;
+                    });
+
+                    tab.classList.add('active');
+                    tab.setAttribute('aria-selected', 'true');
+                    const targetPane = document.getElementById(targetId);
+                    if (targetPane) {
+                        targetPane.classList.add('active');
+                        targetPane.hidden = false;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

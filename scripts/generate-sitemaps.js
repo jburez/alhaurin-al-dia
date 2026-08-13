@@ -13,6 +13,7 @@ const SERVICE_URLS = new Set([
   '/avisos/',
   '/boletin-oficial/',
   '/tiempo/',
+  '/seguimiento/',
   '/planes/',
   '/comercios/',
   '/anunciarse/',

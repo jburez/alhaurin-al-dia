@@ -121,6 +121,25 @@
     text-transform: uppercase;
 }
 
+.daily-act-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 8px 0 6px;
+}
+
+.activity-mini-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: var(--radius-pill);
+    background: #ffffff;
+    border: 1px solid var(--line);
+    font-size: 11px;
+    color: var(--ink);
+}
+
 .daily-value {
     color: var(--ink);
     font-family: var(--font-display);

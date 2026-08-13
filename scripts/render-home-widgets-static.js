@@ -213,8 +213,21 @@ function mergeAvisosOficiales(items, avisosOficialesData) {
 function mergeWeather(items, weatherData) {
   const weatherItem = weatherData?.item;
   if (!weatherItem || typeof weatherItem !== 'object') return items;
+
+  // Añadir badges de actividades diarias si estan disponibles
+  const actividades = Array.isArray(weatherData?.actividades) ? weatherData.actividades : [];
+  let actBadgeHTML = '';
+  if (actividades.length) {
+    actBadgeHTML = actividades.slice(0, 3).map(a => `<span class="activity-mini-pill" title="${escapeHTML(a.detalle)}">${escapeHTML(a.icono)} ${escapeHTML(a.titulo)}: <strong>${escapeHTML(a.estado)}</strong></span>`).join('');
+  }
+
+  const enrichedItem = {
+    ...weatherItem,
+    actividadesMini: actBadgeHTML
+  };
+
   const cleaned = items.filter((item) => item.id !== 'tiempo' && item.id !== 'andalmet');
-  return [weatherItem, ...cleaned];
+  return [enrichedItem, ...cleaned];
 }
 
 function renderDailyItem(item) {
@@ -223,7 +236,8 @@ function renderDailyItem(item) {
   const external = isExternalLink(url);
   const cta = item.cta || 'Ver más';
   const source = item.fuente ? `<span class="daily-source">Fuente: ${escapeHTML(item.fuente)}</span>` : '';
-  return `<article class="daily-card ${escapeHTML(estado)}"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">${escapeHTML(item.icono || '•')}</span><div><strong>${escapeHTML(item.titulo || 'Estado')}</strong><span class="daily-status-badge">${escapeHTML(getStatusLabel(estado))}</span></div></div><div class="daily-value">${escapeHTML(item.valor || 'Consultar')}</div><p>${escapeHTML(item.detalle || 'Información pendiente de actualización.')}</p>${source}<a class="daily-link" href="${escapeHTML(url)}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}>${escapeHTML(cta)} →</a></article>`;
+  const extraBadges = item.actividadesMini ? `<div class="daily-act-strip">${item.actividadesMini}</div>` : '';
+  return `<article class="daily-card ${escapeHTML(estado)}"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">${escapeHTML(item.icono || '•')}</span><div><strong>${escapeHTML(item.titulo || 'Estado')}</strong><span class="daily-status-badge">${escapeHTML(getStatusLabel(estado))}</span></div></div><div class="daily-value">${escapeHTML(item.valor || 'Consultar')}</div><p>${escapeHTML(item.detalle || 'Información pendiente de actualización.')}</p>${extraBadges}${source}<a class="daily-link" href="${escapeHTML(url)}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}>${escapeHTML(cta)} →</a></article>`;
 }
 
 function renderDailyStatus(html) {

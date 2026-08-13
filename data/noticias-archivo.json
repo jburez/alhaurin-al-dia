@@ -1,5 +1,45 @@
 [
     {
+        "titulo": "Aviso de corte de agua este jueves 13 de agosto en todo el Partido de Urique",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande informa de la interrupción del suministro de agua de 08:00 a 13:00 h en Cuesta de Urique, Nacimiento de Urique, Camino de la Raja, Barranco Cañas, Paz Jiménez, La Colorá y zonas adyacentes por trabajos de mejora en la red.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande informa de la interrupción del suministro de agua de 08:00 a 13:00 h en Cuesta de Urique, Nacimiento de Urique, Camino de la Raja, Barranco Cañas, Paz Jiménez, La Colorá y zonas adyacentes por trabajos de mejora en la red.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T07:04:30.089Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2024/04/cropped-LOGOAYTOALH-32x32.png",
+        "pagina": "noticias/aviso-de-corte-de-agua-este-jueves-13-de-agosto-en-todo-el-partido-de-urique.html"
+    },
+    {
+        "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande este jueves",
+        "descripcion": "Consulta el programa completo de actividades previstas para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "resumen": "Consulta el programa completo de actividades previstas para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T07:02:41.698Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/cropped-favicon-ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO-32x32.png",
+        "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-este-jueves.html"
+    },
+    {
+        "titulo": "Conoce a los protagonistas que impulsan el crecimiento de la comarca con Fedelhorce",
+        "descripcion": "Fedelhorce presenta una serie semanal que muestra la historia y experiencia de sus asociados, destacando su papel en el desarrollo local.",
+        "resumen": "Fedelhorce presenta una serie semanal que muestra la historia y experiencia de sus asociados, destacando su papel en el desarrollo local.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T07:02:41.696Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Somos-Fedelhorce-15-1.png",
+        "pagina": "noticias/conoce-a-los-protagonistas-que-impulsan-el-crecimiento-de-la-comarca-con-fedelhorce.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026",
+        "descripcion": "El alcalde Anthony Bermúdez invita a la comunidad de Alhaurín el Grande a participar en las actividades organizadas para conmemorar el Día de la Virgen en 2026.",
+        "resumen": "El alcalde Anthony Bermúdez invita a la comunidad de Alhaurín el Grande a participar en las actividades organizadas para conmemorar el Día de la Virgen en 2026.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T07:02:41.691Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2024/04/cropped-LOGOAYTOALH-32x32.png",
+        "pagina": "noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-la-virgen-2026.html"
+    },
+    {
         "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta el terremoto en Venezuela",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",

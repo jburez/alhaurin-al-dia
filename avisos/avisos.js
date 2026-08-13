@@ -34,12 +34,21 @@
     }
 
     function noticeCard(notice) {
-        const url = notice.url || "#";
-        const link = url && url !== "#" ? `
-            <a class="read-more" href="${escapeHTML(url)}" ${/^https?:\/\//i.test(url) ? 'target="_blank" rel="noopener noreferrer"' : ""}>
-                ${escapeHTML(notice.cta || "Ver fuente")} →
-            </a>
-        ` : "";
+        const rawUrl = (notice.url || "").trim();
+        const isSelfPage = !rawUrl || rawUrl === "#" || rawUrl === "./avisos/" || rawUrl === "/avisos/" || rawUrl === "avisos/";
+
+        let link = "";
+        if (!isSelfPage) {
+            const url = rawUrl.startsWith("http://") || rawUrl.startsWith("https://") || rawUrl.startsWith("/")
+                ? rawUrl
+                : "https://alhaurinaldia.es/" + rawUrl.replace(/^\.?\/+/, "");
+            const isExternal = /^https?:\/\//i.test(url) && !url.startsWith("https://alhaurinaldia.es");
+            link = `
+                <a class="read-more" href="${escapeHTML(url)}" ${isExternal ? 'target="_blank" rel="noopener noreferrer"' : ""}>
+                    ${escapeHTML(notice.cta || "Ver detalle")} →
+                </a>
+            `;
+        }
 
         return `
             <article class="notice-card daily-card ${escapeHTML(notice.estado || "neutral")}">

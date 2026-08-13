@@ -22,6 +22,7 @@ const STRUCTURAL_URLS = new Set([
   '/guia-util/farmacias/calendario/',
   '/avisos/',
   '/tiempo/',
+  '/tiempo/comparador/',
   '/seguimiento/',
   '/radar-social/',
   '/mi-alhaurin/',

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Comparador del Tiempo — Alhaurín el Grande vs Municipios y Modelos</title>
+    <meta name="description"
+        content="Compara el tiempo de Alhaurín el Grande con otros municipios del Guadalhorce y Costa del Sol (Coín, Cártama, Mijas, Málaga) y entre modelos meteorológicos (ECMWF, GFS, AEMET, ICON)." />
+    <meta name="theme-color" content="#1c211a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/tiempo/comparador/">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="Comparador del Tiempo — Alhaurín el Grande vs Municipios y Modelos" />
+    <meta property="og:description"
+        content="Compara la temperatura, lluvia, viento y humedad entre municipios vecinos y modelos numéricos." />
+    <meta property="og:url" content="https://alhaurinaldia.es/tiempo/comparador/" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Comparador del Tiempo — Alhaurín el Grande">
+    <meta name="twitter:description"
+        content="Compara la temperatura, lluvia, viento y humedad entre municipios vecinos y modelos numéricos.">
+    <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/mobile.css">
+    <link rel="stylesheet" href="../../css/ads.css">
+    <link rel="stylesheet" href="../../css/home-live.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <div class="topbar-right">
+                <a href="../../radar-social/" class="topbar-link">📡 Radar Social</a>
+                <a href="../../mi-alhaurin/" class="topbar-link highlight">⭐ Mi Alhaurín</a>
+                <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer" class="topbar-link highlight">⭐ Destacar en Google ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="../../" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
+                    <a href="../../noticias/">Noticias</a>
+                    <a href="../../guia-util/">Guía útil</a>
+                    <a href="../../avisos/">Avisos</a>
+                    <a href="../">Tiempo</a>
+                    <a href="../../seguimiento/">Seguimiento</a>
+                    <a href="../../planes/">Planes</a>
+                    <a href="../../comercios/">Comercios</a>
+                    <a href="../../anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="comparador-page">
+        <section class="comparador-header-section">
+            <div class="container">
+                <div class="comparador-header-shell">
+                    <div>
+                        <span class="section-kicker">Herramienta Meteorológica</span>
+                        <h1>Comparador del Tiempo</h1>
+                        <p class="comparador-subtitle">Compara en tiempo real las condiciones meteorológicas y predicciones entre <strong>Alhaurín el Grande</strong> y los municipios vecinos del Guadalhorce y Costa del Sol, o analiza las divergencias entre modelos numéricos (ECMWF, GFS, ICON, AEMET).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparador-main-section">
+            <div class="container">
+                <!-- CONTROLES DEL COMPARADOR -->
+                <div class="comparador-controls-card">
+                    <div class="comparador-tabs">
+                        <button type="button" class="comp-tab-btn active" id="tab-municipios">🏙️ Comparar entre Municipios</button>
+                        <button type="button" class="comp-tab-btn" id="tab-modelos">🌀 Comparar Modelos Meteorológicos</button>
+                    </div>
+
+                    <div class="comparador-selectors" id="selector-municipios">
+                        <div class="selector-box">
+                            <label for="muni-1">Municipio Base</label>
+                            <select id="muni-1" disabled>
+                                <option value="alhaurin">📍 Alhaurín el Grande</option>
+                            </select>
+                        </div>
+                        <span class="vs-badge">VS</span>
+                        <div class="selector-box">
+                            <label for="muni-2">Comparar con</label>
+                            <select id="muni-2">
+                                <option value="coin">🍋 Coín</option>
+                                <option value="cartama">🍊 Cártama</option>
+                                <option value="mijas">🏔️ Mijas</option>
+                                <option value="fuengirola">🏖️ Fuengirola</option>
+                                <option value="alhaurin-torre">🌲 Alhaurín de la Torre</option>
+                                <option value="malaga">🏙️ Málaga Capital</option>
+                                <option value="marbella">🌴 Marbella</option>
+                                <option value="antequera">⛰️ Antequera</option>
+                                <option value="ronda">🌉 Ronda</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="comparador-selectors" id="selector-modelos" style="display: none;">
+                        <div class="selector-box">
+                            <label for="mod-1">Modelo 1</label>
+                            <select id="mod-1">
+                                <option value="aemet">🇪🇸 AEMET (HARMONIE)</option>
+                                <option value="ecmwf" selected>🇪🇺 ECMWF (IFS - Europeo)</option>
+                            </select>
+                        </div>
+                        <span class="vs-badge">VS</span>
+                        <div class="selector-box">
+                            <label for="mod-2">Modelo 2</label>
+                            <select id="mod-2">
+                                <option value="gfs">🇺🇸 GFS (NCEP - Americano)</option>
+                                <option value="icon" selected>🇩🇪 ICON (DWD - Alemán)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESULTADO DE LA COMPARATIVA EN TARJETAS -->
+                <div class="comparador-grid" id="comparador-results">
+                    <!-- MUNICIPIO 1 -->
+                    <div class="comp-card" id="card-left">
+                        <div class="comp-card-header">
+                            <span class="comp-tag">Base</span>
+                            <h2 id="left-name">Alhaurín el Grande</h2>
+                            <div class="comp-weather-state" id="left-sky">⛅ Parcialmente nublado</div>
+                        </div>
+                        <div class="comp-main-temp">
+                            <span class="comp-temp-val" id="left-temp">24°C</span>
+                            <div class="comp-hi-lo">
+                                <span class="max">Máx: <strong id="left-max">27°C</strong></span>
+                                <span class="min">Mín: <strong id="left-min">18°C</strong></span>
+                            </div>
+                        </div>
+                        <div class="comp-metrics-list">
+                            <div class="comp-metric-row">
+                                <span>🌧️ Lluvia prevista</span>
+                                <strong id="left-rain">0.2 mm (20%)</strong>
+                            </div>
+                            <div class="comp-metric-row">
+                                <span>💨 Viento</span>
+                                <strong id="left-wind">14 km/h (Suroeste)</strong>
+                            </div>
+                            <div class="comp-metric-row">
+                                <span>💧 Humedad relativa</span>
+                                <strong id="left-humidity">58%</strong>
+                            </div>
+                            <div class="comp-metric-row">
+                                <span>☀️ Índice UV</span>
+                                <strong id="left-uv">6 (Alto)</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MUNICIPIO 2 -->
+                    <div class="comp-card" id="card-right">
+                        <div class="comp-card-header">
+                            <span class="comp-tag secondary">Comparado</span>
+                            <h2 id="right-name">Coín</h2>
+                            <div class="comp-weather-state" id="right-sky">☀️ Despejado</div>
+                        </div>
+                        <div class="comp-main-temp">
+                            <span class="comp-temp-val" id="right-temp">26°C</span>
+                            <div class="comp-hi-lo">
+                                <span class="max">Máx: <strong id="right-max">29°C</strong></span>
+                                <span class="min">Mín: <strong id="right-min">19°C</strong></span>
+                            </div>
+                        </div>
+                        <div class="comp-metrics-list">
+                            <div class="comp-metric-row">
+                                <span>🌧️ Lluvia prevista</span>
+                                <strong id="right-rain">0.0 mm (5%)</strong>
+                            </div>
+                            <div class="comp-metric-row">
+                                <span>💨 Viento</span>
+                                <strong id="right-wind">12 km/h (Sur)</strong>
+                            </div>
+                            <div class="comp-metric-row">
+                                <span>💧 Humedad relativa</span>
+                                <strong id="right-humidity">52%</strong>
+                            </div>
+                            <div class="comp-metric-row">
+                                <span>☀️ Índice UV</span>
+                                <strong id="right-uv">7 (Alto)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TABLA COMPARATIVA DE DIFERENCIAS -->
+                <div class="comp-summary-card">
+                    <h3>📊 Resumen de Diferencias Térmicas y Pluviométricas</h3>
+                    <div class="comp-diff-grid">
+                        <div class="diff-box">
+                            <span>Diferencia de Temperatura</span>
+                            <strong id="diff-temp">+2.0 °C más cálido en Coín</strong>
+                        </div>
+                        <div class="diff-box">
+                            <span>Diferencia de Precipitación</span>
+                            <strong id="diff-rain">-0.2 mm menos de lluvia en Coín</strong>
+                        </div>
+                        <div class="diff-box">
+                            <span>Diferencia de Viento</span>
+                            <strong id="diff-wind">2 km/h más suave en Coín</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="../../noticias/">Noticias</a>
+                <a href="../../guia-util/">Guía útil</a>
+                <a href="../../avisos/">Avisos</a>
+                <a href="../">Tiempo</a>
+                <a href="../../seguimiento/">Seguimiento</a>
+                <a href="../../radar-social/">Radar Social</a>
+                <a href="../../mi-alhaurin/">Mi Alhaurín</a>
+                <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">⭐ Destacar en Google</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/app.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dataMunicipios = {
+                alhaurin: { name: 'Alhaurín el Grande', temp: '24°C', max: '27°C', min: '18°C', sky: '⛅ Parcialmente nublado', rain: '0.2 mm (20%)', wind: '14 km/h (SO)', humidity: '58%', uv: '6 (Alto)' },
+                coin: { name: 'Coín', temp: '26°C', max: '29°C', min: '19°C', sky: '☀️ Despejado', rain: '0.0 mm (5%)', wind: '12 km/h (S)', humidity: '52%', uv: '7 (Alto)' },
+                cartama: { name: 'Cártama', temp: '27°C', max: '30°C', min: '19°C', sky: '☀️ Despejado', rain: '0.0 mm (5%)', wind: '10 km/h (E)', humidity: '50%', uv: '7 (Alto)' },
+                mijas: { name: 'Mijas', temp: '23°C', max: '25°C', min: '17°C', sky: '⛅ Bruma marítima', rain: '0.1 mm (15%)', wind: '18 km/h (SE)', humidity: '65%', uv: '6 (Alto)' },
+                fuengirola: { name: 'Fuengirola', temp: '25°C', max: '26°C', min: '20°C', sky: '☀️ Despejado', rain: '0.0 mm (0%)', wind: '16 km/h (E)', humidity: '70%', uv: '7 (Alto)' },
+                'alhaurin-torre': { name: 'Alhaurín de la Torre', temp: '25°C', max: '28°C', min: '18°C', sky: '☀️ Despejado', rain: '0.0 mm (10%)', wind: '11 km/h (SE)', humidity: '55%', uv: '7 (Alto)' },
+                malaga: { name: 'Málaga Capital', temp: '26°C', max: '27°C', min: '21°C', sky: '☀️ Sol brillante', rain: '0.0 mm (0%)', wind: '15 km/h (E)', humidity: '68%', uv: '7 (Alto)' },
+                marbella: { name: 'Marbella', temp: '25°C', max: '27°C', min: '20°C', sky: '☀️ Despejado', rain: '0.0 mm (0%)', wind: '14 km/h (S)', humidity: '64%', uv: '7 (Alto)' },
+                antequera: { name: 'Antequera', temp: '22°C', max: '25°C', min: '14°C', sky: '⛅ Algo de nubes', rain: '0.5 mm (30%)', wind: '20 km/h (NO)', humidity: '48%', uv: '6 (Alto)' },
+                ronda: { name: 'Ronda', temp: '20°C', max: '23°C', min: '12°C', sky: '🌧️ Lluvia débil', rain: '2.4 mm (60%)', wind: '22 km/h (O)', humidity: '62%', uv: '5 (Moderado)' }
+            };
+
+            const dataModelos = {
+                aemet: { name: 'AEMET (HARMONIE)', temp: '24°C', max: '27°C', min: '18°C', sky: '⛅ Parcialmente nublado', rain: '0.2 mm (20%)', wind: '14 km/h (SO)', humidity: '58%', uv: '6' },
+                ecmwf: { name: 'ECMWF (IFS - Europeo)', temp: '25°C', max: '28°C', min: '18°C', sky: '⛅ Intervalos nubosos', rain: '0.4 mm (25%)', wind: '15 km/h (SO)', humidity: '56%', uv: '6' },
+                gfs: { name: 'GFS (NCEP - Americano)', temp: '26°C', max: '29°C', min: '19°C', sky: '☀️ Mayormente despejado', rain: '0.0 mm (10%)', wind: '12 km/h (S)', humidity: '50%', uv: '7' },
+                icon: { name: 'ICON (DWD - Alemán)', temp: '24°C', max: '27°C', min: '17°C', sky: '⛅ Nubosidad variable', rain: '0.8 mm (35%)', wind: '16 km/h (SO)', humidity: '60%', uv: '6' }
+            };
+
+            const tabMuni = document.getElementById('tab-municipios');
+            const tabMod = document.getElementById('tab-modelos');
+            const selMuni = document.getElementById('selector-municipios');
+            const selMod = document.getElementById('selector-modelos');
+            const muni2 = document.getElementById('muni-2');
+
+            tabMuni.addEventListener('click', () => {
+                tabMuni.classList.add('active');
+                tabMod.classList.remove('active');
+                selMuni.style.display = 'flex';
+                selMod.style.display = 'none';
+                updateMuniComp();
+            });
+
+            tabMod.addEventListener('click', () => {
+                tabMod.classList.add('active');
+                tabMuni.classList.remove('active');
+                selMod.style.display = 'flex';
+                selMuni.style.display = 'none';
+                updateModelComp();
+            });
+
+            function updateMuniComp() {
+                const targetKey = muni2.value;
+                const base = dataMunicipios.alhaurin;
+                const target = dataMunicipios[targetKey] || dataMunicipios.coin;
+
+                document.getElementById('left-name').textContent = base.name;
+                document.getElementById('left-temp').textContent = base.temp;
+                document.getElementById('left-max').textContent = base.max;
+                document.getElementById('left-min').textContent = base.min;
+                document.getElementById('left-sky').textContent = base.sky;
+                document.getElementById('left-rain').textContent = base.rain;
+                document.getElementById('left-wind').textContent = base.wind;
+                document.getElementById('left-humidity').textContent = base.humidity;
+                document.getElementById('left-uv').textContent = base.uv;
+
+                document.getElementById('right-name').textContent = target.name;
+                document.getElementById('right-temp').textContent = target.temp;
+                document.getElementById('right-max').textContent = target.max;
+                document.getElementById('right-min').textContent = target.min;
+                document.getElementById('right-sky').textContent = target.sky;
+                document.getElementById('right-rain').textContent = target.rain;
+                document.getElementById('right-wind').textContent = target.wind;
+                document.getElementById('right-humidity').textContent = target.humidity;
+                document.getElementById('right-uv').textContent = target.uv;
+
+                const t1 = parseInt(base.temp);
+                const t2 = parseInt(target.temp);
+                const diffT = t2 - t1;
+                document.getElementById('diff-temp').textContent = diffT === 0 ? 'Misma temperatura en ambos municipios' : `${Math.abs(diffT)}°C ${diffT > 0 ? 'más cálido' : 'más fresco'} en ${target.name}`;
+
+                document.getElementById('diff-rain').textContent = `Comparando acumulación prevista en ${target.name}`;
+                document.getElementById('diff-wind').textContent = `Condiciones de viento registradas en ${target.name}`;
+            }
+
+            function updateModelComp() {
+                const m1Key = document.getElementById('mod-1').value;
+                const m2Key = document.getElementById('mod-2').value;
+                const m1 = dataModelos[m1Key];
+                const m2 = dataModelos[m2Key];
+
+                document.getElementById('left-name').textContent = m1.name;
+                document.getElementById('left-temp').textContent = m1.temp;
+                document.getElementById('left-max').textContent = m1.max;
+                document.getElementById('left-min').textContent = m1.min;
+                document.getElementById('left-sky').textContent = m1.sky;
+                document.getElementById('left-rain').textContent = m1.rain;
+                document.getElementById('left-wind').textContent = m1.wind;
+                document.getElementById('left-humidity').textContent = m1.humidity;
+                document.getElementById('left-uv').textContent = m1.uv;
+
+                document.getElementById('right-name').textContent = m2.name;
+                document.getElementById('right-temp').textContent = m2.temp;
+                document.getElementById('right-max').textContent = m2.max;
+                document.getElementById('right-min').textContent = m2.min;
+                document.getElementById('right-sky').textContent = m2.sky;
+                document.getElementById('right-rain').textContent = m2.rain;
+                document.getElementById('right-wind').textContent = m2.wind;
+                document.getElementById('right-humidity').textContent = m2.humidity;
+                document.getElementById('right-uv').textContent = m2.uv;
+
+                document.getElementById('diff-temp').textContent = 'Discrepancia entre modelos numéricos de predicción';
+                document.getElementById('diff-rain').textContent = 'Comparando mapas de precipitación acumulada';
+                document.getElementById('diff-wind').textContent = 'Estimaciones del campo de viento regional';
+            }
+
+            muni2.addEventListener('change', updateMuniComp);
+            document.getElementById('mod-1').addEventListener('change', updateModelComp);
+            document.getElementById('mod-2').addEventListener('change', updateModelComp);
+
+            updateMuniComp();
+        });
+    </script>
+</body>
+
+</html>

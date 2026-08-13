@@ -13,6 +13,7 @@ const SERVICE_URLS = new Set([
   '/avisos/',
   '/boletin-oficial/',
   '/tiempo/',
+  '/tiempo/comparador/',
   '/seguimiento/',
   '/radar-social/',
   '/mi-alhaurin/',

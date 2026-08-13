@@ -146,30 +146,21 @@
                     <span></span>
                 </button>
 
-                <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/seguimiento/">Seguimiento</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a><button type="button" class="nav-search-btn search-toggle" aria-label="Buscar en la web">🔍 Buscar</button></div>
+                <div class="nav-links" id="main-menu">
+                    <a href="/noticias/">Noticias</a>
+                    <a href="/guia-util/">Guía útil</a>
+                    <a href="/avisos/">Avisos</a>
+                    <a href="/tiempo/">Tiempo</a>
+                    <a href="./seguimiento/">Seguimiento</a>
+                    <a href="./planes/">Planes</a>
+                    <a href="./comercios/">Comercios</a>
+                    <a href="./anunciarse/" class="nav-cta">Anunciarse</a>
+                    <button type="button" class="nav-search-btn search-toggle" aria-label="Buscar en la web">🔍 Buscar</button>
+                </div>
             </nav>
         </div>
     </header>
 
-    <div class="today-strip" aria-label="Alhaurín hoy">
-        <div class="container today-strip-inner">
-            <span class="today-strip-date" id="today-strip-date">Hoy en Alhaurín</span>
-            <a class="today-strip-link" href="#daily-dashboard-title"><span aria-hidden="true">☀</span> Tiempo local</a>
-            <a class="today-strip-link" href="#home-pharmacy-guard"><span aria-hidden="true">💊</span> Farmacia de guardia</a>
-            <a class="today-strip-link" href="#home-agenda-title"><span aria-hidden="true">📅</span> Agenda del día</a>
-            <a class="today-strip-link today-strip-whatsapp" href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer">💬 Canal WhatsApp</a>
-        </div>
-    </div>
-    <script>
-        (function () {
-            var el = document.getElementById("today-strip-date");
-            if (!el) return;
-            try {
-                var formatted = new Date().toLocaleDateString("es-ES", { day: "numeric", month: "long" });
-                el.textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
-            } catch (e) { /* se queda el texto por defecto */ }
-        })();
-    </script>
 
     <main id="inicio">
         <section class="hero home-hero-clean">
@@ -181,14 +172,12 @@
                     <div class="hero-quick-nav">
                         <a href="#daily-dashboard-title" class="hero-nav-item">📋 Estado de hoy</a>
                         <a href="./tiempo/" class="hero-nav-item">🌡️ Tiempo</a>
-                        <a href="./tiempo/radar/" class="hero-nav-item">🌧️ Radar</a>
+                        <a href="./seguimiento/" class="hero-nav-item">📡 Seguimiento</a>
+                        <a href="./tiempo/agro/" class="hero-nav-item">🌾 Agro Meteo</a>
                         <a href="./guia-util/farmacias/" class="hero-nav-item">💊 Farmacias</a>
                         <a href="./avisos/" class="hero-nav-item">⚠️ Avisos</a>
                         <a href="./radar-social/" class="hero-nav-item">📡 Radar Social</a>
                         <a href="./mi-alhaurin/" class="hero-nav-item highlight">⭐ Mi Alhaurín</a>
-                    </div>
-                    <div class="actions">
-                        <a class="btn btn-whatsapp" href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer">💬 Canal WhatsApp</a>
                     </div>
                 </div>
 
@@ -221,7 +210,7 @@
                         <a href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-channel">Unirme al Canal →</a>
                     </div>
 
-                    <div class="daily-grid" id="daily-status" aria-live="polite"><article class="daily-card ok"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">☀️</span><div><strong>Tiempo</strong><span class="daily-status-badge">Normal</span></div></div><div class="daily-value">Máx. 35º</div><p>Despejado · Máx. 35º / Mín. 24º · Lluvia 0%</p><div class="daily-act-strip"><span class="activity-mini-pill" title="Secado muy rápido al sol (0% riesgo)">🧺 Tender la ropa: <strong>Excelente</strong></span><span class="activity-mini-pill" title="Cielo limpio y sin calima">🚗 Lavar el coche: <strong>Muy recomendado</strong></span><span class="activity-mini-pill" title="Evitar 13:00 a 19:00 h por calor">🏃 Deporte exterior: <strong>Horas frescas</strong></span></div><span class="daily-source">Fuente: AEMET</span><a class="daily-link" href="https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008" target="_blank" rel="noopener noreferrer">Ver AEMET →</a></article><article class="daily-card ok"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">🚗</span><div><strong>Tráfico</strong><span class="daily-status-badge">Normal</span></div></div><div class="daily-value">Normal</div><p>Sin incidencias destacadas comunicadas en accesos principales.</p><a class="daily-link" href="https://www.dgt.es/conoce-el-estado-del-trafico/" target="_blank" rel="noopener noreferrer">Consultar DGT →</a></article><article class="daily-card alert"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">💧</span><div><strong>Avisos locales</strong><span class="daily-status-badge">Atención</span></div></div><div class="daily-value">Corte de agua (08:00 a 13:00 h)</div><p>Afectará a todo el Partido de Urique: Cuesta de Urique, Nacimiento de Urique, Camino de la Raja, Barranco Cañas, Paz Jiménez, La Colorá y caminos adyacentes hasta Molino de los Corchos por mejoras en la red municipal de abastecimiento.</p><span class="daily-source">Fuente: Ayuntamiento de Alhaurín el Grande</span><a class="daily-link" href="https://alhaurinaldia.es/noticias/aviso-de-corte-de-agua-este-jueves-13-de-agosto-en-todo-el-partido-de-urique.html">Ver noticia completa del aviso →</a></article><article class="daily-card ok"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">📅</span><div><strong>Agenda</strong><span class="daily-status-badge">Normal</span></div></div><div class="daily-value">Actividades de Agosto</div><p>Eventos culturales y trofeo del CD Alhaurino en los próximos días.</p><a class="daily-link" href="https://alhaurinaldia.es/planes/">Ver planes →</a></article><article class="daily-card neutral"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">☎️</span><div><strong>Servicios</strong><span class="daily-status-badge">Info</span></div></div><div class="daily-value">A mano</div><p>Farmacias, teléfonos, trámites, movilidad y recursos esenciales.</p><a class="daily-link" href="https://alhaurinaldia.es/guia-util/">Abrir guía →</a></article></div>
+                    <div class="daily-grid" id="daily-status" aria-live="polite"><article class="daily-card ok"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">☀️</span><div><strong>Tiempo</strong><span class="daily-status-badge">Normal</span></div></div><div class="daily-value">Máx. 35º</div><p>Despejado · Máx. 35º / Mín. 24º · Lluvia 0%</p><div class="daily-act-strip"><span class="activity-mini-pill" title="Secado muy rápido al sol (0% riesgo)">🧺 Tender la ropa: <strong>Excelente</strong></span><span class="activity-mini-pill" title="Cielo limpio y sin calima">🚗 Lavar el coche: <strong>Muy recomendado</strong></span><span class="activity-mini-pill" title="Evitar 13:00 a 19:00 h por calor">🏃 Deporte exterior: <strong>Horas frescas</strong></span></div><div class="daily-tool-links"><a href="/tiempo/">Previsión completa</a><a href="/tiempo/comparador/">Comparador</a><a href="/tiempo/agro/">Agro Meteo</a><a href="/tiempo/prevision-horaria/">Por horas</a><a href="/seguimiento/">Seguimiento vivo</a></div><span class="daily-source">Fuente: AEMET</span></article><article class="daily-card ok"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">🚗</span><div><strong>Tráfico</strong><span class="daily-status-badge">Normal</span></div></div><div class="daily-value">Normal</div><p>Sin incidencias destacadas comunicadas en accesos principales.</p><a class="daily-link" href="https://www.dgt.es/conoce-el-estado-del-trafico/" target="_blank" rel="noopener noreferrer">Consultar DGT →</a></article><article class="daily-card alert"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">💧</span><div><strong>Avisos locales</strong><span class="daily-status-badge">Atención</span></div></div><div class="daily-value">Corte de agua (08:00 a 13:00 h)</div><p>Afectará a todo el Partido de Urique: Cuesta de Urique, Nacimiento de Urique, Camino de la Raja, Barranco Cañas, Paz Jiménez, La Colorá y caminos adyacentes hasta Molino de los Corchos por mejoras en la red municipal de abastecimiento.</p><span class="daily-source">Fuente: Ayuntamiento de Alhaurín el Grande</span><a class="daily-link" href="https://alhaurinaldia.es/noticias/aviso-de-corte-de-agua-este-jueves-13-de-agosto-en-todo-el-partido-de-urique.html">Ver noticia completa del aviso →</a></article><article class="daily-card ok"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">📅</span><div><strong>Agenda</strong><span class="daily-status-badge">Normal</span></div></div><div class="daily-value">Actividades de Agosto</div><p>Eventos culturales y trofeo del CD Alhaurino en los próximos días.</p><a class="daily-link" href="https://alhaurinaldia.es/planes/">Ver planes →</a></article><article class="daily-card neutral"><div class="daily-card-top"><span class="daily-icon" aria-hidden="true">☎️</span><div><strong>Servicios</strong><span class="daily-status-badge">Info</span></div></div><div class="daily-value">A mano</div><p>Farmacias, teléfonos, trámites, movilidad y recursos esenciales.</p><a class="daily-link" href="https://alhaurinaldia.es/guia-util/">Abrir guía →</a></article></div>
                 </div>
             </div>
         </section>
@@ -271,6 +260,22 @@
                         <span class="home-agenda-updated" id="home-agenda-updated">Actualizada 13 de agosto</span>
                     </div>
                     <div class="home-agenda-list" id="home-agenda-list" aria-live="polite"><article class="home-agenda-card warning"><div class="home-agenda-date"><strong>vie, 14 ago</strong><span>10:00 - 21:30</span></div><div class="home-agenda-content"><span class="home-agenda-type">Ofrenda Floral</span><h3>Ofrenda Floral a Nuestra Sra. de Gracia</h3><p>Ofrenda floral en la Parroquia de la Encarnación (10:00 a 19:00 h) y posterior presentación de niños nacidos en el año a las 21:00 h.</p><small>Parroquia de la Encarnación</small></div><a class="home-agenda-link" href="https://alhaurinaldia.es/virgen-de-gracia-2026/">Ver programa →</a></article><article class="home-agenda-card alert"><div class="home-agenda-date"><strong>sáb, 15 ago</strong><span>11:00 - 01:00</span></div><div class="home-agenda-content"><span class="home-agenda-type">Día Grande Patronal</span><h3>Procesión Triunfal de la Virgen de Gracia</h3><p>Solemne Eucaristía a las 11:00 h y Gloriosa Procesión a las 20:30 h por el centro histórico. Sillas en calles permitidas desde las 14:00 h.</p><small>Plaza Baja · Recorrido del Centro</small></div><a class="home-agenda-link" href="https://alhaurinaldia.es/virgen-de-gracia-2026/">Ver itinerario y bando →</a></article><article class="home-agenda-card neutral"><div class="home-agenda-date"><strong>sáb, 22 ago</strong><span>20:00 - 22:00</span></div><div class="home-agenda-content"><span class="home-agenda-type">Cultos Patronales</span><h3>Misa de Acción de Gracias</h3><p>Misa en honor a la Patrona cantada por el Coro Rociero y entrega de placas a los barrios participantes.</p><small>Parroquia de la Encarnación</small></div><a class="home-agenda-link" href="https://alhaurinaldia.es/virgen-de-gracia-2026/">Ver actos →</a></article></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RADAR SOCIAL -->
+        <section class="radar-home-section">
+            <div class="container">
+                <div class="radar-home-card">
+                    <div class="radar-home-main">
+                        <span class="radar-home-badge">📡 Radar Social Vecinal</span>
+                        <h2>¿Qué está pasando en Alhaurín ahora mismo?</h2>
+                        <p>Únete al mapa colaborativo de Alhaurín el Grande. Consulta y publica reportes en tiempo real sobre lluvias, arroyos, tormentas e incidencias en la calle.</p>
+                        <div class="radar-home-actions">
+                            <a class="btn btn-primary" href="./radar-social/">Ver mapa del Radar Social →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -575,23 +580,10 @@
             </a>
         </article></div>
                 </div>
-        <!-- SECCIÓN RADAR SOCIAL COMUNITARIO Y PATROCINIO MONETIZABLE -->
-        <section class="radar-home-section">
+        <!-- BANNER GOOGLE SOURCE PREFERENCES -->
+        <section style="padding: 0 0 32px;">
             <div class="container">
-                <div class="radar-home-card">
-                    <div class="radar-home-main">
-                        <span class="radar-home-badge">📡 Radar Social Vecinal</span>
-                        <h2>¿Qué está pasando en Alhaurín ahora mismo?</h2>
-                        <p>Únete al mapa colaborativo de Alhaurín el Grande. Consulta y publica reportes en tiempo real sobre lluvias, arroyos, tormentas e incidencias en la calle.</p>
-                        <div class="radar-home-actions">
-                            <a class="btn btn-primary" href="./radar-social/">Ver mapa del Radar Social →</a>
-                            <a class="btn btn-secondary" href="./anunciarse/">⭐ Patrocinar espacio en Radar Social</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BANNER GOOGLE SOURCE PREFERENCES -->
-                <div class="google-star-banner" style="margin-top: 24px;">
+                <div class="google-star-banner">
                     <div class="google-star-content">
                         <span class="google-star-icon">⭐</span>
                         <div>
@@ -652,28 +644,31 @@
                         <li><a href="./noticias/">Noticias de Alhaurín</a></li>
                         <li><a href="./guia-util/">Guía Útil de Servicios</a></li>
                         <li><a href="./avisos/">Avisos Municipales</a></li>
-                        <li><a href="./tiempo/">El Tiempo en Alhaurín</a></li>
                         <li><a href="./planes/">Planes y Eventos</a></li>
+                        <li><a href="./radar-social/">Radar Social</a></li>
+                        <li><a href="./mi-alhaurin/">Mi Alhaurín</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-nav-col">
-                    <h3 class="footer-heading">Servicios y Negocios</h3>
+                    <h3 class="footer-heading">Tiempo y Seguimiento</h3>
+                    <ul class="footer-menu">
+                        <li><a href="./tiempo/">El Tiempo en Alhaurín</a></li>
+                        <li><a href="./tiempo/comparador/">Comparador de Modelos</a></li>
+                        <li><a href="./tiempo/agro/">Agro Meteo</a></li>
+                        <li><a href="./tiempo/prevision-horaria/">Previsión por Horas</a></li>
+                        <li><a href="./seguimiento/">Seguimiento en Vivo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-heading">Servicios</h3>
                     <ul class="footer-menu">
                         <li><a href="./comercios/">Comercios Destacados</a></li>
                         <li><a href="./anunciarse/">Anunciarse en la Web</a></li>
                         <li><a href="./boletin-oficial/">Boletín Oficial (BOP)</a></li>
                         <li><a href="./contacto/">Contacto y Redacción</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-nav-col">
-                    <h3 class="footer-heading">Transparencia y Legal</h3>
-                    <ul class="footer-menu">
-                        <li><a href="./quienes-somos/">Quiénes Somos</a></li>
-                        <li><a href="./politica-editorial/">Política Editorial</a></li>
-                        <li><a href="./aviso-legal/">Aviso Legal</a></li>
-                        <li><a href="./privacidad/">Política de Privacidad</a></li>
+                        <li><a href="./sobre-nosotros/">Sobre Nosotros</a></li>
                     </ul>
                 </div>
             </div>

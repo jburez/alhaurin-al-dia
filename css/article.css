@@ -39,17 +39,15 @@
 
 .premium-article-card {
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .95);
+    background: #ffffff;
     box-shadow: var(--shadow-card);
 }
 
 .article-hero {
-    padding: clamp(30px, 5vw, 52px) clamp(24px, 5vw, 56px) 24px;
-    background:
-        radial-gradient(circle at top right, rgba(69, 92, 54, .08), transparent 20rem),
-        linear-gradient(180deg, rgba(255, 255, 255, .96), rgba(251, 248, 242, .92));
+    padding: clamp(20px, 4vw, 36px) clamp(20px, 4vw, 36px) 20px;
+    background: #ffffff;
 }
 
 .article-meta {
@@ -57,7 +55,7 @@
     flex-wrap: wrap;
     gap: 8px;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .article-title {
@@ -65,17 +63,18 @@
     margin: 0;
     color: var(--brand);
     font-family: var(--font-display);
-    font-size: clamp(36px, 5vw, 58px);
-    line-height: 1.15;
-    letter-spacing: -.03em;
+    font-size: clamp(22px, 3.5vw, 32px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -.01em;
 }
 
 .article-summary {
     max-width: 68ch;
-    margin: 20px 0 0;
-    color: #475467;
-    font-size: clamp(18px, 2vw, 21px);
-    line-height: 1.62;
+    margin: 14px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .article-hero-image {

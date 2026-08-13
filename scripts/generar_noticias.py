@@ -334,22 +334,36 @@ def extraer_imagen_feed(feed):
     return getattr(imagen, "href", "") or getattr(imagen, "url", "") or ""
 
 
+def normalizar_imagen_hd(url):
+    if not url:
+        return ""
+    if "nuestropadrejesusnazareno.com" in url and ("32x32" in url or "192x192" in url or "favicon" in url):
+        return "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png"
+    return url
+
+
 def extraer_imagen(entry, imagen_feed=""):
+    url = ""
     if hasattr(entry, "media_thumbnail") and entry.media_thumbnail:
-        return entry.media_thumbnail[0].get("url", "")
-    if hasattr(entry, "media_content") and entry.media_content:
-        return entry.media_content[0].get("url", "")
-    campos = [entry.get("summary", ""), entry.get("description", ""), getattr(
-        entry, "content", [{}])[0].get("value", "") if hasattr(entry, "content") else ""]
-    for contenido in campos:
-        match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', contenido)
-        if match:
-            return match.group(1)
-    if "links" in entry:
-        for link in entry.links:
-            if link.get("type", "").startswith("image/"):
-                return link.get("href", "")
-    return imagen_feed or ""
+        url = entry.media_thumbnail[0].get("url", "")
+    elif hasattr(entry, "media_content") and entry.media_content:
+        url = entry.media_content[0].get("url", "")
+    else:
+        campos = [entry.get("summary", ""), entry.get("description", ""), getattr(
+            entry, "content", [{}])[0].get("value", "") if hasattr(entry, "content") else ""]
+        for contenido in campos:
+            match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', contenido)
+            if match:
+                url = match.group(1)
+                break
+        if not url and "links" in entry:
+            for link in entry.links:
+                if link.get("type", "").startswith("image/"):
+                    url = link.get("href", "")
+                    break
+    if not url:
+        url = imagen_feed or ""
+    return normalizar_imagen_hd(url)
 
 
 def detectar_categoria(titulo, texto, fuente):

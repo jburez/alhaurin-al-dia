@@ -406,7 +406,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #2e7d32;
+    background: var(--accent);
     box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
 }
 
@@ -833,7 +833,7 @@
 }
 
 .aqi-stat strong.good {
-    color: #2e7d32;
+    color: var(--accent);
 }
 
 .seguimiento-footer-box {
@@ -1214,7 +1214,7 @@
 /* GOOGLE STAR BANNER */
 
 .google-star-banner {
-    background: #0f172a;
+    background: var(--ink);
     color: #ffffff;
     border-radius: 8px;
     padding: 20px 24px;
@@ -1254,7 +1254,7 @@
 
 .btn-google {
     background: #f59e0b;
-    color: #0f172a;
+    color: var(--ink);
     font-weight: 700;
     padding: 8px 16px;
     border-radius: 6px;
@@ -1714,7 +1714,7 @@
     border-radius: 50%;
 
     &.green {
-        background: #2e7d32;
+        background: var(--accent);
         box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.2);
     }
 }
@@ -1737,7 +1737,7 @@
     &.active {
         background: #e8f5e9;
         border-color: #a5d6a7;
-        color: #1b5e20;
+        color: var(--accent-dark);
     }
 }
 
@@ -1803,7 +1803,7 @@
 
     &.green {
         background: #e8f5e9;
-        color: #1b5e20;
+        color: var(--accent-dark);
     }
 
     &.yellow {

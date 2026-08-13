@@ -7,8 +7,8 @@
 
     <title>Comparador de Modelos Meteorológicos — Alhaurín el Grande | Alhaurín al Día</title>
     <meta name="description"
-        content="Comparador meteorológico de Alhaurín el Grande. Analiza en tiempo real los 6 grandes modelos del mundo (ECMWF, GFS, ICON, ARPEGE, GEM, UKMO) y mide el grado de consenso en temperatura, lluvia y viento." />
-    <meta name="theme-color" content="#1c211a" />
+        content="Comparador meteorológico de Alhaurín el Grande. Analiza en tiempo real los modelos ECMWF, GFS, ICON y GEM con índices de consenso numéricos para temperatura, precipitación, viento, humedad y nubosidad." />
+    <meta name="theme-color" content="#0f172a" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://alhaurinaldia.es/tiempo/comparador/">
 
@@ -16,12 +16,12 @@
     <meta property="og:site_name" content="Alhaurín al Día" />
     <meta property="og:title" content="Comparador de Modelos Meteorológicos — Alhaurín el Grande" />
     <meta property="og:description"
-        content="Compara la previsión de los 6 modelos principales (ECMWF, GFS, ICON, ARPEGE, GEM, UKMO) para Alhaurín el Grande." />
+        content="Índices de consenso numéricos entre modelos ECMWF, GFS, ICON y GEM para Alhaurín el Grande." />
     <meta property="og:url" content="https://alhaurinaldia.es/tiempo/comparador/" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Comparador de Modelos Meteorológicos — Alhaurín el Grande">
     <meta name="twitter:description"
-        content="Compara la previsión de los 6 modelos principales (ECMWF, GFS, ICON, ARPEGE, GEM, UKMO) para Alhaurín el Grande.">
+        content="Índices de consenso numéricos entre modelos ECMWF, GFS, ICON y GEM para Alhaurín el Grande.">
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
 
@@ -33,6 +33,266 @@
     <link rel="stylesheet" href="../../css/mobile.css">
     <link rel="stylesheet" href="../../css/ads.css">
     <link rel="stylesheet" href="../../css/home-live.css">
+
+    <!-- Chart.js for interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* ===== COMPARADOR PAGE STYLES ===== */
+        .comparador-page { padding: 32px 0 48px; }
+
+        .comparador-header-shell {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .comparador-header-shell h1 {
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        .comparador-subtitle {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* Tab buttons */
+        .comp-view-tabs {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .comp-tab-btn {
+            appearance: none;
+            border: 1px solid var(--line);
+            background: #ffffff;
+            color: var(--muted);
+            border-radius: 6px;
+            padding: 8px 14px;
+            font: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background .15s ease;
+        }
+        .comp-tab-btn.active {
+            background: var(--ink);
+            color: #ffffff;
+            border-color: var(--ink);
+        }
+
+        /* ===== CONSENSUS INDICATORS BAR ===== */
+        .consensus-bar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin: 20px 0;
+        }
+        .consensus-indicator {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 14px 12px;
+            text-align: center;
+        }
+        .consensus-indicator .ci-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 6px;
+        }
+        .consensus-indicator .ci-value {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .consensus-indicator .ci-level {
+            font-size: 11px;
+            font-weight: 700;
+            margin-top: 4px;
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .ci-level.green { background: #dcfce7; color: #166534; }
+        .ci-level.yellow { background: #fef9c3; color: #854d0e; }
+        .ci-level.orange { background: #ffedd5; color: #9a3412; }
+        .ci-level.red { background: #fee2e2; color: #991b1b; }
+        .consensus-indicator .ci-detail {
+            font-size: 10px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        /* ===== CHART SECTIONS ===== */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .chart-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 16px;
+        }
+        .chart-card.full-width {
+            grid-column: 1 / -1;
+        }
+        .chart-card h3 {
+            margin: 0 0 12px;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--ink);
+        }
+        .chart-card canvas {
+            width: 100% !important;
+            max-height: 280px;
+        }
+
+        /* ===== VARIABLE TABS FOR TABLE ===== */
+        .var-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        .var-tab {
+            appearance: none;
+            border: 1px solid var(--line);
+            background: #ffffff;
+            color: var(--muted);
+            border-radius: 4px;
+            padding: 6px 10px;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .var-tab.active {
+            background: var(--ink);
+            color: #fff;
+            border-color: var(--ink);
+        }
+
+        /* ===== DATA TABLE ===== */
+        .comp-table-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        .comp-table-card h3 {
+            margin: 0 0 6px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .comp-table-sub {
+            margin: 0 0 12px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        .table-scroll { overflow-x: auto; }
+        .comp-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .comp-table th, .comp-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--line);
+            text-align: center;
+            white-space: nowrap;
+        }
+        .comp-table th {
+            background: var(--paper-soft);
+            font-weight: 700;
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .comp-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+        }
+        .tag-status {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .tag-status.green { background: #dcfce7; color: #166534; }
+        .tag-status.yellow { background: #fef9c3; color: #854d0e; }
+        .tag-status.orange { background: #ffedd5; color: #9a3412; }
+        .tag-status.red { background: #fee2e2; color: #991b1b; }
+
+        /* ===== MODEL SUMMARY CARDS ===== */
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+        .model-summary-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 14px;
+        }
+        .model-summary-card .model-flag {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+        .model-summary-card h4 {
+            margin: 0 0 8px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .model-summary-card .model-temp {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .model-metric {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            padding: 4px 0;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+        }
+        .model-metric strong { color: var(--ink); }
+
+        /* ===== LOADING STATE ===== */
+        .loading-msg {
+            text-align: center;
+            padding: 32px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .consensus-bar { grid-template-columns: repeat(3, 1fr); }
+            .charts-grid { grid-template-columns: 1fr; }
+            .consensus-indicator .ci-value { font-size: 22px; }
+        }
+        @media (max-width: 480px) {
+            .consensus-bar { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
 </head>
 
 <body>
@@ -77,251 +337,119 @@
     </header>
 
     <main class="comparador-page">
-        <section class="comparador-header-section">
+        <section>
             <div class="container">
                 <div class="comparador-header-shell">
                     <div>
-                        <h1>Comparador del Tiempo y Modelos</h1>
-                        <p class="comparador-subtitle">Alhaurín el Grande · Salidas numéricas de los 6 modelos principales en tiempo real.</p>
+                        <h1>Comparador de Modelos · Alhaurín el Grande</h1>
+                        <p class="comparador-subtitle">Índices de consenso numéricos entre modelos ECMWF, GFS, ICON y GEM · Datos en tiempo real via Open-Meteo</p>
                     </div>
                 </div>
 
-                <!-- SELECTOR DE PESTAÑAS DE VISTA -->
                 <div class="comp-view-tabs" style="margin-top: 14px;">
-                    <button type="button" class="comp-tab-btn active" id="tab-modelos-alhaurin">🌀 6 Modelos Numéricos</button>
-                    <button type="button" class="comp-tab-btn" id="tab-comparar-municipios">🏙️ Comparar Municipios</button>
+                    <button type="button" class="comp-tab-btn active" id="tab-modelos">🌀 Modelos Numéricos</button>
+                    <button type="button" class="comp-tab-btn" id="tab-municipios">🏙️ Comparar Municipios</button>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 1: COMPARADOR DE MODELOS EN ALHAURÍN EL GRANDE -->
-        <section class="comparador-main-section" id="view-modelos">
+        <!-- ===== SECTION 1: MULTI-MODEL ANALYSIS ===== -->
+        <section id="view-modelos">
             <div class="container">
-                <!-- INDICADOR DE CONSENSO Y FIABILIDAD -->
-                <div class="consensus-banner" id="consensus-banner">
-                    <div class="consensus-status">
-                        <span class="consensus-dot green"></span>
-                        <div>
-                            <h3 id="consensus-title">🟢 Elevado Consenso de Modelos</h3>
-                            <p id="consensus-desc">Coincidencia en evolución de temperaturas y escasa precipitación para 48h.</p>
-                        </div>
+
+                <!-- CONSENSUS INDICATORS BAR -->
+                <div class="consensus-bar" id="consensus-bar">
+                    <div class="consensus-indicator" id="ci-temp">
+                        <div class="ci-label">🌡️ Temperatura</div>
+                        <div class="ci-value">—</div>
+                        <span class="ci-level green">Cargando...</span>
+                        <div class="ci-detail">σ = —</div>
                     </div>
-                    <div class="consensus-models-pills">
-                        <span class="model-pill active">🇪🇺 ECMWF (9 km)</span>
-                        <span class="model-pill active">🇺🇸 GFS (13 km)</span>
-                        <span class="model-pill active">🇩🇪 ICON (7 km)</span>
-                        <span class="model-pill active">🇫🇷 ARPEGE (10 km)</span>
-                        <span class="model-pill active">🇨🇦 GEM (15 km)</span>
-                        <span class="model-pill active">🇬🇧 UKMO (10 km)</span>
+                    <div class="consensus-indicator" id="ci-precip">
+                        <div class="ci-label">🌧️ Precipitación</div>
+                        <div class="ci-value">—</div>
+                        <span class="ci-level green">Cargando...</span>
+                        <div class="ci-detail">σ = —</div>
+                    </div>
+                    <div class="consensus-indicator" id="ci-wind">
+                        <div class="ci-label">💨 Viento</div>
+                        <div class="ci-value">—</div>
+                        <span class="ci-level green">Cargando...</span>
+                        <div class="ci-detail">σ = —</div>
+                    </div>
+                    <div class="consensus-indicator" id="ci-humidity">
+                        <div class="ci-label">💧 Humedad</div>
+                        <div class="ci-value">—</div>
+                        <span class="ci-level green">Cargando...</span>
+                        <div class="ci-detail">σ = —</div>
+                    </div>
+                    <div class="consensus-indicator" id="ci-cloud">
+                        <div class="ci-label">☁️ Nubosidad</div>
+                        <div class="ci-value">—</div>
+                        <span class="ci-level green">Cargando...</span>
+                        <div class="ci-detail">σ = —</div>
                     </div>
                 </div>
 
-                <!-- TARJETAS COMPARATIVAS DE LOS 6 MODELOS -->
-                <div class="section-title" style="margin-top: 28px;">
-                    <h2>Salidas Numéricas para Alhaurín el Grande</h2>
-                    <p>Previsión de temperatura máxima, mínima, lluvia acumulada y ráfagas de viento para hoy</p>
+                <!-- CHARTS -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>🌡️ Temperatura Máxima (°C) · 7 días</h3>
+                        <canvas id="chart-temp"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>💨 Viento Máximo (km/h) · 7 días</h3>
+                        <canvas id="chart-wind"></canvas>
+                    </div>
+                    <div class="chart-card full-width">
+                        <h3>🌧️ Precipitación Acumulada (mm) · 7 días</h3>
+                        <canvas id="chart-precip"></canvas>
+                    </div>
                 </div>
 
+                <!-- MODEL SUMMARY CARDS -->
                 <div class="models-grid" id="models-grid">
-                    <!-- Cargando datos en vivo Open-Meteo -->
-                    <div class="comp-card model-card">
-                        <div class="comp-card-header">
-                            <span class="comp-tag">🇪🇺 ECMWF · Centro Europeo</span>
-                            <h3>Modelo Europeo (IFS)</h3>
-                            <small>Resolución 9 km · Referencia mundial</small>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="m-ecmwf-max">27°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Mín: <strong id="m-ecmwf-min">18°C</strong></span>
-                                <span>Lluvia: <strong id="m-ecmwf-rain">0.0 mm</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>Probabilidad Lluvia</span><strong id="m-ecmwf-prob">10%</strong></div>
-                            <div class="comp-metric-row"><span>Viento máx</span><strong id="m-ecmwf-wind">14 km/h</strong></div>
-                        </div>
-                    </div>
-
-                    <div class="comp-card model-card">
-                        <div class="comp-card-header">
-                            <span class="comp-tag secondary">🇺🇸 GFS · NOAA EE.UU.</span>
-                            <h3>Modelo Americano (NCEP)</h3>
-                            <small>Resolución 13 km · Tendencia global</small>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="m-gfs-max">28°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Mín: <strong id="m-gfs-min">19°C</strong></span>
-                                <span>Lluvia: <strong id="m-gfs-rain">0.0 mm</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>Probabilidad Lluvia</span><strong id="m-gfs-prob">5%</strong></div>
-                            <div class="comp-metric-row"><span>Viento máx</span><strong id="m-gfs-wind">12 km/h</strong></div>
-                        </div>
-                    </div>
-
-                    <div class="comp-card model-card">
-                        <div class="comp-card-header">
-                            <span class="comp-tag">🇩🇪 ICON · DWD Alemania</span>
-                            <h3>Modelo Alemán (DWD)</h3>
-                            <small>Resolución 7 km · Tormentas locales</small>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="m-icon-max">27°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Mín: <strong id="m-icon-min">17°C</strong></span>
-                                <span>Lluvia: <strong id="m-icon-rain">0.1 mm</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>Probabilidad Lluvia</span><strong id="m-icon-prob">15%</strong></div>
-                            <div class="comp-metric-row"><span>Viento máx</span><strong id="m-icon-wind">16 km/h</strong></div>
-                        </div>
-                    </div>
-
-                    <div class="comp-card model-card">
-                        <div class="comp-card-header">
-                            <span class="comp-tag secondary">🇫🇷 ARPEGE · Météo-France</span>
-                            <h3>Modelo Francés</h3>
-                            <small>Resolución 10 km · Corto plazo</small>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="m-arpege-max">27°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Mín: <strong id="m-arpege-min">18°C</strong></span>
-                                <span>Lluvia: <strong id="m-arpege-rain">0.0 mm</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>Probabilidad Lluvia</span><strong id="m-arpege-prob">10%</strong></div>
-                            <div class="comp-metric-row"><span>Viento máx</span><strong id="m-arpege-wind">15 km/h</strong></div>
-                        </div>
-                    </div>
-
-                    <div class="comp-card model-card">
-                        <div class="comp-card-header">
-                            <span class="comp-tag">🇨🇦 GEM · ECCC Canadá</span>
-                            <h3>Modelo Canadiense</h3>
-                            <small>Resolución 15 km · Contraste térmico</small>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="m-gem-max">26°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Mín: <strong id="m-gem-min">18°C</strong></span>
-                                <span>Lluvia: <strong id="m-gem-rain">0.0 mm</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>Probabilidad Lluvia</span><strong id="m-gem-prob">5%</strong></div>
-                            <div class="comp-metric-row"><span>Viento máx</span><strong id="m-gem-wind">13 km/h</strong></div>
-                        </div>
-                    </div>
-
-                    <div class="comp-card model-card">
-                        <div class="comp-card-header">
-                            <span class="comp-tag secondary">🇬🇧 UKMO · Met Office RU</span>
-                            <h3>Modelo Británico</h3>
-                            <small>Resolución 10 km · Frentes atlánticos</small>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="m-ukmo-max">27°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Mín: <strong id="m-ukmo-min">18°C</strong></span>
-                                <span>Lluvia: <strong id="m-ukmo-rain">0.0 mm</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>Probabilidad Lluvia</span><strong id="m-ukmo-prob">10%</strong></div>
-                            <div class="comp-metric-row"><span>Viento máx</span><strong id="m-ukmo-wind">14 km/h</strong></div>
-                        </div>
-                    </div>
+                    <div class="loading-msg">Conectando con Open-Meteo API...</div>
                 </div>
 
-                <!-- TABLA COMPARATIVA DE LOS 7 DÍAS -->
-                <div class="comp-table-card" style="margin-top: 32px;">
-                    <h3>📅 Tabla Comparativa de los 6 Modelos a 7 Días</h3>
-                    <p class="comp-table-sub">Compara las temperaturas máximas y la precipitación (mm) prevista por cada modelo para Alhaurín el Grande:</p>
+                <!-- DATA TABLE WITH VARIABLE TABS -->
+                <div class="comp-table-card">
+                    <h3>📅 Tabla comparativa a 7 días</h3>
+                    <p class="comp-table-sub">Valores por modelo con desviación estándar (σ) e Índice de Consenso (IC) calculado como 100 − CV normalizado.</p>
+
+                    <div class="var-tabs" id="var-tabs">
+                        <button class="var-tab active" data-var="temp">🌡️ Temperatura</button>
+                        <button class="var-tab" data-var="precip">🌧️ Precipitación</button>
+                        <button class="var-tab" data-var="wind">💨 Viento</button>
+                        <button class="var-tab" data-var="humidity">💧 Humedad</button>
+                        <button class="var-tab" data-var="cloud">☁️ Nubosidad</button>
+                    </div>
 
                     <div class="table-scroll">
-                        <table class="comp-table">
-                            <thead>
-                                <tr>
-                                    <th>Día</th>
-                                    <th>🇪🇺 ECMWF</th>
-                                    <th>🇺🇸 GFS</th>
-                                    <th>🇩🇪 ICON</th>
-                                    <th>🇫🇷 ARPEGE</th>
-                                    <th>🇨🇦 GEM</th>
-                                    <th>🇬🇧 UKMO</th>
-                                    <th>Consenso</th>
-                                </tr>
-                            </thead>
-                            <tbody id="multi-model-table-body">
-                                <tr>
-                                    <td><strong>Hoy</strong></td>
-                                    <td>27°C / 0.0mm</td>
-                                    <td>28°C / 0.0mm</td>
-                                    <td>27°C / 0.1mm</td>
-                                    <td>27°C / 0.0mm</td>
-                                    <td>26°C / 0.0mm</td>
-                                    <td>27°C / 0.0mm</td>
-                                    <td><span class="tag-status green">27°C (Seco)</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Mañana</strong></td>
-                                    <td>28°C / 0.0mm</td>
-                                    <td>29°C / 0.0mm</td>
-                                    <td>28°C / 0.0mm</td>
-                                    <td>28°C / 0.0mm</td>
-                                    <td>27°C / 0.0mm</td>
-                                    <td>28°C / 0.0mm</td>
-                                    <td><span class="tag-status green">28°C (Seco)</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Sábado</strong></td>
-                                    <td>29°C / 0.0mm</td>
-                                    <td>30°C / 0.0mm</td>
-                                    <td>29°C / 0.0mm</td>
-                                    <td>29°C / 0.0mm</td>
-                                    <td>28°C / 0.0mm</td>
-                                    <td>29°C / 0.0mm</td>
-                                    <td><span class="tag-status green">29°C (Seco)</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Domingo</strong></td>
-                                    <td>28°C / 0.2mm</td>
-                                    <td>29°C / 0.0mm</td>
-                                    <td>28°C / 0.4mm</td>
-                                    <td>28°C / 0.1mm</td>
-                                    <td>27°C / 0.0mm</td>
-                                    <td>28°C / 0.2mm</td>
-                                    <td><span class="tag-status yellow">28°C (Riesgo 20%)</span></td>
-                                </tr>
-                            </tbody>
+                        <table class="comp-table" id="comp-table">
+                            <thead id="comp-table-head"></thead>
+                            <tbody id="comp-table-body"></tbody>
                         </table>
-                    </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 2: COMPARADOR ENTRE MUNICIPIOS -->
-        <section class="comparador-main-section" id="view-municipios" style="display: none;">
+        <!-- ===== SECTION 2: MUNICIPALITY COMPARISON ===== -->
+        <section id="view-municipios" style="display: none;">
             <div class="container">
-                <div class="comparador-controls-card">
-                    <div class="comparador-selectors">
-                        <div class="selector-box">
-                            <label for="muni-1">Municipio Base</label>
-                            <select id="muni-1" disabled>
+                <div class="comp-table-card">
+                    <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px;">
+                        <div>
+                            <label for="muni-1" style="font-size: 12px; font-weight: 700; color: var(--muted);">Municipio Base</label>
+                            <select id="muni-1" disabled style="display: block; margin-top: 4px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; font: inherit; font-size: 13px;">
                                 <option value="alhaurin">📍 Alhaurín el Grande</option>
                             </select>
                         </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="selector-box">
-                            <label for="muni-2">Comparar con</label>
-                            <select id="muni-2">
+                        <span style="font-weight: 700; color: var(--muted); font-size: 13px; margin-top: 16px;">VS</span>
+                        <div>
+                            <label for="muni-2" style="font-size: 12px; font-weight: 700; color: var(--muted);">Comparar con</label>
+                            <select id="muni-2" style="display: block; margin-top: 4px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; font: inherit; font-size: 13px;">
                                 <option value="coin">🍋 Coín</option>
                                 <option value="cartama">🍊 Cártama</option>
                                 <option value="mijas">🏔️ Mijas</option>
@@ -334,49 +462,8 @@
                             </select>
                         </div>
                     </div>
-                </div>
-
-                <div class="comparador-grid">
-                    <div class="comp-card" id="card-left">
-                        <div class="comp-card-header">
-                            <span class="comp-tag">Base</span>
-                            <h2 id="left-name">Alhaurín el Grande</h2>
-                            <div class="comp-weather-state" id="left-sky">⛅ Parcialmente nublado</div>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="left-temp">27°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Máx: <strong id="left-max">27°C</strong></span>
-                                <span>Mín: <strong id="left-min">18°C</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>🌧️ Lluvia prevista</span><strong id="left-rain">0.0 mm (10%)</strong></div>
-                            <div class="comp-metric-row"><span>💨 Viento</span><strong id="left-wind">14 km/h (SO)</strong></div>
-                            <div class="comp-metric-row"><span>💧 Humedad</span><strong id="left-humidity">58%</strong></div>
-                            <div class="comp-metric-row"><span>☀️ Índice UV</span><strong id="left-uv">6 (Alto)</strong></div>
-                        </div>
-                    </div>
-
-                    <div class="comp-card" id="card-right">
-                        <div class="comp-card-header">
-                            <span class="comp-tag secondary">Comparado</span>
-                            <h2 id="right-name">Coín</h2>
-                            <div class="comp-weather-state" id="right-sky">☀️ Despejado</div>
-                        </div>
-                        <div class="comp-main-temp">
-                            <span class="comp-temp-val" id="right-temp">28°C</span>
-                            <div class="comp-hi-lo">
-                                <span>Máx: <strong id="right-max">29°C</strong></span>
-                                <span>Mín: <strong id="right-min">19°C</strong></span>
-                            </div>
-                        </div>
-                        <div class="comp-metrics-list">
-                            <div class="comp-metric-row"><span>🌧️ Lluvia prevista</span><strong id="right-rain">0.0 mm (5%)</strong></div>
-                            <div class="comp-metric-row"><span>💨 Viento</span><strong id="right-wind">12 km/h (S)</strong></div>
-                            <div class="comp-metric-row"><span>💧 Humedad</span><strong id="right-humidity">52%</strong></div>
-                            <div class="comp-metric-row"><span>☀️ Índice UV</span><strong id="right-uv">7 (Alto)</strong></div>
-                        </div>
+                    <div id="muni-comparison-results">
+                        <div class="loading-msg">Selecciona un municipio para comparar.</div>
                     </div>
                 </div>
             </div>
@@ -401,61 +488,365 @@
 
     <script src="../../js/app.js" defer></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabMod = document.getElementById('tab-modelos-alhaurin');
-            const tabMuni = document.getElementById('tab-comparar-municipios');
-            const viewModelos = document.getElementById('view-modelos');
-            const viewMunicipios = document.getElementById('view-municipios');
+    document.addEventListener('DOMContentLoaded', () => {
+        // ===== TAB SWITCHING =====
+        const tabMod = document.getElementById('tab-modelos');
+        const tabMuni = document.getElementById('tab-municipios');
+        const viewModelos = document.getElementById('view-modelos');
+        const viewMunicipios = document.getElementById('view-municipios');
 
-            tabMod.addEventListener('click', () => {
-                tabMod.classList.add('active');
-                tabMuni.classList.remove('active');
-                viewModelos.style.display = 'block';
-                viewMunicipios.style.display = 'none';
-            });
+        tabMod.addEventListener('click', () => {
+            tabMod.classList.add('active'); tabMuni.classList.remove('active');
+            viewModelos.style.display = 'block'; viewMunicipios.style.display = 'none';
+        });
+        tabMuni.addEventListener('click', () => {
+            tabMuni.classList.add('active'); tabMod.classList.remove('active');
+            viewMunicipios.style.display = 'block'; viewModelos.style.display = 'none';
+        });
 
-            tabMuni.addEventListener('click', () => {
-                tabMuni.classList.add('active');
-                tabMod.classList.remove('active');
-                viewMunicipios.style.display = 'block';
-                viewModelos.style.display = 'none';
-            });
+        // ===== STATISTICAL FUNCTIONS =====
+        function mean(arr) {
+            const valid = arr.filter(v => v != null && !isNaN(v));
+            return valid.length ? valid.reduce((a, b) => a + b, 0) / valid.length : 0;
+        }
 
-            // Cargar datos reales Open-Meteo multi-modelo para Alhaurín el Grande
-            async function fetchOpenMeteoMultiModel() {
-                try {
-                    const url = 'https://api.open-meteo.com/v1/forecast?latitude=36.6439&longitude=-4.6892&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_speed_10m_max&models=ecmwf_ifs025,gfs_seamless,icon_seamless,gem_seamless&timezone=Europe%2FMadrid';
-                    const res = await fetch(url);
-                    if (!res.ok) return;
-                    const data = await res.json();
-                    
-                    if (data.daily) {
-                        // Actualizar modelo ECMWF
-                        if (data.daily.temperature_2m_max_ecmwf_ifs025) {
-                            document.getElementById('m-ecmwf-max').textContent = `${Math.round(data.daily.temperature_2m_max_ecmwf_ifs025[0])}°C`;
-                            document.getElementById('m-ecmwf-min').textContent = `${Math.round(data.daily.temperature_2m_min_ecmwf_ifs025[0])}°C`;
-                            document.getElementById('m-ecmwf-rain').textContent = `${data.daily.precipitation_sum_ecmwf_ifs025[0]} mm`;
+        function stdDev(arr) {
+            const valid = arr.filter(v => v != null && !isNaN(v));
+            if (valid.length < 2) return 0;
+            const m = mean(valid);
+            return Math.sqrt(valid.reduce((sum, v) => sum + (v - m) ** 2, 0) / (valid.length - 1));
+        }
+
+        function coefficientOfVariation(arr) {
+            const m = mean(arr);
+            if (m === 0) return 0;
+            return (stdDev(arr) / Math.abs(m)) * 100;
+        }
+
+        // Variable-specific thresholds for CV → IC mapping
+        const CV_THRESHOLDS = {
+            temp:     { high: 3, med: 8, low: 15 },
+            precip:   { high: 30, med: 60, low: 100 },
+            wind:     { high: 15, med: 30, low: 50 },
+            humidity: { high: 15, med: 30, low: 50 },
+            cloud:    { high: 15, med: 30, low: 50 }
+        };
+
+        function consensusIndex(cv, variable) {
+            const t = CV_THRESHOLDS[variable];
+            if (cv <= t.high) return Math.round(90 + (1 - cv / t.high) * 10);
+            if (cv <= t.med) return Math.round(70 + (1 - (cv - t.high) / (t.med - t.high)) * 20);
+            if (cv <= t.low) return Math.round(40 + (1 - (cv - t.med) / (t.low - t.med)) * 30);
+            return Math.max(0, Math.round(40 * (1 - (cv - t.low) / t.low)));
+        }
+
+        function icLevel(ic) {
+            if (ic >= 90) return { label: 'Muy alto', cls: 'green' };
+            if (ic >= 70) return { label: 'Alto', cls: 'yellow' };
+            if (ic >= 40) return { label: 'Moderado', cls: 'orange' };
+            return { label: 'Bajo', cls: 'red' };
+        }
+
+        // ===== MODEL DEFINITIONS =====
+        const MODELS = [
+            { key: 'ecmwf_ifs025', name: 'ECMWF', flag: '🇪🇺', fullName: 'Centro Europeo', res: '9 km' },
+            { key: 'gfs_seamless', name: 'GFS', flag: '🇺🇸', fullName: 'NOAA EE.UU.', res: '13 km' },
+            { key: 'icon_seamless', name: 'ICON', flag: '🇩🇪', fullName: 'DWD Alemania', res: '7 km' },
+            { key: 'gem_seamless', name: 'GEM', flag: '🇨🇦', fullName: 'ECCC Canadá', res: '15 km' }
+        ];
+
+        const MODEL_COLORS = ['#2563eb', '#dc2626', '#16a34a', '#d97706'];
+        const DAYS_ES = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+
+        // ===== CHART DEFAULTS =====
+        Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, Inter, sans-serif';
+        Chart.defaults.font.size = 12;
+        Chart.defaults.color = '#64748b';
+
+        let chartTemp, chartWind, chartPrecip;
+
+        // ===== FETCH AND RENDER =====
+        async function fetchAndRender() {
+            const vars = 'temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max,relative_humidity_2m_mean,cloud_cover_mean';
+            const models = MODELS.map(m => m.key).join(',');
+            const url = `https://api.open-meteo.com/v1/forecast?latitude=36.6439&longitude=-4.6892&daily=${vars}&models=${models}&timezone=Europe%2FMadrid&forecast_days=7`;
+
+            try {
+                const res = await fetch(url);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                if (!data.daily) throw new Error('No daily data');
+
+                const dates = data.daily.time || [];
+                const dayLabels = dates.map(d => {
+                    const dt = new Date(d + 'T12:00:00');
+                    const today = new Date();
+                    today.setHours(12,0,0,0);
+                    const diff = Math.round((dt - today) / 86400000);
+                    if (diff === 0) return 'Hoy';
+                    if (diff === 1) return 'Mañana';
+                    return DAYS_ES[dt.getDay()] + ' ' + dt.getDate();
+                });
+
+                // Extract data per model per variable
+                const modelData = {};
+                MODELS.forEach(m => {
+                    modelData[m.key] = {
+                        temp_max: data.daily[`temperature_2m_max_${m.key}`] || [],
+                        temp_min: data.daily[`temperature_2m_min_${m.key}`] || [],
+                        precip:   data.daily[`precipitation_sum_${m.key}`] || [],
+                        wind:     data.daily[`wind_speed_10m_max_${m.key}`] || [],
+                        humidity: data.daily[`relative_humidity_2m_mean_${m.key}`] || [],
+                        cloud:    data.daily[`cloud_cover_mean_${m.key}`] || []
+                    };
+                });
+
+                // ===== CONSENSUS INDICATORS (day 0 = today) =====
+                function getValuesForDay(field, dayIdx) {
+                    return MODELS.map(m => modelData[m.key]?.[field]?.[dayIdx]).filter(v => v != null);
+                }
+
+                const varMap = [
+                    { id: 'ci-temp', field: 'temp_max', varKey: 'temp', unit: '°C' },
+                    { id: 'ci-precip', field: 'precip', varKey: 'precip', unit: 'mm' },
+                    { id: 'ci-wind', field: 'wind', varKey: 'wind', unit: 'km/h' },
+                    { id: 'ci-humidity', field: 'humidity', varKey: 'humidity', unit: '%' },
+                    { id: 'ci-cloud', field: 'cloud', varKey: 'cloud', unit: '%' }
+                ];
+
+                varMap.forEach(v => {
+                    const vals = getValuesForDay(v.field, 0);
+                    const cv = coefficientOfVariation(vals);
+                    const ic = consensusIndex(cv, v.varKey);
+                    const level = icLevel(ic);
+                    const sd = stdDev(vals);
+                    const el = document.getElementById(v.id);
+                    el.querySelector('.ci-value').textContent = ic;
+                    const lvl = el.querySelector('.ci-level');
+                    lvl.textContent = level.label;
+                    lvl.className = `ci-level ${level.cls}`;
+                    el.querySelector('.ci-detail').textContent = `σ = ${sd.toFixed(1)} ${v.unit} · CV = ${cv.toFixed(1)}%`;
+                });
+
+                // ===== CHARTS =====
+                function makeLineChart(canvasId, field, unit) {
+                    const ctx = document.getElementById(canvasId).getContext('2d');
+                    return new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: dayLabels,
+                            datasets: MODELS.map((m, i) => ({
+                                label: `${m.flag} ${m.name}`,
+                                data: modelData[m.key][field],
+                                borderColor: MODEL_COLORS[i],
+                                backgroundColor: MODEL_COLORS[i] + '18',
+                                tension: 0.3,
+                                borderWidth: 2,
+                                pointRadius: 3,
+                                pointHoverRadius: 5,
+                                fill: false
+                            }))
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            interaction: { mode: 'index', intersect: false },
+                            plugins: {
+                                legend: { position: 'bottom', labels: { usePointStyle: true, padding: 12, font: { size: 11 } } },
+                                tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)} ${unit}` } }
+                            },
+                            scales: {
+                                y: { grid: { color: '#e2e8f020' }, ticks: { callback: v => v + ' ' + unit } },
+                                x: { grid: { display: false } }
+                            }
                         }
-                        // Actualizar modelo GFS
-                        if (data.daily.temperature_2m_max_gfs_seamless) {
-                            document.getElementById('m-gfs-max').textContent = `${Math.round(data.daily.temperature_2m_max_gfs_seamless[0])}°C`;
-                            document.getElementById('m-gfs-min').textContent = `${Math.round(data.daily.temperature_2m_min_gfs_seamless[0])}°C`;
-                            document.getElementById('m-gfs-rain').textContent = `${data.daily.precipitation_sum_gfs_seamless[0]} mm`;
-                        }
-                        // Actualizar modelo ICON
-                        if (data.daily.temperature_2m_max_icon_seamless) {
-                            document.getElementById('m-icon-max').textContent = `${Math.round(data.daily.temperature_2m_max_icon_seamless[0])}°C`;
-                            document.getElementById('m-icon-min').textContent = `${Math.round(data.daily.temperature_2m_min_icon_seamless[0])}°C`;
-                            document.getElementById('m-icon-rain').textContent = `${data.daily.precipitation_sum_icon_seamless[0]} mm`;
+                    });
+                }
+
+                chartTemp = makeLineChart('chart-temp', 'temp_max', '°C');
+                chartWind = makeLineChart('chart-wind', 'wind', 'km/h');
+
+                // Precipitation bar chart
+                const ctxP = document.getElementById('chart-precip').getContext('2d');
+                chartPrecip = new Chart(ctxP, {
+                    type: 'bar',
+                    data: {
+                        labels: dayLabels,
+                        datasets: MODELS.map((m, i) => ({
+                            label: `${m.flag} ${m.name}`,
+                            data: modelData[m.key].precip,
+                            backgroundColor: MODEL_COLORS[i] + 'cc',
+                            borderColor: MODEL_COLORS[i],
+                            borderWidth: 1,
+                            borderRadius: 3
+                        }))
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: { mode: 'index', intersect: false },
+                        plugins: {
+                            legend: { position: 'bottom', labels: { usePointStyle: true, padding: 12, font: { size: 11 } } },
+                            tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1)} mm` } }
+                        },
+                        scales: {
+                            y: { beginAtZero: true, grid: { color: '#e2e8f020' }, ticks: { callback: v => v + ' mm' } },
+                            x: { grid: { display: false } }
                         }
                     }
-                } catch (e) {
-                    console.log('Error conectando a Open-Meteo multi-model API:', e);
-                }
-            }
+                });
 
-            fetchOpenMeteoMultiModel();
+                // ===== MODEL SUMMARY CARDS =====
+                const grid = document.getElementById('models-grid');
+                grid.innerHTML = MODELS.map((m, i) => {
+                    const d = modelData[m.key];
+                    const tMax = d.temp_max[0] != null ? Math.round(d.temp_max[0]) : '—';
+                    const tMin = d.temp_min[0] != null ? Math.round(d.temp_min[0]) : '—';
+                    return `
+                    <div class="model-summary-card">
+                        <div class="model-flag">${m.flag} ${m.name} · ${m.fullName}</div>
+                        <h4>${m.fullName}</h4>
+                        <div class="model-temp">${tMax}°C</div>
+                        <div class="model-metric"><span>Mín</span><strong>${tMin}°C</strong></div>
+                        <div class="model-metric"><span>Lluvia</span><strong>${(d.precip[0] ?? 0).toFixed(1)} mm</strong></div>
+                        <div class="model-metric"><span>Viento</span><strong>${(d.wind[0] ?? 0).toFixed(0)} km/h</strong></div>
+                        <div class="model-metric"><span>Humedad</span><strong>${(d.humidity[0] ?? 0).toFixed(0)}%</strong></div>
+                        <div class="model-metric"><span>Nubosidad</span><strong>${(d.cloud[0] ?? 0).toFixed(0)}%</strong></div>
+                    </div>`;
+                }).join('');
+
+                // ===== DATA TABLE WITH VARIABLE TABS =====
+                let currentVar = 'temp';
+                const VAR_FIELDS = {
+                    temp: { field: 'temp_max', unit: '°C', label: 'Temp. Máxima', varKey: 'temp', decimals: 0 },
+                    precip: { field: 'precip', unit: 'mm', label: 'Precipitación', varKey: 'precip', decimals: 1 },
+                    wind: { field: 'wind', unit: 'km/h', label: 'Viento Máx.', varKey: 'wind', decimals: 0 },
+                    humidity: { field: 'humidity', unit: '%', label: 'Humedad Media', varKey: 'humidity', decimals: 0 },
+                    cloud: { field: 'cloud', unit: '%', label: 'Nubosidad', varKey: 'cloud', decimals: 0 }
+                };
+
+                function renderTable(varKey) {
+                    const cfg = VAR_FIELDS[varKey];
+                    const thead = document.getElementById('comp-table-head');
+                    const tbody = document.getElementById('comp-table-body');
+
+                    thead.innerHTML = `<tr>
+                        <th>Día</th>
+                        ${MODELS.map(m => `<th>${m.flag} ${m.name}</th>`).join('')}
+                        <th>Media</th>
+                        <th>σ</th>
+                        <th>IC</th>
+                    </tr>`;
+
+                    tbody.innerHTML = dayLabels.map((label, dayIdx) => {
+                        const vals = MODELS.map(m => modelData[m.key]?.[cfg.field]?.[dayIdx]);
+                        const validVals = vals.filter(v => v != null);
+                        const m = mean(validVals);
+                        const sd = stdDev(validVals);
+                        const cv = coefficientOfVariation(validVals);
+                        const ic = consensusIndex(cv, cfg.varKey);
+                        const lvl = icLevel(ic);
+
+                        return `<tr>
+                            <td><strong>${label}</strong></td>
+                            ${vals.map(v => `<td>${v != null ? v.toFixed(cfg.decimals) + ' ' + cfg.unit : '—'}</td>`).join('')}
+                            <td><strong>${m.toFixed(cfg.decimals)} ${cfg.unit}</strong></td>
+                            <td>${sd.toFixed(1)}</td>
+                            <td><span class="tag-status ${lvl.cls}">${ic} ${lvl.label}</span></td>
+                        </tr>`;
+                    }).join('');
+                }
+
+                renderTable('temp');
+
+                document.querySelectorAll('.var-tab').forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        document.querySelectorAll('.var-tab').forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                        renderTable(tab.getAttribute('data-var'));
+                    });
+                });
+
+            } catch (err) {
+                console.error('Error fetching Open-Meteo data:', err);
+                document.getElementById('models-grid').innerHTML = '<div class="loading-msg">Error al conectar con Open-Meteo. Recarga la página para reintentar.</div>';
+            }
+        }
+
+        fetchAndRender();
+
+        // ===== MUNICIPALITY COMPARISON =====
+        const MUNICIPALITIES = {
+            'alhaurin': { name: 'Alhaurín el Grande', lat: 36.6439, lon: -4.6892 },
+            'coin': { name: 'Coín', lat: 36.6598, lon: -4.7530 },
+            'cartama': { name: 'Cártama', lat: 36.7103, lon: -4.6349 },
+            'mijas': { name: 'Mijas', lat: 36.5958, lon: -4.6370 },
+            'fuengirola': { name: 'Fuengirola', lat: 36.5435, lon: -4.6245 },
+            'alhaurin-torre': { name: 'Alhaurín de la Torre', lat: 36.6630, lon: -4.5620 },
+            'malaga': { name: 'Málaga', lat: 36.7213, lon: -4.4214 },
+            'marbella': { name: 'Marbella', lat: 36.5107, lon: -4.8826 },
+            'antequera': { name: 'Antequera', lat: 37.0194, lon: -4.5613 },
+            'ronda': { name: 'Ronda', lat: 36.7462, lon: -5.1610 }
+        };
+
+        async function compareMunicipalities(key1, key2) {
+            const m1 = MUNICIPALITIES[key1], m2 = MUNICIPALITIES[key2];
+            const results = document.getElementById('muni-comparison-results');
+            results.innerHTML = '<div class="loading-msg">Cargando datos de comparación...</div>';
+
+            try {
+                const vars = 'temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max';
+                const [r1, r2] = await Promise.all([
+                    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${m1.lat}&longitude=${m1.lon}&daily=${vars}&timezone=Europe%2FMadrid&forecast_days=7`).then(r => r.json()),
+                    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${m2.lat}&longitude=${m2.lon}&daily=${vars}&timezone=Europe%2FMadrid&forecast_days=7`).then(r => r.json())
+                ]);
+
+                const days = (r1.daily?.time || []).map((d, i) => {
+                    if (i === 0) return 'Hoy';
+                    if (i === 1) return 'Mañana';
+                    const dt = new Date(d + 'T12:00:00');
+                    return DAYS_ES[dt.getDay()] + ' ' + dt.getDate();
+                });
+
+                results.innerHTML = `
+                <div class="table-scroll">
+                    <table class="comp-table">
+                        <thead><tr>
+                            <th>Día</th>
+                            <th colspan="2">${m1.name}</th>
+                            <th colspan="2">${m2.name}</th>
+                            <th>Diferencia</th>
+                        </tr>
+                        <tr>
+                            <th></th><th>Máx</th><th>Lluvia</th><th>Máx</th><th>Lluvia</th><th>Temp.</th>
+                        </tr></thead>
+                        <tbody>${days.map((day, i) => {
+                            const t1 = r1.daily.temperature_2m_max?.[i] ?? '—';
+                            const t2 = r2.daily.temperature_2m_max?.[i] ?? '—';
+                            const rain1 = r1.daily.precipitation_sum?.[i] ?? 0;
+                            const rain2 = r2.daily.precipitation_sum?.[i] ?? 0;
+                            const diff = (typeof t1 === 'number' && typeof t2 === 'number') ? (t1 - t2).toFixed(1) : '—';
+                            return `<tr>
+                                <td><strong>${day}</strong></td>
+                                <td>${typeof t1 === 'number' ? Math.round(t1) + '°C' : '—'}</td>
+                                <td>${rain1.toFixed(1)} mm</td>
+                                <td>${typeof t2 === 'number' ? Math.round(t2) + '°C' : '—'}</td>
+                                <td>${rain2.toFixed(1)} mm</td>
+                                <td>${diff !== '—' ? (diff > 0 ? '+' : '') + diff + '°C' : '—'}</td>
+                            </tr>`;
+                        }).join('')}</tbody>
+                    </table>
+                </div>`;
+            } catch(e) {
+                results.innerHTML = '<div class="loading-msg">Error al cargar los datos. Inténtalo de nuevo.</div>';
+            }
+        }
+
+        document.getElementById('muni-2').addEventListener('change', () => {
+            compareMunicipalities('alhaurin', document.getElementById('muni-2').value);
         });
+        compareMunicipalities('alhaurin', 'coin');
+    });
     </script>
 </body>
 

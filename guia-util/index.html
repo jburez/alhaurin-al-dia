@@ -27,29 +27,22 @@
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/ads.css">
     <style>
-        .guide-page-hero { padding: 58px 0 28px; }
-        .guide-page-card { background: white; border: 1px solid var(--line); border-radius: 8px; padding: clamp(28px,5vw,56px); box-shadow: var(--shadow-card); }
-        .guide-page-card h1 { max-width: 900px; }
-        .guide-page-card .lead { max-width: 780px; }
-        .guide-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 30px; }
-        .guide-stat { background: var(--paper-soft); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
-        .guide-stat strong { display: block; color: var(--brand); font-size: 24px; }
-        .guide-stat span { color: var(--muted); font-size: 13px; font-weight: 800; }
-        .guide-tools { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin-bottom: 24px; padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: white; box-shadow: var(--shadow-card); }
-        .guide-tools input { width: 100%; min-height: 50px; border-radius: 999px; border: 1px solid var(--line); background: white; color: var(--ink); padding: 0 18px; outline: none; font-size: 15px; }
-        .guide-pill-row { display: flex; gap: 8px; flex-wrap: wrap; }
-        .guide-pill { border: 1px solid var(--line); background: white; color: var(--brand); border-radius: 999px; padding: 10px 13px; font: inherit; font-size: 13px; font-weight: 900; cursor: pointer; }
-        .guide-pill.active { background: var(--brand); color: white; border-color: var(--brand); }
+        .guide-tools { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+        .guide-tools input { width: 100%; min-height: 44px; border-radius: 6px; border: 1px solid var(--line); background: var(--paper-soft); color: var(--ink); padding: 0 14px; outline: none; font-size: 14px; transition: border-color .15s; }
+        .guide-tools input:focus { border-color: var(--accent); }
+        .guide-pill-row { display: flex; gap: 6px; flex-wrap: wrap; }
+        .guide-pill { border: 1px solid var(--line); background: white; color: var(--muted); border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; transition: all .15s; }
+        .guide-pill:hover { border-color: var(--accent); color: var(--accent); }
+        .guide-pill.active { background: var(--accent); color: white; border-color: var(--accent); }
         .guide-card.featured-guide-card { border-radius: 8px; }
         .guide-card .read-more { margin-top: 14px; }
-        .guide-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
-        .guide-links a { display: inline-flex; padding: 9px 11px; border-radius: 999px; background: var(--brand-soft); border: 1px solid var(--line); color: var(--brand); font-size: 12px; font-weight: 900; }
-        .guide-cta-panel { margin-top: 28px; background: var(--brand); color: white; border-radius: 8px; padding: clamp(26px,4vw,42px); display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; align-items: center; box-shadow: var(--shadow-card); }
-        .guide-cta-panel h2 { margin: 0 0 10px; font-family: var(--font-display); font-size: clamp(30px,4vw,46px); line-height: 1; letter-spacing: -.045em; }
-        .guide-cta-panel p { margin: 0; color: rgba(255,255,255,.78); line-height: 1.65; }
-        .guide-cta-panel .btn { background: white; color: var(--brand); justify-self: end; }
-        @media (max-width: 920px) { .guide-tools, .guide-cta-panel { grid-template-columns: 1fr; } .guide-cta-panel .btn { justify-self: start; } .guide-stats { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 720px) { .guide-page-hero { padding-top: 28px; } .guide-stats { grid-template-columns: 1fr; } .guide-tools { border-radius: 8px; } }
+        .guide-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+        .guide-links a { display: inline-flex; padding: 6px 10px; border-radius: 6px; background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); font-size: 12px; font-weight: 700; }
+        .guide-cta-panel { margin-top: 28px; background: var(--accent); color: white; border-radius: 8px; padding: clamp(22px,4vw,36px); display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; align-items: center; }
+        .guide-cta-panel h2 { margin: 0 0 8px; font-size: clamp(22px,3.5vw,30px); line-height: 1.1; letter-spacing: -.03em; }
+        .guide-cta-panel p { margin: 0; color: rgba(255,255,255,.8); line-height: 1.6; font-size: 14px; }
+        .guide-cta-panel .btn { background: white; color: var(--accent); justify-self: end; }
+        @media (max-width: 920px) { .guide-cta-panel { grid-template-columns: 1fr; } .guide-cta-panel .btn { justify-self: start; } }
     </style>
 
     <script type="application/ld+json">

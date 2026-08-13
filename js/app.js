@@ -854,7 +854,74 @@ function getSavedArticles() {
     }
 }
 
+function saveFavorites(arr) {
+    localStorage.setItem("alhaurin_saved_articles", JSON.stringify(arr));
+}
+
+function isArticleSaved(id) {
+    return getSavedArticles().some(item => String(item.id) === String(id));
+}
+
+function injectBookmarkButton() {
+    // Auto-inject into article pages
+    const shareCard = document.querySelector(".share-card");
+    const articleTitle = document.querySelector(".article-title");
+    if (!shareCard || !articleTitle) return;
+
+    const articleId = window.location.pathname;
+    const isSaved = isArticleSaved(articleId);
+
+    const bookmarkCard = document.createElement("div");
+    bookmarkCard.className = "bookmark-card";
+    bookmarkCard.style.cssText = "margin-top: 12px; padding: 14px; background: var(--paper-soft); border: 1px solid var(--line); border-radius: 8px;";
+    bookmarkCard.innerHTML = `
+        <span style="font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em;">Guardar</span>
+        <button class="bookmark-btn" type="button"
+            data-id="${escapeHTML(articleId)}"
+            data-title="${escapeHTML(articleTitle.textContent)}"
+            data-url="${escapeHTML(window.location.href)}"
+            style="display: flex; align-items: center; gap: 6px; width: 100%; margin-top: 8px; padding: 10px 14px; border: 1px solid ${isSaved ? 'var(--accent)' : 'var(--line)'}; background: ${isSaved ? 'var(--accent-soft)' : '#fff'}; border-radius: 6px; cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; color: ${isSaved ? 'var(--accent-dark)' : 'var(--ink)'}; transition: all 0.2s;">
+            <span style="font-size: 18px;">${isSaved ? '★' : '☆'}</span>
+            ${isSaved ? 'Guardado en Mi Alhaurín' : 'Guardar en Mi Alhaurín'}
+        </button>
+        <p style="font-size: 11px; color: var(--muted); margin: 6px 0 0; line-height: 1.4;">Accede a tus artículos guardados desde <a href="/mi-alhaurin/" style="color: var(--accent-dark); font-weight: 600;">Mi Alhaurín</a></p>
+    `;
+
+    shareCard.after(bookmarkCard);
+
+    // Also inject a floating bookmark strip on mobile (under the article header)
+    const articleHero = document.querySelector(".article-hero");
+    if (articleHero && window.innerWidth < 920) {
+        const mobileBtn = document.createElement("button");
+        mobileBtn.className = "bookmark-btn bookmark-btn-mobile";
+        mobileBtn.setAttribute("data-id", articleId);
+        mobileBtn.setAttribute("data-title", articleTitle.textContent);
+        mobileBtn.setAttribute("data-url", window.location.href);
+        mobileBtn.style.cssText = `display: flex; align-items: center; gap: 6px; width: 100%; margin-top: 10px; padding: 10px 14px; border: 1px solid ${isSaved ? 'var(--accent)' : 'var(--line)'}; background: ${isSaved ? 'var(--accent-soft)' : '#fff'}; border-radius: 6px; cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; color: ${isSaved ? 'var(--accent-dark)' : 'var(--ink)'};`;
+        mobileBtn.innerHTML = `<span style="font-size: 18px;">${isSaved ? '★' : '☆'}</span> ${isSaved ? 'Guardado en Mi Alhaurín' : 'Guardar en Mi Alhaurín'}`;
+        articleHero.after(mobileBtn);
+    }
+}
+
+function updateBookmarkButtons(id, isSaved) {
+    document.querySelectorAll(`.bookmark-btn[data-id="${CSS.escape(id)}"]`).forEach(btn => {
+        btn.style.borderColor = isSaved ? 'var(--accent)' : 'var(--line)';
+        btn.style.background = isSaved ? 'var(--accent-soft)' : '#fff';
+        btn.style.color = isSaved ? 'var(--accent-dark)' : 'var(--ink)';
+        const starSpan = btn.querySelector('span');
+        if (starSpan) starSpan.textContent = isSaved ? '★' : '☆';
+        // Update text node
+        const textNode = Array.from(btn.childNodes).find(n => n.nodeType === 3 || (n.nodeType === 1 && !n.querySelector('span')));
+        // Simpler approach: set innerHTML
+        btn.innerHTML = `<span style="font-size: 18px;">${isSaved ? '★' : '☆'}</span> ${isSaved ? 'Guardado en Mi Alhaurín' : 'Guardar en Mi Alhaurín'}`;
+    });
+}
+
 function initBookmarksSystem() {
+    // Inject bookmark button into article pages
+    injectBookmarkButton();
+
+    // Global click handler for bookmark buttons
     document.addEventListener("click", (e) => {
         const btn = e.target.closest(".bookmark-btn");
         if (!btn) return;
@@ -868,9 +935,8 @@ function initBookmarksSystem() {
 
         if (index !== -1) {
             saved.splice(index, 1);
-            localStorage.setItem("alhaurin_saved_articles", JSON.stringify(saved));
-            btn.innerHTML = "⭐ Guardar en Mi Alhaurín";
-            alert("Artículo eliminado de 'Mi Alhaurín'");
+            saveFavorites(saved);
+            updateBookmarkButtons(id, false);
         } else {
             saved.unshift({
                 id,
@@ -879,12 +945,19 @@ function initBookmarksSystem() {
                 date: new Date().toLocaleDateString("es-ES", { day: "numeric", month: "short", year: "numeric" }),
                 savedAt: new Date().toISOString()
             });
-            localStorage.setItem("alhaurin_saved_articles", JSON.stringify(saved));
-            btn.innerHTML = "⭐ Guardado en Mi Alhaurín";
-            alert("⭐ ¡Guardado en 'Mi Alhaurín'!");
+            saveFavorites(saved);
+            updateBookmarkButtons(id, true);
         }
 
         renderSavedArticlesMiAlhaurin();
+    });
+
+    // Mark existing bookmark buttons as active if already saved
+    document.querySelectorAll(".bookmark-btn[data-id]").forEach(btn => {
+        const id = btn.getAttribute("data-id");
+        if (isArticleSaved(id)) {
+            updateBookmarkButtons(id, true);
+        }
     });
 
     renderSavedArticlesMiAlhaurin();
@@ -895,23 +968,27 @@ function renderSavedArticlesMiAlhaurin() {
     if (!container) return;
 
     const saved = getSavedArticles();
+    const countEl = document.getElementById("saved-count");
+    if (countEl) countEl.textContent = saved.length;
+
     if (!saved.length) {
         container.innerHTML = `
-            <div class="saved-empty">
-                <span>📌 No tienes artículos guardados todavía.</span>
-                <p>Haz clic en la estrella "⭐ Guardar en Mi Alhaurín" en cualquier noticia para leerla más tarde.</p>
+            <div class="saved-empty" style="text-align: center; padding: 24px 16px; color: var(--muted);">
+                <div style="font-size: 32px; margin-bottom: 8px;">📌</div>
+                <strong>No tienes artículos guardados</strong>
+                <p style="font-size: 13px; margin-top: 4px;">Entra en cualquier noticia y pulsa <strong>☆ Guardar en Mi Alhaurín</strong> para verla aquí.</p>
             </div>
         `;
         return;
     }
 
     container.innerHTML = saved.map(item => `
-        <article class="saved-item" style="background: var(--paper-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
-            <div>
-                <a href="${escapeHTML(item.url)}" style="font-weight: 700; color: var(--ink); text-decoration: none;">${escapeHTML(item.title)}</a>
-                <div style="font-size: 12px; color: var(--muted); margin-top: 4px;">Guardado el ${escapeHTML(item.date)}</div>
+        <article class="saved-item" style="background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+            <div style="min-width: 0;">
+                <a href="${escapeHTML(item.url)}" style="font-weight: 600; font-size: 14px; color: var(--ink); text-decoration: none; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${escapeHTML(item.title)}</a>
+                <div style="font-size: 11px; color: var(--muted); margin-top: 3px;">Guardado el ${escapeHTML(item.date)}</div>
             </div>
-            <button type="button" class="bookmark-btn" data-id="${escapeHTML(item.id)}" style="background: none; border: 0; color: #c62828; font-weight: 700; cursor: pointer; font-size: 13px;">Eliminar</button>
+            <button type="button" class="bookmark-btn" data-id="${escapeHTML(item.id)}" data-title="${escapeHTML(item.title)}" data-url="${escapeHTML(item.url)}" style="flex-shrink: 0; background: none; border: 0; color: #dc2626; font-weight: 700; cursor: pointer; font-size: 12px; padding: 4px 8px;">✕ Quitar</button>
         </article>
     `).join("");
 }

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mi Alhaurín — Personaliza tu experiencia en Alhaurín al Día</title>
+    <meta name="description"
+        content="Tu espacio personal en Alhaurín al Día. Guarda tus noticias favoritas, configura tus alertas de agua y tráfico y accede a tus accesos rápidos." />
+    <meta name="theme-color" content="#1c211a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/mi-alhaurin/">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="Mi Alhaurín — Personalización Vecinal" />
+    <meta property="og:description"
+        content="Guarda noticias favoritas, configura avisos locales y personaliza tu portada diaria." />
+    <meta property="og:url" content="https://alhaurinaldia.es/mi-alhaurin/" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mi Alhaurín — Personalización Vecinal">
+    <meta name="twitter:description"
+        content="Guarda noticias favoritas, configura avisos locales y personaliza tu portada diaria.">
+    <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/ads.css">
+    <link rel="stylesheet" href="../css/home-live.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer" style="color: #ffd700; font-weight: 700;">⭐ Destacar Alhaurín al Día en Google ↗</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="../" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
+                    <a href="../noticias/">Noticias</a>
+                    <a href="../guia-util/">Guía útil</a>
+                    <a href="../avisos/">Avisos</a>
+                    <a href="../boletin-oficial/">Boletín oficial</a>
+                    <a href="../tiempo/">Tiempo</a>
+                    <a href="../seguimiento/">Seguimiento</a>
+                    <a href="../radar-social/">Radar Social</a>
+                    <a href="./">Mi Alhaurín</a>
+                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mi-alhaurin-page">
+        <section class="mi-header-section">
+            <div class="container">
+                <div class="mi-header-shell">
+                    <div>
+                        <span class="section-kicker">Tu espacio personal</span>
+                        <h1>Mi Alhaurín al Día</h1>
+                        <p class="mi-subtitle">Personaliza tu portal local, guarda tus noticias de interés y elige los avisos que deseas seguir de forma rápida y sin necesidad de crear cuenta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mi-content-section">
+            <div class="container">
+                <div class="mi-grid">
+                    <!-- MIS PREFERENCIAS DE ALERTAS -->
+                    <article class="mi-card">
+                        <h2>🔔 Preferencias de Avisos y Notificaciones</h2>
+                        <p>Selecciona los avisos que quieres ver destacados prioritariamente en tu portada:</p>
+                        <form id="pref-form" class="pref-form">
+                            <label class="pref-check">
+                                <input type="checkbox" id="pref-agua" checked>
+                                <span>💧 Cortes de Agua e Incidencias Hidráulicas</span>
+                            </label>
+                            <label class="pref-check">
+                                <input type="checkbox" id="pref-trafico" checked>
+                                <span>🚗 Tráfico, Obras y Cortes de Calle</span>
+                            </label>
+                            <label class="pref-check">
+                                <input type="checkbox" id="pref-tiempo" checked>
+                                <span>☀️ Alertas Meteorológicas AEMET y Tormentas</span>
+                            </label>
+                            <label class="pref-check">
+                                <input type="checkbox" id="pref-boletin">
+                                <span>📜 Novedades del Boletín Oficial (BOPMA)</span>
+                            </label>
+                            <button type="submit" class="btn btn-primary" style="margin-top: 14px;">Guardar mis preferencias</button>
+                        </form>
+                    </article>
+
+                    <!-- MIS NOTICIAS GUARDADAS -->
+                    <article class="mi-card">
+                        <h2>⭐ Mis Noticias y Páginas Guardadas</h2>
+                        <p>Artículos y boletines que has guardado para leer más tarde:</p>
+                        <div class="saved-list" id="saved-list">
+                            <div class="saved-empty">
+                                <span>📌 No tienes artículos guardados todavía.</span>
+                                <p>Haz clic en la estrella "Guardar para después" en cualquier noticia para verla aquí.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- BANNER DESTACAR EN GOOGLE -->
+                <div class="google-star-banner" style="margin-top: 28px;">
+                    <div class="google-star-content">
+                        <span class="google-star-icon">⭐</span>
+                        <div>
+                            <h3>Destaca a Alhaurín al Día en Google Noticias</h3>
+                            <p>Asegúrate de que Google te muestre siempre la información local de Alhaurín el Grande en primer lugar.</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-google" href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">
+                        Destacar en Google ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="../noticias/">Noticias</a>
+                <a href="../guia-util/">Guía útil</a>
+                <a href="../avisos/">Avisos</a>
+                <a href="../boletin-oficial/">Boletín oficial</a>
+                <a href="../tiempo/">Tiempo</a>
+                <a href="../seguimiento/">Seguimiento</a>
+                <a href="../radar-social/">Radar Social</a>
+                <a href="./">Mi Alhaurín</a>
+                <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">⭐ Destacar en Google</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('pref-form');
+            const saved = JSON.parse(localStorage.getItem('alhaurin_user_prefs') || '{}');
+
+            if (saved.agua !== undefined) document.getElementById('pref-agua').checked = saved.agua;
+            if (saved.trafico !== undefined) document.getElementById('pref-trafico').checked = saved.trafico;
+            if (saved.tiempo !== undefined) document.getElementById('pref-tiempo').checked = saved.tiempo;
+            if (saved.boletin !== undefined) document.getElementById('pref-boletin').checked = saved.boletin;
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const prefs = {
+                    agua: document.getElementById('pref-agua').checked,
+                    trafico: document.getElementById('pref-trafico').checked,
+                    tiempo: document.getElementById('pref-tiempo').checked,
+                    boletin: document.getElementById('pref-boletin').checked,
+                };
+                localStorage.setItem('alhaurin_user_prefs', JSON.stringify(prefs));
+                alert('¡Tus preferencias han sido guardadas correctamente!');
+            });
+        });
+    </script>
+</body>
+
+</html>

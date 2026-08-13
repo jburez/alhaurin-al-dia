@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Radar Social Hiperlocal — Alhaurín al Día</title>
+    <meta name="description"
+        content="Mapa interactivo y colaborativo de Alhaurín el Grande. Envía y consulta reportes en tiempo real de lluvia, tormentas, granizo, arroyos e incidencias." />
+    <meta name="theme-color" content="#1c211a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/radar-social/">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="Radar Social Hiperlocal — Alhaurín el Grande" />
+    <meta property="og:description"
+        content="Mapa comunitario en tiempo real de observaciones meteorológicas e incidencias en Alhaurín el Grande." />
+    <meta property="og:url" content="https://alhaurinaldia.es/radar-social/" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Radar Social Hiperlocal — Alhaurín el Grande">
+    <meta name="twitter:description"
+        content="Mapa comunitario en tiempo real de observaciones meteorológicas e incidencias en Alhaurín el Grande.">
+    <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/ads.css">
+    <link rel="stylesheet" href="../css/home-live.css">
+
+    <!-- Leaflet CSS & JS for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía local independiente de Alhaurín el Grande</span>
+            <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer" style="color: #ffd700; font-weight: 700;">⭐ Destacar Alhaurín al Día en Google ↗</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="../" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
+                    <a href="../noticias/">Noticias</a>
+                    <a href="../guia-util/">Guía útil</a>
+                    <a href="../avisos/">Avisos</a>
+                    <a href="../boletin-oficial/">Boletín oficial</a>
+                    <a href="../tiempo/">Tiempo</a>
+                    <a href="../seguimiento/">Seguimiento</a>
+                    <a href="./">Radar Social</a>
+                    <a href="../mi-alhaurin/">Mi Alhaurín</a>
+                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="radar-social-page">
+        <section class="radar-header-section">
+            <div class="container">
+                <div class="radar-header-shell">
+                    <div>
+                        <span class="section-kicker">Comunidad en tiempo real</span>
+                        <h1>Radar Social Hiperlocal</h1>
+                        <p class="radar-subtitle">Mapa colaborativo donde los vecinos de Alhaurín el Grande comparten observaciones meteorológicas, pluviómetros, tormentas e incidencias al instante.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="open-report-modal">
+                        🚀 Publicar reporte vecinal
+                    </button>
+                </div>
+
+                <!-- CATEGORÍAS DE FILTRADO DEL MAPA -->
+                <div class="radar-filter-bar">
+                    <button class="radar-filter-btn active" data-filter="all">Todos los reportes</button>
+                    <button class="radar-filter-btn" data-filter="lluvia">🌧️ Lluvia / Pluviómetro</button>
+                    <button class="radar-filter-btn" data-filter="tormenta">⚡ Tormentas / Rayos</button>
+                    <button class="radar-filter-btn" data-filter="granizo">🧊 Granizo</button>
+                    <button class="radar-filter-btn" data-filter="viento">💨 Viento / Incidencias</button>
+                    <button class="radar-filter-btn" data-filter="arroyo">🌊 Crecida de arroyos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAPA Y LISTADO DE REPORTES VECINALES -->
+        <section class="radar-map-section">
+            <div class="container">
+                <div class="radar-layout-grid">
+                    <!-- MAPA LEAFLET -->
+                    <div class="radar-map-card">
+                        <div id="radar-map" style="width: 100%; height: 540px; border-radius: var(--radius);"></div>
+                    </div>
+
+                    <!-- FEED DE REPORTES RECIENTES -->
+                    <aside class="radar-feed-card">
+                        <div class="radar-feed-header">
+                            <h2>Reportes recientes en Alhaurín</h2>
+                            <span class="live-badge" id="report-count">3 reportes activos</span>
+                        </div>
+                        <div class="radar-feed-list" id="radar-feed-list">
+                            <!-- Inyectado dinámicamente -->
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- BANNER GOOGLE SOURCE PREFERENCES -->
+                <div class="google-star-banner">
+                    <div class="google-star-content">
+                        <span class="google-star-icon">⭐</span>
+                        <div>
+                            <h3>¿Quieres recibir las alertas locales de Alhaurín antes que nadie?</h3>
+                            <p>Agrégarnos a tus fuentes preferidas en Google para destacar nuestras noticias e incidencias en tu aplicación de Google Noticias.</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-google" href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">
+                        Destacar en Google Noticias ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL DE PUBLICACIÓN DE REPORTE VECINAL -->
+    <div class="modal-overlay" id="report-modal" hidden>
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>🚀 Publicar reporte vecinal</h2>
+                <button type="button" class="modal-close" id="close-report-modal">&times;</button>
+            </div>
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="report-type">Tipo de observación *</label>
+                    <select id="report-type" required>
+                        <option value="lluvia">🌧️ Lluvia / Medición de pluviómetro</option>
+                        <option value="tormenta">⚡ Tormenta / Rayos</option>
+                        <option value="granizo">🧊 Granizo o piedra</option>
+                        <option value="viento">💨 Ráfaga de viento / Rama caída</option>
+                        <option value="arroyo">🌊 Crecida de arroyo (Fahala, Pasadas...)</option>
+                        <option value="incidencia">⚠️ Incidencia o corte local</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="report-title">Título o zona *</label>
+                    <input type="text" id="report-title" placeholder="Ej: 12 mm acumulados en Cruz del Monte" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="report-desc">Detalle de la observación</label>
+                    <textarea id="report-desc" rows="3" placeholder="Describe brevemente lo que estás observando..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="report-name">Tu nombre o apodo (opcional)</label>
+                        <input type="text" id="report-name" placeholder="Ej: Vecino del centro">
+                    </div>
+                    <div class="form-group">
+                        <label for="report-val">Dato / Medición (opcional)</label>
+                        <input type="text" id="report-val" placeholder="Ej: 14 mm ó Ráfaga fuerte">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancel-report-modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Publicar en el mapa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="../noticias/">Noticias</a>
+                <a href="../guia-util/">Guía útil</a>
+                <a href="../avisos/">Avisos</a>
+                <a href="../boletin-oficial/">Boletín oficial</a>
+                <a href="../tiempo/">Tiempo</a>
+                <a href="../seguimiento/">Seguimiento</a>
+                <a href="./">Radar Social</a>
+                <a href="../mi-alhaurin/">Mi Alhaurín</a>
+                <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">⭐ Destacar en Google</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar Mapa Leaflet centrado en Alhaurín el Grande
+            const map = L.map('radar-map').setView([36.6439, -4.6892], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Cargar reportes iniciales + localStorage
+            const initialReports = [
+                { id: '1', type: 'lluvia', title: 'Medición en La Cruz del Monte', val: '8.4 mm', desc: 'Lluvia constante y moderada en la zona alta.', lat: 36.6485, lng: -4.6850, name: 'Manuel G.', votes: 5, date: 'Hace 15 min' },
+                { id: '2', type: 'tormenta', title: 'Tormenta sobre la Sierra de Mijas', val: 'Rayos', desc: 'Descargas eléctricas visibles hacia la sierra.', lat: 36.6350, lng: -4.6750, name: 'Vecina de Las Palmeras', votes: 8, date: 'Hace 30 min' },
+                { id: '3', type: 'arroyo', title: 'Caudal normal en el Río Fahala', val: 'Normal', desc: 'Arroyo corriendo limpio y sin desbordamientos.', lat: 36.6520, lng: -4.6980, name: 'Protección Civil', votes: 12, date: 'Hace 45 min' }
+            ];
+
+            let stored = JSON.parse(localStorage.getItem('alhaurin_radar_reports') || '[]');
+            let allReports = [...stored, ...initialReports];
+
+            const markersGroup = L.layerGroup().addTo(map);
+
+            function getIconEmoji(type) {
+                return { lluvia: '🌧️', tormenta: '⚡', granizo: '🧊', viento: '💨', arroyo: '🌊', incidencia: '⚠️' }[type] || '📌';
+            }
+
+            function renderReports(filter = 'all') {
+                markersGroup.clearLayers();
+                const feed = document.getElementById('radar-feed-list');
+                feed.innerHTML = '';
+
+                const filtered = filter === 'all' ? allReports : allReports.filter(r => r.type === filter);
+                document.getElementById('report-count').textContent = `${filtered.length} reportes activos`;
+
+                filtered.forEach(r => {
+                    const iconEmoji = getIconEmoji(r.type);
+
+                    // Marker en mapa
+                    const customIcon = L.divIcon({
+                        className: 'leaflet-emoji-marker',
+                        html: `<div style="font-size: 26px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">${iconEmoji}</div>`,
+                        iconSize: [30, 30],
+                        iconAnchor: [15, 15]
+                    });
+
+                    const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(markersGroup);
+                    marker.bindPopup(`
+                        <div style="font-family: system-ui; padding: 4px;">
+                            <strong>${iconEmoji} ${r.title}</strong>
+                            <p style="margin: 4px 0; font-size: 13px;">${r.desc}</p>
+                            <small style="color: #666;">Por ${r.name || 'Vecino'} · ${r.date}</small>
+                        </div>
+                    `);
+
+                    // Ítem en el feed lateral
+                    const item = document.createElement('article');
+                    item.className = 'radar-feed-item';
+                    item.innerHTML = `
+                        <div class="radar-feed-top">
+                            <span class="radar-feed-type">${iconEmoji} ${r.type.toUpperCase()}</span>
+                            <span class="radar-feed-time">${r.date}</span>
+                        </div>
+                        <h3>${r.title}</h3>
+                        <p>${r.desc}</p>
+                        <div class="radar-feed-footer">
+                            <span class="radar-feed-user">Por ${r.name || 'Vecino'}</span>
+                            <button type="button" class="vote-btn" data-id="${r.id}">👍 Confirmar (${r.votes})</button>
+                        </div>
+                    `;
+                    feed.appendChild(item);
+                });
+            }
+
+            renderReports();
+
+            // Filtrado por categoría
+            document.querySelectorAll('.radar-filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.radar-filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderReports(btn.getAttribute('data-filter'));
+                });
+            });
+
+            // Modal de publicación
+            const modal = document.getElementById('report-modal');
+            document.getElementById('open-report-modal').addEventListener('click', () => modal.hidden = false);
+            document.getElementById('close-report-modal').addEventListener('click', () => modal.hidden = true);
+            document.getElementById('cancel-report-modal').addEventListener('click', () => modal.hidden = true);
+
+            // Guardar nuevo reporte
+            document.getElementById('report-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const type = document.getElementById('report-type').value;
+                const title = document.getElementById('report-title').value;
+                const desc = document.getElementById('report-desc').value;
+                const name = document.getElementById('report-name').value || 'Vecino de Alhaurín';
+                const val = document.getElementById('report-val').value;
+
+                // Coordenadas con pequeña dispersión alrededor del centro
+                const lat = 36.6439 + (Math.random() - 0.5) * 0.02;
+                const lng = -4.6892 + (Math.random() - 0.5) * 0.02;
+
+                const newReport = {
+                    id: String(Date.now()),
+                    type,
+                    title,
+                    desc: desc || `${title} (${val || 'Sin dato registrado'})`,
+                    val: val || 'Registrado',
+                    lat,
+                    lng,
+                    name,
+                    votes: 1,
+                    date: 'Ahora mismo'
+                };
+
+                allReports.unshift(newReport);
+                stored.unshift(newReport);
+                localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
+
+                renderReports();
+                modal.hidden = true;
+                e.target.reset();
+                alert('¡Tu reporte vecinal ha sido publicado con éxito en el mapa!');
+            });
+        });
+    </script>
+</body>
+
+</html>

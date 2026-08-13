@@ -23,6 +23,8 @@ const STRUCTURAL_URLS = new Set([
   '/avisos/',
   '/tiempo/',
   '/seguimiento/',
+  '/radar-social/',
+  '/mi-alhaurin/',
   '/planes/',
   '/comercios/',
   '/anunciarse/',

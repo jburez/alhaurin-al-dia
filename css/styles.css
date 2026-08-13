@@ -1,44 +1,44 @@
 :root {
-    /* Design System Tokens — alhaurinaldia.es (Paleta Sierra y Olivar) */
-    --bg: #faf7f2;
+    /* Design System Tokens — alhaurinaldia.es (Estilo Editorial Minimalista) */
+    --bg: #fbf9f5;
     --paper: #ffffff;
-    --paper-soft: #fbf8f2;
-    --ink: #1c1f1b;
-    --muted: #5b6058;
-    --line: #e4e0d5;
+    --paper-soft: #fdfbf7;
+    --ink: #1c211a;
+    --muted: #586154;
+    --line: #eae4d9;
     --accent: #455c36;
-    --accent-dark: #34462a;
-    --accent-soft: #eaeee1;
-    --red-soft: #fff1ed;
+    --accent-dark: #334428;
+    --accent-soft: #f2eee5;
+    --red-soft: #fdf2f0;
 
-    /* Sombras Sutiles Editoriales */
-    --shadow: 0 10px 30px rgba(28, 31, 27, 0.08);
-    --shadow-soft: 0 4px 16px rgba(28, 31, 27, 0.04);
-    --shadow-card: 0 4px 16px rgba(28, 31, 27, 0.04);
-    --shadow-float: 0 10px 28px rgba(28, 31, 27, 0.09);
+    /* Sombras Sutiles Editoriales (Ligeras y Elegantes) */
+    --shadow: 0 12px 36px rgba(28, 33, 26, 0.06);
+    --shadow-soft: 0 2px 10px rgba(28, 33, 26, 0.025);
+    --shadow-card: 0 2px 10px rgba(28, 33, 26, 0.025);
+    --shadow-float: 0 8px 24px rgba(28, 33, 26, 0.08);
 
     /* Radios Unificados (Estilo Editorial Pulido) */
     --radius: 16px;
-    --radius-lg: 16px;
+    --radius-lg: 20px;
     --radius-md: 12px;
     --radius-sm: 8px;
     --radius-pill: 999px;
-    --max: 1180px;
+    --max: 1160px;
 
     /* Tipografía: Fraunces para titulares, pila de sistema para cuerpo */
     --font-display: "Fraunces", Georgia, "Times New Roman", serif;
     --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
     --text-label: 800 12px/1.2 var(--font-body);
-    --text-headline-home: 700 clamp(28px, 8vw, 44px)/1.08 var(--font-display);
-    --text-headline-list: 600 clamp(19px, 4vw, 22px)/1.2 var(--font-display);
-    --text-body: 400 17px/1.6 var(--font-body);
+    --text-headline-home: 700 clamp(32px, 5.5vw, 56px)/1.08 var(--font-display);
+    --text-headline-list: 600 clamp(20px, 3.5vw, 24px)/1.25 var(--font-display);
+    --text-body: 400 16.5px/1.65 var(--font-body);
     --text-caption: 500 13px/1.4 var(--font-body);
 
     /* Alias heredados de compatibilidad */
     --brand: var(--ink);
     --brand-soft: var(--accent-soft);
     --gold: var(--accent);
-    --green: #3f6f57;
+    --green: #385942;
 }
 
 * {
@@ -53,9 +53,7 @@ body {
     margin: 0;
     font: var(--text-body);
     color: var(--ink);
-    background:
-        radial-gradient(circle at top left, rgba(69, 92, 54, .12), transparent 34rem),
-        linear-gradient(180deg, #fffdf8 0%, var(--bg) 48%, #f2efe6 100%);
+    background: var(--bg);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
 }

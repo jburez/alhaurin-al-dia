@@ -1,16 +1,114 @@
 {
-  "actualizado": "2026-08-13T09:53:05+02:00",
+  "actualizado": "2026-08-13T12:08:21+02:00",
   "fuente": "AEMET",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
     "icono": "☀️",
     "titulo": "Tiempo",
-    "valor": "26º",
-    "detalle": "Despejado · Máx. 35º / Mín. 24º",
+    "valor": "Máx. 35º",
+    "detalle": "Despejado · Máx. 35º / Mín. 24º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
-  }
+  },
+  "hoy": {
+    "fecha": "2026-08-13",
+    "dia_semana": "Jueves",
+    "fecha_corta": "13/8",
+    "t_max": "35",
+    "t_min": "24",
+    "icono": "☀️",
+    "descripcion": "Despejado",
+    "lluvia": "0%",
+    "viento": "Flojo",
+    "uv": "9"
+  },
+  "semana": [
+    {
+      "fecha": "2026-08-13",
+      "dia_semana": "Jueves",
+      "fecha_corta": "13/8",
+      "t_max": "35",
+      "t_min": "24",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "Flojo",
+      "uv": "9"
+    },
+    {
+      "fecha": "2026-08-14",
+      "dia_semana": "Viernes",
+      "fecha_corta": "14/8",
+      "t_max": "35",
+      "t_min": "24",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "S 10 km/h",
+      "uv": "9"
+    },
+    {
+      "fecha": "2026-08-15",
+      "dia_semana": "Sábado",
+      "fecha_corta": "15/8",
+      "t_max": "34",
+      "t_min": "23",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "20%",
+      "viento": "SE 10 km/h",
+      "uv": "8"
+    },
+    {
+      "fecha": "2026-08-16",
+      "dia_semana": "Domingo",
+      "fecha_corta": "16/8",
+      "t_max": "33",
+      "t_min": "22",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "15%",
+      "viento": "SE 15 km/h",
+      "uv": "8"
+    },
+    {
+      "fecha": "2026-08-17",
+      "dia_semana": "Lunes",
+      "fecha_corta": "17/8",
+      "t_max": "35",
+      "t_min": "22",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "20%",
+      "viento": "SE 15 km/h",
+      "uv": "8"
+    },
+    {
+      "fecha": "2026-08-18",
+      "dia_semana": "Martes",
+      "fecha_corta": "18/8",
+      "t_max": "36",
+      "t_min": "22",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "10%",
+      "viento": "S 10 km/h",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-08-19",
+      "dia_semana": "Miércoles",
+      "fecha_corta": "19/8",
+      "t_max": "34",
+      "t_min": "23",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "5%",
+      "viento": "SE 10 km/h",
+      "uv": ""
+    }
+  ]
 }

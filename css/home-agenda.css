@@ -84,7 +84,7 @@
     display: grid;
     gap: 6px;
     padding: 12px;
-    border-radius: 18px;
+    border-radius: 8px;
     background: var(--accent-soft);
     border: 1px solid #d7ddc7;
     color: var(--ink);
@@ -165,7 +165,7 @@
     height: 48px;
     display: grid;
     place-items: center;
-    border-radius: 16px;
+    border-radius: 8px;
     background: var(--accent-soft);
     border: 1px solid #d7ddc7;
     font-size: 21px;
@@ -199,7 +199,7 @@
 
 @media (max-width: 560px) {
     .home-agenda-shell {
-        border-radius: 26px;
+        border-radius: 8px;
         padding: 18px;
     }
 }

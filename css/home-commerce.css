@@ -63,14 +63,14 @@
     align-items: stretch;
     background: #fff;
     border: 1px solid var(--line);
-    border-radius: 26px;
+    border-radius: 8px;
     padding: 16px;
     box-shadow: var(--shadow-soft);
 }
 
 .featured-commerce-media {
     min-height: 150px;
-    border-radius: 20px;
+    border-radius: 8px;
     overflow: hidden;
     background: linear-gradient(135deg, var(--ink), var(--accent));
     display: grid;
@@ -187,7 +187,7 @@
     height: 54px;
     display: grid;
     place-items: center;
-    border-radius: 18px;
+    border-radius: 8px;
     background: #fff6e8;
     border: 1px solid #efd9b9;
     color: #8a5a19;
@@ -228,7 +228,7 @@
 
 @media (max-width: 560px) {
     .featured-commerce-shell {
-        border-radius: 26px;
+        border-radius: 8px;
         padding: 18px;
     }
 }

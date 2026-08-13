@@ -77,7 +77,7 @@
 @media (max-width: 720px) {
     .article-sidebar .share-card {
         padding: 12px 13px;
-        border-radius: 20px;
+        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: space-between;

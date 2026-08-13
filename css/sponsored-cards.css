@@ -11,7 +11,7 @@
         radial-gradient(circle at top right, rgba(184, 135, 70, .16), transparent 18rem),
         rgba(255, 255, 255, .9);
     border: 1px solid var(--line);
-    border-radius: 32px;
+    border-radius: 8px;
     box-shadow: var(--shadow-soft);
     padding: clamp(22px, 4vw, 34px);
 }
@@ -50,7 +50,7 @@
 .sponsored-empty-card {
     background: #fff;
     border: 1px solid var(--line);
-    border-radius: 26px;
+    border-radius: 8px;
     box-shadow: var(--shadow-soft);
     overflow: hidden;
 }
@@ -198,7 +198,7 @@
     height: 54px;
     display: grid;
     place-items: center;
-    border-radius: 18px;
+    border-radius: 8px;
     background: #fff6e8;
     border: 1px solid #efd9b9;
     color: #8a5a19;
@@ -230,7 +230,7 @@
 
 @media (max-width: 560px) {
     .sponsored-shell {
-        border-radius: 26px;
+        border-radius: 8px;
         padding: 18px;
     }
 }

@@ -27,7 +27,7 @@
 :where(a, button, input, textarea, select):focus-visible {
     outline: 3px solid rgba(184, 135, 70, .42);
     outline-offset: 4px;
-    border-radius: 14px;
+    border-radius: 8px;
 }
 
 @media (min-width: 981px) {
@@ -100,7 +100,7 @@
     }
 
     .home-latest-grid .news-card {
-        border-radius: 24px;
+        border-radius: 8px;
     }
 
     .guide-section {

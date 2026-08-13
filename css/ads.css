@@ -46,22 +46,22 @@
 
 .ad-slot-leaderboard {
     min-height: 96px;
-    border-radius: 22px;
+    border-radius: 8px;
 }
 
 .ad-slot-medium {
     min-height: 180px;
-    border-radius: 24px;
+    border-radius: 8px;
 }
 
 .ad-slot-sidebar {
     min-height: 300px;
-    border-radius: 24px;
+    border-radius: 8px;
 }
 
 .ad-slot-native {
     min-height: 130px;
-    border-radius: 24px;
+    border-radius: 8px;
 }
 
 .ad-slot-sticky {
@@ -134,7 +134,7 @@
     .ad-slot-native,
     .ad-slot-sidebar {
         min-height: 120px;
-        border-radius: 18px;
+        border-radius: 8px;
     }
 
     .ad-slot::before {

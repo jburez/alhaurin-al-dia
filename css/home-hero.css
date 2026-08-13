@@ -54,39 +54,81 @@
 ========================= */
 
 .home-hero-clean {
-    padding: 34px 0 20px;
+    padding: 28px 0 16px;
 }
 
 .home-hero-clean .hero-grid {
-    grid-template-columns: minmax(0, 1.08fr) minmax(320px, .72fr);
-    gap: 20px;
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, .4fr);
+    gap: 16px;
+    align-items: start;
 }
 
 .home-hero-clean .hero-card {
-    padding: clamp(26px, 4vw, 44px);
-    border-radius: 20px;
+    padding: clamp(24px, 3.5vw, 36px);
+    border-radius: 8px;
 }
 
 .home-hero-clean .eyebrow {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-dark);
 }
 
 .home-hero-clean h1 {
-    max-width: 780px;
-    font-size: clamp(38px, 5.6vw, 64px);
-    line-height: .98;
+    max-width: 680px;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
 }
 
 .home-hero-clean .lead {
-    max-width: 720px;
-    margin-top: 18px;
-    font-size: 17px;
-    line-height: 1.62;
+    max-width: 600px;
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* Hero Quick Navigation */
+.hero-quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 16px;
+}
+
+.hero-nav-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.hero-nav-item:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent-dark);
+}
+
+.hero-nav-item.highlight {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent-dark);
+    font-weight: 700;
 }
 
 .home-hero-clean .actions {
-    margin-top: 22px;
+    margin-top: 14px;
 }
 
 .home-hero-clean .side-panel {
@@ -94,30 +136,32 @@
 }
 
 .home-hero-clean .today-card {
-    padding: 22px;
+    padding: 18px;
+    border-radius: 8px;
 }
 
 .home-hero-clean .today-card h2 {
-    font-size: 25px;
-    line-height: 1.05;
+    font-size: 20px;
+    line-height: 1.1;
 }
 
 .home-hero-clean .today-card p {
-    font-size: 14px;
-    line-height: 1.55;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .home-hero-clean .quick-links {
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .home-hero-clean .ad-slot-medium {
     min-height: 116px;
+    border-radius: 8px;
 }
 
 @media (max-width: 920px) {
     .home-hero-clean {
-        padding-top: 26px;
+        padding-top: 20px;
     }
 
     .home-hero-clean .hero-grid {
@@ -127,20 +171,29 @@
 
 @media (max-width: 720px) {
     .home-hero-clean {
-        padding: 22px 0 12px;
+        padding: 16px 0 10px;
     }
 
     .home-hero-clean .hero-card {
-        padding: 24px 20px;
-        border-radius: 26px;
+        padding: 20px 16px;
+        border-radius: 8px;
     }
 
     .home-hero-clean h1 {
-        font-size: clamp(34px, 10.6vw, 46px);
+        font-size: clamp(26px, 8vw, 36px);
     }
 
     .home-hero-clean .lead {
-        font-size: 15px;
-        line-height: 1.55;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .hero-quick-nav {
+        gap: 4px;
+    }
+
+    .hero-nav-item {
+        font-size: 12px;
+        padding: 5px 10px;
     }
 }

@@ -126,7 +126,7 @@
     .home-guard-card,
     .featured-news-card,
     .content-card {
-        border-radius: 20px;
+        border-radius: 8px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 

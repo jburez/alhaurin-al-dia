@@ -510,7 +510,7 @@ h1 {
 .quick-links a {
     padding: 13px 14px;
     border: 1px solid var(--line);
-    border-radius: 16px;
+    border-radius: 8px;
     background: var(--paper-soft);
     color: var(--brand);
     font-weight: 900;
@@ -910,7 +910,7 @@ section {
 .guide-search-box {
     background: var(--paper-soft);
     border: 1px solid var(--line);
-    border-radius: 22px;
+    border-radius: 8px;
     padding: 18px;
 }
 
@@ -955,7 +955,7 @@ section {
 
 .guide-index a {
     padding: 11px 12px;
-    border-radius: 14px;
+    border-radius: 8px;
     color: #475467;
     font-size: 14px;
     font-weight: 800;
@@ -1002,7 +1002,7 @@ section {
     width: 52px;
     height: 52px;
     flex: 0 0 auto;
-    border-radius: 16px;
+    border-radius: 8px;
     display: grid;
     place-items: center;
     background: linear-gradient(135deg, rgba(69, 92, 54, 0.1), rgba(244, 240, 232, 0.8));
@@ -1144,7 +1144,7 @@ section {
 .notice-icon {
     width: 42px;
     height: 42px;
-    border-radius: 14px;
+    border-radius: 8px;
     display: grid;
     place-items: center;
     background: var(--brand-soft);
@@ -1188,7 +1188,7 @@ section {
 .business-logo {
     width: 54px;
     height: 54px;
-    border-radius: 18px;
+    border-radius: 8px;
     display: grid;
     place-items: center;
     background: linear-gradient(135deg, var(--brand-soft), #fff3df);
@@ -1210,7 +1210,7 @@ section {
 .newsletter {
     background: var(--brand);
     color: white;
-    border-radius: 36px;
+    border-radius: 8px;
     padding: clamp(28px, 5vw, 50px);
     display: grid;
     grid-template-columns: 1.1fr .9fr;
@@ -1296,7 +1296,7 @@ footer {
     place-items: center;
     width: 38px;
     height: 38px;
-    border-radius: 10px;
+    border-radius: 8px;
     background: var(--accent);
     color: #ffffff;
     font-family: var(--font-display);
@@ -1507,7 +1507,7 @@ footer {
     }
 
     .hero-card {
-        border-radius: 28px;
+        border-radius: 8px;
     }
 
     .quick-links,
@@ -1532,7 +1532,7 @@ footer {
 
     .source-filters {
         padding: 14px;
-        border-radius: 22px;
+        border-radius: 8px;
         margin-bottom: 22px;
     }
 
@@ -1761,7 +1761,7 @@ footer {
     max-width: 640px;
     max-height: 85vh;
     background: #ffffff;
-    border-radius: 24px;
+    border-radius: 8px;
     border: 1px solid var(--line);
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -1844,7 +1844,7 @@ footer {
     align-items: flex-start;
     gap: 12px;
     padding: 12px 14px;
-    border-radius: 14px;
+    border-radius: 8px;
     background: #faf8f5;
     border: 1px solid rgba(0, 0, 0, 0.05);
     text-decoration: none;

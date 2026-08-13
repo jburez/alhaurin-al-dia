@@ -15,7 +15,7 @@
         radial-gradient(circle at top right, rgba(255, 255, 255, .14), transparent 18rem),
         linear-gradient(135deg, #8f1d1d, var(--ink) 68%);
     color: #fff;
-    border-radius: 34px;
+    border-radius: 8px;
     padding: clamp(22px, 4vw, 38px);
     box-shadow: 0 24px 60px rgba(24, 33, 47, .18);
     position: relative;
@@ -94,7 +94,7 @@
 
 .home-guard-facts div {
     padding: 13px 14px;
-    border-radius: 18px;
+    border-radius: 8px;
     background: rgba(255, 255, 255, .12);
     border: 1px solid rgba(255, 255, 255, .22);
     backdrop-filter: blur(10px);
@@ -198,7 +198,7 @@
 
 @media (max-width: 640px) {
     .home-guard-card {
-        border-radius: 26px;
+        border-radius: 8px;
         padding: 22px 18px;
     }
 

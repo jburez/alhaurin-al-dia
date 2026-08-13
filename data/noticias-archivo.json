@@ -1,5 +1,85 @@
 [
     {
+        "titulo": "Torremolinos alcanza en julio la cifra de desempleo más baja desde 2007",
+        "descripcion": "El paro en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3% respecto al año anterior.",
+        "resumen": "El paro en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3% respecto al año anterior.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:39.004Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/torremolinos-alcanza-en-julio-la-cifra-de-desempleo-mas-baja-desde-2007.html"
+    },
+    {
+        "titulo": "Sin embargo, existe un desacuerdo entre ambas administraciones sobre quién debe asumir",
+        "descripcion": "El Ayuntamiento y la Junta de Andalucía discrepan sobre la responsabilidad de la demolición y reconstrucción de dos módulos del CEIP Emilia Olivares en Alhaurín el Grande.",
+        "resumen": "El Ayuntamiento y la Junta de Andalucía discrepan sobre la responsabilidad de la demolición y reconstrucción de dos módulos del CEIP Emilia Olivares en Alhaurín el Grande.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:39.003Z",
+        "imagen": "https://s2.ppllstatics.com/diariosur/www/multimedia/local/2026/08/13/WhatsApp%20Image%202026-08-13%20at%2013.21.56_20260813135842-Rxz3mnbUg3opt1kwAMg1PdO-1200x840@Diario%20Sur.jpg",
+        "pagina": "noticias/sin-embargo-existe-un-desacuerdo-entre-ambas-administraciones-sobre-quien-debe-asumir.html"
+    },
+    {
+        "titulo": "PP Mijas pide paralizar reforma del Reglamento de Costas para proteger chiringuitos",
+        "descripcion": "El PP de Mijas reclama al Gobierno que detenga la reforma del Reglamento de Costas y abra un diálogo con comunidades, ayuntamientos y sectores afectados para garantizar seguridad jurídica a los chiringuitos.",
+        "resumen": "El PP de Mijas reclama al Gobierno que detenga la reforma del Reglamento de Costas y abra un diálogo con comunidades, ayuntamientos y sectores afectados para garantizar seguridad jurídica a los chiringuitos.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:39.000Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/pp-mijas-pide-paralizar-reforma-del-reglamento-de-costas-para-proteger-chiringuitos.html"
+    },
+    {
+        "titulo": "Feria de Mijas 2026: programa y artistas destacados del 7 al 12 de septiembre",
+        "descripcion": "La Feria de Mijas 2026 se celebrará del 7 al 12 de septiembre con un programa familiar y actuaciones de artistas como Camela, Medina Azahara y Marta Quintero.",
+        "resumen": "La Feria de Mijas 2026 se celebrará del 7 al 12 de septiembre con un programa familiar y actuaciones de artistas como Camela, Medina Azahara y Marta Quintero.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:38.990Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/feria-de-mijas-2026-programa-y-artistas-destacados-del-7-al-12-de-septiembre.html"
+    },
+    {
+        "titulo": "Benalmádena aprueba ayudas al alquiler con incentivos para inquilinos y propietarios",
+        "descripcion": "El Ayuntamiento de Benalmádena aprueba las bases para subvenciones que fomentan el alquiler de larga temporada, con apoyo mayoritario en el Pleno y abstenciones de Vox e IU.",
+        "resumen": "El Ayuntamiento de Benalmádena aprueba las bases para subvenciones que fomentan el alquiler de larga temporada, con apoyo mayoritario en el Pleno y abstenciones de Vox e IU.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:38.982Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/benalmadena-aprueba-ayudas-al-alquiler-con-incentivos-para-inquilinos-y-propietarios.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande llama a una celebración segura del Día de la Virgen",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande invita a vecinos y visitantes a participar con responsabilidad en las fiestas del Día de la Virgen para garantizar una celebración segura y cívica.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande invita a vecinos y visitantes a participar con responsabilidad en las fiestas del Día de la Virgen para garantizar una celebración segura y cívica.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:38.976Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-llama-a-una-celebracion-segura-del-dia-de-la-virgen.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande crea dos rutas saludables para turismo y deporte con nueva app",
+        "descripcion": "Alhaurín el Grande desarrollará dos rutas saludables circulares de 12 km con señalización física e interactiva y una aplicación móvil para fomentar el turismo y la actividad física.",
+        "resumen": "Alhaurín el Grande desarrollará dos rutas saludables circulares de 12 km con señalización física e interactiva y una aplicación móvil para fomentar el turismo y la actividad física.",
+        "categoria": "Turismo y Patrimonio",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:38.971Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-crea-dos-rutas-saludables-para-turismo-y-deporte-con-nueva-app.html"
+    },
+    {
+        "titulo": "Actualidad en Alhaurín el Grande: aparcamiento, subvenciones y eventos locales 10 agosto",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande permite aparcar en zonas de recarga eléctrica y abre el plazo de subvenciones para asociaciones hasta el 15 de septiembre.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande permite aparcar en zonas de recarga eléctrica y abre el plazo de subvenciones para asociaciones hasta el 15 de septiembre.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T17:02:38.964Z",
+        "imagen": "https://i1.ytimg.com/vi/4u_qmNemGWc/hqdefault.jpg",
+        "pagina": "noticias/actualidad-en-alhaurin-el-grande-aparcamiento-subvenciones-y-eventos-locales-10-agosto.html"
+    },
+    {
         "titulo": "Tanto el Ayuntamiento como la Junta de Andalucía reconocen la gravedad de la situación",
         "descripcion": "El Ayuntamiento y la Junta de Andalucía discrepan sobre la responsabilidad de la demolición y reconstrucción de dos módulos del CEIP Emilia Olivares en Alhaurín el Grande.",
         "resumen": "El Ayuntamiento y la Junta de Andalucía discrepan sobre la responsabilidad de la demolición y reconstrucción de dos módulos del CEIP Emilia Olivares en Alhaurín el Grande.",

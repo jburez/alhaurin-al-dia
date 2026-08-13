@@ -15,7 +15,7 @@
 
 .advertising-kpi {
     padding: 14px;
-    border-radius: 18px;
+    border-radius: 8px;
     background: var(--paper-soft);
     border: 1px solid var(--line);
 }
@@ -48,7 +48,7 @@
     min-height: 100%;
     background: rgba(255, 255, 255, .94);
     border: 1px solid var(--line);
-    border-radius: 28px;
+    border-radius: 8px;
     padding: 22px;
     box-shadow: var(--shadow-soft);
     overflow: hidden;
@@ -159,7 +159,7 @@
 .format-card {
     background: #fff;
     border: 1px solid var(--line);
-    border-radius: 24px;
+    border-radius: 8px;
     padding: 20px;
     box-shadow: var(--shadow-soft);
 }
@@ -195,7 +195,7 @@
 .process-step {
     background: var(--paper-soft);
     border: 1px solid var(--line);
-    border-radius: 24px;
+    border-radius: 8px;
     padding: 18px;
 }
 
@@ -204,7 +204,7 @@
     width: 40px;
     height: 40px;
     place-items: center;
-    border-radius: 14px;
+    border-radius: 8px;
     background: var(--brand);
     color: #fff;
     margin-bottom: 14px;

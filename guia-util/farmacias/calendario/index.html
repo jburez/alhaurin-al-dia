@@ -17,34 +17,34 @@
     <style>
         .calendar-page { --health:#2f6f5e; --health-soft:#eef8f4; --warning-soft:#fff7e8; }
         .calendar-hero { padding:54px 0 24px; }
-        .calendar-hero-card { background:radial-gradient(circle at 88% 8%, rgba(63,111,87,.22), transparent 22rem),radial-gradient(circle at 6% 0%, rgba(184,135,70,.18), transparent 20rem),rgba(255,255,255,.92); border:1px solid var(--line); border-radius:38px; padding:clamp(28px,5vw,58px); box-shadow:var(--shadow); }
+        .calendar-hero-card { background:radial-gradient(circle at 88% 8%, rgba(63,111,87,.22), transparent 22rem),radial-gradient(circle at 6% 0%, rgba(184,135,70,.18), transparent 20rem),rgba(255,255,255,.92); border:1px solid var(--line); border-radius: 8px; padding:clamp(28px,5vw,58px); box-shadow:var(--shadow); }
         .breadcrumb-mini { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; color:var(--muted); font-size:13px; font-weight:800; }
         .breadcrumb-mini a { color:var(--brand); }
         .calendar-hero-card h1 { max-width:900px; font-size:clamp(42px,6.3vw,78px); }
-        .today-guard-card,.calendar-panel,.calendar-help { background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius:28px; box-shadow:var(--shadow-soft); }
+        .today-guard-card,.calendar-panel,.calendar-help { background:rgba(255,255,255,.92); border:1px solid var(--line); border-radius: 8px; box-shadow:var(--shadow-soft); }
         .today-guard-card { margin-top:22px; padding:clamp(22px,4vw,34px); display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center; border-color:#d9eadf; background:linear-gradient(135deg,rgba(238,248,244,.95),rgba(255,255,255,.92)); }
-        .today-guard-card strong { display:block; color:var(--brand); font-family:Georgia,"Times New Roman",serif; font-size:clamp(28px,4vw,44px); line-height:1; letter-spacing:-.045em; margin-top:8px; }
+        .today-guard-card strong { display:block; color:var(--brand); font-family:inherit; font-size:clamp(28px,4vw,44px); line-height:1; letter-spacing:-.045em; margin-top:8px; }
         .today-guard-card p { margin:8px 0 0; color:var(--muted); line-height:1.65; }
         .guard-actions { display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
-        .guard-actions a { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 14px; border-radius:999px; background:var(--brand); color:white; font-weight:950; font-size:14px; }
+        .guard-actions a { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 14px; border-radius: 8px; background:var(--brand); color:white; font-weight:950; font-size:14px; }
         .guard-actions a.secondary { background:white; color:var(--brand); border:1px solid var(--line); }
         .calendar-panel { padding:clamp(20px,4vw,32px); margin-top:24px; }
         .calendar-toolbar { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center; margin-bottom:20px; }
-        .calendar-toolbar h2 { margin:0; color:var(--brand); font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,4vw,48px); line-height:1; letter-spacing:-.045em; }
+        .calendar-toolbar h2 { margin:0; color:var(--brand); font-family:inherit; font-size:clamp(30px,4vw,48px); line-height:1; letter-spacing:-.045em; }
         .month-controls { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
-        .month-controls button,.month-controls select { min-height:42px; border-radius:999px; border:1px solid var(--line); background:white; color:var(--brand); font:inherit; font-weight:900; padding:8px 13px; cursor:pointer; }
+        .month-controls button,.month-controls select { min-height:42px; border-radius: 8px; border:1px solid var(--line); background:white; color:var(--brand); font:inherit; font-weight:900; padding:8px 13px; cursor:pointer; }
         .month-controls button { background:var(--brand); color:white; border-color:var(--brand); }
         .calendar-weekdays,.calendar-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:10px; }
         .calendar-weekdays { margin-bottom:10px; }
         .calendar-weekdays span { text-align:center; color:var(--muted); font-size:12px; font-weight:950; text-transform:uppercase; letter-spacing:.06em; }
-        .calendar-day { min-height:132px; border:1px solid var(--line); border-radius:20px; background:var(--paper-soft); padding:12px; display:flex; flex-direction:column; gap:8px; }
+        .calendar-day { min-height:132px; border:1px solid var(--line); border-radius: 8px; background:var(--paper-soft); padding:12px; display:flex; flex-direction:column; gap:8px; }
         .calendar-day.empty { opacity:.35; background:rgba(255,255,255,.45); }
-        .day-number { width:32px; height:32px; border-radius:999px; display:grid; place-items:center; color:var(--brand); background:white; border:1px solid var(--line); font-weight:950; font-size:13px; }
+        .day-number { width:32px; height:32px; border-radius: 8px; display:grid; place-items:center; color:var(--brand); background:white; border:1px solid var(--line); font-weight:950; font-size:13px; }
         .calendar-day.today { background:linear-gradient(180deg,#eef8f4,#fff); border-color:#9fd1ba; box-shadow:0 14px 30px rgba(47,111,94,.12); }
         .calendar-day.today .day-number { background:var(--health); color:white; border-color:var(--health); }
         .guard-link { display:block; margin-top:auto; color:var(--brand); font-weight:950; line-height:1.25; font-size:14px; }
         .guard-phone { color:var(--muted); font-size:12px; font-weight:800; }
-        .today-chip,.missing-chip { display:inline-flex; width:fit-content; padding:5px 8px; border-radius:999px; font-size:11px; font-weight:950; text-transform:uppercase; letter-spacing:.05em; }
+        .today-chip,.missing-chip { display:inline-flex; width:fit-content; padding:5px 8px; border-radius: 8px; font-size:11px; font-weight:950; text-transform:uppercase; letter-spacing:.05em; }
         .today-chip { background:var(--health); color:white; }
         .missing-chip { background:var(--warning-soft); color:#7a5a2b; border:1px solid #efd9b9; }
         .calendar-help { margin-top:22px; padding:20px; color:var(--muted); line-height:1.65; }

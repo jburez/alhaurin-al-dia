@@ -27,7 +27,7 @@
 .sponsored-header h2 {
     margin: 0;
     color: var(--brand);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: inherit;
     font-size: clamp(30px, 4vw, 46px);
     line-height: 1;
     letter-spacing: -.05em;
@@ -66,7 +66,7 @@
     place-items: center;
     background: linear-gradient(135deg, var(--brand), var(--gold));
     color: #fff;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: inherit;
     font-size: 64px;
     font-weight: 900;
 }

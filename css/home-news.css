@@ -16,7 +16,7 @@
 
 .home-news-clean .featured-news-card {
     grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
-    border-radius: 34px;
+    border-radius: 8px;
     box-shadow: 0 24px 70px rgba(24, 33, 47, .12);
 }
 
@@ -44,7 +44,7 @@
 
 .home-latest-grid .news-card {
     min-height: 0;
-    border-radius: 22px;
+    border-radius: 8px;
 }
 
 .home-latest-grid .news-image,
@@ -101,7 +101,7 @@
     }
 
     .home-news-clean .featured-news-card {
-        border-radius: 26px;
+        border-radius: 8px;
     }
 
     .home-news-clean .featured-news-image {

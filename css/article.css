@@ -119,7 +119,7 @@
     max-width: 68ch;
     margin: 0 auto 22px;
     color: #344054;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: inherit;
     font-size: clamp(18px, 2vw, 21px);
     line-height: 1.8;
 }
@@ -143,7 +143,7 @@
     margin: 36px auto 0;
     padding: 22px;
     border: 1px solid rgba(230, 222, 210, .96);
-    border-radius: 24px;
+    border-radius: 8px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 18px;
@@ -178,7 +178,7 @@
 .share-card {
     padding: 18px;
     border: 1px solid rgba(230, 222, 210, .92);
-    border-radius: 24px;
+    border-radius: 8px;
     background: rgba(255, 255, 255, .78);
     box-shadow: 0 12px 34px rgba(24, 33, 47, .06);
 }
@@ -191,7 +191,7 @@
 .share-card h2 {
     margin: 12px 0 14px;
     color: var(--brand);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: inherit;
     font-size: 23px;
     line-height: 1;
     letter-spacing: -.045em;
@@ -289,7 +289,7 @@
     min-height: 170px;
     padding: 20px;
     border: 1px solid rgba(230, 222, 210, .96);
-    border-radius: 24px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -363,7 +363,7 @@
     }
 
     .premium-article-card {
-        border-radius: 28px;
+        border-radius: 8px;
         box-shadow: 0 16px 44px rgba(24, 33, 47, .08);
     }
 
@@ -426,7 +426,7 @@
         margin-top: 26px;
         padding: 18px;
         grid-template-columns: 1fr;
-        border-radius: 22px;
+        border-radius: 8px;
     }
 
     .article-source-box .btn {
@@ -440,7 +440,7 @@
 
     .share-card {
         padding: 16px;
-        border-radius: 22px;
+        border-radius: 8px;
         box-shadow: 0 10px 28px rgba(24, 33, 47, .055);
     }
 
@@ -477,7 +477,7 @@
     .related-card {
         min-height: 132px;
         padding: 18px;
-        border-radius: 22px;
+        border-radius: 8px;
     }
 
     .related-card strong {

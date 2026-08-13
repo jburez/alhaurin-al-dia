@@ -78,7 +78,7 @@
         width: 46px;
         height: 46px;
         border: 1px solid rgba(23, 50, 77, .14);
-        border-radius: 16px;
+        border-radius: 8px;
         display: inline-grid;
         place-items: center;
         gap: 0;
@@ -144,7 +144,7 @@
         padding: 14px;
         gap: 8px;
         border: 1px solid rgba(230, 222, 210, .88);
-        border-radius: 26px;
+        border-radius: 8px;
         background:
             linear-gradient(180deg, rgba(255, 255, 255, .92), rgba(251, 248, 242, .88));
         backdrop-filter: blur(24px) saturate(1.15);
@@ -164,7 +164,7 @@
     .nav-links a {
         min-height: 50px;
         padding: 14px 16px;
-        border-radius: 18px;
+        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -203,7 +203,7 @@
     }
 
     .hero-card {
-        border-radius: 28px;
+        border-radius: 8px;
         padding: 28px 22px 24px;
         box-shadow: var(--mobile-tight-shadow);
         background:
@@ -255,7 +255,7 @@
         width: 100%;
         min-height: 50px;
         padding: 14px 18px;
-        border-radius: 17px;
+        border-radius: 8px;
         font-size: 15px;
         box-shadow: none;
     }
@@ -305,7 +305,7 @@
         justify-content: center;
         padding: 12px 10px;
         text-align: center;
-        border-radius: 15px;
+        border-radius: 8px;
         font-size: 13px;
         background: rgba(255, 255, 255, .76);
     }
@@ -335,7 +335,7 @@
     }
 
     .featured-news-card {
-        border-radius: 26px;
+        border-radius: 8px;
         box-shadow: var(--mobile-tight-shadow);
     }
 
@@ -388,7 +388,7 @@
 
     .news-card {
         min-height: 0;
-        border-radius: 24px;
+        border-radius: 8px;
         box-shadow: var(--mobile-tight-shadow);
         display: grid;
         grid-template-columns: 112px 1fr;
@@ -477,7 +477,7 @@
     }
 
     .guide-search-box {
-        border-radius: 20px;
+        border-radius: 8px;
         padding: 16px;
     }
 
@@ -493,7 +493,7 @@
     .guide-icon {
         width: 42px;
         height: 42px;
-        border-radius: 14px;
+        border-radius: 8px;
     }
 
     .guide-card ul {
@@ -544,7 +544,7 @@
 
     .footer-links a {
         padding: 10px 12px;
-        border-radius: 14px;
+        border-radius: 8px;
         background: rgba(255, 255, 255, .52);
         border: 1px solid rgba(230, 222, 210, .72);
         color: var(--brand);

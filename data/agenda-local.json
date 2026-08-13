@@ -1,5 +1,30 @@
 {
-  "actualizado": "2026-08-05T13:30:00+02:00",
+  "actualizado": "2026-08-13T09:05:00+02:00",
   "resumen": "Agenda local de próximos días en Alhaurín el Grande. Solo deben publicarse actividades, cortes o eventos confirmados.",
-  "eventos": []
+  "eventos": [
+    {
+      "id": "virgen-de-gracia-ofrenda-2026",
+      "tipo": "Religioso / Fiestas",
+      "icono": "💐",
+      "titulo": "Ofrenda Floral a la Virgen de Gracia",
+      "fecha": "Viernes 14 de agosto (10:00 - 19:00 h)",
+      "lugar": "Parroquia de la Encarnación",
+      "detalle": "Ofrenda floral en el templo y posterior presentación de niños a la Virgen a las 21:00 h.",
+      "cta": "Ver programa completo",
+      "url": "./virgen-de-gracia-2026/",
+      "activo": true
+    },
+    {
+      "id": "virgen-de-gracia-procesion-2026",
+      "tipo": "Procesión / Fiestas Patronales",
+      "icono": "👑",
+      "titulo": "Procesión Triunfal de la Virgen de Gracia",
+      "fecha": "Sábado 15 de agosto (20:30 h)",
+      "lugar": "Plaza Baja - Recorrido por el Centro",
+      "detalle": "Solemne procesión de la Patrona por el centro histórico. Sillas en vía pública permitidas desde las 14:00 h según Bando.",
+      "cta": "Ver itinerario y Bando",
+      "url": "./virgen-de-gracia-2026/",
+      "activo": true
+    }
+  ]
 }

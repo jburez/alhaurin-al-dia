@@ -1,5 +1,65 @@
 [
     {
+        "titulo": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para garantizar la seguridad de alumnos y docentes ante el deterioro de las instalaciones.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para garantizar la seguridad de alumnos y docentes ante el deterioro de las instalaciones.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T19:17:02.767Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-inicia-la-demolicion-de-dos-modulos-del-ceip-emilia-2.html"
+    },
+    {
+        "titulo": "Torremolinos alcanza la cifra más baja de desempleo desde 2007 en julio",
+        "descripcion": "El desempleo en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 personas sin trabajo, la cifra más baja desde noviembre de 2007, y un aumento del 3,3% en contratos respecto a 2025.",
+        "resumen": "El desempleo en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 personas sin trabajo, la cifra más baja desde noviembre de 2007, y un aumento del 3,3% en contratos respecto a 2025.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T19:11:02.387Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/torremolinos-alcanza-la-cifra-mas-baja-de-desempleo-desde-2007-en-julio.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande licita reparación de cubierta del Pabellón 2 con 282.000 euros",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del Pabellón 2 del Polideportivo Municipal, con una inversión de 282.000 euros financiada por el Gobierno de España.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la licitación para reparar la cubierta del Pabellón 2 del Polideportivo Municipal, con una inversión de 282.000 euros financiada por el Gobierno de España.",
+        "categoria": "Obras y Servicios",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T19:11:02.359Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/El-Ayuntamiento-licita-las-obras-de-reparacion-de-la-cubierta-del-pabellon-2-del-Polideportivo_01-1024x767.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-licita-reparacion-de-cubierta-del-pabellon-2-con-282-000-euros.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande inicia demolición de módulos en CEIP Emilia Olivares por seguridad",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande comienza la demolición de dos módulos del CEIP Emilia Olivares para proteger a la comunidad educativa ante riesgos estructurales.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande comienza la demolición de dos módulos del CEIP Emilia Olivares para proteger a la comunidad educativa ante riesgos estructurales.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T19:11:02.358Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-inicia-demolicion-de-modulos-en-ceip-emilia-olivares-por-seguridad.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande estrena dos rutas saludables para conectar patrimonio y naturaleza",
+        "descripcion": "Alhaurín el Grande desarrollará dos rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación del Ministerio y apoyo municipal.",
+        "resumen": "Alhaurín el Grande desarrollará dos rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación del Ministerio y apoyo municipal.",
+        "categoria": "Turismo y Patrimonio",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T19:11:02.356Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande-1024x683.jpg",
+        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-conectar-patrimonio-y-naturaleza.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande comienza demolición de módulos en CEIP Emilia Olivares por seguridad",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para garantizar la seguridad de alumnos y docentes ante el deterioro de las instalaciones.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para garantizar la seguridad de alumnos y docentes ante el deterioro de las instalaciones.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-13T19:11:02.354Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/demolicion-de-un-modulo-del-CEIP-Emilia-Olivares_01-1024x577.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-comienza-demolicion-de-modulos-en-ceip-emilia-olivares-por-seguridad.html"
+    },
+    {
         "titulo": "Torremolinos alcanza en julio la cifra de desempleo más baja desde 2007",
         "descripcion": "El paro en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3% respecto al año anterior.",
         "resumen": "El paro en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3% respecto al año anterior.",

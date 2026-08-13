@@ -8,13 +8,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/anunciarse/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/avisos/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -80,13 +80,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/sucesos/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/trafico-y-movilidad/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -104,61 +104,61 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/comercios/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/contacto/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/aparcamiento/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/bibliotecas/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/calistenia/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/campamentos/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/deportes/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/educacion/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/escuela-musica/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -176,7 +176,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-brenan/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -194,85 +194,85 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-la-variante/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-lourdes-quintela/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/jose-luis-quintela/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/maria-teresa-quintela/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/gasolineras/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/mercados-y-compras/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/movilidad/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/restaurantes/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/taxis/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/telefonos/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/tramites/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/turismo/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/veterinarios/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/vivir-en-alhaurin/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -284,7 +284,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/07-08-26-veladas-de-blanco.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -308,7 +308,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/96-golfistas-compiten-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -320,19 +320,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/96-golfistas-participan-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/96-golfistas-participan-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/a-traves-de-un-comunicado-la-hermandad-ha-expresado-su-solidaridad-con-las-familias.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -344,7 +344,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/a-traves-de-un-comunicado-la-hermandad-ha-expresado-sus-mas-sinceras-condolencias-y-se.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -356,19 +356,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/a-traves-de-un-comunicado-la-hermandad-ha-trasladado-sus-condolencias-a-las-familias.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/abierto-el-plazo-para-alegaciones-al-nuevo-plan-de-ordenacion-urbana-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/abierto-el-plazo-para-alegaciones-al-plan-de-ordenacion-urbana-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-aparcamiento-subvenciones-y-eventos-destacados.html</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -380,31 +386,31 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-mantenimiento-cultura-y-actividades-de-verano.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-mantenimiento-cultura-y-deportes-en-agosto-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-mantenimiento-eventos-y-actividades-de-agosto-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-mantenimiento-eventos-y-cultura-local-en-agosto-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-mantenimiento-eventos-y-servicios-en-agosto-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -428,7 +434,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/actualidad-en-alhaurin-el-grande-reformas-concierto-y-actividades-de-verano.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -464,7 +470,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/adquisicion-camion-electrico-el-ayuntamiento-ha-incorporado-un-camion-100-electrico.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -476,25 +482,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-en-los-proximos-dias.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados-en-planeatv 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados-en-planeatv.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -506,139 +512,139 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alerta-naranja-por-calor-en-malaga-el-terral-mantiene-temperaturas-de-hasta-40-grados.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alerta-naranja-por-calor-en-malaga-y-valle-del-guadalhorce-con-temperaturas-de-hasta-40-c 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alerta-naranja-por-calor-en-malaga-y-valle-del-guadalhorce-con-temperaturas-de-hasta-40-c.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-consulta-publica-para-nuevo-plan-de-ordenacion-urbana 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-consulta-publica-para-nuevo-plan-de-ordenacion-urbana.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-participacion-publica-para-nuevo-plan-de-ordenacion-urbana 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-participacion-publica-para-nuevo-plan-de-ordenacion-urbana.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-plazo-para-alegaciones-al-nuevo-plan-de-ordenacion-urbana.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-plazo-para-el-nuevo-plan-de-ordenacion-urbana-y-celebra-eventos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-xliii-noche-flamenca-con-artistas-de-primer-nivel 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-xliii-noche-flamenca-con-artistas-de-primer-nivel.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-xliii-noche-flamenca-con-grandes-artistas-del-genero 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-acoge-la-xliii-noche-flamenca-con-grandes-artistas-del-genero.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-apoya-productos-locales-con-subvenciones 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-apoya-productos-locales-con-subvenciones.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-concede-ayudas-a-establecimientos-locales.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-concede-ayudas-a-hosteleria-local.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-entrega-ayudas-a-hosteleros-locales.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-en-piscina-y-otorga-ayudas-a-hosteleria-local.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-piscina-y-apoya-productos-locales-con-subvenciones.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-la-creacion-del-parque-de-la-arquilla-del-agua 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-la-creacion-del-parque-de-la-arquilla-del-agua-con-inversion 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-la-creacion-del-parque-de-la-arquilla-del-agua-con-inversion.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -668,13 +674,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-en-obras-eventos-y-limpieza-de-arroyos-este-agosto-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-con-devocion-el-dia-de-nuestro-padre-jesus-nazareno.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -686,19 +692,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-emotiva-tradicion.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-fervor-y-tradicion.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-gran-fervor 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -716,7 +722,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-celebra-la-tertulia-gastronomica-del-tomate-huevo-toro-2026-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -728,13 +734,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-municipales-con-fiesta-final 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-municipales-con-fiesta-final.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -746,12 +752,18 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-municipales-con-una-gran-fiesta.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-convoca-a-celebrar-el-dia-de-la-virgen-2026-con-actividades-oficiales.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-convoca-a-celebrar-el-dia-de-la-virgen-2026-con-actos-oficiales.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -770,7 +782,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-crea-el-parque-de-la-arquilla-del-agua-con-inversion-de-1-5-millones 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -788,7 +800,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-creara-el-parque-de-la-arquilla-del-agua-con-inversion-de-1-5-millones.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -806,7 +818,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-declara-luto-oficial-por-fallecimiento-del-juez-de-paz-diego-solano.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -824,19 +836,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-con-obras-y-eventos-locales.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-con-proyectos-municipales-clave 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-despide-a-diego-solano-y-avanza-con-proyectos-municipales-clave.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -848,31 +860,31 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-el-tomate-huevo-toro-como-simbolo-de-identidad-y-sostenibilidad 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-el-tomate-huevo-toro-como-simbolo-de-identidad-y-sostenibilidad.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destaca-el-tomate-huevo-toro-como-simbolo-local-y-sostenible.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destina-6-000-euros-para-impulsar-la-hosteleria-local-y-de-temporada 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-destina-6-000-euros-para-impulsar-la-hosteleria-local-y-de-temporada.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -890,31 +902,31 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-gestionara-19-millones-para-proyectos-y-reparaciones-tras-temporal 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-gestionara-19-millones-para-proyectos-y-reparaciones-tras-temporal.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-gestionara-casi-20-millones-para-proyectos-y-reparaciones-tras-temporal.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-gestionara-cerca-de-20-millones-de-euros-para-impulsar-proyectos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-por-su-papel-en-la-conquista-del-mundial 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -926,7 +938,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-por-su-papel-en-la-copa-mundial-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -944,7 +956,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-tras-ganar-el-mundial-con-espana.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -956,13 +968,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-tras-la-victoria-en-el-mundial-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-el-parque-de-la-arquilla-del-agua-con-1-5-millones-de-inversion 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -974,7 +986,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-el-parque-de-la-arquilla-del-agua-con-inversion-de-1-5-millones 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -986,25 +998,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-el-tomate-huevo-toro-con-el-v-torneo-de-golf.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-nuevo-parque-limpieza-de-arroyos-y-eventos-locales-en-agosto.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-nuevo-parque-y-mejora-arroyos-tras-intensas-lluvias.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-nuevo-parque-y-mejora-arroyos-tras-las-lluvias-de-verano.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1016,7 +1028,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-impulsa-nuevo-parque-y-mejora-arroyos-tras-lluvias-de-verano.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1034,7 +1046,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-incorpora-camion-electrico-y-celebra-eventos-culturales-en-julio-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1070,25 +1082,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-licita-reparacion-de-cubierta-en-pabellon-2-del-polideportivo-municipal.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-licita-reparacion-de-cubierta-en-polideportivo-municipal-por-282-000 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-licita-reparacion-de-cubierta-en-polideportivo-municipal-por-282-000.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-nuevo-centro-comercial-abierto-de-andalucia-para-impulsar-el-comercio.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1100,13 +1112,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-prepara-el-campo-de-cesped-y-eventos-culturales-en-agosto-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-prepara-el-campo-de-cesped-y-traslados-de-la-virgen-de-gracia.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1130,7 +1142,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-prepara-sus-instalaciones-y-eventos-para-agosto-de-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1178,31 +1190,31 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-refuerza-gestion-de-residuos-y-celebra-eventos-culturales-en-julio-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-refuerza-gestion-de-residuos-y-celebra-eventos-culturales-y-deportivos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-reivindica-el-tomate-huevo-toro-como-simbolo-local-y-sostenible 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-reivindica-el-tomate-huevo-toro-como-simbolo-local-y-sostenible.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-motos-municipales-y-amplia-subvenciones-para-emprendedores 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1238,25 +1250,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-vehiculos-amplia-subvenciones-y-mejora-el-ceip-ruiz-picasso 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-vehiculos-amplia-subvenciones-y-mejora-el-ceip-ruiz-picasso.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-rinde-homenaje-a-sete-fernandez-por-su-papel-en-la-victoria-mundialista.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-rinde-homenaje-a-sete-fernandez-tras-ganar-el-mundial-con-espana.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1268,7 +1280,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-se-convierte-en-centro-comercial-abierto-de-andalucia 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1298,7 +1310,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/archivo/index 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1328,13 +1340,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1346,25 +1358,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-cierran-con-fiesta 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-cierran-con-fiesta.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-con-exito.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1400,7 +1412,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/casa-pena-recibe-reconocimiento-tras-mas-de-40-anos-en-la-hosteleria-de-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1484,43 +1496,43 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-el-barrio-y-novedades-en-alhaurin-el-grande-para-agosto-y-2027.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-asociacion-musical-manuel-amador 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-asociacion-musical-manuel-amador.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-de-la-a-m-manuel-amador-en-alhaurin-el-grande-reune-a-vecinos 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-de-la-a-m-manuel-amador-en-alhaurin-el-grande-reune-a-vecinos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-de-la-a-m-manuel-amador-reune-a-vecinos-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-de-la-asociacion-musical-manuel-amador-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1532,7 +1544,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/conoce-a-los-protagonistas-que-impulsan-el-crecimiento-de-la-comarca-fedelhorce 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1544,7 +1556,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/conoce-a-los-protagonistas-que-impulsan-el-crecimiento-del-valle-del-guadalhorce.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1556,19 +1568,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/dia-de-jesus-2026-actos-del-jueves.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/durante-la-noche-el-ambiente-se-lleno-de-charangas-conciertos-magia-y-actividades.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/durante-la-velada-vecinos-y-visitantes-disfrutaron-de-charangas-conciertos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1580,7 +1592,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-acto-de-presentacion-del-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1592,7 +1604,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-ha-abierto-el-periodo-de-participacion-ciudadana.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1670,13 +1682,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-impulsa-la-creacion-del-futuro-parque-de-la-arquilla-del-agua-un-nuevo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-licita-la-reparacion-de-la-cubierta-del-pabellon-2-del-polideportivo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1688,7 +1700,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-barrio-actuara-en-alhaurin-el-grande-el-15-de-mayo-dentro-de-su-gira-30-aniversario.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1712,13 +1724,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-barrio-actuara-en-la-preferia-2027-de-alhaurin-el-grande-el-15-de-mayo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-camino-de-malaga-en-alhaurin-el-grande-acogio-las-veladas-de-blanco-con-22.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1730,6 +1742,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-centro-sesmero-incorpora-el-legado-historico-del-investigador-perez-villanua.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-centro-sesmero-suma-el-legado-historico-del-investigador-perez-villanua.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1748,19 +1766,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-evento-incluyo-charangas-conciertos-espectaculos-de-magia-animacion-y-actividades.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-inicio-de-las-obras-del-nuevo-tramo-de-la-a-357-representa-un-avance-significativo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-inicio-de-las-obras-del-nuevo-tramo-de-la-a-357-representa-un-avance-significativo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1777,98 +1795,104 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/el-objetivo-es-fomentar-la-innovacion-gastronomica-mediante-la-creacion-de-nuevos-platos.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-pregon-es-una-tradicion-que-abre-las-celebraciones-en-honor-a-la-virgen-de-gracia.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-proyecto-contempla-la-mejora-integral-de-la-cubierta-para-evitar-futuras-filtraciones.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-rvdo-padre-jose-francisco-fernandez-celebra-su-primera-misa-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-rvdo-padre-jose-francisco-fernandez-celebra-su-primera-misa-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-salon-de-actos-de-la-biblioteca-municipal-de-alhaurin-el-grande-acogio-el-xiv-pregon.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-terral-se-despide-en-malaga-con-temperaturas-de-hasta-36-grados-y-noches-muy-calidas.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-terral-se-despide-en-malaga-tras-dias-de-calor-extremo-con-hasta-36-grados 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-terral-se-despide-en-malaga-tras-dias-de-calor-extremo-con-hasta-36-grados.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-terral-se-despide-en-malaga-tras-varios-dias-de-calor-extremo-y-minimas-de-30.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-terral-se-despide-este-miercoles-con-temperaturas-de-hasta-36-grados-en-malaga.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/emotiva-graduacion-2026-en-la-escuela-infantil-de-villa-del-guadalhorce.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/emotiva-graduacion-de-la-escuela-infantil-de-villa-del-guadalhorce-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/esta-actuacion-busca-facilitar-el-transito-reducir-tiempos-de-desplazamiento-y-fomentar.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/esta-iniciativa-esta-dirigida-a-los-establecimientos-hosteleros-adheridos-a-la-marca.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/este-acto-supone-el-pistoletazo-de-salida-para-las-actividades-y-celebraciones-que-se 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/este-acto-supone-el-pistoletazo-de-salida-para-las-actividades-y-celebraciones-que-se.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1886,13 +1910,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/exito-de-la-tertulia-gastronomica-sobre-el-tomate-huevo-toro-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/exito-de-la-tertulia-gastronomica-tomate-huevo-toro-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1904,25 +1928,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/exito-del-vi-festival-de-fin-de-curso-de-la-escuela-gold-dance-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/exito-en-la-tertulia-gastronomica-del-tomate-huevo-toro-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/exito-solidario-en-la-primera-edicion-de-fitness-dance-art-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/exito-solidario-en-la-primera-edicion-de-fitness-dance-art-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1964,13 +1988,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/finalizan-los-campamentos-de-verano-de-educacion-y-deporte-en-alhaurin-el-grande-y-villa.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/finalizan-los-campamentos-de-verano-de-educacion-y-deportes-en-alhaurin-el-grande-y-villa.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1988,19 +2012,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/graduacion-2026-de-la-escuela-infantil-de-villa-del-guadalhorce-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ha-tenido-que-ser-evacuado-al-hospital-clinico-de-malaga.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/han-comenzado-las-obras-del-nuevo-tramo-de-la-a-357-una-iniciativa-clave-para-potenciar.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2012,7 +2036,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/herido-un-trabajador-de-27-anos-rescatado-de-un-bidon-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2030,19 +2054,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/joven-de-alhaurin-el-grande-participa-en-proyecto-espacial-para-estudiar-el-eclipse-solar 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/joven-de-alhaurin-el-grande-participa-en-proyecto-espacial-para-estudiar-el-eclipse-solar.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-baltasara-reunio-a-expertos-instituciones-agricultores-y-amantes-de-la-gastronomia.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2054,19 +2078,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-entidad-se-une-en-oracion-por-el-descanso-eterno-de-las-victimas-y-transmite-su.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-escuela-infantil-municipal-celebra-la-graduacion-de-su-alumnado-de-2-a-3-anos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-escuela-infantil-municipal-de-alhaurin-el-grande-celebra-la-graduacion-de-2-a-3-anos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2078,7 +2102,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-danos-por-terremotos-en-venezuela 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2108,43 +2132,43 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezuela.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-nuestro-padre-jesus-nazareno-lamenta-el-terremoto-en-venezuela 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-nuestro-padre-jesus-nazareno-lamenta-el-terremoto-en-venezuela.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-nuestro-padre-jesus-nazareno-muestra-condolencias-por-terremotos-en-venezuela.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-se-une-en-oracion-por-el-descanso-eterno-de-las-victimas-y-ofrece-su-apoyo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-se-une-en-oracion-por-el-descanso-eterno-de-las-victimas-y-ofrece-su-apoyo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-se-une-en-oracion-por-el-descanso-eterno-de-las-victimas-y-ofrece-su.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2162,13 +2186,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-jornada-destaco-por-su-variada-oferta-de-entretenimiento-que-incluyo-charangas.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-piscina-de-alhaurin-el-grande-amplia-su-aforo-tras-superar-las-6-000-reservas-en-julio.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2186,7 +2210,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-con-venezuela 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2198,7 +2222,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-y-condolencias 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2228,43 +2252,43 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-muestra-su-solidaridad-con-venezuela 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-muestra-su-solidaridad-con-venezuela.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-transmite-su-solidaridad-con-venezuela.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-transmite-su-solidaridad-y-condolencias.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-transmite-sus-condolencias-al-pueblo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-con-50-restaurantes.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-en-verano 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2276,49 +2300,49 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-18-municipios-mas.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-malaga 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-malaga-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-malaga.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-otros-municipios 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-a-alhaurin-el-grande-y-otros-municipios.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-con-50-restaurantes-en-malaga 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ruta-gastronomica-tomate-huevo-toro-2026-llega-con-50-restaurantes-en-malaga.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2336,7 +2360,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-ultima-edicion-de-las-veladas-de-blanco-en-alhaurin-el-grande-reunio-a-22 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2348,79 +2372,79 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-confirma-a-alhaurin-el-grande-como-capital-del-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-confirma-a-alhaurin-el-grande-como-capital-del-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-confirma-a-alhaurin-el-grande-como-referente-del-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-confirma-a-alhaurin-el-grande-como-referente-del-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-consagra-a-alhaurin-el-grande-como-capital-del-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-consagra-a-alhaurin-el-grande-como-capital-del-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-convierte-a-alhaurin-el-grande-en-capital-del-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-convierte-a-alhaurin-el-grande-en-capital-del-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-reafirma-a-alhaurin-el-grande-como-capital-del-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-xliii-noche-flamenca-reafirma-a-alhaurin-el-grande-como-capital-del-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-instalaciones-acuaticas-municipales-amplian-su-aforo-diario-ante-la-elevada-demanda 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-instalaciones-acuaticas-municipales-amplian-su-aforo-diario-ante-la-elevada-demanda.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-piscinas-municipales-de-alhaurin-el-grande-amplian-su-aforo-diario-a-280-plazas 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2432,7 +2456,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-veladas-de-blanco-2026-animan-el-camino-de-malaga-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2444,13 +2468,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-veladas-de-blanco-animan-el-camino-de-malaga-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-veladas-de-blanco-animan-el-camino-de-malaga-en-alhaurin-el-grande-con-22-locales 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2462,25 +2486,25 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-veladas-de-blanco-animan-el-camino-de-malaga-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-veladas-de-blanco-regresaron-a-alhaurin-el-grande-con-una-gran-participacion-de-22 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-veladas-de-blanco-regresaron-a-alhaurin-el-grande-con-una-gran-participacion-de-22.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/las-veladas-de-blanco-regresaron-con-exito-al-camino-de-malaga-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2492,13 +2516,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/licenciada-en-geografia-e-historia-se-dedicada-a-la-ensenanza-es-segunda-de-4-hermanos 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/licenciada-en-geografia-e-historia-se-dedicada-a-la-ensenanza-es-segunda-de-4-hermanos.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2516,37 +2540,37 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/los-comercios-y-bares-participantes-prepararon-ofertas-y-eventos-especiales-para-brindar 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/los-comercios-y-bares-participantes-prepararon-ofertas-y-eventos-especiales-para-brindar.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/los-invitados-al-jardin-residentes-de-la-baltasara-eva-fernandez-y-pablo-igartua 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/los-invitados-al-jardin-residentes-de-la-baltasara-eva-fernandez-y-pablo-igartua.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/los-vecinos-interesados-pueden-acceder-a-la-documentacion-oficial-y-enviar-sus 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/los-vecinos-interesados-pueden-acceder-a-la-documentacion-oficial-y-enviar-sus.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2558,13 +2582,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/mantenimiento-del-cesped-ante-el-inminente-inicio-de-la-actividad-en-estas-instalaciones 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/mantenimiento-del-cesped-ante-el-inminente-inicio-de-la-actividad-en-estas-instalaciones.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2582,37 +2606,37 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/mari-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/mari-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-dio-inicio-a-las-celebraciones-en-honor-a-nuestra-senora-de-gracia 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-dio-inicio-a-las-celebraciones-en-honor-a-nuestra-senora-de-gracia.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-fue-la-encargada-de-pronunciar-el-pregon-generando-gran 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-fue-la-encargada-de-pronunciar-el-pregon-generando-gran.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2624,55 +2648,55 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-ofrece-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-ofrece-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-ofrecio-el-xiv-pregon-de-gloria-en-alhaurin-el-grande-dando 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-ofrecio-el-xiv-pregon-de-gloria-en-alhaurin-el-grande-dando.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-pregonera-de-este-ano-fue-presentada-por-el-pregonero-anterior 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-pregonera-de-este-ano-fue-presentada-por-el-pregonero-anterior.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-alhaurin-el-grande-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-alhaurin-el-grande-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2684,7 +2708,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/maria-del-carmen-plaza-protagonizo-el-xiv-pregon-de-gloria-en-alhaurin-el-grande-dando 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2714,49 +2738,49 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/noticias-atv-29-de-julio-2026-actualidad-de-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/noticias-atv-29-de-julio-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/noticias-atv-3-agosto-2026-actualidad-de-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/noticias-atv-3-agosto-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/noticias-atv-4-agosto-2026-actualidad-de-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/noticias-atv-4-agosto-2026-actualidad-de-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2768,43 +2792,43 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/piscinas-municipales-de-alhaurin-el-grande-amplian-aforo-diario-por-alta-demanda 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/piscinas-municipales-de-alhaurin-el-grande-amplian-aforo-diario-por-alta-demanda.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/plan-ordenacion-urbana-el-ayuntamiento-abre-hasta-el-15-de-septiembre-el-plazo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/plan-ordenacion-urbana-el-ayuntamiento-abre-hasta-el-15-de-septiembre-el-plazo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/podcast-asi-lo-vivi-con-javier-gallego-programa-32-ya-disponible 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2816,7 +2840,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-cartel-nuestra-senora-de-gracia-2026 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2828,31 +2852,31 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-de-la-ruta-gastronomica-tomate-huevo-toro-2026 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-de-la-ruta-gastronomica-tomate-huevo-toro-2026-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-de-la-ruta-gastronomica-tomate-huevo-toro-2026-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-de-la-ruta-gastronomica-tomate-huevo-toro-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentado-el-cartel-oficial-de-las-fiestas-de-nuestra-senora-de-gracia-2026-en-alhaurin 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2864,19 +2888,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentado-el-cartel-oficial-de-las-fiestas-en-honor-a-la-virgen-de-gracia-2026 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentado-el-cartel-oficial-de-las-fiestas-en-honor-a-la-virgen-de-gracia-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2888,7 +2912,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-fuentes-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2900,13 +2924,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2918,7 +2942,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-en-alhaurin-al-dia 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2930,7 +2954,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2942,19 +2966,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-ya-disponible-en-alhaurin 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-ya-disponible-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-ya-disponible-en-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2966,7 +2990,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-32-de-asi-lo-vivi-con-javier-gallego-ya-disponible-en-atv-alhaurin 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2978,12 +3002,18 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-33-de-asi-lo-vivi-con-cristobal-sanchez-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-33-de-asi-lo-vivi-con-cristobal-sanchez-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programa-completo-de-la-56-fiesta-del-ajoblanco-en-almachar-2026.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -2996,13 +3026,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-para-el-jueves 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-para-el-jueves.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3014,7 +3044,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3026,7 +3056,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3038,55 +3068,55 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/reformas-en-el-colegio-el-area-de-educacion-del-ayuntamiento-realiza-trabajos-de-mejora 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/reformas-en-el-colegio-el-area-de-educacion-del-ayuntamiento-realiza-trabajos-de-mejora.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ruta-gastronomica-tomate-huevo-toro-2026-en-alhaurin-el-grande-y-malaga 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ruta-gastronomica-tomate-huevo-toro-2026-en-alhaurin-el-grande-y-malaga-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ruta-gastronomica-tomate-huevo-toro-2026-en-alhaurin-el-grande-y-malaga-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ruta-gastronomica-tomate-huevo-toro-2026-en-alhaurin-el-grande-y-malaga.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ruta-gastronomica-tomate-huevo-toro-2026-impulsa-la-gastronomia-local-en-malaga 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ruta-gastronomica-tomate-huevo-toro-2026-impulsa-la-gastronomia-local-en-malaga.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3104,73 +3134,73 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/subvenciones-alha-boca-el-ayuntamiento-destina-6-en-alhaurin 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/subvenciones-alha-boca-el-ayuntamiento-destina-6-en-alhaurin.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/terremoto-en-venezuela.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tertulia-gastronomica-en-alhaurin-el-grande-destaca-el-tomate-huevo-toro-2026 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tertulia-gastronomica-en-alhaurin-el-grande-destaca-el-tomate-huevo-toro-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tertulia-gastronomica-tomate-huevo-toro-2026-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tertulia-gastronomica-tomate-huevo-toro-2026-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/v-torneo-de-golf-tomate-huevo-toro 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/v-torneo-de-golf-tomate-huevo-toro-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/v-torneo-de-golf-tomate-huevo-toro-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/v-torneo-de-golf-tomate-huevo-toro.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3182,7 +3212,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/villa-del-guadalhorce-despide-a-las-hermanas-doroteas-lupe-y-teresa 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3200,157 +3230,157 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/x-carrera-solidaria-nocturna-alhaurin-a-la-luz-de-la-luna-un-si-por-la-vida 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/x-carrera-solidaria-nocturna-alhaurin-a-la-luz-de-la-luna-un-si-por-la-vida.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/x-carrera-solidaria-nocturna-en-alhaurin-el-grande-reune-a-atletas-por-un-si-por-la-vida 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/x-carrera-solidaria-nocturna-en-alhaurin-el-grande-reune-a-atletas-por-un-si-por-la-vida.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-aficionados-al-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-aficionados-al-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-aficionados-con-grandes-artistas 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-aficionados-con-grandes-artistas.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-aficionados-en-una-velada-unica 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-aficionados-en-una-velada-unica.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-amantes-del-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-amantes-del-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-amantes-del-flamenco 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-amantes-del-flamenco.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada-unica 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada-unica.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-el-pele-marina-heredia-y-la-lupi 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-el-pele-marina-heredia-y-la-lupi.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-grandes-figuras-del-flamenco 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-grandes-figuras-del-flamenco.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-reafirma-a-alhaurin-el-grande-como-capital-del-arte-jondo 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-reafirma-a-alhaurin-el-grande-como-capital-del-arte-jondo.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-aficionados-en-una-velada 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3362,7 +3392,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-asistentes-en-una-velada 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3374,49 +3404,49 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada-2 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada-2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/zalea-renueva-por-duodecima-temporada-con-el-cd-alhaurino 2.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3434,13 +3464,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/sobre-nosotros/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/tiempo/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>

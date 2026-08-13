@@ -99,6 +99,7 @@
                     <button class="radar-filter-btn" data-filter="granizo">🧊 Granizo</button>
                     <button class="radar-filter-btn" data-filter="viento">💨 Viento / Incidencias</button>
                     <button class="radar-filter-btn" data-filter="arroyo">🌊 Crecida de arroyos</button>
+                    <button class="radar-filter-btn" data-filter="corte-trafico">🚧 Cortes de tráfico</button>
                 </div>
             </div>
         </section>
@@ -157,8 +158,28 @@
                         <option value="granizo">🧊 Granizo o piedra</option>
                         <option value="viento">💨 Ráfaga de viento / Rama caída</option>
                         <option value="arroyo">🌊 Crecida de arroyo (Fahala, Pasadas...)</option>
-                        <option value="incidencia">⚠️ Incidencia o corte local</option>
+                        <option value="corte-trafico">🚧 Corte de tráfico</option>
+                        <option value="incidencia">⚠️ Otra incidencia local</option>
                     </select>
+                </div>
+
+                <!-- Subtipo de corte de tráfico (visible solo cuando se selecciona corte-trafico) -->
+                <div class="form-group" id="corte-subtipo-group" style="display: none;">
+                    <label for="corte-subtipo">Motivo del corte *</label>
+                    <select id="corte-subtipo">
+                        <option value="obra">🏗️ Obra / Trabajos en la vía</option>
+                        <option value="procesion">⛪ Procesión / Evento religioso</option>
+                        <option value="evento">🎉 Evento o feria</option>
+                        <option value="accidente">🚗 Accidente o avería</option>
+                        <option value="otro">📋 Otro motivo</option>
+                    </select>
+                </div>
+
+                <!-- Campo de dirección para cortes de tráfico (geocodificación) -->
+                <div class="form-group" id="corte-direccion-group" style="display: none;">
+                    <label for="corte-direccion">Calle o dirección del corte *</label>
+                    <input type="text" id="corte-direccion" placeholder="Ej: Calle Real, Av. Gerald Brenan, Plaza Baja...">
+                    <small style="display: block; margin-top: 4px; color: var(--muted); font-size: 12px;">Escribe la calle o zona y se posicionará automáticamente en el mapa.</small>
                 </div>
 
                 <div class="form-group">
@@ -184,7 +205,7 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="cancel-report-modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Publicar en el mapa</button>
+                    <button type="submit" class="btn btn-primary" id="submit-report-btn">Publicar en el mapa</button>
                 </div>
             </form>
         </div>
@@ -221,7 +242,8 @@
             const initialReports = [
                 { id: '1', type: 'lluvia', title: 'Medición en La Cruz del Monte', val: '8.4 mm', desc: 'Lluvia constante y moderada en la zona alta.', lat: 36.6485, lng: -4.6850, name: 'Manuel G.', votes: 5, date: 'Hace 15 min' },
                 { id: '2', type: 'tormenta', title: 'Tormenta sobre la Sierra de Mijas', val: 'Rayos', desc: 'Descargas eléctricas visibles hacia la sierra.', lat: 36.6350, lng: -4.6750, name: 'Vecina de Las Palmeras', votes: 8, date: 'Hace 30 min' },
-                { id: '3', type: 'arroyo', title: 'Caudal normal en el Río Fahala', val: 'Normal', desc: 'Arroyo corriendo limpio y sin desbordamientos.', lat: 36.6520, lng: -4.6980, name: 'Protección Civil', votes: 12, date: 'Hace 45 min' }
+                { id: '3', type: 'arroyo', title: 'Caudal normal en el Río Fahala', val: 'Normal', desc: 'Arroyo corriendo limpio y sin desbordamientos.', lat: 36.6520, lng: -4.6980, name: 'Protección Civil', votes: 12, date: 'Hace 45 min' },
+                { id: '4', type: 'corte-trafico', subtype: 'procesion', title: 'Corte en Calle Real por procesión', val: 'Procesión', desc: 'Corte total de tráfico en Calle Real con motivo de la procesión de la Virgen de Gracia. Desvío por Av. Gerald Brenan.', street: 'Calle Real', lat: 36.6442, lng: -4.6895, name: 'Policía Local', votes: 15, date: 'Hace 1h' }
             ];
 
             let stored = JSON.parse(localStorage.getItem('alhaurin_radar_reports') || '[]');
@@ -229,8 +251,20 @@
 
             const markersGroup = L.layerGroup().addTo(map);
 
+            const SUBTYPE_LABELS = {
+                obra: '🏗️ Obra',
+                procesion: '⛪ Procesión',
+                evento: '🎉 Evento',
+                accidente: '🚗 Accidente',
+                otro: '📋 Otro'
+            };
+
             function getIconEmoji(type) {
-                return { lluvia: '🌧️', tormenta: '⚡', granizo: '🧊', viento: '💨', arroyo: '🌊', incidencia: '⚠️' }[type] || '📌';
+                return { lluvia: '🌧️', tormenta: '⚡', granizo: '🧊', viento: '💨', arroyo: '🌊', 'corte-trafico': '🚧', incidencia: '⚠️' }[type] || '📌';
+            }
+
+            function getTypeLabel(type) {
+                return { lluvia: 'LLUVIA', tormenta: 'TORMENTA', granizo: 'GRANIZO', viento: 'VIENTO', arroyo: 'ARROYO', 'corte-trafico': 'CORTE DE TRÁFICO', incidencia: 'INCIDENCIA' }[type] || type.toUpperCase();
             }
 
             function renderReports(filter = 'all') {
@@ -243,8 +277,9 @@
 
                 filtered.forEach(r => {
                     const iconEmoji = getIconEmoji(r.type);
+                    const typeLabel = getTypeLabel(r.type);
 
-                    // Marker en mapa
+                    // Marcador en el mapa
                     const customIcon = L.divIcon({
                         className: 'leaflet-emoji-marker',
                         html: `<div style="font-size: 26px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">${iconEmoji}</div>`,
@@ -253,9 +288,18 @@
                     });
 
                     const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(markersGroup);
+
+                    // Popup con info extra para cortes de tráfico
+                    let popupExtra = '';
+                    if (r.type === 'corte-trafico') {
+                        if (r.subtype) popupExtra += `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;margin-bottom:4px;">${SUBTYPE_LABELS[r.subtype] || r.subtype}</span><br>`;
+                        if (r.street) popupExtra += `<span style="font-size:12px;color:#64748b;">📍 ${r.street}</span><br>`;
+                    }
+
                     marker.bindPopup(`
-                        <div style="font-family: system-ui; padding: 4px;">
-                            <strong>${iconEmoji} ${r.title}</strong>
+                        <div style="font-family: system-ui; padding: 4px; max-width: 260px;">
+                            <strong>${iconEmoji} ${r.title}</strong><br>
+                            ${popupExtra}
                             <p style="margin: 4px 0; font-size: 13px;">${r.desc}</p>
                             <small style="color: #666;">Por ${r.name || 'Vecino'} · ${r.date}</small>
                         </div>
@@ -264,12 +308,21 @@
                     // Ítem en el feed lateral
                     const item = document.createElement('article');
                     item.className = 'radar-feed-item';
+
+                    let feedExtra = '';
+                    if (r.type === 'corte-trafico') {
+                        const subtypeTag = r.subtype ? `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;font-size:10px;font-weight:700;margin-left:6px;">${SUBTYPE_LABELS[r.subtype] || r.subtype}</span>` : '';
+                        const streetTag = r.street ? `<div style="font-size:12px;color:var(--muted);margin-top:4px;">📍 ${r.street}</div>` : '';
+                        feedExtra = subtypeTag + streetTag;
+                    }
+
                     item.innerHTML = `
                         <div class="radar-feed-top">
-                            <span class="radar-feed-type">${iconEmoji} ${r.type.toUpperCase()}</span>
+                            <span class="radar-feed-type">${iconEmoji} ${typeLabel}${r.type === 'corte-trafico' && r.subtype ? ` · ${SUBTYPE_LABELS[r.subtype] || r.subtype}` : ''}</span>
                             <span class="radar-feed-time">${r.date}</span>
                         </div>
                         <h3>${r.title}</h3>
+                        ${r.type === 'corte-trafico' && r.street ? `<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">📍 ${r.street}</div>` : ''}
                         <p>${r.desc}</p>
                         <div class="radar-feed-footer">
                             <span class="radar-feed-user">Por ${r.name || 'Vecino'}</span>
@@ -290,6 +343,40 @@
                     renderReports(btn.getAttribute('data-filter'));
                 });
             });
+
+            // Mostrar/ocultar campos de corte de tráfico según tipo seleccionado
+            const reportType = document.getElementById('report-type');
+            const corteSubtipoGroup = document.getElementById('corte-subtipo-group');
+            const corteDireccionGroup = document.getElementById('corte-direccion-group');
+
+            reportType.addEventListener('change', () => {
+                const isCorte = reportType.value === 'corte-trafico';
+                corteSubtipoGroup.style.display = isCorte ? 'block' : 'none';
+                corteDireccionGroup.style.display = isCorte ? 'block' : 'none';
+                if (isCorte) {
+                    document.getElementById('corte-subtipo').required = true;
+                    document.getElementById('corte-direccion').required = true;
+                } else {
+                    document.getElementById('corte-subtipo').required = false;
+                    document.getElementById('corte-direccion').required = false;
+                }
+            });
+
+            // Geocodificación con Nominatim (OpenStreetMap)
+            async function geocodeStreet(streetName) {
+                const query = `${streetName}, Alhaurín el Grande, Málaga, España`;
+                try {
+                    const resp = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1&countrycodes=es`);
+                    const data = await resp.json();
+                    if (data.length > 0) {
+                        return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+                    }
+                } catch (err) {
+                    console.warn('Geocodificación fallida:', err);
+                }
+                // Fallback: centro de Alhaurín con dispersión
+                return { lat: 36.6439 + (Math.random() - 0.5) * 0.008, lng: -4.6892 + (Math.random() - 0.5) * 0.008 };
+            }
 
             // Funciones de control estricto del Modal
             const modal = document.getElementById('report-modal');
@@ -321,7 +408,7 @@
             });
 
             // Guardar nuevo reporte
-            document.getElementById('report-form').addEventListener('submit', (e) => {
+            document.getElementById('report-form').addEventListener('submit', async (e) => {
                 e.preventDefault();
                 const type = document.getElementById('report-type').value;
                 const title = document.getElementById('report-title').value;
@@ -329,13 +416,34 @@
                 const name = document.getElementById('report-name').value || 'Vecino de Alhaurín';
                 const val = document.getElementById('report-val').value;
 
-                // Coordenadas con pequeña dispersión alrededor del centro
-                const lat = 36.6439 + (Math.random() - 0.5) * 0.02;
-                const lng = -4.6892 + (Math.random() - 0.5) * 0.02;
+                let lat, lng, subtype = null, street = null;
+
+                if (type === 'corte-trafico') {
+                    subtype = document.getElementById('corte-subtipo').value;
+                    street = document.getElementById('corte-direccion').value;
+
+                    // Geocodificar dirección
+                    const submitBtn = document.getElementById('submit-report-btn');
+                    submitBtn.textContent = 'Localizando en mapa...';
+                    submitBtn.disabled = true;
+
+                    const coords = await geocodeStreet(street);
+                    lat = coords.lat;
+                    lng = coords.lng;
+
+                    submitBtn.textContent = 'Publicar en el mapa';
+                    submitBtn.disabled = false;
+                } else {
+                    // Coordenadas con pequeña dispersión alrededor del centro
+                    lat = 36.6439 + (Math.random() - 0.5) * 0.02;
+                    lng = -4.6892 + (Math.random() - 0.5) * 0.02;
+                }
 
                 const newReport = {
                     id: String(Date.now()),
                     type,
+                    subtype,
+                    street,
                     title,
                     desc: desc || `${title} (${val || 'Sin dato registrado'})`,
                     val: val || 'Registrado',
@@ -353,6 +461,9 @@
                 renderReports();
                 hideModal();
                 e.target.reset();
+                // Ocultar campos de corte de tráfico al resetear
+                corteSubtipoGroup.style.display = 'none';
+                corteDireccionGroup.style.display = 'none';
                 alert('¡Tu reporte vecinal ha sido publicado con éxito en el mapa!');
             });
         });

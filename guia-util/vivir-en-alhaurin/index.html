@@ -20,11 +20,12 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/ads.css">
     <style>
-        .editorial-page-wrap { padding: 12px 0 40px; background: #fbf9f5; }
+        .editorial-page-wrap { padding: 32px 0 60px; background: #fbf9f5; }
         .editorial-container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
 
         .editorial-breadcrumbs { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #666666; margin-bottom: 24px; flex-wrap: wrap; justify-content: flex-start; width: auto; }
@@ -34,7 +35,7 @@
 
         .editorial-main-card { background: #ffffff; border: 1px solid var(--line); border-radius: 8px; padding: clamp(20px, 4vw, 32px); box-shadow: var(--shadow-soft); }
         .editorial-header-tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 4px; background: rgba(69, 92, 54, 0.08); color: #455c36; font-size: 12px; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 14px; }
-        .editorial-main-card h1 { font-family: inherit; font-size: clamp(26px, 4vw, 36px); color: #181d17; margin: 0 0 12px; line-height: 1.25; font-weight: 700; }
+        .editorial-main-card h1 { font-family: 'Fraunces', Georgia, serif; font-size: clamp(26px, 4vw, 36px); color: #181d17; margin: 0 0 12px; line-height: 1.25; font-weight: 700; }
         .editorial-lead { font-size: 16px; color: #555555; line-height: 1.6; margin: 0 0 28px; }
 
         .editorial-buttons-group { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid #efe9de; }
@@ -42,7 +43,7 @@
         .editorial-btn-link:hover { background: #354829; color: #ffffff; transform: translateY(-1px); }
         .editorial-btn-link .btn-arrow { font-size: 12px; opacity: 0.9; }
 
-        .editorial-section-heading { font-family: inherit; font-size: 20px; color: #181d17; margin: 0 0 18px; font-weight: 700; }
+        .editorial-section-heading { font-family: 'Fraunces', Georgia, serif; font-size: 20px; color: #181d17; margin: 0 0 18px; font-weight: 700; }
         .editorial-steps-wrapper { display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
         .editorial-step-card { display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; border-radius: 6px; background: #fbf9f5; border: 1px solid #eae3d5; }
         .editorial-step-bullet { width: 24px; height: 24px; border-radius: 4px; background: rgba(69, 92, 54, 0.12); color: #455c36; font-weight: 900; font-size: 12px; display: grid; place-items: center; flex-shrink: 0; margin-top: 2px; }
@@ -131,7 +132,7 @@
     <header><div class="container"><nav aria-label="Navegación principal">
         <a class="logo" href="/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/seguimiento/">Seguimiento</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a><button type="button" class="nav-search-btn search-toggle" aria-label="Buscar en la web">🔍 Buscar</button></div>
+        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
     <main class="editorial-page-wrap">
         <div class="editorial-container">
@@ -142,9 +143,22 @@
             </nav>
 
             <article class="editorial-main-card">
-                <span class="section-kicker">🏡 Vivir en Alhaurín</span>
+                <div class="editorial-header-tag"><span>🏡</span> <span>Vivir en Alhaurín</span></div>
                 <h1>Guía para nuevos residentes</h1>
-<h2 class="editorial-section-heading">Información práctica y accesos</h2>
+                <p class="editorial-lead">Pasos clave al mudarte a Alhaurín el Grande: empadronamiento, altas de suministros, centros de salud y servicios de barrio.</p>
+
+                
+                <div class="editorial-buttons-group">
+                    
+    <a href="https://alhaurinelgrande.sedelectronica.es/" target="_blank" rel="noopener noreferrer" class="editorial-btn-link">
+      <span>Sede Electrónica del Ayuntamiento</span>
+      <span class="btn-arrow">↗</span>
+    </a>
+  
+                </div>
+                
+
+                <h2 class="editorial-section-heading">Información práctica y accesos</h2>
                 <div class="editorial-steps-wrapper">
                     
       <div class="editorial-step-card">

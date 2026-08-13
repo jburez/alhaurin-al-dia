@@ -24,7 +24,7 @@
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/ads.css">
@@ -54,7 +54,17 @@
                     <span></span>
                 </button>
 
-                <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/seguimiento/">Seguimiento</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a><button type="button" class="nav-search-btn search-toggle" aria-label="Buscar en la web">🔍 Buscar</button></div>
+                <div class="nav-links" id="main-menu">
+                    <a href="../noticias/">Noticias</a>
+                    <a href="../guia-util/">Guía útil</a>
+                    <a href="../avisos/">Avisos</a>
+                    <a href="../boletin-oficial/">Boletín oficial</a>
+                    <a href="./">Tiempo</a>
+                    <a href="../seguimiento/">Seguimiento</a>
+                    <a href="../planes/">Planes</a>
+                    <a href="../comercios/">Comercios</a>
+                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -68,15 +78,9 @@
                         <span class="section-kicker">Meteorología en tiempo real</span>
                         <h1>El tiempo en Alhaurín el Grande</h1>
                     </div>
-                    <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-                        <a class="btn btn-secondary" href="./prevision-horaria/">⏱️ Horaria 48h</a>
-                        <a class="btn btn-secondary" href="./radar/">🌧️ Radar lluvia</a>
-                        <a class="btn btn-secondary" href="./comparador/">📊 Comparador</a>
-                        <a class="btn btn-secondary" href="./agro/">🌾 MeteoAgro</a>
-                    </div>
-                    <div class="weather-live-badge" style="margin-top: 6px;">
+                    <div class="weather-live-badge">
                         <span class="live-dot"></span>
-                        <span id="last-update-time">Actualizando datos...</span>
+                        <span>Actualizado 13 de agosto de 2026 a las 11:11</span>
                     </div>
                 </div>
             </div>
@@ -443,102 +447,6 @@
     </footer>
 
     <script src="../js/app.js" defer></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-        // Fetch real-time data from Open-Meteo
-        try {
-            const url = 'https://api.open-meteo.com/v1/forecast?latitude=36.6439&longitude=-4.6892&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m,cloud_cover,uv_index&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_speed_10m_max,uv_index_max&timezone=Europe%2FMadrid&forecast_days=2';
-            const res = await fetch(url);
-            if (!res.ok) return;
-            const data = await res.json();
-            const c = data.current;
-            const d = data.daily;
-
-            if (!c || !d) return;
-
-            // Update spotlight
-            const wcode = c.weather_code;
-            const weatherEmoji = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'🌨️',80:'🌧️',81:'🌧️',82:'🌧️',95:'⛈️',96:'⛈️',99:'⛈️'};
-            const weatherText = {0:'Despejado',1:'Poco nuboso',2:'Parcialmente nublado',3:'Nublado',45:'Niebla',48:'Niebla',51:'Llovizna ligera',53:'Llovizna',55:'Llovizna intensa',61:'Lluvia ligera',63:'Lluvia moderada',65:'Lluvia intensa',71:'Nieve ligera',73:'Nieve',75:'Nieve intensa',80:'Chubascos',81:'Chubascos fuertes',82:'Chubascos intensos',95:'Tormenta',96:'Tormenta con granizo',99:'Tormenta con granizo'};
-
-            const hugeIcon = document.querySelector('.weather-huge-icon');
-            const hugeTemp = document.querySelector('.weather-huge-temp');
-            const skyText = document.querySelector('.weather-sky-text');
-            if (hugeIcon) hugeIcon.textContent = weatherEmoji[wcode] || '🌤️';
-            if (hugeTemp) hugeTemp.textContent = Math.round(c.temperature_2m) + '°C';
-            if (skyText) skyText.textContent = (weatherText[wcode] || 'Variable') + ' · Mínima ' + Math.round(d.temperature_2m_min[0]) + '°C';
-
-            // Update metric pills
-            const pills = document.querySelectorAll('.metric-pill');
-            if (pills[0]) pills[0].innerHTML = '<span class="metric-icon">🌡️</span><span><strong>Máx/Mín:</strong> ' + Math.round(d.temperature_2m_max[0]) + '° / ' + Math.round(d.temperature_2m_min[0]) + '°C</span>';
-            if (pills[1]) pills[1].innerHTML = '<span class="metric-icon">💧</span><span><strong>Lluvia:</strong> ' + (d.precipitation_probability_max[0] || 0) + '% prob.</span>';
-
-            const windDir = ['N','NE','E','SE','S','SO','O','NO'];
-            const dir = windDir[Math.round(c.wind_direction_10m / 45) % 8];
-            if (pills[2]) pills[2].innerHTML = '<span class="metric-icon">💨</span><span><strong>Viento:</strong> ' + Math.round(c.wind_speed_10m) + ' km/h ' + dir + '</span>';
-            if (pills[3]) pills[3].innerHTML = '<span class="metric-icon">☀️</span><span><strong>Índice UV:</strong> ' + Math.round(d.uv_index_max[0]) + ' (' + (d.uv_index_max[0] >= 8 ? 'Muy Alto' : d.uv_index_max[0] >= 6 ? 'Alto' : d.uv_index_max[0] >= 3 ? 'Moderado' : 'Bajo') + ')</span>';
-
-            // Update lifestyle indices dynamically
-            const temp = c.temperature_2m;
-            const hum = c.relative_humidity_2m;
-            const wind = c.wind_speed_10m;
-            const rain48 = (d.precipitation_sum[0] || 0) + (d.precipitation_sum[1] || 0);
-            const rainProb = d.precipitation_probability_max[0] || 0;
-            const uvMax = d.uv_index_max[0] || 0;
-
-            // Tender ropa
-            const actCards = document.querySelectorAll('.activity-card');
-            if (actCards[0]) {
-                let laundryStatus, laundryDetail;
-                if (rainProb < 10 && hum < 60 && wind > 5) { laundryStatus = 'Excelente'; laundryDetail = 'Secado muy rápido (' + rainProb + '% riesgo lluvia)'; }
-                else if (rainProb < 30 && hum < 70) { laundryStatus = 'Bueno'; laundryDetail = 'Condiciones favorables (' + rainProb + '% riesgo)'; }
-                else if (rainProb < 60) { laundryStatus = 'Regular'; laundryDetail = 'Riesgo moderado de lluvia (' + rainProb + '%)'; }
-                else { laundryStatus = 'No recomendado'; laundryDetail = 'Alta probabilidad de lluvia (' + rainProb + '%)'; }
-                actCards[0].querySelector('.activity-status').textContent = laundryStatus;
-                actCards[0].querySelector('.activity-detail').textContent = laundryDetail;
-            }
-
-            // Lavar el coche
-            if (actCards[1]) {
-                let carStatus, carDetail;
-                if (rain48 < 0.5 && rainProb < 15) { carStatus = 'Muy recomendado'; carDetail = 'Sin lluvia prevista en 48h'; }
-                else if (rain48 < 2 && rainProb < 40) { carStatus = 'Aceptable'; carDetail = rain48.toFixed(1) + ' mm previstos en 48h'; }
-                else { carStatus = 'No recomendado'; carDetail = rain48.toFixed(1) + ' mm previstos, espera unos días'; }
-                actCards[1].querySelector('.activity-status').textContent = carStatus;
-                actCards[1].querySelector('.activity-detail').textContent = carDetail;
-            }
-
-            // Deporte exterior
-            if (actCards[2]) {
-                let sportStatus, sportDetail;
-                if (temp < 30 && wind < 30 && rainProb < 20 && uvMax < 8) { sportStatus = 'Ideal'; sportDetail = temp + '°C, viento suave, UV ' + Math.round(uvMax); }
-                else if (temp < 35 && rainProb < 40) { sportStatus = 'Horas frescas'; sportDetail = 'Evitar 13:00-19:00h por calor (' + Math.round(temp) + '°C)'; }
-                else if (temp >= 35 || uvMax >= 10) { sportStatus = 'Precaución'; sportDetail = 'Calor extremo (' + Math.round(temp) + '°C) o UV muy alto'; }
-                else { sportStatus = 'No recomendado'; sportDetail = 'Condiciones adversas para actividad al aire libre'; }
-                actCards[2].querySelector('.activity-status').textContent = sportStatus;
-                actCards[2].querySelector('.activity-detail').textContent = sportDetail;
-            }
-
-            // Polen (seasonal estimate)
-            if (actCards[3]) {
-                const month = new Date().getMonth();
-                let polenStatus, polenDetail;
-                if (month >= 3 && month <= 5) { polenStatus = 'Alto'; polenDetail = 'Temporada de gramíneas y olivo'; }
-                else if (month >= 1 && month <= 2) { polenStatus = 'Moderado'; polenDetail = 'Ciprés y arizónica activos'; }
-                else if (month >= 6 && month <= 7) { polenStatus = 'Bajo / Moderado'; polenDetail = 'Fin de temporada de gramíneas'; }
-                else { polenStatus = 'Bajo'; polenDetail = 'Nivel estacional bajo para Alhaurín'; }
-                actCards[3].querySelector('.activity-status').textContent = polenStatus;
-                actCards[3].querySelector('.activity-detail').textContent = polenDetail;
-            }
-
-            // Update timestamp
-            const now = new Date();
-            document.getElementById('last-update-time').textContent = 'Actualizado ' + now.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) + ' a las ' + now.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-        } catch (e) {
-            console.log('Error cargando datos Open-Meteo:', e);
-        }
-    });
-    </script>
 </body>
 
 </html>

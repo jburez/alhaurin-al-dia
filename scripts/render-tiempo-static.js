@@ -1,4 +1,51 @@
-<!doctype html>
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.join(__dirname, '..');
+const TIEMPO_HTML_PATH = path.join(ROOT, 'tiempo', 'index.html');
+const TIEMPO_JSON_PATH = path.join(ROOT, 'data', 'tiempo-aemet.json');
+
+function readJSON(filePath, fallback = null) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch (err) {
+    return fallback;
+  }
+}
+
+function escapeHTML(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function renderTiempoPage() {
+  const weatherData = readJSON(TIEMPO_JSON_PATH, {
+    actualizado: new Date().toISOString(),
+    item: {
+      valor: '26º',
+      icono: '☀️',
+      detalle: 'Despejado · Máx. 35º / Mín. 24º',
+      fuente: 'AEMET'
+    }
+  });
+
+  const item = weatherData.item || {};
+  const temp = item.valor || '26º';
+  const icono = item.icono || '☀️';
+  const detalle = item.detalle || 'Despejado · Máx. 35º / Mín. 24º';
+  const fechaStr = new Date(weatherData.actualizado || Date.now()).toLocaleDateString('es-ES', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+
+  const htmlContent = `<!doctype html>
 <html lang="es">
 
 <head>
@@ -79,7 +126,7 @@
                     </div>
                     <div class="weather-live-badge">
                         <span class="live-dot"></span>
-                        <span>Actualizado 13 de agosto de 2026 a las 09:53</span>
+                        <span>Actualizado ${escapeHTML(fechaStr)}</span>
                     </div>
                 </div>
             </div>
@@ -91,10 +138,10 @@
                 <!-- RESUMEN DESTACADO DE CABECERA -->
                 <div class="weather-spotlight-card">
                     <div class="weather-spotlight-main">
-                        <span class="weather-huge-icon">☀️</span>
+                        <span class="weather-huge-icon">${escapeHTML(icono)}</span>
                         <div>
-                            <div class="weather-huge-temp">26º</div>
-                            <div class="weather-sky-text">Despejado · Máx. 35º / Mín. 24º</div>
+                            <div class="weather-huge-temp">${escapeHTML(temp)}</div>
+                            <div class="weather-sky-text">${escapeHTML(detalle)}</div>
                         </div>
                     </div>
                     <div class="weather-metrics-pills">
@@ -185,3 +232,10 @@
 </body>
 
 </html>
+`;
+
+  fs.writeFileSync(TIEMPO_HTML_PATH, htmlContent, 'utf8');
+  console.log('tiempo/index.html regenerado estáticamente con widgets prominentes de Andalmet.');
+}
+
+renderTiempoPage();

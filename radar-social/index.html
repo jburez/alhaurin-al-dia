@@ -142,7 +142,7 @@
     </main>
 
     <!-- MODAL DE PUBLICACIÓN DE REPORTE VECINAL -->
-    <div class="modal-overlay" id="report-modal" hidden>
+    <div class="modal-overlay" id="report-modal" style="display: none !important;" hidden>
         <div class="modal-card">
             <div class="modal-header">
                 <h2>🚀 Publicar reporte vecinal</h2>
@@ -291,20 +291,33 @@
                 });
             });
 
-            // Modal de publicación
+            // Funciones de control estricto del Modal
             const modal = document.getElementById('report-modal');
-            document.getElementById('open-report-modal').addEventListener('click', () => modal.hidden = false);
-            document.getElementById('close-report-modal').addEventListener('click', () => modal.hidden = true);
-            document.getElementById('cancel-report-modal').addEventListener('click', () => modal.hidden = true);
+
+            function showModal() {
+                modal.hidden = false;
+                modal.classList.add('open');
+                modal.style.setProperty('display', 'flex', 'important');
+            }
+
+            function hideModal() {
+                modal.hidden = true;
+                modal.classList.remove('open');
+                modal.style.setProperty('display', 'none', 'important');
+            }
+
+            document.getElementById('open-report-modal').addEventListener('click', showModal);
+            document.getElementById('close-report-modal').addEventListener('click', hideModal);
+            document.getElementById('cancel-report-modal').addEventListener('click', hideModal);
 
             // Cerrar modal al hacer clic en el fondo gris fuera de la tarjeta
             modal.addEventListener('click', (e) => {
-                if (e.target === modal) modal.hidden = true;
+                if (e.target === modal) hideModal();
             });
 
             // Cerrar modal al pulsar tecla Escape
             document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && !modal.hidden) modal.hidden = true;
+                if (e.key === 'Escape') hideModal();
             });
 
             // Guardar nuevo reporte
@@ -338,7 +351,7 @@
                 localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
 
                 renderReports();
-                modal.hidden = true;
+                hideModal();
                 e.target.reset();
                 alert('¡Tu reporte vecinal ha sido publicado con éxito en el mapa!');
             });

@@ -1277,10 +1277,14 @@
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
     z-index: 1000;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 16px;
+}
+
+.modal-overlay.open {
+    display: flex !important;
 }
 
 .modal-overlay[hidden] {

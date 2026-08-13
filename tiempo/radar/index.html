@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radar de Lluvia en Tiempo Real — Alhaurín el Grande | Alhaurín al Día</title>
+    <meta name="description" content="Radar de precipitación en tiempo real centrado en Alhaurín el Grande. Animación de las últimas 2 horas con datos RainViewer." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/tiempo/radar/">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="Radar de Lluvia en Tiempo Real — Alhaurín el Grande" />
+    <meta property="og:description" content="Radar de precipitación animado centrado en Alhaurín el Grande y el Valle del Guadalhorce." />
+    <meta property="og:url" content="https://alhaurinaldia.es/tiempo/radar/" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #0f172a; color: #e2e8f0; overflow: hidden; height: 100vh; }
+
+        .radar-nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 8px 16px;
+            background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .radar-nav-left { display: flex; align-items: center; gap: 10px; }
+        .radar-nav-left a { color: #94a3b8; text-decoration: none; font-size: 13px; font-weight: 600; }
+        .radar-nav-left a:hover { color: #e2e8f0; }
+        .radar-nav-title { font-size: 14px; font-weight: 700; color: #e2e8f0; }
+        .radar-nav-right { display: flex; align-items: center; gap: 8px; }
+        .radar-btn {
+            appearance: none; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06);
+            color: #e2e8f0; border-radius: 4px; padding: 6px 10px; font: inherit; font-size: 12px;
+            font-weight: 600; cursor: pointer;
+        }
+        .radar-btn:hover { background: rgba(255,255,255,0.12); }
+        .radar-btn.active { background: #3b82f6; border-color: #3b82f6; }
+
+        #radar-map { position: fixed; top: 0; left: 0; right: 0; bottom: 64px; z-index: 1; }
+
+        .radar-controls {
+            position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(15, 23, 42, 0.92); backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 10px 16px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .ctrl-btn {
+            appearance: none; border: none; background: none; color: #e2e8f0;
+            font-size: 18px; cursor: pointer; padding: 4px; width: 32px; height: 32px;
+            display: flex; align-items: center; justify-content: center; border-radius: 4px;
+        }
+        .ctrl-btn:hover { background: rgba(255,255,255,0.1); }
+        .ctrl-btn.playing { color: #3b82f6; }
+
+        .progress-bar {
+            flex: 1; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px;
+            position: relative; cursor: pointer;
+        }
+        .progress-fill {
+            height: 100%; background: #3b82f6; border-radius: 2px; transition: width 0.3s ease;
+        }
+        .time-display {
+            font-size: 12px; font-weight: 600; color: #94a3b8; min-width: 110px; text-align: right;
+        }
+
+        .speed-select {
+            appearance: none; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06);
+            color: #e2e8f0; border-radius: 4px; padding: 4px 6px; font: inherit; font-size: 11px;
+        }
+
+        .opacity-ctrl { display: flex; align-items: center; gap: 4px; }
+        .opacity-ctrl label { font-size: 11px; color: #64748b; }
+        .opacity-ctrl input[type="range"] { width: 60px; accent-color: #3b82f6; }
+
+        .legend-box {
+            position: fixed; right: 12px; top: 56px; z-index: 1000;
+            background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 10px;
+        }
+        .legend-title { font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.04em; }
+        .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; margin-bottom: 3px; }
+        .legend-color { width: 16px; height: 10px; border-radius: 2px; }
+
+        @media (max-width: 600px) {
+            .radar-nav { padding: 6px 10px; }
+            .radar-controls { padding: 8px 10px; gap: 6px; }
+            .legend-box { display: none; }
+            .opacity-ctrl { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="radar-nav">
+        <div class="radar-nav-left">
+            <a href="../">← Tiempo</a>
+            <span class="radar-nav-title">🌧️ Radar de Lluvia · Alhaurín el Grande</span>
+        </div>
+        <div class="radar-nav-right">
+            <button class="radar-btn" id="btn-street">Mapa</button>
+            <button class="radar-btn active" id="btn-dark">Oscuro</button>
+            <button class="radar-btn" id="btn-geo" title="Mi ubicación">📍</button>
+        </div>
+    </nav>
+
+    <div id="radar-map"></div>
+
+    <div class="legend-box">
+        <div class="legend-title">Intensidad (mm/h)</div>
+        <div class="legend-item"><div class="legend-color" style="background:#a0f0a0;"></div> &lt; 1 Llovizna</div>
+        <div class="legend-item"><div class="legend-color" style="background:#00c800;"></div> 1–4 Ligera</div>
+        <div class="legend-item"><div class="legend-color" style="background:#ffff00;"></div> 4–10 Moderada</div>
+        <div class="legend-item"><div class="legend-color" style="background:#ffa500;"></div> 10–30 Fuerte</div>
+        <div class="legend-item"><div class="legend-color" style="background:#ff0000;"></div> 30–60 Intensa</div>
+        <div class="legend-item"><div class="legend-color" style="background:#c800c8;"></div> &gt; 60 Torrencial</div>
+    </div>
+
+    <div class="radar-controls">
+        <button class="ctrl-btn" id="btn-prev" title="Frame anterior">⏮</button>
+        <button class="ctrl-btn" id="btn-play" title="Play/Pausa">▶️</button>
+        <button class="ctrl-btn" id="btn-next" title="Frame siguiente">⏭</button>
+        <div class="progress-bar" id="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%;"></div>
+        </div>
+        <span class="time-display" id="time-display">Cargando...</span>
+        <select class="speed-select" id="speed-select">
+            <option value="1000">0.5x</option>
+            <option value="500" selected>1x</option>
+            <option value="250">2x</option>
+        </select>
+        <div class="opacity-ctrl">
+            <label>Opacidad</label>
+            <input type="range" id="opacity-range" min="20" max="100" value="70">
+        </div>
+    </div>
+
+    <script>
+    (function() {
+        // Map setup
+        const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 18, attribution: '© CartoDB © OSM'
+        });
+        const streetTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18, attribution: '© OpenStreetMap'
+        });
+
+        const map = L.map('radar-map', { zoomControl: false, layers: [darkTiles] }).setView([36.6439, -4.6892], 9);
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+        // Alhaurín marker
+        L.circleMarker([36.6439, -4.6892], {
+            radius: 6, color: '#3b82f6', fillColor: '#3b82f6', fillOpacity: 0.8, weight: 2
+        }).addTo(map).bindPopup('<strong>Alhaurín el Grande</strong>');
+
+        // Tile layer buttons
+        let currentBase = 'dark';
+        document.getElementById('btn-dark').addEventListener('click', () => {
+            map.removeLayer(streetTiles); map.addLayer(darkTiles); currentBase = 'dark';
+            document.getElementById('btn-dark').classList.add('active');
+            document.getElementById('btn-street').classList.remove('active');
+        });
+        document.getElementById('btn-street').addEventListener('click', () => {
+            map.removeLayer(darkTiles); map.addLayer(streetTiles); currentBase = 'street';
+            document.getElementById('btn-street').classList.add('active');
+            document.getElementById('btn-dark').classList.remove('active');
+        });
+
+        // Geolocation
+        document.getElementById('btn-geo').addEventListener('click', () => {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(pos => {
+                    map.setView([pos.coords.latitude, pos.coords.longitude], 11);
+                });
+            }
+        });
+
+        // RainViewer integration
+        let radarFrames = [];
+        let currentFrame = 0;
+        let radarLayer = null;
+        let playing = false;
+        let interval = null;
+        let speed = 500;
+        let opacity = 0.7;
+
+        async function loadRadarData() {
+            try {
+                const res = await fetch('https://api.rainviewer.com/public/weather-maps.json');
+                const data = await res.json();
+                radarFrames = [...(data.radar?.past || []), ...(data.radar?.nowcast || [])];
+                if (radarFrames.length > 0) {
+                    currentFrame = 0;
+                    showFrame(0);
+                    document.getElementById('time-display').textContent = formatTime(radarFrames[0].time);
+                }
+            } catch (e) {
+                document.getElementById('time-display').textContent = 'Error al cargar radar';
+            }
+        }
+
+        function showFrame(idx) {
+            if (radarLayer) map.removeLayer(radarLayer);
+            const frame = radarFrames[idx];
+            if (!frame) return;
+            radarLayer = L.tileLayer(`https://tilecache.rainviewer.com${frame.path}/256/{z}/{x}/{y}/2/1_1.png`, {
+                opacity: opacity, zIndex: 10
+            }).addTo(map);
+            const pct = ((idx + 1) / radarFrames.length) * 100;
+            document.getElementById('progress-fill').style.width = pct + '%';
+            document.getElementById('time-display').textContent = formatTime(frame.time);
+        }
+
+        function formatTime(ts) {
+            const d = new Date(ts * 1000);
+            return d.toLocaleString('es-ES', { hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'short' });
+        }
+
+        function play() {
+            playing = true;
+            document.getElementById('btn-play').textContent = '⏸';
+            document.getElementById('btn-play').classList.add('playing');
+            interval = setInterval(() => {
+                currentFrame = (currentFrame + 1) % radarFrames.length;
+                showFrame(currentFrame);
+            }, speed);
+        }
+
+        function pause() {
+            playing = false;
+            document.getElementById('btn-play').textContent = '▶️';
+            document.getElementById('btn-play').classList.remove('playing');
+            clearInterval(interval);
+        }
+
+        document.getElementById('btn-play').addEventListener('click', () => playing ? pause() : play());
+        document.getElementById('btn-prev').addEventListener('click', () => {
+            pause(); currentFrame = (currentFrame - 1 + radarFrames.length) % radarFrames.length; showFrame(currentFrame);
+        });
+        document.getElementById('btn-next').addEventListener('click', () => {
+            pause(); currentFrame = (currentFrame + 1) % radarFrames.length; showFrame(currentFrame);
+        });
+        document.getElementById('speed-select').addEventListener('change', (e) => {
+            speed = parseInt(e.target.value);
+            if (playing) { pause(); play(); }
+        });
+        document.getElementById('opacity-range').addEventListener('input', (e) => {
+            opacity = e.target.value / 100;
+            if (radarLayer) radarLayer.setOpacity(opacity);
+        });
+        document.getElementById('progress-bar').addEventListener('click', (e) => {
+            const rect = e.target.getBoundingClientRect();
+            const pct = (e.clientX - rect.left) / rect.width;
+            currentFrame = Math.floor(pct * radarFrames.length);
+            showFrame(currentFrame);
+        });
+
+        loadRadarData();
+        // Auto-play after 1 second
+        setTimeout(() => play(), 1000);
+    })();
+    </script>
+</body>
+</html>

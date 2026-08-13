@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Previsión Horaria — Alhaurín el Grande | Alhaurín al Día</title>
+    <meta name="description" content="Previsión meteorológica hora a hora para Alhaurín el Grande. Temperatura, lluvia, viento, humedad y más con gráficas interactivas a 48h y 7 días." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/tiempo/prevision-horaria/">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="Previsión Horaria — Alhaurín el Grande" />
+    <meta property="og:description" content="Previsión hora a hora con gráficas de temperatura, precipitación y viento para Alhaurín el Grande." />
+    <meta property="og:url" content="https://alhaurinaldia.es/tiempo/prevision-horaria/" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/mobile.css">
+    <link rel="stylesheet" href="../../css/ads.css">
+    <link rel="stylesheet" href="../../css/home-live.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .forecast-page { padding: 24px 0 48px; }
+        .forecast-header h1 { font-size: clamp(20px, 3vw, 28px); font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+        .forecast-sub { color: var(--muted); font-size: 14px; margin: 4px 0 16px; }
+        .range-tabs { display: flex; gap: 4px; margin-bottom: 20px; }
+        .range-tab { appearance: none; border: 1px solid var(--line); background: #fff; color: var(--muted); border-radius: 4px; padding: 6px 12px; font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+        .range-tab.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+        .timeline-scroll { overflow-x: auto; margin-bottom: 20px; -webkit-overflow-scrolling: touch; }
+        .timeline-strip { display: flex; gap: 2px; min-width: max-content; }
+        .tl-hour { flex-shrink: 0; width: 58px; background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 8px 4px; text-align: center; font-size: 11px; }
+        .tl-hour.is-now { background: #eff6ff; border-color: #3b82f6; }
+        .tl-hour.day-start { border-left: 2px solid var(--ink); }
+        .tl-time { font-weight: 700; font-size: 11px; color: var(--ink); }
+        .tl-icon { font-size: 20px; margin: 4px 0; }
+        .tl-temp { font-weight: 700; font-size: 13px; color: var(--ink); }
+        .tl-rain { font-size: 10px; color: #3b82f6; font-weight: 600; }
+        .tl-wind { font-size: 10px; color: var(--muted); }
+        .tl-day-label { flex-shrink: 0; width: 58px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--ink); background: var(--paper-soft); border-radius: 4px; padding: 4px; }
+        .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
+        .chart-box { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 14px; }
+        .chart-box h3 { margin: 0 0 10px; font-size: 13px; font-weight: 700; }
+        .chart-box canvas { width: 100% !important; max-height: 240px; }
+        .hourly-table-card { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 14px; }
+        .hourly-table-card h3 { margin: 0 0 10px; font-size: 13px; font-weight: 700; }
+        .table-scroll { overflow-x: auto; }
+        .hourly-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        .hourly-table th, .hourly-table td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: center; white-space: nowrap; }
+        .hourly-table th { background: var(--paper-soft); font-weight: 700; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; position: sticky; top: 0; }
+        .hourly-table td:first-child { text-align: left; font-weight: 600; }
+        .day-separator td { background: var(--paper-soft); font-weight: 700; color: var(--ink); font-size: 12px; text-align: left !important; padding: 8px; }
+        .temp-cold { color: #2563eb; }
+        .temp-warm { color: #ea580c; }
+        .temp-hot { color: #dc2626; font-weight: 700; }
+        @media (max-width: 768px) { .charts-row { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><div class="topbar-right"><a href="../../radar-social/" class="topbar-link">📡 Radar Social</a><a href="../../mi-alhaurin/" class="topbar-link highlight">⭐ Mi Alhaurín</a></div></div></div>
+    <header><div class="container"><nav aria-label="Navegación principal"><a class="logo" href="../../" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú"><span></span><span></span><span></span></button><div class="nav-links" id="main-menu"><a href="../../noticias/">Noticias</a><a href="../../guia-util/">Guía útil</a><a href="../../avisos/">Avisos</a><a href="../">Tiempo</a><a href="../../seguimiento/">Seguimiento</a><a href="../../anunciarse/" class="nav-cta">Anunciarse</a></div></nav></div></header>
+
+    <main class="forecast-page">
+        <div class="container">
+            <div class="forecast-header">
+                <h1>Previsión Horaria · Alhaurín el Grande</h1>
+                <p class="forecast-sub">Datos en tiempo real de Open-Meteo · Actualización automática</p>
+            </div>
+            <div class="range-tabs">
+                <button class="range-tab active" data-hours="48">48 horas</button>
+                <button class="range-tab" data-hours="168">7 días</button>
+            </div>
+            <div class="timeline-scroll" id="timeline-scroll"><div class="timeline-strip" id="timeline-strip"></div></div>
+            <div class="charts-row">
+                <div class="chart-box"><h3>🌡️ Temperatura y Precipitación</h3><canvas id="chart-temp-rain"></canvas></div>
+                <div class="chart-box"><h3>💨 Viento y Ráfagas</h3><canvas id="chart-wind"></canvas></div>
+            </div>
+            <div class="hourly-table-card">
+                <h3>📋 Tabla horaria detallada</h3>
+                <div class="table-scroll" style="max-height: 500px; overflow-y: auto;">
+                    <table class="hourly-table">
+                        <thead><tr><th>Hora</th><th>🌡️</th><th>Sens.</th><th>💧 Hum.</th><th>Rocío</th><th>🌧️ mm</th><th>Prob.</th><th>💨 km/h</th><th>Ráf.</th><th>Dir.</th><th>☁️</th><th>hPa</th><th>UV</th></tr></thead>
+                        <tbody id="hourly-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="../../noticias/">Noticias</a><a href="../">Tiempo</a><a href="../comparador/">Comparador</a><a href="../radar/">Radar</a><a href="../../seguimiento/">Seguimiento</a><a href="../../radar-social/">Radar Social</a></div></div></footer>
+
+    <script src="../../js/app.js" defer></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const WC_EMOJI = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',66:'🌧️',67:'🌧️',71:'🌨️',73:'🌨️',75:'🌨️',80:'🌧️',81:'🌧️',82:'🌧️',95:'⛈️',96:'⛈️',99:'⛈️'};
+        const WIND_DIR = ['N','NE','E','SE','S','SO','O','NO'];
+        const WIND_ARROW = ['↓','↙','←','↖','↑','↗','→','↘'];
+        let allData = null, currentHours = 48;
+
+        async function fetchData() {
+            const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=36.6439&longitude=-4.6892&hourly=temperature_2m,relative_humidity_2m,dew_point_2m,apparent_temperature,precipitation,precipitation_probability,weather_code,cloud_cover,wind_speed_10m,wind_direction_10m,wind_gusts_10m,pressure_msl,uv_index&timezone=Europe%2FMadrid&forecast_days=7');
+            allData = await res.json();
+            render(currentHours);
+        }
+
+        function render(hours) {
+            if (!allData?.hourly) return;
+            const h = allData.hourly, now = new Date();
+            const startIdx = h.time.findIndex(t => new Date(t) >= new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours()));
+            const endIdx = Math.min(startIdx + hours, h.time.length);
+            const s = (a) => a.slice(startIdx, endIdx);
+            const times=s(h.time), temps=s(h.temperature_2m), apparent=s(h.apparent_temperature), humidity=s(h.relative_humidity_2m), dewpoint=s(h.dew_point_2m), precip=s(h.precipitation), precipProb=s(h.precipitation_probability), wcode=s(h.weather_code), cloud=s(h.cloud_cover), windSpd=s(h.wind_speed_10m), windDir=s(h.wind_direction_10m), windGust=s(h.wind_gusts_10m), pressure=s(h.pressure_msl), uv=s(h.uv_index);
+
+            // Timeline
+            const strip = document.getElementById('timeline-strip');
+            strip.innerHTML = '';
+            let lastDay = '';
+            times.forEach((t, i) => {
+                const dt = new Date(t), dayStr = dt.toLocaleDateString('es-ES',{weekday:'short',day:'numeric'}), hourStr = dt.toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'});
+                const isDayStart = dayStr !== lastDay;
+                if (isDayStart && i > 0) { const lb = document.createElement('div'); lb.className='tl-day-label'; lb.textContent=dayStr; strip.appendChild(lb); }
+                lastDay = dayStr;
+                const card = document.createElement('div');
+                card.className = 'tl-hour' + (i===0?' is-now':'') + (isDayStart?' day-start':'');
+                card.innerHTML = `<div class="tl-time">${hourStr}</div><div class="tl-icon">${WC_EMOJI[wcode[i]]||'🌤️'}</div><div class="tl-temp">${Math.round(temps[i])}°</div>${precip[i]>0?`<div class="tl-rain">${precip[i].toFixed(1)}mm</div>`:''}<div class="tl-wind">${Math.round(windSpd[i])}${WIND_ARROW[Math.round(windDir[i]/45)%8]}</div>`;
+                strip.appendChild(card);
+            });
+
+            const shortLabels = times.map(t => new Date(t).getHours()+'h');
+
+            // Charts
+            const ctx1 = document.getElementById('chart-temp-rain').getContext('2d');
+            if (window._c1) window._c1.destroy();
+            window._c1 = new Chart(ctx1, { data: { labels: shortLabels, datasets: [
+                { type:'line', label:'Temp °C', data:temps, borderColor:'#ea580c', backgroundColor:'#ea580c18', tension:.3, borderWidth:2, pointRadius:0, yAxisID:'y' },
+                { type:'bar', label:'Precip mm', data:precip, backgroundColor:'#3b82f6aa', borderRadius:2, yAxisID:'y1' }
+            ]}, options: { responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false}, plugins:{legend:{position:'bottom',labels:{usePointStyle:true,font:{size:11}}}}, scales:{y:{position:'left',grid:{color:'#e2e8f010'},ticks:{callback:v=>v+'°C'}},y1:{position:'right',beginAtZero:true,grid:{display:false},ticks:{callback:v=>v+'mm'}},x:{grid:{display:false},ticks:{maxTicksLimit:12}}}} });
+
+            const ctx2 = document.getElementById('chart-wind').getContext('2d');
+            if (window._c2) window._c2.destroy();
+            window._c2 = new Chart(ctx2, { type:'line', data: { labels: shortLabels, datasets: [
+                { label:'Viento km/h', data:windSpd, borderColor:'#16a34a', tension:.3, borderWidth:2, pointRadius:0, fill:false },
+                { label:'Ráfagas km/h', data:windGust, borderColor:'#dc2626', borderDash:[4,3], tension:.3, borderWidth:1.5, pointRadius:0, fill:false }
+            ]}, options: { responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false}, plugins:{legend:{position:'bottom',labels:{usePointStyle:true,font:{size:11}}}}, scales:{y:{beginAtZero:true,grid:{color:'#e2e8f010'},ticks:{callback:v=>v+' km/h'}},x:{grid:{display:false},ticks:{maxTicksLimit:12}}}} });
+
+            // Table
+            const tbody = document.getElementById('hourly-tbody');
+            tbody.innerHTML = '';
+            let tableDay = '';
+            times.forEach((t, i) => {
+                const dt = new Date(t), dayStr = dt.toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long'});
+                if (dayStr !== tableDay) { tableDay=dayStr; const sep=document.createElement('tr'); sep.className='day-separator'; sep.innerHTML=`<td colspan="13">${dayStr.charAt(0).toUpperCase()+dayStr.slice(1)}</td>`; tbody.appendChild(sep); }
+                const tc = temps[i]>=38?'temp-hot':temps[i]>=30?'temp-warm':temps[i]<=5?'temp-cold':'';
+                const di = Math.round(windDir[i]/45)%8;
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${dt.toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'})} ${WC_EMOJI[wcode[i]]||''}</td><td class="${tc}">${temps[i]?.toFixed(1)}°</td><td>${apparent[i]?.toFixed(1)}°</td><td>${humidity[i]}%</td><td>${dewpoint[i]?.toFixed(1)}°</td><td>${precip[i]?.toFixed(1)}</td><td>${precipProb[i]}%</td><td>${Math.round(windSpd[i])}</td><td>${Math.round(windGust[i])}</td><td>${WIND_ARROW[di]} ${WIND_DIR[di]}</td><td>${cloud[i]}%</td><td>${pressure[i]?.toFixed(0)}</td><td>${uv[i]?.toFixed(0)}</td>`;
+                tbody.appendChild(row);
+            });
+        }
+
+        document.querySelectorAll('.range-tab').forEach(tab => {
+            tab.addEventListener('click', () => { document.querySelectorAll('.range-tab').forEach(t=>t.classList.remove('active')); tab.classList.add('active'); currentHours=parseInt(tab.dataset.hours); render(currentHours); });
+        });
+        await fetchData();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MeteoAgro — Previsión Agrícola para Alhaurín el Grande | Alhaurín al Día</title>
+    <meta name="description" content="Previsión agrícola hiperlocal: riesgo de helada, evapotranspiración ET₀, balance hídrico, horas de frío y alertas para agricultores del Valle del Guadalhorce." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://alhaurinaldia.es/tiempo/agro/">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alhaurín al Día" />
+    <meta property="og:title" content="MeteoAgro — Previsión Agrícola para Alhaurín el Grande" />
+    <meta property="og:description" content="Herramienta de previsión agrícola para el Valle del Guadalhorce: heladas, ET₀, balance hídrico y más." />
+    <meta property="og:url" content="https://alhaurinaldia.es/tiempo/agro/" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/mobile.css">
+    <link rel="stylesheet" href="../../css/ads.css">
+    <link rel="stylesheet" href="../../css/home-live.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root { --agro: #16a34a; --agro-light: #dcfce7; --agro-dark: #166534; }
+        .agro-page { padding: 24px 0 48px; }
+        .agro-header h1 { font-size: clamp(20px, 3vw, 28px); font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+        .agro-sub { color: var(--muted); font-size: 14px; margin: 4px 0 20px; }
+
+        /* Alert panel */
+        .alert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 24px; }
+        .alert-card { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 14px; }
+        .alert-card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+        .alert-card-header span:first-child { font-size: 22px; }
+        .alert-card-header strong { font-size: 13px; }
+        .alert-level { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; display: inline-block; }
+        .alert-level.green { background: #dcfce7; color: #166534; }
+        .alert-level.yellow { background: #fef9c3; color: #854d0e; }
+        .alert-level.red { background: #fee2e2; color: #991b1b; }
+        .alert-detail { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+        /* Section cards */
+        .agro-section { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 16px; margin-bottom: 14px; }
+        .agro-section h2 { font-size: 15px; font-weight: 700; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
+        .agro-section .section-desc { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
+        .agro-section canvas { width: 100% !important; max-height: 260px; }
+
+        /* Two-column grid */
+        .agro-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+
+        /* Balance table */
+        .balance-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        .balance-table th, .balance-table td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: center; }
+        .balance-table th { background: var(--paper-soft); font-weight: 700; font-size: 11px; color: var(--muted); text-transform: uppercase; }
+        .balance-positive { color: #16a34a; font-weight: 700; }
+        .balance-negative { color: #dc2626; font-weight: 700; }
+
+        /* Summary card */
+        .summary-card { background: var(--agro-light); border: 1px solid #bbf7d0; border-radius: 6px; padding: 16px; }
+        .summary-card h2 { font-size: 15px; font-weight: 700; margin: 0 0 8px; color: var(--agro-dark); }
+        .summary-card ul { margin: 0; padding: 0 0 0 18px; }
+        .summary-card li { font-size: 13px; line-height: 1.7; color: #1e3a2f; }
+
+        .loading-msg { text-align: center; padding: 32px; color: var(--muted); font-size: 14px; }
+
+        @media (max-width: 768px) { .agro-grid-2 { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><div class="topbar-right"><a href="../../radar-social/" class="topbar-link">📡 Radar Social</a><a href="../../mi-alhaurin/" class="topbar-link highlight">⭐ Mi Alhaurín</a></div></div></div>
+    <header><div class="container"><nav aria-label="Navegación principal"><a class="logo" href="../../" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú"><span></span><span></span><span></span></button><div class="nav-links" id="main-menu"><a href="../../noticias/">Noticias</a><a href="../../guia-util/">Guía útil</a><a href="../../avisos/">Avisos</a><a href="../">Tiempo</a><a href="../../seguimiento/">Seguimiento</a><a href="../../anunciarse/" class="nav-cta">Anunciarse</a></div></nav></div></header>
+
+    <main class="agro-page">
+        <div class="container">
+            <div class="agro-header">
+                <h1>🌾 MeteoAgro · Valle del Guadalhorce</h1>
+                <p class="agro-sub">Previsión agrícola hiperlocal para Alhaurín el Grande · Datos Open-Meteo en tiempo real</p>
+            </div>
+
+            <div id="agro-content">
+                <div class="loading-msg">Cargando datos agrícolas...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="../../noticias/">Noticias</a><a href="../">Tiempo</a><a href="../comparador/">Comparador</a><a href="../radar/">Radar</a><a href="../../seguimiento/">Seguimiento</a><a href="../../radar-social/">Radar Social</a></div></div></footer>
+
+    <script src="../../js/app.js" defer></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const container = document.getElementById('agro-content');
+        try {
+            const url = 'https://api.open-meteo.com/v1/forecast?latitude=36.6439&longitude=-4.6892&hourly=temperature_2m,relative_humidity_2m,dew_point_2m,wind_speed_10m,wind_gusts_10m,precipitation,et0_fao_evapotranspiration,soil_temperature_0cm,soil_temperature_6cm,soil_moisture_0_to_1cm&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,et0_fao_evapotranspiration,wind_speed_10m_max,wind_gusts_10m_max&timezone=Europe%2FMadrid&forecast_days=7';
+            const res = await fetch(url);
+            const data = await res.json();
+            const d = data.daily, h = data.hourly;
+            if (!d || !h) { container.innerHTML = '<div class="loading-msg">Error al cargar datos</div>'; return; }
+
+            const dayNames = d.time.map(t => { const dt = new Date(t); return dt.toLocaleDateString('es-ES', {weekday: 'short', day: 'numeric'}); });
+
+            // Calculate alerts
+            const frostRisk = d.temperature_2m_min.some(t => t < 3);
+            const frostMin = Math.min(...d.temperature_2m_min);
+            const windAlert = d.wind_gusts_10m_max.some(g => g > 40);
+            const maxGust = Math.max(...d.wind_gusts_10m_max);
+            const rainAlert = d.precipitation_sum.some(p => p > 20);
+            const maxRain = Math.max(...d.precipitation_sum);
+            const heatAlert = d.temperature_2m_max.some(t => t > 38);
+            const maxTemp = Math.max(...d.temperature_2m_max);
+
+            // Chill hours (temp < 7°C)
+            let chillHours = 0;
+            h.temperature_2m.forEach(t => { if (t < 7) chillHours++; });
+
+            // Water balance
+            const totalPrecip = d.precipitation_sum.reduce((a,b) => a + (b||0), 0);
+            const totalET0 = d.et0_fao_evapotranspiration.reduce((a,b) => a + (b||0), 0);
+            const balance = totalPrecip - totalET0;
+
+            // Summary recommendations
+            const recs = [];
+            if (frostRisk) recs.push('⚠️ Riesgo de helada detectado. Proteger cultivos sensibles (cítricos jóvenes, subtropicales) con mantas térmicas o riego antihelada.');
+            if (windAlert) recs.push('💨 Ráfagas superiores a 40 km/h previstas. Aplazar tratamientos fitosanitarios y asegurar tutores en frutales jóvenes.');
+            if (rainAlert) recs.push('🌧️ Precipitación significativa prevista. Revisar drenajes y canalizaciones de riego. Buen momento para ahorrar riego.');
+            if (heatAlert) recs.push('🔥 Temperaturas extremas (>' + Math.round(maxTemp) + '°C). Aumentar frecuencia de riego y considerar sombreo en hortícolas.');
+            if (balance < -20) recs.push('💧 Déficit hídrico importante esta semana (' + balance.toFixed(1) + ' mm). Incrementar dotación de riego.');
+            if (balance >= 0) recs.push('✅ Balance hídrico positivo. Precipitación suficiente para cubrir la evapotranspiración.');
+            if (!frostRisk && !windAlert && !rainAlert && !heatAlert) recs.push('✅ Semana sin alertas significativas. Condiciones favorables para labores agrícolas.');
+            recs.push('📊 ET₀ semanal acumulada: ' + totalET0.toFixed(1) + ' mm. Precipitación acumulada: ' + totalPrecip.toFixed(1) + ' mm.');
+
+            // Build HTML
+            let html = '';
+
+            // Alert panel
+            html += '<div class="alert-grid">';
+            html += `<div class="alert-card"><div class="alert-card-header"><span>🥶</span><strong>Riesgo de Helada</strong></div><span class="alert-level ${frostMin < 0 ? 'red' : frostMin < 3 ? 'yellow' : 'green'}">${frostMin < 0 ? 'Alto' : frostMin < 3 ? 'Moderado' : 'Sin riesgo'}</span><div class="alert-detail">Mín. prevista: ${frostMin.toFixed(1)}°C</div></div>`;
+            html += `<div class="alert-card"><div class="alert-card-header"><span>💨</span><strong>Viento Fuerte</strong></div><span class="alert-level ${maxGust > 50 ? 'red' : maxGust > 40 ? 'yellow' : 'green'}">${maxGust > 50 ? 'Alto' : maxGust > 40 ? 'Moderado' : 'Sin riesgo'}</span><div class="alert-detail">Ráfaga máx.: ${Math.round(maxGust)} km/h</div></div>`;
+            html += `<div class="alert-card"><div class="alert-card-header"><span>🌧️</span><strong>Lluvia Intensa</strong></div><span class="alert-level ${maxRain > 30 ? 'red' : maxRain > 20 ? 'yellow' : 'green'}">${maxRain > 30 ? 'Alto' : maxRain > 20 ? 'Moderado' : 'Sin riesgo'}</span><div class="alert-detail">Máx. diario: ${maxRain.toFixed(1)} mm</div></div>`;
+            html += `<div class="alert-card"><div class="alert-card-header"><span>🔥</span><strong>Calor Extremo</strong></div><span class="alert-level ${maxTemp > 40 ? 'red' : maxTemp > 38 ? 'yellow' : 'green'}">${maxTemp > 40 ? 'Alto' : maxTemp > 38 ? 'Moderado' : 'Sin riesgo'}</span><div class="alert-detail">Máx. prevista: ${maxTemp.toFixed(1)}°C</div></div>`;
+            html += '</div>';
+
+            // ET0 and Water Balance
+            html += '<div class="agro-grid-2">';
+            html += '<div class="agro-section"><h2>💧 Evapotranspiración (ET₀)</h2><p class="section-desc">Agua que pierde el suelo por evaporación y transpiración vegetal (mm/día)</p><canvas id="chart-et0"></canvas></div>';
+            html += '<div class="agro-section"><h2>⚖️ Balance Hídrico Semanal</h2><p class="section-desc">Precipitación − ET₀ por día. Positivo = excedente, negativo = déficit</p><canvas id="chart-balance"></canvas></div>';
+            html += '</div>';
+
+            // Water balance table
+            html += '<div class="agro-section"><h2>📊 Tabla de Balance Hídrico</h2><div style="overflow-x:auto"><table class="balance-table"><thead><tr><th>Día</th>';
+            dayNames.forEach(n => html += '<th>' + n + '</th>');
+            html += '<th>Total</th></tr></thead><tbody>';
+            html += '<tr><td><strong>Precip. (mm)</strong></td>';
+            d.precipitation_sum.forEach(v => html += '<td>' + (v||0).toFixed(1) + '</td>');
+            html += '<td><strong>' + totalPrecip.toFixed(1) + '</strong></td></tr>';
+            html += '<tr><td><strong>ET₀ (mm)</strong></td>';
+            d.et0_fao_evapotranspiration.forEach(v => html += '<td>' + (v||0).toFixed(1) + '</td>');
+            html += '<td><strong>' + totalET0.toFixed(1) + '</strong></td></tr>';
+            html += '<tr><td><strong>Balance</strong></td>';
+            d.precipitation_sum.forEach((v, i) => {
+                const b = (v||0) - (d.et0_fao_evapotranspiration[i]||0);
+                html += `<td class="${b >= 0 ? 'balance-positive' : 'balance-negative'}">${b >= 0 ? '+' : ''}${b.toFixed(1)}</td>`;
+            });
+            html += `<td class="${balance >= 0 ? 'balance-positive' : 'balance-negative'}"><strong>${balance >= 0 ? '+' : ''}${balance.toFixed(1)}</strong></td></tr>`;
+            html += '</tbody></table></div></div>';
+
+            // Frost and soil charts
+            html += '<div class="agro-grid-2">';
+            html += '<div class="agro-section"><h2>🥶 Análisis de Helada (48h)</h2><p class="section-desc">Temperatura horaria con umbrales de riesgo a 0°C y 3°C</p><canvas id="chart-frost"></canvas></div>';
+            html += '<div class="agro-section"><h2>🌱 Temperatura del Suelo</h2><p class="section-desc">Superficie y 6 cm de profundidad (48h)</p><canvas id="chart-soil"></canvas></div>';
+            html += '</div>';
+
+            // Wind gusts chart
+            html += '<div class="agro-section"><h2>💨 Ráfagas de Viento (7 días)</h2><p class="section-desc">Ráfagas máximas diarias con umbrales de riesgo para cosecha y tratamientos</p><canvas id="chart-gusts"></canvas></div>';
+
+            // Chill hours
+            html += `<div class="agro-section"><h2>❄️ Horas de Frío</h2><p class="section-desc">Horas con temperatura inferior a 7°C (necesarias para frutales de hueso)</p><div style="display:flex;gap:16px;align-items:center;margin-top:8px"><div style="font-size:36px;font-weight:700;color:var(--agro-dark)">${chillHours}h</div><div style="font-size:13px;color:var(--muted)">de las próximas ${h.temperature_2m.length}h previstas (${(h.temperature_2m.length/24).toFixed(0)} días). Los frutales de hueso (melocotonero, cerezo, ciruelo) necesitan entre 400-1200 horas de frío anuales para una correcta floración.</div></div></div>`;
+
+            // Summary
+            html += '<div class="summary-card"><h2>📋 Resumen Agrícola Semanal</h2><ul>';
+            recs.forEach(r => html += '<li>' + r + '</li>');
+            html += '</ul></div>';
+
+            container.innerHTML = html;
+
+            // Render charts
+            // ET0 chart
+            new Chart(document.getElementById('chart-et0').getContext('2d'), {
+                type: 'bar',
+                data: { labels: dayNames, datasets: [
+                    { label: 'ET₀ (mm)', data: d.et0_fao_evapotranspiration, backgroundColor: '#f59e0b88', borderRadius: 4 },
+                    { label: 'Precipitación (mm)', data: d.precipitation_sum, backgroundColor: '#3b82f688', borderRadius: 4 }
+                ]},
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } }, scales: { y: { beginAtZero: true, ticks: { callback: v => v + ' mm' } }, x: { grid: { display: false } } } }
+            });
+
+            // Balance chart
+            const balanceData = d.precipitation_sum.map((v, i) => (v||0) - (d.et0_fao_evapotranspiration[i]||0));
+            new Chart(document.getElementById('chart-balance').getContext('2d'), {
+                type: 'bar',
+                data: { labels: dayNames, datasets: [{ label: 'Balance mm', data: balanceData, backgroundColor: balanceData.map(b => b >= 0 ? '#16a34a88' : '#dc262688'), borderRadius: 4 }] },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { ticks: { callback: v => (v>=0?'+':'')+v+' mm' } }, x: { grid: { display: false } } } }
+            });
+
+            // Frost chart (48h hourly)
+            const frost48 = h.temperature_2m.slice(0, 48);
+            const frostLabels = h.time.slice(0, 48).map(t => new Date(t).getHours() + 'h');
+            new Chart(document.getElementById('chart-frost').getContext('2d'), {
+                type: 'line',
+                data: { labels: frostLabels, datasets: [
+                    { label: 'Temp °C', data: frost48, borderColor: '#3b82f6', backgroundColor: '#3b82f618', tension: 0.3, borderWidth: 2, pointRadius: 0, fill: true },
+                    { label: 'Umbral 3°C', data: Array(48).fill(3), borderColor: '#f59e0b', borderDash: [4,3], borderWidth: 1, pointRadius: 0, fill: false },
+                    { label: 'Umbral 0°C', data: Array(48).fill(0), borderColor: '#dc2626', borderDash: [4,3], borderWidth: 1, pointRadius: 0, fill: false }
+                ]},
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } }, scales: { y: { grid: { color: '#e2e8f010' } }, x: { grid: { display: false }, ticks: { maxTicksLimit: 12 } } } }
+            });
+
+            // Soil temp chart (48h)
+            const soilSurf = h.soil_temperature_0cm?.slice(0, 48) || [];
+            const soil6 = h.soil_temperature_6cm?.slice(0, 48) || [];
+            new Chart(document.getElementById('chart-soil').getContext('2d'), {
+                type: 'line',
+                data: { labels: frostLabels, datasets: [
+                    { label: 'Superficie', data: soilSurf, borderColor: '#854d0e', tension: 0.3, borderWidth: 2, pointRadius: 0 },
+                    { label: '6 cm prof.', data: soil6, borderColor: '#16a34a', tension: 0.3, borderWidth: 2, pointRadius: 0 }
+                ]},
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } }, scales: { y: { ticks: { callback: v => v + '°C' } }, x: { grid: { display: false }, ticks: { maxTicksLimit: 12 } } } }
+            });
+
+            // Wind gusts chart (daily)
+            new Chart(document.getElementById('chart-gusts').getContext('2d'), {
+                type: 'bar',
+                data: { labels: dayNames, datasets: [
+                    { label: 'Ráfaga máx. km/h', data: d.wind_gusts_10m_max, backgroundColor: d.wind_gusts_10m_max.map(g => g > 50 ? '#dc262688' : g > 40 ? '#f59e0b88' : '#16a34a88'), borderRadius: 4 }
+                ]},
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        annotation: undefined
+                    },
+                    scales: { y: { beginAtZero: true, ticks: { callback: v => v + ' km/h' } }, x: { grid: { display: false } } }
+                }
+            });
+
+        } catch (e) {
+            container.innerHTML = '<div class="loading-msg">Error al cargar datos agrícolas: ' + e.message + '</div>';
+        }
+    });
+    </script>
+</body>
+</html>

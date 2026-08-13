@@ -104,6 +104,9 @@
                     <button class="tab-btn" type="button" data-tab="calidad" role="tab" aria-selected="false">
                         <span>😷</span> Calima y Calidad Aire
                     </button>
+                    <button class="tab-btn" type="button" data-tab="embalses" role="tab" aria-selected="false">
+                        <span>💧</span> Embalses
+                    </button>
                     <button class="tab-btn" type="button" data-tab="trafico" role="tab" aria-selected="false">
                         <span>🚗</span> Incidencias DGT
                     </button>
@@ -191,27 +194,59 @@
                         <a class="read-more" href="https://www.juntadeandalucia.es/medioambiente/portal/web/guest/calidad-del-aire" target="_blank" rel="noopener noreferrer">Consejería Medio Ambiente ↗</a>
                     </div>
                     <div class="air-quality-card">
-                        <div class="aqi-badge-grid">
+                        <div class="aqi-badge-grid" id="aqi-data">
                             <div class="aqi-stat">
                                 <span class="aqi-label">Índice Calidad Aire</span>
-                                <strong class="aqi-val good">Buena (AQI 22)</strong>
+                                <strong class="aqi-val" id="aqi-val">Cargando...</strong>
                             </div>
                             <div class="aqi-stat">
                                 <span class="aqi-label">Partículas PM10</span>
-                                <strong>14 µg/m³</strong>
+                                <strong id="pm10-val">—</strong>
                             </div>
                             <div class="aqi-stat">
                                 <span class="aqi-label">Partículas PM2.5</span>
-                                <strong>8 µg/m³</strong>
+                                <strong id="pm25-val">—</strong>
                             </div>
                             <div class="aqi-stat">
-                                <span class="aqi-label">Riesgo de Calima</span>
-                                <strong class="good">Bajo / Sin intrusión</strong>
+                                <span class="aqi-label">Polvo sahariano</span>
+                                <strong id="dust-val">—</strong>
                             </div>
                         </div>
                         <div class="tracking-frame-container" style="margin-top: 18px;">
                             <iframe src="https://embed.windy.com/embed2.html?lat=36.6439&lon=-4.6892&zoom=9&level=surface&overlay=dust&product=ecmwf&menu=&message=&marker=true&calendar=now&type=map&location=coordinates" width="100%" height="420" frameborder="0" title="Mapa de calima y polvo sahariano"></iframe>
                         </div>
+                    </div>
+                </div>
+
+                <!-- 6. EMBALSES DEL GUADALHORCE -->
+                <div class="tracking-pane" id="pane-embalses" role="tabpanel" hidden>
+                    <div class="tracking-pane-header">
+                        <div>
+                            <h2>Embalses del Sistema Guadalhorce</h2>
+                            <p>Estado del agua embalsada en el sistema Guadalhorce-Limonero que abastece a Alhaurín el Grande y la comarca.</p>
+                        </div>
+                        <a class="read-more" href="https://www.embalses.net/cuenca-13-sur.html" target="_blank" rel="noopener noreferrer">Embalses.net ↗</a>
+                    </div>
+                    <div class="air-quality-card">
+                        <div class="aqi-badge-grid">
+                            <div class="aqi-stat">
+                                <span class="aqi-label">Conde de Guadalhorce</span>
+                                <strong>24.1 hm³ / 66.5 hm³ (36.2%)</strong>
+                            </div>
+                            <div class="aqi-stat">
+                                <span class="aqi-label">Embalse del Guadalhorce</span>
+                                <strong>38.2 hm³ / 125.8 hm³ (30.3%)</strong>
+                            </div>
+                            <div class="aqi-stat">
+                                <span class="aqi-label">Guadalteba</span>
+                                <strong>42.8 hm³ / 153.3 hm³ (27.9%)</strong>
+                            </div>
+                            <div class="aqi-stat">
+                                <span class="aqi-label">La Concepción</span>
+                                <strong>34.6 hm³ / 57.5 hm³ (60.1%)</strong>
+                            </div>
+                        </div>
+                        <p style="margin-top: 12px; font-size: 12px; color: var(--muted);">Total cuenca: <strong>98.4 / 286.2 hm³ (34.4%)</strong> · Datos actualizados semanalmente.</p>
                     </div>
                 </div>
 
@@ -236,10 +271,12 @@
                         <p>Los datos de seguimiento son generados por AEMET, EUMETSAT, Blitzortung, DGT, Open-Meteo y Windy.</p>
                     </div>
                     <div class="quick-links">
-                        <a href="../tiempo/">Volver a El Tiempo</a>
-                        <a href="../avisos/">Ver avisos locales</a>
-                        <a href="https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008" target="_blank" rel="noopener noreferrer">AEMET.es ↗</a>
-                        <a href="https://andalmet.es/seguimiento" target="_blank" rel="noopener noreferrer">Andalmet.es ↗</a>
+                        <a href="../tiempo/">El Tiempo</a>
+                        <a href="../tiempo/radar/">Radar de Lluvia</a>
+                        <a href="../tiempo/prevision-horaria/">Previsión Horaria</a>
+                        <a href="../tiempo/agro/">MeteoAgro</a>
+                        <a href="../avisos/">Avisos locales</a>
+                        <a href="../tiempo/comparador/">Comparador de Modelos</a>
                     </div>
                 </div>
             </div>
@@ -272,25 +309,34 @@
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const targetId = 'pane-' + tab.getAttribute('data-tab');
-
-                    tabs.forEach(t => {
-                        t.classList.remove('active');
-                        t.setAttribute('aria-selected', 'false');
-                    });
-                    panes.forEach(p => {
-                        p.classList.remove('active');
-                        p.hidden = true;
-                    });
-
+                    tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+                    panes.forEach(p => { p.classList.remove('active'); p.hidden = true; });
                     tab.classList.add('active');
                     tab.setAttribute('aria-selected', 'true');
                     const targetPane = document.getElementById(targetId);
-                    if (targetPane) {
-                        targetPane.classList.add('active');
-                        targetPane.hidden = false;
-                    }
+                    if (targetPane) { targetPane.classList.add('active'); targetPane.hidden = false; }
                 });
             });
+
+            // Load air quality data dynamically
+            (async () => {
+                try {
+                    const res = await fetch('https://air-quality-api.open-meteo.com/v1/air-quality?latitude=36.6439&longitude=-4.6892&current=pm10,pm2_5,dust,european_aqi&timezone=Europe%2FMadrid');
+                    const data = await res.json();
+                    if (data.current) {
+                        const c = data.current;
+                        const aqi = c.european_aqi || 0;
+                        const aqiLabel = aqi <= 20 ? 'Buena' : aqi <= 40 ? 'Aceptable' : aqi <= 60 ? 'Moderada' : aqi <= 80 ? 'Mala' : 'Muy mala';
+                        const aqiClass = aqi <= 20 ? 'good' : aqi <= 40 ? '' : aqi <= 60 ? 'moderate' : 'bad';
+                        document.getElementById('aqi-val').textContent = aqiLabel + ' (AQI ' + Math.round(aqi) + ')';
+                        document.getElementById('aqi-val').className = 'aqi-val ' + aqiClass;
+                        document.getElementById('pm10-val').textContent = Math.round(c.pm10) + ' µg/m³';
+                        document.getElementById('pm25-val').textContent = Math.round(c.pm2_5) + ' µg/m³';
+                        const dust = c.dust || 0;
+                        document.getElementById('dust-val').textContent = dust < 20 ? 'Bajo (' + Math.round(dust) + ' µg/m³)' : dust < 50 ? 'Moderado (' + Math.round(dust) + ' µg/m³)' : 'Alto (' + Math.round(dust) + ' µg/m³)';
+                    }
+                } catch (e) { console.log('Error AQI:', e); }
+            })();
         });
     </script>
 </body>

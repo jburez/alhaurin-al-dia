@@ -1670,3 +1670,182 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* 6 MODELOS METEOROLÓGICOS Y TABLA COMPARATIVA */
+
+.consensus-banner {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .consensus-status {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        h3 {
+            margin: 0;
+            font-family: var(--font-display);
+            font-size: 20px;
+            color: var(--ink);
+        }
+
+        p {
+            margin: 4px 0 0;
+            font-size: 14px;
+            color: var(--muted);
+            max-width: 620px;
+        }
+    }
+}
+
+.consensus-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+
+    &.green {
+        background: #2e7d32;
+        box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.2);
+    }
+}
+
+.consensus-models-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.model-pill {
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink);
+
+    &.active {
+        background: #e8f5e9;
+        border-color: #a5d6a7;
+        color: #1b5e20;
+    }
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.model-card small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.comp-table-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-soft);
+}
+
+.comp-table-sub {
+    margin: 4px 0 16px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+
+    th, td {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    th {
+        background: var(--paper-soft);
+        font-weight: 800;
+        color: var(--ink);
+    }
+
+    tbody tr:hover {
+        background: rgba(0, 0, 0, 0.02);
+    }
+}
+
+.tag-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 700;
+
+    &.green {
+        background: #e8f5e9;
+        color: #1b5e20;
+    }
+
+    &.yellow {
+        background: #fff8e1;
+        color: #f57f17;
+    }
+}
+
+.comp-guide-box {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+
+    h3 {
+        margin: 0 0 16px;
+        font-family: var(--font-display);
+        font-size: 20px;
+    }
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.guide-item {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px;
+
+    strong {
+        display: block;
+        font-size: 14px;
+        color: var(--ink);
+        margin-bottom: 6px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.5;
+    }
+}

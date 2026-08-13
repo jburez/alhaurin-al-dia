@@ -66,10 +66,7 @@
             <div class="container">
                 <div class="page-header-shell">
                     <div>
-                        <span class="section-kicker">Avisos locales</span>
-                        <h1>Cortes, incidencias y avisos útiles de Alhaurín.</h1>
-                    </div>
-                    <div style="display:flex; gap:6px; flex-wrap:wrap;">
+                        <h1>Avisos de Alhaurín el Grande</h1>
                     </div>
                 </div>
             </div>
@@ -77,15 +74,8 @@
 
         <section>
             <div class="container">
-                <div class="section-title">
-                    <div>
-                        <span class="section-kicker">Estado actual</span>
-                        <h2>Avisos activos</h2>
-                    </div>
-                    <p id="notices-updated">Consultando avisos locales...</p>
-                </div>
-
-                <div class="grid-2" id="local-notices-list">
+                <h2 style="font-size:18px; margin:0 0 12px; color:var(--ink);">⚠️ Avisos activos</h2>
+                <div id="local-notices-list">
                     <article class="notice-card">
                         <div class="notice-icon">📢</div>
                         <div>
@@ -93,6 +83,25 @@
                             <p>Consultando información local actualizada.</p>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-top:24px;">
+            <div class="container">
+                <h2 style="font-size:18px; margin:0 0 12px; color:var(--ink);">📡 Reportes vecinales</h2>
+                <div id="radar-reports-list">
+                    <p style="color:var(--muted); font-size:14px;">Consultando reportes del Radar Social...</p>
+                </div>
+                <a href="/radar-social/" style="display:inline-block; margin-top:12px; color:var(--accent); font-size:13px; font-weight:700;">Ver mapa completo del Radar Social →</a>
+            </div>
+        </section>
+
+        <section style="padding-top:24px;">
+            <div class="container">
+                <h2 style="font-size:18px; margin:0 0 12px; color:var(--muted);">📋 Historial de avisos</h2>
+                <div id="notices-history-list">
+                    <p style="color:var(--muted); font-size:14px;">Cargando historial...</p>
                 </div>
             </div>
         </section>

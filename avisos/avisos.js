@@ -10,7 +10,7 @@
             const d = new Date(iso);
             return d.toLocaleDateString("es-ES", { day: "numeric", month: "short" }) + " · " +
                    d.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" });
-        } catch { return iso; }
+        } catch (e) { return iso; }
     }
 
     function noticeCard(n, resolved) {
@@ -66,7 +66,7 @@
                     : '<p style="color:var(--muted); font-size:14px;">No hay avisos anteriores registrados.</p>';
             }
         })
-        .catch(() => {
+        .catch(function (err) {
             if (activeList) activeList.innerHTML = '<article class="notice-card"><div class="notice-icon">⚠️</div><div><h3>Error cargando avisos</h3><p>Inténtalo de nuevo más tarde.</p></div></article>';
         });
 
@@ -94,7 +94,7 @@
                     </div>
                 </article>`;
             }).join("");
-        } catch {
+        } catch (e) {
             radarList.innerHTML = '<p style="color:var(--muted); font-size:14px;">No se pudieron cargar los reportes vecinales.</p>';
         }
     }

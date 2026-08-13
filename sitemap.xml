@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/turismo-y-patrimonio/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -295,6 +295,18 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/56-fiesta-del-ajoblanco-en-almachar-2026-programa-y-actividades-completas.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/56-fiesta-del-ajoblanco-en-almachar-2026-programa-y-actividades-destacadas.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/96-golfistas-compiten-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf-2.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -453,6 +465,12 @@
   <url>
     <loc>https://alhaurinaldia.es/noticias/adquisicion-camion-electrico-el-ayuntamiento-ha-incorporado-un-camion-100-electrico.html</loc>
     <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/aerovigilancia-en-fuengirola-clave-para-la-seguridad-en-playas-en-verano.html</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1123,6 +1141,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-prepara-verbena-talleres-juveniles-y-trofeos-deportivos-en-agosto.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-prepara-verbena-y-actividades-juveniles-para-septiembre-2026.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1549,8 +1573,20 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/el-101-music-festival-2026-reune-a-mas-de-35-500-asistentes-en-su-sexta-edicion.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-acto-de-presentacion-del-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia.html</loc>
     <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-ascensor-del-mirador-de-la-huertecilla-vuelve-a-funcionar-tras-acto-vandalico.html</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1688,6 +1724,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-camino-de-malaga-en-alhaurin-el-grande-vibro-con-musica-animacion-y-22.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/el-centro-sesmero-incorpora-el-legado-historico-del-investigador-perez-villanua.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1885,6 +1927,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/fedelhorce-impulsa-la-exportacion-de-productos-y-servicios-al-mercado-chino.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/finaliza-con-exito-el-proyecto-de-agentes-eco-rurales-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1923,6 +1971,18 @@
   <url>
     <loc>https://alhaurinaldia.es/noticias/finalizan-los-campamentos-de-verano-de-educacion-y-deportes-en-alhaurin-el-grande-y-villa.html</loc>
     <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/fundacion-unicaja-y-arcos-solidaridad-apoyan-a-poblacion-vulnerable-en-india.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/fundacion-unicaja-y-arcos-solidaridad-apoyan-a-poblacion-vulnerable-en-kerala-india.html</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2509,6 +2569,18 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/mari-carmen-jaime-pregonera-de-la-feria-de-mijas-2026.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/mari-carmen-jaime-pregonera-oficial-de-la-feria-de-mijas-2026.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/mari-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia 2.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -2623,6 +2695,18 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/mijas-las-lagunas-se-prepara-para-su-debut-en-la-segunda-federacion-de-futbol.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/mijas-las-lagunas-se-prepara-para-su-estreno-en-la-segunda-federacion.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/noticias-atv-11-agosto-2026-actualidad-de-alhaurin-el-grande.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -2673,6 +2757,12 @@
   <url>
     <loc>https://alhaurinaldia.es/noticias/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion.html</loc>
     <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/oncologia-medica-del-hospital-regional-de-malaga-referente-nacional-e-internacional.html</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>

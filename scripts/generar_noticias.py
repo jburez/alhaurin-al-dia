@@ -601,14 +601,14 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
 
 def site_chrome(content, prefix=".."):
     return f'''<body>
-    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>Noticias · Guía útil · Comercios · Planes</span></div></div>
+    <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer" style="color: #ffd700; font-weight: 700;">⭐ Destacar Alhaurín al Día en Google ↗</a></div></div>
     <header><div class="container"><nav aria-label="Navegación principal">
         <a class="logo" href="{prefix}/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-        <div class="nav-links" id="main-menu"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a></div>
+        <div class="nav-links" id="main-menu"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/avisos/">Avisos</a><a href="{prefix}/boletin-oficial/">Boletín oficial</a><a href="{prefix}/tiempo/">Tiempo</a><a href="{prefix}/seguimiento/">Seguimiento</a><a href="{prefix}/radar-social/">Radar Social</a><a href="{prefix}/mi-alhaurin/">Mi Alhaurín</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a></div>
     </nav></div></header>
     {content}
-    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a></div></div></footer>
+    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="{prefix}/noticias/">Noticias</a><a href="{prefix}/guia-util/">Guía útil</a><a href="{prefix}/avisos/">Avisos</a><a href="{prefix}/boletin-oficial/">Boletín oficial</a><a href="{prefix}/tiempo/">Tiempo</a><a href="{prefix}/seguimiento/">Seguimiento</a><a href="{prefix}/radar-social/">Radar Social</a><a href="{prefix}/mi-alhaurin/">Mi Alhaurín</a><a href="{prefix}/planes/">Planes</a><a href="{prefix}/comercios/">Comercios</a><a href="{prefix}/anunciarse/">Anunciarse</a><a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">⭐ Destacar en Google</a></div></div></footer>
     <script src="{prefix}/js/app.js" defer></script>
 </body>'''
 
@@ -666,7 +666,7 @@ def generar_html_noticia(noticia, noticias):
                     <div class="article-source-box"><div><span>Fuente original</span><strong>{escapar(fuente or "Fuente externa")}</strong></div><a class="btn btn-primary" href="{escapar(enlace_original)}" target="_blank" rel="noopener noreferrer">Leer en la fuente original</a></div>
                 </div>
             </article>
-            <aside class="article-sidebar premium-article-sidebar" aria-label="Opciones de la noticia"><div class="share-card"><span class="mini-label">Compartir</span><h2>Comparte esta noticia</h2><div class="share-actions"><a href="https://api.whatsapp.com/send?text={share_text}" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.facebook.com/sharer/sharer.php?u={share_url}" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://twitter.com/intent/tweet?url={share_url}&text={quote(titulo)}" target="_blank" rel="noopener noreferrer">X</a></div></div><div class="ad-slot ad-slot-sidebar ad-slot-sticky">Publicidad lateral</div></aside>
+            <aside class="article-sidebar premium-article-sidebar" aria-label="Opciones de la noticia"><div class="share-card"><span class="mini-label">Opciones</span><h2>Comparte o guarda</h2><div class="share-actions"><a href="https://api.whatsapp.com/send?text={share_text}" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.facebook.com/sharer/sharer.php?u={share_url}" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://twitter.com/intent/tweet?url={share_url}&text={quote(titulo)}" target="_blank" rel="noopener noreferrer">X</a></div><button type="button" class="btn btn-secondary bookmark-btn" data-id="{escapar(noticia.get('id', ''))}" data-title="{escapar(titulo)}" data-url="{escapar(canonical)}" style="margin-top: 12px; width: 100%; text-align: center;">⭐ Guardar en Mi Alhaurín</button></div><div class="ad-slot ad-slot-sidebar ad-slot-sticky">Publicidad lateral</div></aside>
         </div>{relacionadas}</div></main>
     <script type="application/ld+json">{schema_news_article(noticia, canonical)}</script>
     <script type="application/ld+json">{breadcrumb_schema}</script>

@@ -844,6 +844,78 @@ function initLiveSearchOverlay() {
     });
 }
 
+// ---- GESTIÓN DE NOTICIAS GUARDADAS ("MI ALHAURÍN") ----
+
+function getSavedArticles() {
+    try {
+        return JSON.parse(localStorage.getItem("alhaurin_saved_articles") || "[]");
+    } catch (e) {
+        return [];
+    }
+}
+
+function initBookmarksSystem() {
+    document.addEventListener("click", (e) => {
+        const btn = e.target.closest(".bookmark-btn");
+        if (!btn) return;
+
+        const id = btn.getAttribute("data-id") || window.location.pathname;
+        const title = btn.getAttribute("data-title") || document.title;
+        const url = btn.getAttribute("data-url") || window.location.href;
+
+        let saved = getSavedArticles();
+        const index = saved.findIndex(item => String(item.id) === String(id));
+
+        if (index !== -1) {
+            saved.splice(index, 1);
+            localStorage.setItem("alhaurin_saved_articles", JSON.stringify(saved));
+            btn.innerHTML = "⭐ Guardar en Mi Alhaurín";
+            alert("Artículo eliminado de 'Mi Alhaurín'");
+        } else {
+            saved.unshift({
+                id,
+                title,
+                url,
+                date: new Date().toLocaleDateString("es-ES", { day: "numeric", month: "short", year: "numeric" }),
+                savedAt: new Date().toISOString()
+            });
+            localStorage.setItem("alhaurin_saved_articles", JSON.stringify(saved));
+            btn.innerHTML = "⭐ Guardado en Mi Alhaurín";
+            alert("⭐ ¡Guardado en 'Mi Alhaurín'!");
+        }
+
+        renderSavedArticlesMiAlhaurin();
+    });
+
+    renderSavedArticlesMiAlhaurin();
+}
+
+function renderSavedArticlesMiAlhaurin() {
+    const container = document.getElementById("saved-list");
+    if (!container) return;
+
+    const saved = getSavedArticles();
+    if (!saved.length) {
+        container.innerHTML = `
+            <div class="saved-empty">
+                <span>📌 No tienes artículos guardados todavía.</span>
+                <p>Haz clic en la estrella "⭐ Guardar en Mi Alhaurín" en cualquier noticia para leerla más tarde.</p>
+            </div>
+        `;
+        return;
+    }
+
+    container.innerHTML = saved.map(item => `
+        <article class="saved-item" style="background: var(--paper-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+            <div>
+                <a href="${escapeHTML(item.url)}" style="font-weight: 700; color: var(--ink); text-decoration: none;">${escapeHTML(item.title)}</a>
+                <div style="font-size: 12px; color: var(--muted); margin-top: 4px;">Guardado el ${escapeHTML(item.date)}</div>
+            </div>
+            <button type="button" class="bookmark-btn" data-id="${escapeHTML(item.id)}" style="background: none; border: 0; color: #c62828; font-weight: 700; cursor: pointer; font-size: 13px;">Eliminar</button>
+        </article>
+    `).join("");
+}
+
 cleanupHomeStaticArtifacts();
 initMobileMenu();
 initMobileBottomNav();
@@ -852,4 +924,5 @@ loadGuide();
 insertUsefulHubSuggestions();
 insertCommercialCtas();
 initLiveSearchOverlay();
+initBookmarksSystem();
 

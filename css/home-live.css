@@ -1383,3 +1383,48 @@
         grid-template-columns: 1fr;
     }
 }
+
+.radar-home-section {
+    padding: 32px 0 16px;
+}
+
+.radar-home-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: clamp(22px, 4vw, 32px);
+    box-shadow: var(--shadow-soft);
+}
+
+.radar-home-badge {
+    display: inline-flex;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
+.radar-home-main h2 {
+    margin: 0 0 8px;
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3.5vw, 32px);
+    color: var(--ink);
+}
+
+.radar-home-main p {
+    margin: 0 0 18px;
+    color: var(--muted);
+    max-width: 760px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.radar-home-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}

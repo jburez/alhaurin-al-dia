@@ -7,8 +7,17 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Thu, 13 Aug 2026 07:02:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 07:04:04 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
+    <item>
+      <title>Aviso de corte de agua este jueves 13 de agosto en todo el Partido de Urique</title>
+      <link>https://alhaurinelgrande.es/</link>
+      <guid isPermaLink="true">https://alhaurinelgrande.es/</guid>
+      <pubDate>Thu, 13 Aug 2026 08:00:00 GMT</pubDate>
+      <description>El Ayuntamiento de Alhaurín el Grande informa de la interrupción del suministro de agua de 08:00 a 13:00 h en Cuesta de Urique, Nacimiento de Urique, Camino de la Raja, Barranco Cañas, Paz Jiménez, La Colorá y zonas adyacentes por trabajos de mejora en la red.</description>
+      <category>Obras y Servicios</category>
+      <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
+    </item>
     <item>
       <title>Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026</title>
       <link>https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-la-virgen-2026/</link>
@@ -267,15 +276,6 @@
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/</guid>
       <pubDate>Fri, 26 Jun 2026 08:35:11 GMT</pubDate>
       <description>El domingo 14 de junio, Alhaurín el Grande vivió con emoción el Día de Nuestro Padre Jesús Nazareno, con actos religiosos y tradiciones que unieron a la comunidad local.</description>
-      <category>Fiestas y Tradiciones</category>
-      <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
-    </item>
-    <item>
-      <title>Programa de actos del Día de Jesús 2026 en Alhaurín el Grande este jueves</title>
-      <link>https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/</link>
-      <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/</guid>
-      <pubDate>Thu, 25 Jun 2026 12:40:14 GMT</pubDate>
-      <description>Consulta el programa completo de actividades previstas para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>

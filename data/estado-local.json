@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-05T13:30:00+02:00",
+  "actualizado": "2026-08-13T09:03:00+02:00",
   "resumen": "Información diaria orientativa para consultar antes de salir. Los avisos críticos deben confirmarse siempre en fuentes oficiales.",
   "items": [
     {
@@ -14,20 +14,20 @@
     },
     {
       "id": "avisos",
-      "icono": "📢",
+      "icono": "💧",
       "titulo": "Avisos",
-      "valor": "Sin avisos",
-      "detalle": "No constan cortes activos de agua, luz o tráfico local en este panel.",
-      "estado": "ok",
-      "cta": "Ver avisos",
+      "valor": "Corte de Agua en Urique",
+      "detalle": "Partido de Urique de 08:00 a 13:00 h por trabajos de mejora en la red municipal.",
+      "estado": "alert",
+      "cta": "Ver aviso completo",
       "url": "./avisos/"
     },
     {
       "id": "agenda",
       "icono": "📅",
       "titulo": "Agenda",
-      "valor": "Sin cortes",
-      "detalle": "No constan procesiones o eventos con afección al tráfico local.",
+      "valor": "Actividades de Agosto",
+      "detalle": "Eventos culturales y trofeo del CD Alhaurino en los próximos días.",
       "estado": "ok",
       "cta": "Ver planes",
       "url": "./planes/"

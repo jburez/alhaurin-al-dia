@@ -1,5 +1,28 @@
 [
     {
+        "id": "corte-agua-urique-13-agosto-2026",
+        "titulo": "Aviso de corte de agua este jueves 13 de agosto en todo el Partido de Urique",
+        "titulo_original": "AVISO CORTE DE AGUA - Partido de Urique",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande informa de la interrupción del suministro de agua de 08:00 a 13:00 h en Cuesta de Urique, Nacimiento de Urique, Camino de la Raja, Barranco Cañas, Paz Jiménez, La Colorá y zonas adyacentes por trabajos de mejora en la red.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande informa de la interrupción del suministro de agua de 08:00 a 13:00 h en Cuesta de Urique, Nacimiento de Urique, Camino de la Raja, Barranco Cañas, Paz Jiménez, La Colorá y zonas adyacentes por trabajos de mejora en la red.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha emitido un aviso oficial informando del corte de agua programado para este jueves 13 de agosto de 2026, entre las 08:00 y las 13:00 horas, con motivo de los trabajos de mejora y mantenimiento en la red municipal de abastecimiento.\n\nZonas afectadas en el Partido de Urique:\n- Cuesta de Urique\n- Nacimiento de Urique\n- Camino de la Raja\n- Barranco Cañas\n- Paz Jiménez\n- La Colorá\n- Caminos adyacentes hasta Molino de los Corchos.\n\nDesde el consistorio informan que el servicio se restablecerá progresivamente una vez concluidas las actuaciones. Se recomienda a los vecinos afectados tomar las precauciones oportunas.",
+        "fecha": "2026-08-13T08:00:00.000000+00:00",
+        "fuente": "Ayuntamiento Alhaurín el Grande",
+        "categoria": "Obras y Servicios",
+        "categoria_url": "categoria/obras-y-servicios/",
+        "seo_keywords": [
+            "corte de agua Alhaurín el Grande",
+            "Partido de Urique corte agua",
+            "aviso municipal agua Alhaurín"
+        ],
+        "enlace": "https://alhaurinelgrande.es/",
+        "url": "https://alhaurinelgrande.es/",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2024/04/cropped-LOGOAYTOALH-32x32.png",
+        "prioridad": 200,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/aviso-de-corte-de-agua-este-jueves-13-de-agosto-en-todo-el-partido-de-urique.html"
+    },
+    {
         "id": "https-alhaurinelgrande-es-bando-de-alcaldia-celebraciones-dia-de-la-vi-e087142c",
         "titulo": "Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026",
         "titulo_original": "Bando de Alcaldía – Celebraciones Día de la Virgen 2026",

@@ -632,7 +632,7 @@
         initMobileMenu();
         fetch("../data/guia-util.json")
             .then(response => { if (!response.ok) throw new Error("No se pudo cargar la guía útil"); return response.json(); })
-            .then(items => { allItems = items || []; totalRecursos.textContent = allItems.length; renderFilters(allItems); renderItems(); searchInput.addEventListener("input", renderItems); })
+            .then(items => { allItems = items || []; if (totalRecursos) totalRecursos.textContent = allItems.length; renderFilters(allItems); renderItems(); searchInput.addEventListener("input", renderItems); })
             .catch(error => { console.error(error); container.innerHTML = `<p class="empty-state">No se ha podido cargar la guía útil.</p>`; });
     </script>
 </body>

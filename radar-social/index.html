@@ -297,6 +297,16 @@
             document.getElementById('close-report-modal').addEventListener('click', () => modal.hidden = true);
             document.getElementById('cancel-report-modal').addEventListener('click', () => modal.hidden = true);
 
+            // Cerrar modal al hacer clic en el fondo gris fuera de la tarjeta
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.hidden = true;
+            });
+
+            // Cerrar modal al pulsar tecla Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.hidden) modal.hidden = true;
+            });
+
             // Guardar nuevo reporte
             document.getElementById('report-form').addEventListener('submit', (e) => {
                 e.preventDefault();

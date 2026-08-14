@@ -337,6 +337,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/a-traves-de-un-comunicado-la-hermandad-ha-enviado-sus-condolencias-a-las-familias.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/a-traves-de-un-comunicado-la-hermandad-ha-expresado-su-solidaridad-con-las-familias.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -374,6 +380,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/abierto-el-plazo-para-alegaciones-al-plan-de-ordenacion-urbana-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/abierto-el-plazo-para-inscribirse-en-los-clubes-de-lectura-de-alhaurin-el-grande-2026-27.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -650,6 +662,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-amplia-aforo-piscina-y-apoya-productos-locales-con-subvenciones.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-avanza-con-demolicion-escolar-y-celebra-eventos-locales-en-agosto.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1171,6 +1189,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-lanza-nuevos-clubes-de-lectura-para-ninos-y-jovenes.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-licita-la-reparacion-de-la-cubierta-del-pabellon-2-del-polideportivo.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -1640,6 +1664,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/clausuras-de-los-campamentos-de-verano-en-alhaurin-y-villa-del-guadalhorce-2026.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/concierto-de-amor-y-raices-rinde-homenaje-a-antonio-gala-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -2264,6 +2294,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ii-torneo-de-golf-en-la-cala-resort-para-apoyar-la-investigacion-contra-el-cancer.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -3797,6 +3833,12 @@
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/planes/calendario/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/radar-social/</loc>

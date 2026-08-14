@@ -1,5 +1,95 @@
 [
     {
+        "titulo": "XVII Concurso Fotográfico de la Sierra de las Nieves destaca su biodiversidad y patrimonio",
+        "descripcion": "La Mancomunidad de la Sierra de las Nieves abre el plazo para participar en su XVII Concurso Fotográfico, que busca resaltar la riqueza natural y cultural de la zona hasta el 1 de septiembre de 2026.",
+        "resumen": "La Mancomunidad de la Sierra de las Nieves abre el plazo para participar en su XVII Concurso Fotográfico, que busca resaltar la riqueza natural y cultural de la zona hasta el 1 de septiembre de 2026.",
+        "categoria": "Turismo y Patrimonio",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.619Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/xvii-concurso-fotografico-de-la-sierra-de-las-nieves-destaca-su-biodiversidad-y-patrimonio.html"
+    },
+    {
+        "titulo": "XIV Ruta a Caballo a la Luz de la Luna Llena en Mijas el 29 de agosto",
+        "descripcion": "Mijas organiza la XIV Ruta a Caballo a la Luz de la Luna Llena, un recorrido nocturno de tres horas que parte desde El Esparragal y recorre el entorno rural del municipio.",
+        "resumen": "Mijas organiza la XIV Ruta a Caballo a la Luz de la Luna Llena, un recorrido nocturno de tres horas que parte desde El Esparragal y recorre el entorno rural del municipio.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.617Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/xiv-ruta-a-caballo-a-la-luz-de-la-luna-llena-en-mijas-el-29-de-agosto.html"
+    },
+    {
+        "titulo": "Servicios Operativos de Alhaurín el Grande atiende más de 500 incidencias por tercer mes",
+        "descripcion": "El Área de Servicios Operativos de Alhaurín el Grande mantiene un alto nivel de atención con más de 500 incidencias gestionadas y un 85% de resolución efectiva.",
+        "resumen": "El Área de Servicios Operativos de Alhaurín el Grande mantiene un alto nivel de atención con más de 500 incidencias gestionadas y un 85% de resolución efectiva.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.616Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/servicios-operativos-de-alhaurin-el-grande-atiende-mas-de-500-incidencias-por-tercer-mes.html"
+    },
+    {
+        "titulo": "Más de 500 personas participaron en la campaña de natación al aire libre en Cártama",
+        "descripcion": "La campaña de natación al aire libre en las piscinas de Cártama reunió a más de 500 usuarios durante julio y agosto con actividades para todas las edades.",
+        "resumen": "La campaña de natación al aire libre en las piscinas de Cártama reunió a más de 500 usuarios durante julio y agosto con actividades para todas las edades.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.613Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/mas-de-500-personas-participaron-en-la-campana-de-natacion-al-aire-libre-en-cartama.html"
+    },
+    {
+        "titulo": "II Torneo de Golf en La Cala Resort para apoyar la investigación contra el cáncer",
+        "descripcion": "La AECC organiza el II torneo de golf en La Cala Resort el 29 de agosto para fomentar la investigación y ayudar a pacientes con cáncer en Mijas.",
+        "resumen": "La AECC organiza el II torneo de golf en La Cala Resort el 29 de agosto para fomentar la investigación y ayudar a pacientes con cáncer en Mijas.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.606Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/ii-torneo-de-golf-en-la-cala-resort-para-apoyar-la-investigacion-contra-el-cancer.html"
+    },
+    {
+        "titulo": "Feria de Mijas Pueblo 2026: Horarios y programación completa del 7 al 12 de septiembre",
+        "descripcion": "La Feria de Mijas Pueblo 2026 se celebrará del 7 al 12 de septiembre con actividades religiosas, música, feria de día, procesión y eventos infantiles para toda la familia.",
+        "resumen": "La Feria de Mijas Pueblo 2026 se celebrará del 7 al 12 de septiembre con actividades religiosas, música, feria de día, procesión y eventos infantiles para toda la familia.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.605Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/feria-de-mijas-pueblo-2026-horarios-y-programacion-completa-del-7-al-12-de-septiembre.html"
+    },
+    {
+        "titulo": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para proteger a la comunidad educativa ante riesgos estructurales.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para proteger a la comunidad educativa ante riesgos estructurales.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.602Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/demolicion-de-un-modulo-del-CEIP-Emilia-Olivares_01-1024x577.jpeg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-inicia-la-demolicion-de-dos-modulos-del-ceip-emilia.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande prepara verbena y talleres juveniles en septiembre 2026",
+        "descripcion": "Alhaurín el Grande anuncia la verbena anual en Villa del Guadalhorce y el programa juvenil Next Step para septiembre, junto a actividades deportivas y traslados religiosos.",
+        "resumen": "Alhaurín el Grande anuncia la verbena anual en Villa del Guadalhorce y el programa juvenil Next Step para septiembre, junto a actividades deportivas y traslados religiosos.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.592Z",
+        "imagen": "https://i4.ytimg.com/vi/K2HxiwfRDVk/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-prepara-verbena-y-talleres-juveniles-en-septiembre-2026.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande estrena clubes de lectura para niños y jóvenes este curso",
+        "descripcion": "Alhaurín el Grande lanza dos nuevos clubes de lectura dirigidos a niños de 9 a 13 años y jóvenes de 14 a 17 años, ampliando las actividades culturales para la infancia y juventud.",
+        "resumen": "Alhaurín el Grande lanza dos nuevos clubes de lectura dirigidos a niños de 9 a 13 años y jóvenes de 14 a 17 años, ampliando las actividades culturales para la infancia y juventud.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T11:01:46.588Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-estrena-clubes-de-lectura-para-ninos-y-jovenes-este-curso.html"
+    },
+    {
         "titulo": "XVII Concurso Fotográfico Sierra de las Nieves destaca biodiversidad e identidad rural",
         "descripcion": "La Mancomunidad de Municipios de la Sierra de las Nieves abre el plazo para su XVII Concurso Fotográfico, que busca resaltar la biodiversidad y la identidad rural de la zona.",
         "resumen": "La Mancomunidad de Municipios de la Sierra de las Nieves abre el plazo para su XVII Concurso Fotográfico, que busca resaltar la biodiversidad y la identidad rural de la zona.",

@@ -305,18 +305,33 @@ function renderAgendaEvent(event) {
 function renderAgenda(html) {
   const data = readJSON(DATA.agendaLocal, { eventos: [] });
   const events = Array.isArray(data.eventos) ? data.eventos : [];
+
+  // Filter: only events within today + 2 days (3-day window)
+  const now = new Date();
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const windowEnd = new Date(todayStart);
+  windowEnd.setDate(windowEnd.getDate() + 3); // midnight of day+3 = end of day+2
+
   const upcoming = events
     .filter(isUpcomingEvent)
+    .filter(e => {
+      const start = e.inicio ? new Date(e.inicio) : null;
+      if (!start || Number.isNaN(start.getTime())) return false;
+      return start >= todayStart && start < windowEnd;
+    })
     .sort((a, b) => {
       const dateA = (a.inicio && new Date(a.inicio)) || (a.fin && new Date(a.fin)) || new Date(8640000000000000);
       const dateB = (b.inicio && new Date(b.inicio)) || (b.fin && new Date(b.fin)) || new Date(8640000000000000);
       return dateA - dateB;
     })
-    .slice(0, 4);
+    .slice(0, 6);
 
   const updatedDate = data.actualizado || new Date().toISOString();
   let actualizado = setContainerInnerHTML(html, 'home-agenda-updated', escapeHTML(formatUpdatedShort(updatedDate, 'Agenda pendiente de actualización')));
-  const inner = upcoming.length ? upcoming.map(renderAgendaEvent).join('') : renderAgendaEmpty();
+  const calendarLink = `<div class="home-agenda-calendar-link"><a href="${escapeHTML(normalizeLink('planes/calendario/'))}">📅 Ver calendario completo de eventos →</a></div>`;
+  const inner = upcoming.length
+    ? upcoming.map(renderAgendaEvent).join('') + calendarLink
+    : renderAgendaEmpty() + calendarLink;
   return setContainerInnerHTML(actualizado, 'home-agenda-list', inner);
 }
 

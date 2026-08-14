@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendario de eventos — Alhaurín al Día</title>
+    <meta name="description" content="Calendario completo de eventos, fiestas, música en vivo, procesiones y planes en Alhaurín el Grande.">
+    <meta name="theme-color" content="#1c1f1b">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://alhaurinaldia.es/planes/calendario/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alhaurín al Día">
+    <meta property="og:title" content="Calendario de eventos en Alhaurín el Grande">
+    <meta property="og:description" content="Calendario completo de eventos, fiestas, música en vivo, procesiones y planes en Alhaurín el Grande.">
+    <meta property="og:url" content="https://alhaurinaldia.es/planes/calendario/">
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/mobile.css">
+    <link rel="stylesheet" href="../../css/ads.css">
+
+    <style>
+        /* ── Calendar page styles ── */
+        .cal-page-header {
+            padding: 32px 0 24px;
+            border-bottom: 1px solid var(--line);
+        }
+        .cal-page-header h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: clamp(22px, 4vw, 30px);
+            color: var(--ink);
+            margin: 0 0 4px;
+        }
+        .cal-page-header p {
+            color: var(--muted);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Navigation */
+        .cal-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0 12px;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .cal-nav-arrows {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .cal-nav-arrows button {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 6px 14px;
+            font-size: 14px;
+            cursor: pointer;
+            color: var(--ink);
+            transition: all 0.15s;
+        }
+        .cal-nav-arrows button:hover {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+        }
+        .cal-month-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--ink);
+            min-width: 180px;
+            text-align: center;
+        }
+        .cal-today-btn {
+            font-size: 13px;
+            color: var(--accent);
+            background: var(--accent-soft);
+            border: 1px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 6px 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.15s;
+        }
+        .cal-today-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Legend */
+        .cal-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 16px;
+            padding: 12px 0 16px;
+            border-bottom: 1px solid var(--line);
+        }
+        .cal-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: var(--muted);
+            font-weight: 500;
+        }
+        .cal-legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* Grid */
+        .cal-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            border-left: 1px solid var(--line);
+            border-top: 1px solid var(--line);
+            margin-top: 16px;
+        }
+        .cal-dow {
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted);
+            background: var(--paper-soft);
+            border-right: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+        .cal-cell {
+            min-height: 90px;
+            padding: 6px;
+            border-right: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: var(--paper);
+            cursor: pointer;
+            transition: background 0.15s;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .cal-cell:hover {
+            background: var(--paper-soft);
+        }
+        .cal-empty {
+            background: var(--bg);
+            cursor: default;
+        }
+        .cal-empty:hover {
+            background: var(--bg);
+        }
+        .cal-today {
+            background: var(--accent-soft) !important;
+            border-color: var(--accent);
+        }
+        .cal-past {
+            opacity: 0.45;
+        }
+        .cal-day-num {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+        .cal-today .cal-day-num {
+            color: var(--accent-dark);
+            font-weight: 700;
+        }
+        .cal-pill {
+            font-size: 10px;
+            font-weight: 500;
+            padding: 2px 5px;
+            border-radius: 3px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.4;
+        }
+        .cal-pill-more {
+            font-size: 10px;
+            color: var(--muted);
+            padding: 1px 5px;
+            font-weight: 600;
+        }
+
+        /* List view */
+        .cal-list {
+            padding: 24px 0 40px;
+        }
+        .cal-list-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 18px;
+            color: var(--ink);
+            margin: 0 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--line);
+        }
+        .cal-day-group {
+            margin-bottom: 20px;
+        }
+        .cal-day-today {
+            background: var(--accent-soft);
+            border-radius: var(--radius-lg);
+            padding: 12px;
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+        .cal-day-label {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 0 0 10px;
+            text-transform: capitalize;
+        }
+        .cal-event-card {
+            display: grid;
+            grid-template-columns: 56px 1fr 28px;
+            gap: 10px;
+            align-items: start;
+            padding: 12px;
+            margin-bottom: 8px;
+            background: var(--paper);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
+            text-decoration: none;
+            color: var(--ink);
+            transition: box-shadow 0.15s, transform 0.1s;
+        }
+        .cal-event-card:hover {
+            box-shadow: var(--shadow-float);
+            transform: translateY(-1px);
+        }
+        .cal-event-time {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--muted);
+            padding-top: 2px;
+        }
+        .cal-event-body h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 4px 0 2px;
+            color: var(--ink);
+            line-height: 1.35;
+        }
+        .cal-event-body p {
+            font-size: 13px;
+            color: var(--muted);
+            margin: 0 0 4px;
+            line-height: 1.4;
+        }
+        .cal-event-body small {
+            font-size: 12px;
+            color: var(--muted);
+        }
+        .cal-event-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 3px;
+            line-height: 1.4;
+        }
+        .cal-event-arrow {
+            color: var(--muted);
+            font-size: 16px;
+            padding-top: 6px;
+            font-weight: 600;
+        }
+        .cal-no-events {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        /* Mobile: hide grid, show list only */
+        @media (max-width: 768px) {
+            .cal-grid { display: none; }
+            .cal-event-card {
+                grid-template-columns: 50px 1fr 24px;
+                gap: 8px;
+                padding: 10px;
+            }
+            .cal-page-header h1 { font-size: 22px; }
+            .cal-day-today {
+                margin-left: -8px;
+                margin-right: -8px;
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <span>Agenda de eventos de Alhaurín el Grande</span>
+            <span>Calendario completo · Todos los eventos</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav aria-label="Navegación principal">
+                <a class="logo" href="/" aria-label="Alhaurín al Día">
+                    <span class="logo-mark">A</span>
+                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Abrir menú de navegación">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <div class="nav-links" id="main-menu">
+                    <a href="/noticias/">Noticias</a>
+                    <a href="/guia-util/">Guía útil</a>
+                    <a href="/avisos/">Avisos</a>
+                    <a href="/tiempo/">Tiempo</a>
+                    <a href="/seguimiento/">Seguimiento</a>
+                    <a href="/planes/">Planes</a>
+                    <a href="/comercios/">Comercios</a>
+                    <a href="/anunciarse/" class="nav-cta">Anunciarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cal-page-header">
+            <div class="container">
+                <h1>📅 Calendario de eventos</h1>
+                <p>Todos los eventos, fiestas, procesiones, música en vivo y planes en Alhaurín el Grande.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="cal-nav">
+                    <div class="cal-nav-arrows">
+                        <button id="cal-prev" aria-label="Mes anterior">← Anterior</button>
+                        <span class="cal-month-title" id="cal-month-title">Agosto 2026</span>
+                        <button id="cal-next" aria-label="Mes siguiente">Siguiente →</button>
+                    </div>
+                    <button class="cal-today-btn" id="cal-today">Ir a hoy</button>
+                </div>
+
+                <div class="cal-legend" id="cal-legend"></div>
+
+                <div class="cal-grid" id="cal-grid" aria-label="Calendario mensual"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="cal-list-title">Detalle de eventos</h2>
+                <div class="cal-list" id="cal-list">
+                    <div class="cal-no-events"><p>Cargando eventos...</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
+            <div class="footer-links">
+                <a href="/noticias/">Noticias</a>
+                <a href="/guia-util/">Guía útil</a>
+                <a href="/avisos/">Avisos</a>
+                <a href="/boletin-oficial/">Boletín oficial</a>
+                <a href="/tiempo/">Tiempo</a>
+                <a href="/planes/">Planes</a>
+                <a href="/comercios/">Comercios</a>
+                <a href="/anunciarse/">Anunciarse</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/app.js" defer></script>
+    <script src="./calendario.js" defer></script>
+</body>
+
+</html>

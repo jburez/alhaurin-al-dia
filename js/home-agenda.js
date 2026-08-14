@@ -102,25 +102,39 @@
         })
         .then(function (data) {
             var events = Array.isArray(data.eventos) ? data.eventos : [];
+            // Filter: only events within today + 2 days (3-day window)
+            var now = new Date();
+            var todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            var windowEnd = new Date(todayStart);
+            windowEnd.setDate(windowEnd.getDate() + 3);
+
             var upcoming = events
                 .filter(isUpcoming)
+                .filter(function (e) {
+                    var start = parseDate(e.inicio);
+                    if (!start) return false;
+                    return start >= todayStart && start < windowEnd;
+                })
                 .sort(function (a, b) {
                     var dateA = parseDate(a.inicio) || parseDate(a.fin) || new Date(8640000000000000);
                     var dateB = parseDate(b.inicio) || parseDate(b.fin) || new Date(8640000000000000);
                     return dateA - dateB;
                 })
-                .slice(0, 4);
+                .slice(0, 6);
 
             if (updatedBox) {
                 updatedBox.textContent = formatUpdated(data.actualizado);
             }
 
+            var calendarLink = '<div class="home-agenda-calendar-link"><a href="' + normalizeLink("planes/calendario/") + '">📅 Ver calendario completo de eventos →</a></div>';
+
             if (!upcoming.length) {
                 renderEmpty();
+                container.innerHTML += calendarLink;
                 return;
             }
 
-            container.innerHTML = upcoming.map(renderEvent).join("");
+            container.innerHTML = upcoming.map(renderEvent).join("") + calendarLink;
         })
         .catch(function (error) {
             console.error("Error cargando agenda local:", error);

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T09:50:18+02:00",
+  "actualizado": "2026-08-14T13:07:52+02:00",
   "fuente": "AEMET",
   "municipio": "Alhaurín el Grande",
   "item": {
@@ -22,7 +22,7 @@
     "icono": "☀️",
     "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "S 10 km/h",
+    "viento": "Flojo",
     "uv": "8"
   },
   "semana": [
@@ -35,7 +35,7 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
+      "viento": "Flojo",
       "uv": "8"
     },
     {
@@ -46,8 +46,8 @@
       "t_min": "23",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "30%",
-      "viento": "SE 15 km/h",
+      "lluvia": "10%",
+      "viento": "S 10 km/h",
       "uv": "8"
     },
     {
@@ -56,9 +56,9 @@
       "fecha_corta": "16/8",
       "t_max": "33",
       "t_min": "22",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "0%",
       "viento": "SE 15 km/h",
       "uv": "8"
     },

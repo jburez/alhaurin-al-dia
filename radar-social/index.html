@@ -227,6 +227,15 @@
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
 
+            // Modo admin (URL: ?admin=true)
+            const IS_ADMIN = new URLSearchParams(window.location.search).get('admin') === 'true';
+            if (IS_ADMIN) {
+                const badge = document.createElement('div');
+                badge.style.cssText = 'position:fixed;bottom:16px;right:16px;z-index:999;background:#b91c1c;color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+                badge.textContent = '🔑 Modo Admin';
+                document.body.appendChild(badge);
+            }
+
             // TTL por tipo (milisegundos)
             const TTL = {
                 lluvia: 3 * 3600000,
@@ -352,9 +361,12 @@
 
                 const ttlInfo = !isExpiredReport ? `<span style="font-size:10px;color:var(--muted);margin-left:4px;" title="Este reporte expira automáticamente">⏱ ${TTL_LABELS[r.type] || '6h'}</span>` : '';
 
-                const buttons = isExpiredReport ? '' : `
+                const buttons = isExpiredReport ? (IS_ADMIN ? `
+                    <button type="button" class="admin-delete-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#b91c1c;border:0;font-size:12px;font-weight:700;cursor:pointer;color:#fff;">🗑️ Eliminar</button>
+                ` : '') : `
                     <button type="button" class="vote-btn" data-id="${r.id}">👍 Confirmar (${r.votes || 0})</button>
                     <button type="button" class="dismiss-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#fff;border:1px solid #fca5a5;font-size:12px;font-weight:700;cursor:pointer;color:#b91c1c;">❌ Ya no ocurre${r.dismisses ? ` (${r.dismisses})` : ''}</button>
+                    ${IS_ADMIN ? `<button type="button" class="admin-expire-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#fef3c7;border:1px solid #f59e0b;font-size:12px;font-weight:700;cursor:pointer;color:#92400e;">⏩ Expirar</button><button type="button" class="admin-delete-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#b91c1c;border:0;font-size:12px;font-weight:700;cursor:pointer;color:#fff;">🗑️ Eliminar</button>` : ''}
                 `;
 
                 item.innerHTML = `
@@ -411,6 +423,31 @@
                     if (report.dismissed) {
                         setTimeout(() => renderReports(), 300);
                     }
+                    return;
+                }
+
+                // Admin: Forzar expiración
+                const expireBtn = e.target.closest('.admin-expire-btn');
+                if (expireBtn && IS_ADMIN) {
+                    const id = expireBtn.getAttribute('data-id');
+                    const report = allReports.find(r => r.id === id);
+                    if (!report) return;
+                    report.dismissed = true;
+                    report.dismisses = 99;
+                    persistReport(id);
+                    renderReports();
+                    return;
+                }
+
+                // Admin: Eliminar
+                const deleteBtn = e.target.closest('.admin-delete-btn');
+                if (deleteBtn && IS_ADMIN) {
+                    const id = deleteBtn.getAttribute('data-id');
+                    if (!confirm('¿Eliminar este reporte permanentemente?')) return;
+                    allReports = allReports.filter(r => r.id !== id);
+                    stored = stored.filter(r => r.id !== id);
+                    localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
+                    renderReports();
                     return;
                 }
             });

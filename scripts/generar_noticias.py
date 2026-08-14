@@ -199,6 +199,14 @@ def nivel_confianza_fuente(fuente):
     return None
 
 
+def fuente_requiere_filtro_geo(fuente):
+    """True si la fuente tiene filtro_geografico: true en data/fuentes.json."""
+    for registro in cargar_fuentes():
+        if registro.get("nombre", "").strip().lower() == fuente.strip().lower():
+            return registro.get("filtro_geografico", False)
+    return False
+
+
 def calcular_score(noticia):
     fecha = fecha_para_ordenacion(noticia["fecha"])
     try:
@@ -304,7 +312,9 @@ def evaluar_relevancia_geografica(titulo, texto, fuente):
     # (B) en data/fuentes.json se dan por relevantes sin exigir que el texto
     # mencione literalmente el municipio: p. ej. una noticia de fichajes de
     # CD Alhaurino es local por naturaleza aunque no diga "Alhaurín el Grande".
-    if nivel_confianza_fuente(fuente) in ("A", "B"):
+    # EXCEPCIÓN: si la fuente tiene filtro_geografico: true, se aplica el filtro
+    # igualmente (p. ej. revistas comarcales que cubren varios municipios).
+    if nivel_confianza_fuente(fuente) in ("A", "B") and not fuente_requiere_filtro_geo(fuente):
         return True, False
 
     contenido = _sin_acentos(f"{titulo} {texto}".lower())

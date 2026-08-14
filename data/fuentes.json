@@ -115,9 +115,10 @@
     "nivel_confianza": "B",
     "prioridad": 90,
     "activa": true,
+    "filtro_geografico": true,
     "categoria_contenido": "noticia",
     "condiciones_reutilizacion": "Revista comarcal verificada (Alhaurín el Grande y Guadalhorce); resumen propio, cita y enlace obligatorios.",
-    "notas": "Excelente cobertura local de eventos, cultura, fiestas y sociedad de Alhaurín el Grande."
+    "notas": "Filtro geográfico activado: solo publica artículos que mencionen Alhaurín el Grande."
   },
   {
     "id": "gdr-valle-del-guadalhorce",

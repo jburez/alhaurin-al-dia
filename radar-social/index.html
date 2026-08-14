@@ -37,9 +37,76 @@
     <!-- Leaflet CSS & JS for Interactive Map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+    <style>
+        /* Los inputs/select/textarea de .form-group no fijaban fondo ni color de
+           texto: en navegadores con modo oscuro del sistema activado, los
+           controles de formulario se pintan con estilo nativo oscuro (texto claro
+           sobre fondo oscuro) aunque el resto de la página sea siempre clara, lo
+           que dejaba el texto casi invisible dentro del modal blanco. Forzamos
+           esquema claro explícito solo para estos campos. */
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            background: #ffffff;
+            color: var(--ink);
+            color-scheme: light;
+        }
+
+        /* Acceso admin: deliberadamente discreto, no es una función pensada
+           para el visitante medio. Botón pequeño y semitransparente en la
+           esquina, solo el icono; se aclara al pasar el ratón/foco. */
+        #admin-auth-btn {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 500;
+            width: 34px;
+            height: 34px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.55);
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1;
+            cursor: pointer;
+            opacity: 0.4;
+            transition: opacity .15s ease, background .15s ease;
+        }
+
+        #admin-auth-btn:hover,
+        #admin-auth-btn:focus-visible {
+            opacity: 1;
+            background: #ffffff;
+        }
+
+        /* Cuando hay sesión iniciada, el botón muestra texto (email · Salir);
+           en ese caso se ensancha y se lee sin depender del hover. */
+        #admin-auth-btn.admin-logged-in {
+            width: auto;
+            padding: 6px 14px;
+            border-radius: 20px;
+            opacity: 0.85;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 640px) {
+            #admin-auth-btn {
+                bottom: 12px;
+                right: 12px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <button type="button" id="admin-auth-btn" title="Acceso admin" aria-label="Acceso admin">🔑</button>
+
     <div class="topbar">
         <div class="container">
             <span>Guía local independiente de Alhaurín el Grande</span>
@@ -76,12 +143,9 @@
                         <h1>Radar Social Hiperlocal</h1>
                         <p class="radar-subtitle">Mapa colaborativo donde los vecinos de Alhaurín el Grande comparten observaciones meteorológicas, pluviómetros, tormentas e incidencias al instante.</p>
                     </div>
-                    <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:flex-start;">
-                        <button type="button" class="btn btn-secondary" id="admin-auth-btn" style="font-size:12px;">🔑 Acceso admin</button>
-                        <button type="button" class="btn btn-primary" id="open-report-modal">
-                            🚀 Publicar reporte vecinal
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-primary" id="open-report-modal">
+                        🚀 Publicar reporte vecinal
+                    </button>
                 </div>
 
                 <!-- CATEGORÍAS DE FILTRADO DEL MAPA -->
@@ -335,8 +399,10 @@
                     adminAuthBtn.textContent = isAdmin
                         ? `🔑 ${currentUser.email} · Salir`
                         : `👤 ${currentUser.email} (sin permisos) · Salir`;
+                    adminAuthBtn.classList.add('admin-logged-in');
                 } else {
-                    adminAuthBtn.textContent = '🔑 Acceso admin';
+                    adminAuthBtn.textContent = '🔑';
+                    adminAuthBtn.classList.remove('admin-logged-in');
                 }
             }
 

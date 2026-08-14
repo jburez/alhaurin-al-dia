@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { SITE_FOOTER_HTML } = require('./lib/footer');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://alhaurinaldia.es';
@@ -249,7 +250,7 @@ function renderPage(item) {
             <a href="/guia-util/" class="editorial-back-link">← Volver a la Guía útil</a>
         </div>
     </main>
-    <footer><div class="container"><span>© 2026 Alhaurín al Día · Guía local independiente</span><div class="footer-links"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/">Anunciarse</a></div></div></footer>
+    ${SITE_FOOTER_HTML}
     <script src="/js/app.js" defer></script>
 </body>
 </html>

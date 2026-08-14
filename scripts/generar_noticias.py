@@ -15,6 +15,8 @@ import requests
 import urllib3
 from dotenv import load_dotenv
 
+from lib.footer import SITE_FOOTER_HTML
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
 NOTICIAS_DIR = BASE_DIR / "noticias"
@@ -645,24 +647,7 @@ def site_chrome(content, prefix=".."):
         </div>
     </header>
     {content}
-    <footer>
-        <div class="container">
-            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
-            <div class="footer-links">
-                <a href="{prefix}/noticias/">Noticias</a>
-                <a href="{prefix}/guia-util/">Guía útil</a>
-                <a href="{prefix}/avisos/">Avisos</a>
-                <a href="{prefix}/tiempo/">Tiempo</a>
-                <a href="{prefix}/seguimiento/">Seguimiento</a>
-                <a href="{prefix}/radar-social/">Radar Social</a>
-                <a href="{prefix}/mi-alhaurin/">Mi Alhaurín</a>
-                <a href="{prefix}/planes/">Planes</a>
-                <a href="{prefix}/comercios/">Comercios</a>
-                <a href="{prefix}/anunciarse/">Anunciarse</a>
-                <a href="https://www.google.com/preferences/source?q=alhaurinaldia.es" target="_blank" rel="noopener noreferrer">⭐ Destacar en Google</a>
-            </div>
-        </div>
-    </footer>
+    {SITE_FOOTER_HTML}
     <script src="{prefix}/js/app.js" defer></script>
 </body>'''
 

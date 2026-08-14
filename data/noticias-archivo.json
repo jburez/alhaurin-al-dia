@@ -1,5 +1,55 @@
 [
     {
+        "titulo": "Torremolinos alcanza en julio su cifra de desempleo más baja desde 2007",
+        "descripcion": "El desempleo en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 parados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3% respecto al año anterior.",
+        "resumen": "El desempleo en Torremolinos bajó un 12,2% en julio de 2026, con 3.748 parados, la cifra más baja desde noviembre de 2007, mientras los contratos aumentaron un 3,3% respecto al año anterior.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T02:28:46.369Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/torremolinos-alcanza-en-julio-su-cifra-de-desempleo-mas-baja-desde-2007.html"
+    },
+    {
+        "titulo": "Fuengirola invierte 828.910 € en modernizar su parque de bomberos para mejorar el servicio",
+        "descripcion": "El Ayuntamiento de Fuengirola destina más de 800.000 euros a la reforma del parque de bomberos para optimizar la operatividad y las condiciones laborales del personal.",
+        "resumen": "El Ayuntamiento de Fuengirola destina más de 800.000 euros a la reforma del parque de bomberos para optimizar la operatividad y las condiciones laborales del personal.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T02:28:46.355Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/fuengirola-invierte-828-910-en-modernizar-su-parque-de-bomberos-para-mejorar-el-servicio.html"
+    },
+    {
+        "titulo": "Feria de Mijas 2026: programa y artistas principales del 7 al 12 de septiembre",
+        "descripcion": "La Feria de Mijas 2026 se celebrará del 7 al 12 de septiembre con un programa familiar y actuaciones destacadas de Camela, Medina Azahara y Marta Quintero.",
+        "resumen": "La Feria de Mijas 2026 se celebrará del 7 al 12 de septiembre con un programa familiar y actuaciones destacadas de Camela, Medina Azahara y Marta Quintero.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T02:28:46.354Z",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde-73x70.jpeg",
+        "pagina": "noticias/feria-de-mijas-2026-programa-y-artistas-principales-del-7-al-12-de-septiembre.html"
+    },
+    {
+        "titulo": "El Ayuntamiento de Alhaurín el Grande invita a los vecinos a presentar sus aportaciones",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande invita a los vecinos a presentar sus aportaciones al Avance del Plan de Ordenación Urbana hasta el 15 de septiembre vía web municipal.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande invita a los vecinos a presentar sus aportaciones al Avance del Plan de Ordenación Urbana hasta el 15 de septiembre vía web municipal.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T02:28:46.350Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/El-Ayuntamiento-de-Alhaurin-el-Grande-abre-el-plazo-de-participacion-ciudadana-sobre-el-Avance-del-Plan-de-Ordenacion-Urbana_02-1024x768.jpeg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-invita-a-los-vecinos-a-presentar-sus-aportaciones.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande avanza en obras, deportes y cultura en agosto 2026",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la demolición en el colegio Emilia Olivares y continúa la campaña de apoyo al comercio local hasta septiembre.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la demolición en el colegio Emilia Olivares y continúa la campaña de apoyo al comercio local hasta septiembre.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-14T02:28:46.332Z",
+        "imagen": "https://i1.ytimg.com/vi/DGucw_PdqrM/hqdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-avanza-en-obras-deportes-y-cultura-en-agosto-2026.html"
+    },
+    {
         "titulo": "Torremolinos alcanza la cifra de desempleo más baja desde 2007 en julio",
         "descripcion": "El paro en Torremolinos baja un 12,2% interanual en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, y un aumento del 3,3% en contratos respecto a 2025.",
         "resumen": "El paro en Torremolinos baja un 12,2% interanual en julio de 2026, con 3.748 desempleados, la cifra más baja desde noviembre de 2007, y un aumento del 3,3% en contratos respecto a 2025.",

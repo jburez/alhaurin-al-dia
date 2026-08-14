@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-08-14T14:24:25+02:00",
+  "actualizado": "2026-08-14T14:33:40+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
@@ -23,7 +23,7 @@
     "icono": "☀️",
     "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "Flojo",
+    "viento": "S 10 km/h",
     "uv": "8"
   },
   "semana": [
@@ -36,7 +36,7 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "Flojo",
+      "viento": "S 10 km/h",
       "uv": "8"
     },
     {

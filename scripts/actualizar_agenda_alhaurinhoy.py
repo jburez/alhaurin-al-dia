@@ -29,6 +29,10 @@ PER_PAGE = 30
 
 def strip_html(text: str) -> str:
     text = unescape(text)
+    # Los posts de origen son capturas de pantalla de Instagram subidas a WordPress;
+    # el pie de foto autogenerado suele quedar literalmente como "Screenshot" y no
+    # aporta contenido editorial, así que se descarta junto con la imagen.
+    text = re.sub(r"<figcaption[^>]*>.*?</figcaption>", " ", text, flags=re.IGNORECASE | re.DOTALL)
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text

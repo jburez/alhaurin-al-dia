@@ -18,6 +18,8 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+from lib.footer import SITE_FOOTER_HTML
+
 ROOT = Path(__file__).resolve().parents[1]
 AGENDA_PATH = ROOT / "data" / "agenda-local.json"
 PLANES_DIR = ROOT / "planes"
@@ -264,14 +266,7 @@ def generate_event_page(event: dict[str, Any], slug: str) -> str:
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
-            <div class="footer-links">
-                <a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/boletin-oficial/">Boletín oficial</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/">Anunciarse</a>
-            </div>
-        </div>
-    </footer>
+    {SITE_FOOTER_HTML}
 
     <script src="../../js/app.js" defer></script>
 </body>

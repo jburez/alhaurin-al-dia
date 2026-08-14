@@ -221,32 +221,48 @@
     <script src="../js/app.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Inicializar Mapa Leaflet centrado en Alhaurín el Grande
             const map = L.map('radar-map').setView([36.6439, -4.6892], 13);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 18,
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
 
-            // Cargar reportes iniciales + localStorage
+            // TTL por tipo (milisegundos)
+            const TTL = {
+                lluvia: 3 * 3600000,
+                tormenta: 2 * 3600000,
+                granizo: 1 * 3600000,
+                viento: 2 * 3600000,
+                arroyo: 6 * 3600000,
+                'corte-trafico': 12 * 3600000,
+                incidencia: 6 * 3600000
+            };
+
+            const TTL_LABELS = {
+                lluvia: '3h', tormenta: '2h', granizo: '1h', viento: '2h',
+                arroyo: '6h', 'corte-trafico': '12h', incidencia: '6h'
+            };
+
+            // Datos de ejemplo con timestamps reales
+            const now = Date.now();
             const initialReports = [
-                { id: '1', type: 'lluvia', title: 'Medición en La Cruz del Monte', val: '8.4 mm', desc: 'Lluvia constante y moderada en la zona alta.', lat: 36.6485, lng: -4.6850, name: 'Manuel G.', votes: 5, date: 'Hace 15 min' },
-                { id: '2', type: 'tormenta', title: 'Tormenta sobre la Sierra de Mijas', val: 'Rayos', desc: 'Descargas eléctricas visibles hacia la sierra.', lat: 36.6350, lng: -4.6750, name: 'Vecina de Las Palmeras', votes: 8, date: 'Hace 30 min' },
-                { id: '3', type: 'arroyo', title: 'Caudal normal en el Río Fahala', val: 'Normal', desc: 'Arroyo corriendo limpio y sin desbordamientos.', lat: 36.6520, lng: -4.6980, name: 'Protección Civil', votes: 12, date: 'Hace 45 min' },
-                { id: '4', type: 'corte-trafico', subtype: 'procesion', title: 'Corte en Calle Real por procesión', val: 'Procesión', desc: 'Corte total de tráfico en Calle Real con motivo de la procesión de la Virgen de Gracia. Desvío por Av. Gerald Brenan.', street: 'Calle Real', lat: 36.6442, lng: -4.6895, name: 'Policía Local', votes: 15, date: 'Hace 1h' }
+                { id: '1', type: 'lluvia', title: 'Medición en La Cruz del Monte', val: '8.4 mm', desc: 'Lluvia constante y moderada en la zona alta.', lat: 36.6485, lng: -4.6850, name: 'Manuel G.', votes: 5, ts: now - 900000, dismisses: 0 },
+                { id: '2', type: 'tormenta', title: 'Tormenta sobre la Sierra de Mijas', val: 'Rayos', desc: 'Descargas eléctricas visibles hacia la sierra.', lat: 36.6350, lng: -4.6750, name: 'Vecina de Las Palmeras', votes: 8, ts: now - 1800000, dismisses: 0 },
+                { id: '3', type: 'arroyo', title: 'Caudal normal en el Río Fahala', val: 'Normal', desc: 'Arroyo corriendo limpio y sin desbordamientos.', lat: 36.6520, lng: -4.6980, name: 'Protección Civil', votes: 12, ts: now - 2700000, dismisses: 0 },
+                { id: '4', type: 'corte-trafico', subtype: 'procesion', title: 'Corte en Calle Real por procesión', val: 'Procesión', desc: 'Corte total de tráfico en Calle Real con motivo de la procesión de la Virgen de Gracia. Desvío por Av. Gerald Brenan.', street: 'Calle Real', lat: 36.6442, lng: -4.6895, name: 'Policía Local', votes: 15, ts: now - 3600000, dismisses: 0 }
             ];
 
             let stored = JSON.parse(localStorage.getItem('alhaurin_radar_reports') || '[]');
+            // Migrar reportes antiguos sin timestamp
+            stored.forEach(r => { if (!r.ts) r.ts = Date.now() - 600000; if (!r.dismisses) r.dismisses = 0; });
             let allReports = [...stored, ...initialReports];
 
             const markersGroup = L.layerGroup().addTo(map);
+            let currentFilter = 'all';
 
             const SUBTYPE_LABELS = {
-                obra: '🏗️ Obra',
-                procesion: '⛪ Procesión',
-                evento: '🎉 Evento',
-                accidente: '🚗 Accidente',
-                otro: '📋 Otro'
+                obra: '🏗️ Obra', procesion: '⛪ Procesión', evento: '🎉 Evento',
+                accidente: '🚗 Accidente', otro: '📋 Otro'
             };
 
             function getIconEmoji(type) {
@@ -257,98 +273,158 @@
                 return { lluvia: 'LLUVIA', tormenta: 'TORMENTA', granizo: 'GRANIZO', viento: 'VIENTO', arroyo: 'ARROYO', 'corte-trafico': 'CORTE DE TRÁFICO', incidencia: 'INCIDENCIA' }[type] || type.toUpperCase();
             }
 
-            function renderReports(filter = 'all') {
+            function timeAgo(ts) {
+                const diff = Date.now() - ts;
+                if (diff < 60000) return 'Ahora mismo';
+                if (diff < 3600000) return `Hace ${Math.floor(diff / 60000)} min`;
+                if (diff < 86400000) return `Hace ${Math.floor(diff / 3600000)}h`;
+                return `Hace ${Math.floor(diff / 86400000)}d`;
+            }
+
+            function isExpired(r) {
+                if (r.dismissed) return true;
+                if (r.dismisses >= 3) return true;
+                const ttl = TTL[r.type] || 6 * 3600000;
+                return (Date.now() - (r.ts || 0)) > ttl;
+            }
+
+            function renderReports(filter) {
+                if (filter !== undefined) currentFilter = filter;
                 markersGroup.clearLayers();
                 const feed = document.getElementById('radar-feed-list');
                 feed.innerHTML = '';
 
-                const filtered = filter === 'all' ? allReports : allReports.filter(r => r.type === filter);
-                document.getElementById('report-count').textContent = `${filtered.length} reportes activos`;
+                let filtered = currentFilter === 'all' ? [...allReports] : allReports.filter(r => r.type === currentFilter);
+                const active = filtered.filter(r => !isExpired(r));
+                const expired = filtered.filter(r => isExpired(r));
 
-                filtered.forEach(r => {
-                    const iconEmoji = getIconEmoji(r.type);
-                    const typeLabel = getTypeLabel(r.type);
+                document.getElementById('report-count').textContent = `${active.length} activo${active.length !== 1 ? 's' : ''}`;
 
-                    // Marcador en el mapa
+                // Render activos
+                active.forEach(r => renderItem(r, feed, false));
+
+                // Separador + expirados
+                if (expired.length > 0) {
+                    const sep = document.createElement('div');
+                    sep.style.cssText = 'padding:8px 0;margin:4px 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted);font-weight:700;';
+                    sep.textContent = `${expired.length} reporte${expired.length !== 1 ? 's' : ''} expirado${expired.length !== 1 ? 's' : ''}`;
+                    feed.appendChild(sep);
+                    expired.forEach(r => renderItem(r, feed, true));
+                }
+            }
+
+            function renderItem(r, feed, isExpiredReport) {
+                const iconEmoji = getIconEmoji(r.type);
+                const typeLabel = getTypeLabel(r.type);
+                const opacity = isExpiredReport ? 0.45 : 1;
+
+                // Marcador en mapa (solo activos)
+                if (!isExpiredReport) {
                     const customIcon = L.divIcon({
                         className: 'leaflet-emoji-marker',
                         html: `<div style="font-size: 26px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">${iconEmoji}</div>`,
                         iconSize: [30, 30],
                         iconAnchor: [15, 15]
                     });
-
                     const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(markersGroup);
-
-                    // Popup con info extra para cortes de tráfico
                     let popupExtra = '';
-                    if (r.type === 'corte-trafico') {
-                        if (r.subtype) popupExtra += `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;margin-bottom:4px;">${SUBTYPE_LABELS[r.subtype] || r.subtype}</span><br>`;
-                        if (r.street) popupExtra += `<span style="font-size:12px;color:#64748b;">📍 ${r.street}</span><br>`;
-                    }
-
+                    if (r.subtype) popupExtra += `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;margin-bottom:4px;">${SUBTYPE_LABELS[r.subtype] || r.subtype}</span><br>`;
+                    if (r.street) popupExtra += `<span style="font-size:12px;color:#64748b;">📍 ${r.street}</span><br>`;
                     marker.bindPopup(`
                         <div style="font-family: system-ui; padding: 4px; max-width: 260px;">
                             <strong>${iconEmoji} ${r.title}</strong><br>
                             ${popupExtra}
                             <p style="margin: 4px 0; font-size: 13px;">${r.desc}</p>
-                            <small style="color: #666;">Por ${r.name || 'Vecino'} · ${r.date}</small>
+                            <small style="color: #666;">Por ${r.name || 'Vecino'} · ${timeAgo(r.ts)}</small>
                         </div>
                     `);
+                }
 
-                    // Ítem en el feed lateral
-                    const item = document.createElement('article');
-                    item.className = 'radar-feed-item';
+                // Feed item
+                const item = document.createElement('article');
+                item.className = 'radar-feed-item';
+                item.style.opacity = opacity;
 
-                    let feedExtra = '';
-                    if (r.type === 'corte-trafico') {
-                        const subtypeTag = r.subtype ? `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;font-size:10px;font-weight:700;margin-left:6px;">${SUBTYPE_LABELS[r.subtype] || r.subtype}</span>` : '';
-                        const streetTag = r.street ? `<div style="font-size:12px;color:var(--muted);margin-top:4px;">📍 ${r.street}</div>` : '';
-                        feedExtra = subtypeTag + streetTag;
-                    }
+                const expiredBadge = isExpiredReport
+                    ? (r.dismissed ? '<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fee2e2;color:#b91c1c;font-size:10px;font-weight:700;margin-left:6px;">Ya no ocurre</span>'
+                       : '<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:var(--paper-soft);color:var(--muted);font-size:10px;font-weight:700;margin-left:6px;">Expirado</span>')
+                    : '';
 
-                    item.innerHTML = `
-                        <div class="radar-feed-top">
-                            <span class="radar-feed-type">${iconEmoji} ${typeLabel}${r.type === 'corte-trafico' && r.subtype ? ` · ${SUBTYPE_LABELS[r.subtype] || r.subtype}` : ''}</span>
-                            <span class="radar-feed-time">${r.date}</span>
-                        </div>
-                        <h3>${r.title}</h3>
-                        ${r.type === 'corte-trafico' && r.street ? `<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">📍 ${r.street}</div>` : ''}
-                        <p>${r.desc}</p>
-                        <div class="radar-feed-footer">
-                            <span class="radar-feed-user">Por ${r.name || 'Vecino'}</span>
-                            <button type="button" class="vote-btn" data-id="${r.id}">👍 Confirmar (${r.votes})</button>
-                        </div>
-                    `;
-                    feed.appendChild(item);
-                });
+                const ttlInfo = !isExpiredReport ? `<span style="font-size:10px;color:var(--muted);margin-left:4px;" title="Este reporte expira automáticamente">⏱ ${TTL_LABELS[r.type] || '6h'}</span>` : '';
+
+                const buttons = isExpiredReport ? '' : `
+                    <button type="button" class="vote-btn" data-id="${r.id}">👍 Confirmar (${r.votes || 0})</button>
+                    <button type="button" class="dismiss-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#fff;border:1px solid #fca5a5;font-size:12px;font-weight:700;cursor:pointer;color:#b91c1c;">❌ Ya no ocurre${r.dismisses ? ` (${r.dismisses})` : ''}</button>
+                `;
+
+                item.innerHTML = `
+                    <div class="radar-feed-top">
+                        <span class="radar-feed-type">${iconEmoji} ${typeLabel}${r.subtype ? ` · ${SUBTYPE_LABELS[r.subtype] || r.subtype}` : ''}${expiredBadge}</span>
+                        <span class="radar-feed-time">${timeAgo(r.ts)}${ttlInfo}</span>
+                    </div>
+                    <h3>${r.title}</h3>
+                    ${r.street ? `<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">📍 ${r.street}</div>` : ''}
+                    <p>${r.desc}</p>
+                    <div class="radar-feed-footer">
+                        <span class="radar-feed-user">Por ${r.name || 'Vecino'}</span>
+                        <div style="display:flex;gap:6px;flex-wrap:wrap;">${buttons}</div>
+                    </div>
+                `;
+                feed.appendChild(item);
             }
 
             renderReports();
 
-            // Votación (event delegation — los botones se crean dinámicamente)
+            // Event delegation para votos y dismisses
             document.getElementById('radar-feed-list').addEventListener('click', (e) => {
-                const btn = e.target.closest('.vote-btn');
-                if (!btn) return;
-                const id = btn.getAttribute('data-id');
-                const report = allReports.find(r => r.id === id);
-                if (!report) return;
+                // Confirmar
+                const voteBtn = e.target.closest('.vote-btn');
+                if (voteBtn) {
+                    const id = voteBtn.getAttribute('data-id');
+                    const report = allReports.find(r => r.id === id);
+                    if (!report) return;
+                    report.votes = (report.votes || 0) + 1;
+                    voteBtn.textContent = `👍 Confirmar (${report.votes})`;
+                    voteBtn.style.background = 'var(--accent-soft)';
+                    voteBtn.style.borderColor = 'var(--accent)';
+                    voteBtn.style.color = 'var(--accent)';
+                    voteBtn.disabled = true;
+                    persistReport(id);
+                    return;
+                }
 
-                report.votes = (report.votes || 0) + 1;
-                btn.textContent = `👍 Confirmar (${report.votes})`;
-                btn.style.background = 'var(--accent-soft)';
-                btn.style.borderColor = 'var(--accent)';
-                btn.style.color = 'var(--accent)';
-                btn.disabled = true;
-
-                // Persistir en localStorage si es un reporte guardado
-                const storedIdx = stored.findIndex(r => r.id === id);
-                if (storedIdx !== -1) {
-                    stored[storedIdx].votes = report.votes;
-                    localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
+                // Ya no ocurre
+                const dismissBtn = e.target.closest('.dismiss-btn');
+                if (dismissBtn) {
+                    const id = dismissBtn.getAttribute('data-id');
+                    const report = allReports.find(r => r.id === id);
+                    if (!report) return;
+                    report.dismisses = (report.dismisses || 0) + 1;
+                    if (report.dismisses >= 3) {
+                        report.dismissed = true;
+                    }
+                    dismissBtn.textContent = `❌ Ya no ocurre (${report.dismisses})`;
+                    dismissBtn.style.background = '#fee2e2';
+                    dismissBtn.disabled = true;
+                    persistReport(id);
+                    // Re-render si alcanza el umbral
+                    if (report.dismissed) {
+                        setTimeout(() => renderReports(), 300);
+                    }
+                    return;
                 }
             });
 
-            // Filtrado por categoría
+            function persistReport(id) {
+                const storedIdx = stored.findIndex(r => r.id === id);
+                if (storedIdx !== -1) {
+                    const report = allReports.find(r => r.id === id);
+                    stored[storedIdx] = { ...stored[storedIdx], votes: report.votes, dismisses: report.dismisses, dismissed: report.dismissed };
+                    localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
+                }
+            }
+
+            // Filtrado
             document.querySelectorAll('.radar-filter-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     document.querySelectorAll('.radar-filter-btn').forEach(b => b.classList.remove('active'));
@@ -357,62 +433,37 @@
                 });
             });
 
-            // Mostrar/ocultar subtipo de corte de tráfico según tipo seleccionado
+            // Subtipo corte de tráfico
             const reportType = document.getElementById('report-type');
             const corteSubtipoGroup = document.getElementById('corte-subtipo-group');
-
             reportType.addEventListener('change', () => {
                 const isCorte = reportType.value === 'corte-trafico';
                 corteSubtipoGroup.style.display = isCorte ? 'block' : 'none';
                 document.getElementById('corte-subtipo').required = isCorte;
             });
 
-            // Geocodificación con Nominatim (OpenStreetMap)
+            // Geocodificación
             async function geocodeStreet(streetName) {
                 const query = `${streetName}, Alhaurín el Grande, Málaga, España`;
                 try {
                     const resp = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1&countrycodes=es`);
                     const data = await resp.json();
-                    if (data.length > 0) {
-                        return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
-                    }
-                } catch (err) {
-                    console.warn('Geocodificación fallida:', err);
-                }
-                // Fallback: centro de Alhaurín con dispersión
+                    if (data.length > 0) return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+                } catch (err) { console.warn('Geocodificación fallida:', err); }
                 return { lat: 36.6439 + (Math.random() - 0.5) * 0.008, lng: -4.6892 + (Math.random() - 0.5) * 0.008 };
             }
 
-            // Funciones de control estricto del Modal
+            // Modal
             const modal = document.getElementById('report-modal');
-
-            function showModal() {
-                modal.hidden = false;
-                modal.classList.add('open');
-                modal.style.setProperty('display', 'flex', 'important');
-            }
-
-            function hideModal() {
-                modal.hidden = true;
-                modal.classList.remove('open');
-                modal.style.setProperty('display', 'none', 'important');
-            }
-
+            function showModal() { modal.hidden = false; modal.classList.add('open'); modal.style.setProperty('display', 'flex', 'important'); }
+            function hideModal() { modal.hidden = true; modal.classList.remove('open'); modal.style.setProperty('display', 'none', 'important'); }
             document.getElementById('open-report-modal').addEventListener('click', showModal);
             document.getElementById('close-report-modal').addEventListener('click', hideModal);
             document.getElementById('cancel-report-modal').addEventListener('click', hideModal);
+            modal.addEventListener('click', (e) => { if (e.target === modal) hideModal(); });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideModal(); });
 
-            // Cerrar modal al hacer clic en el fondo gris fuera de la tarjeta
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) hideModal();
-            });
-
-            // Cerrar modal al pulsar tecla Escape
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') hideModal();
-            });
-
-            // Guardar nuevo reporte
+            // Nuevo reporte
             document.getElementById('report-form').addEventListener('submit', async (e) => {
                 e.preventDefault();
                 const type = document.getElementById('report-type').value;
@@ -420,55 +471,37 @@
                 const desc = document.getElementById('report-desc').value;
                 const name = document.getElementById('report-name').value || 'Vecino de Alhaurín';
                 const val = document.getElementById('report-val').value;
-
                 let lat, lng, subtype = null;
                 const street = document.getElementById('corte-direccion').value.trim() || null;
 
-                if (type === 'corte-trafico') {
-                    subtype = document.getElementById('corte-subtipo').value;
-                }
+                if (type === 'corte-trafico') subtype = document.getElementById('corte-subtipo').value;
 
                 if (street) {
-                    // Geocodificar dirección
                     const submitBtn = document.getElementById('submit-report-btn');
                     submitBtn.textContent = 'Localizando en mapa...';
                     submitBtn.disabled = true;
-
                     const coords = await geocodeStreet(street);
-                    lat = coords.lat;
-                    lng = coords.lng;
-
+                    lat = coords.lat; lng = coords.lng;
                     submitBtn.textContent = 'Publicar en el mapa';
                     submitBtn.disabled = false;
                 } else {
-                    // Sin dirección: dispersión aleatoria alrededor del centro
                     lat = 36.6439 + (Math.random() - 0.5) * 0.02;
                     lng = -4.6892 + (Math.random() - 0.5) * 0.02;
                 }
 
                 const newReport = {
-                    id: String(Date.now()),
-                    type,
-                    subtype,
-                    street,
-                    title,
+                    id: String(Date.now()), type, subtype, street, title,
                     desc: desc || `${title} (${val || 'Sin dato registrado'})`,
-                    val: val || 'Registrado',
-                    lat,
-                    lng,
-                    name,
-                    votes: 1,
-                    date: 'Ahora mismo'
+                    val: val || 'Registrado', lat, lng, name,
+                    votes: 1, dismisses: 0, ts: Date.now()
                 };
 
                 allReports.unshift(newReport);
                 stored.unshift(newReport);
                 localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
-
                 renderReports();
                 hideModal();
                 e.target.reset();
-                // Ocultar subtipo al resetear
                 corteSubtipoGroup.style.display = 'none';
                 alert('¡Tu reporte vecinal ha sido publicado con éxito en el mapa!');
             });

@@ -24,7 +24,7 @@ AGENDA_PATH = ROOT / "data" / "agenda-local.json"
 TIMEZONE = ZoneInfo("Europe/Madrid")
 
 EVENTS_API = "https://alhaurinelgrande.es/wp-json/tribe/events/v1/events"
-ICAL_URL = "https://alhaurinelgrande.es/eventos/?ical=1"
+ICAL_URL = "https://alhaurinelgrande.es/events/lista/?ical=1"
 
 # Mapeo de categorías de eventos a iconos y tipos
 CATEGORY_ICONS: dict[str, tuple[str, str]] = {

@@ -827,13 +827,13 @@
                 <div class="interpret-grid">
                     <div class="interpret-card">
                         <div class="interpret-icon">📐</div>
-                        <h3>Coeficiente de Variación (CV)</h3>
-                        <p>Para cada variable y cada día, se calcula el <strong>CV = σ / |x̄| × 100</strong>, donde σ es la desviación estándar y x̄ la media de los valores de los modelos. El CV mide la dispersión relativa: un CV bajo significa que los modelos predicen valores similares.</p>
+                        <h3>Dos formas de medir el desacuerdo</h3>
+                        <p>Para temperatura, nubosidad y humedad se usa la <strong>desviación estándar absoluta (σ)</strong> contra un umbral fijo en sus propias unidades. Para precipitación y viento se usa el <strong>Coeficiente de Variación (CV = σ / x̄ × 100)</strong>, con un mínimo en el denominador para que valores casi nulos no disparen el ratio. Se evita así que un cielo casi despejado (media ~3% de nubosidad) o una temperatura baja en invierno salgan con "poco consenso" aunque los modelos coincidan en términos absolutos.</p>
                     </div>
                     <div class="interpret-card">
                         <div class="interpret-icon">🎯</div>
                         <h3>Índice de Consenso (IC)</h3>
-                        <p>El IC se calcula normalizando el CV en una escala de <strong>0 a 100</strong>, con umbrales específicos por variable. Cada variable tiene umbrales diferentes porque la predictibilidad varía: la temperatura es más predecible que la precipitación, y el CV refleja esto.</p>
+                        <p>El IC normaliza esa medida de dispersión (σ o CV según la variable) en una escala de <strong>0 a 100</strong>, con umbrales específicos por variable. Cada variable tiene umbrales diferentes porque la predictibilidad varía: la temperatura es más predecible que la precipitación.</p>
                     </div>
                     <div class="interpret-card">
                         <div class="interpret-icon">📊</div>
@@ -851,7 +851,7 @@
                                     <th>IC</th>
                                     <th>Nivel</th>
                                     <th>Significado práctico</th>
-                                    <th>Umbrales CV (Temp.)</th>
+                                    <th>Umbrales σ (Temp.)</th>
                                     <th>Umbrales CV (Precip.)</th>
                                     <th>Umbrales CV (Viento)</th>
                                 </tr>
@@ -861,7 +861,7 @@
                                     <td><span class="tag-status green">90–100</span></td>
                                     <td><strong>Muy alto</strong></td>
                                     <td>Todos los modelos coinciden. Predicción muy fiable.</td>
-                                    <td>CV &lt; 3%</td>
+                                    <td>σ &lt; 1°C</td>
                                     <td>CV &lt; 30%</td>
                                     <td>CV &lt; 15%</td>
                                 </tr>
@@ -869,7 +869,7 @@
                                     <td><span class="tag-status yellow">70–89</span></td>
                                     <td><strong>Alto</strong></td>
                                     <td>Buena concordancia con ligeras discrepancias. Predicción fiable.</td>
-                                    <td>CV 3–8%</td>
+                                    <td>σ 1–2°C</td>
                                     <td>CV 30–60%</td>
                                     <td>CV 15–30%</td>
                                 </tr>
@@ -877,7 +877,7 @@
                                     <td><span class="tag-status orange">40–69</span></td>
                                     <td><strong>Moderado</strong></td>
                                     <td>Discrepancias notables entre modelos. Predicción incierta.</td>
-                                    <td>CV 8–15%</td>
+                                    <td>σ 2–4°C</td>
                                     <td>CV 60–100%</td>
                                     <td>CV 30–50%</td>
                                 </tr>
@@ -885,7 +885,7 @@
                                     <td><span class="tag-status red">0–39</span></td>
                                     <td><strong>Bajo</strong></td>
                                     <td>Los modelos no se ponen de acuerdo. Predicción poco fiable.</td>
-                                    <td>CV &gt; 15%</td>
+                                    <td>σ &gt; 4°C</td>
                                     <td>CV &gt; 100%</td>
                                     <td>CV &gt; 50%</td>
                                 </tr>
@@ -1091,27 +1091,43 @@
             return Math.sqrt(valid.reduce((sum, v) => sum + (v - m) ** 2, 0) / (valid.length - 1));
         }
 
-        function coefficientOfVariation(arr) {
+        function coefficientOfVariation(arr, floor) {
             const m = mean(arr);
-            if (m === 0) return 0;
-            return (stdDev(arr) / Math.abs(m)) * 100;
+            const denom = Math.max(Math.abs(m), floor || 0);
+            if (denom === 0) return 0;
+            return (stdDev(arr) / denom) * 100;
         }
 
-        // Variable-specific thresholds for CV → IC mapping
-        const CV_THRESHOLDS = {
-            temp:     { high: 3, med: 8, low: 15 },
-            precip:   { high: 30, med: 60, low: 100 },
-            wind:     { high: 15, med: 30, low: 50 },
-            humidity: { high: 15, med: 30, low: 50 },
-            cloud:    { high: 15, med: 30, low: 50 }
+        // Config por variable: el CV (σ/media) se rompe cuando la media se acerca a
+        // cero — un cielo casi despejado (media ~3% de nubosidad) puede dar CV>100%
+        // con los 4 modelos prácticamente de acuerdo, y la temperatura en Celsius no
+        // tiene un cero real, así que el mismo desacuerdo absoluto sale con IC muy
+        // distinto en invierno que en verano solo por el nivel de temperatura.
+        // - 'abs': usa la desviación estándar en unidades absolutas contra umbrales
+        //   fijos (temperatura, nubosidad, humedad — todas con rango acotado o sin
+        //   cero real).
+        // - 'cv': sigue usando CV relativo (precipitación, viento), pero con un
+        //   "floor" mínimo en el denominador para que valores casi nulos no disparen
+        //   el ratio de forma artificial.
+        const METRIC_CONFIG = {
+            temp:     { mode: 'abs', thresholds: { high: 1, med: 2, low: 4 }, unit: '°C' },
+            precip:   { mode: 'cv', thresholds: { high: 30, med: 60, low: 100 }, floor: 1, unit: 'mm' },
+            wind:     { mode: 'cv', thresholds: { high: 15, med: 30, low: 50 }, floor: 5, unit: 'km/h' },
+            humidity: { mode: 'abs', thresholds: { high: 8, med: 15, low: 25 }, unit: 'pp' },
+            cloud:    { mode: 'abs', thresholds: { high: 10, med: 20, low: 35 }, unit: 'pp' }
         };
 
-        function consensusIndex(cv, variable) {
-            const t = CV_THRESHOLDS[variable];
-            if (cv <= t.high) return Math.round(90 + (1 - cv / t.high) * 10);
-            if (cv <= t.med) return Math.round(70 + (1 - (cv - t.high) / (t.med - t.high)) * 20);
-            if (cv <= t.low) return Math.round(40 + (1 - (cv - t.med) / (t.low - t.med)) * 30);
-            return Math.max(0, Math.round(40 * (1 - (cv - t.low) / t.low)));
+        function dispersionMetric(arr, variable) {
+            const cfg = METRIC_CONFIG[variable];
+            return cfg.mode === 'abs' ? stdDev(arr) : coefficientOfVariation(arr, cfg.floor);
+        }
+
+        function consensusIndex(metric, variable) {
+            const t = METRIC_CONFIG[variable].thresholds;
+            if (metric <= t.high) return Math.round(90 + (1 - metric / t.high) * 10);
+            if (metric <= t.med) return Math.round(70 + (1 - (metric - t.high) / (t.med - t.high)) * 20);
+            if (metric <= t.low) return Math.round(40 + (1 - (metric - t.med) / (t.low - t.med)) * 30);
+            return Math.max(0, Math.round(40 * (1 - (metric - t.low) / t.low)));
         }
 
         function icLevel(ic) {
@@ -1190,8 +1206,8 @@
 
                 varMap.forEach(v => {
                     const vals = getValuesForDay(v.field, 0);
-                    const cv = coefficientOfVariation(vals);
-                    const ic = consensusIndex(cv, v.varKey);
+                    const metric = dispersionMetric(vals, v.varKey);
+                    const ic = consensusIndex(metric, v.varKey);
                     const level = icLevel(ic);
                     const sd = stdDev(vals);
                     const el = document.getElementById(v.id);
@@ -1199,7 +1215,10 @@
                     const lvl = el.querySelector('.ci-level');
                     lvl.textContent = level.label;
                     lvl.className = `ci-level ${level.cls}`;
-                    el.querySelector('.ci-detail').textContent = `σ = ${sd.toFixed(1)} ${v.unit} · CV = ${cv.toFixed(1)}%`;
+                    const detail = METRIC_CONFIG[v.varKey].mode === 'abs'
+                        ? `σ = ${sd.toFixed(1)} ${v.unit}`
+                        : `σ = ${sd.toFixed(1)} ${v.unit} · CV = ${metric.toFixed(1)}%`;
+                    el.querySelector('.ci-detail').textContent = detail;
                 });
 
                 // ===== CHARTS =====
@@ -1317,8 +1336,8 @@
                         const validVals = vals.filter(v => v != null);
                         const m = mean(validVals);
                         const sd = stdDev(validVals);
-                        const cv = coefficientOfVariation(validVals);
-                        const ic = consensusIndex(cv, cfg.varKey);
+                        const metric = dispersionMetric(validVals, cfg.varKey);
+                        const ic = consensusIndex(metric, cfg.varKey);
                         const lvl = icLevel(ic);
 
                         return `<tr>

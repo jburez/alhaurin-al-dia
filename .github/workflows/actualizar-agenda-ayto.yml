@@ -1,16 +1,16 @@
-name: Actualizar boletín oficial (BOP Málaga)
+name: Actualizar agenda local (Ayuntamiento)
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 7 * * *"
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
   actions: write
 
 jobs:
-  update-boletin-oficial:
+  update-agenda:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,34 +24,29 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Actualizar edictos desde el correo BOPMA
-        env:
-          BOP_EMAIL_USER: ${{ secrets.BOP_EMAIL_USER }}
-          BOP_EMAIL_APP_PASSWORD: ${{ secrets.BOP_EMAIL_APP_PASSWORD }}
-        run: |
-          python3 scripts/actualizar_bop_malaga.py
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-      - name: Actualizar edictos desde Sede Electrónica
+      - name: Actualizar agenda desde API del Ayuntamiento
         run: |
-          python3 scripts/actualizar_sede_electronica.py
-
-      - name: Renderizar boletín estático
-        run: |
-          node scripts/render-boletin-static.js
+          python3 scripts/actualizar_agenda_ayto.py
+          node scripts/render-home-widgets-static.js
 
       - name: Commit cambios si hay actualización
         id: commit
         run: |
-          if git diff --quiet data/boletin-oficial.json boletin-oficial/index.html; then
-            echo "Sin cambios en data/boletin-oficial.json ni boletin-oficial/index.html"
+          if git diff --quiet data/agenda-local.json; then
+            echo "Sin cambios en agenda-local.json"
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/boletin-oficial.json boletin-oficial/index.html
-          git commit -m "Actualiza boletín oficial (BOP Málaga)"
+          git add data/agenda-local.json index.html
+          git commit -m "Actualiza agenda local (eventos Ayuntamiento)"
           git push origin develop
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

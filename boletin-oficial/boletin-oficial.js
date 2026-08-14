@@ -20,27 +20,58 @@
         return date.toLocaleDateString("es-ES", { day: "2-digit", month: "long", year: "numeric" });
     }
 
+    function sourceLabel(fuente) {
+        if (fuente === "Sede Electrónica") return { tag: "Sede Electrónica", color: "#0369a1", bg: "#e0f2fe", cta: "Ver en Sede Electrónica →" };
+        return { tag: "BOP Málaga", color: "#92400e", bg: "#fef3c7", cta: "Ver edicto completo en BOP Málaga →" };
+    }
+
     function edictoCard(edicto) {
+        const src = sourceLabel(edicto.fuente);
         const meta = [
             edicto.numero_edicto ? `Edicto ${escapeHTML(edicto.numero_edicto)}` : "",
-            edicto.expediente ? `Expediente ${escapeHTML(edicto.expediente)}` : "",
+            edicto.expediente ? `${escapeHTML(edicto.expediente)}` : "",
         ].filter(Boolean).join(" · ");
 
         return `
             <article class="edicto-card">
                 <div class="edicto-meta">
-                    <span class="tag">${escapeHTML(edicto.organismo || "BOP Málaga")}</span>
+                    <span class="tag" style="background:${src.bg};color:${src.color};">${src.tag}</span>
+                    <span class="tag">${escapeHTML(edicto.organismo || "Ayuntamiento")}</span>
                     ${meta ? `<span class="daily-source">${meta}</span>` : ""}
                 </div>
                 <h3>Publicado el ${formatFecha(edicto.fecha_alerta)}</h3>
                 <p>${escapeHTML(edicto.resumen || "Sin resumen disponible.")}</p>
                 ${edicto.enlace ? `
                     <a class="read-more" href="${escapeHTML(edicto.enlace)}" target="_blank" rel="noopener noreferrer">
-                        Ver edicto completo en BOP Málaga →
+                        ${src.cta}
                     </a>
                 ` : ""}
             </article>
         `;
+    }
+
+    function renderEdictos(edictos, filter) {
+        const filtered = filter === "all" ? edictos :
+            filter === "bop" ? edictos.filter(e => e.fuente !== "Sede Electrónica") :
+            edictos.filter(e => e.fuente === "Sede Electrónica");
+
+        if (updated) {
+            const bopCount = edictos.filter(e => e.fuente !== "Sede Electrónica").length;
+            const sedeCount = edictos.filter(e => e.fuente === "Sede Electrónica").length;
+            updated.textContent = `${bopCount} del BOP · ${sedeCount} de la Sede Electrónica`;
+        }
+
+        if (!filtered.length) {
+            list.innerHTML = `
+                <article class="edicto-card">
+                    <h3>Sin edictos registrados</h3>
+                    <p>No se han encontrado edictos para este filtro.</p>
+                </article>
+            `;
+            return;
+        }
+
+        list.innerHTML = filtered.map(edictoCard).join("");
     }
 
     fetch("../data/boletin-oficial.json")
@@ -52,23 +83,34 @@
             const edictos = Array.isArray(data) ? data : [];
             edictos.sort((a, b) => (b.fecha_alerta || "").localeCompare(a.fecha_alerta || ""));
 
-            if (updated) {
-                updated.textContent = edictos.length
-                    ? `${edictos.length} edicto${edictos.length === 1 ? "" : "s"} registrado${edictos.length === 1 ? "" : "s"}`
-                    : "Sin edictos registrados";
-            }
-
-            if (!edictos.length) {
-                list.innerHTML = `
-                    <article class="edicto-card">
-                        <h3>Sin edictos registrados</h3>
-                        <p>Todavía no se ha detectado ningún edicto del BOP Málaga para Alhaurín el Grande.</p>
-                    </article>
+            // Insert filter tabs before list
+            const hasSede = edictos.some(e => e.fuente === "Sede Electrónica");
+            if (hasSede && list.parentNode) {
+                const tabs = document.createElement("div");
+                tabs.style.cssText = "display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;";
+                tabs.innerHTML = `
+                    <button class="bop-filter-btn active" data-filter="all" style="padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:var(--ink);color:#fff;font-size:13px;font-weight:700;cursor:pointer;">Todos</button>
+                    <button class="bop-filter-btn" data-filter="bop" style="padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;">BOP Málaga</button>
+                    <button class="bop-filter-btn" data-filter="sede" style="padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;">Sede Electrónica</button>
                 `;
-                return;
+                list.parentNode.insertBefore(tabs, list);
+
+                tabs.querySelectorAll(".bop-filter-btn").forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        tabs.querySelectorAll(".bop-filter-btn").forEach(b => {
+                            b.classList.remove("active");
+                            b.style.background = "#fff";
+                            b.style.color = "var(--ink)";
+                        });
+                        btn.classList.add("active");
+                        btn.style.background = "var(--ink)";
+                        btn.style.color = "#fff";
+                        renderEdictos(edictos, btn.getAttribute("data-filter"));
+                    });
+                });
             }
 
-            list.innerHTML = edictos.map(edictoCard).join("");
+            renderEdictos(edictos, "all");
         })
         .catch(error => {
             console.error("Error cargando el boletín oficial:", error);
@@ -81,3 +123,4 @@
             `;
         });
 })();
+

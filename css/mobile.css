@@ -184,10 +184,10 @@
 
     .nav-links .nav-cta {
         justify-content: center;
-        background: linear-gradient(135deg, var(--brand), #254c72);
+        background: linear-gradient(135deg, var(--brand), var(--accent-dark));
         color: #fff;
         border-color: var(--brand);
-        box-shadow: 0 14px 34px rgba(23, 50, 77, .18);
+        box-shadow: 0 14px 34px rgba(53, 72, 41, .18);
     }
 
     .nav-links .nav-cta::after {

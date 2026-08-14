@@ -13,7 +13,7 @@ import sys
 import unicodedata
 import urllib.error
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 from html import unescape
 from pathlib import Path
 from typing import Any
@@ -100,23 +100,40 @@ def guess_category(title: str, content: str) -> tuple[str, str]:
 
 
 def fetch_events() -> list[dict[str, Any]]:
-    """Fetch events from alhaurinhoy.es REST API."""
-    url = f"{API_URL}?per_page={PER_PAGE}&_fields=id,title,link,date,content"
+    """Fetch ALL events from alhaurinhoy.es REST API (paginated)."""
     headers = {
         "User-Agent": "Mozilla/5.0 (AlhaurinAlDia/1.0)",
         "Accept": "application/json",
     }
 
-    req = urllib.request.Request(url, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=15) as response:
-            data = json.loads(response.read().decode("utf-8"))
-    except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError) as e:
-        print(f"⚠️  Error fetching alhaurinhoy.es: {e}", file=sys.stderr)
-        return []
+    all_events: list[dict[str, Any]] = []
+    page = 1
+    total_pages = 1  # Will be updated from response headers
 
-    print(f"📅 {len(data)} eventos obtenidos de alhaurinhoy.es")
-    return data
+    while page <= total_pages:
+        url = f"{API_URL}?per_page=100&page={page}&_fields=id,title,link,date,content"
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                # Get total pages from first response
+                if page == 1:
+                    tp = response.headers.get("X-WP-TotalPages", "1")
+                    total_pages = int(tp)
+                    total = response.headers.get("X-WP-Total", "?")
+                    print(f"📡 alhaurinhoy.es: {total} eventos en {total_pages} páginas")
+
+                data = json.loads(response.read().decode("utf-8"))
+                all_events.extend(data)
+                print(f"  📄 Página {page}/{total_pages}: {len(data)} eventos")
+
+        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError) as e:
+            print(f"⚠️  Error en página {page}: {e}", file=sys.stderr)
+            break
+
+        page += 1
+
+    print(f"📅 {len(all_events)} eventos totales obtenidos")
+    return all_events
 
 
 def normalize_event(raw: dict[str, Any]) -> dict[str, Any]:
@@ -258,7 +275,14 @@ def main() -> int:
     # 4. Merge
     merged = merge_events(existing, api_events)
 
-    # 5. Save
+    # 5. Trim: keep only events from last 30 days + future
+    cutoff = (now - timedelta(days=30)).strftime("%Y-%m-%d")
+    before_trim = len(merged)
+    merged = [e for e in merged if e.get("inicio", "9999")[:10] >= cutoff]
+    if before_trim > len(merged):
+        print(f"  🧹 Limpieza: {before_trim - len(merged)} eventos antiguos eliminados")
+
+    # 6. Save
     output = {
         "actualizado": now.isoformat(),
         "resumen": f"Agenda local de Alhaurín el Grande. {len(merged)} eventos próximos.",
@@ -270,7 +294,7 @@ def main() -> int:
         json.dumps(output, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"✅ Agenda guardada en {AGENDA_PATH.name}")
+    print(f"✅ Agenda guardada en {AGENDA_PATH.name} ({len(merged)} eventos)")
     return 0
 
 

@@ -30,9 +30,13 @@ jobs:
           node-version: "20"
 
       - name: Actualizar agenda desde API del Ayuntamiento
-        run: |
-          python3 scripts/actualizar_agenda_ayto.py
-          node scripts/render-home-widgets-static.js
+        run: python3 scripts/actualizar_agenda_ayto.py
+
+      - name: Actualizar agenda desde alhaurinhoy.es
+        run: python3 scripts/actualizar_agenda_alhaurinhoy.py
+
+      - name: Renderizar widgets estáticos
+        run: node scripts/render-home-widgets-static.js
 
       - name: Commit cambios si hay actualización
         id: commit

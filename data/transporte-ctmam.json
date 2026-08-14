@@ -1,0 +1,76 @@
+{
+  "actualizado": "2026-08-14T11:00:00+02:00",
+  "consorcio": {
+    "nombre": "Consorcio de Transporte Metropolitano del Área de Málaga (CTMAM)",
+    "web": "https://www.ctmam.es/",
+    "app": "Consorcio Málaga (Google Play / App Store)",
+    "telefono": "951 92 60 61",
+    "tarjeta": "Tarjeta del Consorcio (bonificaciones hasta 50%)"
+  },
+  "lineas": [
+    {
+      "id": "M-132",
+      "nombre": "Málaga — Alhaurín el Grande",
+      "operador": "Avanza Movilidad",
+      "icono": "🚌",
+      "via": "Alhaurín de la Torre · Pinos de Alhaurín",
+      "paradas_principales": [
+        "Estación de Autobuses de Málaga",
+        "Cruce de Churriana",
+        "Alhaurín de la Torre",
+        "Pinos de Alhaurín",
+        "Apeadero de Alhaurín el Grande"
+      ],
+      "frecuencia": "Variable según horario (consultar web CTMAM)",
+      "duracion_aprox": "45–55 min",
+      "horario_url": "https://www.ctmam.es/lineas/M-132",
+      "notas": "Línea principal de conexión con Málaga capital. Paradas intermedias en Alhaurín de la Torre y urbanizaciones de Pinos de Alhaurín."
+    },
+    {
+      "id": "M-167B",
+      "nombre": "Coín — Alhaurín el Grande — Málaga",
+      "operador": "Avanza Movilidad",
+      "icono": "🚌",
+      "via": "Directo / Teatinos / Hospital Clínico",
+      "paradas_principales": [
+        "Coín (Estación)",
+        "Apeadero de Alhaurín el Grande",
+        "Campus de Teatinos",
+        "Hospital Clínico Universitario",
+        "Estación de Autobuses de Málaga"
+      ],
+      "frecuencia": "Variable según horario",
+      "duracion_aprox": "50–65 min",
+      "horario_url": "https://www.ctmam.es/lineas/M-167B",
+      "notas": "Conexión directa con el Campus Universitario de Teatinos y el Hospital Clínico. Ideal para estudiantes y consultas médicas."
+    },
+    {
+      "id": "M-159B",
+      "nombre": "Alhaurín el Grande — Hospital Valle del Guadalhorce",
+      "operador": "Avanza Movilidad",
+      "icono": "🏥",
+      "via": "Villafranco del Guadalhorce",
+      "paradas_principales": [
+        "Apeadero de Alhaurín el Grande",
+        "Villafranco del Guadalhorce",
+        "Hospital Valle del Guadalhorce"
+      ],
+      "frecuencia": "Servicio limitado (consultar horarios)",
+      "duracion_aprox": "20–30 min",
+      "horario_url": "https://www.ctmam.es/lineas/M-159B",
+      "notas": "Conexión con el Hospital comarcal del Valle del Guadalhorce. Servicio esencial para citas médicas."
+    }
+  ],
+  "consejos": [
+    "Usa la Tarjeta del Consorcio para obtener bonificaciones de hasta el 50% en los trayectos.",
+    "Los horarios pueden variar en festivos y periodos vacacionales. Consulta siempre la web del CTMAM antes de viajar.",
+    "La app 'Consorcio Málaga' muestra la ubicación en tiempo real de los autobuses equipados con GPS.",
+    "Los abonos mensuales y las tarjetas joven ofrecen descuentos adicionales."
+  ],
+  "parada_alhaurin": {
+    "nombre": "Apeadero de Alhaurín el Grande",
+    "direccion": "Avda. Gerald Brenan, s/n",
+    "coordenadas": { "lat": 36.6432, "lng": -4.6888 },
+    "lineas": ["M-132", "M-167B", "M-159B"]
+  }
+}

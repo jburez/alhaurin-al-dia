@@ -4,13 +4,13 @@
   // ── Category color system ──
   const CATEGORIES = [
     { id: "virgen",     name: "Virgen de Gracia",      color: "#7EC8E3", keywords: ["virgen", "gracia", "patrona"] },
+    { id: "cultos",     name: "Cultos y procesiones",  color: "#7EC8E3", keywords: ["procesión", "procesion", "triduo", "ofrenda", "traslado procesional", "traslado", "ermita", "festividad"] },
     { id: "nazareno",   name: "Hdad. Jesús Nazareno",  color: "#8B5CF6", keywords: ["nazareno", "jesús nazareno", "padre jesús", "padre jesus"] },
     { id: "veracruz",   name: "Santa Vera Cruz",       color: "#22C55E", keywords: ["vera cruz", "veracruz"] },
     { id: "futbol",     name: "Fútbol",                color: "#EF4444", keywords: ["fútbol", "futbol", "cd alhaurino", "alhaurino vs", "málaga cf", "🆚"] },
-    { id: "musica",     name: "Música en vivo",        color: "#F59E0B", keywords: ["music", "músic", "dj ", "🎶", "🎸", "🎙", "concierto", "live music"] },
     { id: "motor",      name: "Motor",                 color: "#6366F1", keywords: ["moto gp", "formula 1", "motogp", "🏍"] },
+    { id: "musica",     name: "Música en vivo",        color: "#F59E0B", keywords: ["music", "músic", "dj ", "🎶", "🎸", "🎙", "concierto", "live music"] },
     { id: "gastro",     name: "Gastronomía",           color: "#EC4899", keywords: ["gastro", "tomate", "brunch", "ruta gastro", "🍽", "🍅"] },
-    { id: "cultos",     name: "Cultos y procesiones",  color: "#7EC8E3", keywords: ["procesión", "procesion", "triduo", "ofrenda", "traslado procesional", "ermita"] },
   ];
   const DEFAULT_CAT = { id: "otros", name: "Otros eventos", color: "#6B7280" };
 

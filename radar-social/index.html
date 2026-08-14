@@ -695,14 +695,18 @@
                 // forzar el nombre del municipio) y se descarta cualquier
                 // resultado que caiga lejos de la ciudad en vez de aceptarlo a
                 // ciegas.
-                const viewbox = '-4.74,36.685,-4.64,36.60'; // lon1,lat1,lon2,lat2 en torno a Alhaurín el Grande
+                // Radio del Valle del Guadalhorce (Coín, Cártama, Alhaurín de la
+                // Torre, Pizarra...), la misma comarca que ya usa el sitio en
+                // otras secciones — no solo el núcleo urbano de Alhaurín el Grande.
+                const RADIUS_KM = 20;
+                const viewbox = '-4.91,36.82,-4.47,36.46'; // lon1,lat1,lon2,lat2 ~20 km en torno a Alhaurín el Grande
                 try {
                     const resp = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(streetName)}&limit=1&countrycodes=es&viewbox=${viewbox}&bounded=0`);
                     const data = await resp.json();
                     if (data.length > 0) {
                         const lat = parseFloat(data[0].lat);
                         const lng = parseFloat(data[0].lon);
-                        if (haversineKm(lat, lng, TOWN_CENTER.lat, TOWN_CENTER.lng) <= 12) {
+                        if (haversineKm(lat, lng, TOWN_CENTER.lat, TOWN_CENTER.lng) <= RADIUS_KM) {
                             return { lat, lng, outOfScope: false };
                         }
                         return { lat: null, lng: null, outOfScope: true };
@@ -776,7 +780,7 @@
                     submitBtn.disabled = true;
                     const coords = await geocodeStreet(street);
                     if (coords.outOfScope) {
-                        alert(`No hemos podido localizar "${street}" dentro de Alhaurín el Grande. El Radar Social es solo para el municipio: se publicará con una ubicación aproximada en el centro en vez de la zona escrita.`);
+                        alert(`No hemos podido localizar "${street}" cerca de Alhaurín el Grande. El Radar Social cubre el Valle del Guadalhorce: se publicará con una ubicación aproximada en el centro en vez de la zona escrita.`);
                         lat = TOWN_CENTER.lat + (Math.random() - 0.5) * 0.008;
                         lng = TOWN_CENTER.lng + (Math.random() - 0.5) * 0.008;
                     } else {

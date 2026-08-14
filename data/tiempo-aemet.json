@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T14:04:45+02:00",
+  "actualizado": "2026-08-14T14:24:25+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
@@ -143,11 +143,11 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:36 h",
-    "ocaso": "21:08 h",
-    "horas_luz": "13h 32m",
-    "fase_luna": "Luna Creciente (78%)",
-    "icono_luna": "🌓"
+    "orto": "07:35 h",
+    "ocaso": "21:11 h",
+    "horas_luz": "13h 36m",
+    "fase_luna": "Luna Nueva (2%)",
+    "icono_luna": "🌑"
   },
   "embalses": {
     "cuenca": "Guadalhorce-Limites",

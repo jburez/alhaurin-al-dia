@@ -6,13 +6,14 @@ puntuación de actividades diarias y embalses del Guadalhorce para Alhaurín el 
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import sys
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -24,6 +25,7 @@ MUNICIPIO_NOMBRE = "Alhaurín el Grande"
 AEMET_XML_URL = "https://www.aemet.es/xml/municipios/localidad_29008.xml"
 AEMET_WEB_URL = "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
 AEMET_OPENDATA_BASE = "https://opendata.aemet.es/opendata"
+COORDS = {"lat": 36.6403, "lon": -4.6892}  # Alhaurín el Grande
 SAIH_EMBALSES_URL = "https://www.redhidrosurmedioambiente.es/saih/informe/embalses"
 # ids de estación SAIH Hidrosur -> nombre a mostrar (mismos 4 embalses que antes,
 # ahora con datos reales en vez de constantes fijas en el código).
@@ -272,6 +274,161 @@ def fetch_xml_forecast() -> dict[str, Any] | None:
     return construir_resultado(hoy_data, semana, fuente_prediccion="AEMET XML (municipios)")
 
 
+def calcular_orto_ocaso(fecha: date, lat: float, lon: float, tz_offset_hours: float) -> tuple[str | None, str | None]:
+    """Algoritmo clásico de orto/ocaso (Almanac for Computers, 1990), sin dependencias.
+    Precisión de ±1-2 minutos, suficiente para un widget informativo."""
+
+    def calc(is_sunrise: bool) -> str | None:
+        n = fecha.timetuple().tm_yday
+        lng_hour = lon / 15
+        t = n + ((6 - lng_hour) / 24 if is_sunrise else (18 - lng_hour) / 24)
+
+        m = 0.9856 * t - 3.289
+        l = m + 1.916 * math.sin(math.radians(m)) + 0.020 * math.sin(math.radians(2 * m)) + 282.634
+        l = l % 360
+
+        ra = math.degrees(math.atan(0.91764 * math.tan(math.radians(l)))) % 360
+        l_quadrant = math.floor(l / 90) * 90
+        ra_quadrant = math.floor(ra / 90) * 90
+        ra = (ra + (l_quadrant - ra_quadrant)) / 15
+
+        sin_dec = 0.39782 * math.sin(math.radians(l))
+        cos_dec = math.cos(math.asin(sin_dec))
+        cos_h = (math.cos(math.radians(90.833)) - (sin_dec * math.sin(math.radians(lat)))) / (
+            cos_dec * math.cos(math.radians(lat))
+        )
+        if cos_h > 1 or cos_h < -1:
+            return None  # el sol no sale/se pone ese día a esta latitud (no aplica en Alhaurín)
+
+        h = (360 - math.degrees(math.acos(cos_h))) if is_sunrise else math.degrees(math.acos(cos_h))
+        h = h / 15
+
+        t_local = h + ra - (0.06571 * t) - 6.622
+        ut = (t_local - lng_hour) % 24
+        local_t = (ut + tz_offset_hours) % 24
+        hh = int(local_t)
+        mm = int(round((local_t - hh) * 60))
+        if mm == 60:
+            mm = 0
+            hh = (hh + 1) % 24
+        return f"{hh:02d}:{mm:02d}"
+
+    return calc(True), calc(False)
+
+
+def calcular_fase_lunar(fecha: date) -> tuple[str, str]:
+    """Edad lunar por ciclo sinódico desde una luna nueva de referencia conocida.
+    Sin dependencias, precisión de horas, suficiente para mostrar la fase (AEMET
+    no publica fase lunar en ningún endpoint).
+
+    El modelo de mes sinódico medio (29.530588853 días) acumula deriva con el
+    tiempo porque el mes sinódico real varía unas horas por la órbita elíptica;
+    usar como referencia una luna nueva del año 2000 acumulaba ya ~12h de error
+    en 2026 (329 ciclos). Se ancla en la luna nueva real más reciente conocida
+    (12 ago 2026, 17:36 UTC, coincide con el eclipse solar total de esa fecha,
+    verificado por triangulación de fuentes) para minimizar la deriva mientras
+    esta fecha se mantenga cercana; conviene refrescar esta constante cada
+    1-2 años con una luna nueva real actualizada."""
+    luna_nueva_ref = datetime(2026, 8, 12, 17, 36)
+    dias_transcurridos = (datetime(fecha.year, fecha.month, fecha.day) - luna_nueva_ref).total_seconds() / 86400
+    ciclo_sinodico = 29.530588853
+    edad = dias_transcurridos % ciclo_sinodico
+    porcentaje = round((1 - math.cos(2 * math.pi * edad / ciclo_sinodico)) / 2 * 100)
+
+    fases = [
+        (1.84566, "Luna Nueva", "🌑"),
+        (5.53699, "Luna Creciente", "🌒"),
+        (9.22831, "Cuarto Creciente", "🌓"),
+        (12.91963, "Luna Gibosa Creciente", "🌔"),
+        (16.61096, "Luna Llena", "🌕"),
+        (20.30228, "Luna Gibosa Menguante", "🌖"),
+        (23.99361, "Cuarto Menguante", "🌗"),
+        (27.68493, "Luna Menguante", "🌘"),
+    ]
+    nombre, icono = "Luna Nueva", "🌑"
+    for limite, nombre_fase, icono_fase in fases:
+        if edad < limite:
+            nombre, icono = nombre_fase, icono_fase
+            break
+
+    return f"{nombre} ({porcentaje}%)", icono
+
+
+def fetch_opendata_orto_ocaso(api_key: str) -> tuple[str, str] | None:
+    """Orto/ocaso reales de AEMET OpenData. A diferencia de la predicción diaria,
+    estos campos solo están en el endpoint de predicción HORARIA."""
+    endpoint = f"{AEMET_OPENDATA_BASE}/api/prediccion/especifica/municipio/horaria/{MUNICIPIO_ID}"
+    req = urllib.request.Request(
+        f"{endpoint}?api_key={api_key}",
+        headers={"User-Agent": "Mozilla/5.0 (AlhaurinAlDia/1.0)", "Accept": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=15) as response:
+        wrapper = json.loads(response.read().decode("utf-8"))
+
+    if str(wrapper.get("estado")) != "200" or not wrapper.get("datos"):
+        raise RuntimeError(f"AEMET OpenData (horaria) respondió estado={wrapper.get('estado')}: {wrapper.get('descripcion')}")
+
+    datos_req = urllib.request.Request(
+        wrapper["datos"],
+        headers={"User-Agent": "Mozilla/5.0 (AlhaurinAlDia/1.0)"},
+    )
+    with urllib.request.urlopen(datos_req, timeout=15) as response:
+        raw = response.read()
+    try:
+        payload = json.loads(raw.decode("utf-8"))
+    except UnicodeDecodeError:
+        payload = json.loads(raw.decode("iso-8859-15"))
+
+    municipio_data = payload[0] if isinstance(payload, list) else payload
+    dias = (municipio_data.get("prediccion") or {}).get("dia") or []
+    if not dias:
+        return None
+
+    orto = dias[0].get("orto")
+    ocaso = dias[0].get("ocaso")
+    if not orto or not ocaso:
+        return None
+    return orto, ocaso
+
+
+def obtener_sol_luna() -> dict[str, Any]:
+    fecha_hoy = datetime.now(TIMEZONE).date()
+    tz_offset = datetime.now(TIMEZONE).utcoffset().total_seconds() / 3600
+
+    orto = ocaso = None
+    api_key = os.environ.get("AEMET_API_KEY", "").strip()
+    if api_key:
+        try:
+            resultado = fetch_opendata_orto_ocaso(api_key)
+            if resultado:
+                orto, ocaso = resultado
+        except Exception as exc:
+            log(f"Error obteniendo orto/ocaso de AEMET OpenData, se calcula: {exc}")
+
+    if not orto or not ocaso:
+        orto, ocaso = calcular_orto_ocaso(fecha_hoy, COORDS["lat"], COORDS["lon"], tz_offset)
+
+    horas_luz = "N/D"
+    if orto and ocaso:
+        try:
+            h1, m1 = (int(x) for x in orto.split(":")[:2])
+            h2, m2 = (int(x) for x in ocaso.split(":")[:2])
+            minutos = (h2 * 60 + m2) - (h1 * 60 + m1)
+            horas_luz = f"{minutos // 60}h {minutos % 60:02d}m"
+        except Exception:
+            pass
+
+    fase_luna, icono_luna = calcular_fase_lunar(fecha_hoy)
+
+    return {
+        "orto": f"{orto} h" if orto else "N/D",
+        "ocaso": f"{ocaso} h" if ocaso else "N/D",
+        "horas_luz": horas_luz,
+        "fase_luna": fase_luna,
+        "icono_luna": icono_luna,
+    }
+
+
 def construir_resultado(hoy_data: dict[str, Any], semana: list[dict[str, Any]], fuente_prediccion: str) -> dict[str, Any]:
     """Ensambla el JSON final a partir de la predicción diaria (hoy + semana),
     sea cual sea el origen (OpenData o el XML público). Actividades, sol/luna y
@@ -306,13 +463,7 @@ def construir_resultado(hoy_data: dict[str, Any], semana: list[dict[str, Any]], 
 
     actividades = calcular_actividades(t_max_int, prob_lluvia_int, hoy_data["descripcion"])
 
-    sol_luna = {
-        "orto": "07:36 h",
-        "ocaso": "21:08 h",
-        "horas_luz": "13h 32m",
-        "fase_luna": "Luna Creciente (78%)",
-        "icono_luna": "🌓"
-    }
+    sol_luna = obtener_sol_luna()
 
     embalses = fetch_embalses() or cargar_embalses_previos()
 

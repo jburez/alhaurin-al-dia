@@ -325,6 +325,29 @@
 
             renderReports();
 
+            // Votación (event delegation — los botones se crean dinámicamente)
+            document.getElementById('radar-feed-list').addEventListener('click', (e) => {
+                const btn = e.target.closest('.vote-btn');
+                if (!btn) return;
+                const id = btn.getAttribute('data-id');
+                const report = allReports.find(r => r.id === id);
+                if (!report) return;
+
+                report.votes = (report.votes || 0) + 1;
+                btn.textContent = `👍 Confirmar (${report.votes})`;
+                btn.style.background = 'var(--accent-soft)';
+                btn.style.borderColor = 'var(--accent)';
+                btn.style.color = 'var(--accent)';
+                btn.disabled = true;
+
+                // Persistir en localStorage si es un reporte guardado
+                const storedIdx = stored.findIndex(r => r.id === id);
+                if (storedIdx !== -1) {
+                    stored[storedIdx].votes = report.votes;
+                    localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
+                }
+            });
+
             // Filtrado por categoría
             document.querySelectorAll('.radar-filter-btn').forEach(btn => {
                 btn.addEventListener('click', () => {

@@ -1137,6 +1137,15 @@
     margin-bottom: 24px;
 }
 
+.radar-map-card {
+    /* Aísla el contexto de apilamiento del mapa: Leaflet asigna z-index de
+       hasta 1000 a sus controles internos, muy por encima del header fijo
+       del sitio (z-index: 30) — sin esto, el mapa se pinta por encima de la
+       barra de navegación al hacer scroll. */
+    position: relative;
+    isolation: isolate;
+}
+
 .radar-map-card,
 .radar-feed-card,
 .mi-card {

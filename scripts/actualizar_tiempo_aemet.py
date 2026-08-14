@@ -402,11 +402,15 @@ def obtener_sol_luna() -> dict[str, Any]:
             resultado = fetch_opendata_orto_ocaso(api_key)
             if resultado:
                 orto, ocaso = resultado
+                log(f"Orto/ocaso vía AEMET OpenData: {orto} / {ocaso}")
+            else:
+                log("AEMET OpenData (horaria) no devolvió orto/ocaso utilizable, se calcula.")
         except Exception as exc:
             log(f"Error obteniendo orto/ocaso de AEMET OpenData, se calcula: {exc}")
 
     if not orto or not ocaso:
         orto, ocaso = calcular_orto_ocaso(fecha_hoy, COORDS["lat"], COORDS["lon"], tz_offset)
+        log(f"Orto/ocaso calculado: {orto} / {ocaso}")
 
     horas_luz = "N/D"
     if orto and ocaso:

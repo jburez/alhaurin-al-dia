@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { SITE_FOOTER_HTML } = require('./lib/footer');
 
 const ROOT = path.join(__dirname, '..');
 const TIEMPO_HTML_PATH = path.join(ROOT, 'tiempo', 'index.html');
@@ -352,22 +353,7 @@ function renderTiempoPage() {
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
-            <div class="footer-links">
-                <a href="../noticias/">Noticias</a>
-                <a href="../guia-util/">Guía útil</a>
-                <a href="../avisos/">Avisos</a>
-                <a href="../boletin-oficial/">Boletín oficial</a>
-                <a href="./">Tiempo</a>
-                <a href="../seguimiento/">Seguimiento</a>
-                <a href="../planes/">Planes</a>
-                <a href="../comercios/">Comercios</a>
-                <a href="../anunciarse/">Anunciarse</a>
-            </div>
-        </div>
-    </footer>
+    ${SITE_FOOTER_HTML}
 
     <script src="../js/app.js" defer></script>
 </body>

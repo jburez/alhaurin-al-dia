@@ -41,8 +41,9 @@ function getFarmaciaHoy() {
 function getTiempoHoy() {
   try {
     const data = JSON.parse(fs.readFileSync(AEMET_DATA_FILE, 'utf8'));
-    if (data && data.estadoSky) {
-      return `${data.estadoSky} (Máx: ${data.max}° / Mín: ${data.min}°)`;
+    const hoy = data && data.hoy;
+    if (hoy && hoy.descripcion) {
+      return `${hoy.descripcion} (Máx: ${hoy.t_max}° / Mín: ${hoy.t_min}°)`;
     }
   } catch (e) { /* fallback */ }
   return 'Despejado / Soleado en Alhaurín';

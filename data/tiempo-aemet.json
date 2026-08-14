@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-08-14T13:07:52+02:00",
+  "actualizado": "2026-08-14T14:04:45+02:00",
   "fuente": "AEMET",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
@@ -150,33 +151,35 @@
   },
   "embalses": {
     "cuenca": "Guadalhorce-Limites",
-    "total_capacidad_hm3": 286.2,
-    "total_embalsado_hm3": 98.4,
-    "porcentaje": "34.4%",
+    "fuente": "SAIH Hidrosur (Junta de Andalucía)",
+    "fuente_url": "https://www.redhidrosurmedioambiente.es/saih/informe/embalses",
+    "total_capacidad_hm3": 403.1,
+    "total_embalsado_hm3": 352.1,
+    "porcentaje": "87.4%",
     "pantanos": [
       {
         "nombre": "Conde de Guadalhorce",
         "capacidad": "66.5 hm³",
-        "embalsado": "24.1 hm³",
-        "porcentaje": "36.2%"
+        "embalsado": "49.3 hm³",
+        "porcentaje": "74.2%"
       },
       {
         "nombre": "Embalse del Guadalhorce",
-        "capacidad": "125.8 hm³",
-        "embalsado": "38.2 hm³",
-        "porcentaje": "30.3%"
+        "capacidad": "125.7 hm³",
+        "embalsado": "118.2 hm³",
+        "porcentaje": "94.0%"
       },
       {
         "nombre": "Guadalteba",
         "capacidad": "153.3 hm³",
-        "embalsado": "42.8 hm³",
-        "porcentaje": "27.9%"
+        "embalsado": "145.2 hm³",
+        "porcentaje": "94.7%"
       },
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "34.6 hm³",
-        "porcentaje": "60.1%"
+        "embalsado": "39.5 hm³",
+        "porcentaje": "68.7%"
       }
     ]
   }

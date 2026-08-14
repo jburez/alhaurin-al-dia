@@ -222,22 +222,22 @@
                         <div class="aqi-badge-grid">
                             <div class="aqi-stat">
                                 <span class="aqi-label">Conde de Guadalhorce</span>
-                                <strong>24.1 hm³ / 66.5 hm³ (36.2%)</strong>
+                                <strong id="embalse-conde">Cargando…</strong>
                             </div>
                             <div class="aqi-stat">
                                 <span class="aqi-label">Embalse del Guadalhorce</span>
-                                <strong>38.2 hm³ / 125.8 hm³ (30.3%)</strong>
+                                <strong id="embalse-guadalhorce">Cargando…</strong>
                             </div>
                             <div class="aqi-stat">
                                 <span class="aqi-label">Guadalteba</span>
-                                <strong>42.8 hm³ / 153.3 hm³ (27.9%)</strong>
+                                <strong id="embalse-guadalteba">Cargando…</strong>
                             </div>
                             <div class="aqi-stat">
                                 <span class="aqi-label">La Concepción</span>
-                                <strong>34.6 hm³ / 57.5 hm³ (60.1%)</strong>
+                                <strong id="embalse-concepcion">Cargando…</strong>
                             </div>
                         </div>
-                        <p style="margin-top: 12px; font-size: 12px; color: var(--muted);">Total cuenca: <strong>98.4 / 286.2 hm³ (34.4%)</strong> · Datos actualizados semanalmente.</p>
+                        <p style="margin-top: 12px; font-size: 12px; color: var(--muted);">Total cuenca: <strong id="embalse-total">Cargando…</strong> · Fuente: SAIH Hidrosur (Junta de Andalucía).</p>
                     </div>
                 </div>
 
@@ -274,19 +274,60 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <span>© 2026 Alhaurín al Día · Guía local independiente</span>
-            <div class="footer-links">
-                <a href="../noticias/">Noticias</a>
-                <a href="../guia-util/">Guía útil</a>
-                <a href="../avisos/">Avisos</a>
-                <a href="../boletin-oficial/">Boletín oficial</a>
-                <a href="../tiempo/">Tiempo</a>
-                <a href="./">Seguimiento</a>
-                <a href="../planes/">Planes</a>
-                <a href="../comercios/">Comercios</a>
-                <a href="../anunciarse/">Anunciarse</a>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="footer-logo-mark">A</span>
+                        <strong>Alhaurín <span>al Día</span></strong>
+                    </div>
+                    <p class="footer-desc">El portal de información hiperlocal independiente, servicios de consulta diaria, farmacias de guardia y guía útil de Alhaurín el Grande (Málaga).</p>
+                    <div class="footer-badges">
+                        <span class="footer-badge">📍 Alhaurín el Grande, Málaga</span>
+                        <a href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer" class="footer-badge action whatsapp">💬 Canal Oficial WhatsApp</a>
+                        <a href="/contacto/" class="footer-badge action">✉️ Contactar / Sugerir noticia</a>
+                    </div>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-heading">Secciones</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/noticias/">Noticias de Alhaurín</a></li>
+                        <li><a href="/guia-util/">Guía Útil de Servicios</a></li>
+                        <li><a href="/avisos/">Avisos Municipales</a></li>
+                        <li><a href="/planes/">Planes y Eventos</a></li>
+                        <li><a href="/radar-social/">Radar Social</a></li>
+                        <li><a href="/mi-alhaurin/">Mi Alhaurín</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-heading">Tiempo y Seguimiento</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/tiempo/">El Tiempo en Alhaurín</a></li>
+                        <li><a href="/tiempo/comparador/">Comparador de Modelos</a></li>
+                        <li><a href="/tiempo/agro/">Agro Meteo</a></li>
+                        <li><a href="/tiempo/prevision-horaria/">Previsión por Horas</a></li>
+                        <li><a href="/seguimiento/">Seguimiento en Vivo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-heading">Servicios</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/comercios/">Comercios Destacados</a></li>
+                        <li><a href="/anunciarse/">Anunciarse en la Web</a></li>
+                        <li><a href="/boletin-oficial/">Boletín Oficial (BOP)</a></li>
+                        <li><a href="/contacto/">Contacto y Redacción</a></li>
+                        <li><a href="/sobre-nosotros/">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Alhaurín al Día · Diario digital hiperlocal independiente.</p>
+                <a href="#top" class="back-to-top">Volver arriba ↑</a>
             </div>
         </div>
     </footer>
@@ -327,6 +368,41 @@
                         document.getElementById('dust-val').textContent = dust < 20 ? 'Bajo (' + Math.round(dust) + ' µg/m³)' : dust < 50 ? 'Moderado (' + Math.round(dust) + ' µg/m³)' : 'Alto (' + Math.round(dust) + ' µg/m³)';
                     }
                 } catch (e) { console.log('Error AQI:', e); }
+            })();
+
+            // Load real reservoir data (SAIH Hidrosur, vía data/tiempo-aemet.json)
+            (async () => {
+                const ids = {
+                    'Conde de Guadalhorce': 'embalse-conde',
+                    'Embalse del Guadalhorce': 'embalse-guadalhorce',
+                    'Guadalteba': 'embalse-guadalteba',
+                    'La Concepción': 'embalse-concepcion'
+                };
+                try {
+                    const res = await fetch('../data/tiempo-aemet.json');
+                    const data = await res.json();
+                    const embalses = data.embalses;
+                    if (!embalses || !Array.isArray(embalses.pantanos)) throw new Error('Sin datos de embalses');
+                    embalses.pantanos.forEach(p => {
+                        const elId = ids[p.nombre];
+                        if (elId) {
+                            const el = document.getElementById(elId);
+                            if (el) el.textContent = `${p.embalsado} / ${p.capacidad} (${p.porcentaje})`;
+                        }
+                    });
+                    const totalEl = document.getElementById('embalse-total');
+                    if (totalEl) {
+                        totalEl.textContent = `${embalses.total_embalsado_hm3} / ${embalses.total_capacidad_hm3} hm³ (${embalses.porcentaje})`;
+                    }
+                } catch (e) {
+                    console.log('Error embalses:', e);
+                    Object.values(ids).forEach(elId => {
+                        const el = document.getElementById(elId);
+                        if (el) el.textContent = 'No disponible';
+                    });
+                    const totalEl = document.getElementById('embalse-total');
+                    if (totalEl) totalEl.textContent = 'No disponible';
+                }
             })();
         });
     </script>

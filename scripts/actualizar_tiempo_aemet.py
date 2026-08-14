@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -22,6 +23,16 @@ MUNICIPIO_ID = "29008"  # Alhaurín el Grande
 MUNICIPIO_NOMBRE = "Alhaurín el Grande"
 AEMET_XML_URL = "https://www.aemet.es/xml/municipios/localidad_29008.xml"
 AEMET_WEB_URL = "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
+AEMET_OPENDATA_BASE = "https://opendata.aemet.es/opendata"
+SAIH_EMBALSES_URL = "https://www.redhidrosurmedioambiente.es/saih/informe/embalses"
+# ids de estación SAIH Hidrosur -> nombre a mostrar (mismos 4 embalses que antes,
+# ahora con datos reales en vez de constantes fijas en el código).
+SAIH_EMBALSES_IDS = {
+    "31": "Conde de Guadalhorce",
+    "30": "Embalse del Guadalhorce",
+    "29": "Guadalteba",
+    "16": "La Concepción",
+}
 TIMEZONE = ZoneInfo("Europe/Madrid")
 
 DIAS_SEMANA = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
@@ -113,6 +124,88 @@ def calcular_actividades(t_max_num: int, prob_lluvia_num: int, desc: str) -> lis
     ]
 
 
+def cargar_embalses_previos() -> dict[str, Any] | None:
+    """Si el scraping de SAIH Hidrosur falla, reutiliza el último bloque válido
+    en vez de mostrar un dato inventado bajo una etiqueta de fuente oficial."""
+    try:
+        previo = json.loads(WEATHER_PATH.read_text(encoding="utf-8"))
+        return previo.get("embalses")
+    except Exception:
+        return None
+
+
+def fetch_embalses() -> dict[str, Any] | None:
+    """Datos reales de los embalses del sistema Guadalhorce vía SAIH Hidrosur
+    (Junta de Andalucía, red oficial de estaciones automáticas, sin login)."""
+    try:
+        req = urllib.request.Request(
+            SAIH_EMBALSES_URL,
+            headers={"User-Agent": "Mozilla/5.0 (AlhaurinAlDia/1.0)"},
+        )
+        with urllib.request.urlopen(req, timeout=15) as response:
+            html_text = response.read().decode("utf-8", errors="replace")
+    except Exception as exc:
+        log(f"Error obteniendo embalses de SAIH Hidrosur: {exc}")
+        return None
+
+    # Cada fila de la tabla: <td>ID NOMBRE</td><td>capacidad</td><td>embalsado</td><td>%</td>...
+    row_re = re.compile(
+        r"<td>\s*(\d+)\s+EMBALSE[^<]*</td>\s*<td>([\d.,]+)</td>\s*<td>([\d.,]+)</td>\s*<td>([\d.,]+)</td>",
+        re.IGNORECASE,
+    )
+
+    encontrados: dict[str, dict[str, Any]] = {}
+    for match in row_re.finditer(html_text):
+        estacion_id, capacidad_str, embalsado_str, porcentaje_str = match.groups()
+        if estacion_id not in SAIH_EMBALSES_IDS:
+            continue
+        try:
+            capacidad = float(capacidad_str.replace(",", "."))
+            embalsado = float(embalsado_str.replace(",", "."))
+            porcentaje = float(porcentaje_str.replace(",", "."))
+        except ValueError:
+            continue
+        encontrados[estacion_id] = {
+            "nombre": SAIH_EMBALSES_IDS[estacion_id],
+            "capacidad": f"{capacidad:.1f} hm³",
+            "embalsado": f"{embalsado:.1f} hm³",
+            "porcentaje": f"{porcentaje:.1f}%",
+            "_capacidad_hm3": capacidad,
+            "_embalsado_hm3": embalsado,
+        }
+
+    if len(encontrados) != len(SAIH_EMBALSES_IDS):
+        log(f"Solo se reconocieron {len(encontrados)}/{len(SAIH_EMBALSES_IDS)} embalses en SAIH Hidrosur, se descarta el scrape.")
+        return None
+
+    pantanos = []
+    total_capacidad = 0.0
+    total_embalsado = 0.0
+    # Mismo orden que antes: Conde de Guadalhorce, Embalse del Guadalhorce, Guadalteba, La Concepción.
+    for estacion_id in ["31", "30", "29", "16"]:
+        p = encontrados[estacion_id]
+        total_capacidad += p["_capacidad_hm3"]
+        total_embalsado += p["_embalsado_hm3"]
+        pantanos.append({
+            "nombre": p["nombre"],
+            "capacidad": p["capacidad"],
+            "embalsado": p["embalsado"],
+            "porcentaje": p["porcentaje"],
+        })
+
+    total_porcentaje = (total_embalsado / total_capacidad * 100) if total_capacidad else 0.0
+
+    return {
+        "cuenca": "Guadalhorce-Limites",
+        "fuente": "SAIH Hidrosur (Junta de Andalucía)",
+        "fuente_url": SAIH_EMBALSES_URL,
+        "total_capacidad_hm3": round(total_capacidad, 1),
+        "total_embalsado_hm3": round(total_embalsado, 1),
+        "porcentaje": f"{total_porcentaje:.1f}%",
+        "pantanos": pantanos,
+    }
+
+
 def fetch_xml_forecast() -> dict[str, Any] | None:
     req = urllib.request.Request(
         AEMET_XML_URL,
@@ -176,6 +269,13 @@ def fetch_xml_forecast() -> dict[str, Any] | None:
     if not hoy_data:
         return None
 
+    return construir_resultado(hoy_data, semana, fuente_prediccion="AEMET XML (municipios)")
+
+
+def construir_resultado(hoy_data: dict[str, Any], semana: list[dict[str, Any]], fuente_prediccion: str) -> dict[str, Any]:
+    """Ensambla el JSON final a partir de la predicción diaria (hoy + semana),
+    sea cual sea el origen (OpenData o el XML público). Actividades, sol/luna y
+    embalses no dependen de qué endpoint de AEMET se haya usado."""
     detail_parts = [hoy_data["descripcion"]]
     if hoy_data["t_max"] != "N/A" or hoy_data["t_min"] != "N/A":
         detail_parts.append(f"Máx. {hoy_data['t_max']}º / Mín. {hoy_data['t_min']}º")
@@ -214,22 +314,12 @@ def fetch_xml_forecast() -> dict[str, Any] | None:
         "icono_luna": "🌓"
     }
 
-    embalses = {
-        "cuenca": "Guadalhorce-Limites",
-        "total_capacidad_hm3": 286.2,
-        "total_embalsado_hm3": 98.4,
-        "porcentaje": "34.4%",
-        "pantanos": [
-            {"nombre": "Conde de Guadalhorce", "capacidad": "66.5 hm³", "embalsado": "24.1 hm³", "porcentaje": "36.2%"},
-            {"nombre": "Embalse del Guadalhorce", "capacidad": "125.8 hm³", "embalsado": "38.2 hm³", "porcentaje": "30.3%"},
-            {"nombre": "Guadalteba", "capacidad": "153.3 hm³", "embalsado": "42.8 hm³", "porcentaje": "27.9%"},
-            {"nombre": "La Concepción", "capacidad": "57.5 hm³", "embalsado": "34.6 hm³", "porcentaje": "60.1%"}
-        ]
-    }
+    embalses = fetch_embalses() or cargar_embalses_previos()
 
     return {
         "actualizado": datetime.now(TIMEZONE).isoformat(timespec="seconds"),
         "fuente": "AEMET",
+        "fuente_prediccion": fuente_prediccion,
         "municipio": MUNICIPIO_NOMBRE,
         "item": weather_item,
         "hoy": hoy_data,
@@ -240,7 +330,121 @@ def fetch_xml_forecast() -> dict[str, Any] | None:
     }
 
 
+def _valor_periodo(lista: list[dict[str, Any]] | None, campo: str, periodo_preferido: str = "00-24") -> str:
+    """De una lista de entradas {value/velocidad/..., periodo} de OpenData,
+    devuelve el valor del periodo que cubre el día completo si existe,
+    si no el primero disponible."""
+    if not lista:
+        return ""
+    for entry in lista:
+        if entry.get("periodo") == periodo_preferido and entry.get(campo):
+            return str(entry.get(campo))
+    for entry in lista:
+        if entry.get(campo):
+            return str(entry.get(campo))
+    return ""
+
+
+def fetch_opendata_forecast(api_key: str) -> dict[str, Any] | None:
+    """Predicción diaria por municipio vía AEMET OpenData (requiere API key).
+    Patrón de la API: la primera petición devuelve un JSON pequeño con la URL
+    real de los datos en el campo "datos", que hay que volver a pedir.
+    """
+    endpoint = f"{AEMET_OPENDATA_BASE}/api/prediccion/especifica/municipio/diaria/{MUNICIPIO_ID}"
+    req = urllib.request.Request(
+        f"{endpoint}?api_key={api_key}",
+        headers={"User-Agent": "Mozilla/5.0 (AlhaurinAlDia/1.0)", "Accept": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=15) as response:
+        wrapper = json.loads(response.read().decode("utf-8"))
+
+    if str(wrapper.get("estado")) != "200" or not wrapper.get("datos"):
+        raise RuntimeError(f"AEMET OpenData respondió estado={wrapper.get('estado')}: {wrapper.get('descripcion')}")
+
+    datos_req = urllib.request.Request(
+        wrapper["datos"],
+        headers={"User-Agent": "Mozilla/5.0 (AlhaurinAlDia/1.0)"},
+    )
+    with urllib.request.urlopen(datos_req, timeout=15) as response:
+        raw = response.read()
+    try:
+        payload = json.loads(raw.decode("utf-8"))
+    except UnicodeDecodeError:
+        # El endpoint de datos de AEMET a veces sirve el JSON en latin-1/ISO-8859-15.
+        payload = json.loads(raw.decode("iso-8859-15"))
+
+    municipio_data = payload[0] if isinstance(payload, list) else payload
+    dias = (municipio_data.get("prediccion") or {}).get("dia") or []
+    if not dias:
+        return None
+
+    semana = []
+    hoy_data = None
+
+    for idx, dia in enumerate(dias[:7]):
+        fecha_str = str(dia.get("fecha", ""))[:10]
+        try:
+            dt = datetime.strptime(fecha_str, "%Y-%m-%d")
+            dia_nombre = DIAS_SEMANA[dt.weekday()]
+            fecha_corta = f"{dt.day}/{dt.month}"
+        except Exception:
+            dia_nombre = f"Día {idx+1}"
+            fecha_corta = fecha_str
+
+        temperatura = dia.get("temperatura") or {}
+        t_max = temperatura.get("maxima", "N/A")
+        t_min = temperatura.get("minima", "N/A")
+        uv = dia.get("uvMax", "")
+
+        sky_value = _valor_periodo(dia.get("estadoCielo"), "value")
+        sky_desc = _valor_periodo(dia.get("estadoCielo"), "descripcion")
+        icono = obtener_icono_cielo(sky_value, sky_desc)
+
+        prob_lluvia = _valor_periodo(dia.get("probPrecipitacion"), "value") or "0"
+
+        v_dir = _valor_periodo(dia.get("viento"), "direccion")
+        v_vel = _valor_periodo(dia.get("viento"), "velocidad")
+        viento_str = f"{v_dir} {v_vel} km/h".strip() if v_vel else "Flojo"
+
+        item_dia = {
+            "fecha": fecha_str,
+            "dia_semana": dia_nombre,
+            "fecha_corta": fecha_corta,
+            "t_max": str(t_max),
+            "t_min": str(t_min),
+            "icono": icono,
+            "descripcion": sky_desc or "Despejado",
+            "lluvia": f"{prob_lluvia}%",
+            "viento": viento_str,
+            "uv": str(uv) if uv != "" else "",
+        }
+
+        semana.append(item_dia)
+        if idx == 0:
+            hoy_data = item_dia
+
+    if not hoy_data:
+        return None
+
+    return construir_resultado(hoy_data, semana, fuente_prediccion="AEMET OpenData (predicción municipal)")
+
+
 def main() -> int:
+    api_key = os.environ.get("AEMET_API_KEY", "").strip()
+
+    if api_key:
+        try:
+            data = fetch_opendata_forecast(api_key)
+            if data:
+                WEATHER_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                log(f"Tiempo actualizado vía AEMET OpenData: {data['hoy']['t_max']}° / {data['hoy']['t_min']}°C · {data['hoy']['descripcion']}")
+                return 0
+            log("AEMET OpenData no devolvió predicción utilizable, se prueba el XML público.")
+        except Exception as exc:
+            log(f"Error actualizando tiempo vía AEMET OpenData: {exc}. Se prueba el XML público.")
+    else:
+        log("Sin AEMET_API_KEY configurada, se usa el XML público de AEMET.")
+
     try:
         data = fetch_xml_forecast()
         if data:

@@ -2,8 +2,8 @@ rules_version = '2';
 
 // Reglas de seguridad de Firestore para el Radar Social Hiperlocal
 // (radar-social/index.html). Pegar en Firebase Console > Firestore
-// Database > Rules > Publicar, sustituyendo __FIREBASE_ADMIN_UID__ por
-// el UID real del usuario admin (Authentication > Users).
+// Database > Rules > Publicar. El UID admin ya está puesto
+// (Cqm2OKSnOgUf09Leb8D5YePIcnW2); si el admin cambia, sustituirlo aquí.
 //
 // Cualquiera puede leer y publicar reportes (comunidad abierta), con
 // validación de forma/rango para descartar basura evidente. Votar y
@@ -27,7 +27,7 @@ service cloud.firestore {
         && request.resource.data.ts is number;
 
       allow update: if
-        (request.auth != null && request.auth.uid == "__FIREBASE_ADMIN_UID__")
+        (request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2")
         ||
         (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['votes'])
           && request.resource.data.votes == resource.data.votes + 1)
@@ -40,7 +40,7 @@ service cloud.firestore {
           && request.resource.data.dismissed == true
           && resource.data.dismisses + 1 >= 3);
 
-      allow delete: if request.auth != null && request.auth.uid == "__FIREBASE_ADMIN_UID__";
+      allow delete: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
     }
   }
 }

@@ -76,9 +76,12 @@
                         <h1>Radar Social Hiperlocal</h1>
                         <p class="radar-subtitle">Mapa colaborativo donde los vecinos de Alhaurín el Grande comparten observaciones meteorológicas, pluviómetros, tormentas e incidencias al instante.</p>
                     </div>
-                    <button type="button" class="btn btn-primary" id="open-report-modal">
-                        🚀 Publicar reporte vecinal
-                    </button>
+                    <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:flex-start;">
+                        <button type="button" class="btn btn-secondary" id="admin-auth-btn" style="font-size:12px;">🔑 Acceso admin</button>
+                        <button type="button" class="btn btn-primary" id="open-report-modal">
+                            🚀 Publicar reporte vecinal
+                        </button>
+                    </div>
                 </div>
 
                 <!-- CATEGORÍAS DE FILTRADO DEL MAPA -->
@@ -201,6 +204,31 @@
         </div>
     </div>
 
+    <!-- MODAL DE ACCESO ADMIN -->
+    <div class="modal-overlay" id="admin-login-modal" style="display: none !important;" hidden>
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>🔑 Acceso admin</h2>
+                <button type="button" class="modal-close" id="close-admin-modal">&times;</button>
+            </div>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-email">Email</label>
+                    <input type="email" id="admin-email" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Contraseña</label>
+                    <input type="password" id="admin-password" required autocomplete="current-password">
+                </div>
+                <p id="admin-login-error" style="display:none; color:#b91c1c; font-size:13px; margin: 0 0 8px;"></p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancel-admin-modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="admin-login-submit">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <footer class="site-footer">
         <div class="container">
             <div class="footer-top">
@@ -260,7 +288,36 @@
     </footer>
 
     <script src="../js/app.js" defer></script>
-    <script>
+    <script type="module">
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+        import {
+            getFirestore, collection, addDoc, updateDoc, deleteDoc, doc,
+            onSnapshot, query, orderBy, limit, increment, serverTimestamp
+        } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+        import {
+            getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged
+        } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+
+        // Config pública de Firebase (no es secreta: la seguridad la dan las
+        // reglas de Firestore/Auth, no ocultar estos valores). Ver README de
+        // configuración del proyecto para el checklist de creación.
+        const firebaseConfig = {
+            apiKey: "__FIREBASE_API_KEY__",
+            authDomain: "__FIREBASE_AUTH_DOMAIN__",
+            projectId: "__FIREBASE_PROJECT_ID__",
+            storageBucket: "__FIREBASE_STORAGE_BUCKET__",
+            messagingSenderId: "__FIREBASE_SENDER_ID__",
+            appId: "__FIREBASE_APP_ID__"
+        };
+        const ADMIN_UID = "__FIREBASE_ADMIN_UID__";
+
+        const firebaseApp = initializeApp(firebaseConfig);
+        const db = getFirestore(firebaseApp);
+        const auth = getAuth(firebaseApp);
+        const reportsCol = collection(db, "radar_reports");
+
         document.addEventListener('DOMContentLoaded', () => {
             const map = L.map('radar-map').setView([36.6439, -4.6892], 13);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -268,14 +325,35 @@
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
 
-            // Modo admin (URL: ?admin=true)
-            const IS_ADMIN = new URLSearchParams(window.location.search).get('admin') === 'true';
-            if (IS_ADMIN) {
-                const badge = document.createElement('div');
-                badge.style.cssText = 'position:fixed;bottom:16px;right:16px;z-index:999;background:#b91c1c;color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
-                badge.textContent = '🔑 Modo Admin';
-                document.body.appendChild(badge);
+            // ===== ESTADO ADMIN (Firebase Auth, no un parámetro de URL) =====
+            let isAdmin = false;
+            let currentUser = null;
+            const adminAuthBtn = document.getElementById('admin-auth-btn');
+
+            function updateAdminUI() {
+                if (currentUser) {
+                    adminAuthBtn.textContent = isAdmin
+                        ? `🔑 ${currentUser.email} · Salir`
+                        : `👤 ${currentUser.email} (sin permisos) · Salir`;
+                } else {
+                    adminAuthBtn.textContent = '🔑 Acceso admin';
+                }
             }
+
+            onAuthStateChanged(auth, (user) => {
+                currentUser = user;
+                isAdmin = !!(user && user.uid === ADMIN_UID);
+                updateAdminUI();
+                renderReports();
+            });
+
+            adminAuthBtn.addEventListener('click', () => {
+                if (currentUser) {
+                    signOut(auth);
+                } else {
+                    showAdminModal();
+                }
+            });
 
             // TTL por tipo (milisegundos)
             const TTL = {
@@ -293,19 +371,10 @@
                 arroyo: '6h', 'corte-trafico': '12h', incidencia: '6h'
             };
 
-            // Datos de ejemplo con timestamps reales
-            const now = Date.now();
-            const initialReports = [
-                { id: '1', type: 'lluvia', title: 'Medición en La Cruz del Monte', val: '8.4 mm', desc: 'Lluvia constante y moderada en la zona alta.', lat: 36.6485, lng: -4.6850, name: 'Manuel G.', votes: 5, ts: now - 900000, dismisses: 0 },
-                { id: '2', type: 'tormenta', title: 'Tormenta sobre la Sierra de Mijas', val: 'Rayos', desc: 'Descargas eléctricas visibles hacia la sierra.', lat: 36.6350, lng: -4.6750, name: 'Vecina de Las Palmeras', votes: 8, ts: now - 1800000, dismisses: 0 },
-                { id: '3', type: 'arroyo', title: 'Caudal normal en el Río Fahala', val: 'Normal', desc: 'Arroyo corriendo limpio y sin desbordamientos.', lat: 36.6520, lng: -4.6980, name: 'Protección Civil', votes: 12, ts: now - 2700000, dismisses: 0 },
-                { id: '4', type: 'corte-trafico', subtype: 'procesion', title: 'Corte en Calle Real por procesión', val: 'Procesión', desc: 'Corte total de tráfico en Calle Real con motivo de la procesión de la Virgen de Gracia. Desvío por Av. Gerald Brenan.', street: 'Calle Real', lat: 36.6442, lng: -4.6895, name: 'Policía Local', votes: 15, ts: now - 3600000, dismisses: 0 }
-            ];
-
-            let stored = JSON.parse(localStorage.getItem('alhaurin_radar_reports') || '[]');
-            // Migrar reportes antiguos sin timestamp
-            stored.forEach(r => { if (!r.ts) r.ts = Date.now() - 600000; if (!r.dismisses) r.dismisses = 0; });
-            let allReports = [...stored, ...initialReports];
+            // allReports se mantiene sincronizado en vivo con Firestore vía
+            // onSnapshot: cualquier visitante ve los cambios de cualquier otro
+            // (incluido un borrado de admin) sin recargar la página.
+            let allReports = [];
 
             const markersGroup = L.layerGroup().addTo(map);
             let currentFilter = 'all';
@@ -361,6 +430,13 @@
                     feed.appendChild(sep);
                     expired.forEach(r => renderItem(r, feed, true));
                 }
+
+                if (allReports.length === 0) {
+                    const empty = document.createElement('p');
+                    empty.style.cssText = 'padding:16px 0;color:var(--muted);font-size:13px;';
+                    empty.textContent = 'Todavía no hay reportes vecinales activos. ¡Sé el primero en publicar uno!';
+                    feed.appendChild(empty);
+                }
             }
 
             function renderItem(r, feed, isExpiredReport) {
@@ -402,12 +478,12 @@
 
                 const ttlInfo = !isExpiredReport ? `<span style="font-size:10px;color:var(--muted);margin-left:4px;" title="Este reporte expira automáticamente">⏱ ${TTL_LABELS[r.type] || '6h'}</span>` : '';
 
-                const buttons = isExpiredReport ? (IS_ADMIN ? `
+                const buttons = isExpiredReport ? (isAdmin ? `
                     <button type="button" class="admin-delete-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#b91c1c;border:0;font-size:12px;font-weight:700;cursor:pointer;color:#fff;">🗑️ Eliminar</button>
                 ` : '') : `
                     <button type="button" class="vote-btn" data-id="${r.id}">👍 Confirmar (${r.votes || 0})</button>
                     <button type="button" class="dismiss-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#fff;border:1px solid #fca5a5;font-size:12px;font-weight:700;cursor:pointer;color:#b91c1c;">❌ Ya no ocurre${r.dismisses ? ` (${r.dismisses})` : ''}</button>
-                    ${IS_ADMIN ? `<button type="button" class="admin-expire-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#fef3c7;border:1px solid #f59e0b;font-size:12px;font-weight:700;cursor:pointer;color:#92400e;">⏩ Expirar</button><button type="button" class="admin-delete-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#b91c1c;border:0;font-size:12px;font-weight:700;cursor:pointer;color:#fff;">🗑️ Eliminar</button>` : ''}
+                    ${isAdmin ? `<button type="button" class="admin-expire-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#fef3c7;border:1px solid #f59e0b;font-size:12px;font-weight:700;cursor:pointer;color:#92400e;">⏩ Expirar</button><button type="button" class="admin-delete-btn" data-id="${r.id}" style="padding:4px 10px;border-radius:20px;background:#b91c1c;border:0;font-size:12px;font-weight:700;cursor:pointer;color:#fff;">🗑️ Eliminar</button>` : ''}
                 `;
 
                 item.innerHTML = `
@@ -426,23 +502,40 @@
                 feed.appendChild(item);
             }
 
-            renderReports();
+            // ===== SUSCRIPCIÓN EN VIVO A FIRESTORE =====
+            // Sustituye la lectura única de localStorage: cualquier alta, voto,
+            // "ya no ocurre" o borrado de admin se refleja en todos los
+            // navegadores conectados, no solo en el que hizo el cambio.
+            const reportsQuery = query(reportsCol, orderBy('ts', 'desc'), limit(200));
+            onSnapshot(reportsQuery, (snapshot) => {
+                allReports = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+                renderReports();
+            }, (err) => {
+                console.error('Error escuchando reportes de Firestore:', err);
+                const feed = document.getElementById('radar-feed-list');
+                feed.innerHTML = '<p style="padding:16px 0;color:#b91c1c;font-size:13px;">No se han podido cargar los reportes. Recarga la página.</p>';
+            });
+
+            // Evita votar/descartar dos veces el mismo reporte desde el mismo
+            // navegador en la misma sesión (Firestore no lo impide por sí solo).
+            const actedIds = new Set();
 
             // Event delegation para votos y dismisses
-            document.getElementById('radar-feed-list').addEventListener('click', (e) => {
+            document.getElementById('radar-feed-list').addEventListener('click', async (e) => {
                 // Confirmar
                 const voteBtn = e.target.closest('.vote-btn');
                 if (voteBtn) {
                     const id = voteBtn.getAttribute('data-id');
-                    const report = allReports.find(r => r.id === id);
-                    if (!report) return;
-                    report.votes = (report.votes || 0) + 1;
-                    voteBtn.textContent = `👍 Confirmar (${report.votes})`;
-                    voteBtn.style.background = 'var(--accent-soft)';
-                    voteBtn.style.borderColor = 'var(--accent)';
-                    voteBtn.style.color = 'var(--accent)';
+                    if (actedIds.has('vote-' + id)) return;
+                    actedIds.add('vote-' + id);
                     voteBtn.disabled = true;
-                    persistReport(id);
+                    try {
+                        await updateDoc(doc(db, 'radar_reports', id), { votes: increment(1) });
+                    } catch (err) {
+                        console.error('Error votando:', err);
+                        actedIds.delete('vote-' + id);
+                        voteBtn.disabled = false;
+                    }
                     return;
                 }
 
@@ -450,57 +543,51 @@
                 const dismissBtn = e.target.closest('.dismiss-btn');
                 if (dismissBtn) {
                     const id = dismissBtn.getAttribute('data-id');
-                    const report = allReports.find(r => r.id === id);
-                    if (!report) return;
-                    report.dismisses = (report.dismisses || 0) + 1;
-                    if (report.dismisses >= 3) {
-                        report.dismissed = true;
-                    }
-                    dismissBtn.textContent = `❌ Ya no ocurre (${report.dismisses})`;
-                    dismissBtn.style.background = '#fee2e2';
+                    if (actedIds.has('dismiss-' + id)) return;
+                    actedIds.add('dismiss-' + id);
                     dismissBtn.disabled = true;
-                    persistReport(id);
-                    // Re-render si alcanza el umbral
-                    if (report.dismissed) {
-                        setTimeout(() => renderReports(), 300);
+                    const report = allReports.find(r => r.id === id);
+                    const nextDismisses = (report?.dismisses || 0) + 1;
+                    const payload = nextDismisses >= 3
+                        ? { dismisses: increment(1), dismissed: true }
+                        : { dismisses: increment(1) };
+                    try {
+                        await updateDoc(doc(db, 'radar_reports', id), payload);
+                    } catch (err) {
+                        console.error('Error marcando "ya no ocurre":', err);
+                        actedIds.delete('dismiss-' + id);
+                        dismissBtn.disabled = false;
                     }
                     return;
                 }
 
                 // Admin: Forzar expiración
                 const expireBtn = e.target.closest('.admin-expire-btn');
-                if (expireBtn && IS_ADMIN) {
+                if (expireBtn && isAdmin) {
                     const id = expireBtn.getAttribute('data-id');
-                    const report = allReports.find(r => r.id === id);
-                    if (!report) return;
-                    report.dismissed = true;
-                    report.dismisses = 99;
-                    persistReport(id);
-                    renderReports();
+                    try {
+                        await updateDoc(doc(db, 'radar_reports', id), { dismissed: true, dismisses: 99 });
+                    } catch (err) {
+                        console.error('Error expirando reporte:', err);
+                        alert('No se ha podido expirar el reporte.');
+                    }
                     return;
                 }
 
                 // Admin: Eliminar
                 const deleteBtn = e.target.closest('.admin-delete-btn');
-                if (deleteBtn && IS_ADMIN) {
+                if (deleteBtn && isAdmin) {
                     const id = deleteBtn.getAttribute('data-id');
-                    if (!confirm('¿Eliminar este reporte permanentemente?')) return;
-                    allReports = allReports.filter(r => r.id !== id);
-                    stored = stored.filter(r => r.id !== id);
-                    localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
-                    renderReports();
+                    if (!confirm('¿Eliminar este reporte permanentemente para todo el mundo?')) return;
+                    try {
+                        await deleteDoc(doc(db, 'radar_reports', id));
+                    } catch (err) {
+                        console.error('Error eliminando reporte:', err);
+                        alert('No se ha podido eliminar el reporte.');
+                    }
                     return;
                 }
             });
-
-            function persistReport(id) {
-                const storedIdx = stored.findIndex(r => r.id === id);
-                if (storedIdx !== -1) {
-                    const report = allReports.find(r => r.id === id);
-                    stored[storedIdx] = { ...stored[storedIdx], votes: report.votes, dismisses: report.dismisses, dismissed: report.dismissed };
-                    localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
-                }
-            }
 
             // Filtrado
             document.querySelectorAll('.radar-filter-btn').forEach(btn => {
@@ -531,7 +618,7 @@
                 return { lat: 36.6439 + (Math.random() - 0.5) * 0.008, lng: -4.6892 + (Math.random() - 0.5) * 0.008 };
             }
 
-            // Modal
+            // Modal de reporte
             const modal = document.getElementById('report-modal');
             function showModal() { modal.hidden = false; modal.classList.add('open'); modal.style.setProperty('display', 'flex', 'important'); }
             function hideModal() { modal.hidden = true; modal.classList.remove('open'); modal.style.setProperty('display', 'none', 'important'); }
@@ -539,7 +626,42 @@
             document.getElementById('close-report-modal').addEventListener('click', hideModal);
             document.getElementById('cancel-report-modal').addEventListener('click', hideModal);
             modal.addEventListener('click', (e) => { if (e.target === modal) hideModal(); });
-            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideModal(); });
+
+            // Modal de acceso admin
+            const adminModal = document.getElementById('admin-login-modal');
+            const adminError = document.getElementById('admin-login-error');
+            function showAdminModal() {
+                adminError.style.display = 'none';
+                adminModal.hidden = false; adminModal.classList.add('open'); adminModal.style.setProperty('display', 'flex', 'important');
+            }
+            function hideAdminModal() { adminModal.hidden = true; adminModal.classList.remove('open'); adminModal.style.setProperty('display', 'none', 'important'); }
+            document.getElementById('close-admin-modal').addEventListener('click', hideAdminModal);
+            document.getElementById('cancel-admin-modal').addEventListener('click', hideAdminModal);
+            adminModal.addEventListener('click', (e) => { if (e.target === adminModal) hideAdminModal(); });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') { hideModal(); hideAdminModal(); }
+            });
+
+            document.getElementById('admin-login-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const email = document.getElementById('admin-email').value;
+                const password = document.getElementById('admin-password').value;
+                const submitBtn = document.getElementById('admin-login-submit');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Entrando...';
+                try {
+                    await signInWithEmailAndPassword(auth, email, password);
+                    hideAdminModal();
+                    e.target.reset();
+                } catch (err) {
+                    adminError.textContent = 'No se ha podido iniciar sesión. Revisa el email y la contraseña.';
+                    adminError.style.display = 'block';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Entrar';
+                }
+            });
 
             // Nuevo reporte
             document.getElementById('report-form').addEventListener('submit', async (e) => {
@@ -554,34 +676,40 @@
 
                 if (type === 'corte-trafico') subtype = document.getElementById('corte-subtipo').value;
 
+                const submitBtn = document.getElementById('submit-report-btn');
+
                 if (street) {
-                    const submitBtn = document.getElementById('submit-report-btn');
                     submitBtn.textContent = 'Localizando en mapa...';
                     submitBtn.disabled = true;
                     const coords = await geocodeStreet(street);
                     lat = coords.lat; lng = coords.lng;
-                    submitBtn.textContent = 'Publicar en el mapa';
-                    submitBtn.disabled = false;
                 } else {
                     lat = 36.6439 + (Math.random() - 0.5) * 0.02;
                     lng = -4.6892 + (Math.random() - 0.5) * 0.02;
                 }
 
                 const newReport = {
-                    id: String(Date.now()), type, subtype, street, title,
+                    type, subtype, street, title,
                     desc: desc || `${title} (${val || 'Sin dato registrado'})`,
                     val: val || 'Registrado', lat, lng, name,
-                    votes: 1, dismisses: 0, ts: Date.now()
+                    votes: 1, dismisses: 0, dismissed: false, ts: Date.now()
                 };
 
-                allReports.unshift(newReport);
-                stored.unshift(newReport);
-                localStorage.setItem('alhaurin_radar_reports', JSON.stringify(stored));
-                renderReports();
-                hideModal();
-                e.target.reset();
-                corteSubtipoGroup.style.display = 'none';
-                alert('¡Tu reporte vecinal ha sido publicado con éxito en el mapa!');
+                submitBtn.textContent = 'Publicando...';
+                submitBtn.disabled = true;
+                try {
+                    await addDoc(reportsCol, newReport);
+                    hideModal();
+                    e.target.reset();
+                    corteSubtipoGroup.style.display = 'none';
+                    alert('¡Tu reporte vecinal ha sido publicado con éxito en el mapa!');
+                } catch (err) {
+                    console.error('Error publicando reporte:', err);
+                    alert('No se ha podido publicar el reporte. Inténtalo de nuevo en unos segundos.');
+                } finally {
+                    submitBtn.textContent = 'Publicar en el mapa';
+                    submitBtn.disabled = false;
+                }
             });
         });
     </script>

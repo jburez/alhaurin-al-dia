@@ -44,9 +44,3 @@ jobs:
           git commit -m "Actualiza tiempo desde AEMET"
           git push origin develop
           echo "changed=true" >> "$GITHUB_OUTPUT"
-
-      - name: Disparar publicación en main
-        if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run publicar-produccion.yml --ref develop

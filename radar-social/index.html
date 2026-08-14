@@ -165,10 +165,10 @@
                     </select>
                 </div>
 
-                <!-- Campo de dirección para cortes de tráfico (geocodificación) -->
-                <div class="form-group" id="corte-direccion-group" style="display: none;">
-                    <label for="corte-direccion">Calle o dirección del corte *</label>
-                    <input type="text" id="corte-direccion" placeholder="Ej: Calle Real, Av. Gerald Brenan, Plaza Baja...">
+                <!-- Campo de dirección / ubicación (geocodificación) -->
+                <div class="form-group">
+                    <label for="corte-direccion">Zona o dirección (opcional)</label>
+                    <input type="text" id="corte-direccion" placeholder="Ej: Calle Real, Cruz del Monte, Barriada Las Palmeras...">
                     <small style="display: block; margin-top: 4px; color: var(--muted); font-size: 12px;">Escribe la calle o zona y se posicionará automáticamente en el mapa.</small>
                 </div>
 
@@ -334,22 +334,14 @@
                 });
             });
 
-            // Mostrar/ocultar campos de corte de tráfico según tipo seleccionado
+            // Mostrar/ocultar subtipo de corte de tráfico según tipo seleccionado
             const reportType = document.getElementById('report-type');
             const corteSubtipoGroup = document.getElementById('corte-subtipo-group');
-            const corteDireccionGroup = document.getElementById('corte-direccion-group');
 
             reportType.addEventListener('change', () => {
                 const isCorte = reportType.value === 'corte-trafico';
                 corteSubtipoGroup.style.display = isCorte ? 'block' : 'none';
-                corteDireccionGroup.style.display = isCorte ? 'block' : 'none';
-                if (isCorte) {
-                    document.getElementById('corte-subtipo').required = true;
-                    document.getElementById('corte-direccion').required = true;
-                } else {
-                    document.getElementById('corte-subtipo').required = false;
-                    document.getElementById('corte-direccion').required = false;
-                }
+                document.getElementById('corte-subtipo').required = isCorte;
             });
 
             // Geocodificación con Nominatim (OpenStreetMap)
@@ -406,12 +398,14 @@
                 const name = document.getElementById('report-name').value || 'Vecino de Alhaurín';
                 const val = document.getElementById('report-val').value;
 
-                let lat, lng, subtype = null, street = null;
+                let lat, lng, subtype = null;
+                const street = document.getElementById('corte-direccion').value.trim() || null;
 
                 if (type === 'corte-trafico') {
                     subtype = document.getElementById('corte-subtipo').value;
-                    street = document.getElementById('corte-direccion').value;
+                }
 
+                if (street) {
                     // Geocodificar dirección
                     const submitBtn = document.getElementById('submit-report-btn');
                     submitBtn.textContent = 'Localizando en mapa...';
@@ -424,7 +418,7 @@
                     submitBtn.textContent = 'Publicar en el mapa';
                     submitBtn.disabled = false;
                 } else {
-                    // Coordenadas con pequeña dispersión alrededor del centro
+                    // Sin dirección: dispersión aleatoria alrededor del centro
                     lat = 36.6439 + (Math.random() - 0.5) * 0.02;
                     lng = -4.6892 + (Math.random() - 0.5) * 0.02;
                 }
@@ -451,9 +445,8 @@
                 renderReports();
                 hideModal();
                 e.target.reset();
-                // Ocultar campos de corte de tráfico al resetear
+                // Ocultar subtipo al resetear
                 corteSubtipoGroup.style.display = 'none';
-                corteDireccionGroup.style.display = 'none';
                 alert('¡Tu reporte vecinal ha sido publicado con éxito en el mapa!');
             });
         });

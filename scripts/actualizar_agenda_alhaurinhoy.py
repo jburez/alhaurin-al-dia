@@ -81,12 +81,17 @@ def guess_category(title: str, content: str) -> tuple[str, str]:
     """Guess icon and category from title/content."""
     combined = f"{title} {content}".lower()
 
+    # Check religious/procesiones BEFORE music (many religious events have 🎶 emoji)
+    if any(w in combined for w in ["procesión", "procesion", "virgen", "triduo",
+                                    "ofrenda", "hermandad", "traslado procesional",
+                                    "festividad", "nazareno", "vera cruz"]):
+        return "⛪", "Cultos y procesiones"
+    if any(w in combined for w in ["fútbol", "futbol", "⚽", "alhaurino", "🆚", "deporte"]):
+        return "⚽", "Deportes"
+    if any(w in combined for w in ["moto gp", "motogp", "🏍", "formula 1"]):
+        return "🏍️", "Motor"
     if any(w in combined for w in ["music", "músic", "dj", "concert", "🎶", "🎸", "🎙"]):
         return "🎵", "Música en vivo"
-    if any(w in combined for w in ["procesión", "procesion", "virgen", "triduo", "ofrenda", "hermandad"]):
-        return "⛪", "Religioso"
-    if any(w in combined for w in ["fútbol", "futbol", "⚽", "moto gp", "🏍", "deporte"]):
-        return "⚽", "Deportes"
     if any(w in combined for w in ["brunch", "gastro", "ruta", "tomate", "🍽", "🍅"]):
         return "🍽️", "Gastronomía"
     if any(w in combined for w in ["dance", "fiesta", "verbena"]):
@@ -158,18 +163,70 @@ def normalize_event(raw: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _normalize_for_dedup(text: str) -> str:
+    """Normalize text for fuzzy dedup: lowercase, strip emojis/accents."""
+    import unicodedata
+    text = re.sub(r'[\U00010000-\U0010ffff]', '', text)  # strip emojis
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    return re.sub(r'\s+', ' ', text.lower().strip())
+
+
+def _is_duplicate_of_manual(new_ev: dict, manual_events: list[dict]) -> bool:
+    """Check if a new event duplicates a manual one (same date + similar topic)."""
+    new_date = new_ev.get("inicio", "")[:10]
+    new_text = _normalize_for_dedup(new_ev.get("titulo", ""))
+
+    # Keywords that indicate the same event topic
+    topic_groups = [
+        ["virgen", "gracia", "ofrenda", "procesion", "festividad", "patrona"],
+        ["nazareno", "padre jesus"],
+        ["vera cruz"],
+    ]
+
+    for manual in manual_events:
+        manual_date = manual.get("inicio", "")[:10]
+        if new_date != manual_date:
+            continue
+        manual_text = _normalize_for_dedup(manual.get("titulo", ""))
+
+        for group in topic_groups:
+            new_matches = any(kw in new_text for kw in group)
+            manual_matches = any(kw in manual_text for kw in group)
+            if new_matches and manual_matches:
+                return True
+    return False
+
+
 def merge_events(
     existing: list[dict[str, Any]],
     new_events: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    """Merge new events with existing, dedup by ID."""
+    """Merge new events with existing, dedup by ID and fuzzy topic+date."""
     existing_ids = {e["id"] for e in existing}
+    manual_events = [e for e in existing if e.get("fuente") != "alhaurinhoy"]
     added = 0
+    skipped_dup = 0
+
+    # Also track title+date for exact dedup
+    seen_title_date = {(e["titulo"], e.get("inicio", "")[:10]) for e in existing}
+
     for ev in new_events:
-        if ev["id"] not in existing_ids:
-            existing.append(ev)
-            existing_ids.add(ev["id"])
-            added += 1
+        if ev["id"] in existing_ids:
+            continue
+        # Exact title+date dedup
+        key = (ev["titulo"], ev.get("inicio", "")[:10])
+        if key in seen_title_date:
+            skipped_dup += 1
+            continue
+        # Fuzzy topic dedup against manual events
+        if _is_duplicate_of_manual(ev, manual_events):
+            skipped_dup += 1
+            print(f"  ⏭️  Omitido (duplica manual): {ev['titulo'][:50]}")
+            continue
+        existing.append(ev)
+        existing_ids.add(ev["id"])
+        seen_title_date.add(key)
+        added += 1
 
     # Sort by start date
     existing.sort(key=lambda e: e.get("inicio", "9999"))

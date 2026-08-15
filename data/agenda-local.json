@@ -1,23 +1,8 @@
 {
-  "actualizado": "2026-08-14T21:00:23.080424+02:00",
-  "resumen": "Agenda local de Alhaurín el Grande. 268 eventos próximos.",
+  "actualizado": "2026-08-15T03:30:38.349590+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 267 eventos próximos.",
   "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-12241",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Música en vivó 🎶 Francis León 🎤🎸",
-      "descripcion": "Prepárate para disfrutar de una noche llena de buena música, buen ambiente y momentos inolvidables con Francis León. 🎤🎸 🗓️ Miércoles, 15 de julio 🕘 21:30 h 📍 Cafetería Dani (Calle Gerald Brenan) Ve...",
-      "lugar": "",
-      "inicio": "2026-07-15T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-francis-leon-%f0%9f%8e%a4%f0%9f%8e%b8/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-4546",
       "tipo": "Música en vivo",

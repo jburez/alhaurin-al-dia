@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-15T14:46:24.958336+02:00",
-  "resumen": "Agenda local de Alhaurín el Grande. 267 eventos próximos.",
+  "actualizado": "2026-08-15T20:36:07.781500+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 274 eventos próximos.",
   "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
@@ -1067,6 +1067,21 @@
       "activo": true
     },
     {
+      "id": "alhaurinhoy-12569",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "KARAOKE NIGHT 🎤",
+      "descripcion": "🎤 KARAOKE NIGHT IS BACK! 🎤 Ready to grab the mic and show us what you’ve got? 🎶🍻 Join us Saturday, 22nd August from 8pm for a night of big tunes, good fun and questionable singing! 😜 📍 The Keltic C...",
+      "lugar": "",
+      "inicio": "2026-08-15T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/karaoke-night-%f0%9f%8e%a4/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-5664",
       "tipo": "Música en vivo",
       "icono": "🎵",
@@ -1142,6 +1157,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-12577",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Presentación 🎶🌿🐎 ROMERÍA 2026",
+      "descripcion": "PRESENTACIÓN ROMERÍA 2026 | ALHAURÍN EL GRANDE ¿Preparados para vivir una Romería que promete emociones, tradición y momentos inolvidables? 👀 Vecinos y vecinas de Alhaurín el Grande, ¡ya queda meno...",
+      "lugar": "",
+      "inicio": "2026-08-20T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/presentacion-%f0%9f%8e%b6%f0%9f%8c%bf%f0%9f%90%8e-romeria-2026/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "virgen-de-gracia-gracias-2026",
       "tipo": "Cultos Patronales",
       "icono": "⛪",
@@ -1154,6 +1184,21 @@
       "cta": "Ver actos",
       "url": "./virgen-de-gracia-2026/",
       "activo": true
+    },
+    {
+      "id": "alhaurinhoy-12575",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "🌳 JORNADA DE RIEGO FORESTAL 🌳",
+      "descripcion": "🌳 JORNADA DE RIEGO FORESTAL EN ALHAURÍN EL GRANDE 🌳 ✏️ ¡INSCRÍBETE EN EL ENLACE DE NUESTRO PERFIL! 🌱 Te invitamos a participar en una nueva JORNADA DE RESTAURACIÓN FORESTAL, donde realizaremos ACTI...",
+      "lugar": "",
+      "inicio": "2026-08-23T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8c%b3-jornada-de-riego-forestal-%f0%9f%8c%b3/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
     },
     {
       "id": "alhaurinhoy-5688",
@@ -1302,6 +1347,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8c%b2-everesting-salvador-perez-senderito-%f0%9f%8f%83%f0%9f%8f%bd%e2%99%82%ef%b8%8f%f0%9f%8f%83%f0%9f%8f%bb%e2%99%80%ef%b8%8f/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12587",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "II Verbena 🎉 Villa del Guadalhorce",
+      "descripcion": "🎉¡II Verbena Villa del Guadalhorce!🎶 📅 El próximo sábado 5 de septiembre, a partir de las 21:00 h, te esperamos en la Plaza Mayor de Villa del Guadalhorce para disfrutar de una noche llena de músic...",
+      "lugar": "",
+      "inicio": "2026-09-05T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/ii-verbena-%f0%9f%8e%89-villa-del-guadalhorce/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1651,6 +1711,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-12582",
+      "tipo": "Gastronomía",
+      "icono": "🍽️",
+      "titulo": "Inscripción ✍🏽 Clubes de Lectura 📚",
+      "descripcion": "📚✨ ¡Vuelven los Clubes de Lectura de Alhaurín el Grande! El Área de Cultura del Ayuntamiento abre el plazo de inscripción para una nueva temporada de encuentros en torno a los libros, las historias...",
+      "lugar": "",
+      "inicio": "2026-09-15T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/incription-%e2%9c%8d%f0%9f%8f%bd-clubes-de-lectura-%f0%9f%93%9a/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-5751",
       "tipo": "Ocio",
       "icono": "🎉",
@@ -1947,6 +2022,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/excursiones-%f0%9f%9a%8c-aeg-caminito-del-rey/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12572",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Concierto 🎶 JOSÉ LUIS JAÉN",
+      "descripcion": "🎶 La música, la poesía y las raíces llegan a Alhaurín el Grande de la mano de José Luis Jaén joseluisjaenmusic El Teatro Municipal Antonio Gala acogerá este espectáculo de música y poesía, un emoti...",
+      "lugar": "",
+      "inicio": "2026-10-02T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/concierto-%f0%9f%8e%b6-jose-luis-jaen/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -2307,6 +2397,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/jornada-%f0%9f%a6%89-rapaces-nocturnas-%e2%9b%b0%ef%b8%8f/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12579",
+      "tipo": "Cultos y procesiones",
+      "icono": "⛪",
+      "titulo": "III Encuentro 🧵 Multilabores 🩵",
+      "descripcion": "🧵 III Encuentro Multilabores de la Hermandad Virgen de Gracia La Hermandad @virgendegracia_alhaurin junto al Ayuntamiento de Alhaurín el Grande organizan una nueva edición del Encuentro Multilabore...",
+      "lugar": "",
+      "inicio": "2026-10-25T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/iii-encuentro-%f0%9f%a7%b5-multilabores-%f0%9f%a9%b5/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },

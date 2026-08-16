@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-16T08:59:07+02:00",
+  "actualizado": "2026-08-16T12:40:14+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
@@ -7,46 +7,34 @@
     "id": "tiempo",
     "icono": "🌤️",
     "titulo": "Tiempo",
-    "valor": "Máx. 34º",
-    "detalle": "Poco nuboso · Máx. 34º / Mín. 22º · Lluvia 0%",
+    "valor": "Máx. 33º",
+    "detalle": "Poco nuboso · Máx. 33º / Mín. 24º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-08-15",
-    "dia_semana": "Sábado",
-    "fecha_corta": "15/8",
-    "t_max": "34",
-    "t_min": "22",
+    "fecha": "2026-08-16",
+    "dia_semana": "Domingo",
+    "fecha_corta": "16/8",
+    "t_max": "33",
+    "t_min": "24",
     "icono": "🌤️",
     "descripcion": "Poco nuboso",
     "lluvia": "0%",
-    "viento": "S 10 km/h",
+    "viento": "SE 15 km/h",
     "uv": "8"
   },
   "semana": [
-    {
-      "fecha": "2026-08-15",
-      "dia_semana": "Sábado",
-      "fecha_corta": "15/8",
-      "t_max": "34",
-      "t_min": "22",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
-      "lluvia": "0%",
-      "viento": "S 10 km/h",
-      "uv": "8"
-    },
     {
       "fecha": "2026-08-16",
       "dia_semana": "Domingo",
       "fecha_corta": "16/8",
       "t_max": "33",
-      "t_min": "23",
-      "icono": "☁️",
-      "descripcion": "Nubes altas",
+      "t_min": "24",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
       "lluvia": "0%",
       "viento": "SE 15 km/h",
       "uv": "8"
@@ -55,13 +43,13 @@
       "fecha": "2026-08-17",
       "dia_semana": "Lunes",
       "fecha_corta": "17/8",
-      "t_max": "34",
+      "t_max": "33",
       "t_min": "23",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
+      "icono": "☀️",
+      "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "SE 20 km/h",
-      "uv": "9"
+      "viento": "S 15 km/h",
+      "uv": "8"
     },
     {
       "fecha": "2026-08-18",
@@ -79,12 +67,12 @@
       "fecha": "2026-08-19",
       "dia_semana": "Miércoles",
       "fecha_corta": "19/8",
-      "t_max": "37",
-      "t_min": "21",
+      "t_max": "36",
+      "t_min": "22",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "30%",
-      "viento": "S 10 km/h",
+      "lluvia": "25%",
+      "viento": "SO 10 km/h",
       "uv": "8"
     },
     {
@@ -95,20 +83,32 @@
       "t_min": "19",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "25%",
+      "lluvia": "30%",
       "viento": "S 10 km/h",
-      "uv": ""
+      "uv": "8"
     },
     {
       "fecha": "2026-08-21",
       "dia_semana": "Viernes",
       "fecha_corta": "21/8",
-      "t_max": "34",
+      "t_max": "35",
+      "t_min": "19",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "Flojo",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-08-22",
+      "dia_semana": "Sábado",
+      "fecha_corta": "22/8",
+      "t_max": "33",
       "t_min": "19",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
-      "viento": "S 10 km/h",
+      "lluvia": "20%",
+      "viento": "SE 10 km/h",
       "uv": ""
     }
   ],
@@ -131,8 +131,8 @@
       "id": "deporte",
       "icono": "🏃",
       "titulo": "Deporte exterior",
-      "estado": "Horas frescas",
-      "detalle": "Evitar 13:00 a 19:00 h por calor"
+      "estado": "Favorable",
+      "detalle": "Ideal mañanas y atardecer"
     },
     {
       "id": "polen",
@@ -143,9 +143,9 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:35 h",
-    "ocaso": "21:10 h",
-    "horas_luz": "13h 35m",
+    "orto": "07:36 h",
+    "ocaso": "21:08 h",
+    "horas_luz": "13h 32m",
     "fase_luna": "Luna Creciente (12%)",
     "icono_luna": "🌒"
   },

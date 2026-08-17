@@ -1050,7 +1050,8 @@
       "estado": "warning",
       "cta": "Ver programa",
       "url": "./virgen-de-gracia-2026/",
-      "activo": true
+      "activo": true,
+      "fuente": "legado"
     },
     {
       "id": "virgen-de-gracia-procesion-2026",
@@ -1064,7 +1065,8 @@
       "estado": "alert",
       "cta": "Ver itinerario y bando",
       "url": "./virgen-de-gracia-2026/",
-      "activo": true
+      "activo": true,
+      "fuente": "legado"
     },
     {
       "id": "alhaurinhoy-12569",
@@ -1183,7 +1185,8 @@
       "estado": "neutral",
       "cta": "Ver actos",
       "url": "./virgen-de-gracia-2026/",
-      "activo": true
+      "activo": true,
+      "fuente": "legado"
     },
     {
       "id": "alhaurinhoy-12575",

@@ -223,3 +223,146 @@ avisosList.addEventListener("click", async (e) => {
         }
     }
 });
+
+// ===== Eventos: modal =====
+const eventosCol = collection(db, "admin_eventos");
+const eventoModal = document.getElementById("evento-modal");
+const eventoForm = document.getElementById("evento-form");
+const eventoModalTitle = document.getElementById("evento-modal-title");
+
+function showEventoModal() { eventoModal.hidden = false; eventoModal.classList.add("open"); }
+function hideEventoModal() { eventoModal.hidden = true; eventoModal.classList.remove("open"); eventoForm.reset(); document.getElementById("evento-doc-id").value = ""; }
+
+document.getElementById("open-evento-modal").addEventListener("click", () => {
+    eventoModalTitle.textContent = "Nuevo evento";
+    document.getElementById("evento-activo").checked = true;
+    showEventoModal();
+});
+document.getElementById("close-evento-modal").addEventListener("click", hideEventoModal);
+document.getElementById("cancel-evento-modal").addEventListener("click", hideEventoModal);
+eventoModal.addEventListener("click", (e) => { if (e.target === eventoModal) hideEventoModal(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !eventoModal.hidden) hideEventoModal(); });
+
+function fillEventoForm(evento) {
+    document.getElementById("evento-doc-id").value = evento.docId;
+    document.getElementById("evento-titulo").value = evento.titulo || "";
+    document.getElementById("evento-tipo").value = evento.tipo || "";
+    document.getElementById("evento-icono").value = evento.icono || "";
+    document.getElementById("evento-descripcion").value = evento.descripcion || "";
+    document.getElementById("evento-lugar").value = evento.lugar || "";
+    document.getElementById("evento-inicio").value = isoToLocalInputValue(evento.inicio);
+    document.getElementById("evento-fin").value = isoToLocalInputValue(evento.fin);
+    document.getElementById("evento-cta").value = evento.cta || "";
+    document.getElementById("evento-url").value = evento.url || "";
+    document.getElementById("evento-activo").checked = evento.activo !== false;
+}
+
+eventoForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const submitBtn = document.getElementById("submit-evento-btn");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Guardando...";
+
+    const docId = document.getElementById("evento-doc-id").value;
+    const inicio = localInputValueToDate(document.getElementById("evento-inicio").value);
+    const fin = localInputValueToDate(document.getElementById("evento-fin").value);
+
+    const payload = {
+        titulo: document.getElementById("evento-titulo").value.trim(),
+        tipo: document.getElementById("evento-tipo").value.trim() || "Evento",
+        icono: document.getElementById("evento-icono").value.trim() || "📅",
+        descripcion: document.getElementById("evento-descripcion").value.trim(),
+        lugar: document.getElementById("evento-lugar").value.trim(),
+        inicio,
+        fin,
+        cta: document.getElementById("evento-cta").value.trim() || "Ver más",
+        url: document.getElementById("evento-url").value.trim() || "#",
+        activo: document.getElementById("evento-activo").checked,
+        actualizadoEn: serverTimestamp(),
+    };
+
+    try {
+        if (docId) {
+            await updateDoc(doc(db, "admin_eventos", docId), payload);
+        } else {
+            await addDoc(eventosCol, { ...payload, creadoEn: serverTimestamp() });
+        }
+        hideEventoModal();
+    } catch (err) {
+        console.error("Error guardando evento:", err);
+        alert("No se ha podido guardar el evento.");
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Guardar";
+    }
+});
+
+// ===== Eventos: lista en vivo =====
+const eventosList = document.getElementById("admin-eventos-list");
+let allEventos = [];
+
+function formatEventoFecha(iso) {
+    if (!iso) return "Fecha pendiente";
+    const date = new Date(iso);
+    if (Number.isNaN(date.getTime())) return "Fecha pendiente";
+    return date.toLocaleDateString("es-ES", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" });
+}
+
+function renderEventos() {
+    if (!allEventos.length) {
+        eventosList.innerHTML = '<p class="admin-empty">Todavía no hay eventos manuales. Crea el primero con "+ Nuevo evento".</p>';
+        return;
+    }
+    eventosList.innerHTML = allEventos.map((evento) => `
+        <article class="admin-list-item admin-list-item--${evento.activo === false ? "resuelto" : "neutral"}">
+            <div class="admin-list-item-main">
+                <span class="admin-list-item-icon">${evento.icono || "📅"}</span>
+                <div>
+                    <strong>${evento.titulo || "(sin título)"}</strong>
+                    <span class="admin-list-item-meta">${formatEventoFecha(evento.inicio)}${evento.lugar ? ` · ${evento.lugar}` : ""}${evento.activo === false ? " · Inactivo" : ""}</span>
+                </div>
+            </div>
+            <div class="admin-list-item-actions">
+                <button type="button" class="btn btn-secondary admin-edit-evento-btn" data-id="${evento.docId}">Editar</button>
+                <button type="button" class="btn admin-delete-evento-btn" data-id="${evento.docId}">Eliminar</button>
+            </div>
+        </article>
+    `).join("");
+}
+
+const eventosQuery = query(eventosCol, orderBy("creadoEn", "desc"));
+onSnapshot(eventosQuery, (snapshot) => {
+    allEventos = snapshot.docs.map((d) => ({ docId: d.id, ...d.data() }));
+    renderEventos();
+}, (err) => {
+    console.error("Error escuchando eventos:", err);
+    eventosList.innerHTML = '<p class="admin-empty">No se han podido cargar los eventos.</p>';
+});
+
+eventosList.addEventListener("click", async (e) => {
+    const editBtn = e.target.closest(".admin-edit-evento-btn");
+    if (editBtn) {
+        const evento = allEventos.find((ev) => ev.docId === editBtn.getAttribute("data-id"));
+        if (!evento) return;
+        eventoModalTitle.textContent = "Editar evento";
+        fillEventoForm({
+            ...evento,
+            inicio: evento.inicio && typeof evento.inicio.toDate === "function" ? evento.inicio.toDate().toISOString() : evento.inicio,
+            fin: evento.fin && typeof evento.fin.toDate === "function" ? evento.fin.toDate().toISOString() : evento.fin,
+        });
+        showEventoModal();
+        return;
+    }
+
+    const deleteBtn = e.target.closest(".admin-delete-evento-btn");
+    if (deleteBtn) {
+        const id = deleteBtn.getAttribute("data-id");
+        if (!confirm("¿Eliminar este evento permanentemente? También se borrará su página en /planes/.")) return;
+        try {
+            await deleteDoc(doc(db, "admin_eventos", id));
+        } catch (err) {
+            console.error("Error eliminando evento:", err);
+            alert("No se ha podido eliminar el evento.");
+        }
+    }
+});

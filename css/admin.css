@@ -126,6 +126,12 @@
     font-size: 20px;
 }
 
+.admin-panel-note {
+    color: var(--muted);
+    font-size: 13px;
+    margin: -8px 0 16px;
+}
+
 .admin-empty {
     color: var(--muted);
     font-size: 14px;

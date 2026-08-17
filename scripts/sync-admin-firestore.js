@@ -19,6 +19,7 @@ const admin = require('firebase-admin');
 
 const ROOT = path.resolve(__dirname, '..');
 const AVISOS_FILE = path.join(ROOT, 'data', 'avisos-locales.json');
+const AGENDA_FILE = path.join(ROOT, 'data', 'agenda-local.json');
 
 function initFirestore() {
   const raw = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
@@ -97,19 +98,71 @@ async function construirAvisosLocales(db) {
   };
 }
 
+function eventoDesdeDoc(doc) {
+  const data = doc.data();
+  return {
+    id: `manual-${doc.id}`,
+    tipo: data.tipo || 'Evento',
+    icono: data.icono || '📅',
+    titulo: data.titulo || '',
+    descripcion: data.descripcion || '',
+    lugar: data.lugar || '',
+    inicio: timestampToISO(data.inicio),
+    fin: timestampToISO(data.fin),
+    estado: data.estado || 'neutral',
+    cta: data.cta || 'Ver más',
+    url: data.url || '#',
+    activo: data.activo !== false,
+    fuente: 'manual',
+  };
+}
+
+async function construirAgendaLocal(db) {
+  const snapshot = await db.collection('admin_eventos').get();
+  const eventosManuales = [];
+  snapshot.forEach((doc) => eventosManuales.push(eventoDesdeDoc(doc)));
+
+  const actual = readJSON(AGENDA_FILE, { actualizado: null, resumen: '', eventos: [] });
+  const eventosExistentes = Array.isArray(actual.eventos) ? actual.eventos : [];
+
+  // Se preserva todo lo que no es "manual" (ayuntamiento, alhaurinhoy,
+  // legado); el subconjunto "manual" se reconstruye por completo desde
+  // Firestore. Ambos scripts automáticos (actualizar_agenda_ayto.py,
+  // actualizar_agenda_alhaurinhoy.py) hacen lo mismo a la inversa: preservan
+  // cualquier `fuente` distinta a la suya, así que conviven sin pisarse.
+  const eventosNoManuales = eventosExistentes.filter((e) => e.fuente !== 'manual');
+  const eventos = [...eventosNoManuales, ...eventosManuales];
+
+  return {
+    actualizado: new Date().toISOString(),
+    resumen: `Agenda local de Alhaurín el Grande. ${eventos.length} eventos próximos.`,
+    eventos,
+  };
+}
+
 async function main() {
   const db = initFirestore();
 
   const nuevoAvisosLocales = await construirAvisosLocales(db);
+  const nuevaAgendaLocal = await construirAgendaLocal(db);
 
-  const previoRaw = fs.existsSync(AVISOS_FILE) ? fs.readFileSync(AVISOS_FILE, 'utf8') : null;
-  const nuevoRaw = JSON.stringify(nuevoAvisosLocales, null, 2) + '\n';
-
-  if (nuevoRaw !== previoRaw) {
-    fs.writeFileSync(AVISOS_FILE, nuevoRaw);
+  const previoAvisosRaw = fs.existsSync(AVISOS_FILE) ? fs.readFileSync(AVISOS_FILE, 'utf8') : null;
+  const nuevoAvisosRaw = JSON.stringify(nuevoAvisosLocales, null, 2) + '\n';
+  if (nuevoAvisosRaw !== previoAvisosRaw) {
+    fs.writeFileSync(AVISOS_FILE, nuevoAvisosRaw);
     console.log(`[sync-admin-firestore] ${AVISOS_FILE} actualizado (${nuevoAvisosLocales.avisos.length} avisos activos, ${nuevoAvisosLocales.historial.length} en historial).`);
   } else {
     console.log('[sync-admin-firestore] avisos-locales.json sin cambios.');
+  }
+
+  const previoAgendaRaw = fs.existsSync(AGENDA_FILE) ? fs.readFileSync(AGENDA_FILE, 'utf8') : null;
+  const nuevaAgendaRaw = JSON.stringify(nuevaAgendaLocal, null, 2) + '\n';
+  if (nuevaAgendaRaw !== previoAgendaRaw) {
+    fs.writeFileSync(AGENDA_FILE, nuevaAgendaRaw);
+    const manuales = nuevaAgendaLocal.eventos.filter((e) => e.fuente === 'manual').length;
+    console.log(`[sync-admin-firestore] ${AGENDA_FILE} actualizado (${manuales} eventos manuales, ${nuevaAgendaLocal.eventos.length} en total).`);
+  } else {
+    console.log('[sync-admin-firestore] agenda-local.json sin cambios.');
   }
 }
 

@@ -65,5 +65,23 @@ service cloud.firestore {
       allow update: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
       allow delete: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
     }
+
+    // Panel admin (eventos manuales de agenda). Mismo criterio que
+    // admin_avisos: solo el admin lee y escribe.
+    match /admin_eventos/{docId} {
+      allow read: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+
+      allow create: if
+        request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2"
+        && request.resource.data.keys().hasAll(['tipo', 'titulo', 'descripcion', 'lugar', 'activo'])
+        && request.resource.data.tipo is string
+        && request.resource.data.titulo is string && request.resource.data.titulo.size() > 0 && request.resource.data.titulo.size() < 200
+        && request.resource.data.descripcion is string && request.resource.data.descripcion.size() < 1000
+        && request.resource.data.lugar is string
+        && request.resource.data.activo is bool;
+
+      allow update: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+      allow delete: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+    }
   }
 }

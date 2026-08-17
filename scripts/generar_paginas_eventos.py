@@ -274,11 +274,40 @@ def generate_event_page(event: dict[str, Any], slug: str) -> str:
 """
 
 
+def cleanup_orphan_manual_pages(old_id_to_slug: dict[str, str], new_id_to_slug: dict[str, str]) -> int:
+    """Borra /planes/{slug}/ de eventos manuales cuyo slug ya no es válido:
+    o el evento se borró (id ausente en el nuevo mapa) o cambió de título y
+    por tanto de slug (id presente pero con un slug distinto). Solo actúa
+    sobre eventos con id "manual-*" (gestionados por
+    scripts/sync-admin-firestore.js) — los automáticos (ayuntamiento/
+    alhaurinhoy) nunca se borran aquí, ya que ese gap (páginas huérfanas) es
+    un problema preexistente fuera de este alcance."""
+    removed = 0
+    for event_id, old_slug in old_id_to_slug.items():
+        if not event_id.startswith("manual-"):
+            continue
+        if new_id_to_slug.get(event_id) == old_slug:
+            continue
+        stale_dir = PLANES_DIR / old_slug
+        if stale_dir.is_dir():
+            shutil.rmtree(stale_dir)
+            removed += 1
+    return removed
+
+
 def main() -> int:
     print("🔨 Generando páginas de eventos...")
 
     data = json.loads(AGENDA_PATH.read_text("utf-8"))
     eventos = data.get("eventos", [])
+
+    slug_map_path = ROOT / "data" / "evento-slugs.json"
+    old_id_to_slug: dict[str, str] = {}
+    if slug_map_path.exists():
+        try:
+            old_id_to_slug = json.loads(slug_map_path.read_text("utf-8"))
+        except json.JSONDecodeError:
+            old_id_to_slug = {}
 
     # Track generated slugs to avoid collisions
     slug_map: dict[str, str] = {}
@@ -304,16 +333,20 @@ def main() -> int:
         (event_dir / "index.html").write_text(html, encoding="utf-8")
         generated += 1
 
-    # Write slug map for calendario.js to use
-    slug_map_path = ROOT / "data" / "evento-slugs.json"
     # Invert: event_id -> slug
     id_to_slug = {v: k for k, v in slug_map.items()}
+
+    removed = cleanup_orphan_manual_pages(old_id_to_slug, id_to_slug)
+
+    # Write slug map for calendario.js to use
     slug_map_path.write_text(
         json.dumps(id_to_slug, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 
     print(f"  ✅ {generated} páginas generadas en /planes/*/")
+    if removed:
+        print(f"  🗑️  {removed} páginas de eventos manuales huérfanas eliminadas")
     print(f"  📄 Mapa de slugs guardado en {slug_map_path.name}")
     return 0
 

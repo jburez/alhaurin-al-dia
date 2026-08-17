@@ -47,7 +47,7 @@
 
             <nav class="admin-tabs" role="tablist">
                 <button type="button" class="admin-tab active" data-tab="avisos">Avisos</button>
-                <button type="button" class="admin-tab" data-tab="eventos" disabled title="Próximamente">Eventos</button>
+                <button type="button" class="admin-tab" data-tab="eventos">Eventos</button>
                 <button type="button" class="admin-tab" data-tab="estado-local" disabled title="Próximamente">Estado local</button>
             </nav>
 
@@ -57,6 +57,15 @@
                     <button type="button" id="open-aviso-modal" class="btn btn-primary">+ Nuevo aviso</button>
                 </div>
                 <div id="admin-avisos-list" class="admin-list"></div>
+            </section>
+
+            <section class="admin-panel" data-panel="eventos" hidden>
+                <div class="admin-panel-header">
+                    <h2>Eventos manuales de agenda</h2>
+                    <button type="button" id="open-evento-modal" class="btn btn-primary">+ Nuevo evento</button>
+                </div>
+                <p class="admin-panel-note">Solo los eventos que crees aquí. Los importados automáticamente del Ayuntamiento y alhaurinhoy.es no aparecen ni se pueden editar en este panel.</p>
+                <div id="admin-eventos-list" class="admin-list"></div>
             </section>
         </main>
     </div>
@@ -126,6 +135,71 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="cancel-aviso-modal">Cancelar</button>
                     <button type="submit" class="btn btn-primary" id="submit-aviso-btn">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal crear/editar evento manual -->
+    <div class="modal-overlay" id="evento-modal" hidden>
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2 id="evento-modal-title">Nuevo evento</h2>
+                <button type="button" class="modal-close" id="close-evento-modal">&times;</button>
+            </div>
+            <form id="evento-form">
+                <input type="hidden" id="evento-doc-id" value="">
+                <div class="form-group">
+                    <label for="evento-titulo">Título *</label>
+                    <input type="text" id="evento-titulo" placeholder="Ej: Concierto en la Plaza Baja" required maxlength="200">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="evento-tipo">Tipo</label>
+                        <input type="text" id="evento-tipo" placeholder="Ej: Fiestas, Deportes, Música...">
+                    </div>
+                    <div class="form-group">
+                        <label for="evento-icono">Icono (emoji)</label>
+                        <input type="text" id="evento-icono" placeholder="📅" maxlength="4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="evento-descripcion">Descripción</label>
+                    <textarea id="evento-descripcion" rows="3" placeholder="Describe el evento..." maxlength="1000"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="evento-lugar">Lugar</label>
+                    <input type="text" id="evento-lugar" placeholder="Ej: Plaza Baja, Alhaurín el Grande">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="evento-inicio">Inicio *</label>
+                        <input type="datetime-local" id="evento-inicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="evento-fin">Fin (opcional)</label>
+                        <input type="datetime-local" id="evento-fin">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="evento-cta">Texto del enlace</label>
+                        <input type="text" id="evento-cta" placeholder="Ver más">
+                    </div>
+                    <div class="form-group">
+                        <label for="evento-url">Enlace (opcional)</label>
+                        <input type="url" id="evento-url" placeholder="https://...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="admin-checkbox-label">
+                        <input type="checkbox" id="evento-activo" checked>
+                        Activo (visible en la agenda)
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancel-evento-modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="submit-evento-btn">Guardar</button>
                 </div>
             </form>
         </div>

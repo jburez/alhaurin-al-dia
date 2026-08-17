@@ -433,3 +433,118 @@ estadoLocalForm.addEventListener("submit", async (e) => {
         submitBtn.textContent = "Guardar estado local";
     }
 });
+
+// ===== Radar Social: moderación (misma lógica que radar-social/index.html,
+// solo lectura + expirar/eliminar — publicar reportes es cosa de los
+// vecinos, no de este panel) =====
+const radarReportsCol = collection(db, "radar_reports");
+
+const RADAR_TTL = {
+    lluvia: 3 * 3600000,
+    tormenta: 2 * 3600000,
+    granizo: 1 * 3600000,
+    viento: 2 * 3600000,
+    arroyo: 6 * 3600000,
+    "corte-trafico": 12 * 3600000,
+    incidencia: 6 * 3600000
+};
+
+const RADAR_TTL_LABELS = {
+    lluvia: "3h", tormenta: "2h", granizo: "1h", viento: "2h",
+    arroyo: "6h", "corte-trafico": "12h", incidencia: "6h"
+};
+
+function radarIconEmoji(type) {
+    return { lluvia: "🌧️", tormenta: "⚡", granizo: "🧊", viento: "💨", arroyo: "🌊", "corte-trafico": "🚧", incidencia: "⚠️" }[type] || "📌";
+}
+
+function radarTypeLabel(type) {
+    return { lluvia: "LLUVIA", tormenta: "TORMENTA", granizo: "GRANIZO", viento: "VIENTO", arroyo: "ARROYO", "corte-trafico": "CORTE DE TRÁFICO", incidencia: "INCIDENCIA" }[type] || String(type || "").toUpperCase();
+}
+
+function radarTimeAgo(ts) {
+    const diff = Date.now() - ts;
+    if (diff < 60000) return "Ahora mismo";
+    if (diff < 3600000) return `Hace ${Math.floor(diff / 60000)} min`;
+    if (diff < 86400000) return `Hace ${Math.floor(diff / 3600000)}h`;
+    return `Hace ${Math.floor(diff / 86400000)}d`;
+}
+
+function radarIsExpired(r) {
+    if (r.dismissed) return true;
+    if ((r.dismisses || 0) >= 3) return true;
+    const ttl = RADAR_TTL[r.type] || 6 * 3600000;
+    return (Date.now() - (r.ts || 0)) > ttl;
+}
+
+const radarList = document.getElementById("admin-radar-list");
+const radarCount = document.getElementById("admin-radar-count");
+let allRadarReports = [];
+
+function renderRadarReports() {
+    if (!allRadarReports.length) {
+        radarCount.textContent = "";
+        radarList.innerHTML = '<p class="admin-empty">Todavía no hay reportes vecinales.</p>';
+        return;
+    }
+
+    const activos = allRadarReports.filter((r) => !radarIsExpired(r));
+    radarCount.textContent = `${activos.length} activo${activos.length !== 1 ? "s" : ""} · ${allRadarReports.length} en total`;
+
+    radarList.innerHTML = allRadarReports.map((r) => {
+        const expired = radarIsExpired(r);
+        const ttlInfo = !expired ? ` · ⏱ ${RADAR_TTL_LABELS[r.type] || "6h"}` : "";
+        const ubicacion = r.street ? ` · 📍 ${r.street}` : "";
+        const votosInfo = ` · 👍 ${r.votes || 0}${r.dismisses ? ` · ❌ ${r.dismisses}` : ""}`;
+        return `
+            <article class="admin-list-item admin-list-item--${expired ? "resuelto" : "neutral"}">
+                <div class="admin-list-item-main">
+                    <span class="admin-list-item-icon">${radarIconEmoji(r.type)}</span>
+                    <div>
+                        <strong>${r.title || "(sin título)"}</strong>
+                        <span class="admin-list-item-meta">${radarTypeLabel(r.type)} · ${radarTimeAgo(r.ts)}${ttlInfo}${ubicacion}${votosInfo}${expired ? " · Expirado" : ""}</span>
+                    </div>
+                </div>
+                <div class="admin-list-item-actions">
+                    ${!expired ? `<button type="button" class="btn btn-secondary admin-expire-radar-btn" data-id="${r.id}">Expirar</button>` : ""}
+                    <button type="button" class="btn admin-delete-radar-btn" data-id="${r.id}">Eliminar</button>
+                </div>
+            </article>
+        `;
+    }).join("");
+}
+
+const radarReportsQuery = query(radarReportsCol, orderBy("ts", "desc"));
+onSnapshot(radarReportsQuery, (snapshot) => {
+    allRadarReports = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
+    renderRadarReports();
+}, (err) => {
+    console.error("Error escuchando reportes del Radar Social:", err);
+    radarList.innerHTML = '<p class="admin-empty">No se han podido cargar los reportes.</p>';
+});
+
+radarList.addEventListener("click", async (e) => {
+    const expireBtn = e.target.closest(".admin-expire-radar-btn");
+    if (expireBtn) {
+        const id = expireBtn.getAttribute("data-id");
+        try {
+            await updateDoc(doc(db, "radar_reports", id), { dismissed: true, dismisses: 99 });
+        } catch (err) {
+            console.error("Error expirando reporte:", err);
+            alert("No se ha podido expirar el reporte.");
+        }
+        return;
+    }
+
+    const deleteBtn = e.target.closest(".admin-delete-radar-btn");
+    if (deleteBtn) {
+        const id = deleteBtn.getAttribute("data-id");
+        if (!confirm("¿Eliminar este reporte permanentemente para todo el mundo?")) return;
+        try {
+            await deleteDoc(doc(db, "radar_reports", id));
+        } catch (err) {
+            console.error("Error eliminando reporte:", err);
+            alert("No se ha podido eliminar el reporte.");
+        }
+    }
+});

@@ -49,6 +49,7 @@
                 <button type="button" class="admin-tab active" data-tab="avisos">Avisos</button>
                 <button type="button" class="admin-tab" data-tab="eventos">Eventos</button>
                 <button type="button" class="admin-tab" data-tab="estado-local">Estado local</button>
+                <button type="button" class="admin-tab" data-tab="radar-social">Radar Social</button>
             </nav>
 
             <section class="admin-panel" data-panel="avisos">
@@ -148,6 +149,15 @@
                         <button type="submit" id="submit-estado-local-btn" class="btn btn-primary">Guardar estado local</button>
                     </div>
                 </form>
+            </section>
+
+            <section class="admin-panel" data-panel="radar-social" hidden>
+                <div class="admin-panel-header">
+                    <h2>Radar Social — moderación</h2>
+                    <span id="admin-radar-count" class="admin-panel-note" style="margin:0;"></span>
+                </div>
+                <p class="admin-panel-note">Reportes vecinales publicados en <a href="../radar-social/" target="_blank" rel="noopener noreferrer">/radar-social/</a>. Aquí solo se modera (expirar o eliminar) — publicarlos es cosa de los vecinos, no de este panel.</p>
+                <div id="admin-radar-list" class="admin-list"></div>
             </section>
         </main>
     </div>

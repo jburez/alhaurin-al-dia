@@ -624,6 +624,9 @@ Primera pieza de la migración hacia una plataforma hiperlocal: un panel web (`/
 | 2 | Página `/admin/`, pestaña Avisos | ✅ Hecho y probado en producción |
 | 3 | Eventos (agenda) | ✅ Hecho y probado en producción |
 | 4 | Estado local de hoy | ✅ Código listo, pendiente de probar en producción |
+| extra | Pestaña Radar Social (moderación) | ✅ Hecho y probado en producción |
+
+La pestaña extra "Radar Social" **no** forma parte del flujo Firestore→JSON de arriba: es solo una segunda entrada de moderación (listar, expirar, eliminar) para la colección `radar_reports` que ya existía y ya funcionaba desde `/radar-social/` — mismas reglas, mismo UID admin, cero cambios en `radar-social/index.html` ni en `firestore.rules`. Publicar reportes sigue siendo cosa de los vecinos, no de este panel.
 
 ### Cómo funciona (avisos, eventos y estado local)
 

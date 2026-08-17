@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin — Alhaurín al Día</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/home-live.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+    <div class="admin-shell">
+        <header class="admin-header">
+            <div>
+                <strong>Panel Admin</strong>
+                <span class="admin-header-sub">Alhaurín al Día</span>
+            </div>
+            <div id="admin-session-box" class="admin-session-box" hidden>
+                <span id="admin-session-email"></span>
+                <button type="button" id="admin-logout-btn" class="btn btn-secondary">Salir</button>
+            </div>
+        </header>
+
+        <!-- Puerta de acceso: mientras no haya sesión admin válida, solo se ve este formulario -->
+        <section id="admin-login-gate" class="admin-login-gate">
+            <form id="admin-login-form" class="modal-card admin-login-card">
+                <h1>🔑 Acceso admin</h1>
+                <div class="form-group">
+                    <label for="admin-email">Email</label>
+                    <input type="email" id="admin-email" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Contraseña</label>
+                    <input type="password" id="admin-password" required autocomplete="current-password">
+                </div>
+                <p id="admin-login-error" class="admin-login-error" hidden></p>
+                <button type="submit" id="admin-login-submit" class="btn btn-primary admin-login-submit">Entrar</button>
+            </form>
+        </section>
+
+        <!-- Contenido del panel: oculto hasta confirmar sesión admin -->
+        <main id="admin-content" class="admin-content" hidden>
+            <p class="admin-sync-note">Los cambios se publican en la web automáticamente en un plazo de hasta 15 minutos (workflow de sincronización).</p>
+
+            <nav class="admin-tabs" role="tablist">
+                <button type="button" class="admin-tab active" data-tab="avisos">Avisos</button>
+                <button type="button" class="admin-tab" data-tab="eventos" disabled title="Próximamente">Eventos</button>
+                <button type="button" class="admin-tab" data-tab="estado-local" disabled title="Próximamente">Estado local</button>
+            </nav>
+
+            <section class="admin-panel" data-panel="avisos">
+                <div class="admin-panel-header">
+                    <h2>Avisos locales</h2>
+                    <button type="button" id="open-aviso-modal" class="btn btn-primary">+ Nuevo aviso</button>
+                </div>
+                <div id="admin-avisos-list" class="admin-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal crear/editar aviso -->
+    <div class="modal-overlay" id="aviso-modal" hidden>
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2 id="aviso-modal-title">Nuevo aviso</h2>
+                <button type="button" class="modal-close" id="close-aviso-modal">&times;</button>
+            </div>
+            <form id="aviso-form">
+                <input type="hidden" id="aviso-doc-id" value="">
+                <div class="form-group">
+                    <label for="aviso-tipo">Tipo *</label>
+                    <input type="text" id="aviso-tipo" placeholder="Ej: Agua, Luz, Tráfico, Obras..." required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="aviso-icono">Icono (emoji)</label>
+                        <input type="text" id="aviso-icono" placeholder="💧" maxlength="4">
+                    </div>
+                    <div class="form-group">
+                        <label for="aviso-estado">Severidad *</label>
+                        <select id="aviso-estado" required>
+                            <option value="ok">Normal (ok)</option>
+                            <option value="neutral">Informativo (neutral)</option>
+                            <option value="warning" selected>Aviso (warning)</option>
+                            <option value="alert">Atención (alert)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="aviso-titulo">Título *</label>
+                    <input type="text" id="aviso-titulo" placeholder="Ej: Corte de agua en Calle Real" required maxlength="200">
+                </div>
+                <div class="form-group">
+                    <label for="aviso-detalle">Detalle</label>
+                    <textarea id="aviso-detalle" rows="3" placeholder="Descripción del aviso..." maxlength="1000"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="aviso-fuente">Fuente</label>
+                        <input type="text" id="aviso-fuente" placeholder="Ej: Ayuntamiento de Alhaurín el Grande">
+                    </div>
+                    <div class="form-group">
+                        <label for="aviso-url">Enlace (opcional)</label>
+                        <input type="url" id="aviso-url" placeholder="https://...">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="aviso-inicio">Inicio</label>
+                        <input type="datetime-local" id="aviso-inicio">
+                    </div>
+                    <div class="form-group">
+                        <label for="aviso-fin">Fin (opcional)</label>
+                        <input type="datetime-local" id="aviso-fin">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="admin-checkbox-label">
+                        <input type="checkbox" id="aviso-resuelto">
+                        Marcar como resuelto (pasa al historial)
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancel-aviso-modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="submit-aviso-btn">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="../js/admin-panel.js"></script>
+</body>
+</html>

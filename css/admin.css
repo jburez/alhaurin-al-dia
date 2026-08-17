@@ -1,0 +1,220 @@
+/* Layout del panel admin (/admin/). Reutiliza tokens de styles.css y las
+   clases .modal-card/.form-group/.btn ya definidas en home-live.css — este
+   archivo solo cubre lo que es exclusivo del panel: shell, login gate,
+   pestañas y filas de lista. */
+
+.admin-body {
+    background: var(--paper-soft);
+}
+
+/* El atributo [hidden] nativo pierde frente a cualquier regla de autor que
+   fije `display` en el mismo elemento (los estilos de autor ganan siempre a
+   los de user-agent, más allá de especificidad) — así que hay que reforzarlo
+   explícitamente en los contenedores que esta página oculta/muestra por JS. */
+.admin-login-gate[hidden],
+.admin-content[hidden],
+.admin-session-box[hidden] {
+    display: none !important;
+}
+
+.admin-shell {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+}
+
+.admin-header-sub {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.admin-session-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* Puerta de acceso */
+.admin-login-gate {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.admin-login-card {
+    max-width: 380px;
+    width: 100%;
+}
+
+.admin-login-card h1 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-family: var(--font-display);
+}
+
+.admin-login-submit {
+    width: 100%;
+}
+
+.admin-login-error {
+    color: #b91c1c;
+    font-size: 13px;
+    margin: 0 0 12px;
+}
+
+/* Pestañas */
+.admin-sync-note {
+    font-size: 13px;
+    color: var(--muted);
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    margin-bottom: 20px;
+}
+
+.admin-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+}
+
+.admin-tab {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    padding: 10px 4px;
+    font: var(--text-body);
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.admin-tab.active {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+}
+
+.admin-tab:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Paneles */
+.admin-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.admin-panel-header h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 20px;
+}
+
+.admin-empty {
+    color: var(--muted);
+    font-size: 14px;
+    padding: 24px 0;
+    text-align: center;
+}
+
+/* Lista de avisos */
+.admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--muted);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    flex-wrap: wrap;
+}
+
+.admin-list-item--ok { border-left-color: #16a34a; }
+.admin-list-item--warning { border-left-color: #d97706; }
+.admin-list-item--alert { border-left-color: #b91c1c; }
+.admin-list-item--neutral { border-left-color: var(--muted); }
+.admin-list-item--resuelto { border-left-color: var(--line); opacity: 0.7; }
+
+.admin-list-item-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-list-item-icon {
+    font-size: 20px;
+}
+
+.admin-list-item-meta {
+    display: block;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.admin-list-item-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.admin-delete-btn {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.admin-checkbox-label {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-checkbox-label input {
+    width: auto !important;
+}
+
+@media (max-width: 560px) {
+    .admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .admin-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-list-item-actions {
+        width: 100%;
+    }
+
+    .admin-list-item-actions .btn {
+        flex: 1;
+    }
+}

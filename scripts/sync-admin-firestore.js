@@ -24,6 +24,7 @@ const ESTADO_LOCAL_FILE = path.join(ROOT, 'data', 'estado-local.json');
 const ESTADO_LOCAL_IDS = ['trafico', 'avisos', 'agenda', 'servicios'];
 const ESTADO_LOCAL_TITULOS = { trafico: 'Tráfico', avisos: 'Avisos locales', agenda: 'Agenda', servicios: 'Servicios' };
 const RADAR_TRAFICO_FILE = path.join(ROOT, 'data', 'radar-trafico.json');
+const COMERCIOS_FILE = path.join(ROOT, 'data', 'comercios-destacados.json');
 
 // Mismo TTL por tipo que radar-social/index.html (ver TTL/TTL_LABELS ahí) —
 // duplicado a propósito: ese es código de navegador (import de CDN), este es
@@ -230,12 +231,43 @@ async function construirRadarTrafico(db) {
   };
 }
 
+function comercioDesdeDoc(doc) {
+  const data = doc.data();
+  return {
+    nombre: data.nombre || '',
+    descripcion: data.descripcion || '',
+    categoria: data.categoria || '',
+    zona: data.zona || '',
+    telefonoHref: data.telefonoHref || '',
+    url: data.url || './comercios/',
+    cta: data.cta || 'Ver comercio',
+    etiqueta: data.etiqueta || 'Comercio destacado',
+    imagen: data.imagen || '',
+    activo: data.activo !== false,
+  };
+}
+
+async function construirComercios(db) {
+  const snapshot = await db.collection('admin_comercios').get();
+  const comercios = [];
+  snapshot.forEach((doc) => comercios.push(comercioDesdeDoc(doc)));
+
+  const actual = readJSON(COMERCIOS_FILE, { resumen: '' });
+
+  return {
+    actualizado: new Date().toISOString(),
+    resumen: actual.resumen || 'Comercios destacados de Alhaurín el Grande para espacios patrocinados o colaboraciones locales verificadas.',
+    comercios,
+  };
+}
+
 async function main() {
   const db = initFirestore();
 
   const nuevoAvisosLocales = await construirAvisosLocales(db);
   const nuevaAgendaLocal = await construirAgendaLocal(db);
   const nuevoEstadoLocal = await construirEstadoLocal(db);
+  const nuevosComercios = await construirComercios(db);
   const nuevoRadarTrafico = await construirRadarTrafico(db);
 
   const previoAvisosRaw = fs.existsSync(AVISOS_FILE) ? fs.readFileSync(AVISOS_FILE, 'utf8') : null;
@@ -275,6 +307,15 @@ async function main() {
     console.log(`[sync-admin-firestore] ${RADAR_TRAFICO_FILE} actualizado (${nuevoRadarTrafico.reportes.length} reportes activos).`);
   } else {
     console.log('[sync-admin-firestore] radar-trafico.json sin cambios.');
+  }
+
+  const previoComerciosRaw = fs.existsSync(COMERCIOS_FILE) ? fs.readFileSync(COMERCIOS_FILE, 'utf8') : null;
+  const nuevoComerciosRaw = JSON.stringify(nuevosComercios, null, 2) + '\n';
+  if (nuevoComerciosRaw !== previoComerciosRaw) {
+    fs.writeFileSync(COMERCIOS_FILE, nuevoComerciosRaw);
+    console.log(`[sync-admin-firestore] ${COMERCIOS_FILE} actualizado (${nuevosComercios.comercios.length} comercios).`);
+  } else {
+    console.log('[sync-admin-firestore] comercios-destacados.json sin cambios.');
   }
 }
 

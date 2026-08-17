@@ -50,6 +50,7 @@
                 <button type="button" class="admin-tab" data-tab="eventos">Eventos</button>
                 <button type="button" class="admin-tab" data-tab="estado-local">Estado local</button>
                 <button type="button" class="admin-tab" data-tab="radar-social">Radar Social</button>
+                <button type="button" class="admin-tab" data-tab="comercios">Comercios</button>
             </nav>
 
             <section class="admin-panel" data-panel="avisos">
@@ -158,6 +159,15 @@
                 </div>
                 <p class="admin-panel-note">Reportes vecinales publicados en <a href="../radar-social/" target="_blank" rel="noopener noreferrer">/radar-social/</a>. Aquí solo se modera (expirar o eliminar) — publicarlos es cosa de los vecinos, no de este panel.</p>
                 <div id="admin-radar-list" class="admin-list"></div>
+            </section>
+
+            <section class="admin-panel" data-panel="comercios" hidden>
+                <div class="admin-panel-header">
+                    <h2>Comercios destacados</h2>
+                    <button type="button" id="open-comercio-modal" class="btn btn-primary">+ Nuevo comercio</button>
+                </div>
+                <p class="admin-panel-note">Espacios patrocinados o colaboraciones locales que aparecen en la home. Solo se muestran hasta 2 activos a la vez en portada.</p>
+                <div id="admin-comercios-list" class="admin-list"></div>
             </section>
         </main>
     </div>
@@ -292,6 +302,71 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="cancel-evento-modal">Cancelar</button>
                     <button type="submit" class="btn btn-primary" id="submit-evento-btn">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal crear/editar comercio destacado -->
+    <div class="modal-overlay" id="comercio-modal" hidden>
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2 id="comercio-modal-title">Nuevo comercio</h2>
+                <button type="button" class="modal-close" id="close-comercio-modal">&times;</button>
+            </div>
+            <form id="comercio-form">
+                <input type="hidden" id="comercio-doc-id" value="">
+                <div class="form-group">
+                    <label for="comercio-nombre">Nombre *</label>
+                    <input type="text" id="comercio-nombre" placeholder="Ej: Taberna El Olivo Silvestre" required maxlength="200">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="comercio-categoria">Categoría</label>
+                        <input type="text" id="comercio-categoria" placeholder="Ej: Gastronomía &amp; Tapas">
+                    </div>
+                    <div class="form-group">
+                        <label for="comercio-zona">Zona</label>
+                        <input type="text" id="comercio-zona" placeholder="Ej: Centro Histórico">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comercio-descripcion">Descripción</label>
+                    <textarea id="comercio-descripcion" rows="3" placeholder="Descripción del comercio..." maxlength="1000"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="comercio-etiqueta">Etiqueta</label>
+                        <input type="text" id="comercio-etiqueta" placeholder="Comercio Patrocinado">
+                    </div>
+                    <div class="form-group">
+                        <label for="comercio-telefono">Teléfono (con prefijo)</label>
+                        <input type="text" id="comercio-telefono" placeholder="+34600000000">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="comercio-url">Enlace</label>
+                        <input type="url" id="comercio-url" placeholder="https://... o ./comercios/">
+                    </div>
+                    <div class="form-group">
+                        <label for="comercio-cta">Texto del enlace</label>
+                        <input type="text" id="comercio-cta" placeholder="Ver carta / Reservar">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comercio-imagen">Imagen (URL, opcional)</label>
+                    <input type="url" id="comercio-imagen" placeholder="https://...">
+                </div>
+                <div class="form-group">
+                    <label class="admin-checkbox-label">
+                        <input type="checkbox" id="comercio-activo" checked>
+                        Activo (visible en la home)
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancel-comercio-modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="submit-comercio-btn">Guardar</button>
                 </div>
             </form>
         </div>

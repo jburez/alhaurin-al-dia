@@ -612,19 +612,20 @@ python3 scripts/validar_contenido.py
 
 ---
 
-## 17. Panel Admin (avisos, eventos, estado local) — en construcción
+## 17. Panel Admin (avisos, eventos, estado local, comercios) — en construcción
 
 Primera pieza de la migración hacia una plataforma hiperlocal: un panel web (`/admin/`) para gestionar sin tocar JSON a mano. Arquitectura: el panel escribe en colecciones nuevas de Firestore (mismo proyecto y login admin que ya usa el Radar Social) y un workflow programado las sincroniza a los JSON del sitio.
 
-### Estado actual (fase 4 de 4 — completa)
+### Estado actual (4 fases del plan original + 2 extras)
 
 | Fase | Qué incluye | Estado |
 |------|-------------|--------|
 | 1 | Infraestructura + Avisos (Firestore, script de sync, workflow) | ✅ Hecho y probado en producción |
 | 2 | Página `/admin/`, pestaña Avisos | ✅ Hecho y probado en producción |
 | 3 | Eventos (agenda) | ✅ Hecho y probado en producción |
-| 4 | Estado local de hoy | ✅ Código listo, pendiente de probar en producción |
+| 4 | Estado local de hoy (+ 2 automatismos: Tráfico y Agenda) | ✅ Hecho y probado en producción |
 | extra | Pestaña Radar Social (moderación) | ✅ Hecho y probado en producción |
+| extra | Pestaña Comercios destacados | ✅ Código listo, pendiente de probar en producción |
 
 La pestaña extra "Radar Social" **no** forma parte del flujo Firestore→JSON de arriba: es solo una segunda entrada de moderación (listar, expirar, eliminar) para la colección `radar_reports` que ya existía y ya funcionaba desde `/radar-social/` — mismas reglas, mismo UID admin, cero cambios en `radar-social/index.html` ni en `firestore.rules`. Publicar reportes sigue siendo cosa de los vecinos, no de este panel.
 
@@ -645,7 +646,7 @@ La pestaña extra "Radar Social" **no** forma parte del flujo Firestore→JSON d
 
 - [x] Crear una **service account** en Google Cloud Console (proyecto `alhaurin-al-dia`) con rol acotado a Firestore (p. ej. `Cloud Datastore User`) — **no** el rol "Editor" del proyecto. Descargar la clave JSON.
 - [x] Añadir esa clave como GitHub Secret `FIREBASE_SERVICE_ACCOUNT_JSON` (Settings → Secrets and variables → Actions).
-- [x] Publicar las reglas actualizadas de `firestore.rules` en [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) tras cada cambio (no se despliegan solas con git push) — verificado con lectura real autenticada el 17/08/2026.
+- [ ] Publicar las reglas actualizadas de `firestore.rules` en [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) tras cada cambio (no se despliegan solas con git push) — verificado con lectura real autenticada el 17/08/2026, **pendiente republicar tras añadir `admin_comercios`**.
 - [x] Verificar que los workflows programados solo se disparan por `schedule`/`workflow_dispatch` (nunca por eventos de PR de forks).
 
 ### Colecciones Firestore nuevas
@@ -655,8 +656,11 @@ La pestaña extra "Radar Social" **no** forma parte del flujo Firestore→JSON d
 | `admin_avisos` | uno por aviso | Avisos locales (activos + historial gestionado) |
 | `admin_eventos` | uno por evento manual | Eventos de agenda con `fuente:"manual"` |
 | `admin_estado_local` | único, id `main` | Las 4 tarjetas de "Estado local de hoy" |
+| `admin_comercios` | uno por comercio | Comercios destacados / espacios patrocinados de la home |
 
 Reglas: lectura y escritura solo para el UID admin (a diferencia de `radar_reports`, que permite lectura/creación pública) — ver `firestore.rules`.
+
+**Nota sobre la migración de comercios**: al activar esta pestaña, `data/comercios-destacados.json` pasa a reconstruirse por completo desde `admin_comercios` en cada sync (igual que avisos). Los 2 comercios de ejemplo actuales (ficticios, "Taberna El Olivo Silvestre" y "Centro Óptico Sierra de Mijas") **no existen en Firestore** — desaparecerán del JSON en el primer sync tras publicar las reglas, hasta que se vuelvan a crear desde el panel (o se sustituyan por patrocinadores reales).
 
 ---
 

@@ -91,5 +91,22 @@ service cloud.firestore {
       allow read: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
       allow write: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
     }
+
+    // Panel admin (comercios destacados / espacios patrocinados). Mismo
+    // criterio que el resto: solo el admin lee y escribe.
+    match /admin_comercios/{docId} {
+      allow read: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+
+      allow create: if
+        request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2"
+        && request.resource.data.keys().hasAll(['nombre', 'descripcion', 'categoria', 'activo'])
+        && request.resource.data.nombre is string && request.resource.data.nombre.size() > 0 && request.resource.data.nombre.size() < 200
+        && request.resource.data.descripcion is string && request.resource.data.descripcion.size() < 1000
+        && request.resource.data.categoria is string
+        && request.resource.data.activo is bool;
+
+      allow update: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+      allow delete: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+    }
   }
 }

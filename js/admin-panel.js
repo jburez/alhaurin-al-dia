@@ -52,6 +52,7 @@ onAuthStateChanged(auth, (user) => {
             startEventosListener();
             startEstadoLocalListener();
             startRadarListener();
+            startComerciosListener();
         }
     } else {
         if (user) signOut(auth); // sesión válida pero sin permisos: no dejar a medias
@@ -573,6 +574,136 @@ radarList.addEventListener("click", async (e) => {
         } catch (err) {
             console.error("Error eliminando reporte:", err);
             alert("No se ha podido eliminar el reporte.");
+        }
+    }
+});
+
+// ===== Comercios destacados: modal =====
+const comerciosCol = collection(db, "admin_comercios");
+const comercioModal = document.getElementById("comercio-modal");
+const comercioForm = document.getElementById("comercio-form");
+const comercioModalTitle = document.getElementById("comercio-modal-title");
+
+function showComercioModal() { comercioModal.hidden = false; comercioModal.classList.add("open"); }
+function hideComercioModal() { comercioModal.hidden = true; comercioModal.classList.remove("open"); comercioForm.reset(); document.getElementById("comercio-doc-id").value = ""; document.getElementById("comercio-activo").checked = true; }
+
+document.getElementById("open-comercio-modal").addEventListener("click", () => {
+    comercioModalTitle.textContent = "Nuevo comercio";
+    showComercioModal();
+});
+document.getElementById("close-comercio-modal").addEventListener("click", hideComercioModal);
+document.getElementById("cancel-comercio-modal").addEventListener("click", hideComercioModal);
+comercioModal.addEventListener("click", (e) => { if (e.target === comercioModal) hideComercioModal(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !comercioModal.hidden) hideComercioModal(); });
+
+function fillComercioForm(comercio) {
+    document.getElementById("comercio-doc-id").value = comercio.docId;
+    document.getElementById("comercio-nombre").value = comercio.nombre || "";
+    document.getElementById("comercio-categoria").value = comercio.categoria || "";
+    document.getElementById("comercio-zona").value = comercio.zona || "";
+    document.getElementById("comercio-descripcion").value = comercio.descripcion || "";
+    document.getElementById("comercio-etiqueta").value = comercio.etiqueta || "";
+    document.getElementById("comercio-telefono").value = comercio.telefonoHref || "";
+    document.getElementById("comercio-url").value = comercio.url || "";
+    document.getElementById("comercio-cta").value = comercio.cta || "";
+    document.getElementById("comercio-imagen").value = comercio.imagen || "";
+    document.getElementById("comercio-activo").checked = comercio.activo !== false;
+}
+
+comercioForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const submitBtn = document.getElementById("submit-comercio-btn");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Guardando...";
+
+    const docId = document.getElementById("comercio-doc-id").value;
+    const payload = {
+        nombre: document.getElementById("comercio-nombre").value.trim(),
+        categoria: document.getElementById("comercio-categoria").value.trim(),
+        zona: document.getElementById("comercio-zona").value.trim(),
+        descripcion: document.getElementById("comercio-descripcion").value.trim(),
+        etiqueta: document.getElementById("comercio-etiqueta").value.trim() || "Comercio destacado",
+        telefonoHref: document.getElementById("comercio-telefono").value.trim(),
+        url: document.getElementById("comercio-url").value.trim() || "./comercios/",
+        cta: document.getElementById("comercio-cta").value.trim() || "Ver comercio",
+        imagen: document.getElementById("comercio-imagen").value.trim(),
+        activo: document.getElementById("comercio-activo").checked,
+        actualizadoEn: serverTimestamp(),
+    };
+
+    try {
+        if (docId) {
+            await updateDoc(doc(db, "admin_comercios", docId), payload);
+        } else {
+            await addDoc(comerciosCol, { ...payload, creadoEn: serverTimestamp() });
+        }
+        hideComercioModal();
+    } catch (err) {
+        console.error("Error guardando comercio:", err);
+        alert("No se ha podido guardar el comercio.");
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Guardar";
+    }
+});
+
+// ===== Comercios destacados: lista en vivo =====
+const comerciosList = document.getElementById("admin-comercios-list");
+let allComercios = [];
+
+function renderComercios() {
+    if (!allComercios.length) {
+        comerciosList.innerHTML = '<p class="admin-empty">Todavía no hay comercios destacados. Crea el primero con "+ Nuevo comercio".</p>';
+        return;
+    }
+    comerciosList.innerHTML = allComercios.map((comercio) => `
+        <article class="admin-list-item admin-list-item--${comercio.activo === false ? "resuelto" : "ok"}">
+            <div class="admin-list-item-main">
+                <span class="admin-list-item-icon">🏪</span>
+                <div>
+                    <strong>${comercio.nombre || "(sin nombre)"}</strong>
+                    <span class="admin-list-item-meta">${comercio.categoria || ""}${comercio.zona ? ` · ${comercio.zona}` : ""}${comercio.activo === false ? " · Inactivo" : ""}</span>
+                </div>
+            </div>
+            <div class="admin-list-item-actions">
+                <button type="button" class="btn btn-secondary admin-edit-comercio-btn" data-id="${comercio.docId}">Editar</button>
+                <button type="button" class="btn admin-delete-comercio-btn" data-id="${comercio.docId}">Eliminar</button>
+            </div>
+        </article>
+    `).join("");
+}
+
+function startComerciosListener() {
+    const comerciosQuery = query(comerciosCol, orderBy("creadoEn", "desc"));
+    onSnapshot(comerciosQuery, (snapshot) => {
+        allComercios = snapshot.docs.map((d) => ({ docId: d.id, ...d.data() }));
+        renderComercios();
+    }, (err) => {
+        console.error("Error escuchando comercios:", err);
+        comerciosList.innerHTML = '<p class="admin-empty">No se han podido cargar los comercios.</p>';
+    });
+}
+
+comerciosList.addEventListener("click", async (e) => {
+    const editBtn = e.target.closest(".admin-edit-comercio-btn");
+    if (editBtn) {
+        const comercio = allComercios.find((c) => c.docId === editBtn.getAttribute("data-id"));
+        if (!comercio) return;
+        comercioModalTitle.textContent = "Editar comercio";
+        fillComercioForm(comercio);
+        showComercioModal();
+        return;
+    }
+
+    const deleteBtn = e.target.closest(".admin-delete-comercio-btn");
+    if (deleteBtn) {
+        const id = deleteBtn.getAttribute("data-id");
+        if (!confirm("¿Eliminar este comercio permanentemente?")) return;
+        try {
+            await deleteDoc(doc(db, "admin_comercios", id));
+        } catch (err) {
+            console.error("Error eliminando comercio:", err);
+            alert("No se ha podido eliminar el comercio.");
         }
     }
 });

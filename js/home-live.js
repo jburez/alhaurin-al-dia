@@ -262,6 +262,70 @@
         return replaced ? merged : [...merged, card];
     }
 
+    // Resumen automático de Agenda: misma ventana de 3 días que ya usa
+    // js/home-agenda.js para la lista completa de próximos eventos.
+    function getUpcomingAgendaEvents(events) {
+        const now = new Date();
+        const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        const windowEnd = new Date(todayStart);
+        windowEnd.setDate(windowEnd.getDate() + 3);
+
+        return events
+            .filter(event => {
+                const start = event.inicio ? new Date(event.inicio) : null;
+                const end = event.fin ? new Date(event.fin) : null;
+                if (event.activo === false) return false;
+                if (end && !Number.isNaN(end.getTime()) && end < now) return false;
+                if (!start && !end) return false;
+                return true;
+            })
+            .filter(event => {
+                const start = event.inicio ? new Date(event.inicio) : null;
+                if (!start || Number.isNaN(start.getTime())) return false;
+                return start >= todayStart && start < windowEnd;
+            })
+            .sort((a, b) => {
+                const dateA = (a.inicio && new Date(a.inicio)) || (a.fin && new Date(a.fin)) || new Date(8640000000000000);
+                const dateB = (b.inicio && new Date(b.inicio)) || (b.fin && new Date(b.fin)) || new Date(8640000000000000);
+                return dateA - dateB;
+            })
+            .slice(0, 6);
+    }
+
+    function formatAgendaEventDate(value) {
+        const date = value ? new Date(value) : null;
+        if (!date || Number.isNaN(date.getTime())) return "Fecha pendiente";
+        return date.toLocaleDateString("es-ES", { weekday: "short", day: "numeric", month: "short" });
+    }
+
+    function buildCardFromAgendaSummary(upcoming) {
+        const count = upcoming.length;
+        const primero = upcoming[0];
+        const cuando = formatAgendaEventDate(primero.inicio);
+        const detalleBase = `${primero.titulo || "Evento local"}${primero.lugar ? ` · ${primero.lugar}` : ""} (${cuando})`;
+        return {
+            id: "agenda",
+            icono: "📅",
+            titulo: "Agenda",
+            valor: count === 1 ? "1 actividad próxima" : `${count} actividades próximas`,
+            detalle: count > 1 ? `${detalleBase} y ${count - 1} más` : detalleBase,
+            estado: "ok",
+            fuente: "Agenda local",
+            cta: "Ver planes",
+            url: "./planes/"
+        };
+    }
+
+    function mergeAgendaSummary(items, agendaLocalData) {
+        const events = Array.isArray(agendaLocalData?.eventos) ? agendaLocalData.eventos : [];
+        const upcoming = getUpcomingAgendaEvents(events);
+        if (!upcoming.length) return items;
+        const card = buildCardFromAgendaSummary(upcoming);
+        const replaced = items.some(item => item.id === "agenda");
+        const merged = items.map(item => (item.id === "agenda" ? card : item));
+        return replaced ? merged : [...merged, card];
+    }
+
     function renderItem(item) {
         const estado = item.estado || "neutral";
         const url = normalizeLink(item.url || "#");
@@ -311,16 +375,21 @@
         fetch(new URL("data/radar-trafico.json", root).href).then(response => {
             if (!response.ok) return null;
             return response.json();
-        }).catch(() => null)
+        }).catch(() => null),
+        fetch(new URL("data/agenda-local.json", root).href).then(response => {
+            if (!response.ok) return { eventos: [] };
+            return response.json();
+        }).catch(() => ({ eventos: [] }))
     ])
-        .then(([data, noticesData, weatherData, avisosOficialesData, radarTraficoData]) => {
+        .then(([data, noticesData, weatherData, avisosOficialesData, radarTraficoData, agendaLocalData]) => {
             const baseItems = Array.isArray(data.items) ? data.items : [];
             const withWeather = mergeWeather(baseItems, weatherData);
-            // Orden de prioridad para "trafico": base < Radar Social
-            // (automático) < aviso local manual (si lo publican expresamente,
-            // gana al reporte comunitario).
+            // Orden de prioridad para "trafico"/"agenda": base < automático
+            // (Radar Social / resumen de agenda) < aviso local manual (si lo
+            // publican expresamente, gana al automatismo).
             const withRadarTrafico = mergeRadarTrafico(withWeather, radarTraficoData);
-            const withLocalNotices = mergeLocalNotices(withRadarTrafico, noticesData);
+            const withAgendaSummary = mergeAgendaSummary(withRadarTrafico, agendaLocalData);
+            const withLocalNotices = mergeLocalNotices(withAgendaSummary, noticesData);
             const items = mergeAvisosOficiales(withLocalNotices, avisosOficialesData);
 
             // El badge "Actualizado" debe reflejar la fuente más fresca que de
@@ -337,13 +406,15 @@
                 : null;
             const noticiasActivas = Array.isArray(noticesData?.avisos) && noticesData.avisos.some(isActiveNotice);
             const radarTraficoActivo = Boolean(radarTraficoData?.reportes?.length);
+            const agendaSummaryActiva = getUpcomingAgendaEvents(Array.isArray(agendaLocalData?.eventos) ? agendaLocalData.eventos : []).length > 0;
 
             const updatedDate = pickLatestDate(
                 data.actualizado,
                 weatherData?.actualizado,
                 noticiasActivas ? noticesData.actualizado : null,
                 ultimoOficial,
-                radarTraficoActivo ? radarTraficoData.actualizado : null
+                radarTraficoActivo ? radarTraficoData.actualizado : null,
+                agendaSummaryActiva ? agendaLocalData.actualizado : null
             );
             const updated = updatedDate ? updatedDate.toISOString() : data.actualizado;
 

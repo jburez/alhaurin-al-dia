@@ -258,6 +258,37 @@ function mergeRadarTrafico(items, radarTraficoData) {
   return replaced ? merged : [...merged, card];
 }
 
+// ---- Resumen automático de Agenda (mismos data/agenda-local.json y ventana
+// de 3 días que ya usa renderAgenda más abajo, vía getUpcomingAgendaEvents) ----
+
+function buildCardFromAgendaSummary(upcoming) {
+  const count = upcoming.length;
+  const primero = upcoming[0];
+  const cuando = formatEventDate(primero.inicio);
+  const detalleBase = `${primero.titulo || 'Evento local'}${primero.lugar ? ` · ${primero.lugar}` : ''} (${cuando})`;
+  return {
+    id: 'agenda',
+    icono: '📅',
+    titulo: 'Agenda',
+    valor: count === 1 ? '1 actividad próxima' : `${count} actividades próximas`,
+    detalle: count > 1 ? `${detalleBase} y ${count - 1} más` : detalleBase,
+    estado: 'ok',
+    fuente: 'Agenda local',
+    cta: 'Ver planes',
+    url: './planes/',
+  };
+}
+
+function mergeAgendaSummary(items, agendaLocalData) {
+  const events = Array.isArray(agendaLocalData?.eventos) ? agendaLocalData.eventos : [];
+  const upcoming = getUpcomingAgendaEvents(events);
+  if (!upcoming.length) return items;
+  const card = buildCardFromAgendaSummary(upcoming);
+  const replaced = items.some((item) => item.id === 'agenda');
+  const merged = items.map((item) => (item.id === 'agenda' ? card : item));
+  return replaced ? merged : [...merged, card];
+}
+
 function pickLatestDate(...values) {
   let latest = null;
   for (const value of values) {
@@ -285,15 +316,17 @@ function renderDailyStatus(html) {
   const tiempo = readJSON(DATA.tiempoAemet, null);
   const avisosOficiales = readJSON(DATA.avisosOficiales, []);
   const radarTrafico = readJSON(DATA.radarTrafico, null);
+  const agendaLocal = readJSON(DATA.agendaLocal, { eventos: [] });
 
   const baseItems = Array.isArray(estadoLocal.items) ? estadoLocal.items : [];
   const withWeather = mergeWeather(baseItems, tiempo);
-  // Orden de prioridad para la tarjeta "trafico": base < Radar Social
-  // (automático) < aviso local manual (si alguien lo publica expresamente,
-  // gana al reporte comunitario) < aviso oficial (no toca "trafico", solo
-  // "avisos", así que no compite aquí).
+  // Orden de prioridad para "trafico"/"agenda": base < automático (Radar
+  // Social / resumen de agenda) < aviso local manual (si alguien lo publica
+  // expresamente, gana al automatismo) < aviso oficial (no toca estas dos
+  // tarjetas, solo "avisos", así que no compite aquí).
   const withRadarTrafico = mergeRadarTrafico(withWeather, radarTrafico);
-  const withLocalNotices = mergeLocalNotices(withRadarTrafico, avisosLocales);
+  const withAgendaSummary = mergeAgendaSummary(withRadarTrafico, agendaLocal);
+  const withLocalNotices = mergeLocalNotices(withAgendaSummary, avisosLocales);
   const items = mergeAvisosOficiales(withLocalNotices, avisosOficiales);
 
   // El badge "Actualizado" debe reflejar la fuente más fresca que de verdad
@@ -311,6 +344,7 @@ function renderDailyStatus(html) {
     : null;
   const noticiasActivas = Array.isArray(avisosLocales?.avisos) && avisosLocales.avisos.some(isActiveNotice);
   const radarTraficoActivo = Boolean(radarTrafico?.reportes?.length);
+  const agendaSummaryActiva = getUpcomingAgendaEvents(Array.isArray(agendaLocal.eventos) ? agendaLocal.eventos : []).length > 0;
 
   const nowIso = new Date().toISOString();
   const updatedDate = pickLatestDate(
@@ -318,7 +352,8 @@ function renderDailyStatus(html) {
     tiempo?.actualizado,
     noticiasActivas ? avisosLocales.actualizado : null,
     ultimoOficial,
-    radarTraficoActivo ? radarTrafico.actualizado : null
+    radarTraficoActivo ? radarTrafico.actualizado : null,
+    agendaSummaryActiva ? agendaLocal.actualizado : null
   );
   const updated = updatedDate ? updatedDate.toISOString() : (estadoLocal.actualizado || nowIso);
 
@@ -358,6 +393,30 @@ function formatEventTimeRange(event) {
   return endTime ? `${startTime} - ${endTime}` : startTime;
 }
 
+function getUpcomingAgendaEvents(events, limit = 6) {
+  // Ventana de 3 días (hoy + 2), misma que ya usaba renderAgenda (y
+  // js/home-agenda.js en el cliente) para la lista completa — reutilizada
+  // también por mergeAgendaSummary() para la tarjeta de Estado Local.
+  const now = new Date();
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const windowEnd = new Date(todayStart);
+  windowEnd.setDate(windowEnd.getDate() + 3);
+
+  return events
+    .filter(isUpcomingEvent)
+    .filter(e => {
+      const start = e.inicio ? new Date(e.inicio) : null;
+      if (!start || Number.isNaN(start.getTime())) return false;
+      return start >= todayStart && start < windowEnd;
+    })
+    .sort((a, b) => {
+      const dateA = (a.inicio && new Date(a.inicio)) || (a.fin && new Date(a.fin)) || new Date(8640000000000000);
+      const dateB = (b.inicio && new Date(b.inicio)) || (b.fin && new Date(b.fin)) || new Date(8640000000000000);
+      return dateA - dateB;
+    })
+    .slice(0, limit);
+}
+
 function renderAgendaEmpty() {
   return `<article class="home-agenda-empty"><div class="home-agenda-empty-icon">📅</div><div><h3>Sin eventos destacados próximos</h3><p>Cuando haya actividades, cortes, procesiones, feria o avisos programados confirmados, aparecerán aquí.</p></div><a href="${escapeHTML(normalizeLink('planes/'))}">Ver planes →</a></article>`;
 }
@@ -371,26 +430,7 @@ function renderAgendaEvent(event) {
 function renderAgenda(html) {
   const data = readJSON(DATA.agendaLocal, { eventos: [] });
   const events = Array.isArray(data.eventos) ? data.eventos : [];
-
-  // Filter: only events within today + 2 days (3-day window)
-  const now = new Date();
-  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const windowEnd = new Date(todayStart);
-  windowEnd.setDate(windowEnd.getDate() + 3); // midnight of day+3 = end of day+2
-
-  const upcoming = events
-    .filter(isUpcomingEvent)
-    .filter(e => {
-      const start = e.inicio ? new Date(e.inicio) : null;
-      if (!start || Number.isNaN(start.getTime())) return false;
-      return start >= todayStart && start < windowEnd;
-    })
-    .sort((a, b) => {
-      const dateA = (a.inicio && new Date(a.inicio)) || (a.fin && new Date(a.fin)) || new Date(8640000000000000);
-      const dateB = (b.inicio && new Date(b.inicio)) || (b.fin && new Date(b.fin)) || new Date(8640000000000000);
-      return dateA - dateB;
-    })
-    .slice(0, 6);
+  const upcoming = getUpcomingAgendaEvents(events, 6);
 
   const updatedDate = data.actualizado || new Date().toISOString();
   let actualizado = setContainerInnerHTML(html, 'home-agenda-updated', escapeHTML(formatUpdatedShort(updatedDate, 'Agenda pendiente de actualización')));

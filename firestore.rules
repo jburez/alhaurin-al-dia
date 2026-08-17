@@ -42,5 +42,28 @@ service cloud.firestore {
 
       allow delete: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
     }
+
+    // Panel admin (avisos): a diferencia de radar_reports, esto NO es
+    // contenido público-abierto — solo el admin lee y escribe. El contenido
+    // se hace público indirectamente, al cabo de unos minutos, cuando el
+    // workflow de sincronización (scripts/sync-admin-firestore.js, que usa
+    // firebase-admin y por tanto ignora estas reglas) lo copia a
+    // data/avisos-locales.json.
+    match /admin_avisos/{docId} {
+      allow read: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+
+      allow create: if
+        request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2"
+        && request.resource.data.keys().hasAll(['tipo', 'icono', 'titulo', 'detalle', 'estado', 'activo', 'resuelto'])
+        && request.resource.data.tipo is string
+        && request.resource.data.titulo is string && request.resource.data.titulo.size() > 0 && request.resource.data.titulo.size() < 200
+        && request.resource.data.detalle is string && request.resource.data.detalle.size() < 1000
+        && request.resource.data.estado in ['ok', 'warning', 'alert', 'neutral']
+        && request.resource.data.activo is bool
+        && request.resource.data.resuelto is bool;
+
+      allow update: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+      allow delete: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+    }
   }
 }

@@ -612,5 +612,44 @@ python3 scripts/validar_contenido.py
 
 ---
 
+## 17. Panel Admin (avisos, eventos, estado local) — en construcción
+
+Primera pieza de la migración hacia una plataforma hiperlocal: un panel web (`/admin/`, aún sin construir la interfaz) para gestionar sin tocar JSON a mano. Arquitectura: el panel escribe en colecciones nuevas de Firestore (mismo proyecto y login admin que ya usa el Radar Social) y un workflow programado las sincroniza a los JSON del sitio.
+
+### Estado actual (fase 1 de 4)
+
+| Fase | Qué incluye | Estado |
+|------|-------------|--------|
+| 1 | Infraestructura + Avisos (Firestore, script de sync, workflow) | ✅ Código listo, pendiente de activar (ver checklist abajo) |
+| 2 | Página `/admin/`, pestaña Avisos | ⏳ Pendiente |
+| 3 | Eventos (agenda) | ⏳ Pendiente |
+| 4 | Estado local de hoy | ⏳ Pendiente |
+
+### Cómo funciona (avisos)
+
+1. El panel admin (cuando exista) escribe documentos en la colección Firestore `admin_avisos`.
+2. `.github/workflows/sync-admin-panel.yml` corre cada 15 min (+ manual): ejecuta `node scripts/sync-admin-firestore.js`, que lee `admin_avisos` con `firebase-admin` y reconstruye `data/avisos-locales.json` completo — **excepto** el historial legado (entradas cuyo `id` no existe en Firestore), que se preserva sin tocar.
+3. Refresca `index.html` con `node scripts/render-home-widgets-static.js` y hace commit+push a `develop` si hubo cambios.
+4. Es idempotente: si el push falla por chocar con otro workflow, el siguiente run (15 min después) reconstruye el estado correcto igual.
+
+### Checklist de activación (pasos manuales, fuera del repositorio)
+
+- [ ] Crear una **service account** en Google Cloud Console (proyecto `alhaurin-al-dia`) con rol acotado a Firestore (p. ej. `Cloud Datastore User`) — **no** el rol "Editor" del proyecto. Descargar la clave JSON.
+- [ ] Añadir esa clave como GitHub Secret `FIREBASE_SERVICE_ACCOUNT_JSON` (Settings → Secrets and variables → Actions).
+- [ ] Publicar las reglas actualizadas de `firestore.rules` en [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) (no se despliegan solas con git push).
+- [ ] Verificar que `sync-admin-panel.yml` solo se dispara por `schedule`/`workflow_dispatch` (nunca por eventos de PR de forks).
+
+### Colecciones Firestore nuevas
+
+| Colección | Documento | Uso |
+|-----------|-----------|-----|
+| `admin_avisos` | uno por aviso | Avisos locales (activos + historial gestionado) |
+| `admin_eventos` (fase 3) | uno por evento manual | Eventos de agenda con `fuente:"manual"` |
+| `admin_estado_local` (fase 4) | único, id `main` | Las 4 tarjetas de "Estado local de hoy" |
+
+Reglas: lectura y escritura solo para el UID admin (a diferencia de `radar_reports`, que permite lectura/creación pública) — ver `firestore.rules`.
+
+---
+
 > [!TIP]
 > Este manual se ha generado desde el estado del repositorio a fecha 17 de agosto de 2026. Actualizarlo cuando se añadan nuevas funcionalidades o fuentes de datos.

@@ -1,0 +1,51 @@
+name: Sincronizar panel admin (Firestore → sitio)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-admin-panel:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias Node
+        run: npm ci
+
+      - name: Sincronizar avisos desde Firestore
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: node scripts/sync-admin-firestore.js
+
+      - name: Refrescar widgets estáticos de la home
+        run: node scripts/render-home-widgets-static.js
+
+      - name: Commit cambios si hay actualización
+        id: commit
+        run: |
+          if git diff --quiet data/avisos-locales.json index.html; then
+            echo "Sin cambios desde el panel admin"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/avisos-locales.json index.html
+          git commit -m "Sincroniza panel admin: avisos locales"
+          git push origin develop
+          echo "changed=true" >> "$GITHUB_OUTPUT"

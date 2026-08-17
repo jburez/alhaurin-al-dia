@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   sync-admin-panel:
@@ -49,3 +50,15 @@ jobs:
           git commit -m "Sincroniza panel admin: avisos locales"
           git push origin develop
           echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Disparar publicación en producción
+        # Un push hecho con el GITHUB_TOKEN por defecto (como el de arriba)
+        # NO dispara otros workflows con `on: push` — es una restricción de
+        # GitHub Actions para evitar cadenas de workflows infinitas. Por eso
+        # el commit anterior, por sí solo, nunca llegaría a main. Disparar
+        # publicar-produccion.yml explícitamente por workflow_dispatch sí
+        # está permitido con el token por defecto.
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publicar-produccion.yml --ref develop

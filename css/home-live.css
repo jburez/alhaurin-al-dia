@@ -1378,6 +1378,8 @@
     font-family: var(--font-body);
     font-size: 14px;
     box-sizing: border-box;
+    color: var(--ink);
+    background: var(--paper);
 }
 
 .form-row {

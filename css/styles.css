@@ -1305,7 +1305,7 @@ section {
     justify-content: flex-end;
 }
 
-input[type="email"] {
+.newsletter input[type="email"] {
     flex: 1 1 220px;
     min-height: 48px;
     border-radius: 999px;
@@ -1315,7 +1315,7 @@ input[type="email"] {
     padding: 0 16px;
 }
 
-input::placeholder {
+.newsletter input::placeholder {
     color: rgba(255, 255, 255, .68);
 }
 

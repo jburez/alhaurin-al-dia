@@ -382,7 +382,98 @@ node scripts/render-tiempo-static.js
 
 ---
 
-## 11. Categorías de Eventos — Sistema de Colores
+## 11. Firebase / Firestore — Base de Datos
+
+El sitio tiene conectada una base de datos en tiempo real mediante **Firebase** (Firestore).
+
+### Datos del proyecto
+
+| Campo | Valor |
+|-------|-------|
+| **Proyecto** | `alhaurin-al-dia` |
+| **Console** | [console.firebase.google.com](https://console.firebase.google.com/project/alhaurin-al-dia) |
+| **Auth Domain** | `alhaurin-al-dia.firebaseapp.com` |
+| **Storage Bucket** | `alhaurin-al-dia.firebasestorage.app` |
+| **Admin UID** | `Cqm2OKSnOgUf09Leb8D5YePIcnW2` |
+
+### Servicios activos
+
+| Servicio | Uso |
+|----------|-----|
+| **Firestore Database** | Almacena los reportes del Radar Social en tiempo real |
+| **Firebase Auth** | Autenticación del administrador para moderar reportes |
+
+### Colecciones de Firestore
+
+#### `radar_reports`
+Reportes vecinales geolocalizados del [Radar Social](/radar-social/).
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `type` | string | Tipo: `lluvia`, `tormenta`, `granizo`, `viento`, `arroyo`, `corte-trafico`, `incidencia` |
+| `title` | string | Título del reporte (1-200 chars) |
+| `desc` | string | Descripción (máx 1000 chars) |
+| `lat` | number | Latitud (rango 36.0–37.2) |
+| `lng` | number | Longitud (rango -5.5 a -4.0) |
+| `ts` | number | Timestamp Unix de creación |
+| `votes` | number | Votos de confirmación (inicia en 1) |
+| `dismisses` | number | Votos de "ya no ocurre" (inicia en 0) |
+| `dismissed` | boolean | Se marca `true` automáticamente cuando `dismisses >= 3` |
+| `name` | string | Nombre del reportero (opcional) |
+| `street` | string | Dirección aproximada (opcional) |
+
+### Reglas de seguridad (Firestore Rules)
+
+Archivo: [`firestore.rules`](firestore.rules)
+
+| Acción | Quién puede | Condiciones |
+|--------|-------------|-------------|
+| **Leer** | Cualquiera | Sin restricciones |
+| **Crear reporte** | Cualquiera | Schema validado + coordenadas en zona Málaga + votes=1, dismisses=0 |
+| **Votar (+1)** | Cualquiera | Solo puede incrementar `votes` en +1 (atómico) |
+| **Marcar "ya no ocurre"** | Cualquiera | Solo puede incrementar `dismisses` en +1. Si llega a 3+, marca `dismissed: true` |
+| **Borrar** | Solo admin | Requiere UID `Cqm2OKSnOgUf09Leb8D5YePIcnW2` |
+| **Editar libremente** | Solo admin | Requiere mismo UID |
+
+### Acceso al panel de administración
+
+1. Ir a [/radar-social/](https://alhaurinaldia.es/radar-social/)
+2. Hacer clic en el icono de acceso admin (discreto, en la esquina)
+3. Iniciar sesión con las credenciales de Firebase Auth
+4. Como admin puedes borrar reportes falsos o inapropiados
+
+### Actualizar las reglas de Firestore
+
+1. Editar `firestore.rules` en el repo
+2. Ir a [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules)
+3. Pegar el contenido actualizado y pulsar **Publicar**
+
+> [!WARNING]
+> Las reglas de Firestore NO se despliegan automáticamente con git push. Hay que pegarlas manualmente en la Firebase Console o configurar `firebase deploy --only firestore:rules`.
+
+### Monitorización
+
+- **Console → Firestore → Data**: ver todos los reportes almacenados
+- **Console → Usage**: consumo de lecturas/escrituras (plan gratuito: 50K lecturas/día, 20K escrituras/día)
+- **Console → Auth → Users**: ver el usuario admin registrado
+
+### Archivos relacionados
+
+| Archivo | Descripción |
+|---------|-------------|
+| `firestore.rules` | Reglas de seguridad de Firestore |
+| `radar-social/index.html` | Página del Radar Social (integra Firebase JS SDK) |
+| `.env` | Variables de entorno locales (NO trackeado en git) |
+
+> [!CAUTION]
+> El archivo `.env` contiene claves API (OpenAI). Está en `.gitignore` y **no debe subirse al repositorio**. Si se compromete, rotar la clave inmediatamente en [platform.openai.com/api-keys](https://platform.openai.com/api-keys).
+
+> [!NOTE]
+> La `apiKey` de Firebase que aparece en el HTML del Radar Social es **pública por diseño**. La seguridad la proporcionan las reglas de Firestore, no el secreto de esta clave.
+
+---
+
+## 12. Categorías de Eventos — Sistema de Colores
 
 | Categoría | Color | Hex | Palabras clave |
 |-----------|-------|-----|----------------|
@@ -404,7 +495,7 @@ node scripts/render-tiempo-static.js
 
 ---
 
-## 12. Troubleshooting
+## 13. Troubleshooting
 
 ### El workflow falla
 
@@ -445,7 +536,7 @@ python3 scripts/actualizar_agenda_alhaurinhoy.py
 
 ---
 
-## 13. Checklist de Mantenimiento Periódico
+## 14. Checklist de Mantenimiento Periódico
 
 ### Semanal
 - [ ] Verificar que los workflows están funcionando (GitHub → Actions)
@@ -471,7 +562,7 @@ python3 scripts/actualizar_agenda_alhaurinhoy.py
 
 ---
 
-## 14. Comandos Útiles
+## 15. Comandos Útiles
 
 ```bash
 # Ir al directorio del proyecto
@@ -507,7 +598,7 @@ python3 scripts/validar_contenido.py
 
 ---
 
-## 15. Contacto y Accesos
+## 16. Contacto y Accesos
 
 | Recurso | URL |
 |---------|-----|
@@ -515,6 +606,8 @@ python3 scripts/validar_contenido.py
 | Web producción | [alhaurinaldia.es](https://alhaurinaldia.es) |
 | GitHub Actions | [Workflows](https://github.com/jburez/alhaurin-al-dia/actions) |
 | GitHub Pages Settings | [Settings → Pages](https://github.com/jburez/alhaurin-al-dia/settings/pages) |
+| Firebase Console | [console.firebase.google.com/project/alhaurin-al-dia](https://console.firebase.google.com/project/alhaurin-al-dia) |
+| Firestore Rules | [Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) |
 | AEMET API | Clave en GitHub Secrets: `AEMET_API_KEY` |
 
 ---

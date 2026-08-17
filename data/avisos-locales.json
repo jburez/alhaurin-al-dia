@@ -1,7 +1,22 @@
 {
-  "actualizado": "2026-08-17T09:12:44.784Z",
+  "actualizado": "2026-08-17T09:15:20.878Z",
   "resumen": "Avisos locales activos de Alhaurín el Grande.",
-  "avisos": [],
+  "avisos": [
+    {
+      "id": "vLXg3WY0vrBYbqCTbOI3",
+      "tipo": "Esto es un test",
+      "icono": "📢",
+      "titulo": "Esto es un test",
+      "detalle": "Esto es un test",
+      "estado": "alert",
+      "fuente": "",
+      "url": "",
+      "inicio": "2026-08-17T09:14:00.000Z",
+      "fin": "2026-08-17T10:14:00.000Z",
+      "activo": true,
+      "resuelto": false
+    }
+  ],
   "historial": [
     {
       "id": "corte-agua-urique-20260813",

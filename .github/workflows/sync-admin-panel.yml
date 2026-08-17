@@ -46,7 +46,7 @@ jobs:
       - name: Commit cambios si hay actualización
         id: commit
         run: |
-          if git diff --quiet data/avisos-locales.json data/agenda-local.json data/evento-slugs.json index.html planes/; then
+          if git diff --quiet data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json index.html planes/; then
             echo "Sin cambios desde el panel admin"
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -54,8 +54,8 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/avisos-locales.json data/agenda-local.json data/evento-slugs.json index.html planes/
-          git commit -m "Sincroniza panel admin: avisos y eventos"
+          git add data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json index.html planes/
+          git commit -m "Sincroniza panel admin: avisos, eventos y estado local"
           git push origin develop
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

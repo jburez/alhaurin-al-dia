@@ -1,6 +1,6 @@
 import { db, auth, ADMIN_UID } from "./firebase-init.js";
 import {
-    collection, addDoc, updateDoc, deleteDoc, doc,
+    collection, addDoc, updateDoc, deleteDoc, doc, setDoc,
     onSnapshot, query, orderBy, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 import {
@@ -364,5 +364,72 @@ eventosList.addEventListener("click", async (e) => {
             console.error("Error eliminando evento:", err);
             alert("No se ha podido eliminar el evento.");
         }
+    }
+});
+
+// ===== Estado local: documento único =====
+// A diferencia de avisos/eventos (colecciones con un doc por elemento), aquí
+// hay 4 tarjetas fijas dentro de un único documento admin_estado_local/main.
+const ESTADO_LOCAL_IDS = ["trafico", "avisos", "agenda", "servicios"];
+const estadoLocalForm = document.getElementById("estado-local-form");
+const estadoLocalSaveNote = document.getElementById("estado-local-save-note");
+const estadoLocalRef = doc(db, "admin_estado_local", "main");
+
+function fillEstadoLocalForm(data) {
+    document.getElementById("estado-local-resumen").value = data.resumen || "";
+    const items = Array.isArray(data.items) ? data.items : [];
+    const porId = new Map(items.map((item) => [item.id, item]));
+    ESTADO_LOCAL_IDS.forEach((id) => {
+        const item = porId.get(id) || {};
+        document.getElementById(`estado-${id}-icono`).value = item.icono || "";
+        document.getElementById(`estado-${id}-estado`).value = item.estado || "neutral";
+        document.getElementById(`estado-${id}-valor`).value = item.valor || "";
+        document.getElementById(`estado-${id}-detalle`).value = item.detalle || "";
+        document.getElementById(`estado-${id}-cta`).value = item.cta || "";
+        document.getElementById(`estado-${id}-url`).value = item.url || "";
+    });
+}
+
+onSnapshot(estadoLocalRef, (snap) => {
+    if (snap.exists()) fillEstadoLocalForm(snap.data());
+}, (err) => {
+    console.error("Error escuchando estado local:", err);
+});
+
+estadoLocalForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const submitBtn = document.getElementById("submit-estado-local-btn");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Guardando...";
+    estadoLocalSaveNote.hidden = true;
+
+    const items = ESTADO_LOCAL_IDS.map((id) => ({
+        id,
+        icono: document.getElementById(`estado-${id}-icono`).value.trim() || "•",
+        estado: document.getElementById(`estado-${id}-estado`).value,
+        valor: document.getElementById(`estado-${id}-valor`).value.trim(),
+        detalle: document.getElementById(`estado-${id}-detalle`).value.trim(),
+        cta: document.getElementById(`estado-${id}-cta`).value.trim() || "Ver más",
+        url: document.getElementById(`estado-${id}-url`).value.trim() || "#",
+    }));
+
+    const payload = {
+        resumen: document.getElementById("estado-local-resumen").value.trim(),
+        items,
+        actualizadoEn: serverTimestamp(),
+    };
+
+    try {
+        // setDoc (no updateDoc): admin_estado_local/main puede no existir
+        // todavía la primera vez que se guarda desde el panel.
+        await setDoc(estadoLocalRef, payload);
+        estadoLocalSaveNote.textContent = "Guardado. Se publicará en la web en un plazo de hasta 15 minutos.";
+        estadoLocalSaveNote.hidden = false;
+    } catch (err) {
+        console.error("Error guardando estado local:", err);
+        alert("No se ha podido guardar el estado local.");
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Guardar estado local";
     }
 });

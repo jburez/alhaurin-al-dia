@@ -48,7 +48,7 @@
             <nav class="admin-tabs" role="tablist">
                 <button type="button" class="admin-tab active" data-tab="avisos">Avisos</button>
                 <button type="button" class="admin-tab" data-tab="eventos">Eventos</button>
-                <button type="button" class="admin-tab" data-tab="estado-local" disabled title="Próximamente">Estado local</button>
+                <button type="button" class="admin-tab" data-tab="estado-local">Estado local</button>
             </nav>
 
             <section class="admin-panel" data-panel="avisos">
@@ -66,6 +66,88 @@
                 </div>
                 <p class="admin-panel-note">Solo los eventos que crees aquí. Los importados automáticamente del Ayuntamiento y alhaurinhoy.es no aparecen ni se pueden editar en este panel.</p>
                 <div id="admin-eventos-list" class="admin-list"></div>
+            </section>
+
+            <section class="admin-panel" data-panel="estado-local" hidden>
+                <div class="admin-panel-header">
+                    <h2>Estado local de hoy</h2>
+                </div>
+                <p class="admin-panel-note">Estas 4 tarjetas son el contenido base del panel "Estado local de hoy" de portada. El tiempo, los avisos oficiales activos y los avisos locales urgentes las sustituyen automáticamente cuando hay datos en vivo — esto es lo que se ve el resto del tiempo.</p>
+                <form id="estado-local-form">
+                    <div class="form-group">
+                        <label for="estado-local-resumen">Resumen (texto introductorio del panel)</label>
+                        <textarea id="estado-local-resumen" rows="2" maxlength="300"></textarea>
+                    </div>
+
+                    <fieldset class="admin-estado-card">
+                        <legend>🚗 Tráfico</legend>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-trafico-icono">Icono</label><input type="text" id="estado-trafico-icono" maxlength="4"></div>
+                            <div class="form-group"><label for="estado-trafico-estado">Severidad</label>
+                                <select id="estado-trafico-estado"><option value="ok">Normal (ok)</option><option value="neutral">Informativo (neutral)</option><option value="warning">Aviso (warning)</option><option value="alert">Atención (alert)</option></select>
+                            </div>
+                        </div>
+                        <div class="form-group"><label for="estado-trafico-valor">Valor destacado</label><input type="text" id="estado-trafico-valor" placeholder="Ej: Normal"></div>
+                        <div class="form-group"><label for="estado-trafico-detalle">Detalle</label><textarea id="estado-trafico-detalle" rows="2"></textarea></div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-trafico-cta">Texto del enlace</label><input type="text" id="estado-trafico-cta" placeholder="Consultar DGT"></div>
+                            <div class="form-group"><label for="estado-trafico-url">Enlace</label><input type="url" id="estado-trafico-url"></div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="admin-estado-card">
+                        <legend>✅ Avisos locales</legend>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-avisos-icono">Icono</label><input type="text" id="estado-avisos-icono" maxlength="4"></div>
+                            <div class="form-group"><label for="estado-avisos-estado">Severidad</label>
+                                <select id="estado-avisos-estado"><option value="ok">Normal (ok)</option><option value="neutral">Informativo (neutral)</option><option value="warning">Aviso (warning)</option><option value="alert">Atención (alert)</option></select>
+                            </div>
+                        </div>
+                        <div class="form-group"><label for="estado-avisos-valor">Valor destacado</label><input type="text" id="estado-avisos-valor" placeholder="Ej: Sin avisos"></div>
+                        <div class="form-group"><label for="estado-avisos-detalle">Detalle</label><textarea id="estado-avisos-detalle" rows="2"></textarea></div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-avisos-cta">Texto del enlace</label><input type="text" id="estado-avisos-cta" placeholder="Ver historial de avisos"></div>
+                            <div class="form-group"><label for="estado-avisos-url">Enlace</label><input type="url" id="estado-avisos-url"></div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="admin-estado-card">
+                        <legend>📅 Agenda</legend>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-agenda-icono">Icono</label><input type="text" id="estado-agenda-icono" maxlength="4"></div>
+                            <div class="form-group"><label for="estado-agenda-estado">Severidad</label>
+                                <select id="estado-agenda-estado"><option value="ok">Normal (ok)</option><option value="neutral">Informativo (neutral)</option><option value="warning">Aviso (warning)</option><option value="alert">Atención (alert)</option></select>
+                            </div>
+                        </div>
+                        <div class="form-group"><label for="estado-agenda-valor">Valor destacado</label><input type="text" id="estado-agenda-valor" placeholder="Ej: Actividades de Agosto"></div>
+                        <div class="form-group"><label for="estado-agenda-detalle">Detalle</label><textarea id="estado-agenda-detalle" rows="2"></textarea></div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-agenda-cta">Texto del enlace</label><input type="text" id="estado-agenda-cta" placeholder="Ver planes"></div>
+                            <div class="form-group"><label for="estado-agenda-url">Enlace</label><input type="url" id="estado-agenda-url"></div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="admin-estado-card">
+                        <legend>☎️ Servicios</legend>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-servicios-icono">Icono</label><input type="text" id="estado-servicios-icono" maxlength="4"></div>
+                            <div class="form-group"><label for="estado-servicios-estado">Severidad</label>
+                                <select id="estado-servicios-estado"><option value="ok">Normal (ok)</option><option value="neutral" selected>Informativo (neutral)</option><option value="warning">Aviso (warning)</option><option value="alert">Atención (alert)</option></select>
+                            </div>
+                        </div>
+                        <div class="form-group"><label for="estado-servicios-valor">Valor destacado</label><input type="text" id="estado-servicios-valor" placeholder="Ej: A mano"></div>
+                        <div class="form-group"><label for="estado-servicios-detalle">Detalle</label><textarea id="estado-servicios-detalle" rows="2"></textarea></div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="estado-servicios-cta">Texto del enlace</label><input type="text" id="estado-servicios-cta" placeholder="Abrir guía"></div>
+                            <div class="form-group"><label for="estado-servicios-url">Enlace</label><input type="url" id="estado-servicios-url"></div>
+                        </div>
+                    </fieldset>
+
+                    <div class="admin-panel-footer">
+                        <span id="estado-local-save-note" class="admin-panel-note" hidden></span>
+                        <button type="submit" id="submit-estado-local-btn" class="btn btn-primary">Guardar estado local</button>
+                    </div>
+                </form>
             </section>
         </main>
     </div>

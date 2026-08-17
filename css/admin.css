@@ -132,6 +132,32 @@
     margin: -8px 0 16px;
 }
 
+/* Estado local: 4 tarjetas fijas */
+.admin-estado-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin: 0 0 16px;
+}
+
+.admin-estado-card legend {
+    font-weight: 700;
+    font-family: var(--font-display);
+    padding: 0 6px;
+}
+
+.admin-panel-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+#estado-local-save-note {
+    margin: 0;
+    color: #16a34a;
+}
+
 .admin-empty {
     color: var(--muted);
     font-size: 14px;

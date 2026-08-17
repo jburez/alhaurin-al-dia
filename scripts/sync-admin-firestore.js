@@ -20,6 +20,9 @@ const admin = require('firebase-admin');
 const ROOT = path.resolve(__dirname, '..');
 const AVISOS_FILE = path.join(ROOT, 'data', 'avisos-locales.json');
 const AGENDA_FILE = path.join(ROOT, 'data', 'agenda-local.json');
+const ESTADO_LOCAL_FILE = path.join(ROOT, 'data', 'estado-local.json');
+const ESTADO_LOCAL_IDS = ['trafico', 'avisos', 'agenda', 'servicios'];
+const ESTADO_LOCAL_TITULOS = { trafico: 'Tráfico', avisos: 'Avisos locales', agenda: 'Agenda', servicios: 'Servicios' };
 
 function initFirestore() {
   const raw = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
@@ -140,11 +143,47 @@ async function construirAgendaLocal(db) {
   };
 }
 
+async function construirEstadoLocal(db) {
+  const snap = await db.collection('admin_estado_local').doc('main').get();
+  if (!snap.exists) {
+    console.log('[sync-admin-firestore] admin_estado_local/main no existe todavía (nadie ha guardado desde el panel); estado-local.json no se toca.');
+    return null;
+  }
+
+  const data = snap.data();
+  const items = Array.isArray(data.items) ? data.items : [];
+  const porId = new Map(items.map((item) => [item.id, item]));
+  const faltan = ESTADO_LOCAL_IDS.filter((id) => !porId.has(id));
+  if (faltan.length) {
+    console.error(`[sync-admin-firestore] admin_estado_local/main incompleto (faltan tarjetas: ${faltan.join(', ')}); estado-local.json no se toca.`);
+    return null;
+  }
+
+  return {
+    actualizado: new Date().toISOString(),
+    resumen: data.resumen || 'Información diaria orientativa para consultar antes de salir. Los avisos críticos deben confirmarse siempre en fuentes oficiales.',
+    items: ESTADO_LOCAL_IDS.map((id) => {
+      const item = porId.get(id);
+      return {
+        id,
+        icono: item.icono || '•',
+        titulo: ESTADO_LOCAL_TITULOS[id],
+        valor: item.valor || '',
+        detalle: item.detalle || '',
+        estado: ['ok', 'warning', 'alert', 'neutral'].includes(item.estado) ? item.estado : 'neutral',
+        cta: item.cta || 'Ver más',
+        url: item.url || '#',
+      };
+    }),
+  };
+}
+
 async function main() {
   const db = initFirestore();
 
   const nuevoAvisosLocales = await construirAvisosLocales(db);
   const nuevaAgendaLocal = await construirAgendaLocal(db);
+  const nuevoEstadoLocal = await construirEstadoLocal(db);
 
   const previoAvisosRaw = fs.existsSync(AVISOS_FILE) ? fs.readFileSync(AVISOS_FILE, 'utf8') : null;
   const nuevoAvisosRaw = JSON.stringify(nuevoAvisosLocales, null, 2) + '\n';
@@ -163,6 +202,17 @@ async function main() {
     console.log(`[sync-admin-firestore] ${AGENDA_FILE} actualizado (${manuales} eventos manuales, ${nuevaAgendaLocal.eventos.length} en total).`);
   } else {
     console.log('[sync-admin-firestore] agenda-local.json sin cambios.');
+  }
+
+  if (nuevoEstadoLocal) {
+    const previoEstadoRaw = fs.existsSync(ESTADO_LOCAL_FILE) ? fs.readFileSync(ESTADO_LOCAL_FILE, 'utf8') : null;
+    const nuevoEstadoRaw = JSON.stringify(nuevoEstadoLocal, null, 2) + '\n';
+    if (nuevoEstadoRaw !== previoEstadoRaw) {
+      fs.writeFileSync(ESTADO_LOCAL_FILE, nuevoEstadoRaw);
+      console.log(`[sync-admin-firestore] ${ESTADO_LOCAL_FILE} actualizado.`);
+    } else {
+      console.log('[sync-admin-firestore] estado-local.json sin cambios.');
+    }
   }
 }
 

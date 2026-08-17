@@ -616,21 +616,22 @@ python3 scripts/validar_contenido.py
 
 Primera pieza de la migración hacia una plataforma hiperlocal: un panel web (`/admin/`) para gestionar sin tocar JSON a mano. Arquitectura: el panel escribe en colecciones nuevas de Firestore (mismo proyecto y login admin que ya usa el Radar Social) y un workflow programado las sincroniza a los JSON del sitio.
 
-### Estado actual (fase 3 de 4)
+### Estado actual (fase 4 de 4 — completa)
 
 | Fase | Qué incluye | Estado |
 |------|-------------|--------|
 | 1 | Infraestructura + Avisos (Firestore, script de sync, workflow) | ✅ Hecho y probado en producción |
 | 2 | Página `/admin/`, pestaña Avisos | ✅ Hecho y probado en producción |
-| 3 | Eventos (agenda) | ✅ Código listo, pendiente de probar en producción |
-| 4 | Estado local de hoy | ⏳ Pendiente |
+| 3 | Eventos (agenda) | ✅ Hecho y probado en producción |
+| 4 | Estado local de hoy | ✅ Código listo, pendiente de probar en producción |
 
-### Cómo funciona (avisos y eventos)
+### Cómo funciona (avisos, eventos y estado local)
 
-1. El panel admin escribe documentos en las colecciones Firestore `admin_avisos` y `admin_eventos`.
-2. `.github/workflows/sync-admin-panel.yml` corre cada 15 min (+ manual): ejecuta `node scripts/sync-admin-firestore.js`, que lee ambas colecciones con `firebase-admin` y reconstruye `data/avisos-locales.json` y `data/agenda-local.json`:
+1. El panel admin escribe en las colecciones Firestore `admin_avisos`, `admin_eventos` y en el documento único `admin_estado_local/main`.
+2. `.github/workflows/sync-admin-panel.yml` corre cada 15 min (+ manual): ejecuta `node scripts/sync-admin-firestore.js`, que lee las 3 fuentes con `firebase-admin` y reconstruye `data/avisos-locales.json`, `data/agenda-local.json` y `data/estado-local.json`:
    - **Avisos**: reconstruye `avisos`/`historial` completos — **excepto** el historial legado (entradas cuyo `id` no existe en Firestore), que se preserva sin tocar.
    - **Eventos**: reemplaza solo el subconjunto con `fuente:"manual"` (id derivado y estable como `manual-{docId de Firestore}`), dejando intactos los eventos `"ayuntamiento"`, `"alhaurinhoy"` y `"legado"` (3 eventos de la Virgen de Gracia que no tenían `fuente` antes de esto, ver commit de fase 3).
+   - **Estado local**: solo se toca si `admin_estado_local/main` existe y trae las 4 tarjetas (`trafico`, `avisos`, `agenda`, `servicios`) — si falta alguna, se deja `estado-local.json` sin tocar y se registra un error en el log del workflow, en vez de publicar un panel incompleto. El `titulo` de cada tarjeta es fijo (no editable desde el panel), el resto de campos sí.
 3. Regenera páginas de eventos (`generar_paginas_eventos.py`, que también borra `/planes/{slug}/` de eventos manuales borrados o renombrados) y refresca `index.html` con `render-home-widgets-static.js`.
 4. Hace commit+push a `develop` si hubo cambios, y dispara `publicar-produccion.yml` explícitamente (un push con el `GITHUB_TOKEN` por defecto no dispara otros workflows con `on: push` — ver el propio `sync-admin-panel.yml` para el detalle).
 5. Es idempotente: si el push falla por chocar con otro workflow, el siguiente run (15 min después) reconstruye el estado correcto igual.
@@ -639,7 +640,7 @@ Primera pieza de la migración hacia una plataforma hiperlocal: un panel web (`/
 
 - [x] Crear una **service account** en Google Cloud Console (proyecto `alhaurin-al-dia`) con rol acotado a Firestore (p. ej. `Cloud Datastore User`) — **no** el rol "Editor" del proyecto. Descargar la clave JSON.
 - [x] Añadir esa clave como GitHub Secret `FIREBASE_SERVICE_ACCOUNT_JSON` (Settings → Secrets and variables → Actions).
-- [ ] Publicar las reglas actualizadas de `firestore.rules` en [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) tras cada cambio (no se despliegan solas con git push) — **pendiente republicar tras añadir `admin_eventos`**.
+- [ ] Publicar las reglas actualizadas de `firestore.rules` en [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) tras cada cambio (no se despliegan solas con git push) — **pendiente republicar tras añadir `admin_eventos` y `admin_estado_local`**.
 - [x] Verificar que los workflows programados solo se disparan por `schedule`/`workflow_dispatch` (nunca por eventos de PR de forks).
 
 ### Colecciones Firestore nuevas
@@ -648,7 +649,7 @@ Primera pieza de la migración hacia una plataforma hiperlocal: un panel web (`/
 |-----------|-----------|-----|
 | `admin_avisos` | uno por aviso | Avisos locales (activos + historial gestionado) |
 | `admin_eventos` | uno por evento manual | Eventos de agenda con `fuente:"manual"` |
-| `admin_estado_local` (fase 4) | único, id `main` | Las 4 tarjetas de "Estado local de hoy" |
+| `admin_estado_local` | único, id `main` | Las 4 tarjetas de "Estado local de hoy" |
 
 Reglas: lectura y escritura solo para el UID admin (a diferencia de `radar_reports`, que permite lectura/creación pública) — ver `firestore.rules`.
 

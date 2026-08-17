@@ -839,16 +839,21 @@ function statTile(value, label, warning) {
 }
 
 function renderDashboard() {
-    const avisosActivos = allAvisos.filter((a) => !a.resuelto).length;
-    const eventosActivos = allEventos.filter((e) => e.activo !== false).length;
-    const comerciosActivos = allComercios.filter((c) => c.activo !== false).length;
-    const radarActivos = allRadarReports.filter((r) => !radarIsExpired(r)).length;
+    try {
+        const avisosActivos = allAvisos.filter((a) => !a.resuelto).length;
+        const eventosActivos = allEventos.filter((e) => e.activo !== false).length;
+        const comerciosActivos = allComercios.filter((c) => c.activo !== false).length;
+        const radarActivos = allRadarReports.filter((r) => !radarIsExpired(r)).length;
 
-    dashboardStats.innerHTML = [
-        statTile(avisosActivos, `Aviso${avisosActivos === 1 ? "" : "s"} activo${avisosActivos === 1 ? "" : "s"}`),
-        statTile(eventosActivos, `Evento${eventosActivos === 1 ? "" : "s"} manual${eventosActivos === 1 ? "" : "es"} activo${eventosActivos === 1 ? "" : "s"}`),
-        statTile(comerciosActivos, `Comercio${comerciosActivos === 1 ? "" : "s"} destacado${comerciosActivos === 1 ? "" : "s"} activo${comerciosActivos === 1 ? "" : "s"}`),
-        statTile(radarActivos, `Reporte${radarActivos === 1 ? "" : "s"} activo${radarActivos === 1 ? "" : "s"} en Radar Social`),
-        statTile(allPapelera.length, `Elemento${allPapelera.length === 1 ? "" : "s"} en papelera`, allPapelera.length > 0),
-    ].join("");
+        dashboardStats.innerHTML = [
+            statTile(avisosActivos, `Aviso${avisosActivos === 1 ? "" : "s"} activo${avisosActivos === 1 ? "" : "s"}`),
+            statTile(eventosActivos, `Evento${eventosActivos === 1 ? "" : "s"} manual${eventosActivos === 1 ? "" : "es"} activo${eventosActivos === 1 ? "" : "s"}`),
+            statTile(comerciosActivos, `Comercio${comerciosActivos === 1 ? "" : "s"} destacado${comerciosActivos === 1 ? "" : "s"} activo${comerciosActivos === 1 ? "" : "s"}`),
+            statTile(radarActivos, `Reporte${radarActivos === 1 ? "" : "s"} activo${radarActivos === 1 ? "" : "s"} en Radar Social`),
+            statTile(allPapelera.length, `Elemento${allPapelera.length === 1 ? "" : "s"} en papelera`, allPapelera.length > 0),
+        ].join("");
+    } catch (err) {
+        console.error("Error renderizando dashboard:", err);
+        dashboardStats.innerHTML = `<p class="admin-empty">Error: ${escapeHTML(err.message)}</p>`;
+    }
 }

@@ -236,6 +236,32 @@
         return [weatherItem, ...cleaned];
     }
 
+    // Tráfico automático desde el Radar Social (scripts/sync-admin-firestore.js)
+    function buildCardFromRadarTrafico(reporte) {
+        const esArroyo = reporte.type === "arroyo";
+        const calleInfo = reporte.calle ? ` (${reporte.calle})` : "";
+        return {
+            id: "trafico",
+            icono: esArroyo ? "🌊" : "🚧",
+            titulo: "Tráfico",
+            valor: reporte.titulo || (esArroyo ? "Crecida de arroyo" : "Corte de tráfico"),
+            detalle: `${reporte.detalle || "Reportado por vecinos en el Radar Social."}${calleInfo}`,
+            estado: "alert",
+            fuente: "Radar Social",
+            cta: "Ver en el mapa",
+            url: "./radar-social/"
+        };
+    }
+
+    function mergeRadarTrafico(items, radarTraficoData) {
+        const reportes = Array.isArray(radarTraficoData?.reportes) ? radarTraficoData.reportes : [];
+        if (!reportes.length) return items;
+        const card = buildCardFromRadarTrafico(reportes[0]);
+        const replaced = items.some(item => item.id === "trafico");
+        const merged = items.map(item => (item.id === "trafico" ? card : item));
+        return replaced ? merged : [...merged, card];
+    }
+
     function renderItem(item) {
         const estado = item.estado || "neutral";
         const url = normalizeLink(item.url || "#");
@@ -281,12 +307,20 @@
         fetch(new URL("data/avisos-oficiales.json", root).href).then(response => {
             if (!response.ok) return [];
             return response.json();
-        }).catch(() => [])
+        }).catch(() => []),
+        fetch(new URL("data/radar-trafico.json", root).href).then(response => {
+            if (!response.ok) return null;
+            return response.json();
+        }).catch(() => null)
     ])
-        .then(([data, noticesData, weatherData, avisosOficialesData]) => {
+        .then(([data, noticesData, weatherData, avisosOficialesData, radarTraficoData]) => {
             const baseItems = Array.isArray(data.items) ? data.items : [];
             const withWeather = mergeWeather(baseItems, weatherData);
-            const withLocalNotices = mergeLocalNotices(withWeather, noticesData);
+            // Orden de prioridad para "trafico": base < Radar Social
+            // (automático) < aviso local manual (si lo publican expresamente,
+            // gana al reporte comunitario).
+            const withRadarTrafico = mergeRadarTrafico(withWeather, radarTraficoData);
+            const withLocalNotices = mergeLocalNotices(withRadarTrafico, noticesData);
             const items = mergeAvisosOficiales(withLocalNotices, avisosOficialesData);
 
             // El badge "Actualizado" debe reflejar la fuente más fresca que de
@@ -302,12 +336,14 @@
                 }, null)
                 : null;
             const noticiasActivas = Array.isArray(noticesData?.avisos) && noticesData.avisos.some(isActiveNotice);
+            const radarTraficoActivo = Boolean(radarTraficoData?.reportes?.length);
 
             const updatedDate = pickLatestDate(
                 data.actualizado,
                 weatherData?.actualizado,
                 noticiasActivas ? noticesData.actualizado : null,
-                ultimoOficial
+                ultimoOficial,
+                radarTraficoActivo ? radarTraficoData.actualizado : null
             );
             const updated = updatedDate ? updatedDate.toISOString() : data.actualizado;
 

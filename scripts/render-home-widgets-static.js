@@ -21,6 +21,7 @@ const DATA = {
   avisosOficiales: path.join(ROOT, 'data', 'avisos-oficiales.json'),
   agendaLocal: path.join(ROOT, 'data', 'agenda-local.json'),
   comercios: path.join(ROOT, 'data', 'comercios-destacados.json'),
+  radarTrafico: path.join(ROOT, 'data', 'radar-trafico.json'),
 };
 
 const SITE_URL = 'https://alhaurinaldia.es';
@@ -230,6 +231,33 @@ function mergeWeather(items, weatherData) {
   return [enrichedItem, ...cleaned];
 }
 
+// ---- Tráfico automático desde el Radar Social (scripts/sync-admin-firestore.js) ----
+
+function buildCardFromRadarTrafico(reporte) {
+  const esArroyo = reporte.type === 'arroyo';
+  const calleInfo = reporte.calle ? ` (${reporte.calle})` : '';
+  return {
+    id: 'trafico',
+    icono: esArroyo ? '🌊' : '🚧',
+    titulo: 'Tráfico',
+    valor: reporte.titulo || (esArroyo ? 'Crecida de arroyo' : 'Corte de tráfico'),
+    detalle: `${reporte.detalle || 'Reportado por vecinos en el Radar Social.'}${calleInfo}`,
+    estado: 'alert',
+    fuente: 'Radar Social',
+    cta: 'Ver en el mapa',
+    url: './radar-social/',
+  };
+}
+
+function mergeRadarTrafico(items, radarTraficoData) {
+  const reportes = Array.isArray(radarTraficoData?.reportes) ? radarTraficoData.reportes : [];
+  if (!reportes.length) return items;
+  const card = buildCardFromRadarTrafico(reportes[0]);
+  const replaced = items.some((item) => item.id === 'trafico');
+  const merged = items.map((item) => (item.id === 'trafico' ? card : item));
+  return replaced ? merged : [...merged, card];
+}
+
 function pickLatestDate(...values) {
   let latest = null;
   for (const value of values) {
@@ -256,10 +284,16 @@ function renderDailyStatus(html) {
   const avisosLocales = readJSON(DATA.avisosLocales, { avisos: [] });
   const tiempo = readJSON(DATA.tiempoAemet, null);
   const avisosOficiales = readJSON(DATA.avisosOficiales, []);
+  const radarTrafico = readJSON(DATA.radarTrafico, null);
 
   const baseItems = Array.isArray(estadoLocal.items) ? estadoLocal.items : [];
   const withWeather = mergeWeather(baseItems, tiempo);
-  const withLocalNotices = mergeLocalNotices(withWeather, avisosLocales);
+  // Orden de prioridad para la tarjeta "trafico": base < Radar Social
+  // (automático) < aviso local manual (si alguien lo publica expresamente,
+  // gana al reporte comunitario) < aviso oficial (no toca "trafico", solo
+  // "avisos", así que no compite aquí).
+  const withRadarTrafico = mergeRadarTrafico(withWeather, radarTrafico);
+  const withLocalNotices = mergeLocalNotices(withRadarTrafico, avisosLocales);
   const items = mergeAvisosOficiales(withLocalNotices, avisosOficiales);
 
   // El badge "Actualizado" debe reflejar la fuente más fresca que de verdad
@@ -276,13 +310,15 @@ function renderDailyStatus(html) {
     }, null)
     : null;
   const noticiasActivas = Array.isArray(avisosLocales?.avisos) && avisosLocales.avisos.some(isActiveNotice);
+  const radarTraficoActivo = Boolean(radarTrafico?.reportes?.length);
 
   const nowIso = new Date().toISOString();
   const updatedDate = pickLatestDate(
     estadoLocal.actualizado,
     tiempo?.actualizado,
     noticiasActivas ? avisosLocales.actualizado : null,
-    ultimoOficial
+    ultimoOficial,
+    radarTraficoActivo ? radarTrafico.actualizado : null
   );
   const updated = updatedDate ? updatedDate.toISOString() : (estadoLocal.actualizado || nowIso);
 

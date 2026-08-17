@@ -23,6 +23,26 @@ const AGENDA_FILE = path.join(ROOT, 'data', 'agenda-local.json');
 const ESTADO_LOCAL_FILE = path.join(ROOT, 'data', 'estado-local.json');
 const ESTADO_LOCAL_IDS = ['trafico', 'avisos', 'agenda', 'servicios'];
 const ESTADO_LOCAL_TITULOS = { trafico: 'Tráfico', avisos: 'Avisos locales', agenda: 'Agenda', servicios: 'Servicios' };
+const RADAR_TRAFICO_FILE = path.join(ROOT, 'data', 'radar-trafico.json');
+
+// Mismo TTL por tipo que radar-social/index.html (ver TTL/TTL_LABELS ahí) —
+// duplicado a propósito: ese es código de navegador (import de CDN), este es
+// Node en CI, no comparten módulo fácilmente sin añadir infraestructura de
+// build solo para esto.
+const RADAR_TTL_MS = {
+  lluvia: 3 * 3600000,
+  tormenta: 2 * 3600000,
+  granizo: 1 * 3600000,
+  viento: 2 * 3600000,
+  arroyo: 6 * 3600000,
+  'corte-trafico': 12 * 3600000,
+  incidencia: 6 * 3600000,
+};
+
+// Tipos de reporte del Radar Social que afectan a la tarjeta "Tráfico" del
+// Estado Local: cortes de tráfico y crecidas de arroyo (Fahala, Pasadas...),
+// que en la práctica también cortan vías.
+const RADAR_TRAFICO_TIPOS = new Set(['corte-trafico', 'arroyo']);
 
 function initFirestore() {
   const raw = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
@@ -178,12 +198,45 @@ async function construirEstadoLocal(db) {
   };
 }
 
+function radarReportActivo(data) {
+  if (data.dismissed) return false;
+  if ((data.dismisses || 0) >= 3) return false;
+  const ttl = RADAR_TTL_MS[data.type] || 6 * 3600000;
+  return (Date.now() - (data.ts || 0)) <= ttl;
+}
+
+async function construirRadarTrafico(db) {
+  const snapshot = await db.collection('radar_reports').get();
+  const reportes = [];
+  snapshot.forEach((doc) => {
+    const data = doc.data();
+    if (RADAR_TRAFICO_TIPOS.has(data.type) && radarReportActivo(data)) {
+      reportes.push({
+        id: doc.id,
+        type: data.type,
+        titulo: data.title || '',
+        detalle: data.desc || '',
+        calle: data.street || '',
+        ts: data.ts || 0,
+      });
+    }
+  });
+  reportes.sort((a, b) => b.ts - a.ts);
+
+  return {
+    actualizado: new Date().toISOString(),
+    activo: reportes.length > 0,
+    reportes,
+  };
+}
+
 async function main() {
   const db = initFirestore();
 
   const nuevoAvisosLocales = await construirAvisosLocales(db);
   const nuevaAgendaLocal = await construirAgendaLocal(db);
   const nuevoEstadoLocal = await construirEstadoLocal(db);
+  const nuevoRadarTrafico = await construirRadarTrafico(db);
 
   const previoAvisosRaw = fs.existsSync(AVISOS_FILE) ? fs.readFileSync(AVISOS_FILE, 'utf8') : null;
   const nuevoAvisosRaw = JSON.stringify(nuevoAvisosLocales, null, 2) + '\n';
@@ -213,6 +266,15 @@ async function main() {
     } else {
       console.log('[sync-admin-firestore] estado-local.json sin cambios.');
     }
+  }
+
+  const previoRadarRaw = fs.existsSync(RADAR_TRAFICO_FILE) ? fs.readFileSync(RADAR_TRAFICO_FILE, 'utf8') : null;
+  const nuevoRadarRaw = JSON.stringify(nuevoRadarTrafico, null, 2) + '\n';
+  if (nuevoRadarRaw !== previoRadarRaw) {
+    fs.writeFileSync(RADAR_TRAFICO_FILE, nuevoRadarRaw);
+    console.log(`[sync-admin-firestore] ${RADAR_TRAFICO_FILE} actualizado (${nuevoRadarTrafico.reportes.length} reportes activos).`);
+  } else {
+    console.log('[sync-admin-firestore] radar-trafico.json sin cambios.');
   }
 }
 

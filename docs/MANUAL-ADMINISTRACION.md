@@ -631,10 +631,11 @@ La pestaña extra "Radar Social" **no** forma parte del flujo Firestore→JSON d
 ### Cómo funciona (avisos, eventos y estado local)
 
 1. El panel admin escribe en las colecciones Firestore `admin_avisos`, `admin_eventos` y en el documento único `admin_estado_local/main`.
-2. `.github/workflows/sync-admin-panel.yml` corre cada 15 min (+ manual): ejecuta `node scripts/sync-admin-firestore.js`, que lee las 3 fuentes con `firebase-admin` y reconstruye `data/avisos-locales.json`, `data/agenda-local.json` y `data/estado-local.json`:
+2. `.github/workflows/sync-admin-panel.yml` corre cada 15 min (+ manual): ejecuta `node scripts/sync-admin-firestore.js`, que lee esas 3 fuentes **más `radar_reports`** con `firebase-admin` y reconstruye `data/avisos-locales.json`, `data/agenda-local.json`, `data/estado-local.json` y `data/radar-trafico.json`:
    - **Avisos**: reconstruye `avisos`/`historial` completos — **excepto** el historial legado (entradas cuyo `id` no existe en Firestore), que se preserva sin tocar.
    - **Eventos**: reemplaza solo el subconjunto con `fuente:"manual"` (id derivado y estable como `manual-{docId de Firestore}`), dejando intactos los eventos `"ayuntamiento"`, `"alhaurinhoy"` y `"legado"` (3 eventos de la Virgen de Gracia que no tenían `fuente` antes de esto, ver commit de fase 3).
    - **Estado local**: solo se toca si `admin_estado_local/main` existe y trae las 4 tarjetas (`trafico`, `avisos`, `agenda`, `servicios`) — si falta alguna, se deja `estado-local.json` sin tocar y se registra un error en el log del workflow, en vez de publicar un panel incompleto. El `titulo` de cada tarjeta es fijo (no editable desde el panel), el resto de campos sí.
+   - **Tráfico automático** (primer automatismo de Estado Local): si hay un reporte activo del Radar Social de tipo `corte-trafico` o `arroyo` (no expirado por TTL, no descartado por los vecinos), `data/radar-trafico.json` lo recoge, y `mergeRadarTrafico()` (en `js/home-live.js` y `scripts/render-home-widgets-static.js`, mismo patrón que `mergeAvisosOficiales`) sustituye automáticamente la tarjeta "Tráfico" del panel de portada — sin tocar el panel admin. Prioridad si coinciden varias fuentes para esa tarjeta: base manual < Radar Social (automático) < aviso local manual publicado expresamente.
 3. Regenera páginas de eventos (`generar_paginas_eventos.py`, que también borra `/planes/{slug}/` de eventos manuales borrados o renombrados) y refresca `index.html` con `render-home-widgets-static.js`.
 4. Hace commit+push a `develop` si hubo cambios, y dispara `publicar-produccion.yml` explícitamente (un push con el `GITHUB_TOKEN` por defecto no dispara otros workflows con `on: push` — ver el propio `sync-admin-panel.yml` para el detalle).
 5. Es idempotente: si el push falla por chocar con otro workflow, el siguiente run (15 min después) reconstruye el estado correcto igual.
@@ -643,7 +644,7 @@ La pestaña extra "Radar Social" **no** forma parte del flujo Firestore→JSON d
 
 - [x] Crear una **service account** en Google Cloud Console (proyecto `alhaurin-al-dia`) con rol acotado a Firestore (p. ej. `Cloud Datastore User`) — **no** el rol "Editor" del proyecto. Descargar la clave JSON.
 - [x] Añadir esa clave como GitHub Secret `FIREBASE_SERVICE_ACCOUNT_JSON` (Settings → Secrets and variables → Actions).
-- [ ] Publicar las reglas actualizadas de `firestore.rules` en [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) tras cada cambio (no se despliegan solas con git push) — **pendiente republicar tras añadir `admin_eventos` y `admin_estado_local`**.
+- [x] Publicar las reglas actualizadas de `firestore.rules` en [Firebase Console → Firestore → Rules](https://console.firebase.google.com/project/alhaurin-al-dia/firestore/rules) tras cada cambio (no se despliegan solas con git push) — verificado con lectura real autenticada el 17/08/2026.
 - [x] Verificar que los workflows programados solo se disparan por `schedule`/`workflow_dispatch` (nunca por eventos de PR de forks).
 
 ### Colecciones Firestore nuevas

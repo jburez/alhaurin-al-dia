@@ -1,28 +1,5 @@
 {
-  "actualizado": "2026-08-10T13:27:00+02:00",
+  "actualizado": "2026-08-17T11:16:46.034Z",
   "resumen": "Comercios destacados de Alhaurín el Grande para espacios patrocinados o colaboraciones locales verificadas.",
-  "comercios": [
-    {
-      "nombre": "Taberna El Olivo Silvestre",
-      "descripcion": "Especialidades gastronómicas locales, productos de la comarca y ambiente acogedor en el centro histórico de Alhaurín el Grande.",
-      "categoria": "Gastronomía & Tapas",
-      "zona": "Centro Histórico, Alhaurín el Grande",
-      "telefonoHref": "+34952000111",
-      "url": "./comercios/",
-      "cta": "Ver carta / Reservar",
-      "etiqueta": "Comercio Patrocinado",
-      "activo": true
-    },
-    {
-      "nombre": "Centro Óptico Sierra de Mijas",
-      "descripcion": "Exámenes visuales avanzados, audiología, gafas graduadas y atención personalizada para familias de Alhaurín el Grande.",
-      "categoria": "Salud & Visión",
-      "zona": "Avenida del Guadalhorce, Alhaurín el Grande",
-      "telefonoHref": "+34952000222",
-      "url": "./guia-util/#salud",
-      "cta": "Consultar servicios",
-      "etiqueta": "Servicio Destacado",
-      "activo": true
-    }
-  ]
+  "comercios": []
 }

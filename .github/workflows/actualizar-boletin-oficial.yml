@@ -55,3 +55,12 @@ jobs:
           git push origin develop
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
+      - name: Disparar publicación en producción
+        # Un push con el GITHUB_TOKEN por defecto no dispara otros workflows
+        # con `on: push` (ver .github/workflows/sync-admin-panel.yml para el
+        # detalle) — sin este paso, este commit nunca llegaría solo a main.
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publicar-produccion.yml --ref develop
+

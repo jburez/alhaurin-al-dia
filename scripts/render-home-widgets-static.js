@@ -230,6 +230,17 @@ function mergeWeather(items, weatherData) {
   return [enrichedItem, ...cleaned];
 }
 
+function pickLatestDate(...values) {
+  let latest = null;
+  for (const value of values) {
+    if (!value) continue;
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) continue;
+    if (!latest || date > latest) latest = date;
+  }
+  return latest;
+}
+
 function renderDailyItem(item) {
   const estado = item.estado || 'neutral';
   const url = normalizeLink(item.url || '#');
@@ -251,10 +262,29 @@ function renderDailyStatus(html) {
   const withLocalNotices = mergeLocalNotices(withWeather, avisosLocales);
   const items = mergeAvisosOficiales(withLocalNotices, avisosOficiales);
 
+  // El badge "Actualizado" debe reflejar la fuente más fresca que de verdad
+  // alimenta lo que se ve en pantalla (p. ej. el tiempo se refresca varias
+  // veces al día aunque el resto del panel no cambie), no solo la fecha del
+  // archivo base estado-local.json. Misma lógica que js/home-live.js, para
+  // que la hidratación en el navegador no cambie nada visible.
+  const activosOficiales = (Array.isArray(avisosOficiales) ? avisosOficiales : []).filter(isActiveAvisoOficial);
+  const ultimoOficial = activosOficiales.length
+    ? activosOficiales.reduce((max, aviso) => {
+      const fecha = new Date(aviso.actualizado_en || aviso.inicio || 0);
+      if (Number.isNaN(fecha.getTime())) return max;
+      return (!max || fecha > max) ? fecha : max;
+    }, null)
+    : null;
+  const noticiasActivas = Array.isArray(avisosLocales?.avisos) && avisosLocales.avisos.some(isActiveNotice);
+
   const nowIso = new Date().toISOString();
-  const updated = (avisosLocales?.actualizado && Array.isArray(avisosLocales.avisos) && avisosLocales.avisos.some(isActiveNotice))
-    ? avisosLocales.actualizado
-    : (estadoLocal.actualizado || nowIso);
+  const updatedDate = pickLatestDate(
+    estadoLocal.actualizado,
+    tiempo?.actualizado,
+    noticiasActivas ? avisosLocales.actualizado : null,
+    ultimoOficial
+  );
+  const updated = updatedDate ? updatedDate.toISOString() : (estadoLocal.actualizado || nowIso);
 
   let actualizado = setContainerInnerHTML(html, 'daily-updated', escapeHTML(formatUpdatedLong(updated)));
 

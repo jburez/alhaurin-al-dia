@@ -217,6 +217,17 @@
         return replaced ? merged : [...merged, card];
     }
 
+    function pickLatestDate(...values) {
+        let latest = null;
+        for (const value of values) {
+            if (!value) continue;
+            const date = new Date(value);
+            if (Number.isNaN(date.getTime())) continue;
+            if (!latest || date > latest) latest = date;
+        }
+        return latest;
+    }
+
     function mergeWeather(items, weatherData) {
         const weatherItem = weatherData?.item;
         if (!weatherItem || typeof weatherItem !== "object") return items;
@@ -277,9 +288,28 @@
             const withWeather = mergeWeather(baseItems, weatherData);
             const withLocalNotices = mergeLocalNotices(withWeather, noticesData);
             const items = mergeAvisosOficiales(withLocalNotices, avisosOficialesData);
-            const updated = noticesData?.actualizado && Array.isArray(noticesData.avisos) && noticesData.avisos.some(isActiveNotice)
-                ? noticesData.actualizado
-                : data.actualizado;
+
+            // El badge "Actualizado" debe reflejar la fuente más fresca que de
+            // verdad alimenta lo que se ve en pantalla (p. ej. el tiempo se
+            // refresca varias veces al día aunque el resto del panel no
+            // cambie), no solo la fecha del archivo base estado-local.json.
+            const activosOficiales = (Array.isArray(avisosOficialesData) ? avisosOficialesData : []).filter(isActiveAvisoOficial);
+            const ultimoOficial = activosOficiales.length
+                ? activosOficiales.reduce((max, aviso) => {
+                    const fecha = new Date(aviso.actualizado_en || aviso.inicio || 0);
+                    if (Number.isNaN(fecha.getTime())) return max;
+                    return (!max || fecha > max) ? fecha : max;
+                }, null)
+                : null;
+            const noticiasActivas = Array.isArray(noticesData?.avisos) && noticesData.avisos.some(isActiveNotice);
+
+            const updatedDate = pickLatestDate(
+                data.actualizado,
+                weatherData?.actualizado,
+                noticiasActivas ? noticesData.actualizado : null,
+                ultimoOficial
+            );
+            const updated = updatedDate ? updatedDate.toISOString() : data.actualizado;
 
             if (updatedBox) {
                 updatedBox.textContent = formatUpdated(updated);

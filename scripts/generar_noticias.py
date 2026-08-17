@@ -1,3 +1,4 @@
+import calendar
 import hashlib
 import html
 import json
@@ -8,7 +9,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlsplit, urlunsplit
 
 import feedparser
 import requests
@@ -146,6 +147,25 @@ def normalizar_fecha(fecha_raw):
         return fecha.isoformat()
     except Exception:
         return datetime.now(timezone.utc).isoformat()
+
+
+def normalizar_fecha_entry(entry):
+    """Fecha de publicación ORIGINAL de la entrada del feed (no la hora en la
+    que este script sincroniza/lee el feed). Prioriza los campos que
+    feedparser ya deja parseados como struct_time (published_parsed /
+    updated_parsed), porque cubren tanto RFC 2822 como ISO 8601 y evitan
+    depender de reparsear el texto crudo. Si el feed no trae fecha en
+    absoluto, se cae a la hora de sincronización como último recurso para no
+    descartar la noticia."""
+    for campo in ("published_parsed", "updated_parsed"):
+        valor = entry.get(campo)
+        if valor:
+            try:
+                return datetime.fromtimestamp(calendar.timegm(valor), tz=timezone.utc).isoformat()
+            except Exception:
+                pass
+    fecha_raw = entry.get("published") or entry.get("updated") or ""
+    return normalizar_fecha(fecha_raw)
 
 
 def fecha_para_ordenacion(fecha_iso):
@@ -346,11 +366,55 @@ def extraer_imagen_feed(feed):
     return getattr(imagen, "href", "") or getattr(imagen, "url", "") or ""
 
 
+WP_THUMB_SUFFIX = re.compile(r"-(\d{2,5})x(\d{2,5})(\.(?:jpe?g|png|webp|gif))$", re.IGNORECASE)
+YOUTUBE_THUMB = re.compile(
+    r"^(https?://i\d?\.ytimg\.com/vi/[^/]+/)(?:default|mqdefault|hqdefault|sddefault|maxresdefault)\.jpg$",
+    re.IGNORECASE,
+)
+
+
+def _url_disponible(url):
+    """Comprueba con una petición ligera que la URL candidata a alta
+    resolución realmente existe, para no sustituir una miniatura válida por
+    un enlace roto (frecuente con maxresdefault de YouTube, que no se genera
+    para todos los vídeos)."""
+    try:
+        resp = requests.head(url, timeout=4, headers={"User-Agent": "Mozilla/5.0"}, verify=False, allow_redirects=True)
+        if resp.status_code == 405:
+            resp = requests.get(url, timeout=4, headers={"User-Agent": "Mozilla/5.0"}, verify=False, stream=True)
+        return resp.status_code == 200
+    except Exception:
+        return False
+
+
 def normalizar_imagen_hd(url):
+    """Fuerza siempre la variante de mayor resolución disponible de la
+    imagen de portada: sustituye miniaturas de YouTube por maxresdefault/
+    sddefault y quita el sufijo de tamaño (-300x200.jpg) que WordPress añade
+    a sus miniaturas, recuperando el archivo original a resolución completa.
+    Solo se aplica el cambio si la URL de mayor resolución existe de verdad."""
     if not url:
         return ""
     if "nuestropadrejesusnazareno.com" in url and ("32x32" in url or "192x192" in url or "favicon" in url):
         return "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png"
+
+    youtube_match = YOUTUBE_THUMB.match(url)
+    if youtube_match:
+        base = youtube_match.group(1)
+        for variante in ("maxresdefault.jpg", "sddefault.jpg"):
+            candidata = f"{base}{variante}"
+            if _url_disponible(candidata):
+                return candidata
+        return url
+
+    partes = urlsplit(url)
+    wp_match = WP_THUMB_SUFFIX.search(partes.path)
+    if wp_match:
+        path_original = partes.path[:wp_match.start()] + wp_match.group(3)
+        candidata = urlunsplit((partes.scheme, partes.netloc, path_original, partes.query, partes.fragment))
+        if _url_disponible(candidata):
+            return candidata
+
     return url
 
 
@@ -824,7 +888,7 @@ def obtener_noticias():
             noticia = {
                 "id": generar_id(url, titulo_original), "titulo": mejora["titulo"], "titulo_original": titulo_original,
                 "descripcion": mejora["descripcion"], "resumen": mejora["descripcion"], "cuerpo": mejora["cuerpo"],
-                "fecha": normalizar_fecha(entry.get("published", "")), "fuente": fuente["nombre"],
+                "fecha": normalizar_fecha_entry(entry), "fuente": fuente["nombre"],
                 "categoria": mejora["categoria"], "categoria_url": f"categoria/{slugify(mejora['categoria'])}/",
                 "seo_keywords": mejora.get("seo_keywords", []), "enlace": url, "url": url,
                 "imagen": extraer_imagen(entry, imagen_feed), "prioridad": prioridad_fuente(fuente["nombre"]),
@@ -833,8 +897,16 @@ def obtener_noticias():
             noticias.append(noticia)
             aviso_geo = " ⚠ revisar geografía" if requiere_revision else ""
             print(f"✓ {noticia['categoria']} | {noticia['titulo']}{aviso_geo}")
+    # calcular_score (prioridad editorial + boost de recencia) decide qué
+    # noticias entran cuando hay más candidatas que hueco disponible, pero el
+    # ORDEN de publicación final es cronológico puro por fecha original de la
+    # fuente: así "más reciente primero" refleja cuándo se publicó la
+    # noticia, no la prioridad de la fuente ni la hora en que este script la
+    # sincronizó.
     noticias.sort(key=calcular_score, reverse=True)
-    return noticias[:MAX_NOTICIAS_TOTAL]
+    noticias = noticias[:MAX_NOTICIAS_TOTAL]
+    noticias.sort(key=lambda n: fecha_para_ordenacion(n["fecha"]), reverse=True)
+    return noticias
 
 
 def guardar_noticias(noticias):

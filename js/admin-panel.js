@@ -30,9 +30,29 @@ function showContent(user) {
     sessionEmail.textContent = user.email;
 }
 
+// Los listeners en vivo (onSnapshot) de cada pestaña se registran solo tras
+// confirmar sesión admin, nunca antes: registrarlos en cuanto carga el script
+// (sin esperar a onAuthStateChanged) competía con la resolución inicial del
+// token de Firebase Auth — en la práctica, las colecciones que no llegaban a
+// tiempo se quedaban con el listener nunca disparado (ni éxito ni error) en
+// vez de fallar de forma visible. Real, reproducido en producción: con las
+// query registradas de golpe al cargar el módulo, avisos cargaba bien pero
+// eventos/estado local/radar social se quedaban vacíos sin ningún error en
+// consola; al re-registrar el mismo código un instante después (auth ya
+// resuelto), funcionaban perfectamente. Empezar los listeners solo cuando
+// onAuthStateChanged ya confirmó el UID admin elimina la carrera de raíz.
+let liveListenersStarted = false;
+
 onAuthStateChanged(auth, (user) => {
     if (user && user.uid === ADMIN_UID) {
         showContent(user);
+        if (!liveListenersStarted) {
+            liveListenersStarted = true;
+            startAvisosListener();
+            startEventosListener();
+            startEstadoLocalListener();
+            startRadarListener();
+        }
     } else {
         if (user) signOut(auth); // sesión válida pero sin permisos: no dejar a medias
         showGate();
@@ -188,13 +208,15 @@ function renderAvisos() {
 }
 
 const avisosQuery = query(avisosCol, orderBy("creadoEn", "desc"));
-onSnapshot(avisosQuery, (snapshot) => {
-    allAvisos = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
-    renderAvisos();
-}, (err) => {
-    console.error("Error escuchando avisos:", err);
-    avisosList.innerHTML = '<p class="admin-empty">No se han podido cargar los avisos.</p>';
-});
+function startAvisosListener() {
+    onSnapshot(avisosQuery, (snapshot) => {
+        allAvisos = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
+        renderAvisos();
+    }, (err) => {
+        console.error("Error escuchando avisos:", err);
+        avisosList.innerHTML = '<p class="admin-empty">No se han podido cargar los avisos.</p>';
+    });
+}
 
 avisosList.addEventListener("click", async (e) => {
     const editBtn = e.target.closest(".admin-edit-btn");
@@ -331,13 +353,15 @@ function renderEventos() {
 }
 
 const eventosQuery = query(eventosCol, orderBy("creadoEn", "desc"));
-onSnapshot(eventosQuery, (snapshot) => {
-    allEventos = snapshot.docs.map((d) => ({ docId: d.id, ...d.data() }));
-    renderEventos();
-}, (err) => {
-    console.error("Error escuchando eventos:", err);
-    eventosList.innerHTML = '<p class="admin-empty">No se han podido cargar los eventos.</p>';
-});
+function startEventosListener() {
+    onSnapshot(eventosQuery, (snapshot) => {
+        allEventos = snapshot.docs.map((d) => ({ docId: d.id, ...d.data() }));
+        renderEventos();
+    }, (err) => {
+        console.error("Error escuchando eventos:", err);
+        eventosList.innerHTML = '<p class="admin-empty">No se han podido cargar los eventos.</p>';
+    });
+}
 
 eventosList.addEventListener("click", async (e) => {
     const editBtn = e.target.closest(".admin-edit-evento-btn");
@@ -390,11 +414,13 @@ function fillEstadoLocalForm(data) {
     });
 }
 
-onSnapshot(estadoLocalRef, (snap) => {
-    if (snap.exists()) fillEstadoLocalForm(snap.data());
-}, (err) => {
-    console.error("Error escuchando estado local:", err);
-});
+function startEstadoLocalListener() {
+    onSnapshot(estadoLocalRef, (snap) => {
+        if (snap.exists()) fillEstadoLocalForm(snap.data());
+    }, (err) => {
+        console.error("Error escuchando estado local:", err);
+    });
+}
 
 estadoLocalForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -515,13 +541,15 @@ function renderRadarReports() {
 }
 
 const radarReportsQuery = query(radarReportsCol, orderBy("ts", "desc"));
-onSnapshot(radarReportsQuery, (snapshot) => {
-    allRadarReports = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
-    renderRadarReports();
-}, (err) => {
-    console.error("Error escuchando reportes del Radar Social:", err);
-    radarList.innerHTML = '<p class="admin-empty">No se han podido cargar los reportes.</p>';
-});
+function startRadarListener() {
+    onSnapshot(radarReportsQuery, (snapshot) => {
+        allRadarReports = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
+        renderRadarReports();
+    }, (err) => {
+        console.error("Error escuchando reportes del Radar Social:", err);
+        radarList.innerHTML = '<p class="admin-empty">No se han podido cargar los reportes.</p>';
+    });
+}
 
 radarList.addEventListener("click", async (e) => {
     const expireBtn = e.target.closest(".admin-expire-radar-btn");

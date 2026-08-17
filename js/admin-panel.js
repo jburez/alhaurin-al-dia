@@ -7,7 +7,31 @@ import {
     signInWithEmailAndPassword, signOut, onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 
+function escapeHTML(value = "") {
+    return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+
 const avisosCol = collection(db, "admin_avisos");
+const papeleraCol = collection(db, "admin_papelera");
+
+// "Eliminar" en Avisos/Eventos/Comercios/Radar Social ya no borra sin más:
+// mueve un snapshot completo del doc a admin_papelera (con la colección de
+// origen y el id original, para poder restaurar con el mismo id — importante
+// en Eventos, donde el id determina el slug de /planes/) y borra el original.
+async function moveToTrash(coleccionOrigen, docId, datos) {
+    await addDoc(papeleraCol, {
+        coleccionOrigen,
+        docIdOriginal: docId,
+        datos,
+        eliminadoEn: serverTimestamp(),
+    });
+    await deleteDoc(doc(db, coleccionOrigen, docId));
+}
 
 const loginGate = document.getElementById("admin-login-gate");
 const content = document.getElementById("admin-content");
@@ -53,6 +77,7 @@ onAuthStateChanged(auth, (user) => {
             startEstadoLocalListener();
             startRadarListener();
             startComerciosListener();
+            startPapeleraListener();
         }
     } else {
         if (user) signOut(auth); // sesión válida pero sin permisos: no dejar a medias
@@ -194,10 +219,10 @@ function renderAvisos() {
     avisosList.innerHTML = allAvisos.map((aviso) => `
         <article class="admin-list-item admin-list-item--${aviso.resuelto ? "resuelto" : aviso.estado || "neutral"}">
             <div class="admin-list-item-main">
-                <span class="admin-list-item-icon">${aviso.icono || "📢"}</span>
+                <span class="admin-list-item-icon">${escapeHTML(aviso.icono || "📢")}</span>
                 <div>
-                    <strong>${aviso.titulo || "(sin título)"}</strong>
-                    <span class="admin-list-item-meta">${aviso.tipo || ""}${aviso.resuelto ? " · Resuelto" : ` · ${aviso.estado || "neutral"}`}</span>
+                    <strong>${escapeHTML(aviso.titulo || "(sin título)")}</strong>
+                    <span class="admin-list-item-meta">${escapeHTML(aviso.tipo || "")}${aviso.resuelto ? " · Resuelto" : ` · ${escapeHTML(aviso.estado || "neutral")}`}</span>
                 </div>
             </div>
             <div class="admin-list-item-actions">
@@ -213,6 +238,7 @@ function startAvisosListener() {
     onSnapshot(avisosQuery, (snapshot) => {
         allAvisos = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
         renderAvisos();
+        renderDashboard();
     }, (err) => {
         console.error("Error escuchando avisos:", err);
         avisosList.innerHTML = '<p class="admin-empty">No se han podido cargar los avisos.</p>';
@@ -237,9 +263,11 @@ avisosList.addEventListener("click", async (e) => {
     const deleteBtn = e.target.closest(".admin-delete-btn");
     if (deleteBtn) {
         const id = deleteBtn.getAttribute("data-id");
-        if (!confirm("¿Eliminar este aviso permanentemente?")) return;
+        const aviso = allAvisos.find((a) => a.id === id);
+        if (!aviso || !confirm("¿Enviar este aviso a la papelera?")) return;
         try {
-            await deleteDoc(doc(db, "admin_avisos", id));
+            const { id: _id, ...datos } = aviso;
+            await moveToTrash("admin_avisos", id, datos);
         } catch (err) {
             console.error("Error eliminando aviso:", err);
             alert("No se ha podido eliminar el aviso.");
@@ -339,10 +367,10 @@ function renderEventos() {
     eventosList.innerHTML = allEventos.map((evento) => `
         <article class="admin-list-item admin-list-item--${evento.activo === false ? "resuelto" : "neutral"}">
             <div class="admin-list-item-main">
-                <span class="admin-list-item-icon">${evento.icono || "📅"}</span>
+                <span class="admin-list-item-icon">${escapeHTML(evento.icono || "📅")}</span>
                 <div>
-                    <strong>${evento.titulo || "(sin título)"}</strong>
-                    <span class="admin-list-item-meta">${formatEventoFecha(evento.inicio)}${evento.lugar ? ` · ${evento.lugar}` : ""}${evento.activo === false ? " · Inactivo" : ""}</span>
+                    <strong>${escapeHTML(evento.titulo || "(sin título)")}</strong>
+                    <span class="admin-list-item-meta">${escapeHTML(formatEventoFecha(evento.inicio))}${evento.lugar ? ` · ${escapeHTML(evento.lugar)}` : ""}${evento.activo === false ? " · Inactivo" : ""}</span>
                 </div>
             </div>
             <div class="admin-list-item-actions">
@@ -358,6 +386,7 @@ function startEventosListener() {
     onSnapshot(eventosQuery, (snapshot) => {
         allEventos = snapshot.docs.map((d) => ({ docId: d.id, ...d.data() }));
         renderEventos();
+        renderDashboard();
     }, (err) => {
         console.error("Error escuchando eventos:", err);
         eventosList.innerHTML = '<p class="admin-empty">No se han podido cargar los eventos.</p>';
@@ -382,9 +411,11 @@ eventosList.addEventListener("click", async (e) => {
     const deleteBtn = e.target.closest(".admin-delete-evento-btn");
     if (deleteBtn) {
         const id = deleteBtn.getAttribute("data-id");
-        if (!confirm("¿Eliminar este evento permanentemente? También se borrará su página en /planes/.")) return;
+        const evento = allEventos.find((ev) => ev.docId === id);
+        if (!evento || !confirm("¿Enviar este evento a la papelera? Su página en /planes/ desaparecerá hasta que se restaure.")) return;
         try {
-            await deleteDoc(doc(db, "admin_eventos", id));
+            const { docId: _docId, ...datos } = evento;
+            await moveToTrash("admin_eventos", id, datos);
         } catch (err) {
             console.error("Error eliminando evento:", err);
             alert("No se ha podido eliminar el evento.");
@@ -521,15 +552,15 @@ function renderRadarReports() {
     radarList.innerHTML = allRadarReports.map((r) => {
         const expired = radarIsExpired(r);
         const ttlInfo = !expired ? ` · ⏱ ${RADAR_TTL_LABELS[r.type] || "6h"}` : "";
-        const ubicacion = r.street ? ` · 📍 ${r.street}` : "";
+        const ubicacion = r.street ? ` · 📍 ${escapeHTML(r.street)}` : "";
         const votosInfo = ` · 👍 ${r.votes || 0}${r.dismisses ? ` · ❌ ${r.dismisses}` : ""}`;
         return `
             <article class="admin-list-item admin-list-item--${expired ? "resuelto" : "neutral"}">
                 <div class="admin-list-item-main">
                     <span class="admin-list-item-icon">${radarIconEmoji(r.type)}</span>
                     <div>
-                        <strong>${r.title || "(sin título)"}</strong>
-                        <span class="admin-list-item-meta">${radarTypeLabel(r.type)} · ${radarTimeAgo(r.ts)}${ttlInfo}${ubicacion}${votosInfo}${expired ? " · Expirado" : ""}</span>
+                        <strong>${escapeHTML(r.title || "(sin título)")}</strong>
+                        <span class="admin-list-item-meta">${escapeHTML(radarTypeLabel(r.type))} · ${radarTimeAgo(r.ts)}${ttlInfo}${ubicacion}${votosInfo}${expired ? " · Expirado" : ""}</span>
                     </div>
                 </div>
                 <div class="admin-list-item-actions">
@@ -546,6 +577,7 @@ function startRadarListener() {
     onSnapshot(radarReportsQuery, (snapshot) => {
         allRadarReports = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
         renderRadarReports();
+        renderDashboard();
     }, (err) => {
         console.error("Error escuchando reportes del Radar Social:", err);
         radarList.innerHTML = '<p class="admin-empty">No se han podido cargar los reportes.</p>';
@@ -568,9 +600,11 @@ radarList.addEventListener("click", async (e) => {
     const deleteBtn = e.target.closest(".admin-delete-radar-btn");
     if (deleteBtn) {
         const id = deleteBtn.getAttribute("data-id");
-        if (!confirm("¿Eliminar este reporte permanentemente para todo el mundo?")) return;
+        const reporte = allRadarReports.find((r) => r.id === id);
+        if (!reporte || !confirm("¿Enviar este reporte a la papelera? Deja de verse en el mapa público.")) return;
         try {
-            await deleteDoc(doc(db, "radar_reports", id));
+            const { id: _id, ...datos } = reporte;
+            await moveToTrash("radar_reports", id, datos);
         } catch (err) {
             console.error("Error eliminando reporte:", err);
             alert("No se ha podido eliminar el reporte.");
@@ -661,8 +695,8 @@ function renderComercios() {
             <div class="admin-list-item-main">
                 <span class="admin-list-item-icon">🏪</span>
                 <div>
-                    <strong>${comercio.nombre || "(sin nombre)"}</strong>
-                    <span class="admin-list-item-meta">${comercio.categoria || ""}${comercio.zona ? ` · ${comercio.zona}` : ""}${comercio.activo === false ? " · Inactivo" : ""}</span>
+                    <strong>${escapeHTML(comercio.nombre || "(sin nombre)")}</strong>
+                    <span class="admin-list-item-meta">${escapeHTML(comercio.categoria || "")}${comercio.zona ? ` · ${escapeHTML(comercio.zona)}` : ""}${comercio.activo === false ? " · Inactivo" : ""}</span>
                 </div>
             </div>
             <div class="admin-list-item-actions">
@@ -678,6 +712,7 @@ function startComerciosListener() {
     onSnapshot(comerciosQuery, (snapshot) => {
         allComercios = snapshot.docs.map((d) => ({ docId: d.id, ...d.data() }));
         renderComercios();
+        renderDashboard();
     }, (err) => {
         console.error("Error escuchando comercios:", err);
         comerciosList.innerHTML = '<p class="admin-empty">No se han podido cargar los comercios.</p>';
@@ -698,12 +733,122 @@ comerciosList.addEventListener("click", async (e) => {
     const deleteBtn = e.target.closest(".admin-delete-comercio-btn");
     if (deleteBtn) {
         const id = deleteBtn.getAttribute("data-id");
-        if (!confirm("¿Eliminar este comercio permanentemente?")) return;
+        const comercio = allComercios.find((c) => c.docId === id);
+        if (!comercio || !confirm("¿Enviar este comercio a la papelera?")) return;
         try {
-            await deleteDoc(doc(db, "admin_comercios", id));
+            const { docId: _docId, ...datos } = comercio;
+            await moveToTrash("admin_comercios", id, datos);
         } catch (err) {
             console.error("Error eliminando comercio:", err);
             alert("No se ha podido eliminar el comercio.");
         }
     }
 });
+
+// ===== Papelera: lista en vivo =====
+const papeleraList = document.getElementById("admin-papelera-list");
+let allPapelera = [];
+
+const PAPELERA_ORIGEN_LABEL = {
+    admin_avisos: "Aviso",
+    admin_eventos: "Evento",
+    admin_comercios: "Comercio",
+    radar_reports: "Radar Social",
+};
+
+function papeleraNombre(item) {
+    const d = item.datos || {};
+    return d.nombre || d.titulo || d.title || "(elemento)";
+}
+
+function formatPapeleraFecha(value) {
+    const date = value && typeof value.toDate === "function" ? value.toDate() : (value ? new Date(value) : null);
+    if (!date || Number.isNaN(date.getTime())) return "hace un momento";
+    return "el " + date.toLocaleDateString("es-ES", { day: "2-digit", month: "short" }) + " a las " + date.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" });
+}
+
+function renderPapelera() {
+    if (!allPapelera.length) {
+        papeleraList.innerHTML = '<p class="admin-empty">La papelera está vacía.</p>';
+        return;
+    }
+    papeleraList.innerHTML = allPapelera.map((item) => `
+        <article class="admin-list-item admin-list-item--papelera">
+            <div class="admin-list-item-main">
+                <span class="admin-list-item-icon">🗑️</span>
+                <div>
+                    <strong><span class="admin-trash-origin">${escapeHTML(PAPELERA_ORIGEN_LABEL[item.coleccionOrigen] || item.coleccionOrigen)}</span>${escapeHTML(papeleraNombre(item))}</strong>
+                    <span class="admin-list-item-meta">Eliminado ${formatPapeleraFecha(item.eliminadoEn)}</span>
+                </div>
+            </div>
+            <div class="admin-list-item-actions">
+                <button type="button" class="btn btn-secondary admin-restore-btn" data-id="${item.trashId}">Restaurar</button>
+                <button type="button" class="btn admin-purge-btn" data-id="${item.trashId}">Eliminar definitivamente</button>
+            </div>
+        </article>
+    `).join("");
+}
+
+function startPapeleraListener() {
+    const papeleraQuery = query(papeleraCol, orderBy("eliminadoEn", "desc"));
+    onSnapshot(papeleraQuery, (snapshot) => {
+        allPapelera = snapshot.docs.map((d) => ({ trashId: d.id, ...d.data() }));
+        renderPapelera();
+        renderDashboard();
+    }, (err) => {
+        console.error("Error escuchando la papelera:", err);
+        papeleraList.innerHTML = '<p class="admin-empty">No se ha podido cargar la papelera.</p>';
+    });
+}
+
+papeleraList.addEventListener("click", async (e) => {
+    const restoreBtn = e.target.closest(".admin-restore-btn");
+    if (restoreBtn) {
+        const trashId = restoreBtn.getAttribute("data-id");
+        const item = allPapelera.find((p) => p.trashId === trashId);
+        if (!item) return;
+        try {
+            await setDoc(doc(db, item.coleccionOrigen, item.docIdOriginal), { ...item.datos, actualizadoEn: serverTimestamp() });
+            await deleteDoc(doc(db, "admin_papelera", trashId));
+        } catch (err) {
+            console.error("Error restaurando elemento:", err);
+            alert("No se ha podido restaurar.");
+        }
+        return;
+    }
+
+    const purgeBtn = e.target.closest(".admin-purge-btn");
+    if (purgeBtn) {
+        const trashId = purgeBtn.getAttribute("data-id");
+        if (!confirm("¿Eliminar definitivamente? Esto ya no se puede deshacer.")) return;
+        try {
+            await deleteDoc(doc(db, "admin_papelera", trashId));
+        } catch (err) {
+            console.error("Error purgando elemento de la papelera:", err);
+            alert("No se ha podido eliminar definitivamente.");
+        }
+    }
+});
+
+// ===== Dashboard: contadores en vivo (reutiliza los datos ya cargados por
+// cada pestaña, sin lecturas extra a Firestore) =====
+const dashboardStats = document.getElementById("admin-dashboard-stats");
+
+function statTile(value, label, warning) {
+    return `<div class="admin-stat-tile${warning ? " admin-stat-tile--warning" : ""}"><div class="admin-stat-tile-value">${value}</div><span class="admin-stat-tile-label">${escapeHTML(label)}</span></div>`;
+}
+
+function renderDashboard() {
+    const avisosActivos = allAvisos.filter((a) => !a.resuelto).length;
+    const eventosActivos = allEventos.filter((e) => e.activo !== false).length;
+    const comerciosActivos = allComercios.filter((c) => c.activo !== false).length;
+    const radarActivos = allRadarReports.filter((r) => !radarIsExpired(r)).length;
+
+    dashboardStats.innerHTML = [
+        statTile(avisosActivos, `Aviso${avisosActivos === 1 ? "" : "s"} activo${avisosActivos === 1 ? "" : "s"}`),
+        statTile(eventosActivos, `Evento${eventosActivos === 1 ? "" : "s"} manual${eventosActivos === 1 ? "" : "es"} activo${eventosActivos === 1 ? "" : "s"}`),
+        statTile(comerciosActivos, `Comercio${comerciosActivos === 1 ? "" : "s"} destacado${comerciosActivos === 1 ? "" : "s"} activo${comerciosActivos === 1 ? "" : "s"}`),
+        statTile(radarActivos, `Reporte${radarActivos === 1 ? "" : "s"} activo${radarActivos === 1 ? "" : "s"} en Radar Social`),
+        statTile(allPapelera.length, `Elemento${allPapelera.length === 1 ? "" : "s"} en papelera`, allPapelera.length > 0),
+    ].join("");
+}

@@ -108,5 +108,14 @@ service cloud.firestore {
       allow update: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
       allow delete: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
     }
+
+    // Papelera del panel admin: al "eliminar" un aviso/evento/comercio/
+    // reporte del Radar Social desde /admin/, en vez de borrarlo sin más se
+    // mueve aquí (snapshot completo + colección de origen), y el doc
+    // original se borra. Permite restaurar. Solo el admin, sin validación
+    // de forma en `datos` porque su esquema varía según coleccionOrigen.
+    match /admin_papelera/{docId} {
+      allow read, write: if request.auth != null && request.auth.uid == "Cqm2OKSnOgUf09Leb8D5YePIcnW2";
+    }
   }
 }

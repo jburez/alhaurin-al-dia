@@ -46,14 +46,24 @@
             <p class="admin-sync-note">Los cambios se publican en la web automáticamente en un plazo de hasta 15 minutos (workflow de sincronización).</p>
 
             <nav class="admin-tabs" role="tablist">
-                <button type="button" class="admin-tab active" data-tab="avisos">Avisos</button>
+                <button type="button" class="admin-tab active" data-tab="dashboard">Dashboard</button>
+                <button type="button" class="admin-tab" data-tab="avisos">Avisos</button>
                 <button type="button" class="admin-tab" data-tab="eventos">Eventos</button>
                 <button type="button" class="admin-tab" data-tab="estado-local">Estado local</button>
                 <button type="button" class="admin-tab" data-tab="radar-social">Radar Social</button>
                 <button type="button" class="admin-tab" data-tab="comercios">Comercios</button>
+                <button type="button" class="admin-tab" data-tab="papelera">Papelera</button>
             </nav>
 
-            <section class="admin-panel" data-panel="avisos">
+            <section class="admin-panel" data-panel="dashboard">
+                <div class="admin-panel-header">
+                    <h2>Resumen</h2>
+                </div>
+                <p class="admin-panel-note">Contadores en vivo del contenido que gestiona este panel. No incluye visitas ni tráfico del sitio — no hay ninguna herramienta de analítica instalada todavía.</p>
+                <div id="admin-dashboard-stats" class="admin-dashboard-grid"></div>
+            </section>
+
+            <section class="admin-panel" data-panel="avisos" hidden>
                 <div class="admin-panel-header">
                     <h2>Avisos locales</h2>
                     <button type="button" id="open-aviso-modal" class="btn btn-primary">+ Nuevo aviso</button>
@@ -168,6 +178,14 @@
                 </div>
                 <p class="admin-panel-note">Espacios patrocinados o colaboraciones locales que aparecen en la home. Solo se muestran hasta 2 activos a la vez en portada.</p>
                 <div id="admin-comercios-list" class="admin-list"></div>
+            </section>
+
+            <section class="admin-panel" data-panel="papelera" hidden>
+                <div class="admin-panel-header">
+                    <h2>Papelera</h2>
+                </div>
+                <p class="admin-panel-note">Lo eliminado desde Avisos, Eventos, Comercios y Radar Social pasa por aquí antes de borrarse de verdad. Restaura si fue un error, o elimina definitivamente para liberar espacio.</p>
+                <div id="admin-papelera-list" class="admin-list"></div>
             </section>
         </main>
     </div>

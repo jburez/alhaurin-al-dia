@@ -4,7 +4,9 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://alhaurinaldia.es';
 const NEWS_FILE = path.join(ROOT, 'data', 'noticias.json');
+const NEWS_ARCHIVE_FILE = path.join(ROOT, 'data', 'noticias-archivo.json');
 const GUIDE_FILE = path.join(ROOT, 'data', 'guia-util.json');
+const EVENTO_SLUGS_FILE = path.join(ROOT, 'data', 'evento-slugs.json');
 const REPORT_DIR = path.join(ROOT, 'reports');
 const REPORT_FILE = path.join(REPORT_DIR, 'orphan-pages-report.json');
 const WARN_ONLY = process.argv.includes('--warn-only');
@@ -23,14 +25,22 @@ const STRUCTURAL_URLS = new Set([
   '/avisos/',
   '/tiempo/',
   '/tiempo/comparador/',
+  '/tiempo/agro/',
+  '/tiempo/prevision-horaria/',
+  '/tiempo/radar/',
   '/seguimiento/',
   '/radar-social/',
   '/mi-alhaurin/',
   '/planes/',
+  '/planes/calendario/',
   '/comercios/',
   '/anunciarse/',
   '/sobre-nosotros/',
   '/contacto/',
+  '/admin/',
+  '/boletin-oficial/',
+  '/boletin-whatsapp.html',
+  '/virgen-de-gracia-2026/',
 ]);
 
 const GUIDE_SKIP_PREFIXES = [
@@ -97,14 +107,20 @@ function isGuideSpecial(url) {
   return GUIDE_SKIP_PREFIXES.some(prefix => url === prefix || url.startsWith(prefix));
 }
 
+function isEventoUrl(url) {
+  return url.startsWith('/planes/') && url !== '/planes/' && url !== '/planes/calendario/';
+}
+
 function main() {
   const htmlFiles = walk(ROOT);
   const allUrls = htmlFiles.map(file => ({ file: path.relative(ROOT, file).replace(/\\/g, '/'), url: toUrl(file) }));
   const noticias = readJson(NEWS_FILE, []);
+  const noticiasArchivo = readJson(NEWS_ARCHIVE_FILE, []);
   const guideItems = readJson(GUIDE_FILE, []);
+  const eventoSlugs = readJson(EVENTO_SLUGS_FILE, {});
 
   const expectedNewsUrls = new Set(
-    (Array.isArray(noticias) ? noticias : [])
+    [...(Array.isArray(noticias) ? noticias : []), ...(Array.isArray(noticiasArchivo) ? noticiasArchivo : [])]
       .map(item => normalizeNewsPage(item.pagina || ''))
       .filter(Boolean)
   );
@@ -115,8 +131,15 @@ function main() {
       .filter(Boolean)
   );
 
+  const expectedEventoUrls = new Set(
+    Object.values(eventoSlugs && typeof eventoSlugs === 'object' ? eventoSlugs : {})
+      .map(slug => normalizeUrlPath(`/planes/${slug}/`))
+      .filter(Boolean)
+  );
+
   const orphanNewsPages = [];
   const orphanGuidePages = [];
+  const orphanEventoPages = [];
   const temporaryPages = [];
   const unexpectedHtmlPages = [];
 
@@ -142,6 +165,11 @@ function main() {
       continue;
     }
 
+    if (isEventoUrl(url)) {
+      if (!expectedEventoUrls.has(url)) orphanEventoPages.push({ url, file });
+      continue;
+    }
+
     unexpectedHtmlPages.push({ url, file });
   }
 
@@ -152,14 +180,17 @@ function main() {
       htmlCount: allUrls.length,
       expectedNewsCount: expectedNewsUrls.size,
       expectedGuideCount: expectedGuideUrls.size,
+      expectedEventoCount: expectedEventoUrls.size,
       orphanNewsCount: orphanNewsPages.length,
       orphanGuideCount: orphanGuidePages.length,
+      orphanEventoCount: orphanEventoPages.length,
       temporaryPagesCount: temporaryPages.length,
       unexpectedHtmlCount: unexpectedHtmlPages.length,
-      status: orphanNewsPages.length || orphanGuidePages.length || temporaryPages.length || unexpectedHtmlPages.length ? 'warn' : 'ok',
+      status: orphanNewsPages.length || orphanGuidePages.length || orphanEventoPages.length || temporaryPages.length || unexpectedHtmlPages.length ? 'warn' : 'ok',
     },
     orphanNewsPages,
     orphanGuidePages,
+    orphanEventoPages,
     temporaryPages,
     unexpectedHtmlPages,
   };
@@ -171,8 +202,10 @@ function main() {
   console.log(`HTML analizados: ${report.summary.htmlCount}`);
   console.log(`Noticias esperadas: ${report.summary.expectedNewsCount}`);
   console.log(`Guía útil esperada: ${report.summary.expectedGuideCount}`);
+  console.log(`Eventos esperados: ${report.summary.expectedEventoCount}`);
   console.log(`Noticias huérfanas: ${report.summary.orphanNewsCount}`);
   console.log(`Guía útil huérfana: ${report.summary.orphanGuideCount}`);
+  console.log(`Eventos huérfanos: ${report.summary.orphanEventoCount}`);
   console.log(`Temporales detectadas: ${report.summary.temporaryPagesCount}`);
   console.log(`HTML inesperados: ${report.summary.unexpectedHtmlCount}`);
   console.log(`Informe: ${path.relative(ROOT, REPORT_FILE)}`);

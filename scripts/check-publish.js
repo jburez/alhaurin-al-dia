@@ -172,6 +172,7 @@ function checkAuditReports(errors, warnings) {
     const report = readJson(orphanReportPath, null);
     if (report?.summary?.orphanNewsCount > 0) errors.push(`Hay noticias huérfanas: ${report.summary.orphanNewsCount}`);
     if (report?.summary?.orphanGuideCount > 0) errors.push(`Hay páginas de guía huérfanas: ${report.summary.orphanGuideCount}`);
+    if (report?.summary?.orphanEventoCount > 0) errors.push(`Hay páginas de eventos huérfanas: ${report.summary.orphanEventoCount}`);
     if (report?.summary?.temporaryPagesCount > 0) errors.push(`Hay páginas temporales: ${report.summary.temporaryPagesCount}`);
     if (report?.summary?.unexpectedHtmlCount > 0) errors.push(`Hay HTML inesperados: ${report.summary.unexpectedHtmlCount}`);
   } else {

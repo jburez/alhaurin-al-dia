@@ -120,6 +120,26 @@ function arePotentialDuplicates(a, b) {
   return similarity >= 0.72 && isWithinDuplicateWindow(a, b);
 }
 
+// Igual que arePotentialDuplicates, pero sin el match por pagina exacta:
+// si una activa y una archivada comparten la misma URL, no es un duplicado
+// de contenido, es la MISMA página resucitada (archivada como huérfana en
+// un ciclo anterior y vuelta a traer por el scraping). Ese caso no debe
+// descartar la activa, se resuelve limpiando el registro obsoleto del
+// archivo (ver pruneResurrectedFromArchive).
+function isArchiveDuplicate(activa, archivada) {
+  const aSource = sourceKey(activa);
+  const bSource = sourceKey(archivada);
+  if (aSource && bSource && aSource === bSource) return true;
+
+  if (pageKey(activa) && pageKey(activa) === pageKey(archivada)) return false;
+
+  const textA = `${activa.titulo || ''} ${activa.descripcion || activa.resumen || ''}`;
+  const textB = `${archivada.titulo || ''} ${archivada.descripcion || archivada.resumen || ''}`;
+  const similarity = jaccard(textA, textB);
+
+  return similarity >= 0.72 && isWithinDuplicateWindow(activa, archivada);
+}
+
 function summarize(noticia) {
   return {
     titulo: noticia.titulo || '',
@@ -138,7 +158,25 @@ function chooseCanonical(group) {
   })[0];
 }
 
-function dedupeNews(noticias) {
+function findArchiveMatch(group, archivo) {
+  for (const noticia of group) {
+    const match = archivo.find(item => isArchiveDuplicate(noticia, item));
+    if (match) return match;
+  }
+  return null;
+}
+
+// Si una noticia activa comparte pagina con una entrada del archivo, esa
+// entrada quedó obsoleta (la página volvió a estar viva) y hay que
+// retirarla para que el archivo no diga "huérfana" de algo que se está
+// sirviendo ahora mismo como actual.
+function pruneResurrectedFromArchive(kept, archivo) {
+  const activePages = new Set(kept.map(pageKey).filter(Boolean));
+  const pruned = archivo.filter(item => !activePages.has(pageKey(item)));
+  return { pruned, removedCount: archivo.length - pruned.length };
+}
+
+function dedupeNews(noticias, archivo = []) {
   const groups = [];
 
   for (const noticia of noticias) {
@@ -157,9 +195,21 @@ function dedupeNews(noticias) {
 
   const kept = [];
   const duplicateGroups = [];
+  const archiveDuplicateGroups = [];
 
   for (const group of groups) {
     const canonical = chooseCanonical(group);
+    const archiveMatch = findArchiveMatch(group, archivo);
+
+    if (archiveMatch) {
+      archiveDuplicateGroups.push({
+        descartada: summarize(canonical),
+        yaArchivadaComo: summarize(archiveMatch),
+        resto: group.filter(item => item !== canonical).map(summarize),
+      });
+      continue;
+    }
+
     kept.push(canonical);
 
     if (group.length > 1) {
@@ -177,6 +227,7 @@ function dedupeNews(noticias) {
   return {
     kept: kept.slice(0, MAX_NEWS),
     duplicateGroups,
+    archiveDuplicateGroups,
     removedByLimit: droppedByLimit,
   };
 }
@@ -199,13 +250,21 @@ function archiveDropped(dropped) {
 
 function main() {
   const noticias = readJson(DATA_FILE, []);
+  const archivo = readJson(ARCHIVE_FILE, []);
 
   if (!Array.isArray(noticias)) {
     console.error('data/noticias.json no contiene un array');
     process.exit(1);
   }
 
-  const result = dedupeNews(noticias);
+  const archivoValido = Array.isArray(archivo) ? archivo : [];
+  const result = dedupeNews(noticias, archivoValido);
+  const { pruned, removedCount: resurrectedCount } = pruneResurrectedFromArchive(result.kept, archivoValido);
+
+  if (WRITE && resurrectedCount > 0) {
+    writeJson(ARCHIVE_FILE, pruned);
+  }
+
   const archivedCount = WRITE ? archiveDropped(result.removedByLimit) : 0;
   const report = {
     generatedAt: new Date().toISOString(),
@@ -213,9 +272,12 @@ function main() {
     inputCount: noticias.length,
     outputCount: result.kept.length,
     duplicateGroupsCount: result.duplicateGroups.length,
+    archiveDuplicateGroupsCount: result.archiveDuplicateGroups.length,
+    resurrectedCount,
     removedByLimitCount: result.removedByLimit.length,
     archivedCount,
     duplicateGroups: result.duplicateGroups,
+    archiveDuplicateGroups: result.archiveDuplicateGroups,
     removedByLimit: result.removedByLimit.map(summarize),
   };
 
@@ -229,7 +291,9 @@ function main() {
   console.log(`Deduplicación noticias: ${WRITE ? 'WRITE' : 'DRY-RUN'}`);
   console.log(`Entrada: ${report.inputCount}`);
   console.log(`Salida: ${report.outputCount}`);
-  console.log(`Grupos duplicados: ${report.duplicateGroupsCount}`);
+  console.log(`Grupos duplicados (dentro del lote activo): ${report.duplicateGroupsCount}`);
+  console.log(`Descartadas por coincidir con el archivo: ${report.archiveDuplicateGroupsCount}`);
+  console.log(`Registros obsoletos limpiados del archivo (páginas resucitadas): ${resurrectedCount}`);
   console.log(`Recortadas por límite: ${report.removedByLimitCount}`);
   console.log(`Archivadas (nuevas): ${archivedCount}`);
   console.log(`Informe: ${path.relative(ROOT, REPORT_FILE)}`);

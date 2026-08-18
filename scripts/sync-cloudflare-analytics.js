@@ -22,6 +22,13 @@ const ROOT = path.resolve(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT, 'data', 'analytics-resumen.json');
 const API_BASE = 'https://api.cloudflare.com/client/v4';
 const SITE_HOST = 'alhaurinaldia.es';
+// Mismo valor que el token del beacon en scripts/lib/analytics.js — no es
+// secreto (va embebido en el HTML público de las 858 páginas del sitio).
+// Se usa para identificar el site de Web Analytics de forma inequívoca: el
+// campo `host` que devuelve rum/site_info/list no hizo match exacto con
+// SITE_HOST en la práctica (posible normalización distinta por parte de la
+// API), mientras que site_token es un identificador único sin ambigüedad.
+const SITE_TOKEN = 'dc9eeda336f943ca87175a3b83faee35';
 
 function writeJSON(file, data) {
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
@@ -57,10 +64,10 @@ async function resolveAccountId(token) {
 async function resolveSiteTag(token, accountId) {
   const data = await cfFetch(token, `${API_BASE}/accounts/${accountId}/rum/site_info/list`);
   const sites = data.result || [];
-  const site = sites.find((s) => s.host === SITE_HOST);
+  const site = sites.find((s) => s.site_token === SITE_TOKEN) || sites.find((s) => s.host === SITE_HOST);
   if (!site) {
     throw new Error(
-      `No se encontró ningún site de Web Analytics para el host ${SITE_HOST}. `
+      `No se encontró ningún site de Web Analytics para ${SITE_HOST} (ni por site_token ni por host). `
       + `Sites disponibles en esta cuenta: ${JSON.stringify(sites.map((s) => ({ host: s.host, site_tag: s.site_tag, site_token: s.site_token })))}`
     );
   }

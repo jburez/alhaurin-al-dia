@@ -33,6 +33,7 @@ CATEGORIES = [
     {"id": "veracruz", "name": "Santa Vera Cruz",       "color": "#22C55E", "keywords": ["vera cruz", "veracruz"]},
     {"id": "futbol",   "name": "Fútbol",                "color": "#EF4444", "keywords": ["fútbol", "futbol", "cd alhaurino", "alhaurino vs", "málaga cf", "🆚"]},
     {"id": "motor",    "name": "Motor",                 "color": "#6366F1", "keywords": ["moto gp", "formula 1", "motogp", "🏍"]},
+    {"id": "cine",     "name": "Cine",                  "color": "#F97316", "keywords": ["cine", "🎬", "🍿"]},
     {"id": "musica",   "name": "Música en vivo",        "color": "#F59E0B", "keywords": ["music", "músic", "dj", "🎶", "🎸", "🎙", "concierto", "live"]},
     {"id": "gastro",   "name": "Gastronomía",           "color": "#EC4899", "keywords": ["gastro", "tomate", "brunch", "ruta gastro", "🍽", "🍅"]},
 ]
@@ -338,9 +339,22 @@ def main() -> int:
 
     removed = cleanup_orphan_manual_pages(old_id_to_slug, id_to_slug)
 
+    # El mapa de slugs es acumulativo (mismo criterio que
+    # data/noticias-archivo.json para noticias): los eventos automáticos
+    # (ayuntamiento/alhaurinhoy) caen del agenda-local.json activo a los 30
+    # días (ver el recorte en actualizar_agenda_*.py), pero su página en
+    # /planes/ se conserva a propósito para no romper enlaces ya indexados
+    # — así que el mapa de slugs tiene que seguir sabiendo dónde está. Los
+    # eventos "manual-*" son la excepción: si cleanup_orphan_manual_pages()
+    # acaba de borrar su página, se retiran también del mapa acumulado.
+    id_to_slug_acumulado = {**old_id_to_slug, **id_to_slug}
+    for event_id in old_id_to_slug:
+        if event_id.startswith("manual-") and event_id not in id_to_slug:
+            id_to_slug_acumulado.pop(event_id, None)
+
     # Write slug map for calendario.js to use
     slug_map_path.write_text(
-        json.dumps(id_to_slug, ensure_ascii=False, indent=2) + "\n",
+        json.dumps(id_to_slug_acumulado, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 

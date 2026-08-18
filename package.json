@@ -17,6 +17,7 @@
     "guide:pages": "node scripts/render-guide-pages.js",
     "guide:static": "node scripts/render-guide-static.js",
     "farmacia:static": "node scripts/render-farmacia-guardia-static.js",
+    "movilidad:static": "node scripts/render-movilidad-static.js",
     "boletin:static": "node scripts/render-boletin-static.js",
     "tiempo:static": "node scripts/render-tiempo-static.js",
     "home:widgets": "node scripts/render-home-widgets-static.js",
@@ -29,7 +30,7 @@
     "seo:orphans:strict": "node scripts/audit-orphan-pages.js",
     "publish:check": "node scripts/check-publish.js",
     "daily": "npm run build && npm run publish:check",
-    "build": "npm run news && npm run news:dedupe && npm run news:orphans:archive && npm run news:static && npm run news:archive:page && npm run news:rss && npm run seo && npm run home:static && npm run farmacia:static && npm run home:widgets && npm run boletin:static && npm run tiempo:static && npm run guide:pages && npm run guide:static && npm run seo:twitter-cards && npm run sitemap && npm run seo:audit && npm run seo:orphans",
+    "build": "npm run news && npm run news:dedupe && npm run news:orphans:archive && npm run news:static && npm run news:archive:page && npm run news:rss && npm run seo && npm run home:static && npm run farmacia:static && npm run home:widgets && npm run boletin:static && npm run tiempo:static && npm run guide:pages && npm run movilidad:static && npm run guide:static && npm run seo:twitter-cards && npm run sitemap && npm run seo:audit && npm run seo:orphans",
     "build:publish": "npm run build && npm run publish:check",
     "admin:sync": "node scripts/sync-admin-firestore.js"
   },

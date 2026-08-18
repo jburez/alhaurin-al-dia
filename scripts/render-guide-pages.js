@@ -9,6 +9,7 @@ const GUIDE_FILE = path.join(ROOT, 'data', 'guia-util.json');
 const GUIDE_DIR = path.join(ROOT, 'guia-util');
 const SKIP_IDS = new Set([
   'farmacias',
+  'movilidad', // ver scripts/render-movilidad-static.js
 ]);
 
 function readJson(file, fallback) {

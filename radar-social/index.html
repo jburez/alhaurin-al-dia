@@ -364,6 +364,22 @@
 
         const reportsCol = collection(db, "radar_reports");
 
+        // Los reportes los escribe cualquier visitante anónimo desde el propio
+        // formulario público (title/desc/name/street/subtype no están
+        // restringidos por firestore.rules más allá del tamaño/tipo), así que
+        // hay que escapar antes de insertarlos como HTML — si no, un reporte
+        // con <script> o un onerror en el título/descripción se ejecutaría en
+        // el navegador de cualquiera que vea el mapa, incluida una sesión
+        // admin autenticada.
+        function escapeHTML(value = '') {
+            return String(value)
+                .replaceAll('&', '&amp;')
+                .replaceAll('<', '&lt;')
+                .replaceAll('>', '&gt;')
+                .replaceAll('"', '&quot;')
+                .replaceAll("'", '&#039;');
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             const map = L.map('radar-map').setView([36.6439, -4.6892], 13);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -502,14 +518,14 @@
                     });
                     const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(markersGroup);
                     let popupExtra = '';
-                    if (r.subtype) popupExtra += `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;margin-bottom:4px;">${SUBTYPE_LABELS[r.subtype] || r.subtype}</span><br>`;
-                    if (r.street) popupExtra += `<span style="font-size:12px;color:#64748b;">📍 ${r.street}</span><br>`;
+                    if (r.subtype) popupExtra += `<span style="display:inline-block;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;margin-bottom:4px;">${escapeHTML(SUBTYPE_LABELS[r.subtype] || r.subtype)}</span><br>`;
+                    if (r.street) popupExtra += `<span style="font-size:12px;color:#64748b;">📍 ${escapeHTML(r.street)}</span><br>`;
                     marker.bindPopup(`
                         <div style="font-family: system-ui; padding: 4px; max-width: 260px;">
-                            <strong>${iconEmoji} ${r.title}</strong><br>
+                            <strong>${iconEmoji} ${escapeHTML(r.title)}</strong><br>
                             ${popupExtra}
-                            <p style="margin: 4px 0; font-size: 13px;">${r.desc}</p>
-                            <small style="color: #666;">Por ${r.name || 'Vecino'} · ${timeAgo(r.ts)}</small>
+                            <p style="margin: 4px 0; font-size: 13px;">${escapeHTML(r.desc)}</p>
+                            <small style="color: #666;">Por ${escapeHTML(r.name || 'Vecino')} · ${timeAgo(r.ts)}</small>
                         </div>
                     `);
                 }
@@ -536,14 +552,14 @@
 
                 item.innerHTML = `
                     <div class="radar-feed-top">
-                        <span class="radar-feed-type">${iconEmoji} ${typeLabel}${r.subtype ? ` · ${SUBTYPE_LABELS[r.subtype] || r.subtype}` : ''}${expiredBadge}</span>
+                        <span class="radar-feed-type">${iconEmoji} ${typeLabel}${r.subtype ? ` · ${escapeHTML(SUBTYPE_LABELS[r.subtype] || r.subtype)}` : ''}${expiredBadge}</span>
                         <span class="radar-feed-time">${timeAgo(r.ts)}${ttlInfo}</span>
                     </div>
-                    <h3>${r.title}</h3>
-                    ${r.street ? `<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">📍 ${r.street}</div>` : ''}
-                    <p>${r.desc}</p>
+                    <h3>${escapeHTML(r.title)}</h3>
+                    ${r.street ? `<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">📍 ${escapeHTML(r.street)}</div>` : ''}
+                    <p>${escapeHTML(r.desc)}</p>
                     <div class="radar-feed-footer">
-                        <span class="radar-feed-user">Por ${r.name || 'Vecino'}</span>
+                        <span class="radar-feed-user">Por ${escapeHTML(r.name || 'Vecino')}</span>
                         <div style="display:flex;gap:6px;flex-wrap:wrap;">${buttons}</div>
                     </div>
                 `;

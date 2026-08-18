@@ -6,8 +6,12 @@ const SITE_URL = 'https://alhaurinaldia.es';
 const WARN_ONLY = process.argv.includes('--warn-only');
 const REPORT_DIR = path.join(ROOT, 'reports');
 const REPORT_FILE = path.join(REPORT_DIR, 'seo-audit-report.json');
-const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'reports', 'tmp']);
+const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'reports', 'tmp', 'admin']);
 const IGNORE_FILES = new Set(['404.html', 'index_old.html']);
+// /planes/calendario/ es un stub de redirección (meta refresh a /planes/,
+// donde vive el calendario real) con su propio canonical ya correcto: no
+// tiene sentido pedirle metadatos de página de contenido.
+const IGNORE_URLS = new Set(['/planes/calendario/']);
 
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -65,8 +69,10 @@ function auditHtmlFiles() {
   const missingDescription = [];
 
   for (const file of htmlFiles) {
-    const html = fs.readFileSync(file, 'utf8');
     const url = toUrl(file);
+    if (IGNORE_URLS.has(url)) continue;
+
+    const html = fs.readFileSync(file, 'utf8');
 
     if (!/<link\s+rel=["']canonical["']/i.test(html)) {
       missingCanonical.push(url);

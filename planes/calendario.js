@@ -17,7 +17,16 @@
 
   function getCategory(event) {
     const text = `${event.titulo || ""} ${event.tipo || ""} ${event.descripcion || ""}`.toLowerCase();
+    // "cine" se comprueba aparte: solo cuenta si es el tema del título
+    // (p.ej. "Cine de Verano"), no si aparece de pasada en la descripción
+    // (p.ej. "cena, juegos y cine" en un evento familiar que no es una
+    // proyección). El emoji 🎬/🍿 sí vale en cualquier sitio.
+    const titulo = (event.titulo || "").toLowerCase();
+    if (/\bcine\b/.test(titulo) || text.includes("🎬") || text.includes("🍿")) {
+      return CATEGORIES.find(cat => cat.id === "cine");
+    }
     for (const cat of CATEGORIES) {
+      if (cat.id === "cine") continue;
       if (cat.keywords.some(kw => text.includes(kw))) return cat;
     }
     return DEFAULT_CAT;

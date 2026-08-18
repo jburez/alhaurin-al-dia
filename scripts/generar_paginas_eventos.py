@@ -42,7 +42,16 @@ DEFAULT_CAT = {"id": "otros", "name": "Otros eventos", "color": "#6B7280"}
 
 def get_category(event: dict[str, Any]) -> dict[str, Any]:
     text = f"{event.get('titulo', '')} {event.get('tipo', '')} {event.get('descripcion', '')}".lower()
+    # "cine" se comprueba aparte del bucle genérico: solo cuenta si es el
+    # tema del título (p.ej. "Cine de Verano"), no si aparece de pasada en
+    # la descripción (p.ej. "cena, juegos y cine" en un evento familiar que
+    # no es una proyección). El emoji 🎬/🍿 sí vale en cualquier sitio.
+    titulo = str(event.get("titulo", "")).lower()
+    if re.search(r"\bcine\b", titulo) or "🎬" in text or "🍿" in text:
+        return next(cat for cat in CATEGORIES if cat["id"] == "cine")
     for cat in CATEGORIES:
+        if cat["id"] == "cine":
+            continue
         if any(kw in text for kw in cat["keywords"]):
             return cat
     return DEFAULT_CAT

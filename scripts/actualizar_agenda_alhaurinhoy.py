@@ -94,7 +94,11 @@ def guess_category(title: str, content: str) -> tuple[str, str]:
         return "⚽", "Deportes"
     if any(w in combined for w in ["moto gp", "motogp", "🏍", "formula 1"]):
         return "🏍️", "Motor"
-    if any(w in combined for w in ["cine", "🎬", "🍿"]):
+    # "cine" solo cuenta como categoría si es el tema del título (p.ej.
+    # "Cine de Verano"), no si aparece de pasada en la descripción (p.ej.
+    # "cena, juegos y cine" en un evento familiar que no es una proyección).
+    # El emoji 🎬/🍿 sí vale en cualquier sitio: es una señal inequívoca.
+    if re.search(r"\bcine\b", title.lower()) or "🎬" in combined or "🍿" in combined:
         return "🎬", "Cine"
     if any(w in combined for w in ["music", "músic", "dj", "concert", "🎶", "🎸", "🎙"]):
         return "🎵", "Música en vivo"

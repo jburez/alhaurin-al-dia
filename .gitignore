@@ -5,3 +5,7 @@ node_modules/
 
 # Informes locales generados por auditorías SEO
 reports/*.json
+
+# Cloudflare Worker: estado local de wrangler y secretos de desarrollo
+cloudflare/*/.wrangler/
+cloudflare/*/.dev.vars

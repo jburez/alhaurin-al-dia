@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { SITE_FOOTER_HTML } = require('./lib/footer');
+const { CF_ANALYTICS_SNIPPET } = require('./lib/analytics');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://alhaurinaldia.es';
@@ -209,6 +210,7 @@ function renderPage(item) {
     ${renderJsonLd(webPage)}
     ${renderJsonLd(breadcrumb)}
     ${renderJsonLd(renderFaq(item))}
+    ${CF_ANALYTICS_SNIPPET}
 </head>
 <body>
     <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>${escapeHtml(category)} · Recurso útil</span></div></div>

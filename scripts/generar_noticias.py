@@ -17,6 +17,7 @@ import urllib3
 from dotenv import load_dotenv
 
 from lib.footer import SITE_FOOTER_HTML
+from lib.analytics import CF_ANALYTICS_SNIPPET
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
@@ -672,6 +673,7 @@ def html_header(title, description, canonical, image="", css_prefix="..", og_typ
     <link rel="stylesheet" href="{css_prefix}/css/ads.css">{f"""
     <link rel="stylesheet" href="{css_prefix}/css/article.css">
     <link rel="stylesheet" href="{css_prefix}/css/article-share.css">""" if incluir_article_css else ''}
+    {CF_ANALYTICS_SNIPPET}
 </head>'''
 
 

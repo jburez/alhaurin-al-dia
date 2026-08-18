@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { SITE_FOOTER_HTML } = require('./lib/footer');
+const { CF_ANALYTICS_SNIPPET } = require('./lib/analytics');
 
 const ROOT = path.join(__dirname, '..');
 const TIEMPO_HTML_PATH = path.join(ROOT, 'tiempo', 'index.html');
@@ -141,6 +142,7 @@ function renderTiempoPage() {
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/ads.css">
     <link rel="stylesheet" href="../css/home-live.css">
+    ${CF_ANALYTICS_SNIPPET}
 </head>
 
 <body>

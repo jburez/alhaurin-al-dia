@@ -19,6 +19,7 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from lib.footer import SITE_FOOTER_HTML
+from lib.analytics import CF_ANALYTICS_SNIPPET
 
 ROOT = Path(__file__).resolve().parents[1]
 AGENDA_PATH = ROOT / "data" / "agenda-local.json"
@@ -228,6 +229,7 @@ def generate_event_page(event: dict[str, Any], slug: str) -> str:
         }}
         .ev-cta:hover {{ background: var(--accent-dark); }}
     </style>
+    {CF_ANALYTICS_SNIPPET}
 </head>
 <body>
     <div class="topbar">

@@ -1,7 +1,21 @@
 {
-  "actualizado": "2026-08-18T07:50:59.025Z",
+  "actualizado": "2026-08-18T08:24:04.375Z",
   "resumen": "Avisos locales activos de Alhaurín el Grande.",
   "avisos": [
+    {
+      "id": "SNDV1W8GXfljpzzfPa2U",
+      "tipo": "Prueba",
+      "icono": "📢",
+      "titulo": "PRUEBA papelera ciclo completo",
+      "detalle": "Test end-to-end de papelera, se borra al final.",
+      "estado": "warning",
+      "fuente": "",
+      "url": "",
+      "inicio": null,
+      "fin": null,
+      "activo": true,
+      "resuelto": false
+    },
     {
       "id": "vLXg3WY0vrBYbqCTbOI3",
       "tipo": "Esto es un test",

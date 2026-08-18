@@ -11,6 +11,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import date, datetime
@@ -27,6 +28,21 @@ AEMET_WEB_URL = "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhauri
 AEMET_OPENDATA_BASE = "https://opendata.aemet.es/opendata"
 COORDS = {"lat": 36.6403, "lon": -4.6892}  # Alhaurín el Grande
 SAIH_EMBALSES_URL = "https://www.redhidrosurmedioambiente.es/saih/informe/embalses"
+# AEMET no publica datos de polen en su OpenData (revisado su catálogo
+# completo: Observación, Predicción, Avisos, Radar, Climatología... nada de
+# polen). El organismo oficial en España es la Red Española de Aerobiología
+# (REA, Universidad de Córdoba), que no tiene API pública, solo web. Se usa
+# en su lugar Open-Meteo Air Quality API (CAMS European Air Quality,
+# gratuita y sin clave) — cubre gramíneas y olivo, que es lo que ya se venía
+# mostrando. Solo disponible en Europa y en temporada de polinización.
+POLEN_URL = "https://air-quality-api.open-meteo.com/v1/air-quality"
+# Umbrales oficiales de la REA (granos/m³, media diaria): <1 nulo, resto por
+# tramos según alergenicidad de cada especie (el olivo es menos alergénico
+# a igual concentración que las gramíneas, de ahí umbrales más altos).
+POLEN_UMBRALES = {
+    "gramineas": {"moderado": 10, "alto": 50},
+    "olivo": {"moderado": 50, "alto": 200},
+}
 # ids de estación SAIH Hidrosur -> nombre a mostrar (mismos 4 embalses que antes,
 # ahora con datos reales en vez de constantes fijas en el código).
 SAIH_EMBALSES_IDS = {
@@ -83,7 +99,19 @@ def obtener_icono_cielo(code: str, desc: str) -> str:
     return "☀️"
 
 
-def calcular_actividades(t_max_num: int, prob_lluvia_num: int, desc: str) -> list[dict[str, str]]:
+def clasificar_polen(valor: float | None, umbrales: dict[str, float]) -> str:
+    if valor is None:
+        return "Sin datos"
+    if valor < 1:
+        return "Nulo"
+    if valor < umbrales["moderado"]:
+        return "Bajo"
+    if valor < umbrales["alto"]:
+        return "Moderado"
+    return "Alto"
+
+
+def calcular_actividades(t_max_num: int, prob_lluvia_num: int, desc: str, polen: dict[str, Any] | None) -> list[dict[str, str]]:
     # 1. Tender la ropa
     if prob_lluvia_num < 20 and t_max_num > 20:
         ropa_estado = "Excelente"
@@ -114,16 +142,92 @@ def calcular_actividades(t_max_num: int, prob_lluvia_num: int, desc: str) -> lis
         deporte_estado = "Ideal todo el día"
         deporte_desc = "Temperatura perfecta"
 
-    # 4. Índice de Polen / Alergia
-    polen_estado = "Bajo / Moderado"
-    polen_desc = "Nivel estacional Olivo y Gramíneas"
+    # 4. Índice de Polen / Alergia (datos reales de Open-Meteo Air Quality,
+    # ver fetch_polen — AEMET no publica polen, ver comentario en POLEN_URL)
+    gramineas = polen.get("gramineas") if polen else None
+    olivo = polen.get("olivo") if polen else None
+
+    if gramineas is None and olivo is None:
+        polen_estado = "Sin datos"
+        polen_desc = "Fuera de temporada de polinización o dato no disponible ahora mismo"
+        polen_extra: dict[str, float] = {}
+    else:
+        nivel_gramineas = clasificar_polen(gramineas, POLEN_UMBRALES["gramineas"])
+        nivel_olivo = clasificar_polen(olivo, POLEN_UMBRALES["olivo"])
+        orden_severidad = {"Sin datos": 0, "Nulo": 0, "Bajo": 1, "Moderado": 2, "Alto": 3}
+        polen_estado = max([nivel_gramineas, nivel_olivo], key=lambda n: orden_severidad[n])
+        partes = []
+        if olivo is not None:
+            partes.append(f"Olivo: {nivel_olivo} ({olivo:.1f} granos/m³)")
+        if gramineas is not None:
+            partes.append(f"Gramíneas: {nivel_gramineas} ({gramineas:.1f} granos/m³)")
+        polen_desc = " · ".join(partes)
+        polen_extra = {"gramineas": gramineas, "olivo": olivo}
 
     return [
         {"id": "ropa", "icono": "🧺", "titulo": "Tender la ropa", "estado": ropa_estado, "detalle": ropa_desc},
         {"id": "coche", "icono": "🚗", "titulo": "Lavar el coche", "estado": coche_estado, "detalle": coche_desc},
         {"id": "deporte", "icono": "🏃", "titulo": "Deporte exterior", "estado": deporte_estado, "detalle": deporte_desc},
-        {"id": "polen", "icono": "🌾", "titulo": "Alergia y Polen", "estado": polen_estado, "detalle": polen_desc},
+        {"id": "polen", "icono": "🌾", "titulo": "Alergia y Polen", "estado": polen_estado, "detalle": polen_desc, "fuente": "Open-Meteo (CAMS)", **polen_extra},
     ]
+
+
+def cargar_polen_previo() -> dict[str, Any] | None:
+    """Si Open-Meteo falla, reutiliza el último dato válido en vez de
+    mostrar "Sin datos" por un simple fallo de red puntual."""
+    try:
+        previo = json.loads(WEATHER_PATH.read_text(encoding="utf-8"))
+        for item in previo.get("actividades") or []:
+            if item.get("id") == "polen" and ("gramineas" in item or "olivo" in item):
+                return {"gramineas": item.get("gramineas"), "olivo": item.get("olivo")}
+    except Exception:
+        return None
+    return None
+
+
+def fetch_polen() -> dict[str, Any] | None:
+    """Nivel actual de polen de gramíneas y olivo (granos/m³) vía Open-Meteo
+    Air Quality API — ver POLEN_URL para el porqué de esta fuente en vez de
+    AEMET. Devuelve None si la petición falla; devuelve valores None por
+    especie (no toda la llamada) si está fuera de temporada de polinización,
+    que es un resultado válido de la API, no un error."""
+    params = urllib.parse.urlencode({
+        "latitude": COORDS["lat"],
+        "longitude": COORDS["lon"],
+        "hourly": "grass_pollen,olive_pollen",
+        "timezone": "Europe/Madrid",
+        "forecast_days": 1,
+    })
+    req = urllib.request.Request(
+        f"{POLEN_URL}?{params}",
+        headers={"User-Agent": "Mozilla/5.0 (AlhaurinAlDia/1.0)", "Accept": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except Exception as exc:
+        log(f"Error obteniendo polen de Open-Meteo: {exc}")
+        return None
+
+    hourly = data.get("hourly") or {}
+    horas = hourly.get("time") or []
+    if not horas:
+        log("Open-Meteo no devolvió serie horaria de polen.")
+        return None
+
+    serie_gramineas = hourly.get("grass_pollen") or []
+    serie_olivo = hourly.get("olive_pollen") or []
+
+    ahora = datetime.now(TIMEZONE).strftime("%Y-%m-%dT%H:00")
+    try:
+        idx = horas.index(ahora)
+    except ValueError:
+        idx = 0  # fallback: primera hora de la serie si no hay match exacto
+
+    gramineas = serie_gramineas[idx] if idx < len(serie_gramineas) else None
+    olivo = serie_olivo[idx] if idx < len(serie_olivo) else None
+
+    return {"gramineas": gramineas, "olivo": olivo}
 
 
 def cargar_embalses_previos() -> dict[str, Any] | None:
@@ -465,7 +569,8 @@ def construir_resultado(hoy_data: dict[str, Any], semana: list[dict[str, Any]], 
     except Exception:
         prob_lluvia_int = 0
 
-    actividades = calcular_actividades(t_max_int, prob_lluvia_int, hoy_data["descripcion"])
+    polen = fetch_polen() or cargar_polen_previo()
+    actividades = calcular_actividades(t_max_int, prob_lluvia_int, hoy_data["descripcion"], polen)
 
     sol_luna = obtener_sol_luna()
 

@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-08-18T12:46:38+02:00",
+  "actualizado": "2026-08-18T14:28:38+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
@@ -23,7 +23,7 @@
     "icono": "☀️",
     "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "SE 10 km/h",
+    "viento": "Flojo",
     "uv": "8"
   },
   "semana": [
@@ -36,7 +36,7 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "SE 10 km/h",
+      "viento": "Flojo",
       "uv": "8"
     },
     {
@@ -84,7 +84,7 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": "8"
     },
     {
@@ -138,14 +138,17 @@
       "id": "polen",
       "icono": "🌾",
       "titulo": "Alergia y Polen",
-      "estado": "Bajo / Moderado",
-      "detalle": "Nivel estacional Olivo y Gramíneas"
+      "estado": "Nulo",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.6 granos/m³)",
+      "fuente": "Open-Meteo (CAMS)",
+      "gramineas": 0.6,
+      "olivo": 0.0
     }
   ],
   "sol_luna": {
     "orto": "07:38 h",
-    "ocaso": "21:06 h",
-    "horas_luz": "13h 28m",
+    "ocaso": "21:07 h",
+    "horas_luz": "13h 29m",
     "fase_luna": "Luna Creciente (28%)",
     "icono_luna": "🌒"
   },

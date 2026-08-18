@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-18T17:18:56.104Z",
+  "actualizado": "2026-08-18T17:50:43.961Z",
   "visitas24h": 9,
-  "paginasVistas24h": 30,
+  "paginasVistas24h": 31,
   "topPaginas": [
     {
-      "ruta": "/admin/",
+      "ruta": "/",
       "vistas": 7
     },
     {
-      "ruta": "/",
-      "vistas": 6
+      "ruta": "/admin/",
+      "vistas": 7
     },
     {
       "ruta": "/noticias/",

@@ -536,8 +536,8 @@ eventosList.addEventListener("click", async (e) => {
 // navegador: no puede llamar a la API de GitHub sin exponer un token, así
 // que este botón llama a un Worker de Cloudflare que guarda ese token en el
 // servidor y verifica el ID token de Firebase del admin antes de disparar
-// el workflow. URL pendiente de desplegar el Worker (ver docs/MANUAL-ADMINISTRACION.md).
-const SYNC_WORKER_URL = "";
+// el workflow (cloudflare/agenda-sync-worker/, ver docs/MANUAL-ADMINISTRACION.md).
+const SYNC_WORKER_URL = "https://alhaurin-agenda-sync.jburez.workers.dev";
 const syncEventosBtn = document.getElementById("sync-eventos-btn");
 const syncEventosNote = document.getElementById("sync-eventos-note");
 

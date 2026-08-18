@@ -48,14 +48,21 @@ async function resolveAccountId(token) {
   if (!data.result || !data.result.length) {
     throw new Error('El token no tiene acceso a ninguna cuenta de Cloudflare.');
   }
+  if (data.result.length > 1) {
+    console.log(`[sync-cloudflare-analytics] Aviso: el token ve ${data.result.length} cuentas, usando la primera: ${JSON.stringify(data.result.map((a) => ({ id: a.id, name: a.name })))}`);
+  }
   return data.result[0].id;
 }
 
 async function resolveSiteTag(token, accountId) {
   const data = await cfFetch(token, `${API_BASE}/accounts/${accountId}/rum/site_info/list`);
-  const site = (data.result || []).find((s) => s.host === SITE_HOST);
+  const sites = data.result || [];
+  const site = sites.find((s) => s.host === SITE_HOST);
   if (!site) {
-    throw new Error(`No se encontró ningún site de Web Analytics para el host ${SITE_HOST}.`);
+    throw new Error(
+      `No se encontró ningún site de Web Analytics para el host ${SITE_HOST}. `
+      + `Sites disponibles en esta cuenta: ${JSON.stringify(sites.map((s) => ({ host: s.host, site_tag: s.site_tag, site_token: s.site_token })))}`
+    );
   }
   return site.site_tag;
 }

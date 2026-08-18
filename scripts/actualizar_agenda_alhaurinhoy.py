@@ -94,6 +94,8 @@ def guess_category(title: str, content: str) -> tuple[str, str]:
         return "⚽", "Deportes"
     if any(w in combined for w in ["moto gp", "motogp", "🏍", "formula 1"]):
         return "🏍️", "Motor"
+    if any(w in combined for w in ["cine", "🎬", "🍿"]):
+        return "🎬", "Cine"
     if any(w in combined for w in ["music", "músic", "dj", "concert", "🎶", "🎸", "🎙"]):
         return "🎵", "Música en vivo"
     if any(w in combined for w in ["brunch", "gastro", "ruta", "tomate", "🍽", "🍅"]):

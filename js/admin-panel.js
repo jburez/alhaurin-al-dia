@@ -281,8 +281,30 @@ const eventoModal = document.getElementById("evento-modal");
 const eventoForm = document.getElementById("evento-form");
 const eventoModalTitle = document.getElementById("evento-modal-title");
 
+// Vocabulario real de categorías: el mismo que usa guess_category() en
+// scripts/actualizar_agenda_alhaurinhoy.py. Un <select> con esta lista fija
+// evita categorías inventadas a mano que luego no colorea bien el
+// calendario (planes/calendario.js) — el bug real que motivó este cambio:
+// varios eventos de "Cine" habían quedado como "Gastronomía"/"Música en
+// vivo" por colisión de palabras clave en el texto libre.
+const EVENTO_TIPOS = [
+    "Cultos y procesiones", "Deportes", "Motor", "Cine",
+    "Música en vivo", "Gastronomía", "Ocio", "Evento",
+];
+
+document.getElementById("evento-tipo").innerHTML = EVENTO_TIPOS
+    .map((tipo) => `<option value="${escapeHTML(tipo)}">${escapeHTML(tipo)}</option>`)
+    .join("");
+
 function showEventoModal() { eventoModal.hidden = false; eventoModal.classList.add("open"); }
-function hideEventoModal() { eventoModal.hidden = true; eventoModal.classList.remove("open"); eventoForm.reset(); document.getElementById("evento-doc-id").value = ""; }
+function hideEventoModal() {
+    eventoModal.hidden = true;
+    eventoModal.classList.remove("open");
+    eventoForm.reset();
+    document.getElementById("evento-doc-id").value = "";
+    document.getElementById("evento-origen-id").value = "";
+    document.getElementById("evento-origen-fuente").value = "";
+}
 
 document.getElementById("open-evento-modal").addEventListener("click", () => {
     eventoModalTitle.textContent = "Nuevo evento";
@@ -295,9 +317,14 @@ eventoModal.addEventListener("click", (e) => { if (e.target === eventoModal) hid
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !eventoModal.hidden) hideEventoModal(); });
 
 function fillEventoForm(evento) {
-    document.getElementById("evento-doc-id").value = evento.docId;
+    document.getElementById("evento-doc-id").value = evento.docId || "";
+    // Solo se rellena para un importado sin reclamar todavía (ver
+    // eventosList click handler): al guardar, esto decide si se hace
+    // setDoc con id explícito (reclamar) en vez de addDoc/updateDoc.
+    document.getElementById("evento-origen-id").value = evento._importado ? evento.id : "";
+    document.getElementById("evento-origen-fuente").value = evento._importado ? (evento.fuente || "") : "";
     document.getElementById("evento-titulo").value = evento.titulo || "";
-    document.getElementById("evento-tipo").value = evento.tipo || "";
+    document.getElementById("evento-tipo").value = EVENTO_TIPOS.includes(evento.tipo) ? evento.tipo : "Evento";
     document.getElementById("evento-icono").value = evento.icono || "";
     document.getElementById("evento-descripcion").value = evento.descripcion || "";
     document.getElementById("evento-lugar").value = evento.lugar || "";
@@ -315,12 +342,14 @@ eventoForm.addEventListener("submit", async (e) => {
     submitBtn.textContent = "Guardando...";
 
     const docId = document.getElementById("evento-doc-id").value;
+    const origenId = document.getElementById("evento-origen-id").value;
+    const origenFuente = document.getElementById("evento-origen-fuente").value;
     const inicio = localInputValueToDate(document.getElementById("evento-inicio").value);
     const fin = localInputValueToDate(document.getElementById("evento-fin").value);
 
     const payload = {
         titulo: document.getElementById("evento-titulo").value.trim(),
-        tipo: document.getElementById("evento-tipo").value.trim() || "Evento",
+        tipo: document.getElementById("evento-tipo").value || "Evento",
         icono: document.getElementById("evento-icono").value.trim() || "📅",
         descripcion: document.getElementById("evento-descripcion").value.trim(),
         lugar: document.getElementById("evento-lugar").value.trim(),
@@ -335,6 +364,19 @@ eventoForm.addEventListener("submit", async (e) => {
     try {
         if (docId) {
             await updateDoc(doc(db, "admin_eventos", docId), payload);
+        } else if (origenId) {
+            // Reclamar: primera edición de un evento importado. Se guarda
+            // con su id original como id de documento explícito, para que
+            // sync-admin-firestore.js lo reconozca y sustituya la entrada
+            // ya existente en agenda-local.json en vez de duplicarla — y
+            // para que actualizar_agenda_alhaurinhoy.py / _ayto.py, que
+            // nunca reescriben un id que ya conocen, no lo vuelvan a tocar.
+            await setDoc(doc(db, "admin_eventos", origenId), {
+                ...payload,
+                origenId,
+                origen: origenFuente || "manual",
+                creadoEn: serverTimestamp(),
+            });
         } else {
             await addDoc(eventosCol, { ...payload, creadoEn: serverTimestamp() });
         }
@@ -348,9 +390,32 @@ eventoForm.addEventListener("submit", async (e) => {
     }
 });
 
-// ===== Eventos: lista en vivo =====
+// ===== Eventos: lista en vivo (Firestore) + importados sin reclamar =====
+// Los eventos manuales y los ya "reclamados" (editados/borrados alguna vez
+// desde este panel) viven en Firestore (admin_eventos, listener en vivo).
+// Los importados de alhaurinhoy.es/Ayuntamiento que nadie ha tocado todavía
+// solo existen en data/agenda-local.json — se leen con un fetch normal
+// (dato público, sin autenticación) y se combinan en la misma lista.
 const eventosList = document.getElementById("admin-eventos-list");
+const eventosFiltro = document.getElementById("eventos-filtro");
 let allEventos = [];
+let allEventosImportados = [];
+let eventosRenderizados = [];
+
+const ORIGEN_EVENTO_LABEL = { alhaurinhoy: "alhaurinhoy.es", ayuntamiento: "Ayuntamiento", legado: "Legado" };
+
+async function cargarEventosImportados() {
+    try {
+        const resp = await fetch("/data/agenda-local.json", { cache: "no-store" });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const data = await resp.json();
+        allEventosImportados = (Array.isArray(data.eventos) ? data.eventos : [])
+            .filter((ev) => ev.fuente && ev.fuente !== "manual");
+        renderEventos();
+    } catch (err) {
+        console.error("Error cargando eventos importados:", err);
+    }
+}
 
 function formatEventoFecha(iso) {
     if (!iso) return "Fecha pendiente";
@@ -359,27 +424,52 @@ function formatEventoFecha(iso) {
     return date.toLocaleDateString("es-ES", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" });
 }
 
+function origenEventoLabel(evento) {
+    if (evento._importado) return ORIGEN_EVENTO_LABEL[evento.fuente] || evento.fuente;
+    if (evento.origenId) return `${ORIGEN_EVENTO_LABEL[evento.origen] || evento.origen || "importado"} · editado`;
+    return "Manual";
+}
+
 function renderEventos() {
-    if (!allEventos.length) {
-        eventosList.innerHTML = '<p class="admin-empty">Todavía no hay eventos manuales. Crea el primero con "+ Nuevo evento".</p>';
+    // Un importado deja de listarse "sin reclamar" en cuanto su id aparece
+    // como origenId de un doc real en Firestore (ver eventoDesdeDoc en
+    // sync-admin-firestore.js, mismo criterio).
+    const idsReclamados = new Set(allEventos.filter((ev) => ev.origenId).map((ev) => ev.origenId));
+    const combinados = [
+        ...allEventos.map((ev) => ({ ...ev, _importado: false })),
+        ...allEventosImportados
+            .filter((ev) => !idsReclamados.has(ev.id))
+            .map((ev) => ({ ...ev, docId: null, _importado: true })),
+    ].sort((a, b) => new Date(a.inicio || "9999") - new Date(b.inicio || "9999"));
+
+    const filtro = eventosFiltro.value.trim().toLowerCase();
+    eventosRenderizados = filtro
+        ? combinados.filter((ev) => (ev.titulo || "").toLowerCase().includes(filtro))
+        : combinados;
+
+    if (!eventosRenderizados.length) {
+        eventosList.innerHTML = '<p class="admin-empty">Ningún evento coincide.</p>';
         return;
     }
-    eventosList.innerHTML = allEventos.map((evento) => `
+
+    eventosList.innerHTML = eventosRenderizados.map((evento, idx) => `
         <article class="admin-list-item admin-list-item--${evento.activo === false ? "resuelto" : "neutral"}">
             <div class="admin-list-item-main">
                 <span class="admin-list-item-icon">${escapeHTML(evento.icono || "📅")}</span>
                 <div>
                     <strong>${escapeHTML(evento.titulo || "(sin título)")}</strong>
-                    <span class="admin-list-item-meta">${escapeHTML(formatEventoFecha(evento.inicio))}${evento.lugar ? ` · ${escapeHTML(evento.lugar)}` : ""}${evento.activo === false ? " · Inactivo" : ""}</span>
+                    <span class="admin-list-item-meta">${escapeHTML(origenEventoLabel(evento))} · ${escapeHTML(evento.tipo || "Evento")} · ${escapeHTML(formatEventoFecha(evento.inicio))}${evento.lugar ? ` · ${escapeHTML(evento.lugar)}` : ""}${evento.activo === false ? " · Inactivo" : ""}</span>
                 </div>
             </div>
             <div class="admin-list-item-actions">
-                <button type="button" class="btn btn-secondary admin-edit-evento-btn" data-id="${evento.docId}">Editar</button>
-                <button type="button" class="btn admin-delete-evento-btn" data-id="${evento.docId}">Eliminar</button>
+                <button type="button" class="btn btn-secondary admin-edit-evento-btn" data-idx="${idx}">Editar</button>
+                <button type="button" class="btn admin-delete-evento-btn" data-idx="${idx}">Eliminar</button>
             </div>
         </article>
     `).join("");
 }
+
+eventosFiltro.addEventListener("input", renderEventos);
 
 const eventosQuery = query(eventosCol, orderBy("creadoEn", "desc"));
 function startEventosListener() {
@@ -391,14 +481,15 @@ function startEventosListener() {
         console.error("Error escuchando eventos:", err);
         eventosList.innerHTML = '<p class="admin-empty">No se han podido cargar los eventos.</p>';
     });
+    cargarEventosImportados();
 }
 
 eventosList.addEventListener("click", async (e) => {
     const editBtn = e.target.closest(".admin-edit-evento-btn");
     if (editBtn) {
-        const evento = allEventos.find((ev) => ev.docId === editBtn.getAttribute("data-id"));
+        const evento = eventosRenderizados[Number(editBtn.getAttribute("data-idx"))];
         if (!evento) return;
-        eventoModalTitle.textContent = "Editar evento";
+        eventoModalTitle.textContent = evento._importado ? "Editar evento importado" : "Editar evento";
         fillEventoForm({
             ...evento,
             inicio: evento.inicio && typeof evento.inicio.toDate === "function" ? evento.inicio.toDate().toISOString() : evento.inicio,
@@ -410,16 +501,72 @@ eventosList.addEventListener("click", async (e) => {
 
     const deleteBtn = e.target.closest(".admin-delete-evento-btn");
     if (deleteBtn) {
-        const id = deleteBtn.getAttribute("data-id");
-        const evento = allEventos.find((ev) => ev.docId === id);
-        if (!evento || !confirm("¿Enviar este evento a la papelera? Su página en /planes/ desaparecerá hasta que se restaure.")) return;
+        const evento = eventosRenderizados[Number(deleteBtn.getAttribute("data-idx"))];
+        if (!evento) return;
+        if (!confirm("¿Enviar este evento a la papelera? Su página en /planes/ desaparecerá hasta que se restaure.")) return;
         try {
-            const { docId: _docId, ...datos } = evento;
-            await moveToTrash("admin_eventos", id, datos);
+            if (evento._importado) {
+                // Reclamar y enviar a la papelera en el mismo paso: un
+                // importado sin reclamar no tiene doc en admin_eventos
+                // todavía, así que "eliminar" primero lo copia (igual que
+                // al editar) y luego lo mueve a la papelera.
+                const { docId: _docId, _importado: _imp, ...datos } = evento;
+                await setDoc(doc(db, "admin_eventos", evento.id), {
+                    ...datos,
+                    origenId: evento.id,
+                    origen: evento.fuente,
+                    creadoEn: serverTimestamp(),
+                });
+                await moveToTrash("admin_eventos", evento.id, { ...datos, origenId: evento.id, origen: evento.fuente });
+            } else {
+                const { docId, _importado: _imp, ...datos } = evento;
+                await moveToTrash("admin_eventos", docId, datos);
+            }
         } catch (err) {
             console.error("Error eliminando evento:", err);
             alert("No se ha podido eliminar el evento.");
         }
+    }
+});
+
+// ===== Eventos: sincronización bajo demanda =====
+// Dispara scripts/actualizar_agenda_alhaurinhoy.py + actualizar_agenda_ayto.py
+// vía el workflow "actualizar-agenda-ayto.yml" (ya corre cada 6h solo) sin
+// esperar al siguiente ciclo. El panel es una página estática servida en el
+// navegador: no puede llamar a la API de GitHub sin exponer un token, así
+// que este botón llama a un Worker de Cloudflare que guarda ese token en el
+// servidor y verifica el ID token de Firebase del admin antes de disparar
+// el workflow. URL pendiente de desplegar el Worker (ver docs/MANUAL-ADMINISTRACION.md).
+const SYNC_WORKER_URL = "";
+const syncEventosBtn = document.getElementById("sync-eventos-btn");
+const syncEventosNote = document.getElementById("sync-eventos-note");
+
+function mostrarSyncNota(texto) {
+    syncEventosNote.textContent = texto;
+    syncEventosNote.hidden = false;
+}
+
+syncEventosBtn.addEventListener("click", async () => {
+    if (!SYNC_WORKER_URL) {
+        mostrarSyncNota("Sincronización bajo demanda todavía no configurada (falta desplegar el Worker de Cloudflare). El sync automático sigue corriendo cada 6h.");
+        return;
+    }
+    syncEventosBtn.disabled = true;
+    syncEventosBtn.textContent = "Sincronizando...";
+    try {
+        const idToken = await auth.currentUser.getIdToken();
+        const resp = await fetch(SYNC_WORKER_URL, {
+            method: "POST",
+            headers: { Authorization: `Bearer ${idToken}` },
+        });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        mostrarSyncNota("Sincronización lanzada. Tarda aproximadamente 1 minuto en reflejarse en la agenda.");
+    } catch (err) {
+        console.error("Error lanzando sincronización:", err);
+        mostrarSyncNota("No se ha podido lanzar la sincronización.");
+    } finally {
+        syncEventosBtn.disabled = false;
+        syncEventosBtn.textContent = "🔄 Sincronizar ahora";
     }
 });
 
@@ -847,7 +994,7 @@ function renderDashboard() {
 
         dashboardStats.innerHTML = [
             statTile(avisosActivos, `Aviso${avisosActivos === 1 ? "" : "s"} activo${avisosActivos === 1 ? "" : "s"}`),
-            statTile(eventosActivos, `Evento${eventosActivos === 1 ? "" : "s"} manual${eventosActivos === 1 ? "" : "es"} activo${eventosActivos === 1 ? "" : "s"}`),
+            statTile(eventosActivos, `Evento${eventosActivos === 1 ? "" : "s"} activo${eventosActivos === 1 ? "" : "s"} en Firestore`),
             statTile(comerciosActivos, `Comercio${comerciosActivos === 1 ? "" : "s"} destacado${comerciosActivos === 1 ? "" : "s"} activo${comerciosActivos === 1 ? "" : "s"}`),
             statTile(radarActivos, `Reporte${radarActivos === 1 ? "" : "s"} activo${radarActivos === 1 ? "" : "s"} en Radar Social`),
             statTile(allPapelera.length, `Elemento${allPapelera.length === 1 ? "" : "s"} en papelera`, allPapelera.length > 0),

@@ -73,10 +73,15 @@
 
             <section class="admin-panel" data-panel="eventos" hidden>
                 <div class="admin-panel-header">
-                    <h2>Eventos manuales de agenda</h2>
-                    <button type="button" id="open-evento-modal" class="btn btn-primary">+ Nuevo evento</button>
+                    <h2>Eventos de agenda</h2>
+                    <div class="admin-panel-header-actions">
+                        <button type="button" id="sync-eventos-btn" class="btn btn-secondary">🔄 Sincronizar ahora</button>
+                        <button type="button" id="open-evento-modal" class="btn btn-primary">+ Nuevo evento</button>
+                    </div>
                 </div>
-                <p class="admin-panel-note">Solo los eventos que crees aquí. Los importados automáticamente del Ayuntamiento y alhaurinhoy.es no aparecen ni se pueden editar en este panel.</p>
+                <p class="admin-panel-note">Incluye los eventos manuales y los importados automáticamente del Ayuntamiento y alhaurinhoy.es. Editar o eliminar un evento importado lo pasa a gestión manual: a partir de ahí, la importación automática ya no lo vuelve a tocar.</p>
+                <p class="admin-panel-note" id="sync-eventos-note" hidden></p>
+                <input type="text" id="eventos-filtro" class="admin-filtro" placeholder="Filtrar eventos por título...">
                 <div id="admin-eventos-list" class="admin-list"></div>
             </section>
 
@@ -269,6 +274,8 @@
             </div>
             <form id="evento-form">
                 <input type="hidden" id="evento-doc-id" value="">
+                <input type="hidden" id="evento-origen-id" value="">
+                <input type="hidden" id="evento-origen-fuente" value="">
                 <div class="form-group">
                     <label for="evento-titulo">Título *</label>
                     <input type="text" id="evento-titulo" placeholder="Ej: Concierto en la Plaza Baja" required maxlength="200">
@@ -276,7 +283,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="evento-tipo">Tipo</label>
-                        <input type="text" id="evento-tipo" placeholder="Ej: Fiestas, Deportes, Música...">
+                        <select id="evento-tipo"></select>
                     </div>
                     <div class="form-group">
                         <label for="evento-icono">Icono (emoji)</label>

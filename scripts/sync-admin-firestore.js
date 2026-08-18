@@ -124,8 +124,16 @@ async function construirAvisosLocales(db) {
 
 function eventoDesdeDoc(doc) {
   const data = doc.data();
+  // Un evento "reclamado" es un evento importado (alhaurinhoy/ayuntamiento)
+  // que el admin editó o borró desde el panel: se copió a admin_eventos con
+  // su id original como origenId, en vez del id autogenerado que usan los
+  // eventos creados desde cero. Conserva su id/fuente real para que el
+  // resto del sistema (slugs de /planes/, dedup de los scripts Python) lo
+  // siga tratando como el mismo evento de siempre, solo que ahora
+  // gestionado desde Firestore.
+  const esReclamado = Boolean(data.origenId);
   return {
-    id: `manual-${doc.id}`,
+    id: esReclamado ? data.origenId : `manual-${doc.id}`,
     tipo: data.tipo || 'Evento',
     icono: data.icono || '📅',
     titulo: data.titulo || '',
@@ -137,25 +145,39 @@ function eventoDesdeDoc(doc) {
     cta: data.cta || 'Ver más',
     url: data.url || '#',
     activo: data.activo !== false,
-    fuente: 'manual',
+    fuente: esReclamado ? (data.origen || 'manual') : 'manual',
   };
 }
 
 async function construirAgendaLocal(db) {
   const snapshot = await db.collection('admin_eventos').get();
-  const eventosManuales = [];
-  snapshot.forEach((doc) => eventosManuales.push(eventoDesdeDoc(doc)));
+  const eventosGestionados = [];
+  snapshot.forEach((doc) => eventosGestionados.push(eventoDesdeDoc(doc)));
+  const idsGestionados = new Set(eventosGestionados.map((e) => e.id));
+
+  // Eventos importados reclamados y luego borrados: sus docs ya no están en
+  // admin_eventos, pero su id original sigue en el JSON viejo (los scripts
+  // Python nunca lo tocan porque ya existía). Sin este chequeo resucitarían
+  // en cada sync en vez de quedarse borrados.
+  const papeleraSnapshot = await db.collection('admin_papelera')
+    .where('coleccionOrigen', '==', 'admin_eventos')
+    .get();
+  const idsEnPapelera = new Set(papeleraSnapshot.docs.map((doc) => doc.data().docIdOriginal));
 
   const actual = readJSON(AGENDA_FILE, { actualizado: null, resumen: '', eventos: [] });
   const eventosExistentes = Array.isArray(actual.eventos) ? actual.eventos : [];
 
   // Se preserva todo lo que no es "manual" (ayuntamiento, alhaurinhoy,
-  // legado); el subconjunto "manual" se reconstruye por completo desde
-  // Firestore. Ambos scripts automáticos (actualizar_agenda_ayto.py,
-  // actualizar_agenda_alhaurinhoy.py) hacen lo mismo a la inversa: preservan
-  // cualquier `fuente` distinta a la suya, así que conviven sin pisarse.
-  const eventosNoManuales = eventosExistentes.filter((e) => e.fuente !== 'manual');
-  const eventos = [...eventosNoManuales, ...eventosManuales];
+  // legado) NI está gestionado por Firestore. El subconjunto "manual" (y
+  // cualquier evento importado que el admin haya reclamado editándolo o
+  // borrándolo) se reconstruye por completo desde Firestore. Ambos scripts
+  // automáticos (actualizar_agenda_ayto.py, actualizar_agenda_alhaurinhoy.py)
+  // hacen lo mismo a la inversa: nunca reescriben un id que ya conocen, así
+  // que conviven sin pisarse.
+  const eventosPasoDirecto = eventosExistentes.filter((e) =>
+    e.fuente !== 'manual' && !idsGestionados.has(e.id) && !idsEnPapelera.has(e.id)
+  );
+  const eventos = [...eventosPasoDirecto, ...eventosGestionados];
 
   return {
     actualizado: new Date().toISOString(),

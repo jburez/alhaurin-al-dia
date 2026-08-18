@@ -698,16 +698,19 @@ Los eventos importados automáticamente de alhaurinhoy.es y del Ayuntamiento (27
 Cloudflare Web Analytics (script instalado en las 858 páginas del sitio, ver `scripts/lib/analytics.py`/`.js`) expone sus datos vía la **GraphQL Analytics API**, un producto de cuenta distinto de la Zone Analytics normal (HTTP requests/caché) que ya usa `CLOUDFLARE_API_TOKEN` en `publicar-produccion.yml` para purgar caché — ese token no sirve aquí, hace falta uno nuevo con permiso de cuenta.
 
 `scripts/sync-cloudflare-analytics.js` (nuevo paso de `sync-admin-panel.yml`, cron cada 15 min, `continue-on-error: true` para no bloquear el resto del sync si la API de Analytics falla) resuelve solo, sin que el admin tenga que buscar nada a mano en el dashboard de Cloudflare:
-1. El `account_id` (`GET /accounts`, el token solo tiene acceso a una cuenta).
-2. El `site_tag` de Web Analytics (`GET /accounts/{id}/rum/site_info/list`, buscando el host `alhaurinaldia.es`).
+1. El `account_id` (`GET /accounts`).
+2. El `site_tag` de Web Analytics (`GET /accounts/{id}/rum/site_info/list`, buscando el site cuyo `site_token` coincide con el beacon ya instalado — el campo `host` no hacía match exacto con `alhaurinaldia.es` en la práctica, así que se usa `site_token` por ser un identificador único sin ambigüedad).
 3. Visitas y páginas vistas de las últimas 24h, y el top 5 de páginas de los últimos 7 días, vía `rumPageloadEventsAdaptiveGroups`.
 
 Escribe `data/analytics-resumen.json` (dato público, sin datos sensibles), que la pestaña Dashboard del panel lee con un `fetch()` normal — mismo criterio que los eventos importados: nunca se llama a la API de Cloudflare directamente desde el navegador, para no exponer el token.
 
+El token necesita **dos** permisos de cuenta (no de zona): `Account Analytics: Read` para consultar la GraphQL API, y `Account Settings: Read` — sin este segundo, `GET /accounts` devuelve la lista vacía y el script no puede ni averiguar el `account_id`.
+
 ### Checklist de activación (pasos manuales, fuera del repositorio)
 
-- [ ] Crear un API Token en Cloudflare (perfil → API Tokens → Create Token → Custom Token) con permiso **Account → Account Analytics → Read** (ampliar a **Account → Web Analytics → Read** si `rum/site_info/list` da 403).
-- [ ] Añadirlo como GitHub Secret `CLOUDFLARE_ANALYTICS_TOKEN`.
+- [x] API Token en Cloudflare con permisos **Account → Account Analytics → Read** y **Account → Account Settings → Read**.
+- [x] Guardado como GitHub Secret `CLOUDFLARE_ANALYTICS_TOKEN`.
+- [x] Verificado en producción el 18/08/2026: sync disparado a mano, `data/analytics-resumen.json` con datos reales (3 visitas / 11 páginas vistas en 24h en el primer run), confirmado visualmente en el dashboard del panel.
 
 ---
 

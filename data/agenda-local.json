@@ -1,22 +1,8 @@
 {
-  "actualizado": "2026-08-18T01:05:50.221Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 274 eventos próximos.",
+  "actualizado": "2026-08-18T03:27:27.451114+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 273 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-4546",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Live Music 🎶 | Alexsandra Avery",
-      "descripcion": "¡Cena con música en vivo! El próximo 18 de julio a las 21:00, te invitamos a una velada inolvidable en el restaurante Cortijo La Ventilla con la actuación en vivo de Alexandra Avery, artista de tri...",
-      "lugar": "",
-      "inicio": "2026-07-18T21:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/live-music-%f0%9f%8e%b6-alexsandra-avery/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-12249",
       "tipo": "Deportes",

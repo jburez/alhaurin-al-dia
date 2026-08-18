@@ -1,36 +1,7 @@
 {
-  "actualizado": "2026-08-18T08:24:04.375Z",
+  "actualizado": "2026-08-18T08:53:21.075Z",
   "resumen": "Avisos locales activos de Alhaurín el Grande.",
-  "avisos": [
-    {
-      "id": "SNDV1W8GXfljpzzfPa2U",
-      "tipo": "Prueba",
-      "icono": "📢",
-      "titulo": "PRUEBA papelera ciclo completo",
-      "detalle": "Test end-to-end de papelera, se borra al final.",
-      "estado": "warning",
-      "fuente": "",
-      "url": "",
-      "inicio": null,
-      "fin": null,
-      "activo": true,
-      "resuelto": false
-    },
-    {
-      "id": "vLXg3WY0vrBYbqCTbOI3",
-      "tipo": "Esto es un test",
-      "icono": "📢",
-      "titulo": "Esto es un test",
-      "detalle": "Esto es un test",
-      "estado": "alert",
-      "fuente": "",
-      "url": "",
-      "inicio": "2026-08-17T09:14:00.000Z",
-      "fin": "2026-08-17T10:14:00.000Z",
-      "activo": true,
-      "resuelto": false
-    }
-  ],
+  "avisos": [],
   "historial": [
     {
       "id": "corte-agua-urique-20260813",

@@ -684,14 +684,14 @@ Los eventos importados automáticamente de alhaurinhoy.es y del Ayuntamiento (27
 
 **"Reclamar" un evento importado**: al Editar o Eliminar un importado que aún no está en Firestore, se copia a `admin_eventos` con su `id` original como id de documento explícito (no autogenerado) más dos campos nuevos, `origenId` (el id original) y `origen` (la fuente original). A partir de ahí se comporta como un evento manual: vive en Firestore, se puede volver a editar/borrar con el flujo normal, y `actualizar_agenda_alhaurinhoy.py`/`_ayto.py` nunca lo vuelven a tocar (ambos scripts solo añaden eventos cuyo `id` no conocen ya). `sync-admin-firestore.js` reconoce estos eventos por `origenId` y sustituye la entrada correspondiente en el JSON — verificado en producción el 18/08/2026 (edición de prueba en un evento real, sync disparado a mano, cambio confirmado en el `agenda-local.json` publicado, y revertido).
 
-**Botón "Sincronizar ahora"**: dispara `actualizar-agenda-ayto.yml` (cron cada 6h, ya ejecuta ambos scripts de importación) bajo demanda, sin esperar al siguiente ciclo. Pendiente de conectar: el panel es estático y no puede llamar a la API de GitHub sin exponer un token, así que necesita un Worker de Cloudflare intermedio que guarde el token y verifique el ID token de Firebase del admin antes de disparar el workflow.
+**Botón "Sincronizar ahora"**: dispara `actualizar-agenda-ayto.yml` (cron cada 6h, ya ejecuta ambos scripts de importación) bajo demanda, sin esperar al siguiente ciclo. El panel es estático y no puede llamar a la API de GitHub sin exponer un token, así que llama a un Worker de Cloudflare (`cloudflare/agenda-sync-worker/`, desplegado en `https://alhaurin-agenda-sync.jburez.workers.dev`) que verifica el ID token de Firebase del admin (JWKS público de Google, sin Firebase Admin SDK) y, si es válido, dispara el workflow con un token de GitHub guardado como secreto del Worker (`wrangler secret put GITHUB_TOKEN`) — nunca visible en el navegador. Verificado en producción el 18/08/2026: petición sin token → 401, token falso → 401, click real desde el panel → 200 y workflow `actualizar-agenda-ayto.yml` disparado y completado con éxito.
 
 ### Checklist de activación (pasos manuales, fuera del repositorio)
 
 - [x] Arquitectura de reclamado (`sync-admin-firestore.js`, sin cambios en `firestore.rules`) — probado en producción.
 - [x] Panel admin: listar/editar/eliminar importados, `<select>` de categorías, filtro — probado en producción.
-- [ ] Desplegar el Worker de Cloudflare: crear un GitHub PAT de grano fino (`Actions: write`, limitado a este repo), `wrangler login`, `wrangler deploy`, `wrangler secret put GITHUB_TOKEN`.
-- [ ] Pegar la URL del Worker en `SYNC_WORKER_URL` (`js/admin-panel.js`) para activar el botón "Sincronizar ahora".
+- [x] Worker de Cloudflare desplegado (GitHub PAT de grano fino con `Actions: write` limitado a este repo, guardado como secreto `GITHUB_TOKEN` del Worker) — probado en producción.
+- [x] URL del Worker conectada en `SYNC_WORKER_URL` (`js/admin-panel.js`) — botón "Sincronizar ahora" operativo.
 
 ---
 

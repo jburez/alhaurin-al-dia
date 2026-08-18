@@ -618,7 +618,7 @@ Primera pieza de la migración hacia una plataforma hiperlocal: un panel web (`/
 
 ### Seguridad: escapado de HTML
 
-Todo lo que se pinta en `/admin/` a partir de datos de Firestore pasa por `escapeHTML()` antes de insertarse en el DOM — importante sobre todo en la pestaña Radar Social, cuyos datos los escribe **cualquier visitante anónimo** desde la página pública sin login. `radar-social/index.html` (la página pública) tiene el mismo problema sin corregir todavía — pendiente, requiere confirmación antes de tocar ese archivo.
+Todo lo que se pinta en `/admin/` y en `radar-social/index.html` a partir de datos de Firestore pasa por `escapeHTML()` antes de insertarse en el DOM — importante sobre todo en Radar Social, cuyos datos (`title`, `desc`, `name`, `street`, `subtype`) los escribe **cualquier visitante anónimo** desde la página pública sin login. Verificado el 18/08/2026 en producción con un payload real (`<img src=x onerror=...>` en título/desc/street/name): se renderiza como texto literal, no se ejecuta.
 
 ### Papelera (soft-delete)
 

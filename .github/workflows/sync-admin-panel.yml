@@ -37,6 +37,15 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
         run: node scripts/sync-admin-firestore.js
 
+      - name: Sincronizar métricas de Cloudflare Web Analytics
+        # No bloquea el resto del sync si la API de Analytics falla —
+        # avisos/eventos/estado local son más importantes que el resumen
+        # de visitas del dashboard.
+        continue-on-error: true
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+        run: node scripts/sync-cloudflare-analytics.js
+
       - name: Regenerar páginas de eventos
         run: python3 scripts/generar_paginas_eventos.py
 
@@ -46,7 +55,7 @@ jobs:
       - name: Commit cambios si hay actualización
         id: commit
         run: |
-          if git diff --quiet data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json index.html planes/; then
+          if git diff --quiet data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json data/analytics-resumen.json index.html planes/; then
             echo "Sin cambios desde el panel admin"
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -54,7 +63,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json index.html planes/
+          git add data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json data/analytics-resumen.json index.html planes/
           git commit -m "Sincroniza panel admin: avisos, eventos, estado local, tráfico y comercios"
           git push origin develop
           echo "changed=true" >> "$GITHUB_OUTPUT"

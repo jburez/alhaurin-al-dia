@@ -78,6 +78,7 @@ onAuthStateChanged(auth, (user) => {
             startRadarListener();
             startComerciosListener();
             startPapeleraListener();
+            cargarAnalyticsResumen();
         }
     } else {
         if (user) signOut(auth); // sesión válida pero sin permisos: no dejar a medias
@@ -978,11 +979,42 @@ papeleraList.addEventListener("click", async (e) => {
 });
 
 // ===== Dashboard: contadores en vivo (reutiliza los datos ya cargados por
-// cada pestaña, sin lecturas extra a Firestore) =====
+// cada pestaña, sin lecturas extra a Firestore) + resumen de Cloudflare
+// Web Analytics (data/analytics-resumen.json, dato público generado cada
+// 15 min por scripts/sync-cloudflare-analytics.js — sin token en el
+// navegador, ver ese script para el porqué) =====
 const dashboardStats = document.getElementById("admin-dashboard-stats");
+const dashboardTopPaginas = document.getElementById("admin-dashboard-top-paginas");
+let analyticsResumen = null;
+
+async function cargarAnalyticsResumen() {
+    try {
+        const resp = await fetch("/data/analytics-resumen.json", { cache: "no-store" });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        analyticsResumen = await resp.json();
+    } catch (err) {
+        console.error("Error cargando resumen de analítica:", err);
+        analyticsResumen = null;
+    }
+    renderDashboard();
+}
 
 function statTile(value, label, warning) {
     return `<div class="admin-stat-tile${warning ? " admin-stat-tile--warning" : ""}"><div class="admin-stat-tile-value">${value}</div><span class="admin-stat-tile-label">${escapeHTML(label)}</span></div>`;
+}
+
+function renderTopPaginas() {
+    const paginas = analyticsResumen?.topPaginas || [];
+    if (!paginas.length) {
+        dashboardTopPaginas.innerHTML = '<p class="admin-empty">Todavía no hay datos suficientes de Web Analytics.</p>';
+        return;
+    }
+    dashboardTopPaginas.innerHTML = paginas.map((p) => `
+        <div class="admin-top-pagina-item">
+            <span class="admin-top-pagina-ruta">${escapeHTML(p.ruta || "/")}</span>
+            <span class="admin-top-pagina-vistas">${Number(p.vistas || 0).toLocaleString("es-ES")}</span>
+        </div>
+    `).join("");
 }
 
 function renderDashboard() {
@@ -991,14 +1023,20 @@ function renderDashboard() {
         const eventosActivos = allEventos.filter((e) => e.activo !== false).length;
         const comerciosActivos = allComercios.filter((c) => c.activo !== false).length;
         const radarActivos = allRadarReports.filter((r) => !radarIsExpired(r)).length;
+        const visitas24h = analyticsResumen?.visitas24h || 0;
+        const paginasVistas24h = analyticsResumen?.paginasVistas24h || 0;
 
         dashboardStats.innerHTML = [
+            statTile(visitas24h.toLocaleString("es-ES"), "Visitas (24h)"),
+            statTile(paginasVistas24h.toLocaleString("es-ES"), "Páginas vistas (24h)"),
             statTile(avisosActivos, `Aviso${avisosActivos === 1 ? "" : "s"} activo${avisosActivos === 1 ? "" : "s"}`),
             statTile(eventosActivos, `Evento${eventosActivos === 1 ? "" : "s"} activo${eventosActivos === 1 ? "" : "s"} en Firestore`),
             statTile(comerciosActivos, `Comercio${comerciosActivos === 1 ? "" : "s"} destacado${comerciosActivos === 1 ? "" : "s"} activo${comerciosActivos === 1 ? "" : "s"}`),
             statTile(radarActivos, `Reporte${radarActivos === 1 ? "" : "s"} activo${radarActivos === 1 ? "" : "s"} en Radar Social`),
             statTile(allPapelera.length, `Elemento${allPapelera.length === 1 ? "" : "s"} en papelera`, allPapelera.length > 0),
         ].join("");
+
+        renderTopPaginas();
     } catch (err) {
         console.error("Error renderizando dashboard:", err);
         dashboardStats.innerHTML = `<p class="admin-empty">Error: ${escapeHTML(err.message)}</p>`;

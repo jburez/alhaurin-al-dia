@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-18T12:12:42.264Z",
-  "visitas24h": 3,
-  "paginasVistas24h": 11,
+  "actualizado": "2026-08-18T12:24:17.487Z",
+  "visitas24h": 7,
+  "paginasVistas24h": 26,
   "topPaginas": [
     {
       "ruta": "/",
-      "vistas": 5
+      "vistas": 6
+    },
+    {
+      "ruta": "/admin/",
+      "vistas": 6
     },
     {
       "ruta": "/noticias/",
       "vistas": 4
     },
     {
-      "ruta": "/admin/",
+      "ruta": "/seguimiento/",
+      "vistas": 3
+    },
+    {
+      "ruta": "/tiempo/",
       "vistas": 2
-    },
-    {
-      "ruta": "/guia-util/telefonos/",
-      "vistas": 1
-    },
-    {
-      "ruta": "/guia-util/tramites/",
-      "vistas": 1
     }
   ]
 }

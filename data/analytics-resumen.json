@@ -1,6 +1,27 @@
 {
-  "actualizado": null,
-  "visitas24h": 0,
-  "paginasVistas24h": 0,
-  "topPaginas": []
+  "actualizado": "2026-08-18T12:12:42.264Z",
+  "visitas24h": 3,
+  "paginasVistas24h": 11,
+  "topPaginas": [
+    {
+      "ruta": "/",
+      "vistas": 5
+    },
+    {
+      "ruta": "/noticias/",
+      "vistas": 4
+    },
+    {
+      "ruta": "/admin/",
+      "vistas": 2
+    },
+    {
+      "ruta": "/guia-util/telefonos/",
+      "vistas": 1
+    },
+    {
+      "ruta": "/guia-util/tramites/",
+      "vistas": 1
+    }
+  ]
 }

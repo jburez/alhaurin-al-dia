@@ -80,6 +80,15 @@ function auditHtmlFiles() {
     if (/SearchAction|\/buscar\//i.test(html)) {
       searchAction.push(url);
     }
+
+    // Un stub de redirección (meta refresh instantáneo hacia otra URL, ver
+    // /planes/calendario/ y scripts/merge-duplicate-archive-2026-08.js) no
+    // es una página de contenido: le basta con el canonical, exigirle
+    // título/descripción propios no tiene sentido — la página de destino ya
+    // los tiene.
+    const isRedirectStub = /<meta\s+http-equiv=["']refresh["']/i.test(html);
+    if (isRedirectStub) continue;
+
     if (!/<title>[^<]+<\/title>/i.test(html)) {
       missingTitle.push(url);
     }

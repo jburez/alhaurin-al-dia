@@ -62,17 +62,24 @@ function main() {
   }
   if (!Array.isArray(archivo)) archivo = [];
 
-  const listHTML = archivo.length
-    ? archivo.map(noticia => renderNewsCardHTML(noticia, { isHome: false })).join('\n')
+  // Las noticias con "fusionadaEn" son duplicados de otra ya archivada (ver
+  // scripts/merge-duplicate-archive-2026-08.js): su página en /noticias/ es
+  // ahora solo una redirección, así que no tiene sentido listarlas como si
+  // fueran contenido propio. La entrada se mantiene en el JSON (no se
+  // borra) para que scripts/audit-orphan-pages.js la siga reconociendo.
+  const visibles = archivo.filter(noticia => !noticia.fusionadaEn);
+
+  const listHTML = visibles.length
+    ? visibles.map(noticia => renderNewsCardHTML(noticia, { isHome: false })).join('\n')
     : '<p>No hay noticias archivadas todavía.</p>';
 
   html = setContainerInnerHTML(html, 'news-archive-list', listHTML);
-  html = setElementText(html, 'news-archive-count', archivo.length === 1 ? '1 noticia archivada.' : `${archivo.length} noticias archivadas.`);
+  html = setElementText(html, 'news-archive-count', visibles.length === 1 ? '1 noticia archivada.' : `${visibles.length} noticias archivadas.`);
 
   const previo = fs.existsSync(ARCHIVE_INDEX_FILE) ? fs.readFileSync(ARCHIVE_INDEX_FILE, 'utf8') : null;
   if (html !== previo) fs.writeFileSync(ARCHIVE_INDEX_FILE, html);
 
-  console.log(`noticias/archivo/index.html regenerado con ${archivo.length} noticias archivadas.`);
+  console.log(`noticias/archivo/index.html regenerado con ${visibles.length} noticias archivadas (${archivo.length} en total, ${archivo.length - visibles.length} fusionadas).`);
 }
 
 main();

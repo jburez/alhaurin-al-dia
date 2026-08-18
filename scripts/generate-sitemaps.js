@@ -43,6 +43,20 @@ function toUrl(file) {
   return '/' + rel;
 }
 
+// Google desaconseja listar en el sitemap una URL cuyo propio <link
+// rel="canonical"> apunta a otra página (p.ej. los stubs de redirección de
+// scripts/merge-duplicate-archive-2026-08.js, o /planes/calendario/, que ya
+// se colaba desde antes de eso). Sin este filtro, el sitemap seguiría
+// enviando a Google páginas que la propia página dice que no son la buena.
+function isNonCanonical(file, url) {
+  const html = fs.readFileSync(file, 'utf8');
+  const match = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i);
+  if (!match) return false;
+  const canonical = match[1].trim();
+  const ownUrl = (SITE_URL + url).trim();
+  return canonical !== ownUrl;
+}
+
 function fileDate(file) {
   return fs.statSync(file).mtime.toISOString().slice(0, 10);
 }
@@ -132,7 +146,7 @@ const htmlFiles = walk(ROOT);
 const entries = uniqueSorted(htmlFiles.map(file => {
   const url = toUrl(file);
   return { url, file, lastmod: fileDate(file), ...meta(url) };
-}));
+}).filter(entry => !isNonCanonical(entry.file, entry.url)));
 
 const pharmacyEntries = entries.filter(entry =>
   entry.url === '/guia-util/farmacias/' || entry.url.startsWith('/guia-util/farmacias/')

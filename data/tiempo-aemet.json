@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-19T12:45:54+02:00",
+  "actualizado": "2026-08-19T17:46:30+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "⛅",
     "titulo": "Tiempo",
     "valor": "Máx. 37º",
-    "detalle": "Despejado · Máx. 37º / Mín. 22º · Lluvia 0%",
+    "detalle": "Intervalos nubosos · Máx. 37º / Mín. 22º · Lluvia 15%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "19/8",
     "t_max": "37",
     "t_min": "22",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "icono": "⛅",
+    "descripcion": "Intervalos nubosos",
+    "lluvia": "15%",
+    "viento": "S 15 km/h",
     "uv": "8"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "19/8",
       "t_max": "37",
       "t_min": "22",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "15%",
+      "viento": "S 15 km/h",
       "uv": "8"
     },
     {
@@ -124,8 +124,8 @@
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Muy recomendado",
-      "detalle": "Cielo limpio y sin calima"
+      "estado": "Espera unos días",
+      "detalle": "Posible barro o lluvia"
     },
     {
       "id": "deporte",
@@ -138,10 +138,10 @@
       "id": "polen",
       "icono": "🌾",
       "titulo": "Alergia y Polen",
-      "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.9 granos/m³)",
+      "estado": "Bajo",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Bajo (1.0 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.9,
+      "gramineas": 1.0,
       "olivo": 0.0
     }
   ],

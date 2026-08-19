@@ -1,13 +1,83 @@
 [
     {
-        "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
-        "descripcion": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
-        "resumen": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
-        "categoria": "Educación",
+        "titulo": "25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)",
+        "descripcion": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en el llano tras la parroquia.",
+        "resumen": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en el llano tras la parroquia.",
+        "categoria": "Fiestas y Tradiciones",
         "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T10:40:14.928Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/CAMP-e1785926761443.jpeg",
-        "pagina": "noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio.html"
+        "fecha": "2026-08-19T13:05:43.740Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_-20.jpg",
+        "pagina": "noticias/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026.html"
+    },
+    {
+        "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
+        "descripcion": "El CD Alhaurino y el Atlético Malagueño disputan el XXXIII Trofeo Virgen de Gracia en Alhaurín el Grande, un clásico del fútbol local que reúne a aficionados y equipos de la región.",
+        "resumen": "El CD Alhaurino y el Atlético Malagueño disputan el XXXIII Trofeo Virgen de Gracia en Alhaurín el Grande, un clásico del fútbol local que reúne a aficionados y equipos de la región.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T13:05:43.740Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Captura.jpg",
+        "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia.html"
+    },
+    {
+        "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande",
+        "descripcion": "Conoce el programa completo de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "resumen": "Conoce el programa completo de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T12:58:45.402Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T12:58:45.400Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-y-condolencias.html"
+    },
+    {
+        "titulo": "Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda",
+        "descripcion": "El Hermano Mayor y miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "resumen": "El Hermano Mayor y miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T12:58:45.398Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
+        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
+    },
+    {
+        "titulo": "El Ayuntamiento presenta las bases para que las asociaciones y colectivos locales puedan",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T12:58:45.395Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
+        "pagina": "noticias/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan.html"
+    },
+    {
+        "titulo": "Bendición del nuevo retablo cerámico en la Casa Hermandad de Virgen de Gracia 2026",
+        "descripcion": "El párroco Andrés Merino bendijo el retablo cerámico de la Casa Hermandad antes de la misa, en un acto con presencia del alcalde y miembros de la hermandad en Alhaurín el Grande.",
+        "resumen": "El párroco Andrés Merino bendijo el retablo cerámico de la Casa Hermandad antes de la misa, en un acto con presencia del alcalde y miembros de la hermandad en Alhaurín el Grande.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T12:58:45.392Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/virgen.jpg",
+        "pagina": "noticias/bendicion-del-nuevo-retablo-ceramico-en-la-casa-hermandad-de-virgen-de-gracia-2026.html"
+    },
+    {
+        "titulo": "96 golfistas compiten en el V Torneo de Golf Tomate Huevo Toro en Alhaurín Golf",
+        "descripcion": "El V Torneo de Golf Tomate Huevo Toro reunió a 96 participantes en Alhaurín Golf para promocionar el tomate huevo toro y fomentar su consumo local.",
+        "resumen": "El V Torneo de Golf Tomate Huevo Toro reunió a 96 participantes en Alhaurín Golf para promocionar el tomate huevo toro y fomentar su consumo local.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T12:58:45.377Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/golf.jpg",
+        "pagina": "noticias/96-golfistas-compiten-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html"
     },
     {
         "titulo": "El Ayuntamiento de Alhaurín el Grande comienza la demolición de módulos en el CEIP Emilia",
@@ -28,16 +98,6 @@
         "fecha": "2026-08-19T10:40:14.886Z",
         "imagen": "https://i1.ytimg.com/vi/XIWudmpV7tY/maxresdefault.jpg",
         "pagina": "noticias/la-virgen-de-gracia-recorre-plaza-alta-y-llega-al-barrio-san-isidro-en-su-triduo-2026.html"
-    },
-    {
-        "titulo": "La Virgen de Gracia recorre Plaza Alta y llega al barrio San Isidro en Alhaurín el Grande",
-        "descripcion": "La Virgen de Gracia celebró la primera misa de triduo en Plaza Alta y fue trasladada al barrio San Isidro, donde vecinos y el Coro Rociero la recibieron con flores y cantos.",
-        "resumen": "La Virgen de Gracia celebró la primera misa de triduo en Plaza Alta y fue trasladada al barrio San Isidro, donde vecinos y el Coro Rociero la recibieron con flores y cantos.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T10:35:00.642Z",
-        "imagen": "https://i1.ytimg.com/vi/XIWudmpV7tY/maxresdefault.jpg",
-        "pagina": "noticias/la-virgen-de-gracia-recorre-plaza-alta-y-llega-al-barrio-san-isidro-en-alhaurin-el-grande.html"
     },
     {
         "titulo": "Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026",
@@ -78,36 +138,6 @@
         "fecha": "2026-08-19T08:51:33.070Z",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986.jpg",
         "pagina": "noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-con-una-gran-fiesta-de-despedida.html"
-    },
-    {
-        "titulo": "José Luis Jaén lleva música y poesía a Alhaurín el Grande en homenaje a Antonio Gala",
-        "descripcion": "Alhaurín el Grande celebra el aniversario de Antonio Gala con un acto cultural protagonizado por José Luis Jaén, que combina música, poesía y raíces en el marco del programa &#x27;Cuarta Estación&#x27;.",
-        "resumen": "Alhaurín el Grande celebra el aniversario de Antonio Gala con un acto cultural protagonizado por José Luis Jaén, que combina música, poesía y raíces en el marco del programa &#x27;Cuarta Estación&#x27;.",
-        "categoria": "Agenda Cultural",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T08:51:33.066Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen.jpg",
-        "pagina": "noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html"
-    },
-    {
-        "titulo": "Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande",
-        "descripcion": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T08:45:48.751Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
-    },
-    {
-        "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
-        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T08:45:48.746Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
-        "pagina": "noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
     },
     {
         "titulo": "Fedelhorce impulsa la exportación de productos y servicios al mercado chino",
@@ -250,16 +280,6 @@
         "pagina": "noticias/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-alhaurin-el-grande.html"
     },
     {
-        "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela",
-        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
-        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T04:43:00.243Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
-    },
-    {
         "titulo": "Alhaurín el Grande, reconocido como Centro Comercial Abierto de Andalucía",
         "descripcion": "Alhaurín el Grande ha sido declarado Centro Comercial Abierto de Andalucía para impulsar la competitividad y dinamizar el comercio local.",
         "resumen": "Alhaurín el Grande ha sido declarado Centro Comercial Abierto de Andalucía para impulsar la competitividad y dinamizar el comercio local.",
@@ -358,16 +378,6 @@
         "fecha": "2026-08-19T01:41:36.971Z",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
         "pagina": "noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-emotiva-tradicion.html"
-    },
-    {
-        "titulo": "Fiestas de la Virgen de Gracia en Alhaurín el Grande culminan con gran éxito y emotiva",
-        "descripcion": "Las fiestas patronales en honor a la Virgen de Gracia en Alhaurín el Grande concluyeron con una misa solemne, entrega del Escudo de Oro y una multitudinaria procesión por las calles del municipio.",
-        "resumen": "Las fiestas patronales en honor a la Virgen de Gracia en Alhaurín el Grande concluyeron con una misa solemne, entrega del Escudo de Oro y una multitudinaria procesión por las calles del municipio.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-18T22:29:59.905Z",
-        "imagen": "https://i1.ytimg.com/vi/hgXM4Iq0ft4/maxresdefault.jpg",
-        "pagina": "noticias/fiestas-de-la-virgen-de-gracia-en-alhaurin-el-grande-culminan-con-gran-exito-y-emotiva.html"
     },
     {
         "titulo": "El evento contó con la presencia de representantes de cofradías locales, asociaciones",
@@ -999,16 +1009,6 @@
         "fecha": "2026-08-15T04:37:51.565Z",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen-724x1024.jpg",
         "pagina": "noticias/jose-luis-jaen-protagoniza-un-homenaje-cultural-en-alhaurin-el-grande-por-antonio-gala.html"
-    },
-    {
-        "titulo": "El Ayuntamiento de Alhaurín el Grande abre plazo para subvenciones a asociaciones locales",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan solicitar subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan solicitar subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "categoria": "Municipal",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-15T04:37:51.557Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos-724x1024.jpeg",
-        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-abre-plazo-para-subvenciones-a-asociaciones-locales.html"
     },
     {
         "titulo": "Alhaurín el Grande licita obras para reparar la cubierta del pabellón 2 del Polideportivo",

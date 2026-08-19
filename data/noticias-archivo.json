@@ -1,5 +1,65 @@
 [
     {
+        "titulo": "José Luis Jaén lleva música y poesía a Alhaurín el Grande en homenaje a Antonio Gala",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande celebra el aniversario de Antonio Gala con un acto cultural protagonizado por José Luis Jaén dentro del programa &#x27;Cuarta Estación&#x27;.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande celebra el aniversario de Antonio Gala con un acto cultural protagonizado por José Luis Jaén dentro del programa &#x27;Cuarta Estación&#x27;.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T22:35:30.751Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen.jpg",
+        "pagina": "noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html"
+    },
+    {
+        "titulo": "Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande",
+        "descripcion": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "resumen": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T22:30:42.393Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "Fiestas de la Virgen de Gracia en Alhaurín el Grande culminan con gran éxito y emotiva",
+        "descripcion": "Las fiestas patronales en honor a la Virgen de Gracia en Alhaurín el Grande concluyeron con una misa solemne, entrega del Escudo de Oro y una multitudinaria procesión por las calles del municipio.",
+        "resumen": "Las fiestas patronales en honor a la Virgen de Gracia en Alhaurín el Grande concluyeron con una misa solemne, entrega del Escudo de Oro y una multitudinaria procesión por las calles del municipio.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T22:30:42.387Z",
+        "imagen": "https://i1.ytimg.com/vi/hgXM4Iq0ft4/maxresdefault.jpg",
+        "pagina": "noticias/fiestas-de-la-virgen-de-gracia-en-alhaurin-el-grande-culminan-con-gran-exito-y-emotiva.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande impulsa clubes de lectura y talleres para jóvenes en agosto 2026",
+        "descripcion": "La Biblioteca Municipal abre inscripciones para clubes de lectura y la Casita de la Juventud ofrece taller de pintura creativa, además de concluir el torneo de baloncesto 3x3 con victoria de Team Moli.",
+        "resumen": "La Biblioteca Municipal abre inscripciones para clubes de lectura y la Casita de la Juventud ofrece taller de pintura creativa, además de concluir el torneo de baloncesto 3x3 con victoria de Team Moli.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T22:30:42.372Z",
+        "imagen": "https://i4.ytimg.com/vi/SGGofjEa-t4/maxresdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-impulsa-clubes-de-lectura-y-talleres-para-jovenes-en-agosto-2026.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande estrena dos rutas saludables para conectar patrimonio y naturaleza",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que integran patrimonio, naturaleza y turismo local, con financiación estatal y municipal.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que integran patrimonio, naturaleza y turismo local, con financiación estatal y municipal.",
+        "categoria": "Turismo y Patrimonio",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T22:30:42.371Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande.jpg",
+        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-conectar-patrimonio-y-naturaleza.html"
+    },
+    {
+        "titulo": "Abierto el plazo para inscribirse en los Clubes de Lectura de Alhaurín el Grande 2026-27",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, que incluyen nuevas actividades y grupos para todas las edades.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, que incluyen nuevas actividades y grupos para todas las edades.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T22:30:42.363Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Club-de-lectura-juvenil-2026-27.jpg",
+        "pagina": "noticias/abierto-el-plazo-para-inscribirse-en-los-clubes-de-lectura-de-alhaurin-el-grande-2026-27.html"
+    },
+    {
         "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
         "descripcion": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyeron en julio, ofreciendo actividades para la conciliación familiar.",
         "resumen": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyeron en julio, ofreciendo actividades para la conciliación familiar.",
@@ -8,16 +68,6 @@
         "fecha": "2026-08-19T20:40:31.181Z",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/CAMP-e1785926761443.jpeg",
         "pagina": "noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio.html"
-    },
-    {
-        "titulo": "25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)",
-        "descripcion": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y baile en el llano tras la parroquia de Alhaurín el Grande.",
-        "resumen": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y baile en el llano tras la parroquia de Alhaurín el Grande.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T20:40:31.177Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_-20.jpg",
-        "pagina": "noticias/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026.html"
     },
     {
         "titulo": "Programa de actos del jueves en el Día de Jesús 2026 en Alhaurín el Grande",
@@ -128,16 +178,6 @@
         "fecha": "2026-08-19T16:43:52.940Z",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Captura.jpg",
         "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia.html"
-    },
-    {
-        "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande",
-        "descripcion": "Conoce el programa completo de los actos previstos para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "Conoce el programa completo de los actos previstos para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T16:37:40.168Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html"
     },
     {
         "titulo": "Alhaurín el Grande estrena dos rutas saludables para descubrir patrimonio y naturaleza",
@@ -558,16 +598,6 @@
         "fecha": "2026-08-18T20:31:10.470Z",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Secuencia-14.00_46_52_18.Imagen-fija010.jpg",
         "pagina": "noticias/entre-el-publico-se-encontraban-representantes-de-cofradias-locales-asociaciones.html"
-    },
-    {
-        "titulo": "Abierto el plazo para inscribirse en los Clubes de Lectura 2026-27 en Alhaurín el Grande",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, que incluyen nuevos grupos y un día adicional de actividades.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, que incluyen nuevos grupos y un día adicional de actividades.",
-        "categoria": "Educación",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-18T20:31:10.446Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Club-de-lectura-juvenil-2026-27.jpg",
-        "pagina": "noticias/abierto-el-plazo-para-inscribirse-en-los-clubes-de-lectura-2026-27-en-alhaurin-el-grande.html"
     },
     {
         "titulo": "Clausuran los campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce 2026",

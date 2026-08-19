@@ -1,26 +1,49 @@
 [
     {
+        "id": "https-www-youtube-com-watch-v-umq8inen77k-47b52d53",
+        "titulo": "San Isidro despide a la Virgen de Gracia en su traslado a la Ermita de San Sebastián",
+        "titulo_original": "Segunda misa de triduo y tercer traslado de San Isidro a San Sebastián | Virgen de Gracia 2026",
+        "descripcion": "Vecinos de San Isidro acompañaron a la Virgen de Gracia en su tercer traslado hasta la Ermita de San Sebastián, con la presencia del alcalde y representantes de hermandades locales.",
+        "resumen": "Vecinos de San Isidro acompañaron a la Virgen de Gracia en su tercer traslado hasta la Ermita de San Sebastián, con la presencia del alcalde y representantes de hermandades locales.",
+        "cuerpo": "La barriada de San Isidro vivió una emotiva jornada con la segunda misa de triduo dedicada a la Virgen de Gracia, patrona de Alhaurín el Grande. Durante la ceremonia, el alcalde Anthony Bermúdez y los hermanos mayores de las hermandades de Jesús Nazareno, Santa Veracruz y Virgen de Gracia participaron en los actos religiosos.\n\nAdemás, algunos asistentes comentaron el eclipse que coincidió con la misa. Tras la misa, la Virgen de Gracia inició su procesión por las calles Camino de Coín, Calle Nueva, Calle Madrid y Alozaina, regresando finalmente a la Plaza de San Sebastián.\n\nAllí, la patrona fue recibida por los miembros de la hermandad conocida como los moraos, culminando así el tercer traslado de la Virgen en este triduo. Este evento es una muestra del arraigo y la devoción que mantiene la comunidad local hacia su patrona.",
+        "fecha": "2026-08-19T14:30:11+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Virgen de Gracia Alhaurín el Grande",
+            "traslado Virgen de Gracia",
+            "misa triduo San Isidro"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=UMQ8iNEn77k",
+        "url": "https://www.youtube.com/watch?v=UMQ8iNEn77k",
+        "imagen": "https://i2.ytimg.com/vi/UMQ8iNEn77k/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/san-isidro-despide-a-la-virgen-de-gracia-en-su-traslado-a-la-ermita-de-san-sebastian.html"
+    },
+    {
         "id": "https-www-youtube-com-watch-v-sggofjea-t4-752e6083",
-        "titulo": "Alhaurín el Grande impulsa clubes de lectura, taller de pintura y torneo de baloncesto 3x3",
+        "titulo": "Alhaurín el Grande lanza clubes de lectura y cierra ciclo de cine con Thunderbolts",
         "titulo_original": "NOTICIAS ATV 19 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "La Biblioteca Municipal abre inscripciones para clubes de lectura; jóvenes disfrutan taller de pintura y Team Moli gana torneo de baloncesto 3x3 en Alhaurín el Grande.",
-        "resumen": "La Biblioteca Municipal abre inscripciones para clubes de lectura; jóvenes disfrutan taller de pintura y Team Moli gana torneo de baloncesto 3x3 en Alhaurín el Grande.",
-        "cuerpo": "La Biblioteca Municipal de Alhaurín el Grande ha iniciado un nuevo curso de clubes de lectura gratuitos, ampliando los días disponibles y el rango de edad para incluir a niños, jóvenes y adultos. Las inscripciones ya están abiertas para quienes deseen participar en estas actividades culturales.\n\nParalelamente, la Casita de la Juventud acoge un taller de pintura creativa dirigido a los jóvenes del municipio, fomentando la expresión artística y el desarrollo personal a través del arte. Esta iniciativa busca ofrecer un espacio de encuentro y aprendizaje para la juventud local.\n\nEn el ámbito deportivo, el torneo de baloncesto 3x3 Virgen de Gracia concluyó con la victoria del Team Moli, que se impuso en la final a David Presidente. Además, el ciclo de “Noches de cine” finalizará con la proyección de \"Thunderbolts, The New Avengers\" en la Caseta de la Juventud, donde los asistentes podrán disfrutar de la película y puestos de comida.",
+        "descripcion": "La Biblioteca Municipal inicia nuevos clubes de lectura gratuitos para todas las edades y la Caseta de la Juventud proyecta Thunderbolts, The New Avengers, cerrando el ciclo de cine de agosto.",
+        "resumen": "La Biblioteca Municipal inicia nuevos clubes de lectura gratuitos para todas las edades y la Caseta de la Juventud proyecta Thunderbolts, The New Avengers, cerrando el ciclo de cine de agosto.",
+        "cuerpo": "La Biblioteca Municipal de Alhaurín el Grande ha abierto el plazo de inscripción para un nuevo curso de clubes de lectura gratuitos, dirigido a todas las edades con opciones infantiles, juveniles y para adultos. Este año se amplían los días disponibles y el rango de edad para fomentar la participación de más vecinos.\n\nEn paralelo, la Caseta de la Juventud acoge un taller de pintura creativa especialmente diseñado para los jóvenes del municipio, promoviendo la expresión artística local. Además, mañana se proyectará la película Thunderbolts, The New Avengers, a las 22:00 horas, en la última sesión del ciclo “Noches de cine”.\n\nLos asistentes podrán llevar su propia silla y disfrutar de puestos de perritos calientes y buñuelos. En el ámbito deportivo, el torneo de baloncesto 3x3 Virgen de Gracia concluyó con la victoria del Team Moli, que se impuso en la final a David Presidente.",
         "fecha": "2026-08-19T12:00:29+00:00",
         "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Agenda Cultural",
-        "categoria_url": "categoria/agenda-cultural/",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
             "clubes de lectura Alhaurín el Grande",
-            "taller pintura creativa jóvenes",
-            "torneo baloncesto 3x3 Alhaurín"
+            "Noches de cine Alhaurín",
+            "baloncesto 3x3 Alhaurín el Grande"
         ],
         "enlace": "https://www.youtube.com/watch?v=SGGofjEa-t4",
         "url": "https://www.youtube.com/watch?v=SGGofjEa-t4",
         "imagen": "https://i4.ytimg.com/vi/SGGofjEa-t4/maxresdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-impulsa-clubes-de-lectura-taller-de-pintura-y-torneo-de-baloncesto-3x3.html"
+        "pagina": "noticias/alhaurin-el-grande-lanza-clubes-de-lectura-y-cierra-ciclo-de-cine-con-thunderbolts.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-yyeqq9vzhuo-f9c94fd0",
@@ -28,7 +51,7 @@
         "titulo_original": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días | PGM 143",
         "descripcion": "Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel.",
         "resumen": "Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel.",
-        "cuerpo": "La agenda cultural de Alhaurín el Grande presenta una variada oferta de eventos para los próximos días, organizada con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel. Este espacio cultural ofrece un repaso detallado de las actividades que se desarrollarán en el municipio, fomentando la participación y el disfrute de los vecinos.\n\nEntre las propuestas destacan exposiciones, talleres y encuentros que buscan promover el patrimonio y la cultura local. La iniciativa PlaneATV se consolida como un canal de referencia para conocer y planificar la asistencia a estos eventos, contribuyendo a dinamizar la vida cultural de Alhaurín el Grande.",
+        "cuerpo": "La agenda cultural de Alhaurín el Grande presenta una variada oferta de eventos para los próximos días, organizada con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel. Esta programación incluye actividades para todos los públicos, que buscan fomentar la participación y el disfrute de la cultura local.\n\nPlaneATV ofrece un repaso detallado de estas citas culturales, destacando la importancia de apoyar las iniciativas que promueven el patrimonio y la creatividad en el municipio. Los interesados pueden mantenerse informados para no perderse ninguna de las propuestas que enriquecerán la vida cultural de Alhaurín el Grande.",
         "fecha": "2026-08-19T07:36:23+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Agenda Cultural",
@@ -46,43 +69,20 @@
         "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html"
     },
     {
-        "id": "https-www-youtube-com-watch-v-xiwudmpv7ty-39b7848a",
-        "titulo": "La Virgen de Gracia recorre Plaza Alta y llega al barrio San Isidro en Alhaurín el Grande",
-        "titulo_original": "Primera misa de triduo y segundo traslado de Plaza Alta al barrio San Isidro | Virgen de Gracia 2026",
-        "descripcion": "La Virgen de Gracia celebró la primera misa de triduo en Plaza Alta y fue trasladada al barrio San Isidro, donde vecinos y el Coro Rociero la recibieron con flores y cánticos.",
-        "resumen": "La Virgen de Gracia celebró la primera misa de triduo en Plaza Alta y fue trasladada al barrio San Isidro, donde vecinos y el Coro Rociero la recibieron con flores y cánticos.",
-        "cuerpo": "La Virgen de Gracia continúa su tradicional recorrido por los barrios de Alhaurín el Grande en los días previos a su festividad. La primera misa de triduo se celebró en Plaza Alta, punto de partida para el segundo traslado hacia el barrio San Isidro.\n\nDurante el recorrido, la imagen fue acompañada por miembros de la Hermandad, representantes municipales y numerosos vecinos. A su llegada al barrio San Isidro, la Virgen fue recibida con flores y los cantes del Coro Rociero de la Hermandad, creando un ambiente de gran emoción y devoción.\n\nLos testimonios de los asistentes reflejan la importancia de esta tradición para la comunidad local y el esfuerzo de los preparativos que hacen posible esta celebración anual.",
-        "fecha": "2026-08-18T14:00:00+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
-        "seo_keywords": [
-            "Virgen de Gracia Alhaurín el Grande",
-            "traslado Virgen San Isidro",
-            "misa triduo Plaza Alta"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=XIWudmpV7tY",
-        "url": "https://www.youtube.com/watch?v=XIWudmpV7tY",
-        "imagen": "https://i1.ytimg.com/vi/XIWudmpV7tY/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/la-virgen-de-gracia-recorre-plaza-alta-y-llega-al-barrio-san-isidro-en-alhaurin-el-grande.html"
-    },
-    {
         "id": "https-www-youtube-com-watch-v-grcmrtakux0-c09100e5",
         "titulo": "Javier Aragón reconocido en Alhaurín el Grande y novedades deportivas y juveniles",
         "titulo_original": "NOTICIAS ATV 18 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande homenajea a Javier Aragón por su misión aeroespacial; talleres de juventud y triunfos deportivos completan la actualidad local.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande homenajea a Javier Aragón por su misión aeroespacial; talleres de juventud y triunfos deportivos completan la actualidad local.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha rendido homenaje al joven ingeniero aeroespacial Javier Aragón, quien ha sido invitado a firmar en el libro de oro municipal. Aragón destacó recientemente por su innovadora misión en la estratosfera para recopilar datos durante el eclipse solar, un logro que pone en valor el talento local en el ámbito científico.\n\nPor otro lado, el área de Juventud ha presentado su programación para septiembre, que incluye talleres centrados en la actividad física y en técnicas de estudio, dirigidos a fomentar hábitos saludables y mejorar el rendimiento académico entre los jóvenes del municipio.\n\nEn el ámbito deportivo, el CD Alhaurín el Grande F.S. se coronó campeón en la final de fútbol sala de los XXXIII torneos Virgen de Gracia con un marcador de 6-2. Además, el CD Alhaurino disputará su último partido amistoso de pretemporada contra el Málaga 1903, en el estadio Miguel Fijones, como preparación para la próxima temporada oficial.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha rendido homenaje al joven ingeniero aeroespacial Javier Aragón, quien ha sido incluido en el libro de oro municipal por su destacada labor en el estudio del eclipse solar mediante una misión en la estratosfera.\n\nEste reconocimiento refleja el compromiso del municipio con el talento local y la innovación científica. En el ámbito juvenil, el área de Juventud ha presentado la programación para septiembre, que incluye talleres enfocados en la actividad física y técnicas de estudio, diseñados para fomentar el desarrollo personal y académico de los jóvenes del municipio.\n\nPor otro lado, el CD Alhaurín el Grande F.S. celebró su victoria en la final de fútbol sala de los XXXIII torneos Virgen de Gracia con un marcador de 6-2. Además, el CD Alhaurino se prepara para disputar su último partido amistoso de pretemporada contra el Málaga 1903, un encuentro que tendrá lugar en el campo Miguel Fijones y servirá como preparación para la próxima temporada oficial.",
         "fecha": "2026-08-18T12:00:14+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
             "Javier Aragón Alhaurín el Grande",
-            "talleres juventud Alhaurín",
-            "CD Alhaurín fútbol sala"
+            "talleres juventud septiembre",
+            "CD Alhaurín el Grande fútbol sala"
         ],
         "enlace": "https://www.youtube.com/watch?v=GRCmRTAkUx0",
         "url": "https://www.youtube.com/watch?v=GRCmRTAkUx0",
@@ -93,65 +93,42 @@
     },
     {
         "id": "https-rtvalhaurinelgrande-com-primer-traslado-hasta-la-plaza-alta-virg-ed31d3cf",
-        "titulo": "Bendición del nuevo retablo cerámico en la Casa Hermandad de la Virgen de Gracia",
+        "titulo": "Bendición del nuevo retablo cerámico en la Casa Hermandad de Alhaurín el Grande",
         "titulo_original": "Primer traslado hasta la Plaza Alta | Virgen de Gracia 2026",
-        "descripcion": "El párroco Andrés Merino bendijo el retablo cerámico de la Casa Hermandad antes de la misa, en un acto con la presencia del alcalde Anthony Bermúdez y miembros de la hermandad.",
-        "resumen": "El párroco Andrés Merino bendijo el retablo cerámico de la Casa Hermandad antes de la misa, en un acto con la presencia del alcalde Anthony Bermúdez y miembros de la hermandad.",
-        "cuerpo": "El nuevo retablo cerámico ubicado en la parte alta de la fachada de la Casa Hermandad fue bendecido por el párroco Andrés Merino antes de la misa en la parroquia. Esta obra, creada por el artista malagueño Daniel García Romero, representa un importante elemento artístico y religioso para la hermandad de la Virgen de Gracia.\n\nEl acto contó con la presencia de representantes de la corporación municipal, entre ellos el alcalde Anthony Bermúdez, así como miembros de la hermandad. La bendición del retablo marca un momento destacado en los preparativos de las celebraciones de la Virgen de Gracia 2026 en Alhaurín el Grande.",
+        "descripcion": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa en Alhaurín el Grande.",
+        "resumen": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa en Alhaurín el Grande.",
+        "cuerpo": "En un acto previo a la misa celebrada en la Parroquia de Alhaurín el Grande, el párroco Andrés Merino realizó la bendición del nuevo retablo cerámico ubicado en la parte alta de la fachada de la Casa Hermandad. Esta obra artística, creada por el malagueño Daniel García Romero, representa un importante elemento decorativo y simbólico para la hermandad local.\n\nEl evento contó con la presencia de representantes de la corporación municipal, incluido el alcalde Anthony Bermúdez, así como miembros de la hermandad y otros asistentes que participaron en este momento de recogimiento y celebración.\n\nLa colocación del retablo refuerza la identidad cultural y religiosa de la comunidad de Alhaurín el Grande.",
         "fecha": "2026-08-18T11:24:02+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
-            "Virgen de Gracia Alhaurín el Grande",
-            "retablo cerámico Casa Hermandad",
-            "Daniel García Romero"
+            "retablo cerámico Alhaurín el Grande",
+            "Daniel García Romero",
+            "Casa Hermandad Virgen de Gracia"
         ],
         "enlace": "https://rtvalhaurinelgrande.com/primer-traslado-hasta-la-plaza-alta-virgen-de-gracia-2026/",
         "url": "https://rtvalhaurinelgrande.com/primer-traslado-hasta-la-plaza-alta-virgen-de-gracia-2026/",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/virgen.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/bendicion-del-nuevo-retablo-ceramico-en-la-casa-hermandad-de-la-virgen-de-gracia.html"
-    },
-    {
-        "id": "https-www-youtube-com-watch-v-hgxm4iq0ft4-d2de511f",
-        "titulo": "Fiestas de la Virgen de Gracia en Alhaurín el Grande culminan con gran éxito y emotiva",
-        "titulo_original": "NOTICIAS ATV 17 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "Las fiestas patronales en honor a la Virgen de Gracia en Alhaurín el Grande concluyeron con una misa solemne, entrega del Escudo de Oro y una multitudinaria procesión por las calles del municipio.",
-        "resumen": "Las fiestas patronales en honor a la Virgen de Gracia en Alhaurín el Grande concluyeron con una misa solemne, entrega del Escudo de Oro y una multitudinaria procesión por las calles del municipio.",
-        "cuerpo": "Las celebraciones en honor a la Virgen de Gracia en Alhaurín el Grande han dejado un balance muy positivo según Cristóbal Sánchez, hermano mayor de la Hermandad. El día principal comenzó con una misa solemne que contó con la participación activa de diversas hermandades y ofrendas en honor a la patrona.\n\nPor la tarde, la procesión de Nuestra Señora de Gracia recorrió las calles del municipio, siendo portada por los quintos y acompañada por hermandades, bandas, asociaciones, representantes municipales y numerosos vecinos.\n\nLa jornada finalizó con la entrega del Escudo de Oro a María Bravo, en reconocimiento a su dedicación a la Hermandad, y con la recepción de la Virgen en la parroquia acompañada por una petalada y los cantos del Coro Rociero.",
-        "fecha": "2026-08-18T09:33:01+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
-        "seo_keywords": [
-            "Virgen de Gracia Alhaurín el Grande",
-            "fiestas patronales Alhaurín",
-            "procesión Virgen de Gracia"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=hgXM4Iq0ft4",
-        "url": "https://www.youtube.com/watch?v=hgXM4Iq0ft4",
-        "imagen": "https://i1.ytimg.com/vi/hgXM4Iq0ft4/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/fiestas-de-la-virgen-de-gracia-en-alhaurin-el-grande-culminan-con-gran-exito-y-emotiva.html"
+        "pagina": "noticias/bendicion-del-nuevo-retablo-ceramico-en-la-casa-hermandad-de-alhaurin-el-grande.html"
     },
     {
         "id": "https-www-youtube-com-watch-v-pk838nsufju-23832532",
         "titulo": "Primer traslado de la Virgen de Gracia a la Plaza Alta en Alhaurín el Grande",
         "titulo_original": "Primer traslado hasta la Plaza Alta | Virgen de Gracia 2026",
-        "descripcion": "La Virgen de Gracia realizó su primer traslado a la Plaza Alta, acompañada por vecinos, autoridades y la banda Manuel Amador en un emotivo acto de fe y tradición local.",
-        "resumen": "La Virgen de Gracia realizó su primer traslado a la Plaza Alta, acompañada por vecinos, autoridades y la banda Manuel Amador en un emotivo acto de fe y tradición local.",
-        "cuerpo": "El párroco Andrés Merino bendijo el nuevo retablo cerámico en la fachada de la Casa Hermandad, obra del artista malagueño Daniel García Romero, antes de la misa en la Parroquia. Autoridades municipales, miembros de la hermandad y feligreses participaron en la ceremonia de bendición y oración.\n\nTras la misa, la Virgen de Gracia fue trasladada por primera vez a la Plaza Alta, acompañada por un cortejo formado por vecinos y la banda de la Asociación Musical Manuel Amador. El recorrido, que incluyó las calles Cilla y de la Cruz, culminó en la Plaza Alta, donde numerosos vecinos esperaban para recibir a la patrona de Alhaurín el Grande.\n\nEn la plaza, la imagen fue colocada en una pérgola decorada con cañizo, telas celestes y mantones, junto al lugar donde se retiró la farola principal. Destacaron las intervenciones musicales desde el balcón de Marta Núñez y el cantante Ronald, quienes dedicaron canciones a la Virgen.",
+        "descripcion": "La Virgen de Gracia realizó su primer traslado a la Plaza Alta, acompañado por vecinos, autoridades y la banda Manuel Amador en un emotivo acto de fe y tradición local.",
+        "resumen": "La Virgen de Gracia realizó su primer traslado a la Plaza Alta, acompañado por vecinos, autoridades y la banda Manuel Amador en un emotivo acto de fe y tradición local.",
+        "cuerpo": "El párroco Andrés Merino bendijo el nuevo retablo cerámico en la fachada de la Casa Hermandad, obra del artista malagueño Daniel García Romero, antes de la misa en la Parroquia. Autoridades municipales, miembros de la hermandad y feligreses participaron en la ceremonia de bendición y oración.\n\nTras la misa, la Virgen de Gracia fue trasladada por primera vez a la Plaza Alta en un recorrido breve por las calles Cilla y de la Cruz, acompañado por la banda de la Asociación Musical Manuel Amador y un cortejo formado por vecinos del barrio.\n\nEn la plaza, la imagen fue recibida con cantos dedicados por Marta Núñez desde un balcón y por el cantante Ronald, mientras numerosos vecinos esperaban su llegada. La Virgen fue colocada en una pérgola decorada con cañizo, telas celestes y mantones, en el espacio donde se retiró la farola principal.",
         "fecha": "2026-08-18T09:27:51+00:00",
         "fuente": "ATV Alhaurín YouTube",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
             "Virgen de Gracia Alhaurín el Grande",
-            "traslado Virgen de Gracia",
-            "Plaza Alta Alhaurín el Grande"
+            "traslado Virgen Plaza Alta",
+            "fiestas patronales Alhaurín"
         ],
         "enlace": "https://www.youtube.com/watch?v=Pk838NSUfjU",
         "url": "https://www.youtube.com/watch?v=Pk838NSUfjU",
@@ -161,65 +138,19 @@
         "pagina": "noticias/primer-traslado-de-la-virgen-de-gracia-a-la-plaza-alta-en-alhaurin-el-grande.html"
     },
     {
-        "id": "https-alhaurinelgrande-es-el-ayuntamiento-presenta-las-bases-para-que-40bec2af",
-        "titulo": "El Ayuntamiento de Alhaurín el Grande abre plazo para subvenciones a asociaciones locales",
-        "titulo_original": "El Ayuntamiento presenta las bases para que las asociaciones y colectivos locales puedan optar a las subvenciones municipales",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan solicitar subvenciones hasta el 15 de septiembre de 2026.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan solicitar subvenciones hasta el 15 de septiembre de 2026.",
-        "cuerpo": "La Concejalía de Participación Ciudadana del Ayuntamiento de Alhaurín el Grande ha anunciado la apertura del plazo para que las asociaciones y colectivos locales presenten sus solicitudes para optar a las subvenciones municipales.\n\nEstas ayudas están destinadas a apoyar proyectos y actividades que fomenten la participación y el desarrollo comunitario en el municipio. Los interesados deben presentar la documentación requerida antes del 15 de septiembre de 2026, fecha límite establecida para la recepción de solicitudes.\n\nEl Ayuntamiento ha publicado las bases completas para garantizar la transparencia y facilitar el acceso a estas subvenciones, promoviendo así la colaboración entre la administración local y las entidades ciudadanas.",
-        "fecha": "2026-08-14T11:23:48+00:00",
-        "fuente": "Ayuntamiento Alhaurín el Grande",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
-        "seo_keywords": [
-            "subvenciones Alhaurín el Grande",
-            "asociaciones locales",
-            "participación ciudadana"
-        ],
-        "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan-optar-a-las-subvenciones-municipales/",
-        "url": "https://alhaurinelgrande.es/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan-optar-a-las-subvenciones-municipales/",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
-        "prioridad": 120,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-abre-plazo-para-subvenciones-a-asociaciones-locales.html"
-    },
-    {
-        "id": "https-alhaurinelgrande-es-la-musica-la-poesia-y-las-raices-llegan-a-al-b7d08229",
-        "titulo": "José Luis Jaén lleva música y poesía a Alhaurín el Grande en homenaje a Antonio Gala",
-        "titulo_original": "La música, la poesía y las raíces llegan a Alhaurín el Grande de manos de José Luis Jaén",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para celebrar el aniversario de Antonio Gala dentro del programa 'Cuarta Estación'.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para celebrar el aniversario de Antonio Gala dentro del programa 'Cuarta Estación'.",
-        "cuerpo": "Alhaurín el Grande acoge un evento cultural protagonizado por José Luis Jaén, que combina música, poesía y raíces en homenaje al aniversario del nacimiento de Antonio Gala. Esta actividad forma parte del programa 'Cuarta Estación', impulsado por el Ayuntamiento para promover la cultura local y la memoria de grandes figuras literarias.\n\nLa iniciativa busca acercar a los vecinos una experiencia artística que fusiona diferentes expresiones culturales, resaltando la importancia de la poesía y la música en la identidad de la comunidad. Con este acto, el consistorio continúa su compromiso con la difusión cultural y el apoyo a artistas que enriquecen el panorama cultural de Alhaurín el Grande.",
-        "fecha": "2026-08-14T09:20:37+00:00",
-        "fuente": "Ayuntamiento Alhaurín el Grande",
-        "categoria": "Agenda Cultural",
-        "categoria_url": "categoria/agenda-cultural/",
-        "seo_keywords": [
-            "José Luis Jaén Alhaurín el Grande",
-            "Antonio Gala homenaje",
-            "programa Cuarta Estación"
-        ],
-        "enlace": "https://alhaurinelgrande.es/la-musica-la-poesia-y-las-raices-llegan-a-alhaurin-el-grande-de-manos-de-jose-luis-jaen/",
-        "url": "https://alhaurinelgrande.es/la-musica-la-poesia-y-las-raices-llegan-a-alhaurin-el-grande-de-manos-de-jose-luis-jaen/",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen.jpg",
-        "prioridad": 120,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html"
-    },
-    {
         "id": "https-alhaurinelgrande-es-abierto-el-plazo-de-inscripcion-para-los-clu-2a672c19",
         "titulo": "Abierto el plazo de inscripción para los Clubes de Lectura 2026-27 en Alhaurín el Grande",
         "titulo_original": "Abierto el plazo de inscripción para los Clubes de Lectura de Alhaurín el Grande 2026-27",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, incluyendo un nuevo grupo infantil y un día adicional de actividades.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, incluyendo un nuevo grupo infantil y un día adicional de actividades.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha anunciado la apertura del plazo de inscripción para los Clubes de Lectura correspondientes al curso 2026-27. Este año, como novedad, se incorpora un nuevo día de actividades para ampliar la oferta cultural y facilitar la participación de los vecinos.\n\nAdemás, se crean dos nuevos grupos: un Club de Lectura Infantil dirigido a niños de entre 9 y 13 años, y otro grupo adicional para fomentar la lectura en diferentes edades y gustos. Estas iniciativas buscan promover el hábito lector y fortalecer la comunidad cultural local en Alhaurín el Grande.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, con nuevos grupos y un día adicional de actividades para fomentar la lectura en todas las edades.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, con nuevos grupos y un día adicional de actividades para fomentar la lectura en todas las edades.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha anunciado la apertura del plazo de inscripción para los Clubes de Lectura correspondientes al curso 2026-27. Esta edición incorpora como novedad un nuevo día de actividades para ampliar la oferta cultural y facilitar la participación de los vecinos.\n\nAdemás, se crean dos nuevos grupos: un Club de Lectura Infantil dirigido a niños de 9 a 13 años y otro grupo adicional para ampliar la diversidad de participantes. Estas iniciativas buscan fomentar el hábito de la lectura y promover espacios de encuentro y debate literario en la localidad.\n\nLos interesados pueden inscribirse a través de los canales habilitados por el Ayuntamiento, que invita a toda la comunidad a sumarse a esta propuesta cultural que refuerza el compromiso con la educación y el ocio saludable en Alhaurín el Grande.",
         "fecha": "2026-08-14T09:05:58+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Educación",
         "categoria_url": "categoria/educacion/",
         "seo_keywords": [
             "Clubes de Lectura Alhaurín el Grande",
-            "inscripción Club de Lectura 2026",
+            "inscripción Club de Lectura 2026-27",
             "actividades culturales Alhaurín el Grande"
         ],
         "enlace": "https://alhaurinelgrande.es/abierto-el-plazo-de-inscripcion-para-los-clubes-de-lectura-de-alhaurin-el-grande-2026-27/",
@@ -231,42 +162,111 @@
     },
     {
         "id": "https-alhaurinelgrande-es-dos-nuevas-rutas-saludables-conectaran-el-pa-e645224b",
-        "titulo": "Alhaurín el Grande estrena dos rutas saludables para turismo y naturaleza",
+        "titulo": "Alhaurín el Grande estrena dos rutas saludables para descubrir patrimonio y naturaleza",
         "titulo_original": "Dos nuevas rutas saludables conectarán el patrimonio, la naturaleza y la oferta turística de Alhaurín el Grande",
-        "descripcion": "Alhaurín el Grande desarrollará dos rutas saludables circulares que conectan patrimonio, naturaleza y oferta turística, con financiación del Ministerio y apoyo municipal.",
-        "resumen": "Alhaurín el Grande desarrollará dos rutas saludables circulares que conectan patrimonio, naturaleza y oferta turística, con financiación del Ministerio y apoyo municipal.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha puesto en marcha un proyecto para crear dos rutas saludables circulares que integran el patrimonio local, los espacios naturales y la oferta turística del municipio. Esta iniciativa busca fomentar el turismo sostenible y promover hábitos saludables entre residentes y visitantes.\n\nEl proyecto cuenta con una financiación de 62.509 euros aportados por el Ministerio de Derechos Sociales, Consumo y Agenda 2030, complementada con una inversión municipal de 3.341 euros. Estas rutas permitirán disfrutar de recorridos accesibles y bien señalizados, potenciando el valor cultural y ambiental de Alhaurín el Grande.",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande impulsa dos rutas saludables circulares que conectan patrimonio, naturaleza y turismo, financiadas por el Ministerio y el consistorio local.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande impulsa dos rutas saludables circulares que conectan patrimonio, naturaleza y turismo, financiadas por el Ministerio y el consistorio local.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha puesto en marcha un proyecto para crear dos rutas saludables circulares que integran el patrimonio histórico, los espacios naturales y la oferta turística del municipio. Esta iniciativa busca fomentar el turismo sostenible y promover hábitos saludables entre vecinos y visitantes.\n\nEl proyecto cuenta con una financiación de 62.509 euros aportados por el Ministerio de Derechos Sociales, Consumo y Agenda 2030, además de una contribución municipal de 3.341 euros. Las rutas permitirán recorrer diferentes puntos de interés local, facilitando el acceso a entornos naturales y culturales de forma segura y accesible.\n\nCon estas nuevas sendas, Alhaurín el Grande refuerza su compromiso con el desarrollo sostenible y la promoción de su patrimonio, ofreciendo a la población y turistas una experiencia enriquecedora que combina actividad física y conocimiento del entorno.",
         "fecha": "2026-08-13T11:00:00+00:00",
         "fuente": "Ayuntamiento Alhaurín el Grande",
         "categoria": "Turismo y Patrimonio",
         "categoria_url": "categoria/turismo-y-patrimonio/",
         "seo_keywords": [
             "rutas saludables Alhaurín el Grande",
-            "turismo sostenible Alhaurín",
-            "patrimonio y naturaleza Alhaurín"
+            "patrimonio Alhaurín el Grande",
+            "turismo sostenible Málaga"
         ],
         "enlace": "https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/",
         "url": "https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande.jpg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-turismo-y-naturaleza.html"
+        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-descubrir-patrimonio-y-naturaleza.html"
+    },
+    {
+        "id": "https-alhaurinelgrande-es-bando-de-alcaldia-celebraciones-dia-de-la-vi-e087142c",
+        "titulo": "Alhaurín el Grande convoca a sus vecinos para celebrar el Día de la Virgen 2026",
+        "titulo_original": "Bando de Alcaldía – Celebraciones Día de la Virgen 2026",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande, a través del alcalde Anthony Bermúdez, invita a la comunidad a participar en las actividades programadas para el Día de la Virgen 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande, a través del alcalde Anthony Bermúdez, invita a la comunidad a participar en las actividades programadas para el Día de la Virgen 2026.",
+        "cuerpo": "El alcalde de Alhaurín el Grande, Anthony Bermúdez, ha emitido un bando en nombre del Ayuntamiento para convocar a todos los vecinos a sumarse a las celebraciones del Día de la Virgen 2026. Esta festividad es una tradición muy arraigada en el municipio y cuenta con diversas actividades religiosas y culturales que buscan fortalecer la unión comunitaria.\n\nEl Ayuntamiento ha preparado un programa especial que incluye actos litúrgicos, procesiones y eventos culturales para conmemorar esta fecha tan significativa. Se anima a la población a participar activamente y a respetar las normas establecidas para garantizar el buen desarrollo de las celebraciones en un ambiente de respeto y convivencia.",
+        "fecha": "2026-08-12T12:35:57+00:00",
+        "fuente": "Ayuntamiento Alhaurín el Grande",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Día de la Virgen Alhaurín el Grande",
+            "celebraciones religiosas 2026",
+            "fiestas tradicionales Alhaurín"
+        ],
+        "enlace": "https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-la-virgen-2026/",
+        "url": "https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-la-virgen-2026/",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2024/04/cropped-LOGOAYTOALH.png",
+        "prioridad": 120,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-celebrar-el-dia-de-la-virgen-2026.html"
+    },
+    {
+        "id": "https-rtvalhaurinelgrande-com-25-aniversario-del-coro-rociero-nuestra-d5f6aa0d",
+        "titulo": "25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)",
+        "titulo_original": "25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)",
+        "descripcion": "El Coro Rociero de la Hermandad de Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
+        "resumen": "El Coro Rociero de la Hermandad de Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
+        "cuerpo": "El Coro Rociero de la Hermandad de Nuestra Señora de Gracia celebró su 25 aniversario con un emotivo certamen de coros que tuvo lugar en el llano situado detrás de la parroquia de Alhaurín el Grande. La velada estuvo marcada por la música, el baile y la tradición, reuniendo a numerosos vecinos y amantes del folclore rociero.\n\nEl evento contó con la participación destacada del Coro Rociero Trébol de Agua, así como de las academias de baile dirigidas por Lourdes Rodríguez “La La”. Estas actuaciones ofrecieron un espectáculo lleno de ritmo y color que homenajeó la trayectoria del coro local y su contribución a la cultura popular de la localidad.\n\nLa celebración del 25 aniversario reafirma el compromiso del Coro Rociero Nuestra Señora de Gracia con la difusión de las tradiciones y la música rociera en Alhaurín el Grande, consolidándose como un referente cultural en la comarca.",
+        "fecha": "2026-08-12T06:01:07+00:00",
+        "fuente": "RTV Alhaurín el Grande",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Coro Rociero Nuestra Señora de Gracia",
+            "25 aniversario coro rociero",
+            "Alhaurín el Grande eventos"
+        ],
+        "enlace": "https://rtvalhaurinelgrande.com/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026/",
+        "url": "https://rtvalhaurinelgrande.com/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026/",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_-20.jpg",
+        "prioridad": 90,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026.html"
+    },
+    {
+        "id": "https-rtvalhaurinelgrande-com-xxxiii-trofeo-virgen-de-gracia-cd-alhaur-a4487e5d",
+        "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
+        "titulo_original": "XXXIII Trofeo Virgen de Gracia: CD Alhaurino – Atlético Malagueño (2026)",
+        "descripcion": "El XXXIII Trofeo Virgen de Gracia enfrentará al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
+        "resumen": "El XXXIII Trofeo Virgen de Gracia enfrentará al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
+        "cuerpo": "El XXXIII Trofeo Virgen de Gracia reunirá a dos destacados equipos de la región: el CD Alhaurino y el Atlético Malagueño. Este evento deportivo es una tradición en Alhaurín el Grande que atrae a numerosos aficionados al fútbol local.\n\nLa competición representa una oportunidad para que ambos equipos muestren su nivel y fortalezcan su presencia en el ámbito deportivo provincial. Los seguidores podrán disfrutar de un partido intenso y competitivo que refuerza el compromiso con el deporte en la comunidad.",
+        "fecha": "2026-08-11T07:33:01+00:00",
+        "fuente": "RTV Alhaurín el Grande",
+        "categoria": "Deportes",
+        "categoria_url": "categoria/deportes/",
+        "seo_keywords": [
+            "Trofeo Virgen de Gracia",
+            "CD Alhaurino",
+            "Atlético Malagueño"
+        ],
+        "enlace": "https://rtvalhaurinelgrande.com/xxxiii-trofeo-virgen-de-gracia-cd-alhaurino-atletico-malagueno-2026/",
+        "url": "https://rtvalhaurinelgrande.com/xxxiii-trofeo-virgen-de-gracia-cd-alhaurino-atletico-malagueno-2026/",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Captura.jpg",
+        "prioridad": 90,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia.html"
     },
     {
         "id": "https-rtvalhaurinelgrande-com-audiciones-de-la-escuela-de-musica-la-pe-e411bf67",
         "titulo": "Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande",
         "titulo_original": "Audiciones de la Escuela de Música “La Pepa”",
-        "descripcion": "La Plaza del Convento fue escenario de las audiciones de fin de curso de la Escuela de Música La Pepa, con la participación de 42 alumnos mostrando su progreso musical.",
-        "resumen": "La Plaza del Convento fue escenario de las audiciones de fin de curso de la Escuela de Música La Pepa, con la participación de 42 alumnos mostrando su progreso musical.",
-        "cuerpo": "El pasado 31 de julio, la Plaza del Convento en Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa. Un total de 42 alumnos subieron al escenario para interpretar las piezas trabajadas durante el año académico, demostrando su evolución y talento musical.\n\nEste evento fue organizado por la Agrupación Músico-Cultural de la Santa Vera Cruz, en colaboración con el Ayuntamiento de Alhaurín el Grande, con el objetivo de fomentar la cultura musical local y ofrecer a los estudiantes una oportunidad para mostrar sus habilidades ante el público.\n\nLa cita se consolidó como un momento destacado en la agenda cultural del municipio.",
+        "descripcion": "La Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa, con la participación de 42 alumnos mostrando su progreso musical.",
+        "resumen": "La Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa, con la participación de 42 alumnos mostrando su progreso musical.",
+        "cuerpo": "El pasado 31 de julio, la Plaza del Convento se convirtió en el escenario de las audiciones de fin de curso de la Escuela de Música La Pepa. Un total de 42 alumnos demostraron sus habilidades y el aprendizaje adquirido durante el año académico en un evento organizado por la Agrupación Músico-Cultural de la Santa Vera Cruz, con la colaboración del Ayuntamiento de Alhaurín el Grande.\n\nEsta actividad representa una oportunidad para que los estudiantes exhiban su talento y para que la comunidad local disfrute de la música en vivo. La iniciativa refuerza el compromiso con la formación musical y la promoción cultural en el municipio.",
         "fecha": "2026-08-10T10:08:11+00:00",
         "fuente": "RTV Alhaurín el Grande",
         "categoria": "Agenda Cultural",
         "categoria_url": "categoria/agenda-cultural/",
         "seo_keywords": [
             "Escuela de Música La Pepa",
-            "audiciones fin de curso",
-            "Alhaurín el Grande música"
+            "audiciones Alhaurín el Grande",
+            "eventos culturales Alhaurín"
         ],
         "enlace": "https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/",
         "url": "https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/",
@@ -276,43 +276,20 @@
         "pagina": "noticias/audiciones-de-fin-de-curso-de-la-escuela-de-musica-la-pepa-en-alhaurin-el-grande.html"
     },
     {
-        "id": "https-rtvalhaurinelgrande-com-campamentos-de-educacion-y-deportes-de-j-5306e2a7",
-        "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
-        "titulo_original": "Campamentos de educación y deportes de julio en Alhaurín el Grande y Villa del Guadalhorce",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande clausura los campamentos de educación y deportes de julio, que han facilitado la conciliación familiar y el ocio infantil en la localidad y Villa del Guadalhorce.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande clausura los campamentos de educación y deportes de julio, que han facilitado la conciliación familiar y el ocio infantil en la localidad y Villa del Guadalhorce.",
-        "cuerpo": "Durante el mes de julio, el Ayuntamiento de Alhaurín el Grande ha desarrollado diversos campamentos de verano enfocados en la educación y el deporte, dirigidos a niños y niñas de la localidad y de Villa del Guadalhorce. Estas actividades han tenido como objetivo principal facilitar la conciliación familiar durante el periodo estival, ofreciendo a los menores opciones de ocio saludables y educativas.\n\nLos campamentos, organizados desde el área de Educación del Ayuntamiento, han contado con una amplia participación y han finalizado recientemente, dejando una experiencia positiva tanto para las familias como para los participantes.\n\nEstas iniciativas refuerzan el compromiso municipal con el bienestar infantil y la promoción de actividades deportivas y formativas en la comarca.",
-        "fecha": "2026-08-05T10:46:18+00:00",
-        "fuente": "RTV Alhaurín el Grande",
-        "categoria": "Educación",
-        "categoria_url": "categoria/educacion/",
-        "seo_keywords": [
-            "campamentos verano Alhaurín el Grande",
-            "campamentos deportivos julio",
-            "conciliación familiar Alhaurín"
-        ],
-        "enlace": "https://rtvalhaurinelgrande.com/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce/",
-        "url": "https://rtvalhaurinelgrande.com/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce/",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/CAMP-e1785926761443.jpeg",
-        "prioridad": 90,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio.html"
-    },
-    {
         "id": "https-www-nuestropadrejesusnazareno-com-33991-primera-misa-del-sacerdo-bd7e81d9",
         "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande",
         "titulo_original": "Primera misa del sacerdote Rvd. Padre D. José Francisco Fernández Fuentes",
         "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
         "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
-        "cuerpo": "El sábado 11 de julio, el Rvdo. Padre José Francisco Fernández Fuentes ofició su primera Eucaristía en Alhaurín el Grande, un acto celebrado en la Parroquia de Nuestra Señora de la Encarnación. La ceremonia contó con la presencia de la Real Hermandad Nuestro Padre Jesús Nazareno, que quiso acompañar al sacerdote en este momento tan significativo.\n\nDurante la celebración, la Hermandad entregó al Rvdo. Padre un paño de hombros como muestra de reconocimiento y apoyo en su labor pastoral. Este evento marca un paso importante en la vida religiosa del municipio y refuerza los lazos entre la comunidad y sus representantes espirituales.",
+        "cuerpo": "El sábado 11 de julio, el Rvdo. Padre José Francisco Fernández Fuentes ofició su primera Eucaristía en Alhaurín el Grande, un acto que tuvo lugar en la Parroquia de Nuestra Señora de la Encarnación. La ceremonia contó con la asistencia de la Real Hermandad Nuestro Padre Jesús Nazareno, que quiso acompañar al sacerdote en este momento tan significativo.\n\nDurante la celebración, la Hermandad entregó al Rvdo. Padre un paño de hombros como muestra de reconocimiento y apoyo en su labor pastoral. Este gesto simboliza la estrecha relación entre la comunidad religiosa local y el nuevo sacerdote, que inicia su ministerio en el municipio con gran acogida y respeto.",
         "fecha": "2026-07-15T10:27:32+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
         "seo_keywords": [
-            "primera misa Alhaurín el Grande",
+            "Primera misa Alhaurín el Grande",
             "José Francisco Fernández Fuentes",
-            "Hermandad Jesús Nazareno"
+            "Hermandad Jesús Nazareno Alhaurín"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/",
         "url": "https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/",
@@ -323,18 +300,18 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33982-nuestra-real-hermandad-p-933bd6ec",
-        "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
+        "titulo": "Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda",
         "titulo_original": "Nuestra Real Hermandad presente en el curso de verano sobre La Legión",
-        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "cuerpo": "El Hermano Mayor de la Real Hermandad de Nuestro Padre Jesús Nazareno, junto a varios hermanos, participaron en el curso de verano titulado «Ejército y sociedad: el papel de La Legión en operaciones internacionales». Este evento, organizado por la Fundación General de la Universidad de Málaga, se celebró en la ciudad de Ronda los días 7 y 8 de julio.\n\nDurante las jornadas, los asistentes analizaron el papel de La Legión en diferentes operaciones internacionales, profundizando en su influencia y relación con la sociedad. La asistencia de la Hermandad a este curso refleja su interés por temas relacionados con la historia y la sociedad española, además de fortalecer los lazos con otras instituciones y entidades culturales.\n\nLa formación ofrecida en este curso contribuye a ampliar el conocimiento de los participantes sobre aspectos militares y sociales vinculados a La Legión, un cuerpo con gran tradición y relevancia en España.",
+        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda los días 7 y 8 de julio.",
+        "resumen": "El Hermano Mayor y miembros de la Real Hermandad asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda los días 7 y 8 de julio.",
+        "cuerpo": "El Hermano Mayor de la Real Hermandad Nuestro Padre Jesús Nazareno, junto a varios hermanos, participaron en el curso de verano titulado «Ejército y sociedad: el papel de La Legión en operaciones internacionales». Este evento, organizado por la Fundación General de la Universidad de Málaga, tuvo lugar en Ronda los días 7 y 8 de julio.\n\nDurante las jornadas, los asistentes analizaron el papel de La Legión en diferentes misiones internacionales, profundizando en su impacto social y militar. La participación de la Hermandad en este curso refleja su interés por temas históricos y sociales relacionados con la defensa y la sociedad española.",
         "fecha": "2026-07-09T10:33:08+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
-            "Hermandad Alhaurín el Grande",
-            "curso La Legión Ronda",
+            "Hermandad Nuestro Padre Jesús Nazareno",
+            "curso sobre La Legión",
             "Universidad de Málaga"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/",
@@ -342,15 +319,15 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
+        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33978-san-sebastian-acogera-de-ac179017",
         "titulo": "San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia",
         "titulo_original": "San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia",
-        "descripcion": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto tras más de una década de ausencia.",
-        "resumen": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto tras más de una década de ausencia.",
-        "cuerpo": "Nuestra Señora de Gracia, patrona y alcaldesa perpetua de Alhaurín el Grande, volverá a pernoctar en la ermita de San Sebastián la noche del miércoles 12 al jueves 13 de agosto. Este acto forma parte de la celebración del Día de la Virgen y marca la culminación de su recorrido por los diferentes barrios del municipio.\n\nLa imagen no visitaba esta ermita desde hace once años, por lo que su regreso supone un momento especial para los vecinos y devotos. La Hermandad Nuestro Padre Jesús Nazareno ha organizado esta tradicional procesión que fortalece la devoción local y mantiene viva la historia y las costumbres de Alhaurín el Grande.\n\nLa estancia de la Virgen en la ermita de San Sebastián es un símbolo de unión y fe para la comunidad, que espera con ilusión esta celebración anual.",
+        "descripcion": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián el 12 de agosto tras más de una década de ausencia.",
+        "resumen": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián el 12 de agosto tras más de una década de ausencia.",
+        "cuerpo": "Nuestra Señora de Gracia, patrona y alcaldesa perpetua de Alhaurín el Grande, realizará una visita especial a la ermita de San Sebastián, donde pernoctará la noche del 12 al 13 de agosto. Esta parada forma parte del recorrido que la imagen realiza por los distintos barrios del municipio con motivo del Día de la Virgen.\n\nEsta visita a la ermita de San Sebastián supone un acontecimiento destacado, ya que la patrona no había pernoctado en este lugar desde hace once años. La Hermandad Nuestro Padre Jesús Nazareno organiza este acto que refuerza la tradición y la devoción local, acercando a los vecinos la figura de Nuestra Señora de Gracia en un entorno emblemático de Alhaurín el Grande.",
         "fecha": "2026-07-02T09:57:44+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
@@ -358,7 +335,7 @@
         "seo_keywords": [
             "Nuestra Señora de Gracia",
             "ermita de San Sebastián",
-            "Alhaurín el Grande fiestas"
+            "Alhaurín el Grande"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/",
         "url": "https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/",
@@ -369,11 +346,11 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33975-terremoto-en-venezuela-149f72b0",
-        "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela",
+        "titulo": "A través de un comunicado, la Hermandad ha trasladado sus condolencias a las familias",
         "titulo_original": "Terremoto en Venezuela",
-        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno ha expresado su profundo pesar por los daños y pérdidas ocasionados por los recientes terremotos en Venezuela. A través de un comunicado oficial, la Hermandad ha manifestado su solidaridad con las familias afectadas y con todo el pueblo venezolano en estos momentos difíciles.\n\nAdemás, han elevado oraciones para el descanso eterno de las víctimas y han pedido protección para quienes enfrentan las consecuencias de esta tragedia natural. Este gesto refleja el compromiso de la Hermandad con valores de empatía y apoyo en situaciones de emergencia, extendiendo su cercanía más allá de las fronteras locales.",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno ha manifestado su profundo pesar por las consecuencias de los recientes terremotos en Venezuela, que han provocado dolor y pérdidas humanas en la población. A través de un comunicado, la Hermandad ha trasladado sus condolencias a las familias afectadas y a toda la comunidad venezolana.\n\nAdemás, la Hermandad se une en oración por el descanso eterno de las víctimas y pide la protección de Nuestro Padre Jesús Nazareno para quienes han sufrido las consecuencias de estos desastres naturales. Este gesto refleja la solidaridad y el compromiso de la Hermandad con causas humanitarias más allá de su ámbito local.",
         "fecha": "2026-06-26T09:09:18+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Actualidad",
@@ -381,30 +358,30 @@
         "seo_keywords": [
             "terremoto en Venezuela",
             "Hermandad Nuestro Padre Jesús Nazareno",
-            "solidaridad con Venezuela"
+            "condolencias terremoto"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/",
         "url": "https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
+        "pagina": "noticias/a-traves-de-un-comunicado-la-hermandad-ha-trasladado-sus-condolencias-a-las-familias.html"
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33973-y-el-dia-de-la-funcion-v-a3cea052",
-        "titulo": "Alhaurín el Grande celebra con fervor el día de Nuestro Padre Jesús Nazareno",
+        "titulo": "Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno",
         "titulo_original": "Y EL DÍA DE LA FUNCIÓN VOLVIMOS A ALZAR LA MIRADA HACIA NUESTRO PADRE JESÚS NAZARENO, PARA CELEBRAR, VIVIR Y ANUNCIAR EL DÍA DE JESÚS",
-        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del día de Nuestro Padre Jesús Nazareno, marcada por tradiciones y actos religiosos.",
-        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del día de Nuestro Padre Jesús Nazareno, marcada por tradiciones y actos religiosos.",
-        "cuerpo": "La mañana del 14 de junio en Alhaurín el Grande comenzó con el tradicional toque de diana a las 8:00 horas, a cargo del Tercio “Gran Capitán”, Hermano Mayor Honorario de la Hermandad. Este acto despertó al pueblo acompañado del estruendo de cohetes, dando inicio a una jornada llena de fervor y devoción.\n\nLos hermanos y vecinos participaron activamente en las celebraciones, que incluyeron actos religiosos y momentos de convivencia para honrar a Nuestro Padre Jesús Nazareno. La festividad destacó por su ambiente de recogimiento y alegría, reafirmando la importancia de esta tradición en la comunidad local.",
+        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y tradiciones locales.",
+        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y tradiciones locales.",
+        "cuerpo": "La jornada del 14 de junio en Alhaurín el Grande comenzó temprano con el toque de diana a las 8:00 horas, realizado por el Tercio “Gran Capitán”, Hermano Mayor Honorario de la Hermandad. Este acto despertó a los vecinos y dio inicio a un día lleno de fervor y devoción.\n\nDurante la mañana, los hermanos de la Hermandad participaron en diversas actividades religiosas y culturales que reforzaron el sentido de comunidad y tradición. El Día de Nuestro Padre Jesús Nazareno es una fecha muy esperada en el calendario local, donde se combinan la celebración, la vivencia espiritual y el anuncio de la fe.\n\nLos actos organizados por la Hermandad permitieron a los asistentes alzar la mirada hacia la imagen del Nazareno, renovando su compromiso y devoción. Esta festividad es un reflejo del arraigo religioso y cultural que caracteriza a Alhaurín el Grande.",
         "fecha": "2026-06-26T08:35:11+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
         "categoria_url": "categoria/fiestas-y-tradiciones/",
         "seo_keywords": [
-            "Nuestro Padre Jesús Nazareno",
+            "Día de Jesús Nazareno",
             "Alhaurín el Grande",
-            "celebración religiosa"
+            "Hermandad Nuestro Padre Jesús Nazareno"
         ],
         "enlace": "https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/",
         "url": "https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/",
@@ -415,11 +392,11 @@
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33600-dia-de-jesus-2026-actos-eb54e957",
-        "titulo": "Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande",
+        "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande",
         "titulo_original": "Día de Jesús 2026 – Actos del jueves.",
-        "descripcion": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno ha presentado el programa oficial de actos para el jueves dentro de la celebración del Día de Jesús 2026 en Alhaurín el Grande. Esta jornada incluye diversas actividades religiosas y culturales que forman parte de la tradición local.\n\nEl evento, que cuenta con la cobertura de ATV, televisión de Alhaurín el Grande, busca mantener viva la devoción y el patrimonio cultural del municipio. Los vecinos y visitantes podrán disfrutar de una agenda organizada que refuerza el sentido comunitario y la identidad del pueblo.",
+        "descripcion": "Conoce el programa completo de los actos previstos para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "resumen": "Conoce el programa completo de los actos previstos para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno ha presentado el programa oficial para los actos que se celebrarán el jueves dentro del marco del Día de Jesús 2026 en Alhaurín el Grande. Esta jornada especial incluye diversas actividades religiosas y culturales que buscan mantener viva la tradición local.\n\nLos eventos están diseñados para congregar a vecinos y visitantes, ofreciendo una oportunidad para participar en las celebraciones y conocer más sobre la historia y devoción que rodea a esta festividad. La programación completa está disponible a través de ATV, la televisión local de Alhaurín el Grande, que ofrece una cobertura especial del evento.",
         "fecha": "2026-06-25T12:40:14+00:00",
         "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
         "categoria": "Fiestas y Tradiciones",
@@ -434,6 +411,6 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
+        "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html"
     }
 ]

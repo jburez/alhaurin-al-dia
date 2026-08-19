@@ -1,5 +1,75 @@
 [
     {
+        "titulo": "Conoce a los protagonistas que impulsan el crecimiento de la comarca Fedelhorce",
+        "descripcion": "Fedelhorce presenta una serie semanal que muestra la historia, trayectoria y experiencia de sus asociados, destacando su papel en el desarrollo local.",
+        "resumen": "Fedelhorce presenta una serie semanal que muestra la historia, trayectoria y experiencia de sus asociados, destacando su papel en el desarrollo local.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T06:59:09.188Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Somos-Fedelhorce-15-1.png",
+        "pagina": "noticias/conoce-a-los-protagonistas-que-impulsan-el-crecimiento-de-la-comarca-fedelhorce.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande se convierte en Centro Comercial Abierto de Andalucía",
+        "descripcion": "Alhaurín el Grande logra el reconocimiento como Centro Comercial Abierto de Andalucía para impulsar la competitividad del comercio local.",
+        "resumen": "Alhaurín el Grande logra el reconocimiento como Centro Comercial Abierto de Andalucía para impulsar la competitividad del comercio local.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T06:59:09.187Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3-1.png",
+        "pagina": "noticias/alhaurin-el-grande-se-convierte-en-centro-comercial-abierto-de-andalucia.html"
+    },
+    {
+        "titulo": "25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)",
+        "descripcion": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemoró su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
+        "resumen": "El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemoró su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T06:59:09.184Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_-20.jpg",
+        "pagina": "noticias/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026.html"
+    },
+    {
+        "titulo": "Bendición del nuevo retablo cerámico en la Casa Hermandad de Alhaurín el Grande",
+        "descripcion": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa en Alhaurín el Grande.",
+        "resumen": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa en Alhaurín el Grande.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T06:59:09.174Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/virgen.jpg",
+        "pagina": "noticias/bendicion-del-nuevo-retablo-ceramico-en-la-casa-hermandad-de-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande",
+        "descripcion": "Conoce el programa completo de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizados por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "resumen": "Conoce el programa completo de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizados por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T06:54:32.170Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela tras los recientes terremotos que han causado pérdidas humanas y dolor.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela tras los recientes terremotos que han causado pérdidas humanas y dolor.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T06:54:32.166Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-con-venezuela.html"
+    },
+    {
+        "titulo": "Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda",
+        "descripcion": "El Hermano Mayor y miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "resumen": "El Hermano Mayor y miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-19T06:54:32.163Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
+        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
+    },
+    {
         "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
         "descripcion": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
         "resumen": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
@@ -68,16 +138,6 @@
         "fecha": "2026-08-19T04:43:00.243Z",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
-    },
-    {
-        "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
-        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T04:43:00.241Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
-        "pagina": "noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
     },
     {
         "titulo": "Alhaurín el Grande, reconocido como Centro Comercial Abierto de Andalucía",
@@ -190,16 +250,6 @@
         "pagina": "noticias/alhaurin-el-grande-comienza-demolicion-de-modulos-en-ceip-emilia-olivares-por-seguridad.html"
     },
     {
-        "titulo": "Abierto el plazo para inscribirse en los Clubes de Lectura de Alhaurín el Grande 2026-27",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, con nuevos grupos y días de actividades para todas las edades.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande abre la inscripción para los Clubes de Lectura 2026-27, con nuevos grupos y días de actividades para todas las edades.",
-        "categoria": "Educación",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T03:03:48.723Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Club-de-lectura-juvenil-2026-27.jpg",
-        "pagina": "noticias/abierto-el-plazo-para-inscribirse-en-los-clubes-de-lectura-de-alhaurin-el-grande-2026-27.html"
-    },
-    {
         "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
         "descripcion": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado partido en Alhaurín el Grande.",
         "resumen": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado partido en Alhaurín el Grande.",
@@ -300,16 +350,6 @@
         "pagina": "noticias/alhaurin-el-grande-convoca-a-celebrar-el-dia-de-la-virgen-2026-con-actos-oficiales.html"
     },
     {
-        "titulo": "José Luis Jaén lleva música y poesía a Alhaurín el Grande en homenaje a Antonio Gala",
-        "descripcion": "Alhaurín el Grande celebra el aniversario de Antonio Gala con un acto cultural protagonizado por José Luis Jaén, que combina música, poesía y raíces en el marco de &#x27;Cuarta Estación&#x27;.",
-        "resumen": "Alhaurín el Grande celebra el aniversario de Antonio Gala con un acto cultural protagonizado por José Luis Jaén, que combina música, poesía y raíces en el marco de &#x27;Cuarta Estación&#x27;.",
-        "categoria": "Agenda Cultural",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-18T20:35:50.824Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen.jpg",
-        "pagina": "noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html"
-    },
-    {
         "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los daños por terremotos en Venezuela",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
@@ -368,16 +408,6 @@
         "fecha": "2026-08-18T18:47:37.298Z",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
         "pagina": "noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-gran-fervor.html"
-    },
-    {
-        "titulo": "96 golfistas participan en el V Torneo de Golf Tomate Huevo Toro en Alhaurín Golf",
-        "descripcion": "El V Torneo de Golf Tomate Huevo Toro reunió a 96 jugadores en Alhaurín Golf para promocionar este producto local y fomentar la conexión entre la huerta y la mesa.",
-        "resumen": "El V Torneo de Golf Tomate Huevo Toro reunió a 96 jugadores en Alhaurín Golf para promocionar este producto local y fomentar la conexión entre la huerta y la mesa.",
-        "categoria": "Deportes",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-18T18:47:37.292Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/golf.jpg",
-        "pagina": "noticias/96-golfistas-participan-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html"
     },
     {
         "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande este jueves",
@@ -451,16 +481,6 @@
         "fusionadaEn": "noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html"
     },
     {
-        "titulo": "Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande",
-        "descripcion": "Conoce el programa detallado de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "Conoce el programa detallado de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-18T12:57:38.445Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
-    },
-    {
         "titulo": "José Luis Jaén celebra a Antonio Gala con música y poesía en Alhaurín el Grande",
         "descripcion": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para conmemorar el nacimiento de Antonio Gala dentro del programa &#x27;Cuarta Estación&#x27;.",
         "resumen": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para conmemorar el nacimiento de Antonio Gala dentro del programa &#x27;Cuarta Estación&#x27;.",
@@ -469,16 +489,6 @@
         "fecha": "2026-08-18T12:57:38.438Z",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen.jpg",
         "pagina": "noticias/jose-luis-jaen-celebra-a-antonio-gala-con-musica-y-poesia-en-alhaurin-el-grande.html"
-    },
-    {
-        "titulo": "Campaña de verano 2026 en el Valle del Guadalhorce: Sella tu sueño con FEDELAPP",
-        "descripcion": "La campaña &#x27;Sella tu sueño&#x27; premia las compras en el comercio local del Valle del Guadalhorce durante el verano 2026, impulsada por FEDELAPP.",
-        "resumen": "La campaña &#x27;Sella tu sueño&#x27; premia las compras en el comercio local del Valle del Guadalhorce durante el verano 2026, impulsada por FEDELAPP.",
-        "categoria": "Comercio y Empresa",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-18T12:57:38.430Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/05/Mesa-de-trabajo-5.png",
-        "pagina": "noticias/campana-de-verano-2026-en-el-valle-del-guadalhorce-sella-tu-sueno-con-fedelapp.html"
     },
     {
         "titulo": "José Luis Jaén protagoniza un homenaje cultural en Alhaurín el Grande",

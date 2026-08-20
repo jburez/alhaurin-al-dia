@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-20T08:02:56.129Z",
+  "actualizado": "2026-08-20T08:23:44.132Z",
   "visitas24h": 8,
-  "paginasVistas24h": 10,
+  "paginasVistas24h": 17,
   "topPaginas": [
     {
       "ruta": "/",
-      "vistas": 16
+      "vistas": 20
     },
     {
       "ruta": "/admin/",
       "vistas": 7
     },
     {
-      "ruta": "/noticias/",
+      "ruta": "/tiempo/",
+      "vistas": 5
+    },
+    {
+      "ruta": "/seguimiento/",
       "vistas": 4
     },
     {
-      "ruta": "/tiempo/",
-      "vistas": 3
-    },
-    {
-      "ruta": "/planes/",
-      "vistas": 3
+      "ruta": "/noticias/",
+      "vistas": 4
     }
   ]
 }

@@ -55,6 +55,19 @@ TIMEZONE = ZoneInfo("Europe/Madrid")
 
 DIAS_SEMANA = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
+
+def filtrar_y_seleccionar_hoy(semana_raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
+    """AEMET puede publicar su predicción diaria con retraso: se ha observado
+    en producción que el primer elemento del array ("dias[0]") no siempre es
+    el día de hoy, sino a veces el de ayer. Por eso "hoy" nunca se asume por
+    posición — se busca la entrada cuya fecha coincide con la fecha actual en
+    Europe/Madrid — y se descarta cualquier día anterior a hoy para que la
+    tira de 7 días no muestre nunca un día ya pasado."""
+    today_iso = datetime.now(TIMEZONE).date().isoformat()
+    semana = [dia for dia in semana_raw if dia["fecha"][:10] >= today_iso]
+    hoy_data = next((dia for dia in semana if dia["fecha"][:10] == today_iso), None)
+    return semana, hoy_data
+
 SKY_ICONS = {
     "11": "☀️",
     "11n": "🌙",
@@ -325,8 +338,7 @@ def fetch_xml_forecast() -> dict[str, Any] | None:
     if not dias:
         return None
 
-    semana = []
-    hoy_data = None
+    semana_raw = []
 
     for idx, dia in enumerate(dias[:7]):
         fecha_str = dia.attrib.get("fecha", "")
@@ -368,10 +380,9 @@ def fetch_xml_forecast() -> dict[str, Any] | None:
             "uv": uv,
         }
 
-        semana.append(item_dia)
-        if idx == 0:
-            hoy_data = item_dia
+        semana_raw.append(item_dia)
 
+    semana, hoy_data = filtrar_y_seleccionar_hoy(semana_raw)
     if not hoy_data:
         return None
 
@@ -638,8 +649,7 @@ def fetch_opendata_forecast(api_key: str) -> dict[str, Any] | None:
     if not dias:
         return None
 
-    semana = []
-    hoy_data = None
+    semana_raw = []
 
     for idx, dia in enumerate(dias[:7]):
         fecha_str = str(dia.get("fecha", ""))[:10]
@@ -679,10 +689,9 @@ def fetch_opendata_forecast(api_key: str) -> dict[str, Any] | None:
             "uv": str(uv) if uv != "" else "",
         }
 
-        semana.append(item_dia)
-        if idx == 0:
-            hoy_data = item_dia
+        semana_raw.append(item_dia)
 
+    semana, hoy_data = filtrar_y_seleccionar_hoy(semana_raw)
     if not hoy_data:
         return None
 

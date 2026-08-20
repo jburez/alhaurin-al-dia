@@ -88,8 +88,13 @@ function renderTiempoPage() {
     : `Actualizado ${escapeHTML(fechaStr)}`;
 
   // Generar tarjetas de predicción nativa a 7 días de AEMET
-  const semanaHTML = semana.map((d, index) => {
-    const isToday = index === 0;
+  // "Hoy" se determina comparando la fecha real de cada día contra la fecha
+  // actual en Europe/Madrid, no por ser el primer elemento del array: AEMET
+  // puede publicar su predicción con retraso y devolver un día ya pasado en
+  // la posición 0 (causa real de la regresión de frescura del 2026-08-20).
+  const hoyISO = new Date().toLocaleDateString('en-CA', { timeZone: TZ });
+  const semanaHTML = semana.map((d) => {
+    const isToday = d.fecha && d.fecha.slice(0, 10) === hoyISO;
     return `
       <div class="aemet-day-card ${isToday ? 'is-today' : ''}">
         <span class="aemet-day-name">${isToday ? 'Hoy' : escapeHTML(d.dia_semana)}</span>

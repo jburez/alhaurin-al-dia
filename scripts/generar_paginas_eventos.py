@@ -20,6 +20,7 @@ from zoneinfo import ZoneInfo
 
 from lib.footer import SITE_FOOTER_HTML
 from lib.analytics import CF_ANALYTICS_SNIPPET
+from lib.nav import render_nav
 
 ROOT = Path(__file__).resolve().parents[1]
 AGENDA_PATH = ROOT / "data" / "agenda-local.json"
@@ -241,14 +242,7 @@ def generate_event_page(event: dict[str, Any], slug: str) -> str:
 
     <header>
         <div class="container">
-            <nav aria-label="Navegación principal">
-                <a class="logo" href="/" aria-label="Alhaurín al Día">
-                    <span class="logo-mark">A</span>
-                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
-                </a>
-                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-                <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/seguimiento/">Seguimiento</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
-            </nav>
+            {render_nav()}
         </div>
     </header>
 

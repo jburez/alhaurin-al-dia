@@ -228,14 +228,21 @@
 .daily-card.alert {
     background: var(--red-soft);
     border-color: rgba(143, 29, 29, .22);
+    border-left-width: 6px;
     border-left-color: #8f1d1d;
+    box-shadow: 0 0 0 1px rgba(143, 29, 29, .1);
 }
 
-.daily-card.alert .daily-icon,
-.daily-card.alert .daily-status-badge {
+.daily-card.alert .daily-icon {
     background: #ffe3dd;
     border-color: rgba(143, 29, 29, .22);
     color: #8f1d1d;
+}
+
+.daily-card.alert .daily-status-badge {
+    background: #8f1d1d;
+    border-color: #8f1d1d;
+    color: #ffffff;
 }
 
 .daily-card.neutral {

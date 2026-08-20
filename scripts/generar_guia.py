@@ -4,6 +4,8 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from lib.nav import render_nav
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_FILE = BASE_DIR / "data" / "guia-util.json"
 SITEMAP_FILE = BASE_DIR / "sitemap.xml"
@@ -158,11 +160,7 @@ def html_item(item):
 {html_head(item)}
 <body>
     <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>{escapar(categoria)} · Recurso útil</span></div></div>
-    <header><div class="container"><nav aria-label="Navegación principal">
-        <a class="logo" href="/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
-    </nav></div></header>
+    <header><div class="container">{render_nav()}</div></header>
     <main>
         <section class="resource-hero"><div class="container"><div class="resource-card">
             <span class="eyebrow">{escapar(categoria)}</span>

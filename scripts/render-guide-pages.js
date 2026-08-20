@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { SITE_FOOTER_HTML } = require('./lib/footer');
 const { CF_ANALYTICS_SNIPPET } = require('./lib/analytics');
+const { renderNav } = require('./lib/nav');
 
 const ROOT = path.resolve(__dirname, '..');
 const SITE_URL = 'https://alhaurinaldia.es';
@@ -215,11 +216,7 @@ function renderPage(item) {
 </head>
 <body>
     <div class="topbar"><div class="container"><span>Guía local independiente de Alhaurín el Grande</span><span>${escapeHtml(category)} · Recurso útil</span></div></div>
-    <header><div class="container"><nav aria-label="Navegación principal">
-        <a class="logo" href="/" aria-label="Alhaurín al Día"><span class="logo-mark">A</span><span><strong>Alhaurín al Día</strong><span>Información local útil</span></span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-        <div class="nav-links" id="main-menu"><a href="/noticias/">Noticias</a><a href="/guia-util/">Guía útil</a><a href="/avisos/">Avisos</a><a href="/tiempo/">Tiempo</a><a href="/planes/">Planes</a><a href="/comercios/">Comercios</a><a href="/anunciarse/" class="nav-cta">Anunciarse</a></div>
-    </nav></div></header>
+    <header><div class="container">${renderNav()}</div></header>
     <main class="editorial-page-wrap">
         <div class="editorial-container">
             <nav class="editorial-breadcrumbs" aria-label="Migas de pan">

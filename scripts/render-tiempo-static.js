@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { SITE_FOOTER_HTML } = require('./lib/footer');
 const { CF_ANALYTICS_SNIPPET } = require('./lib/analytics');
+const { renderNav } = require('./lib/nav');
 
 const ROOT = path.join(__dirname, '..');
 const TIEMPO_HTML_PATH = path.join(ROOT, 'tiempo', 'index.html');
@@ -155,31 +156,7 @@ function renderTiempoPage() {
 
     <header>
         <div class="container">
-            <nav aria-label="Navegación principal">
-                <a class="logo" href="../" aria-label="Alhaurín al Día">
-                    <span class="logo-mark">A</span>
-                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
-                </a>
-
-                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
-                    aria-label="Abrir menú de navegación">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <div class="nav-links" id="main-menu">
-                    <a href="../noticias/">Noticias</a>
-                    <a href="../guia-util/">Guía útil</a>
-                    <a href="../avisos/">Avisos</a>
-                    <a href="../boletin-oficial/">Boletín oficial</a>
-                    <a href="./">Tiempo</a>
-                    <a href="../seguimiento/">Seguimiento</a>
-                    <a href="../planes/">Planes</a>
-                    <a href="../comercios/">Comercios</a>
-                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
-                </div>
-            </nav>
+            ${renderNav()}
         </div>
     </header>
 
@@ -196,6 +173,25 @@ function renderTiempoPage() {
                         <span class="live-dot"></span>
                         <span>Actualizado ${escapeHTML(fechaStr)}</span>
                     </div>
+                </div>
+
+                <!-- SUBNAVEGACIÓN DEL HUB DE TIEMPO -->
+                <div class="tracking-tabs-bar" role="tablist" aria-label="Secciones de Tiempo">
+                    <a class="tab-btn active" href="./" role="tab" aria-selected="true">
+                        <span>📅</span> Previsión 7 días
+                    </a>
+                    <a class="tab-btn" href="./prevision-horaria/" role="tab" aria-selected="false">
+                        <span>🕐</span> Previsión por horas
+                    </a>
+                    <a class="tab-btn" href="./comparador/" role="tab" aria-selected="false">
+                        <span>📊</span> Comparador de modelos
+                    </a>
+                    <a class="tab-btn" href="./agro/" role="tab" aria-selected="false">
+                        <span>🌾</span> Agro Meteo
+                    </a>
+                    <a class="tab-btn" href="../seguimiento/" role="tab" aria-selected="false">
+                        <span>📡</span> En directo
+                    </a>
                 </div>
             </div>
         </section>
@@ -343,7 +339,7 @@ function renderTiempoPage() {
 
                 <!-- TOOLBAR DE FUENTES Y ACCESOS RÁPIDOS -->
                 <div class="weather-footer-actions">
-                    <a class="btn btn-primary" href="../seguimiento/">📡 Abrir Seguimiento en Vivo (Radar, Rayos y Satélite) →</a>
+                    <a class="btn btn-primary" href="../seguimiento/">📡 Ver En Directo (Radar, Rayos, Tráfico y Calidad del Aire) →</a>
                     <a class="btn btn-secondary" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande"
                         target="_blank" rel="noopener noreferrer">Andalmet.es ↗</a>
                     <a class="btn btn-secondary"

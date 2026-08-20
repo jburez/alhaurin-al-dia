@@ -35,13 +35,13 @@ SITE_FOOTER_HTML = '''<footer class="site-footer">
                 </div>
 
                 <div class="footer-nav-col">
-                    <h3 class="footer-heading">Tiempo y Seguimiento</h3>
+                    <h3 class="footer-heading">Tiempo</h3>
                     <ul class="footer-menu">
                         <li><a href="/tiempo/">El Tiempo en Alhaurín</a></li>
                         <li><a href="/tiempo/comparador/">Comparador de Modelos</a></li>
                         <li><a href="/tiempo/agro/">Agro Meteo</a></li>
                         <li><a href="/tiempo/prevision-horaria/">Previsión por Horas</a></li>
-                        <li><a href="/seguimiento/">Seguimiento en Vivo</a></li>
+                        <li><a href="/seguimiento/">En Directo</a></li>
                     </ul>
                 </div>
 

@@ -18,6 +18,7 @@ from dotenv import load_dotenv
 
 from lib.footer import SITE_FOOTER_HTML
 from lib.analytics import CF_ANALYTICS_SNIPPET
+from lib.nav import render_nav
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
@@ -691,25 +692,7 @@ def site_chrome(content, prefix=".."):
     </div>
     <header>
         <div class="container">
-            <nav aria-label="Navegación principal">
-                <a class="logo" href="{prefix}/" aria-label="Alhaurín al Día">
-                    <span class="logo-mark">A</span>
-                    <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
-                </a>
-                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación">
-                    <span></span><span></span><span></span>
-                </button>
-                <div class="nav-links" id="main-menu">
-                    <a href="{prefix}/noticias/">Noticias</a>
-                    <a href="{prefix}/guia-util/">Guía útil</a>
-                    <a href="{prefix}/avisos/">Avisos</a>
-                    <a href="{prefix}/tiempo/">Tiempo</a>
-                    <a href="{prefix}/seguimiento/">Seguimiento</a>
-                    <a href="{prefix}/planes/">Planes</a>
-                    <a href="{prefix}/comercios/">Comercios</a>
-                    <a href="{prefix}/anunciarse/" class="nav-cta">Anunciarse</a>
-                </div>
-            </nav>
+            {render_nav()}
         </div>
     </header>
     {content}

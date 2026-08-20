@@ -1,0 +1,11 @@
+{
+  "items": [
+    { "id": "noticias", "label": "Noticias", "href": "/noticias/" },
+    { "id": "guia-util", "label": "Guía útil", "href": "/guia-util/" },
+    { "id": "avisos", "label": "Avisos", "href": "/avisos/" },
+    { "id": "tiempo", "label": "Tiempo", "href": "/tiempo/" },
+    { "id": "planes", "label": "Planes", "href": "/planes/" },
+    { "id": "comercios", "label": "Comercios", "href": "/comercios/" }
+  ],
+  "cta": { "id": "anunciarse", "label": "Anunciarse", "href": "/anunciarse/" }
+}

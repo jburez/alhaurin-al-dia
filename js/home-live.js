@@ -1,4 +1,4 @@
-(function () {
+(async function () {
     const container = document.getElementById("daily-status");
     const updatedBox = document.getElementById("daily-updated");
 
@@ -6,6 +6,7 @@
 
     const script = document.currentScript || document.querySelector('script[src$="home-live.js"]');
     const root = script ? new URL("../", script.src) : new URL("/", window.location.origin);
+    const rules = await import(new URL("js/lib/estado-local-rules.js", root).href);
 
     function escapeHTML(value = "") {
         return String(value)
@@ -30,15 +31,6 @@
         const date = new Date(value);
         if (Number.isNaN(date.getTime())) return "Actualización pendiente";
         return `Actualizado ${date.toLocaleDateString("es-ES", { day: "2-digit", month: "long" })} a las ${date.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" })}`;
-    }
-
-    function getStatusLabel(estado = "neutral") {
-        return {
-            ok: "Normal",
-            warning: "Aviso",
-            alert: "Atención",
-            neutral: "Info"
-        }[estado] || "Info";
     }
 
     function insertAndalmetWidget() {
@@ -82,249 +74,10 @@
         dashboard.insertAdjacentElement("afterend", section);
     }
 
-    function getSeverityWeight(estado = "") {
-        return {
-            alert: 4,
-            warning: 3,
-            ok: 2,
-            neutral: 1
-        }[estado] || 1;
-    }
-
-    function isActiveNotice(notice) {
-        if (!notice || notice.activo === false) return false;
-
-        const now = new Date();
-        const starts = notice.inicio ? new Date(notice.inicio) : null;
-        const ends = notice.fin ? new Date(notice.fin) : null;
-
-        if (starts && !Number.isNaN(starts.getTime()) && starts > now) return false;
-        if (ends && !Number.isNaN(ends.getTime()) && ends < now) return false;
-
-        return true;
-    }
-
-    function getNoticeTarget(notice) {
-        const type = String(notice.tipo || "").toLowerCase();
-        const title = String(notice.titulo || "").toLowerCase();
-        const text = `${type} ${title}`;
-
-        if (text.includes("tráfico") || text.includes("trafico") || text.includes("calle") || text.includes("carretera") || text.includes("desvío") || text.includes("desvio")) {
-            return "trafico";
-        }
-
-        if (text.includes("procesión") || text.includes("procesion") || text.includes("evento") || text.includes("agenda") || text.includes("feria") || text.includes("romería") || text.includes("romeria")) {
-            return "agenda";
-        }
-
-        return "avisos";
-    }
-
-    function buildCardForTarget(target, notices = []) {
-        const targetNotices = notices
-            .filter(isActiveNotice)
-            .filter(notice => getNoticeTarget(notice) === target)
-            .sort((a, b) => getSeverityWeight(b.estado) - getSeverityWeight(a.estado));
-
-        if (!targetNotices.length) return null;
-
-        const mainNotice = targetNotices[0];
-        const countSuffix = targetNotices.length > 1 ? ` · ${targetNotices.length} avisos activos` : "";
-        const titles = {
-            avisos: "Avisos locales",
-            trafico: "Tráfico",
-            agenda: "Agenda"
-        };
-
-        return {
-            id: target,
-            icono: mainNotice.icono || "📢",
-            titulo: titles[target] || "Avisos locales",
-            valor: mainNotice.valor || mainNotice.titulo || "Aviso activo",
-            detalle: `${mainNotice.detalle || "Hay un aviso local activo."}${countSuffix}`,
-            estado: mainNotice.estado || "warning",
-            fuente: mainNotice.fuente || "Alhaurín al Día",
-            cta: mainNotice.cta || "Ver avisos",
-            url: mainNotice.url || "./avisos/"
-        };
-    }
-
-    function mergeLocalNotices(items, noticesData) {
-        const notices = Array.isArray(noticesData?.avisos) ? noticesData.avisos : [];
-        const cardsByTarget = {
-            avisos: buildCardForTarget("avisos", notices),
-            trafico: buildCardForTarget("trafico", notices),
-            agenda: buildCardForTarget("agenda", notices)
-        };
-
-        const replacedTargets = new Set();
-        const merged = items.map(item => {
-            const replacement = cardsByTarget[item.id];
-            if (replacement) {
-                replacedTargets.add(item.id);
-                return replacement;
-            }
-            return item;
-        });
-
-        Object.entries(cardsByTarget).forEach(([target, card]) => {
-            if (card && !replacedTargets.has(target)) {
-                merged.push(card);
-            }
-        });
-
-        return merged;
-    }
-
-    function isActiveAvisoOficial(aviso) {
-        return Boolean(aviso) && aviso.estado_ciclo_vida !== "finalizado" && isActiveNotice(aviso);
-    }
-
-    function nivelToEstado(nivel) {
-        const value = String(nivel || "").toLowerCase();
-        if (value === "naranja" || value === "rojo") return "alert";
-        return "warning";
-    }
-
-    function buildCardFromAvisoOficial(aviso) {
-        const nivel = aviso.nivel ? ` (nivel ${aviso.nivel})` : "";
-        return {
-            id: "avisos",
-            icono: "⚠️",
-            titulo: "Avisos",
-            valor: `${aviso.fenomeno || aviso.titulo || "Aviso activo"}${nivel}`,
-            detalle: aviso.descripcion || "Aviso meteorológico oficial activo.",
-            estado: nivelToEstado(aviso.nivel),
-            fuente: aviso.fuente || "AEMET",
-            cta: "Ver aviso oficial",
-            url: aviso.fuente_url || "./avisos/"
-        };
-    }
-
-    function mergeAvisosOficiales(items, avisosOficialesData) {
-        const avisos = Array.isArray(avisosOficialesData) ? avisosOficialesData : [];
-        const activos = avisos
-            .filter(isActiveAvisoOficial)
-            .sort((a, b) => getSeverityWeight(nivelToEstado(b.nivel)) - getSeverityWeight(nivelToEstado(a.nivel)));
-
-        if (!activos.length) return items;
-
-        // Un aviso oficial activo tiene prioridad sobre un aviso manual de
-        // data/avisos-locales.json en el mismo hueco de portada.
-        const card = buildCardFromAvisoOficial(activos[0]);
-        const replaced = items.some(item => item.id === "avisos");
-        const merged = items.map(item => (item.id === "avisos" ? card : item));
-        return replaced ? merged : [...merged, card];
-    }
-
-    function pickLatestDate(...values) {
-        let latest = null;
-        for (const value of values) {
-            if (!value) continue;
-            const date = new Date(value);
-            if (Number.isNaN(date.getTime())) continue;
-            if (!latest || date > latest) latest = date;
-        }
-        return latest;
-    }
-
-    function mergeWeather(items, weatherData) {
-        const weatherItem = weatherData?.item;
-        if (!weatherItem || typeof weatherItem !== "object") return items;
-
-        const cleaned = items.filter(item => item.id !== "tiempo" && item.id !== "andalmet");
-        return [weatherItem, ...cleaned];
-    }
-
-    // Tráfico automático desde el Radar Social (scripts/sync-admin-firestore.js)
-    function buildCardFromRadarTrafico(reporte) {
-        const esArroyo = reporte.type === "arroyo";
-        const calleInfo = reporte.calle ? ` (${reporte.calle})` : "";
-        return {
-            id: "trafico",
-            icono: esArroyo ? "🌊" : "🚧",
-            titulo: "Tráfico",
-            valor: reporte.titulo || (esArroyo ? "Crecida de arroyo" : "Corte de tráfico"),
-            detalle: `${reporte.detalle || "Reportado por vecinos en el Radar Social."}${calleInfo}`,
-            estado: "alert",
-            fuente: "Radar Social",
-            cta: "Ver en el mapa",
-            url: "./radar-social/"
-        };
-    }
-
-    function mergeRadarTrafico(items, radarTraficoData) {
-        const reportes = Array.isArray(radarTraficoData?.reportes) ? radarTraficoData.reportes : [];
-        if (!reportes.length) return items;
-        const card = buildCardFromRadarTrafico(reportes[0]);
-        const replaced = items.some(item => item.id === "trafico");
-        const merged = items.map(item => (item.id === "trafico" ? card : item));
-        return replaced ? merged : [...merged, card];
-    }
-
-    // Resumen automático de Agenda: misma ventana de 3 días que ya usa
-    // js/home-agenda.js para la lista completa de próximos eventos.
-    function getUpcomingAgendaEvents(events) {
-        const now = new Date();
-        const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-        const windowEnd = new Date(todayStart);
-        windowEnd.setDate(windowEnd.getDate() + 3);
-
-        return events
-            .filter(event => {
-                const start = event.inicio ? new Date(event.inicio) : null;
-                const end = event.fin ? new Date(event.fin) : null;
-                if (event.activo === false) return false;
-                if (end && !Number.isNaN(end.getTime()) && end < now) return false;
-                if (!start && !end) return false;
-                return true;
-            })
-            .filter(event => {
-                const start = event.inicio ? new Date(event.inicio) : null;
-                if (!start || Number.isNaN(start.getTime())) return false;
-                return start >= todayStart && start < windowEnd;
-            })
-            .sort((a, b) => {
-                const dateA = (a.inicio && new Date(a.inicio)) || (a.fin && new Date(a.fin)) || new Date(8640000000000000);
-                const dateB = (b.inicio && new Date(b.inicio)) || (b.fin && new Date(b.fin)) || new Date(8640000000000000);
-                return dateA - dateB;
-            })
-            .slice(0, 6);
-    }
-
-    function formatAgendaEventDate(value) {
-        const date = value ? new Date(value) : null;
-        if (!date || Number.isNaN(date.getTime())) return "Fecha pendiente";
-        return date.toLocaleDateString("es-ES", { weekday: "short", day: "numeric", month: "short" });
-    }
-
-    function buildCardFromAgendaSummary(upcoming) {
-        const count = upcoming.length;
-        const primero = upcoming[0];
-        const cuando = formatAgendaEventDate(primero.inicio);
-        const detalleBase = `${primero.titulo || "Evento local"}${primero.lugar ? ` · ${primero.lugar}` : ""} (${cuando})`;
-        return {
-            id: "agenda",
-            icono: "📅",
-            titulo: "Agenda",
-            valor: count === 1 ? "1 actividad próxima" : `${count} actividades próximas`,
-            detalle: count > 1 ? `${detalleBase} y ${count - 1} más` : detalleBase,
-            estado: "ok",
-            fuente: "Agenda local",
-            cta: "Ver planes",
-            url: "./planes/"
-        };
-    }
-
-    function mergeAgendaSummary(items, agendaLocalData) {
-        const events = Array.isArray(agendaLocalData?.eventos) ? agendaLocalData.eventos : [];
-        const upcoming = getUpcomingAgendaEvents(events);
-        if (!upcoming.length) return items;
-        const card = buildCardFromAgendaSummary(upcoming);
-        const replaced = items.some(item => item.id === "agenda");
-        const merged = items.map(item => (item.id === "agenda" ? card : item));
-        return replaced ? merged : [...merged, card];
-    }
+    // Reglas de fusión/severidad/orden: compartidas con
+    // scripts/render-home-widgets-static.js vía js/lib/estado-local-rules.js
+    // (importado arriba como `rules`), para que la hidratación en el
+    // navegador nunca pinte algo distinto a lo que sirvió el HTML estático.
 
     function renderItem(item) {
         const estado = item.estado || "neutral";
@@ -332,7 +85,8 @@
         const isExternal = /^https?:\/\//i.test(url) && !url.startsWith(window.location.origin);
         const cta = item.cta || "Ver más";
         const source = item.fuente ? `<span class="daily-source">Fuente: ${escapeHTML(item.fuente)}</span>` : "";
-        const statusLabel = getStatusLabel(estado);
+        const statusLabel = rules.getStatusLabel(estado);
+        const extraBadges = item.actividadesMini ? `<div class="daily-act-strip">${item.actividadesMini}</div>` : "";
 
         return `
             <article class="daily-card ${escapeHTML(estado)}">
@@ -345,6 +99,7 @@
                 </div>
                 <div class="daily-value">${escapeHTML(item.valor || "Consultar")}</div>
                 <p>${escapeHTML(item.detalle || "Información pendiente de actualización.")}</p>
+                ${extraBadges}
                 ${source}
                 <a class="daily-link" href="${escapeHTML(url)}" ${isExternal ? 'target="_blank" rel="noopener noreferrer"' : ""}>
                     ${escapeHTML(cta)} →
@@ -383,20 +138,23 @@
     ])
         .then(([data, noticesData, weatherData, avisosOficialesData, radarTraficoData, agendaLocalData]) => {
             const baseItems = Array.isArray(data.items) ? data.items : [];
-            const withWeather = mergeWeather(baseItems, weatherData);
+            const withWeather = rules.mergeWeather(baseItems, weatherData);
             // Orden de prioridad para "trafico"/"agenda": base < automático
             // (Radar Social / resumen de agenda) < aviso local manual (si lo
             // publican expresamente, gana al automatismo).
-            const withRadarTrafico = mergeRadarTrafico(withWeather, radarTraficoData);
-            const withAgendaSummary = mergeAgendaSummary(withRadarTrafico, agendaLocalData);
-            const withLocalNotices = mergeLocalNotices(withAgendaSummary, noticesData);
-            const items = mergeAvisosOficiales(withLocalNotices, avisosOficialesData);
+            const withRadarTrafico = rules.mergeRadarTrafico(withWeather, radarTraficoData);
+            const withAgendaSummary = rules.mergeAgendaSummary(withRadarTrafico, agendaLocalData);
+            const withLocalNotices = rules.mergeLocalNotices(withAgendaSummary, noticesData);
+            const merged = rules.mergeAvisosOficiales(withLocalNotices, avisosOficialesData);
+            // Un aviso "alert" gana la primera posición de la rejilla en vez
+            // de depender del orden en que llegaron los datos.
+            const items = rules.sortBySeverity(merged);
 
             // El badge "Actualizado" debe reflejar la fuente más fresca que de
             // verdad alimenta lo que se ve en pantalla (p. ej. el tiempo se
             // refresca varias veces al día aunque el resto del panel no
             // cambie), no solo la fecha del archivo base estado-local.json.
-            const activosOficiales = (Array.isArray(avisosOficialesData) ? avisosOficialesData : []).filter(isActiveAvisoOficial);
+            const activosOficiales = (Array.isArray(avisosOficialesData) ? avisosOficialesData : []).filter(rules.isActiveAvisoOficial);
             const ultimoOficial = activosOficiales.length
                 ? activosOficiales.reduce((max, aviso) => {
                     const fecha = new Date(aviso.actualizado_en || aviso.inicio || 0);
@@ -404,11 +162,11 @@
                     return (!max || fecha > max) ? fecha : max;
                 }, null)
                 : null;
-            const noticiasActivas = Array.isArray(noticesData?.avisos) && noticesData.avisos.some(isActiveNotice);
+            const noticiasActivas = Array.isArray(noticesData?.avisos) && noticesData.avisos.some(rules.isActiveNotice);
             const radarTraficoActivo = Boolean(radarTraficoData?.reportes?.length);
-            const agendaSummaryActiva = getUpcomingAgendaEvents(Array.isArray(agendaLocalData?.eventos) ? agendaLocalData.eventos : []).length > 0;
+            const agendaSummaryActiva = rules.getUpcomingAgendaEvents(Array.isArray(agendaLocalData?.eventos) ? agendaLocalData.eventos : []).length > 0;
 
-            const updatedDate = pickLatestDate(
+            const updatedDate = rules.pickLatestDate(
                 data.actualizado,
                 weatherData?.actualizado,
                 noticiasActivas ? noticesData.actualizado : null,

@@ -1,7 +1,23 @@
 {
-  "actualizado": "2026-08-20T18:00:58.971Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 271 eventos próximos.",
+  "actualizado": "2026-08-20T20:46:54.111680+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 275 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
+    {
+      "id": "alhaurinhoy-12366",
+      "tipo": "Cine",
+      "icono": "🎬",
+      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
+      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
+      "lugar": "",
+      "inicio": "2026-07-21T18:00:00.000Z",
+      "fin": null,
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
     {
       "id": "alhaurinhoy-12265",
       "tipo": "Música en vivo",
@@ -1098,6 +1114,51 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-12607",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Concierto 🎶 ALEJADOS",
+      "descripcion": "Un concierto 100% Alejados. Colabora @aytoalhaurinelgrande 📍 Terraza Teatro Antonio Gala · Alhaurín el Grande 🗓️ Viernes 18 septiembre 🚪 Apertura 21:00 · Concierto 21:30 🎟️ 15€ anticipada en Entrad...",
+      "lugar": "",
+      "inicio": "2026-08-20T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/concierto-%f0%9f%8e%b6-alejados/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12609",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Música en vivo 🎶 Luis Molero 🎤",
+      "descripcion": "Viernes 21 de agosto a partir de las 20:00!!!! Te esperamos para pasar un buen rato con Luis Molero. Nos encontramos en avenida Blas infante n9",
+      "lugar": "",
+      "inicio": "2026-08-21T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-luis-molero-%f0%9f%8e%a4/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12604",
+      "tipo": "Deportes",
+      "icono": "⚽",
+      "titulo": "⚽️ CD Alhaurino B 🆚 CD Alozaina",
+      "descripcion": "💙💙⚽ EL FÚTBOL NOS UNE POR UNA CAUSA QUE IMPORTA Este viernes 21 de agosto, el fútbol será mucho más que un partido. El CD Alhaurino B se enfrentará al CD Alozaina en un encuentro muy especial, coin...",
+      "lugar": "",
+      "inicio": "2026-08-21T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%e2%9a%bd%ef%b8%8f-cd-alhaurino-b-%f0%9f%86%9a-cd-alozaina/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "virgen-de-gracia-gracias-2026",
       "tipo": "Cultos Patronales",
       "icono": "⛪",
@@ -1111,6 +1172,21 @@
       "url": "./virgen-de-gracia-2026/",
       "activo": true,
       "fuente": "legado"
+    },
+    {
+      "id": "alhaurinhoy-12602",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "📺 F1 🏎️ 🏎️ 🏎️ 🇳🇱",
+      "descripcion": "La retransmisión de Fórmula 1 se encuentra probablemente en los siguientes sitios: 📍Casa del Gusto, https://maps.app.goo.gl/S7sPCz8hizZe6tsJ7 📍Bar la Fiesta, https://maps.app.goo.gl/bRBJ7LCdWTsQmvi...",
+      "lugar": "",
+      "inicio": "2026-08-23T15:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%93%ba-f1-%f0%9f%8f%8e%ef%b8%8f-%f0%9f%8f%8e%ef%b8%8f-%f0%9f%8f%8e%ef%b8%8f-%f0%9f%87%b3%f0%9f%87%b1/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
     },
     {
       "id": "alhaurinhoy-12575",
@@ -4049,21 +4125,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

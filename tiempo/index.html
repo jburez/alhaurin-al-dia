@@ -43,28 +43,22 @@
     <header>
         <div class="container">
             <nav aria-label="Navegación principal">
-                <a class="logo" href="../" aria-label="Alhaurín al Día">
+                <a class="logo" href="/" aria-label="Alhaurín al Día">
                     <span class="logo-mark">A</span>
                     <span><strong>Alhaurín al Día</strong><span>Información local útil</span></span>
                 </a>
-
-                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
-                    aria-label="Abrir menú de navegación">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación">
+                    <span></span><span></span><span></span>
                 </button>
-
                 <div class="nav-links" id="main-menu">
-                    <a href="../noticias/">Noticias</a>
-                    <a href="../guia-util/">Guía útil</a>
-                    <a href="../avisos/">Avisos</a>
-                    <a href="../boletin-oficial/">Boletín oficial</a>
-                    <a href="./">Tiempo</a>
-                    <a href="../seguimiento/">Seguimiento</a>
-                    <a href="../planes/">Planes</a>
-                    <a href="../comercios/">Comercios</a>
-                    <a href="../anunciarse/" class="nav-cta">Anunciarse</a>
+                    <a href="/noticias/">Noticias</a>
+                    <a href="/guia-util/">Guía útil</a>
+                    <a href="/avisos/">Avisos</a>
+                    <a href="/tiempo/">Tiempo</a>
+                    <a href="/planes/">Planes</a>
+                    <a href="/comercios/">Comercios</a>
+                    <a href="/anunciarse/" class="nav-cta">Anunciarse</a>
+                    <button type="button" class="nav-search-btn search-toggle" aria-label="Buscar en la web">🔍 Buscar</button>
                 </div>
             </nav>
         </div>
@@ -81,8 +75,27 @@
                     </div>
                     <div class="weather-live-badge">
                         <span class="live-dot"></span>
-                        <span>Actualizado 19 de agosto de 2026 a las 15:46</span>
+                        <span>Actualizado 19 de agosto de 2026 a las 17:46</span>
                     </div>
+                </div>
+
+                <!-- SUBNAVEGACIÓN DEL HUB DE TIEMPO -->
+                <div class="tracking-tabs-bar" role="tablist" aria-label="Secciones de Tiempo">
+                    <a class="tab-btn active" href="./" role="tab" aria-selected="true">
+                        <span>📅</span> Previsión 7 días
+                    </a>
+                    <a class="tab-btn" href="./prevision-horaria/" role="tab" aria-selected="false">
+                        <span>🕐</span> Previsión por horas
+                    </a>
+                    <a class="tab-btn" href="./comparador/" role="tab" aria-selected="false">
+                        <span>📊</span> Comparador de modelos
+                    </a>
+                    <a class="tab-btn" href="./agro/" role="tab" aria-selected="false">
+                        <span>🌾</span> Agro Meteo
+                    </a>
+                    <a class="tab-btn" href="../seguimiento/" role="tab" aria-selected="false">
+                        <span>📡</span> En directo
+                    </a>
                 </div>
             </div>
         </section>
@@ -418,7 +431,7 @@
 
                 <!-- TOOLBAR DE FUENTES Y ACCESOS RÁPIDOS -->
                 <div class="weather-footer-actions">
-                    <a class="btn btn-primary" href="../seguimiento/">📡 Abrir Seguimiento en Vivo (Radar, Rayos y Satélite) →</a>
+                    <a class="btn btn-primary" href="../seguimiento/">📡 Ver En Directo (Radar, Rayos, Tráfico y Calidad del Aire) →</a>
                     <a class="btn btn-secondary" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande"
                         target="_blank" rel="noopener noreferrer">Andalmet.es ↗</a>
                     <a class="btn btn-secondary"
@@ -459,13 +472,13 @@
                 </div>
 
                 <div class="footer-nav-col">
-                    <h3 class="footer-heading">Tiempo y Seguimiento</h3>
+                    <h3 class="footer-heading">Tiempo</h3>
                     <ul class="footer-menu">
                         <li><a href="/tiempo/">El Tiempo en Alhaurín</a></li>
                         <li><a href="/tiempo/comparador/">Comparador de Modelos</a></li>
                         <li><a href="/tiempo/agro/">Agro Meteo</a></li>
                         <li><a href="/tiempo/prevision-horaria/">Previsión por Horas</a></li>
-                        <li><a href="/seguimiento/">Seguimiento en Vivo</a></li>
+                        <li><a href="/seguimiento/">En Directo</a></li>
                     </ul>
                 </div>
 

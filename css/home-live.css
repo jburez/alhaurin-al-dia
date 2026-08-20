@@ -441,6 +441,12 @@
     box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
 }
 
+.weather-live-badge.is-stale {
+    background: #fff8ed;
+    border-color: #efd9b9;
+    color: #8a5a19;
+}
+
 .weather-main-section {
     padding: 16px 0;
 }

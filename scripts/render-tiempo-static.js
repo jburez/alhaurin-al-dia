@@ -7,6 +7,14 @@ const { renderNav } = require('./lib/nav');
 const ROOT = path.join(__dirname, '..');
 const TIEMPO_HTML_PATH = path.join(ROOT, 'tiempo', 'index.html');
 const TIEMPO_JSON_PATH = path.join(ROOT, 'data', 'tiempo-aemet.json');
+const TZ = 'Europe/Madrid';
+// El cron de scripts/actualizar_tiempo_aemet.py corre a las 6:15, 10:15 y
+// 15:15 UTC — el hueco nocturno (15:15 a 6:15 del día siguiente) es de ~15h,
+// así que el umbral de "dato obsoleto" tiene que ser mayor que eso para no
+// marcar como obsoleto el estado normal de cada madrugada. 20h da margen
+// para retrasos habituales de GitHub Actions sin dejar de detectar un fallo
+// real del cron (AEMET caída, secret caducado, workflow desactivado...).
+const STALE_THRESHOLD_HOURS = 20;
 
 function readJSON(filePath, fallback = null) {
   try {
@@ -57,13 +65,27 @@ function renderTiempoPage() {
   const viento = hoy.viento || 'Flojo';
   const uv = hoy.uv || '9';
 
-  const fechaStr = new Date(weatherData.actualizado || Date.now()).toLocaleDateString('es-ES', {
+  const actualizadoDate = new Date(weatherData.actualizado || Date.now());
+  const fechaStr = actualizadoDate.toLocaleDateString('es-ES', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
     hour: '2-digit',
-    minute: '2-digit'
+    minute: '2-digit',
+    timeZone: TZ
   });
+
+  // Si el dato de AEMET lleva más de STALE_THRESHOLD_HOURS sin refrescarse
+  // (p. ej. el cron de actualizar_tiempo_aemet.py lleva caído), no lo
+  // presentamos como "en tiempo real": se apaga el punto verde de "en vivo"
+  // y el texto pasa a dejar claro que es la última lectura disponible.
+  const horasDesdeActualizacion = (Date.now() - actualizadoDate.getTime()) / 3600000;
+  const esObsoleto = !Number.isNaN(horasDesdeActualizacion) && horasDesdeActualizacion > STALE_THRESHOLD_HOURS;
+  const liveBadgeClass = esObsoleto ? 'weather-live-badge is-stale' : 'weather-live-badge';
+  const liveDotHTML = esObsoleto ? '' : '<span class="live-dot"></span>';
+  const liveBadgeText = esObsoleto
+    ? `Última lectura disponible: ${escapeHTML(fechaStr)} · sin datos más recientes`
+    : `Actualizado ${escapeHTML(fechaStr)}`;
 
   // Generar tarjetas de predicción nativa a 7 días de AEMET
   const semanaHTML = semana.map((d, index) => {
@@ -169,9 +191,9 @@ function renderTiempoPage() {
                         <span class="section-kicker">Meteorología en tiempo real</span>
                         <h1>El tiempo en Alhaurín el Grande</h1>
                     </div>
-                    <div class="weather-live-badge">
-                        <span class="live-dot"></span>
-                        <span>Actualizado ${escapeHTML(fechaStr)}</span>
+                    <div class="${liveBadgeClass}">
+                        ${liveDotHTML}
+                        <span>${liveBadgeText}</span>
                     </div>
                 </div>
 

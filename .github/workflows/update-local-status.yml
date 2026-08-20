@@ -24,23 +24,35 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Actualizar tiempo desde AEMET
         env:
           AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
         run: python3 scripts/actualizar_tiempo_aemet.py
 
+      - name: Regenerar página estática de Tiempo
+        # data/tiempo-aemet.json solo es la fuente de datos: sin este paso,
+        # /tiempo/ se queda congelada con lo que hubiera en el último build
+        # manual, aunque el JSON se actualice cada pocas horas (causa real
+        # de la regresión de frescura del 2026-08-20).
+        run: node scripts/render-tiempo-static.js
+
       - name: Commit cambios si hay actualización
         id: commit
         run: |
-          if git diff --quiet data/tiempo-aemet.json; then
-            echo "Sin cambios en data/tiempo-aemet.json"
+          if git diff --quiet data/tiempo-aemet.json tiempo/index.html; then
+            echo "Sin cambios en data/tiempo-aemet.json ni tiempo/index.html"
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/tiempo-aemet.json
+          git add data/tiempo-aemet.json tiempo/index.html
           git commit -m "Actualiza tiempo desde AEMET"
           git push origin develop
           echo "changed=true" >> "$GITHUB_OUTPUT"

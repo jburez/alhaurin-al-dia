@@ -156,6 +156,42 @@ function checkData(errors, warnings) {
   else if (guia.length < 5) warnings.push(`data/guia-util.json contiene pocos recursos: ${guia.length}`);
 }
 
+// Umbral de aviso (24h) más laxo que el que usa render-tiempo-static.js para
+// decidir si oculta el badge "en vivo" (20h) — aquí no queremos que un
+// publish check falle solo porque cae justo en el hueco nocturno del cron
+// (15:15 UTC a 6:15 UTC, ~15h); a partir de 24h ya es sospechoso, y a partir
+// de 48h (dos ciclos de día completos sin dato nuevo) se trata como error.
+const TIEMPO_STALE_WARNING_HOURS = 24;
+const TIEMPO_STALE_ERROR_HOURS = 48;
+
+function checkTiempoFreshness(errors, warnings) {
+  const data = readJson('data/tiempo-aemet.json', null);
+  if (!data || !data.actualizado) {
+    warnings.push('data/tiempo-aemet.json no existe o no tiene campo "actualizado".');
+    return;
+  }
+
+  const actualizado = new Date(data.actualizado);
+  if (Number.isNaN(actualizado.getTime())) {
+    errors.push(`data/tiempo-aemet.json tiene un "actualizado" inválido: ${data.actualizado}`);
+    return;
+  }
+
+  const horas = (Date.now() - actualizado.getTime()) / 3600000;
+  if (horas > TIEMPO_STALE_ERROR_HOURS) {
+    errors.push(`data/tiempo-aemet.json lleva ${horas.toFixed(1)}h sin actualizarse (> ${TIEMPO_STALE_ERROR_HOURS}h) — revisa el workflow "Actualizar tiempo AEMET".`);
+  } else if (horas > TIEMPO_STALE_WARNING_HOURS) {
+    warnings.push(`data/tiempo-aemet.json lleva ${horas.toFixed(1)}h sin actualizarse (> ${TIEMPO_STALE_WARNING_HOURS}h).`);
+  }
+
+  if (fileExists('tiempo/index.html')) {
+    const html = read('tiempo/index.html');
+    if (!/(weather-live-badge is-stale|live-dot)/.test(html)) {
+      warnings.push('tiempo/index.html no contiene ni el punto "en vivo" ni el estado "is-stale" — revisa el badge de actualización.');
+    }
+  }
+}
+
 function checkAuditReports(errors, warnings) {
   const seoReportPath = 'reports/seo-audit-report.json';
   const orphanReportPath = 'reports/orphan-pages-report.json';
@@ -192,6 +228,7 @@ function main() {
   checkNewsIndex(errors);
   checkHome(errors);
   checkData(errors, warnings);
+  checkTiempoFreshness(errors, warnings);
   checkAuditReports(errors, warnings);
 
   console.log('Publish check');

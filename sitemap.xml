@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/admin/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1357,6 +1357,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/cd-alhaurino-y-clinicas-guadalhorce-se-unen-para-mejorar-la-salud-integral-de-sus.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/clausura-de-los-campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-2026.html</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -1946,6 +1952,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-hermandad-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezuela.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/la-hermandad-se-une-en-oracion-por-el-descanso-eterno-de-las-victimas-y-muestra-su.html</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -4130,7 +4142,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/tiempo/radar/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

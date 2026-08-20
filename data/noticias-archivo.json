@@ -1,23 +1,83 @@
 [
     {
-        "titulo": "96 golfistas compiten en el V Torneo de Golf Tomate Huevo Toro en Alhaurín Golf",
-        "descripcion": "La quinta edición del Torneo de Golf Tomate Huevo Toro reunió a 96 participantes en Alhaurín Golf para promocionar este producto local de la huerta.",
-        "resumen": "La quinta edición del Torneo de Golf Tomate Huevo Toro reunió a 96 participantes en Alhaurín Golf para promocionar este producto local de la huerta.",
-        "categoria": "Deportes",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-20T03:08:14.215Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/golf.jpg",
-        "pagina": "noticias/96-golfistas-compiten-en-el-v-torneo-de-golf-tomate-huevo-toro-en-alhaurin-golf.html"
-    },
-    {
-        "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
-        "descripcion": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
-        "resumen": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
+        "titulo": "Alhaurín el Grande clausura los campamentos de verano municipales con una fiesta final",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande despide los campamentos de verano 2026 con una fiesta que celebra un mes de actividades lúdicas y apoyo a la conciliación familiar.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande despide los campamentos de verano 2026 con una fiesta que celebra un mes de actividades lúdicas y apoyo a la conciliación familiar.",
         "categoria": "Educación",
         "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-20T03:08:14.212Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/CAMP-e1785926761443.jpeg",
-        "pagina": "noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio.html"
+        "fecha": "2026-08-20T04:47:59.196Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986.jpg",
+        "pagina": "noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-municipales-con-una-fiesta-final.html"
+    },
+    {
+        "titulo": "San Isidro despide a la Virgen de Gracia en su traslado a la Ermita de San Sebastián",
+        "descripcion": "Vecinos de San Isidro acompañaron a la Virgen de Gracia en su tercer traslado hasta la Ermita de San Sebastián, con la presencia del alcalde y representantes de hermandades locales.",
+        "resumen": "Vecinos de San Isidro acompañaron a la Virgen de Gracia en su tercer traslado hasta la Ermita de San Sebastián, con la presencia del alcalde y representantes de hermandades locales.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-20T04:43:18.227Z",
+        "imagen": "https://i2.ytimg.com/vi/UMQ8iNEn77k/maxresdefault.jpg",
+        "pagina": "noticias/san-isidro-despide-a-la-virgen-de-gracia-en-su-traslado-a-la-ermita-de-san-sebastian.html"
+    },
+    {
+        "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande",
+        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
+        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-20T04:43:18.226Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-13-at-07.41.14-1.jpeg",
+        "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "María del Carmen Plaza pronuncia el XIV Pregón de Gloria en Alhaurín el Grande",
+        "descripcion": "María del Carmen Plaza inauguró las fiestas en honor a Nuestra Señora de Gracia con el XIV Pregón de Gloria en la biblioteca municipal de Alhaurín el Grande.",
+        "resumen": "María del Carmen Plaza inauguró las fiestas en honor a Nuestra Señora de Gracia con el XIV Pregón de Gloria en la biblioteca municipal de Alhaurín el Grande.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-20T04:43:18.225Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Secuencia-14.00_46_52_18.Imagen-fija010.jpg",
+        "pagina": "noticias/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-20T04:43:18.221Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
+    },
+    {
+        "titulo": "Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda",
+        "descripcion": "El Hermano Mayor y varios miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "resumen": "El Hermano Mayor y varios miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-20T04:43:18.219Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
+        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande impulsa clubes de lectura y talleres para jóvenes en agosto 2026",
+        "descripcion": "La Biblioteca Municipal abre inscripciones para clubes de lectura y la Casita de la Juventud ofrece taller de pintura creativa para jóvenes en Alhaurín el Grande.",
+        "resumen": "La Biblioteca Municipal abre inscripciones para clubes de lectura y la Casita de la Juventud ofrece taller de pintura creativa para jóvenes en Alhaurín el Grande.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-20T04:43:18.203Z",
+        "imagen": "https://i4.ytimg.com/vi/SGGofjEa-t4/maxresdefault.jpg",
+        "pagina": "noticias/alhaurin-el-grande-impulsa-clubes-de-lectura-y-talleres-para-jovenes-en-agosto-2026.html"
+    },
+    {
+        "titulo": "Agenda cultural de Alhaurín el Grande: próximos eventos destacados en PlaneATV",
+        "descripcion": "Consulta la agenda cultural de Alhaurín el Grande con las próximas actividades y eventos organizados, presentados por PlaneATV y la Asociación Cultural El Laurel.",
+        "resumen": "Consulta la agenda cultural de Alhaurín el Grande con las próximas actividades y eventos organizados, presentados por PlaneATV y la Asociación Cultural El Laurel.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-20T04:43:18.195Z",
+        "imagen": "https://i2.ytimg.com/vi/yyEQq9VzHUo/maxresdefault.jpg",
+        "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados-en-planeatv.html"
     },
     {
         "titulo": "Villa del Guadalhorce despide a las hermanas doroteas Lupe y Teresa",
@@ -130,16 +190,6 @@
         "pagina": "noticias/la-hermandad-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezuela.html"
     },
     {
-        "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
-        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-20T01:40:00.343Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
-        "pagina": "noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
-    },
-    {
         "titulo": "La Axarquía aumenta a 16 hectómetros cúbicos el agua para riego de cultivos subtropicales",
         "descripcion": "La Axarquía incrementa en 700.000 metros cúbicos el agua destinada al riego de cultivos subtropicales, alcanzando un total de 16 hectómetros cúbicos para esta campaña.",
         "resumen": "La Axarquía incrementa en 700.000 metros cúbicos el agua destinada al riego de cultivos subtropicales, alcanzando un total de 16 hectómetros cúbicos para esta campaña.",
@@ -228,16 +278,6 @@
         "fecha": "2026-08-19T20:35:19.591Z",
         "imagen": "https://i2.ytimg.com/vi/yyEQq9VzHUo/maxresdefault.jpg",
         "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html"
-    },
-    {
-        "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández Fuentes en Alhaurín el Grande",
-        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente y un homenaje especial.",
-        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente y un homenaje especial.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T18:43:42.104Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-13-at-07.41.14-1.jpeg",
-        "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-fuentes-en-alhaurin-el-grande.html"
     },
     {
         "titulo": "Alhaurín el Grande lanza clubes de lectura y cierra ciclo de cine con Thunderbolts",
@@ -340,16 +380,6 @@
         "pagina": "noticias/alhaurin-el-grande-impulsa-clubes-de-lectura-taller-de-pintura-y-torneo-de-baloncesto-3x3.html"
     },
     {
-        "titulo": "Alhaurín el Grande estrena dos rutas saludables para turismo y naturaleza",
-        "descripcion": "Alhaurín el Grande desarrollará dos rutas saludables circulares que conectan patrimonio, naturaleza y oferta turística, con financiación del Ministerio y apoyo municipal.",
-        "resumen": "Alhaurín el Grande desarrollará dos rutas saludables circulares que conectan patrimonio, naturaleza y oferta turística, con financiación del Ministerio y apoyo municipal.",
-        "categoria": "Turismo y Patrimonio",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T14:40:21.919Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande.jpg",
-        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-turismo-y-naturaleza.html"
-    },
-    {
         "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
@@ -390,16 +420,6 @@
         "pagina": "noticias/la-virgen-de-gracia-recorre-plaza-alta-y-llega-al-barrio-san-isidro-en-su-triduo-2026.html"
     },
     {
-        "titulo": "Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026",
-        "descripcion": "El alcalde Anthony Bermúdez invita a la comunidad de Alhaurín el Grande a participar activamente en las festividades del Día de la Virgen 2026 organizadas por el Ayuntamiento.",
-        "resumen": "El alcalde Anthony Bermúdez invita a la comunidad de Alhaurín el Grande a participar activamente en las festividades del Día de la Virgen 2026 organizadas por el Ayuntamiento.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T10:35:00.616Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2024/04/cropped-LOGOAYTOALH.png",
-        "pagina": "noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-la-virgen-2026.html"
-    },
-    {
         "titulo": "A través de un comunicado, la Hermandad ha expresado su solidaridad con las familias",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
@@ -418,26 +438,6 @@
         "fecha": "2026-08-19T08:51:33.070Z",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986.jpg",
         "pagina": "noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-con-una-gran-fiesta-de-despedida.html"
-    },
-    {
-        "titulo": "Fedelhorce impulsa la exportación de productos y servicios al mercado chino",
-        "descripcion": "Fedelhorce busca identificar el potencial exportador de sus empresas asociadas para ampliar su presencia en el mercado chino.",
-        "resumen": "Fedelhorce busca identificar el potencial exportador de sus empresas asociadas para ampliar su presencia en el mercado chino.",
-        "categoria": "Comercio y Empresa",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T08:45:48.744Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/08/Exportacion-china-1.png",
-        "pagina": "noticias/fedelhorce-impulsa-la-exportacion-de-productos-y-servicios-al-mercado-chino.html"
-    },
-    {
-        "titulo": "Campaña de Verano 2026 en el Valle del Guadalhorce: Sella tu sueño con FEDELAPP",
-        "descripcion": "Este verano, comprar en el comercio local del Valle del Guadalhorce tiene premio con la campaña &#x27;Sella tu sueño&#x27; de FEDELAPP.",
-        "resumen": "Este verano, comprar en el comercio local del Valle del Guadalhorce tiene premio con la campaña &#x27;Sella tu sueño&#x27; de FEDELAPP.",
-        "categoria": "Comercio y Empresa",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T08:45:48.740Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/05/Mesa-de-trabajo-5.png",
-        "pagina": "noticias/campana-de-verano-2026-en-el-valle-del-guadalhorce-sella-tu-sueno-con-fedelapp.html"
     },
     {
         "titulo": "Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con tradición y fervor",
@@ -488,16 +488,6 @@
         "fecha": "2026-08-19T06:59:09.187Z",
         "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3-1.png",
         "pagina": "noticias/alhaurin-el-grande-se-convierte-en-centro-comercial-abierto-de-andalucia.html"
-    },
-    {
-        "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela",
-        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela tras los recientes terremotos que han causado pérdidas humanas y dolor.",
-        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela tras los recientes terremotos que han causado pérdidas humanas y dolor.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T06:54:32.166Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-con-venezuela.html"
     },
     {
         "titulo": "Clausuras de los campamentos de verano en Alhaurín y Villa del Guadalhorce 2026",

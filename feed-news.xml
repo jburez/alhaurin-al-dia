@@ -7,35 +7,8 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Thu, 20 Aug 2026 03:08:17 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 04:48:02 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
-    <item>
-      <title>San Isidro despide a la Virgen de Gracia en su traslado a la Ermita de San Sebastián</title>
-      <link>https://www.youtube.com/watch?v=UMQ8iNEn77k</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=UMQ8iNEn77k</guid>
-      <pubDate>Wed, 19 Aug 2026 14:30:11 GMT</pubDate>
-      <description>Vecinos de San Isidro acompañaron a la Virgen de Gracia en su tercer traslado hasta la Ermita de San Sebastián, con la presencia del alcalde y representantes de hermandades locales.</description>
-      <category>Fiestas y Tradiciones</category>
-      <dc:creator>ATV Alhaurín YouTube</dc:creator>
-    </item>
-    <item>
-      <title>Alhaurín el Grande impulsa clubes de lectura y talleres para jóvenes en agosto 2026</title>
-      <link>https://www.youtube.com/watch?v=SGGofjEa-t4</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=SGGofjEa-t4</guid>
-      <pubDate>Wed, 19 Aug 2026 12:00:29 GMT</pubDate>
-      <description>La Biblioteca Municipal abre inscripciones para clubes de lectura y la Casita de la Juventud ofrece taller de pintura creativa para jóvenes en Alhaurín el Grande.</description>
-      <category>Agenda Cultural</category>
-      <dc:creator>ATV Alhaurín YouTube</dc:creator>
-    </item>
-    <item>
-      <title>Agenda cultural de Alhaurín el Grande: próximos eventos destacados en PlaneATV</title>
-      <link>https://www.youtube.com/watch?v=yyEQq9VzHUo</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=yyEQq9VzHUo</guid>
-      <pubDate>Wed, 19 Aug 2026 07:36:23 GMT</pubDate>
-      <description>Consulta la agenda cultural de Alhaurín el Grande con las próximas actividades y eventos organizados, presentados por PlaneATV y la Asociación Cultural El Laurel.</description>
-      <category>Agenda Cultural</category>
-      <dc:creator>ATV Alhaurín YouTube</dc:creator>
-    </item>
     <item>
       <title>El Ayuntamiento presenta las bases para que las asociaciones y colectivos locales puedan</title>
       <link>https://alhaurinelgrande.es/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan-optar-a-las-subvenciones-municipales/</link>
@@ -55,11 +28,38 @@
       <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
     </item>
     <item>
+      <title>Alhaurín el Grande estrena dos rutas saludables para turismo y naturaleza</title>
+      <link>https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/</link>
+      <guid isPermaLink="true">https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/</guid>
+      <pubDate>Thu, 13 Aug 2026 11:00:00 GMT</pubDate>
+      <description>Alhaurín el Grande desarrollará dos rutas saludables circulares que conectan patrimonio, naturaleza y oferta turística, con financiación del Ministerio y apoyo municipal.</description>
+      <category>Turismo y Patrimonio</category>
+      <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
+    </item>
+    <item>
+      <title>Fedelhorce impulsa la exportación de productos y servicios al mercado chino</title>
+      <link>https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/</link>
+      <guid isPermaLink="true">https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/</guid>
+      <pubDate>Thu, 13 Aug 2026 08:19:59 GMT</pubDate>
+      <description>Fedelhorce busca identificar el potencial exportador de sus empresas asociadas para ampliar su presencia en el mercado chino.</description>
+      <category>Comercio y Empresa</category>
+      <dc:creator>Fedelhorce</dc:creator>
+    </item>
+    <item>
+      <title>Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026</title>
+      <link>https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-la-virgen-2026/</link>
+      <guid isPermaLink="true">https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-la-virgen-2026/</guid>
+      <pubDate>Wed, 12 Aug 2026 12:35:57 GMT</pubDate>
+      <description>El alcalde Anthony Bermúdez invita a la participación ciudadana en las actividades organizadas por el Ayuntamiento para conmemorar el Día de la Virgen en Alhaurín el Grande.</description>
+      <category>Fiestas y Tradiciones</category>
+      <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
+    </item>
+    <item>
       <title>25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)</title>
       <link>https://rtvalhaurinelgrande.com/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026/</link>
       <guid isPermaLink="true">https://rtvalhaurinelgrande.com/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026/</guid>
       <pubDate>Wed, 12 Aug 2026 06:01:07 GMT</pubDate>
-      <description>El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.</description>
+      <description>El Coro Rociero de la Hermandad de Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
@@ -68,34 +68,61 @@
       <link>https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/</link>
       <guid isPermaLink="true">https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/</guid>
       <pubDate>Mon, 10 Aug 2026 10:08:11 GMT</pubDate>
-      <description>La Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa, con la participación de 42 alumnos que mostraron su progreso musical.</description>
+      <description>La Plaza del Convento fue el escenario de las audiciones de la Escuela de Música La Pepa, donde 42 alumnos mostraron su talento en un evento organizado por la Agrupación Músico-Cultural de la Santa Vera Cruz.</description>
       <category>Agenda Cultural</category>
       <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
     <item>
-      <title>María del Carmen Plaza pronuncia el XIV Pregón de Gloria en Alhaurín el Grande</title>
+      <title>Campaña de Verano 2026 en el Valle del Guadalhorce: Sella tu sueño con FEDELAPP</title>
+      <link>https://fedelhorce.es/sella-tu-sueno-campana-de-verano-2026/</link>
+      <guid isPermaLink="true">https://fedelhorce.es/sella-tu-sueno-campana-de-verano-2026/</guid>
+      <pubDate>Mon, 10 Aug 2026 08:00:55 GMT</pubDate>
+      <description>La campaña de verano 2026 invita a comprar en el comercio local del Valle del Guadalhorce y participar en &apos;Sella tu sueño&apos; con FEDELAPP para obtener premios.</description>
+      <category>Comercio y Empresa</category>
+      <dc:creator>Fedelhorce</dc:creator>
+    </item>
+    <item>
+      <title>Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio</title>
+      <link>https://rtvalhaurinelgrande.com/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce/</link>
+      <guid isPermaLink="true">https://rtvalhaurinelgrande.com/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce/</guid>
+      <pubDate>Wed, 05 Aug 2026 10:46:18 GMT</pubDate>
+      <description>El Ayuntamiento de Alhaurín el Grande concluye los campamentos de educación y deportes de julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.</description>
+      <category>Educación</category>
+      <dc:creator>RTV Alhaurín el Grande</dc:creator>
+    </item>
+    <item>
+      <title>96 golfistas compiten en el V Torneo de Golf Tomate Huevo Toro en Alhaurín Golf</title>
+      <link>https://rtvalhaurinelgrande.com/v-torneo-de-golf-tomate-huevo-toro/</link>
+      <guid isPermaLink="true">https://rtvalhaurinelgrande.com/v-torneo-de-golf-tomate-huevo-toro/</guid>
+      <pubDate>Tue, 04 Aug 2026 10:10:28 GMT</pubDate>
+      <description>El V Torneo de Golf Tomate Huevo Toro reunió a 96 participantes en Alhaurín Golf para promocionar este producto local y fomentar la conexión entre la huerta y la mesa.</description>
+      <category>Deportes</category>
+      <dc:creator>RTV Alhaurín el Grande</dc:creator>
+    </item>
+    <item>
+      <title>La intervención de Plaza destacó por su profundidad y sentimiento, generando gran</title>
       <link>https://rtvalhaurinelgrande.com/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia-2026/</link>
       <guid isPermaLink="true">https://rtvalhaurinelgrande.com/maria-del-carmen-plaza-pronuncia-el-xiv-pregon-de-gloria-en-honor-a-nuestra-senora-de-gracia-2026/</guid>
       <pubDate>Tue, 04 Aug 2026 10:04:17 GMT</pubDate>
-      <description>María del Carmen Plaza inauguró las fiestas en honor a Nuestra Señora de Gracia con el XIV Pregón de Gloria en la biblioteca municipal de Alhaurín el Grande.</description>
+      <description>María del Carmen Plaza protagonizó el XIV Pregón de Gloria en honor a Nuestra Señora de Gracia, dando inicio a las celebraciones en Alhaurín el Grande.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
     <item>
-      <title>Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande</title>
+      <title>Primera misa del Rvdo. Padre José Francisco Fernández Fuentes en Alhaurín el Grande</title>
       <link>https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/</guid>
       <pubDate>Wed, 15 Jul 2026 10:27:32 GMT</pubDate>
-      <description>El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.</description>
+      <description>El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente y un homenaje especial.</description>
       <category>Actualidad</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda</title>
+      <title>Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda</title>
       <link>https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/</guid>
       <pubDate>Thu, 09 Jul 2026 10:33:08 GMT</pubDate>
-      <description>El Hermano Mayor y varios miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.</description>
+      <description>El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.</description>
       <category>Actualidad</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
@@ -104,16 +131,16 @@
       <link>https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/</guid>
       <pubDate>Thu, 02 Jul 2026 09:57:44 GMT</pubDate>
-      <description>La patrona de Alhaurín el Grande pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto, tras un recorrido por los barrios con motivo del Día de la Virgen.</description>
+      <description>La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián el 12 de agosto tras una ausencia de once años, en el marco de las celebraciones del Día de la Virgen.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela</title>
+      <title>La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela</title>
       <link>https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/</guid>
       <pubDate>Fri, 26 Jun 2026 09:09:18 GMT</pubDate>
-      <description>La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.</description>
+      <description>La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela tras los recientes terremotos que han causado pérdidas humanas y dolor.</description>
       <category>Actualidad</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
@@ -122,7 +149,7 @@
       <link>https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/</guid>
       <pubDate>Fri, 26 Jun 2026 08:35:11 GMT</pubDate>
-      <description>El domingo 14 de junio, Alhaurín el Grande vivió con emoción el Día de Nuestro Padre Jesús Nazareno, con actos religiosos y tradicionales que unieron a la comunidad.</description>
+      <description>El domingo 14 de junio, Alhaurín el Grande vivió una emotiva jornada dedicada a Nuestro Padre Jesús Nazareno, con actos religiosos y tradiciones que unieron a la comunidad.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>

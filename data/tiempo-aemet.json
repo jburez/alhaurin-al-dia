@@ -1,54 +1,42 @@
 {
-  "actualizado": "2026-08-20T17:49:07+02:00",
+  "actualizado": "2026-08-21T09:07:44+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "🌧️",
+    "icono": "☀️",
     "titulo": "Tiempo",
-    "valor": "Máx. 31º",
-    "detalle": "Intervalos nubosos con lluvia escasa · Máx. 31º / Mín. 20º · Lluvia 75%",
+    "valor": "Máx. 32º",
+    "detalle": "Despejado · Máx. 32º / Mín. 19º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-08-20",
-    "dia_semana": "Jueves",
-    "fecha_corta": "20/8",
-    "t_max": "31",
-    "t_min": "20",
-    "icono": "🌧️",
-    "descripcion": "Intervalos nubosos con lluvia escasa",
-    "lluvia": "75%",
-    "viento": "SO 20 km/h",
-    "uv": "7"
+    "fecha": "2026-08-21",
+    "dia_semana": "Viernes",
+    "fecha_corta": "21/8",
+    "t_max": "32",
+    "t_min": "19",
+    "icono": "☀️",
+    "descripcion": "Despejado",
+    "lluvia": "0%",
+    "viento": "SO 15 km/h",
+    "uv": "8"
   },
   "semana": [
-    {
-      "fecha": "2026-08-20",
-      "dia_semana": "Jueves",
-      "fecha_corta": "20/8",
-      "t_max": "31",
-      "t_min": "20",
-      "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "75%",
-      "viento": "SO 20 km/h",
-      "uv": "7"
-    },
     {
       "fecha": "2026-08-21",
       "dia_semana": "Viernes",
       "fecha_corta": "21/8",
-      "t_max": "33",
+      "t_max": "32",
       "t_min": "19",
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "NO 5 km/h",
+      "viento": "SO 15 km/h",
       "uv": "8"
     },
     {
@@ -56,11 +44,11 @@
       "dia_semana": "Sábado",
       "fecha_corta": "22/8",
       "t_max": "32",
-      "t_min": "20",
+      "t_min": "19",
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
+      "viento": "S 15 km/h",
       "uv": "8"
     },
     {
@@ -71,7 +59,7 @@
       "t_min": "19",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
+      "lluvia": "20%",
       "viento": "SE 10 km/h",
       "uv": "8"
     },
@@ -79,36 +67,36 @@
       "fecha": "2026-08-24",
       "dia_semana": "Lunes",
       "fecha_corta": "24/8",
-      "t_max": "32",
-      "t_min": "18",
+      "t_max": "31",
+      "t_min": "19",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "15%",
-      "viento": "SO 15 km/h",
+      "lluvia": "30%",
+      "viento": "S 10 km/h",
       "uv": "8"
     },
     {
       "fecha": "2026-08-25",
       "dia_semana": "Martes",
       "fecha_corta": "25/8",
-      "t_max": "34",
+      "t_max": "33",
       "t_min": "17",
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "Flojo",
-      "uv": ""
+      "viento": "S 5 km/h",
+      "uv": "8"
     },
     {
       "fecha": "2026-08-26",
       "dia_semana": "Miércoles",
       "fecha_corta": "26/8",
-      "t_max": "35",
-      "t_min": "20",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
-      "lluvia": "5%",
-      "viento": "S 10 km/h",
+      "t_max": "34",
+      "t_min": "19",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "S 5 km/h",
       "uv": ""
     }
   ],
@@ -117,15 +105,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Desaconsejado",
-      "detalle": "Riesgo de precipitaciones"
+      "estado": "Excelente",
+      "detalle": "Secado muy rápido al sol (0% riesgo)"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Espera unos días",
-      "detalle": "Posible barro o lluvia"
+      "estado": "Muy recomendado",
+      "detalle": "Cielo limpio y sin calima"
     },
     {
       "id": "deporte",
@@ -138,18 +126,18 @@
       "id": "polen",
       "icono": "🌾",
       "titulo": "Alergia y Polen",
-      "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.4 granos/m³)",
+      "estado": "Bajo",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Bajo (1.1 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.4,
+      "gramineas": 1.1,
       "olivo": 0.0
     }
   ],
   "sol_luna": {
-    "orto": "07:40 h",
+    "orto": "07:41 h",
     "ocaso": "21:03 h",
-    "horas_luz": "13h 23m",
-    "fase_luna": "Cuarto Creciente (49%)",
+    "horas_luz": "13h 22m",
+    "fase_luna": "Cuarto Creciente (59%)",
     "icono_luna": "🌓"
   },
   "embalses": {
@@ -157,32 +145,32 @@
     "fuente": "SAIH Hidrosur (Junta de Andalucía)",
     "fuente_url": "https://www.redhidrosurmedioambiente.es/saih/informe/embalses",
     "total_capacidad_hm3": 403.1,
-    "total_embalsado_hm3": 348.2,
-    "porcentaje": "86.4%",
+    "total_embalsado_hm3": 347.5,
+    "porcentaje": "86.2%",
     "pantanos": [
       {
         "nombre": "Conde de Guadalhorce",
         "capacidad": "66.5 hm³",
-        "embalsado": "48.1 hm³",
-        "porcentaje": "72.3%"
+        "embalsado": "47.9 hm³",
+        "porcentaje": "72.1%"
       },
       {
         "nombre": "Embalse del Guadalhorce",
         "capacidad": "125.7 hm³",
-        "embalsado": "117.4 hm³",
-        "porcentaje": "93.4%"
+        "embalsado": "117.2 hm³",
+        "porcentaje": "93.2%"
       },
       {
         "nombre": "Guadalteba",
         "capacidad": "153.3 hm³",
-        "embalsado": "144.4 hm³",
-        "porcentaje": "94.2%"
+        "embalsado": "144.3 hm³",
+        "porcentaje": "94.1%"
       },
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "38.3 hm³",
-        "porcentaje": "66.5%"
+        "embalsado": "38.1 hm³",
+        "porcentaje": "66.2%"
       }
     ]
   }

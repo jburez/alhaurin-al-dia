@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-21T19:05:40.254Z",
-  "visitas24h": 8,
-  "paginasVistas24h": 16,
+  "actualizado": "2026-08-21T19:35:21.467Z",
+  "visitas24h": 7,
+  "paginasVistas24h": 23,
   "topPaginas": [
     {
       "ruta": "/",
-      "vistas": 24
+      "vistas": 25
+    },
+    {
+      "ruta": "/planes/",
+      "vistas": 9
     },
     {
       "ruta": "/admin/",
       "vistas": 9
     },
     {
-      "ruta": "/planes/",
-      "vistas": 8
-    },
-    {
       "ruta": "/tiempo/",
-      "vistas": 5
+      "vistas": 6
     },
     {
-      "ruta": "/noticias/",
-      "vistas": 4
+      "ruta": "/mi-alhaurin/",
+      "vistas": 5
     }
   ]
 }

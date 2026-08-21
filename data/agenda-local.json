@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-08-21T12:52:45.195Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 276 eventos próximos.",
+  "actualizado": "2026-08-21T14:56:43.993244+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 282 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
       "id": "alhaurinhoy-12265",
@@ -1263,6 +1264,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-12633",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Programación 🐴 EQUINAHL",
+      "descripcion": "Alhaurín el Grande acoge la programación de EQUINALH durante el Mes del Caballo y la Romería , con clínics, exhibiciones hípicas, charlas veterinarias y tardeos romeros. JUEVES 3 de Septiembre Luga...",
+      "lugar": "",
+      "inicio": "2026-09-03T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/mes-del-caballo%f0%9f%90%b4-equinahl/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-5781",
       "tipo": "Evento",
       "icono": "📅",
@@ -1608,6 +1624,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-12617",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "Romería 🍃 Traslado del Cristo ✝️",
+      "descripcion": "MIÉRCOLES (09 de Septiembre) 18:30 h – Traslado del Cristo de las Agonías Desde la Ermita del Cristo de las Agonías hasta la Parroquia de Nuestra Señora de la Encarnación.",
+      "lugar": "",
+      "inicio": "2026-09-09T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/romeria-aeg-%f0%9f%8d%83-%f0%9f%90%8e-traslado-del-cristo-2/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-5747",
       "tipo": "Cultos y procesiones",
       "icono": "⛪",
@@ -1713,6 +1744,36 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-12622",
+      "tipo": "Deportes",
+      "icono": "⚽",
+      "titulo": "Romería 🍃 Concierto 🎶 PACO CANDELA",
+      "descripcion": "El cantaor, natural de Mairena del Aljarafe (Sevilla), llega a Alhaurín el Grande avalado por una prolífica trayectoria musical dedicada al flamenco, las sevillanas, los fandangos y la música de ra...",
+      "lugar": "",
+      "inicio": "2026-09-12T23:30:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8d%83-romeria-concierto-%f0%9f%8e%b6-paco-candela/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12620",
+      "tipo": "Cultos y procesiones",
+      "icono": "⛪",
+      "titulo": "Romería 🍃 Encuentro y inicio de la Romería 🐎",
+      "descripcion": "SÁBADO (12 de Septiembre) Actividades 16:00 h – Encuentro en el recinto ferial Caballistas, carrozas, coches de caballos, mulos y demás participantes. 16:30 h – Inicio de la Romería Desde el recint...",
+      "lugar": "",
+      "inicio": "2026-09-12T23:30:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/romeria-aeg-%f0%9f%8d%83-%f0%9f%90%8e-encuentro-y-inicio-de-la-romeria-2/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-6036",
       "tipo": "Música en vivo",
       "icono": "🎵",
@@ -1724,6 +1785,36 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/cenas-con-jazz-%f0%9f%8d%bd%ef%b8%8f-%f0%9f%8e%b7-%f0%9f%8e%b6-one-two-swing/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12631",
+      "tipo": "Cultos y procesiones",
+      "icono": "⛪",
+      "titulo": "Romería 🍃 Concierto 🎶 ÁNGELES RUSÓ",
+      "descripcion": "DOMINGO (13 de Septiembre) Actividades 11:00 h – Misa Rociera y Ofrenda de Alimentos Al Cristo de las Agonías, oficiada por el Sr. Cura Párroco, D. Andrés Merino Mateo y cantada por el Coro Rociero...",
+      "lugar": "",
+      "inicio": "2026-09-13T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/romeria-%f0%9f%8d%83-concierto-%f0%9f%8e%b6-angeles-ruso/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12629",
+      "tipo": "Cultos y procesiones",
+      "icono": "⛪",
+      "titulo": "Romería 🍃 Exhibición, paella y Baile",
+      "descripcion": "DOMINGO (13 de Septiembre) Actividades 11:00 h – Misa Rociera y Ofrenda de Alimentos Al Cristo de las Agonías, oficiada por el Sr. Cura Párroco, D. Andrés Merino Mateo y cantada por el Coro Rociero...",
+      "lugar": "",
+      "inicio": "2026-09-13T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/romeria-%f0%9f%8d%83-exhibicion-paella-y-baile/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1979,6 +2070,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/taller-recuerdos-de-verano-en-papel-%f0%9f%8e%a8/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-12638",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Clínic de Doma Vaquera 🐎 «CHAMO»",
+      "descripcion": "Alhaurín el Grande acoge la programación de EQUINALH durante el Mes del Caballo y la Romería , con clínics, exhibiciones hípicas, charlas veterinarias y tardeos romeros. SÁBADO Y DOMINGO 26 Y 27 de...",
+      "lugar": "",
+      "inicio": "2026-09-27T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/clinic-de-doma-vaquera-%f0%9f%90%8e-chamo/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -4124,21 +4230,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

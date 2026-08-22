@@ -1,5 +1,105 @@
 [
     {
+        "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
+        "descripcion": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
+        "resumen": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:43:39.384Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Captura.jpg",
+        "pagina": "noticias/cd-alhaurino-y-atletico-malagueno-se-enfrentan-en-el-xxxiii-trofeo-virgen-de-gracia.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande comienza la demolición de módulos en CEIP Emilia Olivares por seguridad",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para garantizar la seguridad de alumnos y docentes ante el deterioro de las instalaciones.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para garantizar la seguridad de alumnos y docentes ante el deterioro de las instalaciones.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:43:39.382Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/demolicion-de-un-modulo-del-CEIP-Emilia-Olivares_01.jpeg",
+        "pagina": "noticias/alhaurin-el-grande-comienza-la-demolicion-de-modulos-en-ceip-emilia-olivares-por-seguridad.html"
+    },
+    {
+        "titulo": "Bendecido el nuevo retablo cerámico en la Casa Hermandad de la Virgen de Gracia",
+        "descripcion": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa en Alhaurín el Grande.",
+        "resumen": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa en Alhaurín el Grande.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:43:39.377Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/virgen.jpg",
+        "pagina": "noticias/bendecido-el-nuevo-retablo-ceramico-en-la-casa-hermandad-de-la-virgen-de-gracia.html"
+    },
+    {
+        "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández Fuentes en Alhaurín el Grande",
+        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente y un homenaje especial.",
+        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente y un homenaje especial.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:39:41.604Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-13-at-07.41.14-1.jpeg",
+        "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-fuentes-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han provocado pérdidas humanas y sufrimiento.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han provocado pérdidas humanas y sufrimiento.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:39:41.598Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
+    },
+    {
+        "titulo": "José Luis Jaén lleva música y poesía a Alhaurín el Grande en homenaje a Antonio Gala",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para celebrar el aniversario de Antonio Gala dentro del programa ‘Cuarta Estación’.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para celebrar el aniversario de Antonio Gala dentro del programa ‘Cuarta Estación’.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:39:41.597Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen.jpg",
+        "pagina": "noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html"
+    },
+    {
+        "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
+        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:39:41.596Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
+        "pagina": "noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
+    },
+    {
+        "titulo": "Campaña de verano 2026 en el Valle del Guadalhorce: compra local y gana con FEDELAPP",
+        "descripcion": "La campaña &#x27;Sella tu sueño&#x27; impulsa las compras en el comercio local del Valle del Guadalhorce este verano con premios exclusivos a través de FEDELAPP.",
+        "resumen": "La campaña &#x27;Sella tu sueño&#x27; impulsa las compras en el comercio local del Valle del Guadalhorce este verano con premios exclusivos a través de FEDELAPP.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:39:41.588Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/05/Mesa-de-trabajo-5.png",
+        "pagina": "noticias/campana-de-verano-2026-en-el-valle-del-guadalhorce-compra-local-y-gana-con-fedelapp.html"
+    },
+    {
+        "titulo": "Ayuntamiento de Alhaurín el Grande abre plazo para subvenciones a asociaciones locales",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan solicitar subvenciones hasta el 15 de septiembre de 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan solicitar subvenciones hasta el 15 de septiembre de 2026.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:39:41.587Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
+        "pagina": "noticias/ayuntamiento-de-alhaurin-el-grande-abre-plazo-para-subvenciones-a-asociaciones-locales.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con gran fervor",
+        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción el Día de Nuestro Padre Jesús Nazareno, una jornada llena de tradición y devoción que reunió a la comunidad local.",
+        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción el Día de Nuestro Padre Jesús Nazareno, una jornada llena de tradición y devoción que reunió a la comunidad local.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T04:39:41.575Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
+        "pagina": "noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-gran-fervor.html"
+    },
+    {
         "titulo": "Tercera misa de triduo y último traslado de San Sebastián a la Parroquia",
         "descripcion": "La Virgen de Gracia regresó a la parroquia tras la tercera misa del triduo en la plaza de San Sebastián, acompañada por la Hermandad y vecinos en un emotivo acto de fe y tradición.",
         "resumen": "La Virgen de Gracia regresó a la parroquia tras la tercera misa del triduo en la plaza de San Sebastián, acompañada por la Hermandad y vecinos en un emotivo acto de fe y tradición.",
@@ -30,16 +130,6 @@
         "pagina": "noticias/presentacion-de-los-bebes-y-misa-en-honor-a-nuestra-senora-de-gracia.html"
     },
     {
-        "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande",
-        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
-        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.996Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-13-at-07.41.14-1.jpeg",
-        "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-en-alhaurin-el-grande.html"
-    },
-    {
         "titulo": "Programa 34 de Así lo viví con Lourdes Rodríguez en Alhaurín el Grande",
         "descripcion": "Descubre el contenido del programa 34 de Así lo viví con Lourdes Rodríguez, donde se abordan temas relevantes para Alhaurín el Grande y su comunidad local.",
         "resumen": "Descubre el contenido del programa 34 de Así lo viví con Lourdes Rodríguez, donde se abordan temas relevantes para Alhaurín el Grande y su comunidad local.",
@@ -50,36 +140,6 @@
         "pagina": "noticias/programa-34-de-asi-lo-vivi-con-lourdes-rodriguez-en-alhaurin-el-grande.html"
     },
     {
-        "titulo": "Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda",
-        "descripcion": "El Hermano Mayor y miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.989Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
-        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
-    },
-    {
-        "titulo": "El Ayuntamiento presenta las bases para que las asociaciones y colectivos locales puedan",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "categoria": "Municipal",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.984Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
-        "pagina": "noticias/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan.html"
-    },
-    {
-        "titulo": "Alhaurín el Grande estrena dos rutas saludables para conectar patrimonio y naturaleza",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación estatal y municipal.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación estatal y municipal.",
-        "categoria": "Turismo y Patrimonio",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.971Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande.jpg",
-        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-conectar-patrimonio-y-naturaleza.html"
-    },
-    {
         "titulo": "Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026",
         "descripcion": "El alcalde Anthony Bermúdez invita a la comunidad de Alhaurín el Grande a participar activamente en las festividades del Día de la Virgen 2026 organizadas por el Ayuntamiento.",
         "resumen": "El alcalde Anthony Bermúdez invita a la comunidad de Alhaurín el Grande a participar activamente en las festividades del Día de la Virgen 2026 organizadas por el Ayuntamiento.",
@@ -88,16 +148,6 @@
         "fecha": "2026-08-22T03:00:08.969Z",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2024/04/cropped-LOGOAYTOALH.png",
         "pagina": "noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-la-virgen-2026.html"
-    },
-    {
-        "titulo": "Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno",
-        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una emotiva jornada con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y tradiciones locales.",
-        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una emotiva jornada con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y tradiciones locales.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.967Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
-        "pagina": "noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html"
     },
     {
         "titulo": "Alhaurín el Grande avanza con nuevas viviendas, encuentro cultural y jornada ambiental",
@@ -350,16 +400,6 @@
         "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-inicia-la-demolicion-de-dos-modulos-del-ceip-emilia.html"
     },
     {
-        "titulo": "Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande",
-        "descripcion": "La Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa con la participación de 42 alumnos.",
-        "resumen": "La Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa con la participación de 42 alumnos.",
-        "categoria": "Agenda Cultural",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-21T18:46:13.768Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/LA-PEPA-FOTO.jpg",
-        "pagina": "noticias/audiciones-de-fin-de-curso-de-la-escuela-de-musica-la-pepa-en-alhaurin-el-grande.html"
-    },
-    {
         "titulo": "Bendecido el nuevo retablo cerámico en la Casa Hermandad de la Virgen de Gracia 2026",
         "descripcion": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa, con presencia del alcalde y miembros de la hermandad en Alhaurín el Grande.",
         "resumen": "El párroco Andrés Merino bendijo el retablo cerámico del artista Daniel García Romero en la Casa Hermandad antes de la misa, con presencia del alcalde y miembros de la hermandad en Alhaurín el Grande.",
@@ -598,16 +638,6 @@
         "fecha": "2026-08-21T04:45:26.268Z",
         "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde.jpeg",
         "pagina": "noticias/paco-candela-protagonista-de-la-romeria-de-alhaurin-el-grande-en-septiembre.html"
-    },
-    {
-        "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los daños por terremotos en Venezuela",
-        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa sus condolencias por las víctimas de los recientes terremotos en Venezuela y se une en oración por su descanso eterno.",
-        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa sus condolencias por las víctimas de los recientes terremotos en Venezuela y se une en oración por su descanso eterno.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-21T04:45:26.264Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-danos-por-terremotos-en-venezuela.html"
     },
     {
         "titulo": "Horarios y programación completa de la Romería de Alhaurín el Grande 2026",
@@ -938,16 +968,6 @@
         "fecha": "2026-08-20T06:55:32.785Z",
         "imagen": "https://fedelhorce.es/wp-content/uploads/2026/08/Exportacion-china-1.png",
         "pagina": "noticias/fedelhorce-impulsa-la-exportacion-de-productos-y-servicios-al-mercado-chino.html"
-    },
-    {
-        "titulo": "Campaña de verano 2026 en el Valle del Guadalhorce: Sella tu sueño con FEDELAPP",
-        "descripcion": "La campaña &#x27;Sella tu sueño&#x27; premia las compras en el comercio local del Valle del Guadalhorce durante el verano 2026 con FEDELAPP.",
-        "resumen": "La campaña &#x27;Sella tu sueño&#x27; premia las compras en el comercio local del Valle del Guadalhorce durante el verano 2026 con FEDELAPP.",
-        "categoria": "Comercio y Empresa",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-20T06:55:32.779Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/05/Mesa-de-trabajo-5.png",
-        "pagina": "noticias/campana-de-verano-2026-en-el-valle-del-guadalhorce-sella-tu-sueno-con-fedelapp.html"
     },
     {
         "titulo": "El acto, celebrado en el salón de actos de la biblioteca municipal, reunió a numerosos",
@@ -5015,17 +5035,6 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "pagina": "noticias/la-entidad-se-une-en-oracion-por-el-descanso-eterno-de-las-victimas-y-transmite-su.html",
         "fusionadaEn": "noticias/la-hermandad-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezuela.html"
-    },
-    {
-        "titulo": "Alhaurín el Grande clausura los campamentos de verano municipales con fiesta final",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande cierra los campamentos de verano con una fiesta de despedida tras un mes de actividades para niños y apoyo a la conciliación familiar.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande cierra los campamentos de verano con una fiesta de despedida tras un mes de actividades para niños y apoyo a la conciliación familiar.",
-        "categoria": "Educación",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-08T14:37:41.039Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986.jpg",
-        "pagina": "noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-municipales-con-fiesta-final.html",
-        "fusionadaEn": "noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-municipales-con-fiesta-final 2.html"
     },
     {
         "titulo": "El Rvdo. Padre José Francisco Fernández celebra su primera misa en Alhaurín el Grande",

@@ -7,14 +7,14 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Sat, 22 Aug 2026 03:04:05 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 04:43:43 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
     <item>
       <title>Masterclass en Alhaurín el Grande sobre facturación electrónica y Verifactu</title>
       <link>https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/</link>
       <guid isPermaLink="true">https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/</guid>
       <pubDate>Fri, 21 Aug 2026 08:31:49 GMT</pubDate>
-      <description>Fedelhorce organiza una masterclass para explicar los cambios en la facturación electrónica con Verifactu y cómo afectan a las empresas locales.</description>
+      <description>Fedelhorce organiza una masterclass para explicar los cambios en facturación electrónica con Verifactu y cómo las empresas pueden adaptarse a esta nueva normativa.</description>
       <category>Comercio y Empresa</category>
       <dc:creator>Fedelhorce</dc:creator>
     </item>
@@ -24,35 +24,35 @@
       <guid isPermaLink="true">https://fedelhorce.es/cafe-con-ideas-teoria-del-color/</guid>
       <pubDate>Fri, 21 Aug 2026 08:06:04 GMT</pubDate>
       <description>Aprende a utilizar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo en Alhaurín el Grande.</description>
-      <category>Municipal</category>
+      <category>Actualidad</category>
       <dc:creator>Fedelhorce</dc:creator>
     </item>
     <item>
-      <title>Ayuntamiento de Alhaurín el Grande abre plazo para subvenciones a asociaciones locales</title>
+      <title>El Ayuntamiento presenta las bases para que las asociaciones y colectivos locales puedan</title>
       <link>https://alhaurinelgrande.es/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan-optar-a-las-subvenciones-municipales/</link>
       <guid isPermaLink="true">https://alhaurinelgrande.es/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan-optar-a-las-subvenciones-municipales/</guid>
       <pubDate>Fri, 14 Aug 2026 11:23:48 GMT</pubDate>
-      <description>El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan solicitar subvenciones hasta el 15 de septiembre de 2026.</description>
+      <description>El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.</description>
       <category>Municipal</category>
       <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
     </item>
     <item>
-      <title>José Luis Jaén lleva música y poesía a Alhaurín el Grande en homenaje a Antonio Gala</title>
-      <link>https://alhaurinelgrande.es/la-musica-la-poesia-y-las-raices-llegan-a-alhaurin-el-grande-de-manos-de-jose-luis-jaen/</link>
-      <guid isPermaLink="true">https://alhaurinelgrande.es/la-musica-la-poesia-y-las-raices-llegan-a-alhaurin-el-grande-de-manos-de-jose-luis-jaen/</guid>
-      <pubDate>Fri, 14 Aug 2026 09:20:37 GMT</pubDate>
-      <description>El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para celebrar el aniversario de Antonio Gala dentro del programa ‘Cuarta Estación’.</description>
-      <category>Agenda Cultural</category>
-      <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
-    </item>
-    <item>
-      <title>Campaña de verano 2026 en el Valle del Guadalhorce: compra local y gana con FEDELAPP</title>
+      <title>Campaña de Verano 2026 en el Valle del Guadalhorce: Sella tu sueño con FEDELAPP</title>
       <link>https://fedelhorce.es/sella-tu-sueno-campana-de-verano-2026/</link>
       <guid isPermaLink="true">https://fedelhorce.es/sella-tu-sueno-campana-de-verano-2026/</guid>
       <pubDate>Fri, 14 Aug 2026 08:00:55 GMT</pubDate>
-      <description>La campaña &apos;Sella tu sueño&apos; impulsa las compras en el comercio local del Valle del Guadalhorce este verano con premios exclusivos a través de FEDELAPP.</description>
+      <description>Este verano, comprar en el comercio local del Valle del Guadalhorce tiene premio con la campaña &apos;Sella tu sueño&apos; impulsada por FEDELAPP.</description>
       <category>Comercio y Empresa</category>
       <dc:creator>Fedelhorce</dc:creator>
+    </item>
+    <item>
+      <title>Alhaurín el Grande estrena dos rutas saludables para conectar patrimonio y naturaleza</title>
+      <link>https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/</link>
+      <guid isPermaLink="true">https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/</guid>
+      <pubDate>Thu, 13 Aug 2026 11:00:00 GMT</pubDate>
+      <description>El Ayuntamiento de Alhaurín el Grande impulsa dos rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación del Ministerio y aportación municipal.</description>
+      <category>Turismo y Patrimonio</category>
+      <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
     </item>
     <item>
       <title>25 aniversario del Coro Rociero Nuestra Señora de Gracia (2026)</title>
@@ -64,12 +64,21 @@
       <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
     <item>
-      <title>CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia</title>
-      <link>https://rtvalhaurinelgrande.com/xxxiii-trofeo-virgen-de-gracia-cd-alhaurino-atletico-malagueno-2026/</link>
-      <guid isPermaLink="true">https://rtvalhaurinelgrande.com/xxxiii-trofeo-virgen-de-gracia-cd-alhaurino-atletico-malagueno-2026/</guid>
-      <pubDate>Tue, 11 Aug 2026 07:33:01 GMT</pubDate>
-      <description>El XXXIII Trofeo Virgen de Gracia enfrentará al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.</description>
-      <category>Deportes</category>
+      <title>Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande</title>
+      <link>https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/</link>
+      <guid isPermaLink="true">https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/</guid>
+      <pubDate>Mon, 10 Aug 2026 10:08:11 GMT</pubDate>
+      <description>La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos mostrando su progreso musical.</description>
+      <category>Agenda Cultural</category>
+      <dc:creator>RTV Alhaurín el Grande</dc:creator>
+    </item>
+    <item>
+      <title>Alhaurín el Grande clausura los campamentos de verano municipales con fiesta final</title>
+      <link>https://rtvalhaurinelgrande.com/clausuras-de-los-campamentos-de-verano-en-alhaurin-y-villa-del-guadalhorce-2026/</link>
+      <guid isPermaLink="true">https://rtvalhaurinelgrande.com/clausuras-de-los-campamentos-de-verano-en-alhaurin-y-villa-del-guadalhorce-2026/</guid>
+      <pubDate>Thu, 06 Aug 2026 10:29:02 GMT</pubDate>
+      <description>El Ayuntamiento de Alhaurín el Grande cierra los campamentos de verano 2026 con una celebración que marca el fin de un mes de actividades lúdicas y apoyo a la conciliación familiar.</description>
+      <category>Educación</category>
       <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
     <item>
@@ -77,25 +86,25 @@
       <link>https://rtvalhaurinelgrande.com/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce/</link>
       <guid isPermaLink="true">https://rtvalhaurinelgrande.com/campamentos-de-educacion-y-deportes-de-julio-en-alhaurin-el-grande-y-villa-del-guadalhorce/</guid>
       <pubDate>Wed, 05 Aug 2026 10:46:18 GMT</pubDate>
-      <description>El Ayuntamiento de Alhaurín el Grande concluye los campamentos de educación y deportes de julio, ofreciendo actividades para la conciliación familiar y el disfrute de los niños.</description>
+      <description>El Ayuntamiento de Alhaurín el Grande clausura los campamentos de educación y deportes de julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.</description>
       <category>Educación</category>
       <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
     <item>
-      <title>Primera misa del Rvdo. Padre José Francisco Fernández Fuentes en Alhaurín el Grande</title>
+      <title>Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande</title>
       <link>https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/</guid>
       <pubDate>Wed, 15 Jul 2026 10:27:32 GMT</pubDate>
-      <description>El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente y un homenaje especial.</description>
-      <category>Municipal</category>
+      <description>El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.</description>
+      <category>Actualidad</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda</title>
+      <title>Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda</title>
       <link>https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/</guid>
       <pubDate>Thu, 09 Jul 2026 10:33:08 GMT</pubDate>
-      <description>El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.</description>
+      <description>El Hermano Mayor y varios miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.</description>
       <category>Actualidad</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
@@ -109,7 +118,7 @@
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela</title>
+      <title>La Hermandad de Nuestro Padre Jesús Nazareno lamenta los daños por terremotos en Venezuela</title>
       <link>https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/</guid>
       <pubDate>Fri, 26 Jun 2026 09:09:18 GMT</pubDate>
@@ -118,11 +127,11 @@
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con gran fervor</title>
+      <title>Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno</title>
       <link>https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/</guid>
       <pubDate>Fri, 26 Jun 2026 08:35:11 GMT</pubDate>
-      <description>El domingo 14 de junio, Alhaurín el Grande vivió con emoción el Día de Nuestro Padre Jesús Nazareno, una jornada llena de tradición y devoción que reunió a la comunidad local.</description>
+      <description>El domingo 14 de junio, Alhaurín el Grande vivió con emoción la festividad de Nuestro Padre Jesús Nazareno, con actos religiosos y tradiciones que unieron a la comunidad.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
@@ -131,7 +140,7 @@
       <link>https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/</guid>
       <pubDate>Thu, 25 Jun 2026 12:40:14 GMT</pubDate>
-      <description>Conoce el programa completo de actividades previstas para el jueves en el Día de Jesús 2026, organizado por la Hermandad Nuestro Padre Jesús Nazareno en Alhaurín el Grande.</description>
+      <description>Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>

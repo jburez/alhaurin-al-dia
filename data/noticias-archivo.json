@@ -1,5 +1,55 @@
 [
     {
+        "titulo": "Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande",
+        "descripcion": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos mostrando sus avances musicales.",
+        "resumen": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos mostrando sus avances musicales.",
+        "categoria": "Agenda Cultural",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T06:54:35.953Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/LA-PEPA-FOTO.jpg",
+        "pagina": "noticias/audiciones-de-fin-de-curso-de-la-escuela-de-musica-la-pepa-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "Programa de actos del jueves en el Día de Jesús 2026 en Alhaurín el Grande",
+        "descripcion": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "resumen": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T06:50:48.984Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/programa-de-actos-del-jueves-en-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los daños por terremotos en Venezuela",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han provocado pérdidas humanas y sufrimiento.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han provocado pérdidas humanas y sufrimiento.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T06:50:48.978Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-danos-por-terremotos-en-venezuela.html"
+    },
+    {
+        "titulo": "El Ayuntamiento presenta las bases para que las asociaciones y colectivos locales puedan",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T06:50:48.972Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
+        "pagina": "noticias/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande clausura los campamentos de verano municipales con fiesta final",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande cierra los campamentos de verano 2026 con una celebración que marca el fin de un mes de actividades lúdicas y apoyo a la conciliación familiar.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande cierra los campamentos de verano 2026 con una celebración que marca el fin de un mes de actividades lúdicas y apoyo a la conciliación familiar.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T06:50:48.956Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986.jpg",
+        "pagina": "noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-municipales-con-fiesta-final.html"
+    },
+    {
         "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
         "descripcion": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
         "resumen": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
@@ -50,16 +100,6 @@
         "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
     },
     {
-        "titulo": "José Luis Jaén lleva música y poesía a Alhaurín el Grande en homenaje a Antonio Gala",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para celebrar el aniversario de Antonio Gala dentro del programa ‘Cuarta Estación’.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande organiza un acto cultural con José Luis Jaén para celebrar el aniversario de Antonio Gala dentro del programa ‘Cuarta Estación’.",
-        "categoria": "Agenda Cultural",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T04:39:41.597Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Concierto-Jose-Luis-Jaen.jpg",
-        "pagina": "noticias/jose-luis-jaen-lleva-musica-y-poesia-a-alhaurin-el-grande-en-homenaje-a-antonio-gala.html"
-    },
-    {
         "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
         "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
         "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
@@ -108,16 +148,6 @@
         "fecha": "2026-08-22T03:00:08.999Z",
         "imagen": "https://i2.ytimg.com/vi/uh5q_fFDr9U/maxresdefault.jpg",
         "pagina": "noticias/tercera-misa-de-triduo-y-ultimo-traslado-de-san-sebastian-a-la-parroquia.html"
-    },
-    {
-        "titulo": "Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande",
-        "descripcion": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.997Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
     },
     {
         "titulo": "Presentación de los bebés y Misa en Honor a Nuestra Señora de Gracia",
@@ -1168,16 +1198,6 @@
         "fecha": "2026-08-19T14:47:31.646Z",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986.jpg",
         "pagina": "noticias/alhaurin-el-grande-clausura-sus-campamentos-de-verano-con-gran-fiesta-de-despedida.html"
-    },
-    {
-        "titulo": "El Ayuntamiento de Alhaurín el Grande abre plazo para subvenciones a asociaciones locales",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales soliciten subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales soliciten subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "categoria": "Municipal",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T14:47:31.609Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
-        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-abre-plazo-para-subvenciones-a-asociaciones-locales.html"
     },
     {
         "titulo": "Bendición del nuevo retablo cerámico en la Casa Hermandad de la Virgen de Gracia",
@@ -6643,16 +6663,6 @@
         "fecha": "2026-08-04T06:33:27.736Z",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/07/Alhaurin-el-Grande-reconoce-a-Sete-Fernandez-por-llevar-el-orgullo-del-municipio-hasta-lo-mas-alto-del-futbol-mundial_2.jpeg",
         "pagina": "noticias/alhaurin-el-grande-homenajea-a-sete-fernandez-por-su-papel-en-la-victoria-del-mundial-2026.html"
-    },
-    {
-        "titulo": "Alhaurín el Grande, nuevo Centro Comercial Abierto de Andalucía para impulsar el comercio",
-        "descripcion": "Alhaurín el Grande ha sido reconocido como Centro Comercial Abierto de Andalucía, un paso clave para fortalecer la competitividad del comercio local y dinamizar la economía del municipio.",
-        "resumen": "Alhaurín el Grande ha sido reconocido como Centro Comercial Abierto de Andalucía, un paso clave para fortalecer la competitividad del comercio local y dinamizar la economía del municipio.",
-        "categoria": "Comercio y Empresa",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-04T06:33:27.736Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3-1.png",
-        "pagina": "noticias/alhaurin-el-grande-nuevo-centro-comercial-abierto-de-andalucia-para-impulsar-el-comercio.html"
     },
     {
         "titulo": "XLIII Noche Flamenca en Alhaurín el Grande reúne a 430 amantes del flamenco",

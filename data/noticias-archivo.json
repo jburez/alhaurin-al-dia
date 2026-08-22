@@ -1,13 +1,53 @@
 [
     {
-        "titulo": "Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande",
-        "descripcion": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos mostrando sus avances musicales.",
-        "resumen": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos mostrando sus avances musicales.",
-        "categoria": "Agenda Cultural",
+        "titulo": "El Ayuntamiento de Alhaurín el Grande abre plazo para subvenciones a asociaciones locales",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales soliciten subvenciones municipales hasta el 15 de septiembre de 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales soliciten subvenciones municipales hasta el 15 de septiembre de 2026.",
+        "categoria": "Municipal",
         "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T06:54:35.953Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/LA-PEPA-FOTO.jpg",
-        "pagina": "noticias/audiciones-de-fin-de-curso-de-la-escuela-de-musica-la-pepa-en-alhaurin-el-grande.html"
+        "fecha": "2026-08-22T08:37:27.588Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-abre-plazo-para-subvenciones-a-asociaciones-locales.html"
+    },
+    {
+        "titulo": "Campaña de verano 2026 en el Valle del Guadalhorce: Sella tu sueño con FEDELAPP",
+        "descripcion": "Este verano, comprar en el comercio local del Valle del Guadalhorce tiene premio con la campaña &#x27;Sella tu sueño&#x27; impulsada por FEDELAPP.",
+        "resumen": "Este verano, comprar en el comercio local del Valle del Guadalhorce tiene premio con la campaña &#x27;Sella tu sueño&#x27; impulsada por FEDELAPP.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T08:37:27.586Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/05/Mesa-de-trabajo-5.png",
+        "pagina": "noticias/campana-de-verano-2026-en-el-valle-del-guadalhorce-sella-tu-sueno-con-fedelapp.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande, nuevo Centro Comercial Abierto de Andalucía para impulsar el comercio",
+        "descripcion": "Alhaurín el Grande ha sido reconocido como Centro Comercial Abierto de Andalucía, un paso clave para fortalecer la competitividad del comercio local y dinamizar la economía del municipio.",
+        "resumen": "Alhaurín el Grande ha sido reconocido como Centro Comercial Abierto de Andalucía, un paso clave para fortalecer la competitividad del comercio local y dinamizar la economía del municipio.",
+        "categoria": "Comercio y Empresa",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T08:37:27.583Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3-1.png",
+        "pagina": "noticias/alhaurin-el-grande-nuevo-centro-comercial-abierto-de-andalucia-para-impulsar-el-comercio.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande estrena dos rutas saludables para conectar patrimonio y naturaleza",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que unen patrimonio, naturaleza y turismo, con financiación estatal y municipal.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que unen patrimonio, naturaleza y turismo, con financiación estatal y municipal.",
+        "categoria": "Turismo y Patrimonio",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T08:37:27.580Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande.jpg",
+        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-conectar-patrimonio-y-naturaleza.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno",
+        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la festividad de Nuestro Padre Jesús Nazareno, con actos religiosos y tradicionales que unieron a la comunidad.",
+        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la festividad de Nuestro Padre Jesús Nazareno, con actos religiosos y tradicionales que unieron a la comunidad.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-22T08:37:27.577Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
+        "pagina": "noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html"
     },
     {
         "titulo": "Programa de actos del jueves en el Día de Jesús 2026 en Alhaurín el Grande",
@@ -28,16 +68,6 @@
         "fecha": "2026-08-22T06:50:48.978Z",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-danos-por-terremotos-en-venezuela.html"
-    },
-    {
-        "titulo": "El Ayuntamiento presenta las bases para que las asociaciones y colectivos locales puedan",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande ha publicado las bases para que asociaciones y colectivos locales puedan optar a subvenciones municipales hasta el 15 de septiembre de 2026.",
-        "categoria": "Municipal",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T06:50:48.972Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Subvenciones-2026-para-asociaciones-y-colectivos.jpeg",
-        "pagina": "noticias/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan.html"
     },
     {
         "titulo": "Alhaurín el Grande clausura los campamentos de verano municipales con fiesta final",
@@ -150,16 +180,6 @@
         "pagina": "noticias/tercera-misa-de-triduo-y-ultimo-traslado-de-san-sebastian-a-la-parroquia.html"
     },
     {
-        "titulo": "Presentación de los bebés y Misa en Honor a Nuestra Señora de Gracia",
-        "descripcion": "Las fiestas patronales de Nuestra Señora de Gracia en Alhaurín el Grande incluyeron la tradicional presentación de bebés y una misa solemne con ofrendas y reconocimientos.",
-        "resumen": "Las fiestas patronales de Nuestra Señora de Gracia en Alhaurín el Grande incluyeron la tradicional presentación de bebés y una misa solemne con ofrendas y reconocimientos.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.996Z",
-        "imagen": "https://i1.ytimg.com/vi/xxv4ost6n0M/maxresdefault.jpg",
-        "pagina": "noticias/presentacion-de-los-bebes-y-misa-en-honor-a-nuestra-senora-de-gracia.html"
-    },
-    {
         "titulo": "Programa 34 de Así lo viví con Lourdes Rodríguez en Alhaurín el Grande",
         "descripcion": "Descubre el contenido del programa 34 de Así lo viví con Lourdes Rodríguez, donde se abordan temas relevantes para Alhaurín el Grande y su comunidad local.",
         "resumen": "Descubre el contenido del programa 34 de Así lo viví con Lourdes Rodríguez, donde se abordan temas relevantes para Alhaurín el Grande y su comunidad local.",
@@ -188,16 +208,6 @@
         "fecha": "2026-08-22T03:00:08.966Z",
         "imagen": "https://i3.ytimg.com/vi/6XrCnE8llCM/maxresdefault.jpg",
         "pagina": "noticias/alhaurin-el-grande-avanza-con-nuevas-viviendas-encuentro-cultural-y-jornada-ambiental.html"
-    },
-    {
-        "titulo": "Agenda cultural y eventos destacados en Alhaurín el Grande en septiembre y octubre 2026",
-        "descripcion": "Alhaurín el Grande presenta la Romería 2026 con Paco Candela, la tercera edición de Equinalh y el concierto de José Luis Jaén en octubre.",
-        "resumen": "Alhaurín el Grande presenta la Romería 2026 con Paco Candela, la tercera edición de Equinalh y el concierto de José Luis Jaén en octubre.",
-        "categoria": "Agenda Cultural",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T03:00:08.965Z",
-        "imagen": "https://i3.ytimg.com/vi/b21wXoi-zHU/maxresdefault.jpg",
-        "pagina": "noticias/agenda-cultural-y-eventos-destacados-en-alhaurin-el-grande-en-septiembre-y-octubre-2026.html"
     },
     {
         "titulo": "Tercera misa del Triduo y último traslado de San Sebastián en honor a la Virgen de Gracia",
@@ -970,16 +980,6 @@
         "pagina": "noticias/cd-alhaurino-y-clinicas-guadalhorce-se-unen-para-mejorar-la-salud-integral-de-sus.html"
     },
     {
-        "titulo": "Alhaurín el Grande estrena dos rutas saludables para descubrir patrimonio y naturaleza",
-        "descripcion": "Alhaurín el Grande contará con dos nuevas rutas saludables circulares que conectan su patrimonio, espacios naturales y oferta turística, gracias a un proyecto financiado por el Ministerio y el Ayuntamiento.",
-        "resumen": "Alhaurín el Grande contará con dos nuevas rutas saludables circulares que conectan su patrimonio, espacios naturales y oferta turística, gracias a un proyecto financiado por el Ministerio y el Ayuntamiento.",
-        "categoria": "Turismo y Patrimonio",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-20T10:36:47.675Z",
-        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-Alhaurin-el-Grande.jpg",
-        "pagina": "noticias/alhaurin-el-grande-estrena-dos-rutas-saludables-para-descubrir-patrimonio-y-naturaleza.html"
-    },
-    {
         "titulo": "Alhaurín el Grande celebra la IV Fiesta de la Vendimia el 6 de septiembre",
         "descripcion": "La IV Fiesta de la Vendimia en Alhaurín el Grande se realizará el domingo 6 de septiembre para promover la tradición vitivinícola local.",
         "resumen": "La IV Fiesta de la Vendimia en Alhaurín el Grande se realizará el domingo 6 de septiembre para promover la tradición vitivinícola local.",
@@ -1258,16 +1258,6 @@
         "fecha": "2026-08-19T08:51:33.070Z",
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/IMG_6504-e1786012136986.jpg",
         "pagina": "noticias/alhaurin-el-grande-clausura-los-campamentos-de-verano-con-una-gran-fiesta-de-despedida.html"
-    },
-    {
-        "titulo": "Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con tradición y fervor",
-        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y la participación de la Hermandad.",
-        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y la participación de la Hermandad.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-19T08:45:48.729Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
-        "pagina": "noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-tradicion-y-fervor.html"
     },
     {
         "titulo": "Además, la Hermandad se une en oración por el descanso eterno de las víctimas y solicita",

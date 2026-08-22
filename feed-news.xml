@@ -7,7 +7,7 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Fri, 21 Aug 2026 22:36:29 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 01:43:27 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
     <item>
       <title>Presentación de los bebés y Misa en Honor a Nuestra Señora de Gracia</title>
@@ -23,18 +23,9 @@
       <link>https://www.youtube.com/watch?v=b21wXoi-zHU</link>
       <guid isPermaLink="true">https://www.youtube.com/watch?v=b21wXoi-zHU</guid>
       <pubDate>Fri, 21 Aug 2026 12:46:08 GMT</pubDate>
-      <description>Alhaurín el Grande presenta su cartel de la Romería 2026, la tercera edición de Equinalh y el concierto de José Luis Jaén, además de servicios gratuitos en el CMIM y actividades religiosas.</description>
+      <description>Alhaurín el Grande presenta la Romería 2026 con Paco Candela, la tercera edición de Equinalh y el concierto de José Luis Jaén en octubre.</description>
       <category>Agenda Cultural</category>
       <dc:creator>ATV Alhaurín YouTube</dc:creator>
-    </item>
-    <item>
-      <title>Tercera misa del Triduo y último traslado de San Sebastián en Alhaurín el Grande</title>
-      <link>https://rtvalhaurinelgrande.com/tercera-misa-de-triduo-y-ultimo-traslado-de-san-sebastian-a-la-parroquia-virgen-de-gracia-2026/</link>
-      <guid isPermaLink="true">https://rtvalhaurinelgrande.com/tercera-misa-de-triduo-y-ultimo-traslado-de-san-sebastian-a-la-parroquia-virgen-de-gracia-2026/</guid>
-      <pubDate>Fri, 21 Aug 2026 11:15:13 GMT</pubDate>
-      <description>El jueves 13 se celebró la tercera misa del Triduo en honor a la Virgen de Gracia en la plaza de San Sebastián, con el último traslado hacia la parroquia local.</description>
-      <category>Fiestas y Tradiciones</category>
-      <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
     <item>
       <title>Masterclass en Alhaurín el Grande sobre facturación electrónica y Verifactu</title>
@@ -50,25 +41,34 @@
       <link>https://fedelhorce.es/cafe-con-ideas-teoria-del-color/</link>
       <guid isPermaLink="true">https://fedelhorce.es/cafe-con-ideas-teoria-del-color/</guid>
       <pubDate>Fri, 21 Aug 2026 08:06:04 GMT</pubDate>
-      <description>Aprende a utilizar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo en Alhaurín el Grande.</description>
-      <category>Municipal</category>
+      <description>Aprende a usar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo en Alhaurín el Grande.</description>
+      <category>Actualidad</category>
       <dc:creator>Fedelhorce</dc:creator>
     </item>
     <item>
-      <title>Programa 34 de &apos;Así lo viví&apos; con Lourdes Rodríguez en Alhaurín el Grande</title>
-      <link>https://www.youtube.com/watch?v=T0BhHyouiO4</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=T0BhHyouiO4</guid>
-      <pubDate>Thu, 20 Aug 2026 14:00:23 GMT</pubDate>
-      <description>Descubre la entrevista con Lourdes Rodríguez en el programa 34 de &apos;Así lo viví&apos;, donde comparte experiencias y vivencias en Alhaurín el Grande.</description>
-      <category>Vídeos</category>
+      <title>Tercera misa de triduo y último traslado de San Sebastián a la Parroquia</title>
+      <link>https://www.youtube.com/watch?v=uh5q_fFDr9U</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=uh5q_fFDr9U</guid>
+      <pubDate>Thu, 20 Aug 2026 14:30:00 GMT</pubDate>
+      <description>La Virgen de Gracia regresó a la parroquia tras la tercera misa del triduo en la plaza de San Sebastián, acompañada por la Hermandad y vecinos en un emotivo acto de fe y tradición.</description>
+      <category>Fiestas y Tradiciones</category>
       <dc:creator>ATV Alhaurín YouTube</dc:creator>
     </item>
     <item>
-      <title>Alhaurín el Grande impulsa viviendas, eventos y reforestación en agosto 2026</title>
+      <title>Programa 34 de Así lo viví con Lourdes Rodríguez en Alhaurín el Grande</title>
+      <link>https://www.youtube.com/watch?v=T0BhHyouiO4</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=T0BhHyouiO4</guid>
+      <pubDate>Thu, 20 Aug 2026 14:00:23 GMT</pubDate>
+      <description>Descubre el contenido del programa 34 de Así lo viví con Lourdes Rodríguez, donde se abordan temas relevantes para Alhaurín el Grande y su comunidad local.</description>
+      <category>Actualidad</category>
+      <dc:creator>ATV Alhaurín YouTube</dc:creator>
+    </item>
+    <item>
+      <title>Alhaurín el Grande avanza con nuevas viviendas, encuentro cultural y jornada ambiental</title>
       <link>https://www.youtube.com/watch?v=6XrCnE8llCM</link>
       <guid isPermaLink="true">https://www.youtube.com/watch?v=6XrCnE8llCM</guid>
       <pubDate>Thu, 20 Aug 2026 13:06:40 GMT</pubDate>
-      <description>Alhaurín el Grande avanza en la construcción de 78 viviendas, organiza el III Encuentro Multilabores y promueve una jornada de reforestación este agosto de 2026.</description>
+      <description>Alhaurín el Grande tramita 78 viviendas, organiza el III Encuentro Multilabores y una jornada de reforestación este domingo con voluntariado ambiental.</description>
       <category>Municipal</category>
       <dc:creator>ATV Alhaurín YouTube</dc:creator>
     </item>
@@ -82,21 +82,21 @@
       <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
     </item>
     <item>
-      <title>Alhaurín el Grande comienza demolición de módulos en CEIP Emilia Olivares por seguridad</title>
-      <link>https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-inicia-la-demolicion-de-dos-modulos-del-ceip-emilia-olivares-para-garantizar-la-seguridad-de-la-comunidad-educativa/</link>
-      <guid isPermaLink="true">https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-inicia-la-demolicion-de-dos-modulos-del-ceip-emilia-olivares-para-garantizar-la-seguridad-de-la-comunidad-educativa/</guid>
-      <pubDate>Thu, 13 Aug 2026 11:15:00 GMT</pubDate>
-      <description>El Ayuntamiento de Alhaurín el Grande inicia la demolición de dos módulos del CEIP Emilia Olivares para garantizar la seguridad de alumnos y docentes ante la falta de actuación de la Junta de Andalucía.</description>
-      <category>Municipal</category>
-      <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
-    </item>
-    <item>
-      <title>Alhaurín el Grande estrena dos rutas saludables para turismo y naturaleza</title>
+      <title>Alhaurín el Grande estrena dos rutas saludables para conectar patrimonio y naturaleza</title>
       <link>https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/</link>
       <guid isPermaLink="true">https://alhaurinelgrande.es/dos-nuevas-rutas-saludables-conectaran-el-patrimonio-la-naturaleza-y-la-oferta-turistica-de-alhaurin-el-grande/</guid>
       <pubDate>Thu, 13 Aug 2026 11:00:00 GMT</pubDate>
-      <description>Alhaurín el Grande desarrollará dos rutas saludables circulares que conectan patrimonio, naturaleza y oferta turística, con financiación del Ministerio y apoyo municipal.</description>
+      <description>El Ayuntamiento de Alhaurín el Grande impulsa dos nuevas rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación estatal y municipal.</description>
       <category>Turismo y Patrimonio</category>
+      <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
+    </item>
+    <item>
+      <title>Alhaurín el Grande convoca a sus vecinos para las celebraciones del Día de la Virgen 2026</title>
+      <link>https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-la-virgen-2026/</link>
+      <guid isPermaLink="true">https://alhaurinelgrande.es/bando-de-alcaldia-celebraciones-dia-de-la-virgen-2026/</guid>
+      <pubDate>Wed, 12 Aug 2026 12:35:57 GMT</pubDate>
+      <description>El alcalde Anthony Bermúdez invita a la comunidad de Alhaurín el Grande a participar activamente en las festividades del Día de la Virgen 2026 organizadas por el Ayuntamiento.</description>
+      <category>Fiestas y Tradiciones</category>
       <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
     </item>
     <item>
@@ -104,8 +104,17 @@
       <link>https://rtvalhaurinelgrande.com/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026/</link>
       <guid isPermaLink="true">https://rtvalhaurinelgrande.com/25-aniversario-del-coro-rociero-nuestra-senora-de-gracia-2026/</guid>
       <pubDate>Wed, 12 Aug 2026 06:01:07 GMT</pubDate>
-      <description>El Coro Rociero de la Hermandad Nuestra Señora de Gracia conmemora su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.</description>
+      <description>El Coro Rociero de la Hermandad de Nuestra Señora de Gracia conmemoró su 25 aniversario con un certamen de coros y academias de baile en Alhaurín el Grande.</description>
       <category>Fiestas y Tradiciones</category>
+      <dc:creator>RTV Alhaurín el Grande</dc:creator>
+    </item>
+    <item>
+      <title>CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia</title>
+      <link>https://rtvalhaurinelgrande.com/xxxiii-trofeo-virgen-de-gracia-cd-alhaurino-atletico-malagueno-2026/</link>
+      <guid isPermaLink="true">https://rtvalhaurinelgrande.com/xxxiii-trofeo-virgen-de-gracia-cd-alhaurino-atletico-malagueno-2026/</guid>
+      <pubDate>Tue, 11 Aug 2026 07:33:01 GMT</pubDate>
+      <description>El XXXIII Trofeo Virgen de Gracia enfrentará al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.</description>
+      <category>Deportes</category>
       <dc:creator>RTV Alhaurín el Grande</dc:creator>
     </item>
     <item>
@@ -118,11 +127,11 @@
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>La Real Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda</title>
+      <title>Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda</title>
       <link>https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/</guid>
       <pubDate>Thu, 09 Jul 2026 10:33:08 GMT</pubDate>
-      <description>El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.</description>
+      <description>El Hermano Mayor y miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.</description>
       <category>Actualidad</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
@@ -131,16 +140,16 @@
       <link>https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/</guid>
       <pubDate>Thu, 02 Jul 2026 09:57:44 GMT</pubDate>
-      <description>La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto tras una ausencia de once años.</description>
+      <description>La patrona de Alhaurín el Grande pernoctará en la ermita de San Sebastián la noche del 12 al 13 de agosto, cerrando su recorrido por los barrios en la festividad del Día de la Virgen.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias</title>
+      <title>La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela</title>
       <link>https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/</guid>
       <pubDate>Fri, 26 Jun 2026 09:09:18 GMT</pubDate>
-      <description>La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.</description>
+      <description>La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y dolor.</description>
       <category>Actualidad</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
@@ -149,16 +158,16 @@
       <link>https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/</guid>
       <pubDate>Fri, 26 Jun 2026 08:35:11 GMT</pubDate>
-      <description>El domingo 14 de junio, Alhaurín el Grande vivió con emoción la festividad de Nuestro Padre Jesús Nazareno, con actos religiosos y tradicionales que unieron a la comunidad.</description>
+      <description>El domingo 14 de junio, Alhaurín el Grande vivió una emotiva jornada con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y tradiciones locales.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
     <item>
-      <title>Programa de actos del Día de Jesús 2026 en Alhaurín el Grande</title>
+      <title>Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande</title>
       <link>https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/</link>
       <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/</guid>
       <pubDate>Thu, 25 Jun 2026 12:40:14 GMT</pubDate>
-      <description>Conoce el programa completo de los actos previstos para el jueves del Día de Jesús 2026 en Alhaurín el Grande, organizados por la Hermandad Nuestro Padre Jesús Nazareno.</description>
+      <description>Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.</description>
       <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>

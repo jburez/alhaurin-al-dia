@@ -1,5 +1,85 @@
 [
     {
+        "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
+        "descripcion": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
+        "resumen": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:56:07.646Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/CAMP-e1785926761443.jpeg",
+        "pagina": "noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio.html"
+    },
+    {
+        "titulo": "Segunda misa de triduo y tercer traslado de San Isidro a San Sebastián | Virgen de Gracia",
+        "descripcion": "Vecinos de San Isidro se reunieron para la segunda misa del triduo y el tercer traslado de la Virgen de Gracia hacia la Ermita de San Sebastián en Alhaurín el Grande.",
+        "resumen": "Vecinos de San Isidro se reunieron para la segunda misa del triduo y el tercer traslado de la Virgen de Gracia hacia la Ermita de San Sebastián en Alhaurín el Grande.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:51:31.084Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Captura-2.jpg",
+        "pagina": "noticias/segunda-misa-de-triduo-y-tercer-traslado-de-san-isidro-a-san-sebastian-virgen-de-gracia.html"
+    },
+    {
+        "titulo": "Programa de actos del jueves para el Día de Jesús 2026 en Alhaurín el Grande",
+        "descripcion": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizadas por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "resumen": "Conoce el programa completo de actividades previstas para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizadas por la Hermandad Nuestro Padre Jesús Nazareno.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:51:31.083Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande",
+        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
+        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:51:31.082Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-13-at-07.41.14-1.jpeg",
+        "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-en-alhaurin-el-grande.html"
+    },
+    {
+        "titulo": "La Real Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
+        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:51:31.077Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
+        "pagina": "noticias/la-real-hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
+    },
+    {
+        "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad con Venezuela tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:51:31.077Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-con-venezuela.html"
+    },
+    {
+        "titulo": "Cómo la Teoría del Color mejora la comunicación y el trabajo en equipo",
+        "descripcion": "Aprende a utilizar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo en Alhaurín el Grande.",
+        "resumen": "Aprende a utilizar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo en Alhaurín el Grande.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:51:31.067Z",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/08/Destacada-teoria-del-color.png",
+        "pagina": "noticias/como-la-teoria-del-color-mejora-la-comunicacion-y-el-trabajo-en-equipo.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con tradición y fervor",
+        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y la participación de la Hermandad.",
+        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y la participación de la Hermandad.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-23T06:51:31.052Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
+        "pagina": "noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-tradicion-y-fervor.html"
+    },
+    {
         "titulo": "CD Alhaurino y Atlético Malagueño se enfrentan en el XXXIII Trofeo Virgen de Gracia",
         "descripcion": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
         "resumen": "El XXXIII Trofeo Virgen de Gracia enfrenta al CD Alhaurino y Atlético Malagueño en un esperado encuentro deportivo en Alhaurín el Grande.",
@@ -70,16 +150,6 @@
         "pagina": "noticias/la-hermandad-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezuela.html"
     },
     {
-        "titulo": "Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno",
-        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la celebración del Día de Nuestro Padre Jesús Nazareno, con actos tradicionales y la participación de la Hermandad y vecinos.",
-        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la celebración del Día de Nuestro Padre Jesús Nazareno, con actos tradicionales y la participación de la Hermandad y vecinos.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-23T03:09:07.142Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
-        "pagina": "noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html"
-    },
-    {
         "titulo": "Alhaurín el Grande crea dos nuevas rutas saludables para conectar patrimonio y naturaleza",
         "descripcion": "Alhaurín el Grande desarrollará dos rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación del Ministerio y apoyo municipal.",
         "resumen": "Alhaurín el Grande desarrollará dos rutas saludables circulares que integran patrimonio, naturaleza y turismo, con financiación del Ministerio y apoyo municipal.",
@@ -110,26 +180,6 @@
         "pagina": "noticias/salida-procesional-de-la-virgen-de-gracia-en-alhaurin-el-grande-el-15-de-agosto.html"
     },
     {
-        "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande",
-        "descripcion": "Conoce el programa completo de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "Conoce el programa completo de los actos previstos para el jueves en la celebración del Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-23T01:48:27.450Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html"
-    },
-    {
-        "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández Fuentes en Alhaurín el Grande",
-        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
-        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-23T01:48:27.449Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-13-at-07.41.14-1.jpeg",
-        "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-fuentes-en-alhaurin-el-grande.html"
-    },
-    {
         "titulo": "La Hermandad Nuestro Padre Jesús Nazareno muestra condolencias por terremotos en Venezuela",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
@@ -138,16 +188,6 @@
         "fecha": "2026-08-23T01:48:27.443Z",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "pagina": "noticias/la-hermandad-nuestro-padre-jesus-nazareno-muestra-condolencias-por-terremotos-en-venezuela.html"
-    },
-    {
-        "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
-        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-23T01:48:27.440Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
-        "pagina": "noticias/hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
     },
     {
         "titulo": "Procesión y recibimiento de bandas en Alhaurín el Grande por la Virgen de Gracia",
@@ -4977,17 +5017,6 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande-para-el-jueves.html",
         "fusionadaEn": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande 2.html"
-    },
-    {
-        "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno ha manifestado públicamente su",
-        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su apoyo y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-09T08:52:23.821Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-ha-manifestado-publicamente-su.html",
-        "fusionadaEn": "noticias/la-hermandad-nuestro-padre-jesus-nazareno-expresa-condolencias-por-terremotos-en-venezuela.html"
     },
     {
         "titulo": "Durante la velada, vecinos y visitantes disfrutaron de charangas, conciertos",

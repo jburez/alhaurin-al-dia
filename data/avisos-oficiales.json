@@ -234,49 +234,5 @@
         "actualizado_en": "2026-07-23T17:36:35+00:00"
       }
     ]
-  },
-  {
-    "id": "aemet-AFAZ612903ATTA2319",
-    "tipo": "meteorologico",
-    "nivel": "naranja",
-    "titulo": "Aviso. Nivel naranja. Temperaturas máximas. Sol y Guadalhorce",
-    "descripcion": "Aviso de temperatura máxima de nivel naranja de 18:00 23-07-2026 CEST (UTC+2) a 20:59 23-07-2026 CEST (UTC+2).",
-    "fenomeno": "Temperaturas máximas",
-    "zona": "Sol y Guadalhorce",
-    "inicio": "2026-07-23T18:00:00+02:00",
-    "fin": "2026-07-23T20:59:00+02:00",
-    "fuente": "AEMET",
-    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260722165337_AFAZ612903ATTA2319.xml",
-    "estado_ciclo_vida": "finalizado",
-    "actualizado_en": "2026-07-24T11:45:58+00:00",
-    "historial": [
-      {
-        "nivel": "amarillo",
-        "titulo": "Aviso. Nivel amarillo. Temperaturas máximas. Sol y Guadalhorce",
-        "descripcion": "Aviso de temperatura máxima de nivel amarillo de 13:00 23-07-2026 CEST (UTC+2) a 20:59 23-07-2026 CEST (UTC+2).",
-        "inicio": "2026-07-23T13:00:00+02:00",
-        "fin": "2026-07-23T20:59:00+02:00",
-        "estado_ciclo_vida": "creado",
-        "actualizado_en": "2026-07-20T22:05:34+00:00"
-      },
-      {
-        "nivel": "naranja",
-        "titulo": "Aviso. Nivel naranja. Temperaturas máximas. Sol y Guadalhorce",
-        "descripcion": "Aviso de temperatura máxima de nivel naranja de 13:00 23-07-2026 CEST (UTC+2) a 20:59 23-07-2026 CEST (UTC+2).",
-        "inicio": "2026-07-23T13:00:00+02:00",
-        "fin": "2026-07-23T20:59:00+02:00",
-        "estado_ciclo_vida": "actualizado",
-        "actualizado_en": "2026-07-22T11:52:35+00:00"
-      },
-      {
-        "nivel": "naranja",
-        "titulo": "Aviso. Nivel naranja. Temperaturas máximas. Sol y Guadalhorce",
-        "descripcion": "Aviso de temperatura máxima de nivel naranja de 18:00 23-07-2026 CEST (UTC+2) a 20:59 23-07-2026 CEST (UTC+2).",
-        "inicio": "2026-07-23T18:00:00+02:00",
-        "fin": "2026-07-23T20:59:00+02:00",
-        "estado_ciclo_vida": "actualizado",
-        "actualizado_en": "2026-07-23T17:36:35+00:00"
-      }
-    ]
   }
 ]

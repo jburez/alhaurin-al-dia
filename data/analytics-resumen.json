@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-23T15:58:44.577Z",
+  "actualizado": "2026-08-23T16:24:28.000Z",
   "visitas24h": 15,
   "paginasVistas24h": 19,
   "topPaginas": [
@@ -12,11 +12,11 @@
       "vistas": 10
     },
     {
-      "ruta": "/admin/",
+      "ruta": "/planes/",
       "vistas": 9
     },
     {
-      "ruta": "/planes/",
+      "ruta": "/admin/",
       "vistas": 9
     },
     {

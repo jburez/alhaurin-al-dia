@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-08-23T09:00:53+02:00",
+  "actualizado": "2026-08-23T17:36:19+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
@@ -23,7 +23,7 @@
     "icono": "☀️",
     "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "S 10 km/h",
+    "viento": "S 15 km/h",
     "uv": "8"
   },
   "semana": [
@@ -36,19 +36,19 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
+      "viento": "S 15 km/h",
       "uv": "8"
     },
     {
       "fecha": "2026-08-24",
       "dia_semana": "Lunes",
       "fecha_corta": "24/8",
-      "t_max": "32",
-      "t_min": "19",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
-      "lluvia": "5%",
-      "viento": "SO 15 km/h",
+      "t_max": "31",
+      "t_min": "18",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "30%",
+      "viento": "SO 10 km/h",
       "uv": "8"
     },
     {
@@ -59,7 +59,7 @@
       "t_min": "17",
       "icono": "☀️",
       "descripcion": "Despejado",
-      "lluvia": "0%",
+      "lluvia": "5%",
       "viento": "S 5 km/h",
       "uv": "8"
     },
@@ -69,34 +69,46 @@
       "fecha_corta": "26/8",
       "t_max": "33",
       "t_min": "19",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
+      "icono": "☀️",
+      "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "C 0 km/h",
+      "viento": "S 5 km/h",
       "uv": "8"
     },
     {
       "fecha": "2026-08-27",
       "dia_semana": "Jueves",
       "fecha_corta": "27/8",
-      "t_max": "33",
+      "t_max": "32",
       "t_min": "19",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
-      "uv": ""
+      "viento": "SO 10 km/h",
+      "uv": "8"
     },
     {
       "fecha": "2026-08-28",
       "dia_semana": "Viernes",
       "fecha_corta": "28/8",
-      "t_max": "33",
+      "t_max": "34",
       "t_min": "19",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
+      "icono": "☀️",
+      "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "N 10 km/h",
+      "viento": "N 20 km/h",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-08-29",
+      "dia_semana": "Sábado",
+      "fecha_corta": "29/8",
+      "t_max": "31",
+      "t_min": "18",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "E 10 km/h",
       "uv": ""
     }
   ],
@@ -127,16 +139,16 @@
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.9 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.4 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.9,
+      "gramineas": 0.4,
       "olivo": 0.0
     }
   ],
   "sol_luna": {
     "orto": "07:42 h",
-    "ocaso": "21:00 h",
-    "horas_luz": "13h 18m",
+    "ocaso": "20:59 h",
+    "horas_luz": "13h 17m",
     "fase_luna": "Luna Gibosa Creciente (79%)",
     "icono_luna": "🌔"
   },

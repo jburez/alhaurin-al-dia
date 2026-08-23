@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-08-23T20:57:38.925Z",
-  "visitas24h": 14,
+  "actualizado": "2026-08-23T21:17:58.468Z",
+  "visitas24h": 13,
   "paginasVistas24h": 19,
   "topPaginas": [
     {
       "ruta": "/",
-      "vistas": 29
+      "vistas": 30
     },
     {
       "ruta": "/noticias/paco-candela-protagoniza-el-concierto-principal-de-la-romeria-en-alhaurin-el-grande",
       "vistas": 10
     },
     {
-      "ruta": "/planes/",
+      "ruta": "/admin/",
       "vistas": 9
     },
     {
-      "ruta": "/admin/",
+      "ruta": "/planes/",
       "vistas": 9
     },
     {

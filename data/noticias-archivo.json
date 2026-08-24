@@ -1,23 +1,73 @@
 [
     {
-        "titulo": "Campamentos de verano en Alhaurín el Grande y Villa del Guadalhorce finalizan en julio",
-        "descripcion": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
-        "resumen": "Los campamentos de educación y deportes organizados por el Ayuntamiento de Alhaurín el Grande y Villa del Guadalhorce concluyen en julio, ofreciendo actividades para la conciliación familiar y el ocio infantil.",
-        "categoria": "Educación",
+        "titulo": "Procesión y recibimiento de bandas en Alhaurín el Grande por la Virgen de Gracia",
+        "descripcion": "El 15 de agosto, la Virgen de Gracia recorrió las calles de Alhaurín el Grande acompañada por cuatro bandas musicales y la entrega de medallas a los quintos y quintas.",
+        "resumen": "El 15 de agosto, la Virgen de Gracia recorrió las calles de Alhaurín el Grande acompañada por cuatro bandas musicales y la entrega de medallas a los quintos y quintas.",
+        "categoria": "Fiestas y Tradiciones",
         "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-24T04:56:30.140Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/CAMP-e1785926761443.jpeg",
-        "pagina": "noticias/campamentos-de-verano-en-alhaurin-el-grande-y-villa-del-guadalhorce-finalizan-en-julio.html"
+        "fecha": "2026-08-24T07:26:05.190Z",
+        "imagen": "https://i3.ytimg.com/vi/z133ZOYR30U/maxresdefault.jpg",
+        "pagina": "noticias/procesion-y-recibimiento-de-bandas-en-alhaurin-el-grande-por-la-virgen-de-gracia.html"
     },
     {
-        "titulo": "Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande",
-        "descripcion": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos mostrando sus avances musicales.",
-        "resumen": "La Escuela de Música La Pepa celebró sus audiciones de fin de curso en la Plaza del Convento con la participación de 42 alumnos mostrando sus avances musicales.",
-        "categoria": "Agenda Cultural",
+        "titulo": "Zalea renueva por duodécima temporada con el CD Alhaurino",
+        "descripcion": "Alejandro Guerrero Martín &#x27;Zalea&#x27; continuará en el CD Alhaurino, sumando su duodécima temporada en el primer equipo tras renovar su compromiso con el club.",
+        "resumen": "Alejandro Guerrero Martín &#x27;Zalea&#x27; continuará en el CD Alhaurino, sumando su duodécima temporada en el primer equipo tras renovar su compromiso con el club.",
+        "categoria": "Deportes",
         "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-24T04:56:30.137Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/LA-PEPA-FOTO.jpg",
-        "pagina": "noticias/audiciones-de-fin-de-curso-de-la-escuela-de-musica-la-pepa-en-alhaurin-el-grande.html"
+        "fecha": "2026-08-24T07:10:29.032Z",
+        "imagen": "https://clubdeportivoalhaurino.com/wp-content/uploads/2023/10/cropped-LOGO-CUADRADO.png",
+        "pagina": "noticias/zalea-renueva-por-duodecima-temporada-con-el-cd-alhaurino.html"
+    },
+    {
+        "titulo": "La Real Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
+        "descripcion": "El Hermano Mayor y varios miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "resumen": "El Hermano Mayor y varios miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-24T07:10:29.026Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
+        "pagina": "noticias/la-real-hermandad-de-alhaurin-el-grande-participa-en-curso-sobre-la-legion-en-ronda.html"
+    },
+    {
+        "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa su solidaridad y condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas.",
+        "categoria": "Actualidad",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-24T07:10:29.026Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-su-solidaridad-y-condolencias.html"
+    },
+    {
+        "titulo": "CD Alhaurino afronta la temporada 2025/26 sin rival almeriense en Tercera RFEF",
+        "descripcion": "La temporada 2025/26 de Tercera RFEF será histórica para el CD Alhaurino al no contar con ningún rival almeriense, un hecho que solo se había dado una vez en su trayectoria.",
+        "resumen": "La temporada 2025/26 de Tercera RFEF será histórica para el CD Alhaurino al no contar con ningún rival almeriense, un hecho que solo se había dado una vez en su trayectoria.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-24T07:10:29.018Z",
+        "imagen": "https://clubdeportivoalhaurino.com/wp-content/uploads/2023/10/cropped-LOGO-CUADRADO.png",
+        "pagina": "noticias/cd-alhaurino-afronta-la-temporada-2025-26-sin-rival-almeriense-en-tercera-rfef.html"
+    },
+    {
+        "titulo": "CD Alhaurino y Clínicas Guadalhorce se unen para mejorar la salud integral de sus",
+        "descripcion": "El CD Alhaurino y Clínicas Guadalhorce han firmado un acuerdo para gestionar conjuntamente los departamentos de nutrición y salud mental de los futbolistas.",
+        "resumen": "El CD Alhaurino y Clínicas Guadalhorce han firmado un acuerdo para gestionar conjuntamente los departamentos de nutrición y salud mental de los futbolistas.",
+        "categoria": "Deportes",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-24T07:10:29.018Z",
+        "imagen": "https://clubdeportivoalhaurino.com/wp-content/uploads/2023/10/cropped-LOGO-CUADRADO.png",
+        "pagina": "noticias/cd-alhaurino-y-clinicas-guadalhorce-se-unen-para-mejorar-la-salud-integral-de-sus.html"
+    },
+    {
+        "titulo": "Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno",
+        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y tradiciones locales.",
+        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y tradiciones locales.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-08-24T07:10:29.007Z",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
+        "pagina": "noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html"
     },
     {
         "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández Fuentes en Alhaurín el Grande",
@@ -38,16 +88,6 @@
         "fecha": "2026-08-24T04:52:50.761Z",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
-    },
-    {
-        "titulo": "Hermandad Nuestro Padre Jesús Nazareno participa en curso sobre La Legión en Ronda",
-        "descripcion": "El Hermano Mayor y varios miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y varios miembros de la Hermandad Nuestro Padre Jesús Nazareno asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-24T04:52:50.759Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
-        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
     },
     {
         "titulo": "CD Alhaurino y Clínicas Guadalhorce se unen para mejorar la salud de sus jugadores",
@@ -110,16 +150,6 @@
         "pagina": "noticias/programa-de-actos-del-dia-de-jesus-2026-en-alhaurin-el-grande.html"
     },
     {
-        "titulo": "Masterclass en Alhaurín el Grande sobre facturación electrónica y Verifactu",
-        "descripcion": "Fedelhorce organiza una masterclass para explicar los cambios en la facturación electrónica con Verifactu y cómo las empresas pueden adaptarse a esta nueva normativa.",
-        "resumen": "Fedelhorce organiza una masterclass para explicar los cambios en la facturación electrónica con Verifactu y cómo las empresas pueden adaptarse a esta nueva normativa.",
-        "categoria": "Comercio y Empresa",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-24T03:09:45.648Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/08/Destacada-verifactu.png",
-        "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html"
-    },
-    {
         "titulo": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa sus condolencias al pueblo",
         "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y dolor.",
         "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno expresa sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y dolor.",
@@ -128,16 +158,6 @@
         "fecha": "2026-08-24T03:09:45.645Z",
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "pagina": "noticias/la-real-hermandad-de-nuestro-padre-jesus-nazareno-expresa-sus-condolencias-al-pueblo.html"
-    },
-    {
-        "titulo": "Cómo la Teoría del Color mejora la comunicación y el trabajo en equipo",
-        "descripcion": "Aprende a utilizar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo en Alhaurín el Grande.",
-        "resumen": "Aprende a utilizar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo en Alhaurín el Grande.",
-        "categoria": "Educación",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-24T03:09:45.635Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/08/Destacada-teoria-del-color.png",
-        "pagina": "noticias/como-la-teoria-del-color-mejora-la-comunicacion-y-el-trabajo-en-equipo.html"
     },
     {
         "titulo": "Campamentos de educación y deportes de julio en Alhaurín el Grande y Villa del Guadalhorce",
@@ -168,16 +188,6 @@
         "fecha": "2026-08-24T01:45:50.859Z",
         "imagen": "https://static.grupojoly.com/clip/a73bf9ba-b629-4f20-b8fe-78c4389aa4b0_source-aspect-ratio_default_0.jpg",
         "pagina": "noticias/la-a-357-via-principal-que-conecta-campillos-y-el-valle-del-guadalhorce-con-malaga.html"
-    },
-    {
-        "titulo": "Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con tradición y fervor",
-        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y la participación de la Hermandad.",
-        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió una jornada especial con la celebración del Día de Nuestro Padre Jesús Nazareno, marcada por actos religiosos y la participación de la Hermandad.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-24T01:45:50.834Z",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
-        "pagina": "noticias/alhaurin-el-grande-celebra-el-dia-de-nuestro-padre-jesus-nazareno-con-tradicion-y-fervor.html"
     },
     {
         "titulo": "Villa del Guadalhorce despide a las hermanas doroteas Lupe y Teresa",
@@ -578,16 +588,6 @@
         "fecha": "2026-08-22T16:31:36.943Z",
         "imagen": "https://i3.ytimg.com/vi/b21wXoi-zHU/maxresdefault.jpg",
         "pagina": "noticias/agenda-cultural-y-eventos-destacados-en-alhaurin-el-grande-en-septiembre-y-octubre-2026.html"
-    },
-    {
-        "titulo": "Primera misa de triduo y segundo traslado de Plaza Alta al barrio San Isidro",
-        "descripcion": "La Virgen de Gracia recorrió los barrios de Alhaurín el Grande con la primera misa de triduo en Plaza Alta y su traslado al barrio San Isidro, donde fue recibida con flores y alegría.",
-        "resumen": "La Virgen de Gracia recorrió los barrios de Alhaurín el Grande con la primera misa de triduo en Plaza Alta y su traslado al barrio San Isidro, donde fue recibida con flores y alegría.",
-        "categoria": "Fiestas y Tradiciones",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-22T14:27:39.601Z",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Captura-1.jpg",
-        "pagina": "noticias/primera-misa-de-triduo-y-segundo-traslado-de-plaza-alta-al-barrio-san-isidro.html"
     },
     {
         "titulo": "Alhaurín el Grande celebra el Día de Nuestro Padre Jesús Nazareno con gran fervor",
@@ -1228,16 +1228,6 @@
         "fecha": "2026-08-20T16:41:11.162Z",
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/08/Club-de-lectura-juvenil-2026-27.jpg",
         "pagina": "noticias/abierto-el-plazo-de-inscripcion-para-los-clubes-de-lectura-2026-27-en-alhaurin-el-grande.html"
-    },
-    {
-        "titulo": "Alhaurín el Grande se convierte en Centro Comercial Abierto de Andalucía",
-        "descripcion": "Alhaurín el Grande ha sido reconocido oficialmente como Centro Comercial Abierto de Andalucía, un impulso para fortalecer la competitividad del comercio local.",
-        "resumen": "Alhaurín el Grande ha sido reconocido oficialmente como Centro Comercial Abierto de Andalucía, un impulso para fortalecer la competitividad del comercio local.",
-        "categoria": "Comercio y Empresa",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-08-20T14:41:20.181Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3-1.png",
-        "pagina": "noticias/alhaurin-el-grande-se-convierte-en-centro-comercial-abierto-de-andalucia.html"
     },
     {
         "titulo": "María del Carmen Plaza inauguró los actos en honor a Nuestra Señora de Gracia con el XIV",

@@ -482,6 +482,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
+    "ai_attempts": 0,
+    "content_hash": "7187a0d5937dcd13653026654890c4d24a8ea1bd",
+    "date_modified": null,
+    "date_published": "2026-08-24T16:16:11+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Una familia de Alhaurín el Grande ha hecho un llamamiento urgente para localizar un dispositivo auditivo magnético que se perdió el pasado domingo 23 de agosto. Este aparato es fundamental para un menor, ya que se adhiere a una pieza implantada en el cerebro y es imprescindible para su audición.\n\nSin este dispositivo, el menor enfrenta dificultades significativas en su día a día. La familia pide la colaboración de los vecinos y cualquier persona que pueda haber encontrado el dispositivo o tenga información sobre su paradero para que se pongan en contacto con ellos.\n\nLa recuperación del aparato es vital para garantizar el bienestar y la calidad de vida del niño afectado.",
+      "descripcion": "Una familia de Alhaurín el Grande solicita ayuda ciudadana para encontrar un dispositivo auditivo magnético esencial perdido el 23 de agosto.",
+      "seo_keywords": [
+        "dispositivo auditivo perdido",
+        "Alhaurín el Grande",
+        "colaboración ciudadana"
+      ],
+      "titulo": "Buscan dispositivo auditivo perdido en Alhaurín el Grande para un menor"
+    },
+    "ia_exitosa": true,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-952df502",
+    "last_ai_attempt": "2026-08-24T16:48:49.146317+00:00",
+    "pagina": "noticias/buscan-dispositivo-auditivo-perdido-en-alhaurin-el-grande-para-un-menor.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/08/24/piden-colaboracion-ciudadana-en-alhaurin-el-grande-para-localizar-el-dispositivo-auditivo-extraviado-de-un-menor/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",

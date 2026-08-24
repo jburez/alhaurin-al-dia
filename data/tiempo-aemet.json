@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-24T09:28:47+02:00",
+  "actualizado": "2026-08-24T12:53:40+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "⛅",
+    "icono": "🌤️",
     "titulo": "Tiempo",
     "valor": "Máx. 32º",
-    "detalle": "Intervalos nubosos · Máx. 32º / Mín. 18º · Lluvia 25%",
+    "detalle": "Poco nuboso · Máx. 32º / Mín. 18º · Lluvia 20%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "24/8",
     "t_max": "32",
     "t_min": "18",
-    "icono": "⛅",
-    "descripcion": "Intervalos nubosos",
-    "lluvia": "25%",
-    "viento": "SO 15 km/h",
+    "icono": "🌤️",
+    "descripcion": "Poco nuboso",
+    "lluvia": "20%",
+    "viento": "SO 20 km/h",
     "uv": "8"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "24/8",
       "t_max": "32",
       "t_min": "18",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "25%",
-      "viento": "SO 15 km/h",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "20%",
+      "viento": "SO 20 km/h",
       "uv": "8"
     },
     {
@@ -45,9 +45,9 @@
       "fecha_corta": "25/8",
       "t_max": "32",
       "t_min": "18",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "5%",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "0%",
       "viento": "S 10 km/h",
       "uv": "8"
     },
@@ -60,7 +60,7 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "5%",
-      "viento": "C 0 km/h",
+      "viento": "C 10 km/h",
       "uv": "8"
     },
     {
@@ -139,16 +139,16 @@
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.4 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.3 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.4,
+      "gramineas": 0.3,
       "olivo": 0.0
     }
   ],
   "sol_luna": {
     "orto": "07:43 h",
-    "ocaso": "20:59 h",
-    "horas_luz": "13h 16m",
+    "ocaso": "20:58 h",
+    "horas_luz": "13h 15m",
     "fase_luna": "Luna Gibosa Creciente (87%)",
     "icono_luna": "🌔"
   },

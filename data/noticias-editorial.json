@@ -1,4 +1,27 @@
 {
+  "guid:atv-alhaurin-youtube:yt:video:JSAyrh72NAE": {
+    "ai_attempts": 0,
+    "content_hash": "c7f027f83f202fb517d1f9b537f5ed5726e7135f",
+    "date_modified": null,
+    "date_published": "2026-08-24T14:00:20+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "La tradicional misa de Acción de Gracias puso fin a las Fiestas Patronales en honor a Nuestra Señora de Gracia en Alhaurín el Grande. La eucaristía fue oficiada por el Vicario Parroquial José Francisco Fernández y contó con la participación del Coro Rociero de la Hermandad, que aportó un ambiente solemne y emotivo a la ceremonia.\n\nDurante el acto, se entregaron los títulos a los nuevos hermanos y hermanas de la Hermandad de Nuestra Señora de Gracia, además de reconocer la colaboración de los barrios de Plaza Alta, San Isidro y San Sebastián, que acogieron a la Virgen durante sus traslados.\n\nLa celebración también destacó el carácter solidario de las fiestas, con donaciones destinadas a Cáritas, Un Sí por la Vida y Aprodal, reafirmando el compromiso social de la comunidad local.",
+      "descripcion": "La Parroquia de Alhaurín el Grande acogió la misa de Acción de Gracias en honor a la Virgen de Gracia, con reconocimientos a nuevos hermanos y a barrios colaboradores.",
+      "seo_keywords": [
+        "Virgen de Gracia Alhaurín el Grande",
+        "Fiestas Patronales Alhaurín el Grande",
+        "Misa de Acción de Gracias Alhaurín"
+      ],
+      "titulo": "Misa de Acción de Gracias | Virgen de Gracia 2026"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-jsayrh72nae-b6945280",
+    "last_ai_attempt": "2026-08-24T14:50:11.971897+00:00",
+    "pagina": "noticias/misa-de-accion-de-gracias-virgen-de-gracia-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=JSAyrh72NAE"
+  },
   "guid:atv-alhaurin-youtube:yt:video:Z7s1LW5uWys": {
     "ai_attempts": 0,
     "content_hash": "ea2447ba6927dea0363b098059bf3d7dbe5bb824",

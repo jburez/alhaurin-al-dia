@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "news": "python3 scripts/generar_noticias_seguro.py",
+    "news:pipeline": "python3 scripts/con-lock-pipeline-editorial.py",
     "news:dedupe": "node scripts/dedupe-news.js --write",
     "news:dedupe:dry": "node scripts/dedupe-news.js",
     "news:orphans:dry": "node scripts/archive-orphan-news.js",

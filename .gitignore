@@ -6,6 +6,15 @@ node_modules/
 # Informes locales generados por auditorías SEO
 reports/*.json
 
+# Log estructurado de disparadores de actualización editorial (task #17,
+# scripts/lib/editorial_log.py) -- se acumula por día, nunca se versiona.
+reports/*.jsonl
+
+# Lock del pipeline editorial (task #19, scripts/lib/pipeline_lock.py).
+# Su existencia es solo soporte de metadata diagnóstica -- la verdad del
+# lock es flock, no este fichero -- pero de todos modos no se versiona.
+reports/.pipeline-editorial.lock
+
 # Cloudflare Worker: estado local de wrangler y secretos de desarrollo
 cloudflare/*/.wrangler/
 cloudflare/*/.dev.vars

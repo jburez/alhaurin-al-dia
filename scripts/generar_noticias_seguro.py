@@ -35,7 +35,7 @@ from generar_noticias import (  # noqa: E402
     normalizar_frase_completa,
     obtener_noticias,
 )
-from validar_contenido import termina_a_medias  # noqa: E402
+from lib.editorial_rules import evaluar_titulo, titulo_truncado  # noqa: E402
 
 MAX_TITULO = 90
 MAX_DESCRIPCION = 230
@@ -83,7 +83,7 @@ def primer_trozo_util(textos: Iterable[str]) -> str:
         frases = re.split(r"(?<=[.!?])\s+", limpio)
         for frase in frases:
             frase = limpiar_titulo_basico(frase)
-            if 25 <= len(frase) <= MAX_TITULO and not termina_a_medias(frase):
+            if 25 <= len(frase) <= MAX_TITULO and not titulo_truncado(frase):
                 return frase
     return ""
 
@@ -110,62 +110,50 @@ def construir_titulo_rescate(noticia: dict) -> str:
         candidatos.append(frase_util)
 
     for candidato in candidatos:
-        if candidato and len(candidato) >= 25 and not termina_a_medias(candidato):
+        if candidato and len(candidato) >= 25 and not titulo_truncado(candidato):
             return candidato
 
     return ""
 
 
-
-TERMINALES_TITULAR_INCOMPLETO = {
-    "a", "al", "ante", "bajo", "con", "contra", "de", "del", "desde", "durante",
-    "el", "en", "entre", "hacia", "hasta", "la", "las", "los", "para", "por",
-    "que", "según", "sin", "sobre", "tras", "un", "una", "y", "o",
-    "impulsar", "presentar", "celebrar", "organizar", "convocar", "abrir",
-}
-
-
-def titulo_incompleto(titulo: str) -> bool:
-    titulo = limpiar_html(titulo).strip()
-    if not titulo:
-        return True
-
-    if "..." in titulo or "…" in titulo:
-        return True
-
-    # Comillas abiertas
-    if titulo.count("‘") != titulo.count("’"):
-        return True
-    if titulo.count("“") != titulo.count("”"):
-        return True
-    if titulo.count('"') % 2 != 0:
-        return True
-
-    # Final raro o claramente truncado
-    normalizado = normalizar_para_comparar(titulo)
-    if not normalizado:
-        return True
-
-    ultima = normalizado.split()[-1]
-    if ultima in TERMINALES_TITULAR_INCOMPLETO:
-        return True
-
-    # Si termina sin puntuación no siempre es error en titulares, pero sí si queda una comilla abierta o preposición
-    if titulo[-1] in {"‘", "“", ",", ";", ":"}:
-        return True
-
-    return termina_a_medias(titulo)
-
-
 def sanear_titulo(noticia: dict) -> str:
+    """Quality gate de titular con segunda validación tras la regeneración.
+
+    evaluar_titulo() combina varias señales en una puntuación, pero no todas
+    pesan igual a propósito: una señal objetiva y fuerte como el
+    truncamiento (comillas sin cerrar, termina en preposición/posesivo/verbo
+    sin complemento...) puede hacer fallar el quality gate ella sola -- es
+    intencionado, es un titular literalmente cortado. Las señales más
+    heurísticas/contextuales (inicio_sospechoso, sin_entidad,
+    pocas_palabras_utiles) están calibradas para no bastar solas y necesitar
+    combinarse (ver lib/editorial_rules.py y los pesos ahí documentados).
+
+    El único caso que se resuelve antes de puntuar es el de titular genérico
+    (placeholders tipo "NOTICIAS ATV 20 agosto"): no es una cuestión de
+    completitud lingüística, así que no tiene sentido puntuarlo, va directo
+    a regeneración.
+    """
+    cuerpo = noticia.get("cuerpo", "")
     titulo = limpiar_titulo_basico(noticia.get("titulo", ""))
-    if titulo and not titulo_generico(titulo) and not titulo_incompleto(titulo):
-        return titulo
 
+    if titulo and not titulo_generico(titulo):
+        evaluacion = evaluar_titulo(titulo, cuerpo)
+        if evaluacion["aceptable"]:
+            return titulo
+
+    # Regeneración (sin IA todavía -- la regeneración vía IA llega con la
+    # tarea del registro editorial de Fase 2): construir_titulo_rescate()
+    # prueba título original no genérico, heurística SEO, o una frase
+    # completa de la entradilla/cuerpo.
     rescate = construir_titulo_rescate(noticia)
-    if rescate and not titulo_incompleto(rescate):
-        return rescate
+    if rescate:
+        segunda_evaluacion = evaluar_titulo(rescate, cuerpo)
+        if segunda_evaluacion["aceptable"]:
+            return rescate
 
+    # Ni el título original ni la regeneración superan el quality gate
+    # combinado -- no hay más candidatos sin IA, no se publica (ver
+    # sanear_noticia).
     return ""
 
 def sanear_descripcion(noticia: dict) -> str:
@@ -263,8 +251,13 @@ def deduplicar_noticias(noticias: list[dict]) -> list[dict]:
     return resultado
 
 
-def generar_noticias_seguras() -> list[dict]:
-    noticias = obtener_noticias()
+def generar_noticias_seguras() -> tuple[list[dict], dict]:
+    """Devuelve (noticias_finales, bookkeeping_por_id). bookkeeping_por_id
+    puede traer ids de más (candidatas vistas por obtener_noticias() que
+    sanear_noticia()/deduplicar_noticias() descartaron aquí) -- eso es
+    aceptable, guardar_noticias() solo usa las entradas de los ids que
+    realmente sobreviven en noticias_finales."""
+    noticias, bookkeeping_por_id = obtener_noticias()
     saneadas: list[dict] = []
 
     for noticia in noticias:
@@ -272,17 +265,18 @@ def generar_noticias_seguras() -> list[dict]:
         if saneada:
             saneadas.append(saneada)
 
-    return deduplicar_noticias(saneadas)
+    noticias_finales = deduplicar_noticias(saneadas)
+    return noticias_finales, bookkeeping_por_id
 
 
 
 def main() -> int:
-    noticias = generar_noticias_seguras()
+    noticias, bookkeeping_por_id = generar_noticias_seguras()
     if not noticias:
         print("ERROR: no hay noticias publicables tras el saneado editorial")
         return 1
 
-    guardar_noticias(noticias)
+    guardar_noticias(noticias, bookkeeping_por_id)
     # El sitemap real (multi-sección: noticias, farmacias, servicios, Google News)
     # lo genera scripts/generate-sitemaps.js más adelante en `npm run build`.
     print(f"Noticias seguras publicadas: {len(noticias)}")

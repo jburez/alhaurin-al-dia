@@ -66,6 +66,59 @@ function cleanText(value = '') {
   return String(value).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 }
 
+// Extrae un atributo de un fragmento de etiqueta ya localizado (p.ej. el
+// <button ...> completo), sin asumir en qué posición aparece respecto a
+// los demás atributos.
+function extraerAtributo(fragmentoTag, nombreAtributo) {
+  const regex = new RegExp(`\\b${nombreAtributo}\\s*=\\s*["']([^"']*)["']`, 'i');
+  const match = fragmentoTag.match(regex);
+  return match ? match[1] : null;
+}
+
+// Localiza la primera etiqueta <tagName> cuyo atributo class contenga
+// claseObjetivo como token completo (no como substring de otra clase), sin
+// depender del orden de atributos ni de qué otras clases lleve la etiqueta.
+// Devuelve también el índice donde termina la etiqueta, para poder acotar
+// una búsqueda posterior dentro de su contenido.
+function encontrarTagConClase(html, tagName, claseObjetivo) {
+  const regexTag = new RegExp(`<${tagName}\\b[^>]*>`, 'gi');
+  let m;
+  while ((m = regexTag.exec(html)) !== null) {
+    const tag = m[0];
+    const claseMatch = tag.match(/\bclass\s*=\s*["']([^"']*)["']/i);
+    if (claseMatch && claseMatch[1].split(/\s+/).includes(claseObjetivo)) {
+      return { tag, indiceFin: m.index + tag.length };
+    }
+  }
+  return null;
+}
+
+// id estable del bookmark (data-id de .bookmark-btn). Ausente en plantillas
+// legacy que no tienen ese botón -- se degrada a null sin error, nunca se
+// reconstruye a partir del título/slug.
+function extraerIdBookmark(html) {
+  const encontrado = encontrarTagConClase(html, 'button', 'bookmark-btn');
+  if (!encontrado) return null;
+  return extraerAtributo(encontrado.tag, 'data-id');
+}
+
+// URL real de la fuente original (dentro de .article-source-box), NO el
+// data-url del bookmark -- ese apunta a la propia URL interna de
+// alhaurinaldia.es. Se identifica el enlace por su función (el texto "Leer
+// en la fuente original"), no por ser simplemente "el primer <a>" -- eso
+// evita enganchar accidentalmente un enlace distinto si el markup cambia.
+// La ventana de 1000 caracteres es solo defensiva (evita recorrer el resto
+// del documento), no el criterio de selección en sí.
+function extraerEnlaceFuente(html) {
+  const encontrado = encontrarTagConClase(html, 'div', 'article-source-box');
+  if (!encontrado) return null;
+  const ventana = html.slice(encontrado.indiceFin, encontrado.indiceFin + 1000);
+  const enlaceMatch = ventana.match(/<a\b[^>]*>[\s\S]*?Leer en la fuente original[\s\S]*?<\/a>/i);
+  if (!enlaceMatch) return null;
+  const tagApertura = enlaceMatch[0].match(/<a\b[^>]*>/i)[0];
+  return extraerAtributo(tagApertura, 'href');
+}
+
 // Metadatos mínimos para una huérfana que nunca pasó por dedupe-news.js:
 // el HTML ya existe y es la fuente de verdad, así que se leen sus propias
 // metaetiquetas en vez de inventar nada.
@@ -82,8 +135,10 @@ function extractMetadataFromHtml(file, rel) {
   const ogImage = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i);
   const time = html.match(/<time\s+datetime=["']([^"']+)["']/i);
   const tag = html.match(/<span class=["']tag["']>([^<]+)<\/span>/i);
+  const id = extraerIdBookmark(html);
+  const enlace = extraerEnlaceFuente(html);
 
-  return {
+  const metadata = {
     titulo,
     descripcion: cleanText(description?.[1] || ''),
     resumen: cleanText(description?.[1] || ''),
@@ -93,6 +148,11 @@ function extractMetadataFromHtml(file, rel) {
     imagen: ogImage?.[1] || '',
     pagina: rel,
   };
+  // Mismo patrón que las 671 entradas ya existentes en el archivo: cuando
+  // no hay dato, la clave se omite (no se escribe null ni se inventa).
+  if (id) metadata.id = id;
+  if (enlace) metadata.enlace = enlace;
+  return metadata;
 }
 
 function parseDate(value) {

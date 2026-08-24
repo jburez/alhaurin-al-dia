@@ -9,6 +9,10 @@ permissions:
   contents: write
   actions: write
 
+concurrency:
+  group: generar-noticias
+  cancel-in-progress: false
+
 jobs:
   generar:
     runs-on: ubuntu-latest
@@ -36,12 +40,17 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generar noticias y sitemaps
+        # npm run news:pipeline envuelve exactamente estos dos comandos
+        # (build + whatsapp:today) bajo un lock exclusivo (flock, ver
+        # scripts/lib/pipeline_lock.py) -- protege contra una segunda
+        # ejecución concurrente del pipeline editorial mutando los mismos
+        # ficheros. El `concurrency:` de arriba es una segunda barrera
+        # independiente a nivel de GitHub Actions (serializa este workflow
+        # contra sí mismo antes de que el job ni siquiera arranque).
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-4.1-mini
-        run: |
-          npm run build
-          npm run whatsapp:today
+        run: npm run news:pipeline
 
       - name: Commit automático si hay cambios
         id: commit

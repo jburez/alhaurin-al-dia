@@ -4,6 +4,7 @@ import html
 import json
 import os
 import re
+import sys
 import unicodedata
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -19,6 +20,26 @@ from dotenv import load_dotenv
 from lib.footer import SITE_FOOTER_HTML
 from lib.analytics import CF_ANALYTICS_SNIPPET
 from lib.nav import render_nav
+from lib.editorial_rules import titulo_truncado, ultima_palabra_incompleta
+from lib.editorial_registry import (
+    PROMPT_VERSION,
+    cargar_registro,
+    calcular_content_hash,
+    generar_source_identity,
+    guardar_registro,
+    canonicalizar_url,
+    cargar_identidad_legacy,
+    resolver_identidad_noticia,
+    decidir_cache_editorial,
+    debe_reintentar_ia,
+    ai_attempts_seguro,
+    IdentidadColisionError,
+    IdentidadDuplicadaEnEjecucionError,
+    PaginaColisionError,
+    RegistroEditorialError,
+    CACHE_MISS_AI_NOT_SUCCESSFUL,
+)
+from lib.editorial_log import construir_evento, registrar_eventos
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
@@ -260,13 +281,6 @@ def extraer_primer_tema_informativo(texto):
     return ""
 
 
-TERMINALES_TITULO_INCOMPLETO = {
-    "a", "al", "ante", "bajo", "con", "contra", "de", "del", "desde", "durante",
-    "el", "en", "entre", "hacia", "hasta", "la", "las", "los", "para", "por",
-    "que", "según", "sin", "sobre", "tras", "un", "una", "y", "o",
-}
-
-
 def titular_desde_tema(tema):
     tema = limpiar_html(tema).strip(" .:-–—")
     if not tema:
@@ -275,12 +289,14 @@ def titular_desde_tema(tema):
     tema = tema[0].upper() + tema[1:] if tema else tema
     if "alhaurín" not in tema.lower() and "alhaurin" not in tema.lower():
         tema = f"{tema} en Alhaurín el Grande"
-    tema = tema[:90].rsplit(" ", 1)[0].rstrip(".,;:")
-    # Si el recorte a 90 caracteres deja el titular colgando en una
-    # preposición/conjunción (p. ej. "...del estado de"), seguir recortando
-    # palabra a palabra en vez de publicar un titular que termina a medias.
-    while tema and tema.rsplit(" ", 1)[-1].lower() in TERMINALES_TITULO_INCOMPLETO:
-        tema = tema.rsplit(" ", 1)[0].rstrip(".,;:")
+    if len(tema) > 90:
+        tema = tema[:90].rsplit(" ", 1)[0].rstrip(".,;:")
+        # Si el recorte a 90 caracteres deja el titular colgando en una
+        # palabra de data/reglas-editoriales.json:terminales_incompletos
+        # (p. ej. "...del estado de"), seguir recortando palabra a palabra
+        # en vez de publicar un titular que termina a medias.
+        while tema and ultima_palabra_incompleta(tema):
+            tema = tema.rsplit(" ", 1)[0].rstrip(".,;:")
     return tema
 
 
@@ -300,6 +316,10 @@ def generar_titulo_seo(titulo, texto, fuente):
     titulo_limpio = re.sub(r"\s+", " ", titulo_limpio)
     if len(titulo_limpio) > 95:
         titulo_limpio = titulo_limpio[:95].rsplit(" ", 1)[0].rstrip(".,;:")
+        # Mismo criterio que titular_desde_tema(): no dejar el recorte
+        # colgando en una palabra de terminales_incompletos.
+        while titulo_limpio and ultima_palabra_incompleta(titulo_limpio):
+            titulo_limpio = titulo_limpio.rsplit(" ", 1)[0].rstrip(".,;:")
     return titulo_limpio or "Actualidad local de Alhaurín el Grande"
 
 
@@ -497,9 +517,26 @@ def fallback_editorial(titulo_original, texto, fuente):
 
 
 def mejorar_noticia_con_ia(titulo_original, texto, fuente):
+    """Devuelve, además de titulo/descripcion/cuerpo/categoria/
+    seo_keywords, dos marcadores de estado interno para la caché del
+    registro editorial (lib/editorial_registry.py) -- NO se serializan en
+    la noticia pública, viven solo en la estructura paralela de bookkeeping
+    hasta que se persisten en el registro:
+
+    - ia_intentada: True únicamente si se llegó a realizar la llamada real
+      a client.responses.create(). Un fallo al importar el SDK, construir
+      el cliente o montar el prompt (antes de la llamada) NO cuenta como
+      intento -- no debe incrementar ai_attempts ni activar el backoff de
+      debe_reintentar_ia().
+    - ia_exitosa: True únicamente si la llamada real tuvo éxito Y la
+      respuesta parseada contiene contenido editorial utilizable (título y
+      cuerpo no vacíos) -- que la API responda HTTP correctamente no basta
+      por sí solo.
+    """
     fallback = fallback_editorial(titulo_original, texto, fuente)
     if not ia_activada():
-        return fallback
+        return {**fallback, "ia_exitosa": False, "ia_intentada": False}
+
     try:
         from openai import OpenAI
         client = OpenAI()
@@ -541,9 +578,20 @@ Fuente:
 Texto disponible:
 {texto[:4000]}
 """
+    except Exception as e:
+        # Fallo ANTES de la llamada real (import del SDK, construcción del
+        # cliente, montaje del prompt) -- no se intentó de verdad contra
+        # OpenAI, así que no cuenta para ai_attempts/backoff.
+        print("Error preparando IA:", e)
+        return {**fallback, "ia_exitosa": False, "ia_intentada": False}
+
+    try:
         response = client.responses.create(
             model=OPENAI_MODEL, input=prompt, temperature=0.2)
         data = parsear_json_ia(response.output_text)
+        if not isinstance(data, dict):
+            raise ValueError("La IA no devolvió un objeto JSON")
+
         titulo = limpiar_html(data.get("titulo") or fallback["titulo"])
         descripcion = normalizar_frase_completa(data.get(
             "descripcion") or fallback["descripcion"], fallback=fallback["descripcion"], max_caracteres=230)
@@ -559,16 +607,33 @@ Texto disponible:
         if not isinstance(keywords, list):
             keywords = []
         keywords = [limpiar_html(k) for k in keywords[:6] if limpiar_html(k)]
+        titulo_final = titulo[:95].rsplit(" ", 1)[0].rstrip(".,;:") if len(titulo) > 95 else titulo
+
+        # No basta con que la API responda HTTP correctamente: si tras el
+        # parseo no queda título o cuerpo con contenido real en la
+        # respuesta cruda (p. ej. la IA devolvió un JSON válido pero
+        # vacío/degenerado), es un fallo de resultado, no un éxito -- se
+        # trata igual que una excepción. Se evalúa sobre data.get(...), no
+        # sobre titulo_final/cuerpo ya procesados: esos siempre caen al
+        # fallback por campo y nunca quedarían vacíos.
+        if not str(data.get("titulo") or "").strip() or not str(data.get("cuerpo") or "").strip():
+            raise ValueError("La IA devolvió una respuesta sin título o cuerpo utilizable")
+
         return {
-            "titulo": titulo[:95].rsplit(" ", 1)[0].rstrip(".,;:") if len(titulo) > 95 else titulo,
+            "titulo": titulo_final,
             "descripcion": descripcion,
             "cuerpo": cuerpo,
             "categoria": categoria,
             "seo_keywords": keywords,
+            "ia_exitosa": True,
+            "ia_intentada": True,
         }
     except Exception as e:
+        # Fallo DURANTE/DESPUÉS de la llamada real (red, rate limit, JSON
+        # inválido, respuesta sin contenido utilizable...) -- esto SÍ fue un
+        # intento real contra OpenAI, cuenta para ai_attempts/backoff.
         print("Error IA:", e)
-        return fallback
+        return {**fallback, "ia_exitosa": False, "ia_intentada": True}
 
 
 def leer_feed(url):
@@ -795,10 +860,37 @@ def escribir_si_cambia(ruta, contenido):
     return True
 
 
-def generar_paginas_noticias(noticias):
-    NOTICIAS_DIR.mkdir(parents=True, exist_ok=True)
+def asignar_paginas_noticias(noticias):
+    """Slug write-once, puro/en memoria -- sin tocar disco. Una noticia que
+    ya trae "pagina" asignada (heredada del registro editorial o del
+    puente legacy vía resolver_identidad_noticia() en obtener_noticias())
+    NUNCA se recalcula aquí, aunque el titular haya cambiado -- solo se
+    genera una ruta nueva desde el título para noticias genuinamente sin
+    página previa.
+
+    Las páginas ya asignadas se reservan primero, con validación de
+    integridad vía id_por_pagina: misma página + mismo id es la MISMA
+    noticia (compatible, write-once normal); misma página + id DISTINTO es
+    una colisión real -- publicar dos artículos distintos en la misma URL
+    fusionaría su contenido en el HTML sin que nadie lo decidiera, así que
+    se rechaza con PaginaColisionError en vez de sobrescribir en
+    silencio. Separada de la escritura a disco para que guardar_noticias()
+    pueda validar todo (bookkeeping, páginas, registro) ANTES de escribir
+    ningún artefacto."""
     rutas_usadas = set()
+    id_por_pagina = {}
     for noticia in noticias:
+        pagina = noticia.get("pagina")
+        if not pagina:
+            continue
+        id_existente = id_por_pagina.get(pagina)
+        if id_existente is not None and id_existente != noticia["id"]:
+            raise PaginaColisionError(pagina, id_existente, noticia["id"])
+        id_por_pagina[pagina] = noticia["id"]
+        rutas_usadas.add(pagina)
+    for noticia in noticias:
+        if noticia.get("pagina"):
+            continue
         ruta_base = generar_ruta_pagina(noticia.get(
             "titulo", noticia.get("id", "noticia")))
         ruta = ruta_base
@@ -808,11 +900,27 @@ def generar_paginas_noticias(noticias):
             contador += 1
         rutas_usadas.add(ruta)
         noticia["pagina"] = ruta
+
+
+def escribir_paginas_noticias(noticias):
+    """Escribe a disco el HTML de cada noticia. Asume que asignar_paginas_noticias()
+    ya se ejecutó -- toda noticia debe traer ya "pagina" asignada."""
+    NOTICIAS_DIR.mkdir(parents=True, exist_ok=True)
     escritas = 0
     for noticia in noticias:
         if escribir_si_cambia(BASE_DIR / noticia["pagina"], generar_html_noticia(noticia, noticias)):
             escritas += 1
     print("Páginas individuales creadas/actualizadas:", escritas, "de", len(noticias))
+
+
+def generar_paginas_noticias(noticias):
+    """Envoltorio de compatibilidad: asigna páginas (write-once) y las
+    escribe a disco en un solo paso. Lo usa regenerar_paginas_noticias.py
+    (que no pasa por guardar_noticias()); guardar_noticias() en cambio
+    llama a asignar_paginas_noticias()/escribir_paginas_noticias() por
+    separado para poder validar entre ambos pasos."""
+    asignar_paginas_noticias(noticias)
+    escribir_paginas_noticias(noticias)
 
 
 def generar_paginas_categorias(noticias):
@@ -837,9 +945,70 @@ def generar_paginas_categorias(noticias):
 
 
 def obtener_noticias():
+    """Devuelve (noticias, bookkeeping_por_id).
+
+    noticias: lista pública, mismo esquema de siempre -- SIN campos de
+    identidad/caché internos.
+
+    bookkeeping_por_id: dict id -> {source_identity, content_hash,
+    content_hash_previo, prompt_version, ia_exitosa, ia_intentada,
+    ai_attempts, last_ai_attempt, date_published, date_modified_previa,
+    editorial_previo, pagina_previa, motivo_cache}, completamente separado
+    del dict de noticia pública. content_hash_previo e ia_intentada
+    (task #17) viajan aquí sin más uso dentro de esta función -- los
+    consume guardar_noticias() para construir el log estructurado de
+    disparadores de actualización (scripts/lib/editorial_log.py). Se
+    filtra al final para contener EXACTAMENTE los mismos ids que
+    `noticias` (el recorte a MAX_NOTICIAS_TOTAL puede dejar candidatas
+    fuera).
+
+    date_modified NO se decide aquí: date_modified_previa (el valor ya
+    persistido) y editorial_previo (el payload cacheado, o None si no
+    había) viajan como datos crudos -- es guardar_noticias() quien, con la
+    noticia ya SANEADA (post quality-gate, que puede rescatar el titular o
+    rechazar la noticia entera), decide si el contenido público final
+    cambió de verdad respecto al anterior. Decidirlo aquí, sobre el
+    resultado pre-quality-gate, contaría como "modificación editorial" un
+    cambio que sanear_noticia() podría revertir o incluso rechazar.
+
+    El registro editorial (data/noticias-editorial.json) NO se escribe
+    aquí: esta función solo LEE el registro y el puente legacy -- la
+    persistencia ocurre más tarde, en guardar_noticias(), después del
+    quality gate. Escribir aquí congelaría en el registro candidatas que
+    todavía pueden ser rechazadas.
+
+    Orden por entrada: source_identity -> content_hash -> duplicado dentro
+    de esta misma ejecución -> entrada previa del registro -> puente
+    legacy -> resolver id/pagina/date_published -> comprobar colisión de
+    id -> SOLO ENTONCES decidir caché y llamar a la IA/fallback. La
+    identidad se resuelve antes de gastar una llamada real a OpenAI.
+
+    Fail-closed, sin capturar nada: el puente legacy (cargar_identidad_legacy),
+    IdentidadLegacyAmbiguaError/IdentidadLegacyInvalidaError de
+    resolver_identidad_noticia(), IdentidadColisionError e
+    IdentidadDuplicadaEnEjecucionError se propagan y abortan la ejecución
+    completa -- son corrupciones/ambigüedades estructurales de identidad,
+    no un problema de un artículo aislado (a diferencia de "no es local" o
+    "sin identidad posible", que sí se descartan por artículo)."""
     noticias = []
+    bookkeeping_por_id = {}
+    vistos_por_source_identity = {}
     urls_vistas = set()
     fuentes = cargar_fuentes()
+
+    registro = cargar_registro()
+    # Fail-closed: SIN try/except aquí. Un fichero ausente ya es {} dentro
+    # de cargar_identidad_legacy(); cualquier otro fallo (JSON corrupto,
+    # colisión intra-fichero, entrada sin id) debe abortar la ejecución.
+    legado_activas_indice = cargar_identidad_legacy(OUTPUT_FILE)
+    legado_archivo_indice = cargar_identidad_legacy(BASE_DIR / "data" / "noticias-archivo.json")
+
+    def _editorial_reutilizable(entrada):
+        editorial = entrada.get("editorial") if entrada else None
+        if isinstance(editorial, dict) and editorial.get("titulo") and editorial.get("cuerpo"):
+            return editorial
+        return None
+
     print("\nGenerando noticias para Alhaurín al Día")
     print("Archivo destino:", OUTPUT_FILE)
     print("Fuentes activas:", len(fuentes), "de", FUENTES_FILE.relative_to(BASE_DIR))
@@ -868,20 +1037,151 @@ def obtener_noticias():
             if not incluir:
                 print(f"✗ Descartada por no ser local: {titulo_original}")
                 continue
-            mejora = mejorar_noticia_con_ia(
-                titulo_original, texto_limpio, fuente["nombre"])
+
+            # --- 1. Identidad, ANTES de tocar la IA. ---
+            try:
+                source_identity = generar_source_identity(
+                    entry_id=entry.get("id"),
+                    url=url,
+                    source_key=fuente["id"],
+                    titulo_fallback=titulo_original,
+                    fuente_fallback=fuente["nombre"],
+                )
+            except ValueError as exc:
+                print(f"✗ Descartada, sin identidad posible: {titulo_original} ({exc})")
+                continue
+
+            content_hash = calcular_content_hash(titulo_original, texto_limpio)
+
+            # Repetición de source_identity DENTRO de esta misma ejecución
+            # (dos entradas de feed distintas resolviendo a la misma
+            # identidad) -- se comprueba ANTES de gastar IA y antes de
+            # tocar el registro/puente legacy para esta entrada.
+            content_hash_previo_en_run = vistos_por_source_identity.get(source_identity)
+            if content_hash_previo_en_run is not None:
+                if content_hash_previo_en_run == content_hash:
+                    print(f"✗ Descartada, duplicado exacto dentro de esta ejecución: {titulo_original}")
+                    continue
+                raise IdentidadDuplicadaEnEjecucionError(source_identity, content_hash_previo_en_run, content_hash)
+            vistos_por_source_identity[source_identity] = content_hash
+
+            entrada_previa = registro.get(source_identity)
+
+            try:
+                clave_url = canonicalizar_url(url)
+            except ValueError:
+                clave_url = None
+            legado_activas = legado_activas_indice.get(clave_url) if clave_url else None
+            legado_archivo = legado_archivo_indice.get(clave_url) if clave_url else None
+
+            # Sin try/except: IdentidadLegacyAmbiguaError/IdentidadLegacyInvalidaError/
+            # RegistroEditorialError se propagan y abortan -- una identidad
+            # histórica contradictoria es un problema estructural, no de
+            # un artículo aislado.
+            id_final, pagina_previa, fecha_previa = resolver_identidad_noticia(
+                entrada_previa, legado_activas, legado_archivo, source_identity, titulo_original, generar_id,
+            )
+
+            existente_bookkeeping = bookkeeping_por_id.get(id_final)
+            if existente_bookkeeping is not None and existente_bookkeeping["source_identity"] != source_identity:
+                # Colisión de id entre dos source_identity distintas DENTRO
+                # de esta misma ejecución: error estructural, aborta.
+                raise IdentidadColisionError(id_final, existente_bookkeeping["source_identity"], source_identity)
+
+            # --- 2. Decisión de caché, y solo entonces IA/fallback. ---
+            reusar, motivo_cache = decidir_cache_editorial(entrada_previa, content_hash)
+            editorial_cacheado = _editorial_reutilizable(entrada_previa)
+
+            if reusar:
+                # CACHE_HIT real: nunca se llama a mejorar_noticia_con_ia().
+                if editorial_cacheado is None:
+                    raise RegistroEditorialError(
+                        f"Entrada del registro para source_identity={source_identity!r} está marcada "
+                        f"como reutilizable (CACHE_HIT) pero no tiene un payload editorial válido: "
+                        f"{entrada_previa!r}"
+                    )
+                mejora = {**editorial_cacheado, "ia_exitosa": True, "ia_intentada": False}
+                ai_attempts_nuevo = 0
+                last_ai_attempt_nuevo = entrada_previa.get("last_ai_attempt")
+            elif motivo_cache == CACHE_MISS_AI_NOT_SUCCESSFUL and not debe_reintentar_ia(entrada_previa):
+                # En backoff tras fallos previos: no repetir la llamada real
+                # a OpenAI todavía. content_hash no cambió, así que
+                # regenerar el fallback produciría lo mismo -- se reutiliza
+                # sin tocar ai_attempts (no hubo intento nuevo).
+                if editorial_cacheado is None:
+                    raise RegistroEditorialError(
+                        f"Entrada del registro para source_identity={source_identity!r} está en "
+                        f"backoff (AI_NOT_SUCCESSFUL) pero no tiene un payload de fallback "
+                        f"persistido: {entrada_previa!r}"
+                    )
+                mejora = {**editorial_cacheado, "ia_exitosa": False, "ia_intentada": False}
+                ai_attempts_nuevo = ai_attempts_seguro(entrada_previa.get("ai_attempts"))
+                last_ai_attempt_nuevo = entrada_previa.get("last_ai_attempt")
+            else:
+                # Nueva, contenido/prompt_version cambiados, o backoff ya
+                # expirado -- llamada real (o intento real) a
+                # mejorar_noticia_con_ia().
+                mejora = mejorar_noticia_con_ia(titulo_original, texto_limpio, fuente["nombre"])
+                if mejora["ia_intentada"]:
+                    # ai_attempts representa fallos consecutivos para LA
+                    # MISMA clave de caché (source_identity + content_hash +
+                    # prompt_version): solo AI_NOT_SUCCESSFUL continúa la
+                    # racha anterior -- NEW/CONTENT_CHANGED/PROMPT_VERSION
+                    # empiezan de cero, es una clave distinta.
+                    last_ai_attempt_nuevo = datetime.now(timezone.utc).isoformat()
+                    if mejora["ia_exitosa"]:
+                        ai_attempts_nuevo = 0
+                    else:
+                        continua_racha = entrada_previa is not None and motivo_cache == CACHE_MISS_AI_NOT_SUCCESSFUL
+                        base = ai_attempts_seguro(entrada_previa.get("ai_attempts")) if continua_racha else 0
+                        ai_attempts_nuevo = base + 1
+                else:
+                    # IA desactivada -- no fue un intento real. Solo se
+                    # conserva el estado de retry si la clave de caché es
+                    # la misma que lo generó (AI_NOT_SUCCESSFUL); si la
+                    # clave cambió (NEW/CONTENT_CHANGED/PROMPT_VERSION), la
+                    # racha pertenece a una clave distinta y no se hereda
+                    # -- si no, un cambio de contenido podría meter
+                    # artificialmente en backoff a una clave que nunca falló.
+                    if motivo_cache == CACHE_MISS_AI_NOT_SUCCESSFUL and entrada_previa is not None:
+                        ai_attempts_nuevo = ai_attempts_seguro(entrada_previa.get("ai_attempts"))
+                        last_ai_attempt_nuevo = entrada_previa.get("last_ai_attempt")
+                    else:
+                        ai_attempts_nuevo = 0
+                        last_ai_attempt_nuevo = None
+
+            fecha_entry = normalizar_fecha_entry(entry)
+            date_published = fecha_previa or fecha_entry
+            date_modified_previa = entrada_previa.get("date_modified") if entrada_previa else None
+
             noticia = {
-                "id": generar_id(url, titulo_original), "titulo": mejora["titulo"], "titulo_original": titulo_original,
+                "id": id_final, "titulo": mejora["titulo"], "titulo_original": titulo_original,
                 "descripcion": mejora["descripcion"], "resumen": mejora["descripcion"], "cuerpo": mejora["cuerpo"],
-                "fecha": normalizar_fecha_entry(entry), "fuente": fuente["nombre"],
+                "fecha": fecha_entry, "fuente": fuente["nombre"],
                 "categoria": mejora["categoria"], "categoria_url": f"categoria/{slugify(mejora['categoria'])}/",
                 "seo_keywords": mejora.get("seo_keywords", []), "enlace": url, "url": url,
                 "imagen": extraer_imagen(entry, imagen_feed), "prioridad": prioridad_fuente(fuente["nombre"]),
                 "requiere_revision_geografica": requiere_revision,
+                "pagina": pagina_previa or "",
             }
             noticias.append(noticia)
+            bookkeeping_por_id[id_final] = {
+                "source_identity": source_identity,
+                "content_hash": content_hash,
+                "content_hash_previo": entrada_previa.get("content_hash") if entrada_previa else None,
+                "prompt_version": PROMPT_VERSION,
+                "ia_exitosa": mejora["ia_exitosa"],
+                "ia_intentada": mejora["ia_intentada"],
+                "ai_attempts": ai_attempts_nuevo,
+                "last_ai_attempt": last_ai_attempt_nuevo,
+                "date_published": date_published,
+                "date_modified_previa": date_modified_previa,
+                "editorial_previo": editorial_cacheado,
+                "pagina_previa": pagina_previa,
+                "motivo_cache": motivo_cache,
+            }
             aviso_geo = " ⚠ revisar geografía" if requiere_revision else ""
-            print(f"✓ {noticia['categoria']} | {noticia['titulo']}{aviso_geo}")
+            print(f"✓ [{motivo_cache}] {noticia['categoria']} | {noticia['titulo']}{aviso_geo}")
     # calcular_score (prioridad editorial + boost de recencia) decide qué
     # noticias entran cuando hay más candidatas que hueco disponible, pero el
     # ORDEN de publicación final es cronológico puro por fecha original de la
@@ -891,19 +1191,185 @@ def obtener_noticias():
     noticias.sort(key=calcular_score, reverse=True)
     noticias = noticias[:MAX_NOTICIAS_TOTAL]
     noticias.sort(key=lambda n: fecha_para_ordenacion(n["fecha"]), reverse=True)
-    return noticias
+
+    # bookkeeping_por_id debe representar EXACTAMENTE el mismo conjunto que
+    # noticias -- el recorte a MAX_NOTICIAS_TOTAL de arriba puede haber
+    # dejado fuera candidatas que sí llegaron a construir su bookkeeping.
+    ids_finales = {n["id"] for n in noticias}
+    bookkeeping_por_id = {id_: meta for id_, meta in bookkeeping_por_id.items() if id_ in ids_finales}
+
+    return noticias, bookkeeping_por_id
 
 
-def guardar_noticias(noticias):
-    generar_paginas_noticias(noticias)
+def guardar_noticias(noticias, bookkeeping_por_id):
+    """Persiste el resultado final. Orden deliberado: 1) validar todas las
+    invariantes, 2) construir TODO en memoria (páginas asignadas + registro
+    nuevo completo), 3) solo entonces escribir artefactos a disco (HTML,
+    categorías, data/noticias.json, registro editorial) -- si algo
+    inesperado apareciera durante la construcción (ids duplicados,
+    bookkeeping faltante, página vacía, source_identity repetida con id
+    distinto...), falla antes de haber tocado el sitio, no a medias.
+
+    bookkeeping_por_id es OBLIGATORIO (sin valor por defecto): un llamador
+    que lo olvide debe fallar alto (TypeError), no degradar en silencio a
+    "no persistir registro editorial esta vez".
+
+    El registro solo se actualiza para los ids presentes en `noticias` --
+    cuando se invoca desde generar_noticias_seguro.py (el único punto de
+    entrada real de producción), eso son exactamente los supervivientes de
+    sanear_noticia()/deduplicar_noticias(); una candidata rechazada por el
+    quality gate ni siquiera llega aquí. Es aceptable que bookkeeping_por_id
+    traiga ids de MÁS (candidatas que obtener_noticias() vio pero que
+    luego se descartaron o deduplicaron) -- lo que NO es aceptable es que
+    falte alguno de los que sí se van a publicar.
+
+    Esta función es la frontera de persistencia: no confía ciegamente en
+    que obtener_noticias() ya garantizó ids únicos y una relación 1:1
+    source_identity<->id -- lo revalida aquí, sobre el conjunto final que
+    realmente se va a publicar (que puede ser un subconjunto filtrado por
+    sanear_noticia()/deduplicar_noticias(), no necesariamente idéntico al
+    que construyó obtener_noticias()).
+
+    date_modified se decide comparando el payload público FINAL
+    (titulo/descripcion/cuerpo/categoria/seo_keywords ya saneados, después
+    del quality gate) contra editorial_previo (el payload cacheado de la
+    ejecución anterior, transportado sin procesar en bookkeeping_por_id) --
+    nunca contra el resultado crudo de mejorar_noticia_con_ia(), que
+    sanear_titulo() todavía puede rescatar o rechazar. La misma comparación
+    cubre, sin caso especial, que un fallback anterior se haya sustituido
+    por un éxito de IA tras reintento: si el texto final cambió respecto al
+    cacheado, cuenta como modificación editorial real."""
+    # 1a. ids únicos -- un set oculta duplicados en silencio, así que se
+    # compara la longitud contra la lista original antes de usar el set
+    # para cualquier otra cosa.
+    ids_noticias = [n["id"] for n in noticias]
+    if len(set(ids_noticias)) != len(ids_noticias):
+        raise RegistroEditorialError(
+            "Hay ids duplicados entre las noticias a publicar -- cada noticia publicada debe tener un id único."
+        )
+
+    # 1b. bookkeeping presente para cada una.
+    faltantes = set(ids_noticias) - set(bookkeeping_por_id.keys())
+    if faltantes:
+        raise RegistroEditorialError(
+            f"Faltan entradas de bookkeeping para {len(faltantes)} noticia(s) a publicar: {sorted(faltantes)}"
+        )
+
+    # 1c. source_identity única -> siempre el mismo id (dos ids distintos
+    # con la misma source_identity harían que el segundo sobrescribiera en
+    # silencio al primero en el registro, indexado por source_identity).
+    id_por_source_identity = {}
+    for noticia in noticias:
+        meta = bookkeeping_por_id[noticia["id"]]
+        source_identity = meta["source_identity"]
+        id_existente = id_por_source_identity.get(source_identity)
+        if id_existente is not None and id_existente != noticia["id"]:
+            raise RegistroEditorialError(
+                f"source_identity={source_identity!r} está asociada a dos ids distintos entre "
+                f"las noticias a publicar: {id_existente!r} y {noticia['id']!r}"
+            )
+        id_por_source_identity[source_identity] = noticia["id"]
+
+    # 2. Asignar páginas (write-once) EN MEMORIA, sin escribir HTML todavía.
+    asignar_paginas_noticias(noticias)
+    sin_pagina = [n["id"] for n in noticias if not n.get("pagina")]
+    if sin_pagina:
+        raise RegistroEditorialError(
+            f"Noticia(s) sin 'pagina' asignada tras asignar_paginas_noticias(): {sin_pagina}"
+        )
+
+    # 3. Construir COMPLETAMENTE el registro nuevo en memoria, y los
+    # eventos de log de disparadores de actualización (task #17) -- el log
+    # es puramente observacional y se escribe al FINAL, después de todos
+    # los artefactos autoritativos (ver paso 5).
+    registro = cargar_registro()
+    eventos_log = []
+    timestamp_run = datetime.now(timezone.utc).isoformat()
+    for noticia in noticias:
+        meta = bookkeeping_por_id[noticia["id"]]
+        payload_final = {
+            "titulo": noticia.get("titulo"), "descripcion": noticia.get("descripcion"),
+            "cuerpo": noticia.get("cuerpo"), "categoria": noticia.get("categoria"),
+            "seo_keywords": noticia.get("seo_keywords", []),
+        }
+        # public_content_changed: la MISMA comparación que ya decidía
+        # date_modified -- sin cambiar su lógica, solo con nombre
+        # explícito para que el log de task #17 la exponga. Con
+        # editorial_previo=None (fuente nueva) queda False: no hay
+        # representación pública previa con la que comparar.
+        public_content_changed = meta["editorial_previo"] is not None and payload_final != meta["editorial_previo"]
+        if meta["editorial_previo"] is None:
+            date_modified = None
+        elif public_content_changed:
+            date_modified = datetime.now(timezone.utc).isoformat()
+        else:
+            date_modified = meta["date_modified_previa"]
+
+        registro[meta["source_identity"]] = {
+            "id": noticia["id"],
+            "source_url": noticia.get("enlace") or noticia.get("url"),
+            "content_hash": meta["content_hash"],
+            "prompt_version": meta["prompt_version"],
+            "ia_exitosa": meta["ia_exitosa"],
+            "ai_attempts": meta["ai_attempts"],
+            "last_ai_attempt": meta["last_ai_attempt"],
+            "editorial": payload_final,
+            "pagina": noticia["pagina"],
+            "date_published": meta["date_published"],
+            "date_modified": date_modified,
+        }
+
+        eventos_log.append(construir_evento(
+            source_identity=meta["source_identity"],
+            id_=noticia["id"],
+            pagina=noticia["pagina"],
+            previous_content_hash=meta["content_hash_previo"],
+            current_content_hash=meta["content_hash"],
+            cache_status=meta["motivo_cache"],
+            ai_called=meta["ia_intentada"],
+            ai_success=meta["ia_exitosa"],
+            public_content_changed=public_content_changed,
+            previous_date_modified=meta["date_modified_previa"],
+            resulting_date_modified=date_modified,
+            timestamp=timestamp_run,
+        ))
+
+    # 4. Solo ahora, con todo validado y construido, escribir artefactos
+    # autoritativos.
+    escribir_paginas_noticias(noticias)
     generar_paginas_categorias(noticias)
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(noticias, f, ensure_ascii=False, indent=2)
 
+    guardar_registro(registro)
+
     print("Noticias guardadas:", OUTPUT_FILE)
+
+    # 5. Log observacional (task #17), estrictamente AL FINAL del
+    # persistence boundary completo -- después de HTML, categorías,
+    # data/noticias.json y el registro editorial, todos ya escritos con
+    # éxito. registrar_eventos() es best-effort por contrato (nunca
+    # lanza): un fallo aquí no debe poder revertir ni invalidar una
+    # publicación cuyo estado editorial principal ya quedó persistido
+    # correctamente.
+    registrar_eventos(eventos_log)
 
 
 if __name__ == "__main__":
-    guardar_noticias(obtener_noticias())
+    # generar_noticias.py NO es un entrypoint de publicación: guardar_noticias()
+    # asume que solo recibe supervivientes del quality gate
+    # (sanear_noticia()/deduplicar_noticias()), y el único sitio que aplica
+    # ese gate antes de llamarla es scripts/generar_noticias_seguro.py (el
+    # entrypoint real de producción, npm run news). Delegar aquí importando
+    # ese módulo arriesgaría cargar este fichero dos veces (como __main__ y
+    # como import de generar_noticias_seguro.py) -- se deja sin
+    # implementar deliberadamente en vez de introducir esa dependencia
+    # circular.
+    print(
+        "Este módulo no es un entrypoint de publicación. "
+        "Usa scripts/generar_noticias_seguro.py.",
+        file=sys.stderr,
+    )
+    sys.exit(2)

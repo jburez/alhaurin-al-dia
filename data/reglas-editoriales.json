@@ -1,0 +1,53 @@
+{
+  "_comentario": "Fuente única de reglas de calidad editorial (Fase 2). Consolida las 3 listas de terminales que antes vivían por separado en validar_contenido.py, generar_noticias_seguro.py y generar_noticias.py, ampliadas con casos reales encontrados en producción (posesivos y verbos sin complemento). Consumido por scripts/lib/editorial_rules.py.",
+
+  "terminales_incompletos": [
+    "a", "al", "ante", "bajo", "con", "contra", "de", "del", "desde", "durante",
+    "el", "en", "entre", "hacia", "hasta", "la", "las", "los", "para", "por",
+    "que", "según", "sin", "sobre", "tras", "un", "una", "y", "o",
+    "impulsar", "presentar", "celebrar", "organizar", "convocar", "abrir",
+    "su", "sus", "mi", "mis", "tu", "tus",
+    "nuestro", "nuestra", "nuestros", "nuestras",
+    "vuestro", "vuestra", "vuestros", "vuestras",
+    "puedan", "pueda", "podrán", "podrá",
+    "deba", "deban", "debería", "deberían",
+    "quiera", "quieran"
+  ],
+
+  "conectores_inicio_sospechoso": [
+    "sin embargo", "además", "asimismo", "por su parte", "no obstante",
+    "en este sentido", "de esta manera", "según ha explicado",
+    "esta iniciativa", "esta medida", "el objetivo es",
+    "ambas administraciones", "por otro lado", "en cuanto a", "cabe destacar"
+  ],
+
+  "stopwords_jaccard": [
+    "alhaurin", "alhaurín", "grande", "malaga", "málaga", "2026", "2025",
+    "noticia", "noticias", "actualidad", "local", "programa", "video", "vídeo",
+    "ayuntamiento", "rtv", "atv", "diario", "sur", "europa", "press",
+    "para", "sobre", "desde", "hasta", "este", "esta", "estos", "estas",
+    "entre", "tras", "con", "del", "los", "las", "una", "uno", "por", "que",
+    "como", "el", "la", "de", "y", "en", "un", "al"
+  ],
+
+  "stopwords_entidades": [
+    "ayuntamiento", "junta", "junta de andalucía", "junta de andalucia",
+    "subvención", "subvencion", "subvenciones", "obra", "obras",
+    "agua", "tráfico", "trafico", "asociación", "asociacion", "asociaciones",
+    "evento", "eventos", "ayuda", "ayudas", "convocatoria",
+    "concejalía", "concejalia", "alcalde", "alcaldesa", "diputación", "diputacion"
+  ],
+
+  "umbrales": {
+    "jaccard_near_duplicate": 0.72,
+    "jaccard_aviso": 0.78,
+    "jaccard_exact_duplicate": 0.95,
+    "ventana_dias_duplicado": 14,
+    "titulo_longitud_min": 20,
+    "titulo_longitud_max": 95,
+    "descripcion_longitud_min": 40,
+    "descripcion_longitud_max": 230,
+    "cuerpo_longitud_min": 80,
+    "quality_score_aceptable": 60
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-24T12:53:40+02:00",
+  "actualizado": "2026-08-24T17:55:46+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
@@ -139,9 +139,9 @@
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.3 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.4 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.3,
+      "gramineas": 0.4,
       "olivo": 0.0
     }
   ],

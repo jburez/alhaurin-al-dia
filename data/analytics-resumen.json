@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-08-25T20:01:57.119Z",
-  "visitas24h": 10,
-  "paginasVistas24h": 11,
+  "actualizado": "2026-08-25T20:43:33.470Z",
+  "visitas24h": 12,
+  "paginasVistas24h": 14,
   "topPaginas": [
     {
       "ruta": "/",
@@ -16,12 +16,12 @@
       "vistas": 10
     },
     {
-      "ruta": "/noticias/alhaurin-el-grande-presenta-la-romeria-2026-y-eventos-culturales-en-septiembre-y-octubre",
+      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
       "vistas": 8
     },
     {
-      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
-      "vistas": 7
+      "ruta": "/noticias/alhaurin-el-grande-presenta-la-romeria-2026-y-eventos-culturales-en-septiembre-y-octubre",
+      "vistas": 8
     }
   ]
 }

@@ -1,22 +1,8 @@
 {
-  "actualizado": "2026-08-25T00:52:13.517Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 274 eventos próximos.",
+  "actualizado": "2026-08-25T03:35:30.310444+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 272 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-11719",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "XLIII Noche Flamenca 💃🏻",
-      "descripcion": "XLIII Noche Flamenca Villa del Alhaurín el Grande La XLIII Noche Flamenca Villa de Alhaurín el Grande reunirá el próximo 25 de julio a tres nombres imprescindibles del panorama flamenco:...",
-      "lugar": "",
-      "inicio": "2026-07-25T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/xliii-noche-flamenca-%f0%9f%92%83%f0%9f%8f%bb/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-5402",
       "tipo": "Gastronomía",
@@ -4094,21 +4080,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

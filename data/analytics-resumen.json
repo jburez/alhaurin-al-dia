@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-25T23:16:52.685Z",
+  "actualizado": "2026-08-25T23:45:51.004Z",
   "visitas24h": 11,
   "paginasVistas24h": 13,
   "topPaginas": [
@@ -12,7 +12,7 @@
       "vistas": 11
     },
     {
-      "ruta": "/planes/",
+      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
       "vistas": 8
     },
     {
@@ -20,7 +20,7 @@
       "vistas": 8
     },
     {
-      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
+      "ruta": "/planes/",
       "vistas": 8
     }
   ]

@@ -45,6 +45,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
   },
+  "guid:atv-alhaurin-youtube:yt:video:dbCHGtOLhWM": {
+    "ai_attempts": 0,
+    "content_hash": "b20f9d225b5b9ab5850b6ae002ee1fe40175ee6a",
+    "date_modified": null,
+    "date_published": "2026-08-25T12:13:04+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Alhaurín el Grande se prepara para unas jornadas de formación de clarinete que tendrán lugar del 26 al 29 de agosto, reuniendo a alumnos de toda España. El programa incluye clases individuales y colectivas impartidas por profesionales internacionales, además de dos conciertos: uno de profesores el viernes 28 y otro de alumnos el sábado 29.\n\nParalelamente, el Ayuntamiento y Fedelhorce mantienen activa hasta septiembre la campaña 'Sella tu Sueño', destinada a incentivar las compras en los comercios asociados y premiar la fidelidad de los clientes, dinamizando así la economía local.\n\nEn el ámbito deportivo, la joven alhaurina Iris Gutiérrez representará a la localidad y a España en el Campeonato Mundial de Artes Marciales Mixtas en Georgia, mientras que el CD Alhaurino B disputó un partido solidario para apoyar a una niña con síndrome DYRK1A, destinando la recaudación íntegra a esta causa.",
+      "descripcion": "Del 26 al 29 de agosto, Alhaurín el Grande acoge jornadas de clarinete con conciertos y continúa la campaña 'Sella tu Sueño' para impulsar el comercio local.",
+      "seo_keywords": [
+        "Jornadas de clarinete Alhaurín el Grande",
+        "Campaña Sella tu Sueño 2026",
+        "Iris Gutiérrez MMA Alhaurín"
+      ],
+      "titulo": "Alhaurín el Grande celebra jornadas de clarinete y apoya causas solidarias en agosto 2026"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-dbchgtolhwm-7ad64983",
+    "last_ai_attempt": "2026-08-25T12:59:50.614289+00:00",
+    "pagina": "noticias/alhaurin-el-grande-celebra-jornadas-de-clarinete-y-apoya-causas-solidarias-en-agosto-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=dbCHGtOLhWM"
+  },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224629": {
     "ai_attempts": 0,
     "content_hash": "69bc8150b9d020b210517a760d3278876bbf78c8",

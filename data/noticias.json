@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-dbchgtolhwm-7ad64983",
+        "titulo": "Alhaurín el Grande celebra jornadas de clarinete y apoya causas solidarias en agosto 2026",
+        "titulo_original": "NOTICIAS ATV 25 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "descripcion": "Del 26 al 29 de agosto, Alhaurín el Grande acoge jornadas de clarinete con conciertos y continúa la campaña 'Sella tu Sueño' para impulsar el comercio local.",
+        "resumen": "Del 26 al 29 de agosto, Alhaurín el Grande acoge jornadas de clarinete con conciertos y continúa la campaña 'Sella tu Sueño' para impulsar el comercio local.",
+        "cuerpo": "Alhaurín el Grande se prepara para unas jornadas de formación de clarinete que tendrán lugar del 26 al 29 de agosto, reuniendo a alumnos de toda España. El programa incluye clases individuales y colectivas impartidas por profesionales internacionales, además de dos conciertos: uno de profesores el viernes 28 y otro de alumnos el sábado 29.\n\nParalelamente, el Ayuntamiento y Fedelhorce mantienen activa hasta septiembre la campaña 'Sella tu Sueño', destinada a incentivar las compras en los comercios asociados y premiar la fidelidad de los clientes, dinamizando así la economía local.\n\nEn el ámbito deportivo, la joven alhaurina Iris Gutiérrez representará a la localidad y a España en el Campeonato Mundial de Artes Marciales Mixtas en Georgia, mientras que el CD Alhaurino B disputó un partido solidario para apoyar a una niña con síndrome DYRK1A, destinando la recaudación íntegra a esta causa.",
+        "fecha": "2026-08-25T12:13:04+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
+        "seo_keywords": [
+            "Jornadas de clarinete Alhaurín el Grande",
+            "Campaña Sella tu Sueño 2026",
+            "Iris Gutiérrez MMA Alhaurín"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=dbCHGtOLhWM",
+        "url": "https://www.youtube.com/watch?v=dbCHGtOLhWM",
+        "imagen": "https://i1.ytimg.com/vi/dbCHGtOLhWM/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-celebra-jornadas-de-clarinete-y-apoya-causas-solidarias-en-agosto-2026.html"
+    },
+    {
         "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-aa579f53",
         "titulo": "Gala benéfica en Alhaurín el Grande para apoyar a las monjas clarisas de Málaga",
         "titulo_original": "Alhaurín el Grande acogerá una gala benéfica a favor de las monjas clarisas de Málaga",
@@ -44,29 +67,6 @@
         "prioridad": 90,
         "requiere_revision_geografica": false,
         "pagina": "noticias/presentacion-de-los-bebes-y-misa-en-honor-a-nuestra-senora-de-gracia.html"
-    },
-    {
-        "id": "https-fedelhorce-es-masterclass-facturacion-electronica-y-verifactu-e1cf96da",
-        "titulo": "Masterclass en Alhaurín el Grande sobre facturación electrónica y Verifactu",
-        "titulo_original": "Masterclass | Facturación electrónica y Verifactu",
-        "descripcion": "Fedelhorce organiza una masterclass para explicar los cambios en facturación electrónica con Verifactu y cómo afectan a las empresas locales.",
-        "resumen": "Fedelhorce organiza una masterclass para explicar los cambios en facturación electrónica con Verifactu y cómo afectan a las empresas locales.",
-        "cuerpo": "Fedelhorce ha programado una masterclass destinada a empresarios y autónomos de Alhaurín el Grande para abordar las novedades en facturación electrónica derivadas de la implementación de Verifactu. Esta sesión formativa explicará en detalle qué cambios introduce esta herramienta y cómo las empresas pueden adaptarse para cumplir con la normativa vigente.\n\nDurante la masterclass, se ofrecerán pautas prácticas para preparar a las organizaciones ante las nuevas exigencias, facilitando la transición hacia procesos digitales más eficientes y seguros. La iniciativa busca apoyar a los negocios locales en la modernización de sus sistemas de facturación y en la mejora de su gestión administrativa.",
-        "fecha": "2026-08-21T08:31:49+00:00",
-        "fuente": "Fedelhorce",
-        "categoria": "Comercio y Empresa",
-        "categoria_url": "categoria/comercio-y-empresa/",
-        "seo_keywords": [
-            "facturación electrónica",
-            "Verifactu",
-            "empresas Alhaurín el Grande"
-        ],
-        "enlace": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/",
-        "url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/08/Destacada-verifactu.png",
-        "prioridad": 85,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html"
     },
     {
         "id": "https-alhaurinelgrande-es-el-ayuntamiento-presenta-las-bases-para-que-40bec2af",

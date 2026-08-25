@@ -505,6 +505,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/08/24/piden-colaboracion-ciudadana-en-alhaurin-el-grande-para-localizar-el-dispositivo-auditivo-extraviado-de-un-menor/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207510": {
+    "ai_attempts": 0,
+    "content_hash": "283c6ebf1b62b91739dfdd5ae05aa5a630e158fc",
+    "date_modified": null,
+    "date_published": "2026-08-25T09:45:22+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El próximo sábado 3 de octubre, el Teatro Antonio Gala de Alhaurín el Grande será el escenario de una gala benéfica organizada por Vox Alhaurín el Grande. El evento tiene como objetivo recaudar fondos para apoyar a las monjas clarisas de Málaga.\n\nLa gala contará con diversas actuaciones culturales, entre ellas la participación del grupo Canta Málaga, el ballet español dirigido por Lourdes Rodríguez y el cuadro flamenco de José Lucena. Esta iniciativa busca combinar arte y solidaridad para contribuir a una causa local importante.",
+      "descripcion": "El Teatro Antonio Gala de Alhaurín el Grande acogerá el 3 de octubre una gala benéfica con actuaciones de Canta Málaga, ballet español y flamenco para ayudar a las monjas clarisas de Málaga.",
+      "seo_keywords": [
+        "gala benéfica Alhaurín el Grande",
+        "monjas clarisas Málaga",
+        "eventos solidarios Málaga"
+      ],
+      "titulo": "Gala benéfica en Alhaurín el Grande para apoyar a las monjas clarisas de Málaga"
+    },
+    "ia_exitosa": true,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-aa579f53",
+    "last_ai_attempt": "2026-08-25T10:42:15.890741+00:00",
+    "pagina": "noticias/gala-benefica-en-alhaurin-el-grande-para-apoyar-a-las-monjas-clarisas-de-malaga.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/08/25/gala-benefica-monjas-clarisas-malaga-vox-alhaurin-el-grande/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",

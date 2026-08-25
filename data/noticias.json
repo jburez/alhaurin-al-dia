@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-job-fwse1fg-1c710abe",
+        "titulo": "Alhaurín el Grande presenta el cartel de la Romería y Equinalh 2026 con actividades",
+        "titulo_original": "PRESENTACIÓN CARTEL ROMERÍA Y EQUINALH 2026",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial de la Romería 2026 y anuncia un completo programa de actividades para septiembre, incluyendo conciertos y eventos ecuestres de Equinalh.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial de la Romería 2026 y anuncia un completo programa de actividades para septiembre, incluyendo conciertos y eventos ecuestres de Equinalh.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, presidido por Anthony Bermúdez, ha presentado oficialmente el cartel anunciador de la Romería 2026 en un acto celebrado en la terraza del teatro Antonio Gala. El alcalde destacó la consolidación de esta festividad en el calendario local, que contará con diversas actividades que comenzarán con el traslado del Cristo de las Agonías hasta la Parroquia de la Encarnación.\n\nEl sábado 12 de septiembre arrancará la Romería con la concentración de carrozas a las cuatro de la tarde en el recinto ferial, desde donde partirán hacia La Mota para celebrar el tradicional concurso de atalajes para carros, jinetes y amazonas.\n\nLa jornada concluirá con un concierto nocturno de Paco Candela, reconocido artista flamenco que celebra su 30º aniversario en la música profesional. Además, el mes de septiembre estará marcado por Equinalh, un evento dedicado al caballo que incluye una conferencia sobre urgencias veterinarias, un clinic de trenzado y exhibiciones de doma clásica y doma vaquera.",
+        "fecha": "2026-08-25T14:00:07+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Romería Alhaurín el Grande 2026",
+            "Equinalh 2026",
+            "actividades septiembre Alhaurín"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=JOb_FWsE1Fg",
+        "url": "https://www.youtube.com/watch?v=JOb_FWsE1Fg",
+        "imagen": "https://i3.ytimg.com/vi/JOb_FWsE1Fg/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-presenta-el-cartel-de-la-romeria-y-equinalh-2026-con-actividades.html"
+    },
+    {
         "id": "guid-atv-alhaurin-youtube-yt-video-dbchgtolhwm-7ad64983",
         "titulo": "Alhaurín el Grande celebra jornadas de clarinete y apoya causas solidarias en agosto 2026",
         "titulo_original": "NOTICIAS ATV 25 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
@@ -136,29 +159,6 @@
         "prioridad": 120,
         "requiere_revision_geografica": false,
         "pagina": "noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-la-virgen-2026.html"
-    },
-    {
-        "id": "https-rtvalhaurinelgrande-com-audiciones-de-la-escuela-de-musica-la-pe-e411bf67",
-        "titulo": "Audiciones de fin de curso de la Escuela de Música La Pepa en Alhaurín el Grande",
-        "titulo_original": "Audiciones de la Escuela de Música “La Pepa”",
-        "descripcion": "La Plaza del Convento fue escenario de las audiciones de la Escuela de Música La Pepa, donde 42 alumnos mostraron su progreso musical en un evento organizado por la Agrupación Músico-Cultural y el Ayuntamiento.",
-        "resumen": "La Plaza del Convento fue escenario de las audiciones de la Escuela de Música La Pepa, donde 42 alumnos mostraron su progreso musical en un evento organizado por la Agrupación Músico-Cultural y el Ayuntamiento.",
-        "cuerpo": "El pasado 31 de julio, la Plaza del Convento de Alhaurín el Grande acogió las audiciones de fin de curso de la Escuela de Música La Pepa. En esta cita, organizada por la Agrupación Músico-Cultural de la Santa Vera Cruz en colaboración con el Ayuntamiento local, 42 alumnos demostraron sus avances y habilidades adquiridas durante el año académico.\n\nEl evento permitió a los estudiantes interpretar diferentes piezas musicales ante el público, mostrando el trabajo realizado en las clases y fomentando la cultura musical en la comunidad. La iniciativa refuerza el compromiso de ambas entidades con la formación artística y el desarrollo cultural del municipio.",
-        "fecha": "2026-08-10T10:08:11+00:00",
-        "fuente": "RTV Alhaurín el Grande",
-        "categoria": "Agenda Cultural",
-        "categoria_url": "categoria/agenda-cultural/",
-        "seo_keywords": [
-            "Escuela de Música La Pepa",
-            "audiciones Alhaurín el Grande",
-            "cultura musical local"
-        ],
-        "enlace": "https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/",
-        "url": "https://rtvalhaurinelgrande.com/audiciones-de-la-escuela-de-musica-la-pepa/",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/LA-PEPA-FOTO.jpg",
-        "prioridad": 90,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/audiciones-de-fin-de-curso-de-la-escuela-de-musica-la-pepa-en-alhaurin-el-grande.html"
     },
     {
         "id": "https-www-nuestropadrejesusnazareno-com-33991-primera-misa-del-sacerdo-bd7e81d9",

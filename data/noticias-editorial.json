@@ -1,4 +1,27 @@
 {
+  "guid:atv-alhaurin-youtube:yt:video:JOb_FWsE1Fg": {
+    "ai_attempts": 0,
+    "content_hash": "6e176da5c16d0549dd1b7f305fede45ce77ec323",
+    "date_modified": null,
+    "date_published": "2026-08-25T14:00:07+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "El Ayuntamiento de Alhaurín el Grande, presidido por Anthony Bermúdez, ha presentado oficialmente el cartel anunciador de la Romería 2026 en un acto celebrado en la terraza del teatro Antonio Gala. El alcalde destacó la consolidación de esta festividad en el calendario local, que contará con diversas actividades que comenzarán con el traslado del Cristo de las Agonías hasta la Parroquia de la Encarnación.\n\nEl sábado 12 de septiembre arrancará la Romería con la concentración de carrozas a las cuatro de la tarde en el recinto ferial, desde donde partirán hacia La Mota para celebrar el tradicional concurso de atalajes para carros, jinetes y amazonas.\n\nLa jornada concluirá con un concierto nocturno de Paco Candela, reconocido artista flamenco que celebra su 30º aniversario en la música profesional. Además, el mes de septiembre estará marcado por Equinalh, un evento dedicado al caballo que incluye una conferencia sobre urgencias veterinarias, un clinic de trenzado y exhibiciones de doma clásica y doma vaquera.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial de la Romería 2026 y anuncia un completo programa de actividades para septiembre, incluyendo conciertos y eventos ecuestres de Equinalh.",
+      "seo_keywords": [
+        "Romería Alhaurín el Grande 2026",
+        "Equinalh 2026",
+        "actividades septiembre Alhaurín"
+      ],
+      "titulo": "Alhaurín el Grande presenta el cartel de la Romería y Equinalh 2026 con actividades"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-job-fwse1fg-1c710abe",
+    "last_ai_attempt": "2026-08-25T14:52:42.486664+00:00",
+    "pagina": "noticias/alhaurin-el-grande-presenta-el-cartel-de-la-romeria-y-equinalh-2026-con-actividades.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=JOb_FWsE1Fg"
+  },
   "guid:atv-alhaurin-youtube:yt:video:JSAyrh72NAE": {
     "ai_attempts": 0,
     "content_hash": "c7f027f83f202fb517d1f9b537f5ed5726e7135f",

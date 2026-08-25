@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-08-25T12:49:43+02:00",
+  "actualizado": "2026-08-25T18:00:07+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
@@ -23,7 +23,7 @@
     "icono": "☀️",
     "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "S 10 km/h",
+    "viento": "Flojo",
     "uv": "8"
   },
   "semana": [
@@ -36,7 +36,7 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
+      "viento": "Flojo",
       "uv": "8"
     },
     {
@@ -139,9 +139,9 @@
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.3 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.6 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.3,
+      "gramineas": 0.6,
       "olivo": 0.0
     }
   ],

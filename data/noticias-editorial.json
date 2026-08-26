@@ -321,6 +321,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan-optar-a-las-subvenciones-municipales/"
   },
+  "guid:fedelhorce:https://fedelhorce.es/?p=259236": {
+    "ai_attempts": 0,
+    "content_hash": "ca546a09a73b8ea274d4150ae4c1f7a1257d5161",
+    "date_modified": null,
+    "date_published": "2026-08-24T13:02:55.734Z",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "La Federación de Empresarios del Valle del Guadalhorce (Fedelhorce) lanza la campaña 'Sella tu sueño' para este verano 2026, con el objetivo de incentivar las compras en el comercio local. Los clientes que realicen sus compras en los establecimientos adheridos podrán participar a través de la aplicación FEDELAPP, acumulando sellos que les permitirán acceder a diferentes premios y promociones.\n\nEsta iniciativa busca apoyar a los comercios de la zona y fomentar el consumo en el Valle del Guadalhorce durante la temporada estival. Los usuarios solo necesitan descargar FEDELAPP y registrar sus compras para comenzar a sellar sus sueños y disfrutar de las ventajas que ofrece la campaña.",
+      "descripcion": "La campaña de verano 2026 invita a comprar en el comercio local del Valle del Guadalhorce y participar en 'Sella tu sueño' con FEDELAPP para ganar premios.",
+      "seo_keywords": [
+        "campaña verano 2026",
+        "comercio local Valle del Guadalhorce",
+        "Sella tu sueño FEDELAPP"
+      ],
+      "titulo": "Campaña de verano 2026 en el Valle del Guadalhorce: Sella tu sueño con FEDELAPP"
+    },
+    "ia_exitosa": true,
+    "id": "https-fedelhorce-es-sella-tu-sueno-campana-de-verano-2026-e74e71d6",
+    "last_ai_attempt": "2026-08-26T03:12:35.439069+00:00",
+    "pagina": "noticias/campana-de-verano-2026-en-el-valle-del-guadalhorce-sella-tu-sueno-con-fedelapp.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/sella-tu-sueno-campana-de-verano-2026/"
+  },
   "guid:fedelhorce:https://fedelhorce.es/?p=259573": {
     "ai_attempts": 0,
     "content_hash": "8e93a6b0e52a9c459843a6be91ba91f4900d9428",

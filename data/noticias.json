@@ -1,51 +1,5 @@
 [
     {
-        "id": "guid-atv-alhaurin-youtube-yt-video-job-fwse1fg-1c710abe",
-        "titulo": "Alhaurín el Grande presenta el cartel de la Romería y Equinalh 2026 con actividades",
-        "titulo_original": "PRESENTACIÓN CARTEL ROMERÍA Y EQUINALH 2026",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial de la Romería 2026 y anuncia un completo programa de actividades para septiembre, incluyendo conciertos y eventos ecuestres de Equinalh.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande presenta el cartel oficial de la Romería 2026 y anuncia un completo programa de actividades para septiembre, incluyendo conciertos y eventos ecuestres de Equinalh.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, presidido por Anthony Bermúdez, ha presentado oficialmente el cartel anunciador de la Romería 2026 en un acto celebrado en la terraza del teatro Antonio Gala. El alcalde destacó la consolidación de esta festividad en el calendario local, que contará con diversas actividades que comenzarán con el traslado del Cristo de las Agonías hasta la Parroquia de la Encarnación.\n\nEl sábado 12 de septiembre arrancará la Romería con la concentración de carrozas a las cuatro de la tarde en el recinto ferial, desde donde partirán hacia La Mota para celebrar el tradicional concurso de atalajes para carros, jinetes y amazonas.\n\nLa jornada concluirá con un concierto nocturno de Paco Candela, reconocido artista flamenco que celebra su 30º aniversario en la música profesional. Además, el mes de septiembre estará marcado por Equinalh, un evento dedicado al caballo que incluye una conferencia sobre urgencias veterinarias, un clinic de trenzado y exhibiciones de doma clásica y doma vaquera.",
-        "fecha": "2026-08-25T14:00:07+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
-        "seo_keywords": [
-            "Romería Alhaurín el Grande 2026",
-            "Equinalh 2026",
-            "actividades septiembre Alhaurín"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=JOb_FWsE1Fg",
-        "url": "https://www.youtube.com/watch?v=JOb_FWsE1Fg",
-        "imagen": "https://i3.ytimg.com/vi/JOb_FWsE1Fg/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-presenta-el-cartel-de-la-romeria-y-equinalh-2026-con-actividades.html"
-    },
-    {
-        "id": "guid-atv-alhaurin-youtube-yt-video-dbchgtolhwm-7ad64983",
-        "titulo": "Alhaurín el Grande celebra jornadas de clarinete y apoya causas solidarias en agosto 2026",
-        "titulo_original": "NOTICIAS ATV 25 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "Del 26 al 29 de agosto, Alhaurín el Grande acoge jornadas de clarinete con conciertos y continúa la campaña 'Sella tu Sueño' para impulsar el comercio local.",
-        "resumen": "Del 26 al 29 de agosto, Alhaurín el Grande acoge jornadas de clarinete con conciertos y continúa la campaña 'Sella tu Sueño' para impulsar el comercio local.",
-        "cuerpo": "Alhaurín el Grande se prepara para unas jornadas de formación de clarinete que tendrán lugar del 26 al 29 de agosto, reuniendo a alumnos de toda España. El programa incluye clases individuales y colectivas impartidas por profesionales internacionales, además de dos conciertos: uno de profesores el viernes 28 y otro de alumnos el sábado 29.\n\nParalelamente, el Ayuntamiento y Fedelhorce mantienen activa hasta septiembre la campaña 'Sella tu Sueño', destinada a incentivar las compras en los comercios asociados y premiar la fidelidad de los clientes, dinamizando así la economía local.\n\nEn el ámbito deportivo, la joven alhaurina Iris Gutiérrez representará a la localidad y a España en el Campeonato Mundial de Artes Marciales Mixtas en Georgia, mientras que el CD Alhaurino B disputó un partido solidario para apoyar a una niña con síndrome DYRK1A, destinando la recaudación íntegra a esta causa.",
-        "fecha": "2026-08-25T12:13:04+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [
-            "Jornadas de clarinete Alhaurín el Grande",
-            "Campaña Sella tu Sueño 2026",
-            "Iris Gutiérrez MMA Alhaurín"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=dbCHGtOLhWM",
-        "url": "https://www.youtube.com/watch?v=dbCHGtOLhWM",
-        "imagen": "https://i1.ytimg.com/vi/dbCHGtOLhWM/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-celebra-jornadas-de-clarinete-y-apoya-causas-solidarias-en-agosto-2026.html"
-    },
-    {
         "id": "https-rtvalhaurinelgrande-com-presentacion-de-los-bebes-y-misa-en-hono-7aa2fa25",
         "titulo": "Presentación de bebés y misa en honor a Nuestra Señora de Gracia en Alhaurín el Grande",
         "titulo_original": "Presentación de los bebés y Misa en Honor a Nuestra Señora de Gracia",

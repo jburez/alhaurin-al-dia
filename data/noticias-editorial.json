@@ -45,6 +45,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JSAyrh72NAE"
   },
+  "guid:atv-alhaurin-youtube:yt:video:Ki2rPQoYPjQ": {
+    "ai_attempts": 0,
+    "content_hash": "ec6f377095d0472ae14f0eb7c820c7d177f75be7",
+    "date_modified": null,
+    "date_published": "2026-08-26T14:00:30+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La agenda cultural de Alhaurín el Grande ofrece una variedad de eventos para los próximos días, con actividades que abarcan desde exposiciones hasta encuentros culturales. María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel, colabora en la presentación y organización de estas citas, que buscan fomentar la participación y el disfrute de la comunidad local.\n\nEste espacio cultural, conocido como PlaneATV, repasa las iniciativas y eventos que se desarrollan en la localidad, promoviendo la cultura y el arte en Alhaurín el Grande. Los interesados pueden mantenerse informados sobre las fechas y detalles de cada actividad para no perderse ninguna propuesta.",
+      "descripcion": "Consulta la agenda cultural de Alhaurín el Grande con las próximas actividades y eventos organizados en la localidad, presentados por la Asociación Cultural El Laurel.",
+      "seo_keywords": [
+        "agenda cultural Alhaurín el Grande",
+        "eventos culturales Alhaurín",
+        "Asociación Cultural El Laurel"
+      ],
+      "titulo": "Agenda cultural de Alhaurín el Grande: eventos destacados para los próximos días"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-ki2rpqoypjq-2206d484",
+    "last_ai_attempt": "2026-08-26T14:51:28.095426+00:00",
+    "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=Ki2rPQoYPjQ"
+  },
   "guid:atv-alhaurin-youtube:yt:video:Z7s1LW5uWys": {
     "ai_attempts": 0,
     "content_hash": "ea2447ba6927dea0363b098059bf3d7dbe5bb824",
@@ -642,6 +665,29 @@
     "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-fuentes-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/"
+  },
+  "guid:malaga-hoy:https://www.malagahoy.es/malaga/familia-alhaurin-grande-pide-ayuda_0_2007796200.html": {
+    "ai_attempts": 0,
+    "content_hash": "6483c2ac845042bf08074107003991f950d7317e",
+    "date_modified": null,
+    "date_published": "2026-08-26T13:41:28+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "El implante coclear perdido es un dispositivo fundamental para un niño de Alhaurín el Grande que carece de nervio auditivo y depende de este aparato para mejorar su capacidad auditiva. La familia ha solicitado la ayuda de la comunidad para localizar el dispositivo, cuyo valor económico es de 10.000 euros.\n\nEste implante es vital para el desarrollo auditivo y la calidad de vida del menor. Por otro lado, los profesionales sanitarios han alertado sobre la situación crítica en las Urgencias y la Unidad de Cuidados Intensivos (UCI) del Hospital Clínico de Málaga, que se encuentran al límite de su capacidad, lo que añade complejidad a la atención médica en la provincia.\n\nLa colaboración ciudadana es clave para apoyar a esta familia en un momento tan delicado.",
+      "descripcion": "Una familia de Alhaurín el Grande pide colaboración para encontrar el implante coclear de su hijo, un dispositivo esencial para su audición valorado en 10.000 euros.",
+      "seo_keywords": [
+        "implante coclear Alhaurín el Grande",
+        "ayuda implante coclear",
+        "pérdida dispositivo auditivo"
+      ],
+      "titulo": "Familia de Alhaurín el Grande solicita ayuda para recuperar implante coclear perdido"
+    },
+    "ia_exitosa": true,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-familia-alhaurin-grande-abd66267",
+    "last_ai_attempt": "2026-08-26T14:53:02.226613+00:00",
+    "pagina": "noticias/familia-de-alhaurin-el-grande-solicita-ayuda-para-recuperar-implante-coclear-perdido.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/malaga/familia-alhaurin-grande-pide-ayuda_0_2007796200.html"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,

@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-g-jzyvj2bw8-8d797350",
+        "titulo": "Alhaurín el Grande mejora la parada de taxis y ofrece talleres y eventos culturales",
+        "titulo_original": "NOTICIAS ATV 26 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia obras en la parada de taxis y abre inscripciones para talleres, además de preparar un concierto de Paco Candela en septiembre.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia obras en la parada de taxis y abre inscripciones para talleres, además de preparar un concierto de Paco Candela en septiembre.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha comenzado la construcción de una nueva marquesina para la parada de taxis, con una inversión de 130.000 euros. Las obras, que se extenderán por aproximadamente cinco meses, buscan mejorar la funcionalidad y estética de este punto céntrico del municipio.\n\nParalelamente, la concejalía de Educación ha abierto el plazo de inscripción para un taller de pintura al óleo dirigido a jóvenes, disponible hasta el 19 de septiembre. En el ámbito cultural y social, el campamento de agosto continúa promoviendo valores como la igualdad y la convivencia entre los niños y niñas participantes.\n\nAdemás, el CEIP Carmen Arévalo desarrolla actividades educativas relacionadas con la solidaridad, la salud y los Objetivos de Desarrollo Sostenible. Por último, Alhaurín el Grande se prepara para recibir el próximo 12 de septiembre al cantante Paco Candela, quien ofrecerá un concierto en el recinto de La Mota como parte de la Romería local.",
+        "fecha": "2026-08-26T12:45:48+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
+        "seo_keywords": [
+            "Alhaurín el Grande",
+            "marquesina parada taxis",
+            "taller pintura óleo"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=g_jzYvj2BW8",
+        "url": "https://www.youtube.com/watch?v=g_jzYvj2BW8",
+        "imagen": "https://i4.ytimg.com/vi/g_jzYvj2BW8/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-mejora-la-parada-de-taxis-y-ofrece-talleres-y-eventos-culturales.html"
+    },
+    {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",
         "titulo": "Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande",
         "titulo_original": "Presentación Cartel Romería y Equinalh 2026",
@@ -92,6 +115,29 @@
         "pagina": "noticias/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan.html"
     },
     {
+        "id": "guid-fedelhorce-https-fedelhorce-es-p-260750-4957c31a",
+        "titulo": "Fedelhorce impulsa la exportación de productos y servicios al mercado chino",
+        "titulo_original": "Exportación de productos y servicios al mercado chino",
+        "descripcion": "Fedelhorce busca identificar el potencial exportador de sus empresas asociadas para ampliar su presencia en el mercado chino.",
+        "resumen": "Fedelhorce busca identificar el potencial exportador de sus empresas asociadas para ampliar su presencia en el mercado chino.",
+        "cuerpo": "Fedelhorce ha iniciado un proceso para evaluar el potencial exportador de las empresas asociadas con el objetivo de fortalecer su presencia en el mercado chino. Esta iniciativa pretende identificar oportunidades y facilitar el acceso a uno de los mercados internacionales más relevantes.\n\nLa organización apuesta por apoyar a las empresas locales en la internacionalización de sus productos y servicios, promoviendo así el crecimiento económico de la comarca. Mediante esta estrategia, Fedelhorce busca ofrecer recursos y asesoramiento para que las empresas puedan competir con éxito en China, un mercado con gran demanda y posibilidades de expansión.",
+        "fecha": "2026-08-14T07:00:59+00:00",
+        "fuente": "Fedelhorce",
+        "categoria": "Comercio y Empresa",
+        "categoria_url": "categoria/comercio-y-empresa/",
+        "seo_keywords": [
+            "exportación mercado chino",
+            "Fedelhorce empresas asociadas",
+            "exportar productos Alhaurín el Grande"
+        ],
+        "enlace": "https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/",
+        "url": "https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/08/Exportacion-china-1.png",
+        "prioridad": 85,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/fedelhorce-impulsa-la-exportacion-de-productos-y-servicios-al-mercado-chino.html"
+    },
+    {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22468-f1775571",
         "titulo": "Alhaurín el Grande estrena dos rutas saludables para descubrir patrimonio y naturaleza",
         "titulo_original": "Dos nuevas rutas saludables conectarán el patrimonio, la naturaleza y la oferta turística de Alhaurín el Grande",
@@ -136,143 +182,5 @@
         "prioridad": 120,
         "requiere_revision_geografica": false,
         "pagina": "noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-la-virgen-2026.html"
-    },
-    {
-        "id": "https-www-nuestropadrejesusnazareno-com-33991-primera-misa-del-sacerdo-bd7e81d9",
-        "titulo": "Primera misa del Rvdo. Padre José Francisco Fernández en Alhaurín el Grande",
-        "titulo_original": "Primera misa del sacerdote Rvd. Padre D. José Francisco Fernández Fuentes",
-        "descripcion": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
-        "resumen": "El Rvdo. Padre José Francisco Fernández Fuentes celebró su primera misa en Alhaurín el Grande, con la Hermandad Nuestro Padre Jesús Nazareno presente en la Parroquia de Nuestra Señora de la Encarnación.",
-        "cuerpo": "El pasado sábado 11 de julio, el Rvdo. Padre José Francisco Fernández Fuentes ofició su primera Eucaristía en Alhaurín el Grande, un acto celebrado en la Parroquia de Nuestra Señora de la Encarnación. La Real Hermandad Nuestro Padre Jesús Nazareno asistió a esta ceremonia tan significativa para el sacerdote y la comunidad local.\n\nDurante la celebración, la Hermandad entregó al Rvdo. Padre un paño de hombros como muestra de reconocimiento y apoyo en su labor pastoral. Este evento marca un momento importante para la parroquia y fortalece los lazos entre el clero y las asociaciones religiosas del municipio.",
-        "fecha": "2026-07-15T10:27:32+00:00",
-        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
-        "seo_keywords": [
-            "primera misa Alhaurín el Grande",
-            "José Francisco Fernández Fuentes",
-            "Hermandad Jesús Nazareno"
-        ],
-        "enlace": "https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/",
-        "url": "https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-13-at-07.41.14-1.jpeg",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-fuentes-en-alhaurin-el-grande.html"
-    },
-    {
-        "id": "https-www-nuestropadrejesusnazareno-com-33982-nuestra-real-hermandad-p-933bd6ec",
-        "titulo": "Hermandad de Alhaurín el Grande participa en curso sobre La Legión en Ronda",
-        "titulo_original": "Nuestra Real Hermandad presente en el curso de verano sobre La Legión",
-        "descripcion": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "resumen": "El Hermano Mayor y miembros de la Real Hermandad de Alhaurín el Grande asistieron al curso de verano sobre La Legión, organizado por la Universidad de Málaga en Ronda.",
-        "cuerpo": "El Hermano Mayor de la Real Hermandad de Nuestro Padre Jesús Nazareno, junto a varios hermanos, participaron en el curso de verano titulado «Ejército y sociedad: el papel de La Legión en operaciones internacionales». Este evento, organizado por la Fundación General de la Universidad de Málaga, tuvo lugar en Ronda los días 7 y 8 de julio.\n\nDurante las jornadas, los asistentes analizaron el papel de La Legión en diferentes misiones internacionales y su relación con la sociedad española. La presencia de la Hermandad en este curso refleja su interés por profundizar en aspectos históricos y sociales vinculados a la cultura y tradición militar española.",
-        "fecha": "2026-07-09T10:33:08+00:00",
-        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [
-            "Real Hermandad Alhaurín el Grande",
-            "curso sobre La Legión",
-            "Universidad de Málaga Ronda"
-        ],
-        "enlace": "https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/",
-        "url": "https://www.nuestropadrejesusnazareno.com/33982/nuestra-real-hermandad-presente-en-el-curso-de-verano-sobre-la-legion/",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-08-at-17.29.10.jpeg",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-participa-en-curso-sobre-la-legion-en-ronda.html"
-    },
-    {
-        "id": "https-www-nuestropadrejesusnazareno-com-33978-san-sebastian-acogera-de-ac179017",
-        "titulo": "San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia",
-        "titulo_original": "San Sebastián acogerá de nuevo a Nuestra Señora de Gracia tras once años de ausencia",
-        "descripcion": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián el 12 de agosto tras más de una década de ausencia.",
-        "resumen": "La patrona de Alhaurín el Grande, Nuestra Señora de Gracia, pernoctará en la ermita de San Sebastián el 12 de agosto tras más de una década de ausencia.",
-        "cuerpo": "Nuestra Señora de Gracia, patrona y alcaldesa perpetua de Alhaurín el Grande, regresará a la ermita de San Sebastián para pernoctar la noche del 12 al 13 de agosto. Esta visita especial marca la culminación de su recorrido por los distintos barrios del municipio con motivo del Día de la Virgen.\n\nLa imagen no había estado en esta ermita desde hace once años, lo que convierte este acto en un evento destacado para la comunidad local. La Hermandad Nuestro Padre Jesús Nazareno organiza esta tradición que refuerza el vínculo entre la patrona y los vecinos de Alhaurín el Grande.",
-        "fecha": "2026-07-02T09:57:44+00:00",
-        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
-        "seo_keywords": [
-            "Nuestra Señora de Gracia",
-            "ermita de San Sebastián",
-            "Alhaurín el Grande fiestas"
-        ],
-        "enlace": "https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/",
-        "url": "https://www.nuestropadrejesusnazareno.com/33978/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia/",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/san-sebastian-acogera-de-nuevo-a-nuestra-senora-de-gracia-tras-once-anos-de-ausencia.html"
-    },
-    {
-        "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-4fc0c94c",
-        "titulo": "La Hermandad de Nuestro Padre Jesús Nazareno lamenta los terremotos en Venezuela",
-        "titulo_original": "Terremoto en Venezuela",
-        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno transmite sus condolencias al pueblo venezolano tras los recientes terremotos que han causado pérdidas humanas y sufrimiento.",
-        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno ha expresado su profundo pesar por los daños y pérdidas ocasionados por los recientes terremotos en Venezuela. A través de un comunicado, la Hermandad manifiesta su solidaridad con las familias afectadas y con toda la comunidad venezolana en estos momentos difíciles.\n\nAdemás, la Hermandad se une en oración por el descanso eterno de las víctimas y pide la protección de Nuestro Padre Jesús Nazareno para quienes han sufrido las consecuencias de estos desastres naturales. Este gesto refleja el compromiso de la Hermandad con la empatía y el apoyo a quienes atraviesan situaciones de dolor.",
-        "fecha": "2026-06-26T09:09:18+00:00",
-        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [
-            "terremoto en Venezuela",
-            "Hermandad Nuestro Padre Jesús Nazareno",
-            "condolencias por terremotos"
-        ],
-        "enlace": "https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/",
-        "url": "https://www.nuestropadrejesusnazareno.com/33975/terremoto-en-venezuela/",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/la-hermandad-de-nuestro-padre-jesus-nazareno-lamenta-los-terremotos-en-venezuela.html"
-    },
-    {
-        "id": "https-www-nuestropadrejesusnazareno-com-33973-y-el-dia-de-la-funcion-v-a3cea052",
-        "titulo": "Alhaurín el Grande celebra con fervor el Día de Nuestro Padre Jesús Nazareno",
-        "titulo_original": "Y EL DÍA DE LA FUNCIÓN VOLVIMOS A ALZAR LA MIRADA HACIA NUESTRO PADRE JESÚS NAZARENO, PARA CELEBRAR, VIVIR Y ANUNCIAR EL DÍA DE JESÚS",
-        "descripcion": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la celebración del Día de Nuestro Padre Jesús Nazareno, con actos religiosos y tradicionales que unieron a la comunidad.",
-        "resumen": "El domingo 14 de junio, Alhaurín el Grande vivió con emoción la celebración del Día de Nuestro Padre Jesús Nazareno, con actos religiosos y tradicionales que unieron a la comunidad.",
-        "cuerpo": "La jornada del 14 de junio en Alhaurín el Grande comenzó temprano con el toque de diana a las 8:00 horas, a cargo del Tercio “Gran Capitán”, Hermano Mayor Honorario, acompañado por el estruendo de cohetes que anunciaban el día especial para los hermanos de la Hermandad de Nuestro Padre Jesús Nazareno.\n\nEste acto marcó el inicio de una serie de celebraciones que llenaron de devoción y tradición las calles del municipio. Durante el día, los hermanos y vecinos participaron en diversas actividades religiosas y culturales, reafirmando su fe y compromiso con esta festividad tan arraigada en la localidad.\n\nLa celebración sirvió para fortalecer los lazos comunitarios y mantener viva la tradición que honra a Jesús Nazareno, convirtiendo esta fecha en un momento de encuentro y reflexión para todos los alhaurinos.",
-        "fecha": "2026-06-26T08:35:11+00:00",
-        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
-        "seo_keywords": [
-            "Día de Jesús Nazareno Alhaurín el Grande",
-            "Hermandad Nuestro Padre Jesús Nazareno",
-            "fiestas tradicionales Alhaurín el Grande"
-        ],
-        "enlace": "https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/",
-        "url": "https://www.nuestropadrejesusnazareno.com/33973/y-el-dia-de-la-funcion-volvimos-a-alzar-la-mirada-hacia-nuestro-padre-jesus-nazareno-para-celebrar-vivir-y-anunciar-el-dia-de-jesus/",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/06/DSC_0419.jpg",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-celebra-con-fervor-el-dia-de-nuestro-padre-jesus-nazareno.html"
-    },
-    {
-        "id": "https-www-nuestropadrejesusnazareno-com-33600-dia-de-jesus-2026-actos-eb54e957",
-        "titulo": "Programa de actos del Día de Jesús 2026 en Alhaurín el Grande",
-        "titulo_original": "Día de Jesús 2026 – Actos del jueves.",
-        "descripcion": "Conoce el programa completo de actividades previstas para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "resumen": "Conoce el programa completo de actividades previstas para el jueves en el Día de Jesús 2026 en Alhaurín el Grande, organizado por la Hermandad Nuestro Padre Jesús Nazareno.",
-        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno ha presentado el programa oficial para el jueves del Día de Jesús 2026 en Alhaurín el Grande. Este día contará con una serie de actos religiosos y culturales que forman parte de la tradición local y que congregan a numerosos vecinos y visitantes.\n\nEntre las actividades destacadas se incluyen procesiones, celebraciones litúrgicas y eventos organizados para fomentar la participación comunitaria. La programación completa está disponible a través de ATV, la televisión local de Alhaurín el Grande, que ofrecerá una cobertura especial para que todos puedan seguir los actos en directo o a través de sus plataformas digitales.",
-        "fecha": "2026-06-25T12:40:14+00:00",
-        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
-        "seo_keywords": [
-            "Día de Jesús 2026",
-            "Alhaurín el Grande",
-            "Hermandad Nuestro Padre Jesús Nazareno"
-        ],
-        "enlace": "https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/",
-        "url": "https://www.nuestropadrejesusnazareno.com/33600/dia-de-jesus-2026-actos-del-jueves/",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/programa-de-actos-del-jueves-para-el-dia-de-jesus-2026-en-alhaurin-el-grande.html"
     }
 ]

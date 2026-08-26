@@ -91,6 +91,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=dbCHGtOLhWM"
   },
+  "guid:atv-alhaurin-youtube:yt:video:g_jzYvj2BW8": {
+    "ai_attempts": 0,
+    "content_hash": "520cbeaba63cbc5d05ef68251fe01232105a36f6",
+    "date_modified": null,
+    "date_published": "2026-08-26T12:45:48+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha comenzado la construcción de una nueva marquesina para la parada de taxis, con una inversión de 130.000 euros. Las obras, que se extenderán por aproximadamente cinco meses, buscan mejorar la funcionalidad y estética de este punto céntrico del municipio.\n\nParalelamente, la concejalía de Educación ha abierto el plazo de inscripción para un taller de pintura al óleo dirigido a jóvenes, disponible hasta el 19 de septiembre. En el ámbito cultural y social, el campamento de agosto continúa promoviendo valores como la igualdad y la convivencia entre los niños y niñas participantes.\n\nAdemás, el CEIP Carmen Arévalo desarrolla actividades educativas relacionadas con la solidaridad, la salud y los Objetivos de Desarrollo Sostenible. Por último, Alhaurín el Grande se prepara para recibir el próximo 12 de septiembre al cantante Paco Candela, quien ofrecerá un concierto en el recinto de La Mota como parte de la Romería local.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia obras en la parada de taxis y abre inscripciones para talleres, además de preparar un concierto de Paco Candela en septiembre.",
+      "seo_keywords": [
+        "Alhaurín el Grande",
+        "marquesina parada taxis",
+        "taller pintura óleo"
+      ],
+      "titulo": "Alhaurín el Grande mejora la parada de taxis y ofrece talleres y eventos culturales"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-g-jzyvj2bw8-8d797350",
+    "last_ai_attempt": "2026-08-26T13:05:12.663698+00:00",
+    "pagina": "noticias/alhaurin-el-grande-mejora-la-parada-de-taxis-y-ofrece-talleres-y-eventos-culturales.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=g_jzYvj2BW8"
+  },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224629": {
     "ai_attempts": 0,
     "content_hash": "69bc8150b9d020b210517a760d3278876bbf78c8",
@@ -366,6 +389,75 @@
     "pagina": "noticias/alhaurin-el-grande-se-convierte-en-centro-comercial-abierto-de-andalucia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-noche-de-comercio-abierto/"
+  },
+  "guid:fedelhorce:https://fedelhorce.es/?p=260171": {
+    "ai_attempts": 0,
+    "content_hash": "0d37b5b62e92906a132cdcefc34a145b8664bf98",
+    "date_modified": null,
+    "date_published": "2026-08-07T09:30:40+00:00",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "Fedelhorce lanza una serie semanal dedicada a dar a conocer a los profesionales y empresas que forman parte de esta asociación y que contribuyen al crecimiento económico y social de la comarca. Cada entrega se centra en la historia personal y profesional de uno de sus asociados, resaltando su experiencia y aportaciones al territorio.\n\nEsta iniciativa busca acercar a la comunidad local las historias de éxito y el esfuerzo detrás de cada negocio, fomentando el reconocimiento y la colaboración entre los diferentes sectores que conforman la comarca. Así, Fedelhorce refuerza su compromiso con el desarrollo sostenible y la promoción del talento local.",
+      "descripcion": "Fedelhorce presenta una serie semanal que muestra la historia, trayectoria y experiencia de sus asociados, destacando su papel en el desarrollo local.",
+      "seo_keywords": [
+        "Fedelhorce",
+        "asociados Fedelhorce",
+        "desarrollo comarca"
+      ],
+      "titulo": "Conoce a los protagonistas que impulsan el crecimiento de la comarca Fedelhorce"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-260171-e53f5eab",
+    "last_ai_attempt": "2026-08-26T13:05:55.917812+00:00",
+    "pagina": "noticias/conoce-a-los-protagonistas-que-impulsan-el-crecimiento-de-la-comarca-fedelhorce.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/somos-fedelhorce/"
+  },
+  "guid:fedelhorce:https://fedelhorce.es/?p=260277": {
+    "ai_attempts": 0,
+    "content_hash": "3633481a0f3c57e1870578e20877d701c548b073",
+    "date_modified": null,
+    "date_published": "2026-07-31T08:30:47+00:00",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "El Restaurante Casa Peña ha cerrado una etapa emblemática en la hostelería de Alhaurín el Grande tras más de 40 años de actividad. Con motivo de la jubilación de sus propietarios, Fedelhorce ha querido rendir un merecido homenaje a este establecimiento que ha sido un referente local durante décadas.\n\nEste reconocimiento destaca la trayectoria y el compromiso de Casa Peña con la calidad y el servicio, valores que han marcado su historia y han contribuido al desarrollo del sector hostelero en la comarca. La despedida del restaurante supone el cierre de un capítulo importante para la comunidad y para quienes han disfrutado de su oferta gastronómica a lo largo de los años.",
+      "descripcion": "El Restaurante Casa Peña ha sido homenajeado por Fedelhorce tras su jubilación, reconociendo más de cuatro décadas dedicadas a la hostelería en Alhaurín el Grande.",
+      "seo_keywords": [
+        "Casa Peña Alhaurín el Grande",
+        "reconocimiento Fedelhorce",
+        "hostelería local"
+      ],
+      "titulo": "Casa Peña recibe reconocimiento tras más de 40 años en la hostelería de Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-260277-3ee14a93",
+    "last_ai_attempt": "2026-08-26T13:06:00.431395+00:00",
+    "pagina": "noticias/casa-pena-recibe-reconocimiento-tras-mas-de-40-anos-en-la-hosteleria-de-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/toda-una-vida-al-servicio-de-la-hosteleria-gracias-casa-pena/"
+  },
+  "guid:fedelhorce:https://fedelhorce.es/?p=260750": {
+    "ai_attempts": 0,
+    "content_hash": "2da873bcce5125086eef83cedea5feacd66a7b98",
+    "date_modified": null,
+    "date_published": "2026-08-14T07:00:59+00:00",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "Fedelhorce ha iniciado un proceso para evaluar el potencial exportador de las empresas asociadas con el objetivo de fortalecer su presencia en el mercado chino. Esta iniciativa pretende identificar oportunidades y facilitar el acceso a uno de los mercados internacionales más relevantes.\n\nLa organización apuesta por apoyar a las empresas locales en la internacionalización de sus productos y servicios, promoviendo así el crecimiento económico de la comarca. Mediante esta estrategia, Fedelhorce busca ofrecer recursos y asesoramiento para que las empresas puedan competir con éxito en China, un mercado con gran demanda y posibilidades de expansión.",
+      "descripcion": "Fedelhorce busca identificar el potencial exportador de sus empresas asociadas para ampliar su presencia en el mercado chino.",
+      "seo_keywords": [
+        "exportación mercado chino",
+        "Fedelhorce empresas asociadas",
+        "exportar productos Alhaurín el Grande"
+      ],
+      "titulo": "Fedelhorce impulsa la exportación de productos y servicios al mercado chino"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-260750-4957c31a",
+    "last_ai_attempt": "2026-08-26T13:05:50.562101+00:00",
+    "pagina": "noticias/fedelhorce-impulsa-la-exportacion-de-productos-y-servicios-al-mercado-chino.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260884": {
     "ai_attempts": 0,

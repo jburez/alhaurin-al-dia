@@ -1,5 +1,51 @@
 [
     {
+        "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",
+        "titulo": "Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande",
+        "titulo_original": "Presentación Cartel Romería y Equinalh 2026",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande ha presentado el cartel oficial de la Romería y Equinalh 2026, destacando la amplia programación de actividades previstas para esta edición.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande ha presentado el cartel oficial de la Romería y Equinalh 2026, destacando la amplia programación de actividades previstas para esta edición.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande, presidido por Anthony Bermúdez, ha dado a conocer el cartel anunciador de la Romería y Equinalh 2026 en un acto celebrado en la terraza del teatro Antonio Gala. Durante la presentación, el alcalde destacó la importancia de esta festividad para el municipio y la variedad de actividades que se desarrollarán.\n\nAdemás, se resaltó la reciente instalación de elementos en la entrada del evento, que buscan mejorar la experiencia de los asistentes y potenciar la imagen de la celebración. La Romería y Equinalh continúan siendo un referente cultural y social en Alhaurín el Grande, atrayendo a vecinos y visitantes cada año.",
+        "fecha": "2026-08-26T08:16:37+00:00",
+        "fuente": "RTV Alhaurín el Grande",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Romería Alhaurín el Grande 2026",
+            "Equinalh 2026",
+            "cartel Romería Alhaurín"
+        ],
+        "enlace": "https://rtvalhaurinelgrande.com/presentacion-cartel-romeria-y-equinalh-2026/",
+        "url": "https://rtvalhaurinelgrande.com/presentacion-cartel-romeria-y-equinalh-2026/",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/dfg.jpg",
+        "prioridad": 90,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/presentan-el-cartel-oficial-de-la-romeria-y-equinalh-2026-en-alhaurin-el-grande.html"
+    },
+    {
+        "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50610-532f0459",
+        "titulo": "Alhaurín el Grande celebra la Misa de Acción de Gracias por la Virgen de Gracia 2026",
+        "titulo_original": "Misa de Acción de Gracias | Virgen de Gracia 2026",
+        "descripcion": "La Parroquia de Alhaurín el Grande acogió la tradicional Misa de Acción de Gracias en honor a Nuestra Señora de Gracia, clausurando las Fiestas Patronales con la participación del Coro Rociero.",
+        "resumen": "La Parroquia de Alhaurín el Grande acogió la tradicional Misa de Acción de Gracias en honor a Nuestra Señora de Gracia, clausurando las Fiestas Patronales con la participación del Coro Rociero.",
+        "cuerpo": "Las Fiestas Patronales de Alhaurín el Grande en honor a Nuestra Señora de Gracia finalizaron con la emotiva Misa de Acción de Gracias celebrada en la Parroquia local. La eucaristía fue oficiada por el Vicario Parroquial José Francisco Fernández, quien dirigió la ceremonia con solemnidad y devoción.\n\nEl acto contó con la colaboración musical del Coro Rociero de la Hermandad, que aportó un ambiente festivo y espiritual durante la celebración. Esta misa representa un momento clave para la comunidad, que se reúne para agradecer y cerrar oficialmente las festividades patronales en el municipio.",
+        "fecha": "2026-08-26T08:12:42+00:00",
+        "fuente": "RTV Alhaurín el Grande",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Misa de Acción de Gracias Alhaurín el Grande",
+            "Virgen de Gracia 2026",
+            "Fiestas Patronales Alhaurín el Grande"
+        ],
+        "enlace": "https://rtvalhaurinelgrande.com/misa-de-accion-de-gracias-virgen-de-gracia-2026/",
+        "url": "https://rtvalhaurinelgrande.com/misa-de-accion-de-gracias-virgen-de-gracia-2026/",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/08/Secuencia-01.01_05_37_09.Imagen-fija184.jpg",
+        "prioridad": 90,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-celebra-la-misa-de-accion-de-gracias-por-la-virgen-de-gracia-2026.html"
+    },
+    {
         "id": "https-rtvalhaurinelgrande-com-presentacion-de-los-bebes-y-misa-en-hono-7aa2fa25",
         "titulo": "Presentación de bebés y misa en honor a Nuestra Señora de Gracia en Alhaurín el Grande",
         "titulo_original": "Presentación de los bebés y Misa en Honor a Nuestra Señora de Gracia",

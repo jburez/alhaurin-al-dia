@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-lgnfoncqba0-1bf40b7e",
+        "titulo": "NOTICIAS ATV 27 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "titulo_original": "NOTICIAS ATV 27 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande ofrece un curso de auxiliar de almacén y organiza jornadas de clarinete, la IV Fiesta de la Vendimia y la conferencia Equinalh 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande ofrece un curso de auxiliar de almacén y organiza jornadas de clarinete, la IV Fiesta de la Vendimia y la conferencia Equinalh 2026.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha anunciado la puesta en marcha de un curso de auxiliar de almacén de 210 horas dirigido a personas en búsqueda de empleo, que incluye formación teórica y prácticas en empresa. El plazo de inscripción estará abierto hasta el 10 de septiembre.\n\nParalelamente, hasta este sábado se desarrollan en la localidad unas jornadas de clarinete que reúnen a estudiantes y profesionales para clases y conciertos. Además, el próximo domingo 6 de septiembre la Asociación Amigos del Vino celebrará la IV Fiesta de la Vendimia en su sede, con actividades relacionadas con la recogida y elaboración tradicional del vino y un almuerzo para los asistentes.\n\nPor último, el jueves 3 de septiembre dará inicio la programación Equinalh 2026 con una jornada sobre urgencias veterinarias en caballos, impartida por el veterinario Andrés Romero, enmarcada en las actividades organizadas por el Ayuntamiento en torno al mundo del caballo.",
+        "fecha": "2026-08-27T12:28:20+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
+        "seo_keywords": [
+            "curso auxiliar almacén Alhaurín el Grande",
+            "Fiesta de la Vendimia Alhaurín",
+            "Equinalh 2026 Alhaurín el Grande"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=lGNfoNcQBA0",
+        "url": "https://www.youtube.com/watch?v=lGNfoNcQBA0",
+        "imagen": "https://i1.ytimg.com/vi/lGNfoNcQBA0/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/noticias-atv-27-agosto-2026-actualidad-de-alhaurin-el-grande.html"
+    },
+    {
         "id": "guid-atv-alhaurin-youtube-yt-video-g-jzyvj2bw8-8d797350",
         "titulo": "Alhaurín el Grande mejora la parada de taxis y ofrece talleres y eventos culturales",
         "titulo_original": "NOTICIAS ATV 26 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",

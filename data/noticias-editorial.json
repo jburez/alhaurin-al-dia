@@ -137,6 +137,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=g_jzYvj2BW8"
   },
+  "guid:atv-alhaurin-youtube:yt:video:lGNfoNcQBA0": {
+    "ai_attempts": 0,
+    "content_hash": "35b935a14316ab446c0753ded9c65e0fa8ea6434",
+    "date_modified": null,
+    "date_published": "2026-08-27T12:28:20+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha anunciado la puesta en marcha de un curso de auxiliar de almacén de 210 horas dirigido a personas en búsqueda de empleo, que incluye formación teórica y prácticas en empresa. El plazo de inscripción estará abierto hasta el 10 de septiembre.\n\nParalelamente, hasta este sábado se desarrollan en la localidad unas jornadas de clarinete que reúnen a estudiantes y profesionales para clases y conciertos. Además, el próximo domingo 6 de septiembre la Asociación Amigos del Vino celebrará la IV Fiesta de la Vendimia en su sede, con actividades relacionadas con la recogida y elaboración tradicional del vino y un almuerzo para los asistentes.\n\nPor último, el jueves 3 de septiembre dará inicio la programación Equinalh 2026 con una jornada sobre urgencias veterinarias en caballos, impartida por el veterinario Andrés Romero, enmarcada en las actividades organizadas por el Ayuntamiento en torno al mundo del caballo.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande ofrece un curso de auxiliar de almacén y organiza jornadas de clarinete, la IV Fiesta de la Vendimia y la conferencia Equinalh 2026.",
+      "seo_keywords": [
+        "curso auxiliar almacén Alhaurín el Grande",
+        "Fiesta de la Vendimia Alhaurín",
+        "Equinalh 2026 Alhaurín el Grande"
+      ],
+      "titulo": "NOTICIAS ATV 27 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-lgnfoncqba0-1bf40b7e",
+    "last_ai_attempt": "2026-08-27T20:16:04.600069+00:00",
+    "pagina": "noticias/noticias-atv-27-agosto-2026-actualidad-de-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=lGNfoNcQBA0"
+  },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224629": {
     "ai_attempts": 0,
     "content_hash": "69bc8150b9d020b210517a760d3278876bbf78c8",

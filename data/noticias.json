@@ -1,51 +1,5 @@
 [
     {
-        "id": "guid-atv-alhaurin-youtube-yt-video-lgnfoncqba0-1bf40b7e",
-        "titulo": "NOTICIAS ATV 27 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "titulo_original": "NOTICIAS ATV 27 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande ofrece un curso de auxiliar de almacén y organiza jornadas de clarinete, la IV Fiesta de la Vendimia y la conferencia Equinalh 2026.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande ofrece un curso de auxiliar de almacén y organiza jornadas de clarinete, la IV Fiesta de la Vendimia y la conferencia Equinalh 2026.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha anunciado la puesta en marcha de un curso de auxiliar de almacén de 210 horas dirigido a personas en búsqueda de empleo, que incluye formación teórica y prácticas en empresa. El plazo de inscripción estará abierto hasta el 10 de septiembre.\n\nParalelamente, hasta este sábado se desarrollan en la localidad unas jornadas de clarinete que reúnen a estudiantes y profesionales para clases y conciertos. Además, el próximo domingo 6 de septiembre la Asociación Amigos del Vino celebrará la IV Fiesta de la Vendimia en su sede, con actividades relacionadas con la recogida y elaboración tradicional del vino y un almuerzo para los asistentes.\n\nPor último, el jueves 3 de septiembre dará inicio la programación Equinalh 2026 con una jornada sobre urgencias veterinarias en caballos, impartida por el veterinario Andrés Romero, enmarcada en las actividades organizadas por el Ayuntamiento en torno al mundo del caballo.",
-        "fecha": "2026-08-27T12:28:20+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [
-            "curso auxiliar almacén Alhaurín el Grande",
-            "Fiesta de la Vendimia Alhaurín",
-            "Equinalh 2026 Alhaurín el Grande"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=lGNfoNcQBA0",
-        "url": "https://www.youtube.com/watch?v=lGNfoNcQBA0",
-        "imagen": "https://i1.ytimg.com/vi/lGNfoNcQBA0/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/noticias-atv-27-agosto-2026-actualidad-de-alhaurin-el-grande.html"
-    },
-    {
-        "id": "guid-atv-alhaurin-youtube-yt-video-g-jzyvj2bw8-8d797350",
-        "titulo": "Alhaurín el Grande mejora la parada de taxis y ofrece talleres y eventos culturales",
-        "titulo_original": "NOTICIAS ATV 26 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande inicia obras en la parada de taxis y abre inscripciones para talleres, además de preparar un concierto de Paco Candela en septiembre.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande inicia obras en la parada de taxis y abre inscripciones para talleres, además de preparar un concierto de Paco Candela en septiembre.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha comenzado la construcción de una nueva marquesina para la parada de taxis, con una inversión de 130.000 euros. Las obras, que se extenderán por aproximadamente cinco meses, buscan mejorar la funcionalidad y estética de este punto céntrico del municipio.\n\nParalelamente, la concejalía de Educación ha abierto el plazo de inscripción para un taller de pintura al óleo dirigido a jóvenes, disponible hasta el 19 de septiembre. En el ámbito cultural y social, el campamento de agosto continúa promoviendo valores como la igualdad y la convivencia entre los niños y niñas participantes.\n\nAdemás, el CEIP Carmen Arévalo desarrolla actividades educativas relacionadas con la solidaridad, la salud y los Objetivos de Desarrollo Sostenible. Por último, Alhaurín el Grande se prepara para recibir el próximo 12 de septiembre al cantante Paco Candela, quien ofrecerá un concierto en el recinto de La Mota como parte de la Romería local.",
-        "fecha": "2026-08-26T12:45:48+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
-        "seo_keywords": [
-            "Alhaurín el Grande",
-            "marquesina parada taxis",
-            "taller pintura óleo"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=g_jzYvj2BW8",
-        "url": "https://www.youtube.com/watch?v=g_jzYvj2BW8",
-        "imagen": "https://i4.ytimg.com/vi/g_jzYvj2BW8/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-mejora-la-parada-de-taxis-y-ofrece-talleres-y-eventos-culturales.html"
-    },
-    {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",
         "titulo": "Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande",
         "titulo_original": "Presentación Cartel Romería y Equinalh 2026",
@@ -205,5 +159,74 @@
         "prioridad": 120,
         "requiere_revision_geografica": false,
         "pagina": "noticias/alhaurin-el-grande-convoca-a-sus-vecinos-para-las-celebraciones-del-dia-de-la-virgen-2026.html"
+    },
+    {
+        "id": "guid-fedelhorce-https-fedelhorce-es-p-260103-40fd35b2",
+        "titulo": "Fedelhorce ha estado presente en el acto de inicio de las obras, destacando la relevancia",
+        "titulo_original": "Comienzan las obras del nuevo tramo de la A-357: un impulso para la movilidad y el desarrollo del Valle del Guadalhorce",
+        "descripcion": "Han comenzado las obras del nuevo tramo de la A-357, una infraestructura clave que potenciará la conexión entre Málaga, el Valle del Guadalhorce y Ronda, impulsando el desarrollo local.",
+        "resumen": "Han comenzado las obras del nuevo tramo de la A-357, una infraestructura clave que potenciará la conexión entre Málaga, el Valle del Guadalhorce y Ronda, impulsando el desarrollo local.",
+        "cuerpo": "El inicio de las obras en la A-357 representa un paso importante para mejorar la comunicación vial entre Málaga, el Valle del Guadalhorce y Ronda. Esta actuación facilitará el tránsito y favorecerá la movilidad de residentes y visitantes, contribuyendo al crecimiento económico y social de la comarca.\n\nFedelhorce ha estado presente en el acto de inicio de las obras, destacando la relevancia de esta mejora para el desarrollo sostenible del territorio. La nueva infraestructura permitirá una conexión más rápida y segura, beneficiando especialmente a municipios como Alhaurín el Grande y su entorno.",
+        "fecha": "2026-07-31T08:00:14+00:00",
+        "fuente": "Fedelhorce",
+        "categoria": "Obras y Servicios",
+        "categoria_url": "categoria/obras-y-servicios/",
+        "seo_keywords": [
+            "A-357",
+            "Valle del Guadalhorce",
+            "mejora movilidad Alhaurín el Grande"
+        ],
+        "enlace": "https://fedelhorce.es/comienzan-las-obras-del-nuevo-tramo-de-la-a-357-un-impulso-para-la-movilidad-y-el-desarrollo-del-valle-del-guadalhorce/",
+        "url": "https://fedelhorce.es/comienzan-las-obras-del-nuevo-tramo-de-la-a-357-un-impulso-para-la-movilidad-y-el-desarrollo-del-valle-del-guadalhorce/",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-6.png",
+        "prioridad": 85,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/fedelhorce-ha-estado-presente-en-el-acto-de-inicio-de-las-obras-destacando-la-relevancia.html"
+    },
+    {
+        "id": "guid-fedelhorce-https-fedelhorce-es-p-260223-361bc37c",
+        "titulo": "Fundación Ley 57 en Alhaurín el Grande impulsa talento y cultura jurídica",
+        "titulo_original": "Nace la Fundación Ley 57: un impulso al talento y al conocimiento",
+        "descripcion": "La Fundación Ley 57, con sede en Alhaurín el Grande, ofrecerá becas a estudiantes e investigadores y promoverá la cultura jurídica y financiera en la región.",
+        "resumen": "La Fundación Ley 57, con sede en Alhaurín el Grande, ofrecerá becas a estudiantes e investigadores y promoverá la cultura jurídica y financiera en la región.",
+        "cuerpo": "La Fundación Ley 57 ha sido creada como una entidad sin ánimo de lucro ubicada en Alhaurín el Grande, con el objetivo de fomentar el talento local mediante el apoyo económico a estudiantes e investigadores de la zona. Esta iniciativa busca fortalecer el desarrollo académico y profesional en la comunidad.\n\nAdemás de las becas, la fundación se compromete a acercar la cultura jurídica y financiera a la población, promoviendo actividades y recursos que faciliten el acceso a estos conocimientos. De esta forma, se pretende contribuir al crecimiento cultural y educativo de Alhaurín el Grande y sus alrededores.",
+        "fecha": "2026-07-28T11:48:52+00:00",
+        "fuente": "Fedelhorce",
+        "categoria": "Educación",
+        "categoria_url": "categoria/educacion/",
+        "seo_keywords": [
+            "Fundación Ley 57",
+            "becas Alhaurín el Grande",
+            "cultura jurídica y financiera"
+        ],
+        "enlace": "https://fedelhorce.es/nace-la-fundacion-ley-57-un-impulso-al-talento-y-al-conocimiento-desde-el-corazon-del-guadalhorce/",
+        "url": "https://fedelhorce.es/nace-la-fundacion-ley-57-un-impulso-al-talento-y-al-conocimiento-desde-el-corazon-del-guadalhorce/",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/1-2-scaled.png",
+        "prioridad": 85,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/fundacion-ley-57-en-alhaurin-el-grande-impulsa-talento-y-cultura-juridica.html"
+    },
+    {
+        "id": "guid-fedelhorce-https-fedelhorce-es-p-260066-d29713ee",
+        "titulo": "Visita institucional al CCA de Alhaurín el Grande",
+        "titulo_original": "Visita institucional al CCA de Alhaurín el Grande",
+        "descripcion": "La delegada territorial de Empleo ha recorrido el Centro de Creación de Empresas de Alhaurín el Grande y ha conocido el proyecto del nuevo Centro de Alto Rendimiento para PYMES.",
+        "resumen": "La delegada territorial de Empleo ha recorrido el Centro de Creación de Empresas de Alhaurín el Grande y ha conocido el proyecto del nuevo Centro de Alto Rendimiento para PYMES.",
+        "cuerpo": "La delegada territorial de Empleo realizó una visita institucional al Centro de Creación de Empresas (CCA) de Alhaurín el Grande para conocer de primera mano sus instalaciones y servicios. Durante el recorrido, se destacó la importancia del CCA como espacio de apoyo y desarrollo para emprendedores y pequeñas empresas de la comarca.\n\nAdemás, la delegada pudo informarse sobre el proyecto del futuro Centro de Alto Rendimiento para PYMES, una iniciativa destinada a impulsar la competitividad y el crecimiento empresarial en la zona. Este nuevo centro ofrecerá recursos especializados y asesoramiento para facilitar la innovación y la expansión de las pequeñas y medianas empresas locales.",
+        "fecha": "2026-07-10T11:35:18+00:00",
+        "fuente": "Fedelhorce",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
+        "seo_keywords": [
+            "Centro de Creación de Empresas Alhaurín el Grande",
+            "Centro de Alto Rendimiento PYMES",
+            "delegada territorial de Empleo"
+        ],
+        "enlace": "https://fedelhorce.es/visita-institucional-al-cca-de-alhaurin-el-grande/",
+        "url": "https://fedelhorce.es/visita-institucional-al-cca-de-alhaurin-el-grande/",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3.png",
+        "prioridad": 85,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/visita-institucional-al-cca-de-alhaurin-el-grande.html"
     }
 ]

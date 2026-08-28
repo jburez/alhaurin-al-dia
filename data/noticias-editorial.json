@@ -436,6 +436,52 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-noche-de-comercio-abierto/"
   },
+  "guid:fedelhorce:https://fedelhorce.es/?p=260066": {
+    "ai_attempts": 0,
+    "content_hash": "953c0e8380196f3f2ed22abf250cb11286bccc68",
+    "date_modified": null,
+    "date_published": "2026-07-10T11:35:18+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La delegada territorial de Empleo realizó una visita institucional al Centro de Creación de Empresas (CCA) de Alhaurín el Grande para conocer de primera mano sus instalaciones y servicios. Durante el recorrido, se destacó la importancia del CCA como espacio de apoyo y desarrollo para emprendedores y pequeñas empresas de la comarca.\n\nAdemás, la delegada pudo informarse sobre el proyecto del futuro Centro de Alto Rendimiento para PYMES, una iniciativa destinada a impulsar la competitividad y el crecimiento empresarial en la zona. Este nuevo centro ofrecerá recursos especializados y asesoramiento para facilitar la innovación y la expansión de las pequeñas y medianas empresas locales.",
+      "descripcion": "La delegada territorial de Empleo ha recorrido el Centro de Creación de Empresas de Alhaurín el Grande y ha conocido el proyecto del nuevo Centro de Alto Rendimiento para PYMES.",
+      "seo_keywords": [
+        "Centro de Creación de Empresas Alhaurín el Grande",
+        "Centro de Alto Rendimiento PYMES",
+        "delegada territorial de Empleo"
+      ],
+      "titulo": "Visita institucional al CCA de Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-260066-d29713ee",
+    "last_ai_attempt": "2026-08-28T06:03:39.601064+00:00",
+    "pagina": "noticias/visita-institucional-al-cca-de-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/visita-institucional-al-cca-de-alhaurin-el-grande/"
+  },
+  "guid:fedelhorce:https://fedelhorce.es/?p=260103": {
+    "ai_attempts": 0,
+    "content_hash": "3a75211062f47f2002b0c51a200f4319adb20acc",
+    "date_modified": null,
+    "date_published": "2026-07-31T08:00:14+00:00",
+    "editorial": {
+      "categoria": "Obras y Servicios",
+      "cuerpo": "El inicio de las obras en la A-357 representa un paso importante para mejorar la comunicación vial entre Málaga, el Valle del Guadalhorce y Ronda. Esta actuación facilitará el tránsito y favorecerá la movilidad de residentes y visitantes, contribuyendo al crecimiento económico y social de la comarca.\n\nFedelhorce ha estado presente en el acto de inicio de las obras, destacando la relevancia de esta mejora para el desarrollo sostenible del territorio. La nueva infraestructura permitirá una conexión más rápida y segura, beneficiando especialmente a municipios como Alhaurín el Grande y su entorno.",
+      "descripcion": "Han comenzado las obras del nuevo tramo de la A-357, una infraestructura clave que potenciará la conexión entre Málaga, el Valle del Guadalhorce y Ronda, impulsando el desarrollo local.",
+      "seo_keywords": [
+        "A-357",
+        "Valle del Guadalhorce",
+        "mejora movilidad Alhaurín el Grande"
+      ],
+      "titulo": "Fedelhorce ha estado presente en el acto de inicio de las obras, destacando la relevancia"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-260103-40fd35b2",
+    "last_ai_attempt": "2026-08-28T06:03:30.810050+00:00",
+    "pagina": "noticias/fedelhorce-ha-estado-presente-en-el-acto-de-inicio-de-las-obras-destacando-la-relevancia.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/comienzan-las-obras-del-nuevo-tramo-de-la-a-357-un-impulso-para-la-movilidad-y-el-desarrollo-del-valle-del-guadalhorce/"
+  },
   "guid:fedelhorce:https://fedelhorce.es/?p=260171": {
     "ai_attempts": 0,
     "content_hash": "0d37b5b62e92906a132cdcefc34a145b8664bf98",
@@ -458,6 +504,29 @@
     "pagina": "noticias/conoce-a-los-protagonistas-que-impulsan-el-crecimiento-de-la-comarca-fedelhorce.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/somos-fedelhorce/"
+  },
+  "guid:fedelhorce:https://fedelhorce.es/?p=260223": {
+    "ai_attempts": 0,
+    "content_hash": "c63c9591aad646bbbd5b15bf36c540678b3f8c1e",
+    "date_modified": null,
+    "date_published": "2026-07-28T11:48:52+00:00",
+    "editorial": {
+      "categoria": "Educación",
+      "cuerpo": "La Fundación Ley 57 ha sido creada como una entidad sin ánimo de lucro ubicada en Alhaurín el Grande, con el objetivo de fomentar el talento local mediante el apoyo económico a estudiantes e investigadores de la zona. Esta iniciativa busca fortalecer el desarrollo académico y profesional en la comunidad.\n\nAdemás de las becas, la fundación se compromete a acercar la cultura jurídica y financiera a la población, promoviendo actividades y recursos que faciliten el acceso a estos conocimientos. De esta forma, se pretende contribuir al crecimiento cultural y educativo de Alhaurín el Grande y sus alrededores.",
+      "descripcion": "La Fundación Ley 57, con sede en Alhaurín el Grande, ofrecerá becas a estudiantes e investigadores y promoverá la cultura jurídica y financiera en la región.",
+      "seo_keywords": [
+        "Fundación Ley 57",
+        "becas Alhaurín el Grande",
+        "cultura jurídica y financiera"
+      ],
+      "titulo": "Fundación Ley 57 en Alhaurín el Grande impulsa talento y cultura jurídica"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-260223-361bc37c",
+    "last_ai_attempt": "2026-08-28T06:03:34.904215+00:00",
+    "pagina": "noticias/fundacion-ley-57-en-alhaurin-el-grande-impulsa-talento-y-cultura-juridica.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/nace-la-fundacion-ley-57-un-impulso-al-talento-y-al-conocimiento-desde-el-corazon-del-guadalhorce/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260277": {
     "ai_attempts": 0,

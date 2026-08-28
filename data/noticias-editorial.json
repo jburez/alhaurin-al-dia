@@ -137,6 +137,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=g_jzYvj2BW8"
   },
+  "guid:atv-alhaurin-youtube:yt:video:l2mQ3DOyxmo": {
+    "ai_attempts": 0,
+    "content_hash": "eee80a0574e4b9eeea10185541f9a815b0e36052",
+    "date_modified": null,
+    "date_published": "2026-08-28T13:35:16+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Alhaurín el Grande ha sido galardonado por segunda vez con el Premio Educaciudad otorgado por la Junta de Andalucía, un reconocimiento a su compromiso y trayectoria en el ámbito educativo, impulsado desde la concejalía de educación.\n\nEste premio destaca las iniciativas y proyectos que el municipio desarrolla para mejorar la formación y el bienestar de sus habitantes. Según datos del Instituto de Estadística de Andalucía, en 2025 el municipio cuenta con una población censada de 27.610 personas, con una mayoría de mujeres y una diversidad cultural que incluye hasta 99 nacionalidades diferentes.\n\nEsta pluralidad enriquece la vida local y refleja la convivencia en Alhaurín el Grande. El área de juventud del Ayuntamiento ha cerrado la programación de agosto del Teen Summer con un taller de defensa personal, una actividad que busca fomentar la seguridad y el empoderamiento entre los jóvenes.",
+      "descripcion": "Alhaurín el Grande es reconocido por segunda vez con el Premio Educaciudad y finaliza agosto con un taller de defensa personal dentro del Teen Summer municipal.",
+      "seo_keywords": [
+        "Premio Educaciudad Alhaurín el Grande",
+        "taller defensa personal Alhaurín",
+        "población extranjera Alhaurín el Grande"
+      ],
+      "titulo": "Alhaurín el Grande recibe el Premio Educaciudad y cierra agosto con taller de defensa"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-l2mq3doyxmo-3c9e2c9e",
+    "last_ai_attempt": "2026-08-28T20:09:02.754777+00:00",
+    "pagina": "noticias/alhaurin-el-grande-recibe-el-premio-educaciudad-y-cierra-agosto-con-taller-de-defensa.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=l2mQ3DOyxmo"
+  },
   "guid:atv-alhaurin-youtube:yt:video:lGNfoNcQBA0": {
     "ai_attempts": 0,
     "content_hash": "35b935a14316ab446c0753ded9c65e0fa8ea6434",

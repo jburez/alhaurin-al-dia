@@ -7,8 +7,17 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Fri, 28 Aug 2026 06:05:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 20:11:06 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
+    <item>
+      <title>Alhaurín el Grande recibe el Premio Educaciudad y cierra agosto con taller de defensa</title>
+      <link>https://www.youtube.com/watch?v=l2mQ3DOyxmo</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=l2mQ3DOyxmo</guid>
+      <pubDate>Fri, 28 Aug 2026 13:35:16 GMT</pubDate>
+      <description>Alhaurín el Grande es reconocido por segunda vez con el Premio Educaciudad y finaliza agosto con un taller de defensa personal dentro del Teen Summer municipal.</description>
+      <category>Actualidad</category>
+      <dc:creator>ATV Alhaurín YouTube</dc:creator>
+    </item>
     <item>
       <title>Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande</title>
       <link>https://rtvalhaurinelgrande.com/presentacion-cartel-romeria-y-equinalh-2026/</link>
@@ -79,24 +88,6 @@
       <pubDate>Fri, 31 Jul 2026 08:00:14 GMT</pubDate>
       <description>Han comenzado las obras del nuevo tramo de la A-357, una infraestructura clave que potenciará la conexión entre Málaga, el Valle del Guadalhorce y Ronda, impulsando el desarrollo local.</description>
       <category>Obras y Servicios</category>
-      <dc:creator>Fedelhorce</dc:creator>
-    </item>
-    <item>
-      <title>Fundación Ley 57 en Alhaurín el Grande impulsa talento y cultura jurídica</title>
-      <link>https://fedelhorce.es/nace-la-fundacion-ley-57-un-impulso-al-talento-y-al-conocimiento-desde-el-corazon-del-guadalhorce/</link>
-      <guid isPermaLink="true">https://fedelhorce.es/nace-la-fundacion-ley-57-un-impulso-al-talento-y-al-conocimiento-desde-el-corazon-del-guadalhorce/</guid>
-      <pubDate>Tue, 28 Jul 2026 11:48:52 GMT</pubDate>
-      <description>La Fundación Ley 57, con sede en Alhaurín el Grande, ofrecerá becas a estudiantes e investigadores y promoverá la cultura jurídica y financiera en la región.</description>
-      <category>Educación</category>
-      <dc:creator>Fedelhorce</dc:creator>
-    </item>
-    <item>
-      <title>Visita institucional al CCA de Alhaurín el Grande</title>
-      <link>https://fedelhorce.es/visita-institucional-al-cca-de-alhaurin-el-grande/</link>
-      <guid isPermaLink="true">https://fedelhorce.es/visita-institucional-al-cca-de-alhaurin-el-grande/</guid>
-      <pubDate>Fri, 10 Jul 2026 11:35:18 GMT</pubDate>
-      <description>La delegada territorial de Empleo ha recorrido el Centro de Creación de Empresas de Alhaurín el Grande y ha conocido el proyecto del nuevo Centro de Alto Rendimiento para PYMES.</description>
-      <category>Municipal</category>
       <dc:creator>Fedelhorce</dc:creator>
     </item>
   </channel>

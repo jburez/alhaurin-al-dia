@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-l2mq3doyxmo-3c9e2c9e",
+        "titulo": "Alhaurín el Grande recibe el Premio Educaciudad y cierra agosto con taller de defensa",
+        "titulo_original": "NOTICIAS ATV 28 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "descripcion": "Alhaurín el Grande es reconocido por segunda vez con el Premio Educaciudad y finaliza agosto con un taller de defensa personal dentro del Teen Summer municipal.",
+        "resumen": "Alhaurín el Grande es reconocido por segunda vez con el Premio Educaciudad y finaliza agosto con un taller de defensa personal dentro del Teen Summer municipal.",
+        "cuerpo": "Alhaurín el Grande ha sido galardonado por segunda vez con el Premio Educaciudad otorgado por la Junta de Andalucía, un reconocimiento a su compromiso y trayectoria en el ámbito educativo, impulsado desde la concejalía de educación.\n\nEste premio destaca las iniciativas y proyectos que el municipio desarrolla para mejorar la formación y el bienestar de sus habitantes. Según datos del Instituto de Estadística de Andalucía, en 2025 el municipio cuenta con una población censada de 27.610 personas, con una mayoría de mujeres y una diversidad cultural que incluye hasta 99 nacionalidades diferentes.\n\nEsta pluralidad enriquece la vida local y refleja la convivencia en Alhaurín el Grande. El área de juventud del Ayuntamiento ha cerrado la programación de agosto del Teen Summer con un taller de defensa personal, una actividad que busca fomentar la seguridad y el empoderamiento entre los jóvenes.",
+        "fecha": "2026-08-28T13:35:16+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
+        "seo_keywords": [
+            "Premio Educaciudad Alhaurín el Grande",
+            "taller defensa personal Alhaurín",
+            "población extranjera Alhaurín el Grande"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=l2mQ3DOyxmo",
+        "url": "https://www.youtube.com/watch?v=l2mQ3DOyxmo",
+        "imagen": "https://i1.ytimg.com/vi/l2mQ3DOyxmo/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-recibe-el-premio-educaciudad-y-cierra-agosto-con-taller-de-defensa.html"
+    },
+    {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",
         "titulo": "Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande",
         "titulo_original": "Presentación Cartel Romería y Equinalh 2026",
@@ -182,51 +205,5 @@
         "prioridad": 85,
         "requiere_revision_geografica": false,
         "pagina": "noticias/fedelhorce-ha-estado-presente-en-el-acto-de-inicio-de-las-obras-destacando-la-relevancia.html"
-    },
-    {
-        "id": "guid-fedelhorce-https-fedelhorce-es-p-260223-361bc37c",
-        "titulo": "Fundación Ley 57 en Alhaurín el Grande impulsa talento y cultura jurídica",
-        "titulo_original": "Nace la Fundación Ley 57: un impulso al talento y al conocimiento",
-        "descripcion": "La Fundación Ley 57, con sede en Alhaurín el Grande, ofrecerá becas a estudiantes e investigadores y promoverá la cultura jurídica y financiera en la región.",
-        "resumen": "La Fundación Ley 57, con sede en Alhaurín el Grande, ofrecerá becas a estudiantes e investigadores y promoverá la cultura jurídica y financiera en la región.",
-        "cuerpo": "La Fundación Ley 57 ha sido creada como una entidad sin ánimo de lucro ubicada en Alhaurín el Grande, con el objetivo de fomentar el talento local mediante el apoyo económico a estudiantes e investigadores de la zona. Esta iniciativa busca fortalecer el desarrollo académico y profesional en la comunidad.\n\nAdemás de las becas, la fundación se compromete a acercar la cultura jurídica y financiera a la población, promoviendo actividades y recursos que faciliten el acceso a estos conocimientos. De esta forma, se pretende contribuir al crecimiento cultural y educativo de Alhaurín el Grande y sus alrededores.",
-        "fecha": "2026-07-28T11:48:52+00:00",
-        "fuente": "Fedelhorce",
-        "categoria": "Educación",
-        "categoria_url": "categoria/educacion/",
-        "seo_keywords": [
-            "Fundación Ley 57",
-            "becas Alhaurín el Grande",
-            "cultura jurídica y financiera"
-        ],
-        "enlace": "https://fedelhorce.es/nace-la-fundacion-ley-57-un-impulso-al-talento-y-al-conocimiento-desde-el-corazon-del-guadalhorce/",
-        "url": "https://fedelhorce.es/nace-la-fundacion-ley-57-un-impulso-al-talento-y-al-conocimiento-desde-el-corazon-del-guadalhorce/",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/1-2-scaled.png",
-        "prioridad": 85,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/fundacion-ley-57-en-alhaurin-el-grande-impulsa-talento-y-cultura-juridica.html"
-    },
-    {
-        "id": "guid-fedelhorce-https-fedelhorce-es-p-260066-d29713ee",
-        "titulo": "Visita institucional al CCA de Alhaurín el Grande",
-        "titulo_original": "Visita institucional al CCA de Alhaurín el Grande",
-        "descripcion": "La delegada territorial de Empleo ha recorrido el Centro de Creación de Empresas de Alhaurín el Grande y ha conocido el proyecto del nuevo Centro de Alto Rendimiento para PYMES.",
-        "resumen": "La delegada territorial de Empleo ha recorrido el Centro de Creación de Empresas de Alhaurín el Grande y ha conocido el proyecto del nuevo Centro de Alto Rendimiento para PYMES.",
-        "cuerpo": "La delegada territorial de Empleo realizó una visita institucional al Centro de Creación de Empresas (CCA) de Alhaurín el Grande para conocer de primera mano sus instalaciones y servicios. Durante el recorrido, se destacó la importancia del CCA como espacio de apoyo y desarrollo para emprendedores y pequeñas empresas de la comarca.\n\nAdemás, la delegada pudo informarse sobre el proyecto del futuro Centro de Alto Rendimiento para PYMES, una iniciativa destinada a impulsar la competitividad y el crecimiento empresarial en la zona. Este nuevo centro ofrecerá recursos especializados y asesoramiento para facilitar la innovación y la expansión de las pequeñas y medianas empresas locales.",
-        "fecha": "2026-07-10T11:35:18+00:00",
-        "fuente": "Fedelhorce",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
-        "seo_keywords": [
-            "Centro de Creación de Empresas Alhaurín el Grande",
-            "Centro de Alto Rendimiento PYMES",
-            "delegada territorial de Empleo"
-        ],
-        "enlace": "https://fedelhorce.es/visita-institucional-al-cca-de-alhaurin-el-grande/",
-        "url": "https://fedelhorce.es/visita-institucional-al-cca-de-alhaurin-el-grande/",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-Juernes-AG-3.png",
-        "prioridad": 85,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/visita-institucional-al-cca-de-alhaurin-el-grande.html"
     }
 ]

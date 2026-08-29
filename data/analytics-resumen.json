@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-28T17:25:12.706Z",
-  "visitas24h": 11,
-  "paginasVistas24h": 13,
+  "actualizado": "2026-08-29T01:03:29.457Z",
+  "visitas24h": 13,
+  "paginasVistas24h": 15,
   "topPaginas": [
     {
       "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
-      "vistas": 17
-    },
-    {
-      "ruta": "/",
-      "vistas": 13
+      "vistas": 18
     },
     {
       "ruta": "/noticias/paco-candela-protagoniza-el-concierto-principal-de-la-romeria-en-alhaurin-el-grande",
-      "vistas": 12
+      "vistas": 11
+    },
+    {
+      "ruta": "/",
+      "vistas": 9
     },
     {
       "ruta": "/noticias/alhaurin-el-grande-presenta-la-romeria-2026-y-eventos-culturales-en-septiembre-y-octubre",
       "vistas": 9
     },
     {
-      "ruta": "/noticias/paco-candela-protagonista-de-la-romeria-de-alhaurin-el-grande-2026-en-formato-de-dos-dias",
-      "vistas": 6
+      "ruta": "/noticias/paco-candela-estrella-principal-de-la-romeria-de-alhaurin-el-grande-2026",
+      "vistas": 7
     }
   ]
 }

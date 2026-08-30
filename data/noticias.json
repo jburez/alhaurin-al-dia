@@ -1,28 +1,5 @@
 [
     {
-        "id": "guid-diario-sur-malaga-https-www-diariosur-es-sucesos-susto-madrugada-1aab874a",
-        "titulo": "Incendio destruye por completo una nave en Alhaurín el Grande y afecta viviendas cercanas",
-        "titulo_original": "Susto de madrugada: un incendio calcina por completo una nave en Alhaurín el Grande",
-        "descripcion": "Un incendio en una nave industrial de Alhaurín el Grande calcinó el local y causó daños en tres viviendas próximas debido a las altas temperaturas.",
-        "resumen": "Un incendio en una nave industrial de Alhaurín el Grande calcinó el local y causó daños en tres viviendas próximas debido a las altas temperaturas.",
-        "cuerpo": "Un incendio declarado en una nave industrial de Alhaurín el Grande provocó la destrucción total del local durante la madrugada. Las llamas alcanzaron una intensidad tal que afectaron a tres viviendas cercanas, causando daños en vehículos, electrodomésticos y otros enseres que se encontraban en el interior de la nave.\n\nLos vecinos fueron alertados por el fuerte humo y el calor generado por el fuego. Los servicios de emergencia acudieron rápidamente al lugar para controlar el incendio y evitar que se extendiera a otras propiedades. Aunque no se reportaron heridos, el impacto material ha sido considerable, especialmente en las viviendas próximas que sufrieron daños por las altas temperaturas.\n\nLas autoridades investigan las causas que originaron el siniestro para esclarecer lo ocurrido y prevenir futuros incidentes similares en la zona.",
-        "fecha": "2026-08-30T16:32:30+00:00",
-        "fuente": "Diario SUR Málaga",
-        "categoria": "Sucesos",
-        "categoria_url": "categoria/sucesos/",
-        "seo_keywords": [
-            "incendio nave Alhaurín el Grande",
-            "daños incendio viviendas",
-            "emergencias Alhaurín el Grande"
-        ],
-        "enlace": "https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html",
-        "url": "https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html",
-        "imagen": "https://s3.ppllstatics.com/diariosur/www/multimedia/sucesos/2026/08/30/incendio-nave.jpg",
-        "prioridad": 100,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/incendio-destruye-por-completo-una-nave-en-alhaurin-el-grande-y-afecta-viviendas-cercanas.html"
-    },
-    {
         "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-incendio-calcina-nave-al-b34e5ea4",
         "titulo": "Incendio destruye nave y afecta tres viviendas en Alhaurín el Grande",
         "titulo_original": "Un incendio calcina una nave en Alhaurín el Grande y afecta a tres viviendas",

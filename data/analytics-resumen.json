@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-30T14:58:48.668Z",
-  "visitas24h": 9,
-  "paginasVistas24h": 13,
+  "actualizado": "2026-08-30T18:26:00.280Z",
+  "visitas24h": 10,
+  "paginasVistas24h": 14,
   "topPaginas": [
     {
-      "ruta": "/planes/",
-      "vistas": 10
-    },
-    {
-      "ruta": "/noticias/paco-candela-protagonista-de-la-romeria-de-alhaurin-el-grande-2026-en-formato-de-dos-dias",
-      "vistas": 10
-    },
-    {
-      "ruta": "/guia-util/farmacias/calendario/",
-      "vistas": 10
+      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
+      "vistas": 17
     },
     {
       "ruta": "/guia-util/farmacias/",
-      "vistas": 10
+      "vistas": 9
     },
     {
-      "ruta": "/noticias/programa-completo-de-la-56-fiesta-del-ajoblanco-en-almachar-2026",
-      "vistas": 10
+      "ruta": "/noticias/paco-candela-estrella-principal-de-la-romeria-de-alhaurin-el-grande-2026",
+      "vistas": 9
+    },
+    {
+      "ruta": "/",
+      "vistas": 7
+    },
+    {
+      "ruta": "/noticias/alhaurin-el-grande-celebra-jornadas-de-clarinete-y-apoya-causas-solidarias-en-agosto-2026",
+      "vistas": 6
     }
   ]
 }

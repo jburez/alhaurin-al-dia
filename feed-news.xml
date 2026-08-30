@@ -7,8 +7,17 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Sun, 30 Aug 2026 14:47:11 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 19:16:01 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
+    <item>
+      <title>Incendio destruye por completo una nave en Alhaurín el Grande y afecta viviendas cercanas</title>
+      <link>https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html</link>
+      <guid isPermaLink="true">https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html</guid>
+      <pubDate>Sun, 30 Aug 2026 16:32:30 GMT</pubDate>
+      <description>Un incendio en una nave industrial de Alhaurín el Grande calcinó el local y causó daños en tres viviendas próximas debido a las altas temperaturas.</description>
+      <category>Sucesos</category>
+      <dc:creator>Diario SUR Málaga</dc:creator>
+    </item>
     <item>
       <title>Incendio destruye nave y afecta tres viviendas en Alhaurín el Grande</title>
       <link>https://www.malagahoy.es/malaga/incendio-calcina-nave-alhaurin-grande-viviendas_0_2007830817.html</link>
@@ -17,15 +26,6 @@
       <description>Un incendio en una nave de la calle Ronda de Alhaurín el Grande ha calcinado la estructura y afectado tres viviendas cercanas, movilizando a bomberos de varias localidades.</description>
       <category>Sucesos</category>
       <dc:creator>Málaga Hoy</dc:creator>
-    </item>
-    <item>
-      <title>Incendio destruye por completo una nave en Alhaurín el Grande y afecta viviendas cercanas</title>
-      <link>https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html</link>
-      <guid isPermaLink="true">https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html</guid>
-      <pubDate>Sun, 30 Aug 2026 12:20:10 GMT</pubDate>
-      <description>Un incendio en una nave industrial de Alhaurín el Grande calcinó el local y causó daños en tres viviendas próximas debido a las altas temperaturas.</description>
-      <category>Sucesos</category>
-      <dc:creator>Diario SUR Málaga</dc:creator>
     </item>
     <item>
       <title>Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande</title>

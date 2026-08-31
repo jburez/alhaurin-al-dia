@@ -183,6 +183,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=lGNfoNcQBA0"
   },
+  "guid:atv-alhaurin-youtube:yt:video:pKyD2nZx2Nk": {
+    "ai_attempts": 0,
+    "content_hash": "1ceaa32499613f938fbcbd0e432b287fea8ad6e1",
+    "date_modified": null,
+    "date_published": "2026-08-31T11:12:45+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha emitido una alerta a la ciudadanía para evitar depositar toallitas en la red de alcantarillado, ya que su acumulación está causando atascos, inundaciones y otras incidencias que afectan al sistema de saneamiento local.\n\nSe recomienda utilizar el cubo de la basura para desechar estos productos y prevenir daños mayores. Por otro lado, un incendio ocurrido en la madrugada del domingo calcinó por completo una nave situada en el camino de Coín.\n\nEl fuego también afectó a tres viviendas próximas debido al intenso calor generado, según informó el servicio de emergencias 112. Las autoridades continúan investigando las causas del siniestro. En otros ámbitos, la localidad celebró un concierto de profesores en la Biblioteca dentro de las Jornadas de Clarinete, y se inauguraron nuevas instalaciones ecuestres en el Club Ecuestre “La Villa”.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande advierte sobre problemas en alcantarillado por toallitas y un incendio calcinó una nave, afectando también viviendas cercanas.",
+      "seo_keywords": [
+        "Alhaurín el Grande",
+        "atascos de toallitas",
+        "incendio nave industrial"
+      ],
+      "titulo": "Alhaurín el Grande alerta por atascos de toallitas y registra incendio en nave industrial"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-pkyd2nzx2nk-c1433c61",
+    "last_ai_attempt": "2026-08-31T13:23:26.880213+00:00",
+    "pagina": "noticias/alhaurin-el-grande-alerta-por-atascos-de-toallitas-y-registra-incendio-en-nave-industrial.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=pKyD2nZx2Nk"
+  },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224629": {
     "ai_attempts": 0,
     "content_hash": "69bc8150b9d020b210517a760d3278876bbf78c8",
@@ -1080,6 +1103,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/incendio-calcina-nave-alhaurin-grande-viviendas_0_2007830817.html"
   },
+  "guid:malaga-hoy:https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html": {
+    "ai_attempts": 0,
+    "content_hash": "aa7e9668a4442bc5378a964d2dcb30fbace92fea",
+    "date_modified": null,
+    "date_published": "2026-08-31T04:55:19+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El Partido Popular ha dado inicio al nuevo curso político en Málaga con su tradicional acto de los huevos fritos, un evento que simboliza la vuelta a la actividad política tras el periodo estival. Alberto Núñez Feijóo y Juanma Moreno, líderes destacados del partido, regresan a Alhaurín el Grande para repetir este encuentro que se ha convertido en un rito habitual.\n\nAdemás de su presencia en Alhaurín el Grande, Feijóo también participará en otros actos en Málaga durante la semana, consolidando así el comienzo de un periodo político marcado por la preparación de las próximas citas electorales.\n\nEste evento representa un punto de partida para el PP en la provincia, donde se espera una intensa actividad política en los próximos meses.",
+      "descripcion": "Alberto Núñez Feijóo y Juanma Moreno vuelven a Alhaurín el Grande para inaugurar el curso político con el emblemático acto de los huevos fritos, marcando el inicio de la actividad tras el verano.",
+      "seo_keywords": [
+        "PP Málaga",
+        "acto huevos fritos",
+        "Alhaurín el Grande política"
+      ],
+      "titulo": "El PP inicia el curso político en Málaga con el tradicional acto de los huevos fritos"
+    },
+    "ia_exitosa": true,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-pp-acto-huevos-fritos-ma-b9ef0ea2",
+    "last_ai_attempt": "2026-08-31T13:24:03.448254+00:00",
+    "pagina": "noticias/el-pp-inicia-el-curso-politico-en-malaga-con-el-tradicional-acto-de-los-huevos-fritos.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
+  },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,
     "content_hash": "7187a0d5937dcd13653026654890c4d24a8ea1bd",
@@ -1125,6 +1171,29 @@
     "pagina": "noticias/gala-benefica-en-alhaurin-el-grande-para-apoyar-a-las-monjas-clarisas-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/08/25/gala-benefica-monjas-clarisas-malaga-vox-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207679": {
+    "ai_attempts": 0,
+    "content_hash": "83e6a2347d18742d3a63d43ea69dc45c742b2bda",
+    "date_modified": null,
+    "date_published": "2026-08-31T08:40:48+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Este viernes, Alhaurín el Grande se convierte nuevamente en el punto de encuentro para los principales dirigentes del Partido Popular en Andalucía. La tradicional reunión, conocida como «huevos fritos», contará con la presencia destacada de Alberto Núñez Feijóo, Juanma Moreno y Patricia Navarro, junto a la presidenta local del PP, Toñi Ledesma.\n\nEste evento marca el inicio del curso político para el partido en la región y sirve como espacio para debatir estrategias y fortalecer la cohesión interna. La convocatoria en Alhaurín el Grande reafirma la importancia del municipio como escenario político en la provincia de Málaga.\n\nLa reunión permitirá a los líderes del PP abordar los retos y objetivos para el próximo periodo, consolidando la presencia del partido en el ámbito local y regional.",
+      "descripcion": "Alhaurín el Grande será escenario de la tradicional reunión política del PP con la participación de Alberto Núñez Feijóo, Juanma Moreno y Patricia Navarro.",
+      "seo_keywords": [
+        "Alhaurín el Grande",
+        "Partido Popular",
+        "reunión política PP"
+      ],
+      "titulo": "Alhaurín el Grande acoge la tradicional reunión política del PP con líderes nacionales"
+    },
+    "ia_exitosa": true,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-fafda477",
+    "last_ai_attempt": "2026-08-31T13:24:14.355347+00:00",
+    "pagina": "noticias/alhaurin-el-grande-acoge-la-tradicional-reunion-politica-del-pp-con-lideres-nacionales.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/08/31/alhaurin-el-grande-abre-el-curso-politico-del-pp-un-ano-mas/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

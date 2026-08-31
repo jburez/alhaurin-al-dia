@@ -45,6 +45,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JSAyrh72NAE"
   },
+  "guid:atv-alhaurin-youtube:yt:video:KWnz3pyV6go": {
+    "ai_attempts": 0,
+    "content_hash": "d60af48109c28c20bfcb3946d482d343374c7d38",
+    "date_modified": null,
+    "date_published": "2026-08-31T14:00:11+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Las primeras Jornadas de Clarinete en Alhaurín el Grande comenzaron con un concierto protagonizado por tres destacados músicos: los clarinetistas José Luis Estellés y Marta Burgos, junto a la pianista Amaia Zipitria. El evento tuvo lugar en la Biblioteca Municipal y contó con el apoyo del Ayuntamiento de la localidad.\n\nDurante el concierto, el público pudo disfrutar de un repertorio que abarcó diferentes estilos y épocas, mostrando la versatilidad del clarinete. El programa incluyó obras de compositores reconocidos como Mendelssohn, Bozza, Falla, Horovitz y Ponchielli, interpretadas en diversas formaciones de clarinete y piano.\n\nEsta actividad formó parte de unas jornadas dedicadas a la formación, el aprendizaje y la difusión del clarinete, que buscan fomentar el interés por este instrumento en la comunidad local.",
+      "descripcion": "La Biblioteca Municipal de Alhaurín el Grande acogió un concierto de profesores que abrió las primeras Jornadas de Clarinete, con un programa variado y la colaboración del Ayuntamiento local.",
+      "seo_keywords": [
+        "Jornadas de Clarinete Alhaurín el Grande",
+        "concierto clarinete Alhaurín",
+        "música clásica Alhaurín el Grande"
+      ],
+      "titulo": "Concierto de profesores inaugura las Jornadas de Clarinete en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-kwnz3pyv6go-45e059c3",
+    "last_ai_attempt": "2026-08-31T19:55:21.637180+00:00",
+    "pagina": "noticias/concierto-de-profesores-inaugura-las-jornadas-de-clarinete-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=KWnz3pyV6go"
+  },
   "guid:atv-alhaurin-youtube:yt:video:Ki2rPQoYPjQ": {
     "ai_attempts": 0,
     "content_hash": "ec6f377095d0472ae14f0eb7c820c7d177f75be7",

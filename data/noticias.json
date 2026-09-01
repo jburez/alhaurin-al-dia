@@ -1,51 +1,5 @@
 [
     {
-        "id": "guid-atv-alhaurin-youtube-yt-video-kwnz3pyv6go-45e059c3",
-        "titulo": "Concierto de profesores inaugura las Jornadas de Clarinete en Alhaurín el Grande",
-        "titulo_original": "Concierto de profesores en las primeras jornadas de clarinete en Alhaurín el Grande",
-        "descripcion": "La Biblioteca Municipal de Alhaurín el Grande acogió un concierto de profesores que abrió las primeras Jornadas de Clarinete, con un programa variado y la colaboración del Ayuntamiento local.",
-        "resumen": "La Biblioteca Municipal de Alhaurín el Grande acogió un concierto de profesores que abrió las primeras Jornadas de Clarinete, con un programa variado y la colaboración del Ayuntamiento local.",
-        "cuerpo": "Las primeras Jornadas de Clarinete en Alhaurín el Grande comenzaron con un concierto protagonizado por tres destacados músicos: los clarinetistas José Luis Estellés y Marta Burgos, junto a la pianista Amaia Zipitria. El evento tuvo lugar en la Biblioteca Municipal y contó con el apoyo del Ayuntamiento de la localidad.\n\nDurante el concierto, el público pudo disfrutar de un repertorio que abarcó diferentes estilos y épocas, mostrando la versatilidad del clarinete. El programa incluyó obras de compositores reconocidos como Mendelssohn, Bozza, Falla, Horovitz y Ponchielli, interpretadas en diversas formaciones de clarinete y piano.\n\nEsta actividad formó parte de unas jornadas dedicadas a la formación, el aprendizaje y la difusión del clarinete, que buscan fomentar el interés por este instrumento en la comunidad local.",
-        "fecha": "2026-08-31T14:00:11+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Agenda Cultural",
-        "categoria_url": "categoria/agenda-cultural/",
-        "seo_keywords": [
-            "Jornadas de Clarinete Alhaurín el Grande",
-            "concierto clarinete Alhaurín",
-            "música clásica Alhaurín el Grande"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=KWnz3pyV6go",
-        "url": "https://www.youtube.com/watch?v=KWnz3pyV6go",
-        "imagen": "https://i4.ytimg.com/vi/KWnz3pyV6go/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/concierto-de-profesores-inaugura-las-jornadas-de-clarinete-en-alhaurin-el-grande.html"
-    },
-    {
-        "id": "guid-atv-alhaurin-youtube-yt-video-pkyd2nzx2nk-c1433c61",
-        "titulo": "Alhaurín el Grande alerta por atascos de toallitas y registra incendio en nave industrial",
-        "titulo_original": "NOTICIAS ATV 31 AGOSTO 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande advierte sobre problemas en alcantarillado por toallitas y un incendio calcinó una nave, afectando también viviendas cercanas.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande advierte sobre problemas en alcantarillado por toallitas y un incendio calcinó una nave, afectando también viviendas cercanas.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha emitido una alerta a la ciudadanía para evitar depositar toallitas en la red de alcantarillado, ya que su acumulación está causando atascos, inundaciones y otras incidencias que afectan al sistema de saneamiento local.\n\nSe recomienda utilizar el cubo de la basura para desechar estos productos y prevenir daños mayores. Por otro lado, un incendio ocurrido en la madrugada del domingo calcinó por completo una nave situada en el camino de Coín.\n\nEl fuego también afectó a tres viviendas próximas debido al intenso calor generado, según informó el servicio de emergencias 112. Las autoridades continúan investigando las causas del siniestro. En otros ámbitos, la localidad celebró un concierto de profesores en la Biblioteca dentro de las Jornadas de Clarinete, y se inauguraron nuevas instalaciones ecuestres en el Club Ecuestre “La Villa”.",
-        "fecha": "2026-08-31T11:12:45+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [
-            "Alhaurín el Grande",
-            "atascos de toallitas",
-            "incendio nave industrial"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=pKyD2nZx2Nk",
-        "url": "https://www.youtube.com/watch?v=pKyD2nZx2Nk",
-        "imagen": "https://i1.ytimg.com/vi/pKyD2nZx2Nk/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-alerta-por-atascos-de-toallitas-y-registra-incendio-en-nave-industrial.html"
-    },
-    {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",
         "titulo": "Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande",
         "titulo_original": "Presentación Cartel Romería y Equinalh 2026",

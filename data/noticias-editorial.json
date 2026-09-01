@@ -91,6 +91,52 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Ki2rPQoYPjQ"
   },
+  "guid:atv-alhaurin-youtube:yt:video:NNzZ1413YEU": {
+    "ai_attempts": 0,
+    "content_hash": "2cf385372d183d9c1764928fc191c5400712e855",
+    "date_modified": null,
+    "date_published": "2026-09-01T12:55:16+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha aprobado las bases para una convocatoria de empleo público que ofrece 15 plazas de personal fijo, una oportunidad destacada para quienes buscan estabilidad laboral en el municipio.\n\nEsta iniciativa forma parte del compromiso local por fortalecer el empleo público y mejorar los servicios municipales. Por otro lado, el campamento municipal de agosto finalizó con una animada fiesta de agua que reunió a niños y familias, celebrando un mes de actividades y convivencia.\n\nEn el ámbito deportivo, la joven tenista alhaurina Daniela Bolado Torres ha logrado un nuevo triunfo al coronarse campeona de la Máster Final Summer Cup SUB16, consolidando su prometedora carrera.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande aprueba 15 plazas de empleo público y clausura el campamento de agosto con una fiesta acuática, mientras la tenista local Daniela Bolado gana la Máster Final Summer Cup SUB16.",
+      "seo_keywords": [
+        "empleo público Alhaurín el Grande",
+        "campamento municipal agosto",
+        "Daniela Bolado tenis"
+      ],
+      "titulo": "Alhaurín el Grande convoca 15 plazas fijas y celebra éxitos deportivos y sociales"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-nnzz1413yeu-f7de045c",
+    "last_ai_attempt": "2026-09-01T16:27:12.866878+00:00",
+    "pagina": "noticias/alhaurin-el-grande-convoca-15-plazas-fijas-y-celebra-exitos-deportivos-y-sociales.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=NNzZ1413YEU"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:XS2MDbBh2bg": {
+    "ai_attempts": 0,
+    "content_hash": "1287e841bb60c5b890f39ffb54b0db27c2582764",
+    "date_modified": null,
+    "date_published": "2026-09-01T14:00:18+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "Alhaurín el Grande cuenta con un nuevo centro ecuestre llamado 'La Villa', ubicado en el corazón del municipio, que se suma a la oferta local dedicada al mundo del caballo. Este centro dispone de una escuela de equitación que ofrece clases para jinetes de todos los niveles, desde principiantes hasta avanzados, bajo la dirección de Juan Jesús López Dobado.\n\nAdemás, el centro prepara una exhibición y clase de doma clásica que tendrá lugar el 19 de septiembre, en el marco del programa Equinalh, organizado por el Ayuntamiento para la romería de 2026. Estas iniciativas refuerzan la tradición y el interés por la hípica en Alhaurín el Grande, ofreciendo nuevas oportunidades para los aficionados y profesionales del sector.",
+      "descripcion": "El centro ecuestre 'La Villa' abre en Alhaurín el Grande con escuela de equitación para todos los niveles y exhibición de doma clásica con Juan López Dobado.",
+      "seo_keywords": [
+        "centro ecuestre La Villa",
+        "Juan López Dobado",
+        "equitación Alhaurín el Grande"
+      ],
+      "titulo": "Nuevo centro ecuestre 'La Villa' en Alhaurín el Grande ofrece clases con Juan López Dobado"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-xs2mdbbh2bg-524c1dda",
+    "last_ai_attempt": "2026-09-01T16:27:07.825443+00:00",
+    "pagina": "noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-ofrece-clases-con-juan-lopez-dobado.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=XS2MDbBh2bg"
+  },
   "guid:atv-alhaurin-youtube:yt:video:Z7s1LW5uWys": {
     "ai_attempts": 0,
     "content_hash": "ea2447ba6927dea0363b098059bf3d7dbe5bb824",

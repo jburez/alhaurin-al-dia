@@ -252,6 +252,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=l2mQ3DOyxmo"
   },
+  "guid:atv-alhaurin-youtube:yt:video:lGFnYF5PclY": {
+    "ai_attempts": 0,
+    "content_hash": "b455f821c2c0515e3c3e7197680405ac1e7790d7",
+    "date_modified": null,
+    "date_published": "2026-09-02T12:38:36+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El área de Deportes de Alhaurín el Grande ha dado inicio al curso deportivo 2026/27, con la participación de más de mil personas que ya han comenzado o retomado sus entrenamientos en las escuelas deportivas municipales. Esta primera semana de septiembre marca el arranque de una temporada llena de actividad física y formación deportiva para la comunidad.\n\nAdemás, la pedanía de Villa del Guadalhorce se prepara para celebrar este sábado la II Verbena solidaria, donde 22 participantes del taller musical de mayores ofrecerán actuaciones junto a tres escuelas de baile. La verbena contará con una barra solidaria cuyos fondos se destinarán a la asociación Un Sí por la Vida.\n\nPor otro lado, el Centro Andalusí de Rescate de Caballos ARCH organiza su Festival de Otoño el 4 de octubre, un evento abierto al público con exhibiciones y música para recaudar fondos destinados al rescate y cuidado de animales.",
+      "descripcion": "El curso deportivo 2026/27 comienza con más de mil participantes y se anuncian la II Verbena Villa del Guadalhorce y el Festival de Otoño en ARCH para apoyar causas solidarias.",
+      "seo_keywords": [
+        "curso deportivo Alhaurín el Grande",
+        "II Verbena Villa del Guadalhorce",
+        "Festival de Otoño ARCH"
+      ],
+      "titulo": "Alhaurín el Grande inicia curso deportivo y prepara eventos solidarios en septiembre"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-lgfnyf5pcly-57f827de",
+    "last_ai_attempt": "2026-09-02T16:25:15.218797+00:00",
+    "pagina": "noticias/alhaurin-el-grande-inicia-curso-deportivo-y-prepara-eventos-solidarios-en-septiembre.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=lGFnYF5PclY"
+  },
   "guid:atv-alhaurin-youtube:yt:video:lGNfoNcQBA0": {
     "ai_attempts": 0,
     "content_hash": "35b935a14316ab446c0753ded9c65e0fa8ea6434",

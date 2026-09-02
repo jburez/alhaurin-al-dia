@@ -337,7 +337,19 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-15-plazas-de-empleo-publico-fijo-por-concurso-oposicion.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-aparcamiento-en-zonas-de-recarga-y-lanza-subvenciones-2026.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-abre-convocatoria-para-15-plazas-de-empleo-publico-fijo-y-anuncia-6-mas.html</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -1477,6 +1489,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/concierto-de-profesores-inaugura-las-primeras-jornadas-de-clarinete-en-alhaurin-el-grande.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-de-verano-de-la-asociacion-musical-manuel-amador-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -2462,6 +2480,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-ofrece-clases-con-juan-lopez-dobado.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-recibe-al-jinete-juan-lopez-dobao.html</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

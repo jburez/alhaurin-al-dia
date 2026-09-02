@@ -206,6 +206,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=g_jzYvj2BW8"
   },
+  "guid:atv-alhaurin-youtube:yt:video:jcAdClL_nk4": {
+    "ai_attempts": 0,
+    "content_hash": "f9940da259c7a5f6ecab2e16649e608761eb5a0b",
+    "date_modified": null,
+    "date_published": "2026-09-02T06:50:39+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La agenda cultural de Alhaurín el Grande presenta una variada oferta de eventos para los próximos días, organizada con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel. Esta programación incluye actividades para todos los públicos que buscan fomentar la cultura local y el ocio en la comunidad.\n\nPlaneATV ofrece un repaso detallado de las citas culturales más relevantes, facilitando a los vecinos y visitantes información actualizada sobre exposiciones, talleres, conciertos y otras propuestas que se desarrollarán en el municipio.\n\nLa iniciativa refuerza el compromiso con la promoción del patrimonio cultural y la participación ciudadana en Alhaurín el Grande.",
+      "descripcion": "Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel.",
+      "seo_keywords": [
+        "agenda cultural Alhaurín el Grande",
+        "eventos culturales Alhaurín",
+        "Asociación Cultural El Laurel"
+      ],
+      "titulo": "Agenda cultural de Alhaurín el Grande: próximos eventos destacados"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-jcadcll-nk4-12e6977d",
+    "last_ai_attempt": "2026-09-02T11:04:48.478255+00:00",
+    "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=jcAdClL_nk4"
+  },
   "guid:atv-alhaurin-youtube:yt:video:l2mQ3DOyxmo": {
     "ai_attempts": 0,
     "content_hash": "eee80a0574e4b9eeea10185541f9a815b0e36052",
@@ -504,6 +527,29 @@
     "pagina": "noticias/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-presenta-las-bases-para-que-las-asociaciones-y-colectivos-locales-puedan-optar-a-las-subvenciones-municipales/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224719": {
+    "ai_attempts": 0,
+    "content_hash": "ee7f64733e7ac94c18c748628ce306581f0864ee",
+    "date_modified": null,
+    "date_published": "2026-09-02T09:41:57+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La Junta de Gobierno Local de Alhaurín el Grande ha aprobado las bases para una nueva convocatoria de empleo público destinada a cubrir 15 plazas de personal laboral fijo. Esta convocatoria está abierta a todas las personas que cumplan los requisitos establecidos y se regirá por los principios de igualdad, mérito y capacidad.\n\nEl proceso de selección se realizará mediante concurso-oposición, garantizando así la transparencia y la objetividad en la elección de los candidatos. Esta iniciativa responde al compromiso del Ayuntamiento de fortalecer la plantilla municipal y mejorar los servicios que se ofrecen a la ciudadanía de Alhaurín el Grande.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande convoca 15 plazas de personal laboral fijo, con bases aprobadas que garantizan igualdad, mérito y capacidad para todos los aspirantes.",
+      "seo_keywords": [
+        "empleo público Alhaurín el Grande",
+        "plazas personal laboral fijo",
+        "concurso oposición Ayuntamiento"
+      ],
+      "titulo": "Alhaurín el Grande abre 15 plazas de empleo público fijo por concurso-oposición"
+    },
+    "ia_exitosa": true,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22471-7dc7267e",
+    "last_ai_attempt": "2026-09-02T11:04:22.531317+00:00",
+    "pagina": "noticias/alhaurin-el-grande-abre-15-plazas-de-empleo-publico-fijo-por-concurso-oposicion.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-convoca-15-plazas-de-personal-laboral-fijo-mediante-concurso-oposicion/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -1264,6 +1310,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/08/31/alhaurin-el-grande-abre-el-curso-politico-del-pp-un-ano-mas/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207848": {
+    "ai_attempts": 0,
+    "content_hash": "231441423b83c725c0c028d1c5a096ff3ede4df4",
+    "date_modified": null,
+    "date_published": "2026-09-02T09:48:56+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La Junta de Gobierno Local de Alhaurín el Grande ha dado luz verde a las bases para una nueva convocatoria de empleo público destinada a cubrir 15 plazas de personal fijo en diferentes servicios municipales. Este proceso se llevará a cabo mediante un procedimiento público y selectivo basado en un sistema de concurso-oposición, garantizando la transparencia y la igualdad de oportunidades para los aspirantes.\n\nAdemás, el Ayuntamiento ha anunciado la próxima convocatoria de otras seis plazas dirigidas a funcionarios, ampliando así las oportunidades laborales en la administración local. Estas iniciativas forman parte del compromiso municipal por reforzar y mejorar los servicios públicos en Alhaurín el Grande, facilitando el acceso a empleo estable en el municipio.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande ha aprobado la convocatoria de 15 plazas de empleo público fijo y anuncia otras seis para funcionarios, con proceso selectivo de concurso-oposición.",
+      "seo_keywords": [
+        "empleo público Alhaurín el Grande",
+        "convocatoria plazas Ayuntamiento",
+        "oposiciones Alhaurín el Grande"
+      ],
+      "titulo": "Alhaurín el Grande abre convocatoria para 15 plazas de empleo público fijo y anuncia 6 más"
+    },
+    "ia_exitosa": true,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-aaca8ecd",
+    "last_ai_attempt": "2026-09-02T11:05:13.973798+00:00",
+    "pagina": "noticias/alhaurin-el-grande-abre-convocatoria-para-15-plazas-de-empleo-publico-fijo-y-anuncia-6-mas.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/02/alhaurin-el-grande-convoca-15-plazas-empleo-publico-fijo/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",
@@ -1539,5 +1608,51 @@
     "pagina": "noticias/presentan-el-cartel-oficial-de-la-romeria-y-equinalh-2026-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-cartel-romeria-y-equinalh-2026/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50617": {
+    "ai_attempts": 0,
+    "content_hash": "6df2682207fc94292930ce92016024a9a65e2aeb",
+    "date_modified": null,
+    "date_published": "2026-09-02T09:34:21+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Las primeras Jornadas de Clarinete en Alhaurín el Grande comenzaron con un concierto protagonizado por tres reconocidos músicos y docentes: José Luis Estellés, Marta Burgos y Amaia Zipitria. La Biblioteca Municipal fue el escenario elegido para esta actividad musical que reunió a amantes del clarinete y la música de la zona.\n\nEl evento contó con el apoyo del Ayuntamiento de Alhaurín el Grande, que impulsa iniciativas culturales para fomentar el arte y la educación musical en la comunidad. Esta cita marca el inicio de una serie de actividades dedicadas a este instrumento, con el objetivo de promover su estudio y difusión en el municipio.",
+      "descripcion": "La Biblioteca Municipal de Alhaurín el Grande acogió un concierto con destacados profesores en las primeras Jornadas de Clarinete, organizado con la colaboración del Ayuntamiento local.",
+      "seo_keywords": [
+        "Jornadas de Clarinete Alhaurín el Grande",
+        "Concierto profesores clarinete",
+        "Biblioteca Municipal Alhaurín el Grande"
+      ],
+      "titulo": "Concierto de profesores inaugura las primeras Jornadas de Clarinete en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50617-a2740fe7",
+    "last_ai_attempt": "2026-09-02T11:04:39.348561+00:00",
+    "pagina": "noticias/concierto-de-profesores-inaugura-las-primeras-jornadas-de-clarinete-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/concierto-de-profesores-en-las-primeras-jornadas-de-clarinete-en-alhaurin-el-grande/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50620": {
+    "ai_attempts": 0,
+    "content_hash": "33df37e50dba227faff96e1edd18f3cb4903624b",
+    "date_modified": null,
+    "date_published": "2026-09-02T09:40:02+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "Alhaurín el Grande cuenta desde hace pocos meses con un nuevo centro ecuestre llamado “La Villa”, que se suma a los espacios dedicados a la equitación en el municipio. Este establecimiento nace con la intención de fomentar la afición por el mundo del caballo y ofrecer un lugar de encuentro para amantes de la equitación.\n\nRecientemente, el centro ecuestre “La Villa” organizó un encuentro con el jinete Juan López Dobao, una figura destacada en el ámbito ecuestre. Este evento ha servido para fortalecer la comunidad local y promover la práctica de actividades relacionadas con la equitación en Alhaurín el Grande.",
+      "descripcion": "El centro ecuestre “La Villa” de Alhaurín el Grande abre sus puertas y acoge un encuentro con el reconocido jinete Juan López Dobao, consolidando la afición local por el mundo del caballo.",
+      "seo_keywords": [
+        "centro ecuestre La Villa",
+        "Juan López Dobao",
+        "equitación Alhaurín el Grande"
+      ],
+      "titulo": "Nuevo centro ecuestre “La Villa” en Alhaurín el Grande recibe al jinete Juan López Dobao"
+    },
+    "ia_exitosa": true,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50620-52115cb7",
+    "last_ai_attempt": "2026-09-02T11:04:34.587729+00:00",
+    "pagina": "noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-recibe-al-jinete-juan-lopez-dobao.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/encuentro-con-el-jinete-juan-lopez-dobao-en-el-centro-ecuestre-la-villa/"
   }
 }

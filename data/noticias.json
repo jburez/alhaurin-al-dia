@@ -1,51 +1,5 @@
 [
     {
-        "id": "guid-atv-alhaurin-youtube-yt-video-xs2mdbbh2bg-524c1dda",
-        "titulo": "Nuevo centro ecuestre 'La Villa' en Alhaurín el Grande ofrece clases con Juan López Dobado",
-        "titulo_original": "Encuentro con el jinete Juan López Dobao en el centro ecuestre “La villa”",
-        "descripcion": "El centro ecuestre 'La Villa' abre en Alhaurín el Grande con escuela de equitación para todos los niveles y exhibición de doma clásica con Juan López Dobado.",
-        "resumen": "El centro ecuestre 'La Villa' abre en Alhaurín el Grande con escuela de equitación para todos los niveles y exhibición de doma clásica con Juan López Dobado.",
-        "cuerpo": "Alhaurín el Grande cuenta con un nuevo centro ecuestre llamado 'La Villa', ubicado en el corazón del municipio, que se suma a la oferta local dedicada al mundo del caballo. Este centro dispone de una escuela de equitación que ofrece clases para jinetes de todos los niveles, desde principiantes hasta avanzados, bajo la dirección de Juan Jesús López Dobado.\n\nAdemás, el centro prepara una exhibición y clase de doma clásica que tendrá lugar el 19 de septiembre, en el marco del programa Equinalh, organizado por el Ayuntamiento para la romería de 2026. Estas iniciativas refuerzan la tradición y el interés por la hípica en Alhaurín el Grande, ofreciendo nuevas oportunidades para los aficionados y profesionales del sector.",
-        "fecha": "2026-09-01T14:00:18+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Deportes",
-        "categoria_url": "categoria/deportes/",
-        "seo_keywords": [
-            "centro ecuestre La Villa",
-            "Juan López Dobado",
-            "equitación Alhaurín el Grande"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=XS2MDbBh2bg",
-        "url": "https://www.youtube.com/watch?v=XS2MDbBh2bg",
-        "imagen": "https://i1.ytimg.com/vi/XS2MDbBh2bg/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-ofrece-clases-con-juan-lopez-dobado.html"
-    },
-    {
-        "id": "guid-atv-alhaurin-youtube-yt-video-nnzz1413yeu-f7de045c",
-        "titulo": "Alhaurín el Grande convoca 15 plazas fijas y celebra éxitos deportivos y sociales",
-        "titulo_original": "NOTICIAS ATV 1 SEPTIEMBRE 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El Ayuntamiento de Alhaurín el Grande aprueba 15 plazas de empleo público y clausura el campamento de agosto con una fiesta acuática, mientras la tenista local Daniela Bolado gana la Máster Final Summer Cup SUB16.",
-        "resumen": "El Ayuntamiento de Alhaurín el Grande aprueba 15 plazas de empleo público y clausura el campamento de agosto con una fiesta acuática, mientras la tenista local Daniela Bolado gana la Máster Final Summer Cup SUB16.",
-        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha aprobado las bases para una convocatoria de empleo público que ofrece 15 plazas de personal fijo, una oportunidad destacada para quienes buscan estabilidad laboral en el municipio.\n\nEsta iniciativa forma parte del compromiso local por fortalecer el empleo público y mejorar los servicios municipales. Por otro lado, el campamento municipal de agosto finalizó con una animada fiesta de agua que reunió a niños y familias, celebrando un mes de actividades y convivencia.\n\nEn el ámbito deportivo, la joven tenista alhaurina Daniela Bolado Torres ha logrado un nuevo triunfo al coronarse campeona de la Máster Final Summer Cup SUB16, consolidando su prometedora carrera.",
-        "fecha": "2026-09-01T12:55:16+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [
-            "empleo público Alhaurín el Grande",
-            "campamento municipal agosto",
-            "Daniela Bolado tenis"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=NNzZ1413YEU",
-        "url": "https://www.youtube.com/watch?v=NNzZ1413YEU",
-        "imagen": "https://i3.ytimg.com/vi/NNzZ1413YEU/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-convoca-15-plazas-fijas-y-celebra-exitos-deportivos-y-sociales.html"
-    },
-    {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",
         "titulo": "Presentan el cartel oficial de la Romería y Equinalh 2026 en Alhaurín el Grande",
         "titulo_original": "Presentación Cartel Romería y Equinalh 2026",

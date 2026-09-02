@@ -1,22 +1,8 @@
 {
-  "actualizado": "2026-09-02T01:00:26.033Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 253 eventos próximos.",
+  "actualizado": "2026-09-02T05:51:44.939900+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 251 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5421",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "🤍 Veladas de Blanco 🤡🍹🎶",
-      "descripcion": "🇬🇧 White Nights – Alhaurín El Grande Two unforgettable nights full of music, live shows, family fun, kids’ entertainment, and all the flavor and charm of our local shops and restaurants. Bring your...",
-      "lugar": "",
-      "inicio": "2026-08-02T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/veladas-de-blanco-%f0%9f%a4%a1-%f0%9f%8d%bd%ef%b8%8f%f0%9f%95%ba%f0%9f%8f%bb%f0%9f%8d%b9%f0%9f%8e%b6/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-12482",
       "tipo": "Música en vivo",
@@ -3779,21 +3765,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

@@ -1,28 +1,5 @@
 [
     {
-        "id": "guid-atv-alhaurin-youtube-yt-video-lgfnyf5pcly-57f827de",
-        "titulo": "Alhaurín el Grande inicia curso deportivo y prepara eventos solidarios en septiembre",
-        "titulo_original": "NOTICIAS ATV 02 SEPTIEMBRE 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
-        "descripcion": "El curso deportivo 2026/27 comienza con más de mil participantes y se anuncian la II Verbena Villa del Guadalhorce y el Festival de Otoño en ARCH para apoyar causas solidarias.",
-        "resumen": "El curso deportivo 2026/27 comienza con más de mil participantes y se anuncian la II Verbena Villa del Guadalhorce y el Festival de Otoño en ARCH para apoyar causas solidarias.",
-        "cuerpo": "El área de Deportes de Alhaurín el Grande ha dado inicio al curso deportivo 2026/27, con la participación de más de mil personas que ya han comenzado o retomado sus entrenamientos en las escuelas deportivas municipales. Esta primera semana de septiembre marca el arranque de una temporada llena de actividad física y formación deportiva para la comunidad.\n\nAdemás, la pedanía de Villa del Guadalhorce se prepara para celebrar este sábado la II Verbena solidaria, donde 22 participantes del taller musical de mayores ofrecerán actuaciones junto a tres escuelas de baile. La verbena contará con una barra solidaria cuyos fondos se destinarán a la asociación Un Sí por la Vida.\n\nPor otro lado, el Centro Andalusí de Rescate de Caballos ARCH organiza su Festival de Otoño el 4 de octubre, un evento abierto al público con exhibiciones y música para recaudar fondos destinados al rescate y cuidado de animales.",
-        "fecha": "2026-09-02T12:38:36+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [
-            "curso deportivo Alhaurín el Grande",
-            "II Verbena Villa del Guadalhorce",
-            "Festival de Otoño ARCH"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=lGFnYF5PclY",
-        "url": "https://www.youtube.com/watch?v=lGFnYF5PclY",
-        "imagen": "https://i1.ytimg.com/vi/lGFnYF5PclY/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-inicia-curso-deportivo-y-prepara-eventos-solidarios-en-septiembre.html"
-    },
-    {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22471-7dc7267e",
         "titulo": "Alhaurín el Grande abre 15 plazas de empleo público fijo por concurso-oposición",
         "titulo_original": "El Ayuntamiento de Alhaurín el Grande convoca 15 plazas de personal laboral fijo mediante concurso-oposición",
@@ -90,29 +67,6 @@
         "prioridad": 90,
         "requiere_revision_geografica": false,
         "pagina": "noticias/concierto-de-profesores-inaugura-las-primeras-jornadas-de-clarinete-en-alhaurin-el-grande.html"
-    },
-    {
-        "id": "guid-atv-alhaurin-youtube-yt-video-jcadcll-nk4-12e6977d",
-        "titulo": "Agenda cultural de Alhaurín el Grande: próximos eventos destacados",
-        "titulo_original": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días | PGM 145",
-        "descripcion": "Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel.",
-        "resumen": "Consulta las próximas actividades culturales en Alhaurín el Grande con la colaboración de la Asociación Cultural El Laurel.",
-        "cuerpo": "La agenda cultural de Alhaurín el Grande presenta una variada oferta de eventos para los próximos días, organizada con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel. Esta programación incluye actividades para todos los públicos que buscan fomentar la cultura local y el ocio en la comunidad.\n\nPlaneATV ofrece un repaso detallado de las citas culturales más relevantes, facilitando a los vecinos y visitantes información actualizada sobre exposiciones, talleres, conciertos y otras propuestas que se desarrollarán en el municipio.\n\nLa iniciativa refuerza el compromiso con la promoción del patrimonio cultural y la participación ciudadana en Alhaurín el Grande.",
-        "fecha": "2026-09-02T06:50:39+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Agenda Cultural",
-        "categoria_url": "categoria/agenda-cultural/",
-        "seo_keywords": [
-            "agenda cultural Alhaurín el Grande",
-            "eventos culturales Alhaurín",
-            "Asociación Cultural El Laurel"
-        ],
-        "enlace": "https://www.youtube.com/watch?v=jcAdClL_nk4",
-        "url": "https://www.youtube.com/watch?v=jcAdClL_nk4",
-        "imagen": "https://i3.ytimg.com/vi/jcAdClL_nk4/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-proximos-eventos-destacados.html"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",

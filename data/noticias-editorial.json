@@ -1,4 +1,27 @@
 {
+  "guid:atv-alhaurin-youtube:yt:video:FXpsXN8ZUQg": {
+    "ai_attempts": 0,
+    "content_hash": "1bfa97e60649ee0c8668ba0eb575b9e1e1c99a4f",
+    "date_modified": null,
+    "date_published": "2026-09-03T13:20:32+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La concejalía de Obras Públicas de Alhaurín el Grande informa que los trabajos en la nueva marquesina de taxis continúan a buen ritmo, aunque se ha detectado un imprevisto que será solucionado en los próximos días sin afectar el progreso general de la obra.\n\nPor otro lado, vecinos y miembros de la corporación municipal se reunieron en la plaza de la Biblioteca Municipal para mostrar su apoyo al pueblo de Ceuta en una concentración solidaria. Además, las Escuelas Infantiles del municipio han abierto sus puertas para dar la bienvenida a los niños y niñas que comienzan el curso escolar 2026/27, marcando el inicio de un nuevo ciclo educativo en Alhaurín el Grande.",
+      "descripcion": "Las obras de la nueva marquesina de taxis avanzan pese a un imprevisto; además, Alhaurín el Grande apoya a Ceuta y prepara una fiesta Holy Colors para jóvenes.",
+      "seo_keywords": [
+        "marquesina de taxis Alhaurín el Grande",
+        "fiesta Holy Colors jóvenes",
+        "apoyo Ceuta Alhaurín el Grande"
+      ],
+      "titulo": "Avances en la marquesina de taxis y actividades para jóvenes en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-fxpsxn8zuqg-0831a3cd",
+    "last_ai_attempt": "2026-09-03T16:15:54.376757+00:00",
+    "pagina": "noticias/avances-en-la-marquesina-de-taxis-y-actividades-para-jovenes-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=FXpsXN8ZUQg"
+  },
   "guid:atv-alhaurin-youtube:yt:video:JOb_FWsE1Fg": {
     "ai_attempts": 0,
     "content_hash": "6e176da5c16d0549dd1b7f305fede45ce77ec323",
@@ -90,6 +113,29 @@
     "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Ki2rPQoYPjQ"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:MD01ZARge58": {
+    "ai_attempts": 0,
+    "content_hash": "fcc5bcdf39bd2aa6613b6d5d0a4382c5b9ca5489",
+    "date_modified": null,
+    "date_published": "2026-09-03T13:30:56+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "El programa 35 de Así lo viví ofrece una conversación profunda con Iván Zea, donde comparte sus experiencias personales y profesionales relacionadas con Alhaurín el Grande. Durante la entrevista, Zea aborda temas relevantes para la comunidad local, aportando una perspectiva cercana y auténtica.\n\nEsta entrega del programa busca conectar con los habitantes de Alhaurín el Grande, mostrando historias que reflejan la identidad y el día a día del municipio. La entrevista está disponible en el canal de YouTube de ATV Alhaurín, facilitando el acceso a todos los interesados en conocer más sobre la trayectoria de Iván Zea y su vínculo con la localidad.",
+      "descripcion": "El programa 35 de Así lo viví presenta una entrevista exclusiva con Iván Zea, destacando su experiencia y vivencias en Alhaurín el Grande.",
+      "seo_keywords": [
+        "Iván Zea entrevista",
+        "Así lo viví programa 35",
+        "Alhaurín el Grande vídeos"
+      ],
+      "titulo": "Entrevista con Iván Zea en el programa 35 de Así lo viví en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-md01zarge58-e904429a",
+    "last_ai_attempt": "2026-09-03T16:15:49.649490+00:00",
+    "pagina": "noticias/entrevista-con-ivan-zea-en-el-programa-35-de-asi-lo-vivi-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=MD01ZARge58"
   },
   "guid:atv-alhaurin-youtube:yt:video:NNzZ1413YEU": {
     "ai_attempts": 0,

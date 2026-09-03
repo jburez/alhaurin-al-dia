@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-02T22:50:14.502Z",
+  "actualizado": "2026-09-03T00:51:38.186Z",
   "visitas24h": 4,
   "paginasVistas24h": 9,
   "topPaginas": [
@@ -8,19 +8,19 @@
       "vistas": 9
     },
     {
-      "ruta": "/noticias/paco-candela-estrella-principal-de-la-romeria-de-alhaurin-el-grande-2026",
-      "vistas": 7
-    },
-    {
       "ruta": "/",
       "vistas": 7
     },
     {
-      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
-      "vistas": 6
+      "ruta": "/noticias/paco-candela-estrella-principal-de-la-romeria-de-alhaurin-el-grande-2026",
+      "vistas": 7
     },
     {
       "ruta": "/noticias/alhaurin-el-grande-celebra-jornadas-de-clarinete-y-apoya-causas-solidarias-en-agosto-2026",
+      "vistas": 6
+    },
+    {
+      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
       "vistas": 6
     }
   ]

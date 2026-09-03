@@ -873,6 +873,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-noche-de-comercio-abierto/"
   },
+  "guid:fedelhorce:https://fedelhorce.es/?p=260026": {
+    "ai_attempts": 0,
+    "content_hash": "9e925f8eb17afd937746d89af457b01a5d168390",
+    "date_modified": null,
+    "date_published": "2026-09-02T08:00:07+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La localidad de Pizarra celebrará su esperada Ruta de la Tapa del 16 al 18 de octubre de 2026, una oportunidad perfecta para degustar una variedad de tapas tradicionales y creativas. Esta iniciativa gastronómica incluye también tapas infantiles, pensadas para los más pequeños, y una selección de cócteles para complementar la experiencia culinaria.\n\nDurante estos tres días, los visitantes podrán recorrer los establecimientos participantes y disfrutar de propuestas culinarias que reflejan la riqueza gastronómica local. La Ruta de la Tapa se consolida como un evento destacado en la agenda de Pizarra, promoviendo la cultura y el turismo gastronómico en la zona.",
+      "descripcion": "La Ruta de la Tapa en Pizarra ofrece tapas, opciones infantiles y cócteles del 16 al 18 de octubre de 2026 para todos los gustos.",
+      "seo_keywords": [
+        "Ruta de la Tapa Pizarra 2026",
+        "tapas en Pizarra",
+        "eventos gastronómicos Pizarra"
+      ],
+      "titulo": "Disfruta la Ruta de la Tapa en Pizarra del 16 al 18 de octubre 2026"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-260026-ea89a6c2",
+    "last_ai_attempt": "2026-09-03T11:02:08.190960+00:00",
+    "pagina": "noticias/disfruta-la-ruta-de-la-tapa-en-pizarra-del-16-al-18-de-octubre-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/ruta-de-la-tapa-pizarra-2026/"
+  },
   "guid:fedelhorce:https://fedelhorce.es/?p=260066": {
     "ai_attempts": 0,
     "content_hash": "953c0e8380196f3f2ed22abf250cb11286bccc68",
@@ -1194,6 +1217,29 @@
     "pagina": "noticias/primera-misa-del-rvdo-padre-jose-francisco-fernandez-fuentes-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/33991/primera-misa-del-sacerdote-rvd-padre-d-jose-francisco-fernandez-fuentes/"
+  },
+  "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34007": {
+    "ai_attempts": 0,
+    "content_hash": "b44db5325980ae2cea9c184f020d2086a4bb6b9c",
+    "date_modified": null,
+    "date_published": "2026-09-03T08:12:10+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande participó en el acto de despedida del General José Agustín Carreras Postigo, celebrado en Ronda. Durante el evento, la Hermandad quiso expresar su afecto y apoyo al General, quien ha liderado con dedicación y compromiso durante su mandato.\n\nComo muestra de reconocimiento, los miembros de la Hermandad entregaron un detalle al General Carreras Postigo, destacando la importancia de su labor y la relación cercana mantenida con la comunidad. Este gesto refleja el respeto y la gratitud hacia su trayectoria y servicio en la zona.",
+      "descripcion": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande acompañó al General Carreras Postigo en su acto de despedida en Ronda, entregándole un detalle en reconocimiento a su trayectoria.",
+      "seo_keywords": [
+        "General Carreras Postigo",
+        "Hermandad Nuestro Padre Jesús Nazareno",
+        "despedida en Ronda"
+      ],
+      "titulo": "Hermandad de Alhaurín el Grande despide al General Carreras Postigo en Ronda"
+    },
+    "ia_exitosa": true,
+    "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-453407fe",
+    "last_ai_attempt": "2026-09-03T11:01:51.164401+00:00",
+    "pagina": "noticias/hermandad-de-alhaurin-el-grande-despide-al-general-carreras-postigo-en-ronda.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.nuestropadrejesusnazareno.com/34007/despedida-del-general-carreras-postigo/"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/familia-alhaurin-grande-pide-ayuda_0_2007796200.html": {
     "ai_attempts": 0,

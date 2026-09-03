@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-453407fe",
+        "titulo": "Hermandad de Alhaurín el Grande despide al General Carreras Postigo en Ronda",
+        "titulo_original": "Despedida del General Carreras Postigo",
+        "descripcion": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande acompañó al General Carreras Postigo en su acto de despedida en Ronda, entregándole un detalle en reconocimiento a su trayectoria.",
+        "resumen": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande acompañó al General Carreras Postigo en su acto de despedida en Ronda, entregándole un detalle en reconocimiento a su trayectoria.",
+        "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno de Alhaurín el Grande participó en el acto de despedida del General José Agustín Carreras Postigo, celebrado en Ronda. Durante el evento, la Hermandad quiso expresar su afecto y apoyo al General, quien ha liderado con dedicación y compromiso durante su mandato.\n\nComo muestra de reconocimiento, los miembros de la Hermandad entregaron un detalle al General Carreras Postigo, destacando la importancia de su labor y la relación cercana mantenida con la comunidad. Este gesto refleja el respeto y la gratitud hacia su trayectoria y servicio en la zona.",
+        "fecha": "2026-09-03T08:12:10+00:00",
+        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
+        "seo_keywords": [
+            "General Carreras Postigo",
+            "Hermandad Nuestro Padre Jesús Nazareno",
+            "despedida en Ronda"
+        ],
+        "enlace": "https://www.nuestropadrejesusnazareno.com/34007/despedida-del-general-carreras-postigo/",
+        "url": "https://www.nuestropadrejesusnazareno.com/34007/despedida-del-general-carreras-postigo/",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-02-.jpeg",
+        "prioridad": 95,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/hermandad-de-alhaurin-el-grande-despide-al-general-carreras-postigo-en-ronda.html"
+    },
+    {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22471-7dc7267e",
         "titulo": "Alhaurín el Grande abre 15 plazas de empleo público fijo por concurso-oposición",
         "titulo_original": "El Ayuntamiento de Alhaurín el Grande convoca 15 plazas de personal laboral fijo mediante concurso-oposición",
@@ -67,6 +90,29 @@
         "prioridad": 90,
         "requiere_revision_geografica": false,
         "pagina": "noticias/concierto-de-profesores-inaugura-las-primeras-jornadas-de-clarinete-en-alhaurin-el-grande.html"
+    },
+    {
+        "id": "guid-fedelhorce-https-fedelhorce-es-p-260026-ea89a6c2",
+        "titulo": "Disfruta la Ruta de la Tapa en Pizarra del 16 al 18 de octubre 2026",
+        "titulo_original": "Ruta de la Tapa Pizarra 2026",
+        "descripcion": "La Ruta de la Tapa en Pizarra ofrece tapas, opciones infantiles y cócteles del 16 al 18 de octubre de 2026 para todos los gustos.",
+        "resumen": "La Ruta de la Tapa en Pizarra ofrece tapas, opciones infantiles y cócteles del 16 al 18 de octubre de 2026 para todos los gustos.",
+        "cuerpo": "La localidad de Pizarra celebrará su esperada Ruta de la Tapa del 16 al 18 de octubre de 2026, una oportunidad perfecta para degustar una variedad de tapas tradicionales y creativas. Esta iniciativa gastronómica incluye también tapas infantiles, pensadas para los más pequeños, y una selección de cócteles para complementar la experiencia culinaria.\n\nDurante estos tres días, los visitantes podrán recorrer los establecimientos participantes y disfrutar de propuestas culinarias que reflejan la riqueza gastronómica local. La Ruta de la Tapa se consolida como un evento destacado en la agenda de Pizarra, promoviendo la cultura y el turismo gastronómico en la zona.",
+        "fecha": "2026-09-02T08:00:07+00:00",
+        "fuente": "Fedelhorce",
+        "categoria": "Agenda Cultural",
+        "categoria_url": "categoria/agenda-cultural/",
+        "seo_keywords": [
+            "Ruta de la Tapa Pizarra 2026",
+            "tapas en Pizarra",
+            "eventos gastronómicos Pizarra"
+        ],
+        "enlace": "https://fedelhorce.es/ruta-de-la-tapa-pizarra-2026/",
+        "url": "https://fedelhorce.es/ruta-de-la-tapa-pizarra-2026/",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/07/Destacada-app-2.png",
+        "prioridad": 85,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/disfruta-la-ruta-de-la-tapa-en-pizarra-del-16-al-18-de-octubre-2026.html"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50613-4c4ad387",

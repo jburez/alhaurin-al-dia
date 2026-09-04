@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-04T21:48:19.456Z",
+  "actualizado": "2026-09-04T23:33:54.914Z",
   "visitas24h": 4,
   "paginasVistas24h": 4,
   "topPaginas": [
@@ -12,7 +12,7 @@
       "vistas": 8
     },
     {
-      "ruta": "/noticias/paco-candela-estrella-principal-de-la-romeria-de-alhaurin-el-grande-2026",
+      "ruta": "/planes/",
       "vistas": 4
     },
     {
@@ -20,8 +20,8 @@
       "vistas": 4
     },
     {
-      "ruta": "/planes/",
-      "vistas": 4
+      "ruta": "/noticias/paco-candela-estrella-principal-de-la-romeria-de-alhaurin-el-grande-2026",
+      "vistas": 3
     }
   ]
 }

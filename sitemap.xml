@@ -1249,6 +1249,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-prepara-la-ii-edicion-de-alhaurin-de-boda-y-novedades-locales.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-prepara-la-verbena-de-villa-y-lanza-el-programa-juvenil-next-step.html</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2011,6 +2017,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/el-pp-arranca-en-alhaurin-el-grande-el-curso-politico-volcandose-con-ceuta-y-la-lucha.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-pp-inicia-el-curso-politico-en-malaga-con-el-tradicional-acto-de-los-huevos-fritos.html</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2156,6 +2168,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/fedelhorce-impulsa-la-exportacion-de-productos-y-servicios-al-mercado-chino.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/feijoo-exige-a-sanchez-su-dimision-durante-acto-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -3800,6 +3818,24 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/planes/e-13548/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/planes/e-13555/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/planes/e-13562/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/planes/e-13568/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

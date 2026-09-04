@@ -160,6 +160,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=NNzZ1413YEU"
   },
+  "guid:atv-alhaurin-youtube:yt:video:T9pKMkAe4WU": {
+    "ai_attempts": 0,
+    "content_hash": "ef80c050622fed19a9a339d8fdd0674875491f77",
+    "date_modified": null,
+    "date_published": "2026-09-04T13:39:16+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El próximo 19 de septiembre, el centro histórico de Alhaurín el Grande acogerá la segunda edición de 'Alhaurín de Boda', un evento que reunirá a una treintena de empresas del sector nupcial, con dos pasarelas de moda y actuaciones en directo para convertir la localidad en un escaparate de tendencias.\n\nParalelamente, las obras en la calle Nogales, en Villa del Guadalhorce, continúan su avance satisfactorio según la concejalía de Obras Públicas. En el ámbito político, Anthony Bermúdez ha sido presentado como candidato a la alcaldía por Cien x Cien Alhaurín para las elecciones municipales de mayo de 2027.\n\nPor otro lado, la Escuela Municipal de Fútbol ha iniciado la temporada 2026/27 con 212 jugadores distribuidos en trece equipos, mientras que el CD Alhaurino disputará su primer partido oficial este domingo en el estadio Miguel Fijones contra el Granada CF a las 12:00 horas.",
+      "descripcion": "Alhaurín el Grande celebra la segunda edición de 'Alhaurín de Boda' el 19 de septiembre y avanza en obras, deportes y política local.",
+      "seo_keywords": [
+        "Alhaurín el Grande",
+        "Alhaurín de Boda 2026",
+        "obras calle Nogales"
+      ],
+      "titulo": "Alhaurín el Grande prepara la II edición de 'Alhaurín de Boda' y novedades locales"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-t9pkmkae4wu-df202da7",
+    "last_ai_attempt": "2026-09-04T16:11:00.599616+00:00",
+    "pagina": "noticias/alhaurin-el-grande-prepara-la-ii-edicion-de-alhaurin-de-boda-y-novedades-locales.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=T9pKMkAe4WU"
+  },
   "guid:atv-alhaurin-youtube:yt:video:XS2MDbBh2bg": {
     "ai_attempts": 0,
     "content_hash": "1287e841bb60c5b890f39ffb54b0db27c2582764",
@@ -1310,6 +1333,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34007/despedida-del-general-carreras-postigo/"
   },
+  "guid:malaga-hoy:https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html": {
+    "ai_attempts": 0,
+    "content_hash": "43e9c8825d843c7e3fe503f44e07d8bdb3360ec4",
+    "date_modified": null,
+    "date_published": "2026-09-04T13:00:10+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El líder nacional del Partido Popular, Alberto Núñez Feijóo, ha participado en el tradicional acto de los huevos fritos celebrado en Alhaurín el Grande, donde ha vuelto a pedir la dimisión del presidente del Gobierno, Pedro Sánchez.\n\nFeijóo ha criticado la gestión del Ejecutivo en materia de inmigración y seguridad, asegurando que se conocerán antes detalles de las joyas de Zapatero que de la invasión de Ceuta. Durante su intervención, Feijóo ha planteado la necesidad de establecer una legislación especial en materia de inmigración cuando se ponga en riesgo la seguridad nacional.\n\nEste planteamiento busca reforzar el control y la respuesta ante situaciones excepcionales que afecten a España, especialmente en zonas fronterizas como Ceuta. El acto en Alhaurín el Grande ha servido para que el líder del PP reafirme su postura crítica hacia el Gobierno central y presente propuestas que, según él, mejorarían la gestión de la inmigración y la seguridad en el país.",
+      "descripcion": "El presidente del PP, Feijóo, reclama la salida de Sánchez en un acto en Alhaurín el Grande y propone una legislación especial en inmigración por seguridad nacional.",
+      "seo_keywords": [
+        "Feijóo Alhaurín el Grande",
+        "dimisión Pedro Sánchez",
+        "legislación inmigración seguridad"
+      ],
+      "titulo": "Feijóo exige a Sánchez su dimisión durante acto en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-espana-feijoo-sanchez-joyas-zap-6b3050cb",
+    "last_ai_attempt": "2026-09-04T16:11:25.329257+00:00",
+    "pagina": "noticias/feijoo-exige-a-sanchez-su-dimision-durante-acto-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html"
+  },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/familia-alhaurin-grande-pide-ayuda_0_2007796200.html": {
     "ai_attempts": 0,
     "content_hash": "6483c2ac845042bf08074107003991f950d7317e",
@@ -1470,6 +1516,29 @@
     "pagina": "noticias/alhaurin-el-grande-abre-convocatoria-para-15-plazas-de-empleo-publico-fijo-y-anuncia-6-mas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/02/alhaurin-el-grande-convoca-15-plazas-empleo-publico-fijo/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208069": {
+    "ai_attempts": 0,
+    "content_hash": "bcb0a64f7614561659327e0e14c4d9bcab630bca",
+    "date_modified": null,
+    "date_published": "2026-09-04T15:24:10+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El Partido Popular celebró en Alhaurín el Grande el inicio del nuevo curso político con su tradicional encuentro en la sede de Aceites Molisur, que reunió a cerca de 2.000 personas entre cargos públicos y militantes. Este acto multitudinario sirvió para reafirmar el compromiso del partido con temas clave como la situación de Ceuta y la lucha contra el narcotráfico.\n\nDurante el evento, el PP destacó la importancia de abordar estos asuntos con firmeza y unidad, posicionándose como una fuerza política activa en la defensa de la seguridad y estabilidad en la región. La convocatoria en Alhaurín el Grande subrayó la relevancia local y regional de estas problemáticas, consolidando el apoyo de la militancia y simpatizantes en un ambiente de participación y diálogo.",
+      "descripcion": "El Partido Popular arrancó el nuevo curso político en Alhaurín el Grande con un acto multitudinario en Aceites Molisur, destacando su compromiso con Ceuta y la lucha contra el narcotráfico.",
+      "seo_keywords": [
+        "PP Alhaurín el Grande",
+        "curso político 2024",
+        "lucha contra narcotráfico"
+      ],
+      "titulo": "El PP arranca en Alhaurín el Grande el curso político volcándose con Ceuta y la lucha"
+    },
+    "ia_exitosa": true,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-08e26b59",
+    "last_ai_attempt": "2026-09-04T16:11:34.927830+00:00",
+    "pagina": "noticias/el-pp-arranca-en-alhaurin-el-grande-el-curso-politico-volcandose-con-ceuta-y-la-lucha.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/04/acto-pp-alhaurin-el-grande-curso-politico/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

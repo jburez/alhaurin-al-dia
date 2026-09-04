@@ -850,6 +850,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://clubdeportivoalhaurino.com/cd-alhaurino-y-clinicas-guadalhorce-firman-una-alianza-estrategica-para-potenciar-la-salud-integral-de-sus-jugadores/"
   },
+  "guid:diario-sur-malaga:https://www.diariosur.es/interior/alhaurin-grande-saca-plazas-fijas-anuncia-seis-funcionario-20260904121655-nt.html": {
+    "ai_attempts": 0,
+    "content_hash": "5d33d001f47ca63467810ba02dbb341e277e08a2",
+    "date_modified": null,
+    "date_published": "2026-09-04T10:33:46+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha puesto en marcha una convocatoria para cubrir 15 plazas fijas en diferentes áreas, como jardinería, albañilería, fontanería, limpieza, conducción e imagen y sonido. De estas plazas, dos están reservadas para personas con discapacidad, promoviendo así la inclusión laboral en el municipio.\n\nAdemás, el consistorio ha anunciado la próxima convocatoria de seis plazas adicionales destinadas a personal funcionario. Esta iniciativa busca reforzar los servicios municipales y mejorar la atención a los ciudadanos, consolidando el empleo público en Alhaurín el Grande.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza una oferta de empleo público con 15 plazas fijas y anuncia seis más para personal funcionario, incluyendo puestos en jardinería, albañilería y limpieza.",
+      "seo_keywords": [
+        "empleo público Alhaurín el Grande",
+        "plazas fijas Ayuntamiento",
+        "convocatoria personal funcionario"
+      ],
+      "titulo": "Alhaurín el Grande convoca 15 plazas fijas y anuncia 6 para personal funcionario"
+    },
+    "ia_exitosa": true,
+    "id": "guid-diario-sur-malaga-https-www-diariosur-es-interior-alhaurin-grande-efdc57e3",
+    "last_ai_attempt": "2026-09-04T11:02:47.987568+00:00",
+    "pagina": "noticias/alhaurin-el-grande-convoca-15-plazas-fijas-y-anuncia-6-para-personal-funcionario.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.diariosur.es/interior/alhaurin-grande-saca-plazas-fijas-anuncia-seis-funcionario-20260904121655-nt.html"
+  },
   "guid:diario-sur-malaga:https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html": {
     "ai_attempts": 0,
     "content_hash": "5c3122b12e15f8d0b46de70a34f0a0ebfdc93406",

@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-diario-sur-malaga-https-www-diariosur-es-interior-alhaurin-grande-efdc57e3",
+        "titulo": "Alhaurín el Grande convoca 15 plazas fijas y anuncia 6 para personal funcionario",
+        "titulo_original": "Alhaurín el Grande saca 15 plazas fijas y anuncia otras seis para personal funcionario",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande lanza una oferta de empleo público con 15 plazas fijas y anuncia seis más para personal funcionario, incluyendo puestos en jardinería, albañilería y limpieza.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande lanza una oferta de empleo público con 15 plazas fijas y anuncia seis más para personal funcionario, incluyendo puestos en jardinería, albañilería y limpieza.",
+        "cuerpo": "El Ayuntamiento de Alhaurín el Grande ha puesto en marcha una convocatoria para cubrir 15 plazas fijas en diferentes áreas, como jardinería, albañilería, fontanería, limpieza, conducción e imagen y sonido. De estas plazas, dos están reservadas para personas con discapacidad, promoviendo así la inclusión laboral en el municipio.\n\nAdemás, el consistorio ha anunciado la próxima convocatoria de seis plazas adicionales destinadas a personal funcionario. Esta iniciativa busca reforzar los servicios municipales y mejorar la atención a los ciudadanos, consolidando el empleo público en Alhaurín el Grande.",
+        "fecha": "2026-09-04T10:33:46+00:00",
+        "fuente": "Diario SUR Málaga",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
+        "seo_keywords": [
+            "empleo público Alhaurín el Grande",
+            "plazas fijas Ayuntamiento",
+            "convocatoria personal funcionario"
+        ],
+        "enlace": "https://www.diariosur.es/interior/alhaurin-grande-saca-plazas-fijas-anuncia-seis-funcionario-20260904121655-nt.html",
+        "url": "https://www.diariosur.es/interior/alhaurin-grande-saca-plazas-fijas-anuncia-seis-funcionario-20260904121655-nt.html",
+        "imagen": "https://s1.ppllstatics.com/diariosur/www/multimedia/local/2026/09/04/alhaurinelgrande-ROV1ZHYygjTW64S0jdkGXrN-1200x840@Diario%20Sur.jpg",
+        "prioridad": 100,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-convoca-15-plazas-fijas-y-anuncia-6-para-personal-funcionario.html"
+    },
+    {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-453407fe",
         "titulo": "Hermandad de Alhaurín el Grande despide al General Carreras Postigo en Ronda",
         "titulo_original": "Despedida del General Carreras Postigo",

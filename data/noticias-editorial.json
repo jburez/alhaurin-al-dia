@@ -896,6 +896,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.diariosur.es/interior/alhaurin-grande-saca-plazas-fijas-anuncia-seis-funcionario-20260904121655-nt.html"
   },
+  "guid:diario-sur-malaga:https://www.diariosur.es/malagaenlamesa/higo-reina-dulce-tardio-malagueno-20260903000300-nt.html": {
+    "ai_attempts": 0,
+    "content_hash": "42b6ac7373ff9656340de1cbd47738c71271a78f",
+    "date_modified": null,
+    "date_published": "2026-09-04T22:19:10+00:00",
+    "editorial": {
+      "categoria": "Turismo y Patrimonio",
+      "cuerpo": "El Higo de la Reina es una variedad tradicional muy arraigada en el Valle del Guadalhorce, reconocida por su forma gruesa y su piel rayada que lo diferencia de otros tipos de higos. Su pulpa rojiza ofrece un sabor dulce característico que lo convierte en un producto apreciado en la comarca.\n\nEsta variedad se recoge en una temporada tardía que puede prolongarse hasta finales de septiembre, lo que permite disfrutar de su sabor más allá del verano. Sin embargo, una vez recolectado, el Higo de la Reina tiene una vida útil corta y debe consumirse en pocos días para aprovechar su frescura y calidad óptimas.",
+      "descripcion": "El Higo de la Reina, típico del Valle del Guadalhorce, destaca por su piel rayada, pulpa rojiza y temporada que se extiende hasta finales de septiembre.",
+      "seo_keywords": [
+        "Higo de la Reina",
+        "Valle del Guadalhorce",
+        "variedad de higo malagueña"
+      ],
+      "titulo": "Higo de la Reina: variedad malagueña dulce y tardía del Valle del Guadalhorce"
+    },
+    "ia_exitosa": true,
+    "id": "guid-diario-sur-malaga-https-www-diariosur-es-malagaenlamesa-higo-rein-6ba375ff",
+    "last_ai_attempt": "2026-09-04T23:53:10.259853+00:00",
+    "pagina": "noticias/higo-de-la-reina-variedad-malaguena-dulce-y-tardia-del-valle-del-guadalhorce.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.diariosur.es/malagaenlamesa/higo-reina-dulce-tardio-malagueno-20260903000300-nt.html"
+  },
   "guid:diario-sur-malaga:https://www.diariosur.es/sucesos/susto-madrugada-incendio-calcina-completo-nave-alhaurin-grande-20260830141526-nt.html": {
     "ai_attempts": 0,
     "content_hash": "5c3122b12e15f8d0b46de70a34f0a0ebfdc93406",

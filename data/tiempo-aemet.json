@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-05T12:36:12+02:00",
+  "actualizado": "2026-09-05T19:20:59+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☁️",
+    "icono": "☀️",
     "titulo": "Tiempo",
     "valor": "Máx. 35º",
-    "detalle": "Nubes altas · Máx. 35º / Mín. 22º · Lluvia 0%",
+    "detalle": "Despejado · Máx. 35º / Mín. 22º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "5/9",
     "t_max": "35",
     "t_min": "22",
-    "icono": "☁️",
-    "descripcion": "Nubes altas",
+    "icono": "☀️",
+    "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "SE 5 km/h",
+    "viento": "Flojo",
     "uv": "7"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "5/9",
       "t_max": "35",
       "t_min": "22",
-      "icono": "☁️",
-      "descripcion": "Nubes altas",
+      "icono": "☀️",
+      "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "SE 5 km/h",
+      "viento": "Flojo",
       "uv": "7"
     },
     {
@@ -84,7 +84,7 @@
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "15%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": "7"
     },
     {
@@ -146,8 +146,8 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:52 h",
-    "ocaso": "20:41 h",
+    "orto": "07:53 h",
+    "ocaso": "20:42 h",
     "horas_luz": "12h 49m",
     "fase_luna": "Cuarto Menguante (38%)",
     "icono_luna": "🌗"

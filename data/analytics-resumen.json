@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-09-05T18:14:49.356Z",
-  "visitas24h": 2,
-  "paginasVistas24h": 2,
+  "actualizado": "2026-09-05T20:22:11.529Z",
+  "visitas24h": 3,
+  "paginasVistas24h": 4,
   "topPaginas": [
+    {
+      "ruta": "/",
+      "vistas": 9
+    },
     {
       "ruta": "/guia-util/farmacias/",
       "vistas": 8
     },
     {
-      "ruta": "/",
-      "vistas": 8
-    },
-    {
       "ruta": "/planes/",
-      "vistas": 4
+      "vistas": 5
     },
     {
       "ruta": "/planes/e-12622/",
       "vistas": 4
     },
     {
-      "ruta": "/contacto/",
+      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
       "vistas": 2
     }
   ]

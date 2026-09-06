@@ -24,40 +24,5 @@
         "actualizado_en": "2026-08-17T17:32:33+00:00"
       }
     ]
-  },
-  {
-    "id": "aemet-AFAZ612903ATTA0519",
-    "tipo": "meteorologico",
-    "nivel": "amarillo",
-    "titulo": "Aviso. Nivel amarillo. Temperaturas máximas. Sol y Guadalhorce",
-    "descripcion": "Aviso de temperatura máxima de nivel amarillo de 18:00 05-08-2026 CEST (UTC+2) a 20:59 05-08-2026 CEST (UTC+2).",
-    "fenomeno": "Temperaturas máximas",
-    "zona": "Sol y Guadalhorce",
-    "inicio": "2026-08-05T18:00:00+02:00",
-    "fin": "2026-08-05T20:59:00+02:00",
-    "fuente": "AEMET",
-    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260804094030_AFAZ612903ATTA0519.xml",
-    "estado_ciclo_vida": "finalizado",
-    "actualizado_en": "2026-08-07T00:07:50+00:00",
-    "historial": [
-      {
-        "nivel": "amarillo",
-        "titulo": "Aviso. Nivel amarillo. Temperaturas máximas. Sol y Guadalhorce",
-        "descripcion": "Aviso de temperatura máxima de nivel amarillo de 13:00 05-08-2026 CEST (UTC+2) a 20:59 05-08-2026 CEST (UTC+2).",
-        "inicio": "2026-08-05T13:00:00+02:00",
-        "fin": "2026-08-05T20:59:00+02:00",
-        "estado_ciclo_vida": "creado",
-        "actualizado_en": "2026-08-03T11:33:24+00:00"
-      },
-      {
-        "nivel": "amarillo",
-        "titulo": "Aviso. Nivel amarillo. Temperaturas máximas. Sol y Guadalhorce",
-        "descripcion": "Aviso de temperatura máxima de nivel amarillo de 18:00 05-08-2026 CEST (UTC+2) a 20:59 05-08-2026 CEST (UTC+2).",
-        "inicio": "2026-08-05T18:00:00+02:00",
-        "fin": "2026-08-05T20:59:00+02:00",
-        "estado_ciclo_vida": "actualizado",
-        "actualizado_en": "2026-08-05T22:16:08+00:00"
-      }
-    ]
   }
 ]

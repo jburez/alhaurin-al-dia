@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-06T01:55:29.074Z",
-  "visitas24h": 4,
-  "paginasVistas24h": 6,
+  "actualizado": "2026-09-06T06:40:17.110Z",
+  "visitas24h": 8,
+  "paginasVistas24h": 12,
   "topPaginas": [
     {
       "ruta": "/",
@@ -20,8 +20,8 @@
       "vistas": 4
     },
     {
-      "ruta": "/planes/e-6384/",
-      "vistas": 2
+      "ruta": "/noticias/archivo/",
+      "vistas": 4
     }
   ]
 }

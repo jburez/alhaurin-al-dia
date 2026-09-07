@@ -114,6 +114,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Ki2rPQoYPjQ"
   },
+  "guid:atv-alhaurin-youtube:yt:video:LPIARrQSkjo": {
+    "ai_attempts": 0,
+    "content_hash": "a55e15618f5fd549112c7bac6b9dc010b1317820",
+    "date_modified": null,
+    "date_published": "2026-09-07T12:26:46+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El pasado viernes se inauguró oficialmente la Casa de la Juventud en Alhaurín el Grande, donde se realizó un balance positivo de sus primeros meses de funcionamiento. La jornada concluyó con una fiesta Holy Colors dirigida a los jóvenes del municipio.\n\nPor otro lado, el área de la mujer del Ayuntamiento ha anunciado que las inscripciones para los talleres que se impartirán en la Casa de la Cultura comenzarán el 9 de septiembre para renovaciones y el 21 para nuevos participantes.\n\nEl sábado se celebró la segunda edición de la Verbena Villa del Guadalhorce, organizada por el área de mayores del Ayuntamiento. El evento contó con más de veinte actuaciones del Taller Musical de Playback de Mayores y la participación de tres escuelas de baile.",
+      "descripcion": "Alhaurín el Grande inaugura la Casa de la Juventud y anuncia talleres del área de la mujer, mientras celebra la II Verbena Villa con actividades para mayores y un empate del CD Alhaurino.",
+      "seo_keywords": [
+        "Casa de la Juventud Alhaurín el Grande",
+        "Verbena Villa Guadalhorce",
+        "CD Alhaurino partido 2026"
+      ],
+      "titulo": "Alhaurín el Grande inaugura Casa de la Juventud y celebra la II Verbena Villa"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-lpiarrqskjo-58bcb6be",
+    "last_ai_attempt": "2026-09-07T18:41:15.546576+00:00",
+    "pagina": "noticias/alhaurin-el-grande-inaugura-casa-de-la-juventud-y-celebra-la-ii-verbena-villa.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=LPIARrQSkjo"
+  },
   "guid:atv-alhaurin-youtube:yt:video:MD01ZARge58": {
     "ai_attempts": 0,
     "content_hash": "fcc5bcdf39bd2aa6613b6d5d0a4382c5b9ca5489",
@@ -182,6 +205,29 @@
     "pagina": "noticias/alhaurin-el-grande-prepara-la-ii-edicion-de-alhaurin-de-boda-y-novedades-locales.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=T9pKMkAe4WU"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:XLk04JA3UqM": {
+    "ai_attempts": 0,
+    "content_hash": "c1f137086107606a8e71516811dca21e44800a31",
+    "date_modified": null,
+    "date_published": "2026-09-07T13:00:30+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "El CD Alhaurino arranca la temporada 26/27 en el Grupo 9 de la Tercera RFEF con un partido clave frente al Granada CF B. Este encuentro representa una oportunidad para que el equipo local muestre su potencial y sume puntos importantes en la clasificación inicial.\n\nLos aficionados de Alhaurín el Grande esperan con ilusión el desarrollo del encuentro, que se presenta como un duelo competitivo y emocionante. El enfrentamiento entre ambos equipos marca el inicio de una temporada que promete intensidad y rivalidad en la categoría.\n\nEl CD Alhaurino buscará aprovechar su condición de local para consolidar un buen comienzo y establecer las bases para una campaña exitosa en la Tercera RFEF. La afición local jugará un papel fundamental apoyando al equipo en este primer compromiso oficial.",
+      "descripcion": "El CD Alhaurino disputa su primer partido de la temporada 26/27 en el Grupo 9 de la Tercera RFEF frente al Granada CF B, buscando un buen arranque en casa.",
+      "seo_keywords": [
+        "CD Alhaurino",
+        "Granada CF B",
+        "Tercera RFEF 26/27"
+      ],
+      "titulo": "CD Alhaurino inicia la temporada 26/27 en Tercera RFEF contra Granada CF B"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-xlk04ja3uqm-82953234",
+    "last_ai_attempt": "2026-09-07T18:41:10.368695+00:00",
+    "pagina": "noticias/cd-alhaurino-inicia-la-temporada-26-27-en-tercera-rfef-contra-granada-cf-b.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=XLk04JA3UqM"
   },
   "guid:atv-alhaurin-youtube:yt:video:XS2MDbBh2bg": {
     "ai_attempts": 0,
@@ -1447,6 +1493,29 @@
     "pagina": "noticias/incendio-destruye-nave-y-afecta-tres-viviendas-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/incendio-calcina-nave-alhaurin-grande-viviendas_0_2007830817.html"
+  },
+  "guid:malaga-hoy:https://www.malagahoy.es/malaga/junta-andalucia-anuncia-tres-nuevas-mejoras-a-357-malaga-capital_0_2007896023.html": {
+    "ai_attempts": 0,
+    "content_hash": "f72f703725e955591259d9408728e0719bacad8b",
+    "date_modified": null,
+    "date_published": "2026-09-07T14:00:13+00:00",
+    "editorial": {
+      "categoria": "Tráfico y Movilidad",
+      "cuerpo": "La Consejería de Fomento ha presentado un plan para mejorar la circulación en la A-357, una vía clave para conectar Málaga capital con el Valle del Guadalhorce y el Polígono El Viso. Entre las actuaciones destaca la creación de un tercer carril en el enlace con la A-7, que facilitará el acceso y reducirá los embotellamientos habituales en esta zona.\n\nAdemás, se ampliará el carril BUS-VAO en el Parque Tecnológico de Andalucía (PTA), promoviendo un transporte más eficiente y sostenible. También se llevarán a cabo mejoras en las infraestructuras existentes para optimizar el flujo de vehículos y mejorar la seguridad vial.\n\nEstas medidas buscan responder a las demandas de los vecinos de Campillos y el Valle del Guadalhorce, quienes sufren diariamente los atascos para llegar a Málaga.",
+      "descripcion": "La Junta de Andalucía anuncia tres mejoras en la A-357 para aliviar atascos en Málaga, incluyendo un tercer carril, ampliación del BUS-VAO y mejoras en infraestructuras.",
+      "seo_keywords": [
+        "A-357 Málaga",
+        "mejoras tráfico Málaga",
+        "BUS-VAO PTA"
+      ],
+      "titulo": "La Junta mejora la A-357 en Málaga con nuevo carril y ampliación del BUS-VAO"
+    },
+    "ia_exitosa": true,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-junta-andalucia-anuncia-23bcbb99",
+    "last_ai_attempt": "2026-09-07T18:41:29.699065+00:00",
+    "pagina": "noticias/la-junta-mejora-la-a-357-en-malaga-con-nuevo-carril-y-ampliacion-del-bus-vao.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/malaga/junta-andalucia-anuncia-tres-nuevas-mejoras-a-357-malaga-capital_0_2007896023.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html": {
     "ai_attempts": 0,

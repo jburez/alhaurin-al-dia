@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-07T15:56:31.440Z",
-  "visitas24h": 5,
-  "paginasVistas24h": 5,
+  "actualizado": "2026-09-07T19:31:43.527Z",
+  "visitas24h": 3,
+  "paginasVistas24h": 3,
   "topPaginas": [
     {
       "ruta": "/",
@@ -12,16 +12,16 @@
       "vistas": 4
     },
     {
-      "ruta": "/planes/",
-      "vistas": 4
-    },
-    {
       "ruta": "/guia-util/farmacias/",
       "vistas": 4
     },
     {
       "ruta": "/planes/e-12622/",
       "vistas": 4
+    },
+    {
+      "ruta": "/planes/",
+      "vistas": 3
     }
   ]
 }

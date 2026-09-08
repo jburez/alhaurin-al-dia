@@ -1,26 +1,26 @@
 [
     {
-        "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-8f32f32e",
-        "titulo": "José María Díaz Bravo, candidato del PSOE para la Alcaldía de Alhaurín el Grande en 2027",
-        "titulo_original": "José María Díaz Bravo encabezará la candidatura del PSOE en Alhaurín el Grande para 2027",
-        "descripcion": "José María Díaz Bravo ha sido proclamado provisionalmente como cabeza de lista del PSOE para las elecciones municipales de Alhaurín el Grande en 2027 tras presentar la única precandidatura.",
-        "resumen": "José María Díaz Bravo ha sido proclamado provisionalmente como cabeza de lista del PSOE para las elecciones municipales de Alhaurín el Grande en 2027 tras presentar la única precandidatura.",
-        "cuerpo": "José María Díaz Bravo se perfila como el candidato del PSOE para las próximas elecciones municipales de 2027 en Alhaurín el Grande. Ha sido proclamado provisionalmente como cabeza de lista tras presentar la única precandidatura en el proceso de primarias municipales.\n\nEste nombramiento confirma la confianza del partido en Díaz Bravo para liderar su proyecto político en el municipio. La proclamación se realizó tras el cierre del proceso interno, donde no se registraron otras candidaturas, lo que facilita la consolidación de su candidatura para los comicios locales.",
-        "fecha": "2026-09-08T06:18:36+00:00",
-        "fuente": "Revista Lugar de Encuentro",
+        "id": "guid-atv-alhaurin-youtube-yt-video-1t-wq018oc-83bd7de6",
+        "titulo": "Alhaurín el Grande recibe desfibrilador y celebra eventos culturales en septiembre 2026",
+        "titulo_original": "NOTICIAS ATV 8 SEPTIEMBRE 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "descripcion": "Caja Rural dona un desfibrilador a Alhaurín el Grande; el Pub Zeppelin rinde homenaje a víctimas de la riada y se realizan actividades en Equinalh y la Fiesta de la Vendimia.",
+        "resumen": "Caja Rural dona un desfibrilador a Alhaurín el Grande; el Pub Zeppelin rinde homenaje a víctimas de la riada y se realizan actividades en Equinalh y la Fiesta de la Vendimia.",
+        "cuerpo": "Alhaurín el Grande ha sido seleccionado por la Fundación Corazón Rural de Caja Rural Granada para recibir un desfibrilador, reforzando así la seguridad sanitaria del municipio. Este gesto forma parte del compromiso de la entidad con la salud y el bienestar de la comunidad local.\n\nEl pasado viernes, el Pub Zeppelin organizó un concierto en memoria de Juan Francisco Zea Bravo y Antonio Morales Serrano, vecinos fallecidos durante la riada del 27 de diciembre. Además, en Las Cuevas del Convento se celebró la primera actividad de Equinalh 2026, una charla sobre enfermedades equinas impartida por el veterinario Andrés Romero.\n\nPor último, la Asociación Amigos del Vino llevó a cabo la IV Fiesta de la Vendimia, una jornada dedicada a la tradición vitivinícola y a la convivencia entre vecinos, que tuvo lugar el domingo. Estas iniciativas reflejan la vitalidad cultural y social de Alhaurín el Grande en este mes.",
+        "fecha": "2026-09-08T12:05:38+00:00",
+        "fuente": "ATV Alhaurín YouTube",
         "categoria": "Actualidad",
         "categoria_url": "categoria/actualidad/",
         "seo_keywords": [
-            "José María Díaz Bravo",
-            "PSOE Alhaurín el Grande",
-            "elecciones municipales 2027"
+            "desfibrilador Alhaurín el Grande",
+            "concierto homenaje riada",
+            "Fiesta de la Vendimia Alhaurín"
         ],
-        "enlace": "https://revistalugardeencuentro.com/2026/09/08/jose-maria-diaz-bravo-candidato-psoe-alhaurin-el-grande-2027/",
-        "url": "https://revistalugardeencuentro.com/2026/09/08/jose-maria-diaz-bravo-candidato-psoe-alhaurin-el-grande-2027/",
-        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde.jpeg",
-        "prioridad": 90,
+        "enlace": "https://www.youtube.com/watch?v=1t--wq018oc",
+        "url": "https://www.youtube.com/watch?v=1t--wq018oc",
+        "imagen": "https://i2.ytimg.com/vi/1t--wq018oc/maxresdefault.jpg",
+        "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/jose-maria-diaz-bravo-candidato-del-psoe-para-la-alcaldia-de-alhaurin-el-grande-en-2027.html"
+        "pagina": "noticias/alhaurin-el-grande-recibe-desfibrilador-y-celebra-eventos-culturales-en-septiembre-2026.html"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-453407fe",

@@ -1,5 +1,28 @@
 [
     {
+        "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-8f32f32e",
+        "titulo": "José María Díaz Bravo, candidato del PSOE para la Alcaldía de Alhaurín el Grande en 2027",
+        "titulo_original": "José María Díaz Bravo encabezará la candidatura del PSOE en Alhaurín el Grande para 2027",
+        "descripcion": "José María Díaz Bravo ha sido proclamado provisionalmente como cabeza de lista del PSOE para las elecciones municipales de Alhaurín el Grande en 2027 tras presentar la única precandidatura.",
+        "resumen": "José María Díaz Bravo ha sido proclamado provisionalmente como cabeza de lista del PSOE para las elecciones municipales de Alhaurín el Grande en 2027 tras presentar la única precandidatura.",
+        "cuerpo": "José María Díaz Bravo se perfila como el candidato del PSOE para las próximas elecciones municipales de 2027 en Alhaurín el Grande. Ha sido proclamado provisionalmente como cabeza de lista tras presentar la única precandidatura en el proceso de primarias municipales.\n\nEste nombramiento confirma la confianza del partido en Díaz Bravo para liderar su proyecto político en el municipio. La proclamación se realizó tras el cierre del proceso interno, donde no se registraron otras candidaturas, lo que facilita la consolidación de su candidatura para los comicios locales.",
+        "fecha": "2026-09-08T06:18:36+00:00",
+        "fuente": "Revista Lugar de Encuentro",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
+        "seo_keywords": [
+            "José María Díaz Bravo",
+            "PSOE Alhaurín el Grande",
+            "elecciones municipales 2027"
+        ],
+        "enlace": "https://revistalugardeencuentro.com/2026/09/08/jose-maria-diaz-bravo-candidato-psoe-alhaurin-el-grande-2027/",
+        "url": "https://revistalugardeencuentro.com/2026/09/08/jose-maria-diaz-bravo-candidato-psoe-alhaurin-el-grande-2027/",
+        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde.jpeg",
+        "prioridad": 90,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/jose-maria-diaz-bravo-candidato-del-psoe-para-la-alcaldia-de-alhaurin-el-grande-en-2027.html"
+    },
+    {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-453407fe",
         "titulo": "Hermandad de Alhaurín el Grande despide al General Carreras Postigo en Ronda",
         "titulo_original": "Despedida del General Carreras Postigo",

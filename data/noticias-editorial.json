@@ -1,4 +1,27 @@
 {
+  "guid:atv-alhaurin-youtube:yt:video:1TpHKPU0UTM": {
+    "ai_attempts": 0,
+    "content_hash": "ec5ea715f0580954918de1a11981fef0cd4a52c4",
+    "date_modified": null,
+    "date_published": "2026-09-09T08:00:33+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Alhaurín el Grande presenta una variada agenda cultural con actividades para todos los gustos durante los próximos días. Los vecinos y visitantes podrán disfrutar de propuestas que incluyen exposiciones, talleres y eventos musicales que fomentan la participación y el ocio local.\n\nEsta programación busca dinamizar la vida cultural del municipio y ofrecer opciones de entretenimiento accesibles para toda la comunidad. La agenda se actualiza periódicamente para incluir nuevas iniciativas y garantizar que la oferta cultural se mantenga atractiva y diversa.\n\nLos interesados pueden consultar los detalles de cada evento para planificar su asistencia y aprovechar al máximo las actividades organizadas en Alhaurín el Grande.",
+      "descripcion": "Consulta la agenda cultural actualizada de Alhaurín el Grande con actividades y eventos para disfrutar en los próximos días en el municipio.",
+      "seo_keywords": [
+        "agenda cultural Alhaurín el Grande",
+        "eventos Alhaurín el Grande",
+        "actividades culturales Alhaurín"
+      ],
+      "titulo": "Agenda cultural de Alhaurín el Grande: eventos destacados para los próximos días"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-1tphkpu0utm-fa313b49",
+    "last_ai_attempt": "2026-09-09T11:07:52.510632+00:00",
+    "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=1TpHKPU0UTM"
+  },
   "guid:atv-alhaurin-youtube:yt:video:1t--wq018oc": {
     "ai_attempts": 0,
     "content_hash": "7abfd568a6116e2a86094ae9a653a9f230bc50ca",
@@ -1448,6 +1471,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34007/despedida-del-general-carreras-postigo/"
   },
+  "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34077": {
+    "ai_attempts": 0,
+    "content_hash": "850aa4965ae8ce0f4b95c3e8f4b114730089124d",
+    "date_modified": null,
+    "date_published": "2026-09-09T09:21:30+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "La Hermandad Nuestro Padre Jesús Nazareno volvió a tomar parte en las celebraciones organizadas en honor a Nuestra Señora de Gracia, patrona de Alhaurín el Grande. Durante varios días, los miembros de la hermandad acompañaron a la imagen de la Virgen en diferentes actos religiosos y culturales que forman parte de esta tradición local.\n\nEstas festividades representan un momento de gran importancia para la comunidad, donde la devoción y el sentido de pertenencia se reflejan en la participación activa de los vecinos y las hermandades. La presencia de la Hermandad Nuestro Padre Jesús Nazareno contribuye a mantener viva esta tradición y a fortalecer los lazos entre los habitantes del municipio.",
+      "descripcion": "La Hermandad Nuestro Padre Jesús Nazareno participó activamente en los actos en honor a Nuestra Señora de Gracia, patrona de Alhaurín el Grande, durante las fiestas locales.",
+      "seo_keywords": [
+        "Hermandad Nuestro Padre Jesús Nazareno",
+        "Día de la Virgen Alhaurín el Grande",
+        "fiestas patronales Alhaurín el Grande"
+      ],
+      "titulo": "Hermandad Nuestro Padre Jesús Nazareno celebra el Día de la Virgen en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-c7957025",
+    "last_ai_attempt": "2026-09-09T11:07:40.890174+00:00",
+    "pagina": "noticias/hermandad-nuestro-padre-jesus-nazareno-celebra-el-dia-de-la-virgen-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.nuestropadrejesusnazareno.com/34077/cronica-de-la-participacion-de-nuestra-hermandad-en-los-actos-del-dia-de-la-virgen-2026/"
+  },
   "guid:malaga-hoy:https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html": {
     "ai_attempts": 0,
     "content_hash": "43e9c8825d843c7e3fe503f44e07d8bdb3360ec4",
@@ -1700,6 +1746,29 @@
     "pagina": "noticias/jose-maria-diaz-bravo-candidato-del-psoe-para-la-alcaldia-de-alhaurin-el-grande-en-2027.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/08/jose-maria-diaz-bravo-candidato-psoe-alhaurin-el-grande-2027/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208240": {
+    "ai_attempts": 0,
+    "content_hash": "9327ece8300dc21927ac4e078df640ef2218a135",
+    "date_modified": null,
+    "date_published": "2026-09-09T07:33:02+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "La asociación SOS Desaparecidos ha emitido una alerta urgente para encontrar a Cristian Camilo G. A., un joven de 17 años que desapareció en Alhaurín el Grande el 5 de septiembre. Desde entonces, no se tienen noticias sobre su paradero.\n\nLas autoridades y la comunidad local están colaborando en la búsqueda para garantizar su pronta localización y seguridad. Se recomienda a cualquier persona que tenga información relevante que se ponga en contacto con los cuerpos de seguridad o con la asociación para facilitar la investigación.",
+      "descripcion": "SOS Desaparecidos ha lanzado una alerta para localizar a Cristian Camilo G. A., un menor de 17 años desaparecido en Alhaurín el Grande desde el pasado 5 de septiembre.",
+      "seo_keywords": [
+        "desaparición joven Alhaurín el Grande",
+        "Cristian Camilo desaparecido",
+        "SOS Desaparecidos Alhaurín"
+      ],
+      "titulo": "Buscan a un joven de 17 años desaparecido en Alhaurín el Grande desde el 5 de septiembre"
+    },
+    "ia_exitosa": true,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-086d6dd1",
+    "last_ai_attempt": "2026-09-09T11:08:14.872286+00:00",
+    "pagina": "noticias/buscan-a-un-joven-de-17-anos-desaparecido-en-alhaurin-el-grande-desde-el-5-de-septiembre.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/09/buscan-a-un-joven-de-17-anos-desaparecido-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

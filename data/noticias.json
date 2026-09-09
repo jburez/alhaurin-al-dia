@@ -1,5 +1,51 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-36dvps-bzoq-b54a38cc",
+        "titulo": "Charla sobre enfermedades del caballo inaugura Equinalh 2026 en Alhaurín el Grande",
+        "titulo_original": "Charla coloquio sobre enfermedades del caballo | Equinalh 2026",
+        "descripcion": "La charla coloquio sobre enfermedades equinas, impartida por veterinarios, abrió las actividades de Equinalh 2026 en las Cuevas del Convento de Alhaurín el Grande.",
+        "resumen": "La charla coloquio sobre enfermedades equinas, impartida por veterinarios, abrió las actividades de Equinalh 2026 en las Cuevas del Convento de Alhaurín el Grande.",
+        "cuerpo": "El 3 de septiembre, las Cuevas del Convento en Alhaurín el Grande fueron el escenario de la primera actividad organizada por el área de Fiestas del Ayuntamiento, dentro del programa Equinalh 2026 dedicado al mundo del caballo.\n\nLa jornada contó con una charla coloquio impartida por el veterinario Andrés Romero, quien explicó las enfermedades más comunes que afectan a los caballos, incluyendo gripes, úlceras, tétanos, cólicos, artrosis y melanomas.\n\nAdemás, la veterinaria Rocío Ayala ofreció un análisis detallado sobre el virus del Nilo, una afección que también impacta a la cabaña equina. Esta iniciativa busca informar y sensibilizar a los propietarios y aficionados sobre la salud equina, fortaleciendo el vínculo entre la comunidad local y el cuidado de estos animales en Alhaurín el Grande.",
+        "fecha": "2026-09-09T14:00:08+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Equinalh 2026",
+            "enfermedades del caballo",
+            "Alhaurín el Grande"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=36dVps_bZOQ",
+        "url": "https://www.youtube.com/watch?v=36dVps_bZOQ",
+        "imagen": "https://i4.ytimg.com/vi/36dVps_bZOQ/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/charla-sobre-enfermedades-del-caballo-inaugura-equinalh-2026-en-alhaurin-el-grande.html"
+    },
+    {
+        "id": "guid-atv-alhaurin-youtube-yt-video-b66dlnaxtje-85c40d5e",
+        "titulo": "Alhaurín el Grande prepara la Romería y abre inscripciones para cursos y exposiciones",
+        "titulo_original": "NOTICIAS ATV 9 SEPTIEMBRE 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
+        "descripcion": "El Ayuntamiento de Alhaurín el Grande avanza en los preparativos de la Romería y anuncia novedades en cultura, formación y salud para septiembre de 2026.",
+        "resumen": "El Ayuntamiento de Alhaurín el Grande avanza en los preparativos de la Romería y anuncia novedades en cultura, formación y salud para septiembre de 2026.",
+        "cuerpo": "Los Servicios Operativos del Ayuntamiento de Alhaurín el Grande están ultimando los detalles para la próxima Romería, con avances significativos y novedades que ha destacado la concejala Elisa Rueda. Paralelamente, la Escuela de Adultos tiene todo listo para iniciar las clases el 15 de septiembre, con plazas aún disponibles para quienes deseen inscribirse.\n\nEn el ámbito cultural, la Biblioteca Municipal inaugurará este viernes la exposición “Entre el aire impaciente”, organizada por la Fundación Antonio Gala, que exhibirá obras de jóvenes artistas, incluyendo dos malagueñas, y estará abierta hasta el 3 de octubre.\n\nAdemás, el Ayuntamiento y la Diputación de Málaga recuerdan que mañana finaliza el plazo para inscribirse en el curso de Auxiliar de Almacén, dirigido a personas desempleadas, con 15 plazas y prácticas en empresas. Por otro lado, la zona del valle del Guadalhorce está en alerta por el aumento de casos del virus del Nilo, especialmente en caballos, según advierten los veterinarios.",
+        "fecha": "2026-09-09T13:06:25+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Actualidad",
+        "categoria_url": "categoria/actualidad/",
+        "seo_keywords": [
+            "Romería Alhaurín el Grande",
+            "exposición Fundación Antonio Gala",
+            "curso auxiliar de almacén Alhaurín"
+        ],
+        "enlace": "https://www.youtube.com/watch?v=b66DlnAxTjE",
+        "url": "https://www.youtube.com/watch?v=b66DlnAxTjE",
+        "imagen": "https://i3.ytimg.com/vi/b66DlnAxTjE/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-prepara-la-romeria-y-abre-inscripciones-para-cursos-y-exposiciones.html"
+    },
+    {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-c7957025",
         "titulo": "Hermandad Nuestro Padre Jesús Nazareno celebra el Día de la Virgen en Alhaurín el Grande",
         "titulo_original": "CRÓNICA DE LA PARTICIPACIÓN DE NUESTRA HERMANDAD EN LOS ACTOS DEL DÍA DE LA VIRGEN 2026",
@@ -44,29 +90,6 @@
         "prioridad": 80,
         "requiere_revision_geografica": false,
         "pagina": "noticias/agenda-cultural-de-alhaurin-el-grande-eventos-destacados-para-los-proximos-dias.html"
-    },
-    {
-        "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-086d6dd1",
-        "titulo": "Buscan a un joven de 17 años desaparecido en Alhaurín el Grande desde el 5 de septiembre",
-        "titulo_original": "Buscan a un joven de 17 años desaparecido en Alhaurín el Grande",
-        "descripcion": "SOS Desaparecidos ha lanzado una alerta para localizar a Cristian Camilo G. A., un menor de 17 años desaparecido en Alhaurín el Grande desde el pasado 5 de septiembre.",
-        "resumen": "SOS Desaparecidos ha lanzado una alerta para localizar a Cristian Camilo G. A., un menor de 17 años desaparecido en Alhaurín el Grande desde el pasado 5 de septiembre.",
-        "cuerpo": "La asociación SOS Desaparecidos ha emitido una alerta urgente para encontrar a Cristian Camilo G. A., un joven de 17 años que desapareció en Alhaurín el Grande el 5 de septiembre. Desde entonces, no se tienen noticias sobre su paradero.\n\nLas autoridades y la comunidad local están colaborando en la búsqueda para garantizar su pronta localización y seguridad. Se recomienda a cualquier persona que tenga información relevante que se ponga en contacto con los cuerpos de seguridad o con la asociación para facilitar la investigación.",
-        "fecha": "2026-09-09T07:33:02+00:00",
-        "fuente": "Revista Lugar de Encuentro",
-        "categoria": "Sucesos",
-        "categoria_url": "categoria/sucesos/",
-        "seo_keywords": [
-            "desaparición joven Alhaurín el Grande",
-            "Cristian Camilo desaparecido",
-            "SOS Desaparecidos Alhaurín"
-        ],
-        "enlace": "https://revistalugardeencuentro.com/2026/09/09/buscan-a-un-joven-de-17-anos-desaparecido-en-alhaurin-el-grande/",
-        "url": "https://revistalugardeencuentro.com/2026/09/09/buscan-a-un-joven-de-17-anos-desaparecido-en-alhaurin-el-grande/",
-        "imagen": "https://revistalugardeencuentro.com/wp-content/uploads/2017/08/lde.jpeg",
-        "prioridad": 90,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/buscan-a-un-joven-de-17-anos-desaparecido-en-alhaurin-el-grande-desde-el-5-de-septiembre.html"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-453407fe",

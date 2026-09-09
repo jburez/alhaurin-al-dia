@@ -45,6 +45,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=1t--wq018oc"
   },
+  "guid:atv-alhaurin-youtube:yt:video:36dVps_bZOQ": {
+    "ai_attempts": 0,
+    "content_hash": "358b040f6945f694153c55554576894ec0c6c456",
+    "date_modified": null,
+    "date_published": "2026-09-09T14:00:08+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "El 3 de septiembre, las Cuevas del Convento en Alhaurín el Grande fueron el escenario de la primera actividad organizada por el área de Fiestas del Ayuntamiento, dentro del programa Equinalh 2026 dedicado al mundo del caballo.\n\nLa jornada contó con una charla coloquio impartida por el veterinario Andrés Romero, quien explicó las enfermedades más comunes que afectan a los caballos, incluyendo gripes, úlceras, tétanos, cólicos, artrosis y melanomas.\n\nAdemás, la veterinaria Rocío Ayala ofreció un análisis detallado sobre el virus del Nilo, una afección que también impacta a la cabaña equina. Esta iniciativa busca informar y sensibilizar a los propietarios y aficionados sobre la salud equina, fortaleciendo el vínculo entre la comunidad local y el cuidado de estos animales en Alhaurín el Grande.",
+      "descripcion": "La charla coloquio sobre enfermedades equinas, impartida por veterinarios, abrió las actividades de Equinalh 2026 en las Cuevas del Convento de Alhaurín el Grande.",
+      "seo_keywords": [
+        "Equinalh 2026",
+        "enfermedades del caballo",
+        "Alhaurín el Grande"
+      ],
+      "titulo": "Charla sobre enfermedades del caballo inaugura Equinalh 2026 en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-36dvps-bzoq-b54a38cc",
+    "last_ai_attempt": "2026-09-09T16:25:08.412509+00:00",
+    "pagina": "noticias/charla-sobre-enfermedades-del-caballo-inaugura-equinalh-2026-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=36dVps_bZOQ"
+  },
   "guid:atv-alhaurin-youtube:yt:video:FXpsXN8ZUQg": {
     "ai_attempts": 0,
     "content_hash": "1bfa97e60649ee0c8668ba0eb575b9e1e1c99a4f",
@@ -320,6 +343,29 @@
     "pagina": "noticias/alhaurin-el-grande-impulsa-taller-de-comic-y-celebra-misa-de-accion-de-gracias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:b66DlnAxTjE": {
+    "ai_attempts": 0,
+    "content_hash": "4c0392dffa05e1b9ea6251f4ef1a3a7c806ec130",
+    "date_modified": null,
+    "date_published": "2026-09-09T13:06:25+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Los Servicios Operativos del Ayuntamiento de Alhaurín el Grande están ultimando los detalles para la próxima Romería, con avances significativos y novedades que ha destacado la concejala Elisa Rueda. Paralelamente, la Escuela de Adultos tiene todo listo para iniciar las clases el 15 de septiembre, con plazas aún disponibles para quienes deseen inscribirse.\n\nEn el ámbito cultural, la Biblioteca Municipal inaugurará este viernes la exposición “Entre el aire impaciente”, organizada por la Fundación Antonio Gala, que exhibirá obras de jóvenes artistas, incluyendo dos malagueñas, y estará abierta hasta el 3 de octubre.\n\nAdemás, el Ayuntamiento y la Diputación de Málaga recuerdan que mañana finaliza el plazo para inscribirse en el curso de Auxiliar de Almacén, dirigido a personas desempleadas, con 15 plazas y prácticas en empresas. Por otro lado, la zona del valle del Guadalhorce está en alerta por el aumento de casos del virus del Nilo, especialmente en caballos, según advierten los veterinarios.",
+      "descripcion": "El Ayuntamiento de Alhaurín el Grande avanza en los preparativos de la Romería y anuncia novedades en cultura, formación y salud para septiembre de 2026.",
+      "seo_keywords": [
+        "Romería Alhaurín el Grande",
+        "exposición Fundación Antonio Gala",
+        "curso auxiliar de almacén Alhaurín"
+      ],
+      "titulo": "Alhaurín el Grande prepara la Romería y abre inscripciones para cursos y exposiciones"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-b66dlnaxtje-85c40d5e",
+    "last_ai_attempt": "2026-09-09T16:25:17.963945+00:00",
+    "pagina": "noticias/alhaurin-el-grande-prepara-la-romeria-y-abre-inscripciones-para-cursos-y-exposiciones.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=b66DlnAxTjE"
   },
   "guid:atv-alhaurin-youtube:yt:video:dbCHGtOLhWM": {
     "ai_attempts": 0,

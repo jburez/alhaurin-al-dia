@@ -1,22 +1,8 @@
 {
-  "actualizado": "2026-09-09T00:51:57.105Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 244 eventos próximos.",
+  "actualizado": "2026-09-09T06:02:02.666353+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 242 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5589",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Live Music 🎶 | Lourdes Millan 🎸",
-      "descripcion": "🎶 Música en vivo con Lourdes Millán 🎸 Este 9 de agosto a las 21:00 h, vive una noche mágica en Cortijo La Ventilla, dentro del Hotel Alhaurín Golf Resort. 👉 Disfruta de su increíble directo con mús...",
-      "lugar": "",
-      "inicio": "2026-08-09T21:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/live-music-%f0%9f%8e%b6-lourdes-millan/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-12556",
       "tipo": "Música en vivo",
@@ -3644,21 +3630,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

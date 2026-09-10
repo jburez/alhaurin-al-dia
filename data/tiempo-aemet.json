@@ -1,54 +1,42 @@
 {
-  "actualizado": "2026-09-09T20:37:19+02:00",
+  "actualizado": "2026-09-10T13:20:41+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "🌧️",
+    "icono": "☀️",
     "titulo": "Tiempo",
-    "valor": "Máx. 36º",
-    "detalle": "Intervalos nubosos con lluvia escasa · Máx. 36º / Mín. 20º · Lluvia 75%",
+    "valor": "Máx. 29º",
+    "detalle": "Despejado · Máx. 29º / Mín. 20º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-09-09",
-    "dia_semana": "Miércoles",
-    "fecha_corta": "9/9",
-    "t_max": "36",
+    "fecha": "2026-09-10",
+    "dia_semana": "Jueves",
+    "fecha_corta": "10/9",
+    "t_max": "29",
     "t_min": "20",
-    "icono": "🌧️",
-    "descripcion": "Intervalos nubosos con lluvia escasa",
-    "lluvia": "75%",
-    "viento": "NO 15 km/h",
-    "uv": "7"
+    "icono": "☀️",
+    "descripcion": "Despejado",
+    "lluvia": "0%",
+    "viento": "Flojo",
+    "uv": "6"
   },
   "semana": [
-    {
-      "fecha": "2026-09-09",
-      "dia_semana": "Miércoles",
-      "fecha_corta": "9/9",
-      "t_max": "36",
-      "t_min": "20",
-      "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "75%",
-      "viento": "NO 15 km/h",
-      "uv": "7"
-    },
     {
       "fecha": "2026-09-10",
       "dia_semana": "Jueves",
       "fecha_corta": "10/9",
-      "t_max": "28",
-      "t_min": "19",
-      "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia escasa",
-      "lluvia": "100%",
-      "viento": "SE 15 km/h",
+      "t_max": "29",
+      "t_min": "20",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "Flojo",
       "uv": "6"
     },
     {
@@ -59,8 +47,8 @@
       "t_min": "18",
       "icono": "☀️",
       "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "SE 15 km/h",
+      "lluvia": "5%",
+      "viento": "SE 10 km/h",
       "uv": "7"
     },
     {
@@ -69,8 +57,8 @@
       "fecha_corta": "12/9",
       "t_max": "29",
       "t_min": "19",
-      "icono": "☀️",
-      "descripcion": "Despejado",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
       "lluvia": "0%",
       "viento": "E 15 km/h",
       "uv": "7"
@@ -80,7 +68,19 @@
       "dia_semana": "Domingo",
       "fecha_corta": "13/9",
       "t_max": "29",
-      "t_min": "20",
+      "t_min": "19",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "E 15 km/h",
+      "uv": "7"
+    },
+    {
+      "fecha": "2026-09-14",
+      "dia_semana": "Lunes",
+      "fecha_corta": "14/9",
+      "t_max": "29",
+      "t_min": "18",
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
@@ -88,26 +88,26 @@
       "uv": "7"
     },
     {
-      "fecha": "2026-09-14",
-      "dia_semana": "Lunes",
-      "fecha_corta": "14/9",
-      "t_max": "30",
-      "t_min": "19",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "SE 15 km/h",
-      "uv": ""
-    },
-    {
       "fecha": "2026-09-15",
       "dia_semana": "Martes",
       "fecha_corta": "15/9",
-      "t_max": "32",
-      "t_min": "20",
+      "t_max": "31",
+      "t_min": "18",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "SE 10 km/h",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-09-16",
+      "dia_semana": "Miércoles",
+      "fecha_corta": "16/9",
+      "t_max": "31",
+      "t_min": "19",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
-      "lluvia": "5%",
+      "lluvia": "0%",
       "viento": "SE 10 km/h",
       "uv": ""
     }
@@ -117,60 +117,60 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Desaconsejado",
-      "detalle": "Riesgo de precipitaciones"
+      "estado": "Excelente",
+      "detalle": "Secado muy rápido al sol (0% riesgo)"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Espera unos días",
-      "detalle": "Posible barro o lluvia"
+      "estado": "Muy recomendado",
+      "detalle": "Cielo limpio y sin calima"
     },
     {
       "id": "deporte",
       "icono": "🏃",
       "titulo": "Deporte exterior",
-      "estado": "Horas frescas",
-      "detalle": "Evitar 13:00 a 19:00 h por calor"
+      "estado": "Favorable",
+      "detalle": "Ideal mañanas y atardecer"
     },
     {
       "id": "polen",
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.3 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.1 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.3,
+      "gramineas": 0.1,
       "olivo": 0.0
     }
   ],
   "sol_luna": {
     "orto": "07:56 h",
-    "ocaso": "20:35 h",
-    "horas_luz": "12h 39m",
-    "fase_luna": "Luna Menguante (6%)",
-    "icono_luna": "🌘"
+    "ocaso": "20:34 h",
+    "horas_luz": "12h 38m",
+    "fase_luna": "Luna Nueva (2%)",
+    "icono_luna": "🌑"
   },
   "embalses": {
     "cuenca": "Guadalhorce-Limites",
     "fuente": "SAIH Hidrosur (Junta de Andalucía)",
     "fuente_url": "https://www.redhidrosurmedioambiente.es/saih/informe/embalses",
     "total_capacidad_hm3": 403.1,
-    "total_embalsado_hm3": 335.6,
-    "porcentaje": "83.3%",
+    "total_embalsado_hm3": 334.9,
+    "porcentaje": "83.1%",
     "pantanos": [
       {
         "nombre": "Conde de Guadalhorce",
         "capacidad": "66.5 hm³",
-        "embalsado": "45.1 hm³",
-        "porcentaje": "67.9%"
+        "embalsado": "44.9 hm³",
+        "porcentaje": "67.6%"
       },
       {
         "nombre": "Embalse del Guadalhorce",
         "capacidad": "125.7 hm³",
-        "embalsado": "112.7 hm³",
-        "porcentaje": "89.7%"
+        "embalsado": "112.4 hm³",
+        "porcentaje": "89.4%"
       },
       {
         "nombre": "Guadalteba",
@@ -181,8 +181,8 @@
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "34.1 hm³",
-        "porcentaje": "59.3%"
+        "embalsado": "34.0 hm³",
+        "porcentaje": "59.0%"
       }
     ]
   }

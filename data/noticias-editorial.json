@@ -528,6 +528,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=pKyD2nZx2Nk"
   },
+  "guid:atv-alhaurin-youtube:yt:video:vSohImqw6SE": {
+    "ai_attempts": 0,
+    "content_hash": "3ce4cb646ce721329bffd437ca599a6b711a6670",
+    "date_modified": null,
+    "date_published": "2026-09-10T11:43:30+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Los centros educativos de infantil y primaria de Alhaurín el Grande han recibido hoy a más de mil estudiantes que inician el curso escolar 2026/27, marcando el regreso a las aulas con entusiasmo y normalidad. Este inicio supone un momento clave para las familias y la comunidad educativa local.\n\nPor otro lado, el Cristo de las Agonías fue trasladado ayer desde su ermita hasta la Parroquia de Alhaurín el Grande, en un acto acompañado por vecinos, autoridades municipales y miembros de las hermandades y cofradías del municipio.\n\nLa imagen permanecerá en el templo durante tres días como parte de los preparativos para la Romería que se celebrará este fin de semana. Además, los hermanos Enzo y Oliver Quero, jugadores del Club de Tenis de Mesa El Lugá, lograron destacadas actuaciones en el VI Torneo Memorial Ortiz celebrado en Granada, aportando un motivo de orgullo para el deporte local.",
+      "descripcion": "Más de mil alumnos comienzan el curso 2026/27 en Alhaurín el Grande y el Cristo de las Agonías es trasladado a la parroquia para la Romería del fin de semana.",
+      "seo_keywords": [
+        "curso escolar Alhaurín el Grande",
+        "Cristo de las Agonías traslado",
+        "Deportes Alhaurín el Grande"
+      ],
+      "titulo": "Inicio del curso escolar y traslado del Cristo de las Agonías en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-atv-alhaurin-youtube-yt-video-vsohimqw6se-5c1ed1d4",
+    "last_ai_attempt": "2026-09-10T12:51:19.150665+00:00",
+    "pagina": "noticias/inicio-del-curso-escolar-y-traslado-del-cristo-de-las-agonias-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=vSohImqw6SE"
+  },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224629": {
     "ai_attempts": 0,
     "content_hash": "69bc8150b9d020b210517a760d3278876bbf78c8",
@@ -1356,6 +1379,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/"
   },
+  "guid:fedelhorce:https://fedelhorce.es/?p=261027": {
+    "ai_attempts": 0,
+    "content_hash": "ab94f540a6329b4be034cfdb50db062226289d9c",
+    "date_modified": null,
+    "date_published": "2026-09-10T08:48:56+00:00",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "Fedelhorce ha convocado una masterclass en Alhaurín de la Torre destinada a empresarios y profesionales interesados en conocer las novedades que impactan en el entorno empresarial. La sesión abordará los cambios normativos y estratégicos que pueden influir en la gestión y desarrollo de las empresas locales.\n\nDurante la masterclass, se ofrecerán pautas prácticas para que las empresas puedan prepararse adecuadamente ante estas modificaciones, facilitando así su adaptación y competitividad en el mercado. Esta iniciativa busca fortalecer el tejido empresarial de la comarca mediante formación especializada y actualizada.",
+      "descripcion": "Fedelhorce organiza una masterclass en Alhaurín de la Torre para explicar los cambios que afectan a las empresas y cómo adaptarse a ellos.",
+      "seo_keywords": [
+        "masterclass Alhaurín de la Torre",
+        "cambios empresariales",
+        "formación para empresas"
+      ],
+      "titulo": "Masterclass en Alhaurín de la Torre sobre cambios y preparación empresarial"
+    },
+    "ia_exitosa": true,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-261027-54655459",
+    "last_ai_attempt": "2026-09-10T12:51:27.369579+00:00",
+    "pagina": "noticias/masterclass-en-alhaurin-de-la-torre-sobre-cambios-y-preparacion-empresarial.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/masterclass-en-alhaurin-de-la-torre-verifactu/"
+  },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=33600": {
     "ai_attempts": 0,
     "content_hash": "467afbe83c8cfda0de59829b4684d407f1f0fe04",
@@ -2137,5 +2183,51 @@
     "pagina": "noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-recibe-al-jinete-juan-lopez-dobao.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/encuentro-con-el-jinete-juan-lopez-dobao-en-el-centro-ecuestre-la-villa/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50624": {
+    "ai_attempts": 0,
+    "content_hash": "5b2188da283d8cc5aa3221b9c8043a78cab31d56",
+    "date_modified": null,
+    "date_published": "2026-09-10T07:46:02+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "El pasado 3 de septiembre, las Cuevas del Convento en Alhaurín el Grande acogieron la primera actividad organizada por el área de Fiestas del Ayuntamiento, enmarcada en Equinalh 2026, un evento dedicado al mundo del caballo.\n\nLa jornada comenzó con una charla coloquio sobre las enfermedades más comunes que afectan a estos animales, impartida por el veterinario Andrés Romero. Durante la sesión, Romero ofreció un recorrido detallado sobre los principales problemas de salud equina, sus síntomas y métodos de prevención, fomentando un espacio de diálogo con los asistentes.\n\nEsta iniciativa busca concienciar y formar a propietarios y aficionados sobre el cuidado y bienestar de los caballos en la comarca.",
+      "descripcion": "La charla coloquio sobre enfermedades del caballo, impartida por el veterinario Andrés Romero, inauguró las actividades de Equinalh 2026 en las Cuevas del Convento de Alhaurín el Grande.",
+      "seo_keywords": [
+        "Equinalh 2026",
+        "enfermedades del caballo",
+        "Alhaurín el Grande"
+      ],
+      "titulo": "Charla sobre enfermedades del caballo inaugura Equinalh 2026 en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50624-e2db6300",
+    "last_ai_attempt": "2026-09-10T12:51:07.592399+00:00",
+    "pagina": "noticias/charla-sobre-enfermedades-del-caballo-inaugura-equinalh-2026-en-alhaurin-el-grande-2.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/charla-coloquio-sobre-enfermedades-del-caballo-equinalh-2026/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50627": {
+    "ai_attempts": 0,
+    "content_hash": "1c98ddcc080527e62fe432c0522773a472eb701c",
+    "date_modified": null,
+    "date_published": "2026-09-10T07:54:28+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "La segunda edición de la Verbena Villa del Guadalhorce se celebró con gran participación en Alhaurín el Grande, organizada por el Área de Mayores del Ayuntamiento. El evento congregó a numerosos vecinos y familias que disfrutaron de una jornada festiva y cultural.\n\nEl Taller Musical de Playback de Mayores, dirigido por Mari Rosa Ramírez, fue el protagonista principal, ofreciendo más de veinte actuaciones que animaron la velada. Esta iniciativa refuerza el compromiso del Ayuntamiento con la participación activa y el bienestar de las personas mayores en la comunidad.",
+      "descripcion": "La II Verbena Villa del Guadalhorce reunió a vecinos y familias en Alhaurín el Grande con actuaciones del Taller Musical de Playback de Mayores.",
+      "seo_keywords": [
+        "Verbena Villa del Guadalhorce",
+        "Alhaurín el Grande eventos",
+        "Taller Musical de Playback Mayores"
+      ],
+      "titulo": "Éxito de la II Verbena Villa del Guadalhorce en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50627-28d0bcab",
+    "last_ai_attempt": "2026-09-10T12:51:01.731746+00:00",
+    "pagina": "noticias/exito-de-la-ii-verbena-villa-del-guadalhorce-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/ii-verbena-villa-del-guadalhorce-2026/"
   }
 }

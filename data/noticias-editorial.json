@@ -1862,6 +1862,29 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/09/buscan-a-un-joven-de-17-anos-desaparecido-en-alhaurin-el-grande/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208396": {
+    "ai_attempts": 0,
+    "content_hash": "518a3d439a8d5ed0428ff05886edf380a87216a8",
+    "date_modified": null,
+    "date_published": "2026-09-10T16:10:34+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La campaña 2026-2027 para la recogida de la DOP Aceituna Aloreña de Málaga ha comenzado oficialmente en Alhaurín el Grande. Este evento marca el inicio de una temporada clave para los agricultores y productores locales, que mantienen viva una tradición agrícola fundamental para la economía y cultura de la zona.\n\nLa aceituna Aloreña, reconocida por su calidad y denominación de origen protegida, es un producto emblemático que impulsa la actividad rural en el municipio. La campaña se espera que contribuya al desarrollo sostenible del sector y a la promoción de los productos autóctonos de Alhaurín el Grande y su entorno.",
+      "descripcion": "Arranca en Alhaurín el Grande la campaña 2026-2027 de la DOP Aceituna Aloreña de Málaga, destacando la importancia local de esta cosecha tradicional.",
+      "seo_keywords": [
+        "Aceituna Aloreña",
+        "campaña aceituna 2026",
+        "Alhaurín el Grande"
+      ],
+      "titulo": "Comienza la campaña 2026-2027 de la DOP Aceituna Aloreña en Alhaurín el Grande"
+    },
+    "ia_exitosa": true,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-65431386",
+    "last_ai_attempt": "2026-09-10T17:37:51.490233+00:00",
+    "pagina": "noticias/comienza-la-campana-2026-2027-de-la-dop-aceituna-alorena-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/10/a-la-rica-aceituna-en-alhaurin-el-grande/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",

@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-10T13:20:41+02:00",
+  "actualizado": "2026-09-10T20:29:03+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "🌧️",
     "titulo": "Tiempo",
     "valor": "Máx. 29º",
-    "detalle": "Despejado · Máx. 29º / Mín. 20º · Lluvia 0%",
+    "detalle": "Intervalos nubosos con lluvia escasa · Máx. 29º / Mín. 20º · Lluvia 85%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "10/9",
     "t_max": "29",
     "t_min": "20",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "icono": "🌧️",
+    "descripcion": "Intervalos nubosos con lluvia escasa",
+    "lluvia": "85%",
+    "viento": "SE 10 km/h",
     "uv": "6"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "10/9",
       "t_max": "29",
       "t_min": "20",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "icono": "🌧️",
+      "descripcion": "Intervalos nubosos con lluvia escasa",
+      "lluvia": "85%",
+      "viento": "SE 10 km/h",
       "uv": "6"
     },
     {
@@ -117,15 +117,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Excelente",
-      "detalle": "Secado muy rápido al sol (0% riesgo)"
+      "estado": "Desaconsejado",
+      "detalle": "Riesgo de precipitaciones"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Muy recomendado",
-      "detalle": "Cielo limpio y sin calima"
+      "estado": "Espera unos días",
+      "detalle": "Posible barro o lluvia"
     },
     {
       "id": "deporte",

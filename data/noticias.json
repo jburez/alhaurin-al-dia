@@ -1,5 +1,51 @@
 [
     {
+        "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-80016fb3",
+        "titulo": "La Hermandad de Jesús Nazareno celebra la festividad de los Dolores Gloriosos de la Virgen",
+        "titulo_original": "Festividad de los Dolores Gloriosos de la Virgen",
+        "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno organiza actos en honor a María Santísima del Mayor Dolor en la Ermita de San Sebastián.",
+        "resumen": "La Real Hermandad de Nuestro Padre Jesús Nazareno organiza actos en honor a María Santísima del Mayor Dolor en la Ermita de San Sebastián.",
+        "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno de Alhaurín el Grande conmemora la festividad de los Dolores Gloriosos de la Virgen con una serie de actos religiosos. Durante estos días, los fieles podrán venerar a María Santísima del Mayor Dolor en la Ermita de San Sebastián, que permanecerá abierta para tal fin.\n\nEsta celebración es una muestra de devoción y tradición que reúne a la comunidad local en torno a su Sagrada Titular. Los eventos programados buscan honrar la figura de la Virgen y fortalecer la fe de los vecinos, manteniendo viva la historia y las costumbres de la localidad.\n\nLa Hermandad invita a todos los alhaurinos a participar en estas actividades que reflejan el compromiso con la espiritualidad y el patrimonio religioso del municipio.",
+        "fecha": "2026-09-11T10:21:56+00:00",
+        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
+        "categoria": "Fiestas y Tradiciones",
+        "categoria_url": "categoria/fiestas-y-tradiciones/",
+        "seo_keywords": [
+            "Dolores Gloriosos Virgen",
+            "Hermandad Jesús Nazareno",
+            "María Santísima Mayor Dolor"
+        ],
+        "enlace": "https://www.nuestropadrejesusnazareno.com/34096/festividad-de-los-dolores-gloriosos-de-la-virgen-3/",
+        "url": "https://www.nuestropadrejesusnazareno.com/34096/festividad-de-los-dolores-gloriosos-de-la-virgen-3/",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "prioridad": 95,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/la-hermandad-de-jesus-nazareno-celebra-la-festividad-de-los-dolores-gloriosos-de-la-virgen.html"
+    },
+    {
+        "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22472-f157ee0d",
+        "titulo": "Alhaurín el Grande inaugura la campaña 26/27 de la DOP Aceituna Aloreña de Málaga",
+        "titulo_original": "Alhaurín el Grande acoge el inicio de la campaña 26/27 de la DOP Aceituna Aloreña de Málaga",
+        "descripcion": "Alhaurín el Grande acoge el inicio de la campaña 26/27 de la DOP Aceituna Aloreña de Málaga con previsiones de cosecha media y alta calidad del fruto.",
+        "resumen": "Alhaurín el Grande acoge el inicio de la campaña 26/27 de la DOP Aceituna Aloreña de Málaga con previsiones de cosecha media y alta calidad del fruto.",
+        "cuerpo": "Alhaurín el Grande se ha convertido en el punto de encuentro para el sector olivarero con el inicio oficial de la campaña 26/27 de la DOP Aceituna Aloreña de Málaga. Esta campaña presenta unas previsiones de cosecha media, destacando un buen calibre y una elevada calidad del fruto, aspectos que son fundamentales para mantener la reputación de esta denominación de origen protegida.\n\nEl municipio reafirma así su papel clave en la producción y promoción de la aceituna Aloreña, un producto emblemático de la comarca. La calidad del fruto y las condiciones favorables para esta campaña son una buena noticia para agricultores y productores locales, que esperan consolidar la presencia de la aceituna en mercados nacionales e internacionales.",
+        "fecha": "2026-09-11T10:19:39+00:00",
+        "fuente": "Ayuntamiento Alhaurín el Grande",
+        "categoria": "Municipal",
+        "categoria_url": "categoria/municipal/",
+        "seo_keywords": [
+            "Aceituna Aloreña de Málaga",
+            "campaña aceituna 26/27",
+            "Alhaurín el Grande olivar"
+        ],
+        "enlace": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/",
+        "url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/09/inicio-de-la-campana-2627-de-la-DOP-Aceituna-Alorena-de-Malaga_2-1.jpeg",
+        "prioridad": 120,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/alhaurin-el-grande-inaugura-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga.html"
+    },
+    {
         "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-65431386",
         "titulo": "Comienza la campaña 2026-2027 de la DOP Aceituna Aloreña en Alhaurín el Grande",
         "titulo_original": "A la rica aceituna en Alhaurín el Grande",
@@ -44,6 +90,29 @@
         "prioridad": 85,
         "requiere_revision_geografica": false,
         "pagina": "noticias/masterclass-en-alhaurin-de-la-torre-sobre-cambios-y-preparacion-empresarial.html"
+    },
+    {
+        "id": "guid-fedelhorce-https-fedelhorce-es-p-261053-34d5a3c3",
+        "titulo": "Oferta exclusiva para asociados: disco duro a precio especial en Security Life Solutions",
+        "titulo_original": "OFERTA | Security Life Solutions",
+        "descripcion": "Security Life Solutions lanza una oferta exclusiva para asociados con un precio especial en discos duros al adquirir un grabador.",
+        "resumen": "Security Life Solutions lanza una oferta exclusiva para asociados con un precio especial en discos duros al adquirir un grabador.",
+        "cuerpo": "Security Life Solutions, en colaboración con Fedelhorce, presenta una promoción exclusiva destinada a sus asociados. Al adquirir un grabador, los clientes podrán obtener un disco duro a un precio especial, facilitando así la mejora y ampliación de sus sistemas de seguridad.\n\nEsta oferta está diseñada para optimizar la inversión en equipos de vigilancia, ofreciendo una solución completa y asequible para quienes buscan reforzar la protección de sus instalaciones. Los interesados pueden aprovechar esta oportunidad para actualizar sus dispositivos con componentes de calidad a un coste reducido.",
+        "fecha": "2026-09-10T08:00:06+00:00",
+        "fuente": "Fedelhorce",
+        "categoria": "Comercio y Empresa",
+        "categoria_url": "categoria/comercio-y-empresa/",
+        "seo_keywords": [
+            "Security Life Solutions",
+            "oferta disco duro",
+            "promoción asociados Fedelhorce"
+        ],
+        "enlace": "https://fedelhorce.es/oferta-security-life-solutions/",
+        "url": "https://fedelhorce.es/oferta-security-life-solutions/",
+        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/09/Mesa-de-trabajo-1.png",
+        "prioridad": 85,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/oferta-exclusiva-para-asociados-disco-duro-a-precio-especial-en-security-life-solutions.html"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50627-28d0bcab",

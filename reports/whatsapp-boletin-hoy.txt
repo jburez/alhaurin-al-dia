@@ -5,7 +5,7 @@
 Consulta la guardia de hoy en la web.
 
 🌤️ *EL TIEMPO HOY:*
-Despejado (Máx: 30° / Mín: 19°)
+Poco nuboso (Máx: 30° / Mín: 19°)
 
 📢 *AVISOS Y SERVICIOS:*
 - 🚗 *Tráfico y Accesos:* Sin incidencias reportadas.

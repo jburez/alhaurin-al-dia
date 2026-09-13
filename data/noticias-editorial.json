@@ -1426,7 +1426,7 @@
     "source_url": "https://fedelhorce.es/cafe-con-ideas-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260892": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "a9ba7eecd4d7a55e53f8149a2f22144b478dd2ba",
     "date_modified": "2026-09-13T04:29:37.702104+00:00",
     "date_published": "2026-08-21T08:31:49+00:00",
@@ -1439,7 +1439,7 @@
     },
     "ia_exitosa": false,
     "id": "https-fedelhorce-es-masterclass-facturacion-electronica-y-verifactu-e1cf96da",
-    "last_ai_attempt": "2026-09-13T04:26:20.490585+00:00",
+    "last_ai_attempt": "2026-09-13T11:34:39.914907+00:00",
     "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/"

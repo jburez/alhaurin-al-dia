@@ -1426,24 +1426,20 @@
     "source_url": "https://fedelhorce.es/cafe-con-ideas-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260892": {
-    "ai_attempts": 0,
-    "content_hash": "719790dde0e2864204fc6d00b50f8b06bea11c21",
-    "date_modified": null,
+    "ai_attempts": 1,
+    "content_hash": "a9ba7eecd4d7a55e53f8149a2f22144b478dd2ba",
+    "date_modified": "2026-09-13T04:29:37.702104+00:00",
     "date_published": "2026-08-21T08:31:49+00:00",
     "editorial": {
-      "categoria": "Comercio y Empresa",
-      "cuerpo": "Fedelhorce ha programado una masterclass destinada a empresarios y autónomos de Alhaurín el Grande para abordar las novedades en facturación electrónica derivadas de la implementación de Verifactu. Esta sesión formativa explicará en detalle qué cambios introduce esta herramienta y cómo las empresas pueden adaptarse para cumplir con la normativa vigente.\n\nDurante la masterclass, se ofrecerán pautas prácticas para preparar a las organizaciones ante las nuevas exigencias, facilitando la transición hacia procesos digitales más eficientes y seguros. La iniciativa busca apoyar a los negocios locales en la modernización de sus sistemas de facturación y en la mejora de su gestión administrativa.",
-      "descripcion": "Fedelhorce organiza una masterclass para explicar los cambios en facturación electrónica con Verifactu y cómo afectan a las empresas locales.",
-      "seo_keywords": [
-        "facturación electrónica",
-        "Verifactu",
-        "empresas Alhaurín el Grande"
-      ],
-      "titulo": "Masterclass en Alhaurín el Grande sobre facturación electrónica y Verifactu"
+      "categoria": "Agenda Cultural",
+      "cuerpo": "MASTERCLASS Verifactu, qué cambia, cómo afecta a tu empresa y cómo prepararte.",
+      "descripcion": "MASTERCLASS Verifactu, qué cambia, cómo afecta a tu empresa y cómo prepararte.",
+      "seo_keywords": [],
+      "titulo": "Facturación electrónica y Verifactu"
     },
-    "ia_exitosa": true,
+    "ia_exitosa": false,
     "id": "https-fedelhorce-es-masterclass-facturacion-electronica-y-verifactu-e1cf96da",
-    "last_ai_attempt": "2026-08-24T13:07:37.082061+00:00",
+    "last_ai_attempt": "2026-09-13T04:26:20.490585+00:00",
     "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/"

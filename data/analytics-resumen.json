@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-13T15:17:53.898Z",
+  "actualizado": "2026-09-13T18:15:41.875Z",
   "visitas24h": 6,
   "paginasVistas24h": 6,
   "topPaginas": [
@@ -8,12 +8,12 @@
       "vistas": 8
     },
     {
-      "ruta": "/",
-      "vistas": 7
-    },
-    {
       "ruta": "/guia-util/farmacias/",
       "vistas": 6
+    },
+    {
+      "ruta": "/",
+      "vistas": 5
     },
     {
       "ruta": "/guia-util/farmacias/calendario/",

@@ -1,19 +1,19 @@
 {
-  "actualizado": "2026-09-14T05:26:07.142Z",
-  "visitas24h": 14,
-  "paginasVistas24h": 14,
+  "actualizado": "2026-09-14T10:50:27.421Z",
+  "visitas24h": 12,
+  "paginasVistas24h": 12,
   "topPaginas": [
+    {
+      "ruta": "/tiempo/",
+      "vistas": 9
+    },
     {
       "ruta": "/planes/",
       "vistas": 8
     },
     {
-      "ruta": "/tiempo/",
-      "vistas": 7
-    },
-    {
       "ruta": "/guia-util/farmacias/",
-      "vistas": 6
+      "vistas": 5
     },
     {
       "ruta": "/",

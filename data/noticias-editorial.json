@@ -483,7 +483,7 @@
     "source_url": "https://www.youtube.com/watch?v=jcAdClL_nk4"
   },
   "guid:atv-alhaurin-youtube:yt:video:krMq1Ai5JSU": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "a2268006309503b82462ae906b51410384af2e8e",
     "date_modified": null,
     "date_published": "2026-09-14T12:49:58+00:00",
@@ -496,7 +496,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-krmq1ai5jsu-e2bcdd30",
-    "last_ai_attempt": "2026-09-14T14:56:56.629204+00:00",
+    "last_ai_attempt": "2026-09-14T20:15:37.995100+00:00",
     "pagina": "noticias/noticias-atv-lunes-14-septiembre-2026-actualidad-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=krMq1Ai5JSU"
@@ -893,7 +893,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -906,7 +906,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-14T14:56:25.116886+00:00",
+    "last_ai_attempt": "2026-09-14T20:15:07.771827+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
@@ -2075,6 +2075,25 @@
     "pagina": "noticias/alhaurin-el-grande-de-boda-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/14/alhaurin-el-grande-de-boda-2026/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208566": {
+    "ai_attempts": 1,
+    "content_hash": "d3e973bd21a99e980b0f3abb4ac50ee33e38398a",
+    "date_modified": null,
+    "date_published": "2026-09-14T17:49:44+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 25 segundosLos socialistas reclaman el segundo equipo médico de urgencias, los dos millones comprometidos para el Centro Ocupacional Fahala, un nuevo centro educativo y culminar la depuración de las aguas residuales Josele Aguilar destaca que José María Díaz Bravo es «un magnífico candidato» que cuenta con el respaldo de La entrada El PSOE exige a la Junta que cumpla sus.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 25 segundosLos socialistas reclaman el segundo equipo médico de urgencias, los dos millones comprometidos para el Centro Ocupacional Fahala, un nuevo centro educativo y culminar la depuración.",
+      "seo_keywords": [],
+      "titulo": "El PSOE exige a la Junta que cumpla sus compromisos con Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-ff50cf30",
+    "last_ai_attempt": "2026-09-14T20:16:28.607342+00:00",
+    "pagina": "noticias/el-psoe-exige-a-la-junta-que-cumpla-sus-compromisos-con-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/14/el-psoe-exige-a-la-junta-que-cumpla-sus-compromisos-con-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

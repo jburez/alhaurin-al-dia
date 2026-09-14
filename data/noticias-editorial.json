@@ -482,6 +482,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=jcAdClL_nk4"
   },
+  "guid:atv-alhaurin-youtube:yt:video:krMq1Ai5JSU": {
+    "ai_attempts": 1,
+    "content_hash": "a2268006309503b82462ae906b51410384af2e8e",
+    "date_modified": null,
+    "date_published": "2026-09-14T12:49:58+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del lunes 14 de septiembre de 2026 en el Informativo de ATV. 1. BRILLANTE ROMERÍA 2026 Ayer acabo la Romería 2026 de Alhaurín el Grande. El alcalde Anthony Bermúdez se ha mostrado muy satisfecho de la participación ciudadana y del auge que va adquiriendo este evento popular 2.\n\nBALANCE La concejala de Fiestas Ana Belén Rueda ha mostrado su satisfacción por la romería de este año, y ha deseado que las romerías venideras mantengan el mismo espíritu de entusiasmo en el pueblo de Alhaurín 3. PREMIOS Concejales del equipo de gobierno hicieron entrega de los premios de la romería 2026.\n\nEl de mejor carroza recayó en la cofradía de la Santa Vera Cruz. 5.",
+      "descripcion": "1. BRILLANTE ROMERÍA 2026 Ayer acabo la Romería 2026 de Alhaurín el Grande. El alcalde Anthony Bermúdez se ha mostrado muy satisfecho de la participación ciudadana y del auge que va adquiriendo este evento popular 2. BALANCE La.",
+      "seo_keywords": [],
+      "titulo": "NOTICIAS ATV LUNES 14 SEPTIEMBRE 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-krmq1ai5jsu-e2bcdd30",
+    "last_ai_attempt": "2026-09-14T14:56:56.629204+00:00",
+    "pagina": "noticias/noticias-atv-lunes-14-septiembre-2026-actualidad-de-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=krMq1Ai5JSU"
+  },
   "guid:atv-alhaurin-youtube:yt:video:l2mQ3DOyxmo": {
     "ai_attempts": 0,
     "content_hash": "eee80a0574e4b9eeea10185541f9a815b0e36052",
@@ -872,6 +891,25 @@
     "pagina": "noticias/alhaurin-el-grande-inaugura-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
+    "ai_attempts": 1,
+    "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
+    "date_modified": null,
+    "date_published": "2026-09-14T09:06:26+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La segunda edición de ‘Alhaurín el Grande de Boda’ reunirá este 19 de septiembre a una treintena de empresas y profesionales con desfiles, música en directo y las últimas tendencias.",
+      "descripcion": "La segunda edición de ‘Alhaurín el Grande de Boda’ reunirá este 19 de septiembre a una treintena de empresas y profesionales con desfiles, música en directo y las últimas tendencias.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande vuelve a convertirse este sábado en punto de encuentro para el sector"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
+    "last_ai_attempt": "2026-09-14T14:56:25.116886+00:00",
+    "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -2018,6 +2056,25 @@
     "pagina": "noticias/la-junta-invierte-3-2-millones-en-mejoras-educativas-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/11/pp-inversion-junta-educacion-alhaurin-el-grande-curso-2026-2027/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208517": {
+    "ai_attempts": 1,
+    "content_hash": "58bde162305b6de2fe698be26e49c87506243225",
+    "date_modified": null,
+    "date_published": "2026-09-14T09:35:28+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Tiempo de lectura aprox: 56 segundosAlhaurín el Grande vuelve a convertirse este sábado en punto de encuentro para el sector de las bodas La segunda edición de ‘Alhaurín el Grande de Boda’ reunirá este 19 de septiembre a una treintena de empresas y profesionales con desfiles, música en directo y las últimas tendencias nupciales El La entrada ‘Alhaurín el Grande de Boda’ 2026 se publicó primero en Revista Lugar de.",
+      "descripcion": "Tiempo de lectura aprox: 56 segundosAlhaurín el Grande vuelve a convertirse este sábado en punto de encuentro para el sector de las bodas La segunda edición de ‘Alhaurín el Grande de Boda’ reunirá este 19 de septiembre a una.",
+      "seo_keywords": [],
+      "titulo": "‘Alhaurín el Grande de Boda’ 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-4970fe06",
+    "last_ai_attempt": "2026-09-14T14:57:32.838038+00:00",
+    "pagina": "noticias/alhaurin-el-grande-de-boda-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/14/alhaurin-el-grande-de-boda-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

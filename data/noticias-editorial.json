@@ -68,6 +68,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=36dVps_bZOQ"
   },
+  "guid:atv-alhaurin-youtube:yt:video:AaOjzomASoo": {
+    "ai_attempts": 1,
+    "content_hash": "8d1253c5bdca08f0d3ba82c037bdabf6a1d76602",
+    "date_modified": null,
+    "date_published": "2026-09-15T14:01:46+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del martes 15 de septiembre de 2026 en el Informativo de ATV. 1. ASUNTOS DEL PLENO DE AGOSTO El Ayuntamiento ha informado sobre los principales asuntos abordados en el último pleno ordinario.\n\nEntre ellos, el Plan Municipal contra el Cambio Climático, el reconocimiento a tres agentes de la Policía Local y la situación económica del Consistorio durante el segundo trimestre del año. 2. CAMINO DEL BUJEO El ayuntamiento de Alhaurín comienza las obras de remodelación integral del camino de bujeo, que contará con un nuevo asfaltado y una nueva tubería de abastecimiento de agua.\n\nSe trata de una de las siete actuaciones que el consistorio tiene previsto acometer en otros caminos rurales del municipio, y que cuenta con una inversión de casi seiscientos mil euros. 3. EDUCACIÓN PÚBLICA Concejales del Partido Popular visitan algunos centros de educación infantil con motivo del inicio del curso escolar 2026-2027 para destacar la apuesta de la Junta de Andalucía por la educación pública. 4.",
+      "descripcion": "1. ASUNTOS DEL PLENO DE AGOSTO El Ayuntamiento ha informado sobre los principales asuntos abordados en el último pleno ordinario. Entre ellos, el Plan Municipal contra el Cambio Climático, el reconocimiento a tres agentes de la.",
+      "seo_keywords": [],
+      "titulo": "Asuntos del pleno de agosto el ayuntamiento ha informado sobre los principales asuntos"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-aaojzomasoo-e6230ad6",
+    "last_ai_attempt": "2026-09-15T18:06:16.232133+00:00",
+    "pagina": "noticias/asuntos-del-pleno-de-agosto-el-ayuntamiento-ha-informado-sobre-los-principales-asuntos.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=AaOjzomASoo"
+  },
   "guid:atv-alhaurin-youtube:yt:video:AqK_WCmSQFE": {
     "ai_attempts": 0,
     "content_hash": "9e41115004e519512a2f67038f322c0310fa4328",
@@ -912,7 +931,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -925,7 +944,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-15T13:23:46.430755+00:00",
+    "last_ai_attempt": "2026-09-15T18:05:31.174752+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"

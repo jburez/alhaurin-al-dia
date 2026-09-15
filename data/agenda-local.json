@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-09-15T01:40:49.050Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 232 eventos próximos.",
+  "actualizado": "2026-09-15T06:17:22.447125+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 229 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "virgen-de-gracia-procesion-2026",
-      "tipo": "Día Grande Patronal",
-      "icono": "👑",
-      "titulo": "Procesión Triunfal de la Virgen de Gracia",
-      "descripcion": "📅 Sábado 15 de agosto · Día de la Virgen ⏰ 11:00 horas Solemne Eucaristía en honor de Nuestra Señora de Gracia , Patrona y Alcaldesa Perpetua de Alhaurín el Grande. Preside D. Andrés Merino Mateo ,...",
-      "lugar": "Plaza Baja · Recorrido del Centro",
-      "inicio": "2026-08-15T11:00:00+02:00",
-      "fin": "2026-08-16T01:00:00+02:00",
-      "estado": "alert",
-      "cta": "Ver itinerario y bando",
-      "url": "./virgen-de-gracia-2026/",
-      "activo": true,
-      "fuente": "legado"
-    },
-    {
-      "id": "alhaurinhoy-12569",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "KARAOKE NIGHT 🎤",
-      "descripcion": "🎤 KARAOKE NIGHT IS BACK! 🎤 Ready to grab the mic and show us what you’ve got? 🎶🍻 Join us Saturday, 22nd August from 8pm for a night of big tunes, good fun and questionable singing! 😜 📍 The Keltic C...",
-      "lugar": "",
-      "inicio": "2026-08-15T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/karaoke-night-%f0%9f%8e%a4/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-5664",
       "tipo": "Música en vivo",
@@ -3464,21 +3435,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

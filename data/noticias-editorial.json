@@ -69,7 +69,7 @@
     "source_url": "https://www.youtube.com/watch?v=36dVps_bZOQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:AaOjzomASoo": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "8d1253c5bdca08f0d3ba82c037bdabf6a1d76602",
     "date_modified": null,
     "date_published": "2026-09-15T14:01:46+00:00",
@@ -82,7 +82,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-aaojzomasoo-e6230ad6",
-    "last_ai_attempt": "2026-09-15T18:06:16.232133+00:00",
+    "last_ai_attempt": "2026-09-15T22:50:00.378080+00:00",
     "pagina": "noticias/asuntos-del-pleno-de-agosto-el-ayuntamiento-ha-informado-sobre-los-principales-asuntos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=AaOjzomASoo"
@@ -931,7 +931,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -944,7 +944,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-15T18:05:31.174752+00:00",
+    "last_ai_attempt": "2026-09-15T22:49:27.374399+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"

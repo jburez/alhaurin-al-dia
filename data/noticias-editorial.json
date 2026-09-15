@@ -483,7 +483,7 @@
     "source_url": "https://www.youtube.com/watch?v=jcAdClL_nk4"
   },
   "guid:atv-alhaurin-youtube:yt:video:krMq1Ai5JSU": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "a2268006309503b82462ae906b51410384af2e8e",
     "date_modified": null,
     "date_published": "2026-09-14T12:49:58+00:00",
@@ -496,7 +496,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-krmq1ai5jsu-e2bcdd30",
-    "last_ai_attempt": "2026-09-15T00:27:00.777130+00:00",
+    "last_ai_attempt": "2026-09-15T13:24:36.373343+00:00",
     "pagina": "noticias/noticias-atv-lunes-14-septiembre-2026-actualidad-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=krMq1Ai5JSU"
@@ -893,7 +893,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -906,10 +906,29 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-15T00:26:28.296501+00:00",
+    "last_ai_attempt": "2026-09-15T13:24:03.619294+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
+    "ai_attempts": 1,
+    "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
+    "date_modified": null,
+    "date_published": "2026-09-15T13:07:50+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La concejalía de Hacienda presenta la situación financiera de las arcas municipales destacando la gran reducción en el plazo de pago a proveedores (9 días), el volumen de facturas pagadas.",
+      "descripcion": "La concejalía de Hacienda presenta la situación financiera de las arcas municipales destacando la gran reducción en el plazo de pago a proveedores (9 días), el volumen de facturas pagadas.",
+      "seo_keywords": [],
+      "titulo": "El Ayuntamiento aprueba el Plan contra el Cambio Climático en el pleno municipal además"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
+    "last_ai_attempt": "2026-09-15T13:23:46.430755+00:00",
+    "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,

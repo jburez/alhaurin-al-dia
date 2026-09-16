@@ -156,6 +156,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=HDaZNki3tTc"
   },
+  "guid:atv-alhaurin-youtube:yt:video:JKoJEk2iUZE": {
+    "ai_attempts": 1,
+    "content_hash": "9856d1c6ec441a91eec6e5a171714f0ad5b73cf4",
+    "date_modified": null,
+    "date_published": "2026-09-16T12:36:53+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "El sábado 12 de septiembre, caballistas, romeros y 13 carrozas partieron desde el Recinto Ferial rumbo a La Mota, en una jornada marcada por la tradición, el ambiente festivo y la participación de vecinos y visitantes. El programa recoge los principales momentos de la jornada: el inicio y recorrido de la Romería, la llegada a La Mota, el Concurso de Atalaje y el ambiente festivo de la noche.\n\nLa programación continuó con la actuación de Paco Candela, a partir de medianoche, y la sesión de DJ Flamingo, que puso el broche musical a la jornada. Una celebración que volvió a reunir tradición, música y convivencia en uno de los acontecimientos más destacados del calendario festivo de Alhaurín el Grande.",
+      "descripcion": "El sábado 12 de septiembre, caballistas, romeros y 13 carrozas partieron desde el Recinto Ferial rumbo a La Mota, en una jornada marcada por la tradición, el ambiente festivo y la participación de vecinos y visitantes. El.",
+      "seo_keywords": [],
+      "titulo": "Romería por el Cristo de las Agonías 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-jkojek2iuze-adb9991f",
+    "last_ai_attempt": "2026-09-16T16:40:01.989734+00:00",
+    "pagina": "noticias/romeria-por-el-cristo-de-las-agonias-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=JKoJEk2iUZE"
+  },
   "guid:atv-alhaurin-youtube:yt:video:JOb_FWsE1Fg": {
     "ai_attempts": 0,
     "content_hash": "6e176da5c16d0549dd1b7f305fede45ce77ec323",
@@ -203,7 +222,7 @@
     "source_url": "https://www.youtube.com/watch?v=JSAyrh72NAE"
   },
   "guid:atv-alhaurin-youtube:yt:video:JlTL6AKDqTY": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "674575487bf277542f9200c0f5a575fecb2621a8",
     "date_modified": null,
     "date_published": "2026-09-16T08:00:47+00:00",
@@ -216,7 +235,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-jltl6akdqty-1123d3e7",
-    "last_ai_attempt": "2026-09-16T11:19:32.514633+00:00",
+    "last_ai_attempt": "2026-09-16T16:40:37.169250+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JlTL6AKDqTY"
@@ -427,6 +446,25 @@
     "pagina": "noticias/alhaurin-el-grande-impulsa-taller-de-comic-y-celebra-misa-de-accion-de-gracias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:_dtTmQKMBms": {
+    "ai_attempts": 1,
+    "content_hash": "e943dbd3920a91f277fd82d3846fc5698c7f19ae",
+    "date_modified": null,
+    "date_published": "2026-09-16T12:17:17+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del miércoles 16 de septiembre de 2026 en el Informativo de ATV. 1. AMPLIADO EL PLAZO El área de participación Ciudadana amplía el plazo para presentar solicitudes de subvenciones destinadas a proyectos sociales hasta el día 29 del presente mes de septiembre. 2.\n\nAVANCES EDIFICIO ARQUÍMEDES El área de Obras Públicas, encabezada por la concejala Teresa Sánchez, ha visitado esta semana el edificio Arquímedes para hacer seguimiento de la ejecución de los trabajos. 3. La exposición, que se inauguró el pasado viernes, reúne pintura, ilustración, narración gráfica y escultura. 4.\n\nEJECUTIVA PROVINCIAL PSOE El PSOE de Málaga celebró el lunes en Alhaurín el Grande su Comisión Ejecutiva Provincial.",
+      "descripcion": "1. AMPLIADO EL PLAZO El área de participación Ciudadana amplía el plazo para presentar solicitudes de subvenciones destinadas a proyectos sociales hasta el día 29 del presente mes de septiembre. 2. AVANCES EDIFICIO ARQUÍMEDES El.",
+      "seo_keywords": [],
+      "titulo": "Ampliado el plazo el área de participación ciudadana amplía el plazo"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-dttmqkmbms-d0f8ea81",
+    "last_ai_attempt": "2026-09-16T16:40:19.224101+00:00",
+    "pagina": "noticias/ampliado-el-plazo-el-area-de-participacion-ciudadana-amplia-el-plazo.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=_dtTmQKMBms"
   },
   "guid:atv-alhaurin-youtube:yt:video:b66DlnAxTjE": {
     "ai_attempts": 0,
@@ -931,7 +969,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -944,7 +982,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-16T04:28:11.765299+00:00",
+    "last_ai_attempt": "2026-09-16T16:38:51.374121+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
@@ -1793,7 +1831,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34096/festividad-de-los-dolores-gloriosos-de-la-virgen-3/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34099": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "6f5e77e9d12b032b8e30cda5a00c5122b1464470",
     "date_modified": null,
     "date_published": "2026-09-16T08:37:51+00:00",
@@ -1806,10 +1844,29 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9682d4bd",
-    "last_ai_attempt": "2026-09-16T11:19:04.853124+00:00",
+    "last_ai_attempt": "2026-09-16T16:39:37.258792+00:00",
     "pagina": "noticias/romeria-en-honor-al-santisimo-cristo-de-las-agonias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34099/romeria-en-honor-al-santisimo-cristo-de-las-agonias/"
+  },
+  "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34117": {
+    "ai_attempts": 1,
+    "content_hash": "4d68fa63213ac6ef60bcd827df5ef7f181201fab",
+    "date_modified": null,
+    "date_published": "2026-09-16T11:42:08+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La Real Hermandad de Nuestro Padre Jesús Nazareno anuncia el inicio de una nueva edición del Taller de Bordados, que viene desarrollándose desde hace más de una década, manteniendo viva esta tradición artesanal dentro de nuestra Hermandad.\n\nDicho taller dará comienzo en octubre de 2026, los martes y jueves, de 16:00 a 20:00 horas, en.",
+      "descripcion": "La Real Hermandad de Nuestro Padre Jesús Nazareno anuncia el inicio de una nueva edición del Taller de Bordados, que viene desarrollándose desde hace más de una década, manteniendo viva esta tradición artesanal dentro de nuestra.",
+      "seo_keywords": [],
+      "titulo": "Inicio del taller de bordado"
+    },
+    "ia_exitosa": false,
+    "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-ce74c5a5",
+    "last_ai_attempt": "2026-09-16T16:39:19.307993+00:00",
+    "pagina": "noticias/inicio-del-taller-de-bordado.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html": {
     "ai_attempts": 0,
@@ -2172,7 +2229,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/09/14/el-psoe-exige-a-la-junta-que-cumpla-sus-compromisos-con-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208705": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "6ade742ff5451765cb505f676c1f1b2e64fff724",
     "date_modified": null,
     "date_published": "2026-09-16T11:17:59+00:00",
@@ -2185,7 +2242,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-12997182",
-    "last_ai_attempt": "2026-09-16T11:21:07.113505+00:00",
+    "last_ai_attempt": "2026-09-16T16:42:08.451779+00:00",
     "pagina": "noticias/alhaurin-el-grande-acoge-dos-jornadas-de-donacion-de-sangre.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/16/donacion-sangre-alhaurin-el-grande-24-25-septiembre/"

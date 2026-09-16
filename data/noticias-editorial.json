@@ -912,7 +912,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -925,7 +925,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-15T13:24:03.619294+00:00",
+    "last_ai_attempt": "2026-09-16T04:28:11.765299+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
@@ -1502,7 +1502,7 @@
     "source_url": "https://fedelhorce.es/cafe-con-ideas-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260892": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "a9ba7eecd4d7a55e53f8149a2f22144b478dd2ba",
     "date_modified": "2026-09-13T04:29:37.702104+00:00",
     "date_published": "2026-08-21T08:31:49+00:00",
@@ -1515,7 +1515,7 @@
     },
     "ia_exitosa": false,
     "id": "https-fedelhorce-es-masterclass-facturacion-electronica-y-verifactu-e1cf96da",
-    "last_ai_attempt": "2026-09-14T07:49:01.468014+00:00",
+    "last_ai_attempt": "2026-09-16T04:28:44.253533+00:00",
     "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/"

@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-16T14:57:14.781Z",
-  "visitas24h": 2,
-  "paginasVistas24h": 2,
+  "actualizado": "2026-09-16T18:37:19.663Z",
+  "visitas24h": 1,
+  "paginasVistas24h": 1,
   "topPaginas": [
     {
       "ruta": "/tiempo/",
@@ -9,7 +9,7 @@
     },
     {
       "ruta": "/planes/",
-      "vistas": 7
+      "vistas": 6
     },
     {
       "ruta": "/",

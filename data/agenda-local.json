@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-09-16T00:47:34.493Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 231 eventos próximos.",
+  "actualizado": "2026-09-16T06:13:09.643782+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 228 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5664",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Música en Vivo 🎶 | Orla Tierney🎙️",
-      "descripcion": "🎶 Música en Vivo en Dalí 🎶 Disfruta de una noche inolvidable con la mejor música en directo. Ven a saborear nuestros platos mientras te deleitas con el talento en el escenario. 📅 Fecha: 16 de agost...",
-      "lugar": "",
-      "inicio": "2026-08-16T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-orla-tierney%f0%9f%8e%99%ef%b8%8f/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-5640",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Verbena «Canciones que bailamos» 🎉 💃🏻",
-      "descripcion": "¡🎉 Vuelve la fiesta más esperada del verano en Villa del Guadalhorce! 🎶 El próximo 16 de agosto, la Plaza Mayor se llenará de música, alegría y solidaridad con la verbena “Canciones que bailamos”, ...",
-      "lugar": "",
-      "inicio": "2026-08-16T21:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/verbena-canciones-que-bailamos-%f0%9f%8e%89-%f0%9f%92%83%f0%9f%8f%bb/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-12368",
       "tipo": "Cine",
@@ -3449,21 +3420,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

@@ -68,6 +68,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=36dVps_bZOQ"
   },
+  "guid:atv-alhaurin-youtube:yt:video:65l0ZaUQDFo": {
+    "ai_attempts": 1,
+    "content_hash": "f6dc5764bde2f67d8d724b3ea013638cacf4715f",
+    "date_modified": null,
+    "date_published": "2026-09-17T14:00:19+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "El recinto de la Mota de Alhaurín el Grande comenzó desde primeras horas de la mañana del domingo 13 de septiembre a llenarse de personas que no querían perderse ni un solo momento de la Romería. La exhibición de alta escuela la llevo a cabo el jinete internacionalmente premiado José Rodríguez Civico.",
+      "descripcion": "El recinto de la Mota de Alhaurín el Grande comenzó desde primeras horas de la mañana del domingo 13 de septiembre a llenarse de personas que no querían perderse ni un solo momento de la Romería. La mañana comenzó con la.",
+      "seo_keywords": [],
+      "titulo": "MISA ROMERA Y ESPECTÁCULO ECUESTRE ROMERIA 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-65l0zauqdfo-bc22e840",
+    "last_ai_attempt": "2026-09-17T18:07:27.138829+00:00",
+    "pagina": "noticias/misa-romera-y-espectaculo-ecuestre-romeria-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=65l0ZaUQDFo"
+  },
   "guid:atv-alhaurin-youtube:yt:video:AaOjzomASoo": {
     "ai_attempts": 4,
     "content_hash": "8d1253c5bdca08f0d3ba82c037bdabf6a1d76602",
@@ -157,7 +176,7 @@
     "source_url": "https://www.youtube.com/watch?v=HDaZNki3tTc"
   },
   "guid:atv-alhaurin-youtube:yt:video:JKoJEk2iUZE": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "9856d1c6ec441a91eec6e5a171714f0ad5b73cf4",
     "date_modified": null,
     "date_published": "2026-09-16T12:36:53+00:00",
@@ -170,7 +189,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-jkojek2iuze-adb9991f",
-    "last_ai_attempt": "2026-09-17T07:30:26.137377+00:00",
+    "last_ai_attempt": "2026-09-17T18:08:03.465499+00:00",
     "pagina": "noticias/romeria-por-el-cristo-de-las-agonias-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JKoJEk2iUZE"
@@ -448,7 +467,7 @@
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
   },
   "guid:atv-alhaurin-youtube:yt:video:_dtTmQKMBms": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "e943dbd3920a91f277fd82d3846fc5698c7f19ae",
     "date_modified": null,
     "date_published": "2026-09-16T12:17:17+00:00",
@@ -461,7 +480,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-dttmqkmbms-d0f8ea81",
-    "last_ai_attempt": "2026-09-17T07:30:42.774184+00:00",
+    "last_ai_attempt": "2026-09-17T18:08:21.802052+00:00",
     "pagina": "noticias/ampliado-el-plazo-el-area-de-participacion-ciudadana-amplia-el-plazo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=_dtTmQKMBms"
@@ -601,7 +620,7 @@
     "source_url": "https://www.youtube.com/watch?v=l2mQ3DOyxmo"
   },
   "guid:atv-alhaurin-youtube:yt:video:l6PAp8PTiQE": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "fdd5e3021999e2e6af65a66cb9d7c2fc46d7bf60",
     "date_modified": null,
     "date_published": "2026-09-17T12:02:58+00:00",
@@ -614,7 +633,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-l6pap8ptiqe-c0ecf216",
-    "last_ai_attempt": "2026-09-17T13:19:45.791884+00:00",
+    "last_ai_attempt": "2026-09-17T18:07:43.918743+00:00",
     "pagina": "noticias/foro-de-alcaldes-greencities-el-alcalde-de-alhaurin-el-grande-anthony-bermudez-ha.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=l6PAp8PTiQE"
@@ -1026,7 +1045,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224755": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "e4e4ca1978b5f7537376d6c2a5de600290bb855b",
     "date_modified": null,
     "date_published": "2026-09-17T08:54:00+00:00",
@@ -1039,13 +1058,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-1db24bee",
-    "last_ai_attempt": "2026-09-17T13:18:53.112868+00:00",
+    "last_ai_attempt": "2026-09-17T18:06:29.038245+00:00",
     "pagina": "noticias/el-alcalde-anthony-bermudez-destaca-en-el-foro-de-alcaldes-y-alcaldesas-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-plantea-soluciones-para-el-area-metropolitana-ante-el-crecimiento-del-valle-del-guadalhorce/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224774": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "36c693b15a9c0ecde08e432736a153cbc20e4f7a",
     "date_modified": null,
     "date_published": "2026-09-17T12:36:05+00:00",
@@ -1058,7 +1077,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22477-438e5ede",
-    "last_ai_attempt": "2026-09-17T13:18:32.551900+00:00",
+    "last_ai_attempt": "2026-09-17T18:06:06.920884+00:00",
     "pagina": "noticias/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia-local-de-alhaurin-el-grande/"
@@ -1907,7 +1926,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34099/romeria-en-honor-al-santisimo-cristo-de-las-agonias/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34117": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "4d68fa63213ac6ef60bcd827df5ef7f181201fab",
     "date_modified": null,
     "date_published": "2026-09-16T11:42:08+00:00",
@@ -1920,7 +1939,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-ce74c5a5",
-    "last_ai_attempt": "2026-09-17T07:29:42.961286+00:00",
+    "last_ai_attempt": "2026-09-17T18:07:00.973084+00:00",
     "pagina": "noticias/inicio-del-taller-de-bordado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
@@ -2077,6 +2096,44 @@
     "pagina": "noticias/el-pp-inicia-el-curso-politico-en-malaga-con-el-tradicional-acto-de-los-huevos-fritos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
+  },
+  "guid:malaga-hoy:https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html": {
+    "ai_attempts": 1,
+    "content_hash": "56292b994f84f1490d6de27bfb18bbca6f8d9aca",
+    "date_modified": null,
+    "date_published": "2026-09-17T15:53:26+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "El investigado argumentó ante la Policía que no supo reaccionar tras arrollar al adolescente, de 14 años Cuarto atropello en 24 horas a menores: arrolla a un niño de 14 años y se da a la fuga en Alhaurín el Grande.",
+      "descripcion": "El investigado argumentó ante la Policía que no supo reaccionar tras arrollar al adolescente, de 14 años Cuarto atropello en 24 horas a menores: arrolla a un niño de 14 años y se da a la fuga en Alhaurín el Grande.",
+      "seo_keywords": [],
+      "titulo": "El conductor fugado tras atropellar a un menor en patinete en Alhaurín el Grande alega"
+    },
+    "ia_exitosa": false,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-conductor-fugado-atro-2e9eae6f",
+    "last_ai_attempt": "2026-09-17T18:10:03.804527+00:00",
+    "pagina": "noticias/el-conductor-fugado-tras-atropellar-a-un-menor-en-patinete-en-alhaurin-el-grande-alega.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/09/17/modernizacion-de-la-policia-local-en-alhaurin-con-nuevo-vehiculo-hibrido": {
+    "ai_attempts": 1,
+    "content_hash": "6d3bb9fb5120b1b463b115bcc344d0f1a48a1806",
+    "date_modified": null,
+    "date_published": "2026-09-17T14:31:33+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 51 segundosEl nuevo coche policial, equipado con desfibrilador y tecnología de acceso en tiempo real a la DGT, forma parte del proceso de modernización y mejora de los medios materiales del cuerpo El Ayuntamiento de Alhaurín el Grande ha adquirido un vehículo híbrido de última generación para la flota La entrada Modernización de la Policía Local en Alhaurín el Grande con nuevo.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 51 segundosEl nuevo coche policial, equipado con desfibrilador y tecnología de acceso en tiempo real a la DGT, forma parte del proceso de modernización y mejora de los medios materiales del.",
+      "seo_keywords": [],
+      "titulo": "Modernización de la Policía Local en Alhaurín el Grande con nuevo vehículo híbrido"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-75ead382",
+    "last_ai_attempt": "2026-09-17T18:10:28.898015+00:00",
+    "pagina": "noticias/modernizacion-de-la-policia-local-en-alhaurin-el-grande-con-nuevo-vehiculo-hibrido.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/17/modernizacion-de-la-policia-local-en-alhaurin-con-nuevo-vehiculo-hibrido/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,

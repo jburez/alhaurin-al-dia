@@ -600,6 +600,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=l2mQ3DOyxmo"
   },
+  "guid:atv-alhaurin-youtube:yt:video:l6PAp8PTiQE": {
+    "ai_attempts": 1,
+    "content_hash": "fdd5e3021999e2e6af65a66cb9d7c2fc46d7bf60",
+    "date_modified": null,
+    "date_published": "2026-09-17T12:02:58+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del jueves 17 de septiembre de 2026 en el Informativo de ATV. 1. NUEVO VEHÍCULO POLICÍA LOCAL El Ayuntamiento de Alhaurín el Grande y la Policía Local presentan el último vehículo incorporado a su flota.\n\nSe trata de un coche híbrido equipado con la última tecnología y que contará con un desfibrilador. 3. Música poesía, conciertos, teatro, o literatura formarán parte del ciclo “Cuarta Estación”, en el que se trata de ofrecer eventos para todos los gustos 4.",
+      "descripcion": "1. FORO DE ALCALDES: GREENCITIES El alcalde de Alhaurín el Grande, Anthony Bermúdez, ha participado, junto a una representación de concejalas y técnicos municipales, en el congreso Greencities, En el evento celebrado en el.",
+      "seo_keywords": [],
+      "titulo": "Foro de alcaldes: greencities el alcalde de alhaurín el grande, anthony bermúdez, ha"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-l6pap8ptiqe-c0ecf216",
+    "last_ai_attempt": "2026-09-17T13:19:45.791884+00:00",
+    "pagina": "noticias/foro-de-alcaldes-greencities-el-alcalde-de-alhaurin-el-grande-anthony-bermudez-ha.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=l6PAp8PTiQE"
+  },
   "guid:atv-alhaurin-youtube:yt:video:lGFnYF5PclY": {
     "ai_attempts": 0,
     "content_hash": "b455f821c2c0515e3c3e7197680405ac1e7790d7",
@@ -988,7 +1007,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -1001,10 +1020,48 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-17T00:17:12.238732+00:00",
+    "last_ai_attempt": "2026-09-17T13:19:11.300186+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224755": {
+    "ai_attempts": 1,
+    "content_hash": "e4e4ca1978b5f7537376d6c2a5de600290bb855b",
+    "date_modified": null,
+    "date_published": "2026-09-17T08:54:00+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El alcalde Anthony Bermúdez destaca en el Foro de alcaldes y alcaldesas de Málaga celebrado en Greencities que la población de la comarca ha crecido un 16% en la última.",
+      "descripcion": "El alcalde Anthony Bermúdez destaca en el Foro de alcaldes y alcaldesas de Málaga celebrado en Greencities que la población de la comarca ha crecido un 16% en la última.",
+      "seo_keywords": [],
+      "titulo": "El alcalde Anthony Bermúdez destaca en el Foro de alcaldes y alcaldesas de Málaga"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-1db24bee",
+    "last_ai_attempt": "2026-09-17T13:18:53.112868+00:00",
+    "pagina": "noticias/el-alcalde-anthony-bermudez-destaca-en-el-foro-de-alcaldes-y-alcaldesas-de-malaga.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-plantea-soluciones-para-el-area-metropolitana-ante-el-crecimiento-del-valle-del-guadalhorce/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224774": {
+    "ai_attempts": 1,
+    "content_hash": "36c693b15a9c0ecde08e432736a153cbc20e4f7a",
+    "date_modified": null,
+    "date_published": "2026-09-17T12:36:05+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El nuevo coche policial, equipado con desfibrilador y tecnología de acceso en tiempo real a la DGT, forma parte del proceso de modernización y mejora de los medios materiales del.",
+      "descripcion": "El nuevo coche policial, equipado con desfibrilador y tecnología de acceso en tiempo real a la DGT, forma parte del proceso de modernización y mejora de los medios materiales del.",
+      "seo_keywords": [],
+      "titulo": "El Ayuntamiento incorpora un nuevo vehículo híbrido de última generación a la Policía"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22477-438e5ede",
+    "last_ai_attempt": "2026-09-17T13:18:32.551900+00:00",
+    "pagina": "noticias/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia-local-de-alhaurin-el-grande/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -2303,6 +2360,25 @@
     "pagina": "noticias/herido-un-menor-de-14-anos-tras-un-atropello-con-fuga-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/17/atropello-menor-alhaurin-el-grande-huertas-bajas/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208818": {
+    "ai_attempts": 1,
+    "content_hash": "6f4b88f1731b1f69358dcc3741cafcb0a57e6203",
+    "date_modified": null,
+    "date_published": "2026-09-17T12:46:05+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 8 segundosUna charla informativa abordará la donación de médula ósea el próximo 23 de septiembre La actividad se celebrará a las 17:00 horas en el salón de actos de la Casa de la Cultura, coincidiendo con la colecta de sangre prevista para los días 24 y 25 La asociación La entrada Una charla informativa abordará la donación de médula ósea en Alhaurín el Grande se publicó primero.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 8 segundosUna charla informativa abordará la donación de médula ósea el próximo 23 de septiembre La actividad se celebrará a las 17:00 horas en el salón de actos de la Casa de la Cultura.",
+      "seo_keywords": [],
+      "titulo": "Una charla informativa abordará la donación de médula ósea en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-78da0a1a",
+    "last_ai_attempt": "2026-09-17T13:21:44.134248+00:00",
+    "pagina": "noticias/una-charla-informativa-abordara-la-donacion-de-medula-osea-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/17/una-charla-informativa-abordara-la-donacion-de-medula-osea-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

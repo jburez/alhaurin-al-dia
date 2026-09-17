@@ -157,7 +157,7 @@
     "source_url": "https://www.youtube.com/watch?v=HDaZNki3tTc"
   },
   "guid:atv-alhaurin-youtube:yt:video:JKoJEk2iUZE": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "9856d1c6ec441a91eec6e5a171714f0ad5b73cf4",
     "date_modified": null,
     "date_published": "2026-09-16T12:36:53+00:00",
@@ -170,7 +170,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-jkojek2iuze-adb9991f",
-    "last_ai_attempt": "2026-09-16T21:11:44.169055+00:00",
+    "last_ai_attempt": "2026-09-17T07:30:26.137377+00:00",
     "pagina": "noticias/romeria-por-el-cristo-de-las-agonias-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JKoJEk2iUZE"
@@ -222,7 +222,7 @@
     "source_url": "https://www.youtube.com/watch?v=JSAyrh72NAE"
   },
   "guid:atv-alhaurin-youtube:yt:video:JlTL6AKDqTY": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "674575487bf277542f9200c0f5a575fecb2621a8",
     "date_modified": null,
     "date_published": "2026-09-16T08:00:47+00:00",
@@ -235,7 +235,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-jltl6akdqty-1123d3e7",
-    "last_ai_attempt": "2026-09-16T21:12:18.557647+00:00",
+    "last_ai_attempt": "2026-09-17T07:31:00.454301+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JlTL6AKDqTY"
@@ -448,7 +448,7 @@
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
   },
   "guid:atv-alhaurin-youtube:yt:video:_dtTmQKMBms": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "e943dbd3920a91f277fd82d3846fc5698c7f19ae",
     "date_modified": null,
     "date_published": "2026-09-16T12:17:17+00:00",
@@ -461,7 +461,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-dttmqkmbms-d0f8ea81",
-    "last_ai_attempt": "2026-09-16T21:12:02.266642+00:00",
+    "last_ai_attempt": "2026-09-17T07:30:42.774184+00:00",
     "pagina": "noticias/ampliado-el-plazo-el-area-de-participacion-ciudadana-amplia-el-plazo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=_dtTmQKMBms"
@@ -969,7 +969,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -982,7 +982,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-16T16:38:51.374121+00:00",
+    "last_ai_attempt": "2026-09-17T07:29:18.175430+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
@@ -1831,7 +1831,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34096/festividad-de-los-dolores-gloriosos-de-la-virgen-3/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34099": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "6f5e77e9d12b032b8e30cda5a00c5122b1464470",
     "date_modified": null,
     "date_published": "2026-09-16T08:37:51+00:00",
@@ -1844,13 +1844,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9682d4bd",
-    "last_ai_attempt": "2026-09-16T21:11:18.681719+00:00",
+    "last_ai_attempt": "2026-09-17T07:30:01.590101+00:00",
     "pagina": "noticias/romeria-en-honor-al-santisimo-cristo-de-las-agonias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34099/romeria-en-honor-al-santisimo-cristo-de-las-agonias/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34117": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "4d68fa63213ac6ef60bcd827df5ef7f181201fab",
     "date_modified": null,
     "date_published": "2026-09-16T11:42:08+00:00",
@@ -1863,7 +1863,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-ce74c5a5",
-    "last_ai_attempt": "2026-09-16T21:11:01.168573+00:00",
+    "last_ai_attempt": "2026-09-17T07:29:42.961286+00:00",
     "pagina": "noticias/inicio-del-taller-de-bordado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
@@ -1980,7 +1980,7 @@
     "source_url": "https://www.malagahoy.es/malaga/junta-andalucia-anuncia-tres-nuevas-mejoras-a-357-malaga-capital_0_2007896023.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/nina-avisa-padre-estrangular-madre-pinares-san-anton-malaga_0_2007989406.html": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "6eeeb9ce391ea57f3011d9053edfd03bd54ed556",
     "date_modified": null,
     "date_published": "2026-09-16T20:21:15+00:00",
@@ -1993,7 +1993,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-nina-avisa-padre-estrang-7272284d",
-    "last_ai_attempt": "2026-09-17T00:18:46.458218+00:00",
+    "last_ai_attempt": "2026-09-17T07:32:19.134167+00:00",
     "pagina": "noticias/una-nina-avisa-de-que-su-padre-intento-estrangular-a-su-madre-y-este-se-suicida-en-pinares.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/nina-avisa-padre-estrangular-madre-pinares-san-anton-malaga_0_2007989406.html"
@@ -2284,6 +2284,25 @@
     "pagina": "noticias/alhaurin-el-grande-acoge-dos-jornadas-de-donacion-de-sangre.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/16/donacion-sangre-alhaurin-el-grande-24-25-septiembre/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208743": {
+    "ai_attempts": 1,
+    "content_hash": "a6627f57da3b391f2dbf425c79e9c50c5e9554e2",
+    "date_modified": null,
+    "date_published": "2026-09-17T06:27:56+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "Tiempo de lectura aprox: 42 segundosEl adolescente, de 14 años, fue trasladado al Hospital Clínico de Málaga con lesiones en una pierna tras el accidente ocurrido en el camino de Huertas Bajas Un menor de 14 años ha resultado herido este miércoles tras ser atropellado en el camino de Huertas Bajas, en Alhaurín el Grande.\n\nLa entrada Herido un menor de 14 años tras un atropello con fuga en Alhaurín el Grande se publicó primero en Revista Lugar de Encuentro.",
+      "descripcion": "Tiempo de lectura aprox: 42 segundosEl adolescente, de 14 años, fue trasladado al Hospital Clínico de Málaga con lesiones en una pierna tras el accidente ocurrido en el camino de Huertas Bajas Un menor de 14 años ha resultado.",
+      "seo_keywords": [],
+      "titulo": "Herido un menor de 14 años tras un atropello con fuga en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-648622ff",
+    "last_ai_attempt": "2026-09-17T07:32:44.520897+00:00",
+    "pagina": "noticias/herido-un-menor-de-14-anos-tras-un-atropello-con-fuga-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/17/atropello-menor-alhaurin-el-grande-huertas-bajas/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

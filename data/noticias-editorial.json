@@ -988,7 +988,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -1001,7 +1001,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-16T11:18:37.994930+00:00",
+    "last_ai_attempt": "2026-09-17T00:17:12.238732+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
@@ -1892,7 +1892,7 @@
     "source_url": "https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/cuarto-atropello-24-horas-arrolla-menor-fuga-alhaurin-el-grande_0_2007989288.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "aae4c9b65cd4a4bbf1d7f629e88bba5254bc3b9e",
     "date_modified": null,
     "date_published": "2026-09-16T19:56:42+00:00",
@@ -1905,7 +1905,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-cuarto-atropello-24-hora-f3eef741",
-    "last_ai_attempt": "2026-09-16T21:14:18.660970+00:00",
+    "last_ai_attempt": "2026-09-17T00:19:03.530706+00:00",
     "pagina": "noticias/cuarto-atropello-en-24-horas-a-menores-arrolla-a-un-nino-de-14-anos-y-se-da-a-la-fuga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/cuarto-atropello-24-horas-arrolla-menor-fuga-alhaurin-el-grande_0_2007989288.html"
@@ -1980,7 +1980,7 @@
     "source_url": "https://www.malagahoy.es/malaga/junta-andalucia-anuncia-tres-nuevas-mejoras-a-357-malaga-capital_0_2007896023.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/nina-avisa-padre-estrangular-madre-pinares-san-anton-malaga_0_2007989406.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "6eeeb9ce391ea57f3011d9053edfd03bd54ed556",
     "date_modified": null,
     "date_published": "2026-09-16T20:21:15+00:00",
@@ -1993,7 +1993,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-nina-avisa-padre-estrang-7272284d",
-    "last_ai_attempt": "2026-09-16T21:13:59.221209+00:00",
+    "last_ai_attempt": "2026-09-17T00:18:46.458218+00:00",
     "pagina": "noticias/una-nina-avisa-de-que-su-padre-intento-estrangular-a-su-madre-y-este-se-suicida-en-pinares.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/nina-avisa-padre-estrangular-madre-pinares-san-anton-malaga_0_2007989406.html"

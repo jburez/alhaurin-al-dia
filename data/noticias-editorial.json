@@ -1026,7 +1026,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -1039,7 +1039,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-17T13:19:11.300186+00:00",
+    "last_ai_attempt": "2026-09-18T04:19:12.650656+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
@@ -2098,7 +2098,7 @@
     "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "56292b994f84f1490d6de27bfb18bbca6f8d9aca",
     "date_modified": null,
     "date_published": "2026-09-17T15:53:26+00:00",
@@ -2111,13 +2111,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-conductor-fugado-atro-2e9eae6f",
-    "last_ai_attempt": "2026-09-17T22:50:48.332237+00:00",
+    "last_ai_attempt": "2026-09-18T04:20:08.585696+00:00",
     "pagina": "noticias/el-conductor-fugado-tras-atropellar-a-un-menor-en-patinete-en-alhaurin-el-grande-alega.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/09/17/modernizacion-de-la-policia-local-en-alhaurin-con-nuevo-vehiculo-hibrido": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "6d3bb9fb5120b1b463b115bcc344d0f1a48a1806",
     "date_modified": null,
     "date_published": "2026-09-17T14:31:33+00:00",
@@ -2130,7 +2130,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-75ead382",
-    "last_ai_attempt": "2026-09-17T22:51:11.813612+00:00",
+    "last_ai_attempt": "2026-09-18T04:20:33.727610+00:00",
     "pagina": "noticias/modernizacion-de-la-policia-local-en-alhaurin-el-grande-con-nuevo-vehiculo-hibrido.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/17/modernizacion-de-la-policia-local-en-alhaurin-con-nuevo-vehiculo-hibrido/"

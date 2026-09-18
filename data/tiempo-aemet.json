@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-18T13:15:39+02:00",
+  "actualizado": "2026-09-18T20:29:28+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "⛅",
     "titulo": "Tiempo",
     "valor": "Máx. 28º",
-    "detalle": "Despejado · Máx. 28º / Mín. 18º · Lluvia 0%",
+    "detalle": "Intervalos nubosos · Máx. 28º / Mín. 18º · Lluvia 30%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "18/9",
     "t_max": "28",
     "t_min": "18",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "icono": "⛅",
+    "descripcion": "Intervalos nubosos",
+    "lluvia": "30%",
+    "viento": "SE 10 km/h",
     "uv": "6"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "18/9",
       "t_max": "28",
       "t_min": "18",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "30%",
+      "viento": "SE 10 km/h",
       "uv": "6"
     },
     {
@@ -117,15 +117,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Excelente",
-      "detalle": "Secado muy rápido al sol (0% riesgo)"
+      "estado": "Aceptable",
+      "detalle": "Vigilar nubosidad por la tarde"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Muy recomendado",
-      "detalle": "Cielo limpio y sin calima"
+      "estado": "Espera unos días",
+      "detalle": "Posible barro o lluvia"
     },
     {
       "id": "deporte",
@@ -139,9 +139,9 @@
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.1 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.0 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.1,
+      "gramineas": 0.0,
       "olivo": 0.0
     }
   ],

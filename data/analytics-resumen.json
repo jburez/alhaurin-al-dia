@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T17:47:07.200Z",
+  "actualizado": "2026-09-18T20:09:02.728Z",
   "visitas24h": 4,
   "paginasVistas24h": 4,
   "topPaginas": [
@@ -16,12 +16,12 @@
       "vistas": 3
     },
     {
-      "ruta": "/guia-util/farmacias/calendario/",
+      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
       "vistas": 3
     },
     {
-      "ruta": "/noticias/noticias-atv-lunes-14-septiembre-2026-actualidad-de-alhaurin-el-grande",
-      "vistas": 2
+      "ruta": "/guia-util/farmacias/calendario/",
+      "vistas": 3
     }
   ]
 }

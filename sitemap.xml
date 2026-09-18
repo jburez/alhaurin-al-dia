@@ -1831,6 +1831,18 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/conclusiones-juernes-innovador-noche-del-comercio-abierto.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/conductor-identificado-la-policia-local-ha-identificado-y-localizado-al-conductor.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/conoce-a-los-protagonistas-que-impulsan-el-crecimiento-de-la-comarca-fedelhorce.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -1850,6 +1862,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/cuarto-atropello-en-24-horas-a-menores-arrolla-a-un-nino-de-14-anos-y-se-da-a-la-fuga.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -3031,6 +3049,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/paella-popular-y-entrega-de-premios-romeria-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -3170,6 +3194,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/programacion-completa-del-mes-del-caballo-en-alhaurin-el-grande-con-equinalh.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/programacion-cultural-de-otono-en-alhaurin-el-grande-2026.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

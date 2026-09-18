@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T05:35:05.641Z",
+  "actualizado": "2026-09-18T10:02:43.989Z",
   "visitas24h": 2,
   "paginasVistas24h": 2,
   "topPaginas": [
@@ -9,19 +9,19 @@
     },
     {
       "ruta": "/guia-util/farmacias/",
-      "vistas": 5
-    },
-    {
-      "ruta": "/planes/",
-      "vistas": 5
+      "vistas": 4
     },
     {
       "ruta": "/",
-      "vistas": 4
+      "vistas": 3
     },
     {
       "ruta": "/guia-util/farmacias/calendario/",
       "vistas": 3
+    },
+    {
+      "ruta": "/noticias/noticias-atv-lunes-14-septiembre-2026-actualidad-de-alhaurin-el-grande",
+      "vistas": 2
     }
   ]
 }

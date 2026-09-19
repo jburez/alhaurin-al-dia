@@ -2590,7 +2590,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/09/18/el-martin-pescador-en-el-valle-del-guadalhorce/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208965": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "14a0cd7fb3cfa9334e98fdcc120481feb39ce0cc",
     "date_modified": null,
     "date_published": "2026-09-19T16:58:30+00:00",
@@ -2603,7 +2603,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-5b7ab7c6",
-    "last_ai_attempt": "2026-09-19T17:12:32.986762+00:00",
+    "last_ai_attempt": "2026-09-19T20:29:35.284761+00:00",
     "pagina": "noticias/fallece-un-joven-de-19-anos-tras-un-accidente-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/19/fallece-un-joven-de-19-anos-tras-un-accidente-en-alhaurin-el-grande/"

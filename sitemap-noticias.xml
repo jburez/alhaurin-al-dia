@@ -1987,6 +1987,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/el-siniestro-se-produjo-sobre-las-23-00-horas-en-la-calle-rio-guadalmedina.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/el-terral-se-despide-en-malaga-con-temperaturas-de-hasta-36-grados-y-noches-muy-calidas.html</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -2744,6 +2750,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/modernizacion-de-la-policia-local-en-alhaurin-el-grande-con-nuevo-vehiculo-hibrido.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/muere-un-joven-de-19-anos-tras-salirse-su-coche-de-la-carretera-en-alhaurin-el-grande.html</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

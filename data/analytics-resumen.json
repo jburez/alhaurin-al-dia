@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-09-20T19:37:53.287Z",
-  "visitas24h": 8,
-  "paginasVistas24h": 11,
+  "actualizado": "2026-09-20T21:48:29.986Z",
+  "visitas24h": 7,
+  "paginasVistas24h": 10,
   "topPaginas": [
-    {
-      "ruta": "/tiempo/",
-      "vistas": 7
-    },
     {
       "ruta": "/planes/e-9367/",
       "vistas": 7
     },
     {
-      "ruta": "/guia-util/farmacias/",
+      "ruta": "/tiempo/",
+      "vistas": 7
+    },
+    {
+      "ruta": "/noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-recibe-al-jinete-juan-lopez-dobao",
       "vistas": 3
     },
     {
@@ -20,8 +20,8 @@
       "vistas": 3
     },
     {
-      "ruta": "/noticias/noticias-atv-lunes-14-septiembre-2026-actualidad-de-alhaurin-el-grande",
-      "vistas": 2
+      "ruta": "/guia-util/farmacias/",
+      "vistas": 3
     }
   ]
 }

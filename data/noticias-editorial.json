@@ -2212,7 +2212,7 @@
     "source_url": "https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/provincia/muere-joven-19-anos-salirse_0_2008012355.html": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "57b7d5731e3583f6b4f3321b91552d1fafff32e9",
     "date_modified": null,
     "date_published": "2026-09-19T08:37:30+00:00",
@@ -2225,7 +2225,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-muere-joven-19-anos-s-2e352def",
-    "last_ai_attempt": "2026-09-19T17:12:07.517923+00:00",
+    "last_ai_attempt": "2026-09-20T00:04:36.034922+00:00",
     "pagina": "noticias/muere-un-joven-de-19-anos-tras-salirse-su-coche-de-la-carretera-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/provincia/muere-joven-19-anos-salirse_0_2008012355.html"

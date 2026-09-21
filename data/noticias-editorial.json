@@ -1795,7 +1795,7 @@
     "source_url": "https://fedelhorce.es/oferta-security-life-solutions/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261181": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "0c343b451027230e2652630637ed9972adefa3c8",
     "date_modified": null,
     "date_published": "2026-09-18T11:48:14+00:00",
@@ -1808,7 +1808,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261181-6578b8ac",
-    "last_ai_attempt": "2026-09-20T07:45:09.472499+00:00",
+    "last_ai_attempt": "2026-09-21T00:07:26.306179+00:00",
     "pagina": "noticias/conclusiones-juernes-innovador-noche-del-comercio-abierto.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-innovador-noche-del-comercio-abierto/"

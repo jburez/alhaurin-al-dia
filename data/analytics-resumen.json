@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-09-21T14:03:35.855Z",
+  "actualizado": "2026-09-21T19:23:47.155Z",
   "visitas24h": 7,
-  "paginasVistas24h": 8,
+  "paginasVistas24h": 11,
   "topPaginas": [
     {
       "ruta": "/planes/e-9367/",
@@ -12,16 +12,16 @@
       "vistas": 4
     },
     {
+      "ruta": "/planes/",
+      "vistas": 4
+    },
+    {
       "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
       "vistas": 3
     },
     {
       "ruta": "/noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-recibe-al-jinete-juan-lopez-dobao",
       "vistas": 3
-    },
-    {
-      "ruta": "/noticias/noticias-atv-lunes-14-septiembre-2026-actualidad-de-alhaurin-el-grande",
-      "vistas": 2
     }
   ]
 }

@@ -1707,24 +1707,20 @@
     "source_url": "https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260884": {
-    "ai_attempts": 0,
-    "content_hash": "ce6a6397bd941c3194b3670f4eb465bbba2009a1",
-    "date_modified": null,
+    "ai_attempts": 1,
+    "content_hash": "4fdba55ea46d0b7163c3267356d81438dd7b43c7",
+    "date_modified": "2026-09-21T08:00:00.013270+00:00",
     "date_published": "2026-08-21T08:06:04+00:00",
     "editorial": {
-      "categoria": "Educación",
-      "cuerpo": "La Teoría del Color es una herramienta útil para entender las diferentes personalidades dentro de un equipo y potenciar la colaboración. Al asociar colores con características específicas, es posible reconocer las fortalezas y áreas de mejora de cada miembro, facilitando una comunicación más efectiva.\n\nEsta técnica permite adaptar el estilo de liderazgo y la forma de interactuar con cada perfil, mejorando el ambiente laboral y la productividad. Aplicar estos conocimientos en Alhaurín el Grande puede contribuir a optimizar el rendimiento de grupos de trabajo y proyectos comunitarios.",
-      "descripcion": "Aprende a utilizar la Teoría del Color para identificar fortalezas y conectar mejor con los perfiles de tu equipo de trabajo.",
-      "seo_keywords": [
-        "Teoría del color",
-        "trabajo en equipo",
-        "comunicación efectiva"
-      ],
-      "titulo": "Cómo la Teoría del Color mejora la comunicación y el trabajo en equipo"
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.",
+      "descripcion": "Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.",
+      "seo_keywords": [],
+      "titulo": "Teoría del color"
     },
-    "ia_exitosa": true,
+    "ia_exitosa": false,
     "id": "https-fedelhorce-es-cafe-con-ideas-teoria-del-color-7dbdb0b0",
-    "last_ai_attempt": "2026-08-24T13:07:41.224943+00:00",
+    "last_ai_attempt": "2026-09-21T07:56:03.078326+00:00",
     "pagina": "noticias/aprende-la-teoria-del-color-para-mejorar-la-comunicacion-en-tu-equipo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/cafe-con-ideas-teoria-del-color/"
@@ -1795,20 +1791,20 @@
     "source_url": "https://fedelhorce.es/oferta-security-life-solutions/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261181": {
-    "ai_attempts": 6,
-    "content_hash": "0c343b451027230e2652630637ed9972adefa3c8",
-    "date_modified": null,
+    "ai_attempts": 1,
+    "content_hash": "93a17fdea1b11d9e5f468152ce771f7bc7e68597",
+    "date_modified": "2026-09-21T08:00:00.013264+00:00",
     "date_published": "2026-09-18T11:48:14+00:00",
     "editorial": {
       "categoria": "Comercio y Empresa",
-      "cuerpo": "Conclusiones del Juernes Innovador: Noche del Comercio Abierto.",
-      "descripcion": "Conclusiones del Juernes Innovador: Noche del Comercio Abierto.",
+      "cuerpo": "La Noche del Comercio Abierto combinó la presentación del CCA, el reconocimiento a empresas locales y la innovación.",
+      "descripcion": "La Noche del Comercio Abierto combinó la presentación del CCA, el reconocimiento a empresas locales y la innovación.",
       "seo_keywords": [],
       "titulo": "Conclusiones Juernes Innovador: Noche del Comercio Abierto"
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261181-6578b8ac",
-    "last_ai_attempt": "2026-09-21T00:07:26.306179+00:00",
+    "last_ai_attempt": "2026-09-21T07:55:44.783429+00:00",
     "pagina": "noticias/conclusiones-juernes-innovador-noche-del-comercio-abierto.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-innovador-noche-del-comercio-abierto/"
@@ -2626,6 +2622,25 @@
     "pagina": "noticias/fallece-un-joven-de-19-anos-tras-un-accidente-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/19/fallece-un-joven-de-19-anos-tras-un-accidente-en-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=208981": {
+    "ai_attempts": 1,
+    "content_hash": "45e54909d9d04b0e747ac9c597ead9dc16ad7a95",
+    "date_modified": null,
+    "date_published": "2026-09-21T05:37:13+00:00",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 2 segundosLa iniciativa recorrerá distintos municipios de la comarca para conocer de primera mano las necesidades y propuestas de sus vecinos y vecinas La Asamblea de Adelante Andalucía del Valle del Guadalhorce y su entorno ha estrenado este domingo en el Mercado Agroalimentario del Guadalhorce, en Coín, su nuevo La entrada Adelante Andalucía estrena en Coín su buzón ciudadano se.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 2 segundosLa iniciativa recorrerá distintos municipios de la comarca para conocer de primera mano las necesidades y propuestas de sus vecinos y vecinas La Asamblea de Adelante Andalucía del.",
+      "seo_keywords": [],
+      "titulo": "Adelante Andalucía estrena en Coín su buzón ciudadano"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-0d1150ca",
+    "last_ai_attempt": "2026-09-21T07:56:54.553308+00:00",
+    "pagina": "noticias/adelante-andalucia-estrena-en-coin-su-buzon-ciudadano.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/21/adelante-andalucia-estrena-en-coin-su-buzon-ciudadano/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

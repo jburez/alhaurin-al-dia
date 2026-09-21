@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-21T01:41:18.867Z",
+  "actualizado": "2026-09-21T07:10:01.538Z",
   "visitas24h": 7,
   "paginasVistas24h": 10,
   "topPaginas": [
@@ -8,8 +8,8 @@
       "vistas": 7
     },
     {
-      "ruta": "/tiempo/",
-      "vistas": 7
+      "ruta": "/guia-util/farmacias/",
+      "vistas": 3
     },
     {
       "ruta": "/noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-recibe-al-jinete-juan-lopez-dobao",
@@ -20,8 +20,8 @@
       "vistas": 3
     },
     {
-      "ruta": "/guia-util/farmacias/",
-      "vistas": 3
+      "ruta": "/guia-util/farmacias/maria-teresa-quintela/",
+      "vistas": 2
     }
   ]
 }

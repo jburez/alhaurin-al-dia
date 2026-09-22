@@ -328,6 +328,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=LPIARrQSkjo"
   },
+  "guid:atv-alhaurin-youtube:yt:video:LdnKz1_1-mY": {
+    "ai_attempts": 1,
+    "content_hash": "5381a08d77f5a365448e0bd6f366ba71e9a4c176",
+    "date_modified": null,
+    "date_published": "2026-09-22T11:00:00+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del martes 22 de septiembre de 2026 en el Informativo de ATV. 1. II EDICIÓN ALHAURÍN DE BODA La segunda edición de “Alhaurín el Grande de Boda” reunió el pasado sábado a más de una veintena de empresas y profesionales vinculados al mundo de las bodas, con desfiles, música en directo y propuestas para quienes preparan su enlace. 2.\n\nDÍA MUNDIAL DEL ALZHÉIMER Este lunes se ha celebrado el Día mundial del Alzheimer. La Asociación de Familiares y Enfermos Alhmer de Alhaurín el Grande ha salido a la calle para visibilizar esta enfermedad con la lectura de un manifiesto y la instalación de una mesa informativa, además de reivindicar más apoyo de las instituciones. 3. 2 PLAZAS DE TAXIS EN C.\n\nMÁLAGA La concejala de Movilidad, Maribel Plaza, informa de que se ubicará una parada de taxis en el Camino de Málaga con dos plazas disponibles para estos vehículos autorizados. 4. TALLERES EN EL CENTRO FAHALA La asociación Luna Málaga y el Centro Ocupacional Fahala han organizado varios talleres sobre igualdad de género, convivencia y gestión de emociones para sus usuarios y usuarias. 5.",
+      "descripcion": "1. II EDICIÓN ALHAURÍN DE BODA La segunda edición de “Alhaurín el Grande de Boda” reunió el pasado sábado a más de una veintena de empresas y profesionales vinculados al mundo de las bodas, con desfiles, música en directo y.",
+      "seo_keywords": [],
+      "titulo": "Ii edición alhaurín de boda la segunda edición de “alhaurín el grande de boda” reunió"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-ldnkz1-1-my-fae82e16",
+    "last_ai_attempt": "2026-09-22T13:20:58.597193+00:00",
+    "pagina": "noticias/ii-edicion-alhaurin-de-boda-la-segunda-edicion-de-alhaurin-el-grande-de-boda-reunio.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=LdnKz1_1-mY"
+  },
   "guid:atv-alhaurin-youtube:yt:video:MD01ZARge58": {
     "ai_attempts": 0,
     "content_hash": "fcc5bcdf39bd2aa6613b6d5d0a4382c5b9ca5489",
@@ -589,20 +608,20 @@
     "source_url": "https://www.youtube.com/watch?v=dbCHGtOLhWM"
   },
   "guid:atv-alhaurin-youtube:yt:video:fN4k5CfdFn4": {
-    "ai_attempts": 3,
-    "content_hash": "0c798c81eb57945ed5fabe93e815b3e30f6d9313",
-    "date_modified": null,
+    "ai_attempts": 1,
+    "content_hash": "ef0472990bca18f7ff2aeed6e8c033f9d9c76c96",
+    "date_modified": "2026-09-22T13:38:16.145522+00:00",
     "date_published": "2026-09-21T14:00:36+00:00",
     "editorial": {
       "categoria": "Vídeos",
-      "cuerpo": "Fútbol. CD Alhaurino - Churriana de la Vega CF B | J.3 - Grupo 9 Tercera RFEF (26/27).",
-      "descripcion": "Fútbol. CD Alhaurino - Churriana de la Vega CF B | J.3 - Grupo 9 Tercera RFEF (26/27).",
+      "cuerpo": "Fútbol. CD Alhaurino - Churriana de la Vega CF | J.3 - Grupo 9 Tercera RFEF (26/27).",
+      "descripcion": "Fútbol. CD Alhaurino - Churriana de la Vega CF | J.3 - Grupo 9 Tercera RFEF (26/27).",
       "seo_keywords": [],
-      "titulo": "Fútbol. CD Alhaurino - Churriana de la Vega CF B"
+      "titulo": "Fútbol. CD Alhaurino - Churriana de la Vega CF"
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-fn4k5cfdfn4-38661b81",
-    "last_ai_attempt": "2026-09-22T07:38:48.086271+00:00",
+    "last_ai_attempt": "2026-09-22T13:21:18.373213+00:00",
     "pagina": "noticias/futbol-cd-alhaurino-churriana-de-la-vega-cf-b.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=fN4k5CfdFn4"
@@ -1178,7 +1197,7 @@
     "source_url": "https://alhaurinelgrande.es/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena-de-iniciativas-para-todos-los-publicos/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224797": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "c41a7e1ccc27e2a808c356d9521d3a6cf13e52b8",
     "date_modified": null,
     "date_published": "2026-09-21T10:53:44+00:00",
@@ -1191,7 +1210,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22479-ac4bfe3c",
-    "last_ai_attempt": "2026-09-22T00:41:19.849839+00:00",
+    "last_ai_attempt": "2026-09-22T13:18:56.660830+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora-de-la-carretera-de-villa-del-guadalhorce/"
@@ -1848,7 +1867,7 @@
     "source_url": "https://fedelhorce.es/oferta-security-life-solutions/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261181": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "93a17fdea1b11d9e5f468152ce771f7bc7e68597",
     "date_modified": "2026-09-21T08:00:00.013264+00:00",
     "date_published": "2026-09-18T11:48:14+00:00",
@@ -1861,7 +1880,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261181-6578b8ac",
-    "last_ai_attempt": "2026-09-22T00:43:23.766783+00:00",
+    "last_ai_attempt": "2026-09-22T13:23:48.389354+00:00",
     "pagina": "noticias/conclusiones-juernes-innovador-noche-del-comercio-abierto.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-innovador-noche-del-comercio-abierto/"
@@ -2112,7 +2131,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34193": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "9ebffc64945f1a817b3ee731960a7072953139c1",
     "date_modified": null,
     "date_published": "2026-09-21T11:16:42+00:00",
@@ -2125,7 +2144,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-793c2c53",
-    "last_ai_attempt": "2026-09-22T00:41:42.194068+00:00",
+    "last_ai_attempt": "2026-09-22T13:19:20.118993+00:00",
     "pagina": "noticias/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34193/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen/"
@@ -3125,7 +3144,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/ii-verbena-villa-del-guadalhorce-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50631": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "c2320d1f0143fb947d6050527c7578035cb428d9",
     "date_modified": null,
     "date_published": "2026-09-21T11:36:03+00:00",
@@ -3138,13 +3157,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50631-2fc0daa4",
-    "last_ai_attempt": "2026-09-22T00:43:01.242532+00:00",
+    "last_ai_attempt": "2026-09-22T13:20:40.000952+00:00",
     "pagina": "noticias/traslado-del-cristo-de-las-agonias-hasta-la-parroquia-ntra-sra-de-la-encarnacion-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-traslado-del-cristo-de-las-agonias-hasta-la-parroquia-ntra-sra-de-la-encarnacion-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50634": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "269c2c9f30b5b3ea04200ef8dcc1e430b53cd1f1",
     "date_modified": null,
     "date_published": "2026-09-21T12:06:06+00:00",
@@ -3157,13 +3176,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50634-d07e2905",
-    "last_ai_attempt": "2026-09-22T00:42:42.250323+00:00",
+    "last_ai_attempt": "2026-09-22T13:20:21.890723+00:00",
     "pagina": "noticias/romeria-por-el-cristo-de-las-agonias-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/romeria-por-el-cristo-de-las-agonias-2026-camino-hacia-la-mota/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50637": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "22c38fb1f74c85c6c8069dcb7b26828444531efa",
     "date_modified": null,
     "date_published": "2026-09-21T12:10:08+00:00",
@@ -3176,13 +3195,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50637-26c7f153",
-    "last_ai_attempt": "2026-09-22T00:42:22.813830+00:00",
+    "last_ai_attempt": "2026-09-22T13:20:01.794808+00:00",
     "pagina": "noticias/misa-romera-y-espectaculo-ecuestre-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50640": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "80f0410b4b00cc0f94dd044b8595a8a23ee3e3eb",
     "date_modified": null,
     "date_published": "2026-09-21T12:13:32+00:00",
@@ -3195,7 +3214,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
-    "last_ai_attempt": "2026-09-22T00:42:03.799333+00:00",
+    "last_ai_attempt": "2026-09-22T13:19:43.801520+00:00",
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"

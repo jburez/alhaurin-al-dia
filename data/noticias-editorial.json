@@ -547,7 +547,7 @@
     "source_url": "https://www.youtube.com/watch?v=b66DlnAxTjE"
   },
   "guid:atv-alhaurin-youtube:yt:video:cvrv1VRvxrU": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "773e8ada7332055b00fa1afae5caec157c79fcfa",
     "date_modified": null,
     "date_published": "2026-09-21T12:34:12+00:00",
@@ -560,7 +560,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-cvrv1vrvxru-d72b2749",
-    "last_ai_attempt": "2026-09-21T20:24:39.920390+00:00",
+    "last_ai_attempt": "2026-09-22T07:39:06.895574+00:00",
     "pagina": "noticias/obras-en-la-carretera-el-alcalde-anthony-bermudez-informa-sobre-el-futuro-arreglo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=cvrv1VRvxrU"
@@ -589,7 +589,7 @@
     "source_url": "https://www.youtube.com/watch?v=dbCHGtOLhWM"
   },
   "guid:atv-alhaurin-youtube:yt:video:fN4k5CfdFn4": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "0c798c81eb57945ed5fabe93e815b3e30f6d9313",
     "date_modified": null,
     "date_published": "2026-09-21T14:00:36+00:00",
@@ -602,7 +602,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-fn4k5cfdfn4-38661b81",
-    "last_ai_attempt": "2026-09-21T20:24:21.812176+00:00",
+    "last_ai_attempt": "2026-09-22T07:38:48.086271+00:00",
     "pagina": "noticias/futbol-cd-alhaurino-churriana-de-la-vega-cf-b.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=fN4k5CfdFn4"
@@ -1083,7 +1083,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 14,
+    "ai_attempts": 15,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -1096,13 +1096,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-21T15:02:50.723804+00:00",
+    "last_ai_attempt": "2026-09-22T07:37:44.266877+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 12,
+    "ai_attempts": 13,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -1115,13 +1115,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-21T15:02:30.486870+00:00",
+    "last_ai_attempt": "2026-09-22T07:37:25.115337+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224755": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "e4e4ca1978b5f7537376d6c2a5de600290bb855b",
     "date_modified": null,
     "date_published": "2026-09-17T08:54:00+00:00",
@@ -1134,13 +1134,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-1db24bee",
-    "last_ai_attempt": "2026-09-21T15:02:12.171954+00:00",
+    "last_ai_attempt": "2026-09-22T07:37:07.465308+00:00",
     "pagina": "noticias/el-alcalde-anthony-bermudez-destaca-en-el-foro-de-alcaldes-y-alcaldesas-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-plantea-soluciones-para-el-area-metropolitana-ante-el-crecimiento-del-valle-del-guadalhorce/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224774": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "36c693b15a9c0ecde08e432736a153cbc20e4f7a",
     "date_modified": null,
     "date_published": "2026-09-17T12:36:05+00:00",
@@ -1153,13 +1153,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22477-438e5ede",
-    "last_ai_attempt": "2026-09-21T15:01:54.043615+00:00",
+    "last_ai_attempt": "2026-09-22T07:36:48.519138+00:00",
     "pagina": "noticias/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia-local-de-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224781": {
-    "ai_attempts": 7,
+    "ai_attempts": 8,
     "content_hash": "5720ebc37b604a3f1dea523b0f75b15c94ebdce9",
     "date_modified": null,
     "date_published": "2026-09-18T12:50:17+00:00",
@@ -1172,7 +1172,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22478-d021a974",
-    "last_ai_attempt": "2026-09-21T15:01:35.649508+00:00",
+    "last_ai_attempt": "2026-09-22T07:36:28.316707+00:00",
     "pagina": "noticias/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena-de-iniciativas-para-todos-los-publicos/"
@@ -2074,7 +2074,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34096/festividad-de-los-dolores-gloriosos-de-la-virgen-3/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34099": {
-    "ai_attempts": 11,
+    "ai_attempts": 12,
     "content_hash": "6f5e77e9d12b032b8e30cda5a00c5122b1464470",
     "date_modified": null,
     "date_published": "2026-09-16T08:37:51+00:00",
@@ -2087,13 +2087,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9682d4bd",
-    "last_ai_attempt": "2026-09-21T15:03:51.448448+00:00",
+    "last_ai_attempt": "2026-09-22T07:38:24.718987+00:00",
     "pagina": "noticias/romeria-en-honor-al-santisimo-cristo-de-las-agonias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34099/romeria-en-honor-al-santisimo-cristo-de-las-agonias/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34117": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "4d68fa63213ac6ef60bcd827df5ef7f181201fab",
     "date_modified": null,
     "date_published": "2026-09-16T11:42:08+00:00",
@@ -2106,7 +2106,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-ce74c5a5",
-    "last_ai_attempt": "2026-09-21T15:03:34.442643+00:00",
+    "last_ai_attempt": "2026-09-22T07:38:08.967394+00:00",
     "pagina": "noticias/inicio-del-taller-de-bordado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
@@ -2736,6 +2736,25 @@
     "pagina": "noticias/adelante-andalucia-estrena-en-coin-su-buzon-ciudadano.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/21/adelante-andalucia-estrena-en-coin-su-buzon-ciudadano/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=209084": {
+    "ai_attempts": 1,
+    "content_hash": "5ad5d1b2afeafe4fc4ddad3f305cb3cb74d93c4e",
+    "date_modified": null,
+    "date_published": "2026-09-22T06:45:26+00:00",
+    "editorial": {
+      "categoria": "Educación",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 9 segundosLa formación se desarrollará los sábados 3, 10 y 17 de octubre en la sede de la asociación y está abierta tanto a socios como a personas no asociadas La Asociación Amigos del Vino de Alhaurín el Grande ha organizado un Curso de Iniciación a la Cata dirigido La entrada La Asociación Amigos del Vino organiza un curso de iniciación a la cata en Alhaurín el Grande se publicó.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 9 segundosLa formación se desarrollará los sábados 3, 10 y 17 de octubre en la sede de la asociación y está abierta tanto a socios como a personas no asociadas La Asociación Amigos del Vino de.",
+      "seo_keywords": [],
+      "titulo": "Tiempo de lectura aprox: 1 minutos, 9 segundosLa formación se desarrollará los sábados 3"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-0854ec7a",
+    "last_ai_attempt": "2026-09-22T07:41:58.523183+00:00",
+    "pagina": "noticias/tiempo-de-lectura-aprox-1-minutos-9-segundosla-formacion-se-desarrollara-los-sabados-3.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/22/la-asociacion-amigos-del-vino-organiza-un-curso-de-iniciacion-a-la-cata-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

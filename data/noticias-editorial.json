@@ -259,6 +259,44 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JlTL6AKDqTY"
   },
+  "guid:atv-alhaurin-youtube:yt:video:KBUoPpfes-8": {
+    "ai_attempts": 1,
+    "content_hash": "fbb3c5c72c2fbc6a0f5901b2323cfbe485ea72df",
+    "date_modified": null,
+    "date_published": "2026-09-22T14:00:34+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Programa especial dedicado al inicio de la campaña de recogida 2026/2027 de la Denominación de Origen Protegida Aceituna Aloreña de Málaga, que este año ha elegido Alhaurín el Grande para presentar el arranque de la cosecha.\n\nConoceremos de cerca el proceso de recolección de esta aceituna, que mantiene técnicas tradicionales como el ordeño manual, y visitaremos tanto las instalaciones de una industria de aderezo como uno de los olivares de la zona.\n\nAdemás, repasaremos las previsiones de la campaña y la importancia económica y social de un sector que engloba 17.800 hectáreas de olivar y a más de 4.000 familias en 19 municipios malagueños.",
+      "descripcion": "Programa especial dedicado al inicio de la campaña de recogida 2026/2027 de la Denominación de Origen Protegida Aceituna Aloreña de Málaga, que este año ha elegido Alhaurín el Grande para presentar el arranque de la cosecha.",
+      "seo_keywords": [],
+      "titulo": "Inicio de la campaña de la Aceituna Aloreña 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-kbuoppfes-8-610375a3",
+    "last_ai_attempt": "2026-09-22T18:02:13.268904+00:00",
+    "pagina": "noticias/inicio-de-la-campana-de-la-aceituna-alorena-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=KBUoPpfes-8"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:KFBkNSJ8rv0": {
+    "ai_attempts": 1,
+    "content_hash": "c6bc922d8d71a69ea96648a42e2ba3e549fd9b0d",
+    "date_modified": null,
+    "date_published": "2026-09-22T14:30:37+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Programa especial dedicado a los cultos que la Real Hermandad de Nuestro Padre Jesús Nazareno celebra cada mes de septiembre en honor a María Santísima del Mayor Dolor, con motivo de la festividad de los Dolores Gloriosos.\n\nA través de las imágenes de la Solemne Función Religiosa, conoceremos los momentos más destacados de esta celebración, que contó con la participación del Coro de la Hermandad, y reunió a numerosos hermanos y feligreses.",
+      "descripcion": "Programa especial dedicado a los cultos que la Real Hermandad de Nuestro Padre Jesús Nazareno celebra cada mes de septiembre en honor a María Santísima del Mayor Dolor, con motivo de la festividad de los Dolores Gloriosos. A.",
+      "seo_keywords": [],
+      "titulo": "Misa en honor a María Santísima del Mayor Dolor"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-kfbknsj8rv0-b487d9a3",
+    "last_ai_attempt": "2026-09-22T18:01:52.751668+00:00",
+    "pagina": "noticias/misa-en-honor-a-maria-santisima-del-mayor-dolor.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=KFBkNSJ8rv0"
+  },
   "guid:atv-alhaurin-youtube:yt:video:KWnz3pyV6go": {
     "ai_attempts": 0,
     "content_hash": "d60af48109c28c20bfcb3946d482d343374c7d38",
@@ -329,7 +367,7 @@
     "source_url": "https://www.youtube.com/watch?v=LPIARrQSkjo"
   },
   "guid:atv-alhaurin-youtube:yt:video:LdnKz1_1-mY": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "5381a08d77f5a365448e0bd6f366ba71e9a4c176",
     "date_modified": null,
     "date_published": "2026-09-22T11:00:00+00:00",
@@ -342,7 +380,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ldnkz1-1-my-fae82e16",
-    "last_ai_attempt": "2026-09-22T13:20:58.597193+00:00",
+    "last_ai_attempt": "2026-09-22T18:02:37.017491+00:00",
     "pagina": "noticias/ii-edicion-alhaurin-de-boda-la-segunda-edicion-de-alhaurin-el-grande-de-boda-reunio.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=LdnKz1_1-mY"
@@ -566,7 +604,7 @@
     "source_url": "https://www.youtube.com/watch?v=b66DlnAxTjE"
   },
   "guid:atv-alhaurin-youtube:yt:video:cvrv1VRvxrU": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "773e8ada7332055b00fa1afae5caec157c79fcfa",
     "date_modified": null,
     "date_published": "2026-09-21T12:34:12+00:00",
@@ -579,7 +617,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-cvrv1vrvxru-d72b2749",
-    "last_ai_attempt": "2026-09-22T07:39:06.895574+00:00",
+    "last_ai_attempt": "2026-09-22T18:03:12.221918+00:00",
     "pagina": "noticias/obras-en-la-carretera-el-alcalde-anthony-bermudez-informa-sobre-el-futuro-arreglo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=cvrv1VRvxrU"
@@ -608,7 +646,7 @@
     "source_url": "https://www.youtube.com/watch?v=dbCHGtOLhWM"
   },
   "guid:atv-alhaurin-youtube:yt:video:fN4k5CfdFn4": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "ef0472990bca18f7ff2aeed6e8c033f9d9c76c96",
     "date_modified": "2026-09-22T13:38:16.145522+00:00",
     "date_published": "2026-09-21T14:00:36+00:00",
@@ -621,7 +659,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-fn4k5cfdfn4-38661b81",
-    "last_ai_attempt": "2026-09-22T13:21:18.373213+00:00",
+    "last_ai_attempt": "2026-09-22T18:02:54.870692+00:00",
     "pagina": "noticias/futbol-cd-alhaurino-churriana-de-la-vega-cf-b.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=fN4k5CfdFn4"

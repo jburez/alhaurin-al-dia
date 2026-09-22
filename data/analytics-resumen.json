@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-09-22T06:10:29.997Z",
-  "visitas24h": 8,
-  "paginasVistas24h": 12,
+  "actualizado": "2026-09-22T11:32:24.547Z",
+  "visitas24h": 7,
+  "paginasVistas24h": 11,
   "topPaginas": [
     {
       "ruta": "/planes/e-9367/",
-      "vistas": 8
+      "vistas": 9
+    },
+    {
+      "ruta": "/planes/",
+      "vistas": 5
     },
     {
       "ruta": "/guia-util/farmacias/",
       "vistas": 4
     },
     {
-      "ruta": "/planes/",
-      "vistas": 4
-    },
-    {
-      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
+      "ruta": "/guia-util/farmacias/maria-teresa-quintela/",
       "vistas": 3
     },
     {
-      "ruta": "/noticias/nuevo-centro-ecuestre-la-villa-en-alhaurin-el-grande-recibe-al-jinete-juan-lopez-dobao",
+      "ruta": "/noticias/paco-candela-principal-atractivo-de-la-romeria-de-alhaurin-el-grande-2026",
       "vistas": 3
     }
   ]

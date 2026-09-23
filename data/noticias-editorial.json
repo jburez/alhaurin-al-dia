@@ -260,7 +260,7 @@
     "source_url": "https://www.youtube.com/watch?v=JlTL6AKDqTY"
   },
   "guid:atv-alhaurin-youtube:yt:video:JpdHRxcJz7w": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "b1ce730558660bdaff12ef039426088025581c1e",
     "date_modified": null,
     "date_published": "2026-09-23T07:53:02+00:00",
@@ -273,13 +273,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-jpdhrxcjz7w-2a166a77",
-    "last_ai_attempt": "2026-09-23T16:42:48.146343+00:00",
+    "last_ai_attempt": "2026-09-23T21:24:23.690747+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JpdHRxcJz7w"
   },
   "guid:atv-alhaurin-youtube:yt:video:KBUoPpfes-8": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "fbb3c5c72c2fbc6a0f5901b2323cfbe485ea72df",
     "date_modified": null,
     "date_published": "2026-09-22T14:00:34+00:00",
@@ -292,13 +292,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-kbuoppfes-8-610375a3",
-    "last_ai_attempt": "2026-09-23T11:21:03.359882+00:00",
+    "last_ai_attempt": "2026-09-23T21:24:59.829548+00:00",
     "pagina": "noticias/inicio-de-la-campana-de-la-aceituna-alorena-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=KBUoPpfes-8"
   },
   "guid:atv-alhaurin-youtube:yt:video:KFBkNSJ8rv0": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "a4df072ce9194a2dbdcc2717bcee8dcd5cc284a4",
     "date_modified": null,
     "date_published": "2026-09-22T14:30:37+00:00",
@@ -311,7 +311,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-kfbknsj8rv0-b487d9a3",
-    "last_ai_attempt": "2026-09-23T16:43:06.238615+00:00",
+    "last_ai_attempt": "2026-09-23T21:24:42.617569+00:00",
     "pagina": "noticias/misa-en-honor-a-maria-santisima-del-mayor-dolor.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=KFBkNSJ8rv0"
@@ -581,7 +581,7 @@
     "source_url": "https://www.youtube.com/watch?v=_dtTmQKMBms"
   },
   "guid:atv-alhaurin-youtube:yt:video:_yf6PayBXVc": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "8323604db1a65232b2e58cdad932870b46ebb6fa",
     "date_modified": null,
     "date_published": "2026-09-23T12:06:05+00:00",
@@ -594,7 +594,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-yf6paybxvc-29304660",
-    "last_ai_attempt": "2026-09-23T16:42:28.641123+00:00",
+    "last_ai_attempt": "2026-09-23T21:24:05.537101+00:00",
     "pagina": "noticias/aprobado-en-diputacion-la-diputacion-de-malaga-aprueba-1-4-millones-para-la-primera-fase.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=_yf6PayBXVc"
@@ -879,7 +879,7 @@
     "source_url": "https://www.youtube.com/watch?v=pKyD2nZx2Nk"
   },
   "guid:atv-alhaurin-youtube:yt:video:rlZ9kIrfoss": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "03ed94e9b0317e000baef813f335d75b314418cc",
     "date_modified": null,
     "date_published": "2026-09-23T14:00:30+00:00",
@@ -892,7 +892,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-rlz9kirfoss-b7e5a220",
-    "last_ai_attempt": "2026-09-23T16:42:10.930222+00:00",
+    "last_ai_attempt": "2026-09-23T21:23:44.308282+00:00",
     "pagina": "noticias/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=rlZ9kIrfoss"

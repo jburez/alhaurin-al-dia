@@ -7,8 +7,17 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Wed, 23 Sep 2026 04:32:11 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 11:27:28 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
+    <item>
+      <title>PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días</title>
+      <link>https://www.youtube.com/watch?v=JpdHRxcJz7w</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=JpdHRxcJz7w</guid>
+      <pubDate>Wed, 23 Sep 2026 07:53:02 GMT</pubDate>
+      <description>Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.</description>
+      <category>Vídeos</category>
+      <dc:creator>ATV Alhaurín YouTube</dc:creator>
+    </item>
     <item>
       <title>Paella popular y entrega de premios Romería 2026</title>
       <link>https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/</link>
@@ -71,15 +80,6 @@
       <description>Una propuesta con una amplia agenda cultural, de septiembre a noviembre, con teatro, música en directo, literatura, exposiciones y actividades infantiles. La Delegación de Cultura del Ayuntamiento de Alhaurín el.</description>
       <category>Agenda Cultural</category>
       <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
-    </item>
-    <item>
-      <title>Networking para emprendedores</title>
-      <link>https://fedelhorce.es/networking-para-emprendedores-teoria-del-color/</link>
-      <guid isPermaLink="true">https://fedelhorce.es/networking-para-emprendedores-teoria-del-color/</guid>
-      <pubDate>Fri, 18 Sep 2026 08:00:04 GMT</pubDate>
-      <description>Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.</description>
-      <category>Comercio y Empresa</category>
-      <dc:creator>Fedelhorce</dc:creator>
     </item>
     <item>
       <title>El alcalde Anthony Bermúdez destaca en el Foro de alcaldes y alcaldesas de Málaga</title>

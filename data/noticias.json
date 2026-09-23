@@ -1,5 +1,24 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-jpdhrxcjz7w-2a166a77",
+        "titulo": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días",
+        "titulo_original": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días | PGM 148",
+        "descripcion": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
+        "resumen": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
+        "cuerpo": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel.",
+        "fecha": "2026-09-23T07:53:02+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Vídeos",
+        "categoria_url": "categoria/videos/",
+        "seo_keywords": [],
+        "enlace": "https://www.youtube.com/watch?v=JpdHRxcJz7w",
+        "url": "https://www.youtube.com/watch?v=JpdHRxcJz7w",
+        "imagen": "https://i3.ytimg.com/vi/JpdHRxcJz7w/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html"
+    },
+    {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
         "titulo": "Paella popular y entrega de premios Romería 2026",
         "titulo_original": "Paella popular y entrega de premios Romería 2026",
@@ -131,25 +150,6 @@
         "prioridad": 120,
         "requiere_revision_geografica": false,
         "pagina": "noticias/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena.html"
-    },
-    {
-        "id": "https-fedelhorce-es-cafe-con-ideas-teoria-del-color-7dbdb0b0",
-        "titulo": "Networking para emprendedores",
-        "titulo_original": "Networking para emprendedores | Teoría del color",
-        "descripcion": "Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.",
-        "resumen": "Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.",
-        "cuerpo": "Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.",
-        "fecha": "2026-09-18T08:00:04+00:00",
-        "fuente": "Fedelhorce",
-        "categoria": "Comercio y Empresa",
-        "categoria_url": "categoria/comercio-y-empresa/",
-        "seo_keywords": [],
-        "enlace": "https://fedelhorce.es/networking-para-emprendedores-teoria-del-color/",
-        "url": "https://fedelhorce.es/networking-para-emprendedores-teoria-del-color/",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/09/Destacada-teoria-del-color-7.png",
-        "prioridad": 85,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/aprende-la-teoria-del-color-para-mejorar-la-comunicacion-en-tu-equipo.html"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-1db24bee",

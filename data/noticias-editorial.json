@@ -1235,7 +1235,7 @@
     "source_url": "https://alhaurinelgrande.es/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena-de-iniciativas-para-todos-los-publicos/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224797": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "c41a7e1ccc27e2a808c356d9521d3a6cf13e52b8",
     "date_modified": null,
     "date_published": "2026-09-21T10:53:44+00:00",
@@ -1248,7 +1248,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22479-ac4bfe3c",
-    "last_ai_attempt": "2026-09-22T13:18:56.660830+00:00",
+    "last_ai_attempt": "2026-09-23T04:25:30.324166+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora-de-la-carretera-de-villa-del-guadalhorce/"
@@ -1821,26 +1821,26 @@
     "source_url": "https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260884": {
-    "ai_attempts": 2,
-    "content_hash": "4fdba55ea46d0b7163c3267356d81438dd7b43c7",
-    "date_modified": "2026-09-21T08:00:00.013270+00:00",
+    "ai_attempts": 1,
+    "content_hash": "b15c96522a2d6bb7cb30df7acaad860ed841619b",
+    "date_modified": "2026-09-23T04:32:07.274057+00:00",
     "date_published": "2026-08-21T08:06:04+00:00",
     "editorial": {
-      "categoria": "Agenda Cultural",
+      "categoria": "Comercio y Empresa",
       "cuerpo": "Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.",
       "descripcion": "Descubre cómo la Teoría de los Colores puede ayudarte a comprender mejor a tu equipo.",
       "seo_keywords": [],
-      "titulo": "Teoría del color"
+      "titulo": "Networking para emprendedores"
     },
     "ia_exitosa": false,
     "id": "https-fedelhorce-es-cafe-con-ideas-teoria-del-color-7dbdb0b0",
-    "last_ai_attempt": "2026-09-22T00:43:40.635186+00:00",
+    "last_ai_attempt": "2026-09-23T04:27:51.864057+00:00",
     "pagina": "noticias/aprende-la-teoria-del-color-para-mejorar-la-comunicacion-en-tu-equipo.html",
     "prompt_version": "2026-08-v1",
-    "source_url": "https://fedelhorce.es/cafe-con-ideas-teoria-del-color/"
+    "source_url": "https://fedelhorce.es/networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260892": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "a9ba7eecd4d7a55e53f8149a2f22144b478dd2ba",
     "date_modified": "2026-09-13T04:29:37.702104+00:00",
     "date_published": "2026-08-21T08:31:49+00:00",
@@ -1853,7 +1853,7 @@
     },
     "ia_exitosa": false,
     "id": "https-fedelhorce-es-masterclass-facturacion-electronica-y-verifactu-e1cf96da",
-    "last_ai_attempt": "2026-09-22T00:43:57.039411+00:00",
+    "last_ai_attempt": "2026-09-23T04:28:11.006227+00:00",
     "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/"
@@ -1905,7 +1905,7 @@
     "source_url": "https://fedelhorce.es/oferta-security-life-solutions/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261181": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "93a17fdea1b11d9e5f468152ce771f7bc7e68597",
     "date_modified": "2026-09-21T08:00:00.013264+00:00",
     "date_published": "2026-09-18T11:48:14+00:00",
@@ -1918,7 +1918,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261181-6578b8ac",
-    "last_ai_attempt": "2026-09-22T13:23:48.389354+00:00",
+    "last_ai_attempt": "2026-09-23T04:27:34.387289+00:00",
     "pagina": "noticias/conclusiones-juernes-innovador-noche-del-comercio-abierto.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-innovador-noche-del-comercio-abierto/"
@@ -2169,7 +2169,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34193": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "9ebffc64945f1a817b3ee731960a7072953139c1",
     "date_modified": null,
     "date_published": "2026-09-21T11:16:42+00:00",
@@ -2182,7 +2182,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-793c2c53",
-    "last_ai_attempt": "2026-09-22T13:19:20.118993+00:00",
+    "last_ai_attempt": "2026-09-23T04:25:55.664766+00:00",
     "pagina": "noticias/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34193/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen/"
@@ -3182,7 +3182,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/ii-verbena-villa-del-guadalhorce-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50631": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "c2320d1f0143fb947d6050527c7578035cb428d9",
     "date_modified": null,
     "date_published": "2026-09-21T11:36:03+00:00",
@@ -3195,13 +3195,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50631-2fc0daa4",
-    "last_ai_attempt": "2026-09-22T13:20:40.000952+00:00",
+    "last_ai_attempt": "2026-09-23T04:27:12.317598+00:00",
     "pagina": "noticias/traslado-del-cristo-de-las-agonias-hasta-la-parroquia-ntra-sra-de-la-encarnacion-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-traslado-del-cristo-de-las-agonias-hasta-la-parroquia-ntra-sra-de-la-encarnacion-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50634": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "269c2c9f30b5b3ea04200ef8dcc1e430b53cd1f1",
     "date_modified": null,
     "date_published": "2026-09-21T12:06:06+00:00",
@@ -3214,13 +3214,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50634-d07e2905",
-    "last_ai_attempt": "2026-09-22T13:20:21.890723+00:00",
+    "last_ai_attempt": "2026-09-23T04:26:53.799133+00:00",
     "pagina": "noticias/romeria-por-el-cristo-de-las-agonias-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/romeria-por-el-cristo-de-las-agonias-2026-camino-hacia-la-mota/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50637": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "22c38fb1f74c85c6c8069dcb7b26828444531efa",
     "date_modified": null,
     "date_published": "2026-09-21T12:10:08+00:00",
@@ -3233,13 +3233,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50637-26c7f153",
-    "last_ai_attempt": "2026-09-22T13:20:01.794808+00:00",
+    "last_ai_attempt": "2026-09-23T04:26:36.546708+00:00",
     "pagina": "noticias/misa-romera-y-espectaculo-ecuestre-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50640": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "80f0410b4b00cc0f94dd044b8595a8a23ee3e3eb",
     "date_modified": null,
     "date_published": "2026-09-21T12:13:32+00:00",
@@ -3252,7 +3252,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
-    "last_ai_attempt": "2026-09-22T13:19:43.801520+00:00",
+    "last_ai_attempt": "2026-09-23T04:26:16.445572+00:00",
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"

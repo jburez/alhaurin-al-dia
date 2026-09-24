@@ -1,5 +1,24 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-4jtfforq4ny-7f69fda7",
+        "titulo": "Así lo viví con Sete Fernández",
+        "titulo_original": "Así lo viví con Sete Fernández | Programa 36",
+        "descripcion": "Así lo viví con Sete Fernández | Programa 36.",
+        "resumen": "Así lo viví con Sete Fernández | Programa 36.",
+        "cuerpo": "Así lo viví con Sete Fernández | Programa 36.",
+        "fecha": "2026-09-24T14:00:16+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Vídeos",
+        "categoria_url": "categoria/videos/",
+        "seo_keywords": [],
+        "enlace": "https://www.youtube.com/watch?v=4JTFfORQ4nY",
+        "url": "https://www.youtube.com/watch?v=4JTFfORQ4nY",
+        "imagen": "https://i1.ytimg.com/vi/4JTFfORQ4nY/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/asi-lo-vivi-con-sete-fernandez.html"
+    },
+    {
         "id": "guid-atv-alhaurin-youtube-yt-video-lbt79xpizh4-86af3fe4",
         "titulo": "Segunda fase: 1,8 millones el ayuntamiento anuncia que solicitará 1,8 millones de euros",
         "titulo_original": "NOTICIAS ATV 24 SEPTIEMBRE 2026 – ACTUALIDAD DE ALHAURÍN EL GRANDE",
@@ -17,25 +36,6 @@
         "prioridad": 80,
         "requiere_revision_geografica": false,
         "pagina": "noticias/segunda-fase-1-8-millones-el-ayuntamiento-anuncia-que-solicitara-1-8-millones-de-euros.html"
-    },
-    {
-        "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50650-7276158c",
-        "titulo": "Alhaurín el Grande en el Foro de Alcaldes del Área Metropolitana de Málaga",
-        "titulo_original": "Alhaurín el Grande en el Foro de Alcaldes del Área Metropolitana de Málaga | Greencities 2026",
-        "descripcion": "El alcalde de Alhaurín el Grande, Anthony Bermúdez, participó en el Foro de Alcaldes y Alcaldesas del Área Metropolitana de Málaga, celebrado en el marco de Greencities. Durante el encuentro, junto a los alcaldes de Alhaurín de.",
-        "resumen": "El alcalde de Alhaurín el Grande, Anthony Bermúdez, participó en el Foro de Alcaldes y Alcaldesas del Área Metropolitana de Málaga, celebrado en el marco de Greencities. Durante el encuentro, junto a los alcaldes de Alhaurín de.",
-        "cuerpo": "El alcalde de Alhaurín el Grande, Anthony Bermúdez, participó en el Foro de Alcaldes y Alcaldesas del Área Metropolitana de Málaga, celebrado en el marco de Greencities.",
-        "fecha": "2026-09-24T11:12:46+00:00",
-        "fuente": "RTV Alhaurín el Grande",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
-        "seo_keywords": [],
-        "enlace": "https://rtvalhaurinelgrande.com/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga-greencities-2026/",
-        "url": "https://rtvalhaurinelgrande.com/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga-greencities-2026/",
-        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/09/awtfgaesrtyaesry.jpg",
-        "prioridad": 90,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga-2.html"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50647-8ef1d774",
@@ -150,25 +150,6 @@
         "prioridad": 85,
         "requiere_revision_geografica": false,
         "pagina": "noticias/conclusiones-networking-para-emprendedores.html"
-    },
-    {
-        "id": "guid-atv-alhaurin-youtube-yt-video-jpdhrxcjz7w-2a166a77",
-        "titulo": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días",
-        "titulo_original": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días | PGM 148",
-        "descripcion": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
-        "resumen": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
-        "cuerpo": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel.",
-        "fecha": "2026-09-23T07:53:02+00:00",
-        "fuente": "ATV Alhaurín YouTube",
-        "categoria": "Vídeos",
-        "categoria_url": "categoria/videos/",
-        "seo_keywords": [],
-        "enlace": "https://www.youtube.com/watch?v=JpdHRxcJz7w",
-        "url": "https://www.youtube.com/watch?v=JpdHRxcJz7w",
-        "imagen": "https://i3.ytimg.com/vi/JpdHRxcJz7w/maxresdefault.jpg",
-        "prioridad": 80,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",

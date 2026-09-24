@@ -386,7 +386,7 @@
     "source_url": "https://www.youtube.com/watch?v=LPIARrQSkjo"
   },
   "guid:atv-alhaurin-youtube:yt:video:LdnKz1_1-mY": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "5381a08d77f5a365448e0bd6f366ba71e9a4c176",
     "date_modified": null,
     "date_published": "2026-09-22T11:00:00+00:00",
@@ -399,7 +399,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ldnkz1-1-my-fae82e16",
-    "last_ai_attempt": "2026-09-23T11:21:20.146045+00:00",
+    "last_ai_attempt": "2026-09-24T00:24:00.575415+00:00",
     "pagina": "noticias/ii-edicion-alhaurin-de-boda-la-segunda-edicion-de-alhaurin-el-grande-de-boda-reunio.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=LdnKz1_1-mY"
@@ -1197,7 +1197,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 17,
+    "ai_attempts": 18,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -1210,13 +1210,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-23T11:19:18.658215+00:00",
+    "last_ai_attempt": "2026-09-24T00:22:56.375222+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 15,
+    "ai_attempts": 16,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -1229,13 +1229,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-23T11:18:59.486515+00:00",
+    "last_ai_attempt": "2026-09-24T00:22:37.547124+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224755": {
-    "ai_attempts": 12,
+    "ai_attempts": 13,
     "content_hash": "e4e4ca1978b5f7537376d6c2a5de600290bb855b",
     "date_modified": null,
     "date_published": "2026-09-17T08:54:00+00:00",
@@ -1248,13 +1248,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-1db24bee",
-    "last_ai_attempt": "2026-09-23T11:18:43.492345+00:00",
+    "last_ai_attempt": "2026-09-24T00:22:20.144000+00:00",
     "pagina": "noticias/el-alcalde-anthony-bermudez-destaca-en-el-foro-de-alcaldes-y-alcaldesas-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-plantea-soluciones-para-el-area-metropolitana-ante-el-crecimiento-del-valle-del-guadalhorce/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224774": {
-    "ai_attempts": 12,
+    "ai_attempts": 13,
     "content_hash": "36c693b15a9c0ecde08e432736a153cbc20e4f7a",
     "date_modified": null,
     "date_published": "2026-09-17T12:36:05+00:00",
@@ -1267,13 +1267,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22477-438e5ede",
-    "last_ai_attempt": "2026-09-23T11:18:26.370073+00:00",
+    "last_ai_attempt": "2026-09-24T00:22:02.156095+00:00",
     "pagina": "noticias/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia-local-de-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224781": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "5720ebc37b604a3f1dea523b0f75b15c94ebdce9",
     "date_modified": null,
     "date_published": "2026-09-18T12:50:17+00:00",
@@ -1286,7 +1286,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22478-d021a974",
-    "last_ai_attempt": "2026-09-23T11:18:07.085414+00:00",
+    "last_ai_attempt": "2026-09-24T00:21:43.855351+00:00",
     "pagina": "noticias/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena-de-iniciativas-para-todos-los-publicos/"
@@ -2188,7 +2188,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34096/festividad-de-los-dolores-gloriosos-de-la-virgen-3/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34099": {
-    "ai_attempts": 14,
+    "ai_attempts": 15,
     "content_hash": "6f5e77e9d12b032b8e30cda5a00c5122b1464470",
     "date_modified": null,
     "date_published": "2026-09-16T08:37:51+00:00",
@@ -2201,13 +2201,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9682d4bd",
-    "last_ai_attempt": "2026-09-23T11:20:01.080834+00:00",
+    "last_ai_attempt": "2026-09-24T00:23:39.403354+00:00",
     "pagina": "noticias/romeria-en-honor-al-santisimo-cristo-de-las-agonias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34099/romeria-en-honor-al-santisimo-cristo-de-las-agonias/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34117": {
-    "ai_attempts": 13,
+    "ai_attempts": 14,
     "content_hash": "4d68fa63213ac6ef60bcd827df5ef7f181201fab",
     "date_modified": null,
     "date_published": "2026-09-16T11:42:08+00:00",
@@ -2220,7 +2220,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-ce74c5a5",
-    "last_ai_attempt": "2026-09-23T11:19:43.115214+00:00",
+    "last_ai_attempt": "2026-09-24T00:23:20.248185+00:00",
     "pagina": "noticias/inicio-del-taller-de-bordado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"

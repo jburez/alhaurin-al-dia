@@ -69,7 +69,7 @@
     "source_url": "https://www.youtube.com/watch?v=36dVps_bZOQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:4JTFfORQ4nY": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "4fc5cf887f4dcc14049c78737a6ad2561d0e2f78",
     "date_modified": null,
     "date_published": "2026-09-24T14:00:16+00:00",
@@ -82,7 +82,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-4jtfforq4ny-7f69fda7",
-    "last_ai_attempt": "2026-09-24T23:12:26.550907+00:00",
+    "last_ai_attempt": "2026-09-25T11:41:10.119894+00:00",
     "pagina": "noticias/asi-lo-vivi-con-sete-fernandez.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=4JTFfORQ4nY"
@@ -875,7 +875,7 @@
     "source_url": "https://www.youtube.com/watch?v=lGNfoNcQBA0"
   },
   "guid:atv-alhaurin-youtube:yt:video:lbt79XPIZh4": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "f60063f2fe249cf9eab6baed6b82cd050d99916c",
     "date_modified": null,
     "date_published": "2026-09-24T12:22:09+00:00",
@@ -888,7 +888,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-lbt79xpizh4-86af3fe4",
-    "last_ai_attempt": "2026-09-24T23:12:44.033131+00:00",
+    "last_ai_attempt": "2026-09-25T11:41:27.076560+00:00",
     "pagina": "noticias/segunda-fase-1-8-millones-el-ayuntamiento-anuncia-que-solicitara-1-8-millones-de-euros.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=lbt79XPIZh4"
@@ -1330,7 +1330,7 @@
     "source_url": "https://alhaurinelgrande.es/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena-de-iniciativas-para-todos-los-publicos/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224797": {
-    "ai_attempts": 8,
+    "ai_attempts": 9,
     "content_hash": "c41a7e1ccc27e2a808c356d9521d3a6cf13e52b8",
     "date_modified": null,
     "date_published": "2026-09-21T10:53:44+00:00",
@@ -1343,13 +1343,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22479-ac4bfe3c",
-    "last_ai_attempt": "2026-09-24T23:09:13.939993+00:00",
+    "last_ai_attempt": "2026-09-25T11:38:47.530766+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora-de-la-carretera-de-villa-del-guadalhorce/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224804": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "b25cb4dd1adca941e12b50ec3673364067ec438b",
     "date_modified": null,
     "date_published": "2026-09-24T07:04:40+00:00",
@@ -1362,10 +1362,48 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22480-31756922",
-    "last_ai_attempt": "2026-09-24T23:08:53.925850+00:00",
+    "last_ai_attempt": "2026-09-25T11:38:28.562588+00:00",
     "pagina": "noticias/la-exposicion-que-podra-visitarse-hasta-el-3-de-octubre-reune-la-obra-de-cinco-artistas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-entre-el-aire-impaciente-una-muestra-de-jovenes-de-la-fundacion-antonio-gala/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224814": {
+    "ai_attempts": 1,
+    "content_hash": "5b946ac5995ab1589d09f0f9da4a035f547f67ec",
+    "date_modified": null,
+    "date_published": "2026-09-25T07:50:49+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El galardón, impulsado por el Ayuntamiento de Alhaurín el Grande junto a la Universidad de Málaga y la Asociación de la Prensa de Málaga, distingue un trabajo de calidad periodística.",
+      "descripcion": "El galardón, impulsado por el Ayuntamiento de Alhaurín el Grande junto a la Universidad de Málaga y la Asociación de la Prensa de Málaga, distingue un trabajo de calidad periodística.",
+      "seo_keywords": [],
+      "titulo": "El documental sonoro «Hotel Baixamar, el refugio de Malí en Sanxenxo», del periodista"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22481-f0ebf144",
+    "last_ai_attempt": "2026-09-25T11:38:09.941700+00:00",
+    "pagina": "noticias/el-documental-sonoro-hotel-baixamar-el-refugio-de-mali-en-sanxenxo-del-periodista.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/el-documental-sonoro-hotel-baixamar-el-refugio-de-mali-en-sanxenxo-del-periodista-daniel-sousa-rodriguez-gana-el-i-premio-de-periodismo-mejor-documental-sonoro-alejo-garcia/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224820": {
+    "ai_attempts": 1,
+    "content_hash": "674e71cf2df944698860a2fc3ee27bb599dedb1e",
+    "date_modified": null,
+    "date_published": "2026-09-25T10:50:22+00:00",
+    "editorial": {
+      "categoria": "Obras y Servicios",
+      "cuerpo": "Los trabajos, que comenzarán la próxima semana, permitirán recuperar la estabilidad del camino y mejorar el encauzamiento de las aguas en este punto. La concejala de Obras Públicas, Teresa Sánchez,.",
+      "descripcion": "Los trabajos, que comenzarán la próxima semana, permitirán recuperar la estabilidad del camino y mejorar el encauzamiento de las aguas en este punto. La concejala de Obras Públicas, Teresa Sánchez,.",
+      "seo_keywords": [],
+      "titulo": "El camino Bueyes Borrajo permanecerá cortado al tráfico durante tres semanas por las obras"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22482-5c903cc6",
+    "last_ai_attempt": "2026-09-25T11:37:49.283654+00:00",
+    "pagina": "noticias/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras-de-reparacion-de-la-escollera-y-el-firme/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -1638,6 +1676,25 @@
     "pagina": "noticias/la-policia-local-de-alhaurin-el-grande-estrena-vehiculo-doce-anos-despues-de-la-ultima.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.diariosur.es/interior/policia-local-alhaurin-grande-estrena-vehiculo-doce-20260920184121-nt.html"
+  },
+  "guid:diario-sur-malaga:https://www.diariosur.es/malaga/diputacion-malaga-pone-foco-arreglo-carriles-interior-20260925111442-nt.html": {
+    "ai_attempts": 1,
+    "content_hash": "3cb3b3c36705c06d87a0e8a1fb275292bdf0efd9",
+    "date_modified": null,
+    "date_published": "2026-09-25T09:14:42+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El plan Vía-ble acondicionará varias vías secundarias en Alhaurín el Grande, Coín, Igualeja, Teba y Vélez-Málaga con 5,2 millones de euros.",
+      "descripcion": "El plan Vía-ble acondicionará varias vías secundarias en Alhaurín el Grande, Coín, Igualeja, Teba y Vélez-Málaga con 5,2 millones de euros.",
+      "seo_keywords": [],
+      "titulo": "El plan Vía-ble acondicionará varias vías secundarias en Alhaurín el Grande, Coín"
+    },
+    "ia_exitosa": false,
+    "id": "guid-diario-sur-malaga-https-www-diariosur-es-malaga-diputacion-malaga-05382dbc",
+    "last_ai_attempt": "2026-09-25T11:39:09.125664+00:00",
+    "pagina": "noticias/el-plan-via-ble-acondicionara-varias-vias-secundarias-en-alhaurin-el-grande-coin.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.diariosur.es/malaga/diputacion-malaga-pone-foco-arreglo-carriles-interior-20260925111442-nt.html"
   },
   "guid:diario-sur-malaga:https://www.diariosur.es/malaga/exodo-crisis-vivienda-malaga-dispara-precios-guadalhorce-20260902002610-nt.html": {
     "ai_attempts": 0,
@@ -2056,6 +2113,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/"
   },
+  "guid:fedelhorce:https://fedelhorce.es/?p=261433": {
+    "ai_attempts": 1,
+    "content_hash": "b04dc2a32bbe86430520d91b4c586e7b2190afd9",
+    "date_modified": null,
+    "date_published": "2026-09-25T10:00:35+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Todo lo que debes saber sobre VeriFactu y facturación electrónica: aquí tienes un resumen de la MasterClass.",
+      "descripcion": "Todo lo que debes saber sobre VeriFactu y facturación electrónica: aquí tienes un resumen de la MasterClass.",
+      "seo_keywords": [],
+      "titulo": "Conclusiones MasterClass en Coín"
+    },
+    "ia_exitosa": false,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-261433-d73fbcdb",
+    "last_ai_attempt": "2026-09-25T11:44:09.147307+00:00",
+    "pagina": "noticias/conclusiones-masterclass-en-coin.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"
+  },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=33600": {
     "ai_attempts": 0,
     "content_hash": "467afbe83c8cfda0de59829b4684d407f1f0fe04",
@@ -2302,7 +2378,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34193": {
-    "ai_attempts": 8,
+    "ai_attempts": 9,
     "content_hash": "9ebffc64945f1a817b3ee731960a7072953139c1",
     "date_modified": null,
     "date_published": "2026-09-21T11:16:42+00:00",
@@ -2315,7 +2391,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-793c2c53",
-    "last_ai_attempt": "2026-09-24T23:10:00.129701+00:00",
+    "last_ai_attempt": "2026-09-25T11:39:33.657404+00:00",
     "pagina": "noticias/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34193/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen/"
@@ -2530,6 +2606,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html"
   },
+  "guid:malaga-hoy:https://www.malagahoy.es/provincia/diputacion-malaga-planea-invertir-5_0_2008067993.html": {
+    "ai_attempts": 1,
+    "content_hash": "1cd9d8cb2fd7f4a4ae55c72d1832d618ebc45929",
+    "date_modified": null,
+    "date_published": "2026-09-25T11:03:23+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Alhaurín el Grande, Coín, Igualeja, Teba y Vélez-Málaga serán las localidades donde se actuará por medio de cinco nuevos proyectos del Plan Vía-ble, pensado para adecuar caminos y conectar pueblos La Diputación activa un nuevo plan de 32 millones par.",
+      "descripcion": "Alhaurín el Grande, Coín, Igualeja, Teba y Vélez-Málaga serán las localidades donde se actuará por medio de cinco nuevos proyectos del Plan Vía-ble, pensado para adecuar caminos y conectar pueblos La Diputación activa un nuevo.",
+      "seo_keywords": [],
+      "titulo": "Diputación de Málaga invertirá 5,2 millones de euros para mejorar la movilidad interior"
+    },
+    "ia_exitosa": false,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-diputacion-malaga-pla-e07c5bd8",
+    "last_ai_attempt": "2026-09-25T11:45:24.898420+00:00",
+    "pagina": "noticias/diputacion-de-malaga-invertira-5-2-millones-de-euros-para-mejorar-la-movilidad-interior.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/provincia/diputacion-malaga-planea-invertir-5_0_2008067993.html"
+  },
   "guid:malaga-hoy:https://www.malagahoy.es/provincia/muere-joven-19-anos-salirse_0_2008012355.html": {
     "ai_attempts": 3,
     "content_hash": "57b7d5731e3583f6b4f3321b91552d1fafff32e9",
@@ -2548,6 +2643,25 @@
     "pagina": "noticias/muere-un-joven-de-19-anos-tras-salirse-su-coche-de-la-carretera-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/provincia/muere-joven-19-anos-salirse_0_2008012355.html"
+  },
+  "guid:malaga-hoy:https://www.malagahoy.es/provincia/tercer-tiroteo-malaga-semana-deja-dos-heridos-bala-alhaurin-grande_0_2008066060.html": {
+    "ai_attempts": 1,
+    "content_hash": "a3d240068e1641d8fb19e2f759fa6672138b229c",
+    "date_modified": null,
+    "date_published": "2026-09-25T07:57:38+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "Hay tres detenidos relacionados con los hechos ocurridos el pasado domingo 20 de septiembre en la localidad malagueña Encargar un crimen cuesta entre 5.000 y 10.000 euros, menos que un kilo de cocaína.",
+      "descripcion": "Hay tres detenidos relacionados con los hechos ocurridos el pasado domingo 20 de septiembre en la localidad malagueña Encargar un crimen cuesta entre 5.000 y 10.000 euros, menos que un kilo de cocaína.",
+      "seo_keywords": [],
+      "titulo": "El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-tercer-tiroteo-malaga-037623b4",
+    "last_ai_attempt": "2026-09-25T11:45:08.645734+00:00",
+    "pagina": "noticias/el-tercer-tiroteo-en-malaga-en-una-semana-deja-dos-heridos-de-bala-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/provincia/tercer-tiroteo-malaga-semana-deja-dos-heridos-bala-alhaurin-grande_0_2008066060.html"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/09/17/modernizacion-de-la-policia-local-en-alhaurin-con-nuevo-vehiculo-hibrido": {
     "ai_attempts": 3,
@@ -2605,6 +2719,25 @@
     "pagina": "noticias/subvencion-de-1-4-millones-para-mejorar-la-carretera-de-villa-del-guadalhorce.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/21/subvencion-de-14-millones-para-mejorar-la-carretera-de-villa-del-guadalhorce/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/09/25/premio-de-periodismo-sonoro-impulsando-la-calidad-y-la-inclusion": {
+    "ai_attempts": 1,
+    "content_hash": "a1a00ea03b07297c9398c9b043f394e7a3ab871a",
+    "date_modified": null,
+    "date_published": "2026-09-25T08:30:55+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 59 segundosEl galardón, promovido por el Ayuntamiento de Alhaurín el Grande, la Universidad de Málaga y la Asociación de la Prensa de Málaga, tiene como objetivo distinguir un trabajo periodístico de calidad que enfatiza la convivencia y la inclusión, ofreciendo una visión que se aleja de la polarización en La entrada Premio de periodismo sonoro «Alejo García»: impulsando la.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 59 segundosEl galardón, promovido por el Ayuntamiento de Alhaurín el Grande, la Universidad de Málaga y la Asociación de la Prensa de Málaga, tiene como objetivo distinguir un trabajo.",
+      "seo_keywords": [],
+      "titulo": "Premio de periodismo sonoro «Alejo García»: impulsando la calidad y la inclusión"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-82c02a5c",
+    "last_ai_attempt": "2026-09-25T11:46:07.228674+00:00",
+    "pagina": "noticias/premio-de-periodismo-sonoro-alejo-garcia-impulsando-la-calidad-y-la-inclusion.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/25/premio-de-periodismo-sonoro-impulsando-la-calidad-y-la-inclusion/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,
@@ -2983,6 +3116,25 @@
     "pagina": "noticias/tiempo-de-lectura-aprox-1-minutos-9-segundosla-formacion-se-desarrollara-los-sabados-3.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/22/la-asociacion-amigos-del-vino-organiza-un-curso-de-iniciacion-a-la-cata-en-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=209383": {
+    "ai_attempts": 1,
+    "content_hash": "f439864816595c38865cf4f476320bc8493856fe",
+    "date_modified": null,
+    "date_published": "2026-09-25T09:01:01+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "Tiempo de lectura aprox: 47 segundosLa investigación apunta a un posible enfrentamiento relacionado con un robo de droga La Guardia Civil ha arrestado a tres personas por su presunta implicación en un incidente con armas de fuego registrado el pasado fin de semana en Alhaurín el Grande, que dejó a dos personas heridas por impactos La entrada Tres arrestados tras un tiroteo que dejó dos heridos en Alhaurín el Grande.",
+      "descripcion": "Tiempo de lectura aprox: 47 segundosLa investigación apunta a un posible enfrentamiento relacionado con un robo de droga La Guardia Civil ha arrestado a tres personas por su presunta implicación en un incidente con armas de fuego.",
+      "seo_keywords": [],
+      "titulo": "Tres arrestados tras un tiroteo que dejó dos heridos en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-87a3bff5",
+    "last_ai_attempt": "2026-09-25T11:45:48.705504+00:00",
+    "pagina": "noticias/tres-arrestados-tras-un-tiroteo-que-dejo-dos-heridos-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/09/25/tres-arrestados-tras-un-tiroteo-que-dejo-dos-heridos-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
@@ -3410,7 +3562,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50640": {
-    "ai_attempts": 8,
+    "ai_attempts": 9,
     "content_hash": "80f0410b4b00cc0f94dd044b8595a8a23ee3e3eb",
     "date_modified": null,
     "date_published": "2026-09-21T12:13:32+00:00",
@@ -3423,7 +3575,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
-    "last_ai_attempt": "2026-09-24T23:11:11.635694+00:00",
+    "last_ai_attempt": "2026-09-25T11:39:55.687846+00:00",
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"

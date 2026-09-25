@@ -46,7 +46,7 @@
     "source_url": "https://www.youtube.com/watch?v=1t--wq018oc"
   },
   "guid:atv-alhaurin-youtube:yt:video:1zJjyGYn2So": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "e77bc5722f4c05dad9385be55559717fe2d1f6d8",
     "date_modified": null,
     "date_published": "2026-09-25T12:02:06+00:00",
@@ -59,7 +59,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-1zjjygyn2so-0529d76f",
-    "last_ai_attempt": "2026-09-25T17:05:48.383805+00:00",
+    "last_ai_attempt": "2026-09-25T21:27:17.923870+00:00",
     "pagina": "noticias/premio-alejo-garcia-2026-daniel-sousa-rodriguez-gana-el-primer-premio-de-periodismo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=1zJjyGYn2So"
@@ -600,7 +600,7 @@
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
   },
   "guid:atv-alhaurin-youtube:yt:video:_LdSG3pRubI": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "2c1b428868a341a6c506dbea37f3d4f578ad3624",
     "date_modified": null,
     "date_published": "2026-09-25T14:00:14+00:00",
@@ -613,7 +613,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ldsg3prubi-0104f7ed",
-    "last_ai_attempt": "2026-09-25T17:05:29.389140+00:00",
+    "last_ai_attempt": "2026-09-25T21:26:59.493226+00:00",
     "pagina": "noticias/presentacion-del-centro-comercial-abierto-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=_LdSG3pRubI"
@@ -913,7 +913,7 @@
     "source_url": "https://www.youtube.com/watch?v=lGNfoNcQBA0"
   },
   "guid:atv-alhaurin-youtube:yt:video:lbt79XPIZh4": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "f60063f2fe249cf9eab6baed6b82cd050d99916c",
     "date_modified": null,
     "date_published": "2026-09-24T12:22:09+00:00",
@@ -926,7 +926,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-lbt79xpizh4-86af3fe4",
-    "last_ai_attempt": "2026-09-25T11:41:27.076560+00:00",
+    "last_ai_attempt": "2026-09-25T21:27:36.325799+00:00",
     "pagina": "noticias/segunda-fase-1-8-millones-el-ayuntamiento-anuncia-que-solicitara-1-8-millones-de-euros.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=lbt79XPIZh4"
@@ -1406,7 +1406,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-entre-el-aire-impaciente-una-muestra-de-jovenes-de-la-fundacion-antonio-gala/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224814": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "5b946ac5995ab1589d09f0f9da4a035f547f67ec",
     "date_modified": null,
     "date_published": "2026-09-25T07:50:49+00:00",
@@ -1419,13 +1419,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22481-f0ebf144",
-    "last_ai_attempt": "2026-09-25T17:00:36.613302+00:00",
+    "last_ai_attempt": "2026-09-25T21:25:30.428158+00:00",
     "pagina": "noticias/el-documental-sonoro-hotel-baixamar-el-refugio-de-mali-en-sanxenxo-del-periodista.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-documental-sonoro-hotel-baixamar-el-refugio-de-mali-en-sanxenxo-del-periodista-daniel-sousa-rodriguez-gana-el-i-premio-de-periodismo-mejor-documental-sonoro-alejo-garcia/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224820": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "674e71cf2df944698860a2fc3ee27bb599dedb1e",
     "date_modified": null,
     "date_published": "2026-09-25T10:50:22+00:00",
@@ -1438,7 +1438,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22482-5c903cc6",
-    "last_ai_attempt": "2026-09-25T17:00:17.240618+00:00",
+    "last_ai_attempt": "2026-09-25T21:25:11.517781+00:00",
     "pagina": "noticias/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras-de-reparacion-de-la-escollera-y-el-firme/"
@@ -2152,7 +2152,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261433": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "b04dc2a32bbe86430520d91b4c586e7b2190afd9",
     "date_modified": null,
     "date_published": "2026-09-25T10:00:35+00:00",
@@ -2165,7 +2165,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261433-d73fbcdb",
-    "last_ai_attempt": "2026-09-25T17:08:16.842187+00:00",
+    "last_ai_attempt": "2026-09-25T21:29:49.045342+00:00",
     "pagina": "noticias/conclusiones-masterclass-en-coin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"
@@ -2645,7 +2645,7 @@
     "source_url": "https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/provincia/diputacion-malaga-planea-invertir-5_0_2008067993.html": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "1cd9d8cb2fd7f4a4ae55c72d1832d618ebc45929",
     "date_modified": null,
     "date_published": "2026-09-25T11:03:23+00:00",
@@ -2658,7 +2658,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-diputacion-malaga-pla-e07c5bd8",
-    "last_ai_attempt": "2026-09-25T17:10:32.161412+00:00",
+    "last_ai_attempt": "2026-09-25T21:31:23.109855+00:00",
     "pagina": "noticias/diputacion-de-malaga-invertira-5-2-millones-de-euros-para-mejorar-la-movilidad-interior.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/provincia/diputacion-malaga-planea-invertir-5_0_2008067993.html"
@@ -2683,7 +2683,7 @@
     "source_url": "https://www.malagahoy.es/provincia/muere-joven-19-anos-salirse_0_2008012355.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/provincia/tercer-tiroteo-malaga-semana-deja-dos-heridos-bala-alhaurin-grande_0_2008066060.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "31153bf776a28ca40ee9c88834fb78d5ccc5b257",
     "date_modified": "2026-09-25T17:14:01.017484+00:00",
     "date_published": "2026-09-25T07:57:38+00:00",
@@ -2696,7 +2696,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-tercer-tiroteo-malaga-037623b4",
-    "last_ai_attempt": "2026-09-25T17:10:14.278711+00:00",
+    "last_ai_attempt": "2026-09-25T21:31:04.995121+00:00",
     "pagina": "noticias/el-tercer-tiroteo-en-malaga-en-una-semana-deja-dos-heridos-de-bala-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/provincia/tercer-tiroteo-malaga-semana-deja-dos-heridos-bala-alhaurin-grande_0_2008066060.html"
@@ -3175,7 +3175,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/09/25/tres-arrestados-tras-un-tiroteo-que-dejo-dos-heridos-en-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=209433": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "85734d9c43ae0ce5266ce32721254474389a26a9",
     "date_modified": null,
     "date_published": "2026-09-25T15:26:08+00:00",
@@ -3188,7 +3188,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-da4c41e1",
-    "last_ai_attempt": "2026-09-25T17:10:57.012611+00:00",
+    "last_ai_attempt": "2026-09-25T21:31:48.005910+00:00",
     "pagina": "noticias/vox-reitera-su-exigencia-de-medidas-de-seguridad-en-alhaurin-el-grande-tras-un-tiroteo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/25/vox-reitera-su-exigencia-de-medidas-de-seguridad-en-alhaurin-el-grande-tras-un-tiroteo-con-dos-heridos/"

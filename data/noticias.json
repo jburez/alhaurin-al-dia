@@ -1,5 +1,24 @@
 [
     {
+        "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-cantidad-calibre-mang-f3e5b6d4",
+        "titulo": "Menos cantidad pero más calibre: el mango encara una campaña de gran calidad en Málaga",
+        "titulo_original": "Menos cantidad pero más calibre: el mango encara una campaña de gran calidad en Málaga",
+        "descripcion": "Agricultores y empresas prevén hasta un 30% menos de cosecha, compensada por la tregua hídrica y un mayor tamaño El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande.",
+        "resumen": "Agricultores y empresas prevén hasta un 30% menos de cosecha, compensada por la tregua hídrica y un mayor tamaño El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande.",
+        "cuerpo": "Agricultores y empresas prevén hasta un 30% menos de cosecha, compensada por la tregua hídrica y un mayor tamaño El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande.",
+        "fecha": "2026-09-26T05:01:03+00:00",
+        "fuente": "Málaga Hoy",
+        "categoria": "Comercio y Empresa",
+        "categoria_url": "categoria/comercio-y-empresa/",
+        "seo_keywords": [],
+        "enlace": "https://www.malagahoy.es/provincia/cantidad-calibre-mango-encara-campana-malaga_0_2008069411.html",
+        "url": "https://www.malagahoy.es/provincia/cantidad-calibre-mango-encara-campana-malaga_0_2008069411.html",
+        "imagen": "https://static.grupojoly.com/clip/e930faae-13c3-4f4b-9656-bd25c1ba12d1_source-aspect-ratio_default_0.jpg",
+        "prioridad": 95,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/menos-cantidad-pero-mas-calibre-el-mango-encara-una-campana-de-gran-calidad-en-malaga.html"
+    },
+    {
         "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-da4c41e1",
         "titulo": "VOX reitera su exigencia de medidas de seguridad en Alhaurín el Grande tras un tiroteo",
         "titulo_original": "VOX reitera su exigencia de medidas de seguridad en Alhaurín el Grande tras un tiroteo con dos heridos",
@@ -57,25 +76,6 @@
         "pagina": "noticias/premio-alejo-garcia-2026-daniel-sousa-rodriguez-gana-el-primer-premio-de-periodismo.html"
     },
     {
-        "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-diputacion-malaga-pla-e07c5bd8",
-        "titulo": "Diputación de Málaga invertirá 5,2 millones de euros para mejorar la movilidad interior",
-        "titulo_original": "Diputación de Málaga invertirá 5,2 millones de euros para mejorar la movilidad interior",
-        "descripcion": "Alhaurín el Grande, Coín, Igualeja, Teba y Vélez-Málaga serán las localidades donde se actuará por medio de cinco nuevos proyectos del Plan Vía-ble, pensado para adecuar caminos y conectar pueblos La Diputación activa un nuevo.",
-        "resumen": "Alhaurín el Grande, Coín, Igualeja, Teba y Vélez-Málaga serán las localidades donde se actuará por medio de cinco nuevos proyectos del Plan Vía-ble, pensado para adecuar caminos y conectar pueblos La Diputación activa un nuevo.",
-        "cuerpo": "Alhaurín el Grande, Coín, Igualeja, Teba y Vélez-Málaga serán las localidades donde se actuará por medio de cinco nuevos proyectos del Plan Vía-ble, pensado para adecuar caminos y conectar pueblos La Diputación activa un nuevo plan de 32 millones par.",
-        "fecha": "2026-09-25T11:03:23+00:00",
-        "fuente": "Málaga Hoy",
-        "categoria": "Actualidad",
-        "categoria_url": "categoria/actualidad/",
-        "seo_keywords": [],
-        "enlace": "https://www.malagahoy.es/provincia/diputacion-malaga-planea-invertir-5_0_2008067993.html",
-        "url": "https://www.malagahoy.es/provincia/diputacion-malaga-planea-invertir-5_0_2008067993.html",
-        "imagen": "https://static.grupojoly.com/clip/78332f83-c74d-4104-af22-138411a7dbd1_source-aspect-ratio_default_0.jpg",
-        "prioridad": 95,
-        "requiere_revision_geografica": true,
-        "pagina": "noticias/diputacion-de-malaga-invertira-5-2-millones-de-euros-para-mejorar-la-movilidad-interior.html"
-    },
-    {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22482-5c903cc6",
         "titulo": "El camino Bueyes Borrajo permanecerá cortado al tráfico durante tres semanas por las obras",
         "titulo_original": "El camino Bueyes Borrajo permanecerá cortado al tráfico durante tres semanas por las obras de reparación de la escollera y el firme",
@@ -112,25 +112,6 @@
         "prioridad": 85,
         "requiere_revision_geografica": false,
         "pagina": "noticias/conclusiones-masterclass-en-coin.html"
-    },
-    {
-        "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-tercer-tiroteo-malaga-037623b4",
-        "titulo": "El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande",
-        "titulo_original": "El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande",
-        "descripcion": "Hay tres detenidos, que han ingresado en prisión provisional, pero el autor o autores de los disparos siguen en busca Encargar un crimen cuesta entre 5.000 y 10.000 euros, menos que un kilo de cocaína.",
-        "resumen": "Hay tres detenidos, que han ingresado en prisión provisional, pero el autor o autores de los disparos siguen en busca Encargar un crimen cuesta entre 5.000 y 10.000 euros, menos que un kilo de cocaína.",
-        "cuerpo": "Hay tres detenidos, que han ingresado en prisión provisional, pero el autor o autores de los disparos siguen en busca Encargar un crimen cuesta entre 5.000 y 10.000 euros, menos que un kilo de cocaína.",
-        "fecha": "2026-09-25T07:57:38+00:00",
-        "fuente": "Málaga Hoy",
-        "categoria": "Sucesos",
-        "categoria_url": "categoria/sucesos/",
-        "seo_keywords": [],
-        "enlace": "https://www.malagahoy.es/provincia/tercer-tiroteo-malaga-semana-deja-dos-heridos-bala-alhaurin-grande_0_2008066060.html",
-        "url": "https://www.malagahoy.es/provincia/tercer-tiroteo-malaga-semana-deja-dos-heridos-bala-alhaurin-grande_0_2008066060.html",
-        "imagen": "https://static.grupojoly.com/clip/75f74ad5-da7b-4aa3-88a1-66d23d041bc9_source-aspect-ratio_default_0.jpg",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/el-tercer-tiroteo-en-malaga-en-una-semana-deja-dos-heridos-de-bala-en-alhaurin-el-grande.html"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22481-f0ebf144",
@@ -188,25 +169,6 @@
         "prioridad": 90,
         "requiere_revision_geografica": false,
         "pagina": "noticias/inicio-de-la-campana-de-la-aceituna-alorena-2026.html"
-    },
-    {
-        "id": "guid-fedelhorce-https-fedelhorce-es-p-261393-642d2215",
-        "titulo": "Conclusiones Networking para emprendedores",
-        "titulo_original": "Conclusiones Networking para emprendedores | Teoría del Color",
-        "descripcion": "Aquí tienes un resumen del Networking para Emprendedores celebrado en Almáchar.",
-        "resumen": "Aquí tienes un resumen del Networking para Emprendedores celebrado en Almáchar.",
-        "cuerpo": "Aquí tienes un resumen del Networking para Emprendedores celebrado en Almáchar.",
-        "fecha": "2026-09-24T10:00:26+00:00",
-        "fuente": "Fedelhorce",
-        "categoria": "Comercio y Empresa",
-        "categoria_url": "categoria/comercio-y-empresa/",
-        "seo_keywords": [],
-        "enlace": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/",
-        "url": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/09/Destacada-teoria-del-color-almachar.png",
-        "prioridad": 85,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/conclusiones-networking-para-emprendedores.html"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-c9790510",

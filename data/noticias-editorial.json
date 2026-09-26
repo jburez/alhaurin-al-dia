@@ -46,7 +46,7 @@
     "source_url": "https://www.youtube.com/watch?v=1t--wq018oc"
   },
   "guid:atv-alhaurin-youtube:yt:video:1zJjyGYn2So": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "e77bc5722f4c05dad9385be55559717fe2d1f6d8",
     "date_modified": null,
     "date_published": "2026-09-25T12:02:06+00:00",
@@ -59,7 +59,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-1zjjygyn2so-0529d76f",
-    "last_ai_attempt": "2026-09-25T21:27:17.923870+00:00",
+    "last_ai_attempt": "2026-09-26T07:31:32.275787+00:00",
     "pagina": "noticias/premio-alejo-garcia-2026-daniel-sousa-rodriguez-gana-el-primer-premio-de-periodismo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=1zJjyGYn2So"
@@ -600,7 +600,7 @@
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
   },
   "guid:atv-alhaurin-youtube:yt:video:_LdSG3pRubI": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "2c1b428868a341a6c506dbea37f3d4f578ad3624",
     "date_modified": null,
     "date_published": "2026-09-25T14:00:14+00:00",
@@ -613,7 +613,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ldsg3prubi-0104f7ed",
-    "last_ai_attempt": "2026-09-25T21:26:59.493226+00:00",
+    "last_ai_attempt": "2026-09-26T07:31:14.327919+00:00",
     "pagina": "noticias/presentacion-del-centro-comercial-abierto-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=_LdSG3pRubI"
@@ -1273,7 +1273,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-el-inicio-de-la-campana-26-27-de-la-dop-aceituna-alorena-de-malaga/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224741": {
-    "ai_attempts": 21,
+    "ai_attempts": 22,
     "content_hash": "62ef758557c18a5e2102bb20d88a8e0c01e887ce",
     "date_modified": null,
     "date_published": "2026-09-14T09:06:26+00:00",
@@ -1286,13 +1286,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22474-4e4b70ca",
-    "last_ai_attempt": "2026-09-25T17:02:14.290748+00:00",
+    "last_ai_attempt": "2026-09-26T07:28:11.075453+00:00",
     "pagina": "noticias/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-vuelve-a-convertirse-este-sabado-en-punto-de-encuentro-para-el-sector-de-las-bodas/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224751": {
-    "ai_attempts": 19,
+    "ai_attempts": 20,
     "content_hash": "f11d2af1fe6c4735a871ef289af0cae71e7befc9",
     "date_modified": null,
     "date_published": "2026-09-15T13:07:50+00:00",
@@ -1305,13 +1305,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-f40a90e0",
-    "last_ai_attempt": "2026-09-25T17:01:55.005943+00:00",
+    "last_ai_attempt": "2026-09-26T07:27:51.697650+00:00",
     "pagina": "noticias/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-aprueba-el-plan-contra-el-cambio-climatico-en-el-pleno-municipal-ademas-de-corroborar-la-buena-salud-financiera/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224755": {
-    "ai_attempts": 16,
+    "ai_attempts": 17,
     "content_hash": "e4e4ca1978b5f7537376d6c2a5de600290bb855b",
     "date_modified": null,
     "date_published": "2026-09-17T08:54:00+00:00",
@@ -1324,13 +1324,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22475-1db24bee",
-    "last_ai_attempt": "2026-09-25T17:01:35.350867+00:00",
+    "last_ai_attempt": "2026-09-26T07:27:33.529079+00:00",
     "pagina": "noticias/el-alcalde-anthony-bermudez-destaca-en-el-foro-de-alcaldes-y-alcaldesas-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-plantea-soluciones-para-el-area-metropolitana-ante-el-crecimiento-del-valle-del-guadalhorce/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224774": {
-    "ai_attempts": 16,
+    "ai_attempts": 17,
     "content_hash": "36c693b15a9c0ecde08e432736a153cbc20e4f7a",
     "date_modified": null,
     "date_published": "2026-09-17T12:36:05+00:00",
@@ -1343,13 +1343,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22477-438e5ede",
-    "last_ai_attempt": "2026-09-25T17:01:15.466210+00:00",
+    "last_ai_attempt": "2026-09-26T07:27:15.905802+00:00",
     "pagina": "noticias/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-incorpora-un-nuevo-vehiculo-hibrido-de-ultima-generacion-a-la-policia-local-de-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224781": {
-    "ai_attempts": 14,
+    "ai_attempts": 15,
     "content_hash": "5720ebc37b604a3f1dea523b0f75b15c94ebdce9",
     "date_modified": null,
     "date_published": "2026-09-18T12:50:17+00:00",
@@ -1362,7 +1362,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22478-d021a974",
-    "last_ai_attempt": "2026-09-25T17:00:57.331393+00:00",
+    "last_ai_attempt": "2026-09-26T07:26:56.055548+00:00",
     "pagina": "noticias/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena-de-iniciativas-para-todos-los-publicos/"
@@ -1406,7 +1406,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-entre-el-aire-impaciente-una-muestra-de-jovenes-de-la-fundacion-antonio-gala/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224814": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "5b946ac5995ab1589d09f0f9da4a035f547f67ec",
     "date_modified": null,
     "date_published": "2026-09-25T07:50:49+00:00",
@@ -1419,13 +1419,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22481-f0ebf144",
-    "last_ai_attempt": "2026-09-25T21:25:30.428158+00:00",
+    "last_ai_attempt": "2026-09-26T07:26:36.851593+00:00",
     "pagina": "noticias/el-documental-sonoro-hotel-baixamar-el-refugio-de-mali-en-sanxenxo-del-periodista.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-documental-sonoro-hotel-baixamar-el-refugio-de-mali-en-sanxenxo-del-periodista-daniel-sousa-rodriguez-gana-el-i-premio-de-periodismo-mejor-documental-sonoro-alejo-garcia/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224820": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "674e71cf2df944698860a2fc3ee27bb599dedb1e",
     "date_modified": null,
     "date_published": "2026-09-25T10:50:22+00:00",
@@ -1438,7 +1438,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22482-5c903cc6",
-    "last_ai_attempt": "2026-09-25T21:25:11.517781+00:00",
+    "last_ai_attempt": "2026-09-26T07:26:16.477219+00:00",
     "pagina": "noticias/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras-de-reparacion-de-la-escollera-y-el-firme/"
@@ -2152,7 +2152,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261433": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "b04dc2a32bbe86430520d91b4c586e7b2190afd9",
     "date_modified": null,
     "date_published": "2026-09-25T10:00:35+00:00",
@@ -2165,7 +2165,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261433-d73fbcdb",
-    "last_ai_attempt": "2026-09-25T21:29:49.045342+00:00",
+    "last_ai_attempt": "2026-09-26T07:33:54.041157+00:00",
     "pagina": "noticias/conclusiones-masterclass-en-coin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"
@@ -2378,7 +2378,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34096/festividad-de-los-dolores-gloriosos-de-la-virgen-3/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34099": {
-    "ai_attempts": 18,
+    "ai_attempts": 19,
     "content_hash": "6f5e77e9d12b032b8e30cda5a00c5122b1464470",
     "date_modified": null,
     "date_published": "2026-09-16T08:37:51+00:00",
@@ -2391,13 +2391,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9682d4bd",
-    "last_ai_attempt": "2026-09-25T17:03:12.957534+00:00",
+    "last_ai_attempt": "2026-09-26T07:29:05.442399+00:00",
     "pagina": "noticias/romeria-en-honor-al-santisimo-cristo-de-las-agonias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34099/romeria-en-honor-al-santisimo-cristo-de-las-agonias/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34117": {
-    "ai_attempts": 17,
+    "ai_attempts": 18,
     "content_hash": "4d68fa63213ac6ef60bcd827df5ef7f181201fab",
     "date_modified": null,
     "date_published": "2026-09-16T11:42:08+00:00",
@@ -2410,7 +2410,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-ce74c5a5",
-    "last_ai_attempt": "2026-09-25T17:02:54.744837+00:00",
+    "last_ai_attempt": "2026-09-26T07:28:48.674699+00:00",
     "pagina": "noticias/inicio-del-taller-de-bordado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
@@ -2435,7 +2435,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34193/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34197": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "53eab867045907709a261d42685e0752e6c0f7a6",
     "date_modified": null,
     "date_published": "2026-09-24T09:10:01+00:00",
@@ -2448,7 +2448,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-c9790510",
-    "last_ai_attempt": "2026-09-25T17:02:35.896870+00:00",
+    "last_ai_attempt": "2026-09-26T07:28:31.243305+00:00",
     "pagina": "noticias/nuevo-comisario-jefe-de-la-policia-nacional-en-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34197/nuevo-comisario-jefe-de-la-policia-nacional-en-malaga/"
@@ -2624,6 +2624,25 @@
     "pagina": "noticias/el-pp-inicia-el-curso-politico-en-malaga-con-el-tradicional-acto-de-los-huevos-fritos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
+  },
+  "guid:malaga-hoy:https://www.malagahoy.es/provincia/cantidad-calibre-mango-encara-campana-malaga_0_2008069411.html": {
+    "ai_attempts": 1,
+    "content_hash": "c886e88769fc24ef55bae983cdd2d8dc581b1495",
+    "date_modified": null,
+    "date_published": "2026-09-26T05:01:03+00:00",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "Agricultores y empresas prevén hasta un 30% menos de cosecha, compensada por la tregua hídrica y un mayor tamaño El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande.",
+      "descripcion": "Agricultores y empresas prevén hasta un 30% menos de cosecha, compensada por la tregua hídrica y un mayor tamaño El tercer tiroteo en Málaga en una semana deja dos heridos de bala en Alhaurín el Grande.",
+      "seo_keywords": [],
+      "titulo": "Menos cantidad pero más calibre: el mango encara una campaña de gran calidad en Málaga"
+    },
+    "ia_exitosa": false,
+    "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-cantidad-calibre-mang-f3e5b6d4",
+    "last_ai_attempt": "2026-09-26T07:35:39.201254+00:00",
+    "pagina": "noticias/menos-cantidad-pero-mas-calibre-el-mango-encara-una-campana-de-gran-calidad-en-malaga.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.malagahoy.es/provincia/cantidad-calibre-mango-encara-campana-malaga_0_2008069411.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/provincia/conductor-fugado-atropellar-menores-patinete-alhaurin-el-grande_0_2007997591.html": {
     "ai_attempts": 3,
@@ -3175,7 +3194,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/09/25/tres-arrestados-tras-un-tiroteo-que-dejo-dos-heridos-en-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=209433": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "85734d9c43ae0ce5266ce32721254474389a26a9",
     "date_modified": null,
     "date_published": "2026-09-25T15:26:08+00:00",
@@ -3188,7 +3207,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-20-da4c41e1",
-    "last_ai_attempt": "2026-09-25T21:31:48.005910+00:00",
+    "last_ai_attempt": "2026-09-26T07:36:03.718900+00:00",
     "pagina": "noticias/vox-reitera-su-exigencia-de-medidas-de-seguridad-en-alhaurin-el-grande-tras-un-tiroteo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/25/vox-reitera-su-exigencia-de-medidas-de-seguridad-en-alhaurin-el-grande-tras-un-tiroteo-con-dos-heridos/"
@@ -3562,7 +3581,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/ii-verbena-villa-del-guadalhorce-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50631": {
-    "ai_attempts": 8,
+    "ai_attempts": 9,
     "content_hash": "c2320d1f0143fb947d6050527c7578035cb428d9",
     "date_modified": null,
     "date_published": "2026-09-21T11:36:03+00:00",
@@ -3575,13 +3594,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50631-2fc0daa4",
-    "last_ai_attempt": "2026-09-24T23:12:06.775936+00:00",
+    "last_ai_attempt": "2026-09-26T07:30:55.313883+00:00",
     "pagina": "noticias/traslado-del-cristo-de-las-agonias-hasta-la-parroquia-ntra-sra-de-la-encarnacion-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-traslado-del-cristo-de-las-agonias-hasta-la-parroquia-ntra-sra-de-la-encarnacion-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50634": {
-    "ai_attempts": 8,
+    "ai_attempts": 9,
     "content_hash": "269c2c9f30b5b3ea04200ef8dcc1e430b53cd1f1",
     "date_modified": null,
     "date_published": "2026-09-21T12:06:06+00:00",
@@ -3594,13 +3613,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50634-d07e2905",
-    "last_ai_attempt": "2026-09-24T23:11:49.629144+00:00",
+    "last_ai_attempt": "2026-09-26T07:30:37.283816+00:00",
     "pagina": "noticias/romeria-por-el-cristo-de-las-agonias-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/romeria-por-el-cristo-de-las-agonias-2026-camino-hacia-la-mota/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50637": {
-    "ai_attempts": 8,
+    "ai_attempts": 9,
     "content_hash": "22c38fb1f74c85c6c8069dcb7b26828444531efa",
     "date_modified": null,
     "date_published": "2026-09-21T12:10:08+00:00",
@@ -3613,7 +3632,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50637-26c7f153",
-    "last_ai_attempt": "2026-09-24T23:11:30.861551+00:00",
+    "last_ai_attempt": "2026-09-26T07:30:17.635534+00:00",
     "pagina": "noticias/misa-romera-y-espectaculo-ecuestre-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
@@ -3638,7 +3657,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50644": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "fa2e3fa3ed4083cf9bb63a69d90624baefba6dab",
     "date_modified": null,
     "date_published": "2026-09-24T11:05:56+00:00",
@@ -3651,13 +3670,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50644-74ca6b30",
-    "last_ai_attempt": "2026-09-25T17:04:11.938575+00:00",
+    "last_ai_attempt": "2026-09-26T07:29:59.820821+00:00",
     "pagina": "noticias/inicio-de-la-campana-de-la-aceituna-alorena-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inicio-de-la-campana-de-la-aceituna-alorena-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50647": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "60b1ab0a1621b8055e4de3c894d24dfca838f39c",
     "date_modified": null,
     "date_published": "2026-09-24T11:09:34+00:00",
@@ -3670,13 +3689,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50647-8ef1d774",
-    "last_ai_attempt": "2026-09-25T17:03:53.229320+00:00",
+    "last_ai_attempt": "2026-09-26T07:29:41.796187+00:00",
     "pagina": "noticias/misa-en-honor-a-maria-santisima-del-mayor-dolor.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/misa-en-honor-a-maria-santisima-del-mayor-dolor-festividad-dolores-gloriosos-de-maria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50650": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "6ad03721275bd46b3ae3899645b0584e26064994",
     "date_modified": null,
     "date_published": "2026-09-24T11:12:46+00:00",
@@ -3689,7 +3708,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50650-7276158c",
-    "last_ai_attempt": "2026-09-25T17:03:32.568316+00:00",
+    "last_ai_attempt": "2026-09-26T07:29:23.504722+00:00",
     "pagina": "noticias/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga-greencities-2026/"

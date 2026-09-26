@@ -1368,7 +1368,7 @@
     "source_url": "https://alhaurinelgrande.es/cultura-presenta-cuarta-estacion-una-programacion-de-calidad-y-diversa-con-una-veintena-de-iniciativas-para-todos-los-publicos/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224797": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "c41a7e1ccc27e2a808c356d9521d3a6cf13e52b8",
     "date_modified": null,
     "date_published": "2026-09-21T10:53:44+00:00",
@@ -1381,13 +1381,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22479-ac4bfe3c",
-    "last_ai_attempt": "2026-09-26T00:29:32.534314+00:00",
+    "last_ai_attempt": "2026-09-26T12:56:25.530993+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-logra-la-financiacion-para-desbloquear-la-mejora-de-la-carretera-de-villa-del-guadalhorce/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224804": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "b25cb4dd1adca941e12b50ec3673364067ec438b",
     "date_modified": null,
     "date_published": "2026-09-24T07:04:40+00:00",
@@ -1400,7 +1400,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22480-31756922",
-    "last_ai_attempt": "2026-09-26T00:29:12.127314+00:00",
+    "last_ai_attempt": "2026-09-26T12:56:05.606651+00:00",
     "pagina": "noticias/la-exposicion-que-podra-visitarse-hasta-el-3-de-octubre-reune-la-obra-de-cinco-artistas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-acoge-entre-el-aire-impaciente-una-muestra-de-jovenes-de-la-fundacion-antonio-gala/"
@@ -2416,7 +2416,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34117/inicio-del-taller-de-bordado/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34193": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "9ebffc64945f1a817b3ee731960a7072953139c1",
     "date_modified": null,
     "date_published": "2026-09-21T11:16:42+00:00",
@@ -2429,7 +2429,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-793c2c53",
-    "last_ai_attempt": "2026-09-26T00:29:55.234453+00:00",
+    "last_ai_attempt": "2026-09-26T12:56:51.843497+00:00",
     "pagina": "noticias/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34193/celebrada-la-festividad-del-dulce-nombre-de-maria-y-los-dolores-gloriosos-de-la-virgen/"
@@ -2626,7 +2626,7 @@
     "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/provincia/cantidad-calibre-mango-encara-campana-malaga_0_2008069411.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "c886e88769fc24ef55bae983cdd2d8dc581b1495",
     "date_modified": null,
     "date_published": "2026-09-26T05:01:03+00:00",
@@ -2639,7 +2639,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-provincia-cantidad-calibre-mang-f3e5b6d4",
-    "last_ai_attempt": "2026-09-26T07:35:39.201254+00:00",
+    "last_ai_attempt": "2026-09-26T13:01:35.615568+00:00",
     "pagina": "noticias/menos-cantidad-pero-mas-calibre-el-mango-encara-una-campana-de-gran-calidad-en-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/provincia/cantidad-calibre-mango-encara-campana-malaga_0_2008069411.html"
@@ -3638,7 +3638,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50640": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "80f0410b4b00cc0f94dd044b8595a8a23ee3e3eb",
     "date_modified": null,
     "date_published": "2026-09-21T12:13:32+00:00",
@@ -3651,7 +3651,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
-    "last_ai_attempt": "2026-09-26T00:30:14.978313+00:00",
+    "last_ai_attempt": "2026-09-26T12:57:11.835214+00:00",
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"

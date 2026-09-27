@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "aemet-AFAZ612903PRP12813",
+    "tipo": "meteorologico",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+    "descripcion": "Aviso de precipitación acumulada en una hora de nivel amarillo de 07:00 28-09-2026 CEST (UTC+2) a 14:59 28-09-2026 CEST (UTC+2).",
+    "fenomeno": "Lluvias",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-09-28T07:00:00+02:00",
+    "fin": "2026-09-28T14:59:00+02:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927085421_AFAZ612903PRP12813.xml",
+    "estado_ciclo_vida": "creado",
+    "actualizado_en": "2026-09-27T13:45:42+00:00",
+    "historial": []
+  }
+]

@@ -488,6 +488,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=NNzZ1413YEU"
   },
+  "guid:atv-alhaurin-youtube:yt:video:OMRlBtwG1Qw": {
+    "ai_attempts": 1,
+    "content_hash": "5086a6f48bc429858be9d9dec11357d5d3e18cde",
+    "date_modified": null,
+    "date_published": "2026-09-28T11:43:11+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del lunes 28 de septiembre de 2026 en el Informativo de ATV. 1. EQUINALH CON “CHAMO” Equinalh 2026 cerró su programación con un clínic de doma vaquera impartido por el campeón de España José Ramón Pérez García, “Chamo”, que reunió durante el fin de semana a 12 jinetes en el Recinto de La Mota y puso el broche final a un mes dedicado al mundo del caballo. 3.\n\nVERBENA “FIN DE VERANO” La Asociación Alhmer celebró el pasado viernes su Verbena de Fin de Verano en la Huerta del Jorobado, una jornada solidaria organizada junto a la Asociación El Laurel, con la colaboración del Ayuntamiento y el patrocinio de la Diputación de Málaga.",
+      "descripcion": "1. COMISIÓN VIOLENCIA DE GÉNERO El Ayuntamiento de Alhaurín el Grande promoverá la creación de una comisión local sobre violencia de género con representantes de representantes de la subdelegación del gobierno, Centro municipal.",
+      "seo_keywords": [],
+      "titulo": "Comisión violencia de género el ayuntamiento de alhaurín el grande promoverá la creación"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-omrlbtwg1qw-dee3a0ca",
+    "last_ai_attempt": "2026-09-28T13:35:43.690269+00:00",
+    "pagina": "noticias/comision-violencia-de-genero-el-ayuntamiento-de-alhaurin-el-grande-promovera-la-creacion.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=OMRlBtwG1Qw"
+  },
   "guid:atv-alhaurin-youtube:yt:video:T9pKMkAe4WU": {
     "ai_attempts": 0,
     "content_hash": "ef80c050622fed19a9a339d8fdd0674875491f77",
@@ -996,6 +1015,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=vSohImqw6SE"
   },
+  "guid:atv-alhaurin-youtube:yt:video:y83Gh2WACvo": {
+    "ai_attempts": 1,
+    "content_hash": "db17ef027be00d7e59f5e266137a9a6ace71ea97",
+    "date_modified": null,
+    "date_published": "2026-09-28T11:46:11+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Teresa Cortés se marchó a Suecia en 2016 junto a su pareja para comenzar una nueva etapa a miles de kilómetros de Alhaurín el Grande. La adaptación no fue sencilla, especialmente por las dificultades para entrar en el sistema sueco, pero con el paso de los años consiguió construir allí una nueva vida, trabajando actualmente en el sector de la limpieza.\n\nEn 2021 perdió a su pareja, un momento especialmente difícil que no le hizo abandonar Suecia. Hoy, diez años después de su llegada, Teresa asegura estar satisfecha con lo que ha conseguido y destaca especialmente la calidad de vida que ha encontrado en Malmö.\n\nAunque el vínculo con Alhaurín el Grande sigue muy presente y reconoce que echa mucho de menos su pueblo, donde, entre otras cosas, disfruta de una afición muy alhaurina: cuando vuelve, no perdona una buena jornada cogiendo aceitunas.",
+      "descripcion": "Teresa Cortés se marchó a Suecia en 2016 junto a su pareja para comenzar una nueva etapa a miles de kilómetros de Alhaurín el Grande. La adaptación no fue sencilla, especialmente por las dificultades para entrar en el sistema.",
+      "seo_keywords": [],
+      "titulo": "Pódcast Alhaurinos en el mundo"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-y83gh2wacvo-c7ae6eab",
+    "last_ai_attempt": "2026-09-28T13:35:26.085462+00:00",
+    "pagina": "noticias/podcast-alhaurinos-en-el-mundo.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=y83Gh2WACvo"
+  },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224629": {
     "ai_attempts": 0,
     "content_hash": "69bc8150b9d020b210517a760d3278876bbf78c8",
@@ -1442,6 +1480,25 @@
     "pagina": "noticias/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-camino-bueyes-borrajo-permanecera-cortado-al-trafico-durante-tres-semanas-por-las-obras-de-reparacion-de-la-escollera-y-el-firme/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224831": {
+    "ai_attempts": 1,
+    "content_hash": "d7946add8d07ef7b9bdf58049bc30c43ddf2c7f8",
+    "date_modified": null,
+    "date_published": "2026-09-28T12:27:13+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El nuevo órgano reunirá de forma coordinada a los principales agentes sociales, sanitarios, jurídicos, policiales y asistenciales implicados en la prevención y atención a las víctimas. Igualmente, se establecerán mesas.",
+      "descripcion": "El nuevo órgano reunirá de forma coordinada a los principales agentes sociales, sanitarios, jurídicos, policiales y asistenciales implicados en la prevención y atención a las víctimas. Igualmente, se establecerán mesas.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande avanza en la creación de una Comisión Local de Seguimiento"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22483-9fb4df52",
+    "last_ai_attempt": "2026-09-28T13:34:18.902127+00:00",
+    "pagina": "noticias/alhaurin-el-grande-avanza-en-la-creacion-de-una-comision-local-de-seguimiento.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-avanza-en-la-creacion-de-una-comision-local-de-seguimiento-contra-la-violencia-de-genero/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -2452,6 +2509,25 @@
     "pagina": "noticias/nuevo-comisario-jefe-de-la-policia-nacional-en-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34197/nuevo-comisario-jefe-de-la-policia-nacional-en-malaga/"
+  },
+  "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34202": {
+    "ai_attempts": 1,
+    "content_hash": "92ac9fdfb0513e82d2d09d81338abcd1a46498ee",
+    "date_modified": null,
+    "date_published": "2026-09-28T11:44:35+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "El domingo 20 de septiembre, con motivo del CVI aniversario de la fundación de La Legión Española, miembros de nuestra Junta de Gobierno, junto con hermanos y hermanas de la Real Hermandad, asistieron a los actos celebrados en los Tercios actualmente en activo, en Melilla, Viator (Almería) y Ronda (Málaga).\n\nMelilla. En el Acuartelamiento «Millán.",
+      "descripcion": "El domingo 20 de septiembre, con motivo del CVI aniversario de la fundación de La Legión Española, miembros de nuestra Junta de Gobierno, junto con hermanos y hermanas de la Real Hermandad, asistieron a los actos celebrados en.",
+      "seo_keywords": [],
+      "titulo": "Representación de nuestra Hermandad en los Tercios con motivo del CVI Aniversario"
+    },
+    "ia_exitosa": false,
+    "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-85802163",
+    "last_ai_attempt": "2026-09-28T13:34:45.350466+00:00",
+    "pagina": "noticias/representacion-de-nuestra-hermandad-en-los-tercios-con-motivo-del-cvi-aniversario.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.nuestropadrejesusnazareno.com/34202/representacion-de-nuestra-hermandad-en-los-tercios-con-motivo-del-cvi-aniversario-de-la-gloriosa-legion-espanola/"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html": {
     "ai_attempts": 0,
@@ -3712,5 +3788,24 @@
     "pagina": "noticias/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/alhaurin-el-grande-en-el-foro-de-alcaldes-del-area-metropolitana-de-malaga-greencities-2026/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50653": {
+    "ai_attempts": 1,
+    "content_hash": "b47d47d37d6aba2f0ac89a46965bc14ae9dd53c3",
+    "date_modified": null,
+    "date_published": "2026-09-28T09:32:52+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Programa especial dedicado a la presentación oficial del Centro Comercial Abierto de Alhaurín el Grande, el primero del Valle del Guadalhorce, una iniciativa impulsada por Fedelhorce en colaboración con el Ayuntamiento y reconocida por la Junta de Andalucía.\n\nLa jornada, celebrada en el marco del “Juernes Innovador”, reunió a representantes del tejido empresarial e institucional La entrada Presentación del Centro Comercial Abierto de Alhaurín el Grande | Juernes Innovador aparece en RTV Alhaurín el Grande.",
+      "descripcion": "Programa especial dedicado a la presentación oficial del Centro Comercial Abierto de Alhaurín el Grande, el primero del Valle del Guadalhorce, una iniciativa impulsada por Fedelhorce en colaboración con el Ayuntamiento y.",
+      "seo_keywords": [],
+      "titulo": "Presentación del Centro Comercial Abierto de Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50653-55dc08b3",
+    "last_ai_attempt": "2026-09-28T13:35:04.980004+00:00",
+    "pagina": "noticias/presentacion-del-centro-comercial-abierto-de-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-centro-comercial-abierto-de-alhaurin-el-grande-juernes-innovador/"
   }
 }

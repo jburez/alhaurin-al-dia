@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-28T15:56:11+02:00",
+  "actualizado": "2026-09-28T23:14:25+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "🌧️",
+    "icono": "⛅",
     "titulo": "Tiempo",
     "valor": "Máx. 25º",
-    "detalle": "Cubierto con lluvia · Máx. 25º / Mín. 18º · Lluvia 100%",
+    "detalle": "Intervalos nubosos · Máx. 25º / Mín. 18º · Lluvia 20%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "28/9",
     "t_max": "25",
     "t_min": "18",
-    "icono": "🌧️",
-    "descripcion": "Cubierto con lluvia",
-    "lluvia": "100%",
-    "viento": "SE 10 km/h",
+    "icono": "⛅",
+    "descripcion": "Intervalos nubosos",
+    "lluvia": "20%",
+    "viento": "Flojo",
     "uv": "6"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "28/9",
       "t_max": "25",
       "t_min": "18",
-      "icono": "🌧️",
-      "descripcion": "Cubierto con lluvia",
-      "lluvia": "100%",
-      "viento": "SE 10 km/h",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "20%",
+      "viento": "Flojo",
       "uv": "6"
     },
     {
@@ -47,7 +47,7 @@
       "t_min": "17",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "20%",
+      "lluvia": "10%",
       "viento": "S 10 km/h",
       "uv": "6"
     },
@@ -55,6 +55,18 @@
       "fecha": "2026-09-30",
       "dia_semana": "Miércoles",
       "fecha_corta": "30/9",
+      "t_max": "31",
+      "t_min": "19",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "0%",
+      "viento": "S 10 km/h",
+      "uv": "6"
+    },
+    {
+      "fecha": "2026-10-01",
+      "dia_semana": "Jueves",
+      "fecha_corta": "1/10",
       "t_max": "30",
       "t_min": "19",
       "icono": "☁️",
@@ -64,27 +76,15 @@
       "uv": "6"
     },
     {
-      "fecha": "2026-10-01",
-      "dia_semana": "Jueves",
-      "fecha_corta": "1/10",
-      "t_max": "30",
-      "t_min": "19",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
-      "viento": "SE 10 km/h",
-      "uv": "6"
-    },
-    {
       "fecha": "2026-10-02",
       "dia_semana": "Viernes",
       "fecha_corta": "2/10",
       "t_max": "29",
-      "t_min": "20",
+      "t_min": "19",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "80%",
-      "viento": "SE 15 km/h",
+      "descripcion": "Nuboso con lluvia",
+      "lluvia": "90%",
+      "viento": "E 15 km/h",
       "uv": "6"
     },
     {
@@ -92,10 +92,10 @@
       "dia_semana": "Sábado",
       "fecha_corta": "3/10",
       "t_max": "28",
-      "t_min": "19",
+      "t_min": "20",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia",
-      "lluvia": "95%",
+      "descripcion": "Nuboso con lluvia",
+      "lluvia": "90%",
       "viento": "SE 15 km/h",
       "uv": ""
     },
@@ -104,9 +104,9 @@
       "dia_semana": "Domingo",
       "fecha_corta": "4/10",
       "t_max": "28",
-      "t_min": "20",
+      "t_min": "19",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
+      "descripcion": "Nuboso con lluvia",
       "lluvia": "85%",
       "viento": "SE 10 km/h",
       "uv": ""
@@ -117,8 +117,8 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Desaconsejado",
-      "detalle": "Riesgo de precipitaciones"
+      "estado": "Aceptable",
+      "detalle": "Vigilar nubosidad por la tarde"
     },
     {
       "id": "coche",

@@ -802,7 +802,7 @@
     "source_url": "https://www.youtube.com/watch?v=g_jzYvj2BW8"
   },
   "guid:atv-alhaurin-youtube:yt:video:hULeurVfHhg": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "266742fed2b4f2bc5c3ae706f80188d9abd0b115",
     "date_modified": null,
     "date_published": "2026-09-29T11:19:12+00:00",
@@ -815,7 +815,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-huleurvfhhg-f1b0fe24",
-    "last_ai_attempt": "2026-09-29T16:34:01.169606+00:00",
+    "last_ai_attempt": "2026-09-29T22:08:22.152609+00:00",
     "pagina": "noticias/mejoras-en-caminos-rurales-la-concejalia-de-obras-publicas-hace-seguimiento.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=hULeurVfHhg"
@@ -3866,7 +3866,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-centro-comercial-abierto-de-alhaurin-el-grande-juernes-innovador/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50656": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "53744fab10cf04713053c924da7d0cf305818051",
     "date_modified": null,
     "date_published": "2026-09-29T08:44:57+00:00",
@@ -3879,7 +3879,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50656-01bd8253",
-    "last_ai_attempt": "2026-09-29T16:31:16.275788+00:00",
+    "last_ai_attempt": "2026-09-29T22:07:57.887084+00:00",
     "pagina": "noticias/equinalh-2026-trenzado-con-francisco-gabarro-y-exhibicion-de-doma-clasica-con-juan-jesus-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/equinalh-2026-trenzado-con-francisco-gabarro-y-exhibicion-de-doma-clasica-con-juan-jesus-lopez/"

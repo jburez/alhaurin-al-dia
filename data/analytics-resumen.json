@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-09-29T06:56:29.713Z",
-  "visitas24h": 7,
-  "paginasVistas24h": 13,
+  "actualizado": "2026-09-29T13:38:43.339Z",
+  "visitas24h": 8,
+  "paginasVistas24h": 14,
   "topPaginas": [
     {
       "ruta": "/planes/",
-      "vistas": 8
+      "vistas": 7
     },
     {
       "ruta": "/guia-util/tramites/",
       "vistas": 6
     },
     {
-      "ruta": "/planes/e-9367/",
+      "ruta": "/guia-util/farmacias/",
       "vistas": 4
     },
     {
-      "ruta": "/",
+      "ruta": "/noticias/alhaurin-el-grande-renueva-su-parque-movil-con-tres-motos-scooter-de-125cc",
       "vistas": 3
     },
     {
-      "ruta": "/noticias/alhaurin-el-grande-renueva-su-parque-movil-con-tres-motos-scooter-de-125cc",
+      "ruta": "/planes/e-12638/",
       "vistas": 3
     }
   ]

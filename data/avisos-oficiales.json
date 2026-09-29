@@ -11,9 +11,19 @@
     "fin": "2026-09-28T19:59:00+02:00",
     "fuente": "AEMET",
     "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260928111145_AFAZ612903PRP22818.xml",
-    "estado_ciclo_vida": "creado",
-    "actualizado_en": "2026-09-28T15:12:34+00:00",
-    "historial": []
+    "estado_ciclo_vida": "finalizado",
+    "actualizado_en": "2026-09-29T01:41:46+00:00",
+    "historial": [
+      {
+        "nivel": "amarillo",
+        "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+        "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel amarillo de 13:00 28-09-2026 CEST (UTC+2) a 19:59 28-09-2026 CEST (UTC+2).",
+        "inicio": "2026-09-28T13:00:00+02:00",
+        "fin": "2026-09-28T19:59:00+02:00",
+        "estado_ciclo_vida": "creado",
+        "actualizado_en": "2026-09-28T15:12:34+00:00"
+      }
+    ]
   },
   {
     "id": "aemet-AFAZ612903PRP12818",
@@ -27,8 +37,8 @@
     "fin": "2026-09-28T19:59:00+02:00",
     "fuente": "AEMET",
     "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260927164339_AFAZ612903PRP12818.xml",
-    "estado_ciclo_vida": "actualizado",
-    "actualizado_en": "2026-09-28T15:12:34+00:00",
+    "estado_ciclo_vida": "finalizado",
+    "actualizado_en": "2026-09-29T01:41:46+00:00",
     "historial": [
       {
         "nivel": "amarillo",
@@ -38,6 +48,15 @@
         "fin": "2026-09-28T19:59:00+02:00",
         "estado_ciclo_vida": "creado",
         "actualizado_en": "2026-09-27T18:12:34+00:00"
+      },
+      {
+        "nivel": "amarillo",
+        "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+        "descripcion": "Aviso de precipitación acumulada en una hora de nivel amarillo de 13:00 28-09-2026 CEST (UTC+2) a 19:59 28-09-2026 CEST (UTC+2).",
+        "inicio": "2026-09-28T13:00:00+02:00",
+        "fin": "2026-09-28T19:59:00+02:00",
+        "estado_ciclo_vida": "actualizado",
+        "actualizado_en": "2026-09-28T15:12:34+00:00"
       }
     ]
   },

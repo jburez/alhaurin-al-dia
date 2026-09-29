@@ -1016,7 +1016,7 @@
     "source_url": "https://www.youtube.com/watch?v=vSohImqw6SE"
   },
   "guid:atv-alhaurin-youtube:yt:video:vXr7JrQTR4Q": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "03b64d81b76ef8835678c7468c0d59350ddca945",
     "date_modified": null,
     "date_published": "2026-09-28T14:00:27+00:00",
@@ -1029,7 +1029,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-vxr7jrqtr4q-b4fc3a09",
-    "last_ai_attempt": "2026-09-29T01:44:42.381458+00:00",
+    "last_ai_attempt": "2026-09-29T08:16:50.883937+00:00",
     "pagina": "noticias/equinalh-2026-trenzado-con-francisco-gabarro-y-exhibicion-de-doma-clasica-con-juan-jesus.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=vXr7JrQTR4Q"
@@ -2892,7 +2892,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/09/25/premio-de-periodismo-sonoro-impulsando-la-calidad-y-la-inclusion/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/09/28/creacion-de-una-comision-local-para-la-atencion-a-victimas-de-violencia-de-genero": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "ebb0b3f72132a0bd03b8544b42b937d97a76cc6a",
     "date_modified": null,
     "date_published": "2026-09-28T15:17:31+00:00",
@@ -2905,7 +2905,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-5f42ed9d",
-    "last_ai_attempt": "2026-09-29T01:49:43.611357+00:00",
+    "last_ai_attempt": "2026-09-29T08:21:18.896227+00:00",
     "pagina": "noticias/creacion-de-una-comision-local-para-la-atencion-a-victimas-de-violencia-de-genero.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/09/28/creacion-de-una-comision-local-para-la-atencion-a-victimas-de-violencia-de-genero/"

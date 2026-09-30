@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-30T07:29:24.708Z",
+  "actualizado": "2026-09-30T14:05:43.108Z",
   "visitas24h": 3,
   "paginasVistas24h": 5,
   "topPaginas": [
@@ -12,15 +12,15 @@
       "vistas": 6
     },
     {
-      "ruta": "/guia-util/farmacias/",
+      "ruta": "/",
       "vistas": 4
     },
     {
-      "ruta": "/noticias/alhaurin-el-grande-renueva-su-parque-movil-con-tres-motos-scooter-de-125cc",
+      "ruta": "/planes/e-12638/",
       "vistas": 3
     },
     {
-      "ruta": "/planes/e-12638/",
+      "ruta": "/noticias/alhaurin-el-grande-renueva-su-parque-movil-con-tres-motos-scooter-de-125cc",
       "vistas": 3
     }
   ]

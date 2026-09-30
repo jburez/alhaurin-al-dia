@@ -1,5 +1,24 @@
 [
     {
+        "id": "guid-atv-alhaurin-youtube-yt-video-cs533jm61lm-515fe0b7",
+        "titulo": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días",
+        "titulo_original": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días | PGM 149",
+        "descripcion": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
+        "resumen": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
+        "cuerpo": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel.",
+        "fecha": "2026-09-30T06:21:58+00:00",
+        "fuente": "ATV Alhaurín YouTube",
+        "categoria": "Vídeos",
+        "categoria_url": "categoria/videos/",
+        "seo_keywords": [],
+        "enlace": "https://www.youtube.com/watch?v=cS533jm61LM",
+        "url": "https://www.youtube.com/watch?v=cS533jm61LM",
+        "imagen": "https://i4.ytimg.com/vi/cS533jm61LM/maxresdefault.jpg",
+        "prioridad": 80,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html"
+    },
+    {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22483-9fb4df52",
         "titulo": "Alhaurín el Grande avanza en la creación de una Comisión Local de Seguimiento",
         "titulo_original": "Alhaurín el Grande avanza en la creación de una Comisión Local de Seguimiento contra la Violencia de Género",

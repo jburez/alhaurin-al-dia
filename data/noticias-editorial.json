@@ -717,6 +717,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=b66DlnAxTjE"
   },
+  "guid:atv-alhaurin-youtube:yt:video:cS533jm61LM": {
+    "ai_attempts": 1,
+    "content_hash": "808d6ebc43a5eb06556b0764f5be24892274c9f5",
+    "date_modified": null,
+    "date_published": "2026-09-30T06:21:58+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel.",
+      "descripcion": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
+      "seo_keywords": [],
+      "titulo": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-cs533jm61lm-515fe0b7",
+    "last_ai_attempt": "2026-09-30T12:21:25.061651+00:00",
+    "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=cS533jm61LM"
+  },
   "guid:atv-alhaurin-youtube:yt:video:cvrv1VRvxrU": {
     "ai_attempts": 4,
     "content_hash": "773e8ada7332055b00fa1afae5caec157c79fcfa",
@@ -802,7 +821,7 @@
     "source_url": "https://www.youtube.com/watch?v=g_jzYvj2BW8"
   },
   "guid:atv-alhaurin-youtube:yt:video:hULeurVfHhg": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "266742fed2b4f2bc5c3ae706f80188d9abd0b115",
     "date_modified": null,
     "date_published": "2026-09-29T11:19:12+00:00",
@@ -815,7 +834,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-huleurvfhhg-f1b0fe24",
-    "last_ai_attempt": "2026-09-29T22:08:22.152609+00:00",
+    "last_ai_attempt": "2026-09-30T12:21:45.803123+00:00",
     "pagina": "noticias/mejoras-en-caminos-rurales-la-concejalia-de-obras-publicas-hace-seguimiento.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=hULeurVfHhg"

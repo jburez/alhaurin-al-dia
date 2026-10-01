@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-10-01T08:51:12.754Z",
-  "visitas24h": 6,
-  "paginasVistas24h": 9,
+  "actualizado": "2026-10-01T15:49:40.530Z",
+  "visitas24h": 10,
+  "paginasVistas24h": 13,
   "topPaginas": [
     {
       "ruta": "/planes/",
-      "vistas": 11
+      "vistas": 12
     },
     {
       "ruta": "/guia-util/tramites/",
@@ -20,7 +20,7 @@
       "vistas": 4
     },
     {
-      "ruta": "/planes/e-12638/",
+      "ruta": "/noticias/jeroen-mertens-el-holandes-desaparecido-en-alhaurin-el-grande-es-encontrado-muerto",
       "vistas": 3
     }
   ]

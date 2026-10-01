@@ -126,7 +126,7 @@
     "source_url": "https://www.youtube.com/watch?v=65l0ZaUQDFo"
   },
   "guid:atv-alhaurin-youtube:yt:video:6pCC2iPS8sQ": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "d5a3a24161758b22dff7bf099ebfa95e619aefde",
     "date_modified": null,
     "date_published": "2026-09-30T14:00:30+00:00",
@@ -139,7 +139,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-6pcc2ips8sq-8ce7d232",
-    "last_ai_attempt": "2026-10-01T13:03:51.583074+00:00",
+    "last_ai_attempt": "2026-10-01T19:26:46.553601+00:00",
     "pagina": "noticias/charla-de-concienciacion-sobre-donacion-de-sangre-plasma-y-medula.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=6pCC2iPS8sQ"
@@ -187,7 +187,7 @@
     "source_url": "https://www.youtube.com/watch?v=AqK_WCmSQFE"
   },
   "guid:atv-alhaurin-youtube:yt:video:Ax3jjKYHHe4": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "1c141870f5338afb4deba6842e561693da2935ef",
     "date_modified": null,
     "date_published": "2026-10-01T12:55:36+00:00",
@@ -200,7 +200,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ax3jjkyhhe4-17b1aad5",
-    "last_ai_attempt": "2026-10-01T13:03:32.754967+00:00",
+    "last_ai_attempt": "2026-10-01T19:26:29.891387+00:00",
     "pagina": "noticias/al-dia-equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Ax3jjKYHHe4"
@@ -544,6 +544,44 @@
     "pagina": "noticias/comision-violencia-de-genero-el-ayuntamiento-de-alhaurin-el-grande-promovera-la-creacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=OMRlBtwG1Qw"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:P-ViUSGuprc": {
+    "ai_attempts": 1,
+    "content_hash": "6db945b9b62737127d2f84ade21db748a4971fd8",
+    "date_modified": null,
+    "date_published": "2026-10-01T14:30:09+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "En este programa especial recorremos las actividades desarrolladas en Alhaurín el Grande con motivo de la Semana Europea de la Movilidad. Los escolares han participado en charlas de seguridad vial, teatro de títeres, talleres prácticos y diferentes propuestas relacionadas con el uso responsable de bicicletas y patinetes.\n\nTambién han podido poner en práctica lo aprendido en circuitos y recorridos controlados por las calles del municipio, acompañados por la Policía Local. Además, conocemos otras iniciativas de esta semana, como la exposición de carteles elaborados por el alumnado y el concurso de bicicletas y patinetes decorados.\n\nUna programación destinada a concienciar a escolares y familias sobre la importancia de adoptar hábitos de movilidad más seguros, saludables y respetuosos con el medio ambiente.",
+      "descripcion": "En este programa especial recorremos las actividades desarrolladas en Alhaurín el Grande con motivo de la Semana Europea de la Movilidad. Los escolares han participado en charlas de seguridad vial, teatro de títeres, talleres.",
+      "seo_keywords": [],
+      "titulo": "LA RECACHA – Semana Europea de la Movilidad 2026 CEIP Jorge Guillén"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-p-viusguprc-a1eecc5d",
+    "last_ai_attempt": "2026-10-01T19:25:53.443563+00:00",
+    "pagina": "noticias/la-recacha-semana-europea-de-la-movilidad-2026-ceip-jorge-guillen.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=P-ViUSGuprc"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:QeWtaHyy38k": {
+    "ai_attempts": 1,
+    "content_hash": "3b0ba0004fd9fc37d1a6c9fb0fe5eea192953bdd",
+    "date_modified": null,
+    "date_published": "2026-10-01T14:30:13+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Así lo viví con Guadalupe Gómez | Programa 37.",
+      "descripcion": "Así lo viví con Guadalupe Gómez | Programa 37.",
+      "seo_keywords": [],
+      "titulo": "Así lo viví con Guadalupe Gómez"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-qewtahyy38k-4edc73f4",
+    "last_ai_attempt": "2026-10-01T19:25:37.579494+00:00",
+    "pagina": "noticias/asi-lo-vivi-con-guadalupe-gomez.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=QeWtaHyy38k"
   },
   "guid:atv-alhaurin-youtube:yt:video:T9pKMkAe4WU": {
     "ai_attempts": 0,
@@ -1110,6 +1148,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=vXr7JrQTR4Q"
   },
+  "guid:atv-alhaurin-youtube:yt:video:xp9meANJvuc": {
+    "ai_attempts": 1,
+    "content_hash": "f8c39756fb088557eb6a6d7d8839c06874080a2c",
+    "date_modified": null,
+    "date_published": "2026-10-01T13:24:33+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del jueves 1 de octubre de 2026 en el Informativo de ATV. 1. PARQUES INFANTILES El Ayuntamiento acomete la renovación de varios parques infantiles del municipio. En total se intervendrá en siete instalaciones ya que sus elementos se han deteriorado con el uso.\n\nSe reformarán los parques de El Parral, Arquilla del Agua, Huerto Mateo, Jorobado, Calle Fuengirola, Palomar y Alejo García. 2. VISITA CULTURAL A LA ALCAZABA La concejalía de Cultura y el CPA La Chaparra presentan una excursión cultural a La Alcazaba de Málaga para el miércoles 14 de octubre. 4.\n\nFOTOS DE LA ALOREÑA La DOP de la Aceituna Aloreña de Málaga pone en marcha la segunda edición de su concurso de fotografía. 5.",
+      "descripcion": "1. PARQUES INFANTILES El Ayuntamiento acomete la renovación de varios parques infantiles del municipio. En total se intervendrá en siete instalaciones ya que sus elementos se han deteriorado con el uso. Se reformarán los parques.",
+      "seo_keywords": [],
+      "titulo": "Parques infantiles el ayuntamiento acomete la renovación de varios parques infantiles"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-xp9meanjvuc-9422179d",
+    "last_ai_attempt": "2026-10-01T19:26:12.911709+00:00",
+    "pagina": "noticias/parques-infantiles-el-ayuntamiento-acomete-la-renovacion-de-varios-parques-infantiles.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=xp9meANJvuc"
+  },
   "guid:atv-alhaurin-youtube:yt:video:y83Gh2WACvo": {
     "ai_attempts": 4,
     "content_hash": "db17ef027be00d7e59f5e266137a9a6ace71ea97",
@@ -1130,7 +1187,7 @@
     "source_url": "https://www.youtube.com/watch?v=y83Gh2WACvo"
   },
   "guid:atv-alhaurin-youtube:yt:video:yTiH9mDbWXY": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "6cd533a1ac676a29f2557f60cc209e13aee8eeb0",
     "date_modified": null,
     "date_published": "2026-09-30T12:59:55+00:00",
@@ -1143,7 +1200,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ytih9mdbwxy-a7b765f8",
-    "last_ai_attempt": "2026-10-01T13:04:07.473633+00:00",
+    "last_ai_attempt": "2026-10-01T19:27:06.264048+00:00",
     "pagina": "noticias/pleno-ordinario-de-septiembre-el-pleno-de-septiembre-del-ayuntamiento-ha-aprobado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=yTiH9mDbWXY"
@@ -1615,7 +1672,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-avanza-en-la-creacion-de-una-comision-local-de-seguimiento-contra-la-violencia-de-genero/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224843": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "dbe5227a40af638034e21f389315cf91ae7f0500",
     "date_modified": null,
     "date_published": "2026-10-01T09:02:35+00:00",
@@ -1628,13 +1685,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22484-74f4b607",
-    "last_ai_attempt": "2026-10-01T12:56:42.022520+00:00",
+    "last_ai_attempt": "2026-10-01T19:24:07.268449+00:00",
     "pagina": "noticias/la-concejalia-de-cultura-ha-preparado-para-este-otono-tres-interesantes-iniciativas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-programa-talleres-gratuitos-de-ceramica-inteligencia-artificial-y-comic/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224851": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "3a615b2c979851f6a6bcb26455b25529e7804652",
     "date_modified": null,
     "date_published": "2026-10-01T10:40:05+00:00",
@@ -1647,7 +1704,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22485-53a68254",
-    "last_ai_attempt": "2026-10-01T12:56:22.006772+00:00",
+    "last_ai_attempt": "2026-10-01T19:23:46.932278+00:00",
     "pagina": "noticias/juventud-presenta-su-programacion-de-octubre-con-ocho-nuevas-propuestas-para-los-jovenes.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/juventud-presenta-su-programacion-de-octubre-con-ocho-nuevas-propuestas-para-los-jovenes-de-alhaurin-el-grande/"

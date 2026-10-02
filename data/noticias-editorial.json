@@ -187,7 +187,7 @@
     "source_url": "https://www.youtube.com/watch?v=AqK_WCmSQFE"
   },
   "guid:atv-alhaurin-youtube:yt:video:Ax3jjKYHHe4": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "1c141870f5338afb4deba6842e561693da2935ef",
     "date_modified": null,
     "date_published": "2026-10-01T12:55:36+00:00",
@@ -200,7 +200,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ax3jjkyhhe4-17b1aad5",
-    "last_ai_attempt": "2026-10-01T23:53:01.656883+00:00",
+    "last_ai_attempt": "2026-10-02T12:20:58.162773+00:00",
     "pagina": "noticias/al-dia-equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Ax3jjKYHHe4"
@@ -1672,7 +1672,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-avanza-en-la-creacion-de-una-comision-local-de-seguimiento-contra-la-violencia-de-genero/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224843": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "dbe5227a40af638034e21f389315cf91ae7f0500",
     "date_modified": null,
     "date_published": "2026-10-01T09:02:35+00:00",
@@ -1685,13 +1685,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22484-74f4b607",
-    "last_ai_attempt": "2026-10-01T23:50:40.501236+00:00",
+    "last_ai_attempt": "2026-10-02T12:19:15.185387+00:00",
     "pagina": "noticias/la-concejalia-de-cultura-ha-preparado-para-este-otono-tres-interesantes-iniciativas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-programa-talleres-gratuitos-de-ceramica-inteligencia-artificial-y-comic/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224851": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "3a615b2c979851f6a6bcb26455b25529e7804652",
     "date_modified": null,
     "date_published": "2026-10-01T10:40:05+00:00",
@@ -1704,7 +1704,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22485-53a68254",
-    "last_ai_attempt": "2026-10-01T23:50:23.333408+00:00",
+    "last_ai_attempt": "2026-10-02T12:18:57.488551+00:00",
     "pagina": "noticias/juventud-presenta-su-programacion-de-octubre-con-ocho-nuevas-propuestas-para-los-jovenes.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/juventud-presenta-su-programacion-de-octubre-con-ocho-nuevas-propuestas-para-los-jovenes-de-alhaurin-el-grande/"
@@ -4149,5 +4149,62 @@
     "pagina": "noticias/equinalh-2026-trenzado-con-francisco-gabarro-y-exhibicion-de-doma-clasica-con-juan-jesus-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/equinalh-2026-trenzado-con-francisco-gabarro-y-exhibicion-de-doma-clasica-con-juan-jesus-lopez/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50661": {
+    "ai_attempts": 1,
+    "content_hash": "a11e3eafbba701141a4eaf6e7c560422580261d0",
+    "date_modified": null,
+    "date_published": "2026-10-02T10:42:01+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La asociación Un Sí por la Vida, con el respaldo del Ayuntamiento de Alhaurín el Grande, organizó en la Casa de la Cultura una jornada de concienciación sobre la donación de sangre, plasma y médula ósea bajo el lema “El saber hace la diferencia”.\n\nEl doctor José Emilio Alonso, coordinador médico del Centro de Transfusiones La entrada Charla de concienciación sobre donación de sangre, plasma y médula | Asociación Un Sí Por La vida aparece en RTV Alhaurín el Grande.",
+      "descripcion": "La asociación Un Sí por la Vida, con el respaldo del Ayuntamiento de Alhaurín el Grande, organizó en la Casa de la Cultura una jornada de concienciación sobre la donación de sangre, plasma y médula ósea bajo el lema “El saber.",
+      "seo_keywords": [],
+      "titulo": "Charla de concienciación sobre donación de sangre, plasma y médula"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50661-bf6ba55c",
+    "last_ai_attempt": "2026-10-02T12:20:37.032274+00:00",
+    "pagina": "noticias/charla-de-concienciacion-sobre-donacion-de-sangre-plasma-y-medula.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/charla-de-concienciacion-sobre-donacion-de-sangre-plasma-y-medula-asociacion-un-si-por-la-vida/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50664": {
+    "ai_attempts": 1,
+    "content_hash": "4a654f72d8b321ecc38a04be9d5e6b2534373cb3",
+    "date_modified": null,
+    "date_published": "2026-10-02T10:45:54+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "El Recinto de La Mota acogió la segunda parte de Equinalh 2026, una programación que ha dedicado el mes de septiembre al mundo del caballo en Alhaurín el Grande.",
+      "descripcion": "El Recinto de La Mota acogió la segunda parte de Equinalh 2026, una programación que ha dedicado el mes de septiembre al mundo del caballo en Alhaurín el Grande. El broche final llegó con un clínic de doma vaquera impartido por.",
+      "seo_keywords": [],
+      "titulo": "Equinalh 2026: Clínic de doma clásica José Ramón Pérez García “Chamo”"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50664-4e5987e7",
+    "last_ai_attempt": "2026-10-02T12:20:20.175247+00:00",
+    "pagina": "noticias/equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50667": {
+    "ai_attempts": 1,
+    "content_hash": "204c5784a5e2f5e5615c101992060f79f84ccb74",
+    "date_modified": null,
+    "date_published": "2026-10-02T10:52:47+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "En este programa especial recorremos las actividades desarrolladas en Alhaurín el Grande con motivo de la Semana Europea de la Movilidad. Los escolares han participado en charlas de seguridad vial, teatro de títeres, talleres prácticos y diferentes propuestas relacionadas con el uso responsable de bicicletas y patinetes.\n\nTambién han podido poner en práctica lo aprendido La entrada Semana Europea de la Movilidad 2026 CEIP Jorge Guillén aparece en RTV Alhaurín el Grande.",
+      "descripcion": "En este programa especial recorremos las actividades desarrolladas en Alhaurín el Grande con motivo de la Semana Europea de la Movilidad. Los escolares han participado en charlas de seguridad vial, teatro de títeres, talleres.",
+      "seo_keywords": [],
+      "titulo": "Semana Europea de la Movilidad 2026 CEIP Jorge Guillén"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50667-0957a1d4",
+    "last_ai_attempt": "2026-10-02T12:20:02.125791+00:00",
+    "pagina": "noticias/semana-europea-de-la-movilidad-2026-ceip-jorge-guillen.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/semana-europea-de-la-movilidad-2026-ceip-jorge-guillen/"
   }
 }

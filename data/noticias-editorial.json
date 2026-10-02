@@ -355,7 +355,7 @@
     "source_url": "https://www.youtube.com/watch?v=JpdHRxcJz7w"
   },
   "guid:atv-alhaurin-youtube:yt:video:JuhyWlfYoTE": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "53dca3a4ea20b9fd0235b30716c94f118f3993e6",
     "date_modified": null,
     "date_published": "2026-10-02T14:00:28+00:00",
@@ -368,13 +368,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-juhywlfyote-de2d6a88",
-    "last_ai_attempt": "2026-10-02T19:15:16.837931+00:00",
+    "last_ai_attempt": "2026-10-02T23:43:44.988002+00:00",
     "pagina": "noticias/verbena-fin-de-verano-2026-a-beneficio-de-la-asociacion-alhmer.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=JuhyWlfYoTE"
   },
   "guid:atv-alhaurin-youtube:yt:video:K5hPrehrnIc": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "e5175695c0776c8b683f3a84c608db0bcb2cda6d",
     "date_modified": null,
     "date_published": "2026-10-02T14:14:04+00:00",
@@ -387,7 +387,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-k5hprehrnic-325b7db6",
-    "last_ai_attempt": "2026-10-02T19:14:58.459200+00:00",
+    "last_ai_attempt": "2026-10-02T23:43:26.808125+00:00",
     "pagina": "noticias/premios-cortometrajes-el-teatro-antonio-gala-ha-sido-el-escenario-de-la-entrega.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=K5hPrehrnIc"
@@ -4189,7 +4189,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/equinalh-2026-trenzado-con-francisco-gabarro-y-exhibicion-de-doma-clasica-con-juan-jesus-lopez/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50661": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "a11e3eafbba701141a4eaf6e7c560422580261d0",
     "date_modified": null,
     "date_published": "2026-10-02T10:42:01+00:00",
@@ -4202,13 +4202,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50661-bf6ba55c",
-    "last_ai_attempt": "2026-10-02T19:12:18.603559+00:00",
+    "last_ai_attempt": "2026-10-02T23:41:53.248345+00:00",
     "pagina": "noticias/charla-de-concienciacion-sobre-donacion-de-sangre-plasma-y-medula.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/charla-de-concienciacion-sobre-donacion-de-sangre-plasma-y-medula-asociacion-un-si-por-la-vida/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50664": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "4a654f72d8b321ecc38a04be9d5e6b2534373cb3",
     "date_modified": null,
     "date_published": "2026-10-02T10:45:54+00:00",
@@ -4221,13 +4221,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50664-4e5987e7",
-    "last_ai_attempt": "2026-10-02T19:12:00.430293+00:00",
+    "last_ai_attempt": "2026-10-02T23:41:34.356923+00:00",
     "pagina": "noticias/equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50667": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "204c5784a5e2f5e5615c101992060f79f84ccb74",
     "date_modified": null,
     "date_published": "2026-10-02T10:52:47+00:00",
@@ -4240,7 +4240,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50667-0957a1d4",
-    "last_ai_attempt": "2026-10-02T19:11:42.946551+00:00",
+    "last_ai_attempt": "2026-10-02T23:41:15.552084+00:00",
     "pagina": "noticias/semana-europea-de-la-movilidad-2026-ceip-jorge-guillen.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/semana-europea-de-la-movilidad-2026-ceip-jorge-guillen/"

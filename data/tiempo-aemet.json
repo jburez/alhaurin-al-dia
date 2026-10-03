@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-03T13:40:33+02:00",
+  "actualizado": "2026-10-03T20:41:02+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "🌧️",
+    "icono": "☀️",
     "titulo": "Tiempo",
     "valor": "Máx. 27º",
-    "detalle": "Cubierto con lluvia escasa · Máx. 27º / Mín. 20º · Lluvia 90%",
+    "detalle": "Despejado · Máx. 27º / Mín. 20º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "3/10",
     "t_max": "27",
     "t_min": "20",
-    "icono": "🌧️",
-    "descripcion": "Cubierto con lluvia escasa",
-    "lluvia": "90%",
-    "viento": "SE 15 km/h",
+    "icono": "☀️",
+    "descripcion": "Despejado",
+    "lluvia": "0%",
+    "viento": "Flojo",
     "uv": "5"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "3/10",
       "t_max": "27",
       "t_min": "20",
-      "icono": "🌧️",
-      "descripcion": "Cubierto con lluvia escasa",
-      "lluvia": "90%",
-      "viento": "SE 15 km/h",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "Flojo",
       "uv": "5"
     },
     {
@@ -72,7 +72,7 @@
       "icono": "🌧️",
       "descripcion": "Muy nuboso con lluvia",
       "lluvia": "100%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": "5"
     },
     {
@@ -84,7 +84,7 @@
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "90%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": "5"
     },
     {
@@ -96,7 +96,7 @@
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "45%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": ""
     },
     {
@@ -108,7 +108,7 @@
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "65%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": ""
     }
   ],
@@ -117,15 +117,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Desaconsejado",
-      "detalle": "Riesgo de precipitaciones"
+      "estado": "Excelente",
+      "detalle": "Secado muy rápido al sol (0% riesgo)"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Espera unos días",
-      "detalle": "Posible barro o lluvia"
+      "estado": "Muy recomendado",
+      "detalle": "Cielo limpio y sin calima"
     },
     {
       "id": "deporte",
@@ -147,8 +147,8 @@
   ],
   "sol_luna": {
     "orto": "08:15 h",
-    "ocaso": "19:59 h",
-    "horas_luz": "11h 44m",
+    "ocaso": "20:00 h",
+    "horas_luz": "11h 45m",
     "fase_luna": "Cuarto Menguante (54%)",
     "icono_luna": "🌗"
   },

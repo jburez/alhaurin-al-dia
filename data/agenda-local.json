@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-10-03T00:13:30.521Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 244 eventos próximos.",
+  "actualizado": "2026-10-03T06:42:16.185054+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 241 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5749",
-      "tipo": "Ocio",
-      "icono": "🎉",
-      "titulo": "Romería AEG 🍃 🐎 | Programación EQUINAHL",
-      "descripcion": "📢🐴 Desde el Área de Fiestas del Ayuntamiento de Alhaurín el Grande, informamos que, dentro de la programación de Equinalh en la Romería en honor al Cristo de las Agonías, queda cancelada la primera...",
-      "lugar": "",
-      "inicio": "2026-09-02T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/romeria-aeg-%f0%9f%8d%83-%f0%9f%90%8e-equinahl/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-13529",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Concentración 🤎 CEUTA SOMOS TODOS 🤎",
-      "descripcion": "🫱🏽‍🫲🏼 Desde Alhaurín el Grande queremos mostrar nuestro apoyo y solidaridad con el pueblo de Ceuta ante la situación que está atravesando. Por ello, desde Alcaldía se convoca a toda la ciudadanía a...",
-      "lugar": "",
-      "inicio": "2026-09-02T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/concentracion-%f0%9f%a4%8e-ceuta-somos-todos-%f0%9f%a4%8e/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-5775",
       "tipo": "Evento",
@@ -3644,21 +3615,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

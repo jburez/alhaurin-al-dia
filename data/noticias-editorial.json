@@ -1710,7 +1710,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-avanza-en-la-creacion-de-una-comision-local-de-seguimiento-contra-la-violencia-de-genero/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224843": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "dbe5227a40af638034e21f389315cf91ae7f0500",
     "date_modified": null,
     "date_published": "2026-10-01T09:02:35+00:00",
@@ -1723,13 +1723,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22484-74f4b607",
-    "last_ai_attempt": "2026-10-02T12:19:15.185387+00:00",
+    "last_ai_attempt": "2026-10-03T04:57:52.627148+00:00",
     "pagina": "noticias/la-concejalia-de-cultura-ha-preparado-para-este-otono-tres-interesantes-iniciativas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-programa-talleres-gratuitos-de-ceramica-inteligencia-artificial-y-comic/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224851": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "3a615b2c979851f6a6bcb26455b25529e7804652",
     "date_modified": null,
     "date_published": "2026-10-01T10:40:05+00:00",
@@ -1742,7 +1742,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22485-53a68254",
-    "last_ai_attempt": "2026-10-02T12:18:57.488551+00:00",
+    "last_ai_attempt": "2026-10-03T04:57:35.627938+00:00",
     "pagina": "noticias/juventud-presenta-su-programacion-de-octubre-con-ocho-nuevas-propuestas-para-los-jovenes.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/juventud-presenta-su-programacion-de-octubre-con-ocho-nuevas-propuestas-para-los-jovenes-de-alhaurin-el-grande/"
@@ -2353,7 +2353,7 @@
     "source_url": "https://fedelhorce.es/networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260892": {
-    "ai_attempts": 14,
+    "ai_attempts": 15,
     "content_hash": "a9ba7eecd4d7a55e53f8149a2f22144b478dd2ba",
     "date_modified": "2026-09-13T04:29:37.702104+00:00",
     "date_published": "2026-08-21T08:31:49+00:00",
@@ -2366,7 +2366,7 @@
     },
     "ia_exitosa": false,
     "id": "https-fedelhorce-es-masterclass-facturacion-electronica-y-verifactu-e1cf96da",
-    "last_ai_attempt": "2026-10-01T05:28:28.242323+00:00",
+    "last_ai_attempt": "2026-10-03T05:00:14.825246+00:00",
     "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/"
@@ -2418,7 +2418,7 @@
     "source_url": "https://fedelhorce.es/oferta-security-life-solutions/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261181": {
-    "ai_attempts": 7,
+    "ai_attempts": 8,
     "content_hash": "93a17fdea1b11d9e5f468152ce771f7bc7e68597",
     "date_modified": "2026-09-21T08:00:00.013264+00:00",
     "date_published": "2026-09-18T11:48:14+00:00",
@@ -2431,13 +2431,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261181-6578b8ac",
-    "last_ai_attempt": "2026-09-30T05:20:21.771672+00:00",
+    "last_ai_attempt": "2026-10-03T05:00:32.711751+00:00",
     "pagina": "noticias/conclusiones-juernes-innovador-noche-del-comercio-abierto.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-innovador-noche-del-comercio-abierto/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261393": {
-    "ai_attempts": 8,
+    "ai_attempts": 9,
     "content_hash": "5172ef6bddb63ed9a38b7d978f2dd2b586975703",
     "date_modified": null,
     "date_published": "2026-09-23T10:33:26+00:00",
@@ -2450,13 +2450,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261393-642d2215",
-    "last_ai_attempt": "2026-10-01T05:28:09.815396+00:00",
+    "last_ai_attempt": "2026-10-03T04:59:56.212672+00:00",
     "pagina": "noticias/conclusiones-networking-para-emprendedores.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261433": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "b04dc2a32bbe86430520d91b4c586e7b2190afd9",
     "date_modified": null,
     "date_published": "2026-09-25T10:00:35+00:00",
@@ -2469,7 +2469,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261433-d73fbcdb",
-    "last_ai_attempt": "2026-10-01T05:27:51.017289+00:00",
+    "last_ai_attempt": "2026-10-03T04:59:38.343351+00:00",
     "pagina": "noticias/conclusiones-masterclass-en-coin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"
@@ -4056,7 +4056,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/romeria-por-el-cristo-de-las-agonias-2026-camino-hacia-la-mota/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50637": {
-    "ai_attempts": 18,
+    "ai_attempts": 19,
     "content_hash": "22c38fb1f74c85c6c8069dcb7b26828444531efa",
     "date_modified": null,
     "date_published": "2026-09-21T12:10:08+00:00",
@@ -4069,13 +4069,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50637-26c7f153",
-    "last_ai_attempt": "2026-10-02T05:20:29.839323+00:00",
+    "last_ai_attempt": "2026-10-03T04:59:15.618335+00:00",
     "pagina": "noticias/misa-romera-y-espectaculo-ecuestre-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50640": {
-    "ai_attempts": 19,
+    "ai_attempts": 20,
     "content_hash": "80f0410b4b00cc0f94dd044b8595a8a23ee3e3eb",
     "date_modified": null,
     "date_published": "2026-09-21T12:13:32+00:00",
@@ -4088,13 +4088,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
-    "last_ai_attempt": "2026-10-02T05:20:13.614995+00:00",
+    "last_ai_attempt": "2026-10-03T04:58:57.808093+00:00",
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50644": {
-    "ai_attempts": 14,
+    "ai_attempts": 15,
     "content_hash": "fa2e3fa3ed4083cf9bb63a69d90624baefba6dab",
     "date_modified": null,
     "date_published": "2026-09-24T11:05:56+00:00",
@@ -4107,7 +4107,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50644-74ca6b30",
-    "last_ai_attempt": "2026-10-02T05:19:54.998232+00:00",
+    "last_ai_attempt": "2026-10-03T04:58:41.533045+00:00",
     "pagina": "noticias/inicio-de-la-campana-de-la-aceituna-alorena-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inicio-de-la-campana-de-la-aceituna-alorena-2026/"

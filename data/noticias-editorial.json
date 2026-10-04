@@ -3650,7 +3650,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/01/la-diputacion-inicia-la-elaboracion-de-las-agendas-rurales-y-urbanas-en-las-comarcas-de-la-axarquia-valle-del-guadalhorce-y-zona-norte-de-malaga/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=210447": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "790a9c60dc73d6c4c8d0a090cb968c7cb7dc7fa6",
     "date_modified": null,
     "date_published": "2026-10-03T17:29:15+00:00",
@@ -3663,13 +3663,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-c2751b2f",
-    "last_ai_attempt": "2026-10-04T08:27:27.751175+00:00",
+    "last_ai_attempt": "2026-10-04T19:33:44.628127+00:00",
     "pagina": "noticias/alora-alcanza-las-7-000-raciones-en-un-exitoso-xxii-dia-de-las-sopas-perotas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/03/alora-exitoso-dia-sopas-perotas-2026/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=210449": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "6598d62a6ba1829e9a4d5afc6da4442857b47228",
     "date_modified": null,
     "date_published": "2026-10-03T15:18:00+00:00",
@@ -3682,13 +3682,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-23fe4a36",
-    "last_ai_attempt": "2026-10-04T08:27:46.270938+00:00",
+    "last_ai_attempt": "2026-10-04T19:34:03.370033+00:00",
     "pagina": "noticias/proteccion-civil-reconoce-a-13-agrupaciones-de-malaga-por-su-trayectoria-y-servicio.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/03/proteccion-civil-reconoce-a-13-agrupaciones-de-malaga-por-su-trayectoria-y-servicio-a-la-ciudadania/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=210476": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "49592f776a3ee6c106247328c6d054acad025ef4",
     "date_modified": null,
     "date_published": "2026-10-04T09:01:50+00:00",
@@ -3701,7 +3701,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-c015e96a",
-    "last_ai_attempt": "2026-10-04T15:21:34.572909+00:00",
+    "last_ai_attempt": "2026-10-04T19:33:26.755410+00:00",
     "pagina": "noticias/francisco-cabrera-presentara-en-alhaurin-el-grande-su-libro-solidario-imagen-y-poesia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/04/francisco-cabrera-presentacion-libro-imagen-y-poesia-alhaurin-el-grande/"

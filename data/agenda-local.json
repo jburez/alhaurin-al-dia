@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-10-04T00:01:40.182Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 242 eventos próximos.",
+  "actualizado": "2026-10-04T07:13:33.355853+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 239 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5775",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Baño de Gong🏺",
-      "descripcion": "✨ Baño de Gong en Herboristería Natura ✨ El próximo miércoles 3 de septiembre te invitamos a vivir una experiencia única de sonido y vibración para soltar emociones y conectar con la belleza que te...",
-      "lugar": "",
-      "inicio": "2026-09-03T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/bano-de-gong%f0%9f%8f%ba/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12633",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Programación 🐴 EQUINAHL",
-      "descripcion": "Alhaurín el Grande acoge la programación de EQUINALH durante el Mes del Caballo y la Romería , con clínics, exhibiciones hípicas, charlas veterinarias y tardeos romeros. JUEVES 3 de Septiembre Luga...",
-      "lugar": "",
-      "inicio": "2026-09-03T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/mes-del-caballo%f0%9f%90%b4-equinahl/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-5781",
       "tipo": "Evento",
@@ -3614,21 +3585,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

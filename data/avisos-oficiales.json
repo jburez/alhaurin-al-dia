@@ -1,5 +1,37 @@
 [
   {
+    "id": "aemet-AFAZ612903PRP10415",
+    "tipo": "meteorologico",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+    "descripcion": "Aviso de precipitación acumulada en una hora de nivel amarillo de 10:00 04-10-2026 CEST (UTC+2) a 16:59 04-10-2026 CEST (UTC+2).",
+    "fenomeno": "Lluvias",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-10-04T10:00:00+02:00",
+    "fin": "2026-10-04T16:59:00+02:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261004062948_AFAZ612903PRP10415.xml",
+    "estado_ciclo_vida": "creado",
+    "actualizado_en": "2026-10-04T12:07:26+00:00",
+    "historial": []
+  },
+  {
+    "id": "aemet-AFAZ612903TOTO0415",
+    "tipo": "meteorologico",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Tormentas. Sol y Guadalhorce",
+    "descripcion": "Aviso de tormentas de nivel amarillo de 10:00 04-10-2026 CEST (UTC+2) a 16:59 04-10-2026 CEST (UTC+2).",
+    "fenomeno": "Tormentas",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-10-04T10:00:00+02:00",
+    "fin": "2026-10-04T16:59:00+02:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261004062948_AFAZ612903TOTO0415.xml",
+    "estado_ciclo_vida": "creado",
+    "actualizado_en": "2026-10-04T12:07:26+00:00",
+    "historial": []
+  },
+  {
     "id": "aemet-AFAZ612903PRP22818",
     "tipo": "meteorologico",
     "nivel": "amarillo",

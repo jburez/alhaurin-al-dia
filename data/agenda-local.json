@@ -1,52 +1,8 @@
 {
-  "actualizado": "2026-10-05T22:10:49.599Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 234 eventos próximos.",
+  "actualizado": "2026-10-06T01:54:29.869810+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 230 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5376",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "TERRAZA AL FRESHCO 🍋 🎶",
-      "descripcion": "Este verano, los viernes son de terraceo en Lemour. 🍋TERRAZA AL FRESHCO🍋 Djs o grupos musicales te esperan en nuestra terraza para que las noches estivales las aprovechemos al máximo: cada viernes ...",
-      "lugar": "",
-      "inicio": "2026-09-05T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/terraza-al-freshco-%f0%9f%8d%8b-%f0%9f%8e%b6/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-4151",
-      "tipo": "Deportes",
-      "icono": "⚽",
-      "titulo": "Reto Solidario Everesting 🌲 | 10* subida y bajada a la bola 🏃🏽‍♂️🏃🏻‍♀️",
-      "descripcion": "Con motivo del tercer aniversario del incendio que afectó a la sierra de Mijas, Alhaurín el Grande acogerá el reto solidario “Everesting: Salvador Pérez ‘Senderito’” El 5 de septiembre arranca un i...",
-      "lugar": "",
-      "inicio": "2026-09-05T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8c%b2-everesting-salvador-perez-senderito-%f0%9f%8f%83%f0%9f%8f%bd%e2%99%82%ef%b8%8f%f0%9f%8f%83%f0%9f%8f%bb%e2%99%80%ef%b8%8f/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12587",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "II Verbena 🎉 Villa del Guadalhorce",
-      "descripcion": "🎉¡II Verbena Villa del Guadalhorce!🎶 📅 El próximo sábado 5 de septiembre, a partir de las 21:00 h, te esperamos en la Plaza Mayor de Villa del Guadalhorce para disfrutar de una noche llena de músic...",
-      "lugar": "",
-      "inicio": "2026-09-05T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/ii-verbena-%f0%9f%8e%89-villa-del-guadalhorce/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-5736",
       "tipo": "Deportes",
@@ -3494,21 +3450,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

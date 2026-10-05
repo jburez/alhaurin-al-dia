@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-10-05T15:35:54.537Z",
-  "visitas24h": 19,
-  "paginasVistas24h": 24,
+  "actualizado": "2026-10-05T22:10:53.086Z",
+  "visitas24h": 16,
+  "paginasVistas24h": 19,
   "topPaginas": [
     {
       "ruta": "/planes/",
-      "vistas": 32
+      "vistas": 27
     },
     {
       "ruta": "/planes/e-9367/",
-      "vistas": 18
+      "vistas": 19
+    },
+    {
+      "ruta": "/planes/e-6522/",
+      "vistas": 8
     },
     {
       "ruta": "/guia-util/tramites/",
       "vistas": 7
     },
     {
-      "ruta": "/planes/e-6522/",
-      "vistas": 7
-    },
-    {
-      "ruta": "/planes/e-13677/",
-      "vistas": 7
+      "ruta": "/planes/e-13646/",
+      "vistas": 6
     }
   ]
 }

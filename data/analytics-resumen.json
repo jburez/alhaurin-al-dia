@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-10-05T06:58:54.787Z",
+  "actualizado": "2026-10-05T15:35:54.537Z",
   "visitas24h": 19,
-  "paginasVistas24h": 38,
+  "paginasVistas24h": 24,
   "topPaginas": [
     {
       "ruta": "/planes/",
-      "vistas": 30
+      "vistas": 32
     },
     {
       "ruta": "/planes/e-9367/",
-      "vistas": 13
+      "vistas": 18
     },
     {
       "ruta": "/guia-util/tramites/",

@@ -1,6 +1,6 @@
 {
   "guid:atv-alhaurin-youtube:yt:video:-l0nefJpXv0": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "681b3eacdcd5ca9aa7552989ad4b61193f62cea2",
     "date_modified": null,
     "date_published": "2026-10-06T06:46:44+00:00",
@@ -13,7 +13,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-l0nefjpxv0-312c3917",
-    "last_ai_attempt": "2026-10-06T19:33:00.222809+00:00",
+    "last_ai_attempt": "2026-10-06T23:45:06.567381+00:00",
     "pagina": "noticias/dia-de-la-policia-local-2026-la-policia-local-de-alhaurin-el-grande-celebra-su-festividad.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=-l0nefJpXv0"
@@ -244,7 +244,7 @@
     "source_url": "https://www.youtube.com/watch?v=Ax3jjKYHHe4"
   },
   "guid:atv-alhaurin-youtube:yt:video:BBSYoNKjmY4": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "7a6fc82346d410e153ee7689e3cff86872fbb2a8",
     "date_modified": null,
     "date_published": "2026-10-06T13:07:17+00:00",
@@ -257,7 +257,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-bbsyonkjmy4-7e785193",
-    "last_ai_attempt": "2026-10-06T19:32:42.079814+00:00",
+    "last_ai_attempt": "2026-10-06T23:44:47.839345+00:00",
     "pagina": "noticias/nuevo-vehiculo-fahala-el-ayuntamiento-destina-casi-60-mil-euros-a-la-adquisicion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=BBSYoNKjmY4"
@@ -790,7 +790,7 @@
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
   },
   "guid:atv-alhaurin-youtube:yt:video:_E29t0HtKpQ": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "975e3f16e899599a15ad85ec1ad636177ecf77ef",
     "date_modified": null,
     "date_published": "2026-10-06T14:00:10+00:00",
@@ -803,7 +803,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-e29t0htkpq-c16885c8",
-    "last_ai_attempt": "2026-10-06T19:32:23.822644+00:00",
+    "last_ai_attempt": "2026-10-06T23:44:30.103118+00:00",
     "pagina": "noticias/dia-de-la-policia-local-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=_E29t0HtKpQ"
@@ -1221,7 +1221,7 @@
     "source_url": "https://www.youtube.com/watch?v=rlZ9kIrfoss"
   },
   "guid:atv-alhaurin-youtube:yt:video:sQAutVg3EtI": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "b169002331a5faf745c6875e9c298ef0bbc36ea9",
     "date_modified": null,
     "date_published": "2026-10-05T14:30:11+00:00",
@@ -1234,7 +1234,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-sqautvg3eti-9087f04e",
-    "last_ai_attempt": "2026-10-06T19:33:16.617143+00:00",
+    "last_ai_attempt": "2026-10-06T23:45:24.975940+00:00",
     "pagina": "noticias/j-5-grupo-9-tercera-rfef-26-27.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=sQAutVg3EtI"
@@ -1881,7 +1881,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-colabora-en-la-recreacion-de-un-escenario-de-derrumbe-para-poner-a-prueba-a-los-equipos-de-busqueda-y-rescate/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224893": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "29bf4684c13b03e644b1bfb1ed3e58338d7bdeb4",
     "date_modified": null,
     "date_published": "2026-10-06T12:21:15+00:00",
@@ -1894,7 +1894,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22489-9f1b6033",
-    "last_ai_attempt": "2026-10-06T19:24:21.937837+00:00",
+    "last_ai_attempt": "2026-10-06T23:43:14.738917+00:00",
     "pagina": "noticias/el-ayuntamiento-renueva-en-una-primera-fase-siete-parques-infantiles-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-renueva-en-una-primera-fase-siete-parques-infantiles-de-alhaurin-el-grande/"
@@ -4322,7 +4322,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50640": {
-    "ai_attempts": 24,
+    "ai_attempts": 25,
     "content_hash": "80f0410b4b00cc0f94dd044b8595a8a23ee3e3eb",
     "date_modified": null,
     "date_published": "2026-09-21T12:13:32+00:00",
@@ -4335,7 +4335,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
-    "last_ai_attempt": "2026-10-05T22:30:46.794310+00:00",
+    "last_ai_attempt": "2026-10-06T23:44:11.473832+00:00",
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"

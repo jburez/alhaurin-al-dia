@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-07T15:24:49+02:00",
+  "actualizado": "2026-10-07T22:38:04+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
@@ -23,7 +23,7 @@
     "icono": "🌧️",
     "descripcion": "Intervalos nubosos con lluvia escasa",
     "lluvia": "90%",
-    "viento": "NO 10 km/h",
+    "viento": "C 15 km/h",
     "uv": "5"
   },
   "semana": [
@@ -36,14 +36,14 @@
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "90%",
-      "viento": "NO 10 km/h",
+      "viento": "C 15 km/h",
       "uv": "5"
     },
     {
       "fecha": "2026-10-08",
       "dia_semana": "Jueves",
       "fecha_corta": "8/10",
-      "t_max": "27",
+      "t_max": "28",
       "t_min": "16",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
@@ -56,23 +56,23 @@
       "dia_semana": "Viernes",
       "fecha_corta": "9/10",
       "t_max": "25",
-      "t_min": "15",
+      "t_min": "16",
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "85%",
-      "viento": "E 15 km/h",
+      "viento": "SE 15 km/h",
       "uv": "5"
     },
     {
       "fecha": "2026-10-10",
       "dia_semana": "Sábado",
       "fecha_corta": "10/10",
-      "t_max": "26",
-      "t_min": "16",
+      "t_max": "25",
+      "t_min": "17",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
+      "descripcion": "Nuboso con lluvia escasa",
       "lluvia": "65%",
-      "viento": "E 10 km/h",
+      "viento": "SE 10 km/h",
       "uv": "5"
     },
     {
@@ -80,11 +80,11 @@
       "dia_semana": "Domingo",
       "fecha_corta": "11/10",
       "t_max": "25",
-      "t_min": "14",
-      "icono": "☁️",
-      "descripcion": "Nuboso",
-      "lluvia": "20%",
-      "viento": "S 5 km/h",
+      "t_min": "16",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "30%",
+      "viento": "S 10 km/h",
       "uv": "5"
     },
     {
@@ -92,7 +92,7 @@
       "dia_semana": "Lunes",
       "fecha_corta": "12/10",
       "t_max": "26",
-      "t_min": "16",
+      "t_min": "15",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "10%",
@@ -103,12 +103,12 @@
       "fecha": "2026-10-13",
       "dia_semana": "Martes",
       "fecha_corta": "13/10",
-      "t_max": "25",
-      "t_min": "17",
+      "t_max": "26",
+      "t_min": "16",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "45%",
-      "viento": "E 15 km/h",
+      "viento": "SE 10 km/h",
       "uv": ""
     }
   ],
@@ -139,9 +139,9 @@
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.0 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.1 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.0,
+      "gramineas": 0.1,
       "olivo": 0.0
     }
   ],

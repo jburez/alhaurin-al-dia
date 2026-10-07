@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-10-07T19:00:29.699Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 226 eventos próximos.",
+  "actualizado": "2026-10-08T00:55:49.107981+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 223 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5848",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Live Music 🎶 | Aida Garner 🎙️",
-      "descripcion": "Live music 🎶⭐💙 September 7th Show 8:00 pm🎙️ Bookings 952595800 Música en vivo ✨🎶🤩 7 de septiembre Show 20:00 horas Reservas 952595800",
-      "lugar": "",
-      "inicio": "2026-09-07T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/live-music-%f0%9f%8e%b6-aida-garner-%f0%9f%8e%99%ef%b8%8f/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-3726",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Puertas abiertas 🚪 Museo Antonio Gala",
-      "descripcion": "Temporada, destaca la celebración de jornadas de puertas abiertas el primer domingo de cada mes. La primera de ellas tendrá lugar el 7 de septiembre y permitirá acceder de forma gratuita a los espa...",
-      "lugar": "",
-      "inicio": "2026-09-07T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/jornada-de-puertas-abiertas/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-6423",
       "tipo": "Evento",
@@ -3374,21 +3345,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

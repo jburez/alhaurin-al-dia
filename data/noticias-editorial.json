@@ -576,7 +576,7 @@
     "source_url": "https://www.youtube.com/watch?v=LdnKz1_1-mY"
   },
   "guid:atv-alhaurin-youtube:yt:video:M14dadnUleg": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "bf201aebf2426d686a56e54486fb4d130ec352f0",
     "date_modified": null,
     "date_published": "2026-10-07T13:04:18+00:00",
@@ -589,7 +589,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-m14dadnuleg-b069fa7a",
-    "last_ai_attempt": "2026-10-07T13:14:08.408459+00:00",
+    "last_ai_attempt": "2026-10-07T19:52:39.975062+00:00",
     "pagina": "noticias/renovacion-parque-jorobado-la-concejala-de-servicios-operativos-explica-que-dentro.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=M14dadnUleg"
@@ -1198,7 +1198,7 @@
     "source_url": "https://www.youtube.com/watch?v=lbt79XPIZh4"
   },
   "guid:atv-alhaurin-youtube:yt:video:mUG2Xs-Zpy0": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "fd097ac95a88a8657c05b2021edbe75aea6de232",
     "date_modified": null,
     "date_published": "2026-10-07T08:54:48+00:00",
@@ -1211,7 +1211,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-mug2xs-zpy0-b053d615",
-    "last_ai_attempt": "2026-10-07T13:14:28.614412+00:00",
+    "last_ai_attempt": "2026-10-07T19:52:59.460969+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=mUG2Xs-Zpy0"
@@ -1919,7 +1919,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-colabora-en-la-recreacion-de-un-escenario-de-derrumbe-para-poner-a-prueba-a-los-equipos-de-busqueda-y-rescate/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224893": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "29bf4684c13b03e644b1bfb1ed3e58338d7bdeb4",
     "date_modified": null,
     "date_published": "2026-10-06T12:21:15+00:00",
@@ -1932,7 +1932,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22489-9f1b6033",
-    "last_ai_attempt": "2026-10-07T05:32:37.807872+00:00",
+    "last_ai_attempt": "2026-10-07T19:51:28.412540+00:00",
     "pagina": "noticias/el-ayuntamiento-renueva-en-una-primera-fase-siete-parques-infantiles-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-renueva-en-una-primera-fase-siete-parques-infantiles-de-alhaurin-el-grande/"
@@ -3933,6 +3933,25 @@
     "pagina": "noticias/desaparicion-de-sonia-dolores-a-m-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/05/desaparicion-sonia-dolores-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=210750": {
+    "ai_attempts": 1,
+    "content_hash": "8ff89a4db2717700fc5dbae34b63604896ec538d",
+    "date_modified": null,
+    "date_published": "2026-10-07T19:24:47+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 43 segundosLa exposición rinde homenaje a las mujeres que han marcado la vida de las alumnas y a tres compañeras que ya no están Esta tarde se ha inaugurado en la Sala de Exposiciones de la Biblioteca Municipal la muestra «Con Alma de Mujer», con la que el Taller La entrada «Con Alma de Mujer»: exposición de pintura al óleo en Alhaurín el Grande se publicó primero en Revista Lugar.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 43 segundosLa exposición rinde homenaje a las mujeres que han marcado la vida de las alumnas y a tres compañeras que ya no están Esta tarde se ha inaugurado en la Sala de Exposiciones de la.",
+      "seo_keywords": [],
+      "titulo": "«Con Alma de Mujer»: exposición de pintura al óleo en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-cbabfddc",
+    "last_ai_attempt": "2026-10-07T19:56:48.808572+00:00",
+    "pagina": "noticias/con-alma-de-mujer-exposicion-de-pintura-al-oleo-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/10/07/con-alma-de-mujer-exposicion-de-pintura-al-oleo-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

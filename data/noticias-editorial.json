@@ -244,7 +244,7 @@
     "source_url": "https://www.youtube.com/watch?v=Ax3jjKYHHe4"
   },
   "guid:atv-alhaurin-youtube:yt:video:BBSYoNKjmY4": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "7a6fc82346d410e153ee7689e3cff86872fbb2a8",
     "date_modified": null,
     "date_published": "2026-10-06T13:07:17+00:00",
@@ -257,7 +257,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-bbsyonkjmy4-7e785193",
-    "last_ai_attempt": "2026-10-07T13:15:09.095344+00:00",
+    "last_ai_attempt": "2026-10-08T00:09:14.048732+00:00",
     "pagina": "noticias/nuevo-vehiculo-fahala-el-ayuntamiento-destina-casi-60-mil-euros-a-la-adquisicion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=BBSYoNKjmY4"
@@ -576,7 +576,7 @@
     "source_url": "https://www.youtube.com/watch?v=LdnKz1_1-mY"
   },
   "guid:atv-alhaurin-youtube:yt:video:M14dadnUleg": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "bf201aebf2426d686a56e54486fb4d130ec352f0",
     "date_modified": null,
     "date_published": "2026-10-07T13:04:18+00:00",
@@ -589,7 +589,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-m14dadnuleg-b069fa7a",
-    "last_ai_attempt": "2026-10-07T19:52:39.975062+00:00",
+    "last_ai_attempt": "2026-10-08T00:08:20.800745+00:00",
     "pagina": "noticias/renovacion-parque-jorobado-la-concejala-de-servicios-operativos-explica-que-dentro.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=M14dadnUleg"
@@ -809,7 +809,7 @@
     "source_url": "https://www.youtube.com/watch?v=Z7s1LW5uWys"
   },
   "guid:atv-alhaurin-youtube:yt:video:_E29t0HtKpQ": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "975e3f16e899599a15ad85ec1ad636177ecf77ef",
     "date_modified": null,
     "date_published": "2026-10-06T14:00:10+00:00",
@@ -822,7 +822,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-e29t0htkpq-c16885c8",
-    "last_ai_attempt": "2026-10-07T13:14:49.711924+00:00",
+    "last_ai_attempt": "2026-10-08T00:08:57.195240+00:00",
     "pagina": "noticias/dia-de-la-policia-local-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=_E29t0HtKpQ"
@@ -1198,7 +1198,7 @@
     "source_url": "https://www.youtube.com/watch?v=lbt79XPIZh4"
   },
   "guid:atv-alhaurin-youtube:yt:video:mUG2Xs-Zpy0": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "fd097ac95a88a8657c05b2021edbe75aea6de232",
     "date_modified": null,
     "date_published": "2026-10-07T08:54:48+00:00",
@@ -1211,7 +1211,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-mug2xs-zpy0-b053d615",
-    "last_ai_attempt": "2026-10-07T19:52:59.460969+00:00",
+    "last_ai_attempt": "2026-10-08T00:08:39.268701+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=mUG2Xs-Zpy0"
@@ -3935,7 +3935,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/05/desaparicion-sonia-dolores-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=210750": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "8ff89a4db2717700fc5dbae34b63604896ec538d",
     "date_modified": null,
     "date_published": "2026-10-07T19:24:47+00:00",
@@ -3948,7 +3948,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-cbabfddc",
-    "last_ai_attempt": "2026-10-07T19:56:48.808572+00:00",
+    "last_ai_attempt": "2026-10-08T00:13:23.652156+00:00",
     "pagina": "noticias/con-alma-de-mujer-exposicion-de-pintura-al-oleo-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/07/con-alma-de-mujer-exposicion-de-pintura-al-oleo-en-alhaurin-el-grande/"

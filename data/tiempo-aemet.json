@@ -1,66 +1,54 @@
 {
-  "actualizado": "2026-10-07T22:38:04+02:00",
+  "actualizado": "2026-10-08T15:30:17+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "🌧️",
+    "icono": "🌤️",
     "titulo": "Tiempo",
-    "valor": "Máx. 27º",
-    "detalle": "Intervalos nubosos con lluvia escasa · Máx. 27º / Mín. 17º · Lluvia 90%",
+    "valor": "Máx. 28º",
+    "detalle": "Poco nuboso · Máx. 28º / Mín. 16º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-10-07",
-    "dia_semana": "Miércoles",
-    "fecha_corta": "7/10",
-    "t_max": "27",
-    "t_min": "17",
-    "icono": "🌧️",
-    "descripcion": "Intervalos nubosos con lluvia escasa",
-    "lluvia": "90%",
-    "viento": "C 15 km/h",
+    "fecha": "2026-10-08",
+    "dia_semana": "Jueves",
+    "fecha_corta": "8/10",
+    "t_max": "28",
+    "t_min": "16",
+    "icono": "🌤️",
+    "descripcion": "Poco nuboso",
+    "lluvia": "0%",
+    "viento": "S 5 km/h",
     "uv": "5"
   },
   "semana": [
-    {
-      "fecha": "2026-10-07",
-      "dia_semana": "Miércoles",
-      "fecha_corta": "7/10",
-      "t_max": "27",
-      "t_min": "17",
-      "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "90%",
-      "viento": "C 15 km/h",
-      "uv": "5"
-    },
     {
       "fecha": "2026-10-08",
       "dia_semana": "Jueves",
       "fecha_corta": "8/10",
       "t_max": "28",
       "t_min": "16",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
-      "viento": "S 10 km/h",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "0%",
+      "viento": "S 5 km/h",
       "uv": "5"
     },
     {
       "fecha": "2026-10-09",
       "dia_semana": "Viernes",
       "fecha_corta": "9/10",
-      "t_max": "25",
+      "t_max": "26",
       "t_min": "16",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "85%",
-      "viento": "SE 15 km/h",
+      "descripcion": "Nuboso con lluvia escasa",
+      "lluvia": "55%",
+      "viento": "SE 10 km/h",
       "uv": "5"
     },
     {
@@ -68,10 +56,10 @@
       "dia_semana": "Sábado",
       "fecha_corta": "10/10",
       "t_max": "25",
-      "t_min": "17",
+      "t_min": "18",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia escasa",
-      "lluvia": "65%",
+      "descripcion": "Muy nuboso con lluvia escasa",
+      "lluvia": "55%",
       "viento": "SE 10 km/h",
       "uv": "5"
     },
@@ -79,25 +67,25 @@
       "fecha": "2026-10-11",
       "dia_semana": "Domingo",
       "fecha_corta": "11/10",
-      "t_max": "25",
-      "t_min": "16",
+      "t_max": "26",
+      "t_min": "15",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "30%",
-      "viento": "S 10 km/h",
+      "lluvia": "15%",
+      "viento": "SE 5 km/h",
       "uv": "5"
     },
     {
       "fecha": "2026-10-12",
       "dia_semana": "Lunes",
       "fecha_corta": "12/10",
-      "t_max": "26",
+      "t_max": "27",
       "t_min": "15",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "5%",
       "viento": "SE 5 km/h",
-      "uv": ""
+      "uv": "5"
     },
     {
       "fecha": "2026-10-13",
@@ -107,8 +95,20 @@
       "t_min": "16",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "45%",
-      "viento": "SE 10 km/h",
+      "lluvia": "15%",
+      "viento": "E 10 km/h",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-10-14",
+      "dia_semana": "Miércoles",
+      "fecha_corta": "14/10",
+      "t_max": "25",
+      "t_min": "17",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "25%",
+      "viento": "E 15 km/h",
       "uv": ""
     }
   ],
@@ -117,15 +117,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Desaconsejado",
-      "detalle": "Riesgo de precipitaciones"
+      "estado": "Excelente",
+      "detalle": "Secado muy rápido al sol (0% riesgo)"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Espera unos días",
-      "detalle": "Posible barro o lluvia"
+      "estado": "Muy recomendado",
+      "detalle": "Cielo limpio y sin calima"
     },
     {
       "id": "deporte",
@@ -139,17 +139,17 @@
       "icono": "🌾",
       "titulo": "Alergia y Polen",
       "estado": "Nulo",
-      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.1 granos/m³)",
+      "detalle": "Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.0 granos/m³)",
       "fuente": "Open-Meteo (CAMS)",
-      "gramineas": 0.1,
+      "gramineas": 0.0,
       "olivo": 0.0
     }
   ],
   "sol_luna": {
-    "orto": "08:18 h",
-    "ocaso": "19:53 h",
-    "horas_luz": "11h 35m",
-    "fase_luna": "Luna Menguante (15%)",
+    "orto": "08:19 h",
+    "ocaso": "19:52 h",
+    "horas_luz": "11h 33m",
+    "fase_luna": "Luna Menguante (9%)",
     "icono_luna": "🌘"
   },
   "embalses": {
@@ -157,14 +157,14 @@
     "fuente": "SAIH Hidrosur (Junta de Andalucía)",
     "fuente_url": "https://www.redhidrosurmedioambiente.es/saih/informe/embalses",
     "total_capacidad_hm3": 403.1,
-    "total_embalsado_hm3": 319.6,
+    "total_embalsado_hm3": 319.4,
     "porcentaje": "79.3%",
     "pantanos": [
       {
         "nombre": "Conde de Guadalhorce",
         "capacidad": "66.5 hm³",
-        "embalsado": "41.0 hm³",
-        "porcentaje": "61.6%"
+        "embalsado": "40.9 hm³",
+        "porcentaje": "61.4%"
       },
       {
         "nombre": "Embalse del Guadalhorce",
@@ -181,8 +181,8 @@
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "29.6 hm³",
-        "porcentaje": "51.5%"
+        "embalsado": "29.5 hm³",
+        "porcentaje": "51.3%"
       }
     ]
   }

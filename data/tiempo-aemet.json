@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-09T15:18:02+02:00",
+  "actualizado": "2026-10-09T22:06:31+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
     "icono": "☀️",
     "titulo": "Tiempo",
     "valor": "Máx. 26º",
-    "detalle": "Despejado · Máx. 26º / Mín. 16º · Lluvia 0%",
+    "detalle": "Despejado · Máx. 26º / Mín. 16º · Lluvia 5%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -22,8 +22,8 @@
     "t_min": "16",
     "icono": "☀️",
     "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "lluvia": "5%",
+    "viento": "SE 10 km/h",
     "uv": "5"
   },
   "semana": [
@@ -35,8 +35,8 @@
       "t_min": "16",
       "icono": "☀️",
       "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "lluvia": "5%",
+      "viento": "SE 10 km/h",
       "uv": "5"
     },
     {
@@ -46,7 +46,7 @@
       "t_max": "25",
       "t_min": "17",
       "icono": "🌧️",
-      "descripcion": "Muy nuboso con lluvia escasa",
+      "descripcion": "Nuboso con lluvia escasa",
       "lluvia": "65%",
       "viento": "S 10 km/h",
       "uv": "5"
@@ -57,10 +57,10 @@
       "fecha_corta": "11/10",
       "t_max": "26",
       "t_min": "15",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
+      "icono": "☁️",
+      "descripcion": "Nubes altas",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
+      "viento": "S 5 km/h",
       "uv": "5"
     },
     {
@@ -83,8 +83,8 @@
       "t_min": "17",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
-      "viento": "E 10 km/h",
+      "lluvia": "20%",
+      "viento": "SE 10 km/h",
       "uv": "5"
     },
     {
@@ -92,10 +92,10 @@
       "dia_semana": "Miércoles",
       "fecha_corta": "14/10",
       "t_max": "25",
-      "t_min": "17",
+      "t_min": "18",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "55%",
+      "descripcion": "Nuboso con lluvia escasa",
+      "lluvia": "80%",
       "viento": "E 15 km/h",
       "uv": ""
     },
@@ -103,12 +103,12 @@
       "fecha": "2026-10-15",
       "dia_semana": "Jueves",
       "fecha_corta": "15/10",
-      "t_max": "24",
-      "t_min": "18",
-      "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "55%",
-      "viento": "E 15 km/h",
+      "t_max": "26",
+      "t_min": "17",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "35%",
+      "viento": "E 20 km/h",
       "uv": ""
     }
   ],

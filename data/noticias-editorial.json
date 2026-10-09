@@ -1995,7 +1995,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-renueva-en-una-primera-fase-siete-parques-infantiles-de-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224903": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "a3ab299d1e82b1db69022195cc51e1bd65e6e0c6",
     "date_modified": null,
     "date_published": "2026-10-08T11:14:28+00:00",
@@ -2008,13 +2008,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22490-28d09939",
-    "last_ai_attempt": "2026-10-08T23:12:16.965776+00:00",
+    "last_ai_attempt": "2026-10-09T05:45:55.186301+00:00",
     "pagina": "noticias/alhaurin-el-grande-celebrara-el-24-de-octubre-el-concurso-de-trios-de-carnavalh.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebrara-el-24-de-octubre-el-concurso-de-trios-de-carnavalh/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224909": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "841a1df84cf36b48b3a3863a775bc59e894d2eea",
     "date_modified": null,
     "date_published": "2026-10-08T12:46:13+00:00",
@@ -2027,7 +2027,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22490-bc493ab7",
-    "last_ai_attempt": "2026-10-08T23:11:59.719942+00:00",
+    "last_ai_attempt": "2026-10-09T05:45:35.027745+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-incorpora-un-nuevo-vehiculo-adaptado-para-mejorar.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-incorpora-un-nuevo-vehiculo-adaptado-para-mejorar-el-servicio-de-transporte-del-centro-fahala/"
@@ -2741,7 +2741,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-juernes-innovador-noche-del-comercio-abierto/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261393": {
-    "ai_attempts": 12,
+    "ai_attempts": 13,
     "content_hash": "5172ef6bddb63ed9a38b7d978f2dd2b586975703",
     "date_modified": null,
     "date_published": "2026-09-23T10:33:26+00:00",
@@ -2754,13 +2754,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261393-642d2215",
-    "last_ai_attempt": "2026-10-07T05:33:54.288155+00:00",
+    "last_ai_attempt": "2026-10-09T05:47:42.546382+00:00",
     "pagina": "noticias/conclusiones-networking-para-emprendedores.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261433": {
-    "ai_attempts": 15,
+    "ai_attempts": 16,
     "content_hash": "b04dc2a32bbe86430520d91b4c586e7b2190afd9",
     "date_modified": null,
     "date_published": "2026-09-25T10:00:35+00:00",
@@ -2773,7 +2773,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261433-d73fbcdb",
-    "last_ai_attempt": "2026-10-07T05:33:35.676345+00:00",
+    "last_ai_attempt": "2026-10-09T05:47:22.704900+00:00",
     "pagina": "noticias/conclusiones-masterclass-en-coin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"
@@ -3500,7 +3500,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/01/iniciativas-culturales-gratuitas-para-el-otono-en-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/10/08/concurso-de-trios-de-carnaval-en-alhaurin-el-grande-detalles-y-premios": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "e1c427b6376f7e7ecea19c4dadb3742374c74905",
     "date_modified": null,
     "date_published": "2026-10-08T14:35:43+00:00",
@@ -3513,7 +3513,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-f5b71b78",
-    "last_ai_attempt": "2026-10-08T23:24:31.549743+00:00",
+    "last_ai_attempt": "2026-10-09T05:49:39.341572+00:00",
     "pagina": "noticias/concurso-de-trios-de-carnaval-en-alhaurin-el-grande-detalles-y-premios.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/08/concurso-de-trios-de-carnaval-en-alhaurin-el-grande-detalles-y-premios/"
@@ -4105,6 +4105,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/08/vox-propone-hacer-accesible-el-museo-de-la-agricultura-de-alhaurin-el-grande/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=210852": {
+    "ai_attempts": 1,
+    "content_hash": "416ce0d6c292855c2affa712f3225220d5a35999",
+    "date_modified": null,
+    "date_published": "2026-10-09T05:44:33+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Tiempo de lectura aprox: 53 segundosEl pasado 28 de agosto de 2026 fallecía en Málaga Luis Martínez Valcabado, «Luis el Maestro». Su partida se ha mantenido hasta ahora en la intimidad, por expreso deseo de Luis. Por este motivo, gran parte de nuestro pueblo no ha tenido conocimiento de su fallecimiento en estos días.\n\nLuis La entrada Alhaurín el Grande en memoria de Luis Martínez «Luís el maestro» se publicó primero en Revista Lugar de Encuentro.",
+      "descripcion": "Tiempo de lectura aprox: 53 segundosEl pasado 28 de agosto de 2026 fallecía en Málaga Luis Martínez Valcabado, «Luis el Maestro». Su partida se ha mantenido hasta ahora en la intimidad, por expreso deseo de Luis. Por este motivo.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande en memoria de Luis Martínez «Luís el maestro»"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-a84685f8",
+    "last_ai_attempt": "2026-10-09T05:49:20.696923+00:00",
+    "pagina": "noticias/alhaurin-el-grande-en-memoria-de-luis-martinez-luis-el-maestro.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/10/09/alhaurin-el-grande-en-memoria-de-luis-martinez-luis-el-maestro/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",
@@ -4531,7 +4550,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/misa-romera-y-espectaculo-ecuestre-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50640": {
-    "ai_attempts": 26,
+    "ai_attempts": 27,
     "content_hash": "80f0410b4b00cc0f94dd044b8595a8a23ee3e3eb",
     "date_modified": null,
     "date_published": "2026-09-21T12:13:32+00:00",
@@ -4544,13 +4563,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50640-a8dceec4",
-    "last_ai_attempt": "2026-10-08T08:52:38.545347+00:00",
+    "last_ai_attempt": "2026-10-09T05:47:02.738424+00:00",
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50644": {
-    "ai_attempts": 22,
+    "ai_attempts": 23,
     "content_hash": "fa2e3fa3ed4083cf9bb63a69d90624baefba6dab",
     "date_modified": null,
     "date_published": "2026-09-24T11:05:56+00:00",
@@ -4563,7 +4582,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50644-74ca6b30",
-    "last_ai_attempt": "2026-10-08T08:52:21.469942+00:00",
+    "last_ai_attempt": "2026-10-09T05:46:45.829830+00:00",
     "pagina": "noticias/inicio-de-la-campana-de-la-aceituna-alorena-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inicio-de-la-campana-de-la-aceituna-alorena-2026/"

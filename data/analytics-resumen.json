@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-10-09T15:02:30.839Z",
-  "visitas24h": 10,
-  "paginasVistas24h": 11,
+  "actualizado": "2026-10-09T20:05:37.200Z",
+  "visitas24h": 11,
+  "paginasVistas24h": 15,
   "topPaginas": [
     {
       "ruta": "/planes/",
-      "vistas": 25
+      "vistas": 27
     },
     {
       "ruta": "/planes/e-9367/",
-      "vistas": 18
+      "vistas": 15
     },
     {
       "ruta": "/",
       "vistas": 13
     },
     {
-      "ruta": "/anunciarse/",
+      "ruta": "/planes/e-13646/",
       "vistas": 6
     },
     {
-      "ruta": "/planes/e-13646/",
+      "ruta": "/anunciarse/",
       "vistas": 6
     }
   ]

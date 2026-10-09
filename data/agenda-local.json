@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-10-09T07:59:22.806Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 213 eventos próximos.",
+  "actualizado": "2026-10-09T14:54:16.234029+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 220 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
       "id": "alhaurinhoy-12617",
@@ -1188,6 +1189,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-13711",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Música en vivo 🎶 LOS TOZUDOS🎸",
+      "descripcion": "Zeppelian@, este finde continuamos con la música en directo!!!!! Contaremos con la actuación de la banda «LOS TOZUDOS». Power trio Band con un repertorio de rock and roll en el que incluyen temas d...",
+      "lugar": "",
+      "inicio": "2026-10-09T22:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-los-tozudos%f0%9f%8e%b8/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-9390",
       "tipo": "Evento",
       "icono": "📅",
@@ -1229,6 +1245,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/taller-lo-invisible/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13714",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Música en vivo 🎶 Oskhar Olmos 🎸",
+      "descripcion": "Un homenaje de lujo a Héroes del Silencio 🎤🔥 🎸 Oskhar Olmos (Onda Covers) en directo 📅 SÁBADO 10 DE OCTUBRE · 20:00h “Maldito duende” sonando, tarta, amigos y rock del bueno para soplar las velas. ...",
+      "lugar": "",
+      "inicio": "2026-10-10T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-oskhar-olmos-%f0%9f%8e%b8/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1304,6 +1335,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/campamento-funtastico/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13716",
+      "tipo": "Deportes",
+      "icono": "⚽",
+      "titulo": "Concierto 🎶 Santiago Alonso",
+      "descripcion": "🎶 ¡Nueva oportunidad para disfrutar de la música en directo en Alhaurín el Grande!🎸 El próximo jueves 15 de octubre, disfruta del concierto de Santiago Alonso, con la participación especial del art...",
+      "lugar": "",
+      "inicio": "2026-10-15T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/concierto-%f0%9f%8e%b6-santiago-alonso/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1443,6 +1489,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-13727",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Concurso 🎭 TRÍOS DE CARNAVAL 🎭",
+      "descripcion": "🎭🎉 CONCURSO DE TRÍOS DE CARNAVAL🎭🎉 ¡Carnavalero, carnavalera… esto es para ti! 📅 Sábado 24 de octubre 📍 Terraza del Teatro Antonio Gala ⏰ DOS SESIONES 🕐 13:00 h 🕓 16:00 h 🏆 PREMIOS EN CADA SESIÓN 🥇...",
+      "lugar": "",
+      "inicio": "2026-10-24T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/concurso-%f0%9f%8e%ad-trios-de-carnaval-%f0%9f%8e%ad/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-9469",
       "tipo": "Ocio",
       "icono": "🎉",
@@ -1484,6 +1545,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/iii-encuentro-%f0%9f%a7%b5-multilabores-%f0%9f%a9%b5/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13730",
+      "tipo": "Deportes",
+      "icono": "⚽",
+      "titulo": "XXXVIII Milla Urbana 🏃🏽‍♂️🏃🏻‍♀️",
+      "descripcion": "🏃‍♀️🏃‍♂️ ¡Vuelve la XXXVIII Milla Urbana Alhaurín el Grande! 🎉 📅 Domingo 25 de octubre de 2026 🕚 11:00 h 📍 Plaza de la Legión Una cita deportiva para disfrutar en familia y con categorías para toda...",
+      "lugar": "",
+      "inicio": "2026-10-25T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/xxxviii-milla-urbana-%f0%9f%8f%83%f0%9f%8f%bd%e2%99%82%ef%b8%8f%f0%9f%8f%83%f0%9f%8f%bb%e2%99%80%ef%b8%8f/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1709,6 +1785,51 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/presentacion-%f0%9f%93%99-crohn-tigo-para-siempre/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13724",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "🎓 Curso gratuito 🤖 IA día 3/3",
+      "descripcion": "🤖 La Delegación de Cultura del Ayuntamiento de Alhaurín el Grande organiza el curso gratuito de inteligencia artificial “¿Quién está escribiendo tu vida?”. La formación, impartida por el profesor, ...",
+      "lugar": "",
+      "inicio": "2026-11-06T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8e%93-curso-gratuito-%f0%9f%a4%96-ia-dia-3-3/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13722",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "🎓 Curso gratuito 🤖 IA día 2/3",
+      "descripcion": "🤖 La Delegación de Cultura del Ayuntamiento de Alhaurín el Grande organiza el curso gratuito de inteligencia artificial “¿Quién está escribiendo tu vida?”. La formación, impartida por el profesor, ...",
+      "lugar": "",
+      "inicio": "2026-11-06T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8e%93-curso-gratuito-%f0%9f%a4%96-ia-dia-2-3/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13719",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "🎓 Curso gratuito 🤖 IA día 1/3",
+      "descripcion": "🤖 La Delegación de Cultura del Ayuntamiento de Alhaurín el Grande organiza el curso gratuito de inteligencia artificial “¿Quién está escribiendo tu vida?”. La formación, impartida por el profesor, ...",
+      "lugar": "",
+      "inicio": "2026-11-06T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8e%93-curso-gratuito-%f0%9f%a4%96-ia/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -3179,21 +3300,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

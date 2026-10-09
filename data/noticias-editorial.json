@@ -327,6 +327,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=HDaZNki3tTc"
   },
+  "guid:atv-alhaurin-youtube:yt:video:HgkAfUf8OZA": {
+    "ai_attempts": 1,
+    "content_hash": "d6031227ca8bf748cfd55d5d3fd0ef0854520603",
+    "date_modified": null,
+    "date_published": "2026-10-09T14:00:33+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "descripcion": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "seo_keywords": [],
+      "titulo": "A pie de campo - Programa 1 (3ª Temporada)"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-hgkafuf8oza-fb156400",
+    "last_ai_attempt": "2026-10-09T19:26:05.516294+00:00",
+    "pagina": "noticias/a-pie-de-campo-programa-1-3-temporada.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=HgkAfUf8OZA"
+  },
   "guid:atv-alhaurin-youtube:yt:video:JKoJEk2iUZE": {
     "ai_attempts": 4,
     "content_hash": "9856d1c6ec441a91eec6e5a171714f0ad5b73cf4",
@@ -1297,7 +1316,7 @@
     "source_url": "https://www.youtube.com/watch?v=pKyD2nZx2Nk"
   },
   "guid:atv-alhaurin-youtube:yt:video:q0SdzQULeeg": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "7b90fc9ad8d15edb41dd42ca05ffdc963de049a1",
     "date_modified": null,
     "date_published": "2026-10-09T11:51:56+00:00",
@@ -1310,7 +1329,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-q0sdzquleeg-db320ce8",
-    "last_ai_attempt": "2026-10-09T13:07:13.654618+00:00",
+    "last_ai_attempt": "2026-10-09T19:26:25.908632+00:00",
     "pagina": "noticias/6-nuevos-vehiculos-en-ssoo-el-ayuntamiento-de-alhaurin-el-grande-ha-incorporado-seis.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=q0SdzQULeeg"
@@ -1394,6 +1413,25 @@
     "pagina": "noticias/equinalh-2026-trenzado-con-francisco-gabarro-y-exhibicion-de-doma-clasica-con-juan-jesus.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=vXr7JrQTR4Q"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:xVxhRTJvsrc": {
+    "ai_attempts": 1,
+    "content_hash": "26e2ec0d2e3672c86076794e7b020b77a3e12df9",
+    "date_modified": null,
+    "date_published": "2026-10-09T14:30:10+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La Biblioteca Municipal de Alhaurín el Grande acogió un encuentro poético dedicado a Federico García Lorca con motivo del 90 aniversario de su asesinato. La actividad, incluida en la programación cultural Cuarta Estación del Ayuntamiento, llevó por título Distintos y estuvo protagonizada por el artista multidisciplinar Paco Otero, en colaboración con Imam Otero-Haddad.\n\nEl encuentro no se limitó a recordar la figura y la obra de Lorca, sino que amplió el homenaje a otros poetas que, a lo largo de la historia, fueron perseguidos, encarcelados o exiliados por sus ideas, su forma de expresarse o por ser considerados diferentes.\n\nA través de la recitación y la interpretación de sus textos, Paco Otero recuperó las voces de estos autores y abordó conceptos como la persecución, la marginación, el pensamiento único y la intolerancia. Una propuesta que utiliza la poesía como herramienta para recuperar la memoria y abrir un espacio de reflexión sobre quienes fueron silenciados por ser distintos.",
+      "descripcion": "La Biblioteca Municipal de Alhaurín el Grande acogió un encuentro poético dedicado a Federico García Lorca con motivo del 90 aniversario de su asesinato. La actividad, incluida en la programación cultural Cuarta Estación del.",
+      "seo_keywords": [],
+      "titulo": "ENCUENTRO POÉTICO EN HOMENAJE A LORCA A CARGO DE PACO OTERO"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-xvxhrtjvsrc-964e7507",
+    "last_ai_attempt": "2026-10-09T19:25:49.620799+00:00",
+    "pagina": "noticias/encuentro-poetico-en-homenaje-a-lorca-a-cargo-de-paco-otero.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=xVxhRTJvsrc"
   },
   "guid:atv-alhaurin-youtube:yt:video:xp9meANJvuc": {
     "ai_attempts": 4,
@@ -2014,7 +2052,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-renueva-en-una-primera-fase-siete-parques-infantiles-de-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224903": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "a3ab299d1e82b1db69022195cc51e1bd65e6e0c6",
     "date_modified": null,
     "date_published": "2026-10-08T11:14:28+00:00",
@@ -2027,13 +2065,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22490-28d09939",
-    "last_ai_attempt": "2026-10-09T05:45:55.186301+00:00",
+    "last_ai_attempt": "2026-10-09T19:24:04.023136+00:00",
     "pagina": "noticias/alhaurin-el-grande-celebrara-el-24-de-octubre-el-concurso-de-trios-de-carnavalh.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebrara-el-24-de-octubre-el-concurso-de-trios-de-carnavalh/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224909": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "841a1df84cf36b48b3a3863a775bc59e894d2eea",
     "date_modified": null,
     "date_published": "2026-10-08T12:46:13+00:00",
@@ -2046,7 +2084,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22490-bc493ab7",
-    "last_ai_attempt": "2026-10-09T05:45:35.027745+00:00",
+    "last_ai_attempt": "2026-10-09T19:23:45.517628+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-incorpora-un-nuevo-vehiculo-adaptado-para-mejorar.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-incorpora-un-nuevo-vehiculo-adaptado-para-mejorar-el-servicio-de-transporte-del-centro-fahala/"
@@ -2798,7 +2836,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261544": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "70efb9d5984852a3e658380f1aaf2a9e59e53d4a",
     "date_modified": null,
     "date_published": "2026-10-09T09:55:00+00:00",
@@ -2811,7 +2849,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261544-cdcbf030",
-    "last_ai_attempt": "2026-10-09T13:10:10.853023+00:00",
+    "last_ai_attempt": "2026-10-09T19:27:58.122713+00:00",
     "pagina": "noticias/masterclass-verifactu-en-colmenar.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-verifactu-en-colmenar/"
@@ -3119,7 +3157,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34202/representacion-de-nuestra-hermandad-en-los-tercios-con-motivo-del-cvi-aniversario-de-la-gloriosa-legion-espanola/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34221": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "52202fd078108d47a82d03cd021a044afdeaa78d",
     "date_modified": null,
     "date_published": "2026-10-09T06:52:02+00:00",
@@ -3132,7 +3170,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-583ceb3d",
-    "last_ai_attempt": "2026-10-09T13:02:58.244325+00:00",
+    "last_ai_attempt": "2026-10-09T19:24:48.488769+00:00",
     "pagina": "noticias/nuestra-real-hermandad-presente-en-el-xxi-aniversario-de-la-ume.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34221/nuestra-real-hermandad-presente-en-el-xxi-aniversario-de-la-ume/"

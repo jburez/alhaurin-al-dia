@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-10T14:32:51+02:00",
+  "actualizado": "2026-10-10T21:16:48+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
@@ -147,8 +147,8 @@
   ],
   "sol_luna": {
     "orto": "08:21 h",
-    "ocaso": "19:49 h",
-    "horas_luz": "11h 28m",
+    "ocaso": "19:50 h",
+    "horas_luz": "11h 29m",
     "fase_luna": "Luna Nueva (1%)",
     "icono_luna": "🌑"
   },

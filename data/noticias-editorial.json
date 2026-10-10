@@ -2714,7 +2714,7 @@
     "source_url": "https://fedelhorce.es/networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260892": {
-    "ai_attempts": 17,
+    "ai_attempts": 18,
     "content_hash": "a9ba7eecd4d7a55e53f8149a2f22144b478dd2ba",
     "date_modified": "2026-09-13T04:29:37.702104+00:00",
     "date_published": "2026-08-21T08:31:49+00:00",
@@ -2727,7 +2727,7 @@
     },
     "ia_exitosa": false,
     "id": "https-fedelhorce-es-masterclass-facturacion-electronica-y-verifactu-e1cf96da",
-    "last_ai_attempt": "2026-10-07T05:34:13.197382+00:00",
+    "last_ai_attempt": "2026-10-10T23:25:00.990940+00:00",
     "pagina": "noticias/masterclass-en-alhaurin-el-grande-sobre-facturacion-electronica-y-verifactu.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/masterclass-facturacion-electronica-y-verifactu/"
@@ -2798,7 +2798,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-juernes-innovador-noche-del-comercio-abierto/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261393": {
-    "ai_attempts": 13,
+    "ai_attempts": 14,
     "content_hash": "5172ef6bddb63ed9a38b7d978f2dd2b586975703",
     "date_modified": null,
     "date_published": "2026-09-23T10:33:26+00:00",
@@ -2811,13 +2811,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261393-642d2215",
-    "last_ai_attempt": "2026-10-09T05:47:42.546382+00:00",
+    "last_ai_attempt": "2026-10-10T23:24:40.594320+00:00",
     "pagina": "noticias/conclusiones-networking-para-emprendedores.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-networking-para-emprendedores-teoria-del-color/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261433": {
-    "ai_attempts": 16,
+    "ai_attempts": 17,
     "content_hash": "b04dc2a32bbe86430520d91b4c586e7b2190afd9",
     "date_modified": null,
     "date_published": "2026-09-25T10:00:35+00:00",
@@ -2830,7 +2830,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261433-d73fbcdb",
-    "last_ai_attempt": "2026-10-09T05:47:22.704900+00:00",
+    "last_ai_attempt": "2026-10-10T23:24:20.980714+00:00",
     "pagina": "noticias/conclusiones-masterclass-en-coin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"

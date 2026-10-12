@@ -1,52 +1,8 @@
 {
-  "actualizado": "2026-10-12T02:20:27.916Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 240 eventos próximos.",
+  "actualizado": "2026-10-12T07:18:38.674438+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 236 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5763",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Curso 🎓 Competencias digitales 🧒🏾👧🏻",
-      "descripcion": "El Área de Educación del Ayuntamiento de Alhaurín el Grande ( @aytoalhaurinelgrande ), coordinado por Maribel Plaza, ha puesto en marcha dos nuevas propuestas formativas que comenzarán en septiembr...",
-      "lugar": "",
-      "inicio": "2026-09-11T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/curso-%f0%9f%8e%93-competencias-digitales-%f0%9f%92%bb/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-5761",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Curso | Monitor de campamento",
-      "descripcion": "El Área de Educación del Ayuntamiento de Alhaurín el Grande ( @aytoalhaurinelgrande ), coordinado por Maribel Plaza, ha puesto en marcha dos nuevas propuestas formativas que comenzarán en septiembr...",
-      "lugar": "",
-      "inicio": "2026-09-11T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/curco-%f0%9f%8e%93-monitor-de-campamento/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12211",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Música en vivo 🎶 MALAKA SON 🎸",
-      "descripcion": "Con motivo de los dos días de luto oficial decretados por el Ayuntamiento por el fallecimiento de Don Diego Solano suspendemos el concierto de MALAKA SON programado para mañana. El concierto de MAL...",
-      "lugar": "",
-      "inicio": "2026-09-11T22:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-malakason-%f0%9f%8e%b8/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-12622",
       "tipo": "Deportes",
@@ -3584,21 +3540,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

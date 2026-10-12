@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-10-12T02:20:30.200Z",
-  "visitas24h": 12,
-  "paginasVistas24h": 24,
+  "actualizado": "2026-10-12T09:30:10.243Z",
+  "visitas24h": 15,
+  "paginasVistas24h": 23,
   "topPaginas": [
     {
       "ruta": "/planes/",
@@ -16,12 +16,12 @@
       "vistas": 10
     },
     {
-      "ruta": "/planes/e-5650/",
-      "vistas": 6
+      "ruta": "/guia-util/farmacias/",
+      "vistas": 7
     },
     {
-      "ruta": "/guia-util/farmacias/",
-      "vistas": 5
+      "ruta": "/planes/e-5650/",
+      "vistas": 6
     }
   ]
 }

@@ -108,6 +108,30 @@
     "detectado_en": "2026-10-11T15:49:58.506716+02:00"
   },
   {
+    "id": "sede-Elecciones-bandoexposicionalpublicocensoelectoralde",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28876/2026",
+    "resumen": "BANDO EXPOSICION AL PUBLICO CENSO ELECTORAL DEL 12 AL 19  de OCTUBRE",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/a23da812-585a-449d-95ff-70c61ee182a6",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Elecciones",
+    "detectado_en": "2026-10-12T18:33:22.629251+02:00"
+  },
+  {
+    "id": "sede-Elecciones-bandoexposiciónalpublicodelcallejeromuni",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28876/2026",
+    "resumen": "BANDO EXPOSICIÓN AL PUBLICO DEL CALLEJERO MUNICIPAL ELECCIONES GENERALES 2026",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/15ca6fbd-f543-4f0a-abc1-cb06464f6c15",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Elecciones",
+    "detectado_en": "2026-10-12T18:33:22.629311+02:00"
+  },
+  {
     "id": "sede-Disposiciones Normativas-consultapublicapreviadelproyectodeordena",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",

@@ -1,15 +1,15 @@
 [
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265783decretoaprobaciónlistadod",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265756decretoalcaldíaaprobación",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
     "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-5783 [DECRETO APROBACIÓN LISTADO DEFINITIVO PUNTUACIONES GENERALES \"CORTA DURACIÓN\" DE LOS/AS CANDIDATOS/AS ADMITIDOS/AS : \"LOGOPEDA\" Y ENTRADA EN VIGOR PARA ESTA CATEGORÍA]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/610a7af7-01fa-4d49-b1f2-650dd90ff8f9",
+    "resumen": "DECRETO 2026-5756 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"TRABAJADOR/A SOCIAL\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/9c454b5b-b1ed-471d-9a8e-6590d08094a3",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-11T15:49:58.506740+02:00"
+    "detectado_en": "2026-10-11T15:49:58.506780+02:00"
   },
   {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265784decretoaprobaciónlistadod",
@@ -24,76 +24,28 @@
     "detectado_en": "2026-10-11T15:49:58.506759+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265756decretoalcaldíaaprobación",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265783decretoaprobaciónlistadod",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
     "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-5756 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"TRABAJADOR/A SOCIAL\"]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/9c454b5b-b1ed-471d-9a8e-6590d08094a3",
+    "resumen": "DECRETO 2026-5783 [DECRETO APROBACIÓN LISTADO DEFINITIVO PUNTUACIONES GENERALES \"CORTA DURACIÓN\" DE LOS/AS CANDIDATOS/AS ADMITIDOS/AS : \"LOGOPEDA\" Y ENTRADA EN VIGOR PARA ESTA CATEGORÍA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/610a7af7-01fa-4d49-b1f2-650dd90ff8f9",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-11T15:49:58.506780+02:00"
+    "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Procedimiento Genérico-edictoprot1657",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-convocatoriacoberturapuestodeadministrat",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "29007/2026",
-    "resumen": "EDICTO prot.1657",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/e9694759-a6e8-47f0-9f36-2a8df04d59e4",
+    "expediente": "24878/2026",
+    "resumen": "CONVOCATORIA COBERTURA PUESTO DE ADMINISTRATIVO DE ADMINISTRACIÓN GENERAL MEDIANTE COMISIÓN DE SERVICIOS ABIERTA A FUNCIONARIOS DE OTRAS ADMINISTRACIONES",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/2d6989af-9999-4149-9001-e4482352870c",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-11T15:49:58.506610+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprotocolo1700",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "29005/2026",
-    "resumen": "EDICTO protocolo 1700",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1e89eb70-e0ad-4556-b627-a31ee5265373",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-11T15:49:58.506645+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprotocolo1714",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "29006/2026",
-    "resumen": "EDICTO protocolo 1714",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/125e22cb-f138-4f4d-bec0-096b494b0119",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-11T15:49:58.506661+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprot1661",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "28955/2026",
-    "resumen": "EDICTO prot.1661",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/284ad76f-2392-4c1d-a3c8-76099271896d",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-11T15:49:58.506692+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprot1669",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "28958/2026",
-    "resumen": "EDICTO prot.1669",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/0e80c05b-7b61-45ca-84cf-7094ba16cbb9",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-11T15:49:58.506704+02:00"
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-13T16:51:15.853757+02:00"
   },
   {
     "id": "sede-Procedimiento Genérico-edictoprotocolo1652",
@@ -108,16 +60,124 @@
     "detectado_en": "2026-10-11T15:49:58.506716+02:00"
   },
   {
-    "id": "sede-Elecciones-bandoexposicionalpublicocensoelectoralde",
+    "id": "sede-Procedimiento Genérico-edictoprot1669",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "28876/2026",
-    "resumen": "BANDO EXPOSICION AL PUBLICO CENSO ELECTORAL DEL 12 AL 19  de OCTUBRE",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/a23da812-585a-449d-95ff-70c61ee182a6",
+    "expediente": "28958/2026",
+    "resumen": "EDICTO prot.1669",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/0e80c05b-7b61-45ca-84cf-7094ba16cbb9",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Elecciones",
-    "detectado_en": "2026-10-12T18:33:22.629251+02:00"
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-11T15:49:58.506704+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1661",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28955/2026",
+    "resumen": "EDICTO prot.1661",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/284ad76f-2392-4c1d-a3c8-76099271896d",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-11T15:49:58.506692+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo1714",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29006/2026",
+    "resumen": "EDICTO protocolo 1714",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/125e22cb-f138-4f4d-bec0-096b494b0119",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-11T15:49:58.506661+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo1700",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29005/2026",
+    "resumen": "EDICTO protocolo 1700",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1e89eb70-e0ad-4556-b627-a31ee5265373",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-11T15:49:58.506645+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1657",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29007/2026",
+    "resumen": "EDICTO prot.1657",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/e9694759-a6e8-47f0-9f36-2a8df04d59e4",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-11T15:49:58.506610+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1657actadenotoriedaddedeclarac",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29007/2026",
+    "resumen": "EDICTO prot.1657 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. RAFAEL AMAYA GIL",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/e9694759-a6e8-47f0-9f36-2a8df04d59e4",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853859+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo1700actadenotoriedaddedec",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29005/2026",
+    "resumen": "EDICTO protocolo 1700 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE Dª MARÍA ROSARIO AGUILAR COTO",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1e89eb70-e0ad-4556-b627-a31ee5265373",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853900+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo1714actadenotoriedaddedec",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29006/2026",
+    "resumen": "EDICTO protocolo 1714 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. JUAN BRIALES JIMÉNEZ",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/125e22cb-f138-4f4d-bec0-096b494b0119",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853922+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1661actadenotoriedaddedeclarac",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28955/2026",
+    "resumen": "EDICTO prot.1661 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. JOSÉ MORENO CONEJO",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/284ad76f-2392-4c1d-a3c8-76099271896d",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853963+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1669actadenotoriedaddedeclarac",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28958/2026",
+    "resumen": "EDICTO prot.1669 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. DIEGO SOLANO LÓPEZ",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/0e80c05b-7b61-45ca-84cf-7094ba16cbb9",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853980+02:00"
   },
   {
     "id": "sede-Elecciones-bandoexposiciónalpublicodelcallejeromuni",
@@ -132,6 +192,18 @@
     "detectado_en": "2026-10-12T18:33:22.629311+02:00"
   },
   {
+    "id": "sede-Elecciones-bandoexposicionalpublicocensoelectoralde",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28876/2026",
+    "resumen": "BANDO EXPOSICION AL PUBLICO CENSO ELECTORAL DEL 12 AL 19  de OCTUBRE",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/a23da812-585a-449d-95ff-70c61ee182a6",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Elecciones",
+    "detectado_en": "2026-10-12T18:33:22.629251+02:00"
+  },
+  {
     "id": "sede-Disposiciones Normativas-consultapublicapreviadelproyectodeordena",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -142,6 +214,30 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Disposiciones Normativas",
     "detectado_en": "2026-10-11T15:49:58.506680+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de El Pleno-decreto20265884decretoconvocatoriapleno1",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "PLN/2026/14",
+    "resumen": "DECRETO 2026-5884 [DECRETO CONVOCATORIA PLENO 16-10-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/7c63996f-ec90-444f-8800-6896ebaa74d8",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-10-13T16:51:15.853797+02:00"
+  },
+  {
+    "id": "bop-20261013-03691-2026",
+    "numero_edicto": "3691/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio VISTO el acuerdo de la Junta de Gobierno Local de 18 de septiembre del presente, por el que se dispone la convocatoria de cobertura, mediante comisión de servicios abierta a funcionarios de otras administraciones públicas, del puesto de Administrativo/a de Administración General del Ayuntamiento de Alhaurín el Grande, mediante el presente se hace público el extracto de las bases correspondientes: Descripción del...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261013-03691-2026&control=1931485667",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-10-13",
+    "detectado_en": "2026-10-13T14:51:13+00:00"
   },
   {
     "id": "bop-20260813-corte-agua-urique",

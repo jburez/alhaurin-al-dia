@@ -1,5 +1,41 @@
 [
   {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-decreto20265909decretoseñalamientodefech",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "DECRETO 2026-5909 [DECRETO SEÑALAMIENTO DE FECHA Y HORA DE ENTREVISTAS (FASE DE VALORACIÓN DE IDONEIDAD). PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE VII y XI]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/101dd4e6-a3bf-4d79-aadd-157daa49bd49",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-10-14T14:41:55.838101+02:00"
+  },
+  {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivodepuntuacionesfasedebar",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "LISTADO DEFINITIVO DE PUNTUACIONES FASE DE BAREMACIÓN. PROCESO DE SELECCIÓN DEL PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/20081fde-68e9-47e4-aa0a-3d9f46b0fbf1",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-10-14T14:41:55.838176+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-convocatoriacoberturapuestodeadministrat",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "CONVOCATORIA COBERTURA PUESTO DE ADMINISTRATIVO DE ADMINISTRACIÓN GENERAL MEDIANTE COMISIÓN DE SERVICIOS ABIERTA A FUNCIONARIOS DE OTRAS ADMINISTRACIONES",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/2d6989af-9999-4149-9001-e4482352870c",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-13T16:51:15.853757+02:00"
+  },
+  {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265756decretoalcaldíaaprobación",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -36,16 +72,88 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-convocatoriacoberturapuestodeadministrat",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265888decretoalcaldíaaprobación",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "24878/2026",
-    "resumen": "CONVOCATORIA COBERTURA PUESTO DE ADMINISTRATIVO DE ADMINISTRACIÓN GENERAL MEDIANTE COMISIÓN DE SERVICIOS ABIERTA A FUNCIONARIOS DE OTRAS ADMINISTRACIONES",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/2d6989af-9999-4149-9001-e4482352870c",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-5888 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"PSICÓLOGO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/06e22b9e-a21e-4776-940d-b07ec5bd9314",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-13T16:51:15.853757+02:00"
+    "detectado_en": "2026-10-14T14:41:55.838048+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265889decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-5889 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"PSICÓLOGO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/8706231a-0fdc-48ee-8a72-7c9c502ad158",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-14T14:41:55.838074+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1669actadenotoriedaddedeclarac",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28958/2026",
+    "resumen": "EDICTO prot.1669 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. DIEGO SOLANO LÓPEZ",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/0e80c05b-7b61-45ca-84cf-7094ba16cbb9",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853980+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1661actadenotoriedaddedeclarac",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28955/2026",
+    "resumen": "EDICTO prot.1661 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. JOSÉ MORENO CONEJO",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/284ad76f-2392-4c1d-a3c8-76099271896d",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853963+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo1714actadenotoriedaddedec",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29006/2026",
+    "resumen": "EDICTO protocolo 1714 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. JUAN BRIALES JIMÉNEZ",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/125e22cb-f138-4f4d-bec0-096b494b0119",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853922+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo1700actadenotoriedaddedec",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29005/2026",
+    "resumen": "EDICTO protocolo 1700 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE Dª MARÍA ROSARIO AGUILAR COTO",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1e89eb70-e0ad-4556-b627-a31ee5265373",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853900+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprot1657actadenotoriedaddedeclarac",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29007/2026",
+    "resumen": "EDICTO prot.1657 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. RAFAEL AMAYA GIL",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/e9694759-a6e8-47f0-9f36-2a8df04d59e4",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-13T16:51:15.853859+02:00"
   },
   {
     "id": "sede-Procedimiento Genérico-edictoprotocolo1652",
@@ -120,64 +228,16 @@
     "detectado_en": "2026-10-11T15:49:58.506610+02:00"
   },
   {
-    "id": "sede-Procedimiento Genérico-edictoprot1657actadenotoriedaddedeclarac",
+    "id": "sede-Padrón Fiscal-anunciobop",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "29007/2026",
-    "resumen": "EDICTO prot.1657 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. RAFAEL AMAYA GIL",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/e9694759-a6e8-47f0-9f36-2a8df04d59e4",
+    "expediente": "27020/2026",
+    "resumen": "ANUNCIO BOP",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/250bf6b6-06eb-4390-9bd5-4eb3992c9625",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-13T16:51:15.853859+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprotocolo1700actadenotoriedaddedec",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "29005/2026",
-    "resumen": "EDICTO protocolo 1700 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE Dª MARÍA ROSARIO AGUILAR COTO",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1e89eb70-e0ad-4556-b627-a31ee5265373",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-13T16:51:15.853900+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprotocolo1714actadenotoriedaddedec",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "29006/2026",
-    "resumen": "EDICTO protocolo 1714 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. JUAN BRIALES JIMÉNEZ",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/125e22cb-f138-4f4d-bec0-096b494b0119",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-13T16:51:15.853922+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprot1661actadenotoriedaddedeclarac",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "28955/2026",
-    "resumen": "EDICTO prot.1661 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. JOSÉ MORENO CONEJO",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/284ad76f-2392-4c1d-a3c8-76099271896d",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-13T16:51:15.853963+02:00"
-  },
-  {
-    "id": "sede-Procedimiento Genérico-edictoprot1669actadenotoriedaddedeclarac",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "28958/2026",
-    "resumen": "EDICTO prot.1669 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. DIEGO SOLANO LÓPEZ",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/0e80c05b-7b61-45ca-84cf-7094ba16cbb9",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-10-13T16:51:15.853980+02:00"
+    "fecha_alerta": "Padrón Fiscal",
+    "detectado_en": "2026-10-14T14:41:55.838000+02:00"
   },
   {
     "id": "sede-Elecciones-bandoexposiciónalpublicodelcallejeromuni",
@@ -216,6 +276,18 @@
     "detectado_en": "2026-10-11T15:49:58.506680+02:00"
   },
   {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20265928decretoconvocatoriajgl161",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/34",
+    "resumen": "DECRETO 2026-5928 [DECRETO CONVOCATORIA JGL 16-10-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/4e6f6c10-75d7-4f75-a4ac-69068a4d3d09",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-10-14T14:41:55.838116+02:00"
+  },
+  {
     "id": "sede-Convocatoria de El Pleno-decreto20265884decretoconvocatoriapleno1",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -226,6 +298,30 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de El Pleno",
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
+  },
+  {
+    "id": "bop-20261014-03679-2026",
+    "numero_edicto": "3679/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Para general conocimiento se hace público por esta Alcaldía que mediante Decreto número 2026-5247, de 10 de septiembre de 2026, ha adoptado la siguiente resolución: I. Antecedentes Primero. Por acuerdo de Pleno, de 19 de septiembre de 2016, se estableció el empleo del sistema de código seguro de verificación de documentos en el desarrollo de aquellas actuaciones automatizadas que se determinaran por Resolución de Alcaldía. Segundo....",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261014-03679-2026&control=2827365445",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-10-14",
+    "detectado_en": "2026-10-14T12:41:53+00:00"
+  },
+  {
+    "id": "bop-20261014-03736-2026",
+    "numero_edicto": "3736/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "27020/2026",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio RCP/ISR/GESTIÓN TRIBUTARIA Fecha de iniciación: 25 de septiembre de 2026. Procedimiento: Padrón de aguas 3T2026. Expediente número: 27020/2026. Confeccionado el padrón municipal de abastecimiento de agua, correspondiente al tercer trimestre de 2026, el cual ha sido aprobado por Decreto de Alcaldía 2026-5552, de fecha 25 de septiembre de 2026, se expone al público en el Ayuntamiento (Sección de Intervención), para reclamaciones por el...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261014-03736-2026&control=799124867",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-10-14",
+    "detectado_en": "2026-10-14T12:41:53+00:00"
   },
   {
     "id": "bop-20261013-03691-2026",

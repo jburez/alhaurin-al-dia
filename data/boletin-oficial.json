@@ -1,5 +1,17 @@
 [
   {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivodepuntuacionesfasedebar",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "LISTADO DEFINITIVO DE PUNTUACIONES FASE DE BAREMACIÓN. PROCESO DE SELECCIÓN DEL PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/20081fde-68e9-47e4-aa0a-3d9f46b0fbf1",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-10-14T14:41:55.838176+02:00"
+  },
+  {
     "id": "sede-Subvenciones Solicitadas a Otra Administración-decreto20265909decretoseñalamientodefech",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -12,16 +24,28 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
-    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivodepuntuacionesfasedebar",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265889decretoalcaldíaaprobación",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "31291/2025",
-    "resumen": "LISTADO DEFINITIVO DE PUNTUACIONES FASE DE BAREMACIÓN. PROCESO DE SELECCIÓN DEL PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/20081fde-68e9-47e4-aa0a-3d9f46b0fbf1",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-5889 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"PSICÓLOGO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/8706231a-0fdc-48ee-8a72-7c9c502ad158",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
-    "detectado_en": "2026-10-14T14:41:55.838176+02:00"
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-14T14:41:55.838074+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265888decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-5888 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"PSICÓLOGO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/06e22b9e-a21e-4776-940d-b07ec5bd9314",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-14T14:41:55.838048+02:00"
   },
   {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-convocatoriacoberturapuestodeadministrat",
@@ -72,28 +96,100 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265888decretoalcaldíaaprobación",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-boepubicadounaplazasubinspectorapolicíal",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-5888 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"PSICÓLOGO/A\"]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/06e22b9e-a21e-4776-940d-b07ec5bd9314",
+    "expediente": "17085/2024",
+    "resumen": "BOE. Pubicado Una plaza subinspector/a policía local. 15-10-2026",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b54388ce-92b7-4cd6-abb0-b3b6184b3d69",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-14T14:41:55.838048+02:00"
+    "detectado_en": "2026-10-15T14:30:14.219721+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265889decretoalcaldíaaprobación",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-bojapubicadounaplazasubinspectorapolicía",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "17085/2024",
+    "resumen": "BOJA. Pubicado Una plaza subinspector/a policía local. 02-10-2026",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/3404c0f6-78a5-405d-a049-d51c3483fbc2",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-15T14:30:14.219765+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-certificado20260434certifpto3jgl14082026",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "17085/2024",
+    "resumen": "CERTIFICADO 2026-0434 [CERTIF PTO 3 JGL 14-08-2026 APROB MODIF BASES ESPECIF 1 PLAZA SUBINSPECT POLIC LOCAL]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/7df300b5-24de-428e-b885-b11cd4a1f56d",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-15T14:30:14.219787+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265955decretoalcaldíaaprobación",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
     "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-5889 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"PSICÓLOGO/A\"]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/8706231a-0fdc-48ee-8a72-7c9c502ad158",
+    "resumen": "DECRETO 2026-5955 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"FISIOTERAPEUTA\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/4b13f443-0852-4916-acc2-8ff12916918f",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-14T14:41:55.838074+02:00"
+    "detectado_en": "2026-10-15T14:30:14.219806+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265956decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-5956 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"FISIOTERAPEUTA\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/5c5ec1a2-daf5-4dcc-a0ad-f322317afef0",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-15T14:30:14.219826+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265958decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-5958 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"TERAPEUTA OCUPACIONAL\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/d7229e23-f865-4520-bbbc-d645a7468f65",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-15T14:30:14.219844+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20265959decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-5959 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"TERAPEUTA OCUPACIONAL\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/356f3f86-7e60-47c1-b068-f9f3565bd6c3",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-15T14:30:14.219861+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-publicaciónbopmaanunciomodificaciónbases",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "17085/2024",
+    "resumen": "Publicación BOPMA Anuncio modificación bases de la convocatoria (Subinspector policía local, OEP 2025)",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/fc998a0e-8025-4673-b68f-fa6e4317d7b2",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-15T14:30:14.219897+02:00"
   },
   {
     "id": "sede-Procedimiento Genérico-edictoprot1669actadenotoriedaddedeclarac",
@@ -228,6 +324,18 @@
     "detectado_en": "2026-10-11T15:49:58.506610+02:00"
   },
   {
+    "id": "sede-Procedimiento Genérico-listadoproviscandidatosajuradosorteobien",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29276/2026",
+    "resumen": "LISTADO PROVIS CANDIDATOS A JURADO SORTEO BIENAL 2027-2028 ALHAURIN EL GRANDE",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/41c31d88-5b24-40cf-99be-96b7e0a53e89",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-10-15T14:30:14.219879+02:00"
+  },
+  {
     "id": "sede-Padrón Fiscal-anunciobop",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -298,6 +406,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de El Pleno",
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
+  },
+  {
+    "id": "bop-20261015-03699-2026",
+    "numero_edicto": "3699/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Para general conocimiento, se hace público que esta Alcaldía, mediante Decreto número 2026-5442, de 18 de septiembre de 2026, ha adoptado la siguiente resolución: Como consecuencia de la ausencia del titular de la Alcaldía, por encontrarse fuera de la localidad, del 24 al 28 de septiembre de 2026 (ambos inclusive), resulta necesario formalizar expresamente la designación de la persona que va a realizar la sustitución. Dado el acuerdo...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261015-03699-2026&control=3036674461",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-10-15",
+    "detectado_en": "2026-10-15T12:30:09+00:00"
   },
   {
     "id": "bop-20261014-03679-2026",

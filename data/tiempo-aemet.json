@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-15T13:29:59+02:00",
+  "actualizado": "2026-10-15T21:08:13+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "☁️",
     "titulo": "Tiempo",
     "valor": "Máx. 27º",
-    "detalle": "Despejado · Máx. 27º / Mín. 18º · Lluvia 0%",
+    "detalle": "Nubes altas · Máx. 27º / Mín. 18º · Lluvia 5%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "15/10",
     "t_max": "27",
     "t_min": "18",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "icono": "☁️",
+    "descripcion": "Nubes altas",
+    "lluvia": "5%",
+    "viento": "SE 15 km/h",
     "uv": "5"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "15/10",
       "t_max": "27",
       "t_min": "18",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "icono": "☁️",
+      "descripcion": "Nubes altas",
+      "lluvia": "5%",
+      "viento": "SE 15 km/h",
       "uv": "5"
     },
     {
@@ -72,7 +72,7 @@
       "icono": "🌧️",
       "descripcion": "Muy nuboso con lluvia",
       "lluvia": "100%",
-      "viento": "C 0 km/h",
+      "viento": "C 5 km/h",
       "uv": "4"
     },
     {
@@ -108,7 +108,7 @@
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "60%",
-      "viento": "C 0 km/h",
+      "viento": "Flojo",
       "uv": ""
     }
   ],
@@ -146,8 +146,8 @@
     }
   ],
   "sol_luna": {
-    "orto": "08:26 h",
-    "ocaso": "19:43 h",
+    "orto": "08:25 h",
+    "ocaso": "19:42 h",
     "horas_luz": "11h 17m",
     "fase_luna": "Luna Creciente (19%)",
     "icono_luna": "🌒"

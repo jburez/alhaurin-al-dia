@@ -2204,7 +2204,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-continua-renovando-la-flota-de-los-servicios-operativos-con-seis-nuevos-vehiculos-y-mas-equipamiento/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224950": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "9a3a0c8daf38a7aa27dcf9e46a080bd3ce092edb",
     "date_modified": null,
     "date_published": "2026-10-14T12:34:29+00:00",
@@ -2217,7 +2217,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22495-9d9ea907",
-    "last_ai_attempt": "2026-10-14T23:06:07.488626+00:00",
+    "last_ai_attempt": "2026-10-15T04:14:29.935905+00:00",
     "pagina": "noticias/la-nueva-oferta-de-empleo-publico-que-se-aprobara-en-la-proxima-junta-de-gobierno-local.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-convocara-siete-nuevas-plazas-de-funcionarios-para-reforzar-y-modernizar-la-administracion-municipal/"
@@ -2537,7 +2537,7 @@
     "source_url": "https://www.diariosur.es/malaga/exodo-crisis-vivienda-malaga-dispara-precios-guadalhorce-20260902002610-nt.html"
   },
   "guid:diario-sur-malaga:https://www.diariosur.es/malaga/juzgan-acusados-robar-polluelos-rapaces-nidos-20261014184654-nt.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "91cc1db8b7828032f737633a7f107a04d2978085",
     "date_modified": null,
     "date_published": "2026-10-14T21:02:03+00:00",
@@ -2550,7 +2550,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-diario-sur-malaga-https-www-diariosur-es-malaga-juzgan-acusados-r-622206ca",
-    "last_ai_attempt": "2026-10-14T23:09:15.927819+00:00",
+    "last_ai_attempt": "2026-10-15T04:14:55.195867+00:00",
     "pagina": "noticias/juzgan-a-dos-acusados-de-robar-polluelos-de-rapaces-de-sus-nidos-en-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.diariosur.es/malaga/juzgan-acusados-robar-polluelos-rapaces-nidos-20261014184654-nt.html"
@@ -2847,7 +2847,7 @@
     "source_url": "https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260865": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "c134c946780352fd4e89d83f37a05610cfbb5e16",
     "date_modified": null,
     "date_published": "2026-10-14T07:00:14+00:00",
@@ -2860,7 +2860,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-260865-5df6dd41",
-    "last_ai_attempt": "2026-10-14T23:14:10.778494+00:00",
+    "last_ai_attempt": "2026-10-15T04:15:44.014508+00:00",
     "pagina": "noticias/mentalidad-de-campeon.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-mentalidad-de-campeon/"
@@ -3328,7 +3328,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34202/representacion-de-nuestra-hermandad-en-los-tercios-con-motivo-del-cvi-aniversario-de-la-gloriosa-legion-espanola/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34221": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "52202fd078108d47a82d03cd021a044afdeaa78d",
     "date_modified": null,
     "date_published": "2026-10-09T06:52:02+00:00",
@@ -3341,7 +3341,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-583ceb3d",
-    "last_ai_attempt": "2026-10-14T13:33:54.537596+00:00",
+    "last_ai_attempt": "2026-10-15T04:15:14.884782+00:00",
     "pagina": "noticias/nuestra-real-hermandad-presente-en-el-xxi-aniversario-de-la-ume.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34221/nuestra-real-hermandad-presente-en-el-xxi-aniversario-de-la-ume/"
@@ -3842,7 +3842,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/13/mejora-del-mantenimiento-urbano-en-alhaurin-el-grande-con-nuevos-vehiculos/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/10/14/aprobacion-de-siete-nuevas-plazas-de-funcionarios-en-alhaurin-el-grande": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "3f99658065b6122a23874d8591e316b3fe83219b",
     "date_modified": null,
     "date_published": "2026-10-14T13:01:59+00:00",
@@ -3855,7 +3855,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-e5b325e1",
-    "last_ai_attempt": "2026-10-14T23:16:35.545221+00:00",
+    "last_ai_attempt": "2026-10-15T04:18:20.534597+00:00",
     "pagina": "noticias/aprobacion-de-siete-nuevas-plazas-de-funcionarios-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/14/aprobacion-de-siete-nuevas-plazas-de-funcionarios-en-alhaurin-el-grande/"

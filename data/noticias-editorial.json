@@ -347,7 +347,7 @@
     "source_url": "https://www.youtube.com/watch?v=HDaZNki3tTc"
   },
   "guid:atv-alhaurin-youtube:yt:video:HSA5zBhR2yo": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "b37ba22f48b7de36835739be302f9f09e227ccd2",
     "date_modified": null,
     "date_published": "2026-10-14T12:02:12+00:00",
@@ -360,7 +360,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-hsa5zbhr2yo-c3e7114c",
-    "last_ai_attempt": "2026-10-15T16:55:24.526001+00:00",
+    "last_ai_attempt": "2026-10-15T21:15:51.786412+00:00",
     "pagina": "noticias/nuevos-contenedores-amarillos-alhaurin-el-grande-renovara-todos-sus-contenedores.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=HSA5zBhR2yo"
@@ -385,7 +385,7 @@
     "source_url": "https://www.youtube.com/watch?v=HgkAfUf8OZA"
   },
   "guid:atv-alhaurin-youtube:yt:video:ItKz5INEz3A": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "2117e4b7946047c99c719a7c875a7dc2182ef58b",
     "date_modified": null,
     "date_published": "2026-10-14T11:29:16+00:00",
@@ -398,7 +398,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-itkz5inez3a-d0264143",
-    "last_ai_attempt": "2026-10-15T16:55:42.274696+00:00",
+    "last_ai_attempt": "2026-10-15T21:16:09.770208+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=ItKz5INEz3A"
@@ -606,7 +606,7 @@
     "source_url": "https://www.youtube.com/watch?v=KWnz3pyV6go"
   },
   "guid:atv-alhaurin-youtube:yt:video:Kfw0DA1laUE": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "04c3579d788f8eb9be435d4376102affbd2f1272",
     "date_modified": null,
     "date_published": "2026-10-15T11:49:18+00:00",
@@ -619,7 +619,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-kfw0da1laue-e83d47f1",
-    "last_ai_attempt": "2026-10-15T16:54:50.801087+00:00",
+    "last_ai_attempt": "2026-10-15T21:15:14.727542+00:00",
     "pagina": "noticias/contadores-inteligentes-el-ayuntamiento-de-alhaurin-el-grande-impulsa-la-modernizacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Kfw0DA1laUE"
@@ -774,7 +774,7 @@
     "source_url": "https://www.youtube.com/watch?v=OMRlBtwG1Qw"
   },
   "guid:atv-alhaurin-youtube:yt:video:OVReA-mXfsA": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "fa49dc0919a63d24ecd4b637e72ae5e38f800182",
     "date_modified": null,
     "date_published": "2026-10-15T14:30:07+00:00",
@@ -787,7 +787,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ovrea-mxfsa-58dca4c2",
-    "last_ai_attempt": "2026-10-15T16:54:33.455119+00:00",
+    "last_ai_attempt": "2026-10-15T21:14:57.887804+00:00",
     "pagina": "noticias/asi-lo-vivi-con-noel-gonzalez-luque.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=OVReA-mXfsA"
@@ -1159,7 +1159,7 @@
     "source_url": "https://www.youtube.com/watch?v=dbCHGtOLhWM"
   },
   "guid:atv-alhaurin-youtube:yt:video:eb_WMFK_SyQ": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "209c6a75189806027831dcc0a80105af8d0e0f8d",
     "date_modified": null,
     "date_published": "2026-10-14T14:30:17+00:00",
@@ -1172,7 +1172,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-eb-wmfk-syq-526421a1",
-    "last_ai_attempt": "2026-10-15T16:55:07.927604+00:00",
+    "last_ai_attempt": "2026-10-15T21:15:33.830241+00:00",
     "pagina": "noticias/al-dia-dia-de-la-guardia-civil-2026-dia-de-la-hispanidad-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=eb_WMFK_SyQ"
@@ -1449,7 +1449,7 @@
     "source_url": "https://www.youtube.com/watch?v=q0SdzQULeeg"
   },
   "guid:atv-alhaurin-youtube:yt:video:rkzRvtsKvfM": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "cea24a3037a07af4a205a93e9eb5d07dff2f8033",
     "date_modified": null,
     "date_published": "2026-10-15T14:30:14+00:00",
@@ -1462,7 +1462,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-rkzrvtskvfm-fc0b1ab8",
-    "last_ai_attempt": "2026-10-15T16:54:15.656807+00:00",
+    "last_ai_attempt": "2026-10-15T21:14:41.295645+00:00",
     "pagina": "noticias/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=rkzRvtsKvfM"
@@ -2299,7 +2299,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-convocara-siete-nuevas-plazas-de-funcionarios-para-reforzar-y-modernizar-la-administracion-municipal/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224964": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "f094bb9ea4d02f730a53d312428a2b949d6c8bb6",
     "date_modified": null,
     "date_published": "2026-10-15T12:02:49+00:00",
@@ -2312,7 +2312,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22496-9f83704b",
-    "last_ai_attempt": "2026-10-15T16:45:57.226675+00:00",
+    "last_ai_attempt": "2026-10-15T21:12:55.410248+00:00",
     "pagina": "noticias/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga-lateral-y-de-mayor-capacidad/"

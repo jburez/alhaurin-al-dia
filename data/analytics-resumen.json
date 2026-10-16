@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-16T02:15:00.436Z",
-  "visitas24h": 10,
-  "paginasVistas24h": 10,
+  "actualizado": "2026-10-16T07:11:38.652Z",
+  "visitas24h": 11,
+  "paginasVistas24h": 11,
   "topPaginas": [
     {
       "ruta": "/planes/",
       "vistas": 15
     },
     {
-      "ruta": "/guia-util/farmacias/calendario/",
+      "ruta": "/guia-util/farmacias/",
       "vistas": 9
     },
     {
-      "ruta": "/guia-util/farmacias/",
+      "ruta": "/guia-util/farmacias/calendario/",
       "vistas": 9
     },
     {

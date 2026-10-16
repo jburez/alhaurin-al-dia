@@ -61,7 +61,7 @@
     "source_url": "https://www.youtube.com/watch?v=1TpHKPU0UTM"
   },
   "guid:atv-alhaurin-youtube:yt:video:1UeqxI1KZkk": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "a50ad014b10d8d7bd476d8aa48d89a6837f64a66",
     "date_modified": null,
     "date_published": "2026-10-16T14:30:05+00:00",
@@ -74,7 +74,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-1ueqxi1kzkk-1abbf20d",
-    "last_ai_attempt": "2026-10-16T17:57:04.634614+00:00",
+    "last_ai_attempt": "2026-10-16T20:52:08.489387+00:00",
     "pagina": "noticias/presentacion-de-la-fundacion-ley-57.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=1UeqxI1KZkk"
@@ -320,7 +320,7 @@
     "source_url": "https://www.youtube.com/watch?v=BPWq-lHd4vo"
   },
   "guid:atv-alhaurin-youtube:yt:video:BokN2UyMs0A": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "293e81b04492e4c9fb6032f6e56bb9694d7e9464",
     "date_modified": null,
     "date_published": "2026-10-16T14:10:33+00:00",
@@ -333,7 +333,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-bokn2uyms0a-2614d62a",
-    "last_ai_attempt": "2026-10-16T17:57:24.101064+00:00",
+    "last_ai_attempt": "2026-10-16T20:52:26.720199+00:00",
     "pagina": "noticias/a-pie-de-campo-programa-2-3-temporada.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=BokN2UyMs0A"

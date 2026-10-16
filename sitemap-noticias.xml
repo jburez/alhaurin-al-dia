@@ -127,6 +127,12 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://alhaurinaldia.es/noticias/a-pie-de-campo-programa-2-3-temporada.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://alhaurinaldia.es/noticias/a-traves-de-un-comunicado-la-hermandad-ha-enviado-sus-condolencias-a-las-familias.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -3410,6 +3416,12 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-cartel-nuestra-senora-de-gracia-2026.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/presentacion-de-la-fundacion-ley-57.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

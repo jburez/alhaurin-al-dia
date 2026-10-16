@@ -60,6 +60,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=1TpHKPU0UTM"
   },
+  "guid:atv-alhaurin-youtube:yt:video:1UeqxI1KZkk": {
+    "ai_attempts": 1,
+    "content_hash": "a50ad014b10d8d7bd476d8aa48d89a6837f64a66",
+    "date_modified": null,
+    "date_published": "2026-10-16T14:30:05+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "LA CASA MUSEO ANTONIO GALA ACOGIÓ LA PRESENTACIÓN DE LA FUNDACIÓN LEY 57 PARA LA DIVULGACIÓN DEL TALENTO EN UN ACTO ORGANIZADO POR LA PROPIA FUNDACIÓN CON LA COLABORACIÓN DEL AYUNTAMIENTO DE ALHAURÍN EL GRANDE. CARLOS CÓMITRE, FUNDADOR DE LA FUNDACIÓN LEY 57, FUE EL ENCARGADO DE DAR LA BIENVENIDA AL ACTO QUE LE OFRECEMOS EN ESTE PROGRAMA ESPECIAL.",
+      "descripcion": "LA CASA MUSEO ANTONIO GALA ACOGIÓ LA PRESENTACIÓN DE LA FUNDACIÓN LEY 57 PARA LA DIVULGACIÓN DEL TALENTO EN UN ACTO ORGANIZADO POR LA PROPIA FUNDACIÓN CON LA COLABORACIÓN DEL AYUNTAMIENTO DE ALHAURÍN EL GRANDE. SE TRATA DE UNA.",
+      "seo_keywords": [],
+      "titulo": "PRESENTACIÓN DE LA FUNDACIÓN LEY 57"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-1ueqxi1kzkk-1abbf20d",
+    "last_ai_attempt": "2026-10-16T17:57:04.634614+00:00",
+    "pagina": "noticias/presentacion-de-la-fundacion-ley-57.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=1UeqxI1KZkk"
+  },
   "guid:atv-alhaurin-youtube:yt:video:1t--wq018oc": {
     "ai_attempts": 0,
     "content_hash": "7abfd568a6116e2a86094ae9a653a9f230bc50ca",
@@ -299,6 +318,25 @@
     "pagina": "noticias/concurso-de-cortometrajes-para-estudiantes-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=BPWq-lHd4vo"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:BokN2UyMs0A": {
+    "ai_attempts": 1,
+    "content_hash": "293e81b04492e4c9fb6032f6e56bb9694d7e9464",
+    "date_modified": null,
+    "date_published": "2026-10-16T14:10:33+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "descripcion": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "seo_keywords": [],
+      "titulo": "A pie de campo - Programa 2 (3ª Temporada)"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-bokn2uyms0a-2614d62a",
+    "last_ai_attempt": "2026-10-16T17:57:24.101064+00:00",
+    "pagina": "noticias/a-pie-de-campo-programa-2-3-temporada.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=BokN2UyMs0A"
   },
   "guid:atv-alhaurin-youtube:yt:video:FXpsXN8ZUQg": {
     "ai_attempts": 0,
@@ -1407,7 +1445,7 @@
     "source_url": "https://www.youtube.com/watch?v=mUG2Xs-Zpy0"
   },
   "guid:atv-alhaurin-youtube:yt:video:opv60zD45bA": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "f3d7de62f4e75fd7a4800601e69facdae4b8ab77",
     "date_modified": null,
     "date_published": "2026-10-16T13:08:46+00:00",
@@ -1420,7 +1458,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-opv60zd45ba-a3946b30",
-    "last_ai_attempt": "2026-10-16T13:17:29.566283+00:00",
+    "last_ai_attempt": "2026-10-16T17:57:42.276405+00:00",
     "pagina": "noticias/nueva-jueza-de-paz-maria-isabel-gallego-sera-la-nueva-jueza-de-paz-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=opv60zD45bA"
@@ -2337,7 +2375,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga-lateral-y-de-mayor-capacidad/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224969": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "897b0c9066a1372b43521b6be8222f59f1699fd7",
     "date_modified": null,
     "date_published": "2026-10-16T10:06:35+00:00",
@@ -2350,7 +2388,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22496-4a42c461",
-    "last_ai_attempt": "2026-10-16T13:09:27.518790+00:00",
+    "last_ai_attempt": "2026-10-16T17:55:27.890708+00:00",
     "pagina": "noticias/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-el-grande/"
@@ -5234,7 +5272,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/verbena-fin-de-verano-2026-a-beneficio-de-la-asociacion-alhmer/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50674": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "e0e37dbc81086e0dffaef795abdacf108772e1a2",
     "date_modified": null,
     "date_published": "2026-10-16T12:25:03+00:00",
@@ -5247,7 +5285,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50674-524db3ee",
-    "last_ai_attempt": "2026-10-16T13:14:24.321836+00:00",
+    "last_ai_attempt": "2026-10-16T17:56:04.392404+00:00",
     "pagina": "noticias/gala-benefica-a-beneficio-de-las-monjas-clarisas-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/gala-benefica-a-beneficio-de-las-monjas-clarisas-2026/"

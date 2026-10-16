@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-10-16T07:11:32.738Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 229 eventos próximos.",
+  "actualizado": "2026-10-16T13:04:02.692322+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 234 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
       "id": "alhaurinhoy-5751",
@@ -1383,6 +1384,51 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-13834",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "Presentación 📖 Sonetos de la Zubia",
+      "descripcion": "📖 La Biblioteca Municipal de Alhaurín el Grande acoge la presentación de esta nueva edición, preparada por Luis Cárdenas y Pedro J. Plaza, que recupera e incorpora poemas inéditos para ofrecernos u...",
+      "lugar": "",
+      "inicio": "2026-10-16T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/presentacion-%f0%9f%93%96-sonetos-de-la-zubia/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13831",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Ladies Lunch 🍽️🥂🍸🎶 GARY POOLE 🎙️",
+      "descripcion": "**GIVE MONDAY SOMETHING TO LIVE UP TO.** Start with a dish you’ve been looking forward to. Add your favourite company, cava and **Gary Poole live** — and let lunch become the whole afternoon. This ...",
+      "lugar": "",
+      "inicio": "2026-10-16T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/ladies-lunch-%f0%9f%8d%bd%ef%b8%8f%f0%9f%a5%82%f0%9f%8d%b8%f0%9f%8e%b6-gary-poole-%f0%9f%8e%99%ef%b8%8f/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13816",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Música en vivo 🎶 homenaje a Amy Winehouse",
+      "descripcion": "Zeppelian@, este finde continuamos con la música en directo!!!!! Mañana a las 22.00 h nos visitan AMY AMY AMY tribute, homenaje a Amy Winehouse único en la provincia de Málaga con Rocío Starry como...",
+      "lugar": "",
+      "inicio": "2026-10-16T22:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-homenaje-a-amy-winehouse/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-7476",
       "tipo": "Música en vivo",
       "icono": "🎵",
@@ -1559,6 +1605,36 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/live-music-%f0%9f%8d%bd%ef%b8%8f%f0%9f%a5%82%f0%9f%8d%b8%f0%9f%8e%b6-mr-maph-%f0%9f%8e%99%ef%b8%8f/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13829",
+      "tipo": "Cine",
+      "icono": "🎬",
+      "titulo": "Obra 🎭 ‘Un árbol tan frondoso que no deja entrar la luz’",
+      "descripcion": "🎭 El Teatro Municipal Antonio Gala se prepara para recibir la obra: 🌳 ‘Un árbol tan frondoso que no deja entrar la luz’. 🎬 Una producción escrita por Manuel F. Tirado y con la ayudantía de direcció...",
+      "lugar": "",
+      "inicio": "2026-10-24T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/obra-%f0%9f%8e%ad-un-arbol-tan-frondoso-que-no-deja-entrar-la-luz-2/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13826",
+      "tipo": "Cine",
+      "icono": "🎬",
+      "titulo": "Obra 🎭 ‘Un árbol tan frondoso que no deja entrar la luz’.",
+      "descripcion": "🎭 El Teatro Municipal Antonio Gala se prepara para recibir la obra: 🌳 ‘Un árbol tan frondoso que no deja entrar la luz’. 🎬 Una producción escrita por Manuel F. Tirado y con la ayudantía de direcció...",
+      "lugar": "",
+      "inicio": "2026-10-24T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/obra-%f0%9f%8e%ad-un-arbol-tan-frondoso-que-no-deja-entrar-la-luz/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1784,6 +1860,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/inscripcion-%e2%9c%8d%f0%9f%8f%bd-prensa-sin-edad/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13823",
+      "tipo": "Gastronomía",
+      "icono": "🍽️",
+      "titulo": "PASAJE DEL TERROR 💀",
+      "descripcion": "HALLOWEEN 2026: UNA TARDE DE MIEDO EN ALHAURÍN EL GRANDE! 👻🕷️ Este sábado 31 de octubre, ¡el terror se apodera de Alhaurín el Grande! Prepárate para una tarde llena de sustos, diversión y sorpresas...",
+      "lugar": "",
+      "inicio": "2026-10-31T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/pasaje-del-terror-%f0%9f%92%80/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -3419,21 +3510,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

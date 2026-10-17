@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-17T12:44:57+02:00",
+  "actualizado": "2026-10-17T19:51:31+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "🌧️",
     "titulo": "Tiempo",
     "valor": "Máx. 27º",
-    "detalle": "Despejado · Máx. 27º / Mín. 18º · Lluvia 0%",
+    "detalle": "Muy nuboso con lluvia · Máx. 27º / Mín. 18º · Lluvia 100%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "17/10",
     "t_max": "27",
     "t_min": "18",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "icono": "🌧️",
+    "descripcion": "Muy nuboso con lluvia",
+    "lluvia": "100%",
+    "viento": "S 5 km/h",
     "uv": "4"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "17/10",
       "t_max": "27",
       "t_min": "18",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "icono": "🌧️",
+      "descripcion": "Muy nuboso con lluvia",
+      "lluvia": "100%",
+      "viento": "S 5 km/h",
       "uv": "4"
     },
     {
@@ -60,7 +60,7 @@
       "icono": "🌧️",
       "descripcion": "Nuboso con lluvia",
       "lluvia": "100%",
-      "viento": "C 0 km/h",
+      "viento": "C 5 km/h",
       "uv": "4"
     },
     {
@@ -84,7 +84,7 @@
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "C 0 km/h",
+      "viento": "Flojo",
       "uv": "4"
     },
     {
@@ -117,15 +117,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Excelente",
-      "detalle": "Secado muy rápido al sol (0% riesgo)"
+      "estado": "Desaconsejado",
+      "detalle": "Riesgo de precipitaciones"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Muy recomendado",
-      "detalle": "Cielo limpio y sin calima"
+      "estado": "Espera unos días",
+      "detalle": "Posible barro o lluvia"
     },
     {
       "id": "deporte",
@@ -146,9 +146,9 @@
     }
   ],
   "sol_luna": {
-    "orto": "08:28 h",
+    "orto": "08:27 h",
     "ocaso": "19:40 h",
-    "horas_luz": "11h 12m",
+    "horas_luz": "11h 13m",
     "fase_luna": "Cuarto Creciente (38%)",
     "icono_luna": "🌓"
   },

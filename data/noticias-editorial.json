@@ -2356,7 +2356,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-convocara-siete-nuevas-plazas-de-funcionarios-para-reforzar-y-modernizar-la-administracion-municipal/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224964": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "f094bb9ea4d02f730a53d312428a2b949d6c8bb6",
     "date_modified": null,
     "date_published": "2026-10-15T12:02:49+00:00",
@@ -2369,7 +2369,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22496-9f83704b",
-    "last_ai_attempt": "2026-10-17T00:16:17.131696+00:00",
+    "last_ai_attempt": "2026-10-17T16:56:46.698102+00:00",
     "pagina": "noticias/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga-lateral-y-de-mayor-capacidad/"
@@ -5120,7 +5120,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/paella-popular-y-entrega-de-premios-romeria-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50644": {
-    "ai_attempts": 31,
+    "ai_attempts": 32,
     "content_hash": "fa2e3fa3ed4083cf9bb63a69d90624baefba6dab",
     "date_modified": null,
     "date_published": "2026-09-24T11:05:56+00:00",
@@ -5133,13 +5133,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50644-74ca6b30",
-    "last_ai_attempt": "2026-10-17T00:17:23.866332+00:00",
+    "last_ai_attempt": "2026-10-17T16:57:35.526225+00:00",
     "pagina": "noticias/inicio-de-la-campana-de-la-aceituna-alorena-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inicio-de-la-campana-de-la-aceituna-alorena-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50647": {
-    "ai_attempts": 33,
+    "ai_attempts": 34,
     "content_hash": "60b1ab0a1621b8055e4de3c894d24dfca838f39c",
     "date_modified": null,
     "date_published": "2026-09-24T11:09:34+00:00",
@@ -5152,7 +5152,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50647-8ef1d774",
-    "last_ai_attempt": "2026-10-17T00:17:05.244701+00:00",
+    "last_ai_attempt": "2026-10-17T16:57:16.569412+00:00",
     "pagina": "noticias/misa-en-honor-a-maria-santisima-del-mayor-dolor.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/misa-en-honor-a-maria-santisima-del-mayor-dolor-festividad-dolores-gloriosos-de-maria-2026/"

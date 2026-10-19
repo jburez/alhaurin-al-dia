@@ -2375,7 +2375,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga-lateral-y-de-mayor-capacidad/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224969": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "897b0c9066a1372b43521b6be8222f59f1699fd7",
     "date_modified": null,
     "date_published": "2026-10-16T10:06:35+00:00",
@@ -2388,7 +2388,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22496-4a42c461",
-    "last_ai_attempt": "2026-10-18T18:33:35.906181+00:00",
+    "last_ai_attempt": "2026-10-19T12:49:27.553160+00:00",
     "pagina": "noticias/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-el-grande/"
@@ -3018,7 +3018,7 @@
     "source_url": "https://fedelhorce.es/exportacion-de-productos-y-servicios-al-mercado-chino/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260865": {
-    "ai_attempts": 7,
+    "ai_attempts": 8,
     "content_hash": "c134c946780352fd4e89d83f37a05610cfbb5e16",
     "date_modified": null,
     "date_published": "2026-10-14T07:00:14+00:00",
@@ -3031,7 +3031,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-260865-5df6dd41",
-    "last_ai_attempt": "2026-10-18T18:37:23.018616+00:00",
+    "last_ai_attempt": "2026-10-19T12:53:21.347111+00:00",
     "pagina": "noticias/mentalidad-de-campeon.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-mentalidad-de-campeon/"
@@ -3214,6 +3214,25 @@
     "pagina": "noticias/ico-crecimiento-nueva-financiacion-directa-para-impulsar-la-inversion-y-el-circulante.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/ico-crecimiento-nueva-financiacion-directa-para-impulsar-la-inversion-y-el-circulante-de-las-pymes/"
+  },
+  "guid:gdr-valle-del-guadalhorce:https://valledelguadalhorce.com/?p=31702": {
+    "ai_attempts": 1,
+    "content_hash": "68387d79a0a3ff539744fccd6165436de731c6d5",
+    "date_modified": null,
+    "date_published": "2026-10-19T07:43:00+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "El III Encuentro Internacional de Mujeres Rurales reúne a mujeres rurales para compartir proyectos, impulsar la innovación y generar nuevas La entrada Yunquera acoge III Encuentro Internacional de Mujeres Rurales se publicó primero en Valle del Guadalhorce.",
+      "descripcion": "El III Encuentro Internacional de Mujeres Rurales reúne a mujeres rurales para compartir proyectos, impulsar la innovación y generar nuevas La entrada Yunquera acoge III Encuentro Internacional de Mujeres Rurales se publicó.",
+      "seo_keywords": [],
+      "titulo": "Yunquera acoge III Encuentro Internacional de Mujeres Rurales"
+    },
+    "ia_exitosa": false,
+    "id": "guid-gdr-valle-del-guadalhorce-https-valledelguadalhorce-com-p-31702-cc330fac",
+    "last_ai_attempt": "2026-10-19T12:56:03.604100+00:00",
+    "pagina": "noticias/yunquera-acoge-iii-encuentro-internacional-de-mujeres-rurales.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://valledelguadalhorce.com/yunquera-acoge-iii-encuentro-internacional-de-mujeres-rurales/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=33600": {
     "ai_attempts": 0,
@@ -4675,6 +4694,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/16/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-el-grande/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212334": {
+    "ai_attempts": 1,
+    "content_hash": "77a3e851d0e8c70e935e1ca817d9cd25b98c5e3e",
+    "date_modified": null,
+    "date_published": "2026-10-19T10:09:21+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 15 segundos El acuerdo contempla nuevos equipamientos, espacios recreativos y deportivos y mejoras en los servicios de proximidad de los municipios de la comarca También se estudiarán oportunidades para desarrollar actividades logísticas, residenciales, de ocio y ambientales vinculadas al parque tecnológico La Diputación de Málaga y la Fundación Metrópoli La entrada La Diputación.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 15 segundos El acuerdo contempla nuevos equipamientos, espacios recreativos y deportivos y mejoras en los servicios de proximidad de los municipios de la comarca También se estudiarán.",
+      "seo_keywords": [],
+      "titulo": "La Diputación y la Fundación Metrópoli impulsarán la recuperación de corredores ecológicos"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-56f8c125",
+    "last_ai_attempt": "2026-10-19T12:55:37.835320+00:00",
+    "pagina": "noticias/la-diputacion-y-la-fundacion-metropoli-impulsaran-la-recuperacion-de-corredores-ecologicos.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/10/19/la-diputacion-y-la-fundacion-metropoli-impulsaran-la-recuperacion-de-corredores-ecologicos-en-el-valle-del-guadalhorce-y-la-atraccion-de-talento-e-inversion-en-el-entorno-de-malaga-techpark/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",
@@ -5291,7 +5329,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/verbena-fin-de-verano-2026-a-beneficio-de-la-asociacion-alhmer/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50674": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "e0e37dbc81086e0dffaef795abdacf108772e1a2",
     "date_modified": null,
     "date_published": "2026-10-16T12:25:03+00:00",
@@ -5304,7 +5342,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50674-524db3ee",
-    "last_ai_attempt": "2026-10-18T18:34:06.295252+00:00",
+    "last_ai_attempt": "2026-10-19T12:49:57.221574+00:00",
     "pagina": "noticias/gala-benefica-a-beneficio-de-las-monjas-clarisas-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/gala-benefica-a-beneficio-de-las-monjas-clarisas-2026/"

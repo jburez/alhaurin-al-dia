@@ -360,6 +360,18 @@
     "detectado_en": "2026-10-15T14:30:14.219879+02:00"
   },
   {
+    "id": "sede-Padrón Municipal de Habitantes-boen202631831d8615db1d5f36275b9dda8534e7",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29175/2026",
+    "resumen": "BOE-N-2026-31831d8615db1d5f36275b9dda8534e76c4772d4",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/2510e0b8-c872-4599-a004-0faa659a583c",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Padrón Municipal de Habitantes",
+    "detectado_en": "2026-10-19T16:25:31.194359+02:00"
+  },
+  {
     "id": "sede-Padrón Fiscal-anunciobop",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -408,6 +420,18 @@
     "detectado_en": "2026-10-11T15:49:58.506680+02:00"
   },
   {
+    "id": "sede-Corporación y Cargos Públicos-decreto20266055resoluciónpr20261895susti",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "9179/2023",
+    "resumen": "DECRETO 2026-6055 [Resolución PR/2026/1895 - SUSTITUC DEL ALCALDE DEL 22 AL 26 DE OCTUBRE DE 2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/7a3854d2-4b5e-400a-99fd-9d7067dd3437",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Corporación y Cargos Públicos",
+    "detectado_en": "2026-10-19T16:25:31.194402+02:00"
+  },
+  {
     "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20265928decretoconvocatoriajgl161",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -430,6 +454,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de El Pleno",
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de El Pleno-decreto20266059decretoconvocatoriaplenoe",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "PLN/2026/15",
+    "resumen": "DECRETO 2026-6059 [DECRETO CONVOCATORIA PLENO EXTR URG 20-10-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/4d33de62-b1d0-4f1e-8d66-4dacb922f34b",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-10-19T16:25:31.194425+02:00"
   },
   {
     "id": "bop-20261015-03699-2026",

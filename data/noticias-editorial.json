@@ -404,7 +404,7 @@
     "source_url": "https://www.youtube.com/watch?v=HSA5zBhR2yo"
   },
   "guid:atv-alhaurin-youtube:yt:video:HcHAUAhUXPA": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "0cc1c073c0adf14a2a9142b7cf22bc1ec3a9ef56",
     "date_modified": null,
     "date_published": "2026-10-19T13:00:31+00:00",
@@ -417,7 +417,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-hchauahuxpa-3f3e8456",
-    "last_ai_attempt": "2026-10-19T19:53:31.992526+00:00",
+    "last_ai_attempt": "2026-10-19T23:31:33.399199+00:00",
     "pagina": "noticias/noticias-atv-19-octubre-2026-actualidad-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=HcHAUAhUXPA"
@@ -1155,7 +1155,7 @@
     "source_url": "https://www.youtube.com/watch?v=b66DlnAxTjE"
   },
   "guid:atv-alhaurin-youtube:yt:video:b6BwO4AWYKs": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "6a8b924991f4298b458e580f236ac97960215680",
     "date_modified": null,
     "date_published": "2026-10-19T14:00:19+00:00",
@@ -1168,7 +1168,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-b6bwo4awyks-c2f08fbc",
-    "last_ai_attempt": "2026-10-19T19:53:11.826361+00:00",
+    "last_ai_attempt": "2026-10-19T23:31:13.582979+00:00",
     "pagina": "noticias/futbol-cd-alhaurino-arenas-de-armilla-cultura-y-deporte.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=b6BwO4AWYKs"
@@ -3785,7 +3785,7 @@
     "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/tormenta-descarga-aguaceros-granizo-malaga_0_2008288407.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "64770b1e101d4de3098900bd5818e448cc297196",
     "date_modified": null,
     "date_published": "2026-10-19T15:55:29+00:00",
@@ -3798,7 +3798,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-tormenta-descarga-aguace-afe8ad1f",
-    "last_ai_attempt": "2026-10-19T19:58:34.574119+00:00",
+    "last_ai_attempt": "2026-10-19T23:36:27.073952+00:00",
     "pagina": "noticias/una-intensa-tormenta-descarga-aguaceros-y-granizo-en-varios-puntos-de-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/tormenta-descarga-aguaceros-granizo-malaga_0_2008288407.html"

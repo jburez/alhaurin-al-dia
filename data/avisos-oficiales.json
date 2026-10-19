@@ -2,34 +2,54 @@
   {
     "id": "aemet-AFAZ612903PRP11920",
     "tipo": "meteorologico",
-    "nivel": "naranja",
-    "titulo": "Aviso. Nivel naranja. Lluvias. Sol y Guadalhorce",
-    "descripcion": "Aviso de precipitación acumulada en una hora de nivel naranja de 16:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+    "descripcion": "Aviso de precipitación acumulada en una hora de nivel amarillo de 18:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
     "fenomeno": "Lluvias",
     "zona": "Sol y Guadalhorce",
-    "inicio": "2026-10-19T16:00:00+02:00",
+    "inicio": "2026-10-19T18:00:00+02:00",
     "fin": "2026-10-19T21:59:00+02:00",
     "fuente": "AEMET",
-    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019142827_AFAZ612903PRP11920.xml",
-    "estado_ciclo_vida": "creado",
-    "actualizado_en": "2026-10-19T15:25:44+00:00",
-    "historial": []
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019163835_AFAZ612903PRP11920.xml",
+    "estado_ciclo_vida": "actualizado",
+    "actualizado_en": "2026-10-19T20:56:32+00:00",
+    "historial": [
+      {
+        "nivel": "naranja",
+        "titulo": "Aviso. Nivel naranja. Lluvias. Sol y Guadalhorce",
+        "descripcion": "Aviso de precipitación acumulada en una hora de nivel naranja de 16:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
+        "inicio": "2026-10-19T16:00:00+02:00",
+        "fin": "2026-10-19T21:59:00+02:00",
+        "estado_ciclo_vida": "creado",
+        "actualizado_en": "2026-10-19T15:25:44+00:00"
+      }
+    ]
   },
   {
     "id": "aemet-AFAZ612903TOTO1920",
     "tipo": "meteorologico",
     "nivel": "amarillo",
     "titulo": "Aviso. Nivel amarillo. Tormentas. Sol y Guadalhorce",
-    "descripcion": "Aviso de tormentas de nivel amarillo de 16:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
+    "descripcion": "Aviso de tormentas de nivel amarillo de 18:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
     "fenomeno": "Tormentas",
     "zona": "Sol y Guadalhorce",
-    "inicio": "2026-10-19T16:00:00+02:00",
+    "inicio": "2026-10-19T18:00:00+02:00",
     "fin": "2026-10-19T21:59:00+02:00",
     "fuente": "AEMET",
     "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019142827_AFAZ612903TOTO1920.xml",
-    "estado_ciclo_vida": "creado",
-    "actualizado_en": "2026-10-19T15:25:44+00:00",
-    "historial": []
+    "estado_ciclo_vida": "actualizado",
+    "actualizado_en": "2026-10-19T20:56:32+00:00",
+    "historial": [
+      {
+        "nivel": "amarillo",
+        "titulo": "Aviso. Nivel amarillo. Tormentas. Sol y Guadalhorce",
+        "descripcion": "Aviso de tormentas de nivel amarillo de 16:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
+        "inicio": "2026-10-19T16:00:00+02:00",
+        "fin": "2026-10-19T21:59:00+02:00",
+        "estado_ciclo_vida": "creado",
+        "actualizado_en": "2026-10-19T15:25:44+00:00"
+      }
+    ]
   },
   {
     "id": "aemet-AFAZ612903PRP11916",

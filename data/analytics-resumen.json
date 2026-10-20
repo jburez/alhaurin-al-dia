@@ -1,19 +1,15 @@
 {
-  "actualizado": "2026-10-20T16:57:57.145Z",
-  "visitas24h": 16,
-  "paginasVistas24h": 30,
+  "actualizado": "2026-10-20T20:17:04.500Z",
+  "visitas24h": 14,
+  "paginasVistas24h": 26,
   "topPaginas": [
     {
       "ruta": "/planes/",
       "vistas": 9
     },
     {
-      "ruta": "/guia-util/farmacias/",
-      "vistas": 6
-    },
-    {
-      "ruta": "/guia-util/farmacias/calendario/",
-      "vistas": 6
+      "ruta": "/noticias/nueva-jueza-de-paz-maria-isabel-gallego-sera-la-nueva-jueza-de-paz-de-alhaurin-el-grande",
+      "vistas": 5
     },
     {
       "ruta": "/",
@@ -22,6 +18,10 @@
     {
       "ruta": "/planes/e-6209/",
       "vistas": 5
+    },
+    {
+      "ruta": "/guia-util/farmacias/",
+      "vistas": 4
     }
   ]
 }

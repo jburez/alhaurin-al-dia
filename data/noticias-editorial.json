@@ -221,7 +221,7 @@
     "source_url": "https://www.youtube.com/watch?v=6pCC2iPS8sQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:83JQOfi92MM": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "0b5b304e82d217a220853ffffec1489cdbbe632e",
     "date_modified": null,
     "date_published": "2026-10-20T12:14:09+00:00",
@@ -234,7 +234,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-83jqofi92mm-18222373",
-    "last_ai_attempt": "2026-10-20T16:45:14.680728+00:00",
+    "last_ai_attempt": "2026-10-20T21:29:28.158527+00:00",
     "pagina": "noticias/incubadora-de-empresas-el-alcalde-anthony-bermudez-y-la-concejala-de-desarrollo-economico.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=83JQOfi92MM"
@@ -423,7 +423,7 @@
     "source_url": "https://www.youtube.com/watch?v=HSA5zBhR2yo"
   },
   "guid:atv-alhaurin-youtube:yt:video:HcHAUAhUXPA": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "0cc1c073c0adf14a2a9142b7cf22bc1ec3a9ef56",
     "date_modified": null,
     "date_published": "2026-10-19T13:00:31+00:00",
@@ -436,7 +436,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-hchauahuxpa-3f3e8456",
-    "last_ai_attempt": "2026-10-20T11:27:11.175144+00:00",
+    "last_ai_attempt": "2026-10-20T21:30:04.340008+00:00",
     "pagina": "noticias/noticias-atv-19-octubre-2026-actualidad-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=HcHAUAhUXPA"
@@ -747,7 +747,7 @@
     "source_url": "https://www.youtube.com/watch?v=LPIARrQSkjo"
   },
   "guid:atv-alhaurin-youtube:yt:video:LXBsilgLvts": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "6fa8823443350af6a026128f33f4d06440e96a53",
     "date_modified": null,
     "date_published": "2026-10-20T14:00:18+00:00",
@@ -760,7 +760,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-lxbsilglvts-b5f1e254",
-    "last_ai_attempt": "2026-10-20T16:44:58.642110+00:00",
+    "last_ai_attempt": "2026-10-20T21:29:09.089557+00:00",
     "pagina": "noticias/pleno-ordinario-celebrado-el-mes-de-octubre-de-2026-del-ayuntamiento-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=LXBsilgLvts"
@@ -827,7 +827,7 @@
     "source_url": "https://www.youtube.com/watch?v=MD01ZARge58"
   },
   "guid:atv-alhaurin-youtube:yt:video:MkcdVdnPPoQ": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "8cbb579ccc16f98a44b7e2788259793ee94534d1",
     "date_modified": null,
     "date_published": "2026-10-20T14:30:12+00:00",
@@ -840,7 +840,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-mkcdvdnppoq-bcf76e38",
-    "last_ai_attempt": "2026-10-20T16:44:39.937712+00:00",
+    "last_ai_attempt": "2026-10-20T21:28:49.816633+00:00",
     "pagina": "noticias/pleno-extraordinario-y-urgente-del-mes-de-octubre-de-2026-del-ayuntamiento-de-alhaurin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=MkcdVdnPPoQ"
@@ -1212,7 +1212,7 @@
     "source_url": "https://www.youtube.com/watch?v=b66DlnAxTjE"
   },
   "guid:atv-alhaurin-youtube:yt:video:b6BwO4AWYKs": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "6a8b924991f4298b458e580f236ac97960215680",
     "date_modified": null,
     "date_published": "2026-10-19T14:00:19+00:00",
@@ -1225,7 +1225,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-b6bwo4awyks-c2f08fbc",
-    "last_ai_attempt": "2026-10-20T11:26:54.113307+00:00",
+    "last_ai_attempt": "2026-10-20T21:29:45.099461+00:00",
     "pagina": "noticias/futbol-cd-alhaurino-arenas-de-armilla-cultura-y-deporte.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=b6BwO4AWYKs"
@@ -4828,7 +4828,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/19/la-diputacion-y-la-fundacion-metropoli-impulsaran-la-recuperacion-de-corredores-ecologicos-en-el-valle-del-guadalhorce-y-la-atraccion-de-talento-e-inversion-en-el-entorno-de-malaga-techpark/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212446": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "bb3645da275de58d9b825895fd6620894a0bcd98",
     "date_modified": null,
     "date_published": "2026-10-20T14:19:27+00:00",
@@ -4841,7 +4841,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-62bba45c",
-    "last_ai_attempt": "2026-10-20T16:49:38.045048+00:00",
+    "last_ai_attempt": "2026-10-20T21:34:21.838067+00:00",
     "pagina": "noticias/cartama-acoge-la-jornada-comarcal-de-activacion-para-el-empleo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/20/cartama-acoge-la-jornada-comarcal-de-activacion-para-el-empleo/"

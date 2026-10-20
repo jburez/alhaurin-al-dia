@@ -11,8 +11,8 @@
     "fin": "2026-10-19T21:59:00+02:00",
     "fuente": "AEMET",
     "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019163835_AFAZ612903PRP11920.xml",
-    "estado_ciclo_vida": "actualizado",
-    "actualizado_en": "2026-10-19T20:56:32+00:00",
+    "estado_ciclo_vida": "finalizado",
+    "actualizado_en": "2026-10-20T00:12:09+00:00",
     "historial": [
       {
         "nivel": "naranja",
@@ -22,6 +22,15 @@
         "fin": "2026-10-19T21:59:00+02:00",
         "estado_ciclo_vida": "creado",
         "actualizado_en": "2026-10-19T15:25:44+00:00"
+      },
+      {
+        "nivel": "amarillo",
+        "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+        "descripcion": "Aviso de precipitación acumulada en una hora de nivel amarillo de 18:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
+        "inicio": "2026-10-19T18:00:00+02:00",
+        "fin": "2026-10-19T21:59:00+02:00",
+        "estado_ciclo_vida": "actualizado",
+        "actualizado_en": "2026-10-19T20:56:32+00:00"
       }
     ]
   },
@@ -37,8 +46,8 @@
     "fin": "2026-10-19T21:59:00+02:00",
     "fuente": "AEMET",
     "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019142827_AFAZ612903TOTO1920.xml",
-    "estado_ciclo_vida": "actualizado",
-    "actualizado_en": "2026-10-19T20:56:32+00:00",
+    "estado_ciclo_vida": "finalizado",
+    "actualizado_en": "2026-10-20T00:12:09+00:00",
     "historial": [
       {
         "nivel": "amarillo",
@@ -48,6 +57,15 @@
         "fin": "2026-10-19T21:59:00+02:00",
         "estado_ciclo_vida": "creado",
         "actualizado_en": "2026-10-19T15:25:44+00:00"
+      },
+      {
+        "nivel": "amarillo",
+        "titulo": "Aviso. Nivel amarillo. Tormentas. Sol y Guadalhorce",
+        "descripcion": "Aviso de tormentas de nivel amarillo de 18:00 19-10-2026 CEST (UTC+2) a 21:59 19-10-2026 CEST (UTC+2).",
+        "inicio": "2026-10-19T18:00:00+02:00",
+        "fin": "2026-10-19T21:59:00+02:00",
+        "estado_ciclo_vida": "actualizado",
+        "actualizado_en": "2026-10-19T20:56:32+00:00"
       }
     ]
   },

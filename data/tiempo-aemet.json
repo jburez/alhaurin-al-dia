@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-20T13:37:39+02:00",
+  "actualizado": "2026-10-20T21:17:21+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "☁️",
     "titulo": "Tiempo",
     "valor": "Máx. 26º",
-    "detalle": "Despejado · Máx. 26º / Mín. 13º · Lluvia 0%",
+    "detalle": "Nubes altas · Máx. 26º / Mín. 13º · Lluvia 5%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "20/10",
     "t_max": "26",
     "t_min": "13",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "icono": "☁️",
+    "descripcion": "Nubes altas",
+    "lluvia": "5%",
+    "viento": "SO 10 km/h",
     "uv": "4"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "20/10",
       "t_max": "26",
       "t_min": "13",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "icono": "☁️",
+      "descripcion": "Nubes altas",
+      "lluvia": "5%",
+      "viento": "SO 10 km/h",
       "uv": "4"
     },
     {
@@ -48,7 +48,7 @@
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "N 15 km/h",
+      "viento": "N 10 km/h",
       "uv": "4"
     },
     {
@@ -60,14 +60,14 @@
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "E 10 km/h",
+      "viento": "S 5 km/h",
       "uv": "4"
     },
     {
       "fecha": "2026-10-23",
       "dia_semana": "Viernes",
       "fecha_corta": "23/10",
-      "t_max": "25",
+      "t_max": "26",
       "t_min": "14",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
@@ -79,24 +79,24 @@
       "fecha": "2026-10-24",
       "dia_semana": "Sábado",
       "fecha_corta": "24/10",
-      "t_max": "26",
+      "t_max": "25",
       "t_min": "12",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "N 10 km/h",
+      "viento": "SE 10 km/h",
       "uv": "4"
     },
     {
       "fecha": "2026-10-25",
       "dia_semana": "Domingo",
       "fecha_corta": "25/10",
-      "t_max": "26",
-      "t_min": "11",
+      "t_max": "28",
+      "t_min": "13",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "N 10 km/h",
+      "viento": "Flojo",
       "uv": ""
     },
     {
@@ -104,11 +104,11 @@
       "dia_semana": "Lunes",
       "fecha_corta": "26/10",
       "t_max": "27",
-      "t_min": "15",
+      "t_min": "13",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "5%",
-      "viento": "C 0 km/h",
+      "viento": "E 5 km/h",
       "uv": ""
     }
   ],

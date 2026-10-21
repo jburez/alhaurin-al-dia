@@ -38,7 +38,7 @@
     "source_url": "https://www.youtube.com/watch?v=-l0nefJpXv0"
   },
   "guid:atv-alhaurin-youtube:yt:video:06twuYeEEUs": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "b500bf1a8b97fd1c154ab2432b8cdee3390bf554",
     "date_modified": null,
     "date_published": "2026-10-21T09:58:39+00:00",
@@ -51,7 +51,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-06twuyeeeus-95cb8488",
-    "last_ai_attempt": "2026-10-21T13:46:16.401901+00:00",
+    "last_ai_attempt": "2026-10-21T18:32:49.817473+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=06twuYeEEUs"
@@ -240,7 +240,7 @@
     "source_url": "https://www.youtube.com/watch?v=6pCC2iPS8sQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:83JQOfi92MM": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "0b5b304e82d217a220853ffffec1489cdbbe632e",
     "date_modified": null,
     "date_published": "2026-10-20T12:14:09+00:00",
@@ -253,7 +253,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-83jqofi92mm-18222373",
-    "last_ai_attempt": "2026-10-21T07:26:31.097786+00:00",
+    "last_ai_attempt": "2026-10-21T18:33:44.616398+00:00",
     "pagina": "noticias/incubadora-de-empresas-el-alcalde-anthony-bermudez-y-la-concejala-de-desarrollo-economico.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=83JQOfi92MM"
@@ -766,7 +766,7 @@
     "source_url": "https://www.youtube.com/watch?v=LPIARrQSkjo"
   },
   "guid:atv-alhaurin-youtube:yt:video:LXBsilgLvts": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "6fa8823443350af6a026128f33f4d06440e96a53",
     "date_modified": null,
     "date_published": "2026-10-20T14:00:18+00:00",
@@ -779,7 +779,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-lxbsilglvts-b5f1e254",
-    "last_ai_attempt": "2026-10-21T07:26:14.440071+00:00",
+    "last_ai_attempt": "2026-10-21T18:33:25.493226+00:00",
     "pagina": "noticias/pleno-ordinario-celebrado-el-mes-de-octubre-de-2026-del-ayuntamiento-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=LXBsilgLvts"
@@ -846,7 +846,7 @@
     "source_url": "https://www.youtube.com/watch?v=MD01ZARge58"
   },
   "guid:atv-alhaurin-youtube:yt:video:MkcdVdnPPoQ": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "8cbb579ccc16f98a44b7e2788259793ee94534d1",
     "date_modified": null,
     "date_published": "2026-10-20T14:30:12+00:00",
@@ -859,7 +859,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-mkcdvdnppoq-bcf76e38",
-    "last_ai_attempt": "2026-10-21T07:25:57.418010+00:00",
+    "last_ai_attempt": "2026-10-21T18:33:08.064262+00:00",
     "pagina": "noticias/pleno-extraordinario-y-urgente-del-mes-de-octubre-de-2026-del-ayuntamiento-de-alhaurin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=MkcdVdnPPoQ"
@@ -1023,6 +1023,25 @@
     "pagina": "noticias/paella-popular-y-entrega-de-premios-romeria-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=VmPMKtkBwlQ"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:X4fyGbfVdfQ": {
+    "ai_attempts": 1,
+    "content_hash": "33a4d0defad6b696ba9daa06a58a381c52f0411c",
+    "date_modified": null,
+    "date_published": "2026-10-21T14:00:17+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del miércoles 21 de octubre de 2026 en el Informativo de ATV. 1. RECLAMACIÓN 1,9 MILLONES € El alcalde reclama en la Tribuna de Alcaldes de la Diputación 1,9 millones de euros en los presupuestos de 2027 para completar el arreglo de la carretera de Villa del Guadalhorce. 2.\n\nVIAJE SÉNIOR A HUELVA Los mayores de Alhaurín el Grande regresan del segundo Viaje Sénior, que se ha celebrado del 16 al 18 de octubre con destino a la provincia de Huelva y las 50 plazas cubiertas. 4. DERROTA EN EL MIGUEL FIJONES El partido disputado ayer en el anexo del Miguel Fijones entre el CD Alhaurino Femenino y la Alianza FC Cebollitas se saldó con un marcador 0-6.\n\nMás información en la web https://www.rtvalhaurinelgrande.com/ y en las redes sociales: Facebook: https://www.facebook.com/Rtvalhaurin/ Instagram: https://www.instagram.com/Rtvalhaurin/ X: https://x.com/rtvalhaurin Descarga gratis nuestra APP para Android: https://cutt.ly/VfxQb9l.",
+      "descripcion": "1. RECLAMACIÓN 1,9 MILLONES € El alcalde reclama en la Tribuna de Alcaldes de la Diputación 1,9 millones de euros en los presupuestos de 2027 para completar el arreglo de la carretera de Villa del Guadalhorce. 2. “AMOR Y CELOS”.",
+      "seo_keywords": [],
+      "titulo": "Reclamación 1,9 millones € el alcalde reclama en la tribuna de alcaldes de la diputación"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-x4fygbfvdfq-dec449de",
+    "last_ai_attempt": "2026-10-21T18:32:28.238054+00:00",
+    "pagina": "noticias/reclamacion-1-9-millones-el-alcalde-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=X4fyGbfVdfQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:XLk04JA3UqM": {
     "ai_attempts": 0,
@@ -2508,7 +2527,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224976": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "e66dd0e069aa970d54dec910a3b6a00ba67ac08a",
     "date_modified": null,
     "date_published": "2026-10-21T12:30:27+00:00",
@@ -2521,7 +2540,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22497-add9c542",
-    "last_ai_attempt": "2026-10-21T13:39:18.626151+00:00",
+    "last_ai_attempt": "2026-10-21T18:31:34.140825+00:00",
     "pagina": "noticias/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion-para-completar-la-reparacion-de-la-carretera-de-villa-del-guadalhorce/"
@@ -4884,6 +4903,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/20/cartama-acoge-la-jornada-comarcal-de-activacion-para-el-empleo/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212519": {
+    "ai_attempts": 1,
+    "content_hash": "d5f19fd589f491d87eccfa49ca2ae99ba65d1d1b",
+    "date_modified": null,
+    "date_published": "2026-10-21T14:24:12+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 54 segundosEl alcalde, además de agradecer la aportación para acometer la primera fase, solicita que los presupuestos provinciales de 2027 incorporen una partida de 1,9 millones de euros para ejecutar el segundo tramo y culminar una actuación histórica para la pedanía y el conjunto del Valle del Guadalhorce El La entrada Anthony Bermúdez reclama en la Tribuna de Alcaldes de la.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 54 segundosEl alcalde, además de agradecer la aportación para acometer la primera fase, solicita que los presupuestos provinciales de 2027 incorporen una partida de 1,9 millones de euros para.",
+      "seo_keywords": [],
+      "titulo": "Anthony Bermúdez reclama en la Tribuna de Alcaldes de la Diputación de Málaga financiación"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-749d2225",
+    "last_ai_attempt": "2026-10-21T18:38:20.775938+00:00",
+    "pagina": "noticias/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion-2.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/10/21/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion-para-completar-la-reparacion-de-la-carretera-de-villa-del-guadalhorce/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",
@@ -5519,7 +5557,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/gala-benefica-a-beneficio-de-las-monjas-clarisas-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50677": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "9f1aa740675ad94cb570337a67fa176c3a2d18c6",
     "date_modified": null,
     "date_published": "2026-10-21T13:05:06+00:00",
@@ -5532,7 +5570,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50677-1489e019",
-    "last_ai_attempt": "2026-10-21T13:44:01.510570+00:00",
+    "last_ai_attempt": "2026-10-21T18:32:05.247936+00:00",
     "pagina": "noticias/x-encuentro-de-bailes-de-salon-y-latinos-2026-bachateros-de-alhaurin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/x-encuentro-de-bailes-de-salon-y-latinos-2026-bachateros-de-alhaurin/"

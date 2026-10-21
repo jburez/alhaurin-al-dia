@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-10-21T01:36:57.784Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 219 eventos próximos.",
+  "actualizado": "2026-10-21T06:04:41.259186+02:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 216 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5752",
-      "tipo": "Ocio",
-      "icono": "🎉",
-      "titulo": "EQUINALH 🍃 Pelado y Esquilado de mulos 🫏",
-      "descripcion": "🐴✨ El próximo sábado 20 de septiembre a las 11:00 el herrador-esquilador Pedro Moreno, conocido como ‘El niño de Pedro de Canillas’, ofrecerá una exhibición sobre pelado y rallado de mulos en el Re...",
-      "lugar": "",
-      "inicio": "2026-09-20T11:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/romeria-aeg-%f0%9f%8d%83-%f0%9f%90%8e-programacion-equinahl-2/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12457",
-      "tipo": "Deportes",
-      "icono": "⚽",
-      "titulo": "⚽️ CD ALHAURINO 🆚 CHURRIANA C.F.",
-      "descripcion": "🏟️𝐉𝐎𝐑𝐍𝐀𝐃𝐀 3 Nuestra casa. Nuestra gente. Nuestro momento. Nuestra fuerza empieza en la grada. 💙 🗓️ Domingo 20 de Septiembre. 🆚 Churriana de la Vega CF. ⌚️ 12:15h. 📍Campo Municipal Miguel Fijones 𝐄𝐍...",
-      "lugar": "",
-      "inicio": "2026-09-20T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/%e2%9a%bd%ef%b8%8f-cd-alhaurino-%f0%9f%86%9a-churriana-c-f/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-5738",
       "tipo": "Deportes",
@@ -3269,21 +3240,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

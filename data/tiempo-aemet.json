@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-10-22T13:53:36+02:00",
+  "actualizado": "2026-10-22T21:13:14+02:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
@@ -23,7 +23,7 @@
     "icono": "☀️",
     "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "S 10 km/h",
+    "viento": "Flojo",
     "uv": "4"
   },
   "semana": [
@@ -36,7 +36,7 @@
       "icono": "☀️",
       "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
+      "viento": "Flojo",
       "uv": "4"
     },
     {
@@ -72,7 +72,7 @@
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": "4"
     },
     {
@@ -96,7 +96,7 @@
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "Flojo",
+      "viento": "C 0 km/h",
       "uv": ""
     },
     {
@@ -147,8 +147,8 @@
   ],
   "sol_luna": {
     "orto": "08:32 h",
-    "ocaso": "19:34 h",
-    "horas_luz": "11h 02m",
+    "ocaso": "19:33 h",
+    "horas_luz": "11h 01m",
     "fase_luna": "Luna Gibosa Creciente (86%)",
     "icono_luna": "🌔"
   },

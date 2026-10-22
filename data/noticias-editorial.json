@@ -38,7 +38,7 @@
     "source_url": "https://www.youtube.com/watch?v=-l0nefJpXv0"
   },
   "guid:atv-alhaurin-youtube:yt:video:06twuYeEEUs": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "b500bf1a8b97fd1c154ab2432b8cdee3390bf554",
     "date_modified": null,
     "date_published": "2026-10-21T09:58:39+00:00",
@@ -51,7 +51,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-06twuyeeeus-95cb8488",
-    "last_ai_attempt": "2026-10-21T23:11:31.421153+00:00",
+    "last_ai_attempt": "2026-10-22T11:38:45.266301+00:00",
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=06twuYeEEUs"
@@ -1025,7 +1025,7 @@
     "source_url": "https://www.youtube.com/watch?v=VmPMKtkBwlQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:X4fyGbfVdfQ": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "33a4d0defad6b696ba9daa06a58a381c52f0411c",
     "date_modified": null,
     "date_published": "2026-10-21T14:00:17+00:00",
@@ -1038,7 +1038,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-x4fygbfvdfq-dec449de",
-    "last_ai_attempt": "2026-10-21T23:11:15.673473+00:00",
+    "last_ai_attempt": "2026-10-22T11:38:26.418291+00:00",
     "pagina": "noticias/reclamacion-1-9-millones-el-alcalde-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=X4fyGbfVdfQ"
@@ -2508,7 +2508,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga-lateral-y-de-mayor-capacidad/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224969": {
-    "ai_attempts": 11,
+    "ai_attempts": 12,
     "content_hash": "897b0c9066a1372b43521b6be8222f59f1699fd7",
     "date_modified": null,
     "date_published": "2026-10-16T10:06:35+00:00",
@@ -2521,13 +2521,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22496-4a42c461",
-    "last_ai_attempt": "2026-10-21T23:09:30.931610+00:00",
+    "last_ai_attempt": "2026-10-22T11:35:08.973287+00:00",
     "pagina": "noticias/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=224976": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "e66dd0e069aa970d54dec910a3b6a00ba67ac08a",
     "date_modified": null,
     "date_published": "2026-10-21T12:30:27+00:00",
@@ -2540,7 +2540,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22497-add9c542",
-    "last_ai_attempt": "2026-10-21T23:09:12.379926+00:00",
+    "last_ai_attempt": "2026-10-22T11:34:50.207272+00:00",
     "pagina": "noticias/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion-para-completar-la-reparacion-de-la-carretera-de-villa-del-guadalhorce/"
@@ -3009,24 +3009,20 @@
     "source_url": "https://fedelhorce.es/juernes-innovador-noche-de-comercio-abierto/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260026": {
-    "ai_attempts": 0,
-    "content_hash": "9e925f8eb17afd937746d89af457b01a5d168390",
-    "date_modified": null,
+    "ai_attempts": 1,
+    "content_hash": "6751f3cb72846391e68884fce6bc41a586dd7908",
+    "date_modified": "2026-10-22T11:46:42.411933+00:00",
     "date_published": "2026-09-02T08:00:07+00:00",
     "editorial": {
-      "categoria": "Agenda Cultural",
-      "cuerpo": "La localidad de Pizarra celebrará su esperada Ruta de la Tapa del 16 al 18 de octubre de 2026, una oportunidad perfecta para degustar una variedad de tapas tradicionales y creativas. Esta iniciativa gastronómica incluye también tapas infantiles, pensadas para los más pequeños, y una selección de cócteles para complementar la experiencia culinaria.\n\nDurante estos tres días, los visitantes podrán recorrer los establecimientos participantes y disfrutar de propuestas culinarias que reflejan la riqueza gastronómica local. La Ruta de la Tapa se consolida como un evento destacado en la agenda de Pizarra, promoviendo la cultura y el turismo gastronómico en la zona.",
-      "descripcion": "La Ruta de la Tapa en Pizarra ofrece tapas, opciones infantiles y cócteles del 16 al 18 de octubre de 2026 para todos los gustos.",
-      "seo_keywords": [
-        "Ruta de la Tapa Pizarra 2026",
-        "tapas en Pizarra",
-        "eventos gastronómicos Pizarra"
-      ],
-      "titulo": "Disfruta la Ruta de la Tapa en Pizarra del 16 al 18 de octubre 2026"
+      "categoria": "Turismo y Patrimonio",
+      "cuerpo": "¡Ya tenemos ganadores! Descubre las tapas, cócteles y bares ganadores de esta edición.",
+      "descripcion": "¡Ya tenemos ganadores! Descubre las tapas, cócteles y bares ganadores de esta edición.",
+      "seo_keywords": [],
+      "titulo": "Ruta de la Tapa Pizarra 2026"
     },
-    "ia_exitosa": true,
+    "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-260026-ea89a6c2",
-    "last_ai_attempt": "2026-09-03T11:02:08.190960+00:00",
+    "last_ai_attempt": "2026-10-22T11:41:32.085677+00:00",
     "pagina": "noticias/disfruta-la-ruta-de-la-tapa-en-pizarra-del-16-al-18-de-octubre-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/ruta-de-la-tapa-pizarra-2026/"
@@ -5557,7 +5553,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/gala-benefica-a-beneficio-de-las-monjas-clarisas-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50677": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "9f1aa740675ad94cb570337a67fa176c3a2d18c6",
     "date_modified": null,
     "date_published": "2026-10-21T13:05:06+00:00",
@@ -5570,9 +5566,142 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50677-1489e019",
-    "last_ai_attempt": "2026-10-21T23:09:57.710863+00:00",
+    "last_ai_attempt": "2026-10-22T11:37:48.253754+00:00",
     "pagina": "noticias/x-encuentro-de-bailes-de-salon-y-latinos-2026-bachateros-de-alhaurin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/x-encuentro-de-bailes-de-salon-y-latinos-2026-bachateros-de-alhaurin/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50680": {
+    "ai_attempts": 1,
+    "content_hash": "e07de04de62cf0137838683b8c8de47c3ea8b45f",
+    "date_modified": null,
+    "date_published": "2026-10-22T08:18:27+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "Tras el saludo del alcalde Anthony Bermúdez y el subinspector jefe, Pablo Rengel, en la Plaza Baja al cuerpo de la Policía Local, y a otros cuerpos de la provincia invitados este año, tenía lugar en la Parroqua la misa por su patrón San Miguel Arcángel.\n\nFue oficiada por el párroco Andrés Merino, acompañado por La entrada Día de la Policía Local 2026 aparece en RTV Alhaurín el Grande.",
+      "descripcion": "Tras el saludo del alcalde Anthony Bermúdez y el subinspector jefe, Pablo Rengel, en la Plaza Baja al cuerpo de la Policía Local, y a otros cuerpos de la provincia invitados este año, tenía lugar en la Parroqua la misa por su.",
+      "seo_keywords": [],
+      "titulo": "Día de la Policía Local 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50680-c853c52b",
+    "last_ai_attempt": "2026-10-22T11:37:31.314970+00:00",
+    "pagina": "noticias/dia-de-la-policia-local-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/dia-de-la-policia-local-2026/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50683": {
+    "ai_attempts": 1,
+    "content_hash": "8e221aff4785d947e5c2af4811d5df3cd85c283a",
+    "date_modified": null,
+    "date_published": "2026-10-22T08:56:03+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Bajo el título “Aceituna que rima, aloreña que inspira”, el Consejo Regulador de la Denominación de origen protegida “Aceituna Aloreña de Málaga” ha organizado esta exposición itinerante de poesía, muestra los diez poemas finalistas del concurso llevado a cabo el pasado año, donde se promovió la creatividad literaria y la puesta en valor del patrimonio La entrada Exposición de poesía y cata de aceituna aloreña.",
+      "descripcion": "Bajo el título “Aceituna que rima, aloreña que inspira”, el Consejo Regulador de la Denominación de origen protegida “Aceituna Aloreña de Málaga” ha organizado esta exposición itinerante de poesía, muestra los diez poemas.",
+      "seo_keywords": [],
+      "titulo": "Exposición de poesía y cata de aceituna aloreña"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50683-e7c18628",
+    "last_ai_attempt": "2026-10-22T11:37:12.525064+00:00",
+    "pagina": "noticias/exposicion-de-poesia-y-cata-de-aceituna-alorena.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/exposicion-de-poesia-y-cata-de-aceituna-alorena/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50686": {
+    "ai_attempts": 1,
+    "content_hash": "2a0321fc1d2745406dff0a74c06288a549d27b3b",
+    "date_modified": null,
+    "date_published": "2026-10-22T08:59:47+00:00",
+    "editorial": {
+      "categoria": "Educación",
+      "cuerpo": "EL CONCURSO DE CORTOMETRAJES PARA ESTUDIANTES DE ALHAURÍN EL GRANDE QUE ORGANIZA “HÉQATE PRODUCCIONES”, DEL CINEASTA ALHAURINO TONY MORALES, JUNTO AL AYUNTAMIENTO, YA HA ENTREGADO LOS PREMIOS DE SU TERCERA EDICIÓN, EN UN ACTO CELEBRADO EN EL TEATRO MUNICIPAL.\n\nEN TOTAL, LOS ALUMNOS DE LOS DOS INSTITUTOS DE EDUCACIÓN SECUNDARIA DEL MUNICIPIO HAN PRESENTADO 60 La entrada Concurso de cortometrajes para estudiantes de Alhaurín el Grande aparece en RTV Alhaurín el Grande.",
+      "descripcion": "EL CONCURSO DE CORTOMETRAJES PARA ESTUDIANTES DE ALHAURÍN EL GRANDE QUE ORGANIZA “HÉQATE PRODUCCIONES”, DEL CINEASTA ALHAURINO TONY MORALES, JUNTO AL AYUNTAMIENTO, YA HA ENTREGADO LOS PREMIOS DE SU TERCERA EDICIÓN, EN UN ACTO.",
+      "seo_keywords": [],
+      "titulo": "Concurso de cortometrajes para estudiantes de Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50686-b241cd62",
+    "last_ai_attempt": "2026-10-22T11:36:53.764791+00:00",
+    "pagina": "noticias/concurso-de-cortometrajes-para-estudiantes-de-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/concurso-de-cortometrajes-para-estudiantes-de-alhaurin-el-grande/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50689": {
+    "ai_attempts": 1,
+    "content_hash": "e83b019214fa9ec16f328bd2dcac090805535717",
+    "date_modified": null,
+    "date_published": "2026-10-22T09:07:15+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La Biblioteca Municipal de Alhaurín el Grande acogió un encuentro poético dedicado a Federico García Lorca con motivo del 90 aniversario de su asesinato. La actividad, incluida en la programación cultural Cuarta Estación del Ayuntamiento, llevó por título Distintos y estuvo protagonizada por el artista multidisciplinar Paco Otero, en colaboración con Imam Otero-Haddad.\n\nEl encuentro La entrada Encuentro Poético en homenaje a Lorca a cargo de Paco Otero aparece en RTV Alhaurín el Grande.",
+      "descripcion": "La Biblioteca Municipal de Alhaurín el Grande acogió un encuentro poético dedicado a Federico García Lorca con motivo del 90 aniversario de su asesinato. La actividad, incluida en la programación cultural Cuarta Estación del.",
+      "seo_keywords": [],
+      "titulo": "Encuentro Poético en homenaje a Lorca a cargo de Paco Otero"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50689-5ebf8f03",
+    "last_ai_attempt": "2026-10-22T11:36:34.748348+00:00",
+    "pagina": "noticias/encuentro-poetico-en-homenaje-a-lorca-a-cargo-de-paco-otero.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/encuentro-poetico-en-homenaje-a-lorca-a-cargo-de-paco-otero/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50692": {
+    "ai_attempts": 1,
+    "content_hash": "be0c60d531334c00e535d4a9905eae260600ec79",
+    "date_modified": null,
+    "date_published": "2026-10-22T09:22:49+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "El cuartel de la Guardia Civil de Alhaurín el Grande acogió el 12 de octubre la celebración del Día del Pilar, patrona del cuerpo, coincidiendo con el Día de la Hispanidad. La jornada comenzó con una misa de campaña y continuó con el desfile de las tropas, el izado de la bandera de España y La entrada AL DÍA – Día de la Guardia Civil 2026-Día de la Hispanidad.\n\nAlhaurín el Grande aparece en RTV Alhaurín el Grande.",
+      "descripcion": "El cuartel de la Guardia Civil de Alhaurín el Grande acogió el 12 de octubre la celebración del Día del Pilar, patrona del cuerpo, coincidiendo con el Día de la Hispanidad. La jornada comenzó con una misa de campaña y continuó.",
+      "seo_keywords": [],
+      "titulo": "AL DÍA – Día de la Guardia Civil 2026-Día de la Hispanidad. Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50692-596b2ed3",
+    "last_ai_attempt": "2026-10-22T11:36:15.335956+00:00",
+    "pagina": "noticias/al-dia-dia-de-la-guardia-civil-2026-dia-de-la-hispanidad-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/al-dia-dia-de-la-guardia-civil-2026-dia-de-la-hispanidad-alhaurin-el-grande/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50695": {
+    "ai_attempts": 1,
+    "content_hash": "6ab705fede168476aed56d4b2a7bfe6e012790ed",
+    "date_modified": null,
+    "date_published": "2026-10-22T09:27:12+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "El salón de actos de la biblioteca municipal ha albergado recientemente el concierto didáctico a cargo de la asociación musical alhaurina manuel amador dirigido a los escolares del municipio de los colegios pablo ruiz picasso, jorge guillen, emilia olivares, félix plaza, salvador gonzález cantos y el chorro, con un doble propósito: acercar el mundo de La entrada Concierto didáctico a cargo de la Asociación Musical.",
+      "descripcion": "El salón de actos de la biblioteca municipal ha albergado recientemente el concierto didáctico a cargo de la asociación musical alhaurina manuel amador dirigido a los escolares del municipio de los colegios pablo ruiz picasso.",
+      "seo_keywords": [],
+      "titulo": "Concierto didáctico a cargo de la Asociación Musical Manuel Amador 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50695-ac726c1a",
+    "last_ai_attempt": "2026-10-22T11:35:57.591142+00:00",
+    "pagina": "noticias/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50698": {
+    "ai_attempts": 1,
+    "content_hash": "988b0d3ec7531373741c2a51e577d0bbb7bf5f69",
+    "date_modified": null,
+    "date_published": "2026-10-22T09:31:02+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La casa museo antonio gala acogió la presentación de la fundación ley 57 para la divulgación del talento en un acto organizado por la propia fundación con la colaboración del ayuntamiento de alhaurín el grande. Se trata de una iniciativa que pretende apoyar el desarrollo de capacidades en distintos ámbitos y que contempla, entre otras La entrada Presentación de la Fundación Ley 57 aparece en RTV Alhaurín el Grande.",
+      "descripcion": "La casa museo antonio gala acogió la presentación de la fundación ley 57 para la divulgación del talento en un acto organizado por la propia fundación con la colaboración del ayuntamiento de alhaurín el grande. Se trata de una.",
+      "seo_keywords": [],
+      "titulo": "Presentación de la Fundación Ley 57"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50698-e0be8b0f",
+    "last_ai_attempt": "2026-10-22T11:35:39.001197+00:00",
+    "pagina": "noticias/presentacion-de-la-fundacion-ley-57.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/presentacion-de-la-fundacion-ley-57/"
   }
 }

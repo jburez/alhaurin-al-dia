@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-10-22T13:18:34.647Z",
-  "visitas24h": 9,
-  "paginasVistas24h": 15,
+  "actualizado": "2026-10-22T18:04:18.969Z",
+  "visitas24h": 11,
+  "paginasVistas24h": 17,
   "topPaginas": [
     {
       "ruta": "/planes/",
@@ -20,8 +20,8 @@
       "vistas": 5
     },
     {
-      "ruta": "/noticias/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-2",
-      "vistas": 4
+      "ruta": "/boletin-oficial/",
+      "vistas": 5
     }
   ]
 }

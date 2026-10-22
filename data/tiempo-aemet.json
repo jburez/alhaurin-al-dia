@@ -1,54 +1,42 @@
 {
-  "actualizado": "2026-10-21T21:17:46+02:00",
+  "actualizado": "2026-10-22T13:53:36+02:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "🌤️",
+    "icono": "☀️",
     "titulo": "Tiempo",
     "valor": "Máx. 25º",
-    "detalle": "Poco nuboso · Máx. 25º / Mín. 11º · Lluvia 0%",
+    "detalle": "Despejado · Máx. 25º / Mín. 13º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-10-21",
-    "dia_semana": "Miércoles",
-    "fecha_corta": "21/10",
+    "fecha": "2026-10-22",
+    "dia_semana": "Jueves",
+    "fecha_corta": "22/10",
     "t_max": "25",
-    "t_min": "11",
-    "icono": "🌤️",
-    "descripcion": "Poco nuboso",
+    "t_min": "13",
+    "icono": "☀️",
+    "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "N 20 km/h",
+    "viento": "S 10 km/h",
     "uv": "4"
   },
   "semana": [
-    {
-      "fecha": "2026-10-21",
-      "dia_semana": "Miércoles",
-      "fecha_corta": "21/10",
-      "t_max": "25",
-      "t_min": "11",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
-      "lluvia": "0%",
-      "viento": "N 20 km/h",
-      "uv": "4"
-    },
     {
       "fecha": "2026-10-22",
       "dia_semana": "Jueves",
       "fecha_corta": "22/10",
       "t_max": "25",
-      "t_min": "12",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
+      "t_min": "13",
+      "icono": "☀️",
+      "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "SO 5 km/h",
+      "viento": "S 10 km/h",
       "uv": "4"
     },
     {
@@ -57,9 +45,9 @@
       "fecha_corta": "23/10",
       "t_max": "25",
       "t_min": "13",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "5%",
       "viento": "N 20 km/h",
       "uv": "4"
     },
@@ -67,7 +55,7 @@
       "fecha": "2026-10-24",
       "dia_semana": "Sábado",
       "fecha_corta": "24/10",
-      "t_max": "25",
+      "t_max": "24",
       "t_min": "12",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
@@ -80,7 +68,7 @@
       "dia_semana": "Domingo",
       "fecha_corta": "25/10",
       "t_max": "28",
-      "t_min": "12",
+      "t_min": "13",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
@@ -92,22 +80,34 @@
       "dia_semana": "Lunes",
       "fecha_corta": "26/10",
       "t_max": "26",
-      "t_min": "13",
+      "t_min": "14",
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
       "viento": "E 10 km/h",
-      "uv": ""
+      "uv": "4"
     },
     {
       "fecha": "2026-10-27",
       "dia_semana": "Martes",
       "fecha_corta": "27/10",
-      "t_max": "27",
+      "t_max": "26",
+      "t_min": "13",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "0%",
+      "viento": "Flojo",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-10-28",
+      "dia_semana": "Miércoles",
+      "fecha_corta": "28/10",
+      "t_max": "26",
       "t_min": "14",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "15%",
+      "lluvia": "35%",
       "viento": "E 10 km/h",
       "uv": ""
     }
@@ -146,10 +146,10 @@
     }
   ],
   "sol_luna": {
-    "orto": "08:31 h",
-    "ocaso": "19:35 h",
-    "horas_luz": "11h 04m",
-    "fase_luna": "Luna Gibosa Creciente (78%)",
+    "orto": "08:32 h",
+    "ocaso": "19:34 h",
+    "horas_luz": "11h 02m",
+    "fase_luna": "Luna Gibosa Creciente (86%)",
     "icono_luna": "🌔"
   },
   "embalses": {
@@ -157,14 +157,14 @@
     "fuente": "SAIH Hidrosur (Junta de Andalucía)",
     "fuente_url": "https://www.redhidrosurmedioambiente.es/saih/informe/embalses",
     "total_capacidad_hm3": 403.1,
-    "total_embalsado_hm3": 314.8,
+    "total_embalsado_hm3": 314.6,
     "porcentaje": "78.1%",
     "pantanos": [
       {
         "nombre": "Conde de Guadalhorce",
         "capacidad": "66.5 hm³",
-        "embalsado": "39.2 hm³",
-        "porcentaje": "59.0%"
+        "embalsado": "39.1 hm³",
+        "porcentaje": "58.9%"
       },
       {
         "nombre": "Embalse del Guadalhorce",
@@ -181,8 +181,8 @@
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "28.2 hm³",
-        "porcentaje": "49.0%"
+        "embalsado": "28.1 hm³",
+        "porcentaje": "48.8%"
       }
     ]
   }

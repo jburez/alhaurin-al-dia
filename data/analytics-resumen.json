@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T18:32:55.302Z",
+  "actualizado": "2026-10-23T21:39:48.075Z",
   "visitas24h": 10,
   "paginasVistas24h": 12,
   "topPaginas": [
@@ -16,12 +16,12 @@
       "vistas": 8
     },
     {
-      "ruta": "/boletin-oficial/",
-      "vistas": 5
+      "ruta": "/noticias/nueva-jueza-de-paz-maria-isabel-gallego-sera-la-nueva-jueza-de-paz-de-alhaurin-el-grande",
+      "vistas": 4
     },
     {
-      "ruta": "/noticias/nueva-jueza-de-paz-maria-isabel-gallego-sera-la-nueva-jueza-de-paz-de-alhaurin-el-grande",
-      "vistas": 5
+      "ruta": "/boletin-oficial/",
+      "vistas": 4
     }
   ]
 }

@@ -264,6 +264,18 @@
     "detectado_en": "2026-10-22T14:49:31.237312+02:00"
   },
   {
+    "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29121/2026",
+    "resumen": "CERTIFICADO 2026-0593 [CERTIF PTO 3 JGL 23-10-2026 APROB BASES XXIII CERTAM INTERNAC RELATO BREVE GERALD BRENAN]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/be7ee7a7-a09e-4f64-98f2-c35063e4ff57",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Propuesta de Gasto",
+    "detectado_en": "2026-10-23T14:28:11.943288+02:00"
+  },
+  {
     "id": "sede-Procedimiento Genérico-listadoproviscandidatosajuradosorteobien",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -504,6 +516,30 @@
     "detectado_en": "2026-10-21T14:46:09.755414+02:00"
   },
   {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-actajgl18092026diligenciadaanonimizdatos",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/32",
+    "resumen": "ACTA JGL 18-09-2026 DILIGENCIADA-ANONIMIZ DATOS PERSON",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/0fa6f0b1-5cae-4854-8128-7ecb57fc7683",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-10-23T14:28:11.943222+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-actajglnº20260031de11092026diligenciadaa",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/31",
+    "resumen": "ACTA JGL Nº 2026-0031 DE 11-09-2026 DILIGENCIADA-ANONIMIZ DATOS PERSON",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/594bfe67-1c70-4c7c-861d-7b077fdbed94",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-10-23T14:28:11.943263+02:00"
+  },
+  {
     "id": "sede-Convocatoria de El Pleno-decreto20266059decretoconvocatoriaplenoe",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -526,6 +562,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de El Pleno",
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de El Pleno-videoactapleno11092026anonimizdatperson",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "PLN/2026/12",
+    "resumen": "VIDEOACTA PLENO 11-09-2026 ANONIMIZ DAT PERSON",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1d45c2d3-7f0d-4af4-b3c0-828fe6b400c2",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-10-23T14:28:11.943305+02:00"
   },
   {
     "id": "bop-20261021-03912-2026",

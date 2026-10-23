@@ -1,5 +1,41 @@
 [
     {
+        "titulo": "Entrega de premios del I concurso nacional de periodismo sonoro «Alejo García»",
+        "descripcion": "Alhaurín el Grande se ha abierto un hueco en el mundo de los premios periodísticos con la creación del Premio Nacional de Periodismo al mejor documental sonoro que lleva el nombre del insigne periodista alhaurino Alejo García, y.",
+        "resumen": "Alhaurín el Grande se ha abierto un hueco en el mundo de los premios periodísticos con la creación del Premio Nacional de Periodismo al mejor documental sonoro que lleva el nombre del insigne periodista alhaurino Alejo García, y.",
+        "categoria": "Educación",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-10-23T13:31:26.466Z",
+        "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/10/Captura-1.jpg",
+        "pagina": "noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia-2.html",
+        "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50702-469a719c",
+        "enlace": "https://rtvalhaurinelgrande.com/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia/"
+    },
+    {
+        "titulo": "El Ayuntamiento de Alhaurín el Grande incorpora un nuevo vehículo adaptado para mejorar",
+        "descripcion": "La adquisición, con una inversión cercana a los 60.000 euros, permitirá mejorar la movilidad de usuarios y trabajadores y ofrecer un transporte adaptado a personas con movilidad reducida. El alcalde.",
+        "resumen": "La adquisición, con una inversión cercana a los 60.000 euros, permitirá mejorar la movilidad de usuarios y trabajadores y ofrecer un transporte adaptado a personas con movilidad reducida. El alcalde.",
+        "categoria": "Municipal",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-10-23T13:16:35.604Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/10/834722178_2013134182679307_8693353997214248520_n.jpg",
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-incorpora-un-nuevo-vehiculo-adaptado-para-mejorar.html",
+        "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22490-bc493ab7",
+        "enlace": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-incorpora-un-nuevo-vehiculo-adaptado-para-mejorar-el-servicio-de-transporte-del-centro-fahala/"
+    },
+    {
+        "titulo": "Alhaurín el Grande celebrará el 24 de octubre el ‘Concurso de Tríos de Carnavalh’",
+        "descripcion": "La iniciativa del área de Fiestas reunirá a agrupaciones carnavalescas en la terraza del Teatro Municipal Antonio Gala, contará con dos sesiones de actuaciones y reparto de 1.200 euros en.",
+        "resumen": "La iniciativa del área de Fiestas reunirá a agrupaciones carnavalescas en la terraza del Teatro Municipal Antonio Gala, contará con dos sesiones de actuaciones y reparto de 1.200 euros en.",
+        "categoria": "Fiestas y Tradiciones",
+        "fuente": "Alhaurín al Día",
+        "fecha": "2026-10-23T13:16:35.584Z",
+        "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/10/carnavalh-2026.jpg",
+        "pagina": "noticias/alhaurin-el-grande-celebrara-el-24-de-octubre-el-concurso-de-trios-de-carnavalh.html",
+        "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22490-28d09939",
+        "enlace": "https://alhaurinelgrande.es/alhaurin-el-grande-celebrara-el-24-de-octubre-el-concurso-de-trios-de-carnavalh/"
+    },
+    {
         "titulo": "Simulacro de búsqueda y rescate de personas con el método Arcón. Grupo GERCCMA",
         "descripcion": "Alhaurín el Grande ha acogido un simulacro de búsqueda y rescate de una persona sepultada con vida mediante el Método Arcón, un sistema especializado en la localización de personas en situaciones de emergencia y catástrofe. La.",
         "resumen": "Alhaurín el Grande ha acogido un simulacro de búsqueda y rescate de una persona sepultada con vida mediante el Método Arcón, un sistema especializado en la localización de personas en situaciones de emergencia y catástrofe. La.",
@@ -454,18 +490,6 @@
         "pagina": "noticias/proteccion-civil-de-alhaurin-el-grande-recibe-el-reconocimiento-de-la-diputacion-de-malaga.html",
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22486-f8770359",
         "enlace": "https://alhaurinelgrande.es/proteccion-civil-de-alhaurin-el-grande-recibe-el-reconocimiento-de-la-diputacion-de-malaga-por-sus-30-anos-de-servicio/"
-    },
-    {
-        "titulo": "Mentalidad de campeón",
-        "descripcion": "En este Juernes Innovador hablaremos de la capacidad de asumir retos, organización personal y toma de decisiones.",
-        "resumen": "En este Juernes Innovador hablaremos de la capacidad de asumir retos, organización personal y toma de decisiones.",
-        "categoria": "Actualidad",
-        "fuente": "Alhaurín al Día",
-        "fecha": "2026-10-16T13:08:53.973Z",
-        "imagen": "https://fedelhorce.es/wp-content/uploads/2026/10/Destacada-juernes-churriana-2.png",
-        "pagina": "noticias/mentalidad-de-campeon.html",
-        "id": "guid-fedelhorce-https-fedelhorce-es-p-260865-5df6dd41",
-        "enlace": "https://fedelhorce.es/juernes-innovador-mentalidad-de-campeon/"
     },
     {
         "titulo": "Juventud presenta su programación de octubre con ocho nuevas propuestas para los jóvenes",

@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-10-25T01:25:14.657Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 216 eventos próximos.",
+  "actualizado": "2026-10-25T05:02:41.648951+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 213 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-13638",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Homenaje a la voz de Nino 🎶 Manu Rodríguez",
-      "descripcion": "Un directo impresionante y lleno de rigor, Manu Rodríguez nos cautivará con su gran voz, haciéndonos sentir que Nino no se ha ido, mientras revivimos sus grandes éxitos como Noelia, Cartas Amarilla...",
-      "lugar": "",
-      "inicio": "2026-09-24T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/homenaje-a-la-voz-de-nino-%f0%9f%8e%b6-manu-rodriguez/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-13643",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Música en vivo 🎶 THE CROOKS 🎸",
-      "descripcion": "Zeppelian@, continuamos con la música en vivo!!!!!!!!!!! Este viernes a las 22.00 h THE CROOKS en directo!!!!! Disfruta del mejor rock con versiones de grupos como The Beatles, Oasis, Blur, Muse, T...",
-      "lugar": "",
-      "inicio": "2026-09-24T22:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-the-crooks-%f0%9f%8e%b8/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-13589",
       "tipo": "Evento",
@@ -3224,21 +3195,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

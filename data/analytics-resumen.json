@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-25T01:25:17.579Z",
+  "actualizado": "2026-10-25T06:24:48.804Z",
   "visitas24h": 7,
   "paginasVistas24h": 11,
   "topPaginas": [
@@ -16,12 +16,12 @@
       "vistas": 8
     },
     {
-      "ruta": "/boletin-oficial/",
+      "ruta": "/planes/e-9367/",
       "vistas": 4
     },
     {
-      "ruta": "/planes/e-9367/",
-      "vistas": 4
+      "ruta": "/planes/e-13829/",
+      "vistas": 3
     }
   ]
 }

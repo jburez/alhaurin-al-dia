@@ -3218,7 +3218,7 @@
     "source_url": "https://fedelhorce.es/juernes-innovador-noche-de-comercio-abierto/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=260026": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "6751f3cb72846391e68884fce6bc41a586dd7908",
     "date_modified": "2026-10-22T11:46:42.411933+00:00",
     "date_published": "2026-09-02T08:00:07+00:00",
@@ -3231,7 +3231,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-260026-ea89a6c2",
-    "last_ai_attempt": "2026-10-25T11:11:52.189727+00:00",
+    "last_ai_attempt": "2026-10-26T04:21:20.494687+00:00",
     "pagina": "noticias/disfruta-la-ruta-de-la-tapa-en-pizarra-del-16-al-18-de-octubre-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/ruta-de-la-tapa-pizarra-2026/"
@@ -5185,7 +5185,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/21/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion-para-completar-la-reparacion-de-la-carretera-de-villa-del-guadalhorce/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212703": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "5ea1b5d6005ac1e300ad26565c10d12ceecbeabe",
     "date_modified": null,
     "date_published": "2026-10-24T18:43:08+00:00",
@@ -5198,13 +5198,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-427e73d9",
-    "last_ai_attempt": "2026-10-25T16:02:52.735996+00:00",
+    "last_ai_attempt": "2026-10-26T04:24:15.289773+00:00",
     "pagina": "noticias/accidente-con-una-persona-fallecida-y-cuatro-heridas-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/24/accidente-con-una-persona-fallecida-y-cuatro-heridas-en-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212705": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "a667bed7862d6f3578fe76ddce5e27233bbaf64d",
     "date_modified": null,
     "date_published": "2026-10-24T16:43:25+00:00",
@@ -5217,7 +5217,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-6d81eb2a",
-    "last_ai_attempt": "2026-10-25T16:03:10.660072+00:00",
+    "last_ai_attempt": "2026-10-26T04:24:34.922254+00:00",
     "pagina": "noticias/toni-ledesma-numero-6-de-la-candidatura-del-pp-al-congreso-por-malaga.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/24/toni-ledesma-numero-6-de-la-candidatura-del-pp-al-congreso-por-malaga/"

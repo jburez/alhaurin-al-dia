@@ -1,5 +1,17 @@
 [
   {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadoprovisionaldepuntuacionesfasevalo",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "LISTADO PROVISIONAL DE PUNTUACIONES FASE VALORACIÓN DE IDONEIDAD. PROCESO DE SELECCIÓN DEL PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/52bcee73-b4df-4ef4-98c0-fd2a09e394ae",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-10-26T14:58:59.932257+01:00"
+  },
+  {
     "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivodepuntuacionesfasedebar",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -24,16 +36,52 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
-    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadoprovisionaldepuntuacionesfasevalo",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266123decretoalcaldíaaprobación",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "31291/2025",
-    "resumen": "LISTADO PROVISIONAL DE PUNTUACIONES FASE VALORACIÓN DE IDONEIDAD. PROCESO DE SELECCIÓN DEL PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/52bcee73-b4df-4ef4-98c0-fd2a09e394ae",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6123 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"TÉCNICO/A INFORMÁTICO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/8f935141-a375-4f3e-af49-b21a78011a41",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
-    "detectado_en": "2026-10-26T14:58:59.932257+01:00"
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-22T14:49:31.237312+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266122decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6122 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"TÉCNICO/A INFORMÁTICO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/ff19b15c-02a7-49f6-9f3d-a5c1f249a544",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-22T14:49:31.237294+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266121decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6121 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"AUXILIAR INFORMÁTICO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/a65baad6-efc3-4cba-b18b-b4a8a1956610",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-22T14:49:31.237271+02:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266120decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6120 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"AUXILIAR INFORMÁTICO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/82e6d1e4-0072-4cec-a480-afd9f34d6e46",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-22T14:49:31.237227+02:00"
   },
   {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-bojapublicadounaplazasubinspectorapolicí",
@@ -226,54 +274,6 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
-  },
-  {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266120decretoalcaldíaaprobación",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6120 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"AUXILIAR INFORMÁTICO/A\"]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/82e6d1e4-0072-4cec-a480-afd9f34d6e46",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-22T14:49:31.237227+02:00"
-  },
-  {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266121decretoalcaldíaaprobación",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6121 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"AUXILIAR INFORMÁTICO/A\"]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/a65baad6-efc3-4cba-b18b-b4a8a1956610",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-22T14:49:31.237271+02:00"
-  },
-  {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266122decretoalcaldíaaprobación",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6122 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"TÉCNICO/A INFORMÁTICO/A\"]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/ff19b15c-02a7-49f6-9f3d-a5c1f249a544",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-22T14:49:31.237294+02:00"
-  },
-  {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266123decretoalcaldíaaprobación",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6123 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"TÉCNICO/A INFORMÁTICO/A\"]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/8f935141-a375-4f3e-af49-b21a78011a41",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-22T14:49:31.237312+02:00"
   },
   {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
@@ -492,6 +492,18 @@
     "detectado_en": "2026-10-11T15:49:58.506680+02:00"
   },
   {
+    "id": "sede-Derechos y Deberes Retributivos-actadeconvocatoriadepromocióninternatemp",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "7872/2026",
+    "resumen": "ACTA DE CONVOCATORIA DE PROMOCIÓN INTERNA TEMPORAL A LAS COORDINACIONES DE SERVICIO DEL AYUNTAMIENTO DE ALHAURÍN EL GRANDE",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/c153726d-bfc1-4d2e-b736-721c4082a898",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Derechos y Deberes Retributivos",
+    "detectado_en": "2026-10-27T14:01:26.352856+01:00"
+  },
+  {
     "id": "sede-Corporación y Cargos Públicos-decreto20266055resoluciónpr20261895susti",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -504,28 +516,16 @@
     "detectado_en": "2026-10-19T16:25:31.194402+02:00"
   },
   {
-    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20265928decretoconvocatoriajgl161",
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-actajglnº20260031de11092026diligenciadaa",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "JGL/2026/34",
-    "resumen": "DECRETO 2026-5928 [DECRETO CONVOCATORIA JGL 16-10-2026]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/4e6f6c10-75d7-4f75-a4ac-69068a4d3d09",
+    "expediente": "JGL/2026/31",
+    "resumen": "ACTA JGL Nº 2026-0031 DE 11-09-2026 DILIGENCIADA-ANONIMIZ DATOS PERSON",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/594bfe67-1c70-4c7c-861d-7b077fdbed94",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
-    "detectado_en": "2026-10-14T14:41:55.838116+02:00"
-  },
-  {
-    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20266117decretoconvocatoriajgl231",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "JGL/2026/35",
-    "resumen": "DECRETO 2026-6117 [DECRETO CONVOCATORIA JGL 23-10-2026]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/98b260d2-3fd5-4ae3-8244-b15d645429e0",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
-    "detectado_en": "2026-10-21T14:46:09.755414+02:00"
+    "detectado_en": "2026-10-23T14:28:11.943263+02:00"
   },
   {
     "id": "sede-Convocatoria de La Junta de Gobierno Local-actajgl18092026diligenciadaanonimizdatos",
@@ -540,16 +540,40 @@
     "detectado_en": "2026-10-23T14:28:11.943222+02:00"
   },
   {
-    "id": "sede-Convocatoria de La Junta de Gobierno Local-actajglnº20260031de11092026diligenciadaa",
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20266117decretoconvocatoriajgl231",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "JGL/2026/31",
-    "resumen": "ACTA JGL Nº 2026-0031 DE 11-09-2026 DILIGENCIADA-ANONIMIZ DATOS PERSON",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/594bfe67-1c70-4c7c-861d-7b077fdbed94",
+    "expediente": "JGL/2026/35",
+    "resumen": "DECRETO 2026-6117 [DECRETO CONVOCATORIA JGL 23-10-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/98b260d2-3fd5-4ae3-8244-b15d645429e0",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
-    "detectado_en": "2026-10-23T14:28:11.943263+02:00"
+    "detectado_en": "2026-10-21T14:46:09.755414+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20265928decretoconvocatoriajgl161",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/34",
+    "resumen": "DECRETO 2026-5928 [DECRETO CONVOCATORIA JGL 16-10-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/4e6f6c10-75d7-4f75-a4ac-69068a4d3d09",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-10-14T14:41:55.838116+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de El Pleno-videoactapleno11092026anonimizdatperson",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "PLN/2026/12",
+    "resumen": "VIDEOACTA PLENO 11-09-2026 ANONIMIZ DAT PERSON",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1d45c2d3-7f0d-4af4-b3c0-828fe6b400c2",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-10-23T14:28:11.943305+02:00"
   },
   {
     "id": "sede-Convocatoria de El Pleno-decreto20266059decretoconvocatoriaplenoe",
@@ -576,16 +600,28 @@
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
   },
   {
-    "id": "sede-Convocatoria de El Pleno-videoactapleno11092026anonimizdatperson",
+    "id": "sede-Convocatoria de El Pleno-decreto20266247decretoconvocatoriapleno3",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "PLN/2026/12",
-    "resumen": "VIDEOACTA PLENO 11-09-2026 ANONIMIZ DAT PERSON",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1d45c2d3-7f0d-4af4-b3c0-828fe6b400c2",
+    "expediente": "PLN/2026/16",
+    "resumen": "DECRETO 2026-6247 [DECRETO CONVOCATORIA PLENO 30-10-2026 EXTR]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/cc9a9350-9a96-446b-a543-68976bfcdca0",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de El Pleno",
-    "detectado_en": "2026-10-23T14:28:11.943305+02:00"
+    "detectado_en": "2026-10-27T14:01:26.352921+01:00"
+  },
+  {
+    "id": "bop-20261027-03010-2026",
+    "numero_edicto": "3010/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Por el Ayuntamiento Pleno, en sesión ordinaria celebrada el 7 de noviembre de 2025, punto 3 (certificado 604/2025 de 20.11, cuyo CSV: ATKYY62AH7DJZ54CXTLSXHC69, verificación: https://alhaurinelgrande.sedelectronica.es), se acordó la aprobación definitiva del «Estudio de detalle de la UE-14B “La Fama” (SUC) del PGOU de Alhaurín El Grande, que fue adaptado a la LOUA con aprobación definitiva, con fecha 22 de abril de 2010 (expediente...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261027-03010-2026&control=4191449738",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-10-27",
+    "detectado_en": "2026-10-27T13:01:23+00:00"
   },
   {
     "id": "bop-20261021-03912-2026",

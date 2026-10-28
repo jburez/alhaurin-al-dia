@@ -276,6 +276,18 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266279aprobacionlistadefinitiva",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "DECRETO 2026-6279 [APROBACION LISTA DEFINITIVA ADMITIDOS COMISIÓN DE SERVICIOS, DESIGNACIÓN COMISIÓN DE VALORACION Y CONVOCATORIA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/48e3b339-2bab-41d4-baed-3233d61847fc",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-28T14:52:21.697742+01:00"
+  },
+  {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -456,6 +468,18 @@
     "detectado_en": "2026-10-14T14:41:55.838000+02:00"
   },
   {
+    "id": "sede-Licencias de Actividad-anunciotablóncalificaciónambiental",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "5159/2026",
+    "resumen": "ANUNCIO TABLÓN CALIFICACIÓN AMBIENTAL",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/8fbb1557-54bf-434d-acd5-d4a684d0c2d7",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Licencias de Actividad",
+    "detectado_en": "2026-10-28T14:52:21.697674+01:00"
+  },
+  {
     "id": "sede-Elecciones-bandoexposiciónalpublicodelcallejeromuni",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -562,6 +586,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
     "detectado_en": "2026-10-14T14:41:55.838116+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20266275decretoconvocatoriajgl301",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/36",
+    "resumen": "DECRETO 2026-6275 [DECRETO CONVOCATORIA JGL 30-10-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/86b5c0d0-d8ce-4c8d-9ff7-43e7e4920ed2",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-10-28T14:52:21.697715+01:00"
   },
   {
     "id": "sede-Convocatoria de El Pleno-videoactapleno11092026anonimizdatperson",

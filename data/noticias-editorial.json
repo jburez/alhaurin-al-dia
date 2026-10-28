@@ -76,7 +76,7 @@
     "source_url": "https://www.youtube.com/watch?v=06twuYeEEUs"
   },
   "guid:atv-alhaurin-youtube:yt:video:0nwTO9V0xkE": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "8ad6fde3937525589a0dffb60620824fdefef87e",
     "date_modified": null,
     "date_published": "2026-10-27T15:30:17+00:00",
@@ -89,7 +89,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-0nwto9v0xke-3c060646",
-    "last_ai_attempt": "2026-10-27T22:05:51.046816+00:00",
+    "last_ai_attempt": "2026-10-28T05:15:52.442441+00:00",
     "pagina": "noticias/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=0nwTO9V0xkE"
@@ -1135,7 +1135,7 @@
     "source_url": "https://www.youtube.com/watch?v=QlAHfxpJT1w"
   },
   "guid:atv-alhaurin-youtube:yt:video:RdRx09qxpZ8": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "37411d8f28a2b8d7d0a4b12e4248a53f9f09185e",
     "date_modified": null,
     "date_published": "2026-10-27T13:14:35+00:00",
@@ -1148,7 +1148,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-rdrx09qxpz8-acdfa15d",
-    "last_ai_attempt": "2026-10-27T22:06:08.838555+00:00",
+    "last_ai_attempt": "2026-10-28T05:16:09.295033+00:00",
     "pagina": "noticias/noticias-atv-27-octubre-2026-actualidad-de-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=RdRx09qxpZ8"
@@ -2812,7 +2812,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-moderniza-las-instalaciones-y-mejora-la-sostenibilidad-y-tecnologia-de-la-biblioteca-municipal/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225014": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "d5e4df284780f55e9722d5785e3eb486fed206da",
     "date_modified": null,
     "date_published": "2026-10-27T10:41:19+00:00",
@@ -2825,13 +2825,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22501-21e38edf",
-    "last_ai_attempt": "2026-10-27T22:03:29.901469+00:00",
+    "last_ai_attempt": "2026-10-28T05:14:05.899394+00:00",
     "pagina": "noticias/la-concejalia-de-obras-publicas-a-traves-del-ciclo-integral-del-agua-saca-a-licitacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-impulsa-estudios-tecnicos-para-prevenir-los-danos-por-escorrentias-y-mejorar-la-red-de-saneamiento-en-alhaurin-el-grande/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225022": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "1ee17359f1d5be0569e26ddc1e834dc60da2e658",
     "date_modified": null,
     "date_published": "2026-10-27T11:22:39+00:00",
@@ -2844,7 +2844,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22502-c9bad583",
-    "last_ai_attempt": "2026-10-27T22:03:11.275967+00:00",
+    "last_ai_attempt": "2026-10-28T05:13:47.765156+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-ingresa-1-9-millones-de-euros-por-recibos-pendientes.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-ingresa-19-millones-de-euros-por-recibos-pendientes-del-ibi-de-la-urbanizacion-la-mota/"
@@ -4103,7 +4103,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34246/%f0%9d%97%a8%f0%9d%97%9f%f0%9d%97%a7%f0%9d%97%9c%f0%9d%97%a0%f0%9d%97%94-%f0%9d%97%96%f0%9d%97%a2%f0%9d%97%a1%f0%9d%97%a9%f0%9d%97%a2%f0%9d%97%96%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%a2%f0%9d%97%a5/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34256": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "28ecce094645dbf660cf555aa90b52af09eba0a5",
     "date_modified": null,
     "date_published": "2026-10-27T18:48:11+00:00",
@@ -4116,7 +4116,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-5d965395",
-    "last_ai_attempt": "2026-10-27T22:04:13.197572+00:00",
+    "last_ai_attempt": "2026-10-28T05:14:32.375785+00:00",
     "pagina": "noticias/sole-ne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34256/sole%d0%bcne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos-dia-de-todos-los-santos/"
@@ -6199,7 +6199,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50706": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "c0a9002cc47806c7514880f5e0a74420e88e8157",
     "date_modified": null,
     "date_published": "2026-10-27T10:06:36+00:00",
@@ -6212,13 +6212,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50706-dbffd9c7",
-    "last_ai_attempt": "2026-10-27T22:05:29.927805+00:00",
+    "last_ai_attempt": "2026-10-28T05:15:31.690137+00:00",
     "pagina": "noticias/simulacro-de-busqueda-y-rescate-de-personas-con-el-metodo-arcon-grupo-gerccma.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/simulacro-de-busqueda-y-rescate-de-personas-con-el-metodo-arcon-grupo-gerccma/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50709": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "b0d04219c31fc0213db4cf2e1b38c2b4737f4e89",
     "date_modified": null,
     "date_published": "2026-10-27T10:09:55+00:00",
@@ -6231,13 +6231,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50709-842f4a37",
-    "last_ai_attempt": "2026-10-27T22:05:10.839769+00:00",
+    "last_ai_attempt": "2026-10-28T05:15:13.647271+00:00",
     "pagina": "noticias/exposicion-del-area-de-igualdad-con-alma-de-mujer-20-anos-del-taller-de-pintura-al-oleo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/exposicion-del-area-de-igualdad-con-alma-de-mujer-20-anos-del-taller-de-pintura-al-oleo/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50712": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "fa9a1f78fbe7977e223a864dae6f45abed011558",
     "date_modified": null,
     "date_published": "2026-10-27T10:13:46+00:00",
@@ -6250,7 +6250,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50712-58a45305",
-    "last_ai_attempt": "2026-10-27T22:04:52.339891+00:00",
+    "last_ai_attempt": "2026-10-28T05:14:54.856120+00:00",
     "pagina": "noticias/primer-domingo-de-mulliores-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/primer-domingo-de-mulliores-2026-rezo-del-rosario-de-la-aurora/"

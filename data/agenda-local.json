@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-10-29T02:51:03.971Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 193 eventos próximos.",
+  "actualizado": "2026-10-29T06:09:44.411028+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 190 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-5970",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Aniversario 🪾 Antonio Gala 95°🎻",
-      "descripcion": "Sonata 🎼 Almavera 🎻 El espectáculo ‘Almavera (sonata para violín y títeres)’ de la compañía Etcétera ha colgado el cartel de COMPLETO. El domingo 28 de septiembre, los jardines de la Casa Museo Ant...",
-      "lugar": "",
-      "inicio": "2026-09-28T19:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/actos-95-aniversario-nacimiento-de-antonio-gala-%f0%9f%8e%bb/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-5746",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Aniversario 🪾 Antonio Gala 95°",
-      "descripcion": "El 28 de septiembre a las 19:00 h, la Casa Museo La Baltasara se convertirá en el escenario de una velada muy especial para conmemorar el 95 aniversario del nacimiento de Antonio Gala. Organizado p...",
-      "lugar": "",
-      "inicio": "2026-09-28T19:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/velada-aniversario-del-nacimiento-de-antonio-gala-%f0%9f%93%9a/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-13687",
       "tipo": "Gastronomía",
@@ -2879,21 +2850,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

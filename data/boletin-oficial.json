@@ -36,6 +36,18 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266279aprobacionlistadefinitiva",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "DECRETO 2026-6279 [APROBACION LISTA DEFINITIVA ADMITIDOS COMISIÓN DE SERVICIOS, DESIGNACIÓN COMISIÓN DE VALORACION Y CONVOCATORIA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/48e3b339-2bab-41d4-baed-3233d61847fc",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-28T14:52:21.697742+01:00"
+  },
+  {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266123decretoalcaldíaaprobación",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -276,16 +288,28 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266279aprobacionlistadefinitiva",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-actavaloracionpuestoadministrativomovili",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
     "expediente": "24878/2026",
-    "resumen": "DECRETO 2026-6279 [APROBACION LISTA DEFINITIVA ADMITIDOS COMISIÓN DE SERVICIOS, DESIGNACIÓN COMISIÓN DE VALORACION Y CONVOCATORIA]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/48e3b339-2bab-41d4-baed-3233d61847fc",
+    "resumen": "ACTA VALORACION PUESTO ADMINISTRATIVO MOVILIDAD ADMINISTRATIVA_29.10.2026",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b46aa17d-9e1a-47df-96fc-ff5dbfc8d7e3",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-28T14:52:21.697742+01:00"
+    "detectado_en": "2026-10-29T14:58:12.680594+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266310decretoampliacplazoreclam",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "DECRETO 2026-6310 [DECRETO AMPLIAC PLAZO RECLAMAC PARTICIP CONVOC 1 ADMVO COMIS SERV MOVIL INTERADMVA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1435b8e6-d79f-4dcf-8ffa-43b00b0b354f",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-29T14:58:12.680628+01:00"
   },
   {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
@@ -540,6 +564,18 @@
     "detectado_en": "2026-10-19T16:25:31.194402+02:00"
   },
   {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20266275decretoconvocatoriajgl301",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/36",
+    "resumen": "DECRETO 2026-6275 [DECRETO CONVOCATORIA JGL 30-10-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/86b5c0d0-d8ce-4c8d-9ff7-43e7e4920ed2",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-10-28T14:52:21.697715+01:00"
+  },
+  {
     "id": "sede-Convocatoria de La Junta de Gobierno Local-actajglnº20260031de11092026diligenciadaa",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -588,16 +624,16 @@
     "detectado_en": "2026-10-14T14:41:55.838116+02:00"
   },
   {
-    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20266275decretoconvocatoriajgl301",
+    "id": "sede-Convocatoria de El Pleno-decreto20266247decretoconvocatoriapleno3",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "JGL/2026/36",
-    "resumen": "DECRETO 2026-6275 [DECRETO CONVOCATORIA JGL 30-10-2026]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/86b5c0d0-d8ce-4c8d-9ff7-43e7e4920ed2",
+    "expediente": "PLN/2026/16",
+    "resumen": "DECRETO 2026-6247 [DECRETO CONVOCATORIA PLENO 30-10-2026 EXTR]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/cc9a9350-9a96-446b-a543-68976bfcdca0",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
-    "detectado_en": "2026-10-28T14:52:21.697715+01:00"
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-10-27T14:01:26.352921+01:00"
   },
   {
     "id": "sede-Convocatoria de El Pleno-videoactapleno11092026anonimizdatperson",
@@ -636,16 +672,16 @@
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
   },
   {
-    "id": "sede-Convocatoria de El Pleno-decreto20266247decretoconvocatoriapleno3",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "PLN/2026/16",
-    "resumen": "DECRETO 2026-6247 [DECRETO CONVOCATORIA PLENO 30-10-2026 EXTR]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/cc9a9350-9a96-446b-a543-68976bfcdca0",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Convocatoria de El Pleno",
-    "detectado_en": "2026-10-27T14:01:26.352921+01:00"
+    "id": "bop-20261029-03936-2026",
+    "numero_edicto": "3936/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Para general conocimiento se hace público que, en sesión ordinaria del Ayuntamiento Pleno celebrada el día 11 de septiembre de 2026, punto 2, ha acordado aprobar inicialmente el Plan Municipal contra el Cambio Climático de Alhaurín el Grande, cuyo texto consta en anuncio que podrá consultarse en el tablón disponible y en el portal de transparencia en la sede con la siguiente dirección electrónica: alhaurinelgrande.sedelectronica.es...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261029-03936-2026&control=1515218947",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-10-29",
+    "detectado_en": "2026-10-29T13:58:09+00:00"
   },
   {
     "id": "bop-20261027-03010-2026",

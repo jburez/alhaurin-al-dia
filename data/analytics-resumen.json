@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-29T16:04:19.439Z",
-  "visitas24h": 10,
-  "paginasVistas24h": 10,
+  "actualizado": "2026-10-29T21:04:55.790Z",
+  "visitas24h": 11,
+  "paginasVistas24h": 23,
   "topPaginas": [
     {
       "ruta": "/noticias/horarios-y-programacion-halloween-alhaurin-el-grande-2026",
-      "vistas": 15
-    },
-    {
-      "ruta": "/planes/e-13730/",
-      "vistas": 11
+      "vistas": 17
     },
     {
       "ruta": "/planes/",
+      "vistas": 11
+    },
+    {
+      "ruta": "/planes/e-13730/",
       "vistas": 11
     },
     {

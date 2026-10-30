@@ -3839,7 +3839,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-juernes-mentalidad-de-campeon/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261746": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "f587bb810f8b037b7d50e6502aaa3c75dea43df3",
     "date_modified": null,
     "date_published": "2026-10-28T11:00:38+00:00",
@@ -3852,7 +3852,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261746-21cf9387",
-    "last_ai_attempt": "2026-10-29T23:56:19.043490+00:00",
+    "last_ai_attempt": "2026-10-30T05:25:21.176508+00:00",
     "pagina": "noticias/jornadas-gastronomicas-coingusto-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/jornadas-gastronomicas-coingusto-2026/"
@@ -3877,7 +3877,7 @@
     "source_url": "https://valledelguadalhorce.com/yunquera-acoge-iii-encuentro-internacional-de-mujeres-rurales/"
   },
   "guid:gdr-valle-del-guadalhorce:https://valledelguadalhorce.com/?p=31718": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "1232106341f5d21c7161fb578a3a5a6064479d7b",
     "date_modified": null,
     "date_published": "2026-10-29T11:19:36+00:00",
@@ -3890,7 +3890,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-gdr-valle-del-guadalhorce-https-valledelguadalhorce-com-p-31718-4248f77d",
-    "last_ai_attempt": "2026-10-29T23:59:57.035050+00:00",
+    "last_ai_attempt": "2026-10-30T05:28:52.260988+00:00",
     "pagina": "noticias/tierra-de-oportunidades-impulsa-el-emprendimiento-y-el-desarrollo-rural-en-el-valle.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://valledelguadalhorce.com/tierra-de-oportunidades-impulsa-el-emprendimiento-y-el-desarrollo-rural-en-el-valle-del-guadalhorce/"
@@ -5565,7 +5565,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/26/horarios-y-programacion-halloween-alhaurin-el-grande-2026/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212933": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "96dabbe5756638073160a0b9bdcba216181ce172",
     "date_modified": null,
     "date_published": "2026-10-29T09:19:48+00:00",
@@ -5578,7 +5578,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-29d842ff",
-    "last_ai_attempt": "2026-10-29T23:59:33.173857+00:00",
+    "last_ai_attempt": "2026-10-30T05:28:30.203523+00:00",
     "pagina": "noticias/tiempo-de-lectura-aprox-44-segundosel-edil-ocupara-el-septimo-puesto-de-la-candidatura.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/29/antonio-jesus-fernandez-vox-alhaurin-congreso-malaga/"
@@ -6294,7 +6294,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/concurso-de-cortometrajes-para-estudiantes-de-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50689": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "e83b019214fa9ec16f328bd2dcac090805535717",
     "date_modified": null,
     "date_published": "2026-10-22T09:07:15+00:00",
@@ -6307,7 +6307,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50689-5ebf8f03",
-    "last_ai_attempt": "2026-10-28T12:40:31.244256+00:00",
+    "last_ai_attempt": "2026-10-30T05:25:00.204048+00:00",
     "pagina": "noticias/encuentro-poetico-en-homenaje-a-lorca-a-cargo-de-paco-otero.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/encuentro-poetico-en-homenaje-a-lorca-a-cargo-de-paco-otero/"
@@ -6465,7 +6465,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50718": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "1ff4d571374068e48fb86e20d97ca1d63a766d7a",
     "date_modified": null,
     "date_published": "2026-10-29T10:16:24+00:00",
@@ -6478,7 +6478,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50718-69fb7fae",
-    "last_ai_attempt": "2026-10-29T23:53:53.758586+00:00",
+    "last_ai_attempt": "2026-10-30T05:24:38.479859+00:00",
     "pagina": "noticias/el-viaje-del-veronal-por-carmen-vega.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/el-viaje-del-veronal-por-carmen-vega/"

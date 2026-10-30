@@ -36,6 +36,30 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266310decretoampliacplazoreclam",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "DECRETO 2026-6310 [DECRETO AMPLIAC PLAZO RECLAMAC PARTICIP CONVOC 1 ADMVO COMIS SERV MOVIL INTERADMVA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1435b8e6-d79f-4dcf-8ffa-43b00b0b354f",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-29T14:58:12.680628+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-actavaloracionpuestoadministrativomovili",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "ACTA VALORACION PUESTO ADMINISTRATIVO MOVILIDAD ADMINISTRATIVA_29.10.2026",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b46aa17d-9e1a-47df-96fc-ff5dbfc8d7e3",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-10-29T14:58:12.680594+01:00"
+  },
+  {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266279aprobacionlistadefinitiva",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -288,30 +312,6 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-actavaloracionpuestoadministrativomovili",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "24878/2026",
-    "resumen": "ACTA VALORACION PUESTO ADMINISTRATIVO MOVILIDAD ADMINISTRATIVA_29.10.2026",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b46aa17d-9e1a-47df-96fc-ff5dbfc8d7e3",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-29T14:58:12.680594+01:00"
-  },
-  {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266310decretoampliacplazoreclam",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "24878/2026",
-    "resumen": "DECRETO 2026-6310 [DECRETO AMPLIAC PLAZO RECLAMAC PARTICIP CONVOC 1 ADMVO COMIS SERV MOVIL INTERADMVA]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/1435b8e6-d79f-4dcf-8ffa-43b00b0b354f",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-10-29T14:58:12.680628+01:00"
-  },
-  {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -504,6 +504,18 @@
     "detectado_en": "2026-10-28T14:52:21.697674+01:00"
   },
   {
+    "id": "sede-Fiestas-certificadodeacuerdo",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "28171/2026",
+    "resumen": "Certificado de acuerdo",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/f43c83cc-4867-4f0d-915d-b4caf2a1fdab",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Fiestas",
+    "detectado_en": "2026-10-30T14:53:27.116395+01:00"
+  },
+  {
     "id": "sede-Elecciones-bandoexposiciónalpublicodelcallejeromuni",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -670,6 +682,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de El Pleno",
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
+  },
+  {
+    "id": "bop-20261030-04150-2026",
+    "numero_edicto": "4150/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Por acuerdo de la Junta de Gobierno Local, en sesión ordinaria celebrada el 18 de septiembre de 2026, punto 3 (código validación: 5R33YG4RP4DTMZPMPMMSYSMHH verificación: https://alhaurinelgrande.sedelectronica.es/), se ha aprobado definitivamente la «Propuesta del Alcalde sobre Sector SURS-PE “Parque Empresarial” del documento de adaptación parcial del PGOU a la LOUA. Delimitación de unidades de ejecución. Aprobación definitiva...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261030-04150-2026&control=2334354945",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-10-30",
+    "detectado_en": "2026-10-30T13:53:24+00:00"
   },
   {
     "id": "bop-20261029-03936-2026",

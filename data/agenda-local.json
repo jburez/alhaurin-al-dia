@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-10-30T18:50:59.571Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 194 eventos próximos.",
+  "actualizado": "2026-10-30T23:05:45.563228+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 197 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
       "id": "alhaurinhoy-6815",
@@ -1128,6 +1129,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-13863",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "IV El Santo Rosario 🎶",
+      "descripcion": "",
+      "lugar": "",
+      "inicio": "2026-10-29T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/iv-el-santo-rosario-%f0%9f%8e%b6/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-13856",
       "tipo": "Música en vivo",
       "icono": "🎵",
@@ -1169,6 +1185,36 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/concurso-halloween-%f0%9f%91%bb-decoracion-%f0%9f%8e%83%f0%9f%8e%83%f0%9f%8e%83/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13892",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "Gala Benéfica 💃🏻",
+      "descripcion": "Ya está aquí la nueva fecha para la Gala Benéfica Anual de Un sí por la vida!! Te esperamos el próximo día 12, jueves, a partir de las 19:30, en el Teatro Antonio Gala, para comenzar la gala a las ...",
+      "lugar": "",
+      "inicio": "2026-10-30T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/gala-benefica-%f0%9f%92%83%f0%9f%8f%bb/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13890",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Música en vivo 🎶 REBOBINA 🎸",
+      "descripcion": "Zeppelian@, este finde continuamos con la música en directo!!!!! El viernes a las 22.00 h contaremos con la actuación de la banda REBOBINA!!!! Cuentan con un amplio repertorio de los mejores temas ...",
+      "lugar": "",
+      "inicio": "2026-10-30T22:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/musica-en-vivo-%f0%9f%8e%b6-rebobina-%f0%9f%8e%b8-2/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1334,6 +1380,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/xxxvii-milla-urbana-%f0%9f%8f%83%f0%9f%8f%bd%e2%99%82%ef%b8%8f%f0%9f%8f%83%f0%9f%8f%bb%e2%99%80%ef%b8%8f/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13895",
+      "tipo": "Gastronomía",
+      "icono": "🍽️",
+      "titulo": "PASAJE DEL TERROR 💀",
+      "descripcion": "📢 ¡ATENTOS, CAMBIO DE FECHA! Alhaurín el Grande celebrará Halloween el próximo lunes 2 de noviembre 🎃 No queríamos quedarnos sin una tarde llena de sustos, sorpresas y actividades para disfrutar en...",
+      "lugar": "",
+      "inicio": "2026-11-02T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/pasaje-del-terror-%f0%9f%92%80-2/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -2894,21 +2955,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

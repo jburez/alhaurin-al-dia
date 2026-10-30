@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alhaurinaldia.es/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/boletin-oficial/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/agenda-cultural/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/educacion/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -74,19 +74,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/municipal/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/obras-y-servicios/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/sucesos/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -104,7 +104,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/categoria/videos/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -170,19 +170,19 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/calendario/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-brenan/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -200,7 +200,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/guia-util/farmacias/farmacia-la-variante/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -578,7 +578,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/al-dia-dia-de-la-guardia-civil-2026-dia-de-la-hispanidad-alhaurin-el-grande.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -867,6 +867,12 @@
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-clausura-sus-campamentos-de-verano-con-gran-fiesta-de-despedida.html</loc>
     <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-cobra-1-77-millones-en-recibos-atrasados-del-ibi-de-una-urbanizacion.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1532,7 +1538,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/alhaurin-el-grande-renueva-todos-sus-contenedores-amarillos-por-unos-con-sistema-de-carga.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1586,7 +1592,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/anthony-bermudez-reclama-en-la-tribuna-de-alcaldes-de-la-diputacion-de-malaga-financiacion.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1628,7 +1634,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/archivo/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2018,7 +2024,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2246,7 +2252,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-ingresa-1-9-millones-de-euros-por-recibos-pendientes.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2318,7 +2324,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-de-alhaurin-el-grande-reune-su-oferta-comercial-en-internet-a-traves.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2342,7 +2348,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-moderniza-las-instalaciones-y-mejora-la-sostenibilidad-y-tecnologia.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2354,13 +2360,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-preve-instalar-mas-de-300-dispositivos-de-telelectura-en-una-primera-fase.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-2.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2576,7 +2582,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/el-viaje-del-veronal-por-carmen-vega.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2600,7 +2606,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia-2.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2714,7 +2720,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/exposicion-del-area-de-igualdad-con-alma-de-mujer-20-anos-del-taller-de-pintura-al-oleo.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -2762,7 +2768,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/fiesta-nacional-y-festividad-de-la-virgen-del-pilar.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3050,7 +3056,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/jornadas-gastronomicas-coingusto-2026.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3128,7 +3134,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-casa-de-la-cultura-contara-con-un-ascensor-para-mejorar-la-accesibilidad-del-edificio.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3140,7 +3146,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-concejalia-de-obras-publicas-a-traves-del-ciclo-integral-del-agua-saca-a-licitacion.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3278,7 +3284,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/la-nueva-oferta-de-empleo-publico-que-se-aprobara-en-la-proxima-junta-de-gobierno-local.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3668,7 +3674,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/nuestra-real-hermandad-presente-en-el-xxi-aniversario-de-la-ume.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3848,7 +3854,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-de-la-fundacion-ley-57.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3866,7 +3872,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos-2.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3884,7 +3890,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/primer-domingo-de-mulliores-2026.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4070,7 +4076,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/representacion-de-nuestra-hermandad-en-los-tercios-con-motivo-del-cvi-aniversario.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4184,7 +4190,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/simulacro-de-busqueda-y-rescate-de-personas-con-el-metodo-arcon-grupo-gerccma.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4196,7 +4202,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/sole-ne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4286,13 +4292,13 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tiempo-de-lectura-aprox-44-segundosel-edil-ocupara-el-septimo-puesto-de-la-candidatura.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/tierra-de-oportunidades-impulsa-el-emprendimiento-y-el-desarrollo-rural-en-el-valle.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4346,7 +4352,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/ultima-convocatoria-extraordinaria-para-cofrades-con-bloques-pendientes-de-superar.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4358,7 +4364,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/noticias/un-concierto-historico-a-los-pies-de-la-virgen-del-rocio.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -6824,7 +6830,7 @@
   </url>
   <url>
     <loc>https://alhaurinaldia.es/tiempo/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>

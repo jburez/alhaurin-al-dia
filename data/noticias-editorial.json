@@ -3193,6 +3193,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://clubdeportivoalhaurino.com/cd-alhaurino-y-clinicas-guadalhorce-firman-una-alianza-estrategica-para-potenciar-la-salud-integral-de-sus-jugadores/"
   },
+  "guid:diario-sur-malaga:https://www.diariosur.es/interior/alhaurin-grande-cobra-177-millones-recibos-atrasados-20261029215553-nt.html": {
+    "ai_attempts": 1,
+    "content_hash": "3511cae91692c0c309ae9fa974bb65380c33efea",
+    "date_modified": null,
+    "date_published": "2026-10-29T20:55:53+00:00",
+    "editorial": {
+      "categoria": "Obras y Servicios",
+      "cuerpo": "La deuda de La Mota tiene como antecedente la quiebra de promotoras tras la crisis inmobiliaria y un concurso de acreedores iniciado en 2012.",
+      "descripcion": "La deuda de La Mota tiene como antecedente la quiebra de promotoras tras la crisis inmobiliaria y un concurso de acreedores iniciado en 2012.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande cobra 1,77 millones en recibos atrasados del IBI de una urbanización"
+    },
+    "ia_exitosa": false,
+    "id": "guid-diario-sur-malaga-https-www-diariosur-es-interior-alhaurin-grande-cdb3512c",
+    "last_ai_attempt": "2026-10-29T23:53:29.119211+00:00",
+    "pagina": "noticias/alhaurin-el-grande-cobra-1-77-millones-en-recibos-atrasados-del-ibi-de-una-urbanizacion.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.diariosur.es/interior/alhaurin-grande-cobra-177-millones-recibos-atrasados-20261029215553-nt.html"
+  },
   "guid:diario-sur-malaga:https://www.diariosur.es/interior/alhaurin-grande-saca-plazas-fijas-anuncia-seis-funcionario-20260904121655-nt.html": {
     "ai_attempts": 0,
     "content_hash": "5d33d001f47ca63467810ba02dbb341e277e08a2",
@@ -3820,7 +3839,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-juernes-mentalidad-de-campeon/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261746": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "f587bb810f8b037b7d50e6502aaa3c75dea43df3",
     "date_modified": null,
     "date_published": "2026-10-28T11:00:38+00:00",
@@ -3833,7 +3852,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261746-21cf9387",
-    "last_ai_attempt": "2026-10-29T19:41:03.980120+00:00",
+    "last_ai_attempt": "2026-10-29T23:56:19.043490+00:00",
     "pagina": "noticias/jornadas-gastronomicas-coingusto-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/jornadas-gastronomicas-coingusto-2026/"
@@ -3858,7 +3877,7 @@
     "source_url": "https://valledelguadalhorce.com/yunquera-acoge-iii-encuentro-internacional-de-mujeres-rurales/"
   },
   "guid:gdr-valle-del-guadalhorce:https://valledelguadalhorce.com/?p=31718": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "1232106341f5d21c7161fb578a3a5a6064479d7b",
     "date_modified": null,
     "date_published": "2026-10-29T11:19:36+00:00",
@@ -3871,7 +3890,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-gdr-valle-del-guadalhorce-https-valledelguadalhorce-com-p-31718-4248f77d",
-    "last_ai_attempt": "2026-10-29T19:44:43.667649+00:00",
+    "last_ai_attempt": "2026-10-29T23:59:57.035050+00:00",
     "pagina": "noticias/tierra-de-oportunidades-impulsa-el-emprendimiento-y-el-desarrollo-rural-en-el-valle.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://valledelguadalhorce.com/tierra-de-oportunidades-impulsa-el-emprendimiento-y-el-desarrollo-rural-en-el-valle-del-guadalhorce/"
@@ -5546,7 +5565,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/10/26/horarios-y-programacion-halloween-alhaurin-el-grande-2026/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212933": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "96dabbe5756638073160a0b9bdcba216181ce172",
     "date_modified": null,
     "date_published": "2026-10-29T09:19:48+00:00",
@@ -5559,7 +5578,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-29d842ff",
-    "last_ai_attempt": "2026-10-29T19:44:19.970979+00:00",
+    "last_ai_attempt": "2026-10-29T23:59:33.173857+00:00",
     "pagina": "noticias/tiempo-de-lectura-aprox-44-segundosel-edil-ocupara-el-septimo-puesto-de-la-candidatura.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/29/antonio-jesus-fernandez-vox-alhaurin-congreso-malaga/"
@@ -6294,7 +6313,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/encuentro-poetico-en-homenaje-a-lorca-a-cargo-de-paco-otero/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50692": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "01e5572fa5a18f2c41838a01f1521f06e263c6be",
     "date_modified": "2026-10-22T17:15:48.756735+00:00",
     "date_published": "2026-10-22T09:22:49+00:00",
@@ -6307,13 +6326,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50692-596b2ed3",
-    "last_ai_attempt": "2026-10-28T12:40:12.092445+00:00",
+    "last_ai_attempt": "2026-10-29T23:55:42.236211+00:00",
     "pagina": "noticias/al-dia-dia-de-la-guardia-civil-2026-dia-de-la-hispanidad-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/al-dia-dia-de-la-guardia-civil-2026-dia-de-la-hispanidad-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50695": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "6ab705fede168476aed56d4b2a7bfe6e012790ed",
     "date_modified": null,
     "date_published": "2026-10-22T09:27:12+00:00",
@@ -6326,13 +6345,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50695-ac726c1a",
-    "last_ai_attempt": "2026-10-28T12:39:55.646552+00:00",
+    "last_ai_attempt": "2026-10-29T23:55:24.104957+00:00",
     "pagina": "noticias/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50698": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "988b0d3ec7531373741c2a51e577d0bbb7bf5f69",
     "date_modified": null,
     "date_published": "2026-10-22T09:31:02+00:00",
@@ -6345,13 +6364,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50698-e0be8b0f",
-    "last_ai_attempt": "2026-10-28T12:39:35.437159+00:00",
+    "last_ai_attempt": "2026-10-29T23:55:04.754282+00:00",
     "pagina": "noticias/presentacion-de-la-fundacion-ley-57.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-de-la-fundacion-ley-57/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50702": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "11b827d886a590ca0bda8e6c39e9cccab45fdf21",
     "date_modified": null,
     "date_published": "2026-10-23T11:10:23+00:00",
@@ -6364,13 +6383,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50702-469a719c",
-    "last_ai_attempt": "2026-10-28T12:39:18.162108+00:00",
+    "last_ai_attempt": "2026-10-29T23:54:47.867756+00:00",
     "pagina": "noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50706": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "c0a9002cc47806c7514880f5e0a74420e88e8157",
     "date_modified": null,
     "date_published": "2026-10-27T10:06:36+00:00",
@@ -6383,7 +6402,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50706-dbffd9c7",
-    "last_ai_attempt": "2026-10-28T05:15:31.690137+00:00",
+    "last_ai_attempt": "2026-10-29T23:54:30.347175+00:00",
     "pagina": "noticias/simulacro-de-busqueda-y-rescate-de-personas-con-el-metodo-arcon-grupo-gerccma.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/simulacro-de-busqueda-y-rescate-de-personas-con-el-metodo-arcon-grupo-gerccma/"
@@ -6427,7 +6446,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/primer-domingo-de-mulliores-2026-rezo-del-rosario-de-la-aurora/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50715": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "9aff7961424a0bce1d42e090a80239b54206f8bd",
     "date_modified": null,
     "date_published": "2026-10-28T11:09:04+00:00",
@@ -6440,13 +6459,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50715-cedac58c",
-    "last_ai_attempt": "2026-10-29T19:35:16.564225+00:00",
+    "last_ai_attempt": "2026-10-29T23:54:11.335864+00:00",
     "pagina": "noticias/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50718": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "1ff4d571374068e48fb86e20d97ca1d63a766d7a",
     "date_modified": null,
     "date_published": "2026-10-29T10:16:24+00:00",
@@ -6459,7 +6478,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50718-69fb7fae",
-    "last_ai_attempt": "2026-10-29T19:34:56.464480+00:00",
+    "last_ai_attempt": "2026-10-29T23:53:53.758586+00:00",
     "pagina": "noticias/el-viaje-del-veronal-por-carmen-vega.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/el-viaje-del-veronal-por-carmen-vega/"

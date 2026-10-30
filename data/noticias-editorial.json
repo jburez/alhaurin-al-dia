@@ -514,7 +514,7 @@
     "source_url": "https://www.youtube.com/watch?v=FXpsXN8ZUQg"
   },
   "guid:atv-alhaurin-youtube:yt:video:GLHR25rKyis": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "1fe1af9c49d40c147828f4bd8059345344883b07",
     "date_modified": "2026-10-30T12:53:22.786139+00:00",
     "date_published": "2026-10-29T15:30:07+00:00",
@@ -527,7 +527,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-glhr25rkyis-6f27be39",
-    "last_ai_attempt": "2026-10-30T12:44:30.790826+00:00",
+    "last_ai_attempt": "2026-10-30T19:10:09.609082+00:00",
     "pagina": "noticias/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=GLHR25rKyis"
@@ -1115,6 +1115,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=P-ViUSGuprc"
   },
+  "guid:atv-alhaurin-youtube:yt:video:PBRkPbUCPoA": {
+    "ai_attempts": 1,
+    "content_hash": "3ff194e1b08b520564f6d6577cefde17aeccb5f1",
+    "date_modified": null,
+    "date_published": "2026-10-30T12:44:00+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del viernes 30 de octubre de 2026 en el Informativo de ATV. 1. EN EL CAMINO CANAL PRINCIPAL La Confederación Hidrográfica de la Junta de Andalucía acomete mejoras en el camino Canal Principal.\n\nEsta ejecución está finalizando con la aplicación de un firme de zahorra. 2. SORTEO ELECTORAL El sorteo electoral en el pleno extraordinario celebrado hoy, designa a 225 personas para cubrir las 25 mesas de los nueve colegios electorales de Alhaurín el Grande en las elecciones generales del próximo 29 de noviembre. 3.\n\nTODOS LOS SANTOS Las familias ya se acercan al cementerio municipal para honrar a sus seres queridos fallecidos, con flores y labores de limpieza ante las festividades de Todos los Santos y los Fieles Difuntos. 4. CD ALHAURINO - TORREDONJIMENO Este domingo el CD Alhaurino se enfrenta a la Unión Deportiva Ciudad de Torredonjimeno en un partido que se jugará en el Miguel Fijones a las 12.15h. 5.",
+      "descripcion": "1. EN EL CAMINO CANAL PRINCIPAL La Confederación Hidrográfica de la Junta de Andalucía acomete mejoras en el camino Canal Principal. Esta ejecución está finalizando con la aplicación de un firme de zahorra. 2. SORTEO ELECTORAL El.",
+      "seo_keywords": [],
+      "titulo": "En el camino canal principal la confederación hidrográfica de la junta de andalucía"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-pbrkpbucpoa-4a3d10db",
+    "last_ai_attempt": "2026-10-30T19:09:51.492717+00:00",
+    "pagina": "noticias/en-el-camino-canal-principal-la-confederacion-hidrografica-de-la-junta-de-andalucia.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=PBRkPbUCPoA"
+  },
   "guid:atv-alhaurin-youtube:yt:video:QeWtaHyy38k": {
     "ai_attempts": 4,
     "content_hash": "3b0ba0004fd9fc37d1a6c9fb0fe5eea192953bdd",
@@ -1215,7 +1234,7 @@
     "source_url": "https://www.youtube.com/watch?v=TsR9glvJuQg"
   },
   "guid:atv-alhaurin-youtube:yt:video:V1_cNKfrbes": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "e589399f7b343aef6c198c924faba4acf7aeb74a",
     "date_modified": null,
     "date_published": "2026-10-29T13:25:45+00:00",
@@ -1228,7 +1247,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-v1-cnkfrbes-8c5b9572",
-    "last_ai_attempt": "2026-10-30T12:45:08.322989+00:00",
+    "last_ai_attempt": "2026-10-30T19:10:46.724597+00:00",
     "pagina": "noticias/luto-por-accidente-de-trenes-alhaurin-el-grande-se-suma-al-luto-oficial-decretado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=V1_cNKfrbes"
@@ -1455,7 +1474,7 @@
     "source_url": "https://www.youtube.com/watch?v=_yf6PayBXVc"
   },
   "guid:atv-alhaurin-youtube:yt:video:a31LT9lwJYo": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "d498f71b3c15813278001d4d8acad8b28838a217",
     "date_modified": "2026-10-30T12:53:22.786146+00:00",
     "date_published": "2026-10-29T15:00:22+00:00",
@@ -1468,7 +1487,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-a31lt9lwjyo-ea807827",
-    "last_ai_attempt": "2026-10-30T12:44:50.616548+00:00",
+    "last_ai_attempt": "2026-10-30T19:10:29.409363+00:00",
     "pagina": "noticias/la-biblioteca-municipal-de-alhaurin-el-grande-ha-acogido-la-presentacion-de-la-nueva.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=a31LT9lwJYo"
@@ -2023,7 +2042,7 @@
     "source_url": "https://www.youtube.com/watch?v=vXr7JrQTR4Q"
   },
   "guid:atv-alhaurin-youtube:yt:video:vmd48ktHk4w": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "782a919db9b7b747ce9781fcc4ea2442f157348b",
     "date_modified": null,
     "date_published": "2026-10-29T12:46:19+00:00",
@@ -2036,7 +2055,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-vmd48kthk4w-8802d5dd",
-    "last_ai_attempt": "2026-10-30T12:45:26.452244+00:00",
+    "last_ai_attempt": "2026-10-30T19:11:03.166170+00:00",
     "pagina": "noticias/dia-internacional-del-flamenco-la-delegacion-de-cultura-y-la-pena-union-flamenca.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=vmd48ktHk4w"
@@ -2097,6 +2116,25 @@
     "pagina": "noticias/podcast-alhaurinos-en-el-mundo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=y83Gh2WACvo"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:yHT7P1ojBL4": {
+    "ai_attempts": 1,
+    "content_hash": "777d8ef95f1784704dae1e359fbd065dfacb414a",
+    "date_modified": null,
+    "date_published": "2026-10-30T15:00:39+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La Biblioteca Municipal de Alhaurín el Grande acogió, el pasado 15 de octubre, un encuentro musical protagonizado por el cantautor independiente Santiago Alonso y el músico local José Miguel Guzmán, conocido como “El Cirguero”.\n\nUna cita dirigida a los alumnos de la Escuela de Música para explorar el proceso creativo detrás de cada canción, desde las primeras ideas hasta su interpretación sobre el escenario. El encuentro combinó conversación, aprendizaje e interpretaciones en directo, acercando a los asistentes al lado más creativo de la música.",
+      "descripcion": "La Biblioteca Municipal de Alhaurín el Grande acogió, el pasado 15 de octubre, un encuentro musical protagonizado por el cantautor independiente Santiago Alonso y el músico local José Miguel Guzmán, conocido como “El Cirguero”.",
+      "seo_keywords": [],
+      "titulo": "Concierto coloquio de Santiago Alonso y El Cirguero"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-yht7p1ojbl4-578b2439",
+    "last_ai_attempt": "2026-10-30T19:09:34.279040+00:00",
+    "pagina": "noticias/concierto-coloquio-de-santiago-alonso-y-el-cirguero.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=yHT7P1ojBL4"
   },
   "guid:atv-alhaurin-youtube:yt:video:yTiH9mDbWXY": {
     "ai_attempts": 3,
@@ -2964,7 +3002,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-ingresa-19-millones-de-euros-por-recibos-pendientes-del-ibi-de-la-urbanizacion-la-mota/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225031": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "063248d2dd80c165da351ed8c8165c088d959985",
     "date_modified": null,
     "date_published": "2026-10-30T09:13:41+00:00",
@@ -2977,13 +3015,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22503-1fe2d3a7",
-    "last_ai_attempt": "2026-10-30T12:37:30.812574+00:00",
+    "last_ai_attempt": "2026-10-30T19:07:13.191153+00:00",
     "pagina": "noticias/el-pleno-extraordinario-ha-comenzado-con-un-minuto-de-silencio-de-la-corporacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-designa-a-los-integrantes-de-las-25-mesas-electorales-para-las-elecciones-generales-del-29-n/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225039": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "482a023b974e68dff9d368f20575fe08113f6c51",
     "date_modified": null,
     "date_published": "2026-10-30T11:20:41+00:00",
@@ -2996,13 +3034,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22503-84607b5a",
-    "last_ai_attempt": "2026-10-30T12:37:11.740280+00:00",
+    "last_ai_attempt": "2026-10-30T19:06:55.876233+00:00",
     "pagina": "noticias/finalizan-las-obras-de-asfaltado-de-los-caminos-de-la-trocha-y-arroyo-de-las-pontezuelas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/finalizan-las-obras-de-asfaltado-de-los-caminos-de-la-trocha-y-arroyo-de-las-pontezuelas-que-ya-estan-abiertos-al-trafico/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225046": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "0150ffd7e500f56e0049e8b20af9f70aea82dbe6",
     "date_modified": null,
     "date_published": "2026-10-30T11:44:49+00:00",
@@ -3015,10 +3053,29 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22504-5bcee584",
-    "last_ai_attempt": "2026-10-30T12:36:53.537741+00:00",
+    "last_ai_attempt": "2026-10-30T19:06:37.617773+00:00",
     "pagina": "noticias/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad-de-las-mujeres/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225052": {
+    "ai_attempts": 1,
+    "content_hash": "2c75804dcda71a8fd9b1e6426b25cafd22f086a2",
+    "date_modified": null,
+    "date_published": "2026-10-30T12:37:11+00:00",
+    "editorial": {
+      "categoria": "Educación",
+      "cuerpo": "La formación, impulsada por la Diputación de Málaga en colaboración con el Ayuntamiento y cofinanciada por la Unión Europea, combina contenidos teóricos y prácticos, con 100 horas de formación en.",
+      "descripcion": "La formación, impulsada por la Diputación de Málaga en colaboración con el Ayuntamiento y cofinanciada por la Unión Europea, combina contenidos teóricos y prácticos, con 100 horas de formación en.",
+      "seo_keywords": [],
+      "titulo": "En Alhaurín el Grande se imparte un curso de auxiliar de almacén del programa EnRuta"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22505-19ba99bc",
+    "last_ai_attempt": "2026-10-30T19:06:19.603917+00:00",
+    "pagina": "noticias/en-alhaurin-el-grande-se-imparte-un-curso-de-auxiliar-de-almacen-del-programa-enruta.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/en-alhaurin-el-grande-se-imparte-un-curso-de-auxiliar-de-almacen-del-programa-enruta-para-mejorar-la-insercion-laboral/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -3934,7 +3991,7 @@
     "source_url": "https://valledelguadalhorce.com/yunquera-acoge-iii-encuentro-internacional-de-mujeres-rurales/"
   },
   "guid:gdr-valle-del-guadalhorce:https://valledelguadalhorce.com/?p=31718": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "1232106341f5d21c7161fb578a3a5a6064479d7b",
     "date_modified": null,
     "date_published": "2026-10-29T11:19:36+00:00",
@@ -3947,7 +4004,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-gdr-valle-del-guadalhorce-https-valledelguadalhorce-com-p-31718-4248f77d",
-    "last_ai_attempt": "2026-10-30T05:28:52.260988+00:00",
+    "last_ai_attempt": "2026-10-30T19:16:44.395076+00:00",
     "pagina": "noticias/tierra-de-oportunidades-impulsa-el-emprendimiento-y-el-desarrollo-rural-en-el-valle.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://valledelguadalhorce.com/tierra-de-oportunidades-impulsa-el-emprendimiento-y-el-desarrollo-rural-en-el-valle-del-guadalhorce/"
@@ -4881,6 +4938,63 @@
     "pagina": "noticias/aprobacion-de-siete-nuevas-plazas-de-funcionarios-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/14/aprobacion-de-siete-nuevas-plazas-de-funcionarios-en-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/10/30/formacion-en-alhaurin-el-grande-para-mejorar-la-empleabilidad-laboral": {
+    "ai_attempts": 1,
+    "content_hash": "7fb0e58132efa5a3c097840b4f652e3c984496fd",
+    "date_modified": null,
+    "date_published": "2026-10-30T13:10:11+00:00",
+    "editorial": {
+      "categoria": "Educación",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 30 segundosLa formación, impulsada por la Diputación de Málaga en colaboración con el Ayuntamiento y cofinanciada por la Unión Europea, combina contenidos teóricos y prácticos, con 100 horas de formación en empresas En Alhaurín el Grande se está llevando a cabo un nuevo itinerario formativo del programa EnRuta, que La entrada Formación en Alhaurín el Grande para mejorar la.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 30 segundosLa formación, impulsada por la Diputación de Málaga en colaboración con el Ayuntamiento y cofinanciada por la Unión Europea, combina contenidos teóricos y prácticos, con 100 horas de.",
+      "seo_keywords": [],
+      "titulo": "Formación en Alhaurín el Grande para mejorar la empleabilidad laboral"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-29263fc1",
+    "last_ai_attempt": "2026-10-30T19:16:22.877912+00:00",
+    "pagina": "noticias/formacion-en-alhaurin-el-grande-para-mejorar-la-empleabilidad-laboral.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/10/30/formacion-en-alhaurin-el-grande-para-mejorar-la-empleabilidad-laboral/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/10/30/iniciativa-gratuita-para-mejorar-el-acceso-laboral-de-mujeres-en-alhaurin": {
+    "ai_attempts": 1,
+    "content_hash": "6ff069f0bede9d3549e4d5607f399818578b55e9",
+    "date_modified": null,
+    "date_published": "2026-10-30T13:10:45+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 23 segundosLas concejalías de Igualdad y Empleo, Formación y Desarrollo Local han lanzado una iniciativa gratuita que proporcionará herramientas prácticas para facilitar el acceso al mercado laboral y mejorar las oportunidades profesionales de las participantes El Ayuntamiento de Alhaurín el Grande, a través de la concejalía de Igualdad y La entrada Iniciativa gratuita para.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 23 segundosLas concejalías de Igualdad y Empleo, Formación y Desarrollo Local han lanzado una iniciativa gratuita que proporcionará herramientas prácticas para facilitar el acceso al mercado.",
+      "seo_keywords": [],
+      "titulo": "Iniciativa gratuita para mejorar el acceso laboral de mujeres en Alhaurín"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-3f8e6e0f",
+    "last_ai_attempt": "2026-10-30T19:16:04.486709+00:00",
+    "pagina": "noticias/iniciativa-gratuita-para-mejorar-el-acceso-laboral-de-mujeres-en-alhaurin.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/10/30/iniciativa-gratuita-para-mejorar-el-acceso-laboral-de-mujeres-en-alhaurin/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/10/30/mejoras-en-caminos-rurales-de-alhaurin-el-grande-inversion-y-beneficios": {
+    "ai_attempts": 1,
+    "content_hash": "a5f3a22dda6d60c8e68d470856f13bc6c0aa462d",
+    "date_modified": null,
+    "date_published": "2026-10-30T13:11:16+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 33 segundosLa actuación ha supuesto una inversión aproximada de 170.000 euros, financiada al 50 % por el Gobierno de España y el Ayuntamiento de Alhaurín el Grande, y permitirá mejorar la seguridad y durabilidad de estas vías rurales El Ayuntamiento de Alhaurín el Grande ha concluido los trabajos de La entrada Mejoras en caminos rurales de Alhaurín el Grande: inversión y.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 33 segundosLa actuación ha supuesto una inversión aproximada de 170.000 euros, financiada al 50 % por el Gobierno de España y el Ayuntamiento de Alhaurín el Grande, y permitirá mejorar la.",
+      "seo_keywords": [],
+      "titulo": "Mejoras en caminos rurales de Alhaurín el Grande: inversión y beneficios"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-e7313ba5",
+    "last_ai_attempt": "2026-10-30T19:15:43.842578+00:00",
+    "pagina": "noticias/mejoras-en-caminos-rurales-de-alhaurin-el-grande-inversion-y-beneficios.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/10/30/mejoras-en-caminos-rurales-de-alhaurin-el-grande-inversion-y-beneficios/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/10/30/pleno-extraordinario-en-alhaurin-sorteo-de-mesas-electorales-2026": {
     "ai_attempts": 1,
@@ -6541,7 +6655,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50718": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "1ff4d571374068e48fb86e20d97ca1d63a766d7a",
     "date_modified": null,
     "date_published": "2026-10-29T10:16:24+00:00",
@@ -6554,13 +6668,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50718-69fb7fae",
-    "last_ai_attempt": "2026-10-30T05:24:38.479859+00:00",
+    "last_ai_attempt": "2026-10-30T19:08:17.186873+00:00",
     "pagina": "noticias/el-viaje-del-veronal-por-carmen-vega.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/el-viaje-del-veronal-por-carmen-vega/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50722": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "b8075524ba3c90d45add060e992f5957d73ed732",
     "date_modified": null,
     "date_published": "2026-10-30T09:02:55+00:00",
@@ -6573,13 +6687,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50722-a2318a84",
-    "last_ai_attempt": "2026-10-30T12:42:01.826799+00:00",
+    "last_ai_attempt": "2026-10-30T19:07:58.522551+00:00",
     "pagina": "noticias/sonetos-de-la-zubia-un-poemario-de-antonio-gala-al-cuidado-de-luis-cardenas-y-pedro-j.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/sonetos-de-la-zubia-un-poemario-de-antonio-gala-al-cuidado-de-luis-cardenas-y-pedro-j-plaza/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50725": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "20ec0d739944f828d734ae69fab56dbef571134f",
     "date_modified": null,
     "date_published": "2026-10-30T09:06:08+00:00",
@@ -6592,7 +6706,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50725-6d9a930e",
-    "last_ai_attempt": "2026-10-30T12:41:44.586760+00:00",
+    "last_ai_attempt": "2026-10-30T19:07:41.050351+00:00",
     "pagina": "noticias/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia/"

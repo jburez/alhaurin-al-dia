@@ -1116,7 +1116,7 @@
     "source_url": "https://www.youtube.com/watch?v=P-ViUSGuprc"
   },
   "guid:atv-alhaurin-youtube:yt:video:PBRkPbUCPoA": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "3ff194e1b08b520564f6d6577cefde17aeccb5f1",
     "date_modified": null,
     "date_published": "2026-10-30T12:44:00+00:00",
@@ -1129,7 +1129,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-pbrkpbucpoa-4a3d10db",
-    "last_ai_attempt": "2026-10-30T23:38:13.489303+00:00",
+    "last_ai_attempt": "2026-10-31T12:06:05.941787+00:00",
     "pagina": "noticias/en-el-camino-canal-principal-la-confederacion-hidrografica-de-la-junta-de-andalucia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=PBRkPbUCPoA"
@@ -2118,7 +2118,7 @@
     "source_url": "https://www.youtube.com/watch?v=y83Gh2WACvo"
   },
   "guid:atv-alhaurin-youtube:yt:video:yHT7P1ojBL4": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "777d8ef95f1784704dae1e359fbd065dfacb414a",
     "date_modified": null,
     "date_published": "2026-10-30T15:00:39+00:00",
@@ -2131,7 +2131,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-yht7p1ojbl4-578b2439",
-    "last_ai_attempt": "2026-10-30T23:37:56.216231+00:00",
+    "last_ai_attempt": "2026-10-31T12:05:47.061153+00:00",
     "pagina": "noticias/concierto-coloquio-de-santiago-alonso-y-el-cirguero.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=yHT7P1ojBL4"
@@ -3002,7 +3002,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-ingresa-19-millones-de-euros-por-recibos-pendientes-del-ibi-de-la-urbanizacion-la-mota/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225031": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "063248d2dd80c165da351ed8c8165c088d959985",
     "date_modified": null,
     "date_published": "2026-10-30T09:13:41+00:00",
@@ -3015,13 +3015,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22503-1fe2d3a7",
-    "last_ai_attempt": "2026-10-30T23:35:55.174431+00:00",
+    "last_ai_attempt": "2026-10-31T12:04:21.613024+00:00",
     "pagina": "noticias/el-pleno-extraordinario-ha-comenzado-con-un-minuto-de-silencio-de-la-corporacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-designa-a-los-integrantes-de-las-25-mesas-electorales-para-las-elecciones-generales-del-29-n/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225039": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "482a023b974e68dff9d368f20575fe08113f6c51",
     "date_modified": null,
     "date_published": "2026-10-30T11:20:41+00:00",
@@ -3034,13 +3034,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22503-84607b5a",
-    "last_ai_attempt": "2026-10-30T23:35:35.423671+00:00",
+    "last_ai_attempt": "2026-10-31T12:04:03.544300+00:00",
     "pagina": "noticias/finalizan-las-obras-de-asfaltado-de-los-caminos-de-la-trocha-y-arroyo-de-las-pontezuelas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/finalizan-las-obras-de-asfaltado-de-los-caminos-de-la-trocha-y-arroyo-de-las-pontezuelas-que-ya-estan-abiertos-al-trafico/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225046": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "0150ffd7e500f56e0049e8b20af9f70aea82dbe6",
     "date_modified": null,
     "date_published": "2026-10-30T11:44:49+00:00",
@@ -3053,7 +3053,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22504-5bcee584",
-    "last_ai_attempt": "2026-10-30T23:35:16.010184+00:00",
+    "last_ai_attempt": "2026-10-31T12:03:44.743416+00:00",
     "pagina": "noticias/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad-de-las-mujeres/"
@@ -6655,7 +6655,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50718": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "1ff4d571374068e48fb86e20d97ca1d63a766d7a",
     "date_modified": null,
     "date_published": "2026-10-29T10:16:24+00:00",
@@ -6668,13 +6668,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50718-69fb7fae",
-    "last_ai_attempt": "2026-10-30T19:08:17.186873+00:00",
+    "last_ai_attempt": "2026-10-31T12:05:25.952453+00:00",
     "pagina": "noticias/el-viaje-del-veronal-por-carmen-vega.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/el-viaje-del-veronal-por-carmen-vega/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50722": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "b8075524ba3c90d45add060e992f5957d73ed732",
     "date_modified": null,
     "date_published": "2026-10-30T09:02:55+00:00",
@@ -6687,13 +6687,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50722-a2318a84",
-    "last_ai_attempt": "2026-10-30T23:36:39.834154+00:00",
+    "last_ai_attempt": "2026-10-31T12:05:07.793684+00:00",
     "pagina": "noticias/sonetos-de-la-zubia-un-poemario-de-antonio-gala-al-cuidado-de-luis-cardenas-y-pedro-j.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/sonetos-de-la-zubia-un-poemario-de-antonio-gala-al-cuidado-de-luis-cardenas-y-pedro-j-plaza/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50725": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "20ec0d739944f828d734ae69fab56dbef571134f",
     "date_modified": null,
     "date_published": "2026-10-30T09:06:08+00:00",
@@ -6706,7 +6706,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50725-6d9a930e",
-    "last_ai_attempt": "2026-10-30T23:36:21.371259+00:00",
+    "last_ai_attempt": "2026-10-31T12:04:49.324481+00:00",
     "pagina": "noticias/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia/"

@@ -3953,7 +3953,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-juernes-mentalidad-de-campeon/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261746": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "f587bb810f8b037b7d50e6502aaa3c75dea43df3",
     "date_modified": null,
     "date_published": "2026-10-28T11:00:38+00:00",
@@ -3966,7 +3966,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261746-21cf9387",
-    "last_ai_attempt": "2026-10-30T05:25:21.176508+00:00",
+    "last_ai_attempt": "2026-10-31T23:16:38.079345+00:00",
     "pagina": "noticias/jornadas-gastronomicas-coingusto-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/jornadas-gastronomicas-coingusto-2026/"
@@ -6522,7 +6522,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/al-dia-dia-de-la-guardia-civil-2026-dia-de-la-hispanidad-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50695": {
-    "ai_attempts": 12,
+    "ai_attempts": 13,
     "content_hash": "6ab705fede168476aed56d4b2a7bfe6e012790ed",
     "date_modified": null,
     "date_published": "2026-10-22T09:27:12+00:00",
@@ -6535,7 +6535,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50695-ac726c1a",
-    "last_ai_attempt": "2026-10-31T05:14:31.105184+00:00",
+    "last_ai_attempt": "2026-10-31T23:16:15.572826+00:00",
     "pagina": "noticias/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026/"

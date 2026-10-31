@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-30T20:55:41+01:00",
+  "actualizado": "2026-10-31T13:30:25+01:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
@@ -8,47 +8,35 @@
     "icono": "☀️",
     "titulo": "Tiempo",
     "valor": "Máx. 25º",
-    "detalle": "Despejado · Máx. 25º / Mín. 14º · Lluvia 0%",
+    "detalle": "Despejado · Máx. 25º / Mín. 13º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-10-30",
-    "dia_semana": "Viernes",
-    "fecha_corta": "30/10",
+    "fecha": "2026-10-31",
+    "dia_semana": "Sábado",
+    "fecha_corta": "31/10",
     "t_max": "25",
-    "t_min": "14",
+    "t_min": "13",
     "icono": "☀️",
     "descripcion": "Despejado",
     "lluvia": "0%",
     "viento": "Flojo",
-    "uv": "4"
+    "uv": "3"
   },
   "semana": [
-    {
-      "fecha": "2026-10-30",
-      "dia_semana": "Viernes",
-      "fecha_corta": "30/10",
-      "t_max": "25",
-      "t_min": "14",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
-      "uv": "4"
-    },
     {
       "fecha": "2026-10-31",
       "dia_semana": "Sábado",
       "fecha_corta": "31/10",
-      "t_max": "24",
-      "t_min": "14",
-      "icono": "☁️",
-      "descripcion": "Nuboso",
-      "lluvia": "15%",
-      "viento": "SE 5 km/h",
+      "t_max": "25",
+      "t_min": "13",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "Flojo",
       "uv": "3"
     },
     {
@@ -58,9 +46,9 @@
       "t_max": "23",
       "t_min": "14",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia escasa",
+      "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "90%",
-      "viento": "S 10 km/h",
+      "viento": "SE 10 km/h",
       "uv": "3"
     },
     {
@@ -69,9 +57,9 @@
       "fecha_corta": "2/11",
       "t_max": "25",
       "t_min": "13",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "5%",
       "viento": "SE 10 km/h",
       "uv": "4"
     },
@@ -79,36 +67,48 @@
       "fecha": "2026-11-03",
       "dia_semana": "Martes",
       "fecha_corta": "3/11",
-      "t_max": "24",
+      "t_max": "22",
       "t_min": "12",
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "75%",
-      "viento": "C 0 km/h",
+      "lluvia": "55%",
+      "viento": "S 5 km/h",
       "uv": "3"
     },
     {
       "fecha": "2026-11-04",
       "dia_semana": "Miércoles",
       "fecha_corta": "4/11",
-      "t_max": "22",
-      "t_min": "13",
+      "t_max": "21",
+      "t_min": "12",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia",
-      "lluvia": "90%",
-      "viento": "SE 5 km/h",
-      "uv": ""
+      "descripcion": "Muy nuboso con lluvia",
+      "lluvia": "95%",
+      "viento": "SE 10 km/h",
+      "uv": "3"
     },
     {
       "fecha": "2026-11-05",
       "dia_semana": "Jueves",
       "fecha_corta": "5/11",
-      "t_max": "21",
-      "t_min": "12",
+      "t_max": "19",
+      "t_min": "14",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia",
+      "descripcion": "Muy nuboso con lluvia",
       "lluvia": "80%",
-      "viento": "S 10 km/h",
+      "viento": "SE 10 km/h",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-11-06",
+      "dia_semana": "Viernes",
+      "fecha_corta": "6/11",
+      "t_max": "22",
+      "t_min": "13",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "45%",
+      "viento": "S 5 km/h",
       "uv": ""
     }
   ],
@@ -146,10 +146,10 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:40 h",
-    "ocaso": "18:25 h",
-    "horas_luz": "10h 45m",
-    "fase_luna": "Luna Gibosa Menguante (79%)",
+    "orto": "07:41 h",
+    "ocaso": "18:23 h",
+    "horas_luz": "10h 42m",
+    "fase_luna": "Luna Gibosa Menguante (70%)",
     "icono_luna": "🌖"
   },
   "embalses": {
@@ -157,8 +157,8 @@
     "fuente": "SAIH Hidrosur (Junta de Andalucía)",
     "fuente_url": "https://www.redhidrosurmedioambiente.es/saih/informe/embalses",
     "total_capacidad_hm3": 403.1,
-    "total_embalsado_hm3": 313.1,
-    "porcentaje": "77.7%",
+    "total_embalsado_hm3": 312.8,
+    "porcentaje": "77.6%",
     "pantanos": [
       {
         "nombre": "Conde de Guadalhorce",
@@ -169,8 +169,8 @@
       {
         "nombre": "Embalse del Guadalhorce",
         "capacidad": "125.7 hm³",
-        "embalsado": "103.8 hm³",
-        "porcentaje": "82.6%"
+        "embalsado": "103.7 hm³",
+        "porcentaje": "82.5%"
       },
       {
         "nombre": "Guadalteba",
@@ -181,8 +181,8 @@
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "27.1 hm³",
-        "porcentaje": "47.0%"
+        "embalsado": "26.9 hm³",
+        "porcentaje": "46.8%"
       }
     ]
   }

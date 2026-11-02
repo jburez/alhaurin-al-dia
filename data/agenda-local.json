@@ -1,22 +1,8 @@
 {
-  "actualizado": "2026-11-02T01:38:37.154Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 194 eventos próximos.",
+  "actualizado": "2026-11-02T06:21:28.382032+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 192 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-12572",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Concierto 🎶 JOSÉ LUIS JAÉN",
-      "descripcion": "🎶 La música, la poesía y las raíces llegan a Alhaurín el Grande de la mano de José Luis Jaén joseluisjaenmusic El Teatro Municipal Antonio Gala acogerá este espectáculo de música y poesía, un emoti...",
-      "lugar": "",
-      "inicio": "2026-10-02T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/concierto-%f0%9f%8e%b6-jose-luis-jaen/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-13677",
       "tipo": "Música en vivo",
@@ -2894,21 +2880,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

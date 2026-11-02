@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-11-02T01:38:39.730Z",
-  "visitas24h": 8,
-  "paginasVistas24h": 9,
+  "actualizado": "2026-11-02T08:17:07.400Z",
+  "visitas24h": 12,
+  "paginasVistas24h": 13,
   "topPaginas": [
     {
       "ruta": "/noticias/horarios-y-programacion-halloween-alhaurin-el-grande-2026",
-      "vistas": 26
+      "vistas": 28
     },
     {
       "ruta": "/boletin-oficial/",
       "vistas": 7
     },
     {
-      "ruta": "/planes/",
+      "ruta": "/noticias/al-dia-equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo",
       "vistas": 6
     },
     {
-      "ruta": "/noticias/al-dia-equinalh-2026-clinic-de-doma-clasica-jose-ramon-perez-garcia-chamo",
+      "ruta": "/planes/",
       "vistas": 6
     },
     {

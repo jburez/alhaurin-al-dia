@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-03T15:14:48+01:00",
+  "actualizado": "2026-11-03T21:59:35+01:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
@@ -43,10 +43,10 @@
       "fecha": "2026-11-04",
       "dia_semana": "Miércoles",
       "fecha_corta": "4/11",
-      "t_max": "22",
+      "t_max": "21",
       "t_min": "12",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia",
+      "descripcion": "Muy nuboso con lluvia",
       "lluvia": "100%",
       "viento": "S 5 km/h",
       "uv": "3"
@@ -56,11 +56,11 @@
       "dia_semana": "Jueves",
       "fecha_corta": "5/11",
       "t_max": "22",
-      "t_min": "11",
+      "t_min": "12",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia escasa",
+      "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "70%",
-      "viento": "SO 5 km/h",
+      "viento": "S 10 km/h",
       "uv": "3"
     },
     {
@@ -69,9 +69,9 @@
       "fecha_corta": "6/11",
       "t_max": "23",
       "t_min": "11",
-      "icono": "🌤️",
-      "descripcion": "Poco nuboso",
-      "lluvia": "5%",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "10%",
       "viento": "C 0 km/h",
       "uv": "3"
     },
@@ -80,10 +80,10 @@
       "dia_semana": "Sábado",
       "fecha_corta": "7/11",
       "t_max": "23",
-      "t_min": "12",
-      "icono": "☁️",
-      "descripcion": "Nuboso",
-      "lluvia": "20%",
+      "t_min": "11",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "10%",
       "viento": "SE 10 km/h",
       "uv": "3"
     },
@@ -93,9 +93,9 @@
       "fecha_corta": "8/11",
       "t_max": "23",
       "t_min": "13",
-      "icono": "🌧️",
-      "descripcion": "Muy nuboso con lluvia",
-      "lluvia": "75%",
+      "icono": "☁️",
+      "descripcion": "Nuboso",
+      "lluvia": "45%",
       "viento": "SE 10 km/h",
       "uv": ""
     },
@@ -103,12 +103,12 @@
       "fecha": "2026-11-09",
       "dia_semana": "Lunes",
       "fecha_corta": "9/11",
-      "t_max": "21",
-      "t_min": "14",
+      "t_max": "24",
+      "t_min": "13",
       "icono": "🌧️",
       "descripcion": "Muy nuboso con lluvia",
       "lluvia": "100%",
-      "viento": "SE 5 km/h",
+      "viento": "SE 10 km/h",
       "uv": ""
     }
   ],
@@ -146,9 +146,9 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:44 h",
+    "orto": "07:43 h",
     "ocaso": "18:20 h",
-    "horas_luz": "10h 36m",
+    "horas_luz": "10h 37m",
     "fase_luna": "Cuarto Menguante (39%)",
     "icono_luna": "🌗"
   },

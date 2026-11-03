@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-11-02T18:37:12.930Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 193 eventos próximos.",
+  "actualizado": "2026-11-03T01:47:13.204347+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 190 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-13677",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "OKTOBERFEST 🍻",
-      "descripcion": "🍺🥨 OKTOBERFEST AT BAR LA FIESTA! 🥨🍺 Get ready for 2 days of Oktoberfest fun! 🇩🇪🎉 🍺 Cold beer 🌭 Delicious sausages 🎶 Great music 🥳 And lots of good vibes! 📅 Friday 2 & Saturday 3 October 🕗 Open from...",
-      "lugar": "",
-      "inicio": "2026-10-03T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/oktoberfest-%f0%9f%8d%bb-2/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-13703",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Taller 🏺 Creativo de Arcilla de Moldeo",
-      "descripcion": "Manos a la obra! 🎨✨ Si te apetece dar rienda suelta a tu creatividad y probar algo nuevo, apunta este plan porque te va a encantar: ¡un Taller Creativo de Arcilla de Moldeo! Ven a pasar un rato gen...",
-      "lugar": "",
-      "inicio": "2026-10-03T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/taller-%f0%9f%8f%ba-creativo-de-arcilla-de-moldeo/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-8652",
       "tipo": "Evento",
@@ -2879,21 +2850,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

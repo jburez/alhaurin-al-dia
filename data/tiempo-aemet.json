@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-04T15:32:52+01:00",
+  "actualizado": "2026-11-04T22:19:47+01:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
@@ -44,10 +44,10 @@
       "dia_semana": "Jueves",
       "fecha_corta": "5/11",
       "t_max": "22",
-      "t_min": "12",
+      "t_min": "11",
       "icono": "🌧️",
       "descripcion": "Nuboso con lluvia escasa",
-      "lluvia": "80%",
+      "lluvia": "65%",
       "viento": "S 10 km/h",
       "uv": "3"
     },
@@ -68,11 +68,11 @@
       "dia_semana": "Sábado",
       "fecha_corta": "7/11",
       "t_max": "23",
-      "t_min": "12",
+      "t_min": "11",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
-      "viento": "SE 10 km/h",
+      "lluvia": "15%",
+      "viento": "SE 5 km/h",
       "uv": "3"
     },
     {
@@ -82,8 +82,8 @@
       "t_max": "22",
       "t_min": "13",
       "icono": "🌧️",
-      "descripcion": "Cubierto con lluvia escasa",
-      "lluvia": "65%",
+      "descripcion": "Muy nuboso con lluvia",
+      "lluvia": "80%",
       "viento": "E 10 km/h",
       "uv": "3"
     },
@@ -94,21 +94,21 @@
       "t_max": "22",
       "t_min": "16",
       "icono": "🌧️",
-      "descripcion": "Cubierto con lluvia",
+      "descripcion": "Muy nuboso con lluvia",
       "lluvia": "100%",
-      "viento": "SE 10 km/h",
+      "viento": "SE 15 km/h",
       "uv": ""
     },
     {
       "fecha": "2026-11-10",
       "dia_semana": "Martes",
       "fecha_corta": "10/11",
-      "t_max": "21",
-      "t_min": "16",
+      "t_max": "23",
+      "t_min": "15",
       "icono": "🌧️",
-      "descripcion": "Muy nuboso con lluvia",
+      "descripcion": "Intervalos nubosos con lluvia",
       "lluvia": "100%",
-      "viento": "S 5 km/h",
+      "viento": "S 15 km/h",
       "uv": ""
     }
   ],
@@ -146,9 +146,9 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:44 h",
+    "orto": "07:45 h",
     "ocaso": "18:19 h",
-    "horas_luz": "10h 35m",
+    "horas_luz": "10h 34m",
     "fase_luna": "Luna Menguante (29%)",
     "icono_luna": "🌘"
   },

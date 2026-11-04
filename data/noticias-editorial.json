@@ -239,6 +239,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=4JTFfORQ4nY"
   },
+  "guid:atv-alhaurin-youtube:yt:video:5xTSV558EBA": {
+    "ai_attempts": 1,
+    "content_hash": "5b03818ed2d43dd313d76c93d5acf99ce373e8a2",
+    "date_modified": null,
+    "date_published": "2026-11-04T06:58:43+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El Laurel.",
+      "descripcion": "Descubre cuales son las próximas citas culturales en Alhaurín el Grande a través de PlaneATV. Este espacio hace un repaso por la agenda de eventos con la colaboración de María Rosa Ramírez, presidenta de la Asociación Cultural El.",
+      "seo_keywords": [],
+      "titulo": "PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-5xtsv558eba-b791500c",
+    "last_ai_attempt": "2026-11-04T14:17:26.909438+00:00",
+    "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=5xTSV558EBA"
+  },
   "guid:atv-alhaurin-youtube:yt:video:65l0ZaUQDFo": {
     "ai_attempts": 4,
     "content_hash": "f6dc5764bde2f67d8d724b3ea013638cacf4715f",
@@ -472,7 +491,7 @@
     "source_url": "https://www.youtube.com/watch?v=Cb1JWqH4_Z0"
   },
   "guid:atv-alhaurin-youtube:yt:video:DycOlDoUKkQ": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "2d4b2875959d94d61ed1e050f922c95a164285c0",
     "date_modified": null,
     "date_published": "2026-11-03T15:00:09+00:00",
@@ -485,7 +504,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-dycoldoukkq-997c46dc",
-    "last_ai_attempt": "2026-11-03T16:08:35.462676+00:00",
+    "last_ai_attempt": "2026-11-04T14:17:46.533251+00:00",
     "pagina": "noticias/futbol-cd-alhaurino-cd-ud-ciudad-de-torredonjimeno.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=DycOlDoUKkQ"
@@ -508,6 +527,25 @@
     "pagina": "noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=ENFLCbNpvtg"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:EpdZoi_9Yu4": {
+    "ai_attempts": 1,
+    "content_hash": "db589034f45995552ae151f745ed52be7bf651b2",
+    "date_modified": null,
+    "date_published": "2026-11-04T13:40:30+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del miércoles 4 de noviembre de 2026 en el Informativo de ATV. 1. ATV 25 ANIVERSARIO EN 2027 Alhaurín Televisión prepara la celebración de su 25 aniversario en 2027 con un logotipo conmemorativo y una programación especial que repasará la trayectoria de la emisora desde sus primeras emisiones en 2002 y su papel como medio de comunicación municipal. 2.\n\nFOTOS DE GUSTAVO THORLICHEN La Delegación de Cultura inaugura este viernes la primera exposición dedicada a la fotografía de Gustavo Thorlichen, con una selección de 40 imágenes coincidiendo con dos efemérides del artista. 3.\n\nTERESA SÁNCHEZ CANDIDATA IU Izquierda Unida ha anunciado la candidatura de Teresa Sánchez a las próximas elecciones municipales. La formación ha presentado también a Ana Belén Ordóñez y Sebastián Gámez como los primeros integrantes de la lista. 4.",
+      "descripcion": "1. ATV 25 ANIVERSARIO EN 2027 Alhaurín Televisión prepara la celebración de su 25 aniversario en 2027 con un logotipo conmemorativo y una programación especial que repasará la trayectoria de la emisora desde sus primeras.",
+      "seo_keywords": [],
+      "titulo": "Atv 25 aniversario en 2027 alhaurín televisión prepara la celebración de su 25"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-epdzoi-9yu4-6296f4b2",
+    "last_ai_attempt": "2026-11-04T14:17:08.490859+00:00",
+    "pagina": "noticias/atv-25-aniversario-en-2027-alhaurin-television-prepara-la-celebracion-de-su-25.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=EpdZoi_9Yu4"
   },
   "guid:atv-alhaurin-youtube:yt:video:FXpsXN8ZUQg": {
     "ai_attempts": 0,
@@ -533,7 +571,7 @@
     "source_url": "https://www.youtube.com/watch?v=FXpsXN8ZUQg"
   },
   "guid:atv-alhaurin-youtube:yt:video:GJNSyK2g8Ic": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "4fe243ea8ad80dd8fd06441973eb48cc7c5d0757",
     "date_modified": null,
     "date_published": "2026-11-03T14:00:46+00:00",
@@ -546,7 +584,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-gjnsyk2g8ic-da9aa854",
-    "last_ai_attempt": "2026-11-03T16:08:54.588899+00:00",
+    "last_ai_attempt": "2026-11-04T14:18:03.875292+00:00",
     "pagina": "noticias/seguimiento-obra-escollera-el-area-de-obras-publicas-hace-seguimiento-de-las-obras.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=GJNSyK2g8Ic"
@@ -3040,7 +3078,7 @@
     "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-de-alhaurin-el-grande-ingresa-19-millones-de-euros-por-recibos-pendientes-del-ibi-de-la-urbanizacion-la-mota/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225031": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "063248d2dd80c165da351ed8c8165c088d959985",
     "date_modified": null,
     "date_published": "2026-10-30T09:13:41+00:00",
@@ -3053,13 +3091,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22503-1fe2d3a7",
-    "last_ai_attempt": "2026-11-03T23:09:02.094167+00:00",
+    "last_ai_attempt": "2026-11-04T14:14:52.984346+00:00",
     "pagina": "noticias/el-pleno-extraordinario-ha-comenzado-con-un-minuto-de-silencio-de-la-corporacion.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-designa-a-los-integrantes-de-las-25-mesas-electorales-para-las-elecciones-generales-del-29-n/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225039": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "482a023b974e68dff9d368f20575fe08113f6c51",
     "date_modified": null,
     "date_published": "2026-10-30T11:20:41+00:00",
@@ -3072,13 +3110,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22503-84607b5a",
-    "last_ai_attempt": "2026-11-03T23:08:43.919682+00:00",
+    "last_ai_attempt": "2026-11-04T14:14:34.310725+00:00",
     "pagina": "noticias/finalizan-las-obras-de-asfaltado-de-los-caminos-de-la-trocha-y-arroyo-de-las-pontezuelas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/finalizan-las-obras-de-asfaltado-de-los-caminos-de-la-trocha-y-arroyo-de-las-pontezuelas-que-ya-estan-abiertos-al-trafico/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225046": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "0150ffd7e500f56e0049e8b20af9f70aea82dbe6",
     "date_modified": null,
     "date_published": "2026-10-30T11:44:49+00:00",
@@ -3091,7 +3129,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22504-5bcee584",
-    "last_ai_attempt": "2026-11-03T23:08:24.400014+00:00",
+    "last_ai_attempt": "2026-11-04T14:14:15.744427+00:00",
     "pagina": "noticias/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad-de-las-mujeres/"
@@ -3116,7 +3154,7 @@
     "source_url": "https://alhaurinelgrande.es/en-alhaurin-el-grande-se-imparte-un-curso-de-auxiliar-de-almacen-del-programa-enruta-para-mejorar-la-insercion-laboral/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225058": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "ebf0bbf7b344daf79af2ffb9a05afae2d0b6bc5d",
     "date_modified": null,
     "date_published": "2026-11-03T11:49:17+00:00",
@@ -3129,7 +3167,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22505-6258cd93",
-    "last_ai_attempt": "2026-11-04T05:52:46.147671+00:00",
+    "last_ai_attempt": "2026-11-04T14:13:58.579718+00:00",
     "pagina": "noticias/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco/"
@@ -4029,7 +4067,7 @@
     "source_url": "https://fedelhorce.es/jornadas-gastronomicas-coingusto-2026/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261868": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "ed25c075a44a7ac05a21a794a82a5002836f4046",
     "date_modified": null,
     "date_published": "2026-11-03T08:15:32+00:00",
@@ -4042,7 +4080,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261868-2f162a30",
-    "last_ai_attempt": "2026-11-04T05:58:40.896789+00:00",
+    "last_ai_attempt": "2026-11-04T14:20:12.647903+00:00",
     "pagina": "noticias/anade-un-cero-a-tus-resultados.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-anade-un-cero-a-tus-resultados/"
@@ -4483,7 +4521,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34256/sole%d0%bcne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos-dia-de-todos-los-santos/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34260": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "3709b058a178d0e7647b8ce00bf9db101852abdb",
     "date_modified": null,
     "date_published": "2026-11-03T10:29:16+00:00",
@@ -4496,7 +4534,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9eca75ae",
-    "last_ai_attempt": "2026-11-04T05:55:00.346909+00:00",
+    "last_ai_attempt": "2026-11-04T14:15:14.785738+00:00",
     "pagina": "noticias/fernando-arguelles-pregonero-del-xxxv-pregon-de-la-semana-santa.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34260/fernando-arguelles-pregonero-del-xxxv-pregon-de-la-semana-santa/"
@@ -5906,6 +5944,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/03/la-fundacion-ley-57-premiara-con-2000-euros-el-talento-emprendedor-joven-del-valle-del-guadalhorce/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=213141": {
+    "ai_attempts": 1,
+    "content_hash": "0fcabaf738c1fc1bc23380fd3b3baac68a59c1df",
+    "date_modified": null,
+    "date_published": "2026-11-04T12:05:34+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 14 segundosIzquierda Unida Alhaurín el Grande ha elegido a Teresa Sánchez como candidata a la Alcaldía para las elecciones municipales de 2027.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 14 segundosIzquierda Unida Alhaurín el Grande ha elegido a Teresa Sánchez como candidata a la Alcaldía para las elecciones municipales de 2027. La actual concejala de Obras Públicas, Vivienda y.",
+      "seo_keywords": [],
+      "titulo": "Teresa Sánchez encabezará la candidatura de IU Alhaurín el Grande en 2027"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-2c947334",
+    "last_ai_attempt": "2026-11-04T14:23:25.293524+00:00",
+    "pagina": "noticias/teresa-sanchez-encabezara-la-candidatura-de-iu-alhaurin-el-grande-en-2027.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/04/teresa-sanchez-candidata-iu-alhaurin-el-grande-municipales-2027/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",
@@ -6788,7 +6845,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-libro-imagen-y-poesia-el-latir-de-los-recuerdos/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50718": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "1ff4d571374068e48fb86e20d97ca1d63a766d7a",
     "date_modified": null,
     "date_published": "2026-10-29T10:16:24+00:00",
@@ -6801,13 +6858,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50718-69fb7fae",
-    "last_ai_attempt": "2026-11-03T23:10:41.970331+00:00",
+    "last_ai_attempt": "2026-11-04T14:16:31.731442+00:00",
     "pagina": "noticias/el-viaje-del-veronal-por-carmen-vega.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/el-viaje-del-veronal-por-carmen-vega/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50722": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "b8075524ba3c90d45add060e992f5957d73ed732",
     "date_modified": null,
     "date_published": "2026-10-30T09:02:55+00:00",
@@ -6820,13 +6877,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50722-a2318a84",
-    "last_ai_attempt": "2026-11-03T23:10:24.287036+00:00",
+    "last_ai_attempt": "2026-11-04T14:16:13.040499+00:00",
     "pagina": "noticias/sonetos-de-la-zubia-un-poemario-de-antonio-gala-al-cuidado-de-luis-cardenas-y-pedro-j.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/sonetos-de-la-zubia-un-poemario-de-antonio-gala-al-cuidado-de-luis-cardenas-y-pedro-j-plaza/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50725": {
-    "ai_attempts": 9,
+    "ai_attempts": 10,
     "content_hash": "20ec0d739944f828d734ae69fab56dbef571134f",
     "date_modified": null,
     "date_published": "2026-10-30T09:06:08+00:00",
@@ -6839,13 +6896,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50725-6d9a930e",
-    "last_ai_attempt": "2026-11-03T23:10:06.290309+00:00",
+    "last_ai_attempt": "2026-11-04T14:15:54.098508+00:00",
     "pagina": "noticias/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50728": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "95b376015b40b9a21fbcf9a2904f6726abdf44f2",
     "date_modified": null,
     "date_published": "2026-11-03T11:32:21+00:00",
@@ -6858,7 +6915,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50728-9e798acb",
-    "last_ai_attempt": "2026-11-04T05:56:49.069402+00:00",
+    "last_ai_attempt": "2026-11-04T14:15:36.328342+00:00",
     "pagina": "noticias/concierto-coloquio-de-santiago-alonso-y-el-cirguero.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/concierto-coloquio-de-santiago-alonso-y-el-cirguero/"

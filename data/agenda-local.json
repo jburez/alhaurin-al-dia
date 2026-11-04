@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-11-04T21:37:38.002Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 187 eventos próximos.",
+  "actualizado": "2026-11-05T00:27:13.374577+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 184 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-6522",
-      "tipo": "Gastronomía",
-      "icono": "🍽️",
-      "titulo": "II Ruta de la tapa🍴Alha‿boca",
-      "descripcion": "Alhaurín el Grande volverá a llenarse de sabor con la II Ruta de la Tapa “Alhaurín “Alha‿boca”, que se celebra del 3 al 5 de octubre con la participación de 14 establecimientos del municipio . Toda...",
-      "lugar": "",
-      "inicio": "2026-10-05T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/ii-ruta-de-la-tapa%f0%9f%8d%b4alha%e2%80%bfboca/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-6400",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "IX Encuentro de bailes 💃🏻",
-      "descripcion": "💃✨ ¡Solidaridad que se baila! Un Sí por la Vida y Los Bachateros de Alhaurín el Grande te invitan a un encuentro lleno de ritmo, alegría y esperanza. 📅 Sábado, 5 de octubre 🕛 A partir de las 12:00 ...",
-      "lugar": "",
-      "inicio": "2026-10-05T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/ix-encuentro-de-bailes-%f0%9f%92%83%f0%9f%8f%bb/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-6376",
       "tipo": "Cultos y procesiones",
@@ -2789,21 +2760,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

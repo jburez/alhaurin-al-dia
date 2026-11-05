@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-05T15:40:10+01:00",
+  "actualizado": "2026-11-05T22:28:09+01:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "🌧️",
+    "icono": "☀️",
     "titulo": "Tiempo",
     "valor": "Máx. 22º",
-    "detalle": "Intervalos nubosos con lluvia escasa · Máx. 22º / Mín. 11º · Lluvia 50%",
+    "detalle": "Despejado · Máx. 22º / Mín. 11º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "5/11",
     "t_max": "22",
     "t_min": "11",
-    "icono": "🌧️",
-    "descripcion": "Intervalos nubosos con lluvia escasa",
-    "lluvia": "50%",
-    "viento": "S 15 km/h",
+    "icono": "☀️",
+    "descripcion": "Despejado",
+    "lluvia": "0%",
+    "viento": "Flojo",
     "uv": "3"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "5/11",
       "t_max": "22",
       "t_min": "11",
-      "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "50%",
-      "viento": "S 15 km/h",
+      "icono": "☀️",
+      "descripcion": "Despejado",
+      "lluvia": "0%",
+      "viento": "Flojo",
       "uv": "3"
     },
     {
@@ -48,7 +48,7 @@
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "S 5 km/h",
+      "viento": "S 10 km/h",
       "uv": "3"
     },
     {
@@ -57,32 +57,32 @@
       "fecha_corta": "7/11",
       "t_max": "23",
       "t_min": "12",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "10%",
-      "viento": "SE 10 km/h",
+      "icono": "☁️",
+      "descripcion": "Nuboso",
+      "lluvia": "0%",
+      "viento": "S 5 km/h",
       "uv": "3"
     },
     {
       "fecha": "2026-11-08",
       "dia_semana": "Domingo",
       "fecha_corta": "8/11",
-      "t_max": "22",
+      "t_max": "23",
       "t_min": "13",
       "icono": "🌧️",
       "descripcion": "Muy nuboso con lluvia escasa",
       "lluvia": "90%",
-      "viento": "E 10 km/h",
+      "viento": "SE 15 km/h",
       "uv": "3"
     },
     {
       "fecha": "2026-11-09",
       "dia_semana": "Lunes",
       "fecha_corta": "9/11",
-      "t_max": "22",
-      "t_min": "16",
+      "t_max": "21",
+      "t_min": "15",
       "icono": "🌧️",
-      "descripcion": "Muy nuboso con lluvia",
+      "descripcion": "Cubierto con lluvia",
       "lluvia": "100%",
       "viento": "S 10 km/h",
       "uv": "3"
@@ -92,23 +92,23 @@
       "dia_semana": "Martes",
       "fecha_corta": "10/11",
       "t_max": "23",
-      "t_min": "15",
+      "t_min": "14",
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia",
       "lluvia": "100%",
-      "viento": "SO 15 km/h",
+      "viento": "S 10 km/h",
       "uv": ""
     },
     {
       "fecha": "2026-11-11",
       "dia_semana": "Miércoles",
       "fecha_corta": "11/11",
-      "t_max": "22",
+      "t_max": "23",
       "t_min": "14",
       "icono": "🌧️",
-      "descripcion": "Cubierto con lluvia",
+      "descripcion": "Intervalos nubosos con lluvia",
       "lluvia": "90%",
-      "viento": "Flojo",
+      "viento": "S 10 km/h",
       "uv": ""
     }
   ],
@@ -117,15 +117,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Desaconsejado",
-      "detalle": "Riesgo de precipitaciones"
+      "estado": "Excelente",
+      "detalle": "Secado muy rápido al sol (0% riesgo)"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Espera unos días",
-      "detalle": "Posible barro o lluvia"
+      "estado": "Muy recomendado",
+      "detalle": "Cielo limpio y sin calima"
     },
     {
       "id": "deporte",
@@ -146,9 +146,9 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:46 h",
+    "orto": "07:45 h",
     "ocaso": "18:18 h",
-    "horas_luz": "10h 32m",
+    "horas_luz": "10h 33m",
     "fase_luna": "Luna Menguante (20%)",
     "icono_luna": "🌘"
   },

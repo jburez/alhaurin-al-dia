@@ -529,7 +529,7 @@
     "source_url": "https://www.youtube.com/watch?v=ENFLCbNpvtg"
   },
   "guid:atv-alhaurin-youtube:yt:video:EpdZoi_9Yu4": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "db589034f45995552ae151f745ed52be7bf651b2",
     "date_modified": null,
     "date_published": "2026-11-04T13:40:30+00:00",
@@ -542,7 +542,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-epdzoi-9yu4-6296f4b2",
-    "last_ai_attempt": "2026-11-05T12:12:19.341045+00:00",
+    "last_ai_attempt": "2026-11-05T21:01:38.027142+00:00",
     "pagina": "noticias/atv-25-aniversario-en-2027-alhaurin-television-prepara-la-celebracion-de-su-25.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=EpdZoi_9Yu4"
@@ -569,6 +569,25 @@
     "pagina": "noticias/avances-en-la-marquesina-de-taxis-y-actividades-para-jovenes-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=FXpsXN8ZUQg"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:Fl-IfEClkos": {
+    "ai_attempts": 1,
+    "content_hash": "b0e6723e474c45e79450fcceb11720c4ec18861c",
+    "date_modified": null,
+    "date_published": "2026-11-05T14:15:35+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del jueves 5 de noviembre de 2026 en el Informativo de ATV. 1. EXTRANJEROS ELECCIONES 2027 El Ayuntamiento informa a los ciudadanos extranjeros residentes en Alhaurín el Grande de los requisitos y plazos para poder votar en las elecciones municipales del 23 de mayo de 2027, siempre que estén inscritos en el censo electoral. 2.\n\nPREMIO EMPRESARIAL JOVEN La Fundación Ley 57 presenta un premio al emprendimiento juvenil del Valle del Guadalhorce, dotado con 2.000 euros y dirigido a jóvenes de entre 16 y 30 años. 3. FINAL I TORNEO DOMINÓ FAHALA El centro ocupacional Fahala concluye su primer torneo de dominó en memoria de Juan Briales, antiguo usuario de la entidad, con Francisca Aragón Leotte como ganadora. 4.\n\nACTUALIDAD DEPORTIVA En deportes les informamos de la derrota del Club de Tenis de Mesa El Lugá, el empate y la victoria de los equipos infantil y sénior del CD Alhaurín el Grande de Fútbol Sala y el triunfo del CD Alhaurino Femenino.",
+      "descripcion": "1. EXTRANJEROS ELECCIONES 2027 El Ayuntamiento informa a los ciudadanos extranjeros residentes en Alhaurín el Grande de los requisitos y plazos para poder votar en las elecciones municipales del 23 de mayo de 2027, siempre que.",
+      "seo_keywords": [],
+      "titulo": "Extranjeros elecciones 2027 el ayuntamiento informa a los ciudadanos extranjeros"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-fl-ifeclkos-fd058c5d",
+    "last_ai_attempt": "2026-11-05T21:01:20.005084+00:00",
+    "pagina": "noticias/extranjeros-elecciones-2027-el-ayuntamiento-informa-a-los-ciudadanos-extranjeros.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=Fl-IfEClkos"
   },
   "guid:atv-alhaurin-youtube:yt:video:GJNSyK2g8Ic": {
     "ai_attempts": 3,
@@ -1667,6 +1686,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=cvrv1VRvxrU"
   },
+  "guid:atv-alhaurin-youtube:yt:video:d2WvZ7tu0Ec": {
+    "ai_attempts": 1,
+    "content_hash": "36e2c11f328e4e51f3f1fc1045d8c6ad6f2a839f",
+    "date_modified": null,
+    "date_published": "2026-11-05T15:30:03+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "El pasado domingo 25 octubre el centro histórico de Alhaurín el Grande volvió a llenarse de deporte y ambiente familiar con la celebración de la XXXVIII Milla Urbana, organizada por la Concejalía de Deportes en colaboración con el Club Deportivo Fuente del Acebuche.\n\nUn total de 351 corredores de todas las edades participaron en esta prueba, con un recorrido de 1.635 metros que reunió desde pequeños atletas de apenas cinco años hasta corredores de categoría máster. Las calles del municipio se llenaron de espectadores y familiares que animaron a los participantes en una jornada que apuesta por fomentar la actividad física y acercar el deporte a toda la ciudadanía.\n\nLa cita concluyó con la entrega de premios y un sorteo de regalos, poniendo el broche final a una de las pruebas deportivas más tradicionales del calendario municipal.",
+      "descripcion": "El pasado domingo 25 octubre el centro histórico de Alhaurín el Grande volvió a llenarse de deporte y ambiente familiar con la celebración de la XXXVIII Milla Urbana, organizada por la Concejalía de Deportes en colaboración con.",
+      "seo_keywords": [],
+      "titulo": "XXXVIII Milla Urbana de Alhaurín el Grande (2026)"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-d2wvz7tu0ec-4fdb2ebf",
+    "last_ai_attempt": "2026-11-05T21:00:45.866571+00:00",
+    "pagina": "noticias/xxxviii-milla-urbana-de-alhaurin-el-grande-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=d2WvZ7tu0Ec"
+  },
   "guid:atv-alhaurin-youtube:yt:video:dbCHGtOLhWM": {
     "ai_attempts": 0,
     "content_hash": "b20f9d225b5b9ab5850b6ae002ee1fe40175ee6a",
@@ -1956,6 +1994,25 @@
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=mUG2Xs-Zpy0"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:msBVQn9QVVI": {
+    "ai_attempts": 1,
+    "content_hash": "4736191eeeaeac7561c2e5d8728baf54b217de6f",
+    "date_modified": null,
+    "date_published": "2026-11-05T15:00:20+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Así lo viví con Pepi Adán | Programa 39.",
+      "descripcion": "Así lo viví con Pepi Adán | Programa 39.",
+      "seo_keywords": [],
+      "titulo": "Así lo viví con Pepi Adán"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-msbvqn9qvvi-dad4fdd2",
+    "last_ai_attempt": "2026-11-05T21:01:04.265506+00:00",
+    "pagina": "noticias/asi-lo-vivi-con-pepi-adan.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=msBVQn9QVVI"
   },
   "guid:atv-alhaurin-youtube:yt:video:opv60zD45bA": {
     "ai_attempts": 4,
@@ -3173,7 +3230,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225071": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "ae451ad439a63f994c12b08d748efd786c687145",
     "date_modified": null,
     "date_published": "2026-11-05T11:41:30+00:00",
@@ -3186,7 +3243,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22507-117e486d",
-    "last_ai_attempt": "2026-11-05T12:04:53.957616+00:00",
+    "last_ai_attempt": "2026-11-05T20:59:14.971292+00:00",
     "pagina": "noticias/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos/"
@@ -5186,6 +5243,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/01/descubre-los-guardianes-del-verso-una-obra-sobre-poesia-y-juventud/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/11/05/programacion-cultural-de-alhaurin-el-grande-para-noviembre-y-diciembre": {
+    "ai_attempts": 1,
+    "content_hash": "226cc01e7259025d3370f555ff36291ae1ccfafc",
+    "date_modified": null,
+    "date_published": "2026-11-05T12:36:55+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 54 segundosEl Ayuntamiento de Alhaurín el Grande refuerza su compromiso con la cultura a través de exposiciones, patrimonio, talleres creativos y una variada oferta escénica La Delegación de Cultura del Ayuntamiento de Alhaurín el Grande ha dado a conocer la programación para los meses de noviembre y diciembre de La entrada Programación cultural de Alhaurín el Grande para.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 54 segundosEl Ayuntamiento de Alhaurín el Grande refuerza su compromiso con la cultura a través de exposiciones, patrimonio, talleres creativos y una variada oferta escénica La Delegación de.",
+      "seo_keywords": [],
+      "titulo": "Programación cultural de Alhaurín el Grande para noviembre y diciembre"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-a6b571cc",
+    "last_ai_attempt": "2026-11-05T21:06:38.389101+00:00",
+    "pagina": "noticias/programacion-cultural-de-alhaurin-el-grande-para-noviembre-y-diciembre.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/05/programacion-cultural-de-alhaurin-el-grande-para-noviembre-y-diciembre/"
+  },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,
     "content_hash": "7187a0d5937dcd13653026654890c4d24a8ea1bd",
@@ -6788,7 +6864,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-de-la-fundacion-ley-57/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50702": {
-    "ai_attempts": 18,
+    "ai_attempts": 19,
     "content_hash": "11b827d886a590ca0bda8e6c39e9cccab45fdf21",
     "date_modified": null,
     "date_published": "2026-10-23T11:10:23+00:00",
@@ -6801,7 +6877,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50702-469a719c",
-    "last_ai_attempt": "2026-11-05T02:09:32.634393+00:00",
+    "last_ai_attempt": "2026-11-05T21:00:08.314234+00:00",
     "pagina": "noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia/"

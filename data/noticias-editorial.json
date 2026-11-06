@@ -571,7 +571,7 @@
     "source_url": "https://www.youtube.com/watch?v=FXpsXN8ZUQg"
   },
   "guid:atv-alhaurin-youtube:yt:video:Fl-IfEClkos": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "b0e6723e474c45e79450fcceb11720c4ec18861c",
     "date_modified": null,
     "date_published": "2026-11-05T14:15:35+00:00",
@@ -584,7 +584,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-fl-ifeclkos-fd058c5d",
-    "last_ai_attempt": "2026-11-05T21:01:20.005084+00:00",
+    "last_ai_attempt": "2026-11-06T12:00:03.713109+00:00",
     "pagina": "noticias/extranjeros-elecciones-2027-el-ayuntamiento-informa-a-los-ciudadanos-extranjeros.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Fl-IfEClkos"
@@ -1687,7 +1687,7 @@
     "source_url": "https://www.youtube.com/watch?v=cvrv1VRvxrU"
   },
   "guid:atv-alhaurin-youtube:yt:video:d2WvZ7tu0Ec": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "36e2c11f328e4e51f3f1fc1045d8c6ad6f2a839f",
     "date_modified": null,
     "date_published": "2026-11-05T15:30:03+00:00",
@@ -1700,7 +1700,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-d2wvz7tu0ec-4fdb2ebf",
-    "last_ai_attempt": "2026-11-05T21:00:45.866571+00:00",
+    "last_ai_attempt": "2026-11-06T11:59:32.023036+00:00",
     "pagina": "noticias/xxxviii-milla-urbana-de-alhaurin-el-grande-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=d2WvZ7tu0Ec"
@@ -1996,7 +1996,7 @@
     "source_url": "https://www.youtube.com/watch?v=mUG2Xs-Zpy0"
   },
   "guid:atv-alhaurin-youtube:yt:video:msBVQn9QVVI": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "4736191eeeaeac7561c2e5d8728baf54b217de6f",
     "date_modified": null,
     "date_published": "2026-11-05T15:00:20+00:00",
@@ -2009,7 +2009,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-msbvqn9qvvi-dad4fdd2",
-    "last_ai_attempt": "2026-11-05T21:01:04.265506+00:00",
+    "last_ai_attempt": "2026-11-06T11:59:47.540404+00:00",
     "pagina": "noticias/asi-lo-vivi-con-pepi-adan.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=msBVQn9QVVI"
@@ -3230,7 +3230,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225071": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "ae451ad439a63f994c12b08d748efd786c687145",
     "date_modified": null,
     "date_published": "2026-11-05T11:41:30+00:00",
@@ -3243,7 +3243,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22507-117e486d",
-    "last_ai_attempt": "2026-11-06T02:09:42.084885+00:00",
+    "last_ai_attempt": "2026-11-06T11:58:25.992365+00:00",
     "pagina": "noticias/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos/"
@@ -4179,6 +4179,25 @@
     "pagina": "noticias/anade-un-cero-a-tus-resultados.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-anade-un-cero-a-tus-resultados/"
+  },
+  "guid:fedelhorce:https://fedelhorce.es/?p=261938": {
+    "ai_attempts": 1,
+    "content_hash": "ec78fe901adc0adf09f7296ae395779cc695a43f",
+    "date_modified": null,
+    "date_published": "2026-11-06T09:01:05+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Sesiones presenciales y online para capacitar en economía verde y circular a personas de los pueblos de Málaga.",
+      "descripcion": "Sesiones presenciales y online para capacitar en economía verde y circular a personas de los pueblos de Málaga.",
+      "seo_keywords": [],
+      "titulo": "Fedelhorce colabora en el Proyecto Europeo TeQuieroVerde"
+    },
+    "ia_exitosa": false,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-261938-2a406f5c",
+    "last_ai_attempt": "2026-11-06T12:02:29.037696+00:00",
+    "pagina": "noticias/fedelhorce-colabora-en-el-proyecto-europeo-tequieroverde.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/fedelhorce-colabora-en-el-proyecto-europeo-tequieroverde/"
   },
   "guid:gdr-valle-del-guadalhorce:https://valledelguadalhorce.com/?p=31702": {
     "ai_attempts": 4,
@@ -6883,7 +6902,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-de-la-fundacion-ley-57/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50702": {
-    "ai_attempts": 19,
+    "ai_attempts": 20,
     "content_hash": "11b827d886a590ca0bda8e6c39e9cccab45fdf21",
     "date_modified": null,
     "date_published": "2026-10-23T11:10:23+00:00",
@@ -6896,7 +6915,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50702-469a719c",
-    "last_ai_attempt": "2026-11-05T21:00:08.314234+00:00",
+    "last_ai_attempt": "2026-11-06T11:59:11.551233+00:00",
     "pagina": "noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia/"

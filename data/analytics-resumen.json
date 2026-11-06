@@ -1,15 +1,11 @@
 {
-  "actualizado": "2026-11-06T09:52:47.984Z",
-  "visitas24h": 13,
-  "paginasVistas24h": 16,
+  "actualizado": "2026-11-06T17:01:37.003Z",
+  "visitas24h": 16,
+  "paginasVistas24h": 19,
   "topPaginas": [
     {
       "ruta": "/noticias/horarios-y-programacion-halloween-alhaurin-el-grande-2026",
-      "vistas": 13
-    },
-    {
-      "ruta": "/planes/",
-      "vistas": 6
+      "vistas": 12
     },
     {
       "ruta": "/guia-util/farmacias/",
@@ -17,6 +13,10 @@
     },
     {
       "ruta": "/",
+      "vistas": 5
+    },
+    {
+      "ruta": "/planes/",
       "vistas": 5
     },
     {

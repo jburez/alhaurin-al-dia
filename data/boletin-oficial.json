@@ -36,6 +36,30 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivodepuntuacionesfasedeval",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "LISTADO DEFINITIVO DE PUNTUACIONES FASE DE VALORACIÓN DE IDONEIDAD. PROCESO DE SELECCIÓN DEL PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE VII y XI.",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/38e5be9f-ccfc-4a8d-b8c2-8a1ded93cde8",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-11-06T15:49:30.285075+01:00"
+  },
+  {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadoprovisionalpuntuacionestotalesobt",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "LISTADO PROVISIONAL PUNTUACIONES TOTALES OBTENIDAS.PROCESO DE SELECCIÓN DEL PERSONAL DE EJECUCIÓN (PERSONAL DE APOYO A LA INSERCIÓN LABORAL Y EL EMPLEO) PROGRAMAS DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE VII y XI.",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/2d590d66-f39c-4c9e-8ba9-bb3aa8972431",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-11-06T15:49:30.285099+01:00"
+  },
+  {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266310decretoampliacplazoreclam",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -384,6 +408,66 @@
     "detectado_en": "2026-11-05T16:13:18.820376+01:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-acta6112026resolalegypropnombr1admvocomi",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "ACTA 6-11-2026 RESOL ALEG Y PROP NOMBR 1 ADMVO COMIS SERVIC",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/86e5316a-b691-4e12-a4ed-54c6ebd8ee6b",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-06T15:49:30.284904+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266452decretoaprobaciónlistadod",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6452 [DECRETO APROBACIÓN LISTADO DEFINITIVO PUNTUACIONES GENERALES \"CORTA DURACIÓN\" DE LOS/AS CANDIDATOS/AS ADMITIDOS/AS : \"FISIOTERAPEUTA\" Y ENTRADA EN VIGOR PARA ESTA CATEGORÍA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/3dc7b443-5e20-4d6a-842c-ca6d7e398fb7",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-06T15:49:30.284991+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266453decretoaprobaciónlistadod",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6453 [DECRETO APROBACIÓN LISTADO DEFINITIVO PUNTUACIONES GENERALES \"LARGA DURACIÓN\" DE LOS/AS CANDIDATOS/AS ADMITIDOS/AS : \"FISIOTERAPEUTA\" Y ENTRADA EN VIGOR PARA ESTA CATEGORÍA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/ea217eed-7fcf-45d6-970e-d5315641d8fc",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-06T15:49:30.285013+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266487decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6487 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"CORTA DURACIÓN\" CATEGORÍA: \"TÉCNICO/A DEPORTIVO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/e49afe93-6d2e-42e9-bc11-8efd66db7e88",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-06T15:49:30.285033+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266488decretoalcaldíaaprobación",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6488 [DECRETO ALCALDÍA APROBACIÓN LISTADOS PROVISIONALES VALORACIÓN PRUEBA PRÁCTICA BOLSA TRABAJO \"LARGA DURACIÓN\" CATEGORÍA: \"TÉCNICO/A DEPORTIVO/A\"]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/429aa8a6-c010-4bda-a9ca-4ede368871af",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-06T15:49:30.285052+01:00"
+  },
+  {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -562,6 +646,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Padrón Municipal de Habitantes",
     "detectado_en": "2026-10-19T16:25:31.194359+02:00"
+  },
+  {
+    "id": "sede-Padrón Municipal de Habitantes-anunciodecretoinicioprocedbajaoficiopadr",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "23058/2026",
+    "resumen": "ANUNCIO DECRETO INICIO PROCED BAJA OFICIO PADRON HABITANTES 2026",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/ff94d433-6be0-4b85-a2df-d090ba813259",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Padrón Municipal de Habitantes",
+    "detectado_en": "2026-11-06T15:49:30.284961+01:00"
   },
   {
     "id": "sede-Padrón Fiscal-anunciobop",

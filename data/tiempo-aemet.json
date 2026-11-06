@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T15:16:45+01:00",
+  "actualizado": "2026-11-06T21:54:17+01:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
@@ -46,9 +46,9 @@
       "t_max": "23",
       "t_min": "12",
       "icono": "☁️",
-      "descripcion": "Nubes altas",
+      "descripcion": "Nuboso",
       "lluvia": "0%",
-      "viento": "S 5 km/h",
+      "viento": "S 10 km/h",
       "uv": "3"
     },
     {
@@ -58,21 +58,21 @@
       "t_max": "23",
       "t_min": "13",
       "icono": "🌧️",
-      "descripcion": "Muy nuboso con lluvia escasa",
+      "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "80%",
-      "viento": "E 10 km/h",
+      "viento": "SE 10 km/h",
       "uv": "3"
     },
     {
       "fecha": "2026-11-09",
       "dia_semana": "Lunes",
       "fecha_corta": "9/11",
-      "t_max": "21",
-      "t_min": "15",
+      "t_max": "22",
+      "t_min": "14",
       "icono": "🌧️",
       "descripcion": "Muy nuboso con lluvia",
       "lluvia": "100%",
-      "viento": "SE 10 km/h",
+      "viento": "SE 15 km/h",
       "uv": "3"
     },
     {
@@ -82,7 +82,7 @@
       "t_max": "23",
       "t_min": "14",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia",
+      "descripcion": "Nuboso con lluvia escasa",
       "lluvia": "90%",
       "viento": "S 10 km/h",
       "uv": "3"
@@ -91,12 +91,12 @@
       "fecha": "2026-11-11",
       "dia_semana": "Miércoles",
       "fecha_corta": "11/11",
-      "t_max": "23",
-      "t_min": "15",
+      "t_max": "19",
+      "t_min": "14",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia",
-      "lluvia": "95%",
-      "viento": "S 10 km/h",
+      "descripcion": "Cubierto con lluvia",
+      "lluvia": "90%",
+      "viento": "C 0 km/h",
       "uv": ""
     },
     {
@@ -104,11 +104,11 @@
       "dia_semana": "Jueves",
       "fecha_corta": "12/11",
       "t_max": "23",
-      "t_min": "13",
+      "t_min": "14",
       "icono": "🌧️",
-      "descripcion": "Muy nuboso con lluvia",
+      "descripcion": "Nuboso con lluvia",
       "lluvia": "95%",
-      "viento": "SO 5 km/h",
+      "viento": "SO 15 km/h",
       "uv": ""
     }
   ],

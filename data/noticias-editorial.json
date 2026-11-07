@@ -3249,7 +3249,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225071": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "ae451ad439a63f994c12b08d748efd786c687145",
     "date_modified": null,
     "date_published": "2026-11-05T11:41:30+00:00",
@@ -3262,7 +3262,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22507-117e486d",
-    "last_ai_attempt": "2026-11-06T11:58:25.992365+00:00",
+    "last_ai_attempt": "2026-11-07T00:02:04.461431+00:00",
     "pagina": "noticias/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos/"
@@ -4086,7 +4086,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-masterclass-en-coin-verifactu/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261532": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "63bda398f98793ff56dda86823f1348b26bfd4af",
     "date_modified": null,
     "date_published": "2026-11-02T08:00:15+00:00",
@@ -4099,7 +4099,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261532-db2e31d8",
-    "last_ai_attempt": "2026-11-06T02:18:05.673730+00:00",
+    "last_ai_attempt": "2026-11-07T00:04:31.506920+00:00",
     "pagina": "noticias/esta-navidad-tu-compra-local-te-lleva-a-disneyland-paris.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/navidad-2026/"
@@ -4162,7 +4162,7 @@
     "source_url": "https://fedelhorce.es/conclusiones-juernes-mentalidad-de-campeon/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261746": {
-    "ai_attempts": 10,
+    "ai_attempts": 11,
     "content_hash": "f587bb810f8b037b7d50e6502aaa3c75dea43df3",
     "date_modified": null,
     "date_published": "2026-10-28T11:00:38+00:00",
@@ -4175,13 +4175,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261746-21cf9387",
-    "last_ai_attempt": "2026-11-06T02:17:48.410648+00:00",
+    "last_ai_attempt": "2026-11-07T00:04:13.865257+00:00",
     "pagina": "noticias/jornadas-gastronomicas-coingusto-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/jornadas-gastronomicas-coingusto-2026/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261868": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "ed25c075a44a7ac05a21a794a82a5002836f4046",
     "date_modified": null,
     "date_published": "2026-11-03T08:15:32+00:00",
@@ -4194,13 +4194,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261868-2f162a30",
-    "last_ai_attempt": "2026-11-06T02:17:29.793567+00:00",
+    "last_ai_attempt": "2026-11-07T00:03:57.088968+00:00",
     "pagina": "noticias/anade-un-cero-a-tus-resultados.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/juernes-innovador-anade-un-cero-a-tus-resultados/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261938": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "ec78fe901adc0adf09f7296ae395779cc695a43f",
     "date_modified": null,
     "date_published": "2026-11-06T09:01:05+00:00",
@@ -4213,7 +4213,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261938-2a406f5c",
-    "last_ai_attempt": "2026-11-06T19:26:42.611087+00:00",
+    "last_ai_attempt": "2026-11-07T00:03:39.734235+00:00",
     "pagina": "noticias/fedelhorce-colabora-en-el-proyecto-europeo-tequieroverde.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/fedelhorce-colabora-en-el-proyecto-europeo-tequieroverde/"
@@ -6902,7 +6902,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/concierto-didactico-a-cargo-de-la-asociacion-musical-manuel-amador-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50698": {
-    "ai_attempts": 19,
+    "ai_attempts": 20,
     "content_hash": "988b0d3ec7531373741c2a51e577d0bbb7bf5f69",
     "date_modified": null,
     "date_published": "2026-10-22T09:31:02+00:00",
@@ -6915,13 +6915,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50698-e0be8b0f",
-    "last_ai_attempt": "2026-11-06T02:17:09.003178+00:00",
+    "last_ai_attempt": "2026-11-07T00:03:16.982363+00:00",
     "pagina": "noticias/presentacion-de-la-fundacion-ley-57.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-de-la-fundacion-ley-57/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50702": {
-    "ai_attempts": 20,
+    "ai_attempts": 21,
     "content_hash": "11b827d886a590ca0bda8e6c39e9cccab45fdf21",
     "date_modified": null,
     "date_published": "2026-10-23T11:10:23+00:00",
@@ -6934,7 +6934,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50702-469a719c",
-    "last_ai_attempt": "2026-11-06T11:59:11.551233+00:00",
+    "last_ai_attempt": "2026-11-07T00:02:58.245332+00:00",
     "pagina": "noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia/"

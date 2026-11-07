@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-07T14:01:19+01:00",
+  "actualizado": "2026-11-07T20:26:03+01:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
+  "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☁️",
+    "icono": "☀️",
     "titulo": "Tiempo",
     "valor": "Máx. 23º",
-    "detalle": "Nubes altas · Máx. 23º / Mín. 12º · Lluvia 0%",
+    "detalle": "Despejado · Máx. 23º / Mín. 12º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "7/11",
     "t_max": "23",
     "t_min": "12",
-    "icono": "☁️",
-    "descripcion": "Nubes altas",
+    "icono": "☀️",
+    "descripcion": "Despejado",
     "lluvia": "0%",
-    "viento": "S 10 km/h",
+    "viento": "Flojo",
     "uv": "3"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "7/11",
       "t_max": "23",
       "t_min": "12",
-      "icono": "☁️",
-      "descripcion": "Nubes altas",
+      "icono": "☀️",
+      "descripcion": "Despejado",
       "lluvia": "0%",
-      "viento": "S 10 km/h",
+      "viento": "Flojo",
       "uv": "3"
     },
     {
@@ -48,7 +48,7 @@
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "90%",
-      "viento": "SE 10 km/h",
+      "viento": "SE 15 km/h",
       "uv": "3"
     },
     {
@@ -60,7 +60,7 @@
       "icono": "🌧️",
       "descripcion": "Muy nuboso con lluvia",
       "lluvia": "100%",
-      "viento": "SE 10 km/h",
+      "viento": "SE 20 km/h",
       "uv": "3"
     },
     {
@@ -68,23 +68,23 @@
       "dia_semana": "Martes",
       "fecha_corta": "10/11",
       "t_max": "23",
-      "t_min": "15",
+      "t_min": "14",
       "icono": "🌧️",
-      "descripcion": "Muy nuboso con lluvia escasa",
-      "lluvia": "75%",
-      "viento": "SO 10 km/h",
+      "descripcion": "Nuboso con lluvia escasa",
+      "lluvia": "90%",
+      "viento": "S 15 km/h",
       "uv": "3"
     },
     {
       "fecha": "2026-11-11",
       "dia_semana": "Miércoles",
       "fecha_corta": "11/11",
-      "t_max": "19",
+      "t_max": "20",
       "t_min": "16",
       "icono": "🌧️",
       "descripcion": "Cubierto con lluvia",
       "lluvia": "100%",
-      "viento": "E 5 km/h",
+      "viento": "SE 10 km/h",
       "uv": "3"
     },
     {
@@ -92,11 +92,11 @@
       "dia_semana": "Jueves",
       "fecha_corta": "12/11",
       "t_max": "24",
-      "t_min": "13",
+      "t_min": "14",
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia",
       "lluvia": "100%",
-      "viento": "SO 10 km/h",
+      "viento": "SO 15 km/h",
       "uv": ""
     },
     {
@@ -104,11 +104,11 @@
       "dia_semana": "Viernes",
       "fecha_corta": "13/11",
       "t_max": "22",
-      "t_min": "12",
+      "t_min": "13",
       "icono": "🌧️",
-      "descripcion": "Intervalos nubosos con lluvia",
-      "lluvia": "90%",
-      "viento": "SO 5 km/h",
+      "descripcion": "Intervalos nubosos con lluvia escasa",
+      "lluvia": "85%",
+      "viento": "SO 10 km/h",
       "uv": ""
     }
   ],
@@ -146,8 +146,8 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:48 h",
-    "ocaso": "18:17 h",
+    "orto": "07:47 h",
+    "ocaso": "18:16 h",
     "horas_luz": "10h 29m",
     "fase_luna": "Luna Menguante (6%)",
     "icono_luna": "🌘"

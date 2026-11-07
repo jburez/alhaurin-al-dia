@@ -2213,7 +2213,7 @@
     "source_url": "https://www.youtube.com/watch?v=xVxhRTJvsrc"
   },
   "guid:atv-alhaurin-youtube:yt:video:xlYVyfyTqGI": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "519e4de890e84666ece0e7eb6cc01a578c3f8a33",
     "date_modified": null,
     "date_published": "2026-11-06T13:15:41+00:00",
@@ -2226,7 +2226,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-xlyvyfytqgi-27aa9cdd",
-    "last_ai_attempt": "2026-11-07T08:44:19.007709+00:00",
+    "last_ai_attempt": "2026-11-07T16:16:58.793300+00:00",
     "pagina": "noticias/exposicion-el-principio-la-casa-de-la-cultura-acoge-hasta-el-27-de-noviembre.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=xlYVyfyTqGI"
@@ -3249,7 +3249,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225071": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "ae451ad439a63f994c12b08d748efd786c687145",
     "date_modified": null,
     "date_published": "2026-11-05T11:41:30+00:00",
@@ -3262,7 +3262,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22507-117e486d",
-    "last_ai_attempt": "2026-11-07T00:02:04.461431+00:00",
+    "last_ai_attempt": "2026-11-07T16:15:25.595338+00:00",
     "pagina": "noticias/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos/"
@@ -5906,6 +5906,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/09/alhaurin-el-grande-en-memoria-de-luis-martinez-luis-el-maestro/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=210920": {
+    "ai_attempts": 1,
+    "content_hash": "c3f1de45a5f2290520e28cf45ceed57176c97ae9",
+    "date_modified": null,
+    "date_published": "2026-11-07T09:00:21+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 33 segundosEl portavoz de VOX en Alhaurín el Grande se muestra convencido de alcanzar la mayoría absoluta en 2027, pero, de no lograrla, pactaría con cualquier partido excepto PSOE e Izquierda Unida.\n\nAdemás, defiende liberar suelo para facilitar la vivienda joven, apoya el nuevo polígono y plantea una auditoría La entrada Antonio Jesús Fernández (VOX): « Si no tenemos la mayoría absoluta, pactaremos con todos menos con PSOE e IU» se publicó primero en Revista Lugar de Encuentro.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 33 segundosEl portavoz de VOX en Alhaurín el Grande se muestra convencido de alcanzar la mayoría absoluta en 2027, pero, de no lograrla, pactaría con cualquier partido excepto PSOE e Izquierda.",
+      "seo_keywords": [],
+      "titulo": "Antonio Jesús Fernández (VOX): « Si no tenemos la mayoría absoluta, pactaremos con todos"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-74d3d366",
+    "last_ai_attempt": "2026-11-07T16:22:19.104859+00:00",
+    "pagina": "noticias/antonio-jesus-fernandez-vox-si-no-tenemos-la-mayoria-absoluta-pactaremos-con-todos.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/07/antonio-jesus-fernandez-vox-si-no-tenemos-la-mayoria-absoluta-pactaremos-con-todos-menos-con-psoe-e-iu/"
+  },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212169": {
     "ai_attempts": 1,
     "content_hash": "8910c59a3e0ce4eee8ce83dcd70d9d2bfc231fc6",
@@ -5943,6 +5962,25 @@
     "pagina": "noticias/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/10/16/el-ayuntamiento-propone-a-maria-isabel-gallego-garcia-como-nueva-jueza-de-paz-de-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212256": {
+    "ai_attempts": 1,
+    "content_hash": "1b94e6fa036f91e1d37ce8de26d6d312bb41aef9",
+    "date_modified": null,
+    "date_published": "2026-11-07T09:00:07+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 4 minutos, 15 segundosEl alcalde de Alhaurín el Grande asegura que se presenta en 2027 «para ganar», defiende el balance del tripartito, anuncia dos modificaciones del PGOU para aumentar la densidad de vivienda y fija como prioridades el nuevo plan urbanístico y la ampliación del polígono industrial La serie de entrevistas La entrada Anthony Bermúdez (100% Alhaurín): «No me autorizo ninguna.",
+      "descripcion": "Tiempo de lectura aprox: 4 minutos, 15 segundosEl alcalde de Alhaurín el Grande asegura que se presenta en 2027 «para ganar», defiende el balance del tripartito, anuncia dos modificaciones del PGOU para aumentar la densidad de.",
+      "seo_keywords": [],
+      "titulo": "Tiempo de lectura aprox: 4 minutos, 15 segundosEl alcalde de Alhaurín el Grande asegura"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-ff989a3a",
+    "last_ai_attempt": "2026-11-07T16:22:56.072312+00:00",
+    "pagina": "noticias/tiempo-de-lectura-aprox-4-minutos-15-segundosel-alcalde-de-alhaurin-el-grande-asegura.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/07/anthony-bermudez-100-alhaurin-no-me-autorizo-ninguna-linea-roja-se-pacta-con-personas-y-con-programas/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=212334": {
     "ai_attempts": 1,
@@ -6133,6 +6171,25 @@
     "pagina": "noticias/el-pastor-del-valle-de-alhaurin-el-grande-premiado-en-los-viii-premios-a-los-mejores.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/04/el-pastor-del-valle-de-alhaurin-el-grande-premiado-en-los-viii-premios-a-los-mejores-quesos-de-cabra-de-la-provincia/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=213376": {
+    "ai_attempts": 1,
+    "content_hash": "c5c6c4629be2332e05935b7ad96cb0c1de160aa7",
+    "date_modified": null,
+    "date_published": "2026-11-07T09:00:17+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 51 segundosA casi siete meses del 23 de mayo de 2027, los cinco grupos del Pleno de Alhaurín el Grande hacen balance Poco desacuerdo en el diagnóstico, bastante en las soluciones, y una competencia electoral que ya ha empezado, incluso dentro del gobierno Todos quieren ganar, también los socios La entrada Análisis | Cinco entrevistas, una campaña en Alhaurín el Grande se publicó.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 51 segundosA casi siete meses del 23 de mayo de 2027, los cinco grupos del Pleno de Alhaurín el Grande hacen balance Poco desacuerdo en el diagnóstico, bastante en las soluciones, y una.",
+      "seo_keywords": [],
+      "titulo": "Cinco entrevistas, una campaña en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-b872ab53",
+    "last_ai_attempt": "2026-11-07T16:22:37.390305+00:00",
+    "pagina": "noticias/cinco-entrevistas-una-campana-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/07/analisis-cinco-entrevistas-una-campana-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
@@ -6921,7 +6978,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/presentacion-de-la-fundacion-ley-57/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50702": {
-    "ai_attempts": 21,
+    "ai_attempts": 22,
     "content_hash": "11b827d886a590ca0bda8e6c39e9cccab45fdf21",
     "date_modified": null,
     "date_published": "2026-10-23T11:10:23+00:00",
@@ -6934,7 +6991,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50702-469a719c",
-    "last_ai_attempt": "2026-11-07T00:02:58.245332+00:00",
+    "last_ai_attempt": "2026-11-07T16:16:19.034322+00:00",
     "pagina": "noticias/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/entrega-de-premios-del-i-concurso-nacional-de-periodismo-sonoro-alejo-garcia/"

@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-08T14:25:29+01:00",
+  "actualizado": "2026-11-08T20:41:41+01:00",
   "fuente": "AEMET",
-  "fuente_prediccion": "AEMET XML (municipios)",
+  "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "🌧️",
     "titulo": "Tiempo",
     "valor": "Máx. 23º",
-    "detalle": "Despejado · Máx. 23º / Mín. 13º · Lluvia 0%",
+    "detalle": "Intervalos nubosos con lluvia escasa · Máx. 23º / Mín. 13º · Lluvia 80%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
@@ -20,10 +20,10 @@
     "fecha_corta": "8/11",
     "t_max": "23",
     "t_min": "13",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "icono": "🌧️",
+    "descripcion": "Intervalos nubosos con lluvia escasa",
+    "lluvia": "80%",
+    "viento": "SE 10 km/h",
     "uv": "3"
   },
   "semana": [
@@ -33,10 +33,10 @@
       "fecha_corta": "8/11",
       "t_max": "23",
       "t_min": "13",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
+      "icono": "🌧️",
+      "descripcion": "Intervalos nubosos con lluvia escasa",
+      "lluvia": "80%",
+      "viento": "SE 10 km/h",
       "uv": "3"
     },
     {
@@ -58,17 +58,17 @@
       "t_max": "23",
       "t_min": "15",
       "icono": "🌧️",
-      "descripcion": "Nuboso con lluvia escasa",
+      "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "100%",
-      "viento": "S 10 km/h",
+      "viento": "S 15 km/h",
       "uv": "3"
     },
     {
       "fecha": "2026-11-11",
       "dia_semana": "Miércoles",
       "fecha_corta": "11/11",
-      "t_max": "20",
-      "t_min": "16",
+      "t_max": "21",
+      "t_min": "15",
       "icono": "🌧️",
       "descripcion": "Cubierto con lluvia",
       "lluvia": "100%",
@@ -80,11 +80,11 @@
       "dia_semana": "Jueves",
       "fecha_corta": "12/11",
       "t_max": "24",
-      "t_min": "13",
+      "t_min": "14",
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia",
       "lluvia": "100%",
-      "viento": "O 5 km/h",
+      "viento": "SO 15 km/h",
       "uv": "3"
     },
     {
@@ -92,23 +92,23 @@
       "dia_semana": "Viernes",
       "fecha_corta": "13/11",
       "t_max": "23",
-      "t_min": "11",
+      "t_min": "12",
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
-      "lluvia": "100%",
-      "viento": "SO 10 km/h",
+      "lluvia": "90%",
+      "viento": "S 5 km/h",
       "uv": ""
     },
     {
       "fecha": "2026-11-14",
       "dia_semana": "Sábado",
       "fecha_corta": "14/11",
-      "t_max": "22",
-      "t_min": "11",
+      "t_max": "23",
+      "t_min": "12",
       "icono": "🌧️",
       "descripcion": "Intervalos nubosos con lluvia escasa",
       "lluvia": "80%",
-      "viento": "SO 10 km/h",
+      "viento": "Flojo",
       "uv": ""
     }
   ],
@@ -117,15 +117,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Excelente",
-      "detalle": "Secado muy rápido al sol (0% riesgo)"
+      "estado": "Desaconsejado",
+      "detalle": "Riesgo de precipitaciones"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Muy recomendado",
-      "detalle": "Cielo limpio y sin calima"
+      "estado": "Espera unos días",
+      "detalle": "Posible barro o lluvia"
     },
     {
       "id": "deporte",

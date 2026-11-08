@@ -3540,7 +3540,7 @@
     "source_url": "https://www.diariosur.es/interior/alhaurin-grande-saca-plazas-fijas-anuncia-seis-funcionario-20260904121655-nt.html"
   },
   "guid:diario-sur-malaga:https://www.diariosur.es/interior/lucia-garcia-joven-malaguena-paso-admirar-bordados-20261104213020-nt.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "2db26a4489bd393dc81fb13ae9534fb85d557af9",
     "date_modified": null,
     "date_published": "2026-11-07T20:30:20+00:00",
@@ -3553,7 +3553,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-diario-sur-malaga-https-www-diariosur-es-interior-lucia-garcia-jo-a15f4863",
-    "last_ai_attempt": "2026-11-07T21:44:09.578826+00:00",
+    "last_ai_attempt": "2026-11-08T01:15:32.138816+00:00",
     "pagina": "noticias/empezo-a-los-trece-anos-aprendiendo-entre-pruebas-y-errores-y-hoy-con-veintiuno-tiene.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.diariosur.es/interior/lucia-garcia-joven-malaguena-paso-admirar-bordados-20261104213020-nt.html"

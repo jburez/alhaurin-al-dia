@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-11-09T10:37:12.350Z",
+  "actualizado": "2026-11-09T16:44:30.071486+01:00",
   "resumen": "Agenda local de Alhaurín el Grande. 170 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
       "id": "alhaurinhoy-9390",
@@ -329,6 +330,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/teatro-%f0%9f%8e%ad-vaya-centro-la-ultima-cena/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-13788",
+      "tipo": "Deportes",
+      "icono": "⚽",
+      "titulo": "⚽️ CD ALHAURINO 🆚 Arenas de Armilla",
+      "descripcion": "🏟️ 𝐉𝐎𝐑𝐍𝐀𝐃𝐀 7 Volvemos a casa y queremos que los tres puntos se queden en el Fijones. Y queremos veros ahí, empujando al equipo desde la grada y animando hasta el final. Afición y equipo, juntos. ¡O...",
+      "lugar": "",
+      "inicio": "2026-10-18T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%e2%9a%bd%ef%b8%8f-cd-alhaurino-%f0%9f%86%9a-arenas-de-armilla/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -2534,21 +2550,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

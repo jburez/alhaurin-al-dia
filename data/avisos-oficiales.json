@@ -1,19 +1,77 @@
 [
   {
+    "id": "aemet-AFAZ612903PRP11123",
+    "tipo": "meteorologico",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+    "descripcion": "Aviso de precipitación acumulada en una hora de nivel amarillo de 12:00 11-11-2026 CET (UTC+1) a 23:59 11-11-2026 CET (UTC+1).",
+    "fenomeno": "Lluvias",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-11-11T12:00:00+01:00",
+    "fin": "2026-11-11T23:59:00+01:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261109180130_AFAZ612903PRP11123.xml",
+    "estado_ciclo_vida": "creado",
+    "actualizado_en": "2026-11-09T20:34:50+00:00",
+    "historial": []
+  },
+  {
+    "id": "aemet-AFAZ612903PRP10918",
+    "tipo": "meteorologico",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+    "descripcion": "Aviso de precipitación acumulada en una hora de nivel amarillo de 15:00 09-11-2026 CET (UTC+1) a 18:59 09-11-2026 CET (UTC+1).",
+    "fenomeno": "Lluvias",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-11-09T15:00:00+01:00",
+    "fin": "2026-11-09T18:59:00+01:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261109143522_AFAZ612903PRP10918.xml",
+    "estado_ciclo_vida": "creado",
+    "actualizado_en": "2026-11-09T20:34:50+00:00",
+    "historial": []
+  },
+  {
+    "id": "aemet-AFAZ612903PRP21123",
+    "tipo": "meteorologico",
+    "nivel": "amarillo",
+    "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+    "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel amarillo de 00:00 11-11-2026 CET (UTC+1) a 23:59 11-11-2026 CET (UTC+1).",
+    "fenomeno": "Lluvias",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-11-11T00:00:00+01:00",
+    "fin": "2026-11-11T23:59:00+01:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261109104951_AFAZ612903PRP21123.xml",
+    "estado_ciclo_vida": "creado",
+    "actualizado_en": "2026-11-09T20:34:50+00:00",
+    "historial": []
+  },
+  {
     "id": "aemet-AFAZ612903PRP20918",
     "tipo": "meteorologico",
     "nivel": "amarillo",
     "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
-    "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel amarillo de 08:00 09-11-2026 CET (UTC+1) a 18:59 09-11-2026 CET (UTC+1).",
+    "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel amarillo de 15:00 09-11-2026 CET (UTC+1) a 18:59 09-11-2026 CET (UTC+1).",
     "fenomeno": "Lluvias",
     "zona": "Sol y Guadalhorce",
-    "inicio": "2026-11-09T08:00:00+01:00",
+    "inicio": "2026-11-09T15:00:00+01:00",
     "fin": "2026-11-09T18:59:00+01:00",
     "fuente": "AEMET",
     "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261109075943_AFAZ612903PRP20918.xml",
-    "estado_ciclo_vida": "creado",
-    "actualizado_en": "2026-11-09T09:30:54+00:00",
-    "historial": []
+    "estado_ciclo_vida": "actualizado",
+    "actualizado_en": "2026-11-09T20:34:50+00:00",
+    "historial": [
+      {
+        "nivel": "amarillo",
+        "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+        "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel amarillo de 08:00 09-11-2026 CET (UTC+1) a 18:59 09-11-2026 CET (UTC+1).",
+        "inicio": "2026-11-09T08:00:00+01:00",
+        "fin": "2026-11-09T18:59:00+01:00",
+        "estado_ciclo_vida": "creado",
+        "actualizado_en": "2026-11-09T09:30:54+00:00"
+      }
+    ]
   },
   {
     "id": "aemet-AFAZ612903PRP11920",

@@ -1,5 +1,31 @@
 [
   {
+    "id": "aemet-AFAZ612903PRP21123",
+    "tipo": "meteorologico",
+    "nivel": "naranja",
+    "titulo": "Aviso. Nivel naranja. Lluvias. Sol y Guadalhorce",
+    "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel naranja de 12:00 11-11-2026 CET (UTC+1) a 23:59 11-11-2026 CET (UTC+1).",
+    "fenomeno": "Lluvias",
+    "zona": "Sol y Guadalhorce",
+    "inicio": "2026-11-11T12:00:00+01:00",
+    "fin": "2026-11-11T23:59:00+01:00",
+    "fuente": "AEMET",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261110103815_AFAZ612903PRP21123.xml",
+    "estado_ciclo_vida": "actualizado",
+    "actualizado_en": "2026-11-10T12:22:37+00:00",
+    "historial": [
+      {
+        "nivel": "amarillo",
+        "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
+        "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel amarillo de 00:00 11-11-2026 CET (UTC+1) a 23:59 11-11-2026 CET (UTC+1).",
+        "inicio": "2026-11-11T00:00:00+01:00",
+        "fin": "2026-11-11T23:59:00+01:00",
+        "estado_ciclo_vida": "creado",
+        "actualizado_en": "2026-11-09T20:34:50+00:00"
+      }
+    ]
+  },
+  {
     "id": "aemet-AFAZ612903PRP11123",
     "tipo": "meteorologico",
     "nivel": "amarillo",
@@ -16,19 +42,19 @@
     "historial": []
   },
   {
-    "id": "aemet-AFAZ612903PRP21123",
+    "id": "aemet-AFAZ612903VIRM1123",
     "tipo": "meteorologico",
     "nivel": "amarillo",
-    "titulo": "Aviso. Nivel amarillo. Lluvias. Sol y Guadalhorce",
-    "descripcion": "Aviso de precipitación acumulada en 12 horas de nivel amarillo de 00:00 11-11-2026 CET (UTC+1) a 23:59 11-11-2026 CET (UTC+1).",
-    "fenomeno": "Lluvias",
+    "titulo": "Aviso. Nivel amarillo. Vientos. Sol y Guadalhorce",
+    "descripcion": "Aviso de rachas máximas de nivel amarillo de 15:00 11-11-2026 CET (UTC+1) a 23:59 11-11-2026 CET (UTC+1).",
+    "fenomeno": "Vientos",
     "zona": "Sol y Guadalhorce",
-    "inicio": "2026-11-11T00:00:00+01:00",
+    "inicio": "2026-11-11T15:00:00+01:00",
     "fin": "2026-11-11T23:59:00+01:00",
     "fuente": "AEMET",
-    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261109104951_AFAZ612903PRP21123.xml",
+    "fuente_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261110103815_AFAZ612903VIRM1123.xml",
     "estado_ciclo_vida": "creado",
-    "actualizado_en": "2026-11-09T20:34:50+00:00",
+    "actualizado_en": "2026-11-10T12:22:37+00:00",
     "historial": []
   },
   {

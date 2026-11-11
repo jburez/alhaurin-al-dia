@@ -528,6 +528,42 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-anuncbasesdelaconvocatoriadelpersonalfun",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "21528/2026",
+    "resumen": "Anunc. Bases de la Convocatoria del Personal Funcionario OEP",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/a1c95105-158e-455b-a9f5-820d10a5533d",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-11T15:57:16.233386+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-anuncbasesdelaconvocatoriadelpersonallab",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "21515/2026",
+    "resumen": "Anunc. Bases de la Convocatoria del Personal Laboral OEP",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/91ee32ed-01ab-44d7-9b57-630628791e2f",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-11T15:57:16.233416+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266589nombramcomisservicesperan",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "24878/2026",
+    "resumen": "DECRETO 2026-6589 [NOMBRAM COMIS SERVIC ESPERANZA GUZMÁN SERRANO]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/159a4953-044f-4dcf-ae3c-3a14c29547ac",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-11T15:57:16.233446+01:00"
+  },
+  {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -768,6 +804,18 @@
     "detectado_en": "2026-10-28T14:52:21.697674+01:00"
   },
   {
+    "id": "sede-Licencias de Actividad-anuncioeneltablón",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "1175/2026",
+    "resumen": "ANUNCIO EN EL TABLÓN",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/861cef05-a4ce-4fa5-8f33-abb94280c8c1",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Licencias de Actividad",
+    "detectado_en": "2026-11-11T15:57:16.233432+01:00"
+  },
+  {
     "id": "sede-Fiestas-certificadoaprobaciónbasesconcursodecart",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -934,6 +982,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
     "detectado_en": "2026-10-14T14:41:55.838116+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20266596decretoconvocatoriajgl131",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/38",
+    "resumen": "DECRETO 2026-6596 [DECRETO CONVOCATORIA JGL 13-11-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/021798a2-67dd-447d-a132-81ea17767d97",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-11-11T15:57:16.233458+01:00"
   },
   {
     "id": "sede-Convocatoria de El Pleno-decreto20266247decretoconvocatoriapleno3",

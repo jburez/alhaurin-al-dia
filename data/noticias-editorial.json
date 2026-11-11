@@ -1230,7 +1230,7 @@
     "source_url": "https://www.youtube.com/watch?v=PBRkPbUCPoA"
   },
   "guid:atv-alhaurin-youtube:yt:video:Pq3plTnwkog": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "35fd36737e5f4c2182d2ee530a06a34f656774f5",
     "date_modified": null,
     "date_published": "2026-11-10T15:30:12+00:00",
@@ -1243,7 +1243,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-pq3pltnwkog-205292b4",
-    "last_ai_attempt": "2026-11-10T21:52:47.593594+00:00",
+    "last_ai_attempt": "2026-11-11T01:51:17.232274+00:00",
     "pagina": "noticias/inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Pq3plTnwkog"
@@ -1668,7 +1668,7 @@
     "source_url": "https://www.youtube.com/watch?v=b6BwO4AWYKs"
   },
   "guid:atv-alhaurin-youtube:yt:video:bgMlOYP89IA": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "45740e4d6572e1ac649bce0b5272aee34e4be2d2",
     "date_modified": null,
     "date_published": "2026-11-10T15:00:10+00:00",
@@ -1681,7 +1681,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-bgmloyp89ia-81aeec0a",
-    "last_ai_attempt": "2026-11-10T21:53:05.809169+00:00",
+    "last_ai_attempt": "2026-11-11T01:51:35.945482+00:00",
     "pagina": "noticias/inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=bgMlOYP89IA"
@@ -1744,7 +1744,7 @@
     "source_url": "https://www.youtube.com/watch?v=d2WvZ7tu0Ec"
   },
   "guid:atv-alhaurin-youtube:yt:video:dKjiIUWbMyk": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "daa545ce0ccb6e0887c043cbb4b85b76b3d50371",
     "date_modified": null,
     "date_published": "2026-11-10T13:57:08+00:00",
@@ -1757,7 +1757,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-dkjiiuwbmyk-4672acc5",
-    "last_ai_attempt": "2026-11-10T21:53:23.622699+00:00",
+    "last_ai_attempt": "2026-11-11T01:51:55.564378+00:00",
     "pagina": "noticias/desalojo-escuela-de-musica-el-ayuntamiento-ordena-el-desalojo-del-edificio-municipal-paco.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=dKjiIUWbMyk"
@@ -1805,7 +1805,7 @@
     "source_url": "https://www.youtube.com/watch?v=dePW_e2DCmQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:drnCzh9iFB4": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "bec1810d0fd6c2c278792f349c6b79eb0dcb1fa9",
     "date_modified": null,
     "date_published": "2026-11-09T13:41:18+00:00",
@@ -1818,7 +1818,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-drnczh9ifb4-5e261b8d",
-    "last_ai_attempt": "2026-11-10T21:54:01.301204+00:00",
+    "last_ai_attempt": "2026-11-11T01:52:31.393443+00:00",
     "pagina": "noticias/fin-obras-calle-nogales-el-equipo-de-gobierno-visita-la-calle-nogales-en-villa.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=drnCzh9iFB4"
@@ -2289,7 +2289,7 @@
     "source_url": "https://www.youtube.com/watch?v=vmd48ktHk4w"
   },
   "guid:atv-alhaurin-youtube:yt:video:wu7YcROOHkk": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "03f65e80f8e191e87dda020ad7140125b8f2f98b",
     "date_modified": null,
     "date_published": "2026-11-09T15:30:03+00:00",
@@ -2302,7 +2302,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-wu7ycroohkk-2c47fff1",
-    "last_ai_attempt": "2026-11-10T21:53:41.498464+00:00",
+    "last_ai_attempt": "2026-11-11T01:52:13.735141+00:00",
     "pagina": "noticias/halloween-2026-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=wu7YcROOHkk"
@@ -3382,7 +3382,7 @@
     "source_url": "https://alhaurinelgrande.es/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225085": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "23018e9b2138636e168cd180bd79f629fea5dccc",
     "date_modified": null,
     "date_published": "2026-11-10T12:07:48+00:00",
@@ -3395,13 +3395,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22508-65b7cdce",
-    "last_ai_attempt": "2026-11-10T21:45:07.605435+00:00",
+    "last_ai_attempt": "2026-11-11T01:48:57.351902+00:00",
     "pagina": "noticias/el-ayuntamiento-reubica-la-actividad-formativa-en-nuevos-espacios-tras-detectar-problemas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/la-escuela-municipal-de-musica-y-oleo-de-alhaurin-el-grande-trasladaran-sus-clases-a-nuevas-instalaciones-por-motivos-de-seguridad/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225092": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "acf41d5973250bd1c806613c9167a3accc7ae5c8",
     "date_modified": null,
     "date_published": "2026-11-10T12:26:09+00:00",
@@ -3414,7 +3414,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22509-591db295",
-    "last_ai_attempt": "2026-11-10T21:44:49.282007+00:00",
+    "last_ai_attempt": "2026-11-11T01:48:38.034077+00:00",
     "pagina": "noticias/alhaurin-el-grande-descubre-la-faceta-fotografica-de-gustavo-thorlichen-con-una-nueva.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-descubre-la-faceta-fotografica-de-gustavo-thorlichen-con-una-nueva-exposicion/"
@@ -4390,7 +4390,7 @@
     "source_url": "https://fedelhorce.es/fedelhorce-colabora-en-el-proyecto-europeo-tequieroverde/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261968": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "70771ee9f63c03941b9c846345eb42830eb8ff88",
     "date_modified": "2026-11-10T22:02:01.976224+00:00",
     "date_published": "2026-11-09T08:57:58+00:00",
@@ -4403,13 +4403,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261968-df94ffa8",
-    "last_ai_attempt": "2026-11-10T21:56:10.993086+00:00",
+    "last_ai_attempt": "2026-11-11T01:54:36.378499+00:00",
     "pagina": "noticias/mencion-especial-premio-nacional-de-comercio-interior-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/mencion-especial-premio-nacional-de-comercio-interior-2026/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=261987": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "bcaf7e74fabcea17db4c0a6607b287aeb10cfdfa",
     "date_modified": null,
     "date_published": "2026-11-10T08:15:07+00:00",
@@ -4422,7 +4422,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-261987-43578e1d",
-    "last_ai_attempt": "2026-11-10T21:55:53.532315+00:00",
+    "last_ai_attempt": "2026-11-11T01:54:18.115152+00:00",
     "pagina": "noticias/convocatoria-plan-i-oportunidad-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/convocatoria-plan-i-oportunidad-2026/"
@@ -4882,7 +4882,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34260/fernando-arguelles-pregonero-del-xxxv-pregon-de-la-semana-santa/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34263": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "3524bc7ee7420b61fa15cfcdf834f91b279d74ac",
     "date_modified": null,
     "date_published": "2026-11-09T09:56:46+00:00",
@@ -4895,7 +4895,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-aaa6c313",
-    "last_ai_attempt": "2026-11-10T21:47:51.227149+00:00",
+    "last_ai_attempt": "2026-11-11T01:49:40.647532+00:00",
     "pagina": "noticias/sabado-legionario-en-ceuta.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34263/sabado-legionario-en-ceuta/"
@@ -6439,7 +6439,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/11/07/analisis-cinco-entrevistas-una-campana-en-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=213583": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "54c478aebd8318b0b6d1f1a3fc85f52864901547",
     "date_modified": null,
     "date_published": "2026-11-10T16:42:51+00:00",
@@ -6452,7 +6452,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-514b5a06",
-    "last_ai_attempt": "2026-11-10T21:59:01.886373+00:00",
+    "last_ai_attempt": "2026-11-11T01:57:28.180967+00:00",
     "pagina": "noticias/alhaurin-el-grande-mejora-el-camino-pie-gallina-y-anuncia-nuevas-inversiones-rurales.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/10/alhaurin-el-grande-mejora-camino-pie-gallina-inversion-caminos-rurales/"

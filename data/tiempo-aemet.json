@@ -1,44 +1,32 @@
 {
-  "actualizado": "2026-11-11T22:57:59+01:00",
+  "actualizado": "2026-11-12T16:15:41+01:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "☀️",
+    "icono": "🌧️",
     "titulo": "Tiempo",
-    "valor": "Máx. 20º",
-    "detalle": "Despejado · Máx. 20º / Mín. 16º · Lluvia 0%",
+    "valor": "Máx. 23º",
+    "detalle": "Intervalos nubosos con lluvia escasa · Máx. 23º / Mín. 14º · Lluvia 100%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-11-11",
-    "dia_semana": "Miércoles",
-    "fecha_corta": "11/11",
-    "t_max": "20",
-    "t_min": "16",
-    "icono": "☀️",
-    "descripcion": "Despejado",
-    "lluvia": "0%",
-    "viento": "Flojo",
+    "fecha": "2026-11-12",
+    "dia_semana": "Jueves",
+    "fecha_corta": "12/11",
+    "t_max": "23",
+    "t_min": "14",
+    "icono": "🌧️",
+    "descripcion": "Intervalos nubosos con lluvia escasa",
+    "lluvia": "100%",
+    "viento": "O 15 km/h",
     "uv": "3"
   },
   "semana": [
-    {
-      "fecha": "2026-11-11",
-      "dia_semana": "Miércoles",
-      "fecha_corta": "11/11",
-      "t_max": "20",
-      "t_min": "16",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "0%",
-      "viento": "Flojo",
-      "uv": "3"
-    },
     {
       "fecha": "2026-11-12",
       "dia_semana": "Jueves",
@@ -97,7 +85,7 @@
       "descripcion": "Muy nuboso con lluvia",
       "lluvia": "70%",
       "viento": "SO 15 km/h",
-      "uv": ""
+      "uv": "2"
     },
     {
       "fecha": "2026-11-17",
@@ -117,15 +105,15 @@
       "id": "ropa",
       "icono": "🧺",
       "titulo": "Tender la ropa",
-      "estado": "Aceptable",
-      "detalle": "Vigilar nubosidad por la tarde"
+      "estado": "Desaconsejado",
+      "detalle": "Riesgo de precipitaciones"
     },
     {
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Muy recomendado",
-      "detalle": "Cielo limpio y sin calima"
+      "estado": "Espera unos días",
+      "detalle": "Posible barro o lluvia"
     },
     {
       "id": "deporte",
@@ -146,43 +134,43 @@
     }
   ],
   "sol_luna": {
-    "orto": "07:52 h",
-    "ocaso": "18:13 h",
-    "horas_luz": "10h 21m",
-    "fase_luna": "Luna Nueva (3%)",
-    "icono_luna": "🌑"
+    "orto": "07:53 h",
+    "ocaso": "18:12 h",
+    "horas_luz": "10h 19m",
+    "fase_luna": "Luna Creciente (8%)",
+    "icono_luna": "🌒"
   },
   "embalses": {
     "cuenca": "Guadalhorce-Limites",
     "fuente": "SAIH Hidrosur (Junta de Andalucía)",
     "fuente_url": "https://www.redhidrosurmedioambiente.es/saih/informe/embalses",
     "total_capacidad_hm3": 403.1,
-    "total_embalsado_hm3": 310.2,
-    "porcentaje": "77.0%",
+    "total_embalsado_hm3": 311.4,
+    "porcentaje": "77.3%",
     "pantanos": [
       {
         "nombre": "Conde de Guadalhorce",
         "capacidad": "66.5 hm³",
-        "embalsado": "38.3 hm³",
-        "porcentaje": "57.7%"
+        "embalsado": "38.4 hm³",
+        "porcentaje": "57.8%"
       },
       {
         "nombre": "Embalse del Guadalhorce",
         "capacidad": "125.7 hm³",
-        "embalsado": "102.7 hm³",
-        "porcentaje": "81.7%"
+        "embalsado": "102.8 hm³",
+        "porcentaje": "81.8%"
       },
       {
         "nombre": "Guadalteba",
         "capacidad": "153.3 hm³",
-        "embalsado": "143.1 hm³",
-        "porcentaje": "93.3%"
+        "embalsado": "143.3 hm³",
+        "porcentaje": "93.5%"
       },
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "26.1 hm³",
-        "porcentaje": "45.4%"
+        "embalsado": "26.9 hm³",
+        "porcentaje": "46.7%"
       }
     ]
   }

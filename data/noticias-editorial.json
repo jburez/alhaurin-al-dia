@@ -296,6 +296,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=6pCC2iPS8sQ"
   },
+  "guid:atv-alhaurin-youtube:yt:video:6t5KvMDMUNI": {
+    "ai_attempts": 1,
+    "content_hash": "a5cb71d62f57a1b929df1fe595a7297e8c2b8c4b",
+    "date_modified": null,
+    "date_published": "2026-11-12T12:43:22+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del jueves 12 de noviembre de 2026 en el Informativo de ATV. 1. NUEVAS LUMINARIAS El Ayuntamiento instala nuevas luminarias en Ronda Norte de Villa del Guadalhorce en las que ha invertido 30.000 euros.\n\nLa nueva instalación viene a corregir los problemas de oscuridad que sufría esta parte de la pedanía. 2. INCENDIO EN KIOSCO Un incendio calcina el kiosco Sandrita, en la avenida Gerald Brenan. La intervención de Policía Local y Servicios Operativos evitó que las llamas alcanzaran el kiosco anexo.\n\nNo hubo daños personales. 3. CONCURSO CARTEL CARNAVAL 2027 El área de Fiestas del Ayuntamiento convoca un concurso para elegir el cartel anunciador del Carnaval 2027. Los participantes deben ser mayores de edad y podrán presentar su obra hasta el 3 de diciembre. 4.",
+      "descripcion": "1. NUEVAS LUMINARIAS El Ayuntamiento instala nuevas luminarias en Ronda Norte de Villa del Guadalhorce en las que ha invertido 30.000 euros. La nueva instalación viene a corregir los problemas de oscuridad que sufría esta parte.",
+      "seo_keywords": [],
+      "titulo": "Nuevas luminarias el ayuntamiento instala nuevas luminarias en ronda norte de villa"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-6t5kvmdmuni-86412ce3",
+    "last_ai_attempt": "2026-11-12T18:06:36.282111+00:00",
+    "pagina": "noticias/nuevas-luminarias-el-ayuntamiento-instala-nuevas-luminarias-en-ronda-norte-de-villa.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=6t5KvMDMUNI"
+  },
   "guid:atv-alhaurin-youtube:yt:video:7IlwOixSy2s": {
     "ai_attempts": 1,
     "content_hash": "910e9b9c808386e06cf7948edd17835ff168b146",
@@ -1092,6 +1111,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=MP6uKI0KlDU"
   },
+  "guid:atv-alhaurin-youtube:yt:video:Mb5YtCJEN90": {
+    "ai_attempts": 1,
+    "content_hash": "1afdd25af9adf157dce0a10777d66cba6e0aece8",
+    "date_modified": null,
+    "date_published": "2026-11-12T15:00:08+00:00",
+    "editorial": {
+      "categoria": "Sucesos",
+      "cuerpo": "Con motivo del Día Mundial en Recuerdo a las Víctimas de Accidentes de Tráfico, el pasado 9 de novembre, en el IES Antonio Gala, se realizó un acto dirigido a laso alumnos del segundo curso del ciclo formativo medio y superior sobre los terribles siniestros de tráfico y sus consecuencias, organizado por el área de Educación junto a la policía local, bomberos y la DGT.",
+      "descripcion": "Con motivo del Día Mundial en Recuerdo a las Víctimas de Accidentes de Tráfico, el pasado 9 de novembre, en el IES Antonio Gala, se realizó un acto dirigido a laso alumnos del segundo curso del ciclo formativo medio y superior.",
+      "seo_keywords": [],
+      "titulo": "Día Mundial en Recuerdo a las Víctimas de Accidentes de Tráfico 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-mb5ytcjen90-7fb3c8f7",
+    "last_ai_attempt": "2026-11-12T18:06:18.905049+00:00",
+    "pagina": "noticias/dia-mundial-en-recuerdo-a-las-victimas-de-accidentes-de-trafico-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=Mb5YtCJEN90"
+  },
   "guid:atv-alhaurin-youtube:yt:video:MkcdVdnPPoQ": {
     "ai_attempts": 4,
     "content_hash": "8cbb579ccc16f98a44b7e2788259793ee94534d1",
@@ -1268,7 +1306,7 @@
     "source_url": "https://www.youtube.com/watch?v=Pq3plTnwkog"
   },
   "guid:atv-alhaurin-youtube:yt:video:PtkCYBIxwK4": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "b269af6a77c85f70641054a7d1822616da18c748",
     "date_modified": null,
     "date_published": "2026-11-11T15:30:00+00:00",
@@ -1281,7 +1319,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ptkcybixwk4-b5f5a998",
-    "last_ai_attempt": "2026-11-12T09:45:12.143693+00:00",
+    "last_ai_attempt": "2026-11-12T18:06:52.738562+00:00",
     "pagina": "noticias/iv-gala-dia-mundial-del-flamenco-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=PtkCYBIxwK4"
@@ -1664,7 +1702,7 @@
     "source_url": "https://www.youtube.com/watch?v=aBLHzYGwsKI"
   },
   "guid:atv-alhaurin-youtube:yt:video:aV-RBdPkEss": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "c62dcceccde2719dd18a0ac1e76cd8a5504c6277",
     "date_modified": null,
     "date_published": "2026-11-11T12:47:33+00:00",
@@ -1677,7 +1715,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-av-rbdpkess-16cb1268",
-    "last_ai_attempt": "2026-11-12T09:45:30.862319+00:00",
+    "last_ai_attempt": "2026-11-12T18:07:12.606048+00:00",
     "pagina": "noticias/huelga-general-la-huelga-general-convocada-por-distintas-organizaciones-sindicales.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=aV-RBdPkEss"
@@ -3496,7 +3534,7 @@
     "source_url": "https://alhaurinelgrande.es/activacion-del-plan-de-emergencias-municipal-por-la-alerta-naranja/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225125": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "ae969f2d023b4f972519ead450de988ddae30663",
     "date_modified": null,
     "date_published": "2026-11-11T12:28:14+00:00",
@@ -3509,7 +3547,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22512-2b416b59",
-    "last_ai_attempt": "2026-11-12T09:37:18.271822+00:00",
+    "last_ai_attempt": "2026-11-12T18:04:14.310798+00:00",
     "pagina": "noticias/concesion-de-becas-a-deportistas-locales.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/concesion-de-becas-a-deportistas-locales/"
@@ -4523,7 +4561,7 @@
     "source_url": "https://fedelhorce.es/convocatoria-plan-i-oportunidad-2026/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=262003": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "014be186f492a3b09c5c28835594490ea6d613c9",
     "date_modified": null,
     "date_published": "2026-11-11T09:36:21+00:00",
@@ -4536,7 +4574,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-262003-22501922",
-    "last_ai_attempt": "2026-11-12T09:48:10.320134+00:00",
+    "last_ai_attempt": "2026-11-12T18:09:01.167922+00:00",
     "pagina": "noticias/el-cca-de-alhaurin-el-grande-recibe-la-mencion-especial-del-premio-nacional-de-comercio.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/el-cca-de-alhaurin-el-grande-recibe-la-mencion-especial-del-premio-nacional-de-comercio-interior-2026/"
@@ -7603,5 +7641,81 @@
     "pagina": "noticias/segundo-domingo-de-mulliores-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/segundo-domingo-de-mulliores-2026-rezo-del-rosario-de-la-aurora/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50743": {
+    "ai_attempts": 1,
+    "content_hash": "4ca6767d3d664102006655828ad8fbf961a5e8fe",
+    "date_modified": null,
+    "date_published": "2026-11-12T10:55:49+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Alhaurín el Grande volvió a celebrar Halloween con una tarde-noche repleta de terror, diversión y actividades para toda la familia. El exterior de la Biblioteca Municipal acogió este encuentro organizado por la Concejalía de Fiestas, que tuvo que aplazarse debido al luto oficial.\n\nEl pasaje del terror, los talleres infantiles, los hinchables, la animación y La entrada Halloween 2026 en Alhaurín el Grande aparece en RTV Alhaurín el Grande.",
+      "descripcion": "Alhaurín el Grande volvió a celebrar Halloween con una tarde-noche repleta de terror, diversión y actividades para toda la familia. El exterior de la Biblioteca Municipal acogió este encuentro organizado por la Concejalía de.",
+      "seo_keywords": [],
+      "titulo": "Halloween 2026 en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50743-61e0b9c0",
+    "last_ai_attempt": "2026-11-12T18:05:55.555576+00:00",
+    "pagina": "noticias/halloween-2026-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/halloween-2026-en-alhaurin-el-grande/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50746": {
+    "ai_attempts": 1,
+    "content_hash": "ae8e1f1b897c70f82936ec62ae335e4f6016ff20",
+    "date_modified": null,
+    "date_published": "2026-11-12T11:01:03+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La Casa de la Cultura abrió sus puertas a la pintura con la inauguración de la exposición “El principio”, una muestra que recoge los trabajos y la evolución artística de las alumnas del estudio de pintura Atelier Marianne.\n\nLa directora del estudio, Marianne Praet, presentó esta exposición acompañada de sus alumnas, poniendo en valor el La entrada La Recacha | Inauguración de la exposición «El princpio» por Atelier Marianne aparece en RTV Alhaurín el Grande.",
+      "descripcion": "La Casa de la Cultura abrió sus puertas a la pintura con la inauguración de la exposición “El principio”, una muestra que recoge los trabajos y la evolución artística de las alumnas del estudio de pintura Atelier Marianne. La.",
+      "seo_keywords": [],
+      "titulo": "Inauguración de la exposición «El princpio» por Atelier Marianne"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50746-1a29de3d",
+    "last_ai_attempt": "2026-11-12T18:05:35.367700+00:00",
+    "pagina": "noticias/inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50750": {
+    "ai_attempts": 1,
+    "content_hash": "fc2f3bb84f37fe9b9b17ffd8de5da9c8ebdc74a1",
+    "date_modified": null,
+    "date_published": "2026-11-12T11:04:01+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La obra fotográfica de Gustavo Thörlichen protagoniza una nueva exposición en Alhaurín el Grande que permitirá descubrir una selecicón de imágenes del artista hasta ahora inéditas.",
+      "descripcion": "La obra fotográfica de Gustavo Thörlichen protagoniza una nueva exposición en Alhaurín el Grande que permitirá descubrir una selecicón de imágenes del artista hasta ahora inéditas. Se trata de la primera muestra centrada.",
+      "seo_keywords": [],
+      "titulo": "Inauguración de la exposición «Gustavo Thörlichen a través del objetivo»"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50750-195e22b5",
+    "last_ai_attempt": "2026-11-12T18:05:16.345840+00:00",
+    "pagina": "noticias/inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50753": {
+    "ai_attempts": 1,
+    "content_hash": "26c9e02e1caa09ddbcd6db4b685379ac3923c7be",
+    "date_modified": null,
+    "date_published": "2026-11-12T11:09:09+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La Biblioteca Municipal Ildefonso Marzo acogió el pasado 6 de noviembre la IV Gala del Flamenco de Alhaurín el Grande, organizada por el Área de Cultura y la Peña Unión Flamenca Alhaurina con motivo del Día Internacional del Flamenco.\n\nLa cita, presentada por Fernando Santos, contó con las intervenciones de Antonia Moreno, presidenta de la La entrada IV Gala Día Mundial del Flamenco 2026 aparece en RTV Alhaurín el Grande.",
+      "descripcion": "La Biblioteca Municipal Ildefonso Marzo acogió el pasado 6 de noviembre la IV Gala del Flamenco de Alhaurín el Grande, organizada por el Área de Cultura y la Peña Unión Flamenca Alhaurina con motivo del Día Internacional del.",
+      "seo_keywords": [],
+      "titulo": "IV Gala Día Mundial del Flamenco 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50753-7885b446",
+    "last_ai_attempt": "2026-11-12T18:04:58.287436+00:00",
+    "pagina": "noticias/iv-gala-dia-mundial-del-flamenco-2026-2.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/iv-gala-dia-mundial-del-flamenco-2026/"
   }
 }

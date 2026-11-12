@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-11-12T22:30:15.618Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 181 eventos próximos.",
+  "actualizado": "2026-11-13T00:23:23.970674+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 178 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-9357",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "Festival 🎉🎶 Gastrolatino 🇨🇺 🇦🇷 🇨🇴 🇧🇷 🇩🇴 🇪🇨 🇨🇱 🇲🇽",
-      "descripcion": "Música, Baile y Gastronomía Del 10 al 13 de octubre, la zona de la caseta de la Juventud del Recinto Ferial de Alhaurín el Grande se convertirá en el epicentro de la música y la gastronomía latina ...",
-      "lugar": "",
-      "inicio": "2026-10-13T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/festival-%f0%9f%8e%89%f0%9f%8e%b6-gastrolatino-%f0%9f%87%a8%f0%9f%87%ba-%f0%9f%87%a6%f0%9f%87%b7-%f0%9f%87%a8%f0%9f%87%b4-%f0%9f%87%a7%f0%9f%87%b7-%f0%9f%87%a9%f0%9f%87%b4-%f0%9f%87%aa%f0%9f%87%a8-4/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-8647",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Campamento 🫟 Funtástico",
-      "descripcion": "13 DE OCTUBRE, NO HAY COLE PERO LAS PUERTAS DE FUNTÁSTICO ESTAN ABIERTAS!!👏🏼👏🏼 RESERVA TU PLAZA📱",
-      "lugar": "",
-      "inicio": "2026-10-13T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/campamento-funtastico/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-13733",
       "tipo": "Gastronomía",
@@ -2699,21 +2670,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

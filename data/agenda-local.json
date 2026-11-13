@@ -1,22 +1,8 @@
 {
-  "actualizado": "2026-11-13T23:03:34.190Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 190 eventos próximos.",
+  "actualizado": "2026-11-14T00:24:44.431483+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 188 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-13733",
-      "tipo": "Gastronomía",
-      "icono": "🍽️",
-      "titulo": "Excurción 🚌 La Alcazaba de Málaga",
-      "descripcion": "🚍 La concejala de @culturalhaurin Marina Maldonado y el director del CPA La Chaparra presentan la excursión cultural a La Alcazaba de Málaga que han organizado en conjunto para conmemorar el Día In...",
-      "lugar": "",
-      "inicio": "2026-10-14T09:45:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/excurcion-%f0%9f%9a%8c-la-alcazaba-de-malaga/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-13716",
       "tipo": "Deportes",
@@ -2834,21 +2820,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

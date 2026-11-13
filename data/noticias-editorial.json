@@ -297,7 +297,7 @@
     "source_url": "https://www.youtube.com/watch?v=6pCC2iPS8sQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:6t5KvMDMUNI": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "a5cb71d62f57a1b929df1fe595a7297e8c2b8c4b",
     "date_modified": null,
     "date_published": "2026-11-12T12:43:22+00:00",
@@ -310,7 +310,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-6t5kvmdmuni-86412ce3",
-    "last_ai_attempt": "2026-11-12T18:06:36.282111+00:00",
+    "last_ai_attempt": "2026-11-13T09:24:40.643384+00:00",
     "pagina": "noticias/nuevas-luminarias-el-ayuntamiento-instala-nuevas-luminarias-en-ronda-norte-de-villa.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=6t5KvMDMUNI"
@@ -1112,7 +1112,7 @@
     "source_url": "https://www.youtube.com/watch?v=MP6uKI0KlDU"
   },
   "guid:atv-alhaurin-youtube:yt:video:Mb5YtCJEN90": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "1afdd25af9adf157dce0a10777d66cba6e0aece8",
     "date_modified": null,
     "date_published": "2026-11-12T15:00:08+00:00",
@@ -1125,7 +1125,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-mb5ytcjen90-7fb3c8f7",
-    "last_ai_attempt": "2026-11-12T18:06:18.905049+00:00",
+    "last_ai_attempt": "2026-11-13T09:24:23.492396+00:00",
     "pagina": "noticias/dia-mundial-en-recuerdo-a-las-victimas-de-accidentes-de-trafico-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Mb5YtCJEN90"
@@ -1306,7 +1306,7 @@
     "source_url": "https://www.youtube.com/watch?v=Pq3plTnwkog"
   },
   "guid:atv-alhaurin-youtube:yt:video:PtkCYBIxwK4": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "b269af6a77c85f70641054a7d1822616da18c748",
     "date_modified": null,
     "date_published": "2026-11-11T15:30:00+00:00",
@@ -1319,7 +1319,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ptkcybixwk4-b5f5a998",
-    "last_ai_attempt": "2026-11-12T18:06:52.738562+00:00",
+    "last_ai_attempt": "2026-11-13T09:24:58.092417+00:00",
     "pagina": "noticias/iv-gala-dia-mundial-del-flamenco-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=PtkCYBIxwK4"
@@ -3534,7 +3534,7 @@
     "source_url": "https://alhaurinelgrande.es/activacion-del-plan-de-emergencias-municipal-por-la-alerta-naranja/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225125": {
-    "ai_attempts": 4,
+    "ai_attempts": 5,
     "content_hash": "ae969f2d023b4f972519ead450de988ddae30663",
     "date_modified": null,
     "date_published": "2026-11-11T12:28:14+00:00",
@@ -3547,7 +3547,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22512-2b416b59",
-    "last_ai_attempt": "2026-11-12T18:04:14.310798+00:00",
+    "last_ai_attempt": "2026-11-13T09:22:20.722076+00:00",
     "pagina": "noticias/concesion-de-becas-a-deportistas-locales.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/concesion-de-becas-a-deportistas-locales/"
@@ -5225,7 +5225,7 @@
     "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "45a7b52e37561f1e5dc8a5d2bd531ccd60c927d9",
     "date_modified": null,
     "date_published": "2026-11-12T18:55:10+00:00",
@@ -5238,7 +5238,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-presidente-diputacion-in-899c10b0",
-    "last_ai_attempt": "2026-11-13T01:09:30.910081+00:00",
+    "last_ai_attempt": "2026-11-13T09:29:52.733792+00:00",
     "pagina": "noticias/el-presidente-de-la-diputacion-insiste-en-llevar-el-metro-hasta-el-rincon-de-la-victoria.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html"
@@ -7662,7 +7662,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/segundo-domingo-de-mulliores-2026-rezo-del-rosario-de-la-aurora/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50743": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "4ca6767d3d664102006655828ad8fbf961a5e8fe",
     "date_modified": null,
     "date_published": "2026-11-12T10:55:49+00:00",
@@ -7675,13 +7675,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50743-61e0b9c0",
-    "last_ai_attempt": "2026-11-13T01:04:35.958087+00:00",
+    "last_ai_attempt": "2026-11-13T09:24:04.060030+00:00",
     "pagina": "noticias/halloween-2026-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/halloween-2026-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50746": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "ae8e1f1b897c70f82936ec62ae335e4f6016ff20",
     "date_modified": null,
     "date_published": "2026-11-12T11:01:03+00:00",
@@ -7694,13 +7694,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50746-1a29de3d",
-    "last_ai_attempt": "2026-11-13T01:04:16.622170+00:00",
+    "last_ai_attempt": "2026-11-13T09:23:44.996138+00:00",
     "pagina": "noticias/inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50750": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "fc2f3bb84f37fe9b9b17ffd8de5da9c8ebdc74a1",
     "date_modified": null,
     "date_published": "2026-11-12T11:04:01+00:00",
@@ -7713,13 +7713,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50750-195e22b5",
-    "last_ai_attempt": "2026-11-13T01:03:59.323344+00:00",
+    "last_ai_attempt": "2026-11-13T09:23:27.674356+00:00",
     "pagina": "noticias/inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50753": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "26c9e02e1caa09ddbcd6db4b685379ac3923c7be",
     "date_modified": null,
     "date_published": "2026-11-12T11:09:09+00:00",
@@ -7732,7 +7732,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50753-7885b446",
-    "last_ai_attempt": "2026-11-13T01:03:42.619802+00:00",
+    "last_ai_attempt": "2026-11-13T09:23:08.588976+00:00",
     "pagina": "noticias/iv-gala-dia-mundial-del-flamenco-2026-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/iv-gala-dia-mundial-del-flamenco-2026/"

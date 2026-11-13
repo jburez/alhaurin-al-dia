@@ -647,7 +647,7 @@
     "source_url": "https://www.youtube.com/watch?v=GLHR25rKyis"
   },
   "guid:atv-alhaurin-youtube:yt:video:GMtJUUQGtog": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "955849237a83827cb78c0f20227c78d091200b4d",
     "date_modified": null,
     "date_published": "2026-11-13T15:30:09+00:00",
@@ -660,7 +660,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-gmtjuuqgtog-0304769c",
-    "last_ai_attempt": "2026-11-13T17:45:16.103411+00:00",
+    "last_ai_attempt": "2026-11-13T23:28:41.700966+00:00",
     "pagina": "noticias/a-pie-de-campo-programa-5-3-temporada.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=GMtJUUQGtog"
@@ -2285,7 +2285,7 @@
     "source_url": "https://www.youtube.com/watch?v=q0SdzQULeeg"
   },
   "guid:atv-alhaurin-youtube:yt:video:qCw5j7UGBqo": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "361e40a3b608314156b28f7f13754f652650636d",
     "date_modified": null,
     "date_published": "2026-11-13T14:26:08+00:00",
@@ -2298,7 +2298,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-qcw5j7ugbqo-9c913ea6",
-    "last_ai_attempt": "2026-11-13T17:45:32.721815+00:00",
+    "last_ai_attempt": "2026-11-13T23:28:59.065757+00:00",
     "pagina": "noticias/el-ayuntamiento-en-cordoba-el-ayuntamiento-se-desplazo-ayer-hasta-cordoba-para-participar.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=qCw5j7UGBqo"
@@ -3572,7 +3572,7 @@
     "source_url": "https://alhaurinelgrande.es/activacion-del-plan-de-emergencias-municipal-por-la-alerta-naranja/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225125": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "ae969f2d023b4f972519ead450de988ddae30663",
     "date_modified": null,
     "date_published": "2026-11-11T12:28:14+00:00",
@@ -3585,13 +3585,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22512-2b416b59",
-    "last_ai_attempt": "2026-11-13T09:22:20.722076+00:00",
+    "last_ai_attempt": "2026-11-13T23:27:20.329550+00:00",
     "pagina": "noticias/concesion-de-becas-a-deportistas-locales.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/concesion-de-becas-a-deportistas-locales/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225139": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "60aded7886bfc332a7b1089b3c95e5af640e887b",
     "date_modified": null,
     "date_published": "2026-11-13T09:41:38+00:00",
@@ -3604,7 +3604,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22513-7ca9d47d",
-    "last_ai_attempt": "2026-11-13T17:37:17.391319+00:00",
+    "last_ai_attempt": "2026-11-13T23:27:03.776680+00:00",
     "pagina": "noticias/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala/"
@@ -4637,7 +4637,7 @@
     "source_url": "https://fedelhorce.es/el-cca-de-alhaurin-el-grande-recibe-la-mencion-especial-del-premio-nacional-de-comercio-interior-2026/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=262057": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "d590d1f35a3b8d4a27b82bd2ddc89dccb4cc647e",
     "date_modified": null,
     "date_published": "2026-11-13T10:19:56+00:00",
@@ -4650,7 +4650,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-262057-8dc699d3",
-    "last_ai_attempt": "2026-11-13T17:47:59.604524+00:00",
+    "last_ai_attempt": "2026-11-13T23:31:07.966609+00:00",
     "pagina": "noticias/las-palancas-que-anaden-un-cero-a-tus-resultados.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-alora-las-palancas-que-anaden-un-cero-a-tus-resultados/"

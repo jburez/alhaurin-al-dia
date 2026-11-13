@@ -72,6 +72,30 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266627nombramientocomisióndeval",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6627 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: INGENIERO/A (ACTUALIZADO)]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b4656a72-53e0-40e2-86a1-7d8c1d6f872c",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-12T16:49:16.366294+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266626nombramientocomisióndeval",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6626 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A (ACTUALIZADO)]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6cd64595-763a-4f8d-b828-b5d6d01c21df",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-12T16:49:16.366254+01:00"
+  },
+  {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266589nombramcomisservicesperan",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -564,28 +588,28 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266626nombramientocomisióndeval",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266655nombramientocomisióndeval",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
     "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6626 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A (ACTUALIZADO)]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6cd64595-763a-4f8d-b828-b5d6d01c21df",
+    "resumen": "DECRETO 2026-6655 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A ACTUALIZADO]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/c12698ef-d76d-47e0-ae92-761cee31dc3b",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-11-12T16:49:16.366254+01:00"
+    "detectado_en": "2026-11-13T16:09:55.217535+01:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266627nombramientocomisióndeval",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266656nombramientocomisióndeval",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
     "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6627 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: INGENIERO/A (ACTUALIZADO)]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b4656a72-53e0-40e2-86a1-7d8c1d6f872c",
+    "resumen": "DECRETO 2026-6656 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: INGENIERO/A (ACTUALIZADO)]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/32e4058e-a4b7-454f-90b5-9a9056140ee8",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-11-12T16:49:16.366294+01:00"
+    "detectado_en": "2026-11-13T16:09:55.217588+01:00"
   },
   {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
@@ -1078,6 +1102,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Concesión de Subvenciones",
     "detectado_en": "2026-11-04T16:12:23.924101+01:00"
+  },
+  {
+    "id": "bop-20261113-04148-2026",
+    "numero_edicto": "4148/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Para general conocimiento se hace público por esta Alcaldía, que mediante Decreto número 2026-6055, de 19 de octubre de 2026, ha adoptado la siguiente resolución: Como consecuencia de la ausencia del titular de la Alcaldía, por encontrarse fuera de la localidad, del 22 al 26 de octubre de 2026 (ambos inclusive), resulta necesario formalizar expresamente la designación de la persona que va a realizar la sustitución. De conformidad...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261113-04148-2026&control=3127717793",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-11-13",
+    "detectado_en": "2026-11-13T15:09:52+00:00"
   },
   {
     "id": "bop-20261112-04356-2026",

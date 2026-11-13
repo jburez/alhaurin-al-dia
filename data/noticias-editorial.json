@@ -297,7 +297,7 @@
     "source_url": "https://www.youtube.com/watch?v=6pCC2iPS8sQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:6t5KvMDMUNI": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "a5cb71d62f57a1b929df1fe595a7297e8c2b8c4b",
     "date_modified": null,
     "date_published": "2026-11-12T12:43:22+00:00",
@@ -310,7 +310,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-6t5kvmdmuni-86412ce3",
-    "last_ai_attempt": "2026-11-13T09:24:40.643384+00:00",
+    "last_ai_attempt": "2026-11-13T17:46:09.403741+00:00",
     "pagina": "noticias/nuevas-luminarias-el-ayuntamiento-instala-nuevas-luminarias-en-ronda-norte-de-villa.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=6t5KvMDMUNI"
@@ -645,6 +645,25 @@
     "pagina": "noticias/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=GLHR25rKyis"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:GMtJUUQGtog": {
+    "ai_attempts": 1,
+    "content_hash": "955849237a83827cb78c0f20227c78d091200b4d",
+    "date_modified": null,
+    "date_published": "2026-11-13T15:30:09+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "descripcion": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "seo_keywords": [],
+      "titulo": "A pie de campo - Programa 5 (3ª Temporada)"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-gmtjuuqgtog-0304769c",
+    "last_ai_attempt": "2026-11-13T17:45:16.103411+00:00",
+    "pagina": "noticias/a-pie-de-campo-programa-5-3-temporada.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=GMtJUUQGtog"
   },
   "guid:atv-alhaurin-youtube:yt:video:HDaZNki3tTc": {
     "ai_attempts": 0,
@@ -1112,7 +1131,7 @@
     "source_url": "https://www.youtube.com/watch?v=MP6uKI0KlDU"
   },
   "guid:atv-alhaurin-youtube:yt:video:Mb5YtCJEN90": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "1afdd25af9adf157dce0a10777d66cba6e0aece8",
     "date_modified": null,
     "date_published": "2026-11-12T15:00:08+00:00",
@@ -1125,7 +1144,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-mb5ytcjen90-7fb3c8f7",
-    "last_ai_attempt": "2026-11-13T09:24:23.492396+00:00",
+    "last_ai_attempt": "2026-11-13T17:45:50.646420+00:00",
     "pagina": "noticias/dia-mundial-en-recuerdo-a-las-victimas-de-accidentes-de-trafico-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=Mb5YtCJEN90"
@@ -2265,6 +2284,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=q0SdzQULeeg"
   },
+  "guid:atv-alhaurin-youtube:yt:video:qCw5j7UGBqo": {
+    "ai_attempts": 1,
+    "content_hash": "361e40a3b608314156b28f7f13754f652650636d",
+    "date_modified": null,
+    "date_published": "2026-11-13T14:26:08+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del viernes 13 de noviembre de 2026 en el Informativo de ATV. 1. EL AYUNTAMIENTO EN CÓRDOBA El Ayuntamiento se desplazó ayer hasta Córdoba para participar en un acto de la Fundación Antonio Gala en el que se dio a conocer el patrimonio cultural, turístico y gastronómico de Alhaurín el Grande. 2.\n\nPEGADA DE CARTELES Las formaciones políticas con representación en Alhaurín el Grande han iniciado la campaña electoral para los comicios generales del 29 de noviembre con los tradicionales actos de pegada de carteles y la petición del voto a sus respectivas candidaturas. 3.\n\nGALA UN SÍ POR LA VIDA El teatro municipal albergó la décima gala benéfica de la asociación “Un sí por la vida” para conmemorar el día mundial de la lucha contra el cáncer de mama. La velada contó con el piano de Joaquín Pareja-Obregon, el baile de Lourdes Rodríguez, y el cante y humor del Morta. 4.",
+      "descripcion": "1. EL AYUNTAMIENTO EN CÓRDOBA El Ayuntamiento se desplazó ayer hasta Córdoba para participar en un acto de la Fundación Antonio Gala en el que se dio a conocer el patrimonio cultural, turístico y gastronómico de Alhaurín el.",
+      "seo_keywords": [],
+      "titulo": "El ayuntamiento en córdoba el ayuntamiento se desplazó ayer hasta córdoba para participar"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-qcw5j7ugbqo-9c913ea6",
+    "last_ai_attempt": "2026-11-13T17:45:32.721815+00:00",
+    "pagina": "noticias/el-ayuntamiento-en-cordoba-el-ayuntamiento-se-desplazo-ayer-hasta-cordoba-para-participar.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=qCw5j7UGBqo"
+  },
   "guid:atv-alhaurin-youtube:yt:video:rkzRvtsKvfM": {
     "ai_attempts": 3,
     "content_hash": "cea24a3037a07af4a205a93e9eb5d07dff2f8033",
@@ -3401,7 +3439,7 @@
     "source_url": "https://alhaurinelgrande.es/finalizan-las-obras-de-asfaltado-de-los-caminos-de-la-trocha-y-arroyo-de-las-pontezuelas-que-ya-estan-abiertos-al-trafico/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225046": {
-    "ai_attempts": 22,
+    "ai_attempts": 23,
     "content_hash": "0150ffd7e500f56e0049e8b20af9f70aea82dbe6",
     "date_modified": null,
     "date_published": "2026-10-30T11:44:49+00:00",
@@ -3414,13 +3452,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22504-5bcee584",
-    "last_ai_attempt": "2026-11-13T01:01:15.546273+00:00",
+    "last_ai_attempt": "2026-11-13T17:39:49.735418+00:00",
     "pagina": "noticias/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-impulsa-un-programa-de-formacion-para-mejorar-la-empleabilidad-de-las-mujeres/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225052": {
-    "ai_attempts": 22,
+    "ai_attempts": 23,
     "content_hash": "2c75804dcda71a8fd9b1e6426b25cafd22f086a2",
     "date_modified": null,
     "date_published": "2026-10-30T12:37:11+00:00",
@@ -3433,13 +3471,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22505-19ba99bc",
-    "last_ai_attempt": "2026-11-13T01:00:59.587732+00:00",
+    "last_ai_attempt": "2026-11-13T17:39:30.722326+00:00",
     "pagina": "noticias/en-alhaurin-el-grande-se-imparte-un-curso-de-auxiliar-de-almacen-del-programa-enruta.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/en-alhaurin-el-grande-se-imparte-un-curso-de-auxiliar-de-almacen-del-programa-enruta-para-mejorar-la-insercion-laboral/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225058": {
-    "ai_attempts": 16,
+    "ai_attempts": 17,
     "content_hash": "ebf0bbf7b344daf79af2ffb9a05afae2d0b6bc5d",
     "date_modified": null,
     "date_published": "2026-11-03T11:49:17+00:00",
@@ -3452,13 +3490,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22505-6258cd93",
-    "last_ai_attempt": "2026-11-13T01:00:43.590461+00:00",
+    "last_ai_attempt": "2026-11-13T17:39:10.963664+00:00",
     "pagina": "noticias/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225071": {
-    "ai_attempts": 13,
+    "ai_attempts": 14,
     "content_hash": "ae451ad439a63f994c12b08d748efd786c687145",
     "date_modified": null,
     "date_published": "2026-11-05T11:41:30+00:00",
@@ -3471,13 +3509,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22507-117e486d",
-    "last_ai_attempt": "2026-11-13T01:00:05.669530+00:00",
+    "last_ai_attempt": "2026-11-13T17:38:34.640902+00:00",
     "pagina": "noticias/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225085": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "23018e9b2138636e168cd180bd79f629fea5dccc",
     "date_modified": null,
     "date_published": "2026-11-10T12:07:48+00:00",
@@ -3490,13 +3528,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22508-65b7cdce",
-    "last_ai_attempt": "2026-11-13T00:59:44.200859+00:00",
+    "last_ai_attempt": "2026-11-13T17:38:15.284171+00:00",
     "pagina": "noticias/el-ayuntamiento-reubica-la-actividad-formativa-en-nuevos-espacios-tras-detectar-problemas.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/la-escuela-municipal-de-musica-y-oleo-de-alhaurin-el-grande-trasladaran-sus-clases-a-nuevas-instalaciones-por-motivos-de-seguridad/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225092": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "acf41d5973250bd1c806613c9167a3accc7ae5c8",
     "date_modified": null,
     "date_published": "2026-11-10T12:26:09+00:00",
@@ -3509,13 +3547,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22509-591db295",
-    "last_ai_attempt": "2026-11-13T00:59:26.057183+00:00",
+    "last_ai_attempt": "2026-11-13T17:37:54.787893+00:00",
     "pagina": "noticias/alhaurin-el-grande-descubre-la-faceta-fotografica-de-gustavo-thorlichen-con-una-nueva.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-descubre-la-faceta-fotografica-de-gustavo-thorlichen-con-una-nueva-exposicion/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225103": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "e84f3b147de79dc3f9e8a7fd924f326d237d0b64",
     "date_modified": null,
     "date_published": "2026-11-11T07:37:54+00:00",
@@ -3528,7 +3566,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22510-dde63b57",
-    "last_ai_attempt": "2026-11-13T00:59:07.528260+00:00",
+    "last_ai_attempt": "2026-11-13T17:37:37.346449+00:00",
     "pagina": "noticias/activacion-del-plan-de-emergencias-municipal-por-la-alerta-naranja.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/activacion-del-plan-de-emergencias-municipal-por-la-alerta-naranja/"
@@ -3551,6 +3589,25 @@
     "pagina": "noticias/concesion-de-becas-a-deportistas-locales.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/concesion-de-becas-a-deportistas-locales/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225139": {
+    "ai_attempts": 1,
+    "content_hash": "60aded7886bfc332a7b1089b3c95e5af640e887b",
+    "date_modified": null,
+    "date_published": "2026-11-13T09:41:38+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El Ayuntamiento pone en valor en la Fundación Antonio Gala de Córdoba la vinculación del municipio con el autor a través de la Casa Museo ‘La Baltasara’ y presenta una.",
+      "descripcion": "El Ayuntamiento pone en valor en la Fundación Antonio Gala de Córdoba la vinculación del municipio con el autor a través de la Casa Museo ‘La Baltasara’ y presenta una.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande promociona su legado cultural y su oferta turística en la Semana Gala"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22513-7ca9d47d",
+    "last_ai_attempt": "2026-11-13T17:37:17.391319+00:00",
+    "pagina": "noticias/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -4579,6 +4636,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/el-cca-de-alhaurin-el-grande-recibe-la-mencion-especial-del-premio-nacional-de-comercio-interior-2026/"
   },
+  "guid:fedelhorce:https://fedelhorce.es/?p=262057": {
+    "ai_attempts": 1,
+    "content_hash": "d590d1f35a3b8d4a27b82bd2ddc89dccb4cc647e",
+    "date_modified": null,
+    "date_published": "2026-11-13T10:19:56+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Aquí tienes un resumen del Juernes Innovador celebrado en Álora.",
+      "descripcion": "Aquí tienes un resumen del Juernes Innovador celebrado en Álora.",
+      "seo_keywords": [],
+      "titulo": "Las palancas que añaden un cero a tus resultados"
+    },
+    "ia_exitosa": false,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-262057-8dc699d3",
+    "last_ai_attempt": "2026-11-13T17:47:59.604524+00:00",
+    "pagina": "noticias/las-palancas-que-anaden-un-cero-a-tus-resultados.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/conclusiones-juernes-alora-las-palancas-que-anaden-un-cero-a-tus-resultados/"
+  },
   "guid:gdr-valle-del-guadalhorce:https://valledelguadalhorce.com/?p=31702": {
     "ai_attempts": 4,
     "content_hash": "68387d79a0a3ff539744fccd6165436de731c6d5",
@@ -4939,7 +5015,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34221/nuestra-real-hermandad-presente-en-el-xxi-aniversario-de-la-ume/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34232": {
-    "ai_attempts": 46,
+    "ai_attempts": 47,
     "content_hash": "e1f1080e950af5450df5296318293e8d5be42ada",
     "date_modified": null,
     "date_published": "2026-10-13T09:53:21+00:00",
@@ -4952,13 +5028,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-0324b20f",
-    "last_ai_attempt": "2026-11-13T01:03:25.818019+00:00",
+    "last_ai_attempt": "2026-11-13T17:41:45.529419+00:00",
     "pagina": "noticias/fiesta-nacional-y-festividad-de-la-virgen-del-pilar.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34232/12-de-octubre-fiesta-nacional-y-festividad-de-la-virgen-del-pilar/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34242": {
-    "ai_attempts": 31,
+    "ai_attempts": 32,
     "content_hash": "298e7e87bade3ef9623b2fb12eecda4a8dc92c0a",
     "date_modified": null,
     "date_published": "2026-10-23T08:03:58+00:00",
@@ -4971,13 +5047,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-78733a58",
-    "last_ai_attempt": "2026-11-13T01:03:08.265614+00:00",
+    "last_ai_attempt": "2026-11-13T17:41:26.160858+00:00",
     "pagina": "noticias/un-concierto-historico-a-los-pies-de-la-virgen-del-rocio.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34242/un-concierto-historico-a-los-pies-de-la-virgen-del-rocio/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34246": {
-    "ai_attempts": 26,
+    "ai_attempts": 27,
     "content_hash": "22090b344f6f02f7004cce0c6e32e9bd86227e4a",
     "date_modified": null,
     "date_published": "2026-10-26T11:37:53+00:00",
@@ -4990,13 +5066,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-5c41bef4",
-    "last_ai_attempt": "2026-11-13T01:02:51.177008+00:00",
+    "last_ai_attempt": "2026-11-13T17:41:08.588109+00:00",
     "pagina": "noticias/ultima-convocatoria-extraordinaria-para-cofrades-con-bloques-pendientes-de-superar.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34246/%f0%9d%97%a8%f0%9d%97%9f%f0%9d%97%a7%f0%9d%97%9c%f0%9d%97%a0%f0%9d%97%94-%f0%9d%97%96%f0%9d%97%a2%f0%9d%97%a1%f0%9d%97%a9%f0%9d%97%a2%f0%9d%97%96%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%a2%f0%9d%97%a5/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34256": {
-    "ai_attempts": 25,
+    "ai_attempts": 26,
     "content_hash": "28ecce094645dbf660cf555aa90b52af09eba0a5",
     "date_modified": null,
     "date_published": "2026-10-27T18:48:11+00:00",
@@ -5009,13 +5085,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-5d965395",
-    "last_ai_attempt": "2026-11-13T01:02:32.543115+00:00",
+    "last_ai_attempt": "2026-11-13T17:40:49.311578+00:00",
     "pagina": "noticias/sole-ne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34256/sole%d0%bcne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos-dia-de-todos-los-santos/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34260": {
-    "ai_attempts": 16,
+    "ai_attempts": 17,
     "content_hash": "3709b058a178d0e7647b8ce00bf9db101852abdb",
     "date_modified": null,
     "date_published": "2026-11-03T10:29:16+00:00",
@@ -5028,13 +5104,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9eca75ae",
-    "last_ai_attempt": "2026-11-13T01:02:13.077054+00:00",
+    "last_ai_attempt": "2026-11-13T17:40:31.593457+00:00",
     "pagina": "noticias/fernando-arguelles-pregonero-del-xxxv-pregon-de-la-semana-santa.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34260/fernando-arguelles-pregonero-del-xxxv-pregon-de-la-semana-santa/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34263": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "3524bc7ee7420b61fa15cfcdf834f91b279d74ac",
     "date_modified": null,
     "date_published": "2026-11-09T09:56:46+00:00",
@@ -5047,7 +5123,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-aaa6c313",
-    "last_ai_attempt": "2026-11-13T01:01:54.704587+00:00",
+    "last_ai_attempt": "2026-11-13T17:40:11.037660+00:00",
     "pagina": "noticias/sabado-legionario-en-ceuta.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34263/sabado-legionario-en-ceuta/"
@@ -5225,7 +5301,7 @@
     "source_url": "https://www.malagahoy.es/malaga/pp-acto-huevos-fritos-malaga-curso-politico-cita-urnas_0_2007829832.html"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html": {
-    "ai_attempts": 2,
+    "ai_attempts": 3,
     "content_hash": "45a7b52e37561f1e5dc8a5d2bd531ccd60c927d9",
     "date_modified": null,
     "date_published": "2026-11-12T18:55:10+00:00",
@@ -5238,7 +5314,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-presidente-diputacion-in-899c10b0",
-    "last_ai_attempt": "2026-11-13T09:29:52.733792+00:00",
+    "last_ai_attempt": "2026-11-13T17:50:57.486899+00:00",
     "pagina": "noticias/el-presidente-de-la-diputacion-insiste-en-llevar-el-metro-hasta-el-rincon-de-la-victoria.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html"
@@ -7586,7 +7662,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/sonetos-de-la-zubia-un-poemario-de-antonio-gala-al-cuidado-de-luis-cardenas-y-pedro-j-plaza/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50725": {
-    "ai_attempts": 22,
+    "ai_attempts": 23,
     "content_hash": "20ec0d739944f828d734ae69fab56dbef571134f",
     "date_modified": null,
     "date_published": "2026-10-30T09:06:08+00:00",
@@ -7599,13 +7675,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50725-6d9a930e",
-    "last_ai_attempt": "2026-11-13T01:05:51.969761+00:00",
+    "last_ai_attempt": "2026-11-13T17:44:20.601686+00:00",
     "pagina": "noticias/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/iii-encuentro-multilabores-hermandad-de-nuestra-senora-de-gracia/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50728": {
-    "ai_attempts": 16,
+    "ai_attempts": 17,
     "content_hash": "95b376015b40b9a21fbcf9a2904f6726abdf44f2",
     "date_modified": null,
     "date_published": "2026-11-03T11:32:21+00:00",
@@ -7618,13 +7694,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50728-9e798acb",
-    "last_ai_attempt": "2026-11-13T01:05:33.464634+00:00",
+    "last_ai_attempt": "2026-11-13T17:44:02.058800+00:00",
     "pagina": "noticias/concierto-coloquio-de-santiago-alonso-y-el-cirguero.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/concierto-coloquio-de-santiago-alonso-y-el-cirguero/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50737": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "a07a5b6e9394613a60dc448770dd0a4fbb5c34d3",
     "date_modified": null,
     "date_published": "2026-11-09T11:53:21+00:00",
@@ -7637,13 +7713,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50737-d09f9af6",
-    "last_ai_attempt": "2026-11-13T01:05:12.833610+00:00",
+    "last_ai_attempt": "2026-11-13T17:43:44.862828+00:00",
     "pagina": "noticias/xxxviii-milla-urbana-de-alhaurin-el-grande-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/xxxviii-milla-urbana-de-alhaurin-el-grande-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50740": {
-    "ai_attempts": 6,
+    "ai_attempts": 7,
     "content_hash": "d1c2fe8d310e8407c79abc08f5b6b42f43af80ad",
     "date_modified": null,
     "date_published": "2026-11-09T11:57:25+00:00",
@@ -7656,13 +7732,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50740-50b704c4",
-    "last_ai_attempt": "2026-11-13T01:04:54.660851+00:00",
+    "last_ai_attempt": "2026-11-13T17:43:28.001729+00:00",
     "pagina": "noticias/segundo-domingo-de-mulliores-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/segundo-domingo-de-mulliores-2026-rezo-del-rosario-de-la-aurora/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50743": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "4ca6767d3d664102006655828ad8fbf961a5e8fe",
     "date_modified": null,
     "date_published": "2026-11-12T10:55:49+00:00",
@@ -7675,13 +7751,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50743-61e0b9c0",
-    "last_ai_attempt": "2026-11-13T09:24:04.060030+00:00",
+    "last_ai_attempt": "2026-11-13T17:43:07.307598+00:00",
     "pagina": "noticias/halloween-2026-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/halloween-2026-en-alhaurin-el-grande/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50746": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "ae8e1f1b897c70f82936ec62ae335e4f6016ff20",
     "date_modified": null,
     "date_published": "2026-11-12T11:01:03+00:00",
@@ -7694,13 +7770,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50746-1a29de3d",
-    "last_ai_attempt": "2026-11-13T09:23:44.996138+00:00",
+    "last_ai_attempt": "2026-11-13T17:42:48.028013+00:00",
     "pagina": "noticias/inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50750": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "fc2f3bb84f37fe9b9b17ffd8de5da9c8ebdc74a1",
     "date_modified": null,
     "date_published": "2026-11-12T11:04:01+00:00",
@@ -7713,13 +7789,13 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50750-195e22b5",
-    "last_ai_attempt": "2026-11-13T09:23:27.674356+00:00",
+    "last_ai_attempt": "2026-11-13T17:42:28.930880+00:00",
     "pagina": "noticias/inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/la-recacha-inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50753": {
-    "ai_attempts": 3,
+    "ai_attempts": 4,
     "content_hash": "26c9e02e1caa09ddbcd6db4b685379ac3923c7be",
     "date_modified": null,
     "date_published": "2026-11-12T11:09:09+00:00",
@@ -7732,7 +7808,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50753-7885b446",
-    "last_ai_attempt": "2026-11-13T09:23:08.588976+00:00",
+    "last_ai_attempt": "2026-11-13T17:42:07.355772+00:00",
     "pagina": "noticias/iv-gala-dia-mundial-del-flamenco-2026-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/iv-gala-dia-mundial-del-flamenco-2026/"

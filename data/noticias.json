@@ -1,5 +1,24 @@
 [
     {
+        "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-58ed6333",
+        "titulo": "Festividad de Santa Cecilia 2026",
+        "titulo_original": "Festividad de Santa Cecilia 2026",
+        "descripcion": "El próximo domingo, 22 de noviembre, nuestra Hermandad celebrará la festividad de Santa Cecilia, Patrona de la Música, una conmemoración de gran arraigo en nuestra corporación y recogida en nuestros Estatutos. La jornada.",
+        "resumen": "El próximo domingo, 22 de noviembre, nuestra Hermandad celebrará la festividad de Santa Cecilia, Patrona de la Música, una conmemoración de gran arraigo en nuestra corporación y recogida en nuestros Estatutos. La jornada.",
+        "cuerpo": "El próximo domingo, 22 de noviembre, nuestra Hermandad celebrará la festividad de Santa Cecilia, Patrona de la Música, una conmemoración de gran arraigo en nuestra corporación y recogida en nuestros Estatutos. La jornada comenzará a las 09:00 horas, en la Ermita de San Sebastián, con una Solemne Eucaristía en honor a Santa Cecilia, oficiada por.",
+        "fecha": "2026-11-14T08:02:51+00:00",
+        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
+        "categoria": "Agenda Cultural",
+        "categoria_url": "categoria/agenda-cultural/",
+        "seo_keywords": [],
+        "enlace": "https://www.nuestropadrejesusnazareno.com/34273/festividad-de-santa-cecilia-2026/",
+        "url": "https://www.nuestropadrejesusnazareno.com/34273/festividad-de-santa-cecilia-2026/",
+        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
+        "prioridad": 95,
+        "requiere_revision_geografica": false,
+        "pagina": "noticias/festividad-de-santa-cecilia-2026.html"
+    },
+    {
         "id": "guid-fedelhorce-https-fedelhorce-es-p-262057-8dc699d3",
         "titulo": "Las palancas que añaden un cero a tus resultados",
         "titulo_original": "Conclusiones Juernes Álora | Las palancas que añaden un cero a tus resultados",
@@ -36,25 +55,6 @@
         "prioridad": 120,
         "requiere_revision_geografica": false,
         "pagina": "noticias/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala.html"
-    },
-    {
-        "id": "guid-malaga-hoy-https-www-malagahoy-es-malaga-presidente-diputacion-in-899c10b0",
-        "titulo": "El presidente de la Diputación insiste en llevar el metro hasta el Rincón de la Victoria",
-        "titulo_original": "El presidente de la Diputación insiste en llevar el metro hasta el Rincón de la Victoria",
-        "descripcion": "Francisco Salado ha precisado que su alternativa es el vehículo privado, mientras que la zona occidental y el Valle del Guadalhorce tienen conexión con el Cercanías Expertos y alcaldes alertan de que los problemas de movilidad.",
-        "resumen": "Francisco Salado ha precisado que su alternativa es el vehículo privado, mientras que la zona occidental y el Valle del Guadalhorce tienen conexión con el Cercanías Expertos y alcaldes alertan de que los problemas de movilidad.",
-        "cuerpo": "Francisco Salado ha precisado que su alternativa es el vehículo privado, mientras que la zona occidental y el Valle del Guadalhorce tienen conexión con el Cercanías Expertos y alcaldes alertan de que los problemas de movilidad \"no se solucionan, empe.",
-        "fecha": "2026-11-12T18:55:10+00:00",
-        "fuente": "Málaga Hoy",
-        "categoria": "Municipal",
-        "categoria_url": "categoria/municipal/",
-        "seo_keywords": [],
-        "enlace": "https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html",
-        "url": "https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html",
-        "imagen": "https://static.grupojoly.com/clip/23f470cb-2227-41de-ab68-4b24c3891cd2_source-aspect-ratio_default_0.jpg",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/el-presidente-de-la-diputacion-insiste-en-llevar-el-metro-hasta-el-rincon-de-la-victoria.html"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50750-195e22b5",
@@ -416,24 +416,5 @@
         "prioridad": 95,
         "requiere_revision_geografica": false,
         "pagina": "noticias/un-concierto-historico-a-los-pies-de-la-virgen-del-rocio.html"
-    },
-    {
-        "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-0324b20f",
-        "titulo": "FIESTA NACIONAL Y FESTIVIDAD DE LA VIRGEN DEL PILAR",
-        "titulo_original": "12 DE OCTUBRE | FIESTA NACIONAL Y FESTIVIDAD DE LA VIRGEN DEL PILAR",
-        "descripcion": "En el día de ayer, miembros de nuestra Real Hermandad asistieron a la Santa Misa de campaña celebrada en el cuartel de la Guardia Civil de Alhaurín el Grande, en honor a la Virgen del Pilar, Patrona de la Guardia Civil. La.",
-        "resumen": "En el día de ayer, miembros de nuestra Real Hermandad asistieron a la Santa Misa de campaña celebrada en el cuartel de la Guardia Civil de Alhaurín el Grande, en honor a la Virgen del Pilar, Patrona de la Guardia Civil. La.",
-        "cuerpo": "En el día de ayer, miembros de nuestra Real Hermandad asistieron a la Santa Misa de campaña celebrada en el cuartel de la Guardia Civil de Alhaurín el Grande, en honor a la Virgen del Pilar, Patrona de la Guardia Civil. La Eucaristía estuvo oficiada por el párroco de la localidad, Rvdo.\n\nD. Andrés Merino,.",
-        "fecha": "2026-10-13T09:53:21+00:00",
-        "fuente": "Hermandad Nuestro Padre Jesús Nazareno",
-        "categoria": "Fiestas y Tradiciones",
-        "categoria_url": "categoria/fiestas-y-tradiciones/",
-        "seo_keywords": [],
-        "enlace": "https://www.nuestropadrejesusnazareno.com/34232/12-de-octubre-fiesta-nacional-y-festividad-de-la-virgen-del-pilar/",
-        "url": "https://www.nuestropadrejesusnazareno.com/34232/12-de-octubre-fiesta-nacional-y-festividad-de-la-virgen-del-pilar/",
-        "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-12-at-12.51.18-3.jpeg",
-        "prioridad": 95,
-        "requiere_revision_geografica": false,
-        "pagina": "noticias/fiesta-nacional-y-festividad-de-la-virgen-del-pilar.html"
     }
 ]

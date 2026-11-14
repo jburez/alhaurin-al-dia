@@ -7,8 +7,17 @@
     <description>Actualidad local, avisos, cultura, deportes y noticias de Alhaurín el Grande (Málaga).</description>
     <language>es-ES</language>
     <copyright>© 2026 Alhaurín al Día</copyright>
-    <lastBuildDate>Sat, 14 Nov 2026 06:10:19 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 19:17:24 GMT</lastBuildDate>
     <generator>Antigravity RSS Generator</generator>
+    <item>
+      <title>Festividad de Santa Cecilia 2026</title>
+      <link>https://www.nuestropadrejesusnazareno.com/34273/festividad-de-santa-cecilia-2026/</link>
+      <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/34273/festividad-de-santa-cecilia-2026/</guid>
+      <pubDate>Sat, 14 Nov 2026 08:02:51 GMT</pubDate>
+      <description>El próximo domingo, 22 de noviembre, nuestra Hermandad celebrará la festividad de Santa Cecilia, Patrona de la Música, una conmemoración de gran arraigo en nuestra corporación y recogida en nuestros Estatutos. La jornada.</description>
+      <category>Agenda Cultural</category>
+      <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
+    </item>
     <item>
       <title>Las palancas que añaden un cero a tus resultados</title>
       <link>https://fedelhorce.es/conclusiones-juernes-alora-las-palancas-que-anaden-un-cero-a-tus-resultados/</link>
@@ -26,15 +35,6 @@
       <description>El Ayuntamiento pone en valor en la Fundación Antonio Gala de Córdoba la vinculación del municipio con el autor a través de la Casa Museo ‘La Baltasara’ y presenta una.</description>
       <category>Municipal</category>
       <dc:creator>Ayuntamiento Alhaurín el Grande</dc:creator>
-    </item>
-    <item>
-      <title>El presidente de la Diputación insiste en llevar el metro hasta el Rincón de la Victoria</title>
-      <link>https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html</link>
-      <guid isPermaLink="true">https://www.malagahoy.es/malaga/presidente-diputacion-insiste-llevar-metro-rincon-victoria_0_2008482423.html</guid>
-      <pubDate>Thu, 12 Nov 2026 18:55:10 GMT</pubDate>
-      <description>Francisco Salado ha precisado que su alternativa es el vehículo privado, mientras que la zona occidental y el Valle del Guadalhorce tienen conexión con el Cercanías Expertos y alcaldes alertan de que los problemas de movilidad.</description>
-      <category>Municipal</category>
-      <dc:creator>Málaga Hoy</dc:creator>
     </item>
     <item>
       <title>Inauguración de la exposición «Gustavo Thörlichen a través del objetivo»</title>
@@ -205,15 +205,6 @@
       <pubDate>Fri, 23 Oct 2026 08:03:58 GMT</pubDate>
       <description>La Banda de Música de nuestra Real Hermandad ofrecerá un concierto el próximo viernes 26 de febrero de 2027, en la Parroquia de Nuestra Señora de la Asunción de Almonte, ante la venerada imagen de la Virgen del Rocío, la Blanca.</description>
       <category>Agenda Cultural</category>
-      <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
-    </item>
-    <item>
-      <title>FIESTA NACIONAL Y FESTIVIDAD DE LA VIRGEN DEL PILAR</title>
-      <link>https://www.nuestropadrejesusnazareno.com/34232/12-de-octubre-fiesta-nacional-y-festividad-de-la-virgen-del-pilar/</link>
-      <guid isPermaLink="true">https://www.nuestropadrejesusnazareno.com/34232/12-de-octubre-fiesta-nacional-y-festividad-de-la-virgen-del-pilar/</guid>
-      <pubDate>Tue, 13 Oct 2026 09:53:21 GMT</pubDate>
-      <description>En el día de ayer, miembros de nuestra Real Hermandad asistieron a la Santa Misa de campaña celebrada en el cuartel de la Guardia Civil de Alhaurín el Grande, en honor a la Virgen del Pilar, Patrona de la Guardia Civil. La.</description>
-      <category>Fiestas y Tradiciones</category>
       <dc:creator>Hermandad Nuestro Padre Jesús Nazareno</dc:creator>
     </item>
   </channel>

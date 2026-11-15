@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-11-15T07:10:34.583Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 188 eventos próximos.",
+  "actualizado": "2026-11-15T14:43:58.444165+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 192 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
       "id": "alhaurinhoy-13834",
@@ -1473,6 +1474,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-14090",
+      "tipo": "Gastronomía",
+      "icono": "🍽️",
+      "titulo": "Paseos saludables 🚶‍♀️🌿",
+      "descripcion": "🚶‍♀️🌿 ¡Comenzamos nuestros paseos saludables! Cada martes a las 9:15 h salimos a caminar juntos, compartir un rato agradable y cuidar nuestra salud. 📍 Punto de encuentro: puerta del Centro de Salud...",
+      "lugar": "",
+      "inicio": "2026-11-15T09:15:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/paseos-saludables-%f0%9f%9a%b6%e2%99%80%ef%b8%8f%f0%9f%8c%bf/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-14038",
       "tipo": "Deportes",
       "icono": "⚽",
@@ -1559,6 +1575,51 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/musica-%f0%9f%8e%bc-tres-golpes-de-perrate/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14093",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "Baño de sonido🏺",
+      "descripcion": "Un baño de sonido guía al cerebro desde el estrés hasta la relajación profunda mediante el arrastre de ondas cerebrales, utilizando las vibraciones como un metrónomo acústico: ​Estado Beta (13 – 30...",
+      "lugar": "",
+      "inicio": "2026-11-15T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/bano-de-sonido%f0%9f%8f%ba-2/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14080",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Spanish flavour 🍽️ 🎶",
+      "descripcion": "Enjoy an evening with José on the guitar, paella, tinto de verano and good company…🤩",
+      "lugar": "",
+      "inicio": "2026-11-15T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/spanish-flavour-%f0%9f%8d%bd%ef%b8%8f-%f0%9f%8e%b6/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14075",
+      "tipo": "Ocio",
+      "icono": "🎉",
+      "titulo": "Fiesta 🎉 Acción de Gracias 🍂",
+      "descripcion": "",
+      "lugar": "",
+      "inicio": "2026-11-15T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/fiesta-%f0%9f%8e%89-accion-de-gracias-%f0%9f%8d%82/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -1694,6 +1755,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/concierto-%f0%9f%8e%bc-una-banda-de-pelicula-%f0%9f%92%9a/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14083",
+      "tipo": "Cultos y procesiones",
+      "icono": "⛪",
+      "titulo": "Concierto 🎼 𝗦𝗔𝗡𝗧𝗔 𝗖𝗘𝗖𝗜𝗟𝗜𝗔 𝟮𝟬𝟮𝟲",
+      "descripcion": "🎼 𝗙𝗘𝗦𝗧𝗜𝗩𝗜𝗗𝗔𝗗 𝗗𝗘 𝗦𝗔𝗡𝗧𝗔 𝗖𝗘𝗖𝗜𝗟𝗜𝗔 𝟮𝟬𝟮𝟲 El próximo domingo, 22 de noviembre, nuestra Hermandad celebrará la festividad de Santa Cecilia, Patrona de la Música, una conmemoración de gran arraigo en nuestr...",
+      "lugar": "",
+      "inicio": "2026-11-22T09:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/concierto-%f0%9f%8e%bc-una-banda-de-pelicula-%f0%9f%92%9a-copy/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -2804,21 +2880,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

@@ -36,7 +36,7 @@ Antes de pasar cambios a main, ejecutar al menos:
 python scripts/validar_contenido.py
 ```
 
-También existe un workflow de GitHub Actions en `.github/workflows/validar-contenido.yml` que valida el contenido en pushes, pull requests y ejecución manual.
+El workflow `.github/workflows/tests.yml` ejecuta los tests de `tests/`, la validación de contenido, la auditoría SEO y la de páginas huérfanas en cada push manual a `develop`, en pull requests y a mano.
 
 ## Secciones actuales
 
@@ -50,7 +50,6 @@ También existe un workflow de GitHub Actions en `.github/workflows/validar-cont
 
 ## Proximos pasos
 
-- Migrar cualquier automatización existente para que use `scripts/generar_noticias_seguro.py`.
 - Mejorar deduplicación editorial entre fuentes.
 - Automatizar la actualización de `data/tiempo-aemet.json`.
 - Crear paginas internas SEO para farmacias, tramites, telefonos, transporte y restaurantes.

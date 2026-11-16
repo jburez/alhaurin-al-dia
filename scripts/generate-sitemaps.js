@@ -57,12 +57,61 @@ function isNonCanonical(file, url) {
   return canonical !== ownUrl;
 }
 
+// Fechas reales. Antes se usaba el mtime del fichero, pero en GitHub Actions
+// el checkout y el render reescriben todo en cada ejecución, así que todas las
+// URLs salían "modificadas hoy" y Google News recibía cientos de noticias con
+// la fecha de publicación del momento del build.
+//  - Noticias: la fecha de publicación guardada en data/noticias*.json.
+//  - Resto de páginas: la fecha del último commit que tocó el fichero.
+//  - Si no hay ninguna de las dos, el mtime como último recurso.
+const { execFileSync } = require('child_process');
+
+function readNewsList(file) {
+  try {
+    const data = JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
+    if (Array.isArray(data)) return data;
+    return Object.values(data).find(Array.isArray) || [];
+  } catch (_) {
+    return [];
+  }
+}
+
+const NEWS_DATES = new Map();
+for (const file of ['data/noticias-archivo.json', 'data/noticias.json']) {
+  for (const item of readNewsList(file)) {
+    if (!item || !item.pagina || !item.fecha) continue;
+    const time = Date.parse(item.fecha);
+    if (Number.isNaN(time)) continue;
+    const key = '/' + String(item.pagina).replace(/^\/+/, '');
+    NEWS_DATES.set(key, new Date(time));
+  }
+}
+
+const GIT_DATES = new Map();
+try {
+  const log = execFileSync('git', ['log', '--format=@%cI', '--name-only', '--', '*.html'], {
+    cwd: ROOT, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore']
+  });
+  let current = null;
+  for (const line of log.split('\n')) {
+    if (line.startsWith('@')) { current = line.slice(1); continue; }
+    if (line && current && !GIT_DATES.has(line)) GIT_DATES.set(line, new Date(current));
+  }
+} catch (_) {
+  // Sin git (o clon superficial): se usará el mtime.
+}
+
+function realDate(file) {
+  const rel = path.relative(ROOT, file).split(path.sep).join('/');
+  return NEWS_DATES.get('/' + rel) || GIT_DATES.get(rel) || fs.statSync(file).mtime;
+}
+
 function fileDate(file) {
-  return fs.statSync(file).mtime.toISOString().slice(0, 10);
+  return realDate(file).toISOString().slice(0, 10);
 }
 
 function fileIsoDate(file) {
-  return fs.statSync(file).mtime.toISOString();
+  return realDate(file).toISOString();
 }
 
 function meta(url) {
@@ -124,10 +173,10 @@ function renderNewsUrlset(entries) {
     '\n</urlset>\n';
 }
 
-function renderSitemapIndex(sitemaps) {
+function renderSitemapIndex(sitemaps, lastmods = {}) {
   return '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-    sitemaps.map(name => `  <sitemap>\n    <loc>${SITE_URL}/${name}</loc>\n    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>\n  </sitemap>`).join('\n') +
+    sitemaps.map(name => `  <sitemap>\n    <loc>${SITE_URL}/${name}</loc>\n    <lastmod>${lastmods[name] || new Date().toISOString().slice(0, 10)}</lastmod>\n  </sitemap>`).join('\n') +
     '\n</sitemapindex>\n';
 }
 
@@ -161,7 +210,7 @@ const newsEntries = entries.filter(entry =>
 const now = Date.now();
 const googleNewsEntries = entries
   .filter(entry => entry.url.startsWith('/noticias/') && entry.url !== '/noticias/' && entry.url.endsWith('.html'))
-  .filter(entry => now - fs.statSync(entry.file).mtime.getTime() <= NEWS_MAX_AGE_MS)
+  .filter(entry => NEWS_DATES.has(entry.url) && now - NEWS_DATES.get(entry.url).getTime() <= NEWS_MAX_AGE_MS)
   .map(entry => ({
     url: entry.url,
     publicationDate: fileIsoDate(entry.file),
@@ -182,7 +231,15 @@ const sitemapFiles = [
   'sitemap-servicios.xml',
 ].filter(file => fs.existsSync(path.join(ROOT, file)));
 
-fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitemapFiles));
+const maxLastmod = list => list.reduce((max, entry) => (entry.lastmod > max ? entry.lastmod : max), '');
+const indexLastmods = {
+  'sitemap.xml': maxLastmod(entries),
+  'sitemap-noticias.xml': maxLastmod(newsEntries),
+  'sitemap-farmacias.xml': maxLastmod(pharmacyEntries),
+  'sitemap-servicios.xml': maxLastmod(serviceEntries),
+  'sitemap-news.xml': googleNewsEntries.reduce((max, e) => (e.publicationDate > max ? e.publicationDate : max), '').slice(0, 10),
+};
+fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitemapFiles, indexLastmods));
 
 console.log(`Sitemap principal generado: ${entries.length} URLs`);
 console.log(`Sitemap farmacias generado: ${pharmacyEntries.length} URLs`);

@@ -2,7 +2,7 @@ name: Generar noticias automáticas
 
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '5 */2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -65,7 +65,11 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "🤖 Actualización automática de noticias"
-            git push origin develop
+            for i in 1 2 3 4 5; do
+              if git pull --rebase origin develop && git push origin develop; then break; fi
+              if [ "$i" = 5 ]; then echo "Push fallido tras 5 intentos"; exit 1; fi
+              echo "Push rechazado, reintento $i"; sleep $((i*10))
+            done
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 

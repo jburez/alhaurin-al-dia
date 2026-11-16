@@ -3,7 +3,7 @@ name: Actualizar avisos AEMET
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "20 * * * *"
 
 permissions:
   contents: write
@@ -45,7 +45,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/avisos-oficiales.json
           git commit -m "Actualiza avisos AEMET (Sol y Guadalhorce)"
-          git push origin develop
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin develop && git push origin develop; then break; fi
+            if [ "$i" = 5 ]; then echo "Push fallido tras 5 intentos"; exit 1; fi
+            echo "Push rechazado, reintento $i"; sleep $((i*10))
+          done
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Disparar publicación en producción

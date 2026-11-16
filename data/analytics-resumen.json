@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-11-16T11:04:27.953Z",
-  "visitas24h": 8,
-  "paginasVistas24h": 15,
+  "actualizado": "2026-11-16T20:59:02.047Z",
+  "visitas24h": 3,
+  "paginasVistas24h": 11,
   "topPaginas": [
     {
-      "ruta": "/",
-      "vistas": 14
+      "ruta": "/planes/",
+      "vistas": 13
     },
     {
-      "ruta": "/planes/",
-      "vistas": 10
+      "ruta": "/",
+      "vistas": 13
     },
     {
       "ruta": "/guia-util/farmacias/",
-      "vistas": 8
-    },
-    {
-      "ruta": "/boletin-oficial/",
       "vistas": 7
     },
     {
-      "ruta": "/seguimiento/",
+      "ruta": "/boletin-oficial/",
+      "vistas": 6
+    },
+    {
+      "ruta": "/noticias/",
       "vistas": 5
     }
   ]

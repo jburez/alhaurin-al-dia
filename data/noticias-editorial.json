@@ -1462,7 +1462,7 @@
     "source_url": "https://www.youtube.com/watch?v=V1_cNKfrbes"
   },
   "guid:atv-alhaurin-youtube:yt:video:VWxtrqmKtAg": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "bda87037e9d88624207ff6f2e8fb5def2298eb1d",
     "date_modified": null,
     "date_published": "2026-11-16T15:00:29+00:00",
@@ -1475,7 +1475,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-vwxtrqmktag-1b12ebf8",
-    "last_ai_attempt": "2026-11-16T23:27:52.882406+00:00",
+    "last_ai_attempt": "2026-11-17T07:45:41.008133+00:00",
     "pagina": "noticias/futbol-cd-alhaurino-ud-torre-del-mar.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=VWxtrqmKtAg"
@@ -2323,7 +2323,7 @@
     "source_url": "https://www.youtube.com/watch?v=qCw5j7UGBqo"
   },
   "guid:atv-alhaurin-youtube:yt:video:rA71-TmMrOg": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "5541f90b4025a69cba5578c82c31aad4de8d89e1",
     "date_modified": null,
     "date_published": "2026-11-16T14:03:01+00:00",
@@ -2336,7 +2336,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-ra71-tmmrog-f016b51b",
-    "last_ai_attempt": "2026-11-16T23:28:10.150132+00:00",
+    "last_ai_attempt": "2026-11-17T07:45:57.601591+00:00",
     "pagina": "noticias/paso-elevado-la-paca-han-comenzado-las-obras-para-construir-un-paso-peatonal-elevado.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=rA71-TmMrOg"
@@ -4675,7 +4675,7 @@
     "source_url": "https://fedelhorce.es/el-cca-de-alhaurin-el-grande-recibe-la-mencion-especial-del-premio-nacional-de-comercio-interior-2026/"
   },
   "guid:fedelhorce:https://fedelhorce.es/?p=262057": {
-    "ai_attempts": 5,
+    "ai_attempts": 6,
     "content_hash": "d590d1f35a3b8d4a27b82bd2ddc89dccb4cc647e",
     "date_modified": null,
     "date_published": "2026-11-13T10:19:56+00:00",
@@ -4688,7 +4688,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-fedelhorce-https-fedelhorce-es-p-262057-8dc699d3",
-    "last_ai_attempt": "2026-11-16T00:04:51.086854+00:00",
+    "last_ai_attempt": "2026-11-17T07:48:41.014257+00:00",
     "pagina": "noticias/las-palancas-que-anaden-un-cero-a-tus-resultados.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-alora-las-palancas-que-anaden-un-cero-a-tus-resultados/"
@@ -5186,7 +5186,7 @@
     "source_url": "https://www.nuestropadrejesusnazareno.com/34273/festividad-de-santa-cecilia-2026/"
   },
   "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34276": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "fbe0123ae0e25ed056defa79bc5e490d6b376297",
     "date_modified": null,
     "date_published": "2026-11-16T08:08:00+00:00",
@@ -5199,7 +5199,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-4575e788",
-    "last_ai_attempt": "2026-11-16T23:23:11.070140+00:00",
+    "last_ai_attempt": "2026-11-17T07:45:19.449782+00:00",
     "pagina": "noticias/ix-zambomba-flamenca.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34276/%f0%9f%8e%84%f0%9f%92%9c-ix-zambomba-flamenca-%f0%9f%92%9c%f0%9f%8e%84/"
@@ -6819,7 +6819,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/11/12/alhaurin-el-grande-la-pecera-de-atenea-violencia-genero/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=213857": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "ccfc8aa9383bd8521b5f54136f09270352f63ca5",
     "date_modified": null,
     "date_published": "2026-11-16T18:34:47+00:00",
@@ -6832,7 +6832,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-d5790f5b",
-    "last_ai_attempt": "2026-11-16T23:33:52.190072+00:00",
+    "last_ai_attempt": "2026-11-17T07:51:46.040808+00:00",
     "pagina": "noticias/horarios-y-programacion-navidad-alhaurin-el-grande-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/16/horarios-y-programacion-navidad-alhaurin-el-grande-2026/"

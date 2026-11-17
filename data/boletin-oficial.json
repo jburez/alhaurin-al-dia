@@ -72,6 +72,30 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266656nombramientocomisióndeval",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6656 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: INGENIERO/A (ACTUALIZADO)]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/32e4058e-a4b7-454f-90b5-9a9056140ee8",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-13T16:09:55.217588+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266655nombramientocomisióndeval",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6655 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A ACTUALIZADO]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/c12698ef-d76d-47e0-ae92-761cee31dc3b",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-13T16:09:55.217535+01:00"
+  },
+  {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266627nombramientocomisióndeval",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -588,28 +612,16 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266655nombramientocomisióndeval",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266665nombramientocomisióndeval",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
     "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6655 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A ACTUALIZADO]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/c12698ef-d76d-47e0-ae92-761cee31dc3b",
+    "resumen": "DECRETO 2026-6665 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A TÉCNICO/A E INGENIERO/A TÉCNICO/A (ACTUALIZADO)]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/ef0c7227-d93c-4f85-9e88-ac6445440d67",
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-11-13T16:09:55.217535+01:00"
-  },
-  {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266656nombramientocomisióndeval",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6656 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: INGENIERO/A (ACTUALIZADO)]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/32e4058e-a4b7-454f-90b5-9a9056140ee8",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-11-13T16:09:55.217588+01:00"
+    "detectado_en": "2026-11-17T18:06:32.973943+01:00"
   },
   {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
@@ -900,6 +912,30 @@
     "detectado_en": "2026-10-30T14:53:27.116395+01:00"
   },
   {
+    "id": "sede-Fiestas-certificadodeacuerdoaprobbasesconcursoag",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29977/2026",
+    "resumen": "Certificado de acuerdo APROB BASES CONCURSO AGRUPACIONES CARNAVAL ALH GRANDE 2027 (JGL 13-11-2026 PTO. 2)",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6dca7075-e0e5-4f9d-bb89-d491a78b1762",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Fiestas",
+    "detectado_en": "2026-11-17T18:06:32.973898+01:00"
+  },
+  {
+    "id": "sede-Fiestas-certificadodeacuerdoaprobbasesconcursodi",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "30740/2026",
+    "resumen": "Certificado de acuerdo APROB BASES CONCURSO DIBUJO INFANTIL CARNAVAL ALH GRANDE 2027 (JGL 13-11-2026 PTO. 3)",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6aa876c9-43bc-47a9-9163-4aeeb4006ea3",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Fiestas",
+    "detectado_en": "2026-11-17T18:06:32.973916+01:00"
+  },
+  {
     "id": "sede-Elecciones-bandoexposiciónalpublicodelcallejeromuni",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -1044,6 +1080,18 @@
     "detectado_en": "2026-10-14T14:41:55.838116+02:00"
   },
   {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-actadejuntadegobierno20260037actajgl0611",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/37",
+    "resumen": "ACTA DE JUNTA DE GOBIERNO 2026-0037 [ACTA JGL 06-11-2026 DILIGENCIADA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/98beb08a-9a2b-4ee6-be70-dde57654eb70",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-11-17T18:06:32.973875+01:00"
+  },
+  {
     "id": "sede-Convocatoria de El Pleno-decreto20266247decretoconvocatoriapleno3",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -1092,6 +1140,18 @@
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
   },
   {
+    "id": "sede-Convocatoria de El Pleno-decreto20266723decretoconvocatoriapleno2",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "PLN/2026/17",
+    "resumen": "DECRETO 2026-6723 [DECRETO CONVOCATORIA PLENO 20-11-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/436fd34b-bcd0-4647-8058-92dcca758095",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-11-17T18:06:32.973835+01:00"
+  },
+  {
     "id": "sede-Concesión de Subvenciones-certificado20260615certifpto65jgl3010202",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -1102,6 +1162,42 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Concesión de Subvenciones",
     "detectado_en": "2026-11-04T16:12:23.924101+01:00"
+  },
+  {
+    "id": "bop-20261117-04450-2026",
+    "numero_edicto": "4450/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Para general conocimiento se hace público que, en sesión ordinaria de la Junta de Gobierno Local celebrada el día 6 de noviembre de 2026, en el punto 41 se han aprobado las bases regula. doras por las que se regirá la convocatoria de quince plazas, adscritas a los grupos profesionales C/C2 y E, de personal laboral OEP 2024, 2025 y 2026 del Ayuntamiento de Alhaurín el Grande. El texto íntegro de las bases se adjunta a este anuncio....",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261117-04450-2026&control=2811145939",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-11-17",
+    "detectado_en": "2026-11-17T17:06:30+00:00"
+  },
+  {
+    "id": "bop-20261117-04446-2026",
+    "numero_edicto": "4446/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio Para general conocimiento se hace público que, en sesión ordinaria de la Junta de Gobierno Local, celebrada el día 6 de noviembre de 2026, en el punto 4.2 se han aprobado las bases reguladoras por las que se regirá la convocatoria de siete plazas, adscritas a los grupos profesionales A/A1 y C/C1, de personal funcionario OEP 2023, 2024, 2025 y 2026, del Ayuntamiento de Alhaurín el Grande. El texto íntegro de las bases se adjunta a este...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261117-04446-2026&control=2590281848",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-11-17",
+    "detectado_en": "2026-11-17T17:06:30+00:00"
+  },
+  {
+    "id": "bop-20261116-04484-2026",
+    "numero_edicto": "4484/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio En cumplimiento del artículo 169.3, por remisión del 177.2, del Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el Texto Refundido de la Ley Reguladora de las Haciendas Locales, al no haberse presentado alegación alguna durante el plazo de exposición al público contra la modificación de crédito número 19, del presupuesto municipal 2026, en la modalidad crédito extraordinario y suplemento de crédito, financiado...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261116-04484-2026&control=120534086",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-11-16",
+    "detectado_en": "2026-11-17T17:06:30+00:00"
   },
   {
     "id": "bop-20261113-04148-2026",

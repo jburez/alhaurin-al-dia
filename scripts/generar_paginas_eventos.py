@@ -302,6 +302,25 @@ def cleanup_orphan_manual_pages(old_id_to_slug: dict[str, str], new_id_to_slug: 
 
 
 def main() -> int:
+    # Desde noviembre de 2026 las fichas de /planes/<slug>/, /agenda/ y
+    # /este-fin-de-semana/ las genera scripts/render-agenda.js (plantilla común
+    # con JSON-LD Event, aviso de evento pasado y noindex a los 30 días), a
+    # partir de data/agenda.json (scripts/normalizar-agenda.js, que también
+    # mantiene data/evento-slugs.json). Este script se conserva como punto de
+    # entrada de los workflows y solo usa la plantilla antigua si no hay Node.
+    node = shutil.which("node")
+    if node:
+        import subprocess
+        for script in ("normalizar-agenda.js", "render-agenda.js"):
+            resultado = subprocess.run([node, str(ROOT / "scripts" / script)], cwd=ROOT)
+            if resultado.returncode != 0:
+                return resultado.returncode
+        return 0
+    print("⚠️  Node no disponible: se usa la plantilla antigua de eventos.")
+    return main_legacy()
+
+
+def main_legacy() -> int:
     print("🔨 Generando páginas de eventos...")
 
     data = json.loads(AGENDA_PATH.read_text("utf-8"))

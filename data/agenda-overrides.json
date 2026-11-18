@@ -1,0 +1,12 @@
+{
+  "_descripcion": "Datos añadidos a mano para eventos de la agenda, por id de evento (ver data/agenda.json). Tienen prioridad sobre lo que llega de data/agenda-local.json. Una ficha de evento solo es indexable si tiene 'descripcion' propia (80 caracteres o más, redactada por Alhaurín al Día, no copiada) y 'lugar' o 'direccion'. Campos admitidos: descripcion, lugar, direccion, hora, hora_fin, fecha_fin, precio, gratuito, organizador, organizador_url, url_entradas, imagen, estado_evento (programado | cancelado | aplazado).",
+  "_ejemplo": {
+    "alhaurinhoy-00000": {
+      "descripcion": "Texto propio que explique el plan: qué es, para quién, qué incluye y cualquier detalle práctico comprobado con el organizador.",
+      "direccion": "Calle de ejemplo, 1",
+      "gratuito": true,
+      "organizador": "Nombre de la entidad organizadora"
+    }
+  },
+  "eventos": {}
+}

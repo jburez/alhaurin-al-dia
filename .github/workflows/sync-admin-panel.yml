@@ -55,7 +55,7 @@ jobs:
       - name: Commit cambios si hay actualización
         id: commit
         run: |
-          if git diff --quiet data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json data/analytics-resumen.json index.html planes/; then
+          if git diff --quiet data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json data/analytics-resumen.json data/agenda.json index.html planes/ agenda/ este-fin-de-semana/; then
             echo "Sin cambios desde el panel admin"
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -63,7 +63,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json data/analytics-resumen.json index.html planes/
+          git add data/avisos-locales.json data/agenda-local.json data/evento-slugs.json data/estado-local.json data/radar-trafico.json data/comercios-destacados.json data/analytics-resumen.json data/agenda.json index.html planes/ agenda/ este-fin-de-semana/
           git commit -m "Sincroniza panel admin: avisos, eventos, estado local, tráfico y comercios"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin develop && git push origin develop; then break; fi

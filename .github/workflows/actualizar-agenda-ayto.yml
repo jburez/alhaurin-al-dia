@@ -52,7 +52,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/agenda-local.json data/evento-slugs.json index.html planes/
+          git add data/agenda-local.json data/evento-slugs.json data/agenda.json index.html planes/ agenda/ este-fin-de-semana/
           git commit -m "Actualiza agenda local y páginas de eventos"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin develop && git push origin develop; then break; fi

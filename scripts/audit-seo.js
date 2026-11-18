@@ -185,10 +185,111 @@ function toNewsSummary(noticia) {
   };
 }
 
+// ---------- Reposicionamiento como guía práctica (noviembre 2026) ----------
+//
+// Comprobaciones que fallan el build (críticos) o avisan:
+//   - críticos: páginas del sitemap con noindex, URLs del listado guardado en
+//     la parada 1 (reports/urls-baseline.txt) que ya no existen, marcadores
+//     [PENDIENTE en páginas indexables, JSON-LD con errores de sintaxis y
+//     Event sin los campos que exige Google (name, startDate, location+address);
+//   - avisos: páginas indexables con menos de ~150 palabras de texto propio.
+const MIN_OWN_WORDS = 150;
+const BASELINE_FILE = path.join(ROOT, 'reports', 'urls-baseline.txt');
+
+function robotsOf(html) {
+  const m = html.match(/<meta\s+name=["']robots["']\s+content=["']([^"']+)["']/i);
+  return m ? m[1] : '';
+}
+
+function ownText(html) {
+  const main = html.match(/<main[\s\S]*?<\/main>/i);
+  return String(main ? main[0] : html)
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<nav[\s\S]*?<\/nav>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z#0-9]+;/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function urlToFile(url) {
+  const rel = url.replace(/^\//, '');
+  if (!rel) return path.join(ROOT, 'index.html');
+  return rel.endsWith('/') ? path.join(ROOT, rel, 'index.html') : path.join(ROOT, rel);
+}
+
+function sitemapUrls() {
+  const urls = new Set();
+  for (const name of fs.readdirSync(ROOT)) {
+    if (!/^sitemap.*\.xml$/.test(name) || name === 'sitemap-index.xml') continue;
+    const xml = fs.readFileSync(path.join(ROOT, name), 'utf8');
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) urls.add(m[1].replace(SITE_URL, ''));
+  }
+  return urls;
+}
+
+function auditReposicionamiento() {
+  const thinPages = [];
+  const pendingInIndexable = [];
+  const jsonLdErrors = [];
+  const eventErrors = [];
+  for (const file of walk(ROOT)) {
+    const url = toUrl(file);
+    const html = fs.readFileSync(file, 'utf8');
+    if (/<meta\s+http-equiv=["']refresh["']/i.test(html)) continue;
+
+    for (const m of html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)) {
+      let data;
+      try {
+        data = JSON.parse(m[1]);
+      } catch (error) {
+        jsonLdErrors.push({ url, error: error.message });
+        continue;
+      }
+      const nodes = [].concat(data['@graph'] || data);
+      for (const node of nodes) {
+        if (!node || node['@type'] !== 'Event') continue;
+        const missing = [];
+        if (!node.name) missing.push('name');
+        if (!node.startDate) missing.push('startDate');
+        if (!node.location || !node.location.name) missing.push('location.name');
+        if (!node.location || !node.location.address) missing.push('location.address');
+        if (missing.length) eventErrors.push({ url, missing });
+      }
+    }
+
+    if (/noindex/i.test(robotsOf(html)) || IGNORE_URLS.has(url)) continue;
+    if (/\[PENDIENTE/.test(ownText(html))) pendingInIndexable.push(url);
+    const words = ownText(html).split(' ').filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+    if (words < MIN_OWN_WORDS) thinPages.push({ url, words });
+  }
+
+  const noindexInSitemap = [];
+  for (const url of sitemapUrls()) {
+    const file = urlToFile(url);
+    if (!fs.existsSync(file)) {
+      noindexInSitemap.push({ url, motivo: 'no existe' });
+      continue;
+    }
+    if (/noindex/i.test(robotsOf(fs.readFileSync(file, 'utf8')))) noindexInSitemap.push({ url, motivo: 'noindex' });
+  }
+
+  const removedUrls = [];
+  if (fs.existsSync(BASELINE_FILE)) {
+    for (const url of fs.readFileSync(BASELINE_FILE, 'utf8').split('\n').map((l) => l.trim()).filter(Boolean)) {
+      if (!fs.existsSync(urlToFile(url))) removedUrls.push(url);
+    }
+  }
+
+  return { thinPages, pendingInIndexable, jsonLdErrors, eventErrors, noindexInSitemap, removedUrls };
+}
+
 function main() {
   const html = auditHtmlFiles();
   const sitemaps = auditSitemaps();
   const news = auditNewsDuplicates();
+  const guia = auditReposicionamiento();
 
   const criticalCount =
     html.searchAction.length +
@@ -197,9 +298,14 @@ function main() {
     html.missingDescription.length +
     sitemaps.issues.length +
     news.duplicatePages.length +
-    news.duplicateSourceUrls.length;
+    news.duplicateSourceUrls.length +
+    guia.noindexInSitemap.length +
+    guia.removedUrls.length +
+    guia.pendingInIndexable.length +
+    guia.jsonLdErrors.length +
+    guia.eventErrors.length;
 
-  const warningsCount = news.possibleDuplicateTitles.length;
+  const warningsCount = news.possibleDuplicateTitles.length + guia.thinPages.length;
 
   const report = {
     generatedAt: new Date().toISOString(),
@@ -212,6 +318,7 @@ function main() {
     html,
     sitemaps,
     news,
+    guia,
   };
 
   fs.mkdirSync(REPORT_DIR, { recursive: true });
@@ -222,6 +329,22 @@ function main() {
   console.log(`Noticias analizadas: ${news.totalNews}`);
   console.log(`Críticos: ${criticalCount}`);
   console.log(`Avisos: ${warningsCount}`);
+  console.log(`  · Páginas en sitemap con noindex o inexistentes: ${guia.noindexInSitemap.length}`);
+  console.log(`  · URLs del listado inicial que ya no existen: ${guia.removedUrls.length}`);
+  console.log(`  · Páginas indexables con [PENDIENTE: ${guia.pendingInIndexable.length}`);
+  console.log(`  · JSON-LD con errores de sintaxis: ${guia.jsonLdErrors.length}`);
+  console.log(`  · Event sin campos obligatorios: ${guia.eventErrors.length}`);
+  console.log(`  · Páginas indexables con menos de ${MIN_OWN_WORDS} palabras propias (aviso): ${guia.thinPages.length}`);
+  const detail = [
+    ...guia.noindexInSitemap.map((x) => `SITEMAP/${x.motivo}: ${x.url}`),
+    ...guia.removedUrls.map((u) => `URL DESAPARECIDA: ${u}`),
+    ...guia.pendingInIndexable.map((u) => `[PENDIENTE en indexable: ${u}`),
+    ...guia.jsonLdErrors.map((x) => `JSON-LD inválido: ${x.url} (${x.error})`),
+    ...guia.eventErrors.map((x) => `Event incompleto: ${x.url} (${x.missing.join(', ')})`),
+    ...guia.thinPages.map((x) => `Poco texto (${x.words} palabras): ${x.url}`),
+  ];
+  for (const line of detail.slice(0, 60)) console.log(`    - ${line}`);
+  if (detail.length > 60) console.log(`    … y ${detail.length - 60} más (ver informe).`);
   console.log(`Informe: ${path.relative(ROOT, REPORT_FILE)}`);
 
   if (criticalCount && !WARN_ONLY) {

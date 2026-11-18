@@ -132,7 +132,7 @@ function eventJsonLd(ev, canonical, description) {
     eventStatus: ev.estado_evento === 'cancelado' ? 'https://schema.org/EventCancelled'
       : ev.estado_evento === 'aplazado' ? 'https://schema.org/EventPostponed' : 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    location: { '@type': 'Place', name: ev.lugar ? ev.lugar.replace(/\.\.\.$/, '') : SITE_LOCALITY, address },
+    location: { '@type': 'Place', name: ev.lugar.replace(/\.\.\.$/, '').trim() || SITE_LOCALITY, address },
     inLanguage: 'es-ES',
   };
   if (ev.imagen) data.image = [ev.imagen];

@@ -72,6 +72,30 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-decreto20266737decretoaprobaciónlistadod",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "DECRETO 2026-6737 [DECRETO APROBACIÓN LISTADO DEFINITIVO DE ALUMNOS/AS SELECCIONADOS/AS Y SUPLENTES. COBERTURA 2 PLAZAS VACANTES PROGRAMA DE EMPLEO Y FORMACION ALHAURIN EL GRANDE VII]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/f45ba8bb-a211-4c54-a831-0874878f26b3",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-11-18T17:44:15.049606+01:00"
+  },
+  {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivopuntuacionesobtenidaspr",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "LISTADO DEFINITIVO PUNTUACIONES OBTENIDAS. PROCESO DE SELECCIÓN ALUMNADO PROGRAMA DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE VII. PLAZAS VACANTES",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/d443cdf7-bedb-46c7-9967-29bf8be94db5",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-11-18T17:44:15.049639+01:00"
+  },
+  {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266656nombramientocomisióndeval",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -814,6 +838,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Procedimiento Genérico",
     "detectado_en": "2026-10-11T15:49:58.506610+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edicto_protocolo_1657actadenotoriedadded",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "34135/2026",
+    "resumen": "EDICTO_protocolo_1657 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. FRANCISCO GALLEGO MALDONADO",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/116d2bf0-7c9f-40ec-85b2-64adf32800c6",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-11-18T17:44:15.049624+01:00"
   },
   {
     "id": "sede-Padrón Municipal de Habitantes-anunciodecretoinicioprocedbajaoficiopadr",

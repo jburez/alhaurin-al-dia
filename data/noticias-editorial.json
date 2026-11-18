@@ -1740,7 +1740,7 @@
     "source_url": "https://www.youtube.com/watch?v=aBLHzYGwsKI"
   },
   "guid:atv-alhaurin-youtube:yt:video:aElCb7G4Rpg": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "8a3f7138080444a944e097a02bd87cbbd7127a8d",
     "date_modified": null,
     "date_published": "2026-11-17T15:30:31+00:00",
@@ -1753,7 +1753,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-aelcb7g4rpg-57618071",
-    "last_ai_attempt": "2026-11-17T17:42:25.723786+00:00",
+    "last_ai_attempt": "2026-11-18T00:56:38.832371+00:00",
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-en-cordoba-con-motivo-de-la-semana-gala.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=aElCb7G4Rpg"
@@ -2517,7 +2517,7 @@
     "source_url": "https://www.youtube.com/watch?v=xVxhRTJvsrc"
   },
   "guid:atv-alhaurin-youtube:yt:video:xZ0q8RRh-OM": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "cafad932dceba2df4d4e63059891e934c7d0a268",
     "date_modified": null,
     "date_published": "2026-11-17T15:00:33+00:00",
@@ -2530,7 +2530,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-xz0q8rrh-om-e079c0d2",
-    "last_ai_attempt": "2026-11-17T17:42:43.847391+00:00",
+    "last_ai_attempt": "2026-11-18T00:56:55.506094+00:00",
     "pagina": "noticias/presentacion-del-cartel-y-la-programacion-de-navidad-2026-27.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=xZ0q8RRh-OM"
@@ -2631,7 +2631,7 @@
     "source_url": "https://www.youtube.com/watch?v=yTiH9mDbWXY"
   },
   "guid:atv-alhaurin-youtube:yt:video:yu3oXuUvUlc": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "9695f4379fbd42c54ac29b7cf1c8d7ed486972d1",
     "date_modified": null,
     "date_published": "2026-11-17T13:01:50+00:00",
@@ -2644,7 +2644,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-yu3oxuuvulc-b32f87d2",
-    "last_ai_attempt": "2026-11-17T17:43:02.428933+00:00",
+    "last_ai_attempt": "2026-11-18T00:57:13.092729+00:00",
     "pagina": "noticias/presentacion-navidad-2026-27-el-ayuntamiento-presenta-el-cartel-y-el-programa.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=yu3oXuUvUlc"
@@ -3705,7 +3705,7 @@
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala/"
   },
   "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225154": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "78fc018a66bb6971392ba999774482aa5e4e1a0f",
     "date_modified": null,
     "date_published": "2026-11-17T13:35:02+00:00",
@@ -3718,7 +3718,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22515-250de29c",
-    "last_ai_attempt": "2026-11-17T17:34:27.939404+00:00",
+    "last_ai_attempt": "2026-11-18T00:54:57.795866+00:00",
     "pagina": "noticias/alhaurin-el-grande-presenta-una-amplia-programacion-de-navidad-con-actividades-para-todos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-presenta-una-amplia-programacion-de-navidad-con-actividades-para-todos-los-publicos-del-27-de-noviembre-al-5-de-enero/"
@@ -6933,7 +6933,7 @@
     "source_url": "https://revistalugardeencuentro.com/2026/11/16/alhaurin-el-grande-conmemorara-a-rodriguez-de-berlanga/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=213928": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "508c3d5380c6472a928d36191538d2dc4db1e0bb",
     "date_modified": null,
     "date_published": "2026-11-17T17:43:44+00:00",
@@ -6946,7 +6946,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-7ed824ff",
-    "last_ai_attempt": "2026-11-17T17:48:23.705588+00:00",
+    "last_ai_attempt": "2026-11-18T01:02:17.399237+00:00",
     "pagina": "noticias/mas-de-170-jovenes-de-diez-institutos-del-valle-del-guadalhorce-refuerzan-sus-habilidades.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/17/mas-de-170-jovenes-de-diez-institutos-del-valle-del-guadalhorce-refuerzan-sus-habilidades-para-mejorar-la-convivencia-a-traves-de-la-mediacion/"
@@ -8023,7 +8023,7 @@
     "source_url": "https://rtvalhaurinelgrande.com/iv-gala-dia-mundial-del-flamenco-2026/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50759": {
-    "ai_attempts": 1,
+    "ai_attempts": 2,
     "content_hash": "06524be4ddc1079ff538a1276c78136b5fa798e2",
     "date_modified": null,
     "date_published": "2026-11-17T09:43:43+00:00",
@@ -8036,7 +8036,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50759-dd32cdd4",
-    "last_ai_attempt": "2026-11-17T17:39:20.210881+00:00",
+    "last_ai_attempt": "2026-11-18T00:55:43.999123+00:00",
     "pagina": "noticias/programa-navidad-2026-27-alhaurin-el-grande-villa-del-guadalhorce.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/programa-navidad-2026-27-alhaurin-el-grande-villa-del-guadalhorce/"

@@ -51,7 +51,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-11-16T15:00:29.000Z</news:publication_date>
+      <news:publication_date>2026-11-18T10:01:44.736Z</news:publication_date>
       <news:title>Fútbol. CD Alhaurino - UD Torre del Mar — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -64,17 +64,6 @@
       </news:publication>
       <news:publication_date>2026-11-17T17:33:56.928Z</news:publication_date>
       <news:title>Horarios y Programación Navidad Alhaurín el Grande 2026 — Alhaurín al Día</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://alhaurinaldia.es/noticias/ix-zambomba-flamenca.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Alhaurín al Día</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T08:08:00.000Z</news:publication_date>
-      <news:title>🎄💜 IX ZAMBOMBA FLAMENCA 💜🎄 — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>
@@ -95,7 +84,7 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-11-17T17:43:44.000Z</news:publication_date>
+      <news:publication_date>2026-11-18T10:01:44.746Z</news:publication_date>
       <news:title>Más de 170 jóvenes de diez institutos del Valle del Guadalhorce refuerzan sus habilidades — Alhaurín al Día</news:title>
     </news:news>
   </url>
@@ -106,8 +95,19 @@
         <news:name>Alhaurín al Día</news:name>
         <news:language>es</news:language>
       </news:publication>
-      <news:publication_date>2026-11-16T14:03:01.000Z</news:publication_date>
+      <news:publication_date>2026-11-18T10:01:44.749Z</news:publication_date>
       <news:title>Paso elevado la paca han comenzado las obras para construir un paso peatonal elevado — Alhaurín al Día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://alhaurinaldia.es/noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Alhaurín al Día</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T08:02:09.000Z</news:publication_date>
+      <news:title>PlaneATV. Agenda cultural de Alhaurín el Grande para los próximos días — Alhaurín al Día</news:title>
     </news:news>
   </url>
   <url>

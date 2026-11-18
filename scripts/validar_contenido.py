@@ -251,8 +251,14 @@ def validar_noticia(noticia: dict, index: int, sitemap: str) -> tuple[list[str],
             errores.extend(validar_canonical(html, pagina, etiqueta))
             errores.extend(validar_json_ld_news_article(html, pagina, etiqueta))
 
-        if sitemap and f"{SITE_URL}/{pagina}" not in sitemap:
-            errores.append(f"{etiqueta}: página ausente en sitemap.xml: {pagina}")
+        # Las noticias de origen RSS (por defecto) son noindex y NO deben ir en
+        # el sitemap; solo las originales tienen que estar.
+        en_sitemap = bool(sitemap) and f"{SITE_URL}/{pagina}" in sitemap
+        if (noticia.get("origen") or "rss") == "original":
+            if sitemap and not en_sitemap:
+                errores.append(f"{etiqueta}: noticia original ausente en sitemap.xml: {pagina}")
+        elif en_sitemap:
+            errores.append(f"{etiqueta}: noticia RSS (noindex) presente en sitemap.xml: {pagina}")
 
     return errores, avisos
 

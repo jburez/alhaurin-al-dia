@@ -33,6 +33,12 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué temperatura hará mañana en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Para mañana, jueves 19 de noviembre, AEMET prevé una máxima de 23 °C y una mínima de 12 °C (intervalos nubosos con lluvia escasa)."}},{"@type":"Question","name":"¿Lloverá mañana en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Probabilidad de lluvia alta (85 %) para mañana según AEMET; conviene llevar paraguas."}},{"@type":"Question","name":"¿Cuánto viento hará hoy en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"AEMET prevé hoy viento flojo de componente suroeste a 10 km/h. En la parte de arriba de esta página tienes el viento y las rachas en tiempo real."}},{"@type":"Question","name":"¿Lloverá este fin de semana en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Sábado: probabilidad de lluvia baja (10 %), 21° de máxima. Domingo: probabilidad de lluvia baja (20 %), 23° de máxima."}},{"@type":"Question","name":"¿A qué hora amanece y anochece hoy en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Hoy el sol sale a las 07:58 y se pone a las 18:09, con 10h 11m de luz."}},{"@type":"Question","name":"¿Qué clima tiene Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Mediterráneo: veranos calurosos y secos e inviernos suaves. La temperatura media anual es de 16,8 °C; julio es el mes más caluroso (máximas medias de 32,2 °C) y enero el más frío (mínimas medias de 5,2 °C)."}},{"@type":"Question","name":"¿Cuánto llueve en Alhaurín el Grande al año?","acceptedAnswer":{"@type":"Answer","text":"Unos 480 mm repartidos en 52 días de lluvia al año, sobre todo entre octubre y abril. El mes más lluvioso es noviembre, con 69 mm de media; julio apenas recoge 3 mm."}},{"@type":"Question","name":"¿Cuál es la mejor época para visitar Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Mayo, junio y septiembre: máximas medias entre 22 y 30 °C y poca lluvia. En cambio, julio y agosto tienen de media 6 y 4,9 días por encima de 35 °C."}}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://alhaurinaldia.es/"},{"@type":"ListItem","position":2,"name":"El tiempo en Alhaurín el Grande","item":"https://alhaurinaldia.es/tiempo/"}]}</script>
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc9eeda336f943ca87175a3b83faee35"}'></script>
+    <!-- alh-consent:start -->
+    <meta name="google-adsense-account" content="ca-pub-3892603819928798">
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
+    <!-- CMP: pegar aquí el script del gestor de consentimiento certificado por Google (TCF v2.2). Ver docs/ARQUITECTURA.md, apartado «Consentimiento». -->
+    <script src="/js/consent.js" defer></script>
+    <!-- alh-consent:end -->
 </head>
 
 <body>
@@ -54,13 +60,12 @@
                     <span></span><span></span><span></span>
                 </button>
                 <div class="nav-links" id="main-menu">
-                    <a href="/noticias/">Noticias</a>
-                    <a href="/guia-util/">Guía útil</a>
-                    <a href="/avisos/">Avisos</a>
-                    <a href="/tiempo/">Tiempo</a>
-                    <a href="/planes/">Planes</a>
+                    <a href="/#hoy">Hoy</a>
+                    <a href="/agenda/">Agenda</a>
+                    <a href="/guias/">Guías</a>
                     <a href="/comercios/">Comercios</a>
-                    <a href="/anunciarse/" class="nav-cta">Anunciarse</a>
+                    <a href="/noticias/">Actualidad</a>
+                    <a href="/anunciarse/" class="nav-cta">Anúnciate</a>
                     <button type="button" class="nav-search-btn search-toggle" aria-label="Buscar en la web">🔍 Buscar</button>
                 </div>
             </nav>
@@ -671,51 +676,57 @@
                         <span class="footer-logo-mark">A</span>
                         <strong>Alhaurín <span>al Día</span></strong>
                     </div>
-                    <p class="footer-desc">El portal de información hiperlocal independiente, servicios de consulta diaria, farmacias de guardia y guía útil de Alhaurín el Grande (Málaga).</p>
+                    <p class="footer-desc">Guía práctica de Alhaurín el Grande (Málaga): farmacia de guardia, agenda, avisos, guías de servicios y comercios locales.</p>
                     <div class="footer-badges">
                         <span class="footer-badge">📍 Alhaurín el Grande, Málaga</span>
-                        <a href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer" class="footer-badge action whatsapp">💬 Canal Oficial WhatsApp</a>
-                        <a href="/contacto/" class="footer-badge action">✉️ Contactar / Sugerir noticia</a>
+                        <a href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer" class="footer-badge action whatsapp">💬 Canal de WhatsApp</a>
+                        <a href="/contacto/" class="footer-badge action">✉️ Contacto</a>
                     </div>
                 </div>
 
                 <div class="footer-nav-col">
-                    <h3 class="footer-heading">Secciones</h3>
+                    <h3 class="footer-heading">Hoy</h3>
                     <ul class="footer-menu">
-                        <li><a href="/noticias/">Noticias de Alhaurín</a></li>
-                        <li><a href="/guia-util/">Guía Útil de Servicios</a></li>
-                        <li><a href="/avisos/">Avisos Municipales</a></li>
-                        <li><a href="/planes/">Planes y Eventos</a></li>
-                        <li><a href="/radar-social/">Radar Social</a></li>
-                        <li><a href="/mi-alhaurin/">Mi Alhaurín</a></li>
+                        <li><a href="/farmacia-de-guardia/">Farmacia de guardia</a></li>
+                        <li><a href="/tiempo/">El tiempo</a></li>
+                        <li><a href="/avisos/">Avisos</a></li>
+                        <li><a href="/agenda/">Agenda</a></li>
+                        <li><a href="/este-fin-de-semana/">Este fin de semana</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-nav-col">
-                    <h3 class="footer-heading">Tiempo</h3>
+                    <h3 class="footer-heading">Guías y servicios</h3>
                     <ul class="footer-menu">
-                        <li><a href="/tiempo/">El Tiempo en Alhaurín</a></li>
-                        <li><a href="/tiempo/comparador/">Comparador de Modelos</a></li>
-                        <li><a href="/tiempo/agro/">Agro Meteo</a></li>
-                        <li><a href="/tiempo/prevision-horaria/">Previsión por Horas</a></li>
-                        <li><a href="/seguimiento/">En Directo</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-nav-col">
-                    <h3 class="footer-heading">Servicios</h3>
-                    <ul class="footer-menu">
-                        <li><a href="/comercios/">Comercios Destacados</a></li>
-                        <li><a href="/anunciarse/">Anunciarse en la Web</a></li>
+                        <li><a href="/guias/">Guías prácticas</a></li>
+                        <li><a href="/guia-util/">Guía útil</a></li>
+                        <li><a href="/comercios/">Comercios</a></li>
                         <li><a href="/boletin-oficial/">Boletín Oficial (BOP)</a></li>
-                        <li><a href="/contacto/">Contacto y Redacción</a></li>
-                        <li><a href="/sobre-nosotros/">Sobre Nosotros</a></li>
+                        <li><a href="/noticias/">Actualidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-heading">El proyecto</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/sobre-nosotros/">Sobre el proyecto</a></li>
+                        <li><a href="/contacto/">Contacto</a></li>
+                        <li><a href="/anunciarse/">Anúnciate</a></li>
                     </ul>
                 </div>
             </div>
 
+            <nav class="footer-legal" aria-label="Información legal">
+                <a href="/sobre-nosotros/">Sobre el proyecto</a>
+                <a href="/contacto/">Contacto</a>
+                <a href="/privacidad/">Privacidad</a>
+                <a href="/cookies/">Cookies</a>
+                <a href="/aviso-legal/">Aviso legal</a>
+                <button type="button" class="footer-consent-link" data-consent-open>Configurar cookies</button>
+            </nav>
+
             <div class="footer-bottom">
-                <p>© 2026 Alhaurín al Día · Diario digital hiperlocal independiente.</p>
+                <p>© 2026 Alhaurín al Día · Guía práctica de Alhaurín el Grande.</p>
                 <a href="#top" class="back-to-top">Volver arriba ↑</a>
             </div>
         </div>

@@ -207,12 +207,6 @@
 .alh-ad ins.adsbygoogle { display: block; width: 100%; height: 100%; }
 @media (min-width: 768px) { :root { --alh-ad-banda: 110px; } }
 
-/* ---------- Pie: enlaces legales y consentimiento ---------- */
-.footer-legal { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 14px 0 0; padding: 12px 0 0; border-top: 1px solid rgba(255,255,255,.12); font-size: 13px; }
-.footer-legal a, .footer-consent-link { color: inherit; opacity: .9; text-decoration: none; }
-.footer-legal a:hover, .footer-consent-link:hover { text-decoration: underline; opacity: 1; }
-.footer-consent-link { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
-
 /* ---------- Página de evento ---------- */
 .alh-event-facts { display: grid; gap: 8px; grid-template-columns: 1fr; margin: 12px 0; }
 @media (min-width: 640px) { .alh-event-facts { grid-template-columns: repeat(2, 1fr); } }

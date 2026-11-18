@@ -1,11 +1,34 @@
 {
   "items": [
-    { "id": "noticias", "label": "Noticias", "href": "/noticias/" },
-    { "id": "guia-util", "label": "Guía útil", "href": "/guia-util/" },
-    { "id": "avisos", "label": "Avisos", "href": "/avisos/" },
-    { "id": "tiempo", "label": "Tiempo", "href": "/tiempo/" },
-    { "id": "planes", "label": "Planes", "href": "/planes/" },
-    { "id": "comercios", "label": "Comercios", "href": "/comercios/" }
+    {
+      "id": "hoy",
+      "label": "Hoy",
+      "href": "/#hoy"
+    },
+    {
+      "id": "agenda",
+      "label": "Agenda",
+      "href": "/agenda/"
+    },
+    {
+      "id": "guias",
+      "label": "Guías",
+      "href": "/guias/"
+    },
+    {
+      "id": "comercios",
+      "label": "Comercios",
+      "href": "/comercios/"
+    },
+    {
+      "id": "actualidad",
+      "label": "Actualidad",
+      "href": "/noticias/"
+    }
   ],
-  "cta": { "id": "anunciarse", "label": "Anunciarse", "href": "/anunciarse/" }
+  "cta": {
+    "id": "anunciarse",
+    "label": "Anúnciate",
+    "href": "/anunciarse/"
+  }
 }

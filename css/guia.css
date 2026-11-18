@@ -218,3 +218,9 @@
 /* ---------- Atribución en noticias RSS ---------- */
 .article-origin-note { margin: 8px 0 0; font-size: 14px; color: #5a5f55; background: #f5f2ec; border-radius: 6px; padding: 8px 10px; }
 .article-origin-note a { color: #24402B; font-weight: 700; }
+
+/* Correcciones de la revisión visual */
+nav.alh-breadcrumbs { justify-content: flex-start; width: auto; height: auto; padding: 0; background: none; position: static; }
+.alh-prose a.alh-btn, .alh-card a.alh-btn { color: #fff; }
+.alh-prose a.alh-btn-sec, .alh-card a.alh-btn-sec { color: var(--alh-verde); }
+.alh-prose blockquote { margin: 12px 0; }

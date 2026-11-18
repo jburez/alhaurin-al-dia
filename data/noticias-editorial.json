@@ -202,8 +202,8 @@
     "source_url": "https://www.youtube.com/watch?v=36dVps_bZOQ"
   },
   "guid:atv-alhaurin-youtube:yt:video:3njMjH43uTQ": {
-    "ai_attempts": 1,
-    "content_hash": "9b7365bcaaa2da34c3a191934aa44d63a6a4afbd",
+    "ai_attempts": 0,
+    "content_hash": "f69454064962f4782de0b4ffa0dee629ee2d0958",
     "date_modified": null,
     "date_published": "2026-11-18T08:02:09+00:00",
     "editorial": {
@@ -215,7 +215,7 @@
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-3njmjh43utq-afe97d7f",
-    "last_ai_attempt": "2026-11-18T10:10:16.298642+00:00",
+    "last_ai_attempt": null,
     "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=3njMjH43uTQ"
@@ -1759,23 +1759,42 @@
     "source_url": "https://www.youtube.com/watch?v=aBLHzYGwsKI"
   },
   "guid:atv-alhaurin-youtube:yt:video:aElCb7G4Rpg": {
-    "ai_attempts": 3,
-    "content_hash": "8a3f7138080444a944e097a02bd87cbbd7127a8d",
-    "date_modified": null,
+    "ai_attempts": 0,
+    "content_hash": "d5e9a3cb53bbbd26b644e95f3d3446f14670ff40",
+    "date_modified": "2026-11-18T18:49:29.466193+00:00",
     "date_published": "2026-11-17T15:30:31+00:00",
     "editorial": {
       "categoria": "Municipal",
       "cuerpo": "La Fundación Antonio Gala para Jóvenes Creadores ha ofrecido al Ayuntamiento de Alhaurín el Grande sus instalaciones de Córdoba para presentar el municipio y compartir la vinculación existente entre ambas instituciones en el marco de la Semana Gala.\n\nY hasta allí se desplazaron en la mañana del jueves 12 de noviembre el alcalde Anthony Bermúdez y las concejalas Macarena Herrera y Susana García para tal fin. En la charla coloquio entre el alcalde y el presidente de la fundación, Francisco Moreno, se puso especialmente en valor la Casa Museo del ilustre escritor, que es el principal nexo de unión entre su Fundación y el consistorio local.\n\nDesde que iniciara esta relación, las actividades realizadas en conjunto en pro de la Cultura y de realzar los nombres tanto de Antonio Gala como de Alhaurín el Grande, son cada vez más frecuentes.",
       "descripcion": "La Fundación Antonio Gala para Jóvenes Creadores ha ofrecido al Ayuntamiento de Alhaurín el Grande sus instalaciones de Córdoba para presentar el municipio y compartir la vinculación existente entre ambas instituciones en el.",
       "seo_keywords": [],
-      "titulo": "El Ayuntamiento de Alhaurín el Grande, en Córdoba con motivo de la Semana Gala"
+      "titulo": "El Ayuntamiento de Alhaurín el Grande, en Córdoba con motivo de la Semana Gala 2026"
     },
     "ia_exitosa": false,
     "id": "guid-atv-alhaurin-youtube-yt-video-aelcb7g4rpg-57618071",
-    "last_ai_attempt": "2026-11-18T10:10:33.897303+00:00",
+    "last_ai_attempt": null,
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-en-cordoba-con-motivo-de-la-semana-gala.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=aElCb7G4Rpg"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:aJYr7dpvrB8": {
+    "ai_attempts": 0,
+    "content_hash": "cdf11953ce6c71cda594297097d938cdeecc6bae",
+    "date_modified": null,
+    "date_published": "2026-11-18T14:05:32+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del miércoles 18 de noviembre de 2026 en el Informativo de ATV. 1. NUEVOS VEHÍCULOS SSOO El Ayuntamiento adquiere dos nuevos vehículos para las actividades de jardinería y electricidad de los Servicios Operativos. 2.\n\nCERTAMEN GERALD BRENAN Convocada una nueva edición del certamen de relato breve “Gerald Brenan”, que alcanza este año su vigésimo tercera edición. Está dotado con 3.000 euros y podrán presentarse trabajos hasta el próximo 18 de diciembre 3.\n\nENCENDIDO ALUMBRADO VILLA Este domingo se inaugura en Villa del Guadalhorce el alumbrado de Navidad. La celebración iniciará a las 12h con una fiesta solidaria en beneficio de la asociación Un sí por la vida. La propuesta cuenta con servicio de barra, mercadillo navideño, actividades para los pequeños y diversas actuaciones.",
+      "descripcion": "1. NUEVOS VEHÍCULOS SSOO El Ayuntamiento adquiere dos nuevos vehículos para las actividades de jardinería y electricidad de los Servicios Operativos. 2. CERTAMEN GERALD BRENAN Convocada una nueva edición del certamen de relato.",
+      "seo_keywords": [],
+      "titulo": "Nuevos vehículos ssoo el ayuntamiento adquiere dos nuevos vehículos para las actividades"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-ajyr7dpvrb8-20e24510",
+    "last_ai_attempt": null,
+    "pagina": "noticias/nuevos-vehiculos-ssoo-el-ayuntamiento-adquiere-dos-nuevos-vehiculos-para-las-actividades.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=aJYr7dpvrB8"
   },
   "guid:atv-alhaurin-youtube:yt:video:aV-RBdPkEss": {
     "ai_attempts": 4,
@@ -3741,6 +3760,25 @@
     "pagina": "noticias/alhaurin-el-grande-presenta-una-amplia-programacion-de-navidad-con-actividades-para-todos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-presenta-una-amplia-programacion-de-navidad-con-actividades-para-todos-los-publicos-del-27-de-noviembre-al-5-de-enero/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225168": {
+    "ai_attempts": 0,
+    "content_hash": "3cbd75e5025662336fb8c8798b0fee347493ae7a",
+    "date_modified": null,
+    "date_published": "2026-11-18T12:10:19+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El concurso internacional, dotado con 3.000 euros y la publicación de la obra ganadora, recibirá trabajos hasta el próximo 18 de diciembre La Delegación de Cultura del Ayuntamiento de Alhaurín.",
+      "descripcion": "El concurso internacional, dotado con 3.000 euros y la publicación de la obra ganadora, recibirá trabajos hasta el próximo 18 de diciembre La Delegación de Cultura del Ayuntamiento de Alhaurín.",
+      "seo_keywords": [],
+      "titulo": "Abierto el plazo para presentar originales al XXIII Certamen de Relato Breve Gerald Brenan"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22516-38723cdf",
+    "last_ai_attempt": null,
+    "pagina": "noticias/abierto-el-plazo-para-presentar-originales-al-xxiii-certamen-de-relato-breve-gerald-brenan.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/abierto-el-plazo-para-presentar-originales-al-xxiii-certamen-de-relato-breve-gerald-brenan/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -6970,6 +7008,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/17/mas-de-170-jovenes-de-diez-institutos-del-valle-del-guadalhorce-refuerzan-sus-habilidades-para-mejorar-la-convivencia-a-traves-de-la-mediacion/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=214025": {
+    "ai_attempts": 0,
+    "content_hash": "acd8723a82f67358c93cfc1a08c966e31ac1891c",
+    "date_modified": null,
+    "date_published": "2026-11-18T15:40:18+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 39 segundosLas dos unidades se suman a otros seis vehículos adquiridos en octubre para mejorar los medios de trabajo de los Servicios Operativos municipales El Ayuntamiento de Alhaurín el Grande ha incorporado dos nuevos vehículos a la flota de los Servicios Operativos municipales.\n\nSe trata de un vehículo volquete destinado a La entrada Alhaurín el Grande incorpora dos nuevos vehículos a los Servicios Operativos se publicó primero en Revista Lugar de Encuentro.",
+      "descripcion": "Tiempo de lectura aprox: 39 segundosLas dos unidades se suman a otros seis vehículos adquiridos en octubre para mejorar los medios de trabajo de los Servicios Operativos municipales El Ayuntamiento de Alhaurín el Grande ha.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande incorpora dos nuevos vehículos a los Servicios Operativos"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-997ccb51",
+    "last_ai_attempt": null,
+    "pagina": "noticias/alhaurin-el-grande-incorpora-dos-nuevos-vehiculos-a-los-servicios-operativos.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/18/alhaurin-el-grande-incorpora-dos-nuevos-vehiculos-servicios-operativos/"
+  },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
     "content_hash": "3a8e39a3634207a7e97625bed31562944ebbdea5",
@@ -8059,5 +8116,62 @@
     "pagina": "noticias/programa-navidad-2026-27-alhaurin-el-grande-villa-del-guadalhorce.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/programa-navidad-2026-27-alhaurin-el-grande-villa-del-guadalhorce/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50776": {
+    "ai_attempts": 0,
+    "content_hash": "0c77efa35179a505d739d11ac66986e6843fb819",
+    "date_modified": null,
+    "date_published": "2026-11-18T11:31:28+00:00",
+    "editorial": {
+      "categoria": "Tráfico y Movilidad",
+      "cuerpo": "Con motivo del Día Mundial en Recuerdo a las Víctimas de Accidentes de Tráfico, el pasado 9 de novembre, en el IES Antonio Gala, se realizó un acto dirigido a los alumnos del segundo curso del ciclo formativo medio y superior sobre los terribles siniestros de tráfico y sus consecuencias, organizado por el área de La entrada Día Mundial en Recuerdo a las Víctimas de Accidentes de Tráfico 2026 | IES Antonio Gala.",
+      "descripcion": "Con motivo del Día Mundial en Recuerdo a las Víctimas de Accidentes de Tráfico, el pasado 9 de novembre, en el IES Antonio Gala, se realizó un acto dirigido a los alumnos del segundo curso del ciclo formativo medio y superior.",
+      "seo_keywords": [],
+      "titulo": "Día Mundial en Recuerdo a las Víctimas de Accidentes de Tráfico 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50776-16f2b110",
+    "last_ai_attempt": null,
+    "pagina": "noticias/dia-mundial-en-recuerdo-a-las-victimas-de-accidentes-de-trafico-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/dia-mundial-en-recuerdo-a-las-victimas-de-accidentes-de-trafico-2026-ies-antonio-gala/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50780": {
+    "ai_attempts": 0,
+    "content_hash": "fde1b887bd9943068c6a28d81eae7393aa4afb38",
+    "date_modified": null,
+    "date_published": "2026-11-18T11:35:04+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "El hall del teatro Antonio Gala acogió el lunes 16 de noviembre por la tarde la presentación del cartel y la programación de la Navidad 2026-27. El Ayuntamiento dio a conocer la agenda de las próximas semanas tanto en Alhaurín el Grande como en Villa del Guadalhorce.\n\nLa entrada Presentación del cartel y la programación de Navidad 2026-27 aparece en RTV Alhaurín el Grande.",
+      "descripcion": "El hall del teatro Antonio Gala acogió el lunes 16 de noviembre por la tarde la presentación del cartel y la programación de la Navidad 2026-27. El Ayuntamiento dio a conocer la agenda de las próximas semanas tanto en Alhaurín el.",
+      "seo_keywords": [],
+      "titulo": "Presentación del cartel y la programación de Navidad 2026-27"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50780-86033319",
+    "last_ai_attempt": null,
+    "pagina": "noticias/presentacion-del-cartel-y-la-programacion-de-navidad-2026-27-2.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/presentacion-del-cartel-y-la-programacion-de-navidad-2026-27/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50783": {
+    "ai_attempts": 0,
+    "content_hash": "89c66c62cdf843ecfc34f1738479bd5ad7be588f",
+    "date_modified": null,
+    "date_published": "2026-11-18T11:42:46+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La Fundación Antonio Gala para Jóvenes Creadores ha ofrecido al Ayuntamiento de Alhaurín el Grande sus instalaciones de Córdoba para presentar el municipio y compartir la vinculación existente entre ambas instituciones en el marco de la Semana Gala.\n\nY hasta allí se desplazaron en la mañana del jueves 12 de noviembre el alcalde Anthony Bermúdez La entrada El Ayuntamiento de Alhaurín el Grande, en la Semana Gala 2026 de Córdoba aparece en RTV Alhaurín el Grande.",
+      "descripcion": "La Fundación Antonio Gala para Jóvenes Creadores ha ofrecido al Ayuntamiento de Alhaurín el Grande sus instalaciones de Córdoba para presentar el municipio y compartir la vinculación existente entre ambas instituciones en el.",
+      "seo_keywords": [],
+      "titulo": "El Ayuntamiento de Alhaurín el Grande, en la Semana Gala 2026 de Córdoba"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50783-bebf8787",
+    "last_ai_attempt": null,
+    "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-en-la-semana-gala-2026-de-cordoba.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/el-ayuntamiento-de-alhaurin-el-grande-en-la-semana-gala-2026-de-cordoba/"
   }
 }

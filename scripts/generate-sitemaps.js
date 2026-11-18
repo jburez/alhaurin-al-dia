@@ -57,6 +57,15 @@ function isNonCanonical(file, url) {
   return canonical !== ownUrl;
 }
 
+// Una página con <meta name="robots" content="noindex…"> nunca debe ir en un
+// sitemap (sería una contradicción). Así salen automáticamente las noticias de
+// origen RSS, las guías en borrador y los eventos pasados hace más de 30 días.
+function isNoindex(file) {
+  const html = fs.readFileSync(file, 'utf8');
+  const match = html.match(/<meta\s+name=["']robots["']\s+content=["']([^"']+)["']/i);
+  return Boolean(match && /noindex/i.test(match[1]));
+}
+
 // Fechas reales. Antes se usaba el mtime del fichero, pero en GitHub Actions
 // el checkout y el render reescriben todo en cada ejecución, así que todas las
 // URLs salían "modificadas hoy" y Google News recibía cientos de noticias con
@@ -195,7 +204,7 @@ const htmlFiles = walk(ROOT);
 const entries = uniqueSorted(htmlFiles.map(file => {
   const url = toUrl(file);
   return { url, file, lastmod: fileDate(file), ...meta(url) };
-}).filter(entry => !isNonCanonical(entry.file, entry.url)));
+}).filter(entry => !isNonCanonical(entry.file, entry.url) && !isNoindex(entry.file)));
 
 const pharmacyEntries = entries.filter(entry =>
   entry.url === '/guia-util/farmacias/' || entry.url.startsWith('/guia-util/farmacias/')
@@ -229,7 +238,10 @@ const sitemapFiles = [
   'sitemap-noticias.xml',
   'sitemap-farmacias.xml',
   'sitemap-servicios.xml',
-].filter(file => fs.existsSync(path.join(ROOT, file)));
+].filter(file => fs.existsSync(path.join(ROOT, file)))
+  // Un sitemap vacío (p. ej. el de Google News mientras no haya noticias
+  // originales) se sigue escribiendo, pero no se anuncia en el índice.
+  .filter(file => /<loc>/.test(fs.readFileSync(path.join(ROOT, file), 'utf8')));
 
 const maxLastmod = list => list.reduce((max, entry) => (entry.lastmod > max ? entry.lastmod : max), '');
 const indexLastmods = {

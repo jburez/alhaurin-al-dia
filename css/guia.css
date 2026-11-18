@@ -1,0 +1,226 @@
+/* =========================================================
+   GUÍA PRÁCTICA — componentes de las páginas nuevas
+   (portada, guías, agenda, utilidades, comercios, legales)
+   Mobile-first. Paleta verde/tierra andaluza como variables
+   nuevas: las variables existentes de styles.css se respetan.
+========================================================= */
+
+:root {
+    --alh-verde: #24402B;
+    --alh-oliva: #5C7A4A;
+    --alh-oro: #D9A441;
+    --alh-crema: #F6F3EA;
+    --alh-verde-suave: #e7eee3;
+    --alh-oro-suave: #fbf1dc;
+    --alh-tinta: var(--ink, #1c1f1b);
+    --alh-gris: var(--muted, #6b6f68);
+    --alh-linea: var(--line, #e4e0d5);
+    --alh-radio: 10px;
+    /* Alturas reservadas de publicidad (evitan CLS) */
+    --alh-ad-contenido: 280px;
+    --alh-ad-banda: 120px;
+}
+
+.skip-link { position: absolute; left: -9999px; top: 0; }
+.skip-link:focus { left: 12px; top: 12px; z-index: 1000; background: #fff; padding: 8px 12px; border-radius: 6px; }
+
+.alh-main { background: var(--alh-crema); padding-bottom: 32px; }
+.alh-narrow { max-width: 860px; }
+.alh-section { padding: 20px 0; }
+.alh-section + .alh-section { padding-top: 4px; }
+
+.alh-page-header { padding: 20px 0 8px; }
+.alh-page-header h1 {
+    font-size: clamp(26px, 6vw, 38px);
+    line-height: 1.15;
+    color: var(--alh-verde);
+    margin: 6px 0 10px;
+    letter-spacing: -0.01em;
+}
+.alh-kicker {
+    display: inline-block;
+    font: 700 12px/1.2 var(--font-body, system-ui);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--alh-oliva);
+}
+.alh-lead { font-size: 17px; line-height: 1.55; color: #3b4237; margin: 0 0 8px; }
+.alh-updated {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--alh-oro-suave); color: #6b4e12;
+    border: 1px solid #efd9a6; border-radius: 999px;
+    padding: 4px 12px; font-size: 13px; font-weight: 700; margin: 4px 0 12px;
+}
+
+.alh-breadcrumbs { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; color: var(--alh-gris); margin-bottom: 8px; }
+.alh-breadcrumbs a { color: var(--alh-oliva); font-weight: 600; text-decoration: none; }
+.alh-breadcrumbs a:hover { text-decoration: underline; }
+.alh-breadcrumbs .sep { color: #a3a79e; }
+
+.alh-h2 { font-size: clamp(20px, 4.5vw, 26px); color: var(--alh-verde); margin: 0 0 12px; line-height: 1.2; }
+.alh-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.alh-section-head .alh-h2 { margin: 0; }
+.alh-section-head a { font-size: 14px; font-weight: 700; color: var(--alh-oliva); text-decoration: none; }
+
+.alh-card {
+    background: #fff;
+    border: 1px solid var(--alh-linea);
+    border-radius: var(--alh-radio);
+    padding: 16px;
+}
+.alh-card h3 { margin: 0 0 6px; font-size: 17px; color: var(--alh-tinta); line-height: 1.3; }
+.alh-card p { margin: 0 0 8px; color: #3b4237; line-height: 1.5; }
+.alh-card a { color: var(--alh-verde); }
+.alh-prose { background: #fff; border: 1px solid var(--alh-linea); border-radius: var(--alh-radio); padding: 18px 16px; }
+.alh-prose h2 { color: var(--alh-verde); font-size: 21px; margin: 22px 0 8px; }
+.alh-prose h2:first-child { margin-top: 0; }
+.alh-prose h3 { font-size: 17px; margin: 16px 0 6px; }
+.alh-prose p, .alh-prose li { line-height: 1.65; color: #2c3229; }
+.alh-prose a { color: var(--alh-verde); font-weight: 600; }
+
+.alh-grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .alh-grid-2 { grid-template-columns: repeat(2, 1fr); } .alh-grid-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .alh-grid-3 { grid-template-columns: repeat(3, 1fr); } .alh-grid-4 { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 640px) and (max-width: 959px) { .alh-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- Hoy en Alhaurín ---------- */
+.alh-hoy { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+@media (min-width: 960px) { .alh-hoy { grid-template-columns: repeat(4, 1fr); } }
+.alh-hoy-card {
+    display: flex; flex-direction: column; gap: 4px;
+    background: #fff; border: 1px solid var(--alh-linea); border-radius: var(--alh-radio);
+    padding: 12px; min-height: 132px; color: inherit; text-decoration: none;
+    border-top: 4px solid var(--alh-oliva);
+}
+.alh-hoy-card:hover { box-shadow: 0 4px 12px rgba(36, 64, 43, .10); }
+.alh-hoy-card.is-farmacia { border-top-color: #2f8f5b; }
+.alh-hoy-card.is-tiempo { border-top-color: var(--alh-oro); }
+.alh-hoy-card.is-avisos { border-top-color: #b4532a; }
+.alh-hoy-card.is-evento { border-top-color: var(--alh-verde); }
+.alh-hoy-label { font: 700 11px/1.2 var(--font-body, system-ui); text-transform: uppercase; letter-spacing: .06em; color: var(--alh-gris); }
+.alh-hoy-title { font-size: 16px; font-weight: 700; color: var(--alh-tinta); line-height: 1.25; }
+.alh-hoy-detail { font-size: 13px; color: #4a5146; line-height: 1.4; }
+.alh-hoy-cta { margin-top: auto; font-size: 13px; font-weight: 700; color: var(--alh-oliva); }
+@media (max-width: 380px) { .alh-hoy { grid-template-columns: 1fr; } }
+
+/* ---------- Listas ---------- */
+.alh-news-list, .alh-event-list, .alh-plain-list { list-style: none; margin: 0; padding: 0; }
+.alh-news-item { padding: 12px 0; border-bottom: 1px solid var(--alh-linea); }
+.alh-news-item:last-child { border-bottom: 0; }
+.alh-news-title { font-weight: 700; color: var(--alh-tinta); text-decoration: none; line-height: 1.3; }
+.alh-news-title:hover { text-decoration: underline; }
+.alh-news-line { margin: 4px 0; color: #4a5146; font-size: 14px; line-height: 1.45; }
+.alh-news-meta { margin: 0; font-size: 12.5px; color: var(--alh-gris); }
+#actualidad-list, .alh-list-box { background: #fff; border: 1px solid var(--alh-linea); border-radius: var(--alh-radio); padding: 4px 16px; }
+
+.alh-event-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--alh-linea); align-items: flex-start; }
+.alh-event-item:last-child { border-bottom: 0; }
+.alh-date-badge {
+    flex: 0 0 54px; text-align: center; background: var(--alh-verde); color: #fff;
+    border-radius: 8px; padding: 6px 4px; line-height: 1.1;
+}
+.alh-date-badge .d { display: block; font-size: 20px; font-weight: 800; }
+.alh-date-badge .m { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+.alh-event-body { min-width: 0; }
+.alh-event-body a { font-weight: 700; color: var(--alh-tinta); text-decoration: none; }
+.alh-event-body a:hover { text-decoration: underline; }
+.alh-event-meta { margin: 3px 0 0; font-size: 13px; color: var(--alh-gris); }
+.alh-tag {
+    display: inline-block; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+    background: var(--alh-verde-suave); color: var(--alh-verde); margin-right: 4px;
+}
+.alh-tag-oro { background: var(--alh-oro-suave); color: #6b4e12; }
+.alh-tag-destacado { background: var(--alh-oro); color: #2a1f05; }
+
+/* ---------- Filtros (agenda) ---------- */
+.alh-filters { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 10px; -webkit-overflow-scrolling: touch; }
+.alh-filter {
+    flex: 0 0 auto; border: 1px solid var(--alh-linea); background: #fff; color: var(--alh-verde);
+    border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 700; cursor: pointer; text-decoration: none;
+}
+.alh-filter[aria-pressed="true"], .alh-filter.is-active { background: var(--alh-verde); color: #fff; border-color: var(--alh-verde); }
+[data-agenda-item][hidden] { display: none !important; }
+
+/* ---------- Guías ---------- */
+.alh-key-data { background: var(--alh-verde-suave); border: 1px solid #cfdcc8; border-radius: var(--alh-radio); padding: 14px 16px; margin: 12px 0 16px; }
+.alh-key-data h2 { font-size: 16px; margin: 0 0 8px; color: var(--alh-verde); }
+.alh-key-data dl { display: grid; grid-template-columns: minmax(110px, 38%) 1fr; gap: 6px 12px; margin: 0; }
+.alh-key-data dt { font-weight: 700; color: #33402f; font-size: 14px; }
+.alh-key-data dd { margin: 0; font-size: 14px; color: #2c3229; word-break: break-word; }
+.alh-faq details { background: #fff; border: 1px solid var(--alh-linea); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; }
+.alh-faq summary { font-weight: 700; cursor: pointer; color: var(--alh-tinta); }
+.alh-faq details p { margin: 8px 0 0; line-height: 1.6; }
+.alh-sources li { margin-bottom: 6px; }
+.alh-guide-card { display: block; text-decoration: none; color: inherit; }
+.alh-guide-card:hover h3 { text-decoration: underline; }
+
+/* ---------- Avisos y notas ---------- */
+.alh-note { background: #fff; border-left: 4px solid var(--alh-oliva); border-radius: 0 8px 8px 0; padding: 12px 14px; margin: 0 0 14px; }
+.alh-note strong { display: block; color: var(--alh-verde); margin-bottom: 4px; }
+.alh-note p { margin: 0; line-height: 1.55; color: #3b4237; }
+.alh-note-warn { border-left-color: #b4532a; background: #fff8f3; }
+.alh-note-ok { border-left-color: #2f8f5b; }
+.alh-empty { color: var(--alh-gris); font-style: italic; margin: 10px 0; }
+.alh-more { margin: 12px 0 0; font-weight: 700; }
+.alh-more a { color: var(--alh-oliva); text-decoration: none; }
+.alh-pending { background: #fff3cd; color: #6b4e12; padding: 0 4px; border-radius: 3px; font-size: .95em; }
+.alh-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    background: var(--alh-verde); color: #fff; border-radius: 8px; padding: 10px 16px;
+    font-weight: 700; text-decoration: none; border: 0; cursor: pointer; font-size: 15px;
+}
+.alh-btn:hover { background: #1a3020; color: #fff; }
+.alh-btn-sec { background: #fff; color: var(--alh-verde); border: 1px solid var(--alh-verde); }
+.alh-btn-sec:hover { background: var(--alh-verde-suave); color: var(--alh-verde); }
+.alh-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+
+/* ---------- Farmacia ---------- */
+.alh-pharmacy-hero { background: #fff; border: 2px solid #2f8f5b; border-radius: 12px; padding: 16px; }
+.alh-pharmacy-hero h2 { margin: 2px 0 6px; font-size: 22px; color: var(--alh-verde); }
+.alh-calendar { width: 100%; border-collapse: collapse; background: #fff; border-radius: var(--alh-radio); overflow: hidden; font-size: 14px; }
+.alh-calendar th, .alh-calendar td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--alh-linea); vertical-align: top; }
+.alh-calendar th { background: var(--alh-verde-suave); color: var(--alh-verde); font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; }
+.alh-calendar tr.is-today td { background: #f0f7f2; font-weight: 700; }
+
+/* ---------- Comercios ---------- */
+.alh-featured-slot {
+    background: linear-gradient(135deg, var(--alh-oro-suave), #fff);
+    border: 1px dashed var(--alh-oro); border-radius: var(--alh-radio); padding: 14px 16px; min-height: 110px;
+}
+.alh-featured-slot h3 { margin: 4px 0; color: var(--alh-verde); }
+.alh-business { position: relative; }
+.alh-business.is-destacado { border: 2px solid var(--alh-oro); }
+
+/* ---------- Publicidad: altura reservada desde el primer render ---------- */
+.alh-ad {
+    position: relative; display: flex; align-items: center; justify-content: center;
+    width: 100%; margin: 18px 0; overflow: hidden;
+    background: var(--paper-soft, #f5f2ec); border: 1px dashed var(--alh-linea); border-radius: 8px;
+    contain: layout size;
+}
+.alh-ad-contenido { height: var(--alh-ad-contenido); }
+.alh-ad-banda { height: var(--alh-ad-banda); }
+.alh-ad-label {
+    position: absolute; top: 6px; left: 10px; font-size: 10px; font-weight: 800;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--alh-gris);
+}
+.alh-ad ins.adsbygoogle { display: block; width: 100%; height: 100%; }
+@media (min-width: 768px) { :root { --alh-ad-banda: 110px; } }
+
+/* ---------- Pie: enlaces legales y consentimiento ---------- */
+.footer-legal { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 14px 0 0; padding: 12px 0 0; border-top: 1px solid rgba(255,255,255,.12); font-size: 13px; }
+.footer-legal a, .footer-consent-link { color: inherit; opacity: .9; text-decoration: none; }
+.footer-legal a:hover, .footer-consent-link:hover { text-decoration: underline; opacity: 1; }
+.footer-consent-link { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
+
+/* ---------- Página de evento ---------- */
+.alh-event-facts { display: grid; gap: 8px; grid-template-columns: 1fr; margin: 12px 0; }
+@media (min-width: 640px) { .alh-event-facts { grid-template-columns: repeat(2, 1fr); } }
+.alh-fact { background: #fff; border: 1px solid var(--alh-linea); border-radius: 8px; padding: 10px 12px; }
+.alh-fact span { display: block; font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--alh-gris); font-weight: 700; }
+.alh-fact strong { display: block; font-size: 15px; color: var(--alh-tinta); margin-top: 2px; }
+.alh-past-banner { background: #fdf0e8; border: 1px solid #f0c9b1; color: #7a3412; border-radius: 8px; padding: 12px 14px; margin: 10px 0; font-weight: 600; }
+
+/* ---------- Atribución en noticias RSS ---------- */
+.article-origin-note { margin: 8px 0 0; font-size: 14px; color: #5a5f55; background: #f5f2ec; border-radius: 6px; padding: 8px 10px; }
+.article-origin-note a { color: #24402B; font-weight: 700; }

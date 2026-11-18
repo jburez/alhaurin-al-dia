@@ -16,7 +16,8 @@
         "imagen": "https://i4.ytimg.com/vi/3njMjH43uTQ/maxresdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html"
+        "pagina": "noticias/planeatv-agenda-cultural-de-alhaurin-el-grande-para-los-proximos-dias.html",
+        "origen": "rss"
     },
     {
         "id": "guid-atv-alhaurin-youtube-yt-video-aelcb7g4rpg-57618071",
@@ -35,7 +36,8 @@
         "imagen": "https://i2.ytimg.com/vi/aElCb7G4Rpg/maxresdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-en-cordoba-con-motivo-de-la-semana-gala.html"
+        "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-en-cordoba-con-motivo-de-la-semana-gala.html",
+        "origen": "rss"
     },
     {
         "id": "guid-atv-alhaurin-youtube-yt-video-xz0q8rrh-om-e079c0d2",
@@ -54,7 +56,8 @@
         "imagen": "https://i1.ytimg.com/vi/xZ0q8RRh-OM/maxresdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/presentacion-del-cartel-y-la-programacion-de-navidad-2026-27.html"
+        "pagina": "noticias/presentacion-del-cartel-y-la-programacion-de-navidad-2026-27.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22515-250de29c",
@@ -73,7 +76,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/11/911689288_1777733080122549_2516482632979258866_n.jpg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-presenta-una-amplia-programacion-de-navidad-con-actividades-para-todos.html"
+        "pagina": "noticias/alhaurin-el-grande-presenta-una-amplia-programacion-de-navidad-con-actividades-para-todos.html",
+        "origen": "rss"
     },
     {
         "id": "guid-atv-alhaurin-youtube-yt-video-yu3oxuuvulc-b32f87d2",
@@ -92,7 +96,8 @@
         "imagen": "https://i2.ytimg.com/vi/yu3oXuUvUlc/maxresdefault.jpg",
         "prioridad": 80,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/presentacion-navidad-2026-27-el-ayuntamiento-presenta-el-cartel-y-el-programa.html"
+        "pagina": "noticias/presentacion-navidad-2026-27-el-ayuntamiento-presenta-el-cartel-y-el-programa.html",
+        "origen": "rss"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50759-dd32cdd4",
@@ -111,7 +116,8 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/11/ALHAURIN-EL-GRANDE-NAVIDAD-2026_Programacion-1.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/programa-navidad-2026-27-alhaurin-el-grande-villa-del-guadalhorce.html"
+        "pagina": "noticias/programa-navidad-2026-27-alhaurin-el-grande-villa-del-guadalhorce.html",
+        "origen": "rss"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-4575e788",
@@ -130,7 +136,8 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/ix-zambomba-flamenca.html"
+        "pagina": "noticias/ix-zambomba-flamenca.html",
+        "origen": "rss"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-58ed6333",
@@ -149,7 +156,8 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/festividad-de-santa-cecilia-2026.html"
+        "pagina": "noticias/festividad-de-santa-cecilia-2026.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22513-7ca9d47d",
@@ -168,7 +176,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/11/Alhaurin-el-Grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-Semana-Gala_09.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala.html"
+        "pagina": "noticias/alhaurin-el-grande-promociona-su-legado-cultural-y-su-oferta-turistica-en-la-semana-gala.html",
+        "origen": "rss"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50750-195e22b5",
@@ -187,7 +196,8 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/11/torli.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo.html"
+        "pagina": "noticias/inauguracion-de-la-exposicion-gustavo-thorlichen-a-traves-del-objetivo.html",
+        "origen": "rss"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50746-1a29de3d",
@@ -206,7 +216,8 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/11/principio.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne.html"
+        "pagina": "noticias/inauguracion-de-la-exposicion-el-princpio-por-atelier-marianne.html",
+        "origen": "rss"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50743-61e0b9c0",
@@ -225,7 +236,8 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/11/halloween.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/halloween-2026-en-alhaurin-el-grande.html"
+        "pagina": "noticias/halloween-2026-en-alhaurin-el-grande.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22512-2b416b59",
@@ -244,7 +256,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2024/04/cropped-LOGOAYTOALH.png",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/concesion-de-becas-a-deportistas-locales.html"
+        "pagina": "noticias/concesion-de-becas-a-deportistas-locales.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22510-dde63b57",
@@ -263,7 +276,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-10-at-14.20.38.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/activacion-del-plan-de-emergencias-municipal-por-la-alerta-naranja.html"
+        "pagina": "noticias/activacion-del-plan-de-emergencias-municipal-por-la-alerta-naranja.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22509-591db295",
@@ -282,7 +296,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/11/Exposicion-Thorlichen-a-traves-del-objetivo-2.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-descubre-la-faceta-fotografica-de-gustavo-thorlichen-con-una-nueva.html"
+        "pagina": "noticias/alhaurin-el-grande-descubre-la-faceta-fotografica-de-gustavo-thorlichen-con-una-nueva.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22508-65b7cdce",
@@ -301,7 +316,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/11/La-Escuela-Municipal-de-Musica-y-oleo-de-Alhaurin-el-Grande-trasladaran-sus-clases-a-nuevas-instalaciones-por-motivos-de-seguridad_02.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/el-ayuntamiento-reubica-la-actividad-formativa-en-nuevos-espacios-tras-detectar-problemas.html"
+        "pagina": "noticias/el-ayuntamiento-reubica-la-actividad-formativa-en-nuevos-espacios-tras-detectar-problemas.html",
+        "origen": "rss"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50740-50b704c4",
@@ -320,7 +336,8 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/11/mulliores.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/segundo-domingo-de-mulliores-2026.html"
+        "pagina": "noticias/segundo-domingo-de-mulliores-2026.html",
+        "origen": "rss"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50737-d09f9af6",
@@ -339,7 +356,8 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/11/milla.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/xxxviii-milla-urbana-de-alhaurin-el-grande-2026.html"
+        "pagina": "noticias/xxxviii-milla-urbana-de-alhaurin-el-grande-2026.html",
+        "origen": "rss"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-aaa6c313",
@@ -358,7 +376,8 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-09-at-09.20.43.jpeg",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/sabado-legionario-en-ceuta.html"
+        "pagina": "noticias/sabado-legionario-en-ceuta.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22507-117e486d",
@@ -377,7 +396,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/11/Cuarta-Estacion_programacion-noviembre-diciembre.jpeg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos.html"
+        "pagina": "noticias/cultura-despide-el-ano-con-una-programacion-variada-de-calidad-y-para-todos-los-publicos.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22505-6258cd93",
@@ -396,7 +416,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/11/Alhaurin-el-Grande-celebra-este-proximo-viernes-el-Dia-Internacional-del-Flamenco-2026.jpg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco.html"
+        "pagina": "noticias/alhaurin-el-grande-celebra-este-proximo-viernes-el-dia-internacional-del-flamenco.html",
+        "origen": "rss"
     },
     {
         "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50728-9e798acb",
@@ -415,7 +436,8 @@
         "imagen": "https://rtvalhaurinelgrande.com/wp-content/uploads/2026/11/aaaaaaaaaa.jpg",
         "prioridad": 90,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/concierto-coloquio-de-santiago-alonso-y-el-cirguero.html"
+        "pagina": "noticias/concierto-coloquio-de-santiago-alonso-y-el-cirguero.html",
+        "origen": "rss"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-9eca75ae",
@@ -434,7 +456,8 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/fernando-arguelles-pregonero-del-xxxv-pregon-de-la-semana-santa.html"
+        "pagina": "noticias/fernando-arguelles-pregonero-del-xxxv-pregon-de-la-semana-santa.html",
+        "origen": "rss"
     },
     {
         "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22505-19ba99bc",
@@ -453,7 +476,8 @@
         "imagen": "https://alhaurinelgrande.es/wp-content/uploads/2026/10/868174126_29116341124626989_3624783.jpg",
         "prioridad": 120,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/en-alhaurin-el-grande-se-imparte-un-curso-de-auxiliar-de-almacen-del-programa-enruta.html"
+        "pagina": "noticias/en-alhaurin-el-grande-se-imparte-un-curso-de-auxiliar-de-almacen-del-programa-enruta.html",
+        "origen": "rss"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-5d965395",
@@ -472,7 +496,8 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2025/06/ESCUDO-REAL-HDAD.-NTRO.-PADRE-JESeS-NAZARENO.png",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/sole-ne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos.html"
+        "pagina": "noticias/sole-ne-misa-de-honras-por-nuestras-hermanas-y-hermanos-difuntos.html",
+        "origen": "rss"
     },
     {
         "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-5c41bef4",
@@ -491,6 +516,7 @@
         "imagen": "https://www.nuestropadrejesusnazareno.com/wp-content/uploads/2026/10/carta-diocsis-1.jpeg",
         "prioridad": 95,
         "requiere_revision_geografica": false,
-        "pagina": "noticias/ultima-convocatoria-extraordinaria-para-cofrades-con-bloques-pendientes-de-superar.html"
+        "pagina": "noticias/ultima-convocatoria-extraordinaria-para-cofrades-con-bloques-pendientes-de-superar.html",
+        "origen": "rss"
     }
 ]

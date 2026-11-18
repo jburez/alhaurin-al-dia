@@ -40,6 +40,7 @@ from lib.editorial_registry import (
     CACHE_MISS_AI_NOT_SUCCESSFUL,
 )
 from lib.editorial_log import construir_evento, registrar_eventos
+from lib.detector_eventos import construir_borrador, es_evento, guardar_borradores
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_FILE = BASE_DIR / "data" / "noticias.json"
@@ -52,6 +53,50 @@ SITE_URL = "https://alhaurinaldia.es"
 MAX_NOTICIAS_POR_FUENTE = 10
 MAX_NOTICIAS_TOTAL = 30
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+AGENDA_BORRADORES_FILE = BASE_DIR / "data" / "agenda_borradores.json"
+
+# --- Opciones de ejecución (ver configurar_desde_argv) ---
+# Reescribir titulares/entradillas ajenos con IA es justo lo que Google
+# penaliza como contenido de poco valor: queda APAGADO por defecto y solo se
+# activa con --reescribir-ia (además de necesitar OPENAI_API_KEY).
+REESCRIBIR_IA = False
+# "noticias" (por defecto) o "agenda": en modo agenda, las entradas que
+# parecen eventos se guardan como borrador en data/agenda_borradores.json en
+# vez de publicarse como noticia.
+MODO = "noticias"
+BORRADORES_AGENDA = []
+
+# Todo lo que genera este script procede de feeds de terceros.
+ORIGEN_RSS = "rss"
+ORIGEN_ORIGINAL = "original"
+
+
+def configurar_desde_argv(argv=None):
+    """Lee los flags de línea de comandos y ajusta la configuración global.
+
+    --reescribir-ia   Activa la reescritura con OpenAI (apagada por defecto).
+    --modo agenda     Desvía los eventos detectados a data/agenda_borradores.json.
+    """
+    import argparse
+    global REESCRIBIR_IA, MODO
+    parser = argparse.ArgumentParser(description="Generador de noticias RSS de Alhaurín al Día")
+    parser.add_argument("--reescribir-ia", action="store_true",
+                        help="Reescribe titulares y entradillas con OpenAI (desactivado por defecto).")
+    parser.add_argument("--modo", choices=["noticias", "agenda"], default="noticias",
+                        help="'agenda' guarda los eventos detectados como borradores en vez de noticias.")
+    args = parser.parse_args(argv)
+    REESCRIBIR_IA = args.reescribir_ia or os.getenv("REESCRIBIR_IA", "").strip() == "1"
+    MODO = args.modo
+    return args
+
+
+def guardar_borradores_agenda():
+    """Persiste los borradores de agenda detectados en esta ejecución."""
+    if MODO != "agenda":
+        return 0
+    añadidos = guardar_borradores(AGENDA_BORRADORES_FILE, BORRADORES_AGENDA)
+    print(f"Borradores de agenda detectados: {len(BORRADORES_AGENDA)} (nuevos: {añadidos}) -> {AGENDA_BORRADORES_FILE.relative_to(BASE_DIR)}")
+    return añadidos
 
 CATEGORIAS_VALIDAS = [
     "Actualidad", "Fiestas y Tradiciones", "Agenda Cultural", "Deportes", "Municipal",
@@ -74,7 +119,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def ia_activada():
-    return bool(os.getenv("OPENAI_API_KEY", "").strip())
+    """La IA solo se usa si se pidió explícitamente (--reescribir-ia) Y hay clave."""
+    return REESCRIBIR_IA and bool(os.getenv("OPENAI_API_KEY", "").strip())
 
 
 def limpiar_html(texto):
@@ -711,14 +757,23 @@ def schema_item_list(noticias):
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
-def html_header(title, description, canonical, image="", css_prefix="..", og_type="article", incluir_article_css=True):
+ROBOTS_INDEX = "index, follow, max-image-preview:large"
+ROBOTS_NOINDEX = "noindex, follow"
+
+
+def es_origen_rss(noticia):
+    """Una noticia es RSS salvo que se haya marcado a mano como original."""
+    return (noticia.get("origen") or ORIGEN_RSS) != ORIGEN_ORIGINAL
+
+
+def html_header(title, description, canonical, image="", css_prefix="..", og_type="article", incluir_article_css=True, robots=ROBOTS_INDEX):
     image = image or f"{SITE_URL}/assets/favicon.svg"
     return f'''<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{escapar(title)}</title>
     <meta name="description" content="{escapar(description)}">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="robots" content="{robots}">
     <link rel="canonical" href="{escapar(canonical)}">
     <meta property="og:type" content="{escapar(og_type)}">
     <meta property="og:site_name" content="Alhaurín al Día">
@@ -787,6 +842,22 @@ def renderizar_parrafos_cuerpo(cuerpo):
     return "\n".join(f"<p>{escapar(parrafo)}</p>" for parrafo in parrafos)
 
 
+def bloque_atribucion_superior(fuente, enlace):
+    """Línea visible bajo la entradilla: deja claro que el contenido es ajeno."""
+    nombre = escapar(fuente or "su fuente original")
+    if enlace and enlace.startswith("http"):
+        nombre = f'<a href="{escapar(enlace)}" target="_blank" rel="nofollow noopener">{nombre}</a>'
+    return f'<p class="article-origin-note" data-origen="rss">Información publicada originalmente por {nombre}.</p>'
+
+
+def bloque_atribucion_fuente(fuente, enlace):
+    boton = (f'<a class="btn btn-primary" href="{escapar(enlace)}" target="_blank" rel="nofollow noopener">Leer en la fuente original</a>'
+             if enlace and enlace.startswith("http") else "")
+    return (f'<aside class="article-editorial-note"><strong>Nota de Alhaurín al Día</strong><p>Esta noticia es un resumen breve de una información publicada por {escapar(fuente or "otro medio")}. '
+            f'Alhaurín al Día no es su autor: consulta siempre la fuente original para conocer todos los detalles.</p></aside>\n'
+            f'                    <div class="article-source-box"><div><span>Fuente original</span><strong>{escapar(fuente or "Fuente externa")}</strong></div>{boton}</div>')
+
+
 def generar_html_noticia(noticia, noticias):
     titulo = noticia.get("titulo", "Noticia local")
     descripcion = noticia.get("descripcion") or noticia.get(
@@ -805,18 +876,20 @@ def generar_html_noticia(noticia, noticias):
     cuerpo_html = renderizar_parrafos_cuerpo(cuerpo)
     relacionadas = bloque_relacionadas(noticia, noticias)
     breadcrumb_schema = schema_breadcrumb_list(noticia, canonical)
+    rss = es_origen_rss(noticia)
+    bloque_fuente = bloque_atribucion_fuente(fuente, enlace_original) if rss else ""
+    atribucion_superior = bloque_atribucion_superior(fuente, enlace_original) if rss else ""
     body = f'''
     <main class="article-page"><div class="container article-shell">
         <div class="breadcrumb"><a href="../">Inicio</a><span>›</span><a href="../noticias/">Noticias</a><span>›</span><a href="../categoria/{slugify(categoria)}/">{escapar(categoria)}</a></div>
         <div class="article-layout premium-article-layout">
             <article class="article-card premium-article-card">
-                <header class="article-hero"><div class="article-meta"><span class="tag">{escapar(categoria)}</span>{f'<span class="source-mini-tag">{escapar(fuente)}</span>' if fuente else ''}{f'<span class="source-mini-tag">{escapar(fecha)}</span>' if fecha else ''}<span class="source-mini-tag">{escapar(lectura)}</span></div><h1 class="article-title">{escapar(titulo)}</h1><p class="article-summary">{escapar(descripcion)}</p></header>
+                <header class="article-hero"><div class="article-meta"><span class="tag">{escapar(categoria)}</span>{f'<span class="source-mini-tag">{escapar(fuente)}</span>' if fuente else ''}{f'<span class="source-mini-tag">{escapar(fecha)}</span>' if fecha else ''}<span class="source-mini-tag">{escapar(lectura)}</span></div><h1 class="article-title">{escapar(titulo)}</h1><p class="article-summary">{escapar(descripcion)}</p>{atribucion_superior}</header>
                 {imagen_html}
                 <div class="article-content premium-article-content">
                     {cuerpo_html}
                     <div class="article-inline-ad"><div class="ad-slot ad-slot-native">Publicidad integrada en la noticia</div></div>
-                    <aside class="article-editorial-note"><strong>Nota de Alhaurín al Día</strong><p>Alhaurín al Día recopila y organiza esta información para facilitar el acceso a la actualidad local de Alhaurín el Grande, respetando la fuente original y enlazando siempre al contenido de referencia.</p></aside>
-                    <div class="article-source-box"><div><span>Fuente original</span><strong>{escapar(fuente or "Fuente externa")}</strong></div><a class="btn btn-primary" href="{escapar(enlace_original)}" target="_blank" rel="noopener noreferrer">Leer en la fuente original</a></div>
+                    {bloque_fuente}
                 </div>
             </article>
             <aside class="article-sidebar premium-article-sidebar" aria-label="Opciones de la noticia"><div class="share-card"><span class="mini-label">Opciones</span><h2>Comparte o guarda</h2><div class="share-actions"><a href="https://api.whatsapp.com/send?text={share_text}" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.facebook.com/sharer/sharer.php?u={share_url}" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://twitter.com/intent/tweet?url={share_url}&text={quote(titulo)}" target="_blank" rel="noopener noreferrer">X</a></div><button type="button" class="btn btn-secondary bookmark-btn" data-id="{escapar(noticia.get('id', ''))}" data-title="{escapar(titulo)}" data-url="{escapar(canonical)}" style="margin-top: 12px; width: 100%; text-align: center;">⭐ Guardar en Mi Alhaurín</button></div><div class="ad-slot ad-slot-sidebar ad-slot-sticky">Publicidad lateral</div></aside>
@@ -825,7 +898,7 @@ def generar_html_noticia(noticia, noticias):
     <script type="application/ld+json">{breadcrumb_schema}</script>
     <script type="application/ld+json">{schema_organization()}</script>
     <script type="application/ld+json">{schema_website()}</script>'''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " — Alhaurín al Día", descripcion, canonical, imagen, "..", "article")}\n{site_chrome(body, "..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(titulo + " — Alhaurín al Día", descripcion, canonical, imagen, "..", "article", robots=ROBOTS_NOINDEX if rss else ROBOTS_INDEX)}\n{site_chrome(body, "..")}\n</html>'
 
 
 def generar_html_categoria(categoria, noticias):
@@ -847,7 +920,7 @@ def generar_html_categoria(categoria, noticias):
     <script type="application/ld+json">{schema_breadcrumb_categoria(categoria, canonical)}</script>
     <script type="application/ld+json">{schema_organization()}</script>
     <script type="application/ld+json">{schema_website()}</script>'''
-    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " — Alhaurín al Día", descripcion, canonical, "", "../..", "website", incluir_article_css=False)}\n{site_chrome(body, "../..")}\n</html>'
+    return f'<!doctype html>\n<html lang="es">\n{html_header(categoria + " — Alhaurín al Día", descripcion, canonical, "", "../..", "website", incluir_article_css=False, robots=ROBOTS_INDEX if any(not es_origen_rss(n) for n in noticias) else ROBOTS_NOINDEX)}\n{site_chrome(body, "../..")}\n</html>'
 
 
 def escribir_si_cambia(ruta, contenido):
@@ -1012,7 +1085,8 @@ def obtener_noticias():
     print("\nGenerando noticias para Alhaurín al Día")
     print("Archivo destino:", OUTPUT_FILE)
     print("Fuentes activas:", len(fuentes), "de", FUENTES_FILE.relative_to(BASE_DIR))
-    print("IA editorial:", "activada" if ia_activada() else "desactivada")
+    print("IA editorial:", "activada" if ia_activada() else "desactivada (usa --reescribir-ia para activarla)")
+    print("Modo:", MODO)
     for fuente in fuentes:
         print("\n====================================")
         print("Leyendo:", fuente["nombre"])
@@ -1037,6 +1111,13 @@ def obtener_noticias():
             if not incluir:
                 print(f"✗ Descartada por no ser local: {titulo_original}")
                 continue
+            if MODO == "agenda":
+                evento, claves, fechas = es_evento(titulo_original, texto_limpio)
+                if evento:
+                    BORRADORES_AGENDA.append(construir_borrador(
+                        titulo_original, texto_limpio, url, fuente["nombre"], claves, fechas))
+                    print(f"📅 Borrador de agenda (no se publica como noticia): {titulo_original}")
+                    continue
 
             # --- 1. Identidad, ANTES de tocar la IA. ---
             try:
@@ -1163,6 +1244,7 @@ def obtener_noticias():
                 "imagen": extraer_imagen(entry, imagen_feed), "prioridad": prioridad_fuente(fuente["nombre"]),
                 "requiere_revision_geografica": requiere_revision,
                 "pagina": pagina_previa or "",
+                "origen": ORIGEN_RSS,
             }
             noticias.append(noticia)
             bookkeeping_por_id[id_final] = {
@@ -1367,9 +1449,8 @@ if __name__ == "__main__":
     # como import de generar_noticias_seguro.py) -- se deja sin
     # implementar deliberadamente en vez de introducir esa dependencia
     # circular.
-    print(
-        "Este módulo no es un entrypoint de publicación. "
-        "Usa scripts/generar_noticias_seguro.py.",
-        file=sys.stderr,
-    )
-    sys.exit(2)
+    # Para no cargar este módulo dos veces, se sustituye el proceso por el
+    # entrypoint real conservando los flags (--reescribir-ia, --modo agenda).
+    configurar_desde_argv(sys.argv[1:])  # valida los flags antes de delegar
+    seguro = str(Path(__file__).resolve().parent / "generar_noticias_seguro.py")
+    os.execv(sys.executable, [sys.executable, seguro, *sys.argv[1:]])

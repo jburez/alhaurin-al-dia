@@ -25,6 +25,7 @@ SCRIPTS_DIR = BASE_DIR / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+import generar_noticias  # noqa: E402
 from generar_noticias import (  # noqa: E402
     CATEGORIAS_VALIDAS,
     detectar_categoria,
@@ -270,8 +271,10 @@ def generar_noticias_seguras() -> tuple[list[dict], dict]:
 
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    generar_noticias.configurar_desde_argv(argv)
     noticias, bookkeeping_por_id = generar_noticias_seguras()
+    generar_noticias.guardar_borradores_agenda()
     if not noticias:
         print("ERROR: no hay noticias publicables tras el saneado editorial")
         return 1

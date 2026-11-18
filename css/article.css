@@ -506,3 +506,7 @@
         transition: none !important;
     }
 }
+
+/* Atribución visible en noticias de origen RSS (scripts/apply-news-origin.js) */
+.article-origin-note { margin: 8px 0 0; font-size: 14px; color: #5a5f55; background: #f5f2ec; border-radius: 6px; padding: 8px 10px; }
+.article-origin-note a { color: #24402B; font-weight: 700; }

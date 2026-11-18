@@ -6,11 +6,13 @@ Documento actualizado para la rama `develop`.
 
 Alhaurín al Día es una web estática hiperlocal publicada como sitio HTML/CSS/JavaScript. No depende de un backend propio en tiempo de ejecución: las páginas se sirven como ficheros estáticos y el contenido dinámico se obtiene leyendo archivos JSON ubicados en `data/`.
 
-La arquitectura está pensada para tres objetivos principales:
+Desde noviembre de 2026 el sitio se posiciona como **guía práctica de Alhaurín el Grande** (ver §15). Sus objetivos, por orden:
 
-1. Publicar noticias locales y páginas SEO individuales.
-2. Mantener una guía útil de servicios locales con páginas indexables.
-3. Ofrecer una portada diaria consultable con tiempo, avisos, farmacia de guardia, agenda y comercios destacados.
+1. Utilidades diarias: farmacia de guardia, tiempo y avisos.
+2. Agenda de planes indexable y página «Este fin de semana».
+3. Guías prácticas propias (trámites, salud, educación, transporte, ocio…) y la guía útil de servicios.
+4. Directorio de comercios con espacios de comercio destacado.
+5. Actualidad: titulares de fuentes externas en segundo plano (noindex, con atribución visible).
 
 ## 2. Capas de la arquitectura
 
@@ -96,7 +98,9 @@ Scripts de generación ejecutados en local o CI
 
 ### 4.1 `index.html`
 
-Es la plantilla principal de la portada. Incluye:
+> **Desde noviembre de 2026** la portada la genera entera `scripts/render-home.js` (ver §15.2). Lo que sigue describe la portada anterior y se conserva como referencia histórica.
+
+Era la plantilla principal de la portada. Incluía:
 
 - Metadatos SEO básicos.
 - Canonical de la home.
@@ -418,11 +422,23 @@ Flujo:
 3. Limpia HTML y normaliza texto.
 4. Calcula prioridad por fuente (desde `data/fuentes.json`) y fecha.
 5. Detecta categoría automáticamente.
-6. Si existe `OPENAI_API_KEY`, mejora titular, entradilla, cuerpo y keywords con IA.
-7. `generar_noticias_seguro.py` sanea los titulares (rescata o descarta los cortados/incompletos) y deduplica por URL/ID exacto — la deduplicación fina por similitud editorial vive en `scripts/dedupe-news.js` (`npm run news:dedupe`, paso siguiente del pipeline), no aquí.
-8. Genera `data/noticias.json`.
-9. Genera páginas HTML individuales en `noticias/`.
-10. Genera páginas de categoría en `categoria/`.
+6. Solo si se ejecuta con `--reescribir-ia` **y** existe `OPENAI_API_KEY`, mejora titular, entradilla, cuerpo y keywords con IA. Por defecto está apagado: reescribir contenido ajeno con IA es lo que Google penaliza como contenido de poco valor. Las entradas ya reescritas en ejecuciones anteriores siguen reutilizándose desde la caché del registro editorial, sin llamadas nuevas.
+7. Toda noticia generada lleva `"origen": "rss"`. En `--modo agenda`, las entradas que parecen eventos (palabra clave como «concierto», «feria», «taller», «procesión», «convocatoria»… más una fecha futura en el texto; ver `scripts/lib/detector_eventos.py`) se guardan como borrador en `data/agenda_borradores.json` en vez de publicarse como noticia. Los borradores nunca se publican solos.
+8. `generar_noticias_seguro.py` sanea los titulares (rescata o descarta los cortados/incompletos) y deduplica por URL/ID exacto — la deduplicación fina por similitud editorial vive en `scripts/dedupe-news.js` (`npm run news:dedupe`, paso siguiente del pipeline), no aquí.
+9. Genera `data/noticias.json`.
+10. Genera páginas HTML individuales en `noticias/` (noindex si `origen` es `rss`).
+11. Genera páginas de categoría en `categoria/` (noindex mientras no contengan noticias originales).
+
+Flags (en `generar_noticias.py` y `generar_noticias_seguro.py`):
+
+```bash
+python3 scripts/generar_noticias_seguro.py                    # modo noticias, sin IA (por defecto)
+python3 scripts/generar_noticias_seguro.py --reescribir-ia    # activa la reescritura con OpenAI
+python3 scripts/generar_noticias_seguro.py --modo agenda      # desvía eventos a data/agenda_borradores.json
+npm run news:agenda                                           # equivalente a --modo agenda
+```
+
+`generar_noticias.py` acepta los mismos flags y delega en `generar_noticias_seguro.py`.
 
 Fuentes actuales: ver `data/fuentes.json` (5.8) — ya no se documentan aquí como lista fija, para evitar que este documento y el dato real diverjan.
 
@@ -433,7 +449,7 @@ OPENAI_API_KEY=...
 OPENAI_MODEL=gpt-4.1-mini
 ```
 
-Si no hay API key, el script usa fallback editorial local.
+Sin `--reescribir-ia` (o sin API key), el script usa el fallback editorial local.
 
 ## 7. Generación de páginas
 
@@ -459,9 +475,11 @@ IDs protegidos actuales:
 
 Estos se excluyen porque tienen diseño o lógica específica.
 
-### 7.4 Home estática limpia
+### 7.4 Home estática limpia (histórico)
 
-`scripts/render-home-static.js` limpia los contenedores dinámicos de la home para evitar que se queden restos HTML embebidos antes de que `app.js` renderice el contenido.
+> Sustituido en noviembre de 2026: `render-home-static.js` y `render-home-widgets-static.js` delegan ahora en `scripts/render-home.js`.
+
+`scripts/render-home-static.js` limpiaba los contenedores dinámicos de la home para evitar que se queden restos HTML embebidos antes de que `app.js` renderice el contenido.
 
 Contenedores limpiados:
 
@@ -483,12 +501,16 @@ La arquitectura SEO se basa en:
 
 `scripts/generate-sitemaps.js` genera:
 
-- `sitemap.xml`: sitemap principal.
-- `sitemap-farmacias.xml`: URLs de farmacias.
-- `sitemap-servicios.xml`: URLs de servicios.
-- `sitemap-noticias.xml`: noticias y categorías.
-- `sitemap-news.xml`: noticias recientes compatibles con Google News.
-- `sitemap-index.xml`: índice de sitemaps.
+- `sitemap.xml`: sitemap principal (todas las URLs indexables).
+- `sitemap-farmacias.xml`: URLs de farmacias de la guía útil.
+- `sitemap-servicios.xml`: utilidades e información (farmacia de guardia, avisos, tiempo, guía útil, contacto, sobre el proyecto, legales).
+- `sitemap-guias.xml`: `/guias/` y guías publicadas.
+- `sitemap-agenda.xml`: `/agenda/`, `/este-fin-de-semana/` y fichas de evento indexables (futuras y de los últimos 30 días).
+- `sitemap-comercios.xml`: directorio de comercios y `/anunciarse/`.
+- `sitemap-noticias.xml` y `sitemap-news.xml`: solo noticias con `origen: "original"`.
+- `sitemap-index.xml`: índice; los sitemaps vacíos se escriben pero no se anuncian.
+
+Regla general: **ninguna página con `noindex` entra en un sitemap** (`isNoindex()`), y `audit-seo.js` falla si detecta lo contrario.
 
 ## 9. Scripts npm
 
@@ -501,8 +523,17 @@ npm run news:dedupe:dry     # Deduplica en modo simulación
 npm run news:orphans:dry     # Detecta páginas huérfanas de noticias
 npm run news:orphans:archive # Archiva huérfanas que aún no estén en noticias-archivo.json
 npm run news:archive:page    # Regenera /noticias/archivo/ desde noticias-archivo.json
-npm run seo                 # Aplica ajustes SEO de home y limpia SearchAction
-npm run home:static         # Limpia contenedores dinámicos de home
+npm run seo                 # Limpia SearchAction
+npm run home:static         # Genera la portada (scripts/render-home.js)
+npm run news:origin         # Aplica origen rss/original: noindex y atribución en noticias
+npm run news:agenda         # Noticias en --modo agenda (eventos a borradores)
+npm run guias:static        # Genera /guias/ y /guias/<slug>/
+npm run agenda:static       # Normaliza la agenda y genera fichas, /agenda/ y /este-fin-de-semana/
+npm run utilidades:static   # Genera /farmacia-de-guardia/ y /avisos/
+npm run comercios:static    # Genera /comercios/, categorías, fichas y /anunciarse/
+npm run info:static         # Genera sobre el proyecto, contacto y páginas legales
+npm run chrome:sync         # Propaga nav, pie y bloque de consentimiento a todo el HTML
+npm run build:site          # Build completo sin descargar feeds
 npm run guide:pages         # Genera páginas internas de guía útil
 npm run sitemap             # Regenera sitemaps
 npm run seo:audit           # Auditoría SEO no bloqueante
@@ -511,7 +542,7 @@ npm run seo:orphans         # Auditoría de huérfanas no bloqueante
 npm run seo:orphans:strict  # Auditoría de huérfanas estricta
 npm run publish:check       # Comprobación previa a publicar
 npm run daily               # Build + comprobación de publicación
-npm run build               # Pipeline completo
+npm run build               # Pipeline completo (news + build:site)
 ```
 
 ## 10. Pipeline recomendado
@@ -545,6 +576,8 @@ merge a main cuando esté validado
 ```
 
 ## 11. Despliegue
+
+> **Atención:** el workflow `publicar-produccion.yml` se dispara con cada push a `develop`, fusiona en `main` y purga la caché de Cloudflare. Un push a `develop` es, por tanto, un despliegue. Para trabajo que deba revisarse antes, usar una rama aparte.
 
 La web está preparada para publicarse como sitio estático, por ejemplo con GitHub Pages o equivalente. La rama de trabajo recomendada es `develop`; la rama `main` debe recibir únicamente cambios ya validados.
 
@@ -649,3 +682,53 @@ Puntos de diseño:
 - **Lectura no destructiva del correo**: el script solo procesa mensajes `UNSEEN` de la etiqueta `BOP-Malaga` y los marca `\Seen` tras un parseo correcto; si el HTML no produce ningún edicto (posible cambio de formato de BOPMA) el mensaje se deja sin marcar para poder diagnosticarlo en la siguiente ejecución, en vez de perder el aviso silenciosamente.
 - **Patrón defensivo**: si faltan credenciales, falla IMAP o no hay mensajes nuevos, conserva el último `data/boletin-oficial.json` válido y sale con código 0 — mismo criterio que `actualizar_avisos_aemet.py`.
 - **Presentación**: página propia `boletin-oficial/` (listado simple, sin panel de portada) — no comparte hueco con `avisos-oficiales.json` en `home-live.js`.
+
+
+## 15. Reposicionamiento como guía práctica (noviembre 2026)
+
+Motivo: AdSense rechazó el sitio por «contenido de poco valor» (el contenido central eran noticias agregadas de RSS, a veces reescritas con IA). Se mantienen todas las URLs existentes (comprobado contra `reports/urls-baseline.txt`).
+
+### 15.1 Secciones y URLs
+
+| Sección | URL | Generador |
+|---|---|---|
+| Portada | `/` | `scripts/render-home.js` |
+| Farmacia de guardia | `/farmacia-de-guardia/` | `scripts/render-utilidades.js` |
+| Avisos | `/avisos/` | `scripts/render-utilidades.js` |
+| Tiempo | `/tiempo/` | `scripts/render-tiempo-static.js` |
+| Agenda | `/agenda/`, `/este-fin-de-semana/`, `/planes/<slug>/` | `scripts/normalizar-agenda.js` + `scripts/render-agenda.js` |
+| Guías | `/guias/`, `/guias/<slug>/` | `scripts/render-guias.js` |
+| Guía útil (existente) | `/guia-util/…` | `render-guide-pages.js`, `render-guide-static.js` |
+| Comercios | `/comercios/`, `/comercios/<categoria>/`, `/comercios/<categoria>/<slug>/` | `scripts/render-comercios.js` |
+| Anúnciate | `/anunciarse/` | `scripts/render-comercios.js` |
+| Actualidad | `/noticias/` | `scripts/render-news-static.js` |
+| Sobre el proyecto, contacto, legales | `/sobre-nosotros/`, `/contacto/`, `/privacidad/`, `/cookies/`, `/aviso-legal/` | `scripts/render-paginas-info.js` |
+
+Todas las páginas nuevas usan la plantilla común `scripts/lib/layout.js` (head SEO, JSON-LD, consentimiento, nav, pie, huecos de anuncio) y los estilos `css/guia.css` (paleta `--alh-verde #24402B`, `--alh-oliva #5C7A4A`, `--alh-oro #D9A441`, `--alh-crema #F6F3EA`, añadidas sin tocar las variables existentes).
+
+### 15.2 Ficheros de `data/` nuevos o normalizados
+
+- `data/guias.json`: guías (`slug`, `titulo`, `categoria`, `resumen`, `estado` borrador|publicada, `actualizado`, `secciones`, `datos_clave`, `faq`, `fuentes`, `relacionadas`). Solo las publicadas se indexan, salen en portada y en `sitemap-guias.xml`.
+- `data/agenda.json`: agenda normalizada y acumulativa (`slug`, `titulo`, `fecha_inicio`, `fecha_fin`, `hora`, `lugar`, `direccion`, `descripcion`, `categoria`, `precio`/`gratuito`, `organizador`, `url_fuente`, `imagen`…). **No editar a mano**: se genera desde `agenda-local.json`.
+- `data/agenda-overrides.json`: datos añadidos a mano por id de evento. Una ficha de evento es indexable solo si tiene `descripcion` propia (≥ 80 caracteres) y `lugar` o `direccion`; pasa a noindex 30 días después de su fecha de fin.
+- `data/agenda_borradores.json`: borradores de eventos detectados en los feeds (`--modo agenda`). Nunca se publican solos.
+- `data/comercios.json`: directorio (`slug`, `nombre`, `categoria`, `descripcion`, `direccion`, `zona`, `telefono`, `web`, `redes`, `horario`, `destacado`, `patrocinado_hasta`) y categorías con `intro` propia. Ficha propia solo con descripción y dirección u horario. Destacado = `destacado: true` y `patrocinado_hasta` ≥ hoy (las fichas activas del panel en `comercios-destacados.json` cuentan como vigentes).
+- `data/noticias.json` / `noticias-archivo.json`: campo `origen` (`rss` | `original`). `scripts/apply-news-origin.js` lo garantiza y ajusta robots y atribución en todo el HTML de noticias.
+- `data/nav.json`: navegación Hoy · Agenda · Guías · Comercios · Actualidad.
+
+### 15.3 Consentimiento y publicidad
+
+- El `<head>` de todas las páginas lleva el bloque `<!-- alh-consent:start -->…<!-- alh-consent:end -->` (meta `google-adsense-account`, Consent Mode por defecto denegado, hueco para el script del CMP y `js/consent.js`). `scripts/sync-site-chrome.js` lo propaga en cada build.
+- Ya no se carga `adsbygoogle.js` directamente. `js/consent.js` lo carga solo cuando un CMP TCF v2.2 ha registrado la decisión del usuario, y rellena los huecos `[data-ad-ubicacion]` según `CONFIG.adSlots`.
+- Para activar anuncios: (1) pegar el script del CMP certificado en el hueco «CMP:» de `CONSENT_HEAD_HTML` (`scripts/lib/layout.js`) y ejecutar el build; (2) rellenar los IDs de bloque en `js/consent.js`.
+- Los huecos de anuncio (`adSlot()` en `layout.js`) tienen altura fija desde el primer render (`--alh-ad-contenido`, `--alh-ad-banda`) para evitar CLS.
+- El enlace «Configurar cookies» del pie (`[data-consent-open]`) reabre el CMP.
+- Cloudflare Web Analytics no usa cookies y se carga sin consentimiento; cualquier analítica futura con cookies debe usar `AlhConsent.whenAllowed()`.
+
+### 15.4 Auditoría (`scripts/audit-seo.js`)
+
+Críticos: páginas en sitemap con noindex o inexistentes, URLs de `reports/urls-baseline.txt` que ya no existen, `[PENDIENTE` en páginas indexables, JSON-LD con errores de sintaxis y `Event` sin `name`/`startDate`/`location`. Aviso: páginas indexables con menos de 150 palabras de texto propio.
+
+### 15.5 Marcadores `[PENDIENTE: …]`
+
+Cuando falta un dato que no debe inventarse se usa `[PENDIENTE: …]`. Las páginas legales y de categorías de comercio que los contienen se generan con noindex hasta completarlos.

@@ -37,7 +37,8 @@
     "assets:version": "node scripts/version-assets.js",
     "news:origin": "node scripts/apply-news-origin.js",
     "news:agenda": "python3 scripts/generar_noticias_seguro.py --modo agenda",
-    "build:site": "npm run news:dedupe && npm run news:orphans:archive && npm run news:static && npm run news:archive:page && npm run news:origin && npm run news:rss && npm run seo && npm run home:static && npm run farmacia:static && npm run home:widgets && npm run boletin:static && npm run tiempo:static && npm run guide:pages && npm run movilidad:static && npm run guide:static && npm run seo:twitter-cards && npm run assets:version && npm run sitemap && npm run seo:audit && npm run seo:orphans"
+    "build:site": "npm run news:dedupe && npm run news:orphans:archive && npm run news:static && npm run news:archive:page && npm run news:origin && npm run news:rss && npm run seo && npm run home:static && npm run farmacia:static && npm run home:widgets && npm run boletin:static && npm run tiempo:static && npm run guide:pages && npm run movilidad:static && npm run guide:static && npm run guias:static && npm run seo:twitter-cards && npm run assets:version && npm run sitemap && npm run seo:audit && npm run seo:orphans",
+    "guias:static": "node scripts/render-guias.js"
   },
   "dependencies": {
     "firebase-admin": "^12.7.0"

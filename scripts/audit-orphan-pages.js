@@ -41,7 +41,19 @@ const STRUCTURAL_URLS = new Set([
   '/boletin-oficial/',
   '/boletin-whatsapp.html',
   '/virgen-de-gracia-2026/',
+  // Reposicionamiento como guía práctica (noviembre 2026)
+  '/guias/',
+  '/agenda/',
+  '/este-fin-de-semana/',
+  '/farmacia-de-guardia/',
+  '/privacidad/',
+  '/cookies/',
+  '/aviso-legal/',
 ]);
+
+// Páginas generadas desde data/ cuya lista completa comprueban sus propios
+// generadores (render-guias.js, render-comercios.js).
+const GENERATED_PREFIXES = ['/comercios/'];
 
 const GUIDE_SKIP_PREFIXES = [
   '/guia-util/farmacias/',
@@ -118,6 +130,10 @@ function main() {
   const noticiasArchivo = readJson(NEWS_ARCHIVE_FILE, []);
   const guideItems = readJson(GUIDE_FILE, []);
   const eventoSlugs = readJson(EVENTO_SLUGS_FILE, {});
+  const guiasData = readJson(path.join(ROOT, 'data', 'guias.json'), { guias: [] });
+  const expectedGuiasUrls = new Set(
+    (Array.isArray(guiasData) ? guiasData : guiasData.guias || []).map(g => normalizeUrlPath(`/guias/${g.slug}/`))
+  );
 
   const expectedNewsUrls = new Set(
     [...(Array.isArray(noticias) ? noticias : []), ...(Array.isArray(noticiasArchivo) ? noticiasArchivo : [])]
@@ -152,6 +168,15 @@ function main() {
     }
 
     if (STRUCTURAL_URLS.has(url) || isCategoryUrl(url) || isGuideSpecial(url)) {
+      continue;
+    }
+
+    if (GENERATED_PREFIXES.some(prefix => url.startsWith(prefix))) {
+      continue;
+    }
+
+    if (url.startsWith('/guias/')) {
+      if (!expectedGuiasUrls.has(url)) orphanGuidePages.push({ url, file });
       continue;
     }
 

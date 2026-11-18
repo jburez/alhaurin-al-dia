@@ -9,19 +9,31 @@ const NEWS_MAX_AGE_MS = 48 * 60 * 60 * 1000;
 
 const IGNORE_DIRS = new Set(['.git', 'node_modules', 'scripts', 'assets', 'tmp', 'reports']);
 const IGNORE_FILES = new Set(['404.html', 'index_old.html']);
+// Páginas de utilidad e información del proyecto (sitemap-servicios.xml).
 const SERVICE_URLS = new Set([
+  '/farmacia-de-guardia/',
   '/avisos/',
   '/boletin-oficial/',
   '/tiempo/',
   '/tiempo/comparador/',
+  '/tiempo/agro/',
+  '/tiempo/prevision-horaria/',
+  '/tiempo/radar/',
   '/seguimiento/',
   '/radar-social/',
   '/mi-alhaurin/',
-  '/planes/',
-  '/comercios/',
-  '/anunciarse/',
   '/contacto/',
+  '/sobre-nosotros/',
+  '/privacidad/',
+  '/cookies/',
+  '/aviso-legal/',
 ]);
+const isServiceUrl = (url) => SERVICE_URLS.has(url) ||
+  (url.startsWith('/guia-util/') && !url.startsWith('/guia-util/farmacias/'));
+const isGuideUrl = (url) => url.startsWith('/guias/');
+const isAgendaUrl = (url) => url === '/agenda/' || url === '/este-fin-de-semana/' ||
+  url.startsWith('/planes/') || url === '/virgen-de-gracia-2026/';
+const isCommerceUrl = (url) => url.startsWith('/comercios/') || url === '/anunciarse/';
 
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -130,6 +142,9 @@ function meta(url) {
   if (url === '/guia-util/farmacias/') return { changefreq: 'daily', priority: '0.95' };
   if (url === '/guia-util/farmacias/calendario/') return { changefreq: 'daily', priority: '0.95' };
   if (url === '/avisos/' || url === '/tiempo/' || url === '/boletin-oficial/') return { changefreq: 'daily', priority: '0.9' };
+  if (url === '/farmacia-de-guardia/' || url === '/este-fin-de-semana/' || url === '/agenda/') return { changefreq: 'daily', priority: '0.95' };
+  if (url === '/guias/') return { changefreq: 'weekly', priority: '0.9' };
+  if (url.startsWith('/guias/')) return { changefreq: 'monthly', priority: '0.85' };
   if (url === '/planes/' || url === '/comercios/') return { changefreq: 'weekly', priority: '0.8' };
   if (url === '/contacto/') return { changefreq: 'monthly', priority: '0.6' };
   if (url.startsWith('/guia-util/farmacias/')) return { changefreq: 'weekly', priority: '0.85' };
@@ -210,7 +225,10 @@ const pharmacyEntries = entries.filter(entry =>
   entry.url === '/guia-util/farmacias/' || entry.url.startsWith('/guia-util/farmacias/')
 );
 
-const serviceEntries = entries.filter(entry => SERVICE_URLS.has(entry.url));
+const serviceEntries = entries.filter(entry => isServiceUrl(entry.url));
+const guideEntries = entries.filter(entry => isGuideUrl(entry.url));
+const agendaEntries = entries.filter(entry => isAgendaUrl(entry.url));
+const commerceEntries = entries.filter(entry => isCommerceUrl(entry.url));
 
 const newsEntries = entries.filter(entry =>
   entry.url === '/noticias/' || entry.url.startsWith('/noticias/') || entry.url.startsWith('/categoria/')
@@ -230,6 +248,9 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), renderUrlset(entries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-farmacias.xml'), renderUrlset(pharmacyEntries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-servicios.xml'), renderUrlset(serviceEntries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-noticias.xml'), renderUrlset(newsEntries));
+fs.writeFileSync(path.join(ROOT, 'sitemap-guias.xml'), renderUrlset(guideEntries));
+fs.writeFileSync(path.join(ROOT, 'sitemap-agenda.xml'), renderUrlset(agendaEntries));
+fs.writeFileSync(path.join(ROOT, 'sitemap-comercios.xml'), renderUrlset(commerceEntries));
 fs.writeFileSync(path.join(ROOT, 'sitemap-news.xml'), renderNewsUrlset(googleNewsEntries));
 
 const sitemapFiles = [
@@ -238,6 +259,9 @@ const sitemapFiles = [
   'sitemap-noticias.xml',
   'sitemap-farmacias.xml',
   'sitemap-servicios.xml',
+  'sitemap-guias.xml',
+  'sitemap-agenda.xml',
+  'sitemap-comercios.xml',
 ].filter(file => fs.existsSync(path.join(ROOT, file)))
   // Un sitemap vacío (p. ej. el de Google News mientras no haya noticias
   // originales) se sigue escribiendo, pero no se anuncia en el índice.
@@ -249,6 +273,9 @@ const indexLastmods = {
   'sitemap-noticias.xml': maxLastmod(newsEntries),
   'sitemap-farmacias.xml': maxLastmod(pharmacyEntries),
   'sitemap-servicios.xml': maxLastmod(serviceEntries),
+  'sitemap-guias.xml': maxLastmod(guideEntries),
+  'sitemap-agenda.xml': maxLastmod(agendaEntries),
+  'sitemap-comercios.xml': maxLastmod(commerceEntries),
   'sitemap-news.xml': googleNewsEntries.reduce((max, e) => (e.publicationDate > max ? e.publicationDate : max), '').slice(0, 10),
 };
 fs.writeFileSync(path.join(ROOT, 'sitemap-index.xml'), renderSitemapIndex(sitemapFiles, indexLastmods));
@@ -257,5 +284,8 @@ console.log(`Sitemap principal generado: ${entries.length} URLs`);
 console.log(`Sitemap farmacias generado: ${pharmacyEntries.length} URLs`);
 console.log(`Sitemap servicios generado: ${serviceEntries.length} URLs`);
 console.log(`Sitemap noticias generado: ${newsEntries.length} URLs`);
+console.log(`Sitemap guías generado: ${guideEntries.length} URLs`);
+console.log(`Sitemap agenda generado: ${agendaEntries.length} URLs`);
+console.log(`Sitemap comercios generado: ${commerceEntries.length} URLs`);
 console.log(`Google News sitemap generado: ${googleNewsEntries.length} noticias recientes`);
 console.log(`Sitemap index generado: ${sitemapFiles.length} sitemaps`);

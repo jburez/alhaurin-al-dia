@@ -5,19 +5,23 @@
     <lastmod>2026-11-18</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://alhaurinaldia.es/sitemap-news.xml</loc>
-    <lastmod>2026-11-18</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://alhaurinaldia.es/sitemap-noticias.xml</loc>
-    <lastmod>2026-11-18</lastmod>
-  </sitemap>
-  <sitemap>
     <loc>https://alhaurinaldia.es/sitemap-farmacias.xml</loc>
     <lastmod>2026-11-18</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://alhaurinaldia.es/sitemap-servicios.xml</loc>
     <lastmod>2026-11-18</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://alhaurinaldia.es/sitemap-guias.xml</loc>
+    <lastmod>2026-11-18</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://alhaurinaldia.es/sitemap-agenda.xml</loc>
+    <lastmod>2026-11-18</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://alhaurinaldia.es/sitemap-comercios.xml</loc>
+    <lastmod>2026-11-16</lastmod>
   </sitemap>
 </sitemapindex>

@@ -11,7 +11,7 @@ Este documento resume el flujo recomendado para mantener Alhaurín al Día actua
 - El generador crea páginas de categoría en `categoria/`.
 - La portada carga las noticias desde `app.js`.
 - El panel diario de portada carga información desde `data/estado-local.json`, `data/avisos-locales.json` y `data/tiempo-aemet.json` mediante `home-live.js`.
-- El tiempo ya está integrado en el panel diario y también enlaza con Andalmet/AEMET.
+- El tiempo ya está integrado en el panel diario y también enlaza con AEMET.
 
 ## Generación segura de noticias
 

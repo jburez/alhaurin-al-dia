@@ -1,0 +1,166 @@
+{
+  "municipio": "Alhaurín el Grande",
+  "periodo": "1991-2020",
+  "lat": 36.6439,
+  "lon": -4.6892,
+  "elevacion_m": 250,
+  "fuente": "Open-Meteo Historical Weather API · reanálisis CERRA (Copernicus, malla de 5,5 km)",
+  "fuente_url": "https://open-meteo.com/en/docs/historical-weather-api",
+  "nota": "Valores medios de reanálisis para la celda de Alhaurín el Grande; no son medidas de una estación oficial. Día de lluvia: ≥ 1 mm. Día de helada: mínima ≤ 0 °C.",
+  "generado": "2026-11-18",
+  "anual": {
+    "t_media": 16.8,
+    "lluvia_mm": 480,
+    "dias_lluvia": 52,
+    "dias_helada": 1.5,
+    "dias_35": 12.9
+  },
+  "meses": [
+    {
+      "mes": 1,
+      "nombre": "Enero",
+      "t_media": 9.4,
+      "t_max": 15.2,
+      "t_min": 5.2,
+      "lluvia_mm": 57,
+      "dias_lluvia": 5.4,
+      "dias_helada": 0.7,
+      "dias_35": 0.0
+    },
+    {
+      "mes": 2,
+      "nombre": "Febrero",
+      "t_media": 10.5,
+      "t_max": 16.4,
+      "t_min": 5.9,
+      "lluvia_mm": 50,
+      "dias_lluvia": 4.9,
+      "dias_helada": 0.6,
+      "dias_35": 0.0
+    },
+    {
+      "mes": 3,
+      "nombre": "Marzo",
+      "t_media": 12.7,
+      "t_max": 18.7,
+      "t_min": 7.8,
+      "lluvia_mm": 56,
+      "dias_lluvia": 5.5,
+      "dias_helada": 0.1,
+      "dias_35": 0.0
+    },
+    {
+      "mes": 4,
+      "nombre": "Abril",
+      "t_media": 14.9,
+      "t_max": 21.0,
+      "t_min": 9.6,
+      "lluvia_mm": 41,
+      "dias_lluvia": 5.5,
+      "dias_helada": 0.0,
+      "dias_35": 0.0
+    },
+    {
+      "mes": 5,
+      "nombre": "Mayo",
+      "t_media": 18.3,
+      "t_max": 24.5,
+      "t_min": 12.6,
+      "lluvia_mm": 29,
+      "dias_lluvia": 4.9,
+      "dias_helada": 0.0,
+      "dias_35": 0.1
+    },
+    {
+      "mes": 6,
+      "nombre": "Junio",
+      "t_media": 22.6,
+      "t_max": 29.0,
+      "t_min": 16.9,
+      "lluvia_mm": 10,
+      "dias_lluvia": 1.7,
+      "dias_helada": 0.0,
+      "dias_35": 1.3
+    },
+    {
+      "mes": 7,
+      "nombre": "Julio",
+      "t_media": 25.6,
+      "t_max": 32.2,
+      "t_min": 19.7,
+      "lluvia_mm": 3,
+      "dias_lluvia": 0.7,
+      "dias_helada": 0.0,
+      "dias_35": 6.0
+    },
+    {
+      "mes": 8,
+      "nombre": "Agosto",
+      "t_media": 25.5,
+      "t_max": 31.9,
+      "t_min": 20.1,
+      "lluvia_mm": 11,
+      "dias_lluvia": 1.4,
+      "dias_helada": 0.0,
+      "dias_35": 4.9
+    },
+    {
+      "mes": 9,
+      "nombre": "Septiembre",
+      "t_media": 21.9,
+      "t_max": 28.0,
+      "t_min": 17.1,
+      "lluvia_mm": 34,
+      "dias_lluvia": 4.0,
+      "dias_helada": 0.0,
+      "dias_35": 0.6
+    },
+    {
+      "mes": 10,
+      "nombre": "Octubre",
+      "t_media": 17.5,
+      "t_max": 23.4,
+      "t_min": 13.1,
+      "lluvia_mm": 56,
+      "dias_lluvia": 6.0,
+      "dias_helada": 0.0,
+      "dias_35": 0.0
+    },
+    {
+      "mes": 11,
+      "nombre": "Noviembre",
+      "t_media": 12.8,
+      "t_max": 18.3,
+      "t_min": 8.8,
+      "lluvia_mm": 69,
+      "dias_lluvia": 5.8,
+      "dias_helada": 0.0,
+      "dias_35": 0.0
+    },
+    {
+      "mes": 12,
+      "nombre": "Diciembre",
+      "t_media": 10.3,
+      "t_max": 15.6,
+      "t_min": 6.4,
+      "lluvia_mm": 64,
+      "dias_lluvia": 5.8,
+      "dias_helada": 0.1,
+      "dias_35": 0.0
+    }
+  ],
+  "records": {
+    "t_max": {
+      "valor": 44.3,
+      "fecha": "2020-08-01"
+    },
+    "t_min": {
+      "valor": -3.4,
+      "fecha": "2005-01-28"
+    },
+    "lluvia_dia": {
+      "valor": 107.9,
+      "fecha": "2006-01-14"
+    }
+  }
+}

@@ -161,7 +161,6 @@ Responsabilidades:
 - Carga `data/estado-local.json`.
 - Carga `data/avisos-locales.json`.
 - Fusiona avisos activos con las tarjetas base del panel diario.
-- Inserta widget de Andalmet en portada.
 - Renderiza estado de tiempo, tráfico, avisos, agenda y servicios.
 
 #### `home-guardia.js`

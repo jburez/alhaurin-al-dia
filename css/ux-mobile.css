@@ -179,16 +179,6 @@
         padding: 18px 0;
     }
 
-    .andalmet-widget-card {
-        padding: 17px;
-        border-radius: 8px;
-    }
-
-    .andalmet-widget-frame iframe {
-        width: 100%;
-        min-height: 150px;
-    }
-
     .home-guard-wrap {
         padding: 8px 0 18px;
     }

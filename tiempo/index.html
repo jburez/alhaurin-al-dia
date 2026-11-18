@@ -5,30 +5,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>El tiempo en Alhaurín el Grande — Alhaurín al Día</title>
+    <title>El tiempo en Alhaurín el Grande hoy y a 7 días — Alhaurín al Día</title>
     <meta name="description"
-        content="Previsión meteorológica detallada de Alhaurín el Grande en tiempo real. Datos oficiales AEMET a 7 días, Sol y Luna, actividades y widgets de Andalmet." />
+        content="El tiempo en Alhaurín el Grande ahora mismo y los próximos 7 días: temperatura, sensación térmica, lluvia, viento, índice UV, polen, sol y luna y el clima del pueblo mes a mes." />
     <meta name="theme-color" content="#1c211a" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://alhaurinaldia.es/tiempo/">
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Alhaurín al Día" />
-    <meta property="og:title" content="El tiempo en Alhaurín el Grande — Previsión a 7 días" />
-    <meta property="og:description" content="Previsión meteorológica oficial de Alhaurín el Grande con AEMET, Sol y Luna y Andalmet." />
+    <meta property="og:title" content="El tiempo en Alhaurín el Grande — Ahora y a 7 días" />
+    <meta property="og:description" content="Tiempo en directo, previsión oficial de AEMET a 7 días, polen, sol y luna y climatología de Alhaurín el Grande." />
     <meta property="og:url" content="https://alhaurinaldia.es/tiempo/" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="El tiempo en Alhaurín el Grande — Previsión a 7 días">
-    <meta name="twitter:description" content="Previsión meteorológica oficial de Alhaurín el Grande con AEMET y Andalmet.">
+    <meta name="twitter:title" content="El tiempo en Alhaurín el Grande — Ahora y a 7 días">
+    <meta name="twitter:description" content="Tiempo en directo, previsión oficial de AEMET a 7 días, polen, sol y luna y climatología de Alhaurín el Grande.">
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.open-meteo.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
-    <link rel="stylesheet" href="../css/styles.css?v=e81ed538">
-    <link rel="stylesheet" href="../css/mobile.css?v=c3d4ded5">
-    <link rel="stylesheet" href="../css/ads.css?v=1f4810d3">
-    <link rel="stylesheet" href="../css/home-live.css?v=710b8335">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/ads.css">
+    <link rel="stylesheet" href="../css/home-live.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué temperatura hará mañana en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Para mañana, jueves 19 de noviembre, AEMET prevé una máxima de 23 °C y una mínima de 12 °C (intervalos nubosos con lluvia escasa)."}},{"@type":"Question","name":"¿Lloverá mañana en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Probabilidad de lluvia alta (85 %) para mañana según AEMET; conviene llevar paraguas."}},{"@type":"Question","name":"¿Cuánto viento hará hoy en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"AEMET prevé hoy viento flojo de componente suroeste a 10 km/h. En la parte de arriba de esta página tienes el viento y las rachas en tiempo real."}},{"@type":"Question","name":"¿Lloverá este fin de semana en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Sábado: probabilidad de lluvia baja (10 %), 21° de máxima. Domingo: probabilidad de lluvia baja (20 %), 23° de máxima."}},{"@type":"Question","name":"¿A qué hora amanece y anochece hoy en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Hoy el sol sale a las 07:58 y se pone a las 18:09, con 10h 11m de luz."}},{"@type":"Question","name":"¿Qué clima tiene Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Mediterráneo: veranos calurosos y secos e inviernos suaves. La temperatura media anual es de 16,8 °C; julio es el mes más caluroso (máximas medias de 32,2 °C) y enero el más frío (mínimas medias de 5,2 °C)."}},{"@type":"Question","name":"¿Cuánto llueve en Alhaurín el Grande al año?","acceptedAnswer":{"@type":"Answer","text":"Unos 480 mm repartidos en 52 días de lluvia al año, sobre todo entre octubre y abril. El mes más lluvioso es noviembre, con 69 mm de media; julio apenas recoge 3 mm."}},{"@type":"Question","name":"¿Cuál es la mejor época para visitar Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Mayo, junio y septiembre: máximas medias entre 22 y 30 °C y poca lluvia. En cambio, julio y agosto tienen de media 6 y 4,9 días por encima de 35 °C."}}]}</script>
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc9eeda336f943ca87175a3b83faee35"}'></script>
 </head>
 
@@ -36,7 +38,7 @@
     <div class="topbar">
         <div class="container">
             <span>Guía local independiente de Alhaurín el Grande</span>
-            <span>Tiempo en vivo · AEMET Oficial · Andalmet</span>
+            <span>Tiempo en vivo · AEMET Oficial · Open-Meteo</span>
         </div>
     </div>
 
@@ -73,9 +75,9 @@
                         <span class="section-kicker">Meteorología en tiempo real</span>
                         <h1>El tiempo en Alhaurín el Grande</h1>
                     </div>
-                    <div class="weather-live-badge">
-                        <span class="live-dot"></span>
-                        <span>Actualizado 17 de noviembre de 2026 a las 17:14</span>
+                    <div class="weather-live-badge is-stale">
+                        
+                        <span>Última lectura de AEMET: 17 de noviembre de 2026 a las 17:14 · sin datos más recientes</span>
                     </div>
                 </div>
 
@@ -93,6 +95,9 @@
                     <a class="tab-btn" href="./agro/" role="tab" aria-selected="false">
                         <span>🌾</span> Agro Meteo
                     </a>
+                    <a class="tab-btn" href="./radar/" role="tab" aria-selected="false">
+                        <span>🛰️</span> Radar de lluvia
+                    </a>
                     <a class="tab-btn" href="../seguimiento/" role="tab" aria-selected="false">
                         <span>📡</span> En directo
                     </a>
@@ -100,42 +105,123 @@
             </div>
         </section>
 
-        <!-- SECCIÓN PRINCIPAL: DATOS NATIVOS AEMET A 7 DÍAS -->
         <section class="weather-main-section">
             <div class="container">
-                <!-- PANEL SPOTLIGHT HOY -->
-                <div class="weather-spotlight-card">
-                    <div class="weather-spotlight-main">
-                        <span class="weather-huge-icon">🌤️</span>
-                        <div>
-                            <div class="weather-huge-temp">23°C</div>
-                            <div class="weather-sky-text">Poco nuboso · Mínima 11°C</div>
+                <p class="weather-summary-text">Previsión de AEMET para este miércoles 18 de noviembre en Alhaurín el Grande: nuboso con lluvia escasa, con máxima de 23 °C y mínima de 17 °C, probabilidad de lluvia alta (100 %) y viento flojo de componente suroeste a 10 km/h.</p>
+
+                <!-- AHORA MISMO (Open-Meteo, en el navegador) + HOY SEGÚN AEMET -->
+                <div class="weather-now-grid">
+                    <article class="now-card" id="now-panel" aria-live="polite">
+                        <div class="now-head">
+                            <span class="mini-label">Ahora mismo</span>
+                            <span class="now-time" data-now="hora"></span>
                         </div>
-                    </div>
-                    <div class="weather-metrics-pills">
-                        <div class="metric-pill">
-                            <span class="metric-icon">🌡️</span>
-                            <span><strong>Máx/Mín:</strong> 23° / 11°C</span>
+                        <div class="now-main">
+                            <span class="weather-huge-icon" data-now="icono">🌡️</span>
+                            <div>
+                                <div class="weather-huge-temp"><span data-now="temp">--</span>°C</div>
+                                <div class="weather-sky-text"><span data-now="estado">Cargando datos en directo…</span> · Sensación <span data-now="sensacion">--</span>°</div>
+                            </div>
                         </div>
-                        <div class="metric-pill">
-                            <span class="metric-icon">💧</span>
-                            <span><strong>Lluvia:</strong> 0% prob.</span>
+                        <dl class="now-metrics">
+                            <div><dt>Humedad</dt><dd><span data-now="humedad">--</span> %</dd></div>
+                            <div><dt>Viento</dt><dd><span data-now="viento">--</span> km/h <span data-now="dir"></span></dd></div>
+                            <div><dt>Rachas</dt><dd><span data-now="rachas">--</span> km/h</dd></div>
+                            <div><dt>Presión</dt><dd><span data-now="presion">--</span> hPa</dd></div>
+                            <div><dt>Índice UV</dt><dd><span data-now="uv">--</span> <small data-now="uvlabel"></small></dd></div>
+                            <div><dt>Visibilidad</dt><dd><span data-now="visibilidad">--</span> km</dd></div>
+                            <div><dt>Nubosidad</dt><dd><span data-now="nubes">--</span> %</dd></div>
+                            <div><dt>Precipitación</dt><dd><span data-now="lluvia">--</span> mm</dd></div>
+                        </dl>
+                        <p class="now-source">Modelo de alta resolución vía Open-Meteo (AEMET HARMONIE, ECMWF y otros), se actualiza cada 15 minutos.</p>
+                    </article>
+
+                    <article class="weather-spotlight-card is-in-grid">
+                        <span class="mini-label">Hoy según AEMET</span>
+                        <div class="weather-spotlight-main">
+                            <span class="weather-huge-icon">🌧️</span>
+                            <div>
+                                <div class="weather-huge-temp">23° <small>/ 17°</small></div>
+                                <div class="weather-sky-text">Nuboso con lluvia escasa</div>
+                            </div>
                         </div>
-                        <div class="metric-pill">
-                            <span class="metric-icon">💨</span>
-                            <span><strong>Viento:</strong> S 5 km/h</span>
+                        <div class="weather-metrics-pills">
+                            <div class="metric-pill"><span class="metric-icon">💧</span><span><strong>Lluvia:</strong> 100% prob.</span></div>
+                            <div class="metric-pill"><span class="metric-icon">💨</span><span><strong>Viento:</strong> SO 10 km/h</span></div>
+                            <div class="metric-pill"><span class="metric-icon">☀️</span><span><strong>UV máx.:</strong> 3 (Moderado)</span></div>
+                            <div class="metric-pill"><span class="metric-icon">🌅</span><span>07:58 h · 🌇 18:09 h</span></div>
                         </div>
-                        <div class="metric-pill"><span class="metric-icon">☀️</span><span><strong>Índice UV:</strong> 3 (Muy Alto)</span></div>
-                    </div>
+                    </article>
                 </div>
 
-                <!-- SECCIÓN COMBO: RECOMENDACIONES DIARIAS Y SOL/LUNA -->
+                <!-- PRÓXIMAS 24 HORAS -->
+                <section class="hourly-section" aria-labelledby="hourly-title">
+                    <div class="section-title compact">
+                        <div>
+                            <span class="section-kicker">Hora a hora</span>
+                            <h2 id="hourly-title">Próximas 24 horas</h2>
+                        </div>
+                        <a class="read-more" href="./prevision-horaria/">Gráficas y 7 días por horas →</a>
+                    </div>
+                    <div class="hourly-strip" id="hourly-strip" tabindex="0" aria-label="Previsión por horas, desplazable">
+                        <p class="hourly-loading">Cargando previsión por horas…</p>
+                    </div>
+                </section>
+
+                <!-- MAÑANA Y FIN DE SEMANA -->
+                
+                <section class="forecast-pair-section" aria-labelledby="pair-title">
+                    <div class="section-title compact">
+                        <div>
+                            <span class="section-kicker">AEMET Oficial</span>
+                            <h2 id="pair-title">Mañana y fin de semana</h2>
+                        </div>
+                    </div>
+                    <div class="forecast-pair-grid">
+                        
+                        <article class="day-summary-card">
+                            <span class="mini-label">Mañana · Jueves</span>
+                            <div class="day-summary-main">
+                                <span class="day-summary-icon">🌧️</span>
+                                <div>
+                                    <strong>23° / 12°</strong>
+                                    <span>Intervalos nubosos con lluvia escasa</span>
+                                </div>
+                            </div>
+                            <p>💧 Lluvia 85% · 💨 N 10 km/h</p>
+                        </article>
+                        
+                        <article class="day-summary-card">
+                            <span class="mini-label">Sábado 21/11</span>
+                            <div class="day-summary-main">
+                                <span class="day-summary-icon">⛅</span>
+                                <div>
+                                    <strong>21° / 11°</strong>
+                                    <span>Intervalos nubosos</span>
+                                </div>
+                            </div>
+                            <p>💧 Lluvia 10% · 💨 SE 5 km/h</p>
+                        </article>
+                        <article class="day-summary-card">
+                            <span class="mini-label">Domingo 22/11</span>
+                            <div class="day-summary-main">
+                                <span class="day-summary-icon">⛅</span>
+                                <div>
+                                    <strong>23° / 11°</strong>
+                                    <span>Intervalos nubosos</span>
+                                </div>
+                            </div>
+                            <p>💧 Lluvia 20% · 💨 N 10 km/h</p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- RECOMENDACIONES Y POLEN -->
                 <div class="weather-extras-grid">
-                    <!-- ACTIVIDADES RECOMENDADAS -->
                     <article class="weather-extra-card">
                         <div class="extra-card-header">
                             <span class="mini-label">Consejos prácticos</span>
-                            <h2>Recomendaciones del día</h2>
+                            <h2>¿Qué hago hoy en Alhaurín?</h2>
                         </div>
                         <div class="activities-list">
                             
@@ -166,69 +252,69 @@
       </div>
     </div>
   
-    <div class="activity-card">
-      <span class="activity-icon">🌾</span>
-      <div>
-        <span class="activity-title">Alergia y Polen</span>
-        <strong class="activity-status">Nulo</strong>
-        <p class="activity-detail">Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.0 granos/m³)</p>
-      </div>
-    </div>
-  
                         </div>
                     </article>
 
-                    <!-- TARJETA ARCO SOL Y LUNA -->
                     <article class="weather-extra-card">
                         <div class="extra-card-header">
-                            <span class="mini-label">Astronomía local</span>
-                            <h2>Sol y Luna en Alhaurín</h2>
+                            <span class="mini-label">Alergias</span>
+                            <h2>Polen hoy en Alhaurín</h2>
                         </div>
-                        <div class="sun-moon-body">
-                            <div class="sun-arc-box">
-                                <div class="sun-times">
-                                    <span>🌅 Orto: <strong>07:58 h</strong></span>
-                                    <span>🌇 Ocaso: <strong>18:09 h</strong></span>
-                                </div>
-                                <div class="daylight-badge">☀️ Horas de sol: <strong>10h 11m</strong></div>
-                            </div>
-                            <div class="moon-box">
-                                <span class="moon-icon">🌓</span>
-                                <div>
-                                    <span class="moon-title">Fase Lunar Actual</span>
-                                    <strong>Cuarto Creciente (53%)</strong>
-                                </div>
-                            </div>
+                        <div class="pollen-list" id="pollen-panel">
+                            <p class="pollen-fallback">Nulo · Olivo: Nulo (0.0 granos/m³) · Gramíneas: Nulo (0.0 granos/m³)</p>
                         </div>
+                        <p class="pollen-note">Concentración máxima prevista hoy (granos/m³) según el servicio europeo Copernicus CAMS. Niveles orientativos según los umbrales de la Red Española de Aerobiología.</p>
                     </article>
                 </div>
+
+                <!-- SOL Y LUNA -->
+                <section class="astro-section" aria-labelledby="astro-title">
+                    <div class="section-title compact">
+                        <div>
+                            <span class="section-kicker">Astronomía local</span>
+                            <h2 id="astro-title">Sol y Luna hoy en Alhaurín</h2>
+                        </div>
+                    </div>
+                    <div class="astro-grid">
+                        <article class="weather-extra-card astro-card" id="astro-sun">
+                            <h3>☀️ Trayectoria del sol</h3>
+                            <svg class="astro-arc" viewBox="0 0 300 130" aria-hidden="true">
+                                <path d="M20,115 Q150,-35 280,115" class="astro-arc-path"/>
+                                <line x1="10" x2="290" y1="115" y2="115" class="astro-horizon"/>
+                                <circle class="astro-dot astro-dot-sun" cx="20" cy="115" r="9" data-astro="sun-dot" style="display:none"/>
+                            </svg>
+                            <div class="astro-times">
+                                <span>🌅 Salida <strong data-astro="sun-rise">07:58</strong></span>
+                                <span>🌇 Puesta <strong data-astro="sun-set">18:09</strong></span>
+                            </div>
+                            <p class="astro-meta"><span data-astro="sun-state">10h 11m de luz</span></p>
+                        </article>
+                        <article class="weather-extra-card astro-card" id="astro-moon">
+                            <h3><span data-astro="moon-icon">🌓</span> Trayectoria de la luna</h3>
+                            <svg class="astro-arc" viewBox="0 0 300 130" aria-hidden="true">
+                                <path d="M20,115 Q150,-35 280,115" class="astro-arc-path"/>
+                                <line x1="10" x2="290" y1="115" y2="115" class="astro-horizon"/>
+                                <circle class="astro-dot astro-dot-moon" cx="20" cy="115" r="8" data-astro="moon-dot" style="display:none"/>
+                            </svg>
+                            <div class="astro-times">
+                                <span>Sale <strong data-astro="moon-rise">--</strong></span>
+                                <span>Se pone <strong data-astro="moon-set">--</strong></span>
+                            </div>
+                            <p class="astro-meta"><strong data-astro="moon-phase">Cuarto Creciente (53%)</strong> <span data-astro="moon-state"></span></p>
+                        </article>
+                    </div>
+                </section>
 
                 <!-- PREVISIÓN A 7 DÍAS NATIVA AEMET -->
                 <div class="aemet-7days-section">
                     <div class="section-title compact">
                         <div>
                             <span class="section-kicker">AEMET Oficial</span>
-                            <h2>Previsión nativa a 7 días</h2>
+                            <h2>Previsión a 7 días</h2>
                         </div>
                     </div>
                     <div class="aemet-7days-grid">
                         
-      <div class="aemet-day-card ">
-        <span class="aemet-day-name">Martes</span>
-        <span class="aemet-day-date">17/11</span>
-        <span class="aemet-day-icon">🌤️</span>
-        <div class="aemet-day-desc">Poco nuboso</div>
-        <div class="aemet-temp-bar">
-          <span class="t-min">11°</span>
-          <div class="temp-track"><div class="temp-fill" style="width: 75%;"></div></div>
-          <span class="t-max">23°</span>
-        </div>
-        <div class="aemet-day-sub">
-          <span>💧 0%</span>
-          <span>💨 S 5 km/h</span>
-        </div>
-      </div>
-    
       <div class="aemet-day-card is-today">
         <span class="aemet-day-name">Hoy</span>
         <span class="aemet-day-date">18/11</span>
@@ -236,12 +322,13 @@
         <div class="aemet-day-desc">Nuboso con lluvia escasa</div>
         <div class="aemet-temp-bar">
           <span class="t-min">17°</span>
-          <div class="temp-track"><div class="temp-fill" style="width: 75%;"></div></div>
+          <div class="temp-track"><div class="temp-fill" style="margin-left: 54%; width: 46%;"></div></div>
           <span class="t-max">23°</span>
         </div>
         <div class="aemet-day-sub">
-          <span>💧 100%</span>
-          <span>💨 SO 10 km/h</span>
+          <span title="Probabilidad de lluvia">💧 100%</span>
+          <span title="Viento">💨 SO 10 km/h</span>
+          <span title="Índice UV máximo">☀️ UV 3</span>
         </div>
       </div>
     
@@ -252,12 +339,13 @@
         <div class="aemet-day-desc">Intervalos nubosos con lluvia escasa</div>
         <div class="aemet-temp-bar">
           <span class="t-min">12°</span>
-          <div class="temp-track"><div class="temp-fill" style="width: 75%;"></div></div>
+          <div class="temp-track"><div class="temp-fill" style="margin-left: 15%; width: 85%;"></div></div>
           <span class="t-max">23°</span>
         </div>
         <div class="aemet-day-sub">
-          <span>💧 85%</span>
-          <span>💨 N 10 km/h</span>
+          <span title="Probabilidad de lluvia">💧 85%</span>
+          <span title="Viento">💨 N 10 km/h</span>
+          <span title="Índice UV máximo">☀️ UV 3</span>
         </div>
       </div>
     
@@ -268,12 +356,13 @@
         <div class="aemet-day-desc">Poco nuboso</div>
         <div class="aemet-temp-bar">
           <span class="t-min">10°</span>
-          <div class="temp-track"><div class="temp-fill" style="width: 75%;"></div></div>
+          <div class="temp-track"><div class="temp-fill" style="margin-left: 0%; width: 77%;"></div></div>
           <span class="t-max">20°</span>
         </div>
         <div class="aemet-day-sub">
-          <span>💧 0%</span>
-          <span>💨 E 10 km/h</span>
+          <span title="Probabilidad de lluvia">💧 0%</span>
+          <span title="Viento">💨 E 10 km/h</span>
+          <span title="Índice UV máximo">☀️ UV 3</span>
         </div>
       </div>
     
@@ -284,12 +373,13 @@
         <div class="aemet-day-desc">Intervalos nubosos</div>
         <div class="aemet-temp-bar">
           <span class="t-min">11°</span>
-          <div class="temp-track"><div class="temp-fill" style="width: 75%;"></div></div>
+          <div class="temp-track"><div class="temp-fill" style="margin-left: 8%; width: 77%;"></div></div>
           <span class="t-max">21°</span>
         </div>
         <div class="aemet-day-sub">
-          <span>💧 10%</span>
-          <span>💨 SE 5 km/h</span>
+          <span title="Probabilidad de lluvia">💧 10%</span>
+          <span title="Viento">💨 SE 5 km/h</span>
+          <span title="Índice UV máximo">☀️ UV 3</span>
         </div>
       </div>
     
@@ -300,12 +390,13 @@
         <div class="aemet-day-desc">Intervalos nubosos</div>
         <div class="aemet-temp-bar">
           <span class="t-min">11°</span>
-          <div class="temp-track"><div class="temp-fill" style="width: 75%;"></div></div>
+          <div class="temp-track"><div class="temp-fill" style="margin-left: 8%; width: 92%;"></div></div>
           <span class="t-max">23°</span>
         </div>
         <div class="aemet-day-sub">
-          <span>💧 20%</span>
-          <span>💨 N 10 km/h</span>
+          <span title="Probabilidad de lluvia">💧 20%</span>
+          <span title="Viento">💨 N 10 km/h</span>
+          
         </div>
       </div>
     
@@ -316,17 +407,32 @@
         <div class="aemet-day-desc">Intervalos nubosos</div>
         <div class="aemet-temp-bar">
           <span class="t-min">11°</span>
-          <div class="temp-track"><div class="temp-fill" style="width: 75%;"></div></div>
+          <div class="temp-track"><div class="temp-fill" style="margin-left: 8%; width: 77%;"></div></div>
           <span class="t-max">21°</span>
         </div>
         <div class="aemet-day-sub">
-          <span>💧 25%</span>
-          <span>💨 SE 10 km/h</span>
+          <span title="Probabilidad de lluvia">💧 25%</span>
+          <span title="Viento">💨 SE 10 km/h</span>
+          
         </div>
       </div>
     
                     </div>
                 </div>
+
+                <!-- MUNICIPIOS CERCANOS -->
+                <section class="nearby-section" aria-labelledby="nearby-title">
+                    <div class="section-title compact">
+                        <div>
+                            <span class="section-kicker">Valle del Guadalhorce y Costa</span>
+                            <h2 id="nearby-title">El tiempo hoy en los pueblos de alrededor</h2>
+                        </div>
+                        <a class="read-more" href="./comparador/">Comparar municipios →</a>
+                    </div>
+                    <div class="nearby-grid" id="nearby-grid">
+                        <p class="hourly-loading">Cargando municipios cercanos…</p>
+                    </div>
+                </section>
 
                 <!-- SECCIÓN EMBALSES DEL GUADALHORCE -->
                 <div class="embalses-section">
@@ -386,54 +492,167 @@
                     </div>
                 </div>
 
-                <!-- SECCIÓN WIDGETS PROMINENTES DE ANDALMET -->
-                <div class="andalmet-section" style="margin-top: 32px;">
+                
+                <section class="clima-section" id="clima" aria-labelledby="clima-title">
                     <div class="section-title compact">
                         <div>
-                            <span class="section-kicker">Andalmet Guadalhorce</span>
-                            <h2>Previsión ampliada Andalmet</h2>
+                            <span class="section-kicker">Climatología 1991-2020</span>
+                            <h2 id="clima-title">El clima de Alhaurín el Grande</h2>
                         </div>
                     </div>
-                    <div class="andalmet-prominent-grid">
-                        <article class="andalmet-prominent-card">
-                            <div class="andalmet-card-header">
-                                <div>
-                                    <span class="mini-label">Hoy</span>
-                                    <h3>Previsión diaria Andalmet</h3>
-                                </div>
-                                <a class="read-more" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande"
-                                    target="_blank" rel="noopener noreferrer">Andalmet.es →</a>
+                    <div class="weather-extra-card">
+                        <p class="clima-intro">Alhaurín el Grande tiene clima mediterráneo, con veranos calurosos y secos e inviernos suaves en los que las heladas son raras. La lluvia se concentra entre octubre y abril; noviembre es el mes más lluvioso y julio el más caluroso.</p>
+                        <div class="clima-stats">
+                            <div class="clima-stat"><strong>16,8 °C</strong><span>Temperatura media anual</span></div>
+                            <div class="clima-stat"><strong>480 mm</strong><span>Lluvia al año</span></div>
+                            <div class="clima-stat"><strong>52</strong><span>Días de lluvia al año</span></div>
+                            <div class="clima-stat"><strong>12,9</strong><span>Días al año por encima de 35 °C</span></div>
+                        </div>
+                        <div class="clima-charts">
+                            <figure class="clima-chart">
+                                <figcaption>
+                                    <strong>Temperatura media por meses</strong>
+                                    <span class="clima-legend"><span class="clima-key" style="background:#c2410c"></span>Máxima <span class="clima-key" style="background:#2563eb"></span>Mínima</span>
+                                </figcaption>
+                                <svg viewBox="0 0 640 230" class="clima-chart-svg" role="img" aria-label="Temperatura máxima y mínima media de cada mes en Alhaurín el Grande"><title>Temperatura media por meses</title><line x1="38" x2="594" y1="200" y2="200" class="clima-grid-line"/><text x="32" y="204" text-anchor="end" class="clima-axis-text">0°</text><line x1="38" x2="594" y1="147.42857142857144" y2="147.42857142857144" class="clima-grid-line"/><text x="32" y="151.42857142857144" text-anchor="end" class="clima-axis-text">10°</text><line x1="38" x2="594" y1="94.85714285714286" y2="94.85714285714286" class="clima-grid-line"/><text x="32" y="98.85714285714286" text-anchor="end" class="clima-axis-text">20°</text><line x1="38" x2="594" y1="42.285714285714306" y2="42.285714285714306" class="clima-grid-line"/><text x="32" y="46.285714285714306" text-anchor="end" class="clima-axis-text">30°</text><text x="61.16666666666667" y="222" text-anchor="middle" class="clima-axis-text">E</text><text x="107.50000000000001" y="222" text-anchor="middle" class="clima-axis-text">F</text><text x="153.83333333333334" y="222" text-anchor="middle" class="clima-axis-text">M</text><text x="200.16666666666666" y="222" text-anchor="middle" class="clima-axis-text">A</text><text x="246.5" y="222" text-anchor="middle" class="clima-axis-text">M</text><text x="292.83333333333337" y="222" text-anchor="middle" class="clima-axis-text">J</text><text x="339.1666666666667" y="222" text-anchor="middle" class="clima-axis-text">J</text><text x="385.50000000000006" y="222" text-anchor="middle" class="clima-axis-text">A</text><text x="431.83333333333337" y="222" text-anchor="middle" class="clima-axis-text">S</text><text x="478.1666666666667" y="222" text-anchor="middle" class="clima-axis-text">O</text><text x="524.5" y="222" text-anchor="middle" class="clima-axis-text">N</text><text x="570.8333333333334" y="222" text-anchor="middle" class="clima-axis-text">D</text>
+    <path d="M61.2,120.1 L107.5,113.8 L153.8,101.7 L200.2,89.6 L246.5,71.2 L292.8,47.5 L339.2,30.7 L385.5,32.3 L431.8,52.8 L478.2,77.0 L524.5,103.8 L570.8,118.0" fill="none" stroke="#c2410c" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M61.2,172.7 L107.5,169.0 L153.8,159.0 L200.2,149.5 L246.5,133.8 L292.8,111.2 L339.2,96.4 L385.5,94.3 L431.8,110.1 L478.2,131.1 L524.5,153.7 L570.8,166.4" fill="none" stroke="#2563eb" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="61.2" cy="120.1" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="107.5" cy="113.8" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="153.8" cy="101.7" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="200.2" cy="89.6" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="246.5" cy="71.2" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="292.8" cy="47.5" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="339.2" cy="30.7" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="385.5" cy="32.3" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="431.8" cy="52.8" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="478.2" cy="77.0" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="524.5" cy="103.8" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="570.8" cy="118.0" r="4" fill="#c2410c" stroke="#fff" stroke-width="2"/><circle cx="61.2" cy="172.7" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="107.5" cy="169.0" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="153.8" cy="159.0" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="200.2" cy="149.5" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="246.5" cy="133.8" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="292.8" cy="111.2" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="339.2" cy="96.4" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="385.5" cy="94.3" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="431.8" cy="110.1" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="478.2" cy="131.1" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="524.5" cy="153.7" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/><circle cx="570.8" cy="166.4" r="4" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+    <text x="579.8333333333334" y="121.98857142857142" class="clima-direct-label">Máx</text>
+    <text x="579.8333333333334" y="170.3542857142857" class="clima-direct-label">Mín</text>
+    <rect x="38.0" y="16" width="46.3" height="184" class="clima-hit"><title>Enero: máxima media 15,2 °C · mínima media 5,2 °C</title></rect><rect x="84.3" y="16" width="46.3" height="184" class="clima-hit"><title>Febrero: máxima media 16,4 °C · mínima media 5,9 °C</title></rect><rect x="130.7" y="16" width="46.3" height="184" class="clima-hit"><title>Marzo: máxima media 18,7 °C · mínima media 7,8 °C</title></rect><rect x="177.0" y="16" width="46.3" height="184" class="clima-hit"><title>Abril: máxima media 21 °C · mínima media 9,6 °C</title></rect><rect x="223.3" y="16" width="46.3" height="184" class="clima-hit"><title>Mayo: máxima media 24,5 °C · mínima media 12,6 °C</title></rect><rect x="269.7" y="16" width="46.3" height="184" class="clima-hit"><title>Junio: máxima media 29 °C · mínima media 16,9 °C</title></rect><rect x="316.0" y="16" width="46.3" height="184" class="clima-hit"><title>Julio: máxima media 32,2 °C · mínima media 19,7 °C</title></rect><rect x="362.3" y="16" width="46.3" height="184" class="clima-hit"><title>Agosto: máxima media 31,9 °C · mínima media 20,1 °C</title></rect><rect x="408.7" y="16" width="46.3" height="184" class="clima-hit"><title>Septiembre: máxima media 28 °C · mínima media 17,1 °C</title></rect><rect x="455.0" y="16" width="46.3" height="184" class="clima-hit"><title>Octubre: máxima media 23,4 °C · mínima media 13,1 °C</title></rect><rect x="501.3" y="16" width="46.3" height="184" class="clima-hit"><title>Noviembre: máxima media 18,3 °C · mínima media 8,8 °C</title></rect><rect x="547.7" y="16" width="46.3" height="184" class="clima-hit"><title>Diciembre: máxima media 15,6 °C · mínima media 6,4 °C</title></rect></svg>
+                            </figure>
+                            <figure class="clima-chart">
+                                <figcaption><strong>Lluvia media por meses (mm)</strong></figcaption>
+                                <svg viewBox="0 0 640 230" class="clima-chart-svg" role="img" aria-label="Precipitación media de cada mes en Alhaurín el Grande, en milímetros"><title>Precipitación media por meses (mm)</title><line x1="38" x2="594" y1="200" y2="200" class="clima-grid-line"/><text x="32" y="204" text-anchor="end" class="clima-axis-text">0</text><line x1="38" x2="594" y1="154" y2="154" class="clima-grid-line"/><text x="32" y="158" text-anchor="end" class="clima-axis-text">20</text><line x1="38" x2="594" y1="108" y2="108" class="clima-grid-line"/><text x="32" y="112" text-anchor="end" class="clima-axis-text">40</text><line x1="38" x2="594" y1="62" y2="62" class="clima-grid-line"/><text x="32" y="66" text-anchor="end" class="clima-axis-text">60</text><line x1="38" x2="594" y1="16" y2="16" class="clima-grid-line"/><text x="32" y="20" text-anchor="end" class="clima-axis-text">80</text><text x="61.16666666666667" y="222" text-anchor="middle" class="clima-axis-text">E</text><text x="107.50000000000001" y="222" text-anchor="middle" class="clima-axis-text">F</text><text x="153.83333333333334" y="222" text-anchor="middle" class="clima-axis-text">M</text><text x="200.16666666666666" y="222" text-anchor="middle" class="clima-axis-text">A</text><text x="246.5" y="222" text-anchor="middle" class="clima-axis-text">M</text><text x="292.83333333333337" y="222" text-anchor="middle" class="clima-axis-text">J</text><text x="339.1666666666667" y="222" text-anchor="middle" class="clima-axis-text">J</text><text x="385.50000000000006" y="222" text-anchor="middle" class="clima-axis-text">A</text><text x="431.83333333333337" y="222" text-anchor="middle" class="clima-axis-text">S</text><text x="478.1666666666667" y="222" text-anchor="middle" class="clima-axis-text">O</text><text x="524.5" y="222" text-anchor="middle" class="clima-axis-text">N</text><text x="570.8333333333334" y="222" text-anchor="middle" class="clima-axis-text">D</text><path d="M46.16666666666667,200 V72.9 Q46.16666666666667,68.9 50.16666666666667,68.9 H72.16666666666667 Q76.16666666666667,68.9 76.16666666666667,72.9 V200 Z" fill="#2a78d6"/><rect x="38.0" y="16" width="46.3" height="184" class="clima-hit"><title>Enero: 57 mm · 5,4 días de lluvia</title></rect><path d="M92.50000000000001,200 V89 Q92.50000000000001,85 96.50000000000001,85 H118.50000000000001 Q122.50000000000001,85 122.50000000000001,89 V200 Z" fill="#2a78d6"/><rect x="84.3" y="16" width="46.3" height="184" class="clima-hit"><title>Febrero: 50 mm · 4,9 días de lluvia</title></rect><path d="M138.83333333333334,200 V75.20000000000002 Q138.83333333333334,71.20000000000002 142.83333333333334,71.20000000000002 H164.83333333333334 Q168.83333333333334,71.20000000000002 168.83333333333334,75.20000000000002 V200 Z" fill="#2a78d6"/><rect x="130.7" y="16" width="46.3" height="184" class="clima-hit"><title>Marzo: 56 mm · 5,5 días de lluvia</title></rect><path d="M185.16666666666666,200 V109.7 Q185.16666666666666,105.7 189.16666666666666,105.7 H211.16666666666666 Q215.16666666666666,105.7 215.16666666666666,109.7 V200 Z" fill="#2a78d6"/><rect x="177.0" y="16" width="46.3" height="184" class="clima-hit"><title>Abril: 41 mm · 5,5 días de lluvia</title></rect><path d="M231.5,200 V137.3 Q231.5,133.3 235.5,133.3 H257.5 Q261.5,133.3 261.5,137.3 V200 Z" fill="#2a78d6"/><rect x="223.3" y="16" width="46.3" height="184" class="clima-hit"><title>Mayo: 29 mm · 4,9 días de lluvia</title></rect><path d="M277.83333333333337,200 V181 Q277.83333333333337,177 281.83333333333337,177 H303.83333333333337 Q307.83333333333337,177 307.83333333333337,181 V200 Z" fill="#2a78d6"/><rect x="269.7" y="16" width="46.3" height="184" class="clima-hit"><title>Junio: 10 mm · 1,7 días de lluvia</title></rect><path d="M324.1666666666667,200 V197.1 Q324.1666666666667,193.1 328.1666666666667,193.1 H350.1666666666667 Q354.1666666666667,193.1 354.1666666666667,197.1 V200 Z" fill="#2a78d6"/><rect x="316.0" y="16" width="46.3" height="184" class="clima-hit"><title>Julio: 3 mm · 0,7 días de lluvia</title></rect><path d="M370.50000000000006,200 V178.7 Q370.50000000000006,174.7 374.50000000000006,174.7 H396.50000000000006 Q400.50000000000006,174.7 400.50000000000006,178.7 V200 Z" fill="#2a78d6"/><rect x="362.3" y="16" width="46.3" height="184" class="clima-hit"><title>Agosto: 11 mm · 1,4 días de lluvia</title></rect><path d="M416.83333333333337,200 V125.8 Q416.83333333333337,121.8 420.83333333333337,121.8 H442.83333333333337 Q446.83333333333337,121.8 446.83333333333337,125.8 V200 Z" fill="#2a78d6"/><rect x="408.7" y="16" width="46.3" height="184" class="clima-hit"><title>Septiembre: 34 mm · 4 días de lluvia</title></rect><path d="M463.1666666666667,200 V75.20000000000002 Q463.1666666666667,71.20000000000002 467.1666666666667,71.20000000000002 H489.1666666666667 Q493.1666666666667,71.20000000000002 493.1666666666667,75.20000000000002 V200 Z" fill="#2a78d6"/><rect x="455.0" y="16" width="46.3" height="184" class="clima-hit"><title>Octubre: 56 mm · 6 días de lluvia</title></rect><path d="M509.50000000000006,200 V45.29999999999998 Q509.50000000000006,41.29999999999998 513.5,41.29999999999998 H535.5 Q539.5,41.29999999999998 539.5,45.29999999999998 V200 Z" fill="#2a78d6"/><text x="524.5" y="35.29999999999998" text-anchor="middle" class="clima-direct-label">69 mm</text><rect x="501.3" y="16" width="46.3" height="184" class="clima-hit"><title>Noviembre: 69 mm · 5,8 días de lluvia</title></rect><path d="M555.8333333333334,200 V56.79999999999998 Q555.8333333333334,52.79999999999998 559.8333333333334,52.79999999999998 H581.8333333333334 Q585.8333333333334,52.79999999999998 585.8333333333334,56.79999999999998 V200 Z" fill="#2a78d6"/><rect x="547.7" y="16" width="46.3" height="184" class="clima-hit"><title>Diciembre: 64 mm · 5,8 días de lluvia</title></rect></svg>
+                            </figure>
+                        </div>
+                        <p class="clima-best">🗓️ <strong>Mejor época para visitar Alhaurín:</strong> mayo, junio y septiembre, con temperaturas agradables y poca lluvia.</p>
+                        <details class="clima-table-wrap">
+                            <summary>Ver la tabla mes a mes y los récords</summary>
+                            <div class="clima-table-scroll">
+                                <table class="clima-table">
+                                    <thead><tr><th scope="col">Mes</th><th scope="col">Máx. media</th><th scope="col">Mín. media</th><th scope="col">Media</th><th scope="col">Lluvia</th><th scope="col">Días de lluvia</th><th scope="col">Días ≥ 35 °C</th><th scope="col">Días de helada</th></tr></thead>
+                                    <tbody>
+    <tr>
+      <th scope="row">Enero</th>
+      <td>15,2 °C</td><td>5,2 °C</td><td>9,4 °C</td>
+      <td>57 mm</td><td>5,4</td><td>0</td><td>0,7</td>
+    </tr>
+    <tr>
+      <th scope="row">Febrero</th>
+      <td>16,4 °C</td><td>5,9 °C</td><td>10,5 °C</td>
+      <td>50 mm</td><td>4,9</td><td>0</td><td>0,6</td>
+    </tr>
+    <tr>
+      <th scope="row">Marzo</th>
+      <td>18,7 °C</td><td>7,8 °C</td><td>12,7 °C</td>
+      <td>56 mm</td><td>5,5</td><td>0</td><td>0,1</td>
+    </tr>
+    <tr>
+      <th scope="row">Abril</th>
+      <td>21 °C</td><td>9,6 °C</td><td>14,9 °C</td>
+      <td>41 mm</td><td>5,5</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Mayo</th>
+      <td>24,5 °C</td><td>12,6 °C</td><td>18,3 °C</td>
+      <td>29 mm</td><td>4,9</td><td>0,1</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Junio</th>
+      <td>29 °C</td><td>16,9 °C</td><td>22,6 °C</td>
+      <td>10 mm</td><td>1,7</td><td>1,3</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Julio</th>
+      <td>32,2 °C</td><td>19,7 °C</td><td>25,6 °C</td>
+      <td>3 mm</td><td>0,7</td><td>6</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Agosto</th>
+      <td>31,9 °C</td><td>20,1 °C</td><td>25,5 °C</td>
+      <td>11 mm</td><td>1,4</td><td>4,9</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Septiembre</th>
+      <td>28 °C</td><td>17,1 °C</td><td>21,9 °C</td>
+      <td>34 mm</td><td>4</td><td>0,6</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Octubre</th>
+      <td>23,4 °C</td><td>13,1 °C</td><td>17,5 °C</td>
+      <td>56 mm</td><td>6</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Noviembre</th>
+      <td>18,3 °C</td><td>8,8 °C</td><td>12,8 °C</td>
+      <td>69 mm</td><td>5,8</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Diciembre</th>
+      <td>15,6 °C</td><td>6,4 °C</td><td>10,3 °C</td>
+      <td>64 mm</td><td>5,8</td><td>0</td><td>0,1</td>
+    </tr></tbody>
+                                </table>
                             </div>
-                            <div class="andalmet-prominent-frame">
-                                <iframe src="https://andalmet.es/widget/alhaurin-el-grande?size=full" width="100%"
-                                    height="220" frameborder="0" loading="lazy"
-                                    title="Tiempo en Alhaurín el Grande - Andalmet"></iframe>
-                            </div>
-                        </article>
-
-                        <article class="andalmet-prominent-card">
-                            <div class="andalmet-card-header">
-                                <div>
-                                    <span class="mini-label">Semana</span>
-                                    <h3>Evolución semanal Andalmet</h3>
-                                </div>
-                                <a class="read-more" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande"
-                                    target="_blank" rel="noopener noreferrer">Ver gráfica →</a>
-                            </div>
-                            <div class="andalmet-prominent-frame">
-                                <iframe src="https://andalmet.es/widget/alhaurin-el-grande?size=weekly" width="100%"
-                                    height="240" frameborder="0" loading="lazy"
-                                    title="Previsión semanal en Alhaurín el Grande - Andalmet"></iframe>
-                            </div>
-                        </article>
+                            <ul class="clima-records">
+                                <li>🔥 Máxima más alta del periodo: <strong>44,3 °C</strong> (1 de agosto de 2020)</li>
+                                <li>🥶 Mínima más baja: <strong>-3,4 °C</strong> (28 de enero de 2005)</li>
+                                <li>🌧️ Día más lluvioso: <strong>107,9 mm</strong> (14 de enero de 2006)</li>
+                            </ul>
+                        </details>
+                        <p class="clima-note">Fuente: <a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank" rel="noopener noreferrer">Open-Meteo Historical Weather API · reanálisis CERRA (Copernicus, malla de 5,5 km)</a>, medias 1991-2020. Valores medios de reanálisis para la celda de Alhaurín el Grande; no son medidas de una estación oficial. Día de lluvia: ≥ 1 mm. Día de helada: mínima ≤ 0 °C.</p>
                     </div>
-                </div>
+                </section>
+
+                
+                <section class="faq-section" aria-labelledby="faq-title">
+                    <div class="section-title compact">
+                        <div>
+                            <span class="section-kicker">Dudas habituales</span>
+                            <h2 id="faq-title">Preguntas frecuentes sobre el tiempo en Alhaurín</h2>
+                        </div>
+                    </div>
+                    <div class="faq-list">
+                        <details class="faq-item">
+                            <summary>¿Qué temperatura hará mañana en Alhaurín el Grande?</summary>
+                            <p>Para mañana, jueves 19 de noviembre, AEMET prevé una máxima de 23 °C y una mínima de 12 °C (intervalos nubosos con lluvia escasa).</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>¿Lloverá mañana en Alhaurín el Grande?</summary>
+                            <p>Probabilidad de lluvia alta (85 %) para mañana según AEMET; conviene llevar paraguas.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>¿Cuánto viento hará hoy en Alhaurín el Grande?</summary>
+                            <p>AEMET prevé hoy viento flojo de componente suroeste a 10 km/h. En la parte de arriba de esta página tienes el viento y las rachas en tiempo real.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>¿Lloverá este fin de semana en Alhaurín el Grande?</summary>
+                            <p>Sábado: probabilidad de lluvia baja (10 %), 21° de máxima. Domingo: probabilidad de lluvia baja (20 %), 23° de máxima.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>¿A qué hora amanece y anochece hoy en Alhaurín el Grande?</summary>
+                            <p>Hoy el sol sale a las 07:58 y se pone a las 18:09, con 10h 11m de luz.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>¿Qué clima tiene Alhaurín el Grande?</summary>
+                            <p>Mediterráneo: veranos calurosos y secos e inviernos suaves. La temperatura media anual es de 16,8 °C; julio es el mes más caluroso (máximas medias de 32,2 °C) y enero el más frío (mínimas medias de 5,2 °C).</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>¿Cuánto llueve en Alhaurín el Grande al año?</summary>
+                            <p>Unos 480 mm repartidos en 52 días de lluvia al año, sobre todo entre octubre y abril. El mes más lluvioso es noviembre, con 69 mm de media; julio apenas recoge 3 mm.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>¿Cuál es la mejor época para visitar Alhaurín el Grande?</summary>
+                            <p>Mayo, junio y septiembre: máximas medias entre 22 y 30 °C y poca lluvia. En cambio, julio y agosto tienen de media 6 y 4,9 días por encima de 35 °C.</p>
+                        </details>
+                    </div>
+                </section>
 
                 <!-- TOOLBAR DE FUENTES Y ACCESOS RÁPIDOS -->
                 <div class="weather-footer-actions">
                     <a class="btn btn-primary" href="../seguimiento/">📡 Ver En Directo (Radar, Rayos, Tráfico y Calidad del Aire) →</a>
-                    <a class="btn btn-secondary" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande"
-                        target="_blank" rel="noopener noreferrer">Andalmet.es ↗</a>
                     <a class="btn btn-secondary"
                         href="https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
                         target="_blank" rel="noopener noreferrer">AEMET.es ↗</a>
@@ -501,7 +720,9 @@
         </div>
     </footer>
 
-    <script src="../js/app.js?v=36660541" defer></script>
+    <script src="../js/app.js" defer></script>
+    <script src="../js/vendor/suncalc.js" defer></script>
+    <script src="../js/tiempo-live.js" defer></script>
 </body>
 
 </html>

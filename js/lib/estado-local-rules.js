@@ -160,7 +160,7 @@ export function mergeWeather(items, weatherData) {
     : '';
 
   const enrichedItem = { ...weatherItem, actividadesMini };
-  const cleaned = items.filter((item) => item.id !== 'tiempo' && item.id !== 'andalmet');
+  const cleaned = items.filter((item) => item.id !== 'tiempo');
   return [enrichedItem, ...cleaned];
 }
 

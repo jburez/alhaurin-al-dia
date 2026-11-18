@@ -33,47 +33,6 @@
         return `Actualizado ${date.toLocaleDateString("es-ES", { day: "2-digit", month: "long" })} a las ${date.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" })}`;
     }
 
-    function insertAndalmetWidget() {
-        if (document.getElementById("home-andalmet-widget")) return;
-
-        const dashboard = document.querySelector(".daily-dashboard");
-        if (!dashboard || !dashboard.parentNode) return;
-
-        const section = document.createElement("section");
-        section.className = "weather-widget-section";
-        section.id = "home-andalmet-widget";
-        section.setAttribute("aria-labelledby", "home-weather-title");
-
-        const iframe = document.createElement("iframe");
-        iframe.src = "https://andalmet.es/widget/alhaurin-el-grande?size=full";
-        iframe.width = "320";
-        iframe.height = "150";
-        iframe.loading = "lazy";
-        iframe.title = "Tiempo en Alhaurín el Grande - Andalmet";
-        iframe.setAttribute("frameborder", "0");
-
-        section.innerHTML = `
-            <div class="container">
-                <article class="andalmet-widget-card andalmet-home-card">
-                    <div>
-                        <span class="section-kicker">Previsión ampliada</span>
-                        <h2 id="home-weather-title">El tiempo en Alhaurín, por Andalmet.</h2>
-                        <p>Widget oficial de Andalmet con previsión local ampliada para Alhaurín el Grande.</p>
-                        <div class="actions">
-                            <a class="btn btn-primary" href="${escapeHTML(normalizeLink("tiempo/"))}">Ver página del tiempo</a>
-                            <a class="btn btn-secondary" href="https://andalmet.es/el-tiempo-en/alhaurin-el-grande" target="_blank" rel="noopener noreferrer">Abrir Andalmet</a>
-                        </div>
-                    </div>
-                    <div class="andalmet-widget-frame" data-andalmet-frame></div>
-                </article>
-            </div>
-        `;
-
-        const frameBox = section.querySelector("[data-andalmet-frame]");
-        if (frameBox) frameBox.appendChild(iframe);
-        dashboard.insertAdjacentElement("afterend", section);
-    }
-
     // Reglas de fusión/severidad/orden: compartidas con
     // scripts/render-home-widgets-static.js vía js/lib/estado-local-rules.js
     // (importado arriba como `rules`), para que la hidratación en el
@@ -107,8 +66,6 @@
             </article>
         `;
     }
-
-    insertAndalmetWidget();
 
     Promise.all([
         fetch(new URL("data/estado-local.json", root).href).then(response => {

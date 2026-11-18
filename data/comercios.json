@@ -1,0 +1,41 @@
+{
+  "_descripcion": "Directorio de comercios de Alhaurín el Grande. Una ficha propia (/comercios/<categoria>/<slug>/) solo se genera si el comercio tiene descripción y al menos dirección u horario; si no, aparece solo en el listado de su categoría. Los comercios con destacado: true y patrocinado_hasta igual o posterior a hoy salen primero con la etiqueta «Destacado» y pueden ocupar el hueco de comercio destacado de la portada y de la farmacia de guardia. No añadir datos sin verificarlos con el propio comercio.",
+  "_plantilla": {
+    "slug": "nombre-del-negocio",
+    "nombre": "Nombre del negocio",
+    "categoria": "restaurantes-y-bares",
+    "descripcion": "Descripción breve y verificable, redactada para esta web.",
+    "direccion": "Calle, número",
+    "zona": "Centro",
+    "telefono": "+34952000000",
+    "web": "https://ejemplo.es",
+    "redes": [{ "nombre": "Instagram", "url": "https://instagram.com/ejemplo" }],
+    "horario": "Lunes a viernes, 9:00-14:00",
+    "destacado": false,
+    "patrocinado_hasta": null
+  },
+  "categorias": [
+    {
+      "slug": "restaurantes-y-bares",
+      "nombre": "Restaurantes y bares",
+      "icono": "🍽️",
+      "resumen": "Locales para comer, tapear, tomar café o descubrir propuestas gastronómicas del municipio.",
+      "intro": ""
+    },
+    {
+      "slug": "tiendas",
+      "nombre": "Tiendas locales",
+      "icono": "🛍️",
+      "resumen": "Comercios de proximidad, tiendas especializadas, alimentación, moda, regalos y servicios diarios.",
+      "intro": ""
+    },
+    {
+      "slug": "profesionales",
+      "nombre": "Profesionales y servicios",
+      "icono": "🔧",
+      "resumen": "Empresas, autónomos y servicios profesionales que trabajan en Alhaurín el Grande y alrededores.",
+      "intro": ""
+    }
+  ],
+  "comercios": []
+}

@@ -13,7 +13,7 @@
     "seo:home": "node scripts/apply-home-seo.js",
     "seo:clean-searchaction": "node scripts/remove-searchaction.js",
     "seo:twitter-cards": "node scripts/add-twitter-cards.js",
-    "seo": "npm run seo:home && npm run seo:clean-searchaction",
+    "seo": "npm run seo:clean-searchaction",
     "home:static": "node scripts/render-home-static.js",
     "guide:pages": "node scripts/render-guide-pages.js",
     "guide:static": "node scripts/render-guide-static.js",

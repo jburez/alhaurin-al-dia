@@ -9,6 +9,14 @@ const REQUIRED_FILES = [
   'guia-util/farmacias/index.html',
   'contacto/index.html',
   'sobre-nosotros/index.html',
+  'farmacia-de-guardia/index.html',
+  'agenda/index.html',
+  'este-fin-de-semana/index.html',
+  'guias/index.html',
+  'privacidad/index.html',
+  'cookies/index.html',
+  'aviso-legal/index.html',
+  'ads.txt',
   'robots.txt',
   'sitemap.xml',
   'sitemap-index.xml',
@@ -19,9 +27,14 @@ const REQUIRED_FILES = [
   'data/guia-util.json',
 ];
 
+// /noticias/ (Actualidad) ya no es obligatoria: mientras solo agregue
+// noticias RSS está en noindex y fuera del sitemap.
 const REQUIRED_SITEMAP_URLS = [
   'https://alhaurinaldia.es/',
-  'https://alhaurinaldia.es/noticias/',
+  'https://alhaurinaldia.es/farmacia-de-guardia/',
+  'https://alhaurinaldia.es/agenda/',
+  'https://alhaurinaldia.es/este-fin-de-semana/',
+  'https://alhaurinaldia.es/guias/',
   'https://alhaurinaldia.es/guia-util/',
   'https://alhaurinaldia.es/guia-util/farmacias/',
   'https://alhaurinaldia.es/contacto/',
@@ -126,20 +139,18 @@ function checkHome(errors) {
     errors.push('index.html no tiene canonical correcto');
   }
 
-  if (!/NewsMediaOrganization/.test(html)) {
-    errors.push('index.html no contiene JSON-LD NewsMediaOrganization');
+  if (!/"@type":\s*"Organization"/.test(html) || !/"@type":\s*"WebSite"/.test(html)) {
+    errors.push('index.html no contiene JSON-LD WebSite + Organization');
   }
 
-  if (!/id=["']featured-news["']/i.test(html)) {
-    errors.push('index.html no contiene el contenedor #featured-news para renderizado dinámico');
+  for (const [id, label] of [['hoy', 'Hoy en Alhaurín']]) {
+    if (!new RegExp(`id=["']${id}["']`, 'i').test(html)) {
+      errors.push(`index.html no contiene el bloque #${id} (${label})`);
+    }
   }
 
-  if (!/id=["']news-container["']/i.test(html)) {
-    errors.push('index.html no contiene el contenedor #news-container para renderizado dinámico');
-  }
-
-  if (!/id=["']guide-container["']/i.test(html)) {
-    errors.push('index.html no contiene el contenedor #guide-container para renderizado dinámico');
+  if (!/data-ad-ubicacion="portada"/.test(html)) {
+    errors.push('index.html no contiene el hueco de anuncio de portada con altura reservada');
   }
 }
 

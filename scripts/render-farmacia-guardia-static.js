@@ -371,15 +371,8 @@ function main() {
 
   let cambios = 0;
 
-  // Portada
-  {
-    const original = fs.readFileSync(HOME_FILE, 'utf8');
-    const actualizado = renderHome(original, farmaciaHoy, fechaCorta);
-    if (actualizado !== original) {
-      fs.writeFileSync(HOME_FILE, actualizado);
-      cambios += 1;
-    }
-  }
+  // La portada ya no se toca aquí: la genera entera scripts/render-home.js
+  // (bloque «Hoy en Alhaurín» con la farmacia de guardia).
 
   // /guia-util/farmacias/
   {

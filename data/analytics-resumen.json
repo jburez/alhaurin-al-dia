@@ -1,7 +1,7 @@
 {
-  "actualizado": "2026-11-19T17:40:10.639Z",
-  "visitas24h": 17,
-  "paginasVistas24h": 19,
+  "actualizado": "2026-11-19T23:47:57.867Z",
+  "visitas24h": 18,
+  "paginasVistas24h": 20,
   "topPaginas": [
     {
       "ruta": "/planes/",
@@ -9,7 +9,7 @@
     },
     {
       "ruta": "/",
-      "vistas": 12
+      "vistas": 10
     },
     {
       "ruta": "/boletin-oficial/",
@@ -20,7 +20,7 @@
       "vistas": 6
     },
     {
-      "ruta": "/radar-social/",
+      "ruta": "/planes/e-13990/",
       "vistas": 3
     }
   ]

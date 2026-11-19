@@ -178,6 +178,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=1zJjyGYn2So"
   },
+  "guid:atv-alhaurin-youtube:yt:video:3-VSpMOydG0": {
+    "ai_attempts": 0,
+    "content_hash": "2a6057525784ee352c6c94d51863fafb78010c92",
+    "date_modified": null,
+    "date_published": "2026-11-19T14:27:42+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "Así lo viví con María Badía | Programa 40.",
+      "descripcion": "Así lo viví con María Badía | Programa 40.",
+      "seo_keywords": [],
+      "titulo": "Así lo viví con María Badía"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-3-vspmoydg0-3e09b700",
+    "last_ai_attempt": null,
+    "pagina": "noticias/asi-lo-vivi-con-maria-badia.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=3-VSpMOydG0"
+  },
   "guid:atv-alhaurin-youtube:yt:video:36dVps_bZOQ": {
     "ai_attempts": 0,
     "content_hash": "358b040f6945f694153c55554576894ec0c6c456",
@@ -257,6 +276,25 @@
     "pagina": "noticias/asi-lo-vivi-con-sete-fernandez.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=4JTFfORQ4nY"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:5RyGzFwBiZ8": {
+    "ai_attempts": 0,
+    "content_hash": "9c7033e2f156e9784c36850654802d37a26f5643",
+    "date_modified": null,
+    "date_published": "2026-11-19T14:17:34+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "El deporte ha sido protagonista vigesimosexta edición de la jornada de baloncesto adaptado de fahala celebrada en el polideportivo municipal. El encuentro ha reunido a 300 deportistas con capacidades diferentes de 20 asociaciones de la provincia, que han disfrutado con el ejercicio en una jornada de convivencia y compañerismo.",
+      "descripcion": "El deporte ha sido protagonista vigesimosexta edición de la jornada de baloncesto adaptado de fahala celebrada en el polideportivo municipal. El encuentro ha reunido a 300 deportistas con capacidades diferentes de 20 asociaciones.",
+      "seo_keywords": [],
+      "titulo": "XXVI Jornada de Baloncesto Adaptado \"Memorial Juan Jesús Fernández ‘Fernan’\" (2026)"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-5rygzfwbiz8-522a2a26",
+    "last_ai_attempt": null,
+    "pagina": "noticias/xxvi-jornada-de-baloncesto-adaptado-memorial-juan-jesus-fernandez-fernan-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=5RyGzFwBiZ8"
   },
   "guid:atv-alhaurin-youtube:yt:video:5xTSV558EBA": {
     "ai_attempts": 3,
@@ -2341,6 +2379,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=pKyD2nZx2Nk"
   },
+  "guid:atv-alhaurin-youtube:yt:video:pdLmPMGyQNg": {
+    "ai_attempts": 0,
+    "content_hash": "b9d0dd63e32906a85518219d4b3220daf06dd728",
+    "date_modified": null,
+    "date_published": "2026-11-19T13:53:33+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del jueves 19 de noviembre de 2026 en el Informativo de ATV. 1. BALANCE REPOBLACIÓN SIERRA El área de Medio Ambiente hace un balance positivo de las labores de repoblación, concienciación y sensibilización llevadas a cabo en el último año en la sierra de Alhaurín el Grande. 2.\n\nBELENES Y ÁRBOLES NAVIDAD 2026 Alhaurín Televisión abre el plazo de inscripción para su Concurso de Belenes y Árboles de Navidad, que incorpora este año la colaboración de Fedelhorce en la dotación de premios. 3.",
+      "descripcion": "1. BALANCE REPOBLACIÓN SIERRA El área de Medio Ambiente hace un balance positivo de las labores de repoblación, concienciación y sensibilización llevadas a cabo en el último año en la sierra de Alhaurín el Grande. 2. BELENES Y.",
+      "seo_keywords": [],
+      "titulo": "Balance repoblación sierra el área de medio ambiente hace un balance positivo"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-pdlmpmgyqng-7ba6d7b7",
+    "last_ai_attempt": null,
+    "pagina": "noticias/balance-repoblacion-sierra-el-area-de-medio-ambiente-hace-un-balance-positivo.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=pdLmPMGyQNg"
+  },
   "guid:atv-alhaurin-youtube:yt:video:q0SdzQULeeg": {
     "ai_attempts": 3,
     "content_hash": "7b90fc9ad8d15edb41dd42ca05ffdc963de049a1",
@@ -3817,6 +3874,44 @@
     "pagina": "noticias/alhaurin-el-grande-recibe-por-segunda-vez-el-premio-educaciudad-por-su-compromiso.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-recibe-por-segunda-vez-el-premio-educaciudad-por-su-compromiso-con-la-educacion/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225183": {
+    "ai_attempts": 0,
+    "content_hash": "b7cac0e9bcd3624ca76eb4b952218620fef20130",
+    "date_modified": null,
+    "date_published": "2026-11-19T10:48:10+00:00",
+    "editorial": {
+      "categoria": "Obras y Servicios",
+      "cuerpo": "La actuación, con una inversión municipal de aproximadamente 42.000 euros y un plazo de ejecución de dos a tres semanas, facilitará el cruce seguro entre la urbanización y la parada.",
+      "descripcion": "La actuación, con una inversión municipal de aproximadamente 42.000 euros y un plazo de ejecución de dos a tres semanas, facilitará el cruce seguro entre la urbanización y la parada.",
+      "seo_keywords": [],
+      "titulo": "El Ayuntamiento inicia las obras de un paso de peatones elevado para reforzar la seguridad"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22518-3e0012c8",
+    "last_ai_attempt": null,
+    "pagina": "noticias/el-ayuntamiento-inicia-las-obras-de-un-paso-de-peatones-elevado-para-reforzar-la-seguridad.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-inicia-las-obras-de-un-paso-de-peatones-elevado-para-reforzar-la-seguridad-vial-en-la-urbanizacion-la-paca/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225188": {
+    "ai_attempts": 0,
+    "content_hash": "b2753363c3730d0fac31bf5dc8f499431f7b4423",
+    "date_modified": null,
+    "date_published": "2026-11-19T13:02:04+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La concejalía de Fiestas invita a la ciudadanía y a los escolares del municipio a participar en dos iniciativas que buscan fomentar la creatividad y la implicación de los vecinos.",
+      "descripcion": "La concejalía de Fiestas invita a la ciudadanía y a los escolares del municipio a participar en dos iniciativas que buscan fomentar la creatividad y la implicación de los vecinos.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande abre la convocatoria de los concursos de carteles y dibujo infantil"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22518-9702a5a2",
+    "last_ai_attempt": null,
+    "pagina": "noticias/alhaurin-el-grande-abre-la-convocatoria-de-los-concursos-de-carteles-y-dibujo-infantil.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-abre-la-convocatoria-de-los-concursos-de-carteles-y-dibujo-infantil-para-el-carnaval-2027/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -6079,6 +6174,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/09/incremento-historico-de-viajeros-en-la-linea-m-167-de-malaga/"
   },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/11/19/convocatorias-para-el-carnaval-2027-en-alhaurin-el-grande": {
+    "ai_attempts": 0,
+    "content_hash": "b77dd09fa3ad7c6bd77936f35d549404afa13f52",
+    "date_modified": null,
+    "date_published": "2026-11-19T15:45:21+00:00",
+    "editorial": {
+      "categoria": "Fiestas y Tradiciones",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 7 segundosLa concejalía de Fiestas del Ayuntamiento de Alhaurín el Grande invita a la ciudadanía y a los escolares del municipio a participar en dos iniciativas que buscan fomentar la creatividad y la implicación de los vecinos y vecinas en una de las celebraciones más esperadas del calendario festivo La entrada Convocatorias para el Carnaval 2027 en Alhaurín el Grande se publicó.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 7 segundosLa concejalía de Fiestas del Ayuntamiento de Alhaurín el Grande invita a la ciudadanía y a los escolares del municipio a participar en dos iniciativas que buscan fomentar la.",
+      "seo_keywords": [],
+      "titulo": "Convocatorias para el Carnaval 2027 en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-c6375fbd",
+    "last_ai_attempt": null,
+    "pagina": "noticias/convocatorias-para-el-carnaval-2027-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/19/convocatorias-para-el-carnaval-2027-en-alhaurin-el-grande/"
+  },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,
     "content_hash": "7187a0d5937dcd13653026654890c4d24a8ea1bd",
@@ -7083,6 +7197,25 @@
     "pagina": "noticias/alhaurin-el-grande-incorpora-dos-nuevos-vehiculos-a-los-servicios-operativos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/18/alhaurin-el-grande-incorpora-dos-nuevos-vehiculos-servicios-operativos/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=214125": {
+    "ai_attempts": 0,
+    "content_hash": "b296ffab5ac5b4ace9137c90692f1ccdedbf3e5d",
+    "date_modified": null,
+    "date_published": "2026-11-19T16:01:44+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 45 segundosEl concurso internacional, dotado con 3.000 euros y la publicación de la obra ganadora, recibirá trabajos hasta el próximo 18 de diciembre La Delegación de Cultura del Ayuntamiento de Alhaurín el Grande ha convocado una nueva edición del Certamen de Relato Breve Gerald Brenan, que alcanza este año La entrada Abierto el plazo para presentar originales al XXIII Certamen.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 45 segundosEl concurso internacional, dotado con 3.000 euros y la publicación de la obra ganadora, recibirá trabajos hasta el próximo 18 de diciembre La Delegación de Cultura del Ayuntamiento.",
+      "seo_keywords": [],
+      "titulo": "Abierto el plazo para presentar originales al XXIII Certamen de Relato Breve Gerald Brenan"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-3f3f8326",
+    "last_ai_attempt": null,
+    "pagina": "noticias/abierto-el-plazo-para-presentar-originales-al-xxiii-certamen-de-relato-breve-gerald-brenan-2.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/19/abierto-el-plazo-para-presentar-originales-al-xxiii-certamen-de-relato-breve-gerald-brenan/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
@@ -8230,5 +8363,24 @@
     "pagina": "noticias/el-ayuntamiento-de-alhaurin-el-grande-en-la-semana-gala-2026-de-cordoba.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://rtvalhaurinelgrande.com/el-ayuntamiento-de-alhaurin-el-grande-en-la-semana-gala-2026-de-cordoba/"
+  },
+  "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50786": {
+    "ai_attempts": 0,
+    "content_hash": "92e5a3b1f3a959f3e3655d71baeb5b665bce3e85",
+    "date_modified": null,
+    "date_published": "2026-11-19T10:21:07+00:00",
+    "editorial": {
+      "categoria": "Obras y Servicios",
+      "cuerpo": "BASES DEL CONCURSO DE BELENES Y ÁRBOLES DE NAVIDAD DE RADIO TELEVISIÓN ALHAURÍN EL GRANDE 2026 1.El ámbito del concurso será el término municipal de Alhaurín el Grande y podrán participar personas físicas a título individual que expongan las obras en sus domicilios, así como asociaciones y colectivos. 2.Concurso de portales de Belén. 2.1.\n\nLa entrada Bases Concurso de Belenes y Árboles de Navidad ATV 2026 aparece en RTV Alhaurín el Grande.",
+      "descripcion": "BASES DEL CONCURSO DE BELENES Y ÁRBOLES DE NAVIDAD DE RADIO TELEVISIÓN ALHAURÍN EL GRANDE 2026 1.El ámbito del concurso será el término municipal de Alhaurín el Grande y podrán participar personas físicas a título individual que.",
+      "seo_keywords": [],
+      "titulo": "Bases Concurso de Belenes y Árboles de Navidad ATV 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-rtv-alhaurin-el-grande-https-rtvalhaurinelgrande-com-p-50786-29accd4c",
+    "last_ai_attempt": null,
+    "pagina": "noticias/bases-concurso-de-belenes-y-arboles-de-navidad-atv-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://rtvalhaurinelgrande.com/bases-concurso-de-belenes-y-arboles-de-navidad-atv-2026/"
   }
 }

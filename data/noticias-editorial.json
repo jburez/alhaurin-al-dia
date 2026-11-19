@@ -4826,6 +4826,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://fedelhorce.es/conclusiones-juernes-alora-las-palancas-que-anaden-un-cero-a-tus-resultados/"
   },
+  "guid:fedelhorce:https://fedelhorce.es/?p=262128": {
+    "ai_attempts": 0,
+    "content_hash": "1d9b63307b0c8f55194e7b40611b751023872a3e",
+    "date_modified": null,
+    "date_published": "2026-11-18T10:07:39+00:00",
+    "editorial": {
+      "categoria": "Educación",
+      "cuerpo": "Información a las personas comerciantes sobre la normativa reguladora de la actividad comercial.",
+      "descripcion": "Información a las personas comerciantes sobre la normativa reguladora de la actividad comercial.",
+      "seo_keywords": [],
+      "titulo": "Plan de Inspección Comercial de Andalucía para el año 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-fedelhorce-https-fedelhorce-es-p-262128-169e8688",
+    "last_ai_attempt": null,
+    "pagina": "noticias/plan-de-inspeccion-comercial-de-andalucia-para-el-ano-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://fedelhorce.es/plan-de-inspeccion-comercial-de-andalucia-para-el-2026/"
+  },
   "guid:gdr-valle-del-guadalhorce:https://valledelguadalhorce.com/?p=31702": {
     "ai_attempts": 4,
     "content_hash": "68387d79a0a3ff539744fccd6165436de731c6d5",

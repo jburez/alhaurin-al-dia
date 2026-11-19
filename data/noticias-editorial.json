@@ -3780,6 +3780,44 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/abierto-el-plazo-para-presentar-originales-al-xxiii-certamen-de-relato-breve-gerald-brenan/"
   },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225172": {
+    "ai_attempts": 0,
+    "content_hash": "f50bb4e66d058a357ab4cf3578a6f915838d04ce",
+    "date_modified": null,
+    "date_published": "2026-11-19T08:32:55+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La concejalía que dirige Elisa Rueda continúa modernizando los medios materiales municipales con la adquisición de un volquete para jardinería y una furgoneta con grúa para los servicios eléctricos, mejorando.",
+      "descripcion": "La concejalía que dirige Elisa Rueda continúa modernizando los medios materiales municipales con la adquisición de un volquete para jardinería y una furgoneta con grúa para los servicios eléctricos, mejorando.",
+      "seo_keywords": [],
+      "titulo": "El Ayuntamiento apuesta por unos Servicios Operativos más modernos, eficientes y mejor"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22517-2dae6ce4",
+    "last_ai_attempt": null,
+    "pagina": "noticias/el-ayuntamiento-apuesta-por-unos-servicios-operativos-mas-modernos-eficientes-y-mejor.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/el-ayuntamiento-apuesta-por-unos-servicios-operativos-mas-modernos-eficientes-y-mejor-equipados-incorporando-dos-nuevos-vehiculos/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225177": {
+    "ai_attempts": 0,
+    "content_hash": "52a23a4643613c6a662a6c76b76c2accc572f9a1",
+    "date_modified": null,
+    "date_published": "2026-11-19T10:08:40+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "El reconocimiento, concedido por la Junta de Andalucía, distingue las iniciativas municipales en favor de la prevención del absentismo escolar, la participación infantil y la implicación de la comunidad educativa.",
+      "descripcion": "El reconocimiento, concedido por la Junta de Andalucía, distingue las iniciativas municipales en favor de la prevención del absentismo escolar, la participación infantil y la implicación de la comunidad educativa.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande recibe por segunda vez el Premio EducaCiudad por su compromiso"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22517-5cc734c1",
+    "last_ai_attempt": null,
+    "pagina": "noticias/alhaurin-el-grande-recibe-por-segunda-vez-el-premio-educaciudad-por-su-compromiso.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-recibe-por-segunda-vez-el-premio-educaciudad-por-su-compromiso-con-la-educacion/"
+  },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
     "content_hash": "bc00fd7fac4a0a07dca03a8a845f100cee1c4e04",

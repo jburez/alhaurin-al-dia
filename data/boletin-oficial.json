@@ -1,5 +1,29 @@
 [
   {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivopuntuacionesobtenidaspr",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "LISTADO DEFINITIVO PUNTUACIONES OBTENIDAS. PROCESO DE SELECCIÓN ALUMNADO PROGRAMA DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE VII. PLAZAS VACANTES",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/d443cdf7-bedb-46c7-9967-29bf8be94db5",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-11-18T17:44:15.049639+01:00"
+  },
+  {
+    "id": "sede-Subvenciones Solicitadas a Otra Administración-decreto20266737decretoaprobaciónlistadod",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "31291/2025",
+    "resumen": "DECRETO 2026-6737 [DECRETO APROBACIÓN LISTADO DEFINITIVO DE ALUMNOS/AS SELECCIONADOS/AS Y SUPLENTES. COBERTURA 2 PLAZAS VACANTES PROGRAMA DE EMPLEO Y FORMACION ALHAURIN EL GRANDE VII]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/f45ba8bb-a211-4c54-a831-0874878f26b3",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
+    "detectado_en": "2026-11-18T17:44:15.049606+01:00"
+  },
+  {
     "id": "sede-Subvenciones Solicitadas a Otra Administración-listadoprovisionalpuntuacionesobtenidasp",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -72,28 +96,16 @@
     "detectado_en": "2026-10-14T14:41:55.838101+02:00"
   },
   {
-    "id": "sede-Subvenciones Solicitadas a Otra Administración-decreto20266737decretoaprobaciónlistadod",
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266665nombramientocomisióndeval",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "31291/2025",
-    "resumen": "DECRETO 2026-6737 [DECRETO APROBACIÓN LISTADO DEFINITIVO DE ALUMNOS/AS SELECCIONADOS/AS Y SUPLENTES. COBERTURA 2 PLAZAS VACANTES PROGRAMA DE EMPLEO Y FORMACION ALHAURIN EL GRANDE VII]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/f45ba8bb-a211-4c54-a831-0874878f26b3",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6665 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A TÉCNICO/A E INGENIERO/A TÉCNICO/A (ACTUALIZADO)]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/ef0c7227-d93c-4f85-9e88-ac6445440d67",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
-    "detectado_en": "2026-11-18T17:44:15.049606+01:00"
-  },
-  {
-    "id": "sede-Subvenciones Solicitadas a Otra Administración-listadodefinitivopuntuacionesobtenidaspr",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "31291/2025",
-    "resumen": "LISTADO DEFINITIVO PUNTUACIONES OBTENIDAS. PROCESO DE SELECCIÓN ALUMNADO PROGRAMA DE EMPLEO Y FORMACIÓN ALHAURÍN EL GRANDE VII. PLAZAS VACANTES",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/d443cdf7-bedb-46c7-9967-29bf8be94db5",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Subvenciones Solicitadas a Otra Administración",
-    "detectado_en": "2026-11-18T17:44:15.049639+01:00"
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-17T18:06:32.973943+01:00"
   },
   {
     "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266656nombramientocomisióndeval",
@@ -636,18 +648,6 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
-    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266665nombramientocomisióndeval",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "6245/2024",
-    "resumen": "DECRETO 2026-6665 [NOMBRAMIENTO COMISIÓN DE VALORACIÓN DE LA BOLSA TRABAJO CATEGORÍA TIPO \"A\" TÉCNICOS (TÉCNICO SUPERIOR SOCIOCULTURAL, TÉCNICO Y TÉCNICO SOCIOCULTURAL), SUBCATEGORÍA: ARQUITECTO/A TÉCNICO/A E INGENIERO/A TÉCNICO/A (ACTUALIZADO)]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/ef0c7227-d93c-4f85-9e88-ac6445440d67",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
-    "detectado_en": "2026-11-17T18:06:32.973943+01:00"
-  },
-  {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -658,6 +658,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Propuesta de Gasto",
     "detectado_en": "2026-10-23T14:28:11.943288+02:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edicto_protocolo_1657actadenotoriedadded",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "34135/2026",
+    "resumen": "EDICTO_protocolo_1657 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. FRANCISCO GALLEGO MALDONADO",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/116d2bf0-7c9f-40ec-85b2-64adf32800c6",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-11-18T17:44:15.049624+01:00"
   },
   {
     "id": "sede-Procedimiento Genérico-bandodealcaldíaalertanaranja11denoviembr",
@@ -840,18 +852,6 @@
     "detectado_en": "2026-10-11T15:49:58.506610+02:00"
   },
   {
-    "id": "sede-Procedimiento Genérico-edicto_protocolo_1657actadenotoriedadded",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "34135/2026",
-    "resumen": "EDICTO_protocolo_1657 ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE D. FRANCISCO GALLEGO MALDONADO",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/116d2bf0-7c9f-40ec-85b2-64adf32800c6",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Procedimiento Genérico",
-    "detectado_en": "2026-11-18T17:44:15.049624+01:00"
-  },
-  {
     "id": "sede-Padrón Municipal de Habitantes-anunciodecretoinicioprocedbajaoficiopadr",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -912,6 +912,30 @@
     "detectado_en": "2026-10-28T14:52:21.697674+01:00"
   },
   {
+    "id": "sede-Fiestas-certificadodeacuerdoaprobbasesconcursodi",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "30740/2026",
+    "resumen": "Certificado de acuerdo APROB BASES CONCURSO DIBUJO INFANTIL CARNAVAL ALH GRANDE 2027 (JGL 13-11-2026 PTO. 3)",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6aa876c9-43bc-47a9-9163-4aeeb4006ea3",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Fiestas",
+    "detectado_en": "2026-11-17T18:06:32.973916+01:00"
+  },
+  {
+    "id": "sede-Fiestas-certificadodeacuerdoaprobbasesconcursoag",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "29977/2026",
+    "resumen": "Certificado de acuerdo APROB BASES CONCURSO AGRUPACIONES CARNAVAL ALH GRANDE 2027 (JGL 13-11-2026 PTO. 2)",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6dca7075-e0e5-4f9d-bb89-d491a78b1762",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Fiestas",
+    "detectado_en": "2026-11-17T18:06:32.973898+01:00"
+  },
+  {
     "id": "sede-Fiestas-certificadoaprobaciónbasesconcursodecart",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -946,30 +970,6 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Fiestas",
     "detectado_en": "2026-10-30T14:53:27.116395+01:00"
-  },
-  {
-    "id": "sede-Fiestas-certificadodeacuerdoaprobbasesconcursoag",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "29977/2026",
-    "resumen": "Certificado de acuerdo APROB BASES CONCURSO AGRUPACIONES CARNAVAL ALH GRANDE 2027 (JGL 13-11-2026 PTO. 2)",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6dca7075-e0e5-4f9d-bb89-d491a78b1762",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Fiestas",
-    "detectado_en": "2026-11-17T18:06:32.973898+01:00"
-  },
-  {
-    "id": "sede-Fiestas-certificadodeacuerdoaprobbasesconcursodi",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "30740/2026",
-    "resumen": "Certificado de acuerdo APROB BASES CONCURSO DIBUJO INFANTIL CARNAVAL ALH GRANDE 2027 (JGL 13-11-2026 PTO. 3)",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6aa876c9-43bc-47a9-9163-4aeeb4006ea3",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Fiestas",
-    "detectado_en": "2026-11-17T18:06:32.973916+01:00"
   },
   {
     "id": "sede-Elecciones-bandoexposiciónalpublicodelcallejeromuni",
@@ -1030,6 +1030,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Corporación y Cargos Públicos",
     "detectado_en": "2026-10-19T16:25:31.194402+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-actadejuntadegobierno20260037actajgl0611",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/37",
+    "resumen": "ACTA DE JUNTA DE GOBIERNO 2026-0037 [ACTA JGL 06-11-2026 DILIGENCIADA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/98beb08a-9a2b-4ee6-be70-dde57654eb70",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-11-17T18:06:32.973875+01:00"
   },
   {
     "id": "sede-Convocatoria de La Junta de Gobierno Local-decreto20266596decretoconvocatoriajgl131",
@@ -1116,16 +1128,16 @@
     "detectado_en": "2026-10-14T14:41:55.838116+02:00"
   },
   {
-    "id": "sede-Convocatoria de La Junta de Gobierno Local-actadejuntadegobierno20260037actajgl0611",
+    "id": "sede-Convocatoria de El Pleno-decreto20266723decretoconvocatoriapleno2",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
     "criterio_busqueda": "Sede Electrónica",
-    "expediente": "JGL/2026/37",
-    "resumen": "ACTA DE JUNTA DE GOBIERNO 2026-0037 [ACTA JGL 06-11-2026 DILIGENCIADA]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/98beb08a-9a2b-4ee6-be70-dde57654eb70",
+    "expediente": "PLN/2026/17",
+    "resumen": "DECRETO 2026-6723 [DECRETO CONVOCATORIA PLENO 20-11-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/436fd34b-bcd0-4647-8058-92dcca758095",
     "fuente": "Sede Electrónica",
-    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
-    "detectado_en": "2026-11-17T18:06:32.973875+01:00"
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-11-17T18:06:32.973835+01:00"
   },
   {
     "id": "sede-Convocatoria de El Pleno-decreto20266247decretoconvocatoriapleno3",
@@ -1176,18 +1188,6 @@
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
   },
   {
-    "id": "sede-Convocatoria de El Pleno-decreto20266723decretoconvocatoriapleno2",
-    "numero_edicto": "",
-    "organismo": "Ayuntamiento de Alhaurín el Grande",
-    "criterio_busqueda": "Sede Electrónica",
-    "expediente": "PLN/2026/17",
-    "resumen": "DECRETO 2026-6723 [DECRETO CONVOCATORIA PLENO 20-11-2026]",
-    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/436fd34b-bcd0-4647-8058-92dcca758095",
-    "fuente": "Sede Electrónica",
-    "fecha_alerta": "Convocatoria de El Pleno",
-    "detectado_en": "2026-11-17T18:06:32.973835+01:00"
-  },
-  {
     "id": "sede-Concesión de Subvenciones-certificado20260615certifpto65jgl3010202",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -1198,6 +1198,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Concesión de Subvenciones",
     "detectado_en": "2026-11-04T16:12:23.924101+01:00"
+  },
+  {
+    "id": "bop-20261120-04532-2026",
+    "numero_edicto": "4532/2026",
+    "organismo": "Ayuntamiento",
+    "criterio_busqueda": "Búsqueda 1",
+    "expediente": "",
+    "resumen": "ADMINISTRACIÓN LOCAL ALHAURÍN EL GRANDE Anuncio En cumplimiento del artículo 169.3, por remisión del 177.2, del Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el Texto Refundido de la Ley Reguladora de las Haciendas Locales, al no haberse presentado alegación alguna durante el plazo de exposición al público contra la modificación de crédito número 19 del presupuesto municipal 2026, en la modalidad crédito extraordinario y suplemento de crédito, financiado...",
+    "enlace": "https://www.bopmalaga.es/edicto.php?edicto=20261120-04532-2026&control=1669090631",
+    "fuente": "BOP Málaga",
+    "fecha_alerta": "2026-11-20",
+    "detectado_en": "2026-11-20T16:24:07+00:00"
   },
   {
     "id": "bop-20261117-04450-2026",

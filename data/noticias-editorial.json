@@ -3913,6 +3913,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-abre-la-convocatoria-de-los-concursos-de-carteles-y-dibujo-infantil-para-el-carnaval-2027/"
   },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225193": {
+    "ai_attempts": 0,
+    "content_hash": "caa1eac07f1f14b65fba7fa50e7f53c45b84ea82",
+    "date_modified": null,
+    "date_published": "2026-11-20T11:09:20+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Más de 500 personas voluntarias, entre adultos y escolares de los seis centros educativos del municipio, han participado en las labores de repoblación, sensibilización y concienciación ambiental, en las que.",
+      "descripcion": "Más de 500 personas voluntarias, entre adultos y escolares de los seis centros educativos del municipio, han participado en las labores de repoblación, sensibilización y concienciación ambiental, en las que.",
+      "seo_keywords": [],
+      "titulo": "Más de 500 personas voluntarias, entre adultos y escolares de los seis centros educativos"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22519-44908e4c",
+    "last_ai_attempt": null,
+    "pagina": "noticias/mas-de-500-personas-voluntarias-entre-adultos-y-escolares-de-los-seis-centros-educativos.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-hace-un-balance-muy-positivo-del-primer-ano-de-actuaciones-para-recuperar-la-sierra/"
+  },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
     "content_hash": "bc00fd7fac4a0a07dca03a8a845f100cee1c4e04",
@@ -5489,6 +5508,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34276/%f0%9f%8e%84%f0%9f%92%9c-ix-zambomba-flamenca-%f0%9f%92%9c%f0%9f%8e%84/"
   },
+  "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34283": {
+    "ai_attempts": 0,
+    "content_hash": "d2e81648cebc4b4311cb7df87929df0a3261b8de",
+    "date_modified": null,
+    "date_published": "2026-11-20T08:10:03+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Con motivo de la Festividad de Cristo Rey los próximos días, viernes 20, sábado 21 y domingo 22 de noviembre, nuestro Sagrado Titular permanecerá expuesto al culto para su veneración en la Ermita de San Sebastián con el siguiente horario: •Viernes de 17:00 a 20:00 horas. •Sábado de 11:00 a 13:30 horas.\n\nEl domingo, tras.",
+      "descripcion": "Con motivo de la Festividad de Cristo Rey los próximos días, viernes 20, sábado 21 y domingo 22 de noviembre, nuestro Sagrado Titular permanecerá expuesto al culto para su veneración en la Ermita de San Sebastián con el siguiente.",
+      "seo_keywords": [],
+      "titulo": "Solemnidad de Jesucristo, Rey del universo"
+    },
+    "ia_exitosa": false,
+    "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-dbb6f610",
+    "last_ai_attempt": null,
+    "pagina": "noticias/solemnidad-de-jesucristo-rey-del-universo.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.nuestropadrejesusnazareno.com/34283/solemnidad-de-jesucristo-rey-del-universo-2/"
+  },
   "guid:malaga-hoy:https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html": {
     "ai_attempts": 0,
     "content_hash": "43e9c8825d843c7e3fe503f44e07d8bdb3360ec4",
@@ -6192,6 +6230,25 @@
     "pagina": "noticias/convocatorias-para-el-carnaval-2027-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/19/convocatorias-para-el-carnaval-2027-en-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/11/20/balance-positivo-de-repoblacion-y-participacion-en-alhaurin-el-grande": {
+    "ai_attempts": 0,
+    "content_hash": "39e809a25bf5f93864cdd828f52c5b12dfcc398c",
+    "date_modified": null,
+    "date_published": "2026-11-20T11:38:21+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 32 segundosMás de 500 personas voluntarias, entre adultas y escolares de los seis centros educativos del municipio, han participado en las labores de repoblación, sensibilización y concienciación ambiental, sembrando más de 700 plantas con una tasa de supervivencia superior al 65 %.\n\nEl Ayuntamiento de Alhaurín el Grande, a La entrada Balance positivo de repoblación y participación en Alhaurín el Grande se publicó primero en Revista Lugar de Encuentro.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 32 segundosMás de 500 personas voluntarias, entre adultas y escolares de los seis centros educativos del municipio, han participado en las labores de repoblación, sensibilización y.",
+      "seo_keywords": [],
+      "titulo": "Balance positivo de repoblación y participación en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-3c24db69",
+    "last_ai_attempt": null,
+    "pagina": "noticias/balance-positivo-de-repoblacion-y-participacion-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/20/balance-positivo-de-repoblacion-y-participacion-en-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,
@@ -7216,6 +7273,25 @@
     "pagina": "noticias/abierto-el-plazo-para-presentar-originales-al-xxiii-certamen-de-relato-breve-gerald-brenan-2.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/19/abierto-el-plazo-para-presentar-originales-al-xxiii-certamen-de-relato-breve-gerald-brenan/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=214210": {
+    "ai_attempts": 0,
+    "content_hash": "fce88853ee076d5ea46cb8760eebd5621d59db2d",
+    "date_modified": null,
+    "date_published": "2026-11-20T12:32:08+00:00",
+    "editorial": {
+      "categoria": "Deportes",
+      "cuerpo": "Tiempo de lectura aprox: 1 minutos, 47 segundosEl secretario general del Partido Popular de Alhaurín el Grande, Jesús Rueda, ha criticado la política fiscal del Gobierno de Pedro Sánchez y ha denunciado que los españoles han sufrido más de un centenar de subidas de impuestos en los últimos años.\n\nRueda ha realizado estas declaraciones durante La entrada El PP de Alhaurín el Grande critica las subidas de impuestos del Gobierno y defiende las propuestas de Feijóo se publicó primero en Revista Lugar de Encuentro.",
+      "descripcion": "Tiempo de lectura aprox: 1 minutos, 47 segundosEl secretario general del Partido Popular de Alhaurín el Grande, Jesús Rueda, ha criticado la política fiscal del Gobierno de Pedro Sánchez y ha denunciado que los españoles han.",
+      "seo_keywords": [],
+      "titulo": "El PP de Alhaurín el Grande critica las subidas de impuestos del Gobierno y defiende"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-95c071c4",
+    "last_ai_attempt": null,
+    "pagina": "noticias/el-pp-de-alhaurin-el-grande-critica-las-subidas-de-impuestos-del-gobierno-y-defiende.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/20/el-pp-de-alhaurin-el-grande-critica-las-subidas-de-impuestos-del-gobierno-y-defiende-las-propuestas-de-feijoo/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,

@@ -7529,6 +7529,27 @@
       "estado_evento": "programado"
     },
     {
+      "id": "alhaurinhoy-14113",
+      "slug": "e-14113",
+      "titulo": "38ª Gala del Deporte",
+      "fecha_inicio": "2026-11-20",
+      "fecha_fin": "2026-11-20",
+      "hora": "20:00",
+      "hora_fin": "",
+      "lugar": "",
+      "direccion": "",
+      "descripcion": "",
+      "extracto_fuente": "El Ayuntamiento de Alhaurín el Grande , a través de su Área de Deportes, celebrará la 38ª edición de la Gala del Deporte el próximo viernes día 20 de noviembre en el teatro municipal a partir d...",
+      "categoria": "otros",
+      "precio": null,
+      "gratuito": null,
+      "organizador": "",
+      "url_fuente": "https://www.alhaurinhoy.es/Eventos/38a-gala-%f0%9f%a5%82-del-deporte/",
+      "fuente": "alhaurinhoy",
+      "imagen": "",
+      "estado_evento": "programado"
+    },
+    {
       "id": "alhaurinhoy-9742",
       "slug": "e-9742",
       "titulo": "Taller de cocina",

@@ -277,6 +277,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=4JTFfORQ4nY"
   },
+  "guid:atv-alhaurin-youtube:yt:video:4ZqfrM8AXk0": {
+    "ai_attempts": 0,
+    "content_hash": "fdf9c27d8bd1e038af9ac7a582a04eba3b28c470",
+    "date_modified": null,
+    "date_published": "2026-11-20T15:30:33+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Después de que tuviera que ser aplazada, el teatro municipal Antonio Gala albergó la X Gala benéfica de la asociación \"Un Sí Por La Vida\" para conmemorar el Día Mundial de la Lucha contra el Cáncer de Mama. La velada ofreció una propuesta artística con el piano de Joaquín Pareja-Obregón, el baile de Lourdes Rodríguez y el cante y el humor de 'El Morta'.\n\nEl acontecimiento cultural y solidario contó con la colaboración del Ayuntamiento de Alhaurín el Grande.",
+      "descripcion": "Después de que tuviera que ser aplazada, el teatro municipal Antonio Gala albergó la X Gala benéfica de la asociación \"Un Sí Por La Vida\" para conmemorar el Día Mundial de la Lucha contra el Cáncer de Mama. La velada ofreció una.",
+      "seo_keywords": [],
+      "titulo": "X Gala benéfica de Un Sí Por La Vida - Unidos Contra el Cáncer"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-4zqfrm8axk0-a632f158",
+    "last_ai_attempt": null,
+    "pagina": "noticias/x-gala-benefica-de-un-si-por-la-vida-unidos-contra-el-cancer.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=4ZqfrM8AXk0"
+  },
   "guid:atv-alhaurin-youtube:yt:video:5RyGzFwBiZ8": {
     "ai_attempts": 0,
     "content_hash": "9c7033e2f156e9784c36850654802d37a26f5643",
@@ -1853,6 +1872,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=aV-RBdPkEss"
   },
+  "guid:atv-alhaurin-youtube:yt:video:b513aSrJS5g": {
+    "ai_attempts": 0,
+    "content_hash": "1f05bb31a80fb9af454ed0ff246cad21a5585e22",
+    "date_modified": null,
+    "date_published": "2026-11-20T14:59:08+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del viernes 20 de noviembre de 2026 en el Informativo de ATV. 1. PLENO ORDINARIO DE NOVIEMBRE El Ayuntamiento de Alhaurín el Grande ha celebrado esta mañana su pleno ordinario del mes de noviembre, en el que se han aprobado, entre otros asuntos, medidas sobre la infancia y el bienestar animal. 2.\n\nMARQUESINA EN LA RECTA FINAL La nueva marquesina de taxis de Alhaurín el Grande encara su fase final de instalación tras varias complicaciones técnicas. El Ayuntamiento prevé que los trabajos estén terminados antes de Navidad, con una inversión de alrededor de 120.000€ y con el objetivo de mejorar las condiciones del servicio para taxistas y usuarios. 3.\n\nEDUC@LHAURÍN: ACOSO El ciclo Educ@lhaurín se estrena con la conferencia del psicólogo Juan Francisco Cabrera sobre el acoso en sus diferentes manifestaciones, y las herramientas para identificarlo y afrontarlo. 4.",
+      "descripcion": "1. PLENO ORDINARIO DE NOVIEMBRE El Ayuntamiento de Alhaurín el Grande ha celebrado esta mañana su pleno ordinario del mes de noviembre, en el que se han aprobado, entre otros asuntos, medidas sobre la infancia y el bienestar.",
+      "seo_keywords": [],
+      "titulo": "Pleno ordinario de noviembre el ayuntamiento de alhaurín el grande ha celebrado esta"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-b513asrjs5g-e79c5e43",
+    "last_ai_attempt": null,
+    "pagina": "noticias/pleno-ordinario-de-noviembre-el-ayuntamiento-de-alhaurin-el-grande-ha-celebrado-esta.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=b513aSrJS5g"
+  },
   "guid:atv-alhaurin-youtube:yt:video:b66DlnAxTjE": {
     "ai_attempts": 0,
     "content_hash": "4c0392dffa05e1b9ea6251f4ef1a3a7c806ec130",
@@ -1970,6 +2008,25 @@
     "pagina": "noticias/xxxviii-milla-urbana-de-alhaurin-el-grande-2026.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=d2WvZ7tu0Ec"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:d4ef1O28Qbw": {
+    "ai_attempts": 0,
+    "content_hash": "83e8041e1665a03b9914a0933b376d058cda995b",
+    "date_modified": null,
+    "date_published": "2026-11-20T15:00:17+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "descripcion": "A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "seo_keywords": [],
+      "titulo": "A pie de campo - Programa 6 (3ª Temporada)"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-d4ef1o28qbw-29497c76",
+    "last_ai_attempt": null,
+    "pagina": "noticias/a-pie-de-campo-programa-6-3-temporada.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=d4ef1O28Qbw"
   },
   "guid:atv-alhaurin-youtube:yt:video:dKjiIUWbMyk": {
     "ai_attempts": 4,
@@ -3931,6 +3988,25 @@
     "pagina": "noticias/mas-de-500-personas-voluntarias-entre-adultos-y-escolares-de-los-seis-centros-educativos.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-hace-un-balance-muy-positivo-del-primer-ano-de-actuaciones-para-recuperar-la-sierra/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225200": {
+    "ai_attempts": 0,
+    "content_hash": "9f5911e859185c56c513a1208539993c44917b4d",
+    "date_modified": null,
+    "date_published": "2026-11-20T12:35:11+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "La actuación, adjudicada a la empresa alhaurina INGECONS Rodríguez y Guerrero S.L. con una inversión de alrededor de 120.000 euros, permitirá mejorar las condiciones de espera y trabajo de los.",
+      "descripcion": "La actuación, adjudicada a la empresa alhaurina INGECONS Rodríguez y Guerrero S.L. con una inversión de alrededor de 120.000 euros, permitirá mejorar las condiciones de espera y trabajo de los.",
+      "seo_keywords": [],
+      "titulo": "La nueva marquesina de taxis de Alhaurín el Grande, más cerca de convertirse en realidad"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22520-24b75806",
+    "last_ai_attempt": null,
+    "pagina": "noticias/la-nueva-marquesina-de-taxis-de-alhaurin-el-grande-mas-cerca-de-convertirse-en-realidad.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/la-nueva-marquesina-de-taxis-de-alhaurin-el-grande-mas-cerca-de-convertirse-en-realidad/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -6249,6 +6325,25 @@
     "pagina": "noticias/balance-positivo-de-repoblacion-y-participacion-en-alhaurin-el-grande.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/20/balance-positivo-de-repoblacion-y-participacion-en-alhaurin-el-grande/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/2026/11/20/mejoras-en-la-marquesina-de-taxis-de-alhaurin-el-grande": {
+    "ai_attempts": 0,
+    "content_hash": "5584430b62edf67046f0dfe014ae77663a02ef62",
+    "date_modified": null,
+    "date_published": "2026-11-20T12:51:44+00:00",
+    "editorial": {
+      "categoria": "Comercio y Empresa",
+      "cuerpo": "Tiempo de lectura aprox: 2 minutos, 8 segundosLa actuación, adjudicada a la empresa alhaurina INGECONS Rodríguez y Guerrero S.L.",
+      "descripcion": "Tiempo de lectura aprox: 2 minutos, 8 segundosLa actuación, adjudicada a la empresa alhaurina INGECONS Rodríguez y Guerrero S.L. con una inversión de alrededor de 120.000 euros, permitirá mejorar las condiciones de espera y.",
+      "seo_keywords": [],
+      "titulo": "La marquesina de taxis será pronto una realidad en Alhaurín el Grande"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-2026-e1b6e347",
+    "last_ai_attempt": null,
+    "pagina": "noticias/la-marquesina-de-taxis-sera-pronto-una-realidad-en-alhaurin-el-grande.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/20/mejoras-en-la-marquesina-de-taxis-de-alhaurin-el-grande/"
   },
   "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=207461": {
     "ai_attempts": 0,

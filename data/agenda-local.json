@@ -1,6 +1,7 @@
 {
-  "actualizado": "2026-11-21T17:42:11.170Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 187 eventos próximos.",
+  "actualizado": "2026-11-21T20:44:50.707185+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 193 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
     {
       "id": "alhaurinhoy-9480",
@@ -1608,6 +1609,81 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-14131",
+      "tipo": "Deportes",
+      "icono": "⚽",
+      "titulo": "🏁 V Campeonato Trial Andalucía🏆",
+      "descripcion": "V Trial Villa de Alhaurín El Grande Ámbito: Campeonato de Andalucia Modalidad: Trial Campeonato: Campeonato de Andalucía de Trial Categorías: Infantil, TR-5, Cadete, TR-4, TR-3, Junior, TR-2, TR-1 ...",
+      "lugar": "",
+      "inicio": "2026-11-21T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8f%81-v-campeonato-trial-andalucia%f0%9f%8f%86/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14126",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "🎄Gala entrega de premios 🎄",
+      "descripcion": "",
+      "lugar": "",
+      "inicio": "2026-11-21T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8e%84gala-entrega-de-premios-%f0%9f%8e%84/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14123",
+      "tipo": "Evento",
+      "icono": "📅",
+      "titulo": "🎄Concurso de Belenes y Árboles de Navidad🎄",
+      "descripcion": "",
+      "lugar": "",
+      "inicio": "2026-11-21T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8e%84concurso-de-belenes-y-arboles-de-navidad%f0%9f%8e%84/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14120",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "Live music 🎶 JOHNNY KINGSLEY 🎙️",
+      "descripcion": "",
+      "lugar": "",
+      "inicio": "2026-11-21T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/live-music-%f0%9f%8e%b6-johnny-kingsley-%f0%9f%8e%99%ef%b8%8f-5/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14116",
+      "tipo": "Deportes",
+      "icono": "⚽",
+      "titulo": "📺 ⚽️ REAL MADRID 🆚 CEUTA",
+      "descripcion": "",
+      "lugar": "",
+      "inicio": "2026-11-21T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/real-madrid-%f0%9f%86%9a-ceuta/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-14083",
       "tipo": "Cultos y procesiones",
       "icono": "⛪",
@@ -2088,6 +2164,21 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-14134",
+      "tipo": "Motor",
+      "icono": "🏍️",
+      "titulo": "3º ANIVERSARIO! 🎉 🏍️🔥 ¡ARROZ MOTERO!",
+      "descripcion": "🏍️🔥 ¡ARROZ MOTERO EN LETTY & CANTOS! 🔥🏍️ 🎉 ¡CELEBRAMOS NUESTRO 3.º ANIVERSARIO! 🎉 ¡Y queremos celebrarlo con todos vosotros como más nos gusta: rodeados de buenos amigos, motos y buen ambiente! ❤️ ...",
+      "lugar": "",
+      "inicio": "2026-11-29T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/3o-aniversario-%f0%9f%8e%89-%f0%9f%8f%8d%ef%b8%8f%f0%9f%94%a5-arroz-motero/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
       "id": "alhaurinhoy-9959",
       "tipo": "Evento",
       "icono": "📅",
@@ -2219,6 +2310,21 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8e%84taller-%e2%98%95%ef%b8%8f-choco-navidad-a-la-taza%f0%9f%8e%84/",
+      "activo": true,
+      "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-14128",
+      "tipo": "Ocio",
+      "icono": "🎉",
+      "titulo": "🎄 Concurso de Fachadas, Balcones y Barrios 🎄",
+      "descripcion": "Concurso de Fachadas, Barrios y Balcones Navideños 2026, con el objetivo de llenar de ambiente navideño las calles y viviendas del municipio. El certamen contempla cuatro modalidades: balcones, fac...",
+      "lugar": "",
+      "inicio": "2026-12-04T20:00:00+02:00",
+      "fin": "",
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/%f0%9f%8e%84-concurso-de-fachadas-balcones-y-barrios-%f0%9f%8e%84/",
       "activo": true,
       "fuente": "alhaurinhoy"
     },
@@ -2789,21 +2895,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

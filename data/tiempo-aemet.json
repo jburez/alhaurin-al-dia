@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T15:47:39+01:00",
+  "actualizado": "2026-11-21T21:56:12+01:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET XML (municipios)",
   "municipio": "Alhaurín el Grande",
@@ -48,7 +48,7 @@
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "15%",
-      "viento": "N 25 km/h",
+      "viento": "N 30 km/h",
       "uv": "3"
     },
     {
@@ -60,7 +60,7 @@
       "icono": "🌤️",
       "descripcion": "Poco nuboso",
       "lluvia": "0%",
-      "viento": "E 10 km/h",
+      "viento": "SE 10 km/h",
       "uv": "3"
     },
     {
@@ -72,7 +72,7 @@
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "25%",
-      "viento": "S 10 km/h",
+      "viento": "SE 5 km/h",
       "uv": "2"
     },
     {
@@ -80,10 +80,10 @@
       "dia_semana": "Miércoles",
       "fecha_corta": "25/11",
       "t_max": "18",
-      "t_min": "8",
+      "t_min": "9",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
-      "lluvia": "25%",
+      "lluvia": "10%",
       "viento": "N 15 km/h",
       "uv": "2"
     },
@@ -91,11 +91,11 @@
       "fecha": "2026-11-26",
       "dia_semana": "Jueves",
       "fecha_corta": "26/11",
-      "t_max": "17",
-      "t_min": "7",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "5%",
+      "t_max": "18",
+      "t_min": "8",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "15%",
       "viento": "N 15 km/h",
       "uv": ""
     },
@@ -103,12 +103,12 @@
       "fecha": "2026-11-27",
       "dia_semana": "Viernes",
       "fecha_corta": "27/11",
-      "t_max": "17",
-      "t_min": "5",
+      "t_max": "18",
+      "t_min": "8",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "10%",
-      "viento": "C 0 km/h",
+      "viento": "E 5 km/h",
       "uv": ""
     }
   ],

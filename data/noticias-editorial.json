@@ -4318,6 +4318,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.diariosur.es/interior/policia-local-alhaurin-grande-estrena-vehiculo-doce-20260920184121-nt.html"
   },
+  "guid:diario-sur-malaga:https://www.diariosur.es/malaga/diputacion-adjudica-millones-mejora-senalizacion-carreteras-malaga-20261122112813-nt.html": {
+    "ai_attempts": 0,
+    "content_hash": "2afcc1bef4c376dbfe30848d364649dc9bf6da1b",
+    "date_modified": null,
+    "date_published": "2026-11-22T10:28:14+00:00",
+    "editorial": {
+      "categoria": "Tráfico y Movilidad",
+      "cuerpo": "En total, se actuará en 600 kilómetros de vía en la Axarquía, Norte-Antequera, Valle del Guadalhorce y Serranía de Ronda.",
+      "descripcion": "En total, se actuará en 600 kilómetros de vía en la Axarquía, Norte-Antequera, Valle del Guadalhorce y Serranía de Ronda.",
+      "seo_keywords": [],
+      "titulo": "La Diputación adjudica por 1,2 millones la mejora de la señalización en estas 99"
+    },
+    "ia_exitosa": false,
+    "id": "guid-diario-sur-malaga-https-www-diariosur-es-malaga-diputacion-adjudi-05050e98",
+    "last_ai_attempt": null,
+    "pagina": "noticias/la-diputacion-adjudica-por-1-2-millones-la-mejora-de-la-senalizacion-en-estas-99.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.diariosur.es/malaga/diputacion-adjudica-millones-mejora-senalizacion-carreteras-malaga-20261122112813-nt.html"
+  },
   "guid:diario-sur-malaga:https://www.diariosur.es/malaga/diputacion-malaga-pone-foco-arreglo-carriles-interior-20260925111442-nt.html": {
     "ai_attempts": 1,
     "content_hash": "3cb3b3c36705c06d87a0e8a1fb275292bdf0efd9",

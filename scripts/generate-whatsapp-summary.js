@@ -52,7 +52,8 @@ function getTiempoHoy() {
 function generateWhatsAppBoletin() {
   let noticias = [];
   try {
-    noticias = JSON.parse(fs.readFileSync(NEWS_FILE, 'utf8')) || [];
+    // Sin noticias ajenas a Alhaurín (scripts/lib/noticias-ajenas.js).
+    noticias = (JSON.parse(fs.readFileSync(NEWS_FILE, 'utf8')) || []).filter((n) => !require('./lib/noticias-ajenas').isAjena(n));
   } catch (err) {
     console.error('Error leyendo noticias.json:', err);
     return;

@@ -19,5 +19,23 @@
   ],
   "entidades_exclusion_si_solas": [
     "Alhaurín de la Torre"
-  ]
+  ],
+  "entidades_ajenas": [
+    "Venezuela",
+    "Ucrania",
+    "Gaza",
+    "Israel",
+    "Palestina",
+    "Torremolinos",
+    "Benalmádena",
+    "Fuengirola",
+    "Mijas",
+    "Marbella",
+    "Estepona",
+    "Rincón de la Victoria",
+    "Almáchar",
+    "Nerja",
+    "Vélez-Málaga"
+  ],
+  "_nota_ajenas": "entidades_ajenas: una noticia que menciona alguno de estos lugares y no menciona Alhaurín el Grande se marca como ajena (noindex y fuera de listados y enlaces internos; ver scripts/lib/noticias-ajenas.js). Las de entidades_revision_manual (y Álora, Pizarra) sin mención a Alhaurín se listan como dudosas para revisión manual, sin desenlazarlas."
 }

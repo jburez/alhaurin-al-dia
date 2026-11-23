@@ -22,7 +22,8 @@ function renderActualidadItem(noticia) {
 }
 
 function renderActualidadList(noticias, { limit = 5 } = {}) {
-  const items = (noticias || []).slice(0, limit);
+  const { isAjena } = require('./noticias-ajenas');
+  const items = (noticias || []).filter((n) => !isAjena(n)).slice(0, limit);
   if (!items.length) return '<p class="alh-empty">No hay titulares recientes.</p>';
   return `<ul class="alh-news-list">
                     ${items.map(renderActualidadItem).join('\n                    ')}

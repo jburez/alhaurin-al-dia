@@ -67,7 +67,9 @@ function main() {
   // ahora solo una redirección, así que no tiene sentido listarlas como si
   // fueran contenido propio. La entrada se mantiene en el JSON (no se
   // borra) para que scripts/audit-orphan-pages.js la siga reconociendo.
-  const visibles = archivo.filter(noticia => !noticia.fusionadaEn);
+  // Las noticias ajenas a Alhaurín (scripts/lib/noticias-ajenas.js) no se enlazan.
+  const { isAjena } = require('./lib/noticias-ajenas');
+  const visibles = archivo.filter(noticia => !noticia.fusionadaEn && !isAjena(noticia));
 
   const listHTML = visibles.length
     ? visibles.map(noticia => renderNewsCardHTML(noticia, { isHome: false })).join('\n')

@@ -2,7 +2,10 @@ name: Generar noticias automáticas
 
 on:
   schedule:
-    - cron: '5 */2 * * *'
+    # Una vez al día por la mañana (hora de Madrid): 06:17 UTC = 07:17 en
+    # invierno y 08:17 en verano. Este build completo también regenera la
+    # farmacia de guardia y la portada del día.
+    - cron: '17 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -47,9 +50,8 @@ jobs:
         # ficheros. El `concurrency:` de arriba es una segunda barrera
         # independiente a nivel de GitHub Actions (serializa este workflow
         # contra sí mismo antes de que el job ni siquiera arranque).
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: gpt-4.1-mini
+        # Sin OPENAI_API_KEY: la reescritura con IA está desactivada
+        # (generar_noticias.py solo la usa con --reescribir-ia).
         run: npm run news:pipeline
 
       - name: Commit automático si hay cambios

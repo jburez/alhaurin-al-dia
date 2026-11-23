@@ -40,7 +40,16 @@ function renderBusinessCard(c, cat) {
                     </article>`;
 }
 
+// Fase 6: una categoría solo es indexable con texto introductorio propio y al
+// menos 5 comercios con ficha completa; /comercios/ solo si alguna lo es.
+const MIN_FICHAS_CATEGORIA = 5;
+function categoriaIndexable(cat, comercios) {
+  const fichas = comercios.filter((c) => c.categoria === cat.slug && tieneFicha(c)).length;
+  return Boolean(cat.intro && cat.intro.trim()) && fichas >= MIN_FICHAS_CATEGORIA;
+}
+
 function renderIndex(categorias, comercios) {
+  const algunaIndexable = categorias.some((cat) => categoriaIndexable(cat, comercios));
   const canonical = `${SITE_URL}/comercios/`;
   const crumbs = [{ name: 'Inicio', url: '/' }, { name: 'Comercios', url: '/comercios/' }];
   const catCards = categorias.map((cat) => {
@@ -75,6 +84,7 @@ function renderIndex(categorias, comercios) {
                     ${destacados.map((c) => renderBusinessCard(c, categorias.find((x) => x.slug === c.categoria))).join('\n                    ')}
                 </div>
             </section>` : `<section class="alh-section">${renderFeaturedSlot(TODAY, { ubicacion: 'comercios' })}</section>`}
+            ${algunaIndexable ? '' : `<div class="alh-note"><strong>Estamos preparando el directorio</strong><p>Todavía no hay suficientes negocios con ficha completa. Si tienes un comercio, un bar o un servicio en Alhaurín el Grande, aparecer en el directorio básico es gratuito: <a href="/anunciarse/">cuéntanos tus datos</a> y lo publicamos en cuanto los verifiquemos.</p></div>`}
             ${adSlot('comercios', 'banda')}
             <section class="alh-section alh-prose">
                 <h2>Cómo funciona este directorio</h2>
@@ -86,6 +96,7 @@ function renderIndex(categorias, comercios) {
 
   return renderPage({
     title: 'Comercios de Alhaurín el Grande: bares, tiendas y profesionales — Alhaurín al Día',
+    robots: algunaIndexable ? 'index, follow' : 'noindex, follow',
     description: 'Directorio de comercios de Alhaurín el Grande por categorías: restaurantes y bares, tiendas locales y profesionales, con datos verificados.',
     canonical,
     jsonld: [
@@ -103,7 +114,7 @@ function renderCategory(cat, comercios) {
   const intro = cat.intro && cat.intro.trim()
     ? `<p class="alh-lead">${escapeHtml(cat.intro)}</p>`
     : `<p class="alh-lead">${escapeHtml(cat.resumen || '')} <mark class="alh-pending">[PENDIENTE: texto introductorio propio de la categoría «${escapeHtml(cat.nombre)}»]</mark></p>`;
-  const indexable = Boolean(cat.intro && cat.intro.trim()) && list.length > 0;
+  const indexable = categoriaIndexable(cat, comercios);
   const body = `
         <section class="alh-page-header">
             <div class="container alh-narrow">

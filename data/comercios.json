@@ -1,5 +1,5 @@
 {
-  "_descripcion": "Directorio de comercios de Alhaurín el Grande. Una ficha propia (/comercios/<categoria>/<slug>/) solo se genera si el comercio tiene descripción y al menos dirección u horario; si no, aparece solo en el listado de su categoría. Los comercios con destacado: true y patrocinado_hasta igual o posterior a hoy salen primero con la etiqueta «Destacado» y pueden ocupar el hueco de comercio destacado de la portada y de la farmacia de guardia. No añadir datos sin verificarlos con el propio comercio.",
+  "_descripcion": "Directorio de comercios de Alhaurín el Grande. Una ficha propia (/comercios/<categoria>/<slug>/) solo se genera si el comercio tiene descripción y al menos dirección u horario; si no, aparece solo en el listado de su categoría. Los comercios con destacado: true y patrocinado_hasta igual o posterior a hoy salen primero con la etiqueta «Destacado» y pueden ocupar el hueco de comercio destacado de la portada y de la farmacia de guardia. No añadir datos sin verificarlos con el propio comercio. Fuentes de datos: este fichero MANDA. Se carga desde una hoja de cálculo con data/comercios-plantilla.csv y `npm run comercios:importar -- fichero.csv --escribir`. data/comercios-destacados.json lo escribe el panel de administración (sync-admin-firestore.js) y sus fichas activas se suman como destacadas; data/fichas-patrocinadas.json solo lo usa js/sponsored-cards.js para los huecos patrocinados de algunas páginas de la guía útil. Ninguno de los dos tenía comercios reales que migrar (noviembre 2026). Indexación: /comercios/<categoria>/ solo con texto introductorio propio y al menos 5 comercios con ficha completa; /comercios/ solo si alguna categoría lo es.",
   "_plantilla": {
     "slug": "nombre-del-negocio",
     "nombre": "Nombre del negocio",
@@ -9,7 +9,12 @@
     "zona": "Centro",
     "telefono": "+34952000000",
     "web": "https://ejemplo.es",
-    "redes": [{ "nombre": "Instagram", "url": "https://instagram.com/ejemplo" }],
+    "redes": [
+      {
+        "nombre": "Instagram",
+        "url": "https://instagram.com/ejemplo"
+      }
+    ],
     "horario": "Lunes a viernes, 9:00-14:00",
     "destacado": false,
     "patrocinado_hasta": null

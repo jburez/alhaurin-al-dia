@@ -44,7 +44,8 @@
     "comercios:static": "node scripts/render-comercios.js",
     "info:static": "node scripts/render-paginas-info.js",
     "chrome:sync": "node scripts/sync-site-chrome.js",
-    "farmacias:static": "node scripts/render-farmacias.js"
+    "farmacias:static": "node scripts/render-farmacias.js",
+    "comercios:importar": "node scripts/importar-comercios.js"
   },
   "dependencies": {
     "firebase-admin": "^12.7.0"

@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-22T22:47:00.220Z",
-  "visitas24h": 11,
-  "paginasVistas24h": 11,
+  "actualizado": "2026-11-23T03:21:57.579Z",
+  "visitas24h": 12,
+  "paginasVistas24h": 12,
   "topPaginas": [
     {
-      "ruta": "/planes/",
+      "ruta": "/boletin-oficial/",
       "vistas": 9
     },
     {
-      "ruta": "/boletin-oficial/",
+      "ruta": "/planes/",
       "vistas": 9
     },
     {

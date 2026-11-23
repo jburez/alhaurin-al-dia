@@ -285,11 +285,80 @@ function auditReposicionamiento() {
   return { thinPages, pendingInIndexable, jsonLdErrors, eventErrors, noindexInSitemap, removedUrls };
 }
 
+// ---------- Fase 6: calidad de contenido (noviembre 2026) ----------
+//
+// Errores: noticia indexable sin origen "original", página indexable de
+// /guia-util/ con menos de 300 palabras propias o con [PENDIENTE, ficha de
+// evento indexable de alhaurinhoy sin validar, y URL de
+// reports/urls-indexables-antes-fase6.txt que daría 404 (puede pasar a noindex
+// o a 301, pero no desaparecer). Al final, resumen de páginas indexables por
+// sección antes y después.
+const FASE6_FILE = path.join(ROOT, 'reports', 'urls-indexables-antes-fase6.txt');
+
+function sectionOf(url) {
+  return url === '/' ? '/' : `/${url.replace(/^\//, '').split('/')[0]}/`;
+}
+
+function redirectSources() {
+  const set = new Set();
+  const file = path.join(ROOT, '_redirects');
+  if (!fs.existsSync(file)) return set;
+  for (const line of fs.readFileSync(file, 'utf8').split('\n')) {
+    const m = line.trim().match(/^(\/\S*)\s+\S+\s+30[12]/);
+    if (m) set.add(m[1]);
+  }
+  return set;
+}
+
+function auditFase6() {
+  const newsOrigin = new Map();
+  for (const f of ['noticias-archivo.json', 'noticias.json']) {
+    for (const n of readJson(path.join(ROOT, 'data', f), [])) if (n && n.pagina) newsOrigin.set(`/${n.pagina}`, n.origen);
+  }
+  const agenda = readJson(path.join(ROOT, 'data', 'agenda.json'), { eventos: [] });
+  const eventBySlug = new Map((agenda.eventos || []).map((e) => [`/planes/${e.slug}/`, e]));
+
+  const noticiasNoOriginales = [];
+  const guiasFinas = [];
+  const eventosSinValidar = [];
+  const after = {};
+  for (const file of walk(ROOT)) {
+    const url = toUrl(file);
+    const html = fs.readFileSync(file, 'utf8');
+    if (/<meta\s+http-equiv=["']refresh["']/i.test(html)) continue;
+    if (/noindex/i.test(robotsOf(html))) continue;
+    after[sectionOf(url)] = (after[sectionOf(url)] || 0) + 1;
+    if (url.startsWith('/noticias/') && url.endsWith('.html') && newsOrigin.get(url) !== 'original') noticiasNoOriginales.push(url);
+    if (url.startsWith('/guia-util/')) {
+      const text = ownText(html);
+      const words = text.split(' ').filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+      if (words < 300 || /\[PENDIENTE/.test(text)) guiasFinas.push({ url, words, pendiente: /\[PENDIENTE/.test(text) });
+    }
+    const ev = eventBySlug.get(url);
+    if (ev && ev.fuente === 'alhaurinhoy' && !ev.validado) eventosSinValidar.push(url);
+  }
+
+  const urls404 = [];
+  const before = {};
+  if (fs.existsSync(FASE6_FILE)) {
+    const redirects = redirectSources();
+    for (const raw of fs.readFileSync(FASE6_FILE, 'utf8').split('\n')) {
+      const line = raw.trim();
+      if (!line || line.startsWith('#')) continue;
+      const url = line.split(/\s+/)[0];
+      if (!/redireccion/.test(line)) before[sectionOf(url)] = (before[sectionOf(url)] || 0) + 1;
+      if (!fs.existsSync(urlToFile(url)) && !redirects.has(url)) urls404.push(url);
+    }
+  }
+  return { noticiasNoOriginales, guiasFinas, eventosSinValidar, urls404, before, after };
+}
+
 function main() {
   const html = auditHtmlFiles();
   const sitemaps = auditSitemaps();
   const news = auditNewsDuplicates();
   const guia = auditReposicionamiento();
+  const fase6 = auditFase6();
 
   const criticalCount =
     html.searchAction.length +
@@ -303,7 +372,11 @@ function main() {
     guia.removedUrls.length +
     guia.pendingInIndexable.length +
     guia.jsonLdErrors.length +
-    guia.eventErrors.length;
+    guia.eventErrors.length +
+    fase6.noticiasNoOriginales.length +
+    fase6.guiasFinas.length +
+    fase6.eventosSinValidar.length +
+    fase6.urls404.length;
 
   const warningsCount = news.possibleDuplicateTitles.length + guia.thinPages.length;
 
@@ -319,6 +392,7 @@ function main() {
     sitemaps,
     news,
     guia,
+    fase6,
   };
 
   fs.mkdirSync(REPORT_DIR, { recursive: true });
@@ -345,6 +419,26 @@ function main() {
   ];
   for (const line of detail.slice(0, 60)) console.log(`    - ${line}`);
   if (detail.length > 60) console.log(`    … y ${detail.length - 60} más (ver informe).`);
+  console.log('  Fase 6:');
+  console.log(`  · Noticias indexables sin origen "original": ${fase6.noticiasNoOriginales.length}`);
+  console.log(`  · Guías indexables con menos de 300 palabras o [PENDIENTE: ${fase6.guiasFinas.length}`);
+  console.log(`  · Eventos de alhaurinhoy indexables sin validar: ${fase6.eventosSinValidar.length}`);
+  console.log(`  · URLs del listado de la fase 6 que darían 404: ${fase6.urls404.length}`);
+  const f6detail = [
+    ...fase6.noticiasNoOriginales.map((u) => `NOTICIA no original indexable: ${u}`),
+    ...fase6.guiasFinas.map((g) => `GUÍA fina (${g.words} palabras${g.pendiente ? ', [PENDIENTE' : ''}): ${g.url}`),
+    ...fase6.eventosSinValidar.map((u) => `EVENTO alhaurinhoy sin validar indexable: ${u}`),
+    ...fase6.urls404.map((u) => `404: ${u}`),
+  ];
+  for (const line of f6detail.slice(0, 40)) console.log(`    - ${line}`);
+  const sections = [...new Set([...Object.keys(fase6.before), ...Object.keys(fase6.after)])].sort();
+  if (Object.keys(fase6.before).length) {
+    console.log('  Páginas indexables por sección (antes de la fase 6 → ahora):');
+    for (const sec of sections) console.log(`    ${sec.padEnd(24)} ${String(fase6.before[sec] || 0).padStart(4)} → ${String(fase6.after[sec] || 0).padStart(4)}`);
+    const tb = Object.values(fase6.before).reduce((a, b) => a + b, 0);
+    const ta = Object.values(fase6.after).reduce((a, b) => a + b, 0);
+    console.log(`    ${'TOTAL'.padEnd(24)} ${String(tb).padStart(4)} → ${String(ta).padStart(4)}`);
+  }
   console.log(`Informe: ${path.relative(ROOT, REPORT_FILE)}`);
 
   if (criticalCount && !WARN_ONLY) {

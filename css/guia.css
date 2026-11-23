@@ -236,3 +236,59 @@ nav.alh-breadcrumbs { justify-content: flex-start; width: auto; height: auto; pa
 .alh-cal-day { display: block; font-weight: 800; color: var(--alh-tinta); margin-bottom: 2px; }
 .alh-cal-none { color: var(--alh-gris); font-style: italic; }
 @media (min-width: 768px) { .alh-cal { font-size: 13px; } .alh-cal td { height: 76px; padding: 6px; } }
+
+/* =========================================================
+   Accesos rápidos, rejilla automática y escritorio con más presencia
+   (ajuste tras la fase 6)
+========================================================= */
+.alh-quick { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
+.alh-quick a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #fff; border: 1px solid var(--alh-linea); border-radius: 999px;
+    padding: 7px 12px; font-size: 13.5px; font-weight: 700; color: var(--alh-verde); text-decoration: none;
+}
+.alh-quick a:hover { border-color: var(--alh-oliva); background: var(--alh-verde-suave); }
+.alh-grid-auto { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.alh-hoy-card.is-trafico { border-top-color: #5a6f86; }
+.alh-hoy-card.is-radar { border-top-color: #8a5a9e; }
+.alh-hoy-pills { display: flex; flex-direction: column; gap: 4px; margin: 4px 0 2px; }
+.alh-hoy-pill { font-size: 12.5px; color: #3b4237; background: var(--alh-crema); border-radius: 6px; padding: 3px 7px; }
+@media (min-width: 640px) { .alh-hoy { grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 960px) {
+    .alh-main { padding-bottom: 48px; }
+    .alh-page-header { padding: 36px 0 12px; }
+    .alh-page-header h1 { font-size: 46px; max-width: 900px; }
+    .alh-lead { font-size: 19px; max-width: 860px; }
+    .alh-section { padding: 28px 0; }
+    .alh-h2 { font-size: 30px; }
+    .alh-section-head a { font-size: 15px; }
+    .alh-quick a { font-size: 15px; padding: 9px 16px; }
+
+    .alh-hoy { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .alh-hoy-card { min-height: 210px; padding: 20px 22px; border-top-width: 6px; border-radius: 12px; gap: 8px; }
+    .alh-hoy-label { font-size: 12.5px; }
+    .alh-hoy-title { font-size: 24px; line-height: 1.2; }
+    .alh-hoy-detail { font-size: 15px; line-height: 1.5; }
+    .alh-hoy-cta { font-size: 15px; }
+    .alh-hoy-pill { font-size: 13.5px; }
+
+    .alh-card { padding: 20px 22px; border-radius: 12px; }
+    .alh-card h3 { font-size: 19px; }
+    .alh-card p { font-size: 15.5px; }
+    .alh-featured-slot { padding: 20px 22px; }
+    .alh-list-box, #actualidad-list { padding: 6px 24px; }
+    .alh-news-title { font-size: 17.5px; }
+    .alh-news-line { font-size: 15px; }
+    .alh-event-body a { font-size: 17px; }
+    .alh-date-badge { flex-basis: 62px; }
+    .alh-date-badge .d { font-size: 24px; }
+    .alh-btn { font-size: 16px; padding: 12px 20px; }
+    .alh-note { padding: 16px 20px; }
+    .alh-note p { font-size: 15.5px; }
+    .alh-ad-banda { height: 130px; }
+}
+@media (min-width: 1200px) {
+    .alh-page-header h1 { font-size: 52px; }
+}
+nav.alh-quick { justify-content: flex-start; width: auto; height: auto; padding: 0; background: none; position: static; }

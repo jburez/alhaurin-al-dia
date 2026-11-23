@@ -16,6 +16,16 @@
       "href": "/guia-util/"
     },
     {
+      "id": "tiempo",
+      "label": "Tiempo",
+      "href": "/tiempo/"
+    },
+    {
+      "id": "avisos",
+      "label": "Avisos",
+      "href": "/avisos/"
+    },
+    {
       "id": "comercios",
       "label": "Comercios",
       "href": "/comercios/"

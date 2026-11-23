@@ -60,6 +60,20 @@ function assignPlace(ev, lugares, asignados) {
   return { ...ev, lugar: ev.lugar || hit.nombre, direccion: hit.direccion, lugar_asignado: hit.id };
 }
 
+function wordsOf(text = '') {
+  return new Set(norm(text).replace(/[^a-z0-9ñ ]+/g, ' ').split(/\s+/).filter((w) => w.length > 3));
+}
+
+// Más del 60 % de las palabras de la descripción ya estaban en el texto de la fuente.
+function pareceCopia(descripcion, fuente) {
+  const a = wordsOf(descripcion);
+  const b = wordsOf(String(fuente).replace(/\.\.\.$/, ''));
+  if (!a.size || !b.size) return false;
+  let comunes = 0;
+  for (const w of a) if (b.has(w)) comunes++;
+  return comunes / a.size > 0.6;
+}
+
 function saveBorradores(pistas) {
   const data = readJson(BORRADORES_FILE, { borradores: [] });
   const lista = data.borradores || [];
@@ -208,7 +222,16 @@ function main() {
       // (noindex y fuera de listados) para no generar un 404.
       if (!conFicha(raw)) continue;
     }
-    result.set(raw.id, normalizeEvent(raw, slugFor(raw), override));
+    let ev = normalizeEvent(raw, slugFor(raw), override);
+    // Salvaguarda: un evento de alhaurinhoy editado en el panel sin reescribir
+    // la descripción (el formulario viene relleno con el texto de la fuente) no
+    // cuenta como validado.
+    const prev = previous.get(raw.id);
+    if (ev.validado && PISTAS_SOURCES.has(ev.fuente) && prev && prev.extracto_fuente && pareceCopia(ev.descripcion, prev.extracto_fuente)) {
+      console.log(`⚠️  ${raw.id} («${ev.titulo}»): la descripción coincide con la de alhaurinhoy; reescríbela en el panel para publicarlo.`);
+      ev = { ...ev, validado: false, publicado: false, descripcion: '', extracto_fuente: prev.extracto_fuente, _motivo_no_validado: 'descripción copiada de la fuente' };
+    }
+    result.set(raw.id, ev);
   }
 
   // 3. Fichas antiguas de /planes/ sin datos: se recuperan una vez de su HTML.

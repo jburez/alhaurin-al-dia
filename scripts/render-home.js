@@ -34,11 +34,12 @@ function readJson(file, fallback) {
   }
 }
 
-function hoyCard({ cls, label, title, detail, cta, href }) {
+function hoyCard({ cls, label, title, detail, extra = '', cta, href }) {
   return `<a class="alh-hoy-card ${cls}" href="${escapeHtml(href)}">
                     <span class="alh-hoy-label">${label}</span>
                     <span class="alh-hoy-title">${title}</span>
                     ${detail ? `<span class="alh-hoy-detail">${detail}</span>` : ''}
+                    ${extra}
                     <span class="alh-hoy-cta">${cta} →</span>
                 </a>`;
 }
@@ -55,6 +56,13 @@ function renderHoy(today, events) {
   const tiempo = weatherFor(today);
   const avisos = loadAvisos(process.env.BUILD_DATE ? `${today}T12:00:00+01:00` : new Date().toISOString());
   const next = upcoming(events, today, 1)[0];
+  // Recomendaciones del día (tiempo-aemet.json → actividades) y tráfico del
+  // panel de administración (estado-local.json), si está al día (≤ 2 días).
+  const tiempoData = readJson(path.join(ROOT, 'data', 'tiempo-aemet.json'), {});
+  const actividades = (tiempoData.actividades || []).slice(0, 3);
+  const estado = readJson(path.join(ROOT, 'data', 'estado-local.json'), { items: [] });
+  const trafico = (estado.items || []).find((i) => i.id === 'trafico');
+  const traficoReciente = trafico && estado.actualizado && (Date.parse(`${today}T12:00:00Z`) - Date.parse(estado.actualizado)) / 86400000 <= 2;
 
   const cards = [
     hoyCard({
@@ -72,6 +80,7 @@ function renderHoy(today, events) {
       label: '🌤️ El tiempo',
       title: tiempo.hoy ? `Hoy ${escapeHtml(tiempo.hoy.t_max)}° / ${escapeHtml(tiempo.hoy.t_min)}°` : 'Previsión no disponible',
       detail: [tiempo.hoy ? weatherLine(tiempo.hoy) : '', tiempo.manana ? `Mañana: ${weatherLine(tiempo.manana)}` : ''].filter(Boolean).join('<br>'),
+      extra: actividades.length && tiempo.hoy ? `<span class="alh-hoy-pills">${actividades.map((a) => `<span class="alh-hoy-pill">${escapeHtml(a.icono)} ${escapeHtml(a.titulo)}: <strong>${escapeHtml(a.estado)}</strong></span>`).join('')}</span>` : '',
       cta: 'Previsión a 7 días',
       href: '/tiempo/',
     }),
@@ -84,12 +93,28 @@ function renderHoy(today, events) {
       href: '/avisos/',
     }),
     hoyCard({
+      cls: 'is-trafico',
+      label: '🚗 Tráfico',
+      title: traficoReciente ? escapeHtml(trafico.valor) : 'Estado del tráfico',
+      detail: traficoReciente ? escapeHtml(trafico.detalle) : 'Consulta las incidencias en carreteras y accesos antes de salir.',
+      cta: 'Ver en la DGT',
+      href: (traficoReciente && trafico.url) || 'https://www.dgt.es/conoce-el-estado-del-trafico/',
+    }),
+    hoyCard({
       cls: 'is-evento',
       label: '📅 Próximo plan',
       title: next ? escapeHtml(next.titulo) : 'Sin planes anunciados',
       detail: next ? `${escapeHtml(capitalize(formatDateLong(next.fecha_inicio, { year: false })))}${next.hora ? ` · ${escapeHtml(next.hora)} h` : ''}` : 'Consulta la agenda para ver próximos eventos.',
       cta: next ? 'Ver el plan' : 'Ver la agenda',
       href: next ? eventUrl(next) : '/agenda/',
+    }),
+    hoyCard({
+      cls: 'is-radar',
+      label: '📡 Radar Social',
+      title: 'Reportes vecinales',
+      detail: 'Cortes, lluvia, viento o incidencias en tu calle, contados por los vecinos en tiempo real.',
+      cta: 'Ver el mapa',
+      href: '/radar-social/',
     }),
   ];
 
@@ -157,7 +182,7 @@ function renderGuias() {
             <div class="container">
                 <div class="alh-section-head"><h2 class="alh-h2" id="guias-titulo">Guías prácticas</h2><a href="/guia-util/">Toda la guía útil →</a></div>
                 <p>Trámites, salud, colegios, transporte y servicios de Alhaurín el Grande explicados paso a paso, con enlace a las fuentes oficiales.</p>
-                <div class="alh-grid alh-grid-4">
+                <div class="alh-grid alh-grid-auto">
                     ${grid}
                 </div>
             </div>
@@ -176,7 +201,7 @@ function renderComercios(today) {
   return `<section class="alh-section" aria-labelledby="comercios-titulo">
             <div class="container">
                 <div class="alh-section-head"><h2 class="alh-h2" id="comercios-titulo">Comercios de Alhaurín</h2><a href="/comercios/">Directorio →</a></div>
-                <div class="alh-grid alh-grid-4">
+                <div class="alh-grid alh-grid-auto">
                     ${renderFeaturedSlot(today, { ubicacion: 'portada' })}
                     ${cards}
                 </div>
@@ -187,7 +212,7 @@ function renderComercios(today) {
 function renderActualidad() {
   const noticias = readJson(path.join(ROOT, 'data', 'noticias.json'), []);
   return `<section class="alh-section" aria-labelledby="actualidad-titulo">
-            <div class="container alh-narrow">
+            <div class="container">
                 <div class="alh-section-head"><h2 class="alh-h2" id="actualidad-titulo">Actualidad</h2><a href="/noticias/">Más titulares →</a></div>
                 <div class="alh-list-box">
                 ${renderActualidadList(noticias, { limit: 5 })}
@@ -206,6 +231,17 @@ function buildHome() {
                 <span class="alh-kicker">Guía práctica de Alhaurín el Grande</span>
                 <h1>Alhaurín al Día: lo útil de Alhaurín el Grande, hoy</h1>
                 <p class="alh-lead">Farmacia de guardia, tiempo, avisos, agenda de planes, guías de trámites y servicios y comercios del pueblo, todo en un mismo sitio y pensado para consultarlo desde el móvil.</p>
+                <nav class="alh-quick" aria-label="Accesos rápidos">
+                    <a href="/farmacia-de-guardia/">💊 Farmacia de guardia</a>
+                    <a href="/tiempo/">🌡️ Tiempo</a>
+                    <a href="/seguimiento/">🔴 En directo</a>
+                    <a href="/tiempo/agro/">🌾 Agro Meteo</a>
+                    <a href="/avisos/">⚠️ Avisos</a>
+                    <a href="/radar-social/">📡 Radar Social</a>
+                    <a href="/boletin-oficial/">📋 Boletín Oficial</a>
+                    <a href="/guia-util/farmacias/calendario/">📅 Calendario de guardias</a>
+                    <a href="/mi-alhaurin/">⭐ Mi Alhaurín</a>
+                </nav>
             </div>
         </section>
         ${renderHoy(today, events)}
@@ -215,7 +251,7 @@ function buildHome() {
         ${renderComercios(today)}
         ${renderActualidad()}
         <section class="alh-section">
-            <div class="container alh-narrow">
+            <div class="container">
                 <div class="alh-note"><strong>Recibe la farmacia de guardia y los avisos en el móvil</strong><p>Síguenos en el <a href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer">canal de WhatsApp de Alhaurín al Día</a>. Si ves un dato incorrecto, <a href="/contacto/">avísanos</a>.</p></div>
             </div>
         </section>`;

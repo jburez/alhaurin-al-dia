@@ -19,6 +19,20 @@ const CONTACT_EMAIL = 'contacto@alhaurinaldia.es';
 const ADSENSE_CLIENT = 'ca-pub-3892603819928798';
 const TIMEZONE = 'Europe/Madrid';
 
+// Barra superior con accesos a las herramientas de la comunidad (mismo estilo
+// .topbar que las páginas antiguas).
+const TOPBAR_HTML = `<div class="topbar">
+        <div class="container">
+            <span>Guía práctica de Alhaurín el Grande</span>
+            <div class="topbar-right">
+                <a href="/radar-social/" class="topbar-link">📡 Radar Social</a>
+                <a href="/seguimiento/" class="topbar-link">🔴 En directo</a>
+                <a href="/boletin-oficial/" class="topbar-link">📋 Boletín Oficial</a>
+                <a href="/mi-alhaurin/" class="topbar-link highlight">⭐ Mi Alhaurín</a>
+            </div>
+        </div>
+    </div>`;
+
 // Bloque de consentimiento que se inserta en el <head> de TODAS las páginas
 // (scripts/sync-site-chrome.js lo propaga también al HTML ya publicado).
 // Los anuncios NO se cargan aquí: los carga js/consent.js solo cuando un CMP
@@ -125,6 +139,7 @@ function renderPage({ title, description, canonical, robots, ogType, image, css,
 ${head}
 <body${bodyClass ? ` class="${escapeHtml(bodyClass)}"` : ''} id="top">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    ${TOPBAR_HTML}
     <header>
         <div class="container">
             ${renderNav()}

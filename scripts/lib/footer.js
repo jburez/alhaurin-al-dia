@@ -44,6 +44,19 @@ const SITE_FOOTER_HTML = `<footer class="site-footer">
                 </div>
 
                 <div class="footer-nav-col">
+                    <h3 class="footer-heading">Tiempo y comunidad</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/tiempo/prevision-horaria/">Previsión por horas</a></li>
+                        <li><a href="/tiempo/comparador/">Comparador de modelos</a></li>
+                        <li><a href="/tiempo/agro/">Agro Meteo</a></li>
+                        <li><a href="/tiempo/radar/">Radar de lluvia</a></li>
+                        <li><a href="/seguimiento/">En directo</a></li>
+                        <li><a href="/radar-social/">Radar Social</a></li>
+                        <li><a href="/mi-alhaurin/">Mi Alhaurín</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
                     <h3 class="footer-heading">El proyecto</h3>
                     <ul class="footer-menu">
                         <li><a href="/sobre-nosotros/">Sobre el proyecto</a></li>

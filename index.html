@@ -20,10 +20,10 @@
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <meta name="theme-color" content="#24402B">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="stylesheet" href="/css/styles.css?v=c76013a7">
+    <link rel="stylesheet" href="/css/styles.css?v=5566e0a2">
     <link rel="stylesheet" href="/css/mobile.css?v=c3d4ded5">
     <link rel="stylesheet" href="/css/ads.css?v=1f4810d3">
-    <link rel="stylesheet" href="/css/guia.css?v=e54dde25">
+    <link rel="stylesheet" href="/css/guia.css?v=780e4113">
     <!-- alh-consent:start -->
     <meta name="google-adsense-account" content="ca-pub-3892603819928798">
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
@@ -68,6 +68,17 @@
 </head>
 <body class="home-guia" id="top">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="topbar">
+        <div class="container">
+            <span>Guía práctica de Alhaurín el Grande</span>
+            <div class="topbar-right">
+                <a href="/radar-social/" class="topbar-link">📡 Radar Social</a>
+                <a href="/seguimiento/" class="topbar-link">🔴 En directo</a>
+                <a href="/boletin-oficial/" class="topbar-link">📋 Boletín Oficial</a>
+                <a href="/mi-alhaurin/" class="topbar-link highlight">⭐ Mi Alhaurín</a>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <nav aria-label="Navegación principal">
@@ -82,6 +93,8 @@
                     <a href="/#hoy">Hoy</a>
                     <a href="/agenda/">Agenda</a>
                     <a href="/guia-util/">Guía útil</a>
+                    <a href="/tiempo/">Tiempo</a>
+                    <a href="/avisos/">Avisos</a>
                     <a href="/comercios/">Comercios</a>
                     <a href="/noticias/">Actualidad</a>
                     <a href="/anunciarse/" class="nav-cta">Anúnciate</a>
@@ -97,6 +110,17 @@
                 <span class="alh-kicker">Guía práctica de Alhaurín el Grande</span>
                 <h1>Alhaurín al Día: lo útil de Alhaurín el Grande, hoy</h1>
                 <p class="alh-lead">Farmacia de guardia, tiempo, avisos, agenda de planes, guías de trámites y servicios y comercios del pueblo, todo en un mismo sitio y pensado para consultarlo desde el móvil.</p>
+                <nav class="alh-quick" aria-label="Accesos rápidos">
+                    <a href="/farmacia-de-guardia/">💊 Farmacia de guardia</a>
+                    <a href="/tiempo/">🌡️ Tiempo</a>
+                    <a href="/seguimiento/">🔴 En directo</a>
+                    <a href="/tiempo/agro/">🌾 Agro Meteo</a>
+                    <a href="/avisos/">⚠️ Avisos</a>
+                    <a href="/radar-social/">📡 Radar Social</a>
+                    <a href="/boletin-oficial/">📋 Boletín Oficial</a>
+                    <a href="/guia-util/farmacias/calendario/">📅 Calendario de guardias</a>
+                    <a href="/mi-alhaurin/">⭐ Mi Alhaurín</a>
+                </nav>
             </div>
         </section>
         <section class="alh-section" id="hoy" aria-labelledby="hoy-titulo">
@@ -107,25 +131,43 @@
                     <span class="alh-hoy-label">💊 Farmacia de guardia</span>
                     <span class="alh-hoy-title">José Luis Quintela</span>
                     <span class="alh-hoy-detail">Avenida de la Libertad nº 89 · de 9:30 a 9:30</span>
+                    
                     <span class="alh-hoy-cta">Ver guardia y calendario →</span>
                 </a>
                 <a class="alh-hoy-card is-tiempo" href="/tiempo/">
                     <span class="alh-hoy-label">🌤️ El tiempo</span>
                     <span class="alh-hoy-title">Hoy 20° / 9°</span>
                     <span class="alh-hoy-detail">☀️ 20° / 9° · Despejado<br>Mañana: ⛅ 21° / 11° · Intervalos nubosos</span>
+                    <span class="alh-hoy-pills"><span class="alh-hoy-pill">🧺 Tender la ropa: <strong>Excelente</strong></span><span class="alh-hoy-pill">🚗 Lavar el coche: <strong>Muy recomendado</strong></span><span class="alh-hoy-pill">🏃 Deporte exterior: <strong>Ideal todo el día</strong></span></span>
                     <span class="alh-hoy-cta">Previsión a 7 días →</span>
                 </a>
                 <a class="alh-hoy-card is-avisos" href="/avisos/">
                     <span class="alh-hoy-label">⚠️ Avisos</span>
                     <span class="alh-hoy-title">Sin avisos activos</span>
                     <span class="alh-hoy-detail">No constan cortes, incidencias de tráfico ni alertas en vigor.</span>
+                    
                     <span class="alh-hoy-cta">Ver avisos →</span>
+                </a>
+                <a class="alh-hoy-card is-trafico" href="https://www.dgt.es/conoce-el-estado-del-trafico/">
+                    <span class="alh-hoy-label">🚗 Tráfico</span>
+                    <span class="alh-hoy-title">Estado del tráfico</span>
+                    <span class="alh-hoy-detail">Consulta las incidencias en carreteras y accesos antes de salir.</span>
+                    
+                    <span class="alh-hoy-cta">Ver en la DGT →</span>
                 </a>
                 <a class="alh-hoy-card is-evento" href="/agenda/">
                     <span class="alh-hoy-label">📅 Próximo plan</span>
                     <span class="alh-hoy-title">Sin planes anunciados</span>
                     <span class="alh-hoy-detail">Consulta la agenda para ver próximos eventos.</span>
+                    
                     <span class="alh-hoy-cta">Ver la agenda →</span>
+                </a>
+                <a class="alh-hoy-card is-radar" href="/radar-social/">
+                    <span class="alh-hoy-label">📡 Radar Social</span>
+                    <span class="alh-hoy-title">Reportes vecinales</span>
+                    <span class="alh-hoy-detail">Cortes, lluvia, viento o incidencias en tu calle, contados por los vecinos en tiempo real.</span>
+                    
+                    <span class="alh-hoy-cta">Ver el mapa →</span>
                 </a>
                 </div>
             </div>
@@ -147,7 +189,7 @@
             <div class="container">
                 <div class="alh-section-head"><h2 class="alh-h2" id="guias-titulo">Guías prácticas</h2><a href="/guia-util/">Toda la guía útil →</a></div>
                 <p>Trámites, salud, colegios, transporte y servicios de Alhaurín el Grande explicados paso a paso, con enlace a las fuentes oficiales.</p>
-                <div class="alh-grid alh-grid-4">
+                <div class="alh-grid alh-grid-auto">
                     <div class="alh-card">
                         <h3>🩺 Salud</h3>
                         <ul class="alh-plain-list">
@@ -166,7 +208,7 @@
         <section class="alh-section" aria-labelledby="comercios-titulo">
             <div class="container">
                 <div class="alh-section-head"><h2 class="alh-h2" id="comercios-titulo">Comercios de Alhaurín</h2><a href="/comercios/">Directorio →</a></div>
-                <div class="alh-grid alh-grid-4">
+                <div class="alh-grid alh-grid-auto">
                     <aside class="alh-featured-slot" data-hueco-destacado="portada" aria-label="Comercio destacado">
                     <span class="alh-tag alh-tag-destacado">Destacado</span>
                     <h3>¿Tienes un negocio en Alhaurín?</h3>
@@ -188,7 +230,7 @@
             </div>
         </section>
         <section class="alh-section" aria-labelledby="actualidad-titulo">
-            <div class="container alh-narrow">
+            <div class="container">
                 <div class="alh-section-head"><h2 class="alh-h2" id="actualidad-titulo">Actualidad</h2><a href="/noticias/">Más titulares →</a></div>
                 <div class="alh-list-box">
                 <ul class="alh-news-list">
@@ -223,7 +265,7 @@
             </div>
         </section>
         <section class="alh-section">
-            <div class="container alh-narrow">
+            <div class="container">
                 <div class="alh-note"><strong>Recibe la farmacia de guardia y los avisos en el móvil</strong><p>Síguenos en el <a href="https://whatsapp.com/channel/0029Vb8Yopz8F2pDADQLxx0S" target="_blank" rel="noopener noreferrer">canal de WhatsApp de Alhaurín al Día</a>. Si ves un dato incorrecto, <a href="/contacto/">avísanos</a>.</p></div>
             </div>
         </section>
@@ -263,6 +305,19 @@
                         <li><a href="/comercios/">Comercios</a></li>
                         <li><a href="/boletin-oficial/">Boletín Oficial (BOP)</a></li>
                         <li><a href="/noticias/">Actualidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h3 class="footer-heading">Tiempo y comunidad</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/tiempo/prevision-horaria/">Previsión por horas</a></li>
+                        <li><a href="/tiempo/comparador/">Comparador de modelos</a></li>
+                        <li><a href="/tiempo/agro/">Agro Meteo</a></li>
+                        <li><a href="/tiempo/radar/">Radar de lluvia</a></li>
+                        <li><a href="/seguimiento/">En directo</a></li>
+                        <li><a href="/radar-social/">Radar Social</a></li>
+                        <li><a href="/mi-alhaurin/">Mi Alhaurín</a></li>
                     </ul>
                 </div>
 

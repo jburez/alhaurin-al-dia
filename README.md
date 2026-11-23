@@ -19,8 +19,8 @@ Web estática (HTML/CSS/JS vanilla) con el contenido en JSON dentro de `data/` y
 | Tiempo | `/tiempo/` |
 | Avisos | `/avisos/` |
 | Agenda | `/agenda/`, `/este-fin-de-semana/`, fichas en `/planes/<slug>/` |
-| Guías prácticas | `/guias/`, `/guias/<slug>/` |
-| Guía útil | `/guia-util/` |
+| Guía útil (guías prácticas) | `/guia-util/`, `/guia-util/<slug>/` (`/guias/` redirige con 301) |
+| Farmacias y calendario de guardias | `/guia-util/farmacias/`, `/guia-util/farmacias/calendario/` |
 | Comercios | `/comercios/`, `/comercios/<categoria>/` |
 | Anúnciate | `/anunciarse/` |
 | Actualidad (noticias RSS, noindex) | `/noticias/` |
@@ -28,12 +28,14 @@ Web estática (HTML/CSS/JS vanilla) con el contenido en JSON dentro de `data/` y
 
 ## Ficheros de `data/` principales
 
-- `guias.json`: guías prácticas (`estado`: `borrador` | `publicada`).
+- `guias.json`: única fuente de las guías de `/guia-util/` (`estado`: `borrador` | `publicada`; solo se indexan las publicadas con más de 300 palabras, sin `[PENDIENTE]`, con fuente y fecha).
 - `agenda-local.json`: eventos de entrada (scrapers y panel de administración).
 - `agenda.json`: agenda normalizada, generada (no editar a mano).
-- `agenda-overrides.json`: datos manuales por evento (descripción propia, dirección, precio, organizador…).
-- `agenda_borradores.json`: eventos detectados en feeds con `--modo agenda`, pendientes de revisar.
-- `comercios.json`: directorio de comercios y categorías.
+- `agenda-overrides.json`: datos manuales por evento (descripción propia, dirección, precio, organizador, `validado`…).
+- `fuentes-agenda.json`: fuentes de la agenda (`wp-tribe`, `ical`, `rss`, `manual`, `pistas`).
+- `lugares.json`: espacios habituales con dirección.
+- `agenda_borradores.json`: pistas pendientes de revisar (eventos de alhaurinhoy.es sin validar y eventos detectados con `--modo agenda`).
+- `comercios.json`: directorio de comercios y categorías (manda; se carga con `npm run comercios:importar` desde `comercios-plantilla.csv`).
 - `farmacias.json` y `guardias-farmacias-2026.json`: farmacias y calendario de guardias.
 - `avisos-locales.json` y `avisos-oficiales.json`: avisos municipales y de AEMET.
 - `tiempo-aemet.json`: previsión.
@@ -52,7 +54,23 @@ Flags:
 - `--reescribir-ia`: activa la reescritura de titulares y entradillas con OpenAI. **Apagado por defecto.**
 - `--modo agenda`: las entradas que parecen eventos se guardan como borrador en `data/agenda_borradores.json` en vez de publicarse como noticia.
 
+El workflow `generar-noticias.yml` se ejecuta una vez al día por la mañana (hora de Madrid) y sin clave de OpenAI.
+
 Todo lo que genera el script lleva `origen: "rss"`: su página sale con `noindex, follow`, la fuente visible y enlace `rel="nofollow noopener"`, y queda fuera de los sitemaps.
+
+## Agenda
+
+Las fuentes se configuran en `data/fuentes-agenda.json` y las lee `scripts/actualizar_agenda_fuentes.py`. Los eventos de alhaurinhoy.es son solo pistas (`data/agenda_borradores.json`): para publicar uno, edítalo desde el panel de administración con lugar y descripción propia.
+
+## Comercios desde una hoja de cálculo
+
+```bash
+npm run comercios:importar -- comercios.csv
+```
+
+```bash
+npm run comercios:importar -- comercios.csv --escribir
+```
 
 ## Build y validación
 
@@ -82,7 +100,7 @@ La auditoría SEO (`npm run seo:audit`) avisa de páginas indexables con poco te
 
 ## Sitemaps
 
-`sitemap-index.xml` enlaza `sitemap.xml`, `sitemap-farmacias.xml`, `sitemap-servicios.xml`, `sitemap-guias.xml`, `sitemap-agenda.xml`, `sitemap-comercios.xml` y, solo cuando haya noticias originales, `sitemap-noticias.xml` y `sitemap-news.xml`. Ninguna página con `noindex` entra en un sitemap.
+`sitemap-index.xml` enlaza `sitemap.xml`, `sitemap-farmacias.xml`, `sitemap-servicios.xml`, `sitemap-guias.xml` (guías de `/guia-util/`), `sitemap-agenda.xml`, `sitemap-comercios.xml` y, solo cuando haya noticias originales, `sitemap-noticias.xml` y `sitemap-news.xml`. Ninguna página con `noindex` entra en un sitemap.
 
 ## Publicidad y consentimiento
 

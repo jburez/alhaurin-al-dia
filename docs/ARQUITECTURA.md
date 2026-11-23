@@ -697,8 +697,8 @@ Motivo: AdSense rechazó el sitio por «contenido de poco valor» (el contenido 
 | Avisos | `/avisos/` | `scripts/render-utilidades.js` |
 | Tiempo | `/tiempo/` | `scripts/render-tiempo-static.js` |
 | Agenda | `/agenda/`, `/este-fin-de-semana/`, `/planes/<slug>/` | `scripts/normalizar-agenda.js` + `scripts/render-agenda.js` |
-| Guías | `/guias/`, `/guias/<slug>/` | `scripts/render-guias.js` |
-| Guía útil (existente) | `/guia-util/…` | `render-guide-pages.js`, `render-guide-static.js` |
+| Guía útil (guías) | `/guia-util/`, `/guia-util/<slug>/` (desde la fase 6; `/guias/` redirige con 301) | `scripts/render-guias.js` |
+| Farmacias (fichas y calendario) | `/guia-util/farmacias/<id>/`, `/guia-util/farmacias/calendario/` | `scripts/render-farmacias.js` |
 | Comercios | `/comercios/`, `/comercios/<categoria>/`, `/comercios/<categoria>/<slug>/` | `scripts/render-comercios.js` |
 | Anúnciate | `/anunciarse/` | `scripts/render-comercios.js` |
 | Actualidad | `/noticias/` | `scripts/render-news-static.js` |
@@ -732,3 +732,36 @@ Críticos: páginas en sitemap con noindex o inexistentes, URLs de `reports/urls
 ### 15.5 Marcadores `[PENDIENTE: …]`
 
 Cuando falta un dato que no debe inventarse se usa `[PENDIENTE: …]`. Las páginas legales y de categorías de comercio que los contienen se generan con noindex hasta completarlos.
+
+
+## 16. Fase 6: calidad de contenido (noviembre 2026)
+
+### 16.1 Noticias
+
+- `scripts/apply-news-origin.js` recorre **todas** las páginas de `/noticias/` en cada build. Todo lo que no tenga `origen: "original"` queda en `noindex, follow` con la fuente visible (recuperada de `noticias.json`, `noticias-archivo.json`, `noticias-editorial.json` o, como último recurso, del dominio de la imagen); sin fuente, «Información recopilada de fuentes públicas».
+- Las páginas de redirección (meta refresh) llevan noindex y se reapuntan a la noticia final que exista siguiendo `fusionadaEn`; esas redirecciones se declaran también como 301 en `_redirects` (bloque `alh-noticias-fusionadas`). Si el destino no existe, la página se convierte en una página mínima en noindex (nunca 404).
+- Noticias ajenas a Alhaurín: `data/geografia.json → entidades_ajenas` + `scripts/lib/noticias-ajenas.js`. Se desenlazan de Actualidad, portada, archivo, feed RSS, resumen de WhatsApp y bloques de relacionadas. Se puede forzar con `"ajena": true | false` en la noticia. Las de municipios de la comarca sin mención a Alhaurín se listan como dudosas, sin tocarlas.
+- `generar-noticias.yml` se ejecuta una vez al día (06:17 UTC, 07:17/08:17 en Madrid) y ya no recibe `OPENAI_API_KEY`. Ese build diario también regenera la farmacia de guardia y la portada.
+
+### 16.2 Guías: un solo sistema en `/guia-util/`
+
+- `data/guias.json` es la única fuente. `data/guia-util.json` se conserva porque lo leen otras piezas (validaciones, `js/app.js`), pero ya no genera páginas.
+- Indexable = `estado: "publicada"` **y** criterios: más de 300 palabras propias, ningún `[PENDIENTE]`, al menos una fuente y fecha de actualización (`criteriosPublicacion()` en `render-guias.js`). Si no se cumplen, la página se genera en noindex con el aviso «Guía en revisión».
+- `"generador"` añade secciones con datos de `data/` (`scripts/lib/guias-datos.js`): `farmacias` (farmacias.json + guardias-farmacias-2026.json) y `transporte` (transporte-ctmam.json).
+- Retirados del build: `render-guide-pages.js`, `render-guide-static.js`, `render-movilidad-static.js` y `render-farmacia-guardia-static.js`.
+
+### 16.3 Agenda
+
+- **Fuentes**: `data/fuentes-agenda.json` (`id`, `nombre`, `tipo` = `wp-tribe | ical | rss | manual | pistas`, `url`, `alternativa`, `activa`, `publicar`). `scripts/actualizar_agenda_fuentes.py` las lee (paginación, User-Agent, registro del código HTTP y los totales, iCal como alternativa). `actualizar_agenda_ayto.py` delega en él. Añadir una fuente nueva no requiere tocar código.
+- **alhaurinhoy.es** es una fuente de pistas: sus eventos futuros van a `data/agenda_borradores.json` y no se publican. Para publicar uno, se edita desde el panel de administración (queda `gestionado`) escribiendo lugar y descripción propia (≥ 80 caracteres); también vale `"validado": true` + `descripcion` + `lugar` en `data/agenda-overrides.json`. Las fichas ya existentes de alhaurinhoy se conservan en noindex y fuera de los listados. El texto de la fuente (`extracto_fuente`) nunca se publica.
+- **Lugares**: `data/lugares.json`. Solo lugares con dirección que ya consta en `data/`; el resto `[PENDIENTE]`. `normalizar-agenda.js` asigna lugar y dirección por alias y lo anota en `reports/agenda-lugares-asignados.json`.
+- Si hay menos de 5 planes en 14 días, `/agenda/` y `/este-fin-de-semana/` muestran un bloque con enlaces útiles.
+
+### 16.4 Comercios
+
+- `data/comercios.json` manda. Carga desde hoja de cálculo: `data/comercios-plantilla.csv` + `npm run comercios:importar -- fichero.csv` (valida) y `--escribir` (guarda; `--reemplazar` sustituye la lista).
+- `/comercios/<categoria>/` indexable solo con texto introductorio propio y al menos 5 comercios con ficha completa; `/comercios/` solo si alguna categoría lo es.
+
+### 16.5 Auditoría
+
+`audit-seo.js` añade errores para: noticias indexables sin `origen: "original"`, páginas indexables de `/guia-util/` con menos de 300 palabras o `[PENDIENTE`, fichas de evento de alhaurinhoy indexables sin validar y URLs de `reports/urls-indexables-antes-fase6.txt` que darían 404 (se admiten noindex y 301 en `_redirects`). Muestra las páginas indexables por sección antes y después.

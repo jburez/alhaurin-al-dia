@@ -1,110 +1,183 @@
 <!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guía útil de Alhaurín el Grande — Alhaurín al Día</title>
-    <meta name="description" content="Guía útil de Alhaurín el Grande con farmacias, teléfonos, trámites, autobuses, bibliotecas, turismo, servicios locales y enlaces oficiales.">
-    <meta name="theme-color" content="#1c1f1b">
+    <title>Guía útil de Alhaurín el Grande: farmacias, autobuses, teléfonos y trámites — Alhaurín al Día</title>
+    <meta name="description" content="Guía útil de Alhaurín el Grande: farmacias y guardias, autobuses, teléfonos de emergencia, trámites, taxis, aparcamiento y servicios, con fuentes oficiales.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://alhaurinaldia.es/guia-util/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Alhaurín al Día">
-    <meta property="og:title" content="Guía útil de Alhaurín el Grande">
-    <meta property="og:description" content="Servicios, teléfonos, trámites, movilidad, salud, cultura y recursos locales de Alhaurín el Grande.">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Guía útil de Alhaurín el Grande: farmacias, autobuses, teléfonos y trámites — Alhaurín al Día">
+    <meta property="og:description" content="Guía útil de Alhaurín el Grande: farmacias y guardias, autobuses, teléfonos de emergencia, trámites, taxis, aparcamiento y servicios, con fuentes oficiales.">
     <meta property="og:url" content="https://alhaurinaldia.es/guia-util/">
-        <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Guía útil de Alhaurín el Grande">
-    <meta name="twitter:description" content="Servicios, teléfonos, trámites, movilidad, salud, cultura y recursos locales de Alhaurín el Grande.">
+    <meta property="og:image" content="https://alhaurinaldia.es/assets/favicon.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guía útil de Alhaurín el Grande: farmacias, autobuses, teléfonos y trámites — Alhaurín al Día">
+    <meta name="twitter:description" content="Guía útil de Alhaurín el Grande: farmacias y guardias, autobuses, teléfonos de emergencia, trámites, taxis, aparcamiento y servicios, con fuentes oficiales.">
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
-<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="../css/styles.css?v=c76013a7">
-    <link rel="stylesheet" href="../css/mobile.css?v=c3d4ded5">
-    <link rel="stylesheet" href="../css/ads.css?v=1f4810d3">
-    <style>
-        .guide-tools { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: white; }
-        .guide-tools input { width: 100%; min-height: 44px; border-radius: 6px; border: 1px solid var(--line); background: white; color: var(--ink); padding: 0 14px; outline: none; font-size: 14px; transition: border-color .15s; }
-        .guide-tools input::placeholder { color: var(--muted); opacity: 1; }
-        .guide-tools input:focus { border-color: var(--accent); background: white; }
-        .guide-pill-row { display: flex; gap: 6px; flex-wrap: wrap; }
-        .guide-pill { border: 1px solid var(--line); background: white; color: var(--muted); border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; transition: all .15s; }
-        .guide-pill:hover { border-color: var(--accent); color: var(--accent); }
-        .guide-pill.active { background: var(--accent); color: white; border-color: var(--accent); }
-        .guide-card.featured-guide-card { border-radius: 8px; }
-        .guide-card .read-more { margin-top: 14px; }
-        .guide-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
-        .guide-links a { display: inline-flex; padding: 6px 10px; border-radius: 6px; background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); font-size: 12px; font-weight: 700; }
-        .guide-cta-panel { margin-top: 28px; background: var(--accent); color: white; border-radius: 8px; padding: clamp(22px,4vw,36px); display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; align-items: center; }
-        .guide-cta-panel h2 { margin: 0 0 8px; font-size: clamp(22px,3.5vw,30px); line-height: 1.1; letter-spacing: -.03em; }
-        .guide-cta-panel p { margin: 0; color: rgba(255,255,255,.8); line-height: 1.6; font-size: 14px; }
-        .guide-cta-panel .btn { background: white; color: var(--accent); justify-self: end; }
-        @media (max-width: 920px) { .guide-cta-panel { grid-template-columns: 1fr; } .guide-cta-panel .btn { justify-self: start; } }
-    </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "CollectionPage",
-          "@id": "https://alhaurinaldia.es/guia-util/#collection",
-          "url": "https://alhaurinaldia.es/guia-util/",
-          "name": "Guía útil de Alhaurín el Grande",
-          "description": "Guía útil de Alhaurín el Grande con farmacias, teléfonos, trámites, autobuses, bibliotecas, turismo, servicios locales y enlaces oficiales.",
-          "inLanguage": "es-ES",
-          "isPartOf": {
-            "@type": "WebSite",
-            "name": "Alhaurín al Día",
-            "url": "https://alhaurinaldia.es/"
-          },
-          "about": {
-            "@type": "Place",
-            "name": "Alhaurín el Grande"
-          }
-        },
-        {
-          "@type": "ItemList",
-          "@id": "https://alhaurinaldia.es/guia-util/#recursos",
-          "name": "Recursos de la guía útil de Alhaurín el Grande",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Farmacias de guardia", "url": "https://alhaurinaldia.es/guia-util/farmacias/" },
-            { "@type": "ListItem", "position": 2, "name": "Teléfonos útiles", "url": "https://alhaurinaldia.es/guia-util/telefonos/" },
-            { "@type": "ListItem", "position": 3, "name": "Trámites y padrón", "url": "https://alhaurinaldia.es/guia-util/tramites/" },
-            { "@type": "ListItem", "position": 4, "name": "Movilidad", "url": "https://alhaurinaldia.es/guia-util/movilidad/" },
-            { "@type": "ListItem", "position": 5, "name": "Vivir en Alhaurín", "url": "https://alhaurinaldia.es/guia-util/vivir-en-alhaurin/" }
-          ]
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://alhaurinaldia.es/" },
-            { "@type": "ListItem", "position": 2, "name": "Guía útil", "item": "https://alhaurinaldia.es/guia-util/" }
-          ]
-        }
-      ]
-    }
-    </script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc9eeda336f943ca87175a3b83faee35"}'></script>
+    <meta name="theme-color" content="#24402B">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/css/styles.css?v=c76013a7">
+    <link rel="stylesheet" href="/css/mobile.css?v=c3d4ded5">
+    <link rel="stylesheet" href="/css/ads.css?v=1f4810d3">
+    <link rel="stylesheet" href="/css/guia.css?v=031d0742">
     <!-- alh-consent:start -->
     <meta name="google-adsense-account" content="ca-pub-3892603819928798">
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
     <!-- CMP: pegar aquí el script del gestor de consentimiento certificado por Google (TCF v2.2). Ver docs/ARQUITECTURA.md, apartado «Consentimiento». -->
     <script src="/js/consent.js?v=4281d0c1" defer></script>
     <!-- alh-consent:end -->
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Guía útil de Alhaurín el Grande",
+  "url": "https://alhaurinaldia.es/guia-util/",
+  "inLanguage": "es-ES",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Alhaurín al Día",
+    "url": "https://alhaurinaldia.es"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 18,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://alhaurinaldia.es/guia-util/farmacias/",
+        "name": "Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://alhaurinaldia.es/guia-util/telefonos/",
+        "name": "Teléfonos útiles y emergencias"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://alhaurinaldia.es/guia-util/tramites/",
+        "name": "Trámites municipales y cita previa"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://alhaurinaldia.es/guia-util/movilidad/",
+        "name": "Autobuses en Alhaurín el Grande: líneas, paradas y cómo llegar a Málaga"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://alhaurinaldia.es/guia-util/aparcamiento/",
+        "name": "Zonas de aparcamiento y parking"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "url": "https://alhaurinaldia.es/guia-util/taxis/",
+        "name": "Servicio de taxi 24 horas"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "url": "https://alhaurinaldia.es/guia-util/educacion/",
+        "name": "Centros educativos e institutos"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "url": "https://alhaurinaldia.es/guia-util/escuela-musica/",
+        "name": "Escuela Municipal de Música"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "url": "https://alhaurinaldia.es/guia-util/campamentos/",
+        "name": "Campamentos urbanos y conciliación"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "url": "https://alhaurinaldia.es/guia-util/deportes/",
+        "name": "Polideportivo e instalaciones deportivas"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "url": "https://alhaurinaldia.es/guia-util/calistenia/",
+        "name": "Calistenia y deporte al aire libre"
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "url": "https://alhaurinaldia.es/guia-util/bibliotecas/",
+        "name": "Red de bibliotecas municipales"
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "url": "https://alhaurinaldia.es/guia-util/turismo/",
+        "name": "Turismo, patrimonio y rutas"
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "url": "https://alhaurinaldia.es/guia-util/mercados-y-compras/",
+        "name": "Mercadillos y comercio de proximidad"
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "url": "https://alhaurinaldia.es/guia-util/veterinarios/",
+        "name": "Clínicas veterinarias y mascotas"
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "url": "https://alhaurinaldia.es/guia-util/gasolineras/",
+        "name": "Estaciones de servicio y gasolineras"
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "url": "https://alhaurinaldia.es/guia-util/restaurantes/",
+        "name": "Restaurantes, bares y dónde comer"
+      },
+      {
+        "@type": "ListItem",
+        "position": 18,
+        "url": "https://alhaurinaldia.es/guia-util/vivir-en-alhaurin/",
+        "name": "Guía para nuevos residentes"
+      }
+    ]
+  }
+}</script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://alhaurinaldia.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guía útil",
+      "item": "https://alhaurinaldia.es/guia-util/"
+    }
+  ]
+}</script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc9eeda336f943ca87175a3b83faee35"}'></script>
 </head>
-
-<body>
-    <div class="topbar">
-        <div class="container">
-            <span>Guía local independiente de Alhaurín el Grande</span>
-            <span>Farmacias · Teléfonos · Trámites · Movilidad · Turismo</span>
-        </div>
-    </div>
-
+<body id="top">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header>
         <div class="container">
             <nav aria-label="Navegación principal">
@@ -118,7 +191,7 @@
                 <div class="nav-links" id="main-menu">
                     <a href="/#hoy">Hoy</a>
                     <a href="/agenda/">Agenda</a>
-                    <a href="/guias/">Guías</a>
+                    <a href="/guia-util/">Guía útil</a>
                     <a href="/comercios/">Comercios</a>
                     <a href="/noticias/">Actualidad</a>
                     <a href="/anunciarse/" class="nav-cta">Anúnciate</a>
@@ -127,481 +200,146 @@
             </nav>
         </div>
     </header>
+    <main id="contenido" class="alh-main">
 
-    <main>
-        <section class="page-compact-header">
+        <section class="alh-page-header">
             <div class="container">
-                <div class="page-header-shell">
-                    <div>
-                        <h1>Guía útil de Alhaurín el Grande</h1>
-                    </div>
-                </div>
+                <nav class="alh-breadcrumbs" aria-label="Migas de pan"><a href="/">Inicio</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">Guía útil</span></nav>
+                <span class="alh-kicker">Guía útil</span>
+                <h1>Guía útil de Alhaurín el Grande</h1>
+                <p class="alh-lead">Información práctica para resolver el día a día en Alhaurín el Grande: farmacias y guardias, autobuses, teléfonos de emergencia, trámites municipales, taxis, aparcamiento, colegios, deportes, bibliotecas, turismo y otros servicios. Cada guía indica la fecha de su última revisión y enlaza a las fuentes oficiales de las que salen los datos.</p>
+                <p>Las guías marcadas como «guía completa» ya están verificadas y ampliadas. El resto están en revisión: puedes consultarlas, pero comprueba siempre los datos en la fuente oficial antes de desplazarte o hacer una gestión.</p>
             </div>
         </section>
-
-        <section id="guia-listado">
-            <div class="container">
-                <div class="guide-tools">
-                    <input id="guide-page-search" type="search" placeholder="Buscar: farmacia, padrón, autobús, biblioteca, teléfono..." aria-label="Buscar en la guía útil">
-                    <div class="guide-pill-row" id="guide-category-filters" aria-label="Filtrar por categoría"><button type="button" class="guide-pill active" data-category="Todas">Todas</button><button type="button" class="guide-pill " data-category="Salud y Emergencias">Salud y Emergencias</button><button type="button" class="guide-pill " data-category="Emergencias y Seguridad">Emergencias y Seguridad</button><button type="button" class="guide-pill " data-category="Administración y Sede">Administración y Sede</button><button type="button" class="guide-pill " data-category="Movilidad y Transporte">Movilidad y Transporte</button><button type="button" class="guide-pill " data-category="Educación y Familias">Educación y Familias</button><button type="button" class="guide-pill " data-category="Deportes y Salud">Deportes y Salud</button><button type="button" class="guide-pill " data-category="Cultura y Patrimonio">Cultura y Patrimonio</button><button type="button" class="guide-pill " data-category="Turismo y Ocio">Turismo y Ocio</button><button type="button" class="guide-pill " data-category="Comercio Local">Comercio Local</button><button type="button" class="guide-pill " data-category="Servicios y Mascotas">Servicios y Mascotas</button><button type="button" class="guide-pill " data-category="Servicios y Carretera">Servicios y Carretera</button><button type="button" class="guide-pill " data-category="Comercios y Hostelería">Comercios y Hostelería</button><button type="button" class="guide-pill " data-category="Vivir en Alhaurín">Vivir en Alhaurín</button></div>
+        <div class="container">
+            <div class="alh-actions">
+                <a class="alh-btn" href="/farmacia-de-guardia/">Farmacia de guardia hoy</a>
+                <a class="alh-btn alh-btn-sec" href="/guia-util/farmacias/calendario/">Calendario de guardias</a>
+                <a class="alh-btn alh-btn-sec" href="/agenda/">Agenda</a>
+            </div>
+            <section class="alh-section" id="tramites">
+                <h2 class="alh-h2">📋 Trámites</h2>
+                <div class="alh-grid alh-grid-3">
+                    <a class="alh-card alh-guide-card" href="/guia-util/tramites/">
+                        <span class="alh-tag">Trámites</span>
+                        <h3>Trámites municipales y cita previa</h3>
+                        <p>Accesos directos para tramitar el empadronamiento, solicitar cita previa, pagar impuestos y realizar gestiones con la Sede Electrónica.</p>
+                    </a>
                 </div>
-                <div class="guide-grid" id="guide-page-container"><article class="guide-card featured-guide-card" id="farmacias">
-            <div class="guide-card-top">
-                <div class="guide-icon">💊</div>
-                <div>
-                    <span class="guide-category">Salud y Emergencias</span>
-                    <h3>Farmacias de guardia y salud</h3>
+            </section>
+            <section class="alh-section" id="salud">
+                <h2 class="alh-h2">🩺 Salud</h2>
+                <div class="alh-grid alh-grid-3">
+                    <a class="alh-card alh-guide-card" href="/guia-util/farmacias/">
+                        <span class="alh-tag alh-tag-oro">Salud · guía completa</span>
+                        <h3>Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos</h3>
+                        <p>Las farmacias de Alhaurín el Grande, con su dirección, teléfono y próximas guardias según el calendario municipal, y cómo funcionan los turnos de guardia.</p>
+                    </a>
                 </div>
-            </div>
-
-            <p>Consulta de guardias activas las 24h, mapa de farmacias del municipio y teléfonos sanitarios. Confirma siempre en la fuente oficial antes de desplazarte.</p>
-
-            <ul><li>Guardias diarias: de 9:30 h a 9:30 h del día siguiente.</li><li>Fichas individuales con teléfono, mapa GPS y dirección de cada farmacia.</li><li>Urgencias sanitarias generales: 112 / Centro de Salud Alhaurín: 951 55 00 00.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer">
-                    Farmacias de guardia (Ayuntamiento)
-                </a>
-            
-                <a href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer">
-                    Buscador de Colegio de Farmacéuticos
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/farmacias/">
-                Ver farmacias de guardia →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="telefonos">
-            <div class="guide-card-top">
-                <div class="guide-icon">☎️</div>
-                <div>
-                    <span class="guide-category">Emergencias y Seguridad</span>
-                    <h3>Teléfonos útiles y emergencias</h3>
+            </section>
+            <section class="alh-section" id="educacion">
+                <h2 class="alh-h2">🎒 Educación</h2>
+                <div class="alh-grid alh-grid-3">
+                    <a class="alh-card alh-guide-card" href="/guia-util/campamentos/">
+                        <span class="alh-tag">Educación</span>
+                        <h3>Campamentos urbanos y conciliación</h3>
+                        <p>Programas municipales de conciliación familiar durante las vacaciones escolares: verano, Navidad, Semana Blanca y Semana Santa.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/educacion/">
+                        <span class="alh-tag">Educación</span>
+                        <h3>Centros educativos e institutos</h3>
+                        <p>Directorio de colegios de educación infantil y primaria, institutos de secundaria, ciclos formativos y Área Municipal de Educación.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/escuela-musica/">
+                        <span class="alh-tag">Educación</span>
+                        <h3>Escuela Municipal de Música</h3>
+                        <p>Formación musical municipal en distintas especialidades instrumentales y vocales, en Plaza de la Legión.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/bibliotecas/">
+                        <span class="alh-tag">Educación</span>
+                        <h3>Red de bibliotecas municipales</h3>
+                        <p>Espacios de lectura, salas de estudio, préstamo de libros y acceso a Internet en las bibliotecas de Alhaurín el Grande y Villa del Guadalhorce.</p>
+                    </a>
                 </div>
-            </div>
-
-            <p>Directorio de números de teléfono esenciales para incidencias, seguridad ciudadana, ayuntamiento y servicios de guardia.</p>
-
-            <ul><li>Emergencias Generales: 112 (Gratuito 24h).</li><li>Policía Local de Alhaurín: 952 49 10 74 / 670 94 94 94.</li><li>Guardia Civil Alhaurín: 952 59 58 30 / Urgencias: 062.</li><li>Centralita Ayuntamiento: 952 49 00 00 / Protección Civil: 672 32 83 51.</li><li>Servicios Operativos e Incidencias en vía pública: 952 49 09 13.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/telefonos-de-interes/" target="_blank" rel="noopener noreferrer">
-                    Teléfonos de interés (Ayuntamiento)
-                </a>
-            
-                <a href="https://alhaurinelgrande.es/contacto/" target="_blank" rel="noopener noreferrer">
-                    Contacto municipal
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/telefonos/">
-                Ver teléfonos de urgencia →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="tramites">
-            <div class="guide-card-top">
-                <div class="guide-icon">📋</div>
-                <div>
-                    <span class="guide-category">Administración y Sede</span>
-                    <h3>Trámites municipales y cita previa</h3>
+            </section>
+            <section class="alh-section" id="transporte">
+                <h2 class="alh-h2">🚌 Transporte</h2>
+                <div class="alh-grid alh-grid-3">
+                    <a class="alh-card alh-guide-card" href="/guia-util/movilidad/">
+                        <span class="alh-tag alh-tag-oro">Transporte · guía completa</span>
+                        <h3>Autobuses en Alhaurín el Grande: líneas, paradas y cómo llegar a Málaga</h3>
+                        <p>Las líneas de autobús metropolitano que conectan Alhaurín el Grande con Málaga, Coín y el Hospital del Valle del Guadalhorce, con sus paradas principales, duración aproximada y enlaces a los horarios oficiales del Consorcio.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/taxis/">
+                        <span class="alh-tag">Transporte</span>
+                        <h3>Servicio de taxi 24 horas</h3>
+                        <p>Ubicación de la parada oficial de taxis de Alhaurín el Grande, teléfono directo para reservas y traslados al aeropuerto o estación.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/aparcamiento/">
+                        <span class="alh-tag">Transporte</span>
+                        <h3>Zonas de aparcamiento y parking</h3>
+                        <p>Guía práctica de zonas de estacionamiento en el centro histórico, parkings públicos y recomendaciones en días festivos o eventos.</p>
+                    </a>
                 </div>
-            </div>
-
-            <p>Accesos directos para tramitar el empadronamiento, solicitar cita previa, pagar impuestos y realizar gestiones con la Sede Electrónica.</p>
-
-            <ul><li>Sede Electrónica 24/7 para solicitudes y certificados con Certificado Digital / Cl@ve.</li><li>Sistema de Cita Previa presencial para Padrón y Atención Ciudadana.</li><li>Atención de Padrón: 952 49 00 00 / padron2@alhaurinelgrande.es.</li><li>Pago de tributos locales y tasas municipales.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.sedelectronica.es/" target="_blank" rel="noopener noreferrer">
-                    Sede Electrónica Municipal
-                </a>
-            
-                <a href="https://alhaurinelgrande.sedelectronica.es/citaprevia" target="_blank" rel="noopener noreferrer">
-                    Solicitar Cita Previa
-                </a>
-            
-                <a href="https://alhaurinelgrande.es/padron-de-habitantes/" target="_blank" rel="noopener noreferrer">
-                    Información de Padrón
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/tramites/">
-                Abrir sede electrónica →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="movilidad">
-            <div class="guide-card-top">
-                <div class="guide-icon">🚌</div>
-                <div>
-                    <span class="guide-category">Movilidad y Transporte</span>
-                    <h3>Líneas de autobús y horarios</h3>
+            </section>
+            <section class="alh-section" id="ocio">
+                <h2 class="alh-h2">🎭 Ocio y cultura</h2>
+                <div class="alh-grid alh-grid-3">
+                    <a class="alh-card alh-guide-card" href="/guia-util/calistenia/">
+                        <span class="alh-tag">Ocio y cultura</span>
+                        <h3>Calistenia y deporte al aire libre</h3>
+                        <p>Pista de calistenia de 225 m² en el Polideportivo Municipal para entrenamiento al aire libre.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/deportes/">
+                        <span class="alh-tag">Ocio y cultura</span>
+                        <h3>Polideportivo e instalaciones deportivas</h3>
+                        <p>Instalaciones deportivas del municipio: piscina municipal, campos de fútbol, pabellones cubiertos, pistas de pádel, tenis y calistenia.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/restaurantes/">
+                        <span class="alh-tag">Ocio y cultura</span>
+                        <h3>Restaurantes, bares y dónde comer</h3>
+                        <p>Guía gastronómica de Alhaurín el Grande: de la sopa cachorreña a las carnes a la brasa y las terrazas del centro.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/turismo/">
+                        <span class="alh-tag">Ocio y cultura</span>
+                        <h3>Turismo, patrimonio y rutas</h3>
+                        <p>Lugares imperdibles de Alhaurín el Grande: Casa Museo Antonio Gala (La Baltasara), Arcos de Coín, Arco del Cobertizo, miradores y rutas por la Sierra de Mijas.</p>
+                    </a>
                 </div>
-            </div>
-
-            <p>Horarios y líneas del Consorcio de Transportes para desplazarte entre Alhaurín el Grande, Málaga, Cártama, Coín y el Hospital del Guadalhorce.</p>
-
-            <ul><li>Línea M-132: Conexión directa Málaga (Estación de Autobuses) - Alhaurín el Grande.</li><li>Línea M-167B: Ruta Coín - Alhaurín el Grande - Málaga por Cártama.</li><li>Línea M-159B: Enlace rápido con el Hospital Comarcal del Guadalhorce.</li><li>Consultar siempre horarios en la web del Consorcio de Transporte Metropolitano.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://siu.ctmam.ctan.es/es/movil/horarios_lineas_tabla.php?linea=17" target="_blank" rel="noopener noreferrer">
-                    M-132 Málaga - Alhaurín el Grande
-                </a>
-            
-                <a href="https://ctmam.es/lineas/M-167B" target="_blank" rel="noopener noreferrer">
-                    M-167B Coín - Alhaurín - Málaga
-                </a>
-            
-                <a href="https://siu.ctmam.ctan.es/es/movil/horarios_lineas.php" target="_blank" rel="noopener noreferrer">
-                    Consorcio de Transporte Málaga
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/movilidad/">
-                Consultar horarios autobús →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="aparcamiento">
-            <div class="guide-card-top">
-                <div class="guide-icon">🅿️</div>
-                <div>
-                    <span class="guide-category">Movilidad y Transporte</span>
-                    <h3>Zonas de aparcamiento y parking</h3>
+            </section>
+            <section class="alh-section" id="servicios">
+                <h2 class="alh-h2">🛠️ Servicios</h2>
+                <div class="alh-grid alh-grid-3">
+                    <a class="alh-card alh-guide-card" href="/guia-util/veterinarios/">
+                        <span class="alh-tag">Servicios</span>
+                        <h3>Clínicas veterinarias y mascotas</h3>
+                        <p>Centros veterinarios, urgencias para animales de compañía, medicina preventiva y peluquerías caninas en Alhaurín el Grande.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/gasolineras/">
+                        <span class="alh-tag">Servicios</span>
+                        <h3>Estaciones de servicio y gasolineras</h3>
+                        <p>Puntos de repostaje 24h, lavaderos a presión, aire para neumáticos y conveniencia en carretera.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/vivir-en-alhaurin/">
+                        <span class="alh-tag">Servicios</span>
+                        <h3>Guía para nuevos residentes</h3>
+                        <p>Pasos clave al mudarte a Alhaurín el Grande: empadronamiento, altas de suministros, centros de salud y servicios de barrio.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/mercados-y-compras/">
+                        <span class="alh-tag">Servicios</span>
+                        <h3>Mercadillos y comercio de proximidad</h3>
+                        <p>Días de mercadillo semanal, comercio local del centro e información sobre productos típicos del Guadalhorce.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/telefonos/">
+                        <span class="alh-tag">Servicios</span>
+                        <h3>Teléfonos útiles y emergencias</h3>
+                        <p>Directorio de números de teléfono esenciales para incidencias, seguridad ciudadana, ayuntamiento y servicios de guardia.</p>
+                    </a>
                 </div>
-            </div>
-
-            <p>Guía práctica de zonas de estacionamiento en el centro histórico, parkings públicos y recomendaciones en días festivos o eventos.</p>
-
-            <ul><li>Parking Subterráneo Huerta de la Compañía (Plaza Baja / Ayuntamiento): ideal para gestiones en el centro.</li><li>Aparcamiento del Recinto Ferial (Avda. de la Libertad): explanada amplia y gratuita a 5 min del centro.</li><li>Avenida Gerald Brenan y Calle Cruz: estacionamiento para compras rápidas de comercio local.</li><li>Polígono Industrial La Rosa: idóneo para vehículos comerciales y de gran volumen.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://maps.google.com/?q=Parking+Huerta+de+la+Compa%C3%B1%C3%ADa+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer">
-                    Ubicación Parking Huerta de la Compañía
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/aparcamiento/">
-                Ver mapa de aparcamientos →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="taxis">
-            <div class="guide-card-top">
-                <div class="guide-icon">🚖</div>
-                <div>
-                    <span class="guide-category">Movilidad y Transporte</span>
-                    <h3>Servicio de taxi 24 horas</h3>
-                </div>
-            </div>
-
-            <p>Ubicación de la parada oficial de taxis de Alhaurín el Grande, teléfono directo para reservas y traslados al aeropuerto o estación.</p>
-
-            <ul><li>Parada oficial de taxi: Avenida Gerald Brenan, 39.</li><li>Teléfono de reserva directa: 952 49 10 10.</li><li>Servicio continuo con atención para traslados urbanos e interurbanos.</li><li>Vehículos eurotaxi adaptados para personas con movilidad reducida (PMR).</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/telefonos-de-interes/" target="_blank" rel="noopener noreferrer">
-                    Taxi (Información Municipal)
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/taxis/">
-                Llamar a parada de taxi →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="educacion">
-            <div class="guide-card-top">
-                <div class="guide-icon">🎓</div>
-                <div>
-                    <span class="guide-category">Educación y Familias</span>
-                    <h3>Centros educativos e institutos</h3>
-                </div>
-            </div>
-
-            <p>Directorio de colegios de educación infantil y primaria, institutos de secundaria, ciclos formativos y Área Municipal de Educación.</p>
-
-            <ul><li>Colegios CEIP: Emilia Olivares, Jorge Guillén, El Chorro, Félix Plaza Ramos, Pablo Ruiz Picasso.</li><li>Institutos IES: IES Antonio Gala e IES Fuente Lucena (Secundaria, Bachillerato y FP).</li><li>Oficina de Educación: Edificio Formación y Empleo (Polígono La Rosa) / Tel: 952 49 90 79.</li><li>Escuela de Familias y programas de acompañamiento escolar.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/concejalia-de-educacion/" target="_blank" rel="noopener noreferrer">
-                    Área de Educación Municipal
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/educacion/">
-                Ver centros educativos →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="escuela-musica">
-            <div class="guide-card-top">
-                <div class="guide-icon">🎵</div>
-                <div>
-                    <span class="guide-category">Educación y Familias</span>
-                    <h3>Escuela Municipal de Música</h3>
-                </div>
-            </div>
-
-            <p>Formación musical municipal en distintas especialidades instrumentales y vocales, en Plaza de la Legión.</p>
-
-            <ul><li>Formación musical en distintas especialidades instrumentales y vocales.</li><li>Ubicación: Plaza de la Legión, Edificio Escuela de Música.</li><li>Contacto: 952 49 90 79 / educacionalhaurin@gmail.com.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/escuela-de-musica/" target="_blank" rel="noopener noreferrer">
-                    Escuela de Música (Ayuntamiento)
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/escuela-musica/">
-                Ver escuela de música →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="campamentos">
-            <div class="guide-card-top">
-                <div class="guide-icon">☀️</div>
-                <div>
-                    <span class="guide-category">Educación y Familias</span>
-                    <h3>Campamentos urbanos y conciliación</h3>
-                </div>
-            </div>
-
-            <p>Programas municipales de conciliación familiar durante las vacaciones escolares: verano, Navidad, Semana Blanca y Semana Santa.</p>
-
-            <ul><li>Campamentos urbanos con actividades deportivas, talleres de manualidades y agua.</li><li>Turnos adaptados para edades comprendidas entre 3 y 12 años.</li><li>Inscripción telemática mediante Sede Electrónica y presencial en Educación.</li><li>Precios públicos bonificados para familias empadronadas.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/concejalia-de-educacion/" target="_blank" rel="noopener noreferrer">
-                    Campamentos y Conciliación
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/campamentos/">
-                Consultar campamentos →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="deportes">
-            <div class="guide-card-top">
-                <div class="guide-icon">⚽</div>
-                <div>
-                    <span class="guide-category">Deportes y Salud</span>
-                    <h3>Polideportivo e instalaciones deportivas</h3>
-                </div>
-            </div>
-
-            <p>Instalaciones deportivas del municipio: piscina municipal, campos de fútbol, pabellones cubiertos, pistas de pádel, tenis y calistenia.</p>
-
-            <ul><li>Polideportivo Municipal: Pabellones cubiertos 1 y 2, campo de fútbol 11 y atletismo.</li><li>Piscina Municipal: cursos de natación, nado libre y abonos de verano (Tel: 952 59 50 05).</li><li>Pistas de Calistenia (225 m² al aire libre), Pádel y Tenis.</li><li>Concejalía de Deportes (Reserva de pistas y escuelas): 952 49 12 16.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/deportes/" target="_blank" rel="noopener noreferrer">
-                    Instalaciones deportivas
-                </a>
-            
-                <a href="https://alhaurinelgrande.es/concejalia-de-deporte/" target="_blank" rel="noopener noreferrer">
-                    Concejalía de Deportes
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/deportes/">
-                Ver instalaciones deportivas →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="calistenia">
-            <div class="guide-card-top">
-                <div class="guide-icon">🤸</div>
-                <div>
-                    <span class="guide-category">Deportes y Salud</span>
-                    <h3>Calistenia y deporte al aire libre</h3>
-                </div>
-            </div>
-
-            <p>Pista de calistenia de 225 m² en el Polideportivo Municipal para entrenamiento al aire libre.</p>
-
-            <ul><li>Pista de calistenia de 225 m² en el Polideportivo Municipal, presentada por el Ayuntamiento en 2026.</li><li>Espacio orientado a la práctica de calistenia al aire libre.</li><li>Consulta la web municipal para horarios y normas de uso actualizadas.</li><li>Recurso útil para jóvenes, deportistas y vecinos que entrenan al aire libre.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/alhaurin-el-grande-estrena-una-nueva-pista-de-calistenia-en-el-polideportivo-municipal-de-225-m%C2%B2/" target="_blank" rel="noopener noreferrer">
-                    Noticia pista de calistenia
-                </a>
-            
-                <a href="https://alhaurinelgrande.es/deportes/" target="_blank" rel="noopener noreferrer">
-                    Deportes Alhaurín
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/calistenia/">
-                Ver pista de calistenia →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="bibliotecas">
-            <div class="guide-card-top">
-                <div class="guide-icon">📚</div>
-                <div>
-                    <span class="guide-category">Cultura y Patrimonio</span>
-                    <h3>Red de bibliotecas municipales</h3>
-                </div>
-            </div>
-
-            <p>Espacios de lectura, salas de estudio, préstamo de libros y acceso a Internet en las bibliotecas de Alhaurín el Grande y Villa del Guadalhorce.</p>
-
-            <ul><li>Biblioteca Ildefonso Marzo: Avda. Gerald Brenan 21 (Tel: 952 49 01 43 / 669 967 977).</li><li>Biblioteca Mari Pepa Estrada (Villa del Guadalhorce): Plaza Mayor 3-5 (Tel: 952 42 31 21).</li><li>Salas de estudio climatizadas con conexión Wi-Fi gratuita para estudiantes.</li><li>Clubes de lectura, cuentacuentos infantiles y fondo bibliográfico local.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.es/cultura/biblioteca-general/" target="_blank" rel="noopener noreferrer">
-                    Bibliotecas Municipales
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/bibliotecas/">
-                Ver bibliotecas y salas de estudio →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="turismo">
-            <div class="guide-card-top">
-                <div class="guide-icon">🏛️</div>
-                <div>
-                    <span class="guide-category">Turismo y Ocio</span>
-                    <h3>Turismo, patrimonio y rutas</h3>
-                </div>
-            </div>
-
-            <p>Lugares imperdibles de Alhaurín el Grande: Casa Museo Antonio Gala (La Baltasara), Arcos de Coín, Arco del Cobertizo, miradores y rutas por la Sierra de Mijas.</p>
-
-            <ul><li>La Baltasara (Casa Museo Antonio Gala): residencia del célebre escritor rodeada de jardines.</li><li>Patrimonio histórico: Arco del Cobertizo, Molino de la Cruz y Ermita de San Sebastián.</li><li>Rutas de senderismo: Ruta del agua, Sendero de la Fuente del Acebuche y Pinar de la Sierra.</li><li>Oficina de Turismo y Portal Visitalhaurinelgrande.es.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://visitalhaurinelgrande.es/" target="_blank" rel="noopener noreferrer">
-                    Portal Oficial de Turismo
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/turismo/">
-                Descubrir rutas y patrimonio →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="mercados-y-compras">
-            <div class="guide-card-top">
-                <div class="guide-icon">🛍️</div>
-                <div>
-                    <span class="guide-category">Comercio Local</span>
-                    <h3>Mercadillos y comercio de proximidad</h3>
-                </div>
-            </div>
-
-            <p>Días de mercadillo semanal, comercio local del centro e información sobre productos típicos del Guadalhorce.</p>
-
-            <ul><li>Mercadillo semanal: los jueves por la mañana en el Recinto Ferial.</li><li>Comercio Centro Abierto: tiendas tradicionales, moda y servicios en Avda. Gerald Brenan y Calle Cruz.</li><li>Productos locales: Tomate Huevo de Toro, aceite de oliva virgen extra y pan de Alhaurín.</li><li>Asociación de Comerciantes y Hosteleros (Fedelhorce).</li></ul>
-
-            <div class="guide-links">
-                <a href="/comercios/" target="_blank" rel="noopener noreferrer">
-                    Comercios Destacados de Alhaurín
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/mercados-y-compras/">
-                Ver guía comercial →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="veterinarios">
-            <div class="guide-card-top">
-                <div class="guide-icon">🐾</div>
-                <div>
-                    <span class="guide-category">Servicios y Mascotas</span>
-                    <h3>Clínicas veterinarias y mascotas</h3>
-                </div>
-            </div>
-
-            <p>Centros veterinarios, urgencias para animales de compañía, medicina preventiva y peluquerías caninas en Alhaurín el Grande.</p>
-
-            <ul><li>Clínicas de medicina general, vacunación, microchip y cirugías preventivas.</li><li>Servicio de urgencias veterinarias bajo localización telefónica.</li><li>Peluquería canina y felina en zona centro y Polígono Industrial La Rosa.</li><li>Parques caninos habilitados en el municipio.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://www.google.com/maps/search/veterinarios+en+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer">
-                    Veterinarios en Alhaurín (Google Maps)
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/veterinarios/">
-                Ver servicio veterinario →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="gasolineras">
-            <div class="guide-card-top">
-                <div class="guide-icon">⛽</div>
-                <div>
-                    <span class="guide-category">Servicios y Carretera</span>
-                    <h3>Estaciones de servicio y gasolineras</h3>
-                </div>
-            </div>
-
-            <p>Puntos de repostaje 24h, lavaderos a presión, aire para neumáticos y conveniencia en carretera.</p>
-
-            <ul><li>Estación Repsol (Ctra. Coín - Alhaurín A-355): combustible premium, lavadero y tienda.</li><li>Estación BP (Avda. Gerald Brenan / Salida Cártama): repostaje urbano y lavadero.</li><li>Gasolineras Low Cost 24h (Polígono Industrial La Rosa).</li><li>Puntos de aire/agua de acceso libre.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://www.google.com/maps/search/gasolineras+en+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer">
-                    Gasolineras en Alhaurín (Google Maps)
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/gasolineras/">
-                Ver estaciones de servicio →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="restaurantes">
-            <div class="guide-card-top">
-                <div class="guide-icon">🍽️</div>
-                <div>
-                    <span class="guide-category">Comercios y Hostelería</span>
-                    <h3>Restaurantes, bares y dónde comer</h3>
-                </div>
-            </div>
-
-            <p>Guía gastronómica de Alhaurín el Grande: de la sopa cachorreña a las carnes a la brasa y las terrazas del centro.</p>
-
-            <ul><li>Tapas en el centro: Plaza Baja, Plaza del Convento y Calle Cruz.</li><li>Platos tradicionales del Guadalhorce: sopa cachorreña, gazpachuelo y pan de Alhaurín.</li><li>Ventas y mesones de carretera en la A-355 y A-404.</li><li>Participantes en la Ruta Gastronómica del Tomate Huevo de Toro.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://www.google.com/maps/search/restaurantes+en+Alhaurin+el+Grande" target="_blank" rel="noopener noreferrer">
-                    Restaurantes en Alhaurín (Google Maps)
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/restaurantes/">
-                Ver dónde comer →
-            </a>
-        </article>
-<article class="guide-card featured-guide-card" id="vivir-en-alhaurin">
-            <div class="guide-card-top">
-                <div class="guide-icon">🏡</div>
-                <div>
-                    <span class="guide-category">Vivir en Alhaurín</span>
-                    <h3>Guía para nuevos residentes</h3>
-                </div>
-            </div>
-
-            <p>Pasos clave al mudarte a Alhaurín el Grande: empadronamiento, altas de suministros, centros de salud y servicios de barrio.</p>
-
-            <ul><li>Empadronamiento en el Ayuntamiento (presencial con cita previa o en Sede Electrónica).</li><li>Alta de suministro de agua potable con Aqualia / Gestión municipal.</li><li>Asignación de médico de cabecera en el Centro de Salud del SAS.</li><li>Red de transporte escolar y líneas de autobús para trabajadores.</li></ul>
-
-            <div class="guide-links">
-                <a href="https://alhaurinelgrande.sedelectronica.es/" target="_blank" rel="noopener noreferrer">
-                    Sede Electrónica del Ayuntamiento
-                </a>
-            </div>
-
-            <a class="read-more" href="/guia-util/vivir-en-alhaurin/">
-                Ver guía para nuevos residentes →
-            </a>
-        </article></div>
-                <div class="guide-cta-panel">
-                    <div>
-                        <h2>¿Falta algún dato útil?</h2>
-                        <p>La guía está pensada para crecer con información local verificada, comercios, servicios y recursos prácticos para vecinos y visitantes.</p>
-                    </div>
-                    <a class="btn" href="../anunciarse/">Sugerir información</a>
-                </div>
-            </div>
-        </section>
+            </section>
+            <div class="alh-note"><strong>¿Echas en falta algo?</strong><p>Si hay una gestión o un servicio de Alhaurín el Grande que te gustaría ver explicado, o un dato que no es correcto, escríbenos desde la página de <a href="/contacto/">contacto</a>.</p></div>
+        </div>
     </main>
-
     <footer class="site-footer">
         <div class="container">
             <div class="footer-top">
@@ -632,8 +370,8 @@
                 <div class="footer-nav-col">
                     <h3 class="footer-heading">Guías y servicios</h3>
                     <ul class="footer-menu">
-                        <li><a href="/guias/">Guías prácticas</a></li>
                         <li><a href="/guia-util/">Guía útil</a></li>
+                        <li><a href="/guia-util/farmacias/calendario/">Calendario de farmacias</a></li>
                         <li><a href="/comercios/">Comercios</a></li>
                         <li><a href="/boletin-oficial/">Boletín Oficial (BOP)</a></li>
                         <li><a href="/noticias/">Actualidad</a></li>
@@ -665,60 +403,7 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const container = document.getElementById("guide-page-container");
-        const searchInput = document.getElementById("guide-page-search");
-        const filtersContainer = document.getElementById("guide-category-filters");
-        const totalRecursos = document.getElementById("total-recursos");
-        let allItems = [];
-        let activeCategory = "Todas";
-        function escapeHTML(value = "") { return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); }
-        function normalizeGuideLink(link = "#") { if (!link || link === "#") return "#"; if (/^(https?:|mailto:|tel:)/i.test(link)) return link; return `../${String(link).replace(/^\//, "")}`; }
-        function renderFilters(items) {
-            const categories = ["Todas", ...new Set(items.map(item => item.categoria || "Otros"))];
-            filtersContainer.innerHTML = categories.map(category => `<button type="button" class="guide-pill ${category === activeCategory ? "active" : ""}" data-category="${escapeHTML(category)}">${escapeHTML(category)}</button>`).join("");
-            filtersContainer.querySelectorAll(".guide-pill").forEach(button => {
-                button.addEventListener("click", () => { activeCategory = button.dataset.category || "Todas"; renderFilters(allItems); renderItems(); });
-            });
-        }
-        function itemMatches(item, query) {
-            const content = [item.categoria, item.titulo, item.descripcion, ...(item.items || []), ...((item.links || []).map(link => link.texto || ""))].join(" ").toLowerCase();
-            return content.includes(query);
-        }
-        function renderItems() {
-            const query = searchInput.value.trim().toLowerCase();
-            const filtered = allItems.filter(item => (activeCategory === "Todas" || (item.categoria || "Otros") === activeCategory) && (!query || itemMatches(item, query)));
-            if (!filtered.length) { container.innerHTML = `<p class="empty-state">No se han encontrado recursos con ese criterio.</p>`; return; }
-            container.innerHTML = filtered.map(item => {
-                const listItems = (item.items || []).map(text => `<li>${escapeHTML(text)}</li>`).join("");
-                const links = (item.links || []).map(link => `<a href="${escapeHTML(normalizeGuideLink(link.url || "#"))}" target="_blank" rel="noopener noreferrer">${escapeHTML(link.texto || "Abrir enlace")}</a>`).join("");
-                const detailLink = normalizeGuideLink(item.pagina || item.enlace || `guia-util/${item.id || ""}/`);
-                return `<article class="guide-card featured-guide-card" id="${escapeHTML(item.id || "")}"><div class="guide-card-top"><div class="guide-icon">${escapeHTML(item.icono || "•")}</div><div><span class="guide-category">${escapeHTML(item.categoria || "Guía útil")}</span><h3>${escapeHTML(item.titulo || "Recurso local")}</h3></div></div><p>${escapeHTML(item.descripcion || "Información práctica para consultar rápidamente.")}</p><ul>${listItems}</ul>${links ? `<div class="guide-links">${links}</div>` : ""}<a class="read-more" href="${escapeHTML(detailLink)}">${escapeHTML(item.cta || "Ver ficha completa")} →</a></article>`;
-            }).join("");
-        }
-        function initMobileMenu() {
-            const menu = document.getElementById("main-menu");
-            const button = document.querySelector(".menu-toggle");
-            if (!menu || !button) return;
-            button.addEventListener("click", () => {
-                const isOpen = menu.classList.toggle("open");
-                button.classList.toggle("open", isOpen);
-                button.setAttribute("aria-expanded", String(isOpen));
-                document.body.classList.toggle("menu-open", isOpen);
-            });
-            menu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
-                menu.classList.remove("open");
-                button.classList.remove("open");
-                button.setAttribute("aria-expanded", "false");
-                document.body.classList.remove("menu-open");
-            }));
-        }
-        initMobileMenu();
-        fetch("../data/guia-util.json")
-            .then(response => { if (!response.ok) throw new Error("No se pudo cargar la guía útil"); return response.json(); })
-            .then(items => { allItems = items || []; if (totalRecursos) totalRecursos.textContent = allItems.length; renderFilters(allItems); renderItems(); searchInput.addEventListener("input", renderItems); })
-            .catch(error => { console.error(error); container.innerHTML = `<p class="empty-state">No se ha podido cargar la guía útil.</p>`; });
-    </script>
+    <script src="/js/app.js?v=36660541" defer></script>
+    
 </body>
 </html>

@@ -20,15 +20,15 @@
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <meta name="theme-color" content="#24402B">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/mobile.css">
-    <link rel="stylesheet" href="/css/ads.css">
-    <link rel="stylesheet" href="/css/guia.css">
+    <link rel="stylesheet" href="/css/styles.css?v=c76013a7">
+    <link rel="stylesheet" href="/css/mobile.css?v=c3d4ded5">
+    <link rel="stylesheet" href="/css/ads.css?v=1f4810d3">
+    <link rel="stylesheet" href="/css/guia.css?v=031d0742">
     <!-- alh-consent:start -->
     <meta name="google-adsense-account" content="ca-pub-3892603819928798">
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
     <!-- CMP: pegar aquí el script del gestor de consentimiento certificado por Google (TCF v2.2). Ver docs/ARQUITECTURA.md, apartado «Consentimiento». -->
-    <script src="/js/consent.js" defer></script>
+    <script src="/js/consent.js?v=4281d0c1" defer></script>
     <!-- alh-consent:end -->
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -81,7 +81,7 @@
                 <div class="nav-links" id="main-menu">
                     <a href="/#hoy">Hoy</a>
                     <a href="/agenda/">Agenda</a>
-                    <a href="/guias/">Guías</a>
+                    <a href="/guia-util/">Guía útil</a>
                     <a href="/comercios/">Comercios</a>
                     <a href="/noticias/">Actualidad</a>
                     <a href="/anunciarse/" class="nav-cta">Anúnciate</a>
@@ -188,41 +188,21 @@
         <div class="container"><div class="alh-ad alh-ad-banda" data-ad-ubicacion="portada" role="complementary" aria-label="Publicidad"><span class="alh-ad-label">Publicidad</span></div></div>
         <section class="alh-section" aria-labelledby="guias-titulo">
             <div class="container">
-                <div class="alh-section-head"><h2 class="alh-h2" id="guias-titulo">Guías prácticas</h2><a href="/guias/">Todas las guías →</a></div>
+                <div class="alh-section-head"><h2 class="alh-h2" id="guias-titulo">Guías prácticas</h2><a href="/guia-util/">Toda la guía útil →</a></div>
                 <p>Trámites, salud, colegios, transporte y servicios de Alhaurín el Grande explicados paso a paso, con enlace a las fuentes oficiales.</p>
                 <div class="alh-grid alh-grid-4">
-                    <a class="alh-card alh-guide-card" href="/guia-util/farmacias/">
-                        <h3>💊 Farmacias de guardia y salud</h3>
-                        <p>Consulta de guardias activas las 24h, mapa de farmacias del municipio y teléfonos sanitarios. Confirma siempre en la fuente oficial antes de desplazarte.</p>
-                    </a>
-                    <a class="alh-card alh-guide-card" href="/guia-util/telefonos/">
-                        <h3>☎️ Teléfonos útiles y emergencias</h3>
-                        <p>Directorio de números de teléfono esenciales para incidencias, seguridad ciudadana, ayuntamiento y servicios de guardia.</p>
-                    </a>
-                    <a class="alh-card alh-guide-card" href="/guia-util/tramites/">
-                        <h3>📋 Trámites municipales y cita previa</h3>
-                        <p>Accesos directos para tramitar el empadronamiento, solicitar cita previa, pagar impuestos y realizar gestiones con la Sede Electrónica.</p>
-                    </a>
-                    <a class="alh-card alh-guide-card" href="/guia-util/movilidad/">
-                        <h3>🚌 Líneas de autobús y horarios</h3>
-                        <p>Horarios y líneas del Consorcio de Transportes para desplazarte entre Alhaurín el Grande, Málaga, Cártama, Coín y el Hospital del Guadalhorce.</p>
-                    </a>
-                    <a class="alh-card alh-guide-card" href="/guia-util/aparcamiento/">
-                        <h3>🅿️ Zonas de aparcamiento y parking</h3>
-                        <p>Guía práctica de zonas de estacionamiento en el centro histórico, parkings públicos y recomendaciones en días festivos o eventos.</p>
-                    </a>
-                    <a class="alh-card alh-guide-card" href="/guia-util/taxis/">
-                        <h3>🚖 Servicio de taxi 24 horas</h3>
-                        <p>Ubicación de la parada oficial de taxis de Alhaurín el Grande, teléfono directo para reservas y traslados al aeropuerto o estación.</p>
-                    </a>
-                    <a class="alh-card alh-guide-card" href="/guia-util/educacion/">
-                        <h3>🎓 Centros educativos e institutos</h3>
-                        <p>Directorio de colegios de educación infantil y primaria, institutos de secundaria, ciclos formativos y Área Municipal de Educación.</p>
-                    </a>
-                    <a class="alh-card alh-guide-card" href="/guia-util/escuela-musica/">
-                        <h3>🎵 Escuela Municipal de Música</h3>
-                        <p>Formación musical municipal en distintas especialidades instrumentales y vocales, en Plaza de la Legión.</p>
-                    </a>
+                    <div class="alh-card">
+                        <h3>🩺 Salud</h3>
+                        <ul class="alh-plain-list">
+                            <li><a href="/guia-util/farmacias/">Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos</a></li>
+                        </ul>
+                    </div>
+                    <div class="alh-card">
+                        <h3>🚌 Transporte</h3>
+                        <ul class="alh-plain-list">
+                            <li><a href="/guia-util/movilidad/">Autobuses en Alhaurín el Grande: líneas, paradas y cómo llegar a Málaga</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -321,8 +301,8 @@
                 <div class="footer-nav-col">
                     <h3 class="footer-heading">Guías y servicios</h3>
                     <ul class="footer-menu">
-                        <li><a href="/guias/">Guías prácticas</a></li>
                         <li><a href="/guia-util/">Guía útil</a></li>
+                        <li><a href="/guia-util/farmacias/calendario/">Calendario de farmacias</a></li>
                         <li><a href="/comercios/">Comercios</a></li>
                         <li><a href="/boletin-oficial/">Boletín Oficial (BOP)</a></li>
                         <li><a href="/noticias/">Actualidad</a></li>
@@ -354,7 +334,7 @@
             </div>
         </div>
     </footer>
-    <script src="/js/app.js" defer></script>
+    <script src="/js/app.js?v=36660541" defer></script>
     
 </body>
 </html>

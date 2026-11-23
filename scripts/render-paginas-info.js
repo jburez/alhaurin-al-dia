@@ -80,7 +80,7 @@ function sobreElProyecto() {
                 <ul>
                     <li><strong>Hoy:</strong> <a href="/farmacia-de-guardia/">farmacia de guardia</a>, <a href="/tiempo/">el tiempo</a> y <a href="/avisos/">avisos</a> de cortes, tráfico y alertas.</li>
                     <li><strong>Agenda:</strong> <a href="/agenda/">planes y eventos</a> del municipio y una página con <a href="/este-fin-de-semana/">lo que hay este fin de semana</a>.</li>
-                    <li><strong>Guías:</strong> <a href="/guias/">explicaciones prácticas</a> sobre trámites, salud, educación, transporte, ocio y servicios, y la <a href="/guia-util/">guía útil</a> con teléfonos y accesos directos.</li>
+                    <li><strong>Guía útil:</strong> <a href="/guia-util/">explicaciones prácticas</a> sobre farmacias, autobuses, teléfonos, trámites, educación, ocio y servicios.</li>
                     <li><strong>Comercios:</strong> un <a href="/comercios/">directorio de negocios locales</a> por categorías.</li>
                     <li><strong>Actualidad:</strong> titulares recientes publicados por el Ayuntamiento, medios y entidades locales, siempre con enlace a su fuente original.</li>
                 </ul>

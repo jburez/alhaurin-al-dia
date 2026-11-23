@@ -42,7 +42,6 @@ const STRUCTURAL_URLS = new Set([
   '/boletin-whatsapp.html',
   '/virgen-de-gracia-2026/',
   // Reposicionamiento como guía práctica (noviembre 2026)
-  '/guias/',
   '/agenda/',
   '/este-fin-de-semana/',
   '/farmacia-de-guardia/',
@@ -132,7 +131,7 @@ function main() {
   const eventoSlugs = readJson(EVENTO_SLUGS_FILE, {});
   const guiasData = readJson(path.join(ROOT, 'data', 'guias.json'), { guias: [] });
   const expectedGuiasUrls = new Set(
-    (Array.isArray(guiasData) ? guiasData : guiasData.guias || []).map(g => normalizeUrlPath(`/guias/${g.slug}/`))
+    (Array.isArray(guiasData) ? guiasData : guiasData.guias || []).map(g => normalizeUrlPath(`/guia-util/${g.slug}/`))
   );
 
   const expectedNewsUrls = new Set(
@@ -175,10 +174,8 @@ function main() {
       continue;
     }
 
-    if (url.startsWith('/guias/')) {
-      if (!expectedGuiasUrls.has(url)) orphanGuidePages.push({ url, file });
-      continue;
-    }
+    // Guías de data/guias.json (fuente única desde la fase 6).
+    if (expectedGuiasUrls.has(url)) continue;
 
     if (url.startsWith('/noticias/') && url.endsWith('.html')) {
       if (!expectedNewsUrls.has(url)) orphanNewsPages.push({ url, file });

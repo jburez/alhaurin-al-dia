@@ -104,3 +104,25 @@ https://www.alhaurinaldia.es/* https://alhaurinaldia.es/:splat 301!
 /noticias/xliii-noche-flamenca-en-alhaurin-el-grande-reune-a-430-amantes-del-flamenco.html /noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada.html 301
 /noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-aficionados-en-una-velada.html /noticias/xliii-noche-flamenca-villa-de-alhaurin-el-grande-reune-a-430-espectadores-en-una-velada.html 301
 # alh-noticias-fusionadas:end
+# alh-guias:start (generado por scripts/render-guias.js)
+/guias/ /guia-util/ 301
+/guias/ejemplo-plantilla/ /guia-util/ejemplo-plantilla/ 301
+/guias/farmacias/ /guia-util/farmacias/ 301
+/guias/telefonos/ /guia-util/telefonos/ 301
+/guias/tramites/ /guia-util/tramites/ 301
+/guias/movilidad/ /guia-util/movilidad/ 301
+/guias/aparcamiento/ /guia-util/aparcamiento/ 301
+/guias/taxis/ /guia-util/taxis/ 301
+/guias/educacion/ /guia-util/educacion/ 301
+/guias/escuela-musica/ /guia-util/escuela-musica/ 301
+/guias/campamentos/ /guia-util/campamentos/ 301
+/guias/deportes/ /guia-util/deportes/ 301
+/guias/calistenia/ /guia-util/calistenia/ 301
+/guias/bibliotecas/ /guia-util/bibliotecas/ 301
+/guias/turismo/ /guia-util/turismo/ 301
+/guias/mercados-y-compras/ /guia-util/mercados-y-compras/ 301
+/guias/veterinarios/ /guia-util/veterinarios/ 301
+/guias/gasolineras/ /guia-util/gasolineras/ 301
+/guias/restaurantes/ /guia-util/restaurantes/ 301
+/guias/vivir-en-alhaurin/ /guia-util/vivir-en-alhaurin/ 301
+# alh-guias:end

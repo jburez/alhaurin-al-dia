@@ -1,5 +1,5 @@
 {
-  "_descripcion": "Guías prácticas de Alhaurín el Grande. Solo las guías con estado \"publicada\" se indexan, entran en sitemap-guias.xml y aparecen en la portada. Ver docs/ARQUITECTURA.md.",
+  "_descripcion": "Guías prácticas de Alhaurín el Grande: fuente única del contenido de /guia-util/<slug>/ (scripts/render-guias.js). Solo las guías con estado \"publicada\" que además cumplen los criterios (más de 300 palabras propias, sin [PENDIENTE], al menos una fuente y fecha de actualización) se indexan y entran en el sitemap. \"generador\" (farmacias | transporte) añade secciones construidas con datos de data/.",
   "guias": [
     {
       "slug": "ejemplo-plantilla",
@@ -64,17 +64,12 @@
     },
     {
       "slug": "farmacias",
-      "titulo": "Farmacias de guardia y salud",
+      "titulo": "Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos",
       "categoria": "salud",
-      "resumen": "Consulta de guardias activas las 24h, mapa de farmacias del municipio y teléfonos sanitarios. Confirma siempre en la fuente oficial antes de desplazarte.",
-      "estado": "borrador",
-      "actualizado": "",
-      "secciones": [
-        {
-          "titulo": "Información recopilada (pendiente de verificar)",
-          "html": "<ul><li>Guardias diarias: de 9:30 h a 9:30 h del día siguiente.</li><li>Fichas individuales con teléfono, mapa GPS y dirección de cada farmacia.</li><li>Urgencias sanitarias generales: 112 / Centro de Salud Alhaurín: 951 55 00 00.</li></ul>"
-        }
-      ],
+      "resumen": "Las farmacias de Alhaurín el Grande, con su dirección, teléfono y próximas guardias según el calendario municipal, y cómo funcionan los turnos de guardia.",
+      "estado": "publicada",
+      "actualizado": "2026-11-23",
+      "secciones": [],
       "datos_clave": [],
       "faq": [],
       "fuentes": [
@@ -87,13 +82,18 @@
           "url": "https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29"
         }
       ],
-      "relacionadas": [],
+      "relacionadas": [
+        "telefonos",
+        "movilidad",
+        "tramites"
+      ],
       "_migrado_de": "/guia-util/farmacias/",
       "_verificar": [
         "Guardias diarias: de 9:30 h a 9:30 h del día siguiente.",
         "Fichas individuales con teléfono, mapa GPS y dirección de cada farmacia.",
         "Urgencias sanitarias generales: 112 / Centro de Salud Alhaurín: 951 55 00 00."
-      ]
+      ],
+      "generador": "farmacias"
     },
     {
       "slug": "telefonos",
@@ -104,11 +104,44 @@
       "actualizado": "",
       "secciones": [
         {
-          "titulo": "Información recopilada (pendiente de verificar)",
+          "titulo": "Cuándo llamar a cada número",
+          "html": "<p>Para cualquier emergencia sanitaria, de seguridad o de incendio, llama siempre al <strong>112</strong>. Para incidencias del municipio que no son urgentes (una farola apagada, un problema en la vía pública), el número de Servicios Operativos es el más directo.</p><p>[PENDIENTE: horarios de atención de cada servicio]</p>"
+        },
+        {
+          "titulo": "Datos recopilados",
           "html": "<ul><li>Emergencias Generales: 112 (Gratuito 24h).</li><li>Policía Local de Alhaurín: 952 49 10 74 / 670 94 94 94.</li><li>Guardia Civil Alhaurín: 952 59 58 30 / Urgencias: 062.</li><li>Centralita Ayuntamiento: 952 49 00 00 / Protección Civil: 672 32 83 51.</li><li>Servicios Operativos e Incidencias en vía pública: 952 49 09 13.</li></ul>"
         }
       ],
-      "datos_clave": [],
+      "datos_clave": [
+        {
+          "etiqueta": "Emergencias",
+          "valor": "112 (gratuito, 24 horas)"
+        },
+        {
+          "etiqueta": "Policía Local",
+          "valor": "952 49 10 74 / 670 94 94 94"
+        },
+        {
+          "etiqueta": "Guardia Civil",
+          "valor": "952 59 58 30 · urgencias 062"
+        },
+        {
+          "etiqueta": "Ayuntamiento (centralita)",
+          "valor": "952 49 00 00"
+        },
+        {
+          "etiqueta": "Protección Civil",
+          "valor": "672 32 83 51"
+        },
+        {
+          "etiqueta": "Incidencias en la vía pública",
+          "valor": "952 49 09 13 (Servicios Operativos)"
+        },
+        {
+          "etiqueta": "Centro de Salud",
+          "valor": "951 55 00 00"
+        }
+      ],
       "faq": [],
       "fuentes": [
         {
@@ -143,11 +176,36 @@
       "actualizado": "",
       "secciones": [
         {
-          "titulo": "Información recopilada (pendiente de verificar)",
+          "titulo": "Qué se puede hacer en la sede electrónica",
+          "html": "<p>La sede electrónica del Ayuntamiento permite presentar solicitudes, pedir certificados y pagar tributos y tasas municipales a cualquier hora, identificándote con certificado digital o Cl@ve. También desde ella se pide cita previa para el Padrón y la Atención Ciudadana presencial.</p><p>[PENDIENTE: documentación necesaria para empadronarse y para los trámites más habituales]</p>"
+        },
+        {
+          "titulo": "Datos recopilados",
           "html": "<ul><li>Sede Electrónica 24/7 para solicitudes y certificados con Certificado Digital / Cl@ve.</li><li>Sistema de Cita Previa presencial para Padrón y Atención Ciudadana.</li><li>Atención de Padrón: 952 49 00 00 / padron2@alhaurinelgrande.es.</li><li>Pago de tributos locales y tasas municipales.</li></ul>"
         }
       ],
-      "datos_clave": [],
+      "datos_clave": [
+        {
+          "etiqueta": "Sede electrónica",
+          "valor": "alhaurinelgrande.sedelectronica.es (24 horas, con certificado digital o Cl@ve)"
+        },
+        {
+          "etiqueta": "Cita previa",
+          "valor": "Desde la sede electrónica (Padrón y Atención Ciudadana)"
+        },
+        {
+          "etiqueta": "Padrón",
+          "valor": "952 49 00 00 · padron2@alhaurinelgrande.es"
+        },
+        {
+          "etiqueta": "Horario de atención presencial",
+          "valor": "[PENDIENTE: horario del Servicio de Atención Ciudadana]"
+        },
+        {
+          "etiqueta": "Dirección",
+          "valor": "[PENDIENTE: dirección de la oficina de Atención Ciudadana]"
+        }
+      ],
       "faq": [],
       "fuentes": [
         {
@@ -174,20 +232,19 @@
     },
     {
       "slug": "movilidad",
-      "titulo": "Líneas de autobús y horarios",
+      "titulo": "Autobuses en Alhaurín el Grande: líneas, paradas y cómo llegar a Málaga",
       "categoria": "transporte",
-      "resumen": "Horarios y líneas del Consorcio de Transportes para desplazarte entre Alhaurín el Grande, Málaga, Cártama, Coín y el Hospital del Guadalhorce.",
-      "estado": "borrador",
-      "actualizado": "",
-      "secciones": [
-        {
-          "titulo": "Información recopilada (pendiente de verificar)",
-          "html": "<ul><li>Línea M-132: Conexión directa Málaga (Estación de Autobuses) - Alhaurín el Grande.</li><li>Línea M-167B: Ruta Coín - Alhaurín el Grande - Málaga por Cártama.</li><li>Línea M-159B: Enlace rápido con el Hospital Comarcal del Guadalhorce.</li><li>Consultar siempre horarios en la web del Consorcio de Transporte Metropolitano.</li></ul>"
-        }
-      ],
+      "resumen": "Las líneas de autobús metropolitano que conectan Alhaurín el Grande con Málaga, Coín y el Hospital del Valle del Guadalhorce, con sus paradas principales, duración aproximada y enlaces a los horarios oficiales del Consorcio.",
+      "estado": "publicada",
+      "actualizado": "2026-08-14",
+      "secciones": [],
       "datos_clave": [],
       "faq": [],
       "fuentes": [
+        {
+          "nombre": "Consorcio de Transporte Metropolitano del Área de Málaga (CTMAM)",
+          "url": "https://www.ctmam.es/"
+        },
         {
           "nombre": "M-132 Málaga - Alhaurín el Grande",
           "url": "https://siu.ctmam.ctan.es/es/movil/horarios_lineas_tabla.php?linea=17"
@@ -202,8 +259,9 @@
         }
       ],
       "relacionadas": [
+        "taxis",
         "aparcamiento",
-        "taxis"
+        "farmacias"
       ],
       "_migrado_de": "/guia-util/movilidad/",
       "_verificar": [
@@ -211,7 +269,8 @@
         "Línea M-167B: Ruta Coín - Alhaurín el Grande - Málaga por Cártama.",
         "Línea M-159B: Enlace rápido con el Hospital Comarcal del Guadalhorce.",
         "Consultar siempre horarios en la web del Consorcio de Transporte Metropolitano."
-      ]
+      ],
+      "generador": "transporte"
     },
     {
       "slug": "aparcamiento",
@@ -222,11 +281,36 @@
       "actualizado": "",
       "secciones": [
         {
-          "titulo": "Información recopilada (pendiente de verificar)",
+          "titulo": "Dónde aparcar según lo que vayas a hacer",
+          "html": "<p>Para gestiones en el Ayuntamiento y el centro, el parking subterráneo de la Huerta de la Compañía es el más cercano. Si no te importa caminar unos minutos, el aparcamiento del Recinto Ferial es amplio y gratuito. Para compras rápidas hay estacionamiento en la Avenida Gerald Brenan y la Calle Cruz.</p><p>[PENDIENTE: zonas de estacionamiento regulado, si las hay]</p>"
+        },
+        {
+          "titulo": "Datos recopilados",
           "html": "<ul><li>Parking Subterráneo Huerta de la Compañía (Plaza Baja / Ayuntamiento): ideal para gestiones en el centro.</li><li>Aparcamiento del Recinto Ferial (Avda. de la Libertad): explanada amplia y gratuita a 5 min del centro.</li><li>Avenida Gerald Brenan y Calle Cruz: estacionamiento para compras rápidas de comercio local.</li><li>Polígono Industrial La Rosa: idóneo para vehículos comerciales y de gran volumen.</li></ul>"
         }
       ],
-      "datos_clave": [],
+      "datos_clave": [
+        {
+          "etiqueta": "Centro",
+          "valor": "Parking subterráneo Huerta de la Compañía (Plaza Baja / Ayuntamiento)"
+        },
+        {
+          "etiqueta": "Gratuito y amplio",
+          "valor": "Aparcamiento del Recinto Ferial (Avda. de la Libertad)"
+        },
+        {
+          "etiqueta": "Compras rápidas",
+          "valor": "Avenida Gerald Brenan y Calle Cruz"
+        },
+        {
+          "etiqueta": "Vehículos grandes",
+          "valor": "Polígono Industrial La Rosa"
+        },
+        {
+          "etiqueta": "Tarifas del parking",
+          "valor": "[PENDIENTE: tarifas y horario del parking Huerta de la Compañía]"
+        }
+      ],
       "faq": [],
       "fuentes": [
         {
@@ -255,11 +339,32 @@
       "actualizado": "",
       "secciones": [
         {
-          "titulo": "Información recopilada (pendiente de verificar)",
+          "titulo": "Cómo pedir un taxi",
+          "html": "<p>Puedes coger un taxi en la parada oficial de la Avenida Gerald Brenan o reservarlo por teléfono. Si necesitas un vehículo adaptado para personas con movilidad reducida, indícalo al reservar.</p><p>[PENDIENTE: horario de la parada y disponibilidad nocturna confirmados]</p>"
+        },
+        {
+          "titulo": "Datos recopilados",
           "html": "<ul><li>Parada oficial de taxi: Avenida Gerald Brenan, 39.</li><li>Teléfono de reserva directa: 952 49 10 10.</li><li>Servicio continuo con atención para traslados urbanos e interurbanos.</li><li>Vehículos eurotaxi adaptados para personas con movilidad reducida (PMR).</li></ul>"
         }
       ],
-      "datos_clave": [],
+      "datos_clave": [
+        {
+          "etiqueta": "Parada oficial",
+          "valor": "Avenida Gerald Brenan, 39"
+        },
+        {
+          "etiqueta": "Teléfono de reserva",
+          "valor": "952 49 10 10"
+        },
+        {
+          "etiqueta": "Servicio",
+          "valor": "Traslados urbanos e interurbanos; vehículos eurotaxi adaptados (PMR)"
+        },
+        {
+          "etiqueta": "Tarifas",
+          "valor": "[PENDIENTE: tarifas vigentes]"
+        }
+      ],
       "faq": [],
       "fuentes": [
         {

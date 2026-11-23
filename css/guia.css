@@ -224,3 +224,15 @@ nav.alh-breadcrumbs { justify-content: flex-start; width: auto; height: auto; pa
 .alh-prose a.alh-btn, .alh-card a.alh-btn { color: #fff; }
 .alh-prose a.alh-btn-sec, .alh-card a.alh-btn-sec { color: var(--alh-verde); }
 .alh-prose blockquote { margin: 12px 0; }
+
+/* Calendario mensual de farmacias (HTML estático) */
+.alh-cal-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.alh-cal { width: 100%; min-width: 340px; border-collapse: collapse; table-layout: fixed; background: #fff; border: 1px solid var(--alh-linea); border-radius: var(--alh-radio); font-size: 11px; }
+.alh-cal th { background: var(--alh-verde-suave); color: var(--alh-verde); padding: 6px 2px; font-size: 11px; }
+.alh-cal td { border: 1px solid var(--alh-linea); vertical-align: top; padding: 4px 3px; height: 62px; word-break: break-word; line-height: 1.2; }
+.alh-cal td.is-empty { background: var(--paper-soft, #f5f2ec); }
+.alh-cal td.is-today { background: #e6f2ea; outline: 2px solid #2f8f5b; outline-offset: -2px; }
+.alh-cal a { color: var(--alh-verde); font-weight: 600; text-decoration: none; }
+.alh-cal-day { display: block; font-weight: 800; color: var(--alh-tinta); margin-bottom: 2px; }
+.alh-cal-none { color: var(--alh-gris); font-style: italic; }
+@media (min-width: 768px) { .alh-cal { font-size: 13px; } .alh-cal td { height: 76px; padding: 6px; } }

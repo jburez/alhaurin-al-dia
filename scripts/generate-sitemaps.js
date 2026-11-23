@@ -28,9 +28,9 @@ const SERVICE_URLS = new Set([
   '/cookies/',
   '/aviso-legal/',
 ]);
-const isServiceUrl = (url) => SERVICE_URLS.has(url) ||
-  (url.startsWith('/guia-util/') && !url.startsWith('/guia-util/farmacias/'));
-const isGuideUrl = (url) => url.startsWith('/guias/');
+const isServiceUrl = (url) => SERVICE_URLS.has(url);
+// Guías (fase 6): /guia-util/ salvo farmacias, que tienen su propio sitemap.
+const isGuideUrl = (url) => url.startsWith('/guia-util/') && !url.startsWith('/guia-util/farmacias/');
 const isAgendaUrl = (url) => url === '/agenda/' || url === '/este-fin-de-semana/' ||
   url.startsWith('/planes/') || url === '/virgen-de-gracia-2026/';
 const isCommerceUrl = (url) => url.startsWith('/comercios/') || url === '/anunciarse/';
@@ -143,8 +143,6 @@ function meta(url) {
   if (url === '/guia-util/farmacias/calendario/') return { changefreq: 'daily', priority: '0.95' };
   if (url === '/avisos/' || url === '/tiempo/' || url === '/boletin-oficial/') return { changefreq: 'daily', priority: '0.9' };
   if (url === '/farmacia-de-guardia/' || url === '/este-fin-de-semana/' || url === '/agenda/') return { changefreq: 'daily', priority: '0.95' };
-  if (url === '/guias/') return { changefreq: 'weekly', priority: '0.9' };
-  if (url.startsWith('/guias/')) return { changefreq: 'monthly', priority: '0.85' };
   if (url === '/planes/' || url === '/comercios/') return { changefreq: 'weekly', priority: '0.8' };
   if (url === '/contacto/') return { changefreq: 'monthly', priority: '0.6' };
   if (url.startsWith('/guia-util/farmacias/')) return { changefreq: 'weekly', priority: '0.85' };

@@ -35,8 +35,8 @@ const SITE_FOOTER_HTML = `<footer class="site-footer">
                 <div class="footer-nav-col">
                     <h3 class="footer-heading">Guías y servicios</h3>
                     <ul class="footer-menu">
-                        <li><a href="/guias/">Guías prácticas</a></li>
                         <li><a href="/guia-util/">Guía útil</a></li>
+                        <li><a href="/guia-util/farmacias/calendario/">Calendario de farmacias</a></li>
                         <li><a href="/comercios/">Comercios</a></li>
                         <li><a href="/boletin-oficial/">Boletín Oficial (BOP)</a></li>
                         <li><a href="/noticias/">Actualidad</a></li>

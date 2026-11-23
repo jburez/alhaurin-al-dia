@@ -38,7 +38,7 @@ function main() {
             <div class="container alh-narrow">
                 <div class="alh-note">
                     <strong>Cómo funciona esta sección</strong>
-                    <p>Alhaurín al Día no redacta estas noticias: las recoge de fuentes públicas para que puedas verlas de un vistazo y siempre indica quién las publicó. Si buscas algo práctico (la farmacia de guardia, los planes del fin de semana o cómo hacer un trámite), lo encontrarás en <a href="/farmacia-de-guardia/">Farmacia de guardia</a>, <a href="/agenda/">Agenda</a> y <a href="/guias/">Guías</a>.</p>
+                    <p>Alhaurín al Día no redacta estas noticias: las recoge de fuentes públicas para que puedas verlas de un vistazo y siempre indica quién las publicó. Si buscas algo práctico (la farmacia de guardia, los planes del fin de semana o cómo hacer un trámite), lo encontrarás en <a href="/farmacia-de-guardia/">Farmacia de guardia</a>, <a href="/agenda/">Agenda</a> y <a href="/guia-util/">Guía útil</a>.</p>
                 </div>
                 <div id="actualidad-list">
 ${renderActualidadList(noticias, { limit: 60 })}

@@ -1,152 +1,136 @@
 <!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farmacia de guardia hoy en Alhaurín el Grande — Alhaurín al Día</title>
-    <meta name="description" content="Hoy, 23 de noviembre, la farmacia de guardia en Alhaurín el Grande es José Luis Quintela (Avenida de la Libertad nº 89). Teléfono y calendario completo.">
-    <meta name="theme-color" content="#1c1f1b">
+    <title>Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos — Alhaurín al Día</title>
+    <meta name="description" content="Las farmacias de Alhaurín el Grande, con su dirección, teléfono y próximas guardias según el calendario municipal, y cómo funcionan los turnos de guardia.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://alhaurinaldia.es/guia-util/farmacias/">
-
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:site_name" content="Alhaurín al Día">
-    <meta property="og:title" content="Farmacia de guardia hoy en Alhaurín el Grande">
-    <meta property="og:description" content="Hoy, 23 de noviembre, la farmacia de guardia en Alhaurín el Grande es José Luis Quintela (Avenida de la Libertad nº 89). Teléfono y calendario completo.">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos — Alhaurín al Día">
+    <meta property="og:description" content="Las farmacias de Alhaurín el Grande, con su dirección, teléfono y próximas guardias según el calendario municipal, y cómo funcionan los turnos de guardia.">
     <meta property="og:url" content="https://alhaurinaldia.es/guia-util/farmacias/">
     <meta property="og:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <meta name="twitter:card" content="summary_large_image">
-
-    <meta name="twitter:title" content="Farmacia de guardia hoy en Alhaurín el Grande">
-    <meta name="twitter:description" content="Hoy, 23 de noviembre, la farmacia de guardia en Alhaurín el Grande es José Luis Quintela (Avenida de la Libertad nº 89). Teléfono y calendario completo.">
+    <meta name="twitter:title" content="Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos — Alhaurín al Día">
+    <meta name="twitter:description" content="Las farmacias de Alhaurín el Grande, con su dirección, teléfono y próximas guardias según el calendario municipal, y cómo funcionan los turnos de guardia.">
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
-    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="../../css/styles.css?v=c76013a7">
-    <link rel="stylesheet" href="../../css/mobile.css?v=c3d4ded5">
-    <link rel="stylesheet" href="../../css/ads.css?v=1f4810d3">
-
-    <style>
-        .pharmacy-page { --health: var(--accent); --health-soft: var(--accent-soft); --warning-soft: var(--paper-soft); }
-        .pharmacy-hero { padding: 54px 0 24px; }
-        .pharmacy-hero-card { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(280px,.9fr); gap: clamp(24px,4vw,44px); align-items: stretch; background: radial-gradient(circle at 88% 8%, rgba(46,125,50,.08), transparent 22rem), radial-gradient(circle at 6% 0%, rgba(46,125,50,.05), transparent 20rem), rgba(255,255,255,.92); border: 1px solid var(--line); border-radius: 8px; padding: clamp(28px,5vw,58px); box-shadow: var(--shadow); }
-        .pharmacy-hero-card h1 { max-width: 840px; font-size: clamp(42px,6.3vw,78px); }
-        .hero-trust-panel, .content-panel, .map-panel, .sticky-panel, .pharmacy-card, .calendar-cta { background: rgba(255,255,255,.92); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow-soft); }
-        .hero-trust-panel { padding: 22px; display: grid; gap: 14px; }
-        .trust-item { display: grid; grid-template-columns: 42px 1fr; gap: 12px; padding: 14px; border-radius: 8px; background: var(--paper-soft); border: 1px solid var(--line); }
-        .trust-icon, .pharmacy-icon { width: 42px; height: 42px; border-radius: 8px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent-soft), var(--paper-soft)); color: var(--accent); border: 1px solid var(--line); font-weight: 950; }
-        .trust-item strong { display: block; color: var(--brand); margin-bottom: 3px; }
-        .trust-item span { color: var(--muted); line-height: 1.45; font-size: 14px; }
-        .urgent-strip, .calendar-cta { margin: 22px 0 0; display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; background: var(--brand); color: white; border-radius: 8px; padding: 20px clamp(20px,4vw,30px); box-shadow: var(--shadow-card); }
-        .calendar-cta { background: linear-gradient(135deg, var(--accent), var(--brand)); }
-        .urgent-strip strong, .calendar-cta strong { display: block; margin-bottom: 4px; font-size: 18px; }
-        .urgent-strip span, .calendar-cta span { color: rgba(255,255,255,.78); line-height: 1.5; }
-        .urgent-strip a, .calendar-cta a { background: white; color: var(--brand); border-radius: 999px; padding: 12px 16px; font-weight: 950; white-space: nowrap; }
-        .pharmacy-layout { display: grid; grid-template-columns: minmax(0,1fr) 340px; gap: 24px; align-items: start; }
-        .content-panel { padding: clamp(22px,4vw,34px); }
-        .content-panel + .content-panel, .map-panel { margin-top: 22px; }
-        .panel-heading, .map-panel-head { display: flex; justify-content: space-between; gap: 18px; align-items: end; margin-bottom: 20px; }
-        .panel-heading h2, .map-panel-head h2 { margin: 0; color: var(--brand); font-family: inherit; font-size: clamp(30px,4vw,46px); line-height: 1; letter-spacing: -.045em; }
-        .panel-heading p, .map-panel-head p, .content-panel p { color: var(--muted); line-height: 1.7; }
-        .quick-action-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
-        .quick-action { padding: 18px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper-soft); }
-        .quick-action span { display: inline-flex; margin-bottom: 12px; color: var(--gold); font-size: 12px; font-weight: 950; text-transform: uppercase; letter-spacing: .06em; }
-        .quick-action strong { display: block; color: var(--brand); font-size: 18px; letter-spacing: -.025em; margin-bottom: 7px; }
-        .quick-action small { color: var(--muted); line-height: 1.5; }
-        .map-panel { overflow: hidden; }
-        .map-panel-head { padding: clamp(22px,4vw,34px) clamp(22px,4vw,34px) 0; }
-        .map-actions { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 clamp(22px,4vw,34px) 22px; }
-        .map-actions a { display: inline-flex; min-height: 42px; padding: 10px 14px; border-radius: 999px; background: var(--brand); color: white; font-weight: 950; font-size: 14px; }
-        .map-actions a.secondary-map-link { background: var(--paper-soft); color: var(--brand); border: 1px solid var(--line); }
-        .google-map-frame { width: 100%; height: 520px; border: 0; display: block; background: var(--paper-soft); }
-        .map-note { padding: 14px clamp(22px,4vw,34px) 24px; color: var(--muted); font-size: 13px; line-height: 1.55; background: linear-gradient(180deg, rgba(251,248,242,.65), rgba(255,255,255,.9)); }
-        .pharmacy-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
-        .pharmacy-card { padding: 20px; display: grid; gap: 14px; }
-        .pharmacy-card-top { display: grid; grid-template-columns: 48px 1fr; gap: 13px; }
-        .pharmacy-icon { width: 48px; height: 48px; border-radius: 8px; }
-        .pharmacy-card h3 { margin: 0 0 5px; color: var(--brand); letter-spacing: -.025em; }
-        .pharmacy-card p { margin: 0; color: var(--muted); line-height: 1.55; font-size: 14px; }
-        .pharmacy-card-actions { display: flex; flex-wrap: wrap; gap: 9px; }
-        .phone-link, .detail-link { display: inline-flex; width: fit-content; align-items: center; gap: 8px; padding: 10px 13px; border-radius: 999px; font-weight: 950; font-size: 14px; }
-        .phone-link { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--line); }
-        .detail-link { background: var(--brand); color: white; }
-        .sticky-panel { position: sticky; top: 98px; padding: 20px; display: grid; gap: 16px; }
-        .sticky-panel h2 { margin: 0; color: var(--brand); font-family: inherit; font-size: 32px; letter-spacing: -.04em; line-height: 1; }
-        .official-link-list { display: grid; gap: 10px; }
-        .official-link-list a { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 13px 14px; border-radius: 8px; background: var(--paper-soft); border: 1px solid var(--line); color: var(--brand); font-size: 14px; font-weight: 950; }
-        .source-note { background: var(--warning-soft); border: 1px solid var(--line); color: var(--muted); border-radius: 8px; padding: 15px; line-height: 1.55; font-size: 14px; }
-        .breadcrumb-mini { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; color: var(--muted); font-size: 13px; font-weight: 800; }
-        .breadcrumb-mini a { color: var(--brand); }
-        @media(max-width:980px) { .pharmacy-hero-card, .pharmacy-layout { grid-template-columns: 1fr; } .sticky-panel { position: static; } .map-panel-head { display: block; } .google-map-frame { height: 440px; } }
-        @media(max-width:760px) { .pharmacy-hero { padding-top: 34px; } .pharmacy-hero-card { border-radius: 8px; } .urgent-strip, .calendar-cta, .quick-action-grid, .pharmacy-grid { grid-template-columns: 1fr; } .urgent-strip a, .calendar-cta a, .map-actions a { width: 100%; text-align: center; } .panel-heading { display: block; } .google-map-frame { height: 380px; } }
-    </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://alhaurinaldia.es/guia-util/farmacias/#webpage",
-          "url": "https://alhaurinaldia.es/guia-util/farmacias/",
-          "name": "Farmacia de guardia hoy en Alhaurín el Grande",
-          "description": "Hoy, 23 de noviembre, la farmacia de guardia en Alhaurín el Grande es José Luis Quintela (Avenida de la Libertad nº 89). Teléfono y calendario completo.",
-          "inLanguage": "es-ES",
-          "isPartOf": {
-            "@type": "WebSite",
-            "name": "Alhaurín al Día",
-            "url": "https://alhaurinaldia.es/"
-          },
-          "about": {
-            "@type": "Place",
-            "name": "Alhaurín el Grande"
-          }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://alhaurinaldia.es/" },
-            { "@type": "ListItem", "position": 2, "name": "Guía útil", "item": "https://alhaurinaldia.es/guia-util/" },
-            { "@type": "ListItem", "position": 3, "name": "Farmacias", "item": "https://alhaurinaldia.es/guia-util/farmacias/" }
-          ]
-        },
-        {
-          "@type": "ItemList",
-          "@id": "https://alhaurinaldia.es/guia-util/farmacias/#directorio-farmacias",
-          "name": "Farmacias de Alhaurín el Grande",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "item": { "@type": "Pharmacy", "name": "Farmacia Brenan", "address": "Avda. Gerald Brenan nº 2, Alhaurín el Grande", "telephone": "+34952490241", "url": "https://alhaurinaldia.es/guia-util/farmacias/farmacia-brenan/" } },
-            { "@type": "ListItem", "position": 2, "item": { "@type": "Pharmacy", "name": "Farmacia del Centro", "address": "Avda. de la Constitución nº 11, Alhaurín el Grande", "telephone": "+34952596022", "url": "https://alhaurinaldia.es/guia-util/farmacias/farmacia-del-centro/" } },
-            { "@type": "ListItem", "position": 3, "item": { "@type": "Pharmacy", "name": "Mª Teresa Quintela", "address": "C/ Virgen de Gracia nº 4, Alhaurín el Grande", "telephone": "+34952596207", "url": "https://alhaurinaldia.es/guia-util/farmacias/maria-teresa-quintela/" } },
-            { "@type": "ListItem", "position": 4, "item": { "@type": "Pharmacy", "name": "Farmacia La Variante", "address": "Avda. Blas Infante nº 25, Alhaurín el Grande", "telephone": "+34952594556", "url": "https://alhaurinaldia.es/guia-util/farmacias/farmacia-la-variante/" } },
-            { "@type": "ListItem", "position": 5, "item": { "@type": "Pharmacy", "name": "José Luis Quintela", "address": "Avenida de la Libertad nº 89, Alhaurín el Grande", "telephone": "+34952596207", "url": "https://alhaurinaldia.es/guia-util/farmacias/jose-luis-quintela/" } },
-            { "@type": "ListItem", "position": 6, "item": { "@type": "Pharmacy", "name": "Farmacia Lourdes Quintela", "address": "Ctra. Cártama, Alhaurín el Grande", "telephone": "+34952490013", "url": "https://alhaurinaldia.es/guia-util/farmacias/farmacia-lourdes-quintela/" } },
-            { "@type": "ListItem", "position": 7, "item": { "@type": "Pharmacy", "name": "Farmacia Camino de Málaga", "address": "Camino de Málaga, Alhaurín el Grande", "telephone": "+34952490034", "url": "https://alhaurinaldia.es/guia-util/farmacias/farmacia-camino-de-malaga/" } }
-          ]
-        }
-      ]
-    }
-    </script>
-<script type="application/ld+json" id="ld-farmacias-guardia">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://alhaurinaldia.es/"},{"@type":"ListItem","position":2,"name":"Guía útil","item":"https://alhaurinaldia.es/guia-util/"},{"@type":"ListItem","position":3,"name":"Farmacias","item":"https://alhaurinaldia.es/guia-util/farmacias/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué farmacia está de guardia hoy en Alhaurín el Grande?","acceptedAnswer":{"@type":"Answer","text":"Hoy, 23 de noviembre de 2026, la farmacia de guardia en Alhaurín el Grande es José Luis Quintela, en Avenida de la Libertad nº 89 (teléfono 952 59 62 07). La guardia es orientativa, de 9:30 a 9:30 del día siguiente; confirma siempre en la fuente oficial antes de desplazarte, especialmente de noche, fines de semana o festivos."}}]},{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Pharmacy","name":"Farmacia Brenan","url":"https://alhaurinaldia.es/guia-util/farmacias/farmacia-brenan/","telephone":"+34952490241","address":{"@type":"PostalAddress","streetAddress":"Avda. Gerald Brenan nº 2","addressLocality":"Alhaurín el Grande","addressRegion":"Málaga","addressCountry":"ES"},"additionalProperty":{"@type":"PropertyValue","name":"Estado de guardia hoy","value":"No está de guardia hoy"}}},{"@type":"ListItem","position":2,"item":{"@type":"Pharmacy","name":"Farmacia del Centro","url":"https://alhaurinaldia.es/guia-util/farmacias/farmacia-del-centro/","telephone":"+34952596022","address":{"@type":"PostalAddress","streetAddress":"Avda. de la Constitución nº 11","addressLocality":"Alhaurín el Grande","addressRegion":"Málaga","addressCountry":"ES"},"additionalProperty":{"@type":"PropertyValue","name":"Estado de guardia hoy","value":"No está de guardia hoy"}}},{"@type":"ListItem","position":3,"item":{"@type":"Pharmacy","name":"Mª Teresa Quintela","url":"https://alhaurinaldia.es/guia-util/farmacias/maria-teresa-quintela/","telephone":"+34952596207","address":{"@type":"PostalAddress","streetAddress":"C/ Virgen de Gracia nº 4","addressLocality":"Alhaurín el Grande","addressRegion":"Málaga","addressCountry":"ES"},"additionalProperty":{"@type":"PropertyValue","name":"Estado de guardia hoy","value":"No está de guardia hoy"}}},{"@type":"ListItem","position":4,"item":{"@type":"Pharmacy","name":"Farmacia La Variante","url":"https://alhaurinaldia.es/guia-util/farmacias/farmacia-la-variante/","telephone":"+34952594556","address":{"@type":"PostalAddress","streetAddress":"Avda. Blas Infante nº 25","addressLocality":"Alhaurín el Grande","addressRegion":"Málaga","addressCountry":"ES"},"additionalProperty":{"@type":"PropertyValue","name":"Estado de guardia hoy","value":"No está de guardia hoy"}}},{"@type":"ListItem","position":5,"item":{"@type":"Pharmacy","name":"José Luis Quintela","url":"https://alhaurinaldia.es/guia-util/farmacias/jose-luis-quintela/","telephone":"+34952596207","address":{"@type":"PostalAddress","streetAddress":"Avenida de la Libertad nº 89","addressLocality":"Alhaurín el Grande","addressRegion":"Málaga","addressCountry":"ES"},"additionalProperty":{"@type":"PropertyValue","name":"Estado de guardia hoy","value":"De guardia hoy"}}},{"@type":"ListItem","position":6,"item":{"@type":"Pharmacy","name":"Farmacia Lourdes Quintela","url":"https://alhaurinaldia.es/guia-util/farmacias/farmacia-lourdes-quintela/","telephone":"+34952490013","address":{"@type":"PostalAddress","streetAddress":"Ctra. Cártama","addressLocality":"Alhaurín el Grande","addressRegion":"Málaga","addressCountry":"ES"},"additionalProperty":{"@type":"PropertyValue","name":"Estado de guardia hoy","value":"No está de guardia hoy"}}},{"@type":"ListItem","position":7,"item":{"@type":"Pharmacy","name":"Farmacia Camino de Málaga","url":"https://alhaurinaldia.es/guia-util/farmacias/farmacia-camino-de-malaga/","telephone":"+34952490034","address":{"@type":"PostalAddress","streetAddress":"Camino de Málaga","addressLocality":"Alhaurín el Grande","addressRegion":"Málaga","addressCountry":"ES"},"additionalProperty":{"@type":"PropertyValue","name":"Estado de guardia hoy","value":"No está de guardia hoy"}}}]}]}</script>    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc9eeda336f943ca87175a3b83faee35"}'></script>
+    <meta name="theme-color" content="#24402B">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/css/styles.css?v=c76013a7">
+    <link rel="stylesheet" href="/css/mobile.css?v=c3d4ded5">
+    <link rel="stylesheet" href="/css/ads.css?v=1f4810d3">
+    <link rel="stylesheet" href="/css/guia.css?v=031d0742">
     <!-- alh-consent:start -->
     <meta name="google-adsense-account" content="ca-pub-3892603819928798">
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
     <!-- CMP: pegar aquí el script del gestor de consentimiento certificado por Google (TCF v2.2). Ver docs/ARQUITECTURA.md, apartado «Consentimiento». -->
     <script src="/js/consent.js?v=4281d0c1" defer></script>
     <!-- alh-consent:end -->
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos",
+  "description": "Las farmacias de Alhaurín el Grande, con su dirección, teléfono y próximas guardias según el calendario municipal, y cómo funcionan los turnos de guardia.",
+  "inLanguage": "es-ES",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://alhaurinaldia.es/guia-util/farmacias/"
+  },
+  "datePublished": "2026-11-23",
+  "dateModified": "2026-11-23",
+  "author": {
+    "@type": "Organization",
+    "name": "Alhaurín al Día",
+    "url": "https://alhaurinaldia.es"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alhaurín al Día",
+    "url": "https://alhaurinaldia.es",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://alhaurinaldia.es/assets/favicon.svg"
+    }
+  },
+  "image": [
+    "https://alhaurinaldia.es/assets/favicon.svg"
+  ],
+  "about": {
+    "@type": "Place",
+    "name": "Alhaurín el Grande"
+  },
+  "articleSection": "Salud"
+}</script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué farmacia está de guardia hoy en Alhaurín el Grande?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hoy, lunes 23 de noviembre de 2026, está de guardia José Luis Quintela, en Avenida de la Libertad nº 89 (teléfono 952 59 62 07)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿A qué hora empieza y termina la guardia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Según el calendario municipal, cada turno de guardia va de 9:30 a 9:30 del día siguiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué farmacias están de guardia en noviembre?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En noviembre hacen guardia: Farmacia Brenan (3 días), Farmacia del Centro (6 días), Mª Teresa Quintela (7 días), Farmacia La Variante (3 días), José Luis Quintela (2 días), Farmacia Lourdes Quintela (5 días) y Farmacia Camino de Málaga (4 días)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde puedo comprobar la guardia antes de ir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En la página de farmacias del Ayuntamiento de Alhaurín el Grande y en el buscador de guardias del Colegio de Farmacéuticos de Málaga, enlazados en las fuentes de esta guía. También puedes llamar directamente a la farmacia."
+      }
+    }
+  ]
+}</script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://alhaurinaldia.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guía útil",
+      "item": "https://alhaurinaldia.es/guia-util/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos",
+      "item": "https://alhaurinaldia.es/guia-util/farmacias/"
+    }
+  ]
+}</script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc9eeda336f943ca87175a3b83faee35"}'></script>
 </head>
-
-<body class="pharmacy-page">
-    <div class="topbar">
-        <div class="container">
-            <span>Guía local independiente de Alhaurín el Grande</span>
-            <span>Salud · Farmacias · Guardias</span>
-        </div>
-    </div>
-
+<body id="top">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header>
         <div class="container">
             <nav aria-label="Navegación principal">
@@ -160,7 +144,7 @@
                 <div class="nav-links" id="main-menu">
                     <a href="/#hoy">Hoy</a>
                     <a href="/agenda/">Agenda</a>
-                    <a href="/guias/">Guías</a>
+                    <a href="/guia-util/">Guía útil</a>
                     <a href="/comercios/">Comercios</a>
                     <a href="/noticias/">Actualidad</a>
                     <a href="/anunciarse/" class="nav-cta">Anúnciate</a>
@@ -169,87 +153,121 @@
             </nav>
         </div>
     </header>
+    <main id="contenido" class="alh-main">
 
-    <main>
-        <section class="page-compact-header">
-            <div class="container">
-                <div class="breadcrumb-mini"><a href="../../">Inicio</a> / <a href="../">Guía útil</a> / Farmacias</div>
-                <div class="page-header-shell">
-                    <div>
-                        <span class="section-kicker">Salud en Alhaurín el Grande</span>
-                        <h1>Farmacias de guardia en Alhaurín el Grande</h1>
-                    </div>
-                    <div style="display:flex; gap:6px; flex-wrap:wrap;">
-                        <a class="btn btn-secondary" href="calendario/">📅 Calendario</a>
-                        <a class="btn btn-secondary" href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a>
-                    </div>
+        <article class="alh-guide">
+            <header class="alh-page-header">
+                <div class="container alh-narrow">
+                    <nav class="alh-breadcrumbs" aria-label="Migas de pan"><a href="/">Inicio</a><span class="sep" aria-hidden="true">›</span><a href="/guia-util/">Guía útil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos</span></nav>
+                    <span class="alh-kicker">Guía · Salud</span>
+                    <h1>Farmacias de Alhaurín el Grande: guardias, direcciones y teléfonos</h1>
+                    <p class="alh-updated">🗓️ Actualizado el 23 de noviembre de 2026</p>
+                    <p class="alh-lead">Las farmacias de Alhaurín el Grande, con su dirección, teléfono y próximas guardias según el calendario municipal, y cómo funcionan los turnos de guardia.</p>
+                    
                 </div>
-
-                <div class="calendar-cta" style="margin-top:12px;">
-                    <div id="today-guard-strip"><strong>Hoy: guardia en José Luis Quintela</strong><span>Avenida de la Libertad nº 89 · 952 59 62 07 · Guardia de 9:30 a 9:30.</span></div>
-                    <a href="calendario/">Ver calendario</a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container pharmacy-layout">
-                <div>
-                    <article class="content-panel">
-                        <div class="panel-heading">
-                            <div><span class="section-kicker">Consulta rápida</span><h2>Lo esencial</h2></div>
-                            <p>Accesos rápidos a calendario propio, fuentes oficiales y emergencias.</p>
-                        </div>
-                        <div class="quick-action-grid">
-                            <a class="quick-action" href="calendario/"><span>01</span><strong>Calendario de guardias</strong><small>Nombre de farmacia, teléfono y enlace a ficha.</small></a>
-                            <a class="quick-action" href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer"><span>02</span><strong>Calendario municipal</strong><small>Consulta el recurso publicado por el Ayuntamiento.</small></a>
-                            <a class="quick-action" href="tel:112"><span>03</span><strong>Emergencias: 112</strong><small>Para urgencias reales.</small></a>
-                        </div>
-                    </article>
-
-                    <article class="map-panel" id="mapa-farmacias">
-                        <div class="map-panel-head"><div><span class="section-kicker">Mapa local</span><h2>Mapa de farmacias</h2><p>Localiza rápidamente las farmacias de Alhaurín el Grande mediante Google Maps embebido.</p></div></div>
-                        <div class="map-actions">
-                            <a href="https://www.google.com/maps/search/farmacias+Alhaur%C3%ADn+el+Grande" target="_blank" rel="noopener noreferrer">Abrir mapa completo</a>
-                            <a class="secondary-map-link" href="calendario/">Ver calendario</a>
-                        </div>
-                        <iframe class="google-map-frame" title="Mapa de farmacias en Alhaurín el Grande" src="https://www.google.com/maps?q=farmacias%20Alhaur%C3%ADn%20el%20Grande&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-                        <div class="map-note">El mapa depende de los resultados actualizados de Google Maps. Para guardias, horarios o incidencias, consulta siempre las fuentes oficiales.</div>
-                    </article>
-
-                    <article class="content-panel">
-                        <div class="panel-heading">
-                            <div><span class="section-kicker">Directorio local</span><h2>Farmacias de Alhaurín el Grande</h2></div>
-                            <p>Cada farmacia cuenta con ficha propia preparada para mostrar estado de guardia.</p>
-                        </div>
-                        <div class="pharmacy-grid">
-                            <article class="pharmacy-card"><div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia Brenan</h3><p>Avda. Gerald Brenan nº 2</p></div></div><div class="pharmacy-card-actions"><a class="detail-link" href="farmacia-brenan/">Ver ficha</a><a class="phone-link" href="tel:+34952490241">952 49 02 41</a></div></article>
-                            <article class="pharmacy-card"><div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia del Centro</h3><p>Avda. de la Constitución nº 11</p></div></div><div class="pharmacy-card-actions"><a class="detail-link" href="farmacia-del-centro/">Ver ficha</a><a class="phone-link" href="tel:+34952596022">952 59 60 22</a></div></article>
-                            <article class="pharmacy-card"><div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Mª Teresa Quintela</h3><p>C/ Virgen de Gracia nº 4</p></div></div><div class="pharmacy-card-actions"><a class="detail-link" href="maria-teresa-quintela/">Ver ficha</a><a class="phone-link" href="tel:+34952596207">952 59 62 07</a></div></article>
-                            <article class="pharmacy-card"><div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia La Variante</h3><p>Avda. Blas Infante nº 25</p></div></div><div class="pharmacy-card-actions"><a class="detail-link" href="farmacia-la-variante/">Ver ficha</a><a class="phone-link" href="tel:+34952594556">952 59 45 56</a></div></article>
-                            <article class="pharmacy-card"><div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>José Luis Quintela</h3><p>Avenida de la Libertad nº 89</p></div></div><div class="pharmacy-card-actions"><a class="detail-link" href="jose-luis-quintela/">Ver ficha</a><a class="phone-link" href="tel:+34952596207">952 59 62 07</a></div></article>
-                            <article class="pharmacy-card"><div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia Lourdes Quintela</h3><p>Ctra. Cártama</p></div></div><div class="pharmacy-card-actions"><a class="detail-link" href="farmacia-lourdes-quintela/">Ver ficha</a><a class="phone-link" href="tel:+34952490013">952 49 00 13</a></div></article>
-                            <article class="pharmacy-card"><div class="pharmacy-card-top"><span class="pharmacy-icon">+</span><div><h3>Farmacia Camino de Málaga</h3><p>Camino de Málaga</p></div></div><div class="pharmacy-card-actions"><a class="detail-link" href="farmacia-camino-de-malaga/">Ver ficha</a><a class="phone-link" href="tel:+34952490034">952 49 00 34</a></div></article>
-                        </div>
-                    </article>
-                </div>
-
-                <aside class="sticky-panel">
-                    <span class="section-kicker">Fuentes</span>
-                    <h2>Enlaces oficiales</h2>
-                    <p>Alhaurín al Día ordena la información, pero la verificación debe hacerse en fuentes oficiales.</p>
-                    <div class="official-link-list">
-                        <a href="calendario/"><span>Calendario propio</span><span>→</span></a>
-                        <a href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener noreferrer"><span>Ayuntamiento</span><span>↗</span></a>
-                        <a href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener noreferrer"><span>Buscador oficial</span><span>↗</span></a>
-                    </div>
-                    <div class="source-note"><strong>Importante:</strong> los datos pueden cambiar. Esta página no sustituye al calendario oficial, a Google Maps ni a la atención sanitaria profesional.</div>
-                    <div class="ad-slot ad-slot-sidebar">Publicidad local<br>Farmacia, clínica, salud o comercio cercano</div>
+            </header>
+            <div class="container alh-narrow">
+                <aside class="alh-key-data" aria-labelledby="datos-clave">
+                    <h2 id="datos-clave">Datos clave</h2>
+                    <dl>
+                        <dt>Farmacias en el municipio</dt><dd>7</dd>
+                        <dt>De guardia hoy</dt><dd>José Luis Quintela · Avenida de la Libertad nº 89</dd>
+                        <dt>Turno de guardia</dt><dd>De 9:30 a 9:30 del día siguiente</dd>
+                        <dt>Calendario</dt><dd>Calendario municipal de guardias de 2026</dd>
+                        <dt>Urgencias</dt><dd>112</dd>
+                    </dl>
                 </aside>
+                <div class="alh-prose">
+                <section class="alh-guide-section">
+                    <h2>Farmacia de guardia hoy y esta semana</h2>
+                    <p>Hoy, lunes 23 de noviembre, está de guardia <strong>José Luis Quintela</strong>, en Avenida de la Libertad nº 89 (teléfono <a href="tel:+34952596207">952 59 62 07</a>). Tienes la información del día siempre actualizada en la página de la <a href="/farmacia-de-guardia/">farmacia de guardia de hoy</a>.</p>
+<ul>
+<li>Lunes 23 de noviembre: <a href="/guia-util/farmacias/jose-luis-quintela/">José Luis Quintela</a> (Avenida de la Libertad nº 89)</li>
+<li>Martes 24 de noviembre: <a href="/guia-util/farmacias/jose-luis-quintela/">José Luis Quintela</a> (Avenida de la Libertad nº 89)</li>
+<li>Miércoles 25 de noviembre: <a href="/guia-util/farmacias/farmacia-camino-de-malaga/">Farmacia Camino de Málaga</a> (Camino de Málaga)</li>
+<li>Jueves 26 de noviembre: <a href="/guia-util/farmacias/farmacia-camino-de-malaga/">Farmacia Camino de Málaga</a> (Camino de Málaga)</li>
+<li>Viernes 27 de noviembre: <a href="/guia-util/farmacias/farmacia-del-centro/">Farmacia del Centro</a> (Avda. de la Constitución nº 11)</li>
+<li>Sábado 28 de noviembre: <a href="/guia-util/farmacias/farmacia-del-centro/">Farmacia del Centro</a> (Avda. de la Constitución nº 11)</li>
+<li>Domingo 29 de noviembre: <a href="/guia-util/farmacias/farmacia-la-variante/">Farmacia La Variante</a> (Avda. Blas Infante nº 25)</li>
+</ul>
+<p>Consulta el <a href="/guia-util/farmacias/calendario/">calendario completo de guardias</a> para ver cualquier otro día del año.</p>
+                </section>
+                <section class="alh-guide-section">
+                    <h2>Las farmacias de Alhaurín el Grande</h2>
+                    <p>En Alhaurín el Grande hay 7 farmacias. Cada una tiene su ficha con la dirección, el teléfono, el enlace al mapa y todas sus próximas guardias.</p>
+<ul>
+<li><strong><a href="/guia-util/farmacias/farmacia-brenan/">Farmacia Brenan</a></strong>: Avda. Gerald Brenan nº 2 · <a href="tel:+34952490241">952 49 02 41</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia%20Brenan%2C%20Avda.%20Gerald%20Brenan%20n%C2%BA%202%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">mapa</a>. Próximas guardias: del lunes 7 de diciembre al martes 8 de diciembre y miércoles 16 de diciembre.</li>
+<li><strong><a href="/guia-util/farmacias/farmacia-del-centro/">Farmacia del Centro</a></strong>: Avda. de la Constitución nº 11, junto al Centro de Salud · <a href="tel:+34952596022">952 59 60 22</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia%20del%20Centro%2C%20Avda.%20de%20la%20Constituci%C3%B3n%20n%C2%BA%2011%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">mapa</a>. Próximas guardias: del viernes 27 de noviembre al sábado 28 de noviembre y lunes 28 de diciembre.</li>
+<li><strong><a href="/guia-util/farmacias/maria-teresa-quintela/">Mª Teresa Quintela</a></strong>: C/ Virgen de Gracia nº 4 · <a href="tel:+34952596207">952 59 62 07</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=M%C2%AA%20Teresa%20Quintela%2C%20C%2F%20Virgen%20de%20Gracia%20n%C2%BA%204%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">mapa</a>. Próximas guardias: del lunes 21 de diciembre al martes 22 de diciembre y miércoles 30 de diciembre.</li>
+<li><strong><a href="/guia-util/farmacias/farmacia-la-variante/">Farmacia La Variante</a></strong>: Avda. Blas Infante nº 25 · <a href="tel:+34952594556">952 59 45 56</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia%20La%20Variante%2C%20Avda.%20Blas%20Infante%20n%C2%BA%2025%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">mapa</a>. Próximas guardias: del domingo 29 de noviembre al martes 1 de diciembre.</li>
+<li><strong><a href="/guia-util/farmacias/jose-luis-quintela/">José Luis Quintela</a></strong>: Avenida de la Libertad nº 89 · <a href="tel:+34952596207">952 59 62 07</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Jos%C3%A9%20Luis%20Quintela%2C%20Avenida%20de%20la%20Libertad%20n%C2%BA%2089%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">mapa</a>. Próximas guardias: del lunes 23 de noviembre al martes 24 de noviembre y miércoles 2 de diciembre.</li>
+<li><strong><a href="/guia-util/farmacias/farmacia-lourdes-quintela/">Farmacia Lourdes Quintela</a></strong>: Ctra. Cártama · <a href="tel:+34952490013">952 49 00 13</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia%20Lourdes%20Quintela%2C%20Ctra.%20C%C3%A1rtama%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">mapa</a>. Próximas guardias: del lunes 14 de diciembre al martes 15 de diciembre y miércoles 23 de diciembre.</li>
+<li><strong><a href="/guia-util/farmacias/farmacia-camino-de-malaga/">Farmacia Camino de Málaga</a></strong>: Camino de Málaga · <a href="tel:+34952490034">952 49 00 34</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia%20Camino%20de%20M%C3%A1laga%2C%20Camino%20de%20M%C3%A1laga%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">mapa</a>. Próximas guardias: del miércoles 25 de noviembre al jueves 26 de noviembre y viernes 4 de diciembre.</li>
+</ul>
+                </section>
+                <div class="alh-ad alh-ad-contenido" data-ad-ubicacion="guia-mitad" role="complementary" aria-label="Publicidad"><span class="alh-ad-label">Publicidad</span></div>
+                <section class="alh-guide-section">
+                    <h2>Cómo funcionan las guardias</h2>
+                    <p>Las farmacias del municipio se turnan para que siempre haya una abierta fuera del horario comercial. Cada turno de guardia va de 9:30 a 9:30 del día siguiente, de modo que, de madrugada, sigue de guardia la farmacia del día anterior hasta las 9:30. Normalmente una misma farmacia cubre varios días seguidos.</p>
+<p>En noviembre el calendario reparte las guardias así: Farmacia Brenan (3 días), Farmacia del Centro (6 días), Mª Teresa Quintela (7 días), Farmacia La Variante (3 días), José Luis Quintela (2 días), Farmacia Lourdes Quintela (5 días) y Farmacia Camino de Málaga (4 días).</p>
+<p>El calendario de esta guía se elabora con el que publica el Ayuntamiento de Alhaurín el Grande. Como puede haber cambios de última hora, antes de desplazarte llama a la farmacia o consulta la <a href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener">información oficial</a>. En caso de urgencia sanitaria, llama al 112.</p>
+                </section>
+                </div>
             </div>
-        </section>
+            <div class="container alh-narrow">
+            <section class="alh-faq alh-section">
+                <h2 class="alh-h2">Preguntas frecuentes</h2>
+                <details>
+                        <summary>¿Qué farmacia está de guardia hoy en Alhaurín el Grande?</summary>
+                        <p>Hoy, lunes 23 de noviembre de 2026, está de guardia José Luis Quintela, en Avenida de la Libertad nº 89 (teléfono 952 59 62 07).</p>
+                    </details>
+                    <details>
+                        <summary>¿A qué hora empieza y termina la guardia?</summary>
+                        <p>Según el calendario municipal, cada turno de guardia va de 9:30 a 9:30 del día siguiente.</p>
+                    </details>
+                    <details>
+                        <summary>¿Qué farmacias están de guardia en noviembre?</summary>
+                        <p>En noviembre hacen guardia: Farmacia Brenan (3 días), Farmacia del Centro (6 días), Mª Teresa Quintela (7 días), Farmacia La Variante (3 días), José Luis Quintela (2 días), Farmacia Lourdes Quintela (5 días) y Farmacia Camino de Málaga (4 días).</p>
+                    </details>
+                    <details>
+                        <summary>¿Dónde puedo comprobar la guardia antes de ir?</summary>
+                        <p>En la página de farmacias del Ayuntamiento de Alhaurín el Grande y en el buscador de guardias del Colegio de Farmacéuticos de Málaga, enlazados en las fuentes de esta guía. También puedes llamar directamente a la farmacia.</p>
+                    </details>
+            </section>
+            <section class="alh-section">
+                <h2 class="alh-h2">Fuentes oficiales</h2>
+                <div class="alh-card">
+                    <p>Esta guía se ha elaborado con información de estas fuentes. Si un dato no coincide, prevalece siempre la fuente oficial.</p>
+                    <ul class="alh-sources">
+                        <li><a href="https://alhaurinelgrande.es/farmacias/" target="_blank" rel="noopener">Farmacias de guardia (Ayuntamiento)</a></li>
+                        <li><a href="https://farmaciasguardia.farmaceuticos.com/web_guardias/publico/Provincia_pNew.asp?id=29" target="_blank" rel="noopener">Buscador de Colegio de Farmacéuticos</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="alh-section">
+                <h2 class="alh-h2">Guías relacionadas</h2>
+                <div class="alh-grid alh-grid-3">
+                    <a class="alh-card alh-guide-card" href="/guia-util/telefonos/">
+                        <span class="alh-tag">Servicios</span>
+                        <h3>Teléfonos útiles y emergencias</h3>
+                        <p>Directorio de números de teléfono esenciales para incidencias, seguridad ciudadana, ayuntamiento y servicios de guardia.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/movilidad/">
+                        <span class="alh-tag">Transporte</span>
+                        <h3>Autobuses en Alhaurín el Grande: líneas, paradas y cómo llegar a Málaga</h3>
+                        <p>Las líneas de autobús metropolitano que conectan Alhaurín el Grande con Málaga, Coín y el Hospital del Valle del Guadalhorce, con sus paradas principales, duración aproximada y enlaces a los horarios oficiales del Consorcio.</p>
+                    </a>
+                    <a class="alh-card alh-guide-card" href="/guia-util/tramites/">
+                        <span class="alh-tag">Trámites</span>
+                        <h3>Trámites municipales y cita previa</h3>
+                        <p>Accesos directos para tramitar el empadronamiento, solicitar cita previa, pagar impuestos y realizar gestiones con la Sede Electrónica.</p>
+                    </a>
+                </div>
+            </section>
+                <p class="alh-more"><a href="/guia-util/">← Toda la guía útil de Alhaurín el Grande</a></p>
+            </div>
+        </article>
     </main>
-
     <footer class="site-footer">
         <div class="container">
             <div class="footer-top">
@@ -280,8 +298,8 @@
                 <div class="footer-nav-col">
                     <h3 class="footer-heading">Guías y servicios</h3>
                     <ul class="footer-menu">
-                        <li><a href="/guias/">Guías prácticas</a></li>
                         <li><a href="/guia-util/">Guía útil</a></li>
+                        <li><a href="/guia-util/farmacias/calendario/">Calendario de farmacias</a></li>
                         <li><a href="/comercios/">Comercios</a></li>
                         <li><a href="/boletin-oficial/">Boletín Oficial (BOP)</a></li>
                         <li><a href="/noticias/">Actualidad</a></li>
@@ -313,8 +331,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="../../js/app.js?v=36660541" defer></script>
+    <script src="/js/app.js?v=36660541" defer></script>
+    
 </body>
-
 </html>

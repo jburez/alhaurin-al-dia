@@ -146,16 +146,16 @@ function renderGuias() {
                         </ul>
                     </div>`).join('\n                    ');
   } else {
-    // Mientras no haya guías publicadas, accesos a la guía útil (páginas ya indexadas).
-    const util = readJson(path.join(ROOT, 'data', 'guia-util.json'), []).slice(0, 8);
-    grid = util.map((item) => `<a class="alh-card alh-guide-card" href="${escapeHtml(item.pagina || item.enlace)}">
-                        <h3>${escapeHtml(item.icono || '')} ${escapeHtml(item.titulo)}</h3>
-                        <p>${escapeHtml(item.descripcion)}</p>
+    // Mientras no haya guías publicadas, las primeras guías de data/guias.json.
+    const util = loadGuias().filter((g) => g.slug !== 'ejemplo-plantilla').slice(0, 8);
+    grid = util.map((item) => `<a class="alh-card alh-guide-card" href="${guideUrl(item)}">
+                        <h3>${escapeHtml(item.titulo)}</h3>
+                        <p>${escapeHtml(item.resumen)}</p>
                     </a>`).join('\n                    ');
   }
   return `<section class="alh-section" aria-labelledby="guias-titulo">
             <div class="container">
-                <div class="alh-section-head"><h2 class="alh-h2" id="guias-titulo">Guías prácticas</h2><a href="/guias/">Todas las guías →</a></div>
+                <div class="alh-section-head"><h2 class="alh-h2" id="guias-titulo">Guías prácticas</h2><a href="/guia-util/">Toda la guía útil →</a></div>
                 <p>Trámites, salud, colegios, transporte y servicios de Alhaurín el Grande explicados paso a paso, con enlace a las fuentes oficiales.</p>
                 <div class="alh-grid alh-grid-4">
                     ${grid}

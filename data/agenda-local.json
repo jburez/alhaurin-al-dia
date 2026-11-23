@@ -1,22 +1,8 @@
 {
-  "actualizado": "2026-11-23T03:21:54.554Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 191 eventos próximos.",
+  "actualizado": "2026-11-23T09:08:32.922056+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 189 eventos próximos.",
+  "ical_url": "https://alhaurinelgrande.es/events/lista/?ical=1",
   "eventos": [
-    {
-      "id": "alhaurinhoy-9472",
-      "tipo": "Ocio",
-      "icono": "🎉",
-      "titulo": "FIESTA DE COLORES 🫟 🧡💚💛🩷🩵",
-      "descripcion": "PEQUES DE 1-3 AÑOS CON SUS MAMIS/PAPIS❤️ JUEVES 23 DE OCTUBRE 📅 DE 17:30 A 19:00 🕞 ALHAURIN EL GRANDE 📍",
-      "lugar": "",
-      "inicio": "2026-10-23T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/fiesta-de-colores-%f0%9f%ab%9f-%f0%9f%a7%a1%f0%9f%92%9a%f0%9f%92%9b%f0%9f%a9%b7%f0%9f%a9%b5/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-13727",
       "tipo": "Música en vivo",
@@ -2849,21 +2835,6 @@
       "estado": "neutral",
       "cta": "Ver en alhaurinhoy.es",
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
       "activo": true,
       "fuente": "alhaurinhoy"
     }

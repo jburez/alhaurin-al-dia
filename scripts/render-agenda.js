@@ -293,7 +293,7 @@ function renderAgendaIndex(events) {
             </div>
         </section>
         <div class="container alh-narrow">
-            <div class="alh-filters" role="toolbar" aria-label="Filtrar por fecha" data-agenda-filtros hidden>
+            ${list.length ? `<div class="alh-filters" role="toolbar" aria-label="Filtrar por fecha" data-agenda-filtros hidden>
                 <button type="button" class="alh-filter" data-filtro="todo" aria-pressed="true">Todo</button>
                 <button type="button" class="alh-filter" data-filtro="hoy" aria-pressed="false">Hoy</button>
                 <button type="button" class="alh-filter" data-filtro="finde" aria-pressed="false">Este fin de semana</button>
@@ -303,6 +303,7 @@ function renderAgendaIndex(events) {
                 <button type="button" class="alh-filter" data-categoria="" aria-pressed="true">Todas las categorías</button>
                 ${cats.map((c) => `<button type="button" class="alh-filter" data-categoria="${escapeHtml(c.id)}" aria-pressed="false">${escapeHtml(c.name)} (${c.n})</button>`).join('\n                ')}
             </div>
+            ` : ''}
             <p class="alh-empty" data-agenda-vacio hidden>No hay planes que coincidan con el filtro. <a href="/agenda/">Ver todos</a>.</p>
             ${monthsHtml || '<p class="alh-empty">No hay planes verificados anunciados ahora mismo.</p>'}
             ${shortAgendaBlock(events)}

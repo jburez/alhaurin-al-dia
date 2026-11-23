@@ -229,7 +229,7 @@ nav.alh-breadcrumbs { justify-content: flex-start; width: auto; height: auto; pa
 .alh-cal-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .alh-cal { width: 100%; min-width: 340px; border-collapse: collapse; table-layout: fixed; background: #fff; border: 1px solid var(--alh-linea); border-radius: var(--alh-radio); font-size: 11px; }
 .alh-cal th { background: var(--alh-verde-suave); color: var(--alh-verde); padding: 6px 2px; font-size: 11px; }
-.alh-cal td { border: 1px solid var(--alh-linea); vertical-align: top; padding: 4px 3px; height: 62px; word-break: break-word; line-height: 1.2; }
+.alh-cal td { border: 1px solid var(--alh-linea); vertical-align: top; padding: 4px 3px; height: 62px; overflow-wrap: normal; word-break: normal; hyphens: auto; line-height: 1.2; }
 .alh-cal td.is-empty { background: var(--paper-soft, #f5f2ec); }
 .alh-cal td.is-today { background: #e6f2ea; outline: 2px solid #2f8f5b; outline-offset: -2px; }
 .alh-cal a { color: var(--alh-verde); font-weight: 600; text-decoration: none; }

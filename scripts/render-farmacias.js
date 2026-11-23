@@ -154,6 +154,15 @@ function renderFicha(f, data) {
   }));
 }
 
+// Nombre corto para las casillas del calendario en móvil: sin «Farmacia» y
+// con los nombres de pila en iniciales («José Luis Quintela» → «J. L. Quintela»).
+function shortName(nombre = '') {
+  const sin = nombre.replace(/^Farmacia\s+/i, '');
+  const words = sin.split(/\s+/);
+  if (/^(la|el|del|de|camino)$/i.test(words[0]) || words.length < 2) return sin;
+  return `${words.slice(0, -1).map((w) => `${w.replace(/^Mª$/, 'M.').charAt(0)}.`).join(' ')} ${words[words.length - 1]}`;
+}
+
 function monthTable(year, month, data) {
   const first = `${year}-${String(month).padStart(2, '0')}-01`;
   const days = new Date(Date.UTC(year, month, 0)).getUTCDate();
@@ -162,7 +171,7 @@ function monthTable(year, month, data) {
   for (let d = 1; d <= days; d++) {
     const iso = `${year}-${String(month).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
     const f = pharmacyOn(iso, data);
-    cells.push(`<td${iso === TODAY ? ' class="is-today"' : ''}><span class="alh-cal-day">${d}</span>${f ? `<a href="${escapeHtml(f.url)}">${escapeHtml(f.nombre)}</a>` : '<span class="alh-cal-none">Sin dato</span>'}</td>`);
+    cells.push(`<td${iso === TODAY ? ' class="is-today"' : ''}><span class="alh-cal-day">${d}</span>${f ? `<a href="${escapeHtml(f.url)}" title="${escapeHtml(f.nombre)}">${escapeHtml(shortName(f.nombre))}</a>` : '<span class="alh-cal-none">Sin dato</span>'}</td>`);
   }
   while (cells.length % 7) cells.push('<td class="is-empty"></td>');
   const rows = [];

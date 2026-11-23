@@ -146,6 +146,10 @@ function eventoDesdeDoc(doc) {
     url: data.url || '#',
     activo: data.activo !== false,
     fuente: esReclamado ? (data.origen || 'manual') : 'manual',
+    // Gestionado desde el panel: para un evento importado de alhaurinhoy, es
+    // la validación que permite publicarlo (si además tiene lugar y
+    // descripción propia; ver scripts/lib/agenda.js → validado()).
+    gestionado: true,
   };
 }
 

@@ -15,12 +15,19 @@
 // se conservan para que su página siga existiendo (nunca 404). Los eventos de
 // las fichas antiguas de /planes/ sin datos se recuperan una vez de su HTML.
 //
+// Fase 6: los eventos de alhaurinhoy.es son solo pistas. Si no están
+// validados (desde el panel, con lugar y descripción propia), los nuevos van a
+// data/agenda_borradores.json y no se publican; los que ya tenían ficha la
+// conservan (noindex) pero no salen en los listados. Cuando el texto de un
+// evento menciona un lugar conocido de data/lugares.json con dirección, se le
+// asignan lugar y dirección (anotado en reports/agenda-lugares-asignados.json).
+//
 // Uso: node scripts/normalizar-agenda.js
 
 const fs = require('fs');
 const path = require('path');
 const {
-  AGENDA_FILE, CATEGORIES, DEFAULT_CATEGORY, makeSlug, normalizeEvent, cleanTitle, cleanText, sortByDate,
+  AGENDA_FILE, CATEGORIES, DEFAULT_CATEGORY, makeSlug, normalizeEvent, cleanTitle, cleanText, sortByDate, validado,
 } = require('./lib/agenda');
 const { todayIso, MESES } = require('./lib/layout');
 
@@ -29,6 +36,44 @@ const LOCAL_FILE = path.join(ROOT, 'data', 'agenda-local.json');
 const OVERRIDES_FILE = path.join(ROOT, 'data', 'agenda-overrides.json');
 const SLUGS_FILE = path.join(ROOT, 'data', 'evento-slugs.json');
 const PLANES_DIR = path.join(ROOT, 'planes');
+const BORRADORES_FILE = path.join(ROOT, 'data', 'agenda_borradores.json');
+const LUGARES_FILE = path.join(ROOT, 'data', 'lugares.json');
+const LUGARES_REPORT = path.join(ROOT, 'reports', 'agenda-lugares-asignados.json');
+const { PISTAS_SOURCES } = require('./lib/agenda');
+
+function norm(text = '') {
+  return String(text).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function loadLugares() {
+  const data = readJson(LUGARES_FILE, { lugares: [] });
+  return (data.lugares || []).filter((l) => l.direccion && !/\[PENDIENTE/.test(l.direccion));
+}
+
+// Asigna lugar y dirección si el texto del evento menciona un lugar conocido.
+function assignPlace(ev, lugares, asignados) {
+  if (ev.direccion) return ev;
+  const text = norm(`${ev.titulo} ${ev.lugar} ${ev.descripcion} ${ev.extracto_fuente}`);
+  const hit = lugares.find((l) => (l.alias || [l.nombre]).some((a) => text.includes(norm(a))));
+  if (!hit) return ev;
+  asignados.push({ id: ev.id, titulo: ev.titulo, lugar: hit.nombre, direccion: hit.direccion });
+  return { ...ev, lugar: ev.lugar || hit.nombre, direccion: hit.direccion, lugar_asignado: hit.id };
+}
+
+function saveBorradores(pistas) {
+  const data = readJson(BORRADORES_FILE, { borradores: [] });
+  const lista = data.borradores || [];
+  const byId = new Map(lista.map((b) => [b.id, b]));
+  let nuevos = 0;
+  for (const p of pistas) {
+    if (!byId.has(p.id)) nuevos++;
+    byId.set(p.id, { ...(byId.get(p.id) || {}), ...p });
+  }
+  data._descripcion = 'Pistas y borradores de agenda: eventos detectados en feeds (generar_noticias.py --modo agenda) y eventos de alhaurinhoy.es pendientes de validar. NUNCA se publican solos: para publicar uno de alhaurinhoy, edítalo desde el panel de administración escribiendo lugar y descripción propia.';
+  data.borradores = [...byId.values()].sort((a, b) => String(a.fecha_inicio_detectada || a.fecha_inicio || '').localeCompare(String(b.fecha_inicio_detectada || b.fecha_inicio || '')));
+  writeJsonIfChanged(BORRADORES_FILE, data);
+  return nuevos;
+}
 
 function readJson(file, fallback) {
   try {
@@ -126,13 +171,44 @@ function main() {
     for (const [key, value] of Object.entries(overrideMap[id] || {})) {
       if (!key.startsWith('_') && value !== undefined && value !== '') merged[key] = value;
     }
+    if (PISTAS_SOURCES.has(merged.fuente)) {
+      merged.validado = validado({ ...merged, descripcion: merged.descripcion, lugar: merged.lugar }, overrideMap[id] || {});
+      merged.publicado = merged.validado;
+      if (!merged.validado) {
+        merged.descripcion = '';
+        merged.lugar = '';
+      }
+    }
     result.set(id, merged);
   }
 
-  // 2. Eventos vivos: siempre con los datos más recientes.
+  // 2. Eventos vivos: siempre con los datos más recientes. Los de alhaurinhoy
+  // sin validar que aún no tienen ficha van a borradores (pistas).
+  const pistas = [];
+  const conFicha = (raw) => Boolean(slugs[raw.id]) || previous.has(raw.id);
   for (const raw of liveEvents) {
     if (!raw.id || !raw.inicio) continue;
-    result.set(raw.id, normalizeEvent(raw, slugFor(raw), overrideMap[raw.id]));
+    const override = overrideMap[raw.id] || {};
+    const esPista = PISTAS_SOURCES.has(raw.fuente) && !validado(raw, override);
+    const futuro = String(raw.fin || raw.inicio).slice(0, 10) >= todayIso();
+    if (esPista) {
+      if (futuro) pistas.push({
+        id: raw.id,
+        estado: 'pista',
+        origen: raw.fuente,
+        titulo: cleanTitle(raw.titulo),
+        fecha_inicio: String(raw.inicio).slice(0, 10),
+        hora: (String(raw.inicio).match(/T(\d{2}:\d{2})/) || [])[1] || '',
+        texto_fuente: cleanText(raw.descripcion || '').slice(0, 600),
+        url_fuente: raw.url || '',
+        ficha: conFicha(raw) ? `/planes/${slugs[raw.id] || previous.get(raw.id).slug}/` : '',
+        _como_publicar: 'Edítalo desde el panel de administración con lugar y descripción propia.',
+      });
+      // Sin ficha previa no se crea ninguna página; si ya la tenía, se conserva
+      // (noindex y fuera de listados) para no generar un 404.
+      if (!conFicha(raw)) continue;
+    }
+    result.set(raw.id, normalizeEvent(raw, slugFor(raw), override));
   }
 
   // 3. Fichas antiguas de /planes/ sin datos: se recuperan una vez de su HTML.
@@ -151,6 +227,14 @@ function main() {
     if (id.startsWith('manual-') && !liveIds.has(id)) delete slugs[id];
   }
 
+  // 4. Lugares conocidos.
+  const lugares = loadLugares();
+  const asignados = [];
+  for (const [id, ev] of result) result.set(id, assignPlace(ev, lugares, asignados));
+  fs.mkdirSync(path.dirname(LUGARES_REPORT), { recursive: true });
+  fs.writeFileSync(LUGARES_REPORT, `${JSON.stringify(asignados, null, 2)}\n`);
+  const nuevasPistas = saveBorradores(pistas);
+
   const eventos = [...result.values()].sort(sortByDate);
   writeJsonIfChanged(AGENDA_FILE, {
     _descripcion: 'Agenda normalizada generada por scripts/normalizar-agenda.js a partir de data/agenda-local.json y data/agenda-overrides.json. No editar a mano: los datos manuales van en data/agenda-overrides.json.',
@@ -160,7 +244,9 @@ function main() {
 
   const today = todayIso();
   const futuros = eventos.filter((ev) => (ev.fecha_fin || ev.fecha_inicio) >= today).length;
-  console.log(`Agenda normalizada: ${eventos.length} eventos (${futuros} futuros, ${liveEvents.length} vivos en agenda-local.json, ${recovered} recuperados de fichas antiguas).`);
+  const publicados = eventos.filter((ev) => ev.publicado !== false && (ev.fecha_fin || ev.fecha_inicio) >= today).length;
+  console.log(`Agenda normalizada: ${eventos.length} eventos (${futuros} futuros, ${publicados} futuros publicables, ${liveEvents.length} vivos en agenda-local.json, ${recovered} recuperados de fichas antiguas).`);
+  console.log(`Pistas de alhaurinhoy a borradores: ${pistas.length} (${nuevasPistas} nuevas). Lugares asignados: ${asignados.length}.`);
 }
 
 main();

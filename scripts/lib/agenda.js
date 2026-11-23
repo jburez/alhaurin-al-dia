@@ -26,9 +26,34 @@ const CATEGORIES = [
 const DEFAULT_CATEGORY = { id: 'otros', name: 'Otros eventos' };
 const CATEGORY_BY_ID = Object.fromEntries([...CATEGORIES, DEFAULT_CATEGORY].map((c) => [c.id, c]));
 
-// Fuentes cuyo texto es propio de Alhaurín al Día (eventos dados de alta a
-// mano desde el panel). El resto (alhaurinhoy, ayuntamiento…) es texto ajeno.
-const OWN_SOURCES = new Set(['manual']);
+// Fuentes cuya descripción se publica: eventos dados de alta en el panel y
+// fuentes oficiales configuradas con "publicar": true en
+// data/fuentes-agenda.json (p. ej. el Ayuntamiento). alhaurinhoy es solo una
+// fuente de pistas: su texto nunca se publica y sus eventos solo aparecen si
+// se validan desde el panel (ver validado()).
+const PISTAS_SOURCES = new Set(['alhaurinhoy']);
+function loadPublishableSources() {
+  const set = new Set(['manual']);
+  try {
+    const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'fuentes-agenda.json'), 'utf8'));
+    for (const f of cfg.fuentes || []) if (f.publicar && !PISTAS_SOURCES.has(f.id)) set.add(f.id);
+  } catch (_) { /* sin configuración */ }
+  return set;
+}
+const OWN_SOURCES = loadPublishableSources();
+const MIN_DESC = 80;
+
+// Un evento de alhaurinhoy solo se publica si se validó desde el panel de
+// administración (evento «reclamado», campo gestionado) o con
+// "validado": true en data/agenda-overrides.json, Y tiene lugar y descripción
+// propia escritos.
+function validado(raw, override = {}) {
+  if (!PISTAS_SOURCES.has(raw.fuente)) return true;
+  const marcado = raw.gestionado === true || override.validado === true;
+  const desc = String(override.descripcion || (raw.gestionado ? raw.descripcion : '') || '').trim();
+  const lugar = String(override.lugar || override.direccion || (raw.gestionado ? raw.lugar : '') || '').trim();
+  return marcado && desc.length >= MIN_DESC && Boolean(lugar) && !/^alhaur[ií]n el grande(, málaga)?$/i.test(lugar);
+}
 
 function getCategory(raw) {
   const text = `${raw.titulo || ''} ${raw.tipo || ''} ${raw.descripcion || ''}`.toLowerCase();
@@ -76,7 +101,8 @@ function timePart(iso = '') {
 function normalizeEvent(raw, slug, override = {}) {
   const cat = getCategory(raw);
   const fuente = raw.fuente || 'manual';
-  const own = OWN_SOURCES.has(fuente);
+  const esValido = validado(raw, override || {});
+  const own = OWN_SOURCES.has(fuente) || (PISTAS_SOURCES.has(fuente) && esValido && raw.gestionado === true);
   const fechaInicio = datePart(raw.inicio);
   const fechaFin = datePart(raw.fin) || fechaInicio;
   const base = {
@@ -87,18 +113,21 @@ function normalizeEvent(raw, slug, override = {}) {
     fecha_fin: fechaFin < fechaInicio ? fechaInicio : fechaFin,
     hora: timePart(raw.inicio),
     hora_fin: timePart(raw.fin),
-    lugar: cleanText(raw.lugar || ''),
-    direccion: '',
+    lugar: PISTAS_SOURCES.has(fuente) && !own ? '' : cleanText(raw.lugar || ''),
+    direccion: cleanText(raw.direccion || ''),
     descripcion: own ? cleanText(raw.descripcion || '') : '',
+    // Texto de la fuente: solo para revisión interna, nunca se publica.
     extracto_fuente: own ? '' : cleanText(raw.descripcion || ''),
     categoria: cat.id,
-    precio: null,
+    precio: raw.precio || null,
     gratuito: null,
-    organizador: '',
+    organizador: cleanText(raw.organizador || ''),
     url_fuente: raw.url || '',
     fuente,
     imagen: raw.imagen || '',
     estado_evento: raw.activo === false ? 'cancelado' : 'programado',
+    validado: esValido,
+    publicado: esValido,
   };
   // Los datos añadidos a mano tienen prioridad (dirección, precio, organizador,
   // descripción propia…). Nunca se rellenan automáticamente.
@@ -145,6 +174,7 @@ function daysSinceEnd(ev, today) {
 //   - mientras tanto, solo es indexable si tiene descripción propia y lugar
 //     (los eventos con el texto copiado de otra web quedan en noindex).
 function indexability(ev, today) {
+  if (PISTAS_SOURCES.has(ev.fuente) && !ev.validado) return { indexable: false, motivo: 'alhaurinhoy-sin-validar' };
   if (daysSinceEnd(ev, today) > 30) return { indexable: false, motivo: 'pasado-30-dias' };
   if (!hasOwnDescription(ev)) return { indexable: false, motivo: 'sin-descripcion-propia' };
   if (!hasLocation(ev)) return { indexable: false, motivo: 'sin-lugar' };
@@ -159,9 +189,14 @@ function sortByDate(a, b) {
   return (a.fecha_inicio + (a.hora || '99')).localeCompare(b.fecha_inicio + (b.hora || '99')) || a.titulo.localeCompare(b.titulo, 'es');
 }
 
+// Eventos que pueden aparecer en listados (agenda, fin de semana, portada).
+function isListed(ev) {
+  return ev.publicado !== false && !(PISTAS_SOURCES.has(ev.fuente) && !ev.validado);
+}
+
 function upcoming(events, today, limit = Infinity) {
   return events
-    .filter((ev) => ev.estado_evento !== 'cancelado' && (ev.fecha_fin || ev.fecha_inicio) >= today)
+    .filter((ev) => isListed(ev) && ev.estado_evento !== 'cancelado' && (ev.fecha_fin || ev.fecha_inicio) >= today)
     .sort(sortByDate)
     .slice(0, limit);
 }
@@ -188,4 +223,7 @@ module.exports = {
   overlaps,
   sortByDate,
   upcoming,
+  isListed,
+  validado,
+  PISTAS_SOURCES,
 };

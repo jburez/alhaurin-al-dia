@@ -15,7 +15,7 @@ const {
 } = require('./lib/layout');
 const {
   CATEGORY_BY_ID, SITE_LOCALITY, POSTAL_CODE, loadAgenda, eventUrl, indexability, isPast,
-  overlaps, sortByDate, upcoming, hasOwnDescription,
+  overlaps, sortByDate, upcoming, hasOwnDescription, isListed,
 } = require('./lib/agenda');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -172,9 +172,8 @@ function renderEvent(ev, events) {
   const sourceLink = ev.url_fuente
     ? `<a href="${escapeHtml(ev.url_fuente)}" target="_blank" rel="nofollow noopener">${escapeHtml(sourceName(ev))}</a>`
     : escapeHtml(sourceName(ev));
-  const extract = !own && ev.extracto_fuente
-    ? `<blockquote class="alh-card"><p><strong>Según la publicación original en ${sourceLink}:</strong></p><p>${escapeHtml(ev.extracto_fuente)}</p></blockquote>`
-    : '';
+  // El texto de la fuente (extracto_fuente) nunca se publica (fase 6).
+  const extract = isListed(ev) ? '' : '<div class="alh-note"><strong>Evento sin verificar</strong><p>Alhaurín al Día no ha comprobado todavía los datos de este plan. Consulta la publicación original antes de ir.</p></div>';
   const mapLink = ev.direccion
     ? `<a class="alh-btn alh-btn-sec" href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(`${ev.direccion}, ${SITE_LOCALITY}`)}" target="_blank" rel="noopener">Ver en el mapa</a>`
     : '';
@@ -226,6 +225,20 @@ function renderEvent(ev, events) {
   });
 }
 
+// Si la agenda se queda corta (menos de 5 planes en los próximos 14 días), las
+// páginas no quedan vacías: se añaden enlaces útiles del día (fase 6).
+function shortAgendaBlock(events) {
+  const next14 = upcoming(events, TODAY).filter((ev) => ev.fecha_inicio <= addDays(TODAY, 14)).length;
+  if (next14 >= 5) return '';
+  return `<section class="alh-section">
+                <div class="alh-note">
+                    <strong>Pocos planes anunciados estos días</strong>
+                    <p>Ahora mismo tenemos ${next14 === 0 ? 'ningún plan verificado' : `solo ${next14} ${next14 === 1 ? 'plan verificado' : 'planes verificados'}`} para las próximas dos semanas. Solo publicamos eventos cuya fecha, lugar y descripción hemos podido comprobar con el organizador o con una fuente oficial, así que la agenda crece a medida que los confirmamos.</p>
+                    <p>Mientras tanto, te puede servir: la <a href="/farmacia-de-guardia/">farmacia de guardia de hoy</a>, <a href="/tiempo/">el tiempo en Alhaurín el Grande</a> para planear una salida, los <a href="/avisos/">avisos activos</a> y la <a href="/guia-util/">guía útil</a> con autobuses, teléfonos y trámites. Si organizas un evento, <a href="/contacto/">envíanos los datos</a> y lo añadimos.</p>
+                </div>
+            </section>`;
+}
+
 // ---------- /agenda/ ----------
 
 function renderAgendaIndex(events) {
@@ -233,7 +246,7 @@ function renderAgendaIndex(events) {
   const crumbs = [{ name: 'Inicio', url: '/' }, { name: 'Agenda', url: '/agenda/' }];
   const list = upcoming(events, TODAY);
   const recent = events
-    .filter((ev) => isPast(ev, TODAY) && overlaps(ev, addDays(TODAY, -30), addDays(TODAY, -1)))
+    .filter((ev) => isListed(ev) && isPast(ev, TODAY) && overlaps(ev, addDays(TODAY, -30), addDays(TODAY, -1)))
     .sort(sortByDate).reverse().slice(0, 10);
 
   // Agrupado por mes en el HTML (lo que lee Google, sin depender de JS).
@@ -291,7 +304,8 @@ function renderAgendaIndex(events) {
                 ${cats.map((c) => `<button type="button" class="alh-filter" data-categoria="${escapeHtml(c.id)}" aria-pressed="false">${escapeHtml(c.name)} (${c.n})</button>`).join('\n                ')}
             </div>
             <p class="alh-empty" data-agenda-vacio hidden>No hay planes que coincidan con el filtro. <a href="/agenda/">Ver todos</a>.</p>
-            ${monthsHtml || '<p class="alh-empty">No hay planes anunciados ahora mismo.</p>'}
+            ${monthsHtml || '<p class="alh-empty">No hay planes verificados anunciados ahora mismo.</p>'}
+            ${shortAgendaBlock(events)}
             ${adSlot('agenda', 'banda')}
             ${recent.length ? `<section class="alh-section">
                 <h2 class="alh-h2">Celebrados recientemente</h2>
@@ -333,7 +347,7 @@ function renderWeekend(events) {
   const canonical = `${SITE_URL}/este-fin-de-semana/`;
   const crumbs = [{ name: 'Inicio', url: '/' }, { name: 'Agenda', url: '/agenda/' }, { name: 'Este fin de semana', url: '/este-fin-de-semana/' }];
   const { friday, saturday, sunday } = weekendRange(TODAY);
-  const active = events.filter((ev) => ev.estado_evento !== 'cancelado');
+  const active = events.filter((ev) => isListed(ev) && ev.estado_evento !== 'cancelado');
   const days = [friday, saturday, sunday].map((day) => ({
     day,
     items: active.filter((ev) => overlaps(ev, day, day)).sort(sortByDate),
@@ -378,6 +392,7 @@ function renderWeekend(events) {
             ${daysHtml}
             ${adSlot('fin-de-semana', 'banda')}
             ${fallback}
+            ${shortAgendaBlock(events)}
             <p class="alh-more"><a href="/agenda/">Ver la agenda completa →</a></p>
         </div>`;
 

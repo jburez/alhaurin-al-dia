@@ -1,0 +1,32 @@
+{
+  "_descripcion": "Fuentes de la agenda. Cada fuente activa la lee scripts/actualizar_agenda_fuentes.py y vuelca sus eventos en data/agenda-local.json con fuente = id. Tipos: wp-tribe (API REST de The Events Calendar), ical (calendario .ics), rss (feed; se detectan eventos con fecha futura en el texto), manual (eventos del panel de administración, no se descargan). 'alternativa' es una URL ical que se prueba si la principal falla o devuelve 0 eventos. No añadir URLs sin comprobar que existen.",
+  "fuentes": [
+    {
+      "id": "ayuntamiento",
+      "nombre": "Ayuntamiento de Alhaurín el Grande",
+      "tipo": "wp-tribe",
+      "url": "https://alhaurinelgrande.es/wp-json/tribe/events/v1/events",
+      "alternativa": "https://alhaurinelgrande.es/events/lista/?ical=1",
+      "activa": true,
+      "publicar": true,
+      "_estado": "La API responde sin error pero con 0 eventos (log del workflow, 23-11-2026). La alternativa iCal está sin verificar: el script registrará su respuesta en la próxima ejecución."
+    },
+    {
+      "id": "manual",
+      "nombre": "Panel de administración",
+      "tipo": "manual",
+      "url": "",
+      "activa": true,
+      "publicar": true
+    },
+    {
+      "id": "alhaurinhoy",
+      "nombre": "alhaurinhoy.es",
+      "tipo": "pistas",
+      "url": "https://www.alhaurinhoy.es/wp-json/wp/v2/ajde_events",
+      "activa": true,
+      "publicar": false,
+      "_estado": "Lo lee scripts/actualizar_agenda_alhaurinhoy.py. Sus eventos NO se publican: van a data/agenda_borradores.json como pistas hasta que se validan desde el panel (con lugar y descripción propia)."
+    }
+  ]
+}

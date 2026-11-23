@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Actualizar agenda desde API del Ayuntamiento
+      - name: Actualizar agenda desde las fuentes configuradas (Ayuntamiento…)
         run: python3 scripts/actualizar_agenda_ayto.py
 
       - name: Actualizar agenda desde alhaurinhoy.es
@@ -52,7 +52,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/agenda-local.json data/evento-slugs.json data/agenda.json index.html planes/ agenda/ este-fin-de-semana/
+          git add data/agenda-local.json data/evento-slugs.json data/agenda.json data/agenda_borradores.json index.html planes/ agenda/ este-fin-de-semana/
           git commit -m "Actualiza agenda local y páginas de eventos"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin develop && git push origin develop; then break; fi

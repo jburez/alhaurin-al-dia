@@ -2,17 +2,36 @@
   "_descripcion": "Espacios habituales de eventos en Alhaurín el Grande. Solo se rellena la dirección o las coordenadas si ya constan en data/ (citado en 'origen'); lo demás va como [PENDIENTE]. scripts/normalizar-agenda.js asigna lugar y dirección a un evento cuando su texto menciona un alias, solo si la dirección no está pendiente, y lo anota en reports/agenda-lugares-asignados.json para revisión.",
   "lugares": [
     {
+      "id": "zeppelin-bar",
+      "nombre": "Zeppelin Bar",
+      "alias": [
+        "zeppelin bar",
+        "zeppelin"
+      ],
+      "direccion": "Calle Gerald Brenan, 50",
+      "coordenadas": null,
+      "origen": "Facilitado por la administración (publicación oficial del Zeppelin Bar, 24-11-2026)"
+    },
+    {
       "id": "apeadero",
       "nombre": "Apeadero de Alhaurín el Grande",
-      "alias": ["apeadero de alhaurín", "apeadero"],
+      "alias": [
+        "apeadero de alhaurín",
+        "apeadero"
+      ],
       "direccion": "Avda. Gerald Brenan, s/n",
-      "coordenadas": { "lat": 36.6432, "lng": -4.6888 },
+      "coordenadas": {
+        "lat": 36.6432,
+        "lng": -4.6888
+      },
       "origen": "data/transporte-ctmam.json"
     },
     {
       "id": "recinto-ferial",
       "nombre": "Recinto Ferial",
-      "alias": ["recinto ferial"],
+      "alias": [
+        "recinto ferial"
+      ],
       "direccion": "Avda. de la Libertad",
       "coordenadas": null,
       "origen": "data/guia-util.json (aparcamiento)"
@@ -20,7 +39,9 @@
     {
       "id": "plaza-baja",
       "nombre": "Plaza Baja",
-      "alias": ["plaza baja"],
+      "alias": [
+        "plaza baja"
+      ],
       "direccion": "Plaza Baja",
       "coordenadas": null,
       "origen": "data/guia-util.json (aparcamiento) y data/agenda.json"
@@ -28,7 +49,10 @@
     {
       "id": "parking-huerta-compania",
       "nombre": "Parking Huerta de la Compañía",
-      "alias": ["huerta de la compañía", "huerta de la compania"],
+      "alias": [
+        "huerta de la compañía",
+        "huerta de la compania"
+      ],
       "direccion": "Plaza Baja (junto al Ayuntamiento)",
       "coordenadas": null,
       "origen": "data/guia-util.json (aparcamiento)"
@@ -36,7 +60,9 @@
     {
       "id": "la-biblioteca-alhaurin",
       "nombre": "La Biblioteca de Alhaurín (local de conciertos)",
-      "alias": ["la biblioteca de alhaurín"],
+      "alias": [
+        "la biblioteca de alhaurín"
+      ],
       "direccion": "Avda. Gerald Brenan, 76",
       "coordenadas": null,
       "origen": "data/agenda.json (texto del evento)"
@@ -44,7 +70,9 @@
     {
       "id": "teatro-antonio-gala",
       "nombre": "Teatro Antonio Gala",
-      "alias": ["teatro antonio gala"],
+      "alias": [
+        "teatro antonio gala"
+      ],
       "direccion": "[PENDIENTE: dirección del Teatro Antonio Gala]",
       "coordenadas": null,
       "origen": ""
@@ -52,7 +80,11 @@
     {
       "id": "parroquia-encarnacion",
       "nombre": "Parroquia de la Encarnación",
-      "alias": ["parroquia de la encarnación", "parroquia de la encarnacion", "iglesia de la encarnación"],
+      "alias": [
+        "parroquia de la encarnación",
+        "parroquia de la encarnacion",
+        "iglesia de la encarnación"
+      ],
       "direccion": "[PENDIENTE: dirección de la Parroquia de la Encarnación]",
       "coordenadas": null,
       "origen": ""
@@ -60,7 +92,9 @@
     {
       "id": "campo-miguel-fijones",
       "nombre": "Campo Municipal Miguel Fijones",
-      "alias": ["miguel fijones"],
+      "alias": [
+        "miguel fijones"
+      ],
       "direccion": "[PENDIENTE: dirección del Campo Municipal Miguel Fijones]",
       "coordenadas": null,
       "origen": ""
@@ -68,7 +102,9 @@
     {
       "id": "casa-juventud",
       "nombre": "Casa de la Juventud",
-      "alias": ["casa de la juventud"],
+      "alias": [
+        "casa de la juventud"
+      ],
       "direccion": "[PENDIENTE: dirección de la Casa de la Juventud]",
       "coordenadas": null,
       "origen": ""
@@ -76,7 +112,10 @@
     {
       "id": "ayuntamiento",
       "nombre": "Ayuntamiento de Alhaurín el Grande",
-      "alias": ["ayuntamiento de alhaurín el grande", "casa consistorial"],
+      "alias": [
+        "ayuntamiento de alhaurín el grande",
+        "casa consistorial"
+      ],
       "direccion": "[PENDIENTE: dirección del Ayuntamiento]",
       "coordenadas": null,
       "origen": ""

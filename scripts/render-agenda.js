@@ -47,6 +47,9 @@ function dateRangeText(ev) {
 }
 
 function timeText(ev) {
+  // Horario en texto libre (agenda-overrides.json → hora_texto) para eventos
+  // de varios días con horarios distintos.
+  if (ev.hora_texto) return ev.hora_texto;
   if (!ev.hora) return '';
   return ev.hora_fin ? `${ev.hora} a ${ev.hora_fin} h` : `${ev.hora} h`;
 }

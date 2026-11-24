@@ -1,5 +1,5 @@
 {
-  "_descripcion": "Datos añadidos a mano para eventos de la agenda, por id de evento (ver data/agenda.json). Tienen prioridad sobre lo que llega de data/agenda-local.json. Una ficha de evento solo es indexable si tiene 'descripcion' propia (80 caracteres o más, redactada por Alhaurín al Día, no copiada) y 'lugar' o 'direccion'. Campos admitidos: descripcion, lugar, direccion, hora, hora_fin, fecha_fin, precio, gratuito, organizador, organizador_url, url_entradas, imagen, estado_evento (programado | cancelado | aplazado).",
+  "_descripcion": "Datos añadidos a mano para eventos de la agenda, por id de evento (ver data/agenda.json). Tienen prioridad sobre lo que llega de data/agenda-local.json. Una ficha de evento solo es indexable si tiene 'descripcion' propia (80 caracteres o más, redactada por Alhaurín al Día, no copiada) y 'lugar' o 'direccion'. Campos admitidos: validado (true para publicar un evento de alhaurinhoy), titulo, fecha_inicio, hora_texto (horario en texto libre para eventos de varios días), descripcion, lugar, direccion, hora, hora_fin, fecha_fin, precio, gratuito, organizador, organizador_url, url_entradas, imagen, estado_evento (programado | cancelado | aplazado).",
   "_ejemplo": {
     "alhaurinhoy-00000": {
       "descripcion": "Texto propio que explique el plan: qué es, para quién, qué incluye y cualquier detalle práctico comprobado con el organizador.",
@@ -8,5 +8,21 @@
       "organizador": "Nombre de la entidad organizadora"
     }
   },
-  "eventos": {}
+  "eventos": {
+    "alhaurinhoy-9794": {
+      "_nota": "Datos facilitados por la administración el 24-11-2026 a partir de la publicación oficial del Zeppelin Bar en Facebook e Instagram.",
+      "validado": true,
+      "titulo": "Aniversario del Zeppelin Bar: fin de semana de celebración",
+      "fecha_inicio": "2026-11-27",
+      "fecha_fin": "2026-11-29",
+      "hora": "22:30",
+      "hora_fin": "",
+      "lugar": "Zeppelin Bar",
+      "direccion": "Calle Gerald Brenan, 50",
+      "organizador": "Zeppelin Bar",
+      "url_fuente": "https://www.facebook.com/zeppelinbaralhaurin/posts/zeppeliansel-tiempo-vuela-se-acerca-nuestro-xxxi-aniversario-y-queremos-celebrar/1948479573655001/",
+      "descripcion": "El Zeppelin Bar celebra su aniversario en Alhaurín el Grande con tres días de fiesta, del viernes 27 al domingo 29 de noviembre. El viernes hay 2x1 de 22:30 a 01:00; el sábado, concierto del grupo Alejados a partir de las 18:00, y el domingo, paella, picoteo, cerveza, tarta de aniversario y sorteo de regalos de colaboradores locales. No se anuncian entradas ni precios: la celebración es en el propio bar, en la calle Gerald Brenan.",
+      "hora_texto": "Viernes desde las 22:30 · sábado desde las 18:00 · domingo, comida"
+    }
+  }
 }

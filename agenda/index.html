@@ -4,31 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agenda de Alhaurín el Grande: qué hacer hoy y este fin de semana — Alhaurín al Día</title>
-    <meta name="description" content="Agenda de Alhaurín el Grande con 0 planes: conciertos, fiestas, procesiones, deportes y cultura. Filtra por hoy, fin de semana, mes o categoría.">
+    <meta name="description" content="Agenda de Alhaurín el Grande con 1 planes: conciertos, fiestas, procesiones, deportes y cultura. Filtra por hoy, fin de semana, mes o categoría.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://alhaurinaldia.es/agenda/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Alhaurín al Día">
     <meta property="og:locale" content="es_ES">
     <meta property="og:title" content="Agenda de Alhaurín el Grande: qué hacer hoy y este fin de semana — Alhaurín al Día">
-    <meta property="og:description" content="Agenda de Alhaurín el Grande con 0 planes: conciertos, fiestas, procesiones, deportes y cultura. Filtra por hoy, fin de semana, mes o categoría.">
+    <meta property="og:description" content="Agenda de Alhaurín el Grande con 1 planes: conciertos, fiestas, procesiones, deportes y cultura. Filtra por hoy, fin de semana, mes o categoría.">
     <meta property="og:url" content="https://alhaurinaldia.es/agenda/">
     <meta property="og:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Agenda de Alhaurín el Grande: qué hacer hoy y este fin de semana — Alhaurín al Día">
-    <meta name="twitter:description" content="Agenda de Alhaurín el Grande con 0 planes: conciertos, fiestas, procesiones, deportes y cultura. Filtra por hoy, fin de semana, mes o categoría.">
+    <meta name="twitter:description" content="Agenda de Alhaurín el Grande con 1 planes: conciertos, fiestas, procesiones, deportes y cultura. Filtra por hoy, fin de semana, mes o categoría.">
     <meta name="twitter:image" content="https://alhaurinaldia.es/assets/favicon.svg">
     <meta name="theme-color" content="#24402B">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/mobile.css">
-    <link rel="stylesheet" href="/css/ads.css">
-    <link rel="stylesheet" href="/css/guia.css">
+    <link rel="stylesheet" href="/css/styles.css?v=5566e0a2">
+    <link rel="stylesheet" href="/css/mobile.css?v=c3d4ded5">
+    <link rel="stylesheet" href="/css/ads.css?v=1f4810d3">
+    <link rel="stylesheet" href="/css/guia.css?v=780e4113">
     <!-- alh-consent:start -->
     <meta name="google-adsense-account" content="ca-pub-3892603819928798">
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
     <!-- CMP: pegar aquí el script del gestor de consentimiento certificado por Google (TCF v2.2). Ver docs/ARQUITECTURA.md, apartado «Consentimiento». -->
-    <script src="/js/consent.js" defer></script>
+    <script src="/js/consent.js?v=4281d0c1" defer></script>
     <!-- alh-consent:end -->
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -43,8 +43,15 @@
   },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 0,
-    "itemListElement": []
+    "numberOfItems": 1,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://alhaurinaldia.es/planes/e-9794/",
+        "name": "Aniversario del Zeppelin Bar: fin de semana de celebración"
+      }
+    ]
   }
 }</script>
     <script type="application/ld+json">{
@@ -111,19 +118,42 @@
                 <nav class="alh-breadcrumbs" aria-label="Migas de pan"><a href="/">Inicio</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">Agenda</span></nav>
                 <span class="alh-kicker">Agenda</span>
                 <h1>Agenda de Alhaurín el Grande: qué hacer hoy y próximos planes</h1>
-                <p class="alh-lead">Ahora mismo no hay planes anunciados en la agenda. Vuelve pronto: la agenda se actualiza varias veces al día.</p>
+                <p class="alh-lead">Ahora mismo hay 1 planes anunciados en Alhaurín el Grande, 1 de ellos durante lo que queda de noviembre y 1 para el fin de semana. Predominan música en vivo.</p>
                 <p>Recogemos conciertos, fiestas, procesiones, partidos, talleres y actividades culturales del municipio a partir de los anuncios de organizadores, entidades y medios locales. Cada ficha indica de dónde sale la información para que puedas confirmarla antes de ir.</p>
                 <p><a class="alh-btn" href="/este-fin-de-semana/">Planes de este fin de semana</a> <a class="alh-btn alh-btn-sec" href="/planes/">Ver en calendario</a></p>
             </div>
         </section>
         <div class="container alh-narrow">
+            <div class="alh-filters" role="toolbar" aria-label="Filtrar por fecha" data-agenda-filtros hidden>
+                <button type="button" class="alh-filter" data-filtro="todo" aria-pressed="true">Todo</button>
+                <button type="button" class="alh-filter" data-filtro="hoy" aria-pressed="false">Hoy</button>
+                <button type="button" class="alh-filter" data-filtro="finde" aria-pressed="false">Este fin de semana</button>
+                <button type="button" class="alh-filter" data-filtro="mes" aria-pressed="false">Este mes</button>
+            </div>
+            <div class="alh-filters" role="toolbar" aria-label="Filtrar por categoría" data-agenda-categorias hidden>
+                <button type="button" class="alh-filter" data-categoria="" aria-pressed="true">Todas las categorías</button>
+                <button type="button" class="alh-filter" data-categoria="musica" aria-pressed="false">Música en vivo (1)</button>
+            </div>
             
             <p class="alh-empty" data-agenda-vacio hidden>No hay planes que coincidan con el filtro. <a href="/agenda/">Ver todos</a>.</p>
-            <p class="alh-empty">No hay planes verificados anunciados ahora mismo.</p>
+            <section class="alh-section" data-agenda-mes="2026-11">
+                <h2 class="alh-h2">Noviembre de 2026</h2>
+                <div class="alh-list-box">
+                <ul class="alh-event-list">
+                    <li class="alh-event-item" data-agenda-item data-inicio="2026-11-27" data-fin="2026-11-29" data-categoria="musica">
+                        <span class="alh-date-badge" aria-hidden="true"><span class="d">27</span><span class="m">nov</span></span>
+                        <div class="alh-event-body">
+                            <a href="/planes/e-9794/">Aniversario del Zeppelin Bar: fin de semana de celebración</a>
+                            <p class="alh-event-meta"><span class="alh-tag">Música en vivo</span>Viernes 27 de noviembre (hasta el 29 de noviembre) · Viernes desde las 22:30 · sábado desde las 18:00 · domingo, comida · Zeppelin Bar</p>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </section>
             <section class="alh-section">
                 <div class="alh-note">
                     <strong>Pocos planes anunciados estos días</strong>
-                    <p>Ahora mismo tenemos ningún plan verificado para las próximas dos semanas. Solo publicamos eventos cuya fecha, lugar y descripción hemos podido comprobar con el organizador o con una fuente oficial, así que la agenda crece a medida que los confirmamos.</p>
+                    <p>Ahora mismo tenemos solo 1 plan verificado para las próximas dos semanas. Solo publicamos eventos cuya fecha, lugar y descripción hemos podido comprobar con el organizador o con una fuente oficial, así que la agenda crece a medida que los confirmamos.</p>
                     <p>Mientras tanto, te puede servir: la <a href="/farmacia-de-guardia/">farmacia de guardia de hoy</a>, <a href="/tiempo/">el tiempo en Alhaurín el Grande</a> para planear una salida, los <a href="/avisos/">avisos activos</a> y la <a href="/guia-util/">guía útil</a> con autobuses, teléfonos y trámites. Si organizas un evento, <a href="/contacto/">envíanos los datos</a> y lo añadimos.</p>
                 </div>
             </section>
@@ -208,7 +238,7 @@
             </div>
         </div>
     </footer>
-    <script src="/js/app.js" defer></script>
-    <script src="/js/agenda-filtros.js" defer></script>
+    <script src="/js/app.js?v=36660541" defer></script>
+    <script src="/js/agenda-filtros.js?v=90852a9d" defer></script>
 </body>
 </html>

@@ -5909,7 +5909,7 @@
       "hora": "22:00",
       "hora_fin": "",
       "lugar": "",
-      "direccion": "",
+      "direccion": "Calle Gerald Brenan, 50",
       "descripcion": "",
       "extracto_fuente": "Zeppelian@, la actuación de una de las bandas fijas de Zeppelin!!!!!!!!!!! Este viernes a las 22.00 h THE CROOKS en directo!!!!! Power-trio de rock alternativo que homenajea al rock en todas sus ra...",
       "categoria": "musica",
@@ -5921,7 +5921,8 @@
       "imagen": "",
       "estado_evento": "programado",
       "validado": false,
-      "publicado": false
+      "publicado": false,
+      "lugar_asignado": "zeppelin-bar"
     },
     {
       "id": "alhaurinhoy-9472",
@@ -8600,8 +8601,8 @@
       "fecha_fin": "2026-11-23",
       "hora": "18:00",
       "hora_fin": "",
-      "lugar": "",
-      "direccion": "",
+      "lugar": "Zeppelin Bar",
+      "direccion": "Calle Gerald Brenan, 50",
       "descripcion": "",
       "extracto_fuente": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
       "categoria": "musica",
@@ -8613,7 +8614,8 @@
       "imagen": "",
       "estado_evento": "programado",
       "validado": false,
-      "publicado": false
+      "publicado": false,
+      "lugar_asignado": "zeppelin-bar"
     },
     {
       "id": "alhaurinhoy-5035",
@@ -8918,25 +8920,26 @@
     {
       "id": "alhaurinhoy-9794",
       "slug": "e-9794",
-      "titulo": "30° Aniversario Zeppelin Bar CROOKS & ALEJADOS",
-      "fecha_inicio": "2026-11-28",
-      "fecha_fin": "2026-11-28",
-      "hora": "17:00",
+      "titulo": "Aniversario del Zeppelin Bar: fin de semana de celebración",
+      "fecha_inicio": "2026-11-27",
+      "fecha_fin": "2026-11-29",
+      "hora": "22:30",
       "hora_fin": "",
-      "lugar": "",
-      "direccion": "",
-      "descripcion": "",
-      "extracto_fuente": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
+      "lugar": "Zeppelin Bar",
+      "direccion": "Calle Gerald Brenan, 50",
+      "descripcion": "El Zeppelin Bar celebra su aniversario en Alhaurín el Grande con tres días de fiesta, del viernes 27 al domingo 29 de noviembre. El viernes hay 2x1 de 22:30 a 01:00; el sábado, concierto del grupo Alejados a partir de las 18:00, y el domingo, paella, picoteo, cerveza, tarta de aniversario y sorteo de regalos de colaboradores locales. No se anuncian entradas ni precios: la celebración es en el propio bar, en la calle Gerald Brenan.",
+      "extracto_fuente": "",
       "categoria": "musica",
       "precio": null,
       "gratuito": null,
-      "organizador": "",
-      "url_fuente": "https://www.alhaurinhoy.es/Eventos/30-aniversario-%f0%9f%a5%82-%f0%9f%8e%b6-crooks-alejados-%f0%9f%8e%b6/",
+      "organizador": "Zeppelin Bar",
+      "url_fuente": "https://www.facebook.com/zeppelinbaralhaurin/posts/zeppeliansel-tiempo-vuela-se-acerca-nuestro-xxxi-aniversario-y-queremos-celebrar/1948479573655001/",
       "fuente": "alhaurinhoy",
       "imagen": "",
       "estado_evento": "programado",
-      "validado": false,
-      "publicado": false
+      "validado": true,
+      "publicado": true,
+      "hora_texto": "Viernes desde las 22:30 · sábado desde las 18:00 · domingo, comida"
     },
     {
       "id": "alhaurinhoy-9934",

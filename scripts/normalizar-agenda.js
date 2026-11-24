@@ -74,9 +74,10 @@ function pareceCopia(descripcion, fuente) {
   return comunes / a.size > 0.6;
 }
 
-function saveBorradores(pistas) {
+function saveBorradores(pistas, validados = new Set()) {
   const data = readJson(BORRADORES_FILE, { borradores: [] });
-  const lista = data.borradores || [];
+  // Las pistas ya validadas (publicadas) salen de la lista de pendientes.
+  const lista = (data.borradores || []).filter((b) => !(b.estado === 'pista' && validados.has(b.id)));
   const byId = new Map(lista.map((b) => [b.id, b]));
   let nuevos = 0;
   for (const p of pistas) {
@@ -256,7 +257,8 @@ function main() {
   for (const [id, ev] of result) result.set(id, assignPlace(ev, lugares, asignados));
   fs.mkdirSync(path.dirname(LUGARES_REPORT), { recursive: true });
   fs.writeFileSync(LUGARES_REPORT, `${JSON.stringify(asignados, null, 2)}\n`);
-  const nuevasPistas = saveBorradores(pistas);
+  const validados = new Set([...result.values()].filter((ev) => PISTAS_SOURCES.has(ev.fuente) && ev.validado).map((ev) => ev.id));
+  const nuevasPistas = saveBorradores(pistas, validados);
 
   const eventos = [...result.values()].sort(sortByDate);
   writeJsonIfChanged(AGENDA_FILE, {

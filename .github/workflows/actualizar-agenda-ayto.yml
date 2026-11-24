@@ -70,3 +70,15 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run publicar-produccion.yml --ref develop
 
+
+      - name: Sincronizar también las ediciones del panel
+        # El botón «Sincronizar ahora» del panel (cloudflare/agenda-sync-worker)
+        # dispara ESTE workflow por workflow_dispatch. Para que los eventos
+        # editados o validados en el panel (Firestore) lleguen a la web sin
+        # esperar a la ejecución programada —que GitHub retrasa a menudo varias
+        # horas—, se lanza a continuación la sincronización del panel, que
+        # regenera la agenda y publica si hay cambios.
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run sync-admin-panel.yml --ref develop

@@ -648,6 +648,30 @@
     "detectado_en": "2026-10-11T15:49:58.506740+02:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266863decretoaprobaciónlistadod",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6863 [DECRETO APROBACIÓN LISTADO DEFINITIVO PUNTUACIONES GENERALES \"CORTA DURACIÓN\" DE LOS/AS CANDIDATOS/AS ADMITIDOS/AS : \"TÉCNICO/A DEPORTIVO/A\" Y ENTRADA EN VIGOR PARA ESTA CATEGORÍA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b3a741ed-3e24-497f-a058-4997865baa7d",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-24T20:07:18.613367+01:00"
+  },
+  {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-decreto20266864decretoaprobaciónlistadod",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "6245/2024",
+    "resumen": "DECRETO 2026-6864 [DECRETO APROBACIÓN LISTADO DEFINITIVO PUNTUACIONES GENERALES \"LARGA DURACIÓN\" DE LOS/AS CANDIDATOS/AS ADMITIDOS/AS : \"TÉCNICO/A DEPORTIVO/A\" Y ENTRADA EN VIGOR PARA ESTA CATEGORÍA]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/9fe3bfbd-2eb3-461d-841d-d1c9760b10f1",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-24T20:07:18.613388+01:00"
+  },
+  {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -852,6 +876,18 @@
     "detectado_en": "2026-10-11T15:49:58.506610+02:00"
   },
   {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo1998edictonotaríaalhgrand",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "34504/2026",
+    "resumen": "EDICTO protocolo 1998 - EDICTO NOTARÍA ALH GRANDE ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE DON CRISTÓBAL GÓMEZ RODRÍGUEZ",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/b859c5e2-410a-450b-85fa-89405ccf0857",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-11-24T20:07:18.613416+01:00"
+  },
+  {
     "id": "sede-Padrón Municipal de Habitantes-anunciodecretoinicioprocedbajaoficiopadr",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -1006,6 +1042,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Disposiciones Normativas",
     "detectado_en": "2026-10-11T15:49:58.506680+02:00"
+  },
+  {
+    "id": "sede-Disposiciones Normativas-certificadodeacuerdo",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "20624/2026",
+    "resumen": "Certificado de acuerdo",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/d52dafbd-4567-4036-ad44-7e164c158ff7",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Disposiciones Normativas",
+    "detectado_en": "2026-11-24T20:07:18.613327+01:00"
   },
   {
     "id": "sede-Derechos y Deberes Retributivos-actadeconvocatoriadepromocióninternatemp",
@@ -1198,6 +1246,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Convocatoria de El Pleno",
     "detectado_en": "2026-10-13T16:51:15.853797+02:00"
+  },
+  {
+    "id": "sede-Convocatoria de El Pleno-decreto20266869decretoconvocatoriaplenoe",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "PLN/2026/18",
+    "resumen": "DECRETO 2026-6869 [DECRETO CONVOCATORIA PLENO EXTR 27-11-2026]",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/249af91e-f35a-44b5-8200-6cfea1828ff5",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de El Pleno",
+    "detectado_en": "2026-11-24T20:07:18.613400+01:00"
   },
   {
     "id": "sede-Concesión de Subvenciones-certificado20260615certifpto65jgl3010202",

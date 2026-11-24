@@ -25,18 +25,6 @@
       "_como_publicar": "Edítalo desde el panel de administración con lugar y descripción propia."
     },
     {
-      "id": "alhaurinhoy-9794",
-      "estado": "pista",
-      "origen": "alhaurinhoy",
-      "titulo": "30° Aniversario CROOKS & ALEJADOS",
-      "fecha_inicio": "2026-11-23",
-      "hora": "20:00",
-      "texto_fuente": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
-      "url_fuente": "https://www.alhaurinhoy.es/Eventos/30-aniversario-%f0%9f%a5%82-%f0%9f%8e%b6-crooks-alejados-%f0%9f%8e%b6/",
-      "ficha": "/planes/e-9794/",
-      "_como_publicar": "Edítalo desde el panel de administración con lugar y descripción propia."
-    },
-    {
       "id": "alhaurinhoy-9489",
       "estado": "pista",
       "origen": "alhaurinhoy",
@@ -190,6 +178,18 @@
       "texto_fuente": "Brindemos por la Navidad… con el vino perfecto. El jueves 27 de noviembre a las 21:00h celebramos en Casa la Abuela una cata de vinos navideña en la que descubriremos juntos los mejores vinos para ...",
       "url_fuente": "https://www.alhaurinhoy.es/Eventos/cata-de-vinos-%f0%9f%8d%b7%f0%9f%8e%84/",
       "ficha": "/planes/e-9956/",
+      "_como_publicar": "Edítalo desde el panel de administración con lugar y descripción propia."
+    },
+    {
+      "id": "alhaurinhoy-9794",
+      "estado": "pista",
+      "origen": "alhaurinhoy",
+      "titulo": "30° Aniversario Zeppelin Bar CROOKS & ALEJADOS",
+      "fecha_inicio": "2026-11-28",
+      "hora": "17:00",
+      "texto_fuente": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
+      "url_fuente": "https://www.alhaurinhoy.es/Eventos/30-aniversario-%f0%9f%a5%82-%f0%9f%8e%b6-crooks-alejados-%f0%9f%8e%b6/",
+      "ficha": "/planes/e-9794/",
       "_como_publicar": "Edítalo desde el panel de administración con lugar y descripción propia."
     },
     {

@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-11-25T03:53:33.992Z",
-  "visitas24h": 20,
-  "paginasVistas24h": 56,
+  "actualizado": "2026-11-25T13:43:25.049Z",
+  "visitas24h": 12,
+  "paginasVistas24h": 32,
   "topPaginas": [
     {
       "ruta": "/",
-      "vistas": 20
+      "vistas": 19
     },
     {
       "ruta": "/boletin-oficial/",
-      "vistas": 18
+      "vistas": 17
     },
     {
       "ruta": "/agenda/",

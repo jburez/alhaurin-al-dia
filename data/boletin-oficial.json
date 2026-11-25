@@ -672,6 +672,18 @@
     "detectado_en": "2026-11-24T20:07:18.613388+01:00"
   },
   {
+    "id": "sede-Selecciones de Personal y Provisiones de Puestos-extractoacta_1ªdeconstitucióndeltribunal",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "10475/2024",
+    "resumen": "Extracto Acta_1ª de constitución del Tribunal Técnico en Nuevas Tecnologías (ok)",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/6c44f585-d7ed-4237-bcc9-79e8155d9401",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Selecciones de Personal y Provisiones de Puestos",
+    "detectado_en": "2026-11-25T19:12:44.095648+01:00"
+  },
+  {
     "id": "sede-Propuesta de Gasto-certificado20260593certifpto3jgl23102026",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",
@@ -886,6 +898,18 @@
     "fuente": "Sede Electrónica",
     "fecha_alerta": "Procedimiento Genérico",
     "detectado_en": "2026-11-24T20:07:18.613416+01:00"
+  },
+  {
+    "id": "sede-Procedimiento Genérico-edictoprotocolo20342026notaríaalhgrandea",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "34612/2026",
+    "resumen": "EDICTO protocolo 2034.2026 NOTARÍA ALH GRANDE: ACTA DE NOTORIEDAD DE DECLARACIÓN DE HEREDEROS DE DON JAVIER TIRADO GUERRERO",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/3c457fcd-fd76-451c-a48e-438e00b540a2",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Procedimiento Genérico",
+    "detectado_en": "2026-11-25T19:12:44.095615+01:00"
   },
   {
     "id": "sede-Padrón Municipal de Habitantes-anunciodecretoinicioprocedbajaoficiopadr",

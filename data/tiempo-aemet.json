@@ -1,78 +1,66 @@
 {
-  "actualizado": "2026-11-24T18:56:34+01:00",
+  "actualizado": "2026-11-25T18:24:57+01:00",
   "fuente": "AEMET",
   "fuente_prediccion": "AEMET OpenData (predicción municipal)",
   "municipio": "Alhaurín el Grande",
   "item": {
     "id": "tiempo",
-    "icono": "⛅",
+    "icono": "☁️",
     "titulo": "Tiempo",
-    "valor": "Máx. 21º",
-    "detalle": "Intervalos nubosos · Máx. 21º / Mín. 10º · Lluvia 25%",
+    "valor": "Máx. 19º",
+    "detalle": "Nubes altas · Máx. 19º / Mín. 9º · Lluvia 0%",
     "estado": "ok",
     "fuente": "AEMET",
     "cta": "Ver AEMET",
     "url": "https://web2.aemet.es/es/eltiempo/prediccion/municipios/alhaurin-el-grande-id29008"
   },
   "hoy": {
-    "fecha": "2026-11-24",
-    "dia_semana": "Martes",
-    "fecha_corta": "24/11",
-    "t_max": "21",
-    "t_min": "10",
-    "icono": "⛅",
-    "descripcion": "Intervalos nubosos",
-    "lluvia": "25%",
-    "viento": "S 10 km/h",
+    "fecha": "2026-11-25",
+    "dia_semana": "Miércoles",
+    "fecha_corta": "25/11",
+    "t_max": "19",
+    "t_min": "9",
+    "icono": "☁️",
+    "descripcion": "Nubes altas",
+    "lluvia": "0%",
+    "viento": "NO 20 km/h",
     "uv": "2"
   },
   "semana": [
-    {
-      "fecha": "2026-11-24",
-      "dia_semana": "Martes",
-      "fecha_corta": "24/11",
-      "t_max": "21",
-      "t_min": "10",
-      "icono": "⛅",
-      "descripcion": "Intervalos nubosos",
-      "lluvia": "25%",
-      "viento": "S 10 km/h",
-      "uv": "2"
-    },
     {
       "fecha": "2026-11-25",
       "dia_semana": "Miércoles",
       "fecha_corta": "25/11",
       "t_max": "19",
-      "t_min": "10",
+      "t_min": "9",
       "icono": "☁️",
       "descripcion": "Nubes altas",
       "lluvia": "0%",
-      "viento": "N 25 km/h",
+      "viento": "NO 20 km/h",
       "uv": "2"
     },
     {
       "fecha": "2026-11-26",
       "dia_semana": "Jueves",
       "fecha_corta": "26/11",
-      "t_max": "17",
+      "t_max": "18",
       "t_min": "7",
       "icono": "☀️",
       "descripcion": "Despejado",
-      "lluvia": "5%",
-      "viento": "N 15 km/h",
+      "lluvia": "0%",
+      "viento": "N 20 km/h",
       "uv": "2"
     },
     {
       "fecha": "2026-11-27",
       "dia_semana": "Viernes",
       "fecha_corta": "27/11",
-      "t_max": "18",
+      "t_max": "19",
       "t_min": "7",
-      "icono": "☀️",
-      "descripcion": "Despejado",
-      "lluvia": "5%",
-      "viento": "NE 5 km/h",
+      "icono": "🌤️",
+      "descripcion": "Poco nuboso",
+      "lluvia": "0%",
+      "viento": "N 10 km/h",
       "uv": "2"
     },
     {
@@ -84,20 +72,20 @@
       "icono": "☁️",
       "descripcion": "Nubes altas",
       "lluvia": "0%",
-      "viento": "Flojo",
+      "viento": "E 5 km/h",
       "uv": "2"
     },
     {
       "fecha": "2026-11-29",
       "dia_semana": "Domingo",
       "fecha_corta": "29/11",
-      "t_max": "18",
+      "t_max": "17",
       "t_min": "7",
       "icono": "⛅",
       "descripcion": "Intervalos nubosos",
       "lluvia": "15%",
-      "viento": "Flojo",
-      "uv": ""
+      "viento": "E 5 km/h",
+      "uv": "2"
     },
     {
       "fecha": "2026-11-30",
@@ -105,10 +93,22 @@
       "fecha_corta": "30/11",
       "t_max": "18",
       "t_min": "7",
-      "icono": "☁️",
-      "descripcion": "Muy nuboso",
-      "lluvia": "35%",
+      "icono": "⛅",
+      "descripcion": "Intervalos nubosos",
+      "lluvia": "45%",
       "viento": "E 10 km/h",
+      "uv": ""
+    },
+    {
+      "fecha": "2026-12-01",
+      "dia_semana": "Martes",
+      "fecha_corta": "1/12",
+      "t_max": "18",
+      "t_min": "8",
+      "icono": "☁️",
+      "descripcion": "Nuboso",
+      "lluvia": "45%",
+      "viento": "E 15 km/h",
       "uv": ""
     }
   ],
@@ -124,8 +124,8 @@
       "id": "coche",
       "icono": "🚗",
       "titulo": "Lavar el coche",
-      "estado": "Espera unos días",
-      "detalle": "Posible barro o lluvia"
+      "estado": "Muy recomendado",
+      "detalle": "Cielo limpio y sin calima"
     },
     {
       "id": "deporte",
@@ -146,10 +146,10 @@
     }
   ],
   "sol_luna": {
-    "orto": "08:05 h",
+    "orto": "08:06 h",
     "ocaso": "18:05 h",
-    "horas_luz": "10h 00m",
-    "fase_luna": "Luna Llena (100%)",
+    "horas_luz": "9h 59m",
+    "fase_luna": "Luna Llena (99%)",
     "icono_luna": "🌕"
   },
   "embalses": {
@@ -181,7 +181,7 @@
       {
         "nombre": "La Concepción",
         "capacidad": "57.5 hm³",
-        "embalsado": "26.8 hm³",
+        "embalsado": "26.7 hm³",
         "porcentaje": "46.5%"
       }
     ]

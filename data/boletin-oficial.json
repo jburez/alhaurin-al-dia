@@ -1212,6 +1212,30 @@
     "detectado_en": "2026-11-23T20:30:19.667481+01:00"
   },
   {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-actanº332026juntadegobiernolocal02102026",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/33",
+    "resumen": "ACTA Nº 33-2026 JUNTA DE GOBIERNO LOCAL 02-10-2026-ANONIMIZ DATOS PERSON",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/c02b8335-f48d-44d2-a52c-b960a9539cf1",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-11-26T18:54:18.220163+01:00"
+  },
+  {
+    "id": "sede-Convocatoria de La Junta de Gobierno Local-actanº342026juntadegobiernolocal16102026",
+    "numero_edicto": "",
+    "organismo": "Ayuntamiento de Alhaurín el Grande",
+    "criterio_busqueda": "Sede Electrónica",
+    "expediente": "JGL/2026/34",
+    "resumen": "ACTA Nº 34-2026 JUNTA DE GOBIERNO LOCAL 16-10-2026 DILIG ANONIMIZ DATOS PERSONALES",
+    "enlace": "https://alhaurinelgrande.sedelectronica.es/preview-document/4dac89a7-2460-4be2-b96a-310f76904602",
+    "fuente": "Sede Electrónica",
+    "fecha_alerta": "Convocatoria de La Junta de Gobierno Local",
+    "detectado_en": "2026-11-26T18:54:18.220192+01:00"
+  },
+  {
     "id": "sede-Convocatoria de El Pleno-decreto20266723decretoconvocatoriapleno2",
     "numero_edicto": "",
     "organismo": "Ayuntamiento de Alhaurín el Grande",

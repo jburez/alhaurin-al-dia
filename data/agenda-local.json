@@ -1,37 +1,8 @@
 {
-  "actualizado": "2026-11-27T04:58:47.065Z",
-  "resumen": "Agenda local de Alhaurín el Grande. 186 eventos próximos.",
+  "actualizado": "2026-11-27T10:00:29.741468+01:00",
+  "resumen": "Agenda local de Alhaurín el Grande. 183 eventos próximos.",
+  "ical_url": "",
   "eventos": [
-    {
-      "id": "alhaurinhoy-9458",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Inscripción ✍🏽 Death Cafés",
-      "descripcion": "La Asociación para el Acercamiento a la Muerte con Aceptación Consciente (AMAC) anuncia dos fechas este otoño para grupos de duelo, unas reuniones que cuentan con el apoyo del Ayuntamiento de Alhau...",
-      "lugar": "",
-      "inicio": "2026-10-27T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/inscripcion-%e2%9c%8d%f0%9f%8f%bd-death-cafes/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-13742",
-      "tipo": "Evento",
-      "icono": "📅",
-      "titulo": "Taller 👻 SLIME TERRORÍFICO 🎃",
-      "descripcion": "👻 ¡Prepárate para mancharte las manos este Halloween! 🧪✨ ¿Te atreves a crear tus propias mezclas diabólicas? Ven a nuestro Taller de Slime de Halloween en la Casa de la Juventud. Vamos a formular t...",
-      "lugar": "",
-      "inicio": "2026-10-27T20:00:00+02:00",
-      "fin": "",
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/taller-%f0%9f%91%bb-slime-terrorifico-%f0%9f%8e%83/",
-      "activo": true,
-      "fuente": "alhaurinhoy"
-    },
     {
       "id": "alhaurinhoy-9533",
       "tipo": "Evento",
@@ -1593,6 +1564,22 @@
       "fuente": "alhaurinhoy"
     },
     {
+      "id": "alhaurinhoy-9797",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "30° Aniversario Zeppelin Bar🥂 🎶 DABUTEN 🎶",
+      "descripcion": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
+      "lugar": "",
+      "inicio": "2026-11-23T18:00:00.000Z",
+      "fin": null,
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/30-aniversario-%f0%9f%a5%82-%f0%9f%8e%b6-dabueten-%f0%9f%8e%b6/",
+      "activo": true,
+      "fuente": "alhaurinhoy",
+      "gestionado": true
+    },
+    {
       "id": "alhaurinhoy-9489",
       "tipo": "Cultos y procesiones",
       "icono": "⛪",
@@ -1801,6 +1788,22 @@
       "url": "https://www.alhaurinhoy.es/Eventos/cata-de-vinos-%f0%9f%8d%b7%f0%9f%8e%84/",
       "activo": true,
       "fuente": "alhaurinhoy"
+    },
+    {
+      "id": "alhaurinhoy-9794",
+      "tipo": "Música en vivo",
+      "icono": "🎵",
+      "titulo": "30° Aniversario Zeppelin Bar 🥂 🎶 CROOKS & ALEJADOS 🎶",
+      "descripcion": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
+      "lugar": "",
+      "inicio": "2026-11-28T17:00:00.000Z",
+      "fin": null,
+      "estado": "neutral",
+      "cta": "Ver en alhaurinhoy.es",
+      "url": "https://www.alhaurinhoy.es/Eventos/30-aniversario-%f0%9f%a5%82-%f0%9f%8e%b6-crooks-alejados-%f0%9f%8e%b6/",
+      "activo": true,
+      "fuente": "alhaurinhoy",
+      "gestionado": true
     },
     {
       "id": "alhaurinhoy-9934",
@@ -2746,54 +2749,6 @@
       "url": "https://www.alhaurinhoy.es/Eventos/gala-de-nochevieja-%e2%9c%a8%f0%9f%a5%82/",
       "activo": true,
       "fuente": "alhaurinhoy"
-    },
-    {
-      "id": "alhaurinhoy-12366",
-      "tipo": "Cine",
-      "icono": "🎬",
-      "titulo": "Cine de Verano 🎬 SIN INSTRUCCIONES",
-      "descripcion": "🎬 ¡ATENCIÓN! ¡Cartelera actualizada de las Noches de Cine en Alhaurín el Grande! 🍿✨ 🌙 Entrada gratuita. 🪑 Trae tu silla y disfruta del mejor cine de verano al aire libre. 🌭 Además, habrá puestos de...",
-      "lugar": "",
-      "inicio": "2026-07-21T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/cine-de-verano-%f0%9f%8e%ac-sin-instrucciones/",
-      "activo": true,
-      "fuente": "alhaurinhoy",
-      "gestionado": true
-    },
-    {
-      "id": "alhaurinhoy-9794",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "30° Aniversario Zeppelin Bar 🥂 🎶 CROOKS & ALEJADOS 🎶",
-      "descripcion": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
-      "lugar": "",
-      "inicio": "2026-11-28T17:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/30-aniversario-%f0%9f%a5%82-%f0%9f%8e%b6-crooks-alejados-%f0%9f%8e%b6/",
-      "activo": true,
-      "fuente": "alhaurinhoy",
-      "gestionado": true
-    },
-    {
-      "id": "alhaurinhoy-9797",
-      "tipo": "Música en vivo",
-      "icono": "🎵",
-      "titulo": "30° Aniversario Zeppelin Bar🥂 🎶 DABUTEN 🎶",
-      "descripcion": "Zeppelian@s!!!!!!! ¡¡¡¡ Se acerca nuestro XXX ANIVERSARIO!!!!!!!!! ¡¡¡¡¡30 años no se cumplen todos los días!!!!! ZEPPELIN BAR está de aniversario y queremos celebrarlo contigo!!!! Habrá música en ...",
-      "lugar": "",
-      "inicio": "2026-11-23T18:00:00.000Z",
-      "fin": null,
-      "estado": "neutral",
-      "cta": "Ver en alhaurinhoy.es",
-      "url": "https://www.alhaurinhoy.es/Eventos/30-aniversario-%f0%9f%a5%82-%f0%9f%8e%b6-dabueten-%f0%9f%8e%b6/",
-      "activo": true,
-      "fuente": "alhaurinhoy",
-      "gestionado": true
     }
   ]
 }

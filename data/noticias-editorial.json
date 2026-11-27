@@ -798,6 +798,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=GMtJUUQGtog"
   },
+  "guid:atv-alhaurin-youtube:yt:video:GPJROiFxTP4": {
+    "ai_attempts": 0,
+    "content_hash": "dd3db57c4c9fccf4d109568e412568a0294198de",
+    "date_modified": null,
+    "date_published": "2026-11-27T15:19:04+00:00",
+    "editorial": {
+      "categoria": "Agenda Cultural",
+      "cuerpo": "La Agrupación Músico-Cultural de la Santa Vera Cruz celebra su tradicional concierto de Santa Cecilia en el Teatro Municipal de Alhaurín el Grande. Bajo el título «Una banda de cine» y dirigida por Julián González, la formación ofrece un recorrido musical por algunas de las bandas sonoras más conocidas de la historia del cine.\n\nUna cita que también brinda visibilidad a la asociación Un Sí Por La Vida, dedicada a la lucha contra el cáncer.",
+      "descripcion": "La Agrupación Músico-Cultural de la Santa Vera Cruz celebra su tradicional concierto de Santa Cecilia en el Teatro Municipal de Alhaurín el Grande. Bajo el título «Una banda de cine» y dirigida por Julián González, la formación.",
+      "seo_keywords": [],
+      "titulo": "Celebración de Santa Cecilia 2026"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-gpjroifxtp4-18d1206e",
+    "last_ai_attempt": null,
+    "pagina": "noticias/celebracion-de-santa-cecilia-2026.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=GPJROiFxTP4"
+  },
   "guid:atv-alhaurin-youtube:yt:video:HDaZNki3tTc": {
     "ai_attempts": 0,
     "content_hash": "58c05647424028cf51bc2290bcf08db8a7765be8",
@@ -2607,6 +2626,25 @@
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=pdLmPMGyQNg"
   },
+  "guid:atv-alhaurin-youtube:yt:video:ptHO72SvpOo": {
+    "ai_attempts": 0,
+    "content_hash": "9e5bc25299d12abf61d5ce26e2bcf22ab296887f",
+    "date_modified": null,
+    "date_published": "2026-11-27T15:01:21+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Noticias de Alhaurín el Grande. Actualidad del viernes 27 de noviembre de 2026 en el Informativo de ATV. 1. PRESUPUESTO 2027: 45,9 M € Aprobados los prepuestos municipales de 2027, en el pleno extraordinario del Ayuntamiento celebrado esta mañana.\n\nLas cuentas alcanzan un año más una cifra récord de 45,9 millones de euros. 2. PROPUESTAS PARTIDO POPULAR El PP de Alhaurín el Grande celebra distintos encuentros y ruedas de prensa durante la campaña electoral para presentar, entre otras, sus propuestas sobre empleo, vivienda, juventud y pensiones de cara a las elecciones generales del próximo 29 de noviembre. 3.\n\nCAMPAMENTO DE NAVIDAD 2026/27 El área de Educación anuncia la apertura de inscripciones para el campamento de Navidad, que se llevará a cabo en el CEIP Emilia Olivares entre el 23 de diciembre y el 5 de enero. 4. NAVIDAD EN EL RINCÓN DEL OCIO También desde Educación se informa de que el Rincón del Ocio ampliará su horario de apertura y su programación durante el periodo navideño. 5.",
+      "descripcion": "1. PRESUPUESTO 2027: 45,9 M € Aprobados los prepuestos municipales de 2027, en el pleno extraordinario del Ayuntamiento celebrado esta mañana. Las cuentas alcanzan un año más una cifra récord de 45,9 millones de euros. 2.",
+      "seo_keywords": [],
+      "titulo": "Presupuesto 2027: 45,9 m € aprobados los prepuestos municipales de 2027, en el pleno"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-ptho72svpoo-73299e2d",
+    "last_ai_attempt": null,
+    "pagina": "noticias/presupuesto-2027-45-9-m-aprobados-los-prepuestos-municipales-de-2027-en-el-pleno.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=ptHO72SvpOo"
+  },
   "guid:atv-alhaurin-youtube:yt:video:q0SdzQULeeg": {
     "ai_attempts": 3,
     "content_hash": "7b90fc9ad8d15edb41dd42ca05ffdc963de049a1",
@@ -2758,6 +2796,25 @@
     "pagina": "noticias/celebracion-del-dia-mundial-de-la-infancia-y-la-adolescencia-en-el-ceip-emilia-olivares.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.youtube.com/watch?v=t7F6C4wtqfs"
+  },
+  "guid:atv-alhaurin-youtube:yt:video:ufdRfSTf3yY": {
+    "ai_attempts": 0,
+    "content_hash": "111d64287a32b434e54ea1bc8178edef406175f5",
+    "date_modified": null,
+    "date_published": "2026-11-27T15:00:08+00:00",
+    "editorial": {
+      "categoria": "Vídeos",
+      "cuerpo": "‘A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "descripcion": "‘A pie de campo’, programa deportivo que trae toda la emoción, análisis y noticias del Club Deportivo Alhaurino de la mano de nuestro compañero José Luque ‘Canito’.",
+      "seo_keywords": [],
+      "titulo": "A pie de campo - Programa 7 (3ª Temporada)"
+    },
+    "ia_exitosa": false,
+    "id": "guid-atv-alhaurin-youtube-yt-video-ufdrfstf3yy-c01613e9",
+    "last_ai_attempt": null,
+    "pagina": "noticias/a-pie-de-campo-programa-7-3-temporada.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.youtube.com/watch?v=ufdRfSTf3yY"
   },
   "guid:atv-alhaurin-youtube:yt:video:vSohImqw6SE": {
     "ai_attempts": 0,
@@ -4235,6 +4292,25 @@
     "pagina": "noticias/alhaurin-el-grande-conmemora-el-25n-con-un-acto-institucional-contra-la-violencia.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-conmemora-el-25n-con-un-acto-institucional-contra-la-violencia-hacia-las-mujeres-y-un-especial-recuerdo-para-victoria/"
+  },
+  "guid:ayuntamiento-alhaurin-el-grande:https://alhaurinelgrande.es/?p=225240": {
+    "ai_attempts": 0,
+    "content_hash": "a09f74594025a28701454ea95ee52d1681190460",
+    "date_modified": null,
+    "date_published": "2026-11-27T12:29:12+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Las cuentas municipales, aprobadas en sesión plenaria extraordinaria, contemplan un presupuesto consolidado de 45,9 millones de euros y una inversión de más de 11,5 millones para impulsar el desarrollo económico,.",
+      "descripcion": "Las cuentas municipales, aprobadas en sesión plenaria extraordinaria, contemplan un presupuesto consolidado de 45,9 millones de euros y una inversión de más de 11,5 millones para impulsar el desarrollo económico,.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande aprueba un Presupuesto Municipal histórico para 2027 de 46 millones"
+    },
+    "ia_exitosa": false,
+    "id": "guid-ayuntamiento-alhaurin-el-grande-https-alhaurinelgrande-es-p-22524-657c1867",
+    "last_ai_attempt": null,
+    "pagina": "noticias/alhaurin-el-grande-aprueba-un-presupuesto-municipal-historico-para-2027-de-46-millones-2.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://alhaurinelgrande.es/alhaurin-el-grande-aprueba-un-presupuesto-municipal-historico-para-2027-de-46-millones-de-euros-contemplando-la-congelacion-de-tasas-e-impuestos-por-segundo-ano-consecutivo/"
   },
   "guid:cd-alhaurino:https://web.clubdeportivoalhaurino.com/?p=1054": {
     "ai_attempts": 0,
@@ -5906,6 +5982,25 @@
     "pagina": "noticias/viaje-al-rocio-con-motivo-del-concierto-de-nuestra-banda-de-musica.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://www.nuestropadrejesusnazareno.com/34403/viaje-al-rocio-con-motivo-del-concierto-de-nuestra-banda-de-musica/"
+  },
+  "guid:hermandad-nuestro-padre-jesus-nazareno:https://www.nuestropadrejesusnazareno.com/?p=34406": {
+    "ai_attempts": 0,
+    "content_hash": "ce7100c501038362246db7dcb5c5d449dee842b9",
+    "date_modified": null,
+    "date_published": "2026-11-27T07:42:43+00:00",
+    "editorial": {
+      "categoria": "Actualidad",
+      "cuerpo": "Hoy, viernes 27 de noviembre, la Comisión de Caridad de nuestra Real Hermandad pone en marcha dos iniciativas con las que queremos hacer presente el amor de Jesús Nazareno entre quienes más lo necesitan. ABRIMOS LAS PUERTAS A LA ESPERANZA Con motivo del 25.º aniversario de la Casa de Acogida Pozo Dulce, de Cáritas Diocesana.",
+      "descripcion": "Hoy, viernes 27 de noviembre, la Comisión de Caridad de nuestra Real Hermandad pone en marcha dos iniciativas con las que queremos hacer presente el amor de Jesús Nazareno entre quienes más lo necesitan. ABRIMOS LAS PUERTAS A LA.",
+      "seo_keywords": [],
+      "titulo": "La caridad de nuestra Hermandad, al encuentro de la esperanza"
+    },
+    "ia_exitosa": false,
+    "id": "guid-hermandad-nuestro-padre-jesus-nazareno-https-www-nuestropadrejesu-14d4045d",
+    "last_ai_attempt": null,
+    "pagina": "noticias/la-caridad-de-nuestra-hermandad-al-encuentro-de-la-esperanza.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://www.nuestropadrejesusnazareno.com/34406/la-caridad-de-nuestra-hermandad-al-encuentro-de-la-esperanza/"
   },
   "guid:malaga-hoy:https://www.malagahoy.es/espana/feijoo-sanchez-joyas-zapatero-inasion-ceuta_0_2007874409.html": {
     "ai_attempts": 0,
@@ -7729,6 +7824,25 @@
     "pagina": "noticias/tiempo-de-lectura-aprox-1-minutos-58-segundosmirella-rueda-integrante-del-partido.html",
     "prompt_version": "2026-08-v1",
     "source_url": "https://revistalugardeencuentro.com/2026/11/24/el-pp-presenta-en-alhaurin-el-grande-sus-propuestas-para-facilitar-la-emancipacion-y-el-empleo-juvenil/"
+  },
+  "guid:revista-lugar-de-encuentro:https://revistalugardeencuentro.com/?p=214668": {
+    "ai_attempts": 0,
+    "content_hash": "35711bbfc3de9875d1ee2fec77f450ff9ba9be8e",
+    "date_modified": null,
+    "date_published": "2026-11-27T13:31:56+00:00",
+    "editorial": {
+      "categoria": "Municipal",
+      "cuerpo": "Tiempo de lectura aprox: 3 minutos, 56 segundosLas cuentas municipales, aprobadas en sesión plenaria extraordinaria, contemplan un presupuesto consolidado de 45,9 millones de euros y una inversión de más de 11,5 millones para impulsar el desarrollo económico, la sostenibilidad, la igualdad de oportunidades y las políticas sociales del municipio El Ayuntamiento de Alhaurín el Grande La entrada Alhaurín el Grande.",
+      "descripcion": "Tiempo de lectura aprox: 3 minutos, 56 segundosLas cuentas municipales, aprobadas en sesión plenaria extraordinaria, contemplan un presupuesto consolidado de 45,9 millones de euros y una inversión de más de 11,5 millones para.",
+      "seo_keywords": [],
+      "titulo": "Alhaurín el Grande aprueba un Presupuesto Municipal histórico para 2027 de 46 millones"
+    },
+    "ia_exitosa": false,
+    "id": "guid-revista-lugar-de-encuentro-https-revistalugardeencuentro-com-p-21-62b8eabe",
+    "last_ai_attempt": null,
+    "pagina": "noticias/alhaurin-el-grande-aprueba-un-presupuesto-municipal-historico-para-2027-de-46-millones.html",
+    "prompt_version": "2026-08-v1",
+    "source_url": "https://revistalugardeencuentro.com/2026/11/27/alhaurin-el-grande-aprueba-un-presupuesto-municipal-historico-para-2027-de-46-millones-de-euros-contemplando-la-congelacion-de-tasas-e-impuestos-por-segundo-ano-consecutivo/"
   },
   "guid:rtv-alhaurin-el-grande:https://rtvalhaurinelgrande.com/?p=50576": {
     "ai_attempts": 0,
